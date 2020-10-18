@@ -1,0 +1,35 @@
+state={
+	id=531
+	name="大阪" # Kansai
+	manpower = 11015000
+	
+	resources={
+		aluminium=3 # was: 6
+	}
+	
+	state_category = metropolis
+
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 8
+			arms_factory = 2
+			industrial_complex = 4
+			dockyard = 2
+			7072 = {
+				naval_base = 3
+			}
+		}
+		victory_points = {
+			7072 40
+		}
+		victory_points = {
+			11960 50
+		}
+	}
+
+	provinces={
+		1051 1133 4054 7072 7113 11960
+	}
+}

@@ -1,0 +1,39 @@
+﻿capital = 8
+
+oob = "LUX_1945"
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	gw_artillery = 1
+	tech_support = 1		
+	tech_engineers = 1
+	early_fighter = 1
+}
+set_war_support = 0.1
+set_stability = 0.8
+
+set_politics = {
+	ruling_party = liberal_conservatism
+	last_election = "1934.6.3"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	liberal_conservatism = 92
+	national_populism = 3
+	total_socialism = 5
+}
+
+#Pierre Dupong from 37
+create_country_leader = {
+	name = "Joseph Bech"
+	desc = "POLITICS_JOSEPH_BECH_DESC"
+	picture = "GFX_portrait_luxembourg_joseph_bech"
+	expire = "1965.1.1"
+	ideology = conservatism
+	traits = {
+		#
+	}
+}

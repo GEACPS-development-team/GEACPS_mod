@@ -1,0 +1,7963 @@
+technologies = {
+
+#   ###  ##  #  # ###      ## #  # ### ###   ## 
+#    #  #    #  #  #      #   #  #  #  #  # #   
+#    #  # ## ####  #       #  ####  #  ###   #  
+#    #  #  # #  #  #        # #  #  #  #      # 
+### ###  ##  #  #  #      ##  #  # ### #    ##  
+
+
+	early_ship_hull_light = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_light_1
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_1
+		}
+		path = {
+			leads_to_tech = basic_ship_hull_light 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = smoke_generator 
+			research_cost_coeff = 1
+		}
+
+#		path = {
+#			leads_to_tech = basic_depth_charges
+#			research_cost_coeff = 1
+#		}
+
+#		path = {
+#			leads_to_tech = sonar
+#			research_cost_coeff = 1
+#		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	basic_ship_hull_light = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = { 
+			ship_hull_light_2
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_2
+		}
+		path = {
+			leads_to_tech = improved_ship_hull_light 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		
+		start_year = 1936
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+				}
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	improved_ship_hull_light = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = { 
+			ship_hull_light_3
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_ship_hull_light 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	advanced_ship_hull_light = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = { 
+			ship_hull_light_4
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_4
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_light_5 
+			research_cost_coeff = 1
+		}
+		
+		
+		research_cost = 1.5
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	tech_ship_hull_light_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = { 
+			ship_hull_light_5
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_5
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_light_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 25 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	tech_ship_hull_light_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = { 
+			ship_hull_light_6
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_6
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_light_7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 31 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	tech_ship_hull_light_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = { 
+			ship_hull_light_7
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_7
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_light_8
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 37 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	tech_ship_hull_light_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = { 
+			ship_hull_light_8
+		}
+		enable_equipment_modules = { 
+			light_ship_engine_8
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 43 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+	smoke_generator = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		naval_retreat_speed = 0.2
+		
+		research_cost = 0.75
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 8
+			
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+
+ ##  #  # ### ###      ## #  # ###  #   #  ##  ###  ### #  # ### 
+#  # ## #  #   #      #   #  # #  # ## ## #  # #  #  #  ## # #   
+#### # ##  #   #       #  #  # ###  # # # #### ###   #  # ## ##  
+#  # #  #  #   #        # #  # #  # #   # #  # #  #  #  #  # #   
+#  # #  #  #  ###     ##   ##  ###  #   # #  # #  # ### #  # ### 
+
+
+	basic_depth_charges = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+
+		path = {
+			leads_to_tech = improved_depth_charges
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				NOT = { has_tech = early_ship_hull_light }
+				NOT = { has_tech = early_ship_hull_cruiser }
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+	}
+	improved_depth_charges = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_2
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = advanced_depth_charges
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 4
+			
+			modifier = {
+				factor = 2
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	advanced_depth_charges = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = modern_depth_charges
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	modern_depth_charges = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_4
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_depth_charges_5
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_depth_charges_5 = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_5
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_depth_charges_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_depth_charges_6 = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_6
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_depth_charges_7
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_depth_charges_7 = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_7
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_depth_charges_8
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_depth_charges_8 = {
+
+		enable_equipment_modules = { 
+			ship_depth_charge_8
+		}
+		on_research_complete = {
+			custom_effect_tooltip = depth_charges_advice_tt
+		}
+
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+
+	sonar = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = improved_sonar
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				NOT = { has_tech = early_ship_hull_light }
+				NOT = { has_tech = early_ship_hull_cruiser }
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+	}
+
+	improved_sonar = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_2
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_sonar_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_sonar_3 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_3
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_sonar_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_sonar_4 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_4
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_sonar_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_sonar_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_5
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_sonar_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_sonar_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_6
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_sonar_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_sonar_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_7
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_sonar_8
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+	tech_sonar_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipment_modules = { 
+			ship_sonar_8
+		}
+		on_research_complete = {
+			custom_effect_tooltip = sonar_advice_tt
+		}
+		research_cost = 1
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 4
+				has_war_with = GER
+			}
+			modifier = {
+				factor = 2
+				anti_submarine_strategy_required_trigger = yes
+			}
+			modifier = {
+				is_major = no
+				factor = 0.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+			asw_tech
+		}
+	}
+
+ ##  ###  #  # ###  ## ### ###   ## 
+#  # #  # #  #  #  #   #   #  # #   
+#    ###  #  #  #   #  ##  ###   #  
+#  # #  # #  #  #    # #   #  #   # 
+ ##  #  #  ##  ### ##  ### #  # ##  
+
+	early_ship_hull_cruiser = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_1
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_1
+		}
+		enable_equipment_modules = { 
+			ship_armor_cruiser_1
+			cruiser_ship_engine_1
+		}
+		path = {
+			leads_to_tech = basic_ship_hull_cruiser
+			research_cost_coeff = 1
+		}
+
+		
+		path = {
+			leads_to_tech = basic_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+	basic_ship_hull_cruiser = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_2
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_2
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_engine_2
+		}
+		
+		path = {
+			leads_to_tech = improved_ship_hull_cruiser
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+	improved_ship_hull_cruiser = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_3
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_3
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_engine_3
+		}
+		path = {
+			leads_to_tech = advanced_ship_hull_cruiser
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+				factor = 4
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+	advanced_ship_hull_cruiser = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_4
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_4
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_engine_4
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	
+	tech_ship_hull_cruiser_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_5
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_5
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_engine_5
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 25 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+	tech_ship_hull_cruiser_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_6
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_6
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_engine_6
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 31 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+	tech_ship_hull_cruiser_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_7
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_7
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_engine_7
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_cruiser_8
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_cruiser_1
+		}
+		research_cost = 1.5
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 37 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	tech_ship_hull_nuclear_cruiser_1 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_cruiser_1
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_nuclear_engine_1
+		}
+
+		
+		research_cost = 1.5
+
+		start_year = 1958
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+	tech_ship_hull_cruiser_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_cruiser_8
+		}
+		enable_equipments = {
+			ship_hull_light_cruiser_8
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_engine_8
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_cruiser_2
+		}
+		research_cost = 1.5
+		
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 43 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	tech_ship_hull_nuclear_cruiser_2 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_cruiser_2
+		}
+		enable_equipment_modules = { 
+			cruiser_ship_nuclear_engine_2
+		}
+
+		
+		research_cost = 1.5
+
+		start_year = 1964
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+
+	basic_cruiser_armor_scheme = {
+
+		enable_equipment_modules = { 
+			ship_armor_cruiser_2
+		}
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
+
+		
+		path = {
+			leads_to_tech = improved_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+	improved_cruiser_armor_scheme = {
+
+		enable_equipment_modules = { 
+			ship_armor_cruiser_3
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
+		
+		path = {
+			leads_to_tech = advanced_cruiser_armor_scheme
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	advanced_cruiser_armor_scheme = {
+
+		enable_equipment_modules = { 
+			ship_armor_cruiser_4
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_cruiser_armor_scheme_5
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	tech_cruiser_armor_scheme_5 = {
+
+		enable_equipment_modules = { 
+			ship_armor_cruiser_5
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_cruiser_armor_scheme_6
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	tech_cruiser_armor_scheme_6 = {
+
+		enable_equipment_modules = { 
+			ship_armor_cruiser_6
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_cruiser_armor_scheme_7
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	tech_cruiser_armor_scheme_7 = {
+
+		enable_equipment_modules = { 
+			ship_armor_cruiser_7
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_cruiser_armor_scheme_8
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+	tech_cruiser_armor_scheme_8 = {
+
+		enable_equipment_modules = { 
+			ship_armor_cruiser_8
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = cruiser_armor_advice_tt
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 3
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cl_tech
+			ca_tech
+		}
+	}
+
+#  # ###  ##  #   # #   #      ## #  # ### ###   ## 
+#  # #   #  # #   #  # #      #   #  #  #  #  # #   
+#### ##  ####  # #    #        #  ####  #  ###   #  
+#  # #   #  #  # #    #         # #  #  #  #      # 
+#  # ### #  #   #     #       ##  #  # ### #    ##  
+
+
+	early_ship_hull_heavy = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_1
+		}
+		enable_equipments = {
+			ship_hull_battlecruiser_1
+		}
+
+		enable_equipment_modules = { 
+			ship_armor_bb_1
+			ship_armor_bc_1
+			heavy_ship_engine_1
+		}
+		
+		path = {
+			leads_to_tech = basic_ship_hull_heavy
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_heavy_armor_scheme
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.75
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	basic_ship_hull_heavy = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_2
+		}
+		enable_equipment_modules = { 
+			heavy_ship_engine_2
+		}
+		path = {
+			leads_to_tech = improved_ship_hull_heavy
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 7 }
+		}
+		sub_technologies = {
+			ship_hull_super_heavy
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+			modifier = {
+				is_major = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	ship_hull_super_heavy = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_super_heavy_1
+		}
+
+		enable_equipment_modules = { 
+			super_heavy_ship_engine_1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 25
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	improved_ship_hull_heavy = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_3
+		}
+		enable_equipments = {
+			ship_hull_battlecruiser_2
+		}
+		enable_equipment_modules = { 
+			heavy_ship_engine_3
+		}
+		path = {
+			leads_to_tech = advanced_ship_hull_heavy
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	advanced_ship_hull_heavy = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_4
+		}
+		enable_equipment_modules = { 
+			heavy_ship_engine_4
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_5
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			tech_ship_hull_super_heavy_2
+		}
+		research_cost = 1.5
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	tech_ship_hull_super_heavy_2 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_super_heavy_2
+		}
+		enable_equipment_modules = { 
+			super_heavy_ship_engine_2
+		}
+
+		
+		research_cost = 1.5
+
+		start_year = 1944
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 25
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	tech_ship_hull_heavy_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_5
+		}
+		enable_equipments = {
+			ship_hull_battlecruiser_3
+		}
+		enable_equipment_modules = { 
+			heavy_ship_engine_5
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 25 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	tech_ship_hull_heavy_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_6
+		}
+		enable_equipment_modules = { 
+			heavy_ship_engine_6
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_7
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			tech_ship_hull_super_heavy_3
+		}
+		research_cost = 1.5
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 31 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	tech_ship_hull_super_heavy_3 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_super_heavy_3
+		}
+		enable_equipment_modules = { 
+			super_heavy_ship_engine_3
+		}
+
+		
+		research_cost = 1.5
+
+		start_year = 1953
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 25
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	tech_ship_hull_heavy_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_7
+		}
+		enable_equipments = {
+			ship_hull_battlecruiser_4
+		}
+		enable_equipment_modules = { 
+			heavy_ship_engine_7
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_heavy_8
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_heavy_1
+		}
+		research_cost = 1.5
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 37 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	
+	tech_ship_hull_nuclear_heavy_1 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_heavy_1
+		}
+		enable_equipment_modules = { 
+			heavy_ship_nuclear_engine_1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1958
+		dependencies = {
+			nuclear_marine_propulsion = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 25
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	tech_ship_hull_heavy_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_heavy_8
+		}
+		enable_equipment_modules = { 
+			heavy_ship_engine_8
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_heavy_2
+		}
+		research_cost = 1.5
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 0 y = 43 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 5
+				tag = USA
+
+			}
+			modifier = {
+				is_major = no
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	
+	tech_ship_hull_nuclear_heavy_2 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_heavy_2
+		}
+		enable_equipment_modules = { 
+			heavy_ship_nuclear_engine_2
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1964
+		dependencies = {
+			nuclear_marine_propulsion = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 25
+				tag = JAP
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	
+	basic_heavy_armor_scheme = {
+
+		enable_equipment_modules = { 
+			ship_armor_bb_2
+			ship_armor_bc_2
+			ship_armor_shbb
+		}
+
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = improved_heavy_armor_scheme
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+			modifier = {
+				has_tech = basic_ship_hull_heavy 
+				factor = 10
+			}
+			
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+	improved_heavy_armor_scheme = {
+
+		enable_equipment_modules = { 
+			ship_armor_bb_3
+			ship_armor_bc_3
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_heavy_armor_scheme_4
+			research_cost_coeff = 1
+		}
+		
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+			modifier = {
+				has_tech = improved_ship_hull_heavy 
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	tech_heavy_armor_scheme_4 = {
+
+		enable_equipment_modules = { 
+			ship_armor_bb_4
+			ship_armor_bc_4
+			ship_armor_shbb_2
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_heavy_armor_scheme_5
+			research_cost_coeff = 1
+		}
+		
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+			modifier = {
+				has_tech = advanced_ship_hull_heavy 
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	tech_heavy_armor_scheme_5 = {
+
+		enable_equipment_modules = { 
+			ship_armor_bb_5
+			ship_armor_bc_5
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_heavy_armor_scheme_6
+			research_cost_coeff = 1
+		}
+		
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+			modifier = {
+				has_tech = tech_ship_hull_heavy_5 
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	tech_heavy_armor_scheme_6 = {
+
+		enable_equipment_modules = { 
+			ship_armor_bb_6
+			ship_armor_bc_6
+			ship_armor_shbb_3
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_heavy_armor_scheme_7
+			research_cost_coeff = 1
+		}
+		
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+			modifier = {
+				has_tech = tech_ship_hull_heavy_6
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	tech_heavy_armor_scheme_7 = {
+
+		enable_equipment_modules = { 
+			ship_armor_bb_7
+			ship_armor_bc_7
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		path = {
+			leads_to_tech = tech_heavy_armor_scheme_8
+			research_cost_coeff = 1
+		}
+		
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+			modifier = {
+				has_tech = tech_ship_hull_heavy_7
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+	tech_heavy_armor_scheme_8 = {
+
+		enable_equipment_modules = { 
+			ship_armor_bb_8
+			ship_armor_bc_8
+			ship_armor_shbb_4
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = heavy_armor_advice_tt
+		}
+		
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.25
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = 1 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 4
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+			}
+			modifier = {
+				has_tech = tech_ship_hull_heavy_8
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			bb_tech
+			bc_tech
+		}
+	}
+
+ ##   ##  ###  ###  ### ### ###   ## 
+#  # #  # #  # #  #  #  #   #  # #   
+#    #### ###  ###   #  ##  ###   #  
+#  # #  # #  # #  #  #  #   #  #   # 
+ ##  #  # #  # #  # ### ### #  # ##  
+
+early_ship_hull_carrier = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_conversion_bb
+			ship_hull_carrier_conversion_ca
+		}
+
+		enable_equipment_modules = { 
+			ship_armor_carrier_deck
+			carrier_ship_engine_1
+			ship_deck_space
+#			ship_bb_deck_space_1
+#			ship_bb_deck_space_2
+		}
+		
+		path = {
+			leads_to_tech = basic_ship_hull_carrier
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.75
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	basic_ship_hull_carrier = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_1
+		}
+		enable_equipment_modules = { 
+			carrier_ship_engine_2
+		}
+		path = {
+			leads_to_tech = improved_ship_hull_carrier
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	improved_ship_hull_carrier = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_2
+			ship_hull_carrier_conversion_ca_2
+		}
+		enable_equipment_modules = { 
+			carrier_ship_engine_3
+		}
+		path = {
+			leads_to_tech = advanced_ship_hull_carrier
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	advanced_ship_hull_carrier = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_3
+		}
+		enable_equipment_modules = { 
+			carrier_ship_engine_4
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	tech_ship_hull_carrier_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_4
+			ship_hull_carrier_conversion_ca_3
+		}
+		enable_equipment_modules = { 
+			carrier_ship_engine_5
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 25 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	tech_ship_hull_carrier_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_5
+		}
+		enable_equipment_modules = { 
+			carrier_ship_engine_6
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 31 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	tech_ship_hull_carrier_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_6
+			ship_hull_carrier_conversion_ca_4
+		}
+		enable_equipment_modules = { 
+			carrier_ship_engine_7
+		}
+		path = {
+			leads_to_tech = tech_ship_hull_carrier_8
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_carrier_1
+		}
+		research_cost = 1.5
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 37 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	tech_ship_hull_nuclear_carrier_1 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_carrier_1
+		}
+		enable_equipment_modules = { 
+			carrier_ship_nuclear_engine_1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1958
+		dependencies = {
+			nuclear_marine_propulsion = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	tech_ship_hull_carrier_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_carrier_7
+		}
+		enable_equipment_modules = { 
+			carrier_ship_engine_8
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_carrier_2
+		}
+		research_cost = 1.5
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 43 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+	tech_ship_hull_nuclear_carrier_2 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_carrier_2
+		}
+		enable_equipment_modules = { 
+			carrier_ship_nuclear_engine_2
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1964
+		dependencies = {
+			nuclear_marine_propulsion = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 8
+				OR = {
+					tag = ENG
+					tag = JAP
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			cv_tech
+		}
+	}
+
+###  ##  ###  ###  ### ###   ##      #   #  ##  ###   ##  ### ###  ###                  ## #  # ###  #   #  ##  ###  ### #  # ###  ## 
+ #  #  # #  # #  # #   #  # #  #     #   # #  # #  # #  # #   #  # #       {~._.~}     #   #  # #  # ## ## #  # #  #  #  ## # #   #   
+ #  #  # ###  ###  ##  #  # #  #     # # # #### ###  #### ##  ###  ##       ( Y )       #  #  # ###  # # # #### ###   #  # ## ##   #  
+ #  #  # #  # #    #   #  # #  #     # # # #  # #  # #  # #   #  # #       ()~*~()       # #  # #  # #   # #  # #  #  #  #  # #     # 
+ #   ##  #  # #    ### ###   ##       # #  #  # #  # #  # #   #  # ###     (_)-(_)     ##   ##  ###  #   # #  # #  # ### #  # ### ##  
+
+	basic_torpedo = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2.0
+
+		start_year = 1922
+
+		path = {
+			leads_to_tech = magnetic_detonator
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = early_ship_hull_submarine
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_torpedo_1
+			ship_torpedo_sub_1
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = USA
+					tag = GER
+				}
+				factor = 5
+			}
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	magnetic_detonator = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 2.5
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = homing_torpedo
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = electric_torpedo
+			research_cost_coeff = 1
+		}
+
+		destroyer = {
+			torpedo_attack = 0.2
+		}
+		submarine = {
+			torpedo_attack = 0.2
+		}
+		light_cruiser = {
+			torpedo_attack = 0.2
+		}
+		heavy_cruiser = {
+			torpedo_attack = 0.2
+		}
+		
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = USA
+					tag = GER
+				}
+				factor = 5
+			}
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+			modifier = {
+				tag = JAP #Japan wants torpedoes EXTRA HARD
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	homing_torpedo = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 2.5
+
+		start_year = 1942
+		destroyer = {
+			torpedo_attack = 0.2
+		}
+		submarine = {
+			torpedo_attack = 0.2
+		}
+		light_cruiser = {
+			torpedo_attack = 0.2
+		}
+		heavy_cruiser = {
+			torpedo_attack = 0.2
+		}
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = USA
+					tag = GER
+				}
+				factor = 5
+			}
+			modifier = {
+				has_war = yes
+				factor = 3
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	electric_torpedo = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 2.5
+
+		start_year = 1940
+
+		
+		naval_torpedo_reveal_chance_factor = -0.25
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				OR = {
+					tag = JAP
+					tag = USA
+					tag = GER
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_ship_torpedo_launcher = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1.5
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = advanced_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+		enable_equipment_modules = { 
+			ship_torpedo_2
+			ship_torpedo_sub_2
+		}
+		
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				OR = {
+					tag = JAP
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	advanced_ship_torpedo_launcher = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1.5
+
+		start_year = 1940
+
+		path = {
+			leads_to_tech = modern_ship_torpedo_launcher
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+		enable_equipment_modules = { 
+			ship_torpedo_3
+			ship_torpedo_sub_3
+		}
+		
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				OR = {
+					tag = JAP
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	modern_ship_torpedo_launcher = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1.5
+
+		start_year = 1944
+
+		path = {
+			leads_to_tech = tech_ship_torpedo_launcher_5
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_torpedo_4
+			ship_torpedo_sub_4
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 9
+			modifier = {
+				OR = {
+					tag = JAP
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_ship_torpedo_launcher_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1.5
+
+		start_year = 1948
+
+		path = {
+			leads_to_tech = tech_ship_torpedo_launcher_6
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_torpedo_5
+			ship_torpedo_sub_5
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 8
+			modifier = {
+				OR = {
+					tag = JAP
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_ship_torpedo_launcher_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1.5
+
+		start_year = 1953
+
+		path = {
+			leads_to_tech = tech_ship_torpedo_launcher_7
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_torpedo_6
+			ship_torpedo_sub_6
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 7
+			modifier = {
+				OR = {
+					tag = JAP
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_ship_torpedo_launcher_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1.5
+
+		start_year = 1958
+
+		path = {
+			leads_to_tech = tech_ship_torpedo_launcher_8
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_torpedo_7
+			ship_torpedo_sub_7
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 6
+			modifier = {
+				OR = {
+					tag = JAP
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_ship_torpedo_launcher_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1.5
+
+		start_year = 1964
+
+		enable_equipment_modules = { 
+			ship_torpedo_8
+			ship_torpedo_sub_8
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = torpedo_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				OR = {
+					tag = JAP
+				}
+				factor = 1.2
+			}
+			modifier = {
+				has_war = yes
+				is_major = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	early_ship_hull_submarine = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_1
+		}
+
+		enable_equipment_modules = { 
+			sub_ship_engine_1
+		}
+		
+		path = {
+			leads_to_tech = basic_ship_hull_submarine
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1922
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	basic_ship_hull_submarine = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_2
+		}
+		enable_equipment_modules = { 
+			sub_ship_engine_2
+		}
+		path = {
+			leads_to_tech = improved_ship_hull_submarine
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_submarine_snorkel
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		start_year = 1936
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 7 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	improved_ship_hull_submarine = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_3
+		}
+		enable_equipment_modules = { 
+			sub_ship_engine_3
+		}
+		
+		path = {
+			leads_to_tech = advanced_ship_hull_submarine
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2.0
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 13 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	advanced_ship_hull_submarine = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_4
+		}
+		enable_equipment_modules = { 
+			sub_ship_engine_4
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_5
+			research_cost_coeff = 1
+		}
+		research_cost = 2.0
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 19 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	tech_ship_hull_submarine_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_5
+		}
+		enable_equipment_modules = { 
+			sub_ship_engine_5
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_6
+			research_cost_coeff = 1
+		}
+		research_cost = 2.25
+
+		start_year = 1948
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 25 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	tech_ship_hull_submarine_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_6
+		}
+		enable_equipment_modules = { 
+			sub_ship_engine_6
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_7
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_submarine_1
+		}
+		research_cost = 2.25
+
+		start_year = 1953
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 31 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	tech_ship_hull_nuclear_submarine_1 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_submarine_1
+		}
+		enable_equipment_modules = { 
+			sub_ship_nuclear_engine_1
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1953
+		dependencies = {
+			nuclear_marine_propulsion = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	tech_ship_hull_submarine_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_7
+		}
+		enable_equipment_modules = { 
+			sub_ship_engine_7
+		}
+		
+		path = {
+			leads_to_tech = tech_ship_hull_submarine_8
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_submarine_2
+		}
+		research_cost = 2.25
+
+		start_year = 1958
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 37 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	tech_ship_hull_nuclear_submarine_2 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_submarine_2
+		}
+		enable_equipment_modules = { 
+			sub_ship_nuclear_engine_2
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1958
+		dependencies = {
+			nuclear_marine_propulsion = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	tech_ship_hull_submarine_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_submarine_8
+		}
+		enable_equipment_modules = { 
+			sub_ship_engine_8
+		}
+		sub_technologies = {
+			tech_dummy
+		}
+		sub_technologies = {
+			tech_ship_hull_nuclear_submarine_3
+		}
+		
+		research_cost = 2.25
+
+		start_year = 1964
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -2 y = 43 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	tech_ship_hull_nuclear_submarine_3 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			ship_hull_nuclear_submarine_3
+		}
+		enable_equipment_modules = { 
+			sub_ship_nuclear_engine_3
+		}
+		
+		research_cost = 2.5
+
+		start_year = 1964
+		dependencies = {
+			nuclear_marine_propulsion = 1
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = USA
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	basic_submarine_snorkel = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+
+		enable_equipment_modules = { 
+			ship_sub_snorkel_1
+		}
+		path = {
+			leads_to_tech = improved_submarine_snorkel
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = snorkel_advice_tt
+		}
+		research_cost = 1
+
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = HOL
+				}
+			}
+			modifier = {
+				not = {
+					has_war_with = ENG
+					has_War_with = USA
+				}
+				factor = 0.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+	improved_submarine_snorkel = {
+
+		enable_equipment_modules = { 
+			ship_sub_snorkel_2
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = snorkel_advice_tt
+		}
+		path = {
+			leads_to_tech = improved_submarine_snorkel
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 2
+
+		start_year = 1944
+		
+		folder = {
+			name = mtgnavalfolder
+			position = {  x = -1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 7
+				OR = {
+					tag = GER
+					tag = HOL
+				}
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			ss_tech
+		}
+	}
+
+ ##  ###  #   #  ##  #   # ### #  # ###  ## 
+#  # #  # ## ## #  # ## ## #   ## #  #  #   
+#### ###  # # # #### # # # ##  # ##  #   #  
+#  # #  # #   # #  # #   # #   #  #  #    # 
+#  # #  # #   # #  # #   # ### #  #  #  ##  
+
+
+	basic_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1922
+
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+			custom_effect_tooltip = medium_battery_advice_tt
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = basic_light_battery
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_medium_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_heavy_battery
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_anti_air_cannon_2
+			research_cost_coeff = 1
+		}
+		
+
+		enable_equipment_modules = { 
+			ship_light_battery_1
+			dp_light_battery_1
+			ship_light_medium_battery_1
+			ship_secondaries_1
+			ship_medium_battery_1
+			ship_heavy_battery_1
+			ship_heavy_battery_CA_1
+			ship_anti_air_cannon_1
+		}
+		
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					has_tech = early_ship_hull_light
+					has_tech = early_ship_hull_cruiser
+					has_tech = early_ship_hull_heavy
+				}
+				factor = 500
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	basic_light_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = improved_light_battery
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = basic_light_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_light_battery_2
+		}
+		
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_light
+				date > 1936.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_light_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1940
+
+		path = {
+			leads_to_tech = advanced_light_battery
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		enable_equipment_modules = { 
+			ship_light_battery_3
+		}
+		
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_light
+				date > 1940.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	advanced_light_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1944
+
+		enable_equipment_modules = { 
+			ship_light_battery_4
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = tech_light_battery_5
+			research_cost_coeff = 1
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 25
+				has_tech = early_ship_hull_light
+				date > 1944.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	tech_light_battery_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1948
+
+		enable_equipment_modules = { 
+			ship_light_battery_5
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = tech_light_battery_6
+			research_cost_coeff = 1
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -2 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 25
+				has_tech = early_ship_hull_light
+				date > 1948.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	tech_light_battery_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1953
+
+		enable_equipment_modules = { 
+			ship_light_battery_6
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = tech_light_battery_7
+			research_cost_coeff = 1
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 25
+				has_tech = early_ship_hull_light
+				date > 1953.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	tech_light_battery_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1958
+
+		enable_equipment_modules = { 
+			ship_light_battery_7
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = tech_light_battery_8
+			research_cost_coeff = 1
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -2 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 25
+				has_tech = early_ship_hull_light
+				date > 1958.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	tech_light_battery_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1964
+
+		enable_equipment_modules = { 
+			ship_light_battery_8
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = light_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -2 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 5
+				has_tech = early_ship_hull_light
+				date > 1964.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	basic_light_shell = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1938
+
+		path = {
+			leads_to_tech = improved_light_shell
+			research_cost_coeff = 1
+		}
+		
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -1 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_light_shell = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1942
+		path = {
+			leads_to_tech = tech_light_shell_3
+			research_cost_coeff = 1
+		}
+		
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -1 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_light_shell_3 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1946
+		path = {
+			leads_to_tech = tech_light_shell_4
+			research_cost_coeff = 1
+		}
+		
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -1 y = 21 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_light_shell_4 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1950
+		path = {
+			leads_to_tech = tech_light_shell_5
+			research_cost_coeff = 1
+		}
+		
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -1 y = 27 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_light_shell_5 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1955
+		path = {
+			leads_to_tech = tech_light_shell_6
+			research_cost_coeff = 1
+		}
+		
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -1 y = 33 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_light_shell_6 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1960
+		path = {
+			leads_to_tech = tech_light_shell_7
+			research_cost_coeff = 1
+		}
+		
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -1 y = 39 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_light_shell_7 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1966
+		
+		destroyer = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		carrier = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = -1 y = 45 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	basic_medium_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = improved_medium_battery
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+
+		path = {
+			leads_to_tech = basic_medium_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_light_medium_battery_2
+			ship_secondaries_2
+			ship_medium_battery_2
+		}
+		
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_cruiser
+				date > 1936.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_medium_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1940
+
+		path = {
+			leads_to_tech = advanced_medium_battery
+			research_cost_coeff = 1
+		}
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+		enable_equipment_modules = { 
+			ship_light_medium_battery_3
+			ship_secondaries_3
+			ship_medium_battery_3
+		}
+		
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_cruiser
+				date > 1940.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	advanced_medium_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1944
+
+		path = {
+			leads_to_tech = tech_medium_battery_5
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_light_medium_battery_4
+			ship_secondaries_4
+			ship_medium_battery_4
+		}
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_cruiser
+				date > 1944.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_battery_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1948
+
+		path = {
+			leads_to_tech = tech_medium_battery_6
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_light_medium_battery_5
+			ship_secondaries_5
+			ship_medium_battery_5
+		}
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_cruiser
+				date > 1948.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_battery_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1953
+
+		path = {
+			leads_to_tech = tech_medium_battery_7
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_light_medium_battery_6
+			ship_secondaries_6
+			ship_medium_battery_6
+		}
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_cruiser
+				date > 1953.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_battery_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1958
+
+		path = {
+			leads_to_tech = tech_medium_battery_8
+			research_cost_coeff = 1
+		}
+		enable_equipment_modules = { 
+			ship_light_medium_battery_7
+			ship_secondaries_7
+			ship_medium_battery_7
+		}
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_cruiser
+				date > 1958.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_battery_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1964
+
+		enable_equipment_modules = { 
+			ship_light_medium_battery_8
+			ship_secondaries_8
+			ship_medium_battery_8
+		}
+		on_research_complete = {
+			custom_effect_tooltip = medium_battery_advice_tt
+		}
+
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_cruiser
+				date > 1964.1.1
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	basic_medium_shell = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1938
+
+		path = {
+			leads_to_tech = improved_medium_shell
+			research_cost_coeff = 1
+		}
+		
+		light_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		heavy_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battleship = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_medium_shell = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1942
+		path = {
+			leads_to_tech = tech_medium_shell_3
+			research_cost_coeff = 1
+		}
+		
+		
+		light_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		heavy_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battleship = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_shell_3 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1946
+		path = {
+			leads_to_tech = tech_medium_shell_4
+			research_cost_coeff = 1
+		}
+		
+		
+		light_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		heavy_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battleship = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 21 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_shell_4 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1950
+		path = {
+			leads_to_tech = tech_medium_shell_5
+			research_cost_coeff = 1
+		}
+		
+		
+		light_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		heavy_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battleship = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 27 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_shell_5 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1955
+		path = {
+			leads_to_tech = tech_medium_shell_6
+			research_cost_coeff = 1
+		}
+		
+		
+		light_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		heavy_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battleship = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 33 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_shell_6 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1960
+		path = {
+			leads_to_tech = tech_medium_shell_7
+			research_cost_coeff = 1
+		}
+		
+		
+		light_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		heavy_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battleship = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 39 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_medium_shell_7 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1966
+		
+		
+		light_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		heavy_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battleship = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			lg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 1 y = 45 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war = yes
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	basic_heavy_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = improved_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_heavy_shell
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_battery_2
+			ship_super_heavy_battery_1
+			ship_heavy_battery_CA_2
+		}
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_heavy
+				date > 1936.1.1
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+				}
+				factor = 1.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_heavy_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1940
+
+		path = {
+			leads_to_tech = advanced_heavy_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_battery_3
+			ship_heavy_battery_CA_3
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_heavy
+				date > 1940.1.1
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+				}
+				factor = 1.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	advanced_heavy_battery = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1944
+		path = {
+			leads_to_tech = tech_heavy_battery_5
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_battery_4
+			ship_super_heavy_battery_2
+			ship_heavy_battery_CA_4
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_heavy
+				date > 1944.1.1
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+				}
+				factor = 1.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_battery_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1948
+		path = {
+			leads_to_tech = tech_heavy_battery_6
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_battery_5
+			ship_heavy_battery_CA_5
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_heavy
+				date > 1948.1.1
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+				}
+				factor = 1.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_battery_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1953
+		path = {
+			leads_to_tech = tech_heavy_battery_7
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_battery_6
+			ship_super_heavy_battery_3
+			ship_heavy_battery_CA_6
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_heavy
+				date > 1953.1.1
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+				}
+				factor = 1.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_battery_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1958
+		path = {
+			leads_to_tech = tech_heavy_battery_8
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_battery_7
+			ship_heavy_battery_CA_7
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_heavy
+				date > 1958.1.1
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+				}
+				factor = 1.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_battery_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1964
+
+		enable_equipment_modules = { 
+			ship_heavy_battery_8
+			ship_super_heavy_battery_4
+			ship_heavy_battery_CA_8
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = heavy_battery_advice_tt
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 50
+				has_tech = early_ship_hull_heavy
+				date > 1964.1.1
+			}
+			modifier = {
+				OR = {
+					tag = GER
+					tag = JAP
+				}
+				factor = 1.5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	basic_heavy_shell = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1938
+
+		path = {
+			leads_to_tech = improved_heavy_shell
+			research_cost_coeff = 1
+		}
+		
+		battleship = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_heavy_shell = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1942
+		path = {
+			leads_to_tech = tech_heavy_shell_3
+			research_cost_coeff = 1
+		}
+		
+		
+		battleship = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_shell_3 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1946
+		path = {
+			leads_to_tech = tech_heavy_shell_4
+			research_cost_coeff = 1
+		}
+		
+		
+		battleship = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 21 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_shell_4 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1950
+		path = {
+			leads_to_tech = tech_heavy_shell_5
+			research_cost_coeff = 1
+		}
+		
+		
+		battleship = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 27 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_shell_5 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1955
+		path = {
+			leads_to_tech = tech_heavy_shell_6
+			research_cost_coeff = 1
+		}
+		
+		
+		battleship = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 33 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_shell_6 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1960
+		path = {
+			leads_to_tech = tech_heavy_shell_7
+			research_cost_coeff = 1
+		}
+		
+		
+		battleship = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 39 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_heavy_shell_7 = {
+		
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 1.5
+
+		start_year = 1966
+		
+		
+		battleship = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+		battle_cruiser = {
+			hg_attack = 0.05
+			hg_armor_piercing = 0.05
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 3 y = 45 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				is_major = yes
+				has_war = yes
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_anti_air_cannon_2 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = tech_anti_air_cannon_3
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_anti_air_cannon_2
+			dp_light_battery_2
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_tech = early_ship_hull_light
+			}
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_anti_air_cannon_3 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1940
+
+		path = {
+			leads_to_tech = tech_anti_air_cannon_4
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_anti_air_cannon_3
+			dp_light_battery_3
+		}
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_tech = early_ship_hull_light
+			}
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_anti_air_cannon_4 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1944
+		path = {
+			leads_to_tech = tech_anti_air_cannon_5
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_anti_air_cannon_4
+			dp_light_battery_4
+		}
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_tech = early_ship_hull_light
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_anti_air_cannon_5 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1948
+		path = {
+			leads_to_tech = tech_anti_air_cannon_6
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_anti_air_cannon_5
+			dp_light_battery_5
+		}
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_tech = early_ship_hull_light
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_anti_air_cannon_6 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1953
+		path = {
+			leads_to_tech = tech_anti_air_cannon_7
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_anti_air_cannon_6
+			dp_light_battery_6
+		}
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_tech = early_ship_hull_light
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_anti_air_cannon_7 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1958
+		path = {
+			leads_to_tech = tech_anti_air_cannon_8
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_anti_air_cannon_7
+			dp_light_battery_7
+		}
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_tech = early_ship_hull_light
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	tech_anti_air_cannon_8 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1964
+
+		enable_equipment_modules = { 
+			ship_anti_air_cannon_8
+			dp_light_battery_8
+		}
+		
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 10
+				has_tech = early_ship_hull_light
+				is_major = yes
+			}
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	basic_secondary_battery = {
+		
+		research_cost = 0.8
+
+		start_year = 1922
+
+		path = {
+			leads_to_tech = improved_secondary_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_secondaries_1
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
+
+		allow = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	improved_secondary_battery = {
+		
+		research_cost = 0.8
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = dp_secondary_battery
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_secondaries_2
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
+
+		allow = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	dp_secondary_battery = {
+		
+		research_cost = 0.8
+
+		start_year = 1940
+
+		enable_equipment_modules = { 
+			dp_ship_secondaries
+			dp_light_battery
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = secondary_battery_advice_tt
+		}
+
+		allow = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+
+###   ##  #   #  ##   ##  ###      ##   ##  #  # ### ###   ##  #   
+#  # #  # ## ## #  # #    #       #  # #  # ## #  #  #  # #  # #   
+#  # #### # # # #### # ## ##      #    #  # # ##  #  ###  #  # #   
+#  # #  # #   # #  # #  # #       #  # #  # #  #  #  #  # #  # #   
+###  #  # #   # #  #  ##  ###      ##   ##  #  #  #  #  #  ##  ### 
+
+	damage_control_1 = {
+		
+		research_cost = 2.5
+		path = {
+			leads_to_tech = damage_control_2
+			research_cost_coeff = 1
+		}
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				is_historical_focus_on = yes
+				tag = JAP
+				factor = 0.25
+			}
+			modifier = {
+				tag = USA
+				factor = 3
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	damage_control_2 = {
+		
+		research_cost = 2.5
+		path = {
+			leads_to_tech = damage_control_3
+			research_cost_coeff = 1
+		}
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				is_historical_focus_on = yes
+				tag = JAP
+				factor = 0.25
+			}
+			modifier = {
+				tag = USA
+				factor = 3
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	damage_control_3 = {
+		
+		research_cost = 2.5
+		critical_receive_chance = -0.1
+		naval_critical_effect_factor = -0.1
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 3
+			modifier = {
+				is_historical_focus_on = yes
+				tag = JAP
+				factor = 0.25
+			}
+			modifier = {
+				tag = USA
+				factor = 3
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+### ### ###  ###      ##   ##  #  # ### ###   ##  #       #   # ### ### #  #  ##  ###   ## 
+#    #  #  # #       #  # #  # ## #  #  #  # #  # #       ## ## #    #  #  # #  # #  # #   
+##   #  ###  ##      #    #  # # ##  #  ###  #  # #       # # # ##   #  #### #  # #  #  #  
+#    #  #  # #       #  # #  # #  #  #  #  # #  # #       #   # #    #  #  # #  # #  #   # 
+#   ### #  # ###      ##   ##  #  #  #  #  #  ##  ###     #   # ###  #  #  #  ##  ###  ##  
+
+
+	fire_control_methods_1 = {
+		
+		research_cost = 2.5
+		path = {
+			leads_to_tech = fire_control_methods_2
+			research_cost_coeff = 1
+		}
+		battleship = {
+			lg_attack = 0.05
+			hg_attack = 0.05
+		}
+		battle_cruiser = {
+			lg_attack = 0.05
+			hg_attack = 0.05
+		}
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		allow = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+	}
+
+	fire_control_methods_2 = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		research_cost = 2.5
+		path = {
+			leads_to_tech = fire_control_methods_3
+			research_cost_coeff = 1
+		}
+		battleship = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+		}
+		battle_cruiser = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+		}
+		heavy_cruiser = {
+			lg_attack = 0.05
+			hg_attack = 0.05
+		}
+		
+		allow = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+
+	fire_control_methods_3 = {
+		
+		research_cost = 2.5
+		battleship = {
+			lg_attack = 0.15
+			hg_attack = 0.15
+		}
+		battle_cruiser = {
+			lg_attack = 0.15
+			hg_attack = 0.15
+		}
+		heavy_cruiser = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+		}
+		light_cruiser = {
+			lg_attack = 0.1
+			hg_attack = 0.1
+		}
+		destroyer = {
+			lg_attack = 0.05
+			hg_attack = 0.05
+		}
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 1.50
+		allow = {
+			always = no
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		categories = {
+			naval_equipment
+		}
+	}
+	
+	early_fire_control_system = {
+		start_year = 1922
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_0
+		}
+		
+		research_cost = 1
+		path = {
+			leads_to_tech = basic_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			modifier = {
+				NOT = { has_tech = early_ship_hull_light }
+				NOT = { has_tech = early_ship_hull_cruiser }
+				NOT = { has_tech = early_ship_hull_heavy }
+				factor = 0
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	basic_fire_control_system = {
+		start_year = 1936
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_1
+		}
+		path = {
+			leads_to_tech = improved_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	improved_fire_control_system = {
+		start_year = 1940
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_2
+		}
+		path = {
+			leads_to_tech = advanced_fire_control_system
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	advanced_fire_control_system = {
+		start_year = 1944
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_3
+		}
+		path = {
+			leads_to_tech = tech_fire_control_system_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	tech_fire_control_system_4 = {
+		start_year = 1948
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_4
+		}
+		path = {
+			leads_to_tech = tech_fire_control_system_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	tech_fire_control_system_5 = {
+		start_year = 1953
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_5
+		}
+		path = {
+			leads_to_tech = tech_fire_control_system_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	tech_fire_control_system_6 = {
+		start_year = 1958
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_6
+		}
+		path = {
+			leads_to_tech = tech_fire_control_system_7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 36 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+	tech_fire_control_system_7 = {
+		start_year = 1964
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipment_modules = { 
+			ship_fire_control_system_7
+		}
+		
+		research_cost = 1
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 42 }
+		}
+		
+		ai_will_do = {
+			factor = 0.75
+			modifier = {
+				OR = {
+					tag = ENG
+					tag = USA
+					tag = JAP
+				}
+				factor = 3
+			}
+			
+		}
+		
+		categories = {
+			electronics
+			computing_tech
+			naval_equipment
+		}
+	}
+
+#   # ### #  # ###  ## 
+## ##  #  ## # #   #   
+# # #  #  # ## ##   #  
+#   #  #  #  # #     # 
+#   # ### #  # ### ##  
+
+	basic_naval_mines = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1922
+
+		path = {
+			leads_to_tech = improved_naval_mines 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = submarine_mine_laying
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_mine_layer_1
+		}
+
+		enable_equipment_modules = { 
+			ship_mine_sweeper_1
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+			modifier = {
+				NOT = { has_tech = early_ship_hull_light }
+				NOT = { has_tech = early_ship_hull_cruiser }
+				factor = 0
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	submarine_mine_laying = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1922
+
+		path = {
+			leads_to_tech = improved_submarine_mine_laying 
+			research_cost_coeff = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_mine_layer_sub
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	improved_submarine_mine_laying = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1940
+		
+		submarine = {
+			mines_planting = 0.2
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1.5
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	improved_naval_mines = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1936
+
+		path = {
+			leads_to_tech = advanced_naval_mines 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = degaussing
+			research_cost_coeff = 1
+		}
+
+		
+		
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 6
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	degaussing = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 1
+
+		start_year = 1938
+		
+		naval_mines_effect_reduction = 0.5
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 9 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+					tag = SOV
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
+
+	advanced_naval_mines = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1942
+
+		path = {
+			leads_to_tech = modern_naval_mines 
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = airdrop_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = USA
+					tag = ENG
+				}
+				factor = 5
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	airdrop_mines = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1942
+
+		category_nav_bomber = { 
+			mines_planting = 0.05 
+		}
+		category_tac_bomber = { 
+			mines_planting = 0.08 
+		}
+		category_strat_bomber = { 
+			mines_planting = 0.13 
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 15 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				OR = {
+					tag = GER
+					tag = USA
+					tag = ENG
+				}
+				factor = 7
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	modern_naval_mines = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1945
+
+		path = {
+			leads_to_tech = airsweep_mines
+			research_cost_coeff = 1
+		}
+
+		naval_mines_damage_factor = 0.2 # more boom for the boom box
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				tag = USA
+				factor = 3
+			}
+		}
+		
+		categories = {
+			naval_mines
+			naval_minelaying
+			naval_equipment
+		}
+	}
+
+	airsweep_mines = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		
+		research_cost = 2
+
+		start_year = 1944
+
+		category_nav_bomber = { 
+			mines_sweeping = 0.1 
+		}
+		
+		category_tac_bomber = { 
+			mines_sweeping = 0.15 
+		}
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 2 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_mines
+			naval_minesweeping
+			naval_equipment
+		}
+	}
+
+	mtg_transport = { #WHEN BALANCING - ALSO FIX REGULAR NAVAL TREE
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		transport_capacity = -0.5
+		naval_invasion_capacity = 10
+		
+		path = {
+			leads_to_tech = mtg_landing_craft 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+		start_year = 1922
+
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 1 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 0.5
+				has_war = no
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				has_war_with = JAP
+				factor = 2
+			}
+			
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	mtg_landing_craft = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		invasion_preparation = -0.5
+		amphibious_invasion_defence = 0.15
+		naval_invasion_capacity = 40
+
+		path = {
+			leads_to_tech = mtg_tank_landing_craft 
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1940
+		
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 0.5
+				has_war = no
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				has_war_with = JAP
+				factor = 2
+			}
+			modifier = {
+				factor = 50
+				tag = JAP
+				OR = {
+					has_war_with = USA
+					CHI = {  
+						OR = { 
+							has_capitulated = yes 
+							exists = no
+		                    is_subject_of = JAP
+						}
+					}
+				}
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					tag = ENG
+					tag = USA
+				}
+				has_war_with = GER
+				GER = { has_war_with = SOV }
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+	
+	mtg_tank_landing_craft = {
+		xp_research_type = navy
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+
+		amphibious_invasion = 0.25
+		amphibious_invasion_defence = 0.5
+		naval_invasion_capacity = 100
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = mtgnavalfolder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+			
+			modifier = {
+				factor = 0.5
+				has_war = no
+			}
+			
+			modifier = {
+				factor = 2
+				tag = USA
+			}
+			modifier = {
+				factor = 2
+				has_war_with = JAP
+			}
+			modifier = {
+				factor = 3
+				tag = JAP
+			}
+			
+			modifier = {
+				factor = 2
+				tag = ENG
+			}
+		}
+		
+		categories = {
+			naval_equipment
+			tp_tech
+		}
+	}
+
+	###Special snowflake hulls for special snowflake nations
+	panzerschiffe = {
+
+		enable_equipments = { 
+			ship_hull_cruiser_panzerschiff
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+	torpedo_cruiser_mtg = {
+
+		enable_equipments = { 
+			ship_hull_torpedo_cruiser
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+	pre_dreadnoughts = {
+
+		enable_equipments = { 
+			ship_hull_pre_dreadnought
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+	coastal_defense_ships = {
+
+		enable_equipments = { 
+			ship_hull_cruiser_coastal_defense_ship
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+	cruiser_submarines = {
+
+		enable_equipments = { 
+			ship_hull_cruiser_submarine
+		}
+		enable_equipment_modules = { 
+			ship_extra_fuel_tank
+		}
+		research_cost = 1
+		start_year = 1936
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+	tech_dummy = {
+
+		
+		research_cost = 1
+
+		start_year = 1936
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+	}
+
+}

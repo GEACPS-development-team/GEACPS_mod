@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			random_country = {
+				limit = {
+					is_ai = no
+				}
+				set_global_flag = has_mod_add_technologies_j
+			}
+		}
+	}
+}

@@ -1,0 +1,25 @@
+state={
+	id=899
+	name="済源"
+	manpower=343000
+	buildings_max_level_factor=1.000
+	
+	state_category = town
+
+	history={
+		owner = PGR
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = PGR
+		buildings = {
+			infrastructure = 5
+		}
+		CHI = {
+			set_province_controller = 4606
+		}
+	}
+
+	provinces={
+		1139 4114 4144 4606 7074
+	}
+}

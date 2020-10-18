@@ -1,0 +1,26 @@
+state={
+	id=603
+	name="黔東南"
+	manpower=7543200
+	buildings_max_level_factor=1.000
+	
+	state_category=pastoral
+
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		add_core_of = GZH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		PRC = {
+			set_province_controller = 7577
+		}
+	}
+
+	provinces={
+		7521 7549 7577
+	}
+}

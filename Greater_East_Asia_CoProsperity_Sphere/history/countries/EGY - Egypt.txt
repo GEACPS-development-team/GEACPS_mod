@@ -1,0 +1,62 @@
+﻿capital = 446
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	gwtank = 1
+}
+
+set_convoys = 20
+
+set_politics = {
+	ruling_party = authoritative_democracy
+	last_election = "1936.1.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	liberal_conservatism = 25
+	national_populism = 20
+	total_socialism = 5
+	authoritative_democracy = 50
+}
+
+create_country_leader = {
+	name = "Muhammad Naguib"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_liberal_conservatism1.dds"
+	ideology = liberalism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Ahmed Husayn"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_1.dds"
+	ideology = national_populism_ideology
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Farouk Muhammad Ali"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_land_1.dds"
+	ideology = despotism
+	traits = {
+		#
+	}
+}
+
+create_country_leader = {
+	name = "Hosni al-Arabi"
+	desc = ""
+	picture = "gfx/leaders/SAU/Portrait_Arabia_Generic_navy_3.dds"
+	ideology = leninism
+	traits = {
+		#
+	}
+}

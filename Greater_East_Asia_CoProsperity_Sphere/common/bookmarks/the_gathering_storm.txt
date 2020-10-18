@@ -1,0 +1,159 @@
+bookmarks = {
+	bookmark = {
+		name = "栄光ある東亜の帝国"
+		desc = ""
+		date = 1947.1.1.1
+		picture = ""
+		default_country = "JAP"
+		default = yes
+		
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			
+			available = {
+				has_dlc = "Man the Guns"
+			}
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"ENG"={
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = democratic
+			
+			available = {
+				NOT = {
+					has_dlc = "Man the Guns"
+				}
+			}
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"USA"={
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = democratic
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			
+			available = {
+				NOT = {
+					has_dlc = "La Resistance"
+				}
+			}
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"FRA"={
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = democratic
+			
+			available = {
+				has_dlc = "La Resistance"
+			}
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"SOV"={
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = communism
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"TUR"={
+			history = "TUR_GATHERING_STORM_DESC"
+			ideology = neutrality
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"SIA"={
+			history = "SIA_GATHERING_STORM_DESC"
+			ideology = neutrality
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+		
+		"JAP"={
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = fascism
+			
+			ideas = {
+			}
+			
+			focuses = {
+			}
+		}
+
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		# minors from DLC #
+		"WGR"={
+			minor = yes
+			history = "WGR_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		
+		"DDR"={
+			minor = yes
+			history = "DDR_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		
+		"ITA"={
+			minor = yes
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = fascism
+		}
+		
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = {
+				rain_light = yes
+			}
+		}
+	}
+}
