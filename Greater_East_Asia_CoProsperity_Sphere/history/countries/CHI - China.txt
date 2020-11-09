@@ -1,14 +1,11 @@
 ﻿capital = 620 # Nanjing
 
 oob = "CHI_1945"
-
 if = {
-	limit = {
-		has_dlc = "Man the Guns"
-	}
-	set_naval_oob = "CHI_1945_naval_mtg"
+	limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "CHI_1936_naval_mtg"
 	else = {
-		set_naval_oob = "CHI_1945_naval_legacy"
+		set_naval_oob = "CHI_1936_naval_legacy"
 	}
 }
 
