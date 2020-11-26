@@ -1,4 +1,4 @@
-version="1.9.3"
+version="1.9.1"
 tags={
 	"Alternative History"
 	"Events"
@@ -15,5 +15,5 @@ tags={
 name="Greater East Asia Co-Prosperity Sphere"
 replace_path="history/states"
 picture="GEACPS_thumbnail.jpg"
-supported_version="1.10.1"
+supported_version="1.9.3"
 remote_file_id="2080137628"

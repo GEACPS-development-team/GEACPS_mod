@@ -1,0 +1,423 @@
+focus_tree = {
+	id = geacps_ENG
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	focus = {
+		id = ENG_third_poor_laws
+		icon = GFX_focus_hol_the_foundations_of_defense
+		cost = 10.00
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = ENG_hope_still_remains
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_third_poor_laws
+		}
+		mutually_exclusive = {
+			focus = ENG_general_election
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = ENG_social_democracy1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_hope_still_remains
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = ENG_social_democracy3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy1
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = ENG_social_democracy6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy3
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = ENG_social_democracy2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_hope_still_remains
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = ENG_social_democracy4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy1
+		}
+		prerequisite = {
+			focus = ENG_social_democracy2
+		}
+		mutually_exclusive = {
+			focus = ENG_social_democracy5
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = ENG_social_democracy7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy3
+		}
+		prerequisite = {
+			focus = ENG_social_democracy4
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = ENG_social_democracy5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy2
+		}
+		mutually_exclusive = {
+			focus = ENG_social_democracy4
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = ENG_social_democracy8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy5
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = ENG_social_democracy10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy8
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = ENG_general_election
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_third_poor_laws
+		}
+		mutually_exclusive = {
+			focus = ENG_hope_still_remains
+		}
+		x = 8
+		y = 1
+
+	}
+	focus = {
+		id = ENG_conservative_party
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_general_election
+		}
+		mutually_exclusive = {
+			focus = ENG_royalist
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = ENG_churchill
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_conservative_party
+		}
+		mutually_exclusive = {
+			focus = ENG_Eden
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = ENG_churchill1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_churchill
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = ENG_Eden
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_conservative_party
+		}
+		mutually_exclusive = {
+			focus = ENG_churchill
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = ENG_eden1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_Eden
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = ENG_conservatism2
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_churchill1
+		}
+		prerequisite = {
+			focus = ENG_eden1
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = ENG_conservatism1
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_conservative_party
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = ENG_conservatism3
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_conservatism1
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = ENG_conservatism4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_conservatism1
+		}
+		x = 13
+		y = 5
+
+	}
+	focus = {
+		id = ENG_royalist
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_general_election
+		}
+		mutually_exclusive = {
+			focus = ENG_conservative_party
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = ENG_gards
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_royalist
+		}
+		x = 15
+		y = 3
+
+	}
+	focus = {
+		id = ENG_army
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_gards
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = ENG_forced
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_army
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = ENG_bipartisan_cabinet
+		icon = GFX_focus_eng_the_kings_party
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_royalist
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = ENG_purge_non_royalists
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_royalist
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = ENG_the_strong_country
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_conservatism3
+			focus = ENG_conservatism2
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = ENG_house_of_lords
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_royalist
+		}
+		x = 19
+		y = 3
+
+	}
+	focus = {
+		id = ENG_great_charter_of_the_liberties
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_house_of_lords
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = ENG_god_save_the_king
+		icon = GFX_focus_eng_god_save_the_king
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_bipartisan_cabinet
+		}
+		prerequisite = {
+			focus = ENG_army
+		}
+		prerequisite = {
+			focus = ENG_house_of_lords
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = ENG_social_democracy9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy7
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = ENG_social_democracy11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy9
+			focus = ENG_social_democracy10
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = ENG_social_democracy12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = ENG_social_democracy8
+		}
+		x = 6
+		y = 6
+
+	}
+}
