@@ -76,15 +76,22 @@ set_stability = 0.7
 
 set_politics = {
 	ruling_party = liberal_conservatism
-	last_election = "1936.1.1"
+	last_election = "1938.4.10"
 	election_frequency = 48
 	elections_allowed = yes
 }
 
 set_popularities = {
-	liberal_conservatism = 80
-	national_populism = 10
-	total_socialism = 10
+	total_socialism = 4
+	radical_socialism = 4
+	social_democracy = 32
+	social_liberalism = 7
+	classical_liberalism = 7
+	liberal_conservatism = 28
+	social_conservatism = 6
+	authoritative_democracy = 5
+	reactionary_authoritarianism = 4
+	national_populism = 3
 }
 
 create_country_leader = {
@@ -100,9 +107,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "コンラート・アデナウアー"
 	desc = ""
-	picture = "portrait_Germany_コンラート_アデナウアー.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
+	picture = "Portrait_West_Germany_Konrad_Adenauer.dds"
+	expire = "1967.4.19"
+	ideology = liberal_conservatism
 	traits = {
 	}
 }

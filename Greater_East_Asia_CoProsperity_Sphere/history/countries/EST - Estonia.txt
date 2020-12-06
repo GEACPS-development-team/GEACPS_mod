@@ -1,4 +1,5 @@
-﻿capital = 13
+﻿1946.1.1 = {
+capital = 13
 
 oob = "EST_1945"
 set_cosmetic_tag = EST_SOV
@@ -44,6 +45,25 @@ set_politics = {
 }
 set_popularities = {
 	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
+}
+
+create_country_leader = {
+	name = "ニコライ・カロータム"
+	desc = ""
+	picture = "Portrait_Estonia_Nikolai_Karotamm.dds"
+	expire = "1969.9.21"
+	ideology = total_socialism
+	traits = {
+	}
 }
 
 create_country_leader = {
@@ -79,4 +99,5 @@ create_country_leader = {
 			}
 		}
 	}
+}
 }

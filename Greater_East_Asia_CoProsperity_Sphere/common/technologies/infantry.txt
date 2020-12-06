@@ -127,6 +127,9 @@ technologies = {
 		cavalry = {
 			soft_attack = 0.05
 		}
+		camelry = {
+			soft_attack = 0.05
+		}
 		
 		motorized = {
 			soft_attack = 0.05
@@ -240,6 +243,9 @@ technologies = {
 		cavalry = {
 			soft_attack = 0.05
 		}
+		camelry = {
+			soft_attack = 0.05
+		}
 		
 		motorized = {
 			soft_attack = 0.05
@@ -344,6 +350,9 @@ technologies = {
 		cavalry = {
 			soft_attack = 0.1
 		}		
+		camelry = {
+			soft_attack = 0.1
+		}		
 		motorized = {
 			soft_attack = 0.1
 		}
@@ -430,6 +439,9 @@ technologies = {
 		cavalry = {
 			soft_attack = 0.05
 		}		
+		camelry = {
+			soft_attack = 0.05
+		}		
 		motorized = {
 			soft_attack = 0.05
 		}
@@ -508,6 +520,9 @@ technologies = {
 			soft_attack = 0.05
 		}
 		cavalry = {
+			soft_attack = 0.05
+		}		
+		camelry = {
 			soft_attack = 0.05
 		}		
 		motorized = {
@@ -590,6 +605,9 @@ technologies = {
 		cavalry = {
 			soft_attack = 0.05
 		}		
+		camelry = {
+			soft_attack = 0.05
+		}		
 		motorized = {
 			soft_attack = 0.05
 		}
@@ -668,6 +686,9 @@ technologies = {
 			soft_attack = 0.05
 		}
 		cavalry = {
+			soft_attack = 0.05
+		}		
+		camelry = {
 			soft_attack = 0.05
 		}		
 		motorized = {
@@ -1065,12 +1086,12 @@ technologies = {
 			position = { x = 4 y = @1936 }
 		}
 		
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = paratrooper
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = paratrooper
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_paratroopers"
 			}
@@ -1429,12 +1450,12 @@ technologies = {
 			marine
 		}
 		
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = marine
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = marine
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_marines"
 			}			
@@ -1754,12 +1775,12 @@ technologies = {
 			mountaineers
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = mountaineers
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = mountaineers
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_mountineers"
 			}
@@ -2058,6 +2079,48 @@ technologies = {
 		}
 	}
 
+	mountain_warfare = {
+
+		research_cost = 1
+
+		# only from focus!
+		allow = {
+			always = no
+		}
+
+
+		#If you change these
+		#Change the custom tooltip too: GRE_mountain_training_effect
+		infantry = {
+			mountain = {
+				defence = 0.05
+				movement = 0.05
+			}
+		}
+
+		marine = {
+			mountain = {
+				attack = 0.05 
+				movement = 0.1
+			}
+		}
+
+		mountaineers = {
+			mountain = {
+				attack = 0.05
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+
+		paratrooper = {
+			mountain = {
+				attack = 0.05
+				movement = 0.1
+			}
+		}
+
+	}
 	
 	night_vision = {
 		xp_research_type = army
@@ -2270,6 +2333,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -2362,6 +2429,10 @@ technologies = {
 			breakthrough = 0.05
 		}
 		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		camelry = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
@@ -2465,6 +2536,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -2549,6 +2624,10 @@ technologies = {
 			breakthrough = 0.05
 		}
 		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		camelry = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
@@ -2638,6 +2717,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -2700,6 +2783,10 @@ technologies = {
 			breakthrough = 0.05
 		}
 		cavalry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
+		camelry = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
@@ -2768,6 +2855,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -2833,6 +2924,10 @@ technologies = {
 			defense = 0.02
 			breakthrough = 0.02
 		}		
+		camelry = {
+			defense = 0.02
+			breakthrough = 0.02
+		}		
 		mountaineers = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -2895,12 +2990,12 @@ technologies = {
 			motorized_equipment_1
 		}
 
-		on_research_complete = {
-			limit = {
-				NOT = {
-					has_template_containing_unit = motorized
-				}
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = motorized
 			}
+		}
+		on_research_complete = {
 			hidden_effect = {
 				load_oob = "unlock_motorized"
 			}			
@@ -3976,4 +4071,19 @@ technologies = {
 			bicycle_battalion
 		}		
 	}
+
+	camelry = {
+		
+		allow = {
+			always = no
+		}
+
+		research_cost = 1
+		start_year = 1936
+
+		enable_subunits = {
+			camelry
+		}		
+	}
+
 }

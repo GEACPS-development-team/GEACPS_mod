@@ -2,6 +2,11 @@ equipments = {
 
 	ship_hull_heavy = {
 		year = 1922
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
 
 		is_archetype = yes
 		is_buildable = no
@@ -1232,7 +1237,7 @@ equipments = {
 		}
 		surface_visibility = 30
 		naval_range = 0
-		naval_speed = 24
+		naval_speed = 25
 		max_strength = 630
 		fuel_consumption = 0
 		reliability = 0.80
@@ -1327,7 +1332,7 @@ equipments = {
 		}
 		surface_visibility = 30
 		naval_range = 0
-		naval_speed = 21
+		naval_speed = 22
 		max_strength = 640
 		fuel_consumption = 0
 		reliability = 0.80
@@ -1422,7 +1427,7 @@ equipments = {
 		}
 		surface_visibility = 30
 		naval_range = 0
-		naval_speed = 18
+		naval_speed = 19
 		max_strength = 650
 		fuel_consumption = 0
 		reliability = 0.80
@@ -2153,7 +2158,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 13
+		naval_speed = 8
 		reliability = 0.80
 
 		naval_range = 0
@@ -2209,7 +2214,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 30
-		naval_speed = 12.5
+		naval_speed = 14.8
 		reliability = 0.85
 
 		naval_range = 0
@@ -2264,7 +2269,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 12
+		naval_speed = 16.3
 		reliability = 0.90
 
 		naval_range = 0
@@ -2320,7 +2325,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 11.5
+		naval_speed = 21.5
 		reliability = 0.92
 
 		naval_range = 0
@@ -2376,7 +2381,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 11
+		naval_speed = 23
 		reliability = 0.92
 
 		naval_range = 0
@@ -2432,7 +2437,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 10.5
+		naval_speed = 24
 		reliability = 0.92
 
 		naval_range = 0
@@ -2488,7 +2493,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 10
+		naval_speed = 25
 		reliability = 0.92
 
 		naval_range = 0
@@ -2544,7 +2549,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 9.5
+		naval_speed = 26
 		reliability = 0.92
 
 		naval_range = 0
@@ -2599,7 +2604,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 10
+		naval_speed = 13.4
 		reliability = 0.92
 
 		naval_range = 0
@@ -2655,7 +2660,7 @@ equipments = {
 		surface_detection = 40
 		sub_detection = 1
 		surface_visibility = 20
-		naval_speed = 9.5
+		naval_speed = 14.7
 		reliability = 0.92
 
 		naval_range = 0
@@ -2830,7 +2835,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 1
 		surface_visibility = 30
-		naval_speed = 21
+		naval_speed = 24
 		reliability = 0.90
 		
 		naval_range = 0
@@ -2885,7 +2890,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 1
 		surface_visibility = 30
-		naval_speed = 18
+		naval_speed = 24
 		reliability = 0.90
 		
 		naval_range = 0
@@ -3050,7 +3055,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 1
 		surface_visibility = 25
-		naval_speed = 14
+		naval_speed = 16
 		reliability = 0.90
 
 		naval_range = 0
@@ -3103,7 +3108,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 1
 		surface_visibility = 25
-		naval_speed = 13
+		naval_speed = 17
 		reliability = 0.90
 
 		naval_range = 0

@@ -4,12 +4,9 @@ state={
 	name="STATE_186"
 	manpower=945000
 	
-	state_category = town
+	state_category = city
 
 	history={
-		victory_points = {
-			7211 5
-		}
 		victory_points = {
 			7096 1
 		}
@@ -25,17 +22,16 @@ state={
 				naval_base = 1
 
 			}
-			7211 = {
-				naval_base = 2
-
-			}
-
 		}
 		add_core_of = GRE
-
+		PDG = {
+			set_province_controller = 1173
+			set_province_controller = 4178
+			set_province_controller = 11965
+		}
 	}
 
 	provinces={
-		1173 4078 4178 4193 7096 7211 11965 
+		1173 4078 4178 7096 11965 
 	}
 }

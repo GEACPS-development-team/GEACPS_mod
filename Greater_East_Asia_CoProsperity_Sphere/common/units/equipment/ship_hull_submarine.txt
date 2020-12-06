@@ -2,6 +2,11 @@ equipments = {
 
 	ship_hull_submarine = {
 		year = 1922
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
 
 		is_archetype = yes
 		is_buildable = no
@@ -752,7 +757,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 30
-		naval_speed = 10
+		naval_speed = 9
 		reliability = 0.60
 		
 		naval_range = 0
@@ -797,7 +802,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 25
-		naval_speed = 9
+		naval_speed = 10
 		reliability = 0.70
 
 		naval_range = 0
@@ -842,7 +847,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 15
-		naval_speed = 9
+		naval_speed = 10
 		reliability = 0.75
 		
 		naval_range = 0
@@ -887,7 +892,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 10
-		naval_speed = 9
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0
@@ -933,7 +938,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 9
-		naval_speed = 8
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0
@@ -979,7 +984,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 8
-		naval_speed = 8
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0
@@ -1025,7 +1030,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 7
-		naval_speed = 8
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0
@@ -1071,7 +1076,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 1
 		sub_visibility = 6
-		naval_speed = 8
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0
@@ -1116,7 +1121,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 0.5
 		sub_visibility = 4
-		naval_speed = 8
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0
@@ -1162,7 +1167,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 0.5
 		sub_visibility = 3
-		naval_speed = 8
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0
@@ -1208,7 +1213,7 @@ equipments = {
 		sub_detection = 0
 		surface_visibility = 0.5
 		sub_visibility = 2
-		naval_speed = 8
+		naval_speed = 10
 		reliability = 0.80
 
 		naval_range = 0

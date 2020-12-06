@@ -1,4 +1,5 @@
-﻿capital = 48
+﻿1946.1.1 = {
+capital = 48
 
 #TROOPS
 oob = "BUL_1936" #VANILLA & DLC
@@ -146,13 +147,27 @@ if = { #DLC
 		target = YUG
 		modifier = BFTB_incongruous_neighbors
 	}
-
+	
+	#RULING PARTY
+	set_politics = { #DLC
+		ruling_party = total_socialism
+		last_election = "1945.11.18"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	
 	#DLC POLIICS
 	set_popularities = { #DLC
-		democratic = 10
-		fascism = 30
-		neutrality = 55
-		communism = 5
+		total_socialism = 54
+		radical_socialism = 0
+		social_democracy = 2
+		social_liberalism = 1
+		classical_liberalism = 42
+		liberal_conservatism = 0
+		social_conservatism = 1
+		authoritative_democracy = 0
+		reactionary_authoritarianism = 0
+		national_populism = 0
 	}
 
 	set_party_name = { # DLC
@@ -162,6 +177,16 @@ if = { #DLC
 	}
 
 	#DLC LEADERS
+	create_country_leader = { #DLC
+		name = "キモン・ゲオルギエフ"
+		desc = ""
+		picture = "Portrait_Bulgaria_Kimon_Georgiev.dds"
+		expire = "1969.9.28"
+		ideology = total_socialism
+		traits = {
+		}
+	}
+	
 	create_country_leader = { #DLC
 		name = "Boris III"
 		desc = "POLITICS_BORIS_III_DESC"
@@ -366,14 +391,6 @@ if = { #DLC
 	#TECHNOLOGY
 	set_research_slots = 3 #DLC
 
-	#RULING PARTY
-	set_politics = { #DLC
-		ruling_party = neutrality
-		last_election = "1935.1.22"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
 	else = { #VANILLA
 		#SET UP IDEAS
 		add_ideas = { #VANILLA
@@ -382,18 +399,35 @@ if = { #DLC
 
 		#POLITICS
 		set_popularities = { #VANILLA
-			democratic = 5
-			fascism = 35
-			neutrality = 60
+		total_socialism = 54
+		radical_socialism = 0
+		social_democracy = 2
+		social_liberalism = 1
+		classical_liberalism = 42
+		liberal_conservatism = 0
+		social_conservatism = 1
+		authoritative_democracy = 0
+		reactionary_authoritarianism = 0
+		national_populism = 0
 		}
 		set_politics = { #VANILLA
-			ruling_party = neutrality
-			last_election = "1931.6.21"
+			ruling_party = total_socialism
+			last_election = "1945.11.18"
 			election_frequency = 48
 			elections_allowed = no
 		}
 
 		#COUNTRY AND MILITARY LEADERS
+		create_country_leader = { #VANILLA
+			name = "キモン・ゲオルギエフ"
+			desc = ""
+			picture = "Portrait_Bulgaria_Kimon_Georgiev.dds"
+			expire = "1969.9.28"
+			ideology = total_socialism
+			traits = {
+			}
+		}
+		
 		create_country_leader = { #VANILLA
 			name = "Boris III"
 			desc = "POLITICS_BORIS_III_DESC"
@@ -472,130 +506,4 @@ set_technology = { #VANILLA & DLC
 	early_fighter = 1
 	fuel_silos = 1
 }
-
-
-
-##############
-#### 1939 ####
-##############
-1939.1.1 = {
-	
-	#POLIICS
-	set_popularities = { #VANILLA & DLC
-		democratic = 5
-		fascism = 35
-		neutrality = 60
-	}
-	set_politics = { #VANILLA & DLC
-		ruling_party = neutrality
-		last_election = "1938.3.27"
-		election_frequency = 48
-		elections_allowed = no
-	}
-
-	add_political_power = 1198
-
-	#FOCUS AND IDEAS
-	if = { #DLC
-		limit = {
-			has_dlc = "Battle for the Bosporus"
-		}
-		complete_national_focus = BUL_power_to_the_tsar
-		complete_national_focus = BUL_dissolve_the_military_union
-		complete_national_focus = BUL_acquire_modern_tools
-		unlock_national_focus = BUL_negotiate_bulgarian_rearmament
-		complete_national_focus = BUL_the_tsars_regime
-		complete_national_focus = BUL_improve_the_road_system
-		complete_national_focus = BUL_restore_the_tarnovo_constitution
-		complete_national_focus = BUL_freedom_of_press
-		complete_national_focus = BUL_invigorate_national_industry
-		complete_national_focus = BUL_promote_bulgarian_nationalism
-		complete_national_focus = BUL_limited_womens_suffrage
-		complete_national_focus = BUL_expand_sofia_university
-		complete_national_focus = BUL_bulgarian_irredentism
-		complete_national_focus = BUL_approach_germany
-		complete_national_focus = BUL_reorganize_the_military_industry
-		complete_national_focus = BUL_illusions_of_a_non_partisan_system
-
-		#Remove Army Restrictions NS and all limitations 								Negotiate Bulgarian Rearmament
-		remove_ideas = BUL_army_restrictions
-		remove_ideas = BUL_zveno_ns
-		#Destroy Zveno 																 	Dissolve the Military Union
-		set_country_flag = BUL_disposed_of_zveno_generals_flag
-		set_country_flag = BUL_zveno_leaders_imprisoned_flag
-		set_country_flag = BUL_raided_zveno_supporters_flag
-		every_unit_leader = {
-			limit = {
-				has_trait = trait_BUL_zveno_member
-			}
-			retire = yes
-		}
-		set_country_flag = BUL_zveno_destroyed_flag
-		#Freedom of Press was taken more than a year ago, so clr flag 					Freedom of Press
-		clr_country_flag = BUL_freedom_of_press_flag
-		#Simulate German influence events and good relations with Bulgaria 				Approach Germany + Events
-		set_country_flag = BUL_german_aircraft_donation_flag
-		add_opinion_modifier = { 
-			target = GER
-			modifier = BUL_donated_aircraft
-		}
-
-		else = { #VANILLA
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
-	
-	#TROOPS
-	oob = "BUL_1939"
-
-	#TECHNOLOGY
-	set_technology = {
-		fighter1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
-		gwtank = 1
-		basic_light_tank = 1
-		gw_artillery = 1
-		interwar_artillery = 1
-		tech_recon = 1
-		infantry_weapons2 = 1
-		support_weapons = 1
-
-		#doctrines
-		#Air
-		force_rotation = 1
-		fighter_baiting = 1
-				
-		grand_battle_plan = 1
-		trench_warfare = 1
-		fleet_in_being = 1
-		battlefleet_concentration = 1
-		convoy_sailing = 1
-
-		#electronics
-		electronic_mechanical_engineering = 1
-		radio = 1
-		radio_detection = 1
-		mechanical_computing = 1
-		computing_machine = 1
-
-		#industry
-		basic_machine_tools = 1
-		improved_machine_tools = 1
-		advanced_machine_tools = 1
-		fuel_refining = 1
-		construction1 = 1
-		construction2 = 1
-		dispersed_industry = 1
-		dispersed_industry2 = 1
-	}
-
-	
 }

@@ -1,4 +1,5 @@
-﻿capital = 46
+﻿1946.1.1 = {
+capital = 46
 
 oob = "ROM_1945"
 if = {
@@ -65,15 +66,31 @@ set_convoys = 10
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1933.12.20"
+	last_election = "1939.6.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	liberal_conservatism = 9
-	national_populism = 1
-	total_socialism = 83
-	authoritative_democracy = 7
+	total_socialism = 73
+	radical_socialism = 5
+	social_democracy = 5
+	social_liberalism = 1
+	classical_liberalism = 1
+	liberal_conservatism = 1
+	social_conservatism = 0
+	authoritative_democracy = 12
+	reactionary_authoritarianism = 0
+	national_populism = 2
+}
+
+create_country_leader = {
+	name = "ゲオルゲ・ゲオルギュ＝デジ"
+	desc = ""
+	picture = "Portrait_Romania_Gheorghe_Gheorghiu-Dej.dds"
+	expire = "1965.3.19"
+	ideology = total_socialism
+	traits = {
+	}
 }
 
 create_country_leader = {
@@ -250,4 +267,5 @@ if = {
 			rear_1_custom_slot = ship_depth_charge_1
 		}
 	}
+}
 }

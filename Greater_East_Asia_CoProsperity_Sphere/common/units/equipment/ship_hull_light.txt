@@ -2,6 +2,11 @@ equipments = {
 
 	ship_hull_light = {
 		year = 1922
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
 
 		is_archetype = yes
 		is_buildable = no
@@ -760,7 +765,7 @@ equipments = {
 		surface_detection = 20
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 34
+		naval_speed = 29.2
 		reliability = 0.80
 		
 		naval_range = 0
@@ -811,7 +816,7 @@ equipments = {
 		surface_detection = 25
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 33
+		naval_speed = 31.7
 		reliability = 0.85
 
 		naval_range = 0
@@ -866,7 +871,7 @@ equipments = {
 		surface_detection = 45
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 32
+		naval_speed = 33
 		reliability = 0.90
 
 		naval_range = 0
@@ -920,7 +925,7 @@ equipments = {
 		surface_detection = 55
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 31.5
+		naval_speed = 32.7
 		reliability = 0.92
 
 		naval_range = 0
@@ -976,7 +981,7 @@ equipments = {
 		surface_detection = 55
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 31
+		naval_speed = 32.5
 		reliability = 0.92
 
 		naval_range = 0
@@ -1032,7 +1037,7 @@ equipments = {
 		surface_detection = 55
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 30.5
+		naval_speed = 32
 		reliability = 0.92
 
 		naval_range = 0
@@ -1087,7 +1092,7 @@ equipments = {
 		surface_detection = 55
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 30
+		naval_speed = 31
 		reliability = 0.92
 
 		naval_range = 0
@@ -1142,7 +1147,7 @@ equipments = {
 		surface_detection = 55
 		sub_detection = 1
 		surface_visibility = 10
-		naval_speed = 29.5
+		naval_speed = 30.5
 		reliability = 0.92
 
 		naval_range = 0

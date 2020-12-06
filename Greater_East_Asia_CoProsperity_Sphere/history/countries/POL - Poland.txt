@@ -1,4 +1,5 @@
-﻿capital = 10
+﻿1946.1.1 = {
+capital = 10
 
 oob = "POL_1945"
 if = {
@@ -52,15 +53,31 @@ set_convoys = 10
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1935.9.8"
+	last_election = "1938.11.6"
 	election_frequency = 36
 	elections_allowed = no
 }
 set_popularities = {
-	liberal_conservatism = 1
+	total_socialism = 80
+	radical_socialism = 4
+	social_democracy = 1
+	social_liberalism = 1
+	classical_liberalism = 1
+	liberal_conservatism = 5
+	social_conservatism = 5
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
 	national_populism = 3
-	total_socialism = 77
-	authoritative_democracy = 19
+}
+
+create_country_leader = {
+	name = "ボレスワフ・ビェルト"
+	desc = ""
+	picture = "Portrait_Poland_Bolesław_Bierut.dds"
+	expire = "1956.3.12"
+	ideology = total_socialism
+	traits = {
+	}
 }
 
 create_country_leader = {
@@ -312,4 +329,5 @@ if = {
 			}
 		}
 	}
+}
 }

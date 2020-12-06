@@ -1,4 +1,5 @@
-﻿capital = 206 #Minsk
+﻿1946.1.1 = {
+capital = 206 #Minsk
 
 oob = "BLR_1936"
 set_cosmetic_tag = BLR_SOV
@@ -63,12 +64,21 @@ if = {
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1933.7.1"
+	last_election = "1939.10.22"
 	election_frequency = 48
 	elections_allowed = no
 }
-set_popularities = {total_socialism
-	communism = 100
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
 }
 
 create_country_leader = {
@@ -94,13 +104,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-    name = "Panteleimon Ponomarenko"
+    name = "パンテレイモン・ポノマレンコ"
     desc = ""
-    picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-    expire = "1965.1.1"
-    ideology = stalinism
+    picture = "Portrait_Belarus_Panteleimon_Ponomarenko.dds"
+    expire = "1984.1.18"
+    ideology = total_socialism
     traits = {
-        #
     }
 }
 
@@ -114,6 +123,4 @@ create_country_leader = {
         #
     }
 }
-
-
-
+}

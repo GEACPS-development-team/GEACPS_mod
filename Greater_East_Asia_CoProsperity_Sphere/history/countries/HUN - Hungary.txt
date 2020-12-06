@@ -1,4 +1,5 @@
-﻿capital = 43
+﻿1946.1.1 = {
+capital = 43
 
 oob = "HUN_1945"
 
@@ -20,15 +21,21 @@ set_technology = {
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1935.3.31"
+	last_election = "1945.11.4"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	total_socialism = 69
-	liberal_conservatism = 21
-	national_populism = 1
-	authoritative_democracy = 9
+	total_socialism = 24
+	radical_socialism = 0
+	social_democracy = 17
+	social_liberalism = 1
+	classical_liberalism = 0
+	liberal_conservatism = 1
+	social_conservatism = 57
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
 }
 
 #Start Horty as neutral if DOD
@@ -63,6 +70,16 @@ if = {
 			expire = "1965.1.1"
 			ideology = national_populism_ideology
 		}
+	}
+}
+
+create_country_leader = {
+	name = "ティルディ・ゾルターン"
+	desc = ""
+	picture = "Portrait_Hungary_Zoltán_Tildy.dds"
+	expire = "1961.8.3"
+	ideology = total_socialism
+	traits = {
 	}
 }
 
@@ -141,4 +158,5 @@ create_field_marshal = {
 	defense_skill = 1
 	planning_skill = 2
 	logistics_skill = 2
+}
 }

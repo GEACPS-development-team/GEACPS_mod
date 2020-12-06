@@ -1,4 +1,5 @@
-﻿capital = 784
+﻿1946.1.1 = {
+capital = 784
 
 oob = "LIT_1945"
 set_cosmetic_tag = LIT_SOV
@@ -18,15 +19,21 @@ set_convoys = 10
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1926.5.8"
+	last_election = "1940.7.14"
 	election_frequency = 120
 	elections_allowed = no
 }
 set_popularities = {
-	liberal_conservatism = 1
-	national_populism = 1
-	total_socialism = 97
-	authoritative_democracy = 1
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
 }
 
 create_country_leader = {
@@ -41,13 +48,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Antanas Snieckus"
-	desc = "POLITICS_ANTANAS_SNIECKUS_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_1.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
+	name = "ユスタス・パレツキス"
+	desc = ""
+	picture = "Portrait_Lithuania_Justas_Paleckis.dds"
+	expire = "1980.1.26"
+	ideology = total_socialism
 	traits = {
-		#
 	}
 }
 
@@ -60,4 +66,5 @@ create_country_leader = {
 	traits = {
 		#
 	}
+}
 }

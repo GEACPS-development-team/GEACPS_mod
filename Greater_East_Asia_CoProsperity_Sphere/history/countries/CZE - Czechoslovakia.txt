@@ -1,4 +1,5 @@
-﻿capital = 9
+﻿1946.1.1 = {
+capital = 9
 
 oob = "CZE_1945"
 
@@ -23,15 +24,22 @@ set_research_slots = 3
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1935.5.19"
+	last_election = "1938.5.22"
 	election_frequency = 60
 	elections_allowed = no
 }
 
 set_popularities = {
-	liberal_conservatism = 20
-	authoritative_democracy = 3
-	total_socialism = 77
+	total_socialism = 31
+	radical_socialism = 4
+	social_democracy = 12
+	social_liberalism = 21
+	classical_liberalism = 0
+	liberal_conservatism = 14
+	social_conservatism = 18
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
 }
 
 create_country_leader = {
@@ -57,13 +65,12 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "Klement Gottwald"
-	desc = "POLITICS_KLEMENT_GOTTWALD_DESC"
-	picture = "Portrait_Czech_Klement_Gottwald.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
+	name = "クレメント・ゴットワルト"
+	desc = ""
+	picture = "Portrait_Czechoslovakia_Klement_Gottwald.dds"
+	expire = "1953.3.14"
+	ideology = total_socialism
 	traits = {
-		#
 	}
 }
 
@@ -128,4 +135,5 @@ if = {
 	add_ideas = {
 		CZE_fortification_focus
 	}
+}
 }
