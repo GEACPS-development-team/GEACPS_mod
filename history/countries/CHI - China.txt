@@ -1,11 +1,11 @@
 ﻿capital = 613 # Nanjing
 
-oob = "CHI_1936"
+oob = "CHI_1946"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "CHI_1936_naval_mtg"
+		set_naval_oob = "CHI_1946_naval_mtg"
 	else = {
-		set_naval_oob = "CHI_1936_naval_legacy"
+		set_naval_oob = "CHI_1946_naval_legacy"
 	}
 }
 
@@ -87,9 +87,9 @@ set_popularities = {
 	social_democracy = 0
 	social_liberalism = 0
 	classical_liberalism = 0
-	liberal_conservatism = 100
+	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 0
+	authoritative_democracy = 100
 	reactionary_authoritarianism = 0
 	national_populism = 0
 }

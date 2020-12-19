@@ -1,6 +1,6 @@
 ﻿capital = 878
 
-oob = "PDG_1936"
+oob = "PDG_1946"
 
 set_research_slots = 2
 set_stability = 0.5
@@ -18,54 +18,30 @@ declare_war_on = {
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1917.5.17"
-	election_frequency = 48
+	last_election = "1944.5.14"
+	election_frequency = 7
 	elections_allowed = no
 }
 
 set_popularities = {
-	total_socialism = 43
-	liberal_conservatism = 3
-	national_populism = 1
-	authoritative_democracy = 53
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
 }
 
 create_country_leader = {
-	name = "グリゴリー・セミョーノフ"
+	name = "マルコス・バフィアディス"
 	desc = ""
-	picture = "portrait_Transbaikal_グリゴリー_セミョーノフ.dds"
-	expire = "1953.3.1"
-	ideology = national_populism_ideology
-	traits = {		
-	}
-}
-
-create_country_leader = {
-	name = "グリゴリー・セミョーノフ"
-	desc = ""
-	picture = "portrait_Transbaikal_グリゴリー_セミョーノフ.dds"
-	expire = "1953.3.1"
-	ideology = oligarchism
-	traits = {		
-	}
-}
-
-create_country_leader = {
-	name = "ピョートル・ヴォロゴーツキイ"
-	desc = ""
-	picture = "portrait_Transbaikal_ピョートル_ヴォロゴーツキイ.dds"
-	expire = "1953.3.1"
-	ideology = liberalism
-	traits = {		
-	}
-}
-
-create_country_leader = {
-	name = "アレクサンドル・クラスノシチョーコフ"
-	desc = ""
-	picture = "portrait_Transbaikal_アレクサンドル_ミハイロヴィチ_クラスノシチョーコフ.dds"
-	expire = "1953.3.1"
-	ideology = leninism
+	picture = "Portrait_Provisional_Democratic_Government_Markos_Vafeiadis.dds"
+	expire = "1992.2.22"
+	ideology = total_socialism
 	traits = {		
 	}
 }

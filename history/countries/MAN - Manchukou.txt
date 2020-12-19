@@ -21,22 +21,29 @@ set_convoys = 5
 
 set_politics = {
 	ruling_party = national_populism
-	last_election = "1936.1.1"
+	last_election = "1945.8.18"
 	election_frequency = 48
-	elections_allowed = no
+	elections_allowed = yes
 }
 set_popularities = {
-	liberal_conservatism = 1
-	national_populism = 90
-	authoritative_democracy = 9
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 100
 }
 
 create_country_leader = {
 	name = "愛新覚羅溥儀"
 	desc = ""
-	picture = "portrait_Manchuria_愛新覚羅_溥儀.dds"
-	expire = "1960.1.1"
-	ideology = rexism
+	picture = "Portrait_Manchukou_Puyi.dds"
+	expire = "1967.10.17"
+	ideology = reactionary_authoritarianism
 	traits = {
 		warrior_code
 	}
@@ -45,9 +52,9 @@ create_country_leader = {
 create_country_leader = {
 	name = "愛新覚羅溥儀"
 	
-	picture = "portrait_Manchuria_愛新覚羅_溥儀.dds"
-	expire = "1960.1.1"
-	ideology = despotism
+	picture = "Portrait_Manchukou_Puyi.dds"
+	expire = "1967.10.17"
+	ideology = national_populism
 	traits = {
 		warrior_code
 	}

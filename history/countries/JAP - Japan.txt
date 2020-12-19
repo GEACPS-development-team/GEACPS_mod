@@ -1,6 +1,6 @@
 ﻿capital = 986
 
-oob = "JAP_1936"
+oob = "JAP_1946"
 
 set_stability = 0.2 #baseline, THE EMPEROR PROTECTS
 set_war_support = 0.8
@@ -18,13 +18,6 @@ add_ideas = {
 	JAP_militarism
 }
 
-609 = {
-	start_resistance = yes
-	set_compliance = 5
-	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
 527 = {
 	start_resistance = yes
 	set_compliance = 5
@@ -39,7 +32,7 @@ add_ideas = {
 	set_garrison_strength = 1.0
 }
 
-745 = {
+895 = {
 	start_resistance = yes
 	set_compliance = 5
 	set_resistance = 5
@@ -50,27 +43,6 @@ add_ideas = {
 	start_resistance = yes
 	set_compliance = 5
 	set_resistance = 5
-	set_garrison_strength = 1.0
-}
-
-647 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-684 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
-	set_garrison_strength = 1.0
-}
-
-633 = {
-	start_resistance = yes
-	set_compliance = 20
-	set_resistance = 0
 	set_garrison_strength = 1.0
 }
 
@@ -143,7 +115,7 @@ if = {
 		basic_cruiser_armor_scheme = 1
 		cruiser_submarines = 1
 	}
-	set_naval_oob = "JAP_1936_naval"
+	set_naval_oob = "JAP_1946_naval"
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
@@ -162,7 +134,7 @@ if = {
 		basic_carrier = 1
 		transport = 1
 	}
-	set_naval_oob = "JAP_1936_naval_legacy"
+	set_naval_oob = "JAP_1946_naval_legacy"
 }
 
 if = {
@@ -347,7 +319,6 @@ add_to_faction = PHI
 add_to_faction = PNG
 add_to_faction = SUL
 add_to_faction = JAV
-add_to_faction = AST
 add_to_faction = IND
 
 create_country_leader = {
@@ -356,6 +327,34 @@ create_country_leader = {
 	picture = "Portrait_Japan_Hirohito.dds"
 	expire = "1989.1.7"
 	ideology = national_populism
+	traits = {
+		warrior_code
+		emperor_showa
+		imperial_sanction
+	}
+	id = 700 #Hirohito
+}
+
+create_country_leader = {
+	name = "昭和天皇"
+	desc = ""
+	picture = "Portrait_Japan_Hirohito.dds"
+	expire = "1989.1.7"
+	ideology = authoritative_democracy
+	traits = {
+		warrior_code
+		emperor_showa
+		imperial_sanction
+	}
+	id = 700 #Hirohito
+}
+
+create_country_leader = {
+	name = "昭和天皇"
+	desc = ""
+	picture = "Portrait_Japan_Hirohito.dds"
+	expire = "1989.1.7"
+	ideology = reactionary_authoritarianism
 	traits = {
 		warrior_code
 		emperor_showa
@@ -375,21 +374,51 @@ create_country_leader = {
 }
 
 create_country_leader = {
-	name = "幣原喜重郎"
+	name = "加藤勘十"
 	desc = ""
-	picture = "Portrait_Kijūrō_Shidehara.dds"
-	expire = "1951.3.10"
-	ideology = classical_liberalism
+	picture = "Portrait_Japan_Katō_Kanjū.dds"
+	expire = "1978.9.27"
+	ideology = radical_socialism
 	traits = {
 	}
 }
 
 create_country_leader = {
-	name = "真崎甚三郎"
+	name = "安部磯雄"
 	desc = ""
-	picture = "Portrait_Japan_Jinzaburō_Masaki.dds"
-	expire = "1956.8.31"
-	ideology = reactionary_authoritarianism
+	picture = "Portrait_Japan_Abe_Isoo.dds"
+	expire = "1949.2.10"
+	ideology = social_democracy
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "桜井兵五郎"
+	desc = ""
+	picture = "Portrait_Japan_Heigorō_Sakurai.dds"
+	expire = "1951.2.11"
+	ideology = liberal_conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "鳩山一郎"
+	desc = ""
+	picture = "Portrait_Japan_Ichirō_Hatoyama.dds"
+	expire = "1959.3.7"
+	ideology = social_conservatism
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "幣原喜重郎"
+	desc = ""
+	picture = "Portrait_Kijūrō_Shidehara.dds"
+	expire = "1951.3.10"
+	ideology = classical_liberalism
 	traits = {
 	}
 }

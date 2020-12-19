@@ -1,6 +1,6 @@
 ﻿capital = 159
 
-oob = "ITA_1936"
+oob = "ITA_1946"
 
 set_research_slots = 4
 set_stability = 0.6
@@ -68,7 +68,7 @@ if = {
 		early_battlecruiser = 1
 		transport = 1
 	}
-	set_naval_oob = "ITA_1936_naval_legacy"
+	set_naval_oob = "ITA_1946_naval_legacy"
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -97,26 +97,13 @@ if = {
 		coastal_defense_ships = 1
 		improved_airplane_launcher = 1
 	}
-	set_naval_oob = "ITA_1936_naval_mtg"
+	set_naval_oob = "ITA_1946_naval_mtg"
 }
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
 	add_ideas = MTG_naval_treaty_adherent
-}
-
-# DIPLOMACY / WAR 36
-if = {
-	limit = {
-		has_start_date < 1936.01.02
-	}
-
-	declare_war_on = {
-		target = ETH
-		type = annex_everything
-	}
-	give_guarantee = ALB
 }
 
 set_convoys = 200

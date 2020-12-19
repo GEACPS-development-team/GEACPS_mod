@@ -1,13 +1,13 @@
 ﻿capital = 988
 
-set_oob = "ENG_1936"
+set_oob = "ENG_1946"
 if = {
 	limit = {
 		has_dlc = "Man the Guns"
 	}
-	set_naval_oob = "ENG_1936_Naval"
+	set_naval_oob = "ENG_1946_Naval"
 	else = {
-		set_naval_oob = "ENG_1936_Naval_Legacy"
+		set_naval_oob = "ENG_1946_Naval_Legacy"
 	}
 }
 
@@ -186,6 +186,7 @@ create_faction = イギリス連邦
 add_to_faction = ENG
 add_to_faction = RAJ
 add_to_faction = CAN
+add_to_faction = AST
 add_to_faction = NZL
 add_to_faction = SAF
 

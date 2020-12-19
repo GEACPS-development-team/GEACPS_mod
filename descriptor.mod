@@ -10,7 +10,7 @@ tags={
 	"Utilities"
 }
 name="Greater East Asia Co-Prosperity Sphere"
-supported_version="1.10.3"
-
 replace_path="common/ideologies"
 replace_path="history/states"
+supported_version="1.10.3"
+remote_file_id="2080137628"

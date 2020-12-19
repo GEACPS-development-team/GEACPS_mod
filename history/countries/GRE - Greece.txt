@@ -1,11 +1,11 @@
-﻿capital = 47
+﻿capital = 998
 
-oob = "GRE_1936"
+oob = "GRE_1946"
 if = {
 	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "GRE_1936_naval_mtg"
+		set_naval_oob = "GRE_1946_naval_mtg"
 	else = {
-		set_naval_oob = "GRE_1936_naval_legacy"
+		set_naval_oob = "GRE_1946_naval_legacy"
 	}
 }
 
@@ -68,91 +68,44 @@ if = {
 		mtg_transport = 1
 	}
 }
-1936.1.1 = {
-	if = {
-		limit = { has_dlc = "Battle for the Bosporus" }
-		add_opinion_modifier = { 
-			target = ROM
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = TUR
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = YUG
-			modifier = BFTB_balkan_pact_ally
-		}
-		add_opinion_modifier = { 
-			target = BUL
-			modifier = BFTB_balkan_pact_enemy
-		}
-		add_opinion_modifier = { 
-			target = HUN
-			modifier = BFTB_balkan_pact_enemy
-		}
-		set_country_flag = GRE_factions_unlocked
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-			GRE_george_ii
-			GRE_debt_to_the_ifc
-			GRE_foreign_monopolies
-			GRE_schachtplan
-			GRE_political_instability
-			GRE_agrarian_society
-		}
-
-		set_variable = { var = GRE_debt_to_the_ifc_britain_var value = 10 }
-		set_variable = { var = GRE_debt_to_the_ifc_france_var value = 10 }
-		set_variable = { var = GRE_debt_to_the_ifc_italy_var value = 10 }
-		set_variable = { var = GRE_debt_to_the_ifc_paid_var value = 0 }
-
-		add_opinion_modifier = { 
-			target = GER
-			modifier = GRE_strong_trading_ties
-		}
-		GER = { 
-			add_opinion_modifier = { 
-				target = GRE
-				modifier = GRE_strong_trading_ties
-			}
-		}
-	}
-
-	if = {
-		limit = { NOT = { has_dlc = "Battle for the Bosporus" } }
-		add_ideas = {
-			export_focus
-			limited_conscription
-			civilian_economy
-		}
-	}
-}
 
 set_convoys = 10
 
 set_politics = {
-	ruling_party = neutrality
-	last_election = "1935.6.9"
+	ruling_party = authoritative_democracy
+	last_election = "1944.5.14"
 	election_frequency = 7
 	elections_allowed = yes # none after offset 1
 }
 set_popularities = {
-	democratic = 43
-	fascism = 2
-	communism = 17
-	neutrality = 38
+	total_socialism = 0
+	radical_socialism = 1
+	social_democracy = 14
+	social_liberalism = 19
+	classical_liberalism = 1
+	liberal_conservatism = 5
+	social_conservatism = 2
+	authoritative_democracy = 30
+	reactionary_authoritarianism = 27
+	national_populism = 1
 }
 
 set_stability = 0.72
 set_war_support = 0.23
 set_convoys = 80
 
-
 if = { 
 	limit = { has_dlc = "Battle for the Bosporus" }
+	create_country_leader = {
+		name = "ゲオルギオス2世"
+		desc = ""
+		picture = "Portrait_Greece_George_II.dds"
+		expire = "1947.4.1"
+		ideology = authoritative_democracy
+		traits = {
+		}
+	}
+	
 	create_country_leader = {
 		name = "Konstantinos Demertzis"
 		desc = "POLITICS_KONSTANTINOS_DEMERTZIS_DESC"
