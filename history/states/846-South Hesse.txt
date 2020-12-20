@@ -1,22 +1,35 @@
 state={
 	id=846
-	name="ダルムシュタット"
+	name="ザクセン＝アンハルト"
 	manpower = 38000
 
 	state_category = large_city
 
 	history={
-		owner = SGC
-		add_core_of = SGC
-		buildings = {
-			infrastructure = 7
+		owner = DDR
+		add_core_of = DDR
+		victory_points = {
+			3522 5 
 		}
 		victory_points = {
-			6488 20
+			514 5 
 		}
+		buildings = {
+			infrastructure = 7
+			3522 = {
+				bunker = 1
+			}
+			9238 = {
+				bunker = 1
+			}
+			11468 = {
+				bunker = 1
+			}
+		}
+		
 	}
 
 	provinces={
-		589 3574 6444 6488
+		11545 514 6441 9560 9456 11359 3522 6487 9238 11468 6582 6501 538
 	}
 }
