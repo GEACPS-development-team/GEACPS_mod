@@ -2,7 +2,7 @@ state={
 	id=754
 	name="STATE_754"
 	provinces={
-		1882 4536 4888 7270 10490 10817 11448 12732 12815 
+		1882 4536 7270 10490 10817 12732 12815 
 	}
 	manpower=400000
 	buildings_max_level_factor=1.000
@@ -20,20 +20,6 @@ state={
 			industrial_complex = 1
 			arms_factory = 1
 
-		}
-		1938.10.25 = {
-			if = {
-				limit = {
-					NOT = {
-						has_dlc = "Waking the Tiger" 
-					}
-
-				}
-				CHI = {
-					transfer_state = PREV
-
-				}
-			}
 		}
 	}
 }

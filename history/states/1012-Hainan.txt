@@ -1,11 +1,12 @@
 state={
-	id=604
-	name="STATE_604"
-	manpower=1196100
+	id=1012
+	name="海南"
+	provinces={
+		7270
+	}
+	manpower=4000
 	buildings_max_level_factor=1.000
-	
-	state_category=rural
-
+	state_category = rural
 	history={
 		owner = XSM
 		add_core_of = XSM
@@ -13,11 +14,9 @@ state={
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 2
-		}
-	}
+			industrial_complex = 1
+			arms_factory = 1
 
-	provinces={
-		4914 4964 12899 8018
+		}
 	}
 }
