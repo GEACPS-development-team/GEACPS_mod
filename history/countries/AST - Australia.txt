@@ -1,238 +1,36 @@
 ﻿capital = 285
+oob = AST_1946
+set_cosmetic_tag = AST_ENG-GBR
 
-oob = "AST_1946"
-set_stability = 0.8
-set_war_support = 0.3
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_recon = 1
-	gw_artillery = 1
-	interwar_antiair = 1
-	gwtank = 1
-	early_fighter = 1
-	cv_early_fighter = 1
-	cv_naval_bomber1 = 1
-	naval_bomber1 = 1
-	early_bomber = 1
-	CAS1 = 1
-	
-	trench_warfare = 1
-	fuel_silos = 1
+set_convoys = 5
 
-	fleet_in_being = 1
-}
-if = {
-	limit = {
-		not = { has_dlc = "Man the Guns" }
-	}
-	set_technology = {
-		early_destroyer = 1
-		early_light_cruiser = 1
-		early_heavy_cruiser = 1
-		early_submarine = 1
-		transport = 1
-	}
-	set_naval_oob = "AST_1946_naval_legacy"
-}
-if = {
-	limit = {
-		 has_dlc = "Man the Guns"
-	}
-	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
-		early_ship_hull_light = 1
-		early_ship_hull_cruiser = 1
-		basic_ship_hull_cruiser = 1
-		early_ship_hull_submarine = 1
-		basic_battery = 1
-		basic_torpedo = 1
-		basic_depth_charges = 1
-		basic_secondary_battery = 1
-		basic_cruiser_armor_scheme = 1
-		mtg_transport = 1
-	}
-	set_naval_oob = "AST_1946_naval"
-}
-if = {
-	limit = {
-		has_dlc = "Together for Victory"
-	}
-	add_ideas = AST_great_depression_1
-
-	add_to_tech_sharing_group = commonwealth_research
+add_ideas = {
+	colonial_government
 }
 
 set_politics = {
-	ruling_party = democratic
-	last_election = "1934.9.15"
+	ruling_party = social_democracy
+	last_election = "1946.1.1"
 	election_frequency = 36
 	elections_allowed = yes
 }
-
 set_popularities = {
-	democratic = 98
-	communism = 2
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 100
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
 }
 
 create_country_leader = {
-	name = "John Curtin"
-	desc = "POLITICS_JOHN_CURTIN_DESC"
-	picture = "Portrait_Australia_John_Curtin.dds"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Eric Campbell"
-	desc = "POLITICS_ERIC_CAMPBELL_DESC"
-	picture = "GFX_AST_eric_campbell"
-	expire = "1965.1.1"
-	ideology = fascism_ideology
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Richard Dixon"
-	desc = "POLITICS_RICHARD_DIXON_DESC"
-	picture = "GFX_AST_richard_dixon"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Earle Page"
-	desc = "POLITICS_EARLE_PAGE_DESC"
-	picture = "GFX_AST_earle_page"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Rod Hull"
+	name = "ヘンリー・ウィリアム・フレデリック・アルバート"
 	desc = ""
-	picture = "Portrait_Australia_Rod_Hull.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-set_convoys = 100
-
-1939.1.1 = {
-	set_politics = {
-		ruling_party = democratic
-		last_election = "1937.10.23"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-
-	set_popularities = {
-		democratic = 99
-		communism = 1
-	}
-
-	set_convoys = 100
-}
-
-create_corps_commander = {
-	name = "Leslie Morshead"
-	gfx = "GFX_AST_leslie_morshead"
-	traits = { }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 2
-    planning_skill = 5
-    logistics_skill = 2
-}
-
-
-
-create_corps_commander = {
-	name = "Thomas Blamey"
-	gfx = "GFX_AST_thomas_blamey"
-	traits = { }
-	skill = 4
-    attack_skill = 4
-    defense_skill = 3
-    planning_skill = 3
-    logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Henry Wynter"
-	gfx = "GFX_AST_henry_wynter"
-	traits = { }
-	skill = 4
-    attack_skill = 3
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 3
-}
-create_corps_commander = {
-	name = "Alan Vasey"
-	gfx = "GFX_AST_alan_vasey"
-	traits = { hill_fighter }
-	skill = 3
-    attack_skill = 2
-    defense_skill = 4
-    planning_skill = 3
-    logistics_skill = 1
-}
-create_corps_commander = {
-	name = "Horace Robertson"
-	gfx = "GFX_AST_horace_robertson"
-	traits = { desert_fox }
-	skill = 3
-    attack_skill = 3
-    defense_skill = 1
-    planning_skill = 3
-    logistics_skill = 3
-}
-create_corps_commander = {
-	name = "John Northcott"
-	gfx = "GFX_AST_john_northcott"
-	traits = { armor_officer}
-	skill = 1
-	attack_skill = 1
-	defense_skill = 1
-	planning_skill = 1
-	logistics_skill = 1
-}
-create_navy_leader = {
-	name = "Harold Farncomb"
-	gfx = "GFX_AST_harold_farncomb"
-	traits = { aviation_enthusiast naval_lineage }
-	skill = 4
-	attack_skill = 3
-	defense_skill = 3
-	maneuvering_skill = 3
-	coordination_skill = 4
-}
-
-create_navy_leader = {
-	name = "Victor Crutchley"
-	gfx = "GFX_AST_victor_crutchley"
-	traits = { bold }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 2
-	maneuvering_skill = 3
-	coordination_skill = 2
+	picture = "gfx/leaders/AST/Portrait_Henry_William_Frederick_Albert.dds"
+	expire = "1974.6.10"
+	ideology = social_democracy
 }

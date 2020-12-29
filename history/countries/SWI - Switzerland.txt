@@ -1,99 +1,23 @@
 ﻿capital = 3
+oob = SWI_1946
 
-oob = "SWI_1936"
-
-set_research_slots = 3
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	tech_mountaineers = 1
-	tech_support = 1		
-	tech_engineers = 1
-	tech_recon = 1
-	early_fighter = 1
-	CAS1 = 1
-	fuel_silos = 1
-}
+set_convoys = 5
 
 set_politics = {
-	ruling_party = liberal_conservatism
-	last_election = "1935.10.27"
+	ruling_party = authoritative_democracy
+	last_election = "1946.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
-	liberal_conservatism = 96
-	national_populism = 2
-	total_socialism = 2
-}
-
-1939.1.1 = {
-	#next election october 39
-	set_popularities = {
-		liberal_conservatism = 95
-		national_populism = 2
-		total_socialism = 3
-	}
-}
-
-add_ideas = {
-	limited_conscription
-}
-
-set_stability = 0.85
-
-create_country_leader = {
-	name = "Federal Council"
-	desc = "POLITICS_FEDERAL_COUNCIL_DESC"
-	picture = "Portrait_Switzerland_Federal_council.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Ernest Béuin"
-	desc = "POLITICS_ERNST_BEGUIN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_2.dds"
-	expire = "1965.1.1"
-	ideology = centrism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Dr. Max Leo Keller"
-	desc = "POLITICS_MAX_LEO_KELLER_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds" 
-	expire = "1965.1.1"
-	ideology = nazism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Fritz Platten"
-	desc = "POLITICS_FRITZ_PLATTEN_DESC"
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Henri Guisan"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	traits = {  winter_specialist }
-	skill = 3
-	attack_skill = 2
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 2
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 100
+	reactionary_authoritarianism = 0
+	national_populism = 0
 }

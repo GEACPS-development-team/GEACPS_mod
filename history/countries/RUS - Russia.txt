@@ -1,82 +1,46 @@
 ﻿capital = 563
-
-oob = "TRA_1936"
-
+oob = RUS_1946
 set_cosmetic_tag = RUS_SOV
+set_country_flag = soviet_union_flag
 
-set_research_slots = 2
-set_stability = 0.5
-set_war_support = 0.5
 set_convoys = 10
 
-set_technology = {
-	infantry_weapons = 1
-}
+create_faction = コミンフォルム
+add_to_faction = SOV
+add_to_faction = UKR
+add_to_faction = BLR
+add_to_faction = EST
+add_to_faction = LAT
+add_to_faction = LIT
+add_to_faction = MOL
+add_to_faction = KAR
+add_to_faction = BUL
+add_to_faction = CZE
+add_to_faction = DDR
+add_to_faction = HUN
+add_to_faction = POL
+add_to_faction = ROM
 
-if = {
-	limit = {
-		OR = {
-			has_dlc = "Together for Victory"
-			has_dlc = "Man the Guns"
-		}
-	}
-	set_autonomy = {
-		target = UKR
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = BLR
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = EST
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = LAT
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = LIT
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = KAR
-		autonomous_state = autonomy_colony
-	}
-	set_autonomy = {
-		target = MOL
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = POL
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = CZE
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = HUN
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = ROM
-		autonomous_state = autonomy_dominion
-	}
-	set_autonomy = {
-		target = BUL
-		autonomous_state = autonomy_dominion
-	}
-}
+set_autonomy = {	target = UKR	autonomous_state = soviet_member_republic	}
+set_autonomy = {	target = BLR	autonomous_state = soviet_member_republic	}
+set_autonomy = {	target = EST	autonomous_state = soviet_member_republic	}
+set_autonomy = {	target = LAT	autonomous_state = soviet_member_republic	}
+set_autonomy = {	target = LIT	autonomous_state = soviet_member_republic	}
+set_autonomy = {	target = MOL	autonomous_state = soviet_member_republic	}
+set_autonomy = {	target = KAR	autonomous_state = soviet_member_republic	}
+set_autonomy = {	target = BUL	autonomous_state = soviet_satellite	}
+set_autonomy = {	target = CZE	autonomous_state = soviet_satellite	}
+set_autonomy = {	target = DDR	autonomous_state = soviet_satellite	}
+set_autonomy = {	target = HUN	autonomous_state = soviet_satellite	}
+set_autonomy = {	target = POL	autonomous_state = soviet_satellite	}
+set_autonomy = {	target = ROM	autonomous_state = soviet_satellite	}
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1937.12.12"
+	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
-
 set_popularities = {
 	total_socialism = 100
 	radical_socialism = 0
@@ -88,29 +52,4 @@ set_popularities = {
 	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
-}
-
-create_faction = コミンフォルム
-add_to_faction = SOV
-add_to_faction = UKR
-add_to_faction = BLR
-add_to_faction = EST
-add_to_faction = LAT
-add_to_faction = LIT
-add_to_faction = KAR
-add_to_faction = MOL
-add_to_faction = POL
-add_to_faction = CZE
-add_to_faction = HUN
-add_to_faction = ROM
-add_to_faction = BUL
-
-create_country_leader = {
-	name = "ヨシフ・スターリン"
-	desc = ""
-	picture = "Portrait_Russia_Joseph_Stalin.dds"
-	expire = "1953.3.5"
-	ideology = total_socialism
-	traits = {		
-	}
 }

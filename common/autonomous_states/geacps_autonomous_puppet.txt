@@ -1,0 +1,10 @@
+autonomy_state = {
+	id = autonomous_puppet
+	is_puppet = yes
+	min_freedom_level = 0.6
+	
+	allowed = {
+		NOT = { has_idea = colonial_government }
+		NOT = { OVERLORD = { has_country_flag = soviet_union_flag } }
+	}
+}

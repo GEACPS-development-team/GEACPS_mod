@@ -1,18 +1,11 @@
-﻿capital = 525 #South Korea - Seoul or Busan
-
-oob = "KOR_1936"
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-	mass_assault = 1
-}
+﻿capital = 525
+#oob = KOR_1946
 
 set_convoys = 5
 
 set_politics = {
 	ruling_party = authoritative_democracy
-	last_election = "1945.4.1"
+	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -27,48 +20,4 @@ set_popularities = {
 	authoritative_democracy = 100
 	reactionary_authoritarianism = 0
 	national_populism = 0
-}
-
-create_country_leader = {
-	name = "李承晩"
-	desc = ""
-	picture = "portrait_Korea_李_承晩.dds"
-	expire = "1965.1.1"
-	ideology = conservatism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "李コウ"
-	desc = ""
-	picture = "portrait_Korea_李_堈.dds"
-	expire = "1965.1.1"
-	ideology = despotism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "金日成"
-	desc = ""
-	picture = "portrait_Korea_金_日成.dds"
-	expire = "1965.1.1"
-	ideology = stalinism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "李垠"
-	desc = ""
-	picture = "portrait_Korea_李_垠.dds"
-	expire = "1965.1.1"
-	ideology = national_populism_ideology
-	traits = {
-		#
-	}
 }

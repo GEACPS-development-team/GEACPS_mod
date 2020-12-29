@@ -1,144 +1,24 @@
-﻿1946.1.1 = {
-capital = 12
-
-oob = "LAT_1945"
+﻿capital = 12
+#oob = LAT_1946
 set_cosmetic_tag = LAT_SOV
-if = {
-	limit = { has_dlc = "Man the Guns" }
-		set_naval_oob = "LAT_1936_naval_mtg"
-	else = {
-		set_naval_oob = "LAT_1936_naval_legacy"
-	}
-}
 
-add_ideas = {
-	limited_conscription
-}
-
-set_technology = {
-	infantry_weapons = 1
-	infantry_weapons1 = 1
-	early_fighter = 1
-}
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	set_technology = {
-		early_submarine = 1
-	}
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		submarine_mine_laying = 1
-		early_ship_hull_submarine = 1
-	}
-}
-
-set_research_slots = 3
-
-set_convoys = 10
+set_convoys = 5
 
 set_politics = {
-	ruling_party = total_socialism
-	last_election = "1931.10.3"
-	election_frequency = 108
+	ruling_party = authoritative_democracy
+	last_election = "1946.1.1"
+	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	total_socialism = 100
+	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
 	social_liberalism = 0
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 0
+	authoritative_democracy = 100
 	reactionary_authoritarianism = 0
 	national_populism = 0
-}
-
-create_country_leader = {
-	name = "ジョニス・カルネルツィ"
-	desc = ""
-	picture = "Portrait_Latvia_Jānis_Kalnbērziņš.dds"
-	expire = "1986.2.4"
-	ideology = total_socialism
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Karlis Ulmanis"
-	desc = "POLITICS_KARLIS_ULMANIS_DESC"
-	picture = "GFX_Portrait_latvia_karlis_ulmanis"
-	expire = "1965.1.1"
-	ideology = oligarchism
-	traits = {
-		#
-	}
-}
-
-create_country_leader = {
-	name = "Gustavs Celmiņš"
-	desc = ""
-	picture = "gfx/leaders/Europe/Portrait_Europe_Generic_land_3.dds"
-	expire = "1965.1.1"
-	ideology = national_populism_ideology
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Fricis Menders"
-	desc = ""
-	picture = "GFX_portrait_lat_fricis_menders"
-	expire = "1965.1.1"
-	ideology = socialism
-	traits = {
-		#
-	}
-}
-create_country_leader = {
-	name = "Vilis Lacis"
-	desc = ""
-	picture = "GFX_portrait_lat_vilis_lacis"
-	expire = "1965.1.1"
-	ideology = marxism
-	traits = {
-		#
-	}
-}
-
-create_corps_commander = {
-	name = "Berkis Krisjanis"
-	portrait_path = "gfx/leaders/Europe/Portrait_Europe_Generic_land_1.dds"
-	traits = { ranger }
-	skill = 2
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-### VARIANTS ###
-# 1936 Start #
-if = {
-	limit = { not = { has_dlc = "Man the Guns" } }
-	### Ship Variants ###
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	# Submarines #
-	create_equipment_variant = {
-		name = "Ronis Class"								
-		type = ship_hull_submarine_1
-		name_group = LAT_SS_HISTORICAL
-		parent_version = 0
-		modules = {
-			fixed_ship_torpedo_slot = ship_torpedo_sub_1
-			fixed_ship_engine_slot = sub_ship_engine_1
-			rear_1_custom_slot = empty
-		}
-	}
-}
 }

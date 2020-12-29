@@ -1,31 +1,13 @@
 ﻿capital = 328
-
-oob = "MAN_1945"
-
-set_cosmetic_tag = MAN_JAP
-
-set_technology = {
-	infantry_weapons = 1
-	gw_artillery = 1
-}
-
-if = {
-	limit = { has_dlc = "Waking the Tiger" }
-	set_country_flag = MAN_northern_bandits
-	set_country_flag = MAN_eastern_bandits
-	set_country_flag = MAN_western_bandits
-	add_ideas = MAN_banditry
-	add_ideas = MAN_kwantung_veto
-	add_ideas = MAN_low_legitimacy_5
-}
+oob = MAN_1946
 
 set_convoys = 5
 
 set_politics = {
-	ruling_party = national_populism
-	last_election = "1945.8.18"
+	ruling_party = authoritative_democracy
+	last_election = "1946.1.1"
 	election_frequency = 48
-	elections_allowed = yes
+	elections_allowed = no
 }
 set_popularities = {
 	total_socialism = 0
@@ -35,79 +17,7 @@ set_popularities = {
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 0
+	authoritative_democracy = 100
 	reactionary_authoritarianism = 0
-	national_populism = 100
-}
-
-create_country_leader = {
-	name = "愛新覚羅溥儀"
-	desc = ""
-	picture = "Portrait_Manchukou_Puyi.dds"
-	expire = "1967.10.17"
-	ideology = reactionary_authoritarianism
-	traits = {
-		warrior_code
-	}
-}
-
-create_country_leader = {
-	name = "愛新覚羅溥儀"
-	
-	picture = "Portrait_Manchukou_Puyi.dds"
-	expire = "1967.10.17"
-	ideology = national_populism
-	traits = {
-		warrior_code
-	}
-}
-
-create_corps_commander = {
-	name = "Zhang Haipeng"
-	GFX = "GFX_portrait_man_zhang_haipeng"
-	traits = {  }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Zhang Jinghui"
-	GFX = "GFX_portrait_man_zhang_jinghui"
-	traits = { infantry_officer }
-	skill = 2
-	
-	attack_skill = 2
-	defense_skill = 1
-	planning_skill = 2
-	logistics_skill = 2
-}
-
-create_corps_commander = {
-	name = "Aisin Gioro Xiqia"
-	GFX = "GFX_portrait_man_aisin_gioro_xiqia"
-	traits = { career_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 3
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-	name = "Yoshiko Kawashima"
-	gfx = "GFX_portrait_man_yoshiko_kawashima"
-	traits = { cavalry_officer }
-	skill = 3
-	attack_skill = 3
-	defense_skill = 3
-	planning_skill = 2
-	logistics_skill = 2
-	female = yes
-}
-
-1939.1.1 = {
+	national_populism = 0
 }
