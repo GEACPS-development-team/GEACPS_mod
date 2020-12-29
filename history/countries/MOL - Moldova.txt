@@ -1,19 +1,10 @@
-﻿1946.1.1 = {
-capital = 78
-
-#oob = ""
+﻿capital = 78
+oob = MOL_1946
 set_cosmetic_tag = MOL_SOV
-
-# Starting tech
-set_technology = {
-	infantry_weapons = 1
-}
-
-set_convoys = 5
 
 set_politics = {
 	ruling_party = total_socialism
-	last_election = "1936.1.1"
+	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -28,26 +19,4 @@ set_popularities = {
 	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
-}
-
-#create_country_leader = {
-#	
-#	name = "Jonas Lote"
-#	picture = "gfx//leaders//Africa//Portrait_Africa_Generic_2.dds"
-#	expire = "1965.1.1"
-#	ideology = centrism
-#	traits = {
-#		#
-#	}
-#}
-
-create_country_leader = {
-    name = "ニキータ・サロガー"
-    desc = ""
-    picture = "Portrait_Moldova_Nikita_Salogor.dds"
-    expire = "1981.6.24"
-    ideology = total_socialism
-    traits = {
-    }
-}
 }
