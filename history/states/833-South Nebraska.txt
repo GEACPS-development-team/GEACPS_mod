@@ -1,19 +1,26 @@
 state={
 	id=833
-	name="サウスネブラスカ"
+	name="ロサンゼルス"
 	manpower = 1377962
 	
 	state_category = large_town
 
 	history={
-		owner = USA
+		owner = CAL
 		add_core_of = USA
+		add_core_of = CAL
+		victory_points = {
+			9814 30
+		}
 		buildings = {
 			infrastructure = 4
+			9814 = {
+				naval_base = 5
+			}
 		}
 	}
 
 	provinces={
-		3708 4760 4830 10606 10676
+		9814 9855 10483
 	}
 }
