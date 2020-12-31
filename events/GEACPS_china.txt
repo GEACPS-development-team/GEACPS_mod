@@ -1,0 +1,705 @@
+add_namespace = GEACPS_china
+country_event = {
+	id = GEACPS_china.001#陣営内の離反
+	title = GEACPS_china.001.title
+	desc = GEACPS_china.001.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.001.a
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = CHI
+					NOT ={
+						tag = CHI
+					}
+				}
+				set_country_flag = china_faction
+			}
+			country_event = {
+				id = GEACPS_china.002
+				days = 7
+				random = 2
+			}
+		}
+	}
+}
+country_event = {
+	id = GEACPS_china.002#国内での革命の前兆
+	title = GEACPS_china.002.title
+	desc = {
+		text = GEACPS_china.002.desc.2
+		trigger = {	
+			has_country_flag = china.collapse.1
+		}
+	}
+	desc = {					
+		text = GEACPS_china.002.desc.1
+		trigger = {				
+			NOT = {
+				has_country_flag = china.collapse.1
+			}
+		}
+	}
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.002.a1#反乱を抑える(1度目)
+		ai_chance = { factor = 10 }
+		trigger = {				
+			NOT = {
+				has_country_flag = china.collapse.1
+			}
+		}
+		add_ideas = GEACPS_IDEA_CHI_1
+		hidden_effect = {
+			set_country_flag = china.collapse.1
+			country_event = {
+				id = GEACPS_china.002
+				days = 15
+				random = 2
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.002.a2#反乱を抑える(2度目)
+		ai_chance = { factor = 10 }
+		trigger = {				
+			has_country_flag = china.collapse.1
+		}
+		add_ideas = GEACPS_IDEA_CHI_2
+
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.003
+				days = 7
+				random = 2
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.002.b#交渉する
+		ai_chance = { factor = 10 }
+		country_event = {
+			id = GEACPS_china.004
+		}
+	}
+	option = {
+		name = GEACPS_china.002.c#放置
+		ai_chance = { factor = 10 }
+		add_ideas = GEACPS_IDEA_CHI_3
+
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.003
+				days = 7
+				random = 4
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.003#統一戦線の崩壊
+	title = GEACPS_china.003.title
+	desc = GEACPS_china.003.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.003.a#崩壊
+		ai_chance = { factor = 10 }
+		every_country = {
+				limit = {
+					has_country_flag = china_faction
+					NOT ={
+						tag = CHI
+					}
+
+				}
+				leave_faction = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.0010
+				days = 20
+				random = 5
+			}
+
+			country_event = {
+				id = GEACPS_china.006
+				days = 7
+				random = 4
+			}
+			every_country = {
+				limit = {
+					has_country_flag = china_faction
+					NOT ={
+						tag = CHI
+					}
+
+				}
+				country_event = {
+					id = GEACPS_china.005
+					days = 3
+					random = 4
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.004#各国との交渉
+	title = GEACPS_china.004.title
+	desc = GEACPS_china.004.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.004.a#自治権の拡大を認める。
+		ai_chance = { factor = 10 }
+			every_country = {
+				limit = {
+					is_in_faction_with = CHI
+					NOT ={
+						tag = CHI
+					}
+				}
+				country_event = {
+					id = GEACPS_china.0041
+					days = 5
+					random = 4
+				}
+			}
+			hidden_effect = {
+				country_event = {
+					id = GEACPS_china.002
+					days = 30
+					random = 2
+				}
+			}	
+
+	}
+	option = {
+		name = GEACPS_china.004.b#対日の重要性を説く
+		ai_chance = { factor = 10 }
+		every_country = {
+			limit = {
+				is_in_faction_with = CHI
+				NOT ={
+				tag = CHI
+				}
+			}
+			country_event = {
+				id = GEACPS_china.0042
+				days = 5
+				random = 4
+			}
+		}
+	}
+}
+country_event = {
+	id = GEACPS_china.0041#中華民国からの交渉
+	title = GEACPS_china.0041.title
+	desc = GEACPS_china.0041.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.0041.a#よくおいで下さった…
+		ai_chance = { factor = 30 }
+		hidden_effect = {
+			CHI = {
+				country_event = {
+					id = GEACPS_china.0043
+					days = 2
+					random = 4
+				}
+
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.0041.b#ふざけんな！
+		ai_chance = { factor = 5 }
+		hidden_effect = {
+			CHI = {
+				country_event = {
+					id = GEACPS_china.0044
+					days = 2
+					random = 4
+				}
+
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.0042#(統一戦線メンバー)中華民国の傀儡になりませんか？
+	title = GEACPS_china.0042.title
+	desc = GEACPS_china.0042.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.0042.a#いいよ。
+		ai_chance = { factor = 30 }
+		hidden_effect = {
+			set_country_flag = chaina_accept_puppet
+			CHI = {
+				country_event = {
+					id = GEACPS_china.0043
+					days = 2
+					random = 4
+				}
+
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.0042.b#やだよ
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.0045
+				days = 3
+				random = 4
+			}
+			CHI = {
+				country_event = {
+					id = GEACPS_china.0044
+					days = 2
+					random = 4
+				}
+
+			}
+		}
+	}
+
+}
+
+country_event = {
+	id = GEACPS_china.0043#中華民国からの交渉
+	title = GEACPS_china.0043.title
+	desc = GEACPS_china.0043.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.0043.a#これでひとまずあんしんだ
+		ai_chance = { factor = 10 }
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = chaina_accept_puppet
+				}
+			}
+			puppet = FROM
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.0044#FROMが拒否！
+	title = GEACPS_china.0044.title
+	desc = GEACPS_china.0044.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.0044.a#なんてことだ
+		ai_chance = { factor = 10 }
+	}
+
+}
+country_event = {
+	id = GEACPS_china.0045#(統一戦線メンバー)統一戦線抜けたいかどうか
+	title = GEACPS_china.0045.title
+	desc = GEACPS_china.0045.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.0045.a#まだ一緒にいます
+		ai_chance = { factor = 15 }
+	}
+	option = {
+		name = GEACPS_china.0045.b#こんなとこ抜けてやらぁ
+		ai_chance = { factor = 10 }
+		leave_faction = yes
+		country_event = {
+			id = GEACPS_china.005
+			days = 10
+			random = 5
+		}
+
+		CHI = {
+			country_event = {
+				id = GEACPS_china.0046
+				days = 3
+				random = 4
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.0046#FROMは統一戦線を離脱
+	title = GEACPS_china.0046.title
+	desc = GEACPS_china.0046.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.0046.a#ああああああああ！
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			remove_country_flag = china_faction
+		}
+	}
+}
+
+country_event = {
+	id = GEACPS_china.005#(元統一戦線)日本と講和しようねーあと中華殺そうね。
+	title = GEACPS_china.005.title
+	desc = GEACPS_china.005.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.005.a#?介石ぶったたきたい
+		ai_chance = { factor = 5 }
+		hidden_effect = {
+			remove_country_flag = china_faction
+		}
+		white_peace = JAP
+		declare_war_on = {
+			target = CHI
+			type = topple_government
+		}
+
+	}
+	option = {
+		name = GEACPS_china.005.b#いやセンソウハもういや…
+		ai_chance = { factor = 25 }
+		white_peace = JAP
+		hidden_effect = {
+			remove_country_flag = china_faction
+		}
+
+	}
+
+}
+country_event = {
+	id = GEACPS_china.006#あと国内分裂したよ
+	title = GEACPS_china.006.title
+	desc = GEACPS_china.006.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.006.a#国内の反乱
+		ai_chance = { factor = 20 }
+		hidden_effect = {
+			release = SCH
+			release = GZH
+			SCH = {	
+				declare_war_on = {
+					target = CHI
+					type = topple_government
+				}
+			}
+			GZH = {	
+				declare_war_on = {
+					target = CHI
+					type = topple_government
+				}
+			}
+			country_event = {
+				id = GEACPS_china.007
+				days = 3
+				random = 4
+			}
+			TIB = {
+				country_event = {
+					id = GEACPS_china.008
+					days = 2
+					random = 3
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.007#あと内戦したよ
+	title = GEACPS_china.007.title
+	desc = GEACPS_china.007.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.007.a#国内の反乱
+		ai_chance = { factor = 20 }
+		start_civil_war = {
+			ruling_party = ROOT
+			ideology = reactionary_authoritarianism
+			size = 0.45
+			capital = 620
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.008#(チベット)領土奪還できるよ！
+	title = GEACPS_china.008.title
+	desc = GEACPS_china.008.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.008.a#取り返せ！
+		ai_chance = { factor = 30 }
+		transfer_state = 752
+		CHI = {
+			country_event = {
+				id = GEACPS_china.009
+				days = 1
+				random = 2
+			}
+		}
+
+	}
+	option = {
+		name = GEACPS_china.008.a#やめておくべきだ。
+		ai_chance = { factor = 5 }
+	}
+
+}
+country_event = {
+	id = GEACPS_china.009#チベットがうちの領土取った！
+	title = GEACPS_china.009.title
+	desc = GEACPS_china.009.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	option = {
+		name = GEACPS_china.009.a#yamete
+		ai_chance = { factor = 20 }
+		add_opinion_modifier = {
+			target = TIB
+			modifier = TIB_CHI_territory
+		}
+		declare_war_on = {
+			target = TIB
+			type = topple_government
+		}
+	}
+
+	option = {
+		name = GEACPS_china.009.b#yamete
+		ai_chance = { factor = 30 }
+		add_opinion_modifier = {
+			target = TIB
+			modifier = TIB_CHI_territory
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.010#日本と講和してもええんやで…
+	title = GEACPS_china.010.title
+	desc = GEACPS_china.010.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	option = {
+		name = GEACPS_china.010.a#講和開始
+		ai_chance = { factor = 5 }
+		JAP = {
+			country_event = {
+				id = GEACPS_china.011
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = GEACPS_china.010.b#講和拒否
+		ai_chance = { factor = 30 }
+		hidden_effect = {
+			set_country_flag = china_alone_war
+		}
+
+	}
+
+}
+country_event = {
+	id = GEACPS_china.011#中国が講和したいってさ。
+	title = GEACPS_china.011.title
+	desc = GEACPS_china.011.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	option = {
+		name = GEACPS_china.011.a#講和拒否
+		ai_chance = { factor = 5 }
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = GEACPS_china.012
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.011.b#沿岸州を全部よこせ
+		ai_chance = { factor = 40 }
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = GEACPS_china.013
+					days = 1
+				}
+			}
+		}
+	}
+	}
+	option = {
+		name = GEACPS_china.011.c#完全白紙講和
+		ai_chance = { factor = 5 }
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = GEACPS_china.014
+					days = 1
+				}
+			}
+		}
+
+	}
+
+}
+country_event = {
+	id = GEACPS_china.012#日本が講和拒否
+	title = GEACPS_china.012.title
+	desc = GEACPS_china.012.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	option = {
+		name = GEACPS_china.012.a#おわった…
+		ai_chance = { factor = 5 }
+		hidden_effect = {
+			set_country_flag = china_alone_war
+		}
+	}
+}
+country_event = {
+	id = GEACPS_china.013#日本が沿岸州を要求
+	title = GEACPS_china.013.title
+	desc = GEACPS_china.013.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	option = {
+		name = GEACPS_china.013.a#致し方あるまい…
+		ai_chance = { factor = 5 }
+		every_country = {
+			limit = {
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+			white_peace = CHI
+		}
+		if = {
+			limit = {
+				ROOT = {
+					controls_state = 897
+				}
+			}
+			JAP = {
+				transfer_state = 897
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					controls_state = 596
+				}
+			}
+			JAP = {
+				transfer_state = 596
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					controls_state = 593
+				}
+			}
+			GNC = {
+				transfer_state = 593
+			}
+		}
+		if = {
+			limit = {
+				ROOT = {
+					controls_state = 901
+				}
+			}
+			NAN = {
+				transfer_state = 901
+			}
+		}
+
+	}
+}
+country_event = {
+	id = GEACPS_china.014#日本が完全白紙講和に応じる
+	title = GEACPS_china.014.title
+	desc = GEACPS_china.014.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+	option = {
+		name = GEACPS_china.014.a#おわった…
+		ai_chance = { factor = 5 }
+		every_country = {
+			limit = {
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+				}
+			}
+			white_peace = CHI
+		}
+
+	}
+}
+
+
+
