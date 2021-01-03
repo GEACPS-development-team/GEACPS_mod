@@ -3,7 +3,7 @@ ideologies = {
 	total_socialism = {
 		
 		types = {
-			total_socialism = {
+			total_socialism_ideology = {
 			}
 		}
 		
@@ -19,8 +19,6 @@ ideologies = {
 		
 		war_impact_on_world_tension = 0.25		#Commie less threatening
 		faction_impact_on_world_tension = 0.25
-		
-		ai_total_socialist = yes # uses the commie AI behaviour
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -57,7 +55,7 @@ ideologies = {
 	radical_socialism = {
 		
 		types = {
-			radical_socialism = {
+			radical_socialism_ideology = {
 			}
 		}
 		
@@ -73,8 +71,6 @@ ideologies = {
 		
 		war_impact_on_world_tension = 0.25		#Commie less threatening
 		faction_impact_on_world_tension = 0.25
-		
-		ai_Radical_socialism = yes # uses the commie AI behaviour
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -118,7 +114,7 @@ ideologies = {
 	social_democracy = {
 	
 		types = {
-			social_democracy = {
+			social_democracy_ideology = {
 			}
 		}
 		
@@ -165,7 +161,6 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.20 #plus 50% trade opinion
 		}
-		ai_social_democracy = yes # uses the liberal_conservatism AI behaviour
 		can_host_government_in_exile = yes
 		can_collaborate = yes
 		can_be_boosted = yes
@@ -175,7 +170,7 @@ ideologies = {
 	social_liberalism = {
 	
 		types = {
-			social_liberalism = {
+			social_liberalism_ideology = {
 			}
 		}
 		
@@ -224,7 +219,6 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.20
 		}
-		ai_social_liberal = yes # uses the liberal_conservatism AI behaviour
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
@@ -233,7 +227,7 @@ ideologies = {
 	classical_liberalism = {
 	
 		types = {
-			classical_liberalism = {
+			classical_liberalism_ideology = {
 			}
 		}
 		
@@ -280,7 +274,6 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.20
 		}
-		ai_classical_liberal = yes # uses the liberal_conservatism AI behaviour
 		can_host_government_in_exile = yes
 		can_collaborate = yes
 		can_be_boosted = yes
@@ -290,7 +283,7 @@ ideologies = {
 	liberal_conservatism = {
 	
 		types = {
-			liberal_conservatism = {
+			liberal_conservatism_ideology = {
 			}
 		}
 		
@@ -339,7 +332,6 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.10
 		}
-		ai_liberal_conservatism = yes # uses the liberal_conservatism AI behaviour
 		can_host_government_in_exile = yes
 		can_collaborate = yes
 		can_be_boosted = yes
@@ -349,7 +341,7 @@ ideologies = {
 	social_conservatism = {
 	
 		types = {
-			social_conservatism = {
+			social_conservatism_ideology = {
 			}
 		}
 		
@@ -396,7 +388,6 @@ ideologies = {
 		faction_modifiers = {
 			faction_trade_opinion_factor = 0.10
 		}
-		ai_social_conservatist = yes # uses the liberal_conservatism AI behaviour
 		can_host_government_in_exile = yes
 		can_collaborate = yes
 		can_be_boosted = yes
@@ -406,7 +397,7 @@ ideologies = {
 	authoritative_democracy = {
 	
 		types = {
-			authoritative_democracy = {
+			authoritative_democracy_ideology = {
 			}
 		}
 
@@ -454,7 +445,6 @@ ideologies = {
 		faction_modifiers = {
 		}
 		can_host_government_in_exile = yes
-		ai_neutral = yes # 
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
@@ -463,7 +453,7 @@ ideologies = {
 	reactionary_authoritarianism = {
 	
 		types = {
-			reactionary_authoritarianism = {
+			reactionary_authoritarianism_ideology = {
 			}
 		}
 
@@ -511,8 +501,7 @@ ideologies = {
 		
 		faction_modifiers = {
 		}
-
-		ai_Reactionary_Authoritarianist = yes # 
+		
 		can_host_government_in_exile = yes
 		can_collaborate = yes
 		can_be_boosted = yes
@@ -522,7 +511,7 @@ ideologies = {
 	national_populism = {
 	
 		types = {
-			national_populism = {
+			national_populism_ideology = {
 			}
 		}
 		
@@ -567,7 +556,6 @@ ideologies = {
 			compliance_gain = -0.10
 		}
 
-		ai_fascist = yes # uses the fascist AI behaviour
 		can_host_government_in_exile = yes
 		can_collaborate = yes
 		can_be_boosted = yes

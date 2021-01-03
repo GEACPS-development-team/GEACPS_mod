@@ -10,10 +10,13 @@ tags={
 	"Utilities"
 }
 name="Greater East Asia Co-Prosperity Sphere"
-replace_path="common/ideologies"
-replace_path="history/states"
 dependencies={
 	"Japanese Language mod"
 }
 supported_version="1.10.3"
 remote_file_id="2080137628"
+#replace_path="common/ideologies"
+replace_path = "common/autonomous_states"
+replace_path = "common/national_focus"
+replace_path = "history/countries"
+replace_path = "history/states"
