@@ -478,8 +478,8 @@ ARG = {	#アルゼンチン
 }
  
 BOL = {	#ボリビア
-	color = hsv { 0.1 0.47 0.8 }
-	color_ui = hsv { 0.1 0.47 0.8 }
+	color = rgb { 255 180 136 } 
+	color_ui = rgb { 255 180 136 }
 }
 
 BRA = {	#ブラジル
@@ -581,8 +581,8 @@ VEN = {	#ベネズエラ
  
 #ユーゴスラビア
 SER = {	#セルビア
-	color = rgb { 160 110 110 }
-	color_ui = rgb { 160 110 110 }
+	color = rgb { 77 90 105 }
+	color_ui = rgb { 77 90 105 }
 }
 
 BOS = {	#ボスニア
@@ -598,6 +598,11 @@ CRO = {	#クロアチア
 MAC = {	#マケドニア
 	color = rgb { 255 51 51 } 
 	color_ui = rgb { 255 51 51 }
+}
+
+MNT = {	#モンテネグロ
+	color = rgb { 160 110 110 }
+	color_ui = rgb { 160 110 110 }
 }
 
 SLV = {	#スロベニア
@@ -627,6 +632,11 @@ CAL = {	#カリフォルニア
 	color_ui = rgb { 229 255 204 }
 }
 
+CLU = {	#ワシントン・コロンビア
+	color = rgb { 255 102 102}
+	color_ui = rgb { 255 102 102 }
+}
+
 CSA = {	#アメリカ連合国
 	color = rgb { 96 96 96 }
 	color_ui = rgb { 96 96 96 }
@@ -652,11 +662,6 @@ TEX = {	#テキサス
 	color_ui = rgb { 0 0 153 }
 }
 
-WAS = {	#ワシントン
-	color = rgb { 255 102 102}
-	color_ui = rgb { 255 102 102 }
-}
-
 ##未使用
 #アジア
 CAM = {	#カンボジア
@@ -664,9 +669,10 @@ CAM = {	#カンボジア
 	color_ui = rgb { 100 71 150 }
 }
 
-#HAW:0 "ハワイ王国"
-#HAW_DEF:0 "ハワイ王国"
-#HAW_ADJ:0 "ハワイ"
+HAW = {	#ハワイ
+	color = rgb { 231 181 12 }
+	color_ui = rgb { 231 181 12 }
+}
 
 INS = {	#インドネシア
 	color = rgb { 128 158 118 }
@@ -678,9 +684,10 @@ ISR = {	#イスラエル
 	color_ui = rgb { 152 130 191 }
 }
 
-#KUR:0 "クルディスタン王国"
-#KUR_DEF:0 "クルディスタン王国"
-#KUR_ADJ:0 "クルディスタン"
+KUR = {	#クルディスタン
+	color = rgb { 234 179 30 }
+	color_ui = rgb { 234 179 30 }
+}
 
 KUW = {	#クウェート
 	color = rgb { 153 76 0 }
@@ -738,9 +745,10 @@ SLO = {	#スロバキア
 	color_ui = rgb { 158 161 188 }
 }
 
-#TRA:0 "トランシルヴァニア公国"
-#TRA_DEF:0 "トランシルヴァニア公国"
-#TRA_ADJ:0 "トランシルヴァニア"
+TRA = {	#トランシルヴァニア
+	color = rgb { 211 207 173 }
+	color_ui = rgb { 211 207 173 }
+}
 
 #アフリカ
 ALG = {	#アルジェリア
@@ -1015,63 +1023,76 @@ FIJ = {	#フィジー
 	color_ui = rgb { 0 204 204 }
 }
 
-#FSM:0 "ミクロネシア連邦"
-#FSM_DEF:0 "ミクロネシア連邦"
-#FSM_ADJ:0 "ミクロネシア"
+FSM = {	#ミクロネシア
+	color = rgb { 118 179 222 }
+	color_ui = rgb { 118 179 222 }
+}
 
-#GUM:0 "グアム共和国"
-#GUM_DEF:0 "グアム共和国"
-#GUM_ADJ:0 "グアム"
+GUM = {	#グアム
+	color = rgb { 60 240 100 }
+	color_ui = rgb { 60 240 100 }
+}
 
 PNG = {	#パプアニューギニア
 	color = rgb { 153 0 76 }
 	color_ui = rgb { 153 0 76 }
 }
 
-#SAM:0 "サモア独立国"
-#SAM_DEF:0 "サモア独立国"
-#SAM_ADJ:0 "サモア"
+SAM = {	#サモア
+	color = rgb { 205 20 95 }
+	color_ui = rgb { 205 20 95 }
+}
 
-#SOL:0 "ソロモン諸島"
-#SOL_DEF:0 "ソロモン諸島"
-#SOL_ADJ:0 "ソロモン諸島"
+SOL = {	#ソロモン
+	color = rgb { 20 20 90 }
+	color_ui = rgb { 20 20 90 }
+}
 
-#TAH:0 "タヒチ王国"
-#TAH_DEF:0 "タヒチ王国"
-#TAH_ADJ:0 "タヒチ"
+TAH = {	#タヒチ
+	color = rgb { 73 33 248 }
+	color_ui = rgb { 73 33 248 }
+}
 
 #ドイツ諸国
-#BAY:0 "バイエルン王国"
-#BAY_DEF:0 "バイエルン王国"
-#BAY_ADJ:0 "バイエルン"
+BAY = {	#バイエルン
+	color = rgb { 0 152 212 }
+	color_ui = rgb { 0 152 212 }
+}
 
-#GER:0 "ドイツ国"
-#GER_DEF:0 "ドイツ国"
-#GER_ADJ:0 "ドイツ"
+GER = {	#ドイツ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 102 89 86 }
+}
 
-#HAN:0 "ハノーファー王国"
-#HAN_DEF:0 "ハノーファー王国"
-#HAN_ADJ:0 "ハノーファー"
+HAN = {	#ハノーファー
+	color = rgb { 0 0 255 }
+	color_ui = rgb { 0 0 255 }
+}
 
-#MEK:0 "メクレンブルク大公国"
-#MEK_DEF:0 "メクレンブルク大公国"
-#MEK_ADJ:0 "メクレンブルク"
+MEK = {	#メクレンブルク
+	color = rgb { 252 195 0 }
+	color_ui = rgb { 252 195 0 }
+}
 
-#PRE:0 "プロイセン王国"
-#PRE_DEF:0 "プロイセン王国"
-#PRE_ADJ:0 "プロイセン"
+PRE = {	#プロイセン
+	color = rgb { 160  160  160 }
+	color_ui = rgb { 160  160  160 }
+}
 
-#SAX:0 "ザクセン王国"
-#SAX_DEF:0 "ザクセン王国"
-#SAX_ADJ:0 "ザクセン"
+SAX = {	#ザクセン
+	color = rgb { 22 108 35 }
+	color_ui = rgb { 22 108 35 }
+}
 
-#SHL:0 "シュレースヴィヒ＝ホルシュタイン連合公国"
-#SHL_DEF:0 "シュレースヴィヒ＝ホルシュタイン連合公国"
-#SHL_ADJ:0 "シュレースヴィヒ＝ホルシュタイン"
+SHL = {	#シュレースヴィヒ＝ホルシュタイン
+	color = rgb { 51 51 255 }
+	color_ui = rgb { 51 51 255 }
+}
 
-#WUR:0 "ヴュルテンベルク王国"
-#WUR_DEF:0 "ヴュルテンベルク王国"
-#WUR_ADJ:0 "ヴュルテンベルク"
+WUR = {	#ヴュルテンベルク
+	color = rgb { 189 18 32 }
+	color_ui = rgb { 189 18 32 }
+}
 
 #イギリス
 NIR = {	#北アイルランド
@@ -1090,17 +1111,20 @@ WLS = {	#ウェールズ
 }
 
 #フランス
-#BRI:0 "ブルターニュ公国"
-#BRI_DEF:0 "ブルターニュ公国"
-#BRI_ADJ:0 "ブルターニュ"
+BRI = {	#ブルターニュ
+	color = rgb { 118 99 151 }
+	color_ui = rgb { 118 99 151 }
+}
 
-#COR:0 "コルシカ王国"
-#COR_DEF:0 "コルシカ王国"
-#COR_ADJ:0 "コルシカ"
+COR = {	#コルシカ
+	color = rgb { 106 178 46 }
+	color_ui = rgb { 106 178 46 }
+}
 
-#OCC:0 "オクシタニア共和国"
-#OCC_DEF:0 "オクシタニア共和国"
-#OCC_ADJ:0 "オクシタニア"
+OCC = {	#オクシタニア
+	color = rgb { 105 240 240 }
+	color_ui = rgb { 105 240 240 }
+}
  
 #旧ソビエト諸国
 ARM = {	#アルメニア
@@ -1149,28 +1173,27 @@ UZB = {	#ウズベキスタン
 }
 
 #スペイン
-#ADU:0 "アンダルシア共和国"
-#ADU_DEF:0 "アンダルシア共和国"
-#ADU_ADJ:0 "アンダルシア"
+ADU = {	#アンダルシア
+	color = rgb { 240 230 155 }
+	color_ui = rgb { 240 230 155 }
+}
  
-#CAT:0 "カタルーニャ共和国"
-#CAT_DEF:0 "カタルーニャ共和国"
-#CAT_ADJ:0 "カタルーニャ"
+CAT = {	#カタルーニャ
+	color = rgb { 213 132 76 }
+	color_ui = rgb { 213 132 76 }
+}
  
-#GLC_ADJ:0 "ガリシア王国"
-#GLC_DEF:0 "ガリシア王国"
-#GLC:0 "ガリシア"
+GLC = {	#ガリシア
+	color = rgb { 240 167 130 }
+	color_ui = rgb { 240 167 130 }
+}
  
-#NAV:0 "ナバラ王国"
-#NAV_DEF:0 "ナバラ王国"
-#NAV_ADJ:0 "ナバラ"
+NAV = {	#ナバラ
+	color = rgb { 252 233 58 }
+	color_ui = rgb { 252 233 58 }
+}
  
 #旧ユーゴスラビア諸国
-MNT = {	#モンテネグロ
-	color = rgb { 77 90 105 }
-	color_ui = rgb { 77 90 105 }
-}
-
 YUG = {	#ユーゴスラビア
 	color = rgb { 72 73 126 }
 	color_ui = rgb { 72 73 126 }

@@ -144,37 +144,31 @@
 					type = bunker
 					level = 10
 					province = 11502
-					instant_build = yes
 				}
 				remove_building = {
 					type = bunker
 					level = 10
 					province = 3629
-					instant_build = yes
 				}
 				remove_building = {
 					type = bunker
 					level = 10
 					province = 549
-					instant_build = yes
 				}
 				remove_building = {
 					type = bunker
 					level = 10
 					province = 9503
-					instant_build = yes
 				}
 				remove_building = {
 					type = bunker
 					level = 10
 					province = 6529
-					instant_build = yes
 				}
 				remove_building = {
 					type = bunker
 					level = 10
 					province = 678
-					instant_build = yes
 				}
 			}
 			839 = {
@@ -182,7 +176,6 @@
 					type = bunker
 					level = 10
 					province = 9559
-					instant_build = yes
 				}
 			}
 			remove_ideas = {
@@ -370,10 +363,9 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_opinion_modifier = { target = SOV modifier = FRA_anti_sov }
-
+			add_opinion_modifier = {	target = SOV	modifier = FRA_anti_sov	}
 			SOV = {
-				add_opinion_modifier = { target = FRA modifier = FRA_anti_sov }
+				add_opinion_modifier = {	target = FRA	modifier = FRA_anti_sov	}
 			}
 		}
 	}
@@ -403,9 +395,9 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_opinion_modifier = { target = ENG modifier = FRA_anti_eng }
+			add_opinion_modifier = {	target = ENG	modifier = FRA_anti_eng	}
 			ENG = {
-				add_opinion_modifier = { target = FRA modifier = FRA_anti_eng }
+				add_opinion_modifier = {	target = FRA	modifier = FRA_anti_eng	}
 			}
 		}
 	}
@@ -968,14 +960,10 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_opinion_modifier = { target = WGR modifier = FRA_support_GER }
-			WGR = {
-				add_opinion_modifier = { target = FRA modifier = FRA_support_GER }
-			}
-			add_opinion_modifier = { target = SGR modifier = FRA_support_GER }
-			SGR = {
-				add_opinion_modifier = { target = FRA modifier = FRA_support_GER }
-			}
+			add_opinion_modifier = {	target = WGR	modifier = FRA_support_GER	}
+			add_opinion_modifier = {	target = SGR	modifier = FRA_support_GER	}
+			WGR = {	add_opinion_modifier = {	target = FRA	modifier = FRA_support_GER	}	}
+			SGR = {	add_opinion_modifier = {	target = FRA	modifier = FRA_support_GER	}	}
 		}
 	}
 	#イタリア共和国の再軍備を支援
@@ -1004,10 +992,8 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			add_opinion_modifier = { target = ITA modifier = FRA_support_ita }
-			ITA = {
-				add_opinion_modifier = { target = FRA modifier = FRA_support_ita }
-			}
+			add_opinion_modifier = {	target = ITA	modifier = FRA_support_ITA	}
+			ITA = {	add_opinion_modifier = {	target = FRA	modifier = FRA_support_ITA	}	}
 		}
 	}
 	#合同訓練を実施
@@ -1272,10 +1258,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas =  FRA_navy_with_jap
-			add_opinion_modifier = { target = JAP modifier = FRA_navy_with_jap }
-			JAP = {
-				add_opinion_modifier = { target = FRA modifier = FRA_navy_with_jap }
-			}
+			add_opinion_modifier = {	target = JAP	modifier = FRA_navy_with_JAP	}
+			JAP = {	add_opinion_modifier = {	target = FRA	modifier = FRA_navy_with_JAP	}	}
 		}
 	}
 	#日本の魚雷技術
@@ -1342,10 +1326,8 @@
 		available_if_capitulated = no
 		completion_reward = {
 			add_ideas = FRA_navy_with_USA
-			add_opinion_modifier = { target = USA modifier = FRA_navy_with_USA }
-			USA = {
-				add_opinion_modifier = { target = FRA modifier = FRA_navy_with_USA }
-			}
+			add_opinion_modifier = {	target = USA	modifier = FRA_navy_with_USA	}
+			USA = {	add_opinion_modifier = {	target = FRA	modifier = FRA_navy_with_USA	}	}
 		}
 	}
 	#アメリカのレーダー技術
@@ -1789,7 +1771,7 @@
 		y = 1
 		relative_position_id = FRA_future_industry
 		mutually_exclusive = { 
-			focus = FRA_National_initiative
+			focus = FRA_National_initiative1
 		}
 		cost = 5
 			ai_will_do = {
@@ -1911,7 +1893,7 @@
 	}
 	#国家主導
 	focus = {
-		id = FRA_National_initiative
+		id = FRA_National_initiative1
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {
 			focus = FRA_future_industry
@@ -1919,7 +1901,7 @@
 		x = 4
 		y = 1
 		relative_position_id = FRA_future_industry
-		mutually_exclusive = { 
+		mutually_exclusive = {
 			focus = FRA_Private_initiative
 		}
 		cost = 5
@@ -1946,7 +1928,7 @@
 		id = FRA_Nationalization 
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {
-			focus = FRA_National_initiative
+			focus = FRA_National_initiative1
 		}
 		x = 4
 		y = 2
@@ -2047,14 +2029,11 @@
 	    icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = {
 			focus = FRA_Private_initiative
-			focus = FRA_National_initiative
+			focus = FRA_National_initiative1
 		}
 		x = -1
 		y = 2
 		relative_position_id = FRA_future_industry
-		mutually_exclusive = { 
-			focus = FRA_National_initiative
-		}
 		cost = 5
 			ai_will_do = {
 			factor = 1
@@ -2101,14 +2080,11 @@
 		icon =GFX_focus_generic_africa_factory
 		prerequisite = {
 			focus = FRA_Private_initiative
-			focus = FRA_National_initiative
+			focus = FRA_National_initiative1
 		}
 		x = 1
 		y = 2
 		relative_position_id = FRA_future_industry
-		mutually_exclusive = { 
-			focus = FRA_National_initiative
-		}
 		cost = 5
 			ai_will_do = {
 			factor = 1

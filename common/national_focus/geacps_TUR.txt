@@ -60,6 +60,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = TUR-geasps-4
+			focus = TUR-geasps-5
 		}
 		x = 3
 		y = 2
@@ -275,12 +276,15 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TUR-geasps-12
+		id = TUR-geasps-12a
 		text = フランスを招待
 		icon = GFX_focus_chi_reach_out_to_france
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-11
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-14
 		}
 		x = 10
 		y = 7
@@ -379,7 +383,7 @@ focus_tree = {
 			focus = TUR-geasps-11
 		}
 		mutually_exclusive = {
-			focus = TUR-geasps-12
+			focus = TUR-geasps-12a
 		}
 		x = 14
 		y = 7
