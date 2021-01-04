@@ -1,6 +1,5 @@
 ﻿capital = 42
 oob = RHI_1946
-set_cosmetic_tag = RHI_FRA
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -19,4 +18,12 @@ set_popularities = {
 	authoritative_democracy = 100
 	reactionary_authoritarianism = 0
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "シャルル・アンドレ・ジョゼフ・ピエール＝マリ・ド・ゴール"
+	desc = ""
+	picture = "gfx/leaders/FRA/Portrait_Charles_Andre_Joseph_Marie_de_Gaulle.dds"
+	expire = "1970.11.9"
+	ideology = authoritative_democracy_ideology
 }

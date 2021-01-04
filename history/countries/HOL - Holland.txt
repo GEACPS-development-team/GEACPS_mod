@@ -4,7 +4,7 @@ oob = HOL_1946
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = social_democracy
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -12,12 +12,83 @@ set_politics = {
 set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
-	social_democracy = 0
+	social_democracy = 100
 	social_liberalism = 0
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 100
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = total_socialism_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = radical_socialism_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = social_democracy_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = classical_liberalism_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = liberal_conservatism_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = liberal_conservatism_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = social_conservatism_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = authoritative_democracy_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = reactionary_authoritarianism_ideology
+}
+create_country_leader = {
+	name = "ウィルヘルミナ"
+	desc = ""
+	picture = "gfx/leaders/HOL/Portrait_Wilhelmina.dds"
+	expire = "1962.11.28"
+	ideology = national_populism_ideology
 }

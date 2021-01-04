@@ -4,7 +4,7 @@ oob = SYR_1946
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = social_conservatism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,8 +16,16 @@ set_popularities = {
 	social_liberalism = 0
 	classical_liberalism = 0
 	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 100
+	social_conservatism = 100
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "シュクリー・アル＝クーワトリー"
+	desc = ""
+	picture = "gfx/leaders/SYR/Portrait_Shukri_al_Quwatli.dds"
+	expire = "1967.6.30"
+	ideology = social_conservatism_ideology
 }

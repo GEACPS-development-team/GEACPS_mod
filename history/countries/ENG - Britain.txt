@@ -4,11 +4,16 @@ set_cosmetic_tag = ENG_GBR
 
 set_convoys = 800
 
-set_autonomy = {	target = CAN	autonomous_state = dominion	}
+RAJ = {	add_ideas = colonial_government	set_cosmetic_tag = RAJ_ENG-GBR	}
+SAF = {	add_ideas = colonial_government	set_cosmetic_tag = SAF_ENG-GBR	}
+CAN = {	add_ideas = colonial_government	set_cosmetic_tag = CAN_ENG-GBR	}
+AST = {	add_ideas = colonial_government	set_cosmetic_tag = AST_ENG-GBR	}
+NZL = {	add_ideas = colonial_government	set_cosmetic_tag = NZL_ENG-GBR	}
 
 set_autonomy = {	target = RAJ	autonomous_state = colony	}
-set_autonomy = {	target = AST	autonomous_state = dominion	}
 set_autonomy = {	target = SAF	autonomous_state = dominion	}
+set_autonomy = {	target = CAN	autonomous_state = dominion	}
+set_autonomy = {	target = AST	autonomous_state = dominion	}
 set_autonomy = {	target = NZL	autonomous_state = dominion	}
 
 add_to_tech_sharing_group = commonwealth_research
@@ -37,68 +42,68 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = total_socialism
+	ideology = total_socialism_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = radical_socialism
+	ideology = radical_socialism_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = social_democracy
+	ideology = social_democracy_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = classical_liberalism
+	ideology = classical_liberalism_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = liberal_conservatism
+	ideology = liberal_conservatism_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = liberal_conservatism
+	ideology = liberal_conservatism_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = social_conservatism
+	ideology = social_conservatism_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = authoritative_democracy
+	ideology = authoritative_democracy_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = reactionary_authoritarianism
+	ideology = reactionary_authoritarianism_ideology
 }
 create_country_leader = {
 	name = "ジョージ6世"
 	desc = ""
 	picture = "gfx/leaders/ENG/Portrait_George_VI.dds"
 	expire = "1952.2.6"
-	ideology = national_populism
+	ideology = national_populism_ideology
 }

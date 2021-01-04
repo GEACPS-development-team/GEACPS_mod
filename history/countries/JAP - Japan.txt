@@ -11,10 +11,6 @@ add_ideas = {
 	state_shintoism
 	limited_exports
 	limited_conscription
-	partial_economic_mobilisation
-	JAP_zaibatsus
-	JAP_duplicate_research_efforts
-	JAP_militarism
 }
 
 create_faction = 大東亞共榮圈
@@ -29,27 +25,11 @@ add_to_faction = SIA
 add_to_faction = PHI
 add_to_faction = IND
 
-set_autonomy = {
-	target = MEN
-	autonomous_state = puppet
-}
-set_autonomy = {
-	target = MAN
-	autonomous_state = puppet
-}
-set_autonomy = {
-	target = ZHI
-	autonomous_state = puppet
-}
-set_autonomy = {
-	target = NAN
-	autonomous_state = puppet
-}
-set_autonomy = {
-	target = IND
-	autonomous_state = puppet
-}
-
+set_autonomy = {	target = MAN	autonomous_state = puppet	}
+set_autonomy = {	target = MEN	autonomous_state = puppet	}
+set_autonomy = {	target = ZHI	autonomous_state = puppet	}
+set_autonomy = {	target = NAN	autonomous_state = puppet	}
+set_autonomy = {	target = IND	autonomous_state = puppet	}
 
 give_guarantee = AZA
 give_guarantee = BRM
@@ -75,74 +55,75 @@ set_popularities = {
 	authoritative_democracy = 2
 	reactionary_authoritarianism = 1
 	national_populism = 77
+}
 
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = total_socialism
+	ideology = total_socialism_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = radical_socialism
+	ideology = radical_socialism_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = social_democracy
+	ideology = social_democracy_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = classical_liberalism
+	ideology = classical_liberalism_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = liberal_conservatism
+	ideology = liberal_conservatism_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = liberal_conservatism
+	ideology = liberal_conservatism_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = social_conservatism
+	ideology = social_conservatism_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = authoritative_democracy
+	ideology = authoritative_democracy_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = reactionary_authoritarianism
+	ideology = reactionary_authoritarianism_ideology
 }
 create_country_leader = {
 	name = "今上天皇"
 	desc = ""
 	picture = "gfx/leaders/JAP/Portrait_Emperor_Showa.dds"
 	expire = "1989.1.7"
-	ideology = national_populism
+	ideology = national_populism_ideology
 }

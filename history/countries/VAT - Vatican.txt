@@ -5,7 +5,7 @@ set_cosmetic_tag = PAP
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = reactionary_authoritarianism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,7 +18,78 @@ set_popularities = {
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 100
-	reactionary_authoritarianism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 100
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = total_socialism_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = radical_socialism_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = social_democracy_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = classical_liberalism_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = liberal_conservatism_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = liberal_conservatism_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = social_conservatism_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = authoritative_democracy_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = reactionary_authoritarianism_ideology
+}
+create_country_leader = {
+	name = "ピウス12世"
+	desc = ""
+	picture = "gfx/leaders/VAT/Portrait_Pius_XII.dds"
+	expire = "1958.10.9"
+	ideology = national_populism_ideology
 }

@@ -4,7 +4,7 @@ oob = CUB_1946
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = national_populism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,7 +17,15 @@ set_popularities = {
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 100
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
-	national_populism = 0
+	national_populism = 100
+}
+
+create_country_leader = {
+	name = "ラモン・グラウ・サン・マルティン"
+	desc = ""
+	picture = "gfx/leaders/COS/Portrait_Teodoro_Picado_Michalski.dds"
+	expire = "1969.7.28"
+	ideology = national_populism_ideology
 }

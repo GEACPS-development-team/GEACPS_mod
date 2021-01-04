@@ -4,7 +4,7 @@ oob = COS_1946
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = social_liberalism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -13,11 +13,19 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
+	social_liberalism = 100
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 100
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "テオドロ・ピカード・ミィチェルスキー"
+	desc = ""
+	picture = "gfx/leaders/COS/Portrait_Teodoro_Picado_Michalski.dds"
+	expire = "1960.1.1"
+	ideology = social_liberalism_ideology
 }

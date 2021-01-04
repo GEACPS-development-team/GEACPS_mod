@@ -1,36 +1,33 @@
-﻿capital = 285
-oob = AST_1946
-set_cosmetic_tag = AST_ENG-GBR
+﻿1946.1.1 = {
+	capital = 285
+	oob = AST_1946
 
-set_convoys = 5
+	set_convoys = 5
+	
+	set_politics = {
+		ruling_party = social_democracy
+		last_election = "1946.1.1"
+		election_frequency = 36
+		elections_allowed = yes
+	}
+	set_popularities = {
+		total_socialism = 0
+		radical_socialism = 0
+		social_democracy = 100
+		social_liberalism = 0
+		classical_liberalism = 0
+		liberal_conservatism = 0
+		social_conservatism = 0
+		authoritative_democracy = 0
+		reactionary_authoritarianism = 0
+		national_populism = 0
+	}
 
-add_ideas = {
-	colonial_government
-}
-
-set_politics = {
-	ruling_party = social_democracy
-	last_election = "1946.1.1"
-	election_frequency = 36
-	elections_allowed = yes
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 100
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
-	national_populism = 0
-}
-
-create_country_leader = {
-	name = "ヘンリー・ウィリアム・フレデリック・アルバート"
-	desc = ""
-	picture = "gfx/leaders/AST/Portrait_Henry_William_Frederick_Albert.dds"
-	expire = "1974.6.10"
-	ideology = social_democracy_ideology
+	create_country_leader = {
+		name = "ヘンリー・ウィリアム・フレデリック・アルバート"
+		desc = ""
+		picture = "gfx/leaders/AST/Portrait_Henry_William_Frederick_Albert.dds"
+		expire = "1974.6.10"
+		ideology = social_democracy_ideology
+	}
 }

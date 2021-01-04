@@ -10,17 +10,14 @@ add_to_faction = RHI
 add_to_faction = SGR
 add_to_faction = ITA
 
-set_autonomy = {
-	target = SAR
-	autonomous_state = puppet
-}
-set_autonomy = {
-	target = RHI
-	autonomous_state = puppet
-}
+SAR = {	add_ideas = colonial_government	set_cosmetic_tag = SAR_FRA	}
+RHI = {	add_ideas = colonial_government	set_cosmetic_tag = RHI_FRA	}
+
+set_autonomy = {	target = SAR	autonomous_state = puppet	}
+set_autonomy = {	target = RHI	autonomous_state = puppet	}
 
 set_politics = {
-	ruling_party = national_populism
+	ruling_party = authoritative_democracy
 	last_election = "1936.4.26"
 	election_frequency = 48
 	elections_allowed = no
@@ -43,5 +40,5 @@ create_country_leader = {
 	desc = ""
 	picture = "gfx/leaders/FRA/Portrait_Charles_Andre_Joseph_Marie_de_Gaulle.dds"
 	expire = "1970.11.9"
-	ideology = authoritative_democracy
+	ideology = authoritative_democracy_ideology
 }
