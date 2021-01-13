@@ -2928,7 +2928,7 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name = "airtech_subtitle_scout"
-				position = { x = 2965? y = 185 }
+				position = { x = 2965 y = 185 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -2970,7 +2970,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "strategic_bomber1_tree"
-				position = { x = 1750? y = 32 }
+				position = { x = 1750 y = 32 }
 				size = { width = 200 height = 1000 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -3010,7 +3010,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 2000 height = 1300
+					width = 1600 height = 1300
 					min = { width=100%% height=100%% }
 				}
 				clipping = no
@@ -3021,8 +3021,8 @@ guiTypes = {
 				}
 				
 				iconType = {
-					name ="artillery_techtree_bg"
-					spriteType = "GFX_air_techtree_bg"
+					name ="helicopter_techtree_bg"
+					spriteType = "GFX_helicopter_techtree_bg"
 					position = { x=0 y=0 }
 					alwaystransparent = yes
 				}				
@@ -3031,11 +3031,131 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "helicopter_year2"
-				position = { x = 60 y = 160 }
+				position = { x = 60 y = 100 }
 				textureFile = ""
 				font = "hoi_36header"
 				borderSize = {x = 0 y = 4}
-				text = "1933"
+				text = "1924"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year3"
+				position = { x = 60 y = 240 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1935"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year4"
+				position = { x = 60 y = 380 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1950"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year5"
+				position = { x = 60 y = 520 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1955"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year6"
+				position = { x = 60 y = 660 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1960"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year7"
+				position = { x = 60 y = 810 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1965"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year8"
+				position = { x = 60 y = 950 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1970"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year9"
+				position = { x = 60 y = 1090 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1975"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year10"
+				position = { x = 60 y = 1240 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1980"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year11"
+				position = { x = 60 y = 1380 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1985"
+				maxWidth = 170
+				maxHeight = 32
+				format = left
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "helicopter_year12"
+				position = { x = 60 y = 1520 }
+				textureFile = ""
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 4}
+				text = "1990"
 				maxWidth = 170
 				maxHeight = 32
 				format = left
@@ -3045,7 +3165,7 @@ guiTypes = {
 
 			instantTextBoxType = {
 				name = "helicopter_subtitle_cv_nav"
-				position = { x = 505 y = 185 }
+				position = { x = 630 y = 50 }
 				textureFile = ""
 				font = "hoi_33"
 				borderSize = {x = 0 y = 4}
@@ -3059,8 +3179,8 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "tiled_research_bg"
-				position = { x=530 y=947 }
-				size = { width = 2750 height = 630 }
+				position = { x=150 y=330 }
+				size = { width = 1400 height = 1300 }
 				clipping = no
 	
 				background = {
@@ -3069,12 +3189,20 @@ guiTypes = {
 				}			
 			}
 			gridboxtype = {
-				name = "early_helicopter_tree"
-				position = { x = 780 y = 0 }
+				name = "auto_gyro_tree"
+				position = { x = 150 y = 100 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+			gridboxtype = {
+				name = "experimental_rockets_tree"
+				position = { x = 150 y = 90 }
+				size = { width = 400 height = 400 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
 		}
 
 		containerWindowType = {
@@ -5118,7 +5246,7 @@ guiTypes = {
 			buttonType = {
 				name = "helicopter_folder_tab"
 				position = { x = 794 y = 0 }
-				quadTextureSprite = "GFX_air_techs_folder_tab"
+				quadTextureSprite = "GFX_helicopter_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
@@ -5822,8 +5950,43 @@ guiTypes = {
 		
 	}
 	containerWindowType = {
+		name = "techtree_helicopter_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 72 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_helicopter_folder_small_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "bonus_icon"
+			position = { x=3 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 17 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+	}
+
+	containerWindowType = {
 		name = "techtree_helicopter_folder_item"
-		position = { x=-60 y=0 }
+		position = { x=-56 y=-7 }
 		size = { width = 183 height = 84 }
 		clipping = no
 
@@ -5832,25 +5995,26 @@ guiTypes = {
 			quadTextureSprite ="GFX_technology_unavailable_item_bg"
 		}
 
+		iconType = {
+			name = "Icon"
+			position = { x=91 y=50 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		
 		instantTextBoxType = {
 			name = "Name"
-			position = { x = 3 y = -1 }
+			position = { x = 3 y = -3 }
 			textureFile = ""
 			font = "hoi_20bs"
 			borderSize = {x = 4 y = 4}
-			text = ""
-			maxWidth = 166
+			text = "Happy-Go-Lucky-Tank"
+			maxWidth = 160
 			maxHeight = 20
 			fixedsize = yes
 			format = left
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=89 y=50 }
-			spriteType = "GFX_technology_medium"
-			centerposition = yes	
-			alwaystransparent = yes
 		}
 
 		iconType = {
@@ -5870,25 +6034,44 @@ guiTypes = {
 			maxHeight = 20
 			format = center
 		}
-
+		
+		
 		containerWindowType = {
 			name = "sub_technology_slot_0"
-			position = { x=142 y=5 }
+			position = { x=141 y=1 }
 			size = { width = 35 height = 26 }
 			clipping = no
 			
 			background = {
 				name = "Background"
-				spriteType ="GFX_subtech_carrier_plane_bg"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
 			}
 			
 			iconType = {
 				name = "picture"
-				position = { x=6 y=2 }
-				spriteType = "GFX_airwing_carrier_icon"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_rocket"
 				alwaystransparent = yes
 			}
 		}		
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=141 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_td"
+				alwaystransparent = yes
+			}
+		}	
 		
 	}
 

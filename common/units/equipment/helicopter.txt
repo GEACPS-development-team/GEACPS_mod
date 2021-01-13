@@ -1,0 +1,368 @@
+equipments = {
+	
+	recon_helicopter_equipment = {
+		year = 1935
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_heavy_fighter_equipment			
+		is_buildable = no
+		type = helicopter
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 11
+		
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 5
+		
+		reliability = 0.65
+		lend_lease_cost = 12
+		
+		build_cost_ic = 60
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 40
+		fuel_consumption = 0.8
+	}
+	recon_helicopter_equipment_0 = {
+		year = 1935
+		archetype = recon_helicopter_equipment
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+	recon_helicopter_equipment_1 = {
+		year = 1935
+		archetype = recon_helicopter_equipment
+		parent = recon_helicopter_equipment_0
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	recon_helicopter_equipment_2 = {
+		year = 1935
+		archetype = recon_helicopter_equipment
+		parent = recon_helicopter_equipment_1
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	recon_helicopter_equipment_3 = {
+		year = 1935
+		archetype = recon_helicopter_equipment
+		parent = recon_helicopter_equipment_2
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	recon_helicopter_equipment_4 = {
+		year = 1935
+		archetype = recon_helicopter_equipment
+		parent = recon_helicopter_equipment_3
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	transport_helicopter_equipment = {
+		year = 1935
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_heavy_fighter_equipment			
+		is_buildable = no
+		type = helicopter
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 11
+		
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 5
+		
+		reliability = 0.65
+		lend_lease_cost = 12
+		
+		build_cost_ic = 60
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 40
+		fuel_consumption = 0.8
+	}
+	transport_helicopter_equipment_0 = {
+		year = 1935
+		archetype = transport_helicopter_equipment
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+	transport_helicopter_equipment_1 = {
+		year = 1935
+		archetype = transport_helicopter_equipment
+		parent = recon_helicopter_equipment_0
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	transport_helicopter_equipment_2 = {
+		year = 1935
+		archetype = transport_helicopter_equipment
+		parent = recon_helicopter_equipment_1
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	transport_helicopter_equipment_3 = {
+		year = 1935
+		archetype = transport_helicopter_equipment
+		parent = recon_helicopter_equipment_2
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	patrol_helicopter_equipment = {
+		year = 1935
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_heavy_fighter_equipment			
+		is_buildable = no
+		type = helicopter
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 11
+		
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 5
+		
+		reliability = 0.65
+		lend_lease_cost = 12
+		
+		build_cost_ic = 60
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 40
+		fuel_consumption = 0.8
+	}
+	patrol_helicopter_equipment_1 = {
+		year = 1935
+		archetype = patrol_helicopter_equipment
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+	patrol_helicopter_equipment_2 = {
+		year = 1935
+		archetype = patrol_helicopter_equipment
+		parent = patrol_helicopter_equipment_1
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	patrol_helicopter_equipment_3 = {
+		year = 1935
+		archetype = patrol_helicopter_equipment
+		parent = patrol_helicopter_equipment_2
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	patrol_helicopter_equipment_4 = {
+		year = 1935
+		archetype = patrol_helicopter_equipment
+		parent = patrol_helicopter_equipment_3
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 64
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	attack_helicopter_equipment = {
+		year = 1935
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_heavy_fighter_equipment			
+		is_buildable = no
+		type = helicopter
+		group_by = archetype
+		sprite = heavy_plane
+		air_map_icon_frame = 11
+		
+		interface_category = interface_category_air
+		
+		interface_overview_category_index = 5
+		
+		reliability = 0.65
+		lend_lease_cost = 12
+		
+		build_cost_ic = 60
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+		
+		manpower = 40
+		fuel_consumption = 0.8
+	}
+	attack_helicopter_equipment_1 = {
+		year = 1965
+		archetype = attack_helicopter_equipment
+		active = no
+		priority = 05
+		visual_level = 0
+	}
+	attack_helicopter_equipment_2 = {
+		year = 1970
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_1
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	attack_helicopter_equipment_3 = {
+		year = 1975
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_2
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 64
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	attack_helicopter_equipment_4 = {
+		year = 1980
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_3
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+	attack_helicopter_equipment_5 = {
+		year = 1990
+		archetype = attack_helicopter_equipment
+		parent = attack_helicopter_equipment_4
+
+		active = no
+		priority = 05
+		visual_level = 0
+		build_cost_ic = 62
+		resources = {
+#			oil = 1
+			aluminium = 3
+			rubber = 2
+		}
+
+	}
+
+}
