@@ -7,17 +7,20 @@ create_faction = 西欧同盟
 add_to_faction = FRA
 add_to_faction = SAR
 add_to_faction = RHI
+add_to_faction = VAL
 add_to_faction = SGR
 add_to_faction = ITA
 
 SAR = {	add_ideas = colonial_government	set_cosmetic_tag = SAR_FRA	}
 RHI = {	add_ideas = colonial_government	set_cosmetic_tag = RHI_FRA	}
+VAL = {	add_ideas = colonial_government	set_cosmetic_tag = VAL_FRA	}
 
 set_autonomy = {	target = SAR	autonomous_state = puppet	}
 set_autonomy = {	target = RHI	autonomous_state = puppet	}
+set_autonomy = {	target = VAL	autonomous_state = puppet	}
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = national_populism
 	last_election = "1936.4.26"
 	election_frequency = 48
 	elections_allowed = no
