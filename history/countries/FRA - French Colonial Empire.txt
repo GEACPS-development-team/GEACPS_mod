@@ -60,6 +60,7 @@ CMR	= {	set_cosmetic_tag = CMR_FRA	add_ideas = mandate_government	}
 TOG	= {	set_cosmetic_tag = TOG_FRA	add_ideas = mandate_government	}
 SAR	= {	set_cosmetic_tag = SAR_FRA	add_ideas = protectorate_government	}
 RHI	= {	set_cosmetic_tag = RHI_FRA	add_ideas = protectorate_government	}
+VAL	= {	set_cosmetic_tag = VAL_FRA	add_ideas = protectorate_government	}
 
 set_autonomy = {	target = IN1	autonomous_state = colony	}
 set_autonomy = {	target = CAY	autonomous_state = colony	}
@@ -74,6 +75,7 @@ set_autonomy = {	target = CMR	autonomous_state = mandate	}
 set_autonomy = {	target = TOG	autonomous_state = mandate	}
 set_autonomy = {	target = SAR	autonomous_state = protected_territory	}
 set_autonomy = {	target = RHI	autonomous_state = protected_territory	}
+set_autonomy = {	target = VAL	autonomous_state = protected_territory	}
 
 #陣営
 create_faction = 西欧同盟
@@ -89,5 +91,6 @@ add_to_faction = CMR
 add_to_faction = TOG
 add_to_faction = SAR
 add_to_faction = RHI
+add_to_faction = VAL
 add_to_faction = SGR
 add_to_faction = ITA
