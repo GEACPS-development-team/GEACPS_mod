@@ -1,0 +1,23 @@
+﻿create_dynamic_country = {
+	original_tag = MOR
+	set_cosmetic_tag = MOR_SPR
+	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+	add_ideas = protectorate_government
+	
+	every_state = {
+		limit = {	is_core_of = MOR	}
+		remove_core_of = PREV
+	}
+	
+	transfer_state = 290
+	290 = {	add_core_of = PREV	}
+}
+
+EQG	= {	set_cosmetic_tag = EQG_SPR	add_ideas = colonial_government	}
+WES	= {	set_cosmetic_tag = WES_SPR	add_ideas = colonial_government	}
+
+set_autonomy = {	target = EQG	autonomous_state = colony	}
+set_autonomy = {	target = WES	autonomous_state = colony	}
+set_autonomy = {	target = MR0	autonomous_state = protected_territory	}

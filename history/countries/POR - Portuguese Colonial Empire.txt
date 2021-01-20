@@ -1,0 +1,33 @@
+﻿create_dynamic_country = {
+	original_tag = RAJ
+	set_cosmetic_tag = IND_POR
+	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+	add_ideas = colonial_government
+	
+	every_state = {
+		limit = {	is_core_of = RAJ	}
+		remove_core_of = PREV
+	}
+	
+	transfer_state = 321
+	321 = {	add_core_of = PREV	}
+}
+
+CPV	= {	set_cosmetic_tag = CPV_POR	add_ideas = colonial_government	}
+STP	= {	set_cosmetic_tag = STP_POR	add_ideas = colonial_government	}
+MZB	= {	set_cosmetic_tag = MZB_POR	add_ideas = colonial_government	}
+MCA	= {	set_cosmetic_tag = MCA_POR	add_ideas = leased_territory_government	}
+TLS	= {	set_cosmetic_tag = TLS_POR	add_ideas = colonial_government	}
+ANG	= {	set_cosmetic_tag = ANG_POR	add_ideas = colonial_government	}
+GNB	= {	set_cosmetic_tag = GNB_POR	add_ideas = colonial_government	}
+
+set_autonomy = {	target = CPV	autonomous_state = colony	}
+set_autonomy = {	target = STP	autonomous_state = colony	}
+set_autonomy = {	target = MZB	autonomous_state = colony	}
+set_autonomy = {	target = IN0	autonomous_state = colony	}
+set_autonomy = {	target = MCA	autonomous_state = leased_territory	}
+set_autonomy = {	target = TLS	autonomous_state = colony	}
+set_autonomy = {	target = ANG	autonomous_state = colony	}
+set_autonomy = {	target = GNB	autonomous_state = colony	}
