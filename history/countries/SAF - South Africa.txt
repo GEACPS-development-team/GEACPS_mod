@@ -3,10 +3,6 @@ oob = SAF_1946
 
 set_convoys = 5
 
-add_ideas = {
-	colonial_government
-}
-
 set_politics = {
 	ruling_party = authoritative_democracy
 	last_election = "1946.1.1"
@@ -25,3 +21,6 @@ set_popularities = {
 	reactionary_authoritarianism = 0
 	national_populism = 0
 }
+
+NMB = {	add_ideas = mandate_government	set_cosmetic_tag = NMB_SAF_ENG-GBR	}
+set_autonomy = {	target = NMB	autonomous_state = mandate	}
