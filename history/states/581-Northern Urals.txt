@@ -3,11 +3,6 @@ state={
 	name="STATE_581"
 	manpower = 48831
 	
-	resources={
-		chromium=40 # was: 44
-		aluminium=27 # was: 30
-	}
-	
 	state_category = town
 
 	history={
@@ -15,10 +10,13 @@ state={
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 1
+			12530 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	provinces={
-		12502 13076
+		12530
 	}
 }
