@@ -1,7 +1,8 @@
 ﻿#植民地国家生成
 create_dynamic_country = {
 	original_tag = RAJ
-	set_cosmetic_tag = IND_FRA
+	set_country_flag = IND_FRA_countryflag
+	set_cosmetic_tag = COUNTRY_FRA
 	set_politics = {	ruling_party = reactionary_authoritarianism	}
 	set_popularities = {	reactionary_authoritarianism = 100	}
 	
@@ -14,49 +15,17 @@ create_dynamic_country = {
 	
 	transfer_state = 320	320 = {	add_core_of = PREV	}
 }
-create_dynamic_country = {
-	original_tag = SEN
-	set_cosmetic_tag = WAF_FRA
-	set_politics = {	ruling_party = reactionary_authoritarianism	}
-	set_popularities = {	reactionary_authoritarianism = 100	}
-	
-	add_ideas = colonial_government
-	
-	transfer_state = 272
-	transfer_state = 515	515 = {	add_core_of = PREV	}
-	transfer_state = 556	556 = {	add_core_of = PREV	}
-	transfer_state = 557	557 = {	add_core_of = PREV	}
-	transfer_state = 776	776 = {	add_core_of = PREV	}
-	transfer_state = 778	778 = {	add_core_of = PREV	}
-	transfer_state = 779	779 = {	add_core_of = PREV	}
-	transfer_state = 780	780 = {	add_core_of = PREV	}
-	transfer_state = 781	781 = {	add_core_of = PREV	}
-	transfer_state = 782	782 = {	add_core_of = PREV	}
-	transfer_state = 786	786 = {	add_core_of = PREV	}
-}
-create_dynamic_country = {
-	original_tag = RCG
-	set_cosmetic_tag = CAF_FRA
-	set_politics = {	ruling_party = reactionary_authoritarianism	}
-	set_popularities = {	reactionary_authoritarianism = 100	}
-	
-	add_ideas = colonial_government
-	
-	transfer_state = 772
-	transfer_state = 539	539 = {	add_core_of = PREV	}
-	transfer_state = 660	660 = {	add_core_of = PREV	}
-	transfer_state = 774	774 = {	add_core_of = PREV	}
-	transfer_state = 775	775 = {	add_core_of = PREV	}
-}
 
 #傀儡, 植民地
-CAY	= {	set_cosmetic_tag = CAY_FRA	add_ideas = colonial_government	}
-SPM	= {	set_cosmetic_tag = SPM_FRA	add_ideas = colonial_government	}
+CAY	= {	set_cosmetic_tag = COUNTRY_FRA	add_ideas = colonial_government	}
+SPM	= {	set_cosmetic_tag = COUNTRY_FRA	add_ideas = colonial_government	}
 TUN	= {	set_cosmetic_tag = TUN_FRA	add_ideas = protectorate_government	}
 DJI	= {	set_cosmetic_tag = DJI_FRA	add_ideas = colonial_government	}
+WAF	= {	set_cosmetic_tag = COUNTRY_FRA	add_ideas = colonial_government	add_ideas = federal_state	}
 MAD	= {	set_cosmetic_tag = MAD_FRA	add_ideas = colonial_government	}
+EQA	= {	set_cosmetic_tag = COUNTRY_FRA	add_ideas = colonial_government	}
 MOR	= {	set_cosmetic_tag = MOR_FRA	add_ideas = protectorate_government	}
-CMR	= {	set_cosmetic_tag = CMR_FRA	add_ideas = mandate_government	}
+CMR	= {	set_cosmetic_tag = COUNTRY_FRA	add_ideas = mandate_government	}
 TOG	= {	set_cosmetic_tag = TOG_FRA	add_ideas = mandate_government	}
 SAR	= {	set_cosmetic_tag = SAR_FRA	add_ideas = protectorate_government	}
 RHI	= {	set_cosmetic_tag = RHI_FRA	add_ideas = protectorate_government	}
@@ -67,9 +36,9 @@ set_autonomy = {	target = CAY	autonomous_state = colony	}
 set_autonomy = {	target = SPM	autonomous_state = colony	}
 set_autonomy = {	target = TUN	autonomous_state = protected_territory	}
 set_autonomy = {	target = DJI	autonomous_state = colony	}
-set_autonomy = {	target = WA0	autonomous_state = colony	}
+set_autonomy = {	target = WAF	autonomous_state = federation_of_colonies	}
 set_autonomy = {	target = MAD	autonomous_state = colony	}
-set_autonomy = {	target = CA0	autonomous_state = colony	}
+set_autonomy = {	target = EQA	autonomous_state = colony	}
 set_autonomy = {	target = MOR	autonomous_state = protected_territory	}
 set_autonomy = {	target = CMR	autonomous_state = mandate	}
 set_autonomy = {	target = TOG	autonomous_state = mandate	}
@@ -83,9 +52,9 @@ add_to_faction = FRA
 add_to_faction = IN1
 add_to_faction = TUN
 add_to_faction = DJI
-add_to_faction = WA0
+add_to_faction = WAF
 add_to_faction = MAD
-add_to_faction = CA0
+add_to_faction = EQA
 add_to_faction = MOR
 add_to_faction = CMR
 add_to_faction = TOG
