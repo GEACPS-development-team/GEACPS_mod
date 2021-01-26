@@ -1,0 +1,44 @@
+ideas = {
+	country = {
+		GEACPS_IDEA_ITA_1 = {	#トリノ協定
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_constitutional_guarantee
+			removal_cost = -1
+			modifier = {
+				theorist_cost_factor = 1
+				conscription = -0.1
+				#戦争目標作成の国際緊張による制限:+100%
+				#陣営加入の国際緊張による制限:+100%
+				#レンドリースの国際緊張による制限:+100%
+				#義勇軍派遣の国際緊張による制限:+100%
+				#独立保障の国際緊張による制限:+100%
+				#原油当たりの燃料増加量:-50%
+				civilian_intel_factor = -1
+				army_intel_factor = -1
+				navy_intel_factor = -1
+				airforce_intel_factor = -1
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				economy_cost_factor = 1
+				trade_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+			}
+		}
+		
+		GEACPS_IDEA_ITA_2 = {	#敗戦の記憶
+			allowed = {
+				always = no
+			}
+			picture = idea_chi_forced_conscription
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 1
+				stability_factor = -0.5
+				war_support_factor = -0.5
+			}
+		}
+	}
+}

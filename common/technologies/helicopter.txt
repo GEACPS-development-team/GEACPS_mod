@@ -8,6 +8,11 @@ technologies = {
 			leads_to_tech = experimental_helicopter
 			research_cost_coeff = 1
 		}
+		desc = "auto_gyro_tooltip"
+
+		on_research_complete = {
+			custom_effect_tooltip = auto_gyro_complate_tooltip
+		}
 
 		
 		research_cost = 2
@@ -266,7 +271,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = recon_helicopter_1975
+			leads_to_tech = recon_helicopter_1985
 			research_cost_coeff = 1
 		}
 
@@ -294,6 +299,44 @@ technologies = {
 			}
 		}
 	}
+	recon_helicopter_1985 = {
+		xp_research_type = air
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipments = {
+			recon_helicopter_equipment_5
+		}
+
+#		path = {
+#			leads_to_tech = recon_helicopter_1990
+#			research_cost_coeff = 1
+#		}
+
+		
+		research_cost = 2
+		start_year = 1985
+		folder = {
+			name = helicopter_folder
+			position = { x = 6 y = 18 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
 	transport_helicopter_1960 = {
 		xp_research_type = air
 		xp_research_cost = 50
@@ -381,7 +424,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = heavy_helicopter_1980
+			leads_to_tech = transport_helicopter_1980
 			research_cost_coeff = 1
 		}
 
@@ -409,6 +452,81 @@ technologies = {
 			}
 		}
 	}
+	transport_helicopter_1980 = {
+		xp_research_type = air
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipments = {
+			transport_helicopter_equipment_4
+		}
+
+		path = {
+			leads_to_tech = transport_helicopter_1990
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2
+		start_year = 1980
+		folder = {
+			name = helicopter_folder
+			position = { x = 9 y = 16 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+	transport_helicopter_1990 = {
+		xp_research_type = air
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipments = {
+			transport_helicopter_equipment_5
+		}
+
+#		path = {
+#			leads_to_tech = transport_helicopter_2000
+#			research_cost_coeff = 1
+#		}
+
+		
+		research_cost = 2
+		start_year = 1990
+		folder = {
+			name = helicopter_folder
+			position = { x = 9 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
 	patrol_helicopter_1955 = {
 		xp_research_type = air
 		xp_research_cost = 50
@@ -525,11 +643,11 @@ technologies = {
 		xp_research_cost = 50
 		xp_research_bonus = 0.50
 		enable_equipments = {
-			patrol_helicopter_equipment_3
+			patrol_helicopter_equipment_4
 		}
 
 		path = {
-			leads_to_tech = small_helicopter_1980
+			leads_to_tech = patrol_helicopter_1990
 			research_cost_coeff = 1
 		}
 
@@ -557,6 +675,44 @@ technologies = {
 			}
 		}
 	}
+	patrol_helicopter_1990 = {
+		xp_research_type = air
+		xp_research_cost = 50
+		xp_research_bonus = 0.50
+		enable_equipments = {
+			patrol_helicopter_equipment_5
+		}
+
+		path = {
+			leads_to_tech = small_helicopter_1980
+			research_cost_coeff = 1
+		}
+
+		
+		research_cost = 2
+		start_year = 1975
+		folder = {
+			name = helicopter_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		categories = {
+			light_air
+			light_fighter
+			air_equipment
+		}
+		
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+		}
+	}
+
 	attack_helicopter_1965 = {
 		xp_research_type = air
 		xp_research_cost = 50

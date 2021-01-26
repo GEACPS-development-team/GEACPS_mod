@@ -51,7 +51,7 @@ country_event = {
 
 	option = {
 		name = GEACPS_china.002.a1#反乱を抑える(1度目)
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 20 }
 		trigger = {				
 			NOT = {
 				has_country_flag = china.collapse.1
@@ -69,7 +69,7 @@ country_event = {
 	}
 	option = {
 		name = GEACPS_china.002.a2#反乱を抑える(2度目)
-		ai_chance = { factor = 10 }
+		ai_chance = { factor = 30 }
 		trigger = {				
 			has_country_flag = china.collapse.1
 		}
@@ -438,13 +438,6 @@ country_event = {
 				days = 3
 				random = 4
 			}
-			TIB = {
-				country_event = {
-					id = GEACPS_china.008
-					days = 2
-					random = 3
-				}
-			}
 		}
 	}
 
@@ -470,63 +463,6 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.008#(チベット)領土奪還できるよ！
-	title = GEACPS_china.008.title
-	desc = GEACPS_china.008.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
-	option = {
-		name = GEACPS_china.008.a#取り返せ！
-		ai_chance = { factor = 30 }
-		transfer_state = 1071
-		CHI = {
-			country_event = {
-				id = GEACPS_china.009
-				days = 1
-				random = 2
-			}
-		}
-
-	}
-	option = {
-		name = GEACPS_china.008.a#やめておくべきだ。
-		ai_chance = { factor = 5 }
-	}
-
-}
-country_event = {
-	id = GEACPS_china.009#チベットがうちの領土取った！
-	title = GEACPS_china.009.title
-	desc = GEACPS_china.009.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-	option = {
-		name = GEACPS_china.009.a#yamete
-		ai_chance = { factor = 20 }
-		add_opinion_modifier = {
-			target = TIB
-			modifier = TIB_CHI_territory
-		}
-		declare_war_on = {
-			target = TIB
-			type = topple_government
-		}
-	}
-
-	option = {
-		name = GEACPS_china.009.b#yamete
-		ai_chance = { factor = 30 }
-		add_opinion_modifier = {
-			target = TIB
-			modifier = TIB_CHI_territory
-		}
-	}
-
-}
-country_event = {
 	id = GEACPS_china.010#日本と講和してもええんやで…
 	title = GEACPS_china.010.title
 	desc = GEACPS_china.010.desc
@@ -535,7 +471,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = GEACPS_china.010.a#講和開始
-		ai_chance = { factor = 5 }
+		ai_chance = { factor = 100 }
 		JAP = {
 			country_event = {
 				id = GEACPS_china.011
