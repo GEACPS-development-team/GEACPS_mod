@@ -1749,4 +1749,74 @@ focus_tree = {
 			
 		}
 	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_01
+		icon = GFX_goal_generic_air_fighter
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_army_00
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_army_00 }
+
+		completion_reward = {
+			remove_ideas = JAP_duplicate_research_efforts
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_02
+		x = -2
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_01
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_01 }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_Me262
+				bonus = 2
+				uses = 1
+				category = jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_03
+		icon = GFX_focus_jap_zero
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_01
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_01 }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_Zero
+				bonus = 2
+				uses = 1
+				category = light_fighter
+			}
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_04
+		x = 2
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_01
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_01 }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_Zero
+				bonus = 1
+				uses = 2
+				category = naval_bomber
+
+			}
+		}
+	}
 }
