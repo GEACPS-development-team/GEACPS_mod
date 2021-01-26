@@ -44,5 +44,88 @@ ideas = {
 			modifier = {
 			}
 		}
+
+		JAP_carrier_capacity = {
+			allowed = { always = no }
+			allowed_civil_war = {
+			NOT = {
+				has_government = fascism
+				}
+			}
+			removal_cost = -1
+
+			modifier = {
+				sortie_efficiency = 0.2
+				carrier_capacity_penalty_reduction = -0.25
+			}
+		}
+
+		JAP_capital_ship_made = {
+			allowed = { always = no }
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				capital_ship = {
+					build_cost_ic = -0.20
+				}
+			}
+
+			sub_unit_modifiers = {
+				capital_ship = {
+					build_cost_ic = -0.20
+				}
+			}	
+		}
+
+		JAP_Battleships_making_skils = {
+			removal_cost = -1
+
+			modifier = {
+				battleship = {
+					build_cost_ic = -0.25
+				}
+			}
+
+			sub_unit_modifiers = {
+				battleship = {
+					build_cost_ic = -0.25
+				}
+			}
+		}
+
+		JAP_Pacific_Guardians = {
+			removal_cost = -1
+
+			modifier = {
+				experience_gain_navy = 1
+				naval_damage_factor = 0.1
+			}
+
+			sub_unit_modifiers = {
+				capital_ship = {
+					naval_damage_factor = 0.1
+				}
+			}
+		}
+
+		JAP_Angled_flight_deck = {
+			removal_cost = -1
+
+			modifier = {
+				sortie_efficiency = 0.2
+			}
+		}
+
+		JAP_Proximity_fuze = {
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
 	}
 }
