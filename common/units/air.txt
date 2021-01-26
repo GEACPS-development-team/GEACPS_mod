@@ -158,5 +158,32 @@ sub_units = {
 		type = { suicide }
 		need = { suicide_craft_equipment = 1 }
 	}
-	
+	transport_helicopter = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { air_transport }
+		need = { transport_helicopter_equipment = 1 }
+	}
+	recon_helicopter = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { scout_plane }
+		need = { recon_helicopter_equipment = 1 }
+	}
+	attack_helicopter = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { cas }
+		need = { attack_helicopter_equipment = 1 }
+	}
+	patrol_helicopter = {
+		sprite = heavy_plane
+		priority = 1
+		active = yes
+		type = { naval_bomber }
+		need = { patrol_helicopter_equipment = 1 }
+
 }
