@@ -1469,7 +1469,7 @@ focus_tree = {
 
 	focus = {
 		id = GEACPS_NF_JAP_navy_05
-		x = 4
+		x = 8
 		y = 1
 		relative_position_id = GEACPS_NF_JAP_navy_01
 		icon = GFX_goal_generic_occupy_start_war
@@ -1713,6 +1713,10 @@ focus_tree = {
 			focus = GEACPS_NF_JAP_navy_10
 			focus = GEACPS_NF_JAP_navy_11
 		}
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_22
+			focus = GEACPS_NF_JAP_navy_23
+		}
 
 		completion_reward = {
 			add_ideas = JAP_Pacific_Guardians
@@ -1789,6 +1793,86 @@ focus_tree = {
 
 		completion_reward = {
 			
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_18
+		x = 4
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_01
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_19 }
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GEACPS_NF_JAP_navy_19
+		x = 6
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_01
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_18 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_20
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_18
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_18 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_21
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_19
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_19 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_22
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_20
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_20 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_23
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_21
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_21 }
+
+		completion_reward = {
+
 		}
 	}
 
