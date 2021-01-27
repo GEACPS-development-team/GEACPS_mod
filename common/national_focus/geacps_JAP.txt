@@ -1338,7 +1338,7 @@ focus_tree = {
 						fixed_ship_battery_slot = ship_super_heavy_battery_2
 						fixed_ship_anti_air_slot = ship_anti_air_cannon_4
 						fixed_ship_fire_control_system_slot = ship_fire_control_system_4
-						fixed_ship_radar_slot = empty
+						fixed_ship_radar_slot = ship_radar_3
 						fixed_ship_engine_slot = super_heavy_ship_engine_2
 						fixed_ship_secondaries_slot = ship_secondaries_2
 						fixed_ship_armor_slot = ship_armor_shbb_2
@@ -1904,10 +1904,10 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = JAP_Helicopters
+				name = JAP_tacticalbombers
 				bonus = 1
 				uses = 2
-				category = helicopter
+				category = tactical_bomber
 			}
 		}
 	}
@@ -1924,6 +1924,32 @@ focus_tree = {
 
 		completion_reward = {
 
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_09
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_08
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_08 }
+
+		completion_reward = {
+			add_ideas = JAP_jet_planes
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_10
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_09
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_09 }
+
+		completion_reward = {
+			add_ideas = JAP_Empire_sky_guardians
 		}
 	}
 }
