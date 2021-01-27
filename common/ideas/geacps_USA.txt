@@ -1,0 +1,74 @@
+ideas = {
+	country = {
+		USA_sour_loser = {
+			allowed = {
+				always = no
+			}
+			picture = prc_low_popular_support3
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.2
+			}
+		}
+		
+		USA_failed_new_deal = {
+			picture = usa_great_depression_3
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 1
+				consumer_goods_factor = 0.3
+				conscription_factor = -0.5
+				join_faction_tension = 0.20
+				local_resources_factor = -0.2
+			}
+		}
+		
+		USA_war_debt = {
+			picture = SPR_seize_the_gold_reserves
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
+		
+		USA_war_indemnity = {
+			picture = chi_hyper_inflation5
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.2
+			}
+		}
+		
+		USA_spread_dissatisfaction = {
+			picture = chi_war_of_resistance
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				stability_weekly = -0.01
+			}
+		}
+		USA_new_year_strike = {
+			picture = FRA_factory_strikes
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.1
+				production_factory_start_efficiency_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.2
+			}
+		}
+	}
+}

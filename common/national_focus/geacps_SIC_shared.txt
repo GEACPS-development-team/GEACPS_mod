@@ -1,0 +1,155 @@
+#タラント湾の再開発
+shared_focus = {
+    id = SIC_Taranto_Bay_Redevelopment
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5.00
+    prerequisite = {
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 4
+y = 0
+    completion_reward = {
+    }
+}
+#カラブリアの失業者を救済
+shared_focus = {
+    id = SIC_Helping_the_Unemployed_in_Calabria
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Taranto_Bay_Redevelopment
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 3
+y = 1
+    completion_reward = {
+    }
+}
+#サレルノ大学
+shared_focus = {
+    id = SIC_Salerno_University
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_support_students
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 1
+y = 3
+    completion_reward = {
+    }
+}
+#学生への支援
+shared_focus = {
+    id = SIC_support_students
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Helping_the_Unemployed_in_Calabria
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 1
+y = 2
+    completion_reward = {
+    }
+}
+#パレルモ港の再開発
+shared_focus = {
+    id = SIC_Port_of_Palermo_Redevelopment
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5.00
+    prerequisite = {
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 6
+y = 0
+    completion_reward = {
+    }
+}
+#取締りの強化
+shared_focus = {
+    id = SIC_Tighter_control
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Taranto_Bay_Redevelopment
+        focus = SIC_Port_of_Palermo_Redevelopment
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 5
+y = 1
+    completion_reward = {
+    }
+}
