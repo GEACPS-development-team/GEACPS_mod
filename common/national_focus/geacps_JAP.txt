@@ -1350,30 +1350,29 @@ focus_tree = {
 						rear_1_custom_slot = ship_super_heavy_battery_2
 						rear_2_custom_slot = ship_airplane_launcher_1
 					}
-					custom_effect_tooltip = JAP_yamato_tt
-                
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_super_heavy_2
-							creator = "JAP" 
-							version_name = "Super Yamato Class"
-						}
-						name = "Suruga" 
-						requested_factories = 1
-						progress = 0.5
-						amount = 1
+				}	
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_2
+						creator = "JAP" 
+						version_name = "Super Yamato Class"
 					}
-                    add_equipment_production = {
-						equipment = {
-							type = ship_hull_super_heavy_2
-							creator = "JAP" 
-							version_name = "Super Yamato Class"
-						}
-						name = "Oumi" 
-						requested_factories = 1
-						progress = 0.5
-						amount = 1
+					name = "Suruga" 
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
 					}
+                add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_2
+						creator = "JAP" 
+						version_name = "Super Yamato Class"
+					}
+					name = "Oumi" 
+					requested_factories = 1
+					progress = 0.5
+					amount = 1
+				}
 				#hidden_effect = {
 					#add_equipment_production = {
 						#equipment = {
@@ -1398,7 +1397,6 @@ focus_tree = {
 						#amount = 1
 					#}
 				#}
-            }
 			random_owned_controlled_state = {
 				limit = {
 					ROOT = { has_full_control_of_state = PREV }
@@ -1560,6 +1558,7 @@ focus_tree = {
 						rear_1_custom_slot = ship_armor_carrier_deck
 						rear_2_custom_slot = ship_anti_air_cannon_4
 					}
+				}
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_carrier_4
@@ -1594,7 +1593,7 @@ focus_tree = {
 						amount = 1
 				}
             }
-		}
+		
 	}
 
 	focus = {
@@ -1640,6 +1639,7 @@ focus_tree = {
 						rear_1_custom_slot = ship_heavy_battery_5
 						rear_2_custom_slot = ship_heavy_battery_5
 					}
+				}
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_super_heavy_2
@@ -1684,9 +1684,9 @@ focus_tree = {
 						progress = 0.15
 						amount = 1
 					}
-            }
-		}
+        }
 	}
+	
 
 	focus = {
 		id = GEACPS_NF_JAP_navy_11
