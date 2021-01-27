@@ -1469,7 +1469,7 @@ focus_tree = {
 
 	focus = {
 		id = GEACPS_NF_JAP_navy_05
-		x = 8
+		x = 12
 		y = 1
 		relative_position_id = GEACPS_NF_JAP_navy_01
 		icon = GFX_goal_generic_occupy_start_war
@@ -1717,6 +1717,10 @@ focus_tree = {
 			focus = GEACPS_NF_JAP_navy_22
 			focus = GEACPS_NF_JAP_navy_23
 		}
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_28
+			focus = GEACPS_NF_JAP_navy_29
+		}
 
 		completion_reward = {
 			add_ideas = JAP_Pacific_Guardians
@@ -1870,6 +1874,86 @@ focus_tree = {
 		relative_position_id = GEACPS_NF_JAP_navy_21
 		cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_21 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_24
+		x = 8
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_01
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_25 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_25
+		x = 10
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_01
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_24 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_26
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_24
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_24 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_27
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_25
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_25 }
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_28
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_26
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_26 }
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_29
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_27
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_27 }
 
 		completion_reward = {
 
