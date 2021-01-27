@@ -60,6 +60,16 @@ ideas = {
 			}
 		}
 
+		JAP_torpedo_perfect = {
+			allowed = { always = no }
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
 		JAP_capital_ship_made = {
 			allowed = { always = no }
 			allowed_civil_war = {
@@ -69,13 +79,19 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				capital_ship = {
-					build_cost_ic = -0.20
-				}
+				#capital_ship = {
+				#	build_cost_ic = -0.20
+				#}
 			}
 
-			sub_unit_modifiers = {
-				capital_ship = {
+			#sub_unit_modifiers = {
+			#	capital_ship = {
+			#		build_cost_ic = -0.20
+			#	}
+			#}
+			
+			equipment_bonus = {
+				capitalship_equipment = {
 					build_cost_ic = -0.20
 				}
 			}	
@@ -85,13 +101,19 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				battleship = {
-					build_cost_ic = -0.25
-				}
+				#battleship = {
+				#	build_cost_ic = -0.25
+				#}
 			}
 
-			sub_unit_modifiers = {
-				battleship = {
+			#sub_unit_modifiers = {
+			#	battleship = {
+			#		build_cost_ic = -0.25
+			#	}
+			#}
+
+			equipment_bonus = {
+				battleship_equipment = {
 					build_cost_ic = -0.25
 				}
 			}
@@ -105,9 +127,15 @@ ideas = {
 				naval_damage_factor = 0.1
 			}
 
-			sub_unit_modifiers = {
-				capital_ship = {
-					naval_damage_factor = 0.1
+			#sub_unit_modifiers = {
+			#	capital_ship = {
+			#		naval_damage_factor = 0.1
+			#	}
+			#}
+
+			equipment_bonus = {
+				capital_ship_equipment = {
+					#naval_damage_factor = 0.1
 				}
 			}
 		}
@@ -121,6 +149,21 @@ ideas = {
 		}
 
 		JAP_Proximity_fuze = {
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+
+		JAP_jet_planes = {
+			removal_cost = -1
+			modifier = {
+
+			}
+		}
+
+		JAP_Empire_sky_guardians = {
 			removal_cost = -1
 
 			modifier = {
