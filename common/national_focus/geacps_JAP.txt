@@ -1351,7 +1351,7 @@ focus_tree = {
 						rear_2_custom_slot = ship_airplane_launcher_1
 					}
 					custom_effect_tooltip = JAP_yamato_tt
-                    hidden_effect = {
+                
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_super_heavy_2
@@ -1374,7 +1374,30 @@ focus_tree = {
 						progress = 0.5
 						amount = 1
 					}
-				}
+				#hidden_effect = {
+					#add_equipment_production = {
+						#equipment = {
+							#type = ship_hull_super_heavy_2
+							#creator = "JAP" 
+							#version_name = "Super Yamato Class"
+						#}
+						#name = "Suruga" 
+						#requested_factories = 1
+						#progress = 0.5
+						#amount = 1
+					#}
+                    #add_equipment_production = {
+						#equipment = {
+							#type = ship_hull_super_heavy_2
+							#creator = "JAP" 
+							#version_name = "Super Yamato Class"
+						#}
+						#name = "Oumi" 
+						#requested_factories = 1
+						#progress = 0.5
+						#amount = 1
+					#}
+				#}
             }
 			random_owned_controlled_state = {
 				limit = {
@@ -1537,8 +1560,6 @@ focus_tree = {
 						rear_1_custom_slot = ship_armor_carrier_deck
 						rear_2_custom_slot = ship_anti_air_cannon_4
 					}
-					custom_effect_tooltip = JAP_yamato_tt
-                    hidden_effect = {
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_carrier_4
@@ -1571,7 +1592,6 @@ focus_tree = {
 						requested_factories = 1
 						progress = 0.2
 						amount = 1
-					}
 				}
             }
 		}
@@ -1620,8 +1640,7 @@ focus_tree = {
 						rear_1_custom_slot = ship_heavy_battery_5
 						rear_2_custom_slot = ship_heavy_battery_5
 					}
-					custom_effect_tooltip = JAP_yamato_tt
-                    hidden_effect = {
+					
 					add_equipment_production = {
 						equipment = {
 							type = ship_hull_super_heavy_2
@@ -1666,7 +1685,6 @@ focus_tree = {
 						progress = 0.15
 						amount = 1
 					}
-				}
             }
 		}
 	}
@@ -1836,12 +1854,77 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
-				name = JAP_Zero
+				name = JAP_Ryusei
 				bonus = 1
 				uses = 2
 				category = naval_bomber
 
 			}
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_05
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_02
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_02 }
+
+		completion_reward = {
+			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
+			hidden_effect = { set_technology = { suicide_craft = 1 } }
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_06
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_03
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_03 }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_Helicopters
+				bonus = 1
+				uses = 2
+				category = helicopter
+				}
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_07
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_04
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_04 }
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = JAP_Helicopters
+				bonus = 1
+				uses = 2
+				category = helicopter
+			}
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_air_08
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_air_06
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_air_05 }
+		prerequisite = { focus = GEACPS_NF_JAP_air_06 }
+		prerequisite = { focus = GEACPS_NF_JAP_air_07 }
+
+		completion_reward = {
+
 		}
 	}
 }
