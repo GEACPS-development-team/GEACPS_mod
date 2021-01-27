@@ -1,0 +1,663 @@
+add_namespace = USA_ACW
+
+country_event = { #Intro 1/7
+	id = USA_ACW.0
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.0"
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.1
+				days = 7
+			}
+		}
+	}
+	title = USA_ACW.0.t
+	desc = USA_ACW.0.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Happy New Year
+		name = USA_ACW.0.a
+		ai_chance = { base = 1 }
+		
+	}
+}
+
+country_event = { #General Strike 1/15
+	id = USA_ACW.1
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.1"
+	}
+	title = USA_ACW.1.t
+	desc = USA_ACW.1.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Suppression
+		name = USA_ACW.1.a
+		ai_chance = { base = 2 }
+		add_stability = -0.05
+		add_political_power = -50
+		custom_effect_tooltip = USA_suppression_tt
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.2
+				days = 10
+			}
+		}
+	}
+	option = { #Negotiations
+		name = USA_ACW.1.b
+		ai_chance = { base = 1 }
+		add_stability = -0.03
+		add_political_power = -10
+		custom_effect_tooltip = USA_negotiation_tt
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.3
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #protest 1/25
+	id = USA_ACW.2
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.2"
+	}
+	title = USA_ACW.2.t
+	desc = USA_ACW.2.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.2.a
+		ai_chance = { base = 1 }
+		add_stability = -0.03
+		set_country_flag = USA_selected_suppression
+		custom_effect_tooltip = USA_create_resistance_tt
+	}
+}
+
+country_event = { #aggred negotiation 1/25
+	id = USA_ACW.3
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.3"
+	}
+	title = USA_ACW.3.t
+	desc = USA_ACW.3.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.3.a
+		ai_chance = { base = 1 }
+		add_stability = 0.01
+		add_political_power = -15
+		set_country_flag = USA_selected_negotiation
+	}
+}
+
+country_event = { #2/12 Isaac Woodard Incident
+	id = USA_ACW.4
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.4"
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.5
+				days = 21
+			}
+		}
+	}
+	title = USA_ACW.4.t
+	desc = USA_ACW.4.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #breakdown in negotiations
+		name = USA_ACW.4.a
+		ai_chance = { base = 1 }
+		trigger = {
+			has_country_flag = USA_selected_negotiation
+		}
+		add_stability = -0.05
+	}
+	option = { #Demonstration Spread
+		name = USA_ACW.4.b
+		ai_chance = { base = 1 }
+		trigger = {
+			has_country_flag = USA_selected_suppression
+		}
+		add_stability = -0.04
+	}
+}
+
+country_event = { #clash between police and protesters in Philadelphia
+	id = USA_ACW.5
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.5"
+		hidden_effect = {
+			country_event = { #violent protesters
+				id = USA_ACW.6
+				days = 15
+			}
+		}
+	}
+	title = USA_ACW.5.t
+	desc = USA_ACW.5.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Damm
+		name = USA_ACW.5.a
+		ai_chance = { base = 1 }
+		
+	}
+}
+
+country_event = { #violent protesters
+	id = USA_ACW.6
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.6"
+		hidden_effect = {
+			country_event = { #Rise of Communism
+				id = USA_ACW.7
+				days = 20
+			}
+		}
+	}
+	title = USA_ACW.6.t
+	desc = USA_ACW.6.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.6.a
+		ai_chance = { base = 1 }
+		add_manpower = -500
+	}
+}
+
+country_event = { #Rise of Communism
+	id = USA_ACW.7
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.7"
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.8
+				days = 15
+			}
+		}
+	}
+	title = USA_ACW.7.t
+	desc = USA_ACW.7.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.7.a
+		ai_chance = { base = 1 }
+		
+	}
+}
+
+country_event = { #Red fears spreading in politics
+	id = USA_ACW.8
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.8"
+	}
+	title = USA_ACW.8.t
+	desc = USA_ACW.8.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #National Guard deployment
+		name = USA_ACW.8.a
+		ai_chance = { base = 1 }
+		add_command_power = -25
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.9
+				days = 20
+			}
+		}
+	}
+	option = { #Respond with police force
+		name = USA_ACW.8.b
+		ai_chance = { base = 1 }
+		add_command_power = -15
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.10
+				days = 13
+			}
+		}
+	}
+}
+
+country_event = { #accidental shooting
+	id = USA_ACW.9
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.9"
+	}
+	title = USA_ACW.9.t
+	desc = USA_ACW.9.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #FUCK
+		name = USA_ACW.9.a
+		ai_chance = { base = 1 }
+		add_manpower = -500
+		395 = {
+			set_demilitarized_zone = yes
+		}
+		394 = {
+			set_demilitarized_zone = yes
+		}
+		396 = {
+			set_demilitarized_zone = yes
+		}
+		393 = {
+			set_demilitarized_zone = yes
+		}
+		261 = {
+			set_demilitarized_zone = yes
+		}
+		set_country_flag = USA_accidental_shooting
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.11
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #Out of control
+	id = USA_ACW.10
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.10"
+	}
+	title = USA_ACW.10.t
+	desc = USA_ACW.10.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.10.a
+		ai_chance = { base = 1 }
+		add_manpower = -1000
+		395 = {
+			set_demilitarized_zone = yes
+		}
+		394 = {
+			set_demilitarized_zone = yes
+		}
+		396 = {
+			set_demilitarized_zone = yes
+		}
+		393 = {
+			set_demilitarized_zone = yes
+		}
+		261 = {
+			set_demilitarized_zone = yes
+		}
+		set_country_flag = USA_out_of_control
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.11
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #Governors's alignment
+	id = USA_ACW.11
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.11"
+	}
+	title = USA_ACW.11.t
+	desc = USA_ACW.11.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #주 방위군을 배치해라!
+		name = USA_ACW.11.a
+		ai_chance = { base = 1 }
+		trigger = {
+			has_country_flag = USA_out_of_control
+		}
+		add_stability = -0.1
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.12
+				days = 15
+			}
+		}
+	}
+	option = { #
+		name = USA_ACW.11.b
+		ai_chance = { base = 1 }
+		trigger = {
+			has_country_flag = USA_accidental_shooting
+		}
+		add_stability = -0.07
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.13
+				days = 15
+			}
+		}
+	}
+}
+
+country_event = { #National Guard Deployment Rejection
+	id = USA_ACW.12
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.12"
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.14
+				days = 15
+			}
+		}
+	}
+	title = USA_ACW.12.t
+	desc = USA_ACW.12.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #It's treason!
+		name = USA_ACW.12.a
+		ai_chance = { base = 1 }
+		AWR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = USA
+			}
+		}
+	}
+}
+
+country_event = { #Arms attack
+	id = USA_ACW.13
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.13"
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.14
+				days = 15
+			}
+		}
+	}
+	title = USA_ACW.13.t
+	desc = USA_ACW.13.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #It's treason!
+		name = USA_ACW.13.a
+		ai_chance = { base = 1 }
+		AWR = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+				producer = USA
+			}
+		}
+	}
+}
+
+country_event = { #Chicago Declaration
+	id = USA_ACW.14
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.14"
+		set_country_flag = ACW_start
+		hidden_effect = {
+			country_event = {
+				id = USA_ACW.15
+				days = 15
+			}
+		}
+	}
+	title = USA_ACW.14.t
+	desc = USA_ACW.14.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Protect the United States
+		name = USA_ACW.14.a
+		ai_chance = { base = 1 }
+		AWR = {
+			transfer_state = 261
+			transfer_state = 395
+			transfer_state = 396
+			transfer_state = 393
+			set_stability = 0
+			set_war_support = 0.4
+			Add_ACW_TAG = yes
+		}
+		USA = {
+			set_stability = 0
+			set_war_support = 0.4
+			Add_ACW_TAG = yes
+		}
+	}
+	option = { #Workers of nations, unite!
+		name = USA_ACW.14.b
+		ai_chance = { base = 1 }
+		AWR = {
+			transfer_state = 261
+			transfer_state = 395
+			transfer_state = 396
+			transfer_state = 393
+			set_stability = 0
+			set_war_support = 0.4
+			change_tag_from = USA
+			Add_ACW_TAG = yes
+		}
+		USA = {
+			set_stability = 0
+			set_war_support = 0.4
+			Add_ACW_TAG = yes
+		}
+	}
+}
+
+country_event = { #order to disband the army
+	id = USA_ACW.15
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.15"
+		hidden_effect = {
+			AWR = {
+				country_event = {
+					id = USA_ACW.16
+					days = 15
+				}
+			}
+		}
+	}
+	title = USA_ACW.15.t
+	desc = USA_ACW.15.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Send it
+		name = USA_ACW.15.a
+		ai_chance = { base = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA_ACW.16
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.16"
+	}
+	title = USA_ACW.16.t
+	desc = USA_ACW.16.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #Cheater ver
+		name = USA_ACW.16.a
+		ai_chance = { base = 1 }
+		set_war_support = -0.5
+		hidden_effect = {
+			USA = {
+				country_event = {
+					id = USA_ACW.17
+					days = 15
+				}
+			}
+		}
+	}
+	option = { #Normal
+		name = USA_ACW.16.b
+		ai_chance = { base = 1 }
+		trigger = {
+			has_country_flag = ACW_start
+		}
+		hidden_effect = {
+			USA = {
+				country_event = {
+					id = USA_ACW.17
+					days = 15
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Reject
+	id = USA_ACW.17
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.17"
+	}
+	title = USA_ACW.17.t
+	desc = USA_ACW.17.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.17.a
+		ai_chance = { base = 1 }
+		declare_war_on = {
+			target = AWR
+			type = annex_everything
+		}
+	}
+}
+
+country_event = { #Incomplete
+	id = USA_ACW.18
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.18"
+	}
+	title = USA_ACW.18.t
+	desc = USA_ACW.18.desc
+	#picture = 
+	trigger = {
+		has_country_flag = war_with_AWR
+	}
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.18.a
+		ai_chance = { base = 1 }
+	}
+	option = { #
+		name = USA_ACW.18.b
+		ai_chance = { base = 1 }
+	}
+}
+
+country_event = { #
+	id = USA_ACW.19
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.19"
+	}
+	title = USA_ACW.19.t
+	desc = USA_ACW.19.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.19.a
+		ai_chance = { base = 1 }
+		
+	}
+	option = { #
+		name = USA_ACW.19.b
+		ai_chance = { base = 1 }
+		
+	}
+}
+
+country_event = { #
+	id = USA_ACW.20
+	immediate = {
+		log = "[GetDateText]: [Root.GetName]: event USA_ACW.20"
+	}
+	title = USA_ACW.20.t
+	desc = USA_ACW.20.desc
+	#picture = 
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	option = { #
+		name = USA_ACW.20.a
+		ai_chance = { base = 1 }
+		
+	}
+	option = { #
+		name = USA_ACW.20.b
+		ai_chance = { base = 1 }
+		
+	}
+}
+
