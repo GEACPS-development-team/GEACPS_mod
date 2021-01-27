@@ -60,6 +60,16 @@ ideas = {
 			}
 		}
 
+		JAP_torpedo_perfect = {
+			allowed = { always = no }
+
+			removal_cost = -1
+
+			modifier = {
+
+			}
+		}
+
 		JAP_capital_ship_made = {
 			allowed = { always = no }
 			allowed_civil_war = {
@@ -69,32 +79,32 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				capital_ship = {
-					build_cost_ic = -0.20
-				}
+				#capital_ship = {
+				#	build_cost_ic = -0.20
+				#}
 			}
 
-			sub_unit_modifiers = {
-				capital_ship = {
-					build_cost_ic = -0.20
-				}
-			}	
+			#sub_unit_modifiers = {
+			#	capital_ship = {
+			#		build_cost_ic = -0.20
+			#	}
+			#}	
 		}
 
 		JAP_Battleships_making_skils = {
 			removal_cost = -1
 
 			modifier = {
-				battleship = {
-					build_cost_ic = -0.25
-				}
+				#battleship = {
+				#	build_cost_ic = -0.25
+				#}
 			}
 
-			sub_unit_modifiers = {
-				battleship = {
-					build_cost_ic = -0.25
-				}
-			}
+			#sub_unit_modifiers = {
+			#	battleship = {
+			#		build_cost_ic = -0.25
+			#	}
+			#}
 		}
 
 		JAP_Pacific_Guardians = {
@@ -105,11 +115,11 @@ ideas = {
 				naval_damage_factor = 0.1
 			}
 
-			sub_unit_modifiers = {
-				capital_ship = {
-					naval_damage_factor = 0.1
-				}
-			}
+			#sub_unit_modifiers = {
+			#	capital_ship = {
+			#		naval_damage_factor = 0.1
+			#	}
+			#}
 		}
 
 		JAP_Angled_flight_deck = {
