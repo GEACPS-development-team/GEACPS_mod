@@ -1719,7 +1719,8 @@ focus_tree = {
 			focus = GEACPS_NF_JAP_navy_26
 		}
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_29
+			focus = GEACPS_NF_JAP_navy_27
+			focus = GEACPS_NF_JAP_navy_30
 		}
 
 		completion_reward = {
@@ -2032,9 +2033,35 @@ focus_tree = {
 		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_25 }
 
 		completion_reward = {
-			
+
 		}
 
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_29
+		x = 0
+		Y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_28
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_28 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_30
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_29
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_29 }
+
+		completion_reward = {
+
+		}
 	}
 
 	focus = {
