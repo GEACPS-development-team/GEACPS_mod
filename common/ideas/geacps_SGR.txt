@@ -1,0 +1,63 @@
+ideas = {
+	country = {
+		GEACPS_IDEA_SGR_1 = {	#ハンブルク条約
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_constitutional_guarantee
+			removal_cost = -1
+			modifier = {
+				theorist_cost_factor = 1
+				conscription = -0.1
+				generate_wargoal_tension = 1
+				join_faction_tension = 1
+				guarantee_tension = 1
+				send_volunteers_tension = 1
+				civilian_intel_factor = -1
+				army_intel_factor = -1
+				navy_intel_factor = -1
+				airforce_intel_factor = -1
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.5
+				production_speed_dockyard_factor = -0.5
+				economy_cost_factor = 1
+				trade_laws_cost_factor = 1
+				trade_laws_cost_factor = 1
+			}
+		}
+		
+		GEACPS_IDEA_SGR_2 = {	#敗戦の記憶
+			allowed = {
+				always = no
+			}
+			picture = idea_chi_forced_conscription
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 1
+				stability_factor = -0.5
+				war_support_factor = -0.5
+			}
+		}
+		
+		GEACPS_IDEA_SGR_3 = {	#ナチスの弾圧
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_fascism_banned
+			removal_cost = -1
+			modifier = {
+				national_populism_drift = -1
+			}
+		}
+		
+		GEACPS_IDEA_SGR_4 = {	冷戦の最前線
+			allowed = {
+				always = no
+			}
+			picture = idea_generic_fascism_banned
+			removal_cost = -1
+			modifier = {
+			}
+		}
+	}
+}
