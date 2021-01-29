@@ -159,7 +159,7 @@ y = 1
 #ナポリの過密対策
 shared_focus = {
     id = SIC_Overcrowding_in_Naples
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_focus_generic_treaty
     cost = 5.00
     prerequisite = {
         focus = SIC_Tighter_control
@@ -185,7 +185,7 @@ y = 2
 #シチリアにおける工業化
 shared_focus = {
     id = SIC_Industrialization_in_Sicily
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_generic_production
     cost = 5.00
     prerequisite = {
         focus = SIC_Port_of_Palermo_Redevelopment
@@ -211,7 +211,7 @@ y = 1
 #職業訓練の徹底
 shared_focus = {
     id = SIC_Thorough_vocational_training
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_tfv_generic_tech_sharing
     cost = 5.00
     prerequisite = {
         focus = SIC_Helping_the_Unemployed_in_Calabria
@@ -237,7 +237,7 @@ y = 2
 #両シチリアの産業計画
 shared_focus = {
     id = SIC_Industrial_Planning_in_Both_Sicilies
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_focus_generic_the_giant_wakes
     cost = 5.00
     prerequisite = {
         focus = SIC_Thorough_vocational_training
@@ -266,7 +266,7 @@ y = 3
 #アウトストラーダの拡大
 shared_focus = {
     id = SIC_Outstrada_Operation
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_generic_construct_infrastructure
     cost = 5.00
     prerequisite = {
         focus = SIC_Industrial_Planning_in_Both_Sicilies
@@ -293,7 +293,7 @@ y = 4
 #新たな道
 shared_focus = {
     id = SIC_A_New_Road
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_focus_hol_the_foundations_of_defense
     cost = 5.00
     prerequisite = {
         focus = SIC_Industrial_Planning_in_Both_Sicilies
@@ -320,7 +320,7 @@ y = 4
 #失業者への給付
 shared_focus = {
     id = SIC_Benefits_to_the_unemployed
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_focus_eng_concessions_to_the_trade_unions
     cost = 5.00
     prerequisite = {
         focus = SIC_Outstrada_Operation
@@ -372,7 +372,7 @@ y = 5
 #独自通貨の発行
 shared_focus = {
     id = SIC_Issuance_of_proprietary_currency
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_focus_usa_reestablish_the_gold_standard
     cost = 5.00
     prerequisite = {
         focus = SIC_Adoption_of_planned_economy
@@ -398,7 +398,7 @@ y = 6
 #完璧なトリナクリア
 shared_focus = {
     id = SIC_Perfect_Trinacria
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_generic_political_pressure
     cost = 5.00
     prerequisite = {
         focus = SIC_Issuance_of_proprietary_currency
@@ -425,7 +425,7 @@ y = 7
 #自由市場の開拓
 shared_focus = {
     id = SIC_Free_Market_Development
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_generic_trade
     cost = 5.00
     prerequisite = {
         focus = SIC_A_New_Road
@@ -451,7 +451,7 @@ y = 5
 #企業への支援
 shared_focus = {
     id = SIC_Support_for_companies
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_focus_spa_save_the_alcazar
     cost = 5.00
     prerequisite = {
         focus = SIC_Free_Market_Development
@@ -477,7 +477,7 @@ y = 6
 #退役軍人への斡旋
 shared_focus = {
     id = SIC_Mediation_for_veterans
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_generic_intelligence_exchange
     cost = 5.00
     prerequisite = {
         focus = SIC_Benefits_to_the_unemployed
@@ -503,7 +503,7 @@ y = 6
 #造船業への注力
 shared_focus = {
     id = SIC_Focus_on_shipbuilding
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_generic_construct_naval_dockyard
     cost = 5.00
     prerequisite = {
         focus = SIC_A_New_Road
@@ -529,7 +529,7 @@ y = 5
 #地中海貿易条約
 shared_focus = {
     id = SIC_Mediterranean_trade_pact
-    icon = GFX_focus_generic_military_mission
+    icon = GFX_goal_generic_positive_trade_relations
     cost = 5.00
     prerequisite = {
         focus = SIC_Focus_on_shipbuilding
@@ -549,6 +549,137 @@ available_if_capitulated = no
 search_filters = { FOCUS_FILTER_POLITICAL }
 x = 7
 y = 6
+    completion_reward = {
+    }
+}
+#両シチリア海軍の再構築
+shared_focus = {
+    id = SIC_Reconstruction_of_Two_Sicilian_Navies
+    icon = GFX_goal_generic_navy_battleship
+    cost = 5.00
+    prerequisite = {
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 9
+y = 0
+    completion_reward = {
+    }
+}
+#造船業の拡大
+shared_focus = {
+    id = SIC_Expansion_of_shipbuilding_industry
+    icon = GFX_goal_generic_construct_naval_dockyard
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Reconstruction_of_Two_Sicilian_Navies
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 10
+y = 1
+    completion_reward = {
+    }
+}
+#海峡要塞
+shared_focus = {
+    id = SIC_Construction_of_Strait_Fortress
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Reconstruction_of_Two_Sicilian_Navies
+        }
+    prerequisite = {
+        focus = SIC_Industrialization_in_Sicily
+    }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 8
+y = 2
+    completion_reward = {
+    }
+}
+#陸軍師団の拡張
+shared_focus = {
+    id = SIC_Expansion_of_Army_Division
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 12
+y = 0
+    completion_reward = {
+    }
+}
+#師団の状況を改善
+shared_focus = {
+    id = SIC_Improving_the_situation_of_the_division
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Expansion_of_Army_Division
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 12
+y = 1
     completion_reward = {
     }
 }
