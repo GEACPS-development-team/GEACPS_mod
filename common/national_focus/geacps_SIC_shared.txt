@@ -1,3 +1,6 @@
+##################
+### MAIN_FOCUS ###
+##################
 #タラント湾の再開発
 shared_focus = {
     id = SIC_Taranto_Bay_Redevelopment
@@ -26,7 +29,7 @@ y = 0
 #カラブリアの失業者を救済
 shared_focus = {
     id = SIC_Helping_the_Unemployed_in_Calabria
-    icon = GFX_goal_generic_construct_naval_dockyard
+    icon = GFX_focus_generic_concessions
     cost = 5.00
     prerequisite = {
         focus = SIC_Taranto_Bay_Redevelopment
@@ -52,7 +55,7 @@ y = 1
 #サレルノ大学
 shared_focus = {
     id = SIC_Salerno_University
-    icon = GFX_goal_generic_construct_naval_dockyard
+    icon = GFX_goal_generic_scientific_exchange
     cost = 5.00
     prerequisite = {
         focus = SIC_support_students
@@ -78,7 +81,7 @@ y = 3
 #学生への支援
 shared_focus = {
     id = SIC_support_students
-    icon = GFX_goal_generic_construct_naval_dockyard
+    icon = GFX_focus_generic_military_academy
     cost = 5.00
     prerequisite = {
         focus = SIC_Helping_the_Unemployed_in_Calabria
@@ -104,7 +107,7 @@ y = 2
 #パレルモ港の再開発
 shared_focus = {
     id = SIC_Port_of_Palermo_Redevelopment
-    icon = GFX_goal_generic_construct_naval_dockyard
+    icon = GFX_goal_generic_navy_cruiser
     cost = 5.00
     prerequisite = {
          }
@@ -129,7 +132,7 @@ y = 0
 #取締りの強化
 shared_focus = {
     id = SIC_Tighter_control
-    icon = GFX_goal_generic_construct_naval_dockyard
+    icon = GFX_focus_generic_military_mission
     cost = 5.00
     prerequisite = {
         focus = SIC_Taranto_Bay_Redevelopment
@@ -150,6 +153,402 @@ available_if_capitulated = no
 search_filters = { FOCUS_FILTER_POLITICAL }
 x = 5
 y = 1
+    completion_reward = {
+    }
+}
+#ナポリの過密対策
+shared_focus = {
+    id = SIC_Overcrowding_in_Naples
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Tighter_control
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 5
+y = 2
+    completion_reward = {
+    }
+}
+#シチリアにおける工業化
+shared_focus = {
+    id = SIC_Industrialization_in_Sicily
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Port_of_Palermo_Redevelopment
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 7
+y = 1
+    completion_reward = {
+    }
+}
+#職業訓練の徹底
+shared_focus = {
+    id = SIC_Thorough_vocational_training
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Helping_the_Unemployed_in_Calabria
+         }
+    mutually_exclusive = { 
+         }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 3
+y = 2
+    completion_reward = {
+    }
+}
+#両シチリアの産業計画
+shared_focus = {
+    id = SIC_Industrial_Planning_in_Both_Sicilies
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Thorough_vocational_training
+        }
+        prerequisite = {
+            focus = SIC_Overcrowding_in_Naples
+            }
+    mutually_exclusive = { 
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 4
+y = 3
+    completion_reward = {
+    }
+}
+#アウトストラーダの拡大
+shared_focus = {
+    id = SIC_Outstrada_Operation
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Industrial_Planning_in_Both_Sicilies
+        }
+    mutually_exclusive = { 
+        focus = SIC_A_New_Road
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 3
+y = 4
+    completion_reward = {
+    }
+}
+#新たな道
+shared_focus = {
+    id = SIC_A_New_Road
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Industrial_Planning_in_Both_Sicilies
+        }
+    mutually_exclusive = {
+        focus = SIC_Outstrada_Operation
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 5
+y = 4
+    completion_reward = {
+    }
+}
+#失業者への給付
+shared_focus = {
+    id = SIC_Benefits_to_the_unemployed
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Outstrada_Operation
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 1
+y = 5
+    completion_reward = {
+    }
+}
+#計画経済の採用
+shared_focus = {
+    id = SIC_Adoption_of_planned_economy
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Outstrada_Operation
+        }
+    mutually_exclusive = { 
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 3
+y = 5
+    completion_reward = {
+    }
+}
+#独自通貨の発行
+shared_focus = {
+    id = SIC_Issuance_of_proprietary_currency
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Adoption_of_planned_economy
+        }
+    mutually_exclusive = { 
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 3
+y = 6
+    completion_reward = {
+    }
+}
+#完璧なトリナクリア
+shared_focus = {
+    id = SIC_Perfect_Trinacria
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Issuance_of_proprietary_currency
+        focus = SIC_Support_for_companies
+        }
+    mutually_exclusive = { 
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 4
+y = 7
+    completion_reward = {
+    }
+}
+#自由市場の開拓
+shared_focus = {
+    id = SIC_Free_Market_Development
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_A_New_Road
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 5
+y = 5
+    completion_reward = {
+    }
+}
+#企業への支援
+shared_focus = {
+    id = SIC_Support_for_companies
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Free_Market_Development
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 5
+y = 6
+    completion_reward = {
+    }
+}
+#退役軍人への斡旋
+shared_focus = {
+    id = SIC_Mediation_for_veterans
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Benefits_to_the_unemployed
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 1
+y = 6
+    completion_reward = {
+    }
+}
+#造船業への注力
+shared_focus = {
+    id = SIC_Focus_on_shipbuilding
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_A_New_Road
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 7
+y = 5
+    completion_reward = {
+    }
+}
+#地中海貿易条約
+shared_focus = {
+    id = SIC_Mediterranean_trade_pact
+    icon = GFX_focus_generic_military_mission
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Focus_on_shipbuilding
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+ai_will_do = {
+factor = 5
+}
+bypass = {
+}
+cancel_if_invalid = yes
+continue_if_invalid = no
+available_if_capitulated = no
+search_filters = { FOCUS_FILTER_POLITICAL }
+x = 7
+y = 6
     completion_reward = {
     }
 }

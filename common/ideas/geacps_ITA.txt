@@ -9,12 +9,10 @@ ideas = {
 			modifier = {
 				theorist_cost_factor = 1
 				conscription = -0.1
-				#戦争目標作成の国際緊張による制限:+100%
-				#陣営加入の国際緊張による制限:+100%
-				#レンドリースの国際緊張による制限:+100%
-				#義勇軍派遣の国際緊張による制限:+100%
-				#独立保障の国際緊張による制限:+100%
-				#原油当たりの燃料増加量:-50%
+				generate_wargoal_tension = 1
+				join_faction_tension = 1
+				guarantee_tension = 1
+				send_volunteers_tension = 1
 				civilian_intel_factor = -1
 				army_intel_factor = -1
 				navy_intel_factor = -1
