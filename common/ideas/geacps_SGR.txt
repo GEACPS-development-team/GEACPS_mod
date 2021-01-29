@@ -2,9 +2,9 @@ ideas = {
 	country = {
 		GEACPS_IDEA_SGR_1 = {	#ハンブルク条約
 			allowed = {
-				always = no
+				allowed = { original_tag = SGR }
 			}
-			picture = idea_generic_constitutional_guarantee
+			picture = gre_schachtplan
 			removal_cost = -1
 			modifier = {
 				theorist_cost_factor = 1
@@ -28,9 +28,9 @@ ideas = {
 		
 		GEACPS_IDEA_SGR_2 = {	#敗戦の記憶
 			allowed = {
-				always = no
+				allowed = { original_tag = SGR }
 			}
-			picture = idea_chi_forced_conscription
+			picture = chi_forced_conscription
 			removal_cost = -1
 			modifier = {
 				political_power_cost = 1
@@ -41,9 +41,9 @@ ideas = {
 		
 		GEACPS_IDEA_SGR_3 = {	#ナチスの弾圧
 			allowed = {
-				always = no
+				allowed = { original_tag = SGR }
 			}
-			picture = idea_generic_fascism_banned
+			picture = generic_fascism_banned
 			removal_cost = -1
 			modifier = {
 				national_populism_drift = -1
@@ -52,9 +52,9 @@ ideas = {
 		
 		GEACPS_IDEA_SGR_4 = {	#冷戦の最前線
 			allowed = {
-				always = no
+				allowed = { original_tag = SGR }
 			}
-			picture = idea_generic_fascism_banned
+			picture = generic_reserve_divisions
 			removal_cost = -1
 			modifier = {
 			}
