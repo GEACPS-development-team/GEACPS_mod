@@ -55,6 +55,80 @@
                 }
             }
         }
+        task_force = {
+            name = "Dai 1 Koku Sentai"
+            location = 9998
+            ship = {
+                name = "蒼龍"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Soryu Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
+				}
+            }
+            ship = {
+                name = "飛龍"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Soryu Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
+				}
+            }
+            ship = {
+                name = "金剛"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Kongo Class"
+                    }
+                }
+            }
+            ship = {
+                name = "伊吹"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Ibuki Class"
+                    }
+                }
+            }
+            ship = {
+                name = "鞍馬"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Ibuki Class"
+                    }
+                }
+            }
+        }
     }
     fleet = {
         name = "Dai 2 Kantai"
