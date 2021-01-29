@@ -30,6 +30,86 @@
                     }
                 }
             }
+            ship = {
+                name = "信濃"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Shinano Class"
+                    }
+                }
+            }
+            ship = {
+                name = "紀伊"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Shinano Class"
+                    }
+                }
+            }
+        }
+    }
+    fleet = {
+        name = "Dai 2 Kantai"
+        naval_base = 1092
+        task_force = {
+            name = "Dai 2 Sentai"
+            location = 1092
+            ship = {
+                name = "長門"
+                definition = battleship
+                start_experience_factor = 0.75
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Nagato Class"
+                    }
+                }
+            }
+            ship = {
+                name = "陸奥"
+                definition = battleship
+                start_experience_factor = 0.75
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Yamato Class"
+                    }
+                }
+            }
+            ship = {
+                name = "伊勢"
+                definition = battleship
+                start_experience_factor = 0.65
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Fuso Class"
+                    }
+                }
+            }
+            ship = {
+                name = "日向"
+                definition = battleship
+                start_experience_factor = 0.65
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Fuso Class"
+                    }
+                }
+            }
         }
     }
 }
