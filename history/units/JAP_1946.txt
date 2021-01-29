@@ -1,1 +1,35 @@
-﻿
+﻿units = {
+
+    fleet = {
+        name = "第一艦隊"
+        naval_base = 9998
+        task_force = {
+            name = "第一戦隊"
+            location = 9998
+            ship = {
+                name = "大和"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Yamato Class"
+                    }
+                }
+            }
+            ship = {
+                name = "Musashi"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Yamato Class"
+                    }
+                }
+            }
+        }
+    }
+}
