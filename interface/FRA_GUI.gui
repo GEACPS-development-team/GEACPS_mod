@@ -1,0 +1,68 @@
+guiTypes = {
+	containerWindowType = {
+		name = "GEACPS_FRA_AN_GUI"
+		position = { x = 0 y = 0 }
+		size = { width = 10 height = 10 }
+		orientation = upper_left
+		
+		buttonType = {
+			name = "select_AN_GUI_open"
+			position = { x = 450 y = 240 }
+			quadTextureSprite = "GFX_idea_slot_political_advisor"
+		}
+	}
+	
+	containerWindowType = {
+		name = "FRA_AN_GUI_container"
+		orientation = center
+		position = { x = -425 y = -460 }
+		size = { width = 800 height = 500 }
+		
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		containerWindowType = {
+			name = "AN_container_two"
+			orientation = center
+			position = { x =  -385  y = -235 }
+			size = { width = 768 height = 470 }
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			}
+			gridboxtype = {
+				name = "FRA_AN_container"
+				position = { x = 70 y = 140 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				max_slots_horizontal = 1
+				add_horizontal = no
+			}
+			instantTextBoxType = {
+				name = "AN_title"
+				position = { x =-100 y = -175 }
+				orientation = center
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "AN_TITLE"
+				maxWidth = 185
+				maxHeight = 20
+				fixedsize = yes	
+				format = centre 
+			}
+		}
+	}
+	
+	
+	containerWindowType = {
+		name = "FRA_AN_seat"
+		position = { x = 0 y = 0 }
+
+		iconType = { 
+			name = "FRA_AN_ICON"
+			quadTextureSprite = "GFX_GEACPS_seats"
+		}
+	}
+}

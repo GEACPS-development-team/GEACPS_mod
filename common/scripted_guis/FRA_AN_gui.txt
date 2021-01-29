@@ -1,0 +1,55 @@
+scripted_gui = {
+	FRA_AN_GUI_OPEN = {
+		window_name = "GEACPS_FRA_AN_GUI"
+		context_type = player_context
+		parent_window_token = politics_tab
+
+		visible = {
+			is_ai = no
+			tag = FRA
+		}
+		
+		ai_enabled = {
+			always = no
+		}
+
+		effects = {
+			select_AN_GUI_open_click = {
+				if = {
+					limit = { 
+						check_variable = { selected_FRA_AN_button = 1 } #if open
+					}
+					set_variable = { selected_FRA_AN_button = 0 } #close tab
+					create_AN_debug = yes
+				}
+				else = {
+					set_variable = { selected_FRA_AN_button = 1 }
+				}
+			}
+		}
+	}
+	FRA_AN_GUI = {
+		window_name = "FRA_AN_GUI_container"
+		context_type = player_context
+		
+		visible = {
+			check_variable = { selected_FRA_AN_button = 1 }
+		}
+		dynamic_lists = {
+			FRA_AN_container = {
+				array = FRA_AN_X
+				change_scope = no
+				entry_container = FRA_AN_seat
+				index = seat_idx
+			}
+		}
+
+		properties = {
+			FRA_AN_ICON = {
+				x = FRA_AN_X^seat_idx
+				y = FRA_AN_Y^seat_idx
+				frame = FRA_AN_ARRAY^seat_idx
+			}
+		}
+	}
+}
