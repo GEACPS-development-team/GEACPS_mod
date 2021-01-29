@@ -1,10 +1,10 @@
 ideas = {
 	country = {
-		GEACPS_IDEA_ITA_1 = {	#トリノ協定
+		GEACPS_IDEA_SGR_1 = {	#ハンブルク条約
 			allowed = {
-				allowed = { original_tag = ITA }
+				allowed = { original_tag = SGR }
 			}
-			picture = hol_the_foundations_of_defense
+			picture = gre_schachtplan
 			removal_cost = -1
 			modifier = {
 				theorist_cost_factor = 1
@@ -26,9 +26,9 @@ ideas = {
 			}
 		}
 		
-		GEACPS_IDEA_ITA_2 = {	#敗戦の記憶
+		GEACPS_IDEA_SGR_2 = {	#敗戦の記憶
 			allowed = {
-				allowed = { original_tag = ITA }
+				allowed = { original_tag = SGR }
 			}
 			picture = chi_forced_conscription
 			removal_cost = -1
@@ -36,6 +36,27 @@ ideas = {
 				political_power_cost = 1
 				stability_factor = -0.5
 				war_support_factor = -0.5
+			}
+		}
+		
+		GEACPS_IDEA_SGR_3 = {	#ナチスの弾圧
+			allowed = {
+				allowed = { original_tag = SGR }
+			}
+			picture = generic_fascism_banned
+			removal_cost = -1
+			modifier = {
+				national_populism_drift = -1
+			}
+		}
+		
+		GEACPS_IDEA_SGR_4 = {	#冷戦の最前線
+			allowed = {
+				allowed = { original_tag = SGR }
+			}
+			picture = generic_reserve_divisions
+			removal_cost = -1
+			modifier = {
 			}
 		}
 	}
