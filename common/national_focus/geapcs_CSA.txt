@@ -1,0 +1,566 @@
+﻿focus_tree = {
+	id = geapcs_CSA_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 20
+			tag = CSA
+		}
+	}
+	#Focus for 黄禍論 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_RZPSFEQB
+		icon = GFX_goal_generic_demand_territory
+		x = 10
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CSA_rgesSCfl 
+		}
+		prerequisite = { 
+			focus = CSA_zpSiubhl 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アラスカを超えて - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_NRVbosYD
+		icon = GFX_goal_generic_small_arms
+		x = 16
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_GjmuxvBs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 武装蜂起 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_AwpmTtaU
+		icon = GFX_goal_generic_political_pressure
+		x = 4
+		y = 0
+		cost = 3
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 合衆国は懲り懲りだ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_rWasvGqg
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		x = 4
+		y = 1
+		cost = 15
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_AwpmTtaU }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 奴隷法の再興 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_yTrGSokF
+		icon = GFX_focus_smiling_buddha
+		x = 2
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_rWasvGqg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 強制労働所の建設 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_GsRBmhWD
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 2
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_yTrGSokF }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 外国企業の資産を押収 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_ViDBlNaK
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = 6
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_rWasvGqg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 証券取引所を破壊 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_gbyjZKUO
+		icon = GFX_goal_generic_major_war
+		x = 6
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_ViDBlNaK }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 企業の国有化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_OWuGCymz
+		icon = GFX_goal_generic_positive_trade_relations
+		x = 6
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_gbyjZKUO }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 軍事経済 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_CURuNErw
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 6
+		y = 5
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_OWuGCymz }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for プランテーションを再開 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_atObMjnH
+		icon = GFX_goal_generic_construction2
+		x = 2
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_GsRBmhWD }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アメリカ統一に向けて - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_bvpWSriq
+		icon = GFX_goal_rhineland
+		x = 4
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_rWasvGqg }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for テキサス併合 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_FbjfnmUS
+		icon = GFX_goal_generic_forceful_treaty
+		x = 17
+		y = 0
+		cost = 10
+		available_if_capitulated = yes
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for ブルー作戦 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_nJxLImiY
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = 14
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_FbjfnmUS }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for レッド作戦 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_jTSABikR
+		icon = GFX_goal_generic_territory_or_war
+		x = 20
+		y = 1
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_FbjfnmUS }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 西海岸を確保 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_TfgKPbwN
+		icon = GFX_goal_generic_wolf_pack
+		x = 12
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_nJxLImiY }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 新帝国との協力 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_UqGzjdfI
+		icon = GFX_goal_tripartite_pact
+		x = 15
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_nJxLImiY }
+		mutually_exclusive = { focus = CSA_ZBSnvGQc }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アメリカ至上主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_ZBSnvGQc
+		icon = GFX_goal_generic_demand_territory
+		x = 18
+		y = 2
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_nJxLImiY }
+		mutually_exclusive = { focus = CSA_UqGzjdfI }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 旧領を割譲 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_qwifHNdI
+		icon = GFX_goal_molotov_ribbentrop_pact
+		x = 15
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_UqGzjdfI }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 強制移住 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_wClHmZDA
+		icon = GFX_goal_generic_dangerous_deal
+		x = 18
+		y = 3
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_ZBSnvGQc }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 地方自治政府を攻撃 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_KaiHbAkL
+		icon = GFX_goal_generic_position_armies
+		x = 12
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_TfgKPbwN }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 共産主義者を処刑 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_tQTczxNI
+		icon = GFX_goal_generic_political_pressure
+		x = 20
+		y = 4
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_jTSABikR }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 二回目の正直 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_DJXTHatf
+		icon = GFX_goal_continuous_boost_freedom
+		x = 16
+		y = 6
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { 
+			focus = CSA_tQTczxNI 
+		}
+		prerequisite = { 
+			focus = CSA_KaiHbAkL 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 西欧同盟への加入 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_osPwvaqi
+		icon = GFX_goal_tripartite_pact
+		x = 19
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_DJXTHatf }
+		mutually_exclusive = { focus = CSA_GjmuxvBs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 戦争ビジネス - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_yoNmBacQ
+		icon = GFX_goal_generic_small_arms
+		x = 19
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_osPwvaqi }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 二度目のパリ会議を - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_HtvzreRD
+		icon = GFX_goal_generic_intelligence_exchange
+		x = 19
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_yoNmBacQ }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アカを撃滅 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_KlJkBZSD
+		icon = GFX_goal_generic_soviet_construction
+		x = 21
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_osPwvaqi }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 強大なロシアを再び - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_htPNensM
+		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+		x = 21
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_KlJkBZSD }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 今日の敵は明日の味方 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_GjmuxvBs
+		icon = GFX_focus_jap_pacific_guardian
+		x = 16
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_DJXTHatf }
+		mutually_exclusive = { 
+			focus = CSA_thgZvdxK 
+		}
+		mutually_exclusive = { 
+			focus = CSA_osPwvaqi 
+		}
+		mutually_exclusive = { 
+			focus = CSA_ 
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 強大なリーダーを確保 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_RBWIbLOg
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = 16
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_NRVbosYD }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for アメリカ至上主義 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_thgZvdxK
+		icon = GFX_goal_rhineland
+		x = 13
+		y = 7
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_DJXTHatf }
+		mutually_exclusive = { focus = CSA_GjmuxvBs }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 基本的人権は存在せず - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_sKFILtJR
+		icon = GFX_goal_generic_attack_allies
+		x = 13
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_thgZvdxK }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 南方生存権 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_ApfzSOGx
+		icon = GFX_focus_por_recover_latin_america
+		x = 13
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_sKFILtJR }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 奴隷法の強化 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_CMUeSbJA
+		icon = GFX_goal_tfv_can_forced_quebec_conscription
+		x = 13
+		y = 10
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_ApfzSOGx }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 雪辱を晴らす - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_NzfrRWQI
+		icon = GFX_focus_attack_japan
+		x = 10
+		y = 8
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_thgZvdxK }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 最古の王朝を断絶 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_rgesSCfl
+		icon = GFX_focus_jap_showa_restoration
+		x = 11
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_NzfrRWQI }
+		mutually_exclusive = { focus = CSA_zpSiubhl }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 皇國の崩壊を防ぐ - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_zpSiubhl
+		icon = GFX_focus_jap_spiritual_mobilization
+		x = 9
+		y = 9
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_NzfrRWQI }
+		mutually_exclusive = { focus = CSA_rgesSCfl }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	#Focus for 支援の見返りを要求 - focus ID randomly generated due to title being in non-latin characters
+	focus = {
+		id = CSA_rBzfxidA
+		icon = GFX_goal_generic_major_war
+		x = 10
+		y = 11
+		cost = 10
+		available_if_capitulated = yes
+		prerequisite = { focus = CSA_RZPSFEQB }
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+#End of focuses 
+ }
