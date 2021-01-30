@@ -1,0 +1,33 @@
+bookmarks = {
+	bookmark = {
+		name = "THE_TURMOIL_OF_EUROPE_NAME"
+		desc = "THE_TURMOIL_OF_EUROPE_DESC"
+		date = 1946.1.1.1
+		picture = "GFX_select_date_1936"
+		default_country = "ENG"
+		default = yes
+		
+		"ENG"={
+			history = "ENG_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = social_democracy
+		}
+		"FRA"={
+			history = "FRA_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = authoritative_democracy
+		}
+		"RUS"={
+			history = "SOV_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = total_socialism
+		}
+		
+		"TUR"={
+			history = "TUR_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = authoritative_democracy
+			minor = yes
+		}
+		
+		effect = {
+			randomize_weather = 22345
+		}
+	}
+}
