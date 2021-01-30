@@ -54,6 +54,52 @@
                     }
                 }
             }
+            ship = {
+                name = "最上"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Mogami Class"
+                    }
+                }
+            }
+            ship = {
+                name = "三隈"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Mogami Class"
+                    }
+                }
+            }ship = {
+                name = "利根"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Mogami Class"
+                    }
+                }
+            }ship = {
+                name = "筑摩"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Mogami Class"
+                    }
+                }
+            }
         }
         task_force = {
             name = "第一航空戦隊"
@@ -181,6 +227,80 @@
                         amount = 1
                         owner = JAP
                         version_name = "Ise Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "第一航空戦隊"
+            location = 9998
+            ship = {
+                name = "翔鶴"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Shokaku Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_3 =  { owner = "JAP" amount = 18 }
+					cv_CAS_equipment_3 = { owner = "JAP" amount = 27 }
+					cv_nav_bomber_equipment_3 =  { owner = "JAP" amount = 27 }
+				}
+            }
+            ship = {
+                name = "瑞鶴"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Shokaku Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_3 =  { owner = "JAP" amount = 18 }
+					cv_CAS_equipment_3 = { owner = "JAP" amount = 27 }
+					cv_nav_bomber_equipment_3 =  { owner = "JAP" amount = 27 }
+				}
+            }
+            ship = {
+                name = "比叡"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Kongo Class"
+                    }
+                }
+            }
+            ship = {
+                name = "鈴谷"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Suzuya Class"
+                    }
+                }
+            }
+            ship = {
+                name = "熊野"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Suzuya Class"
                     }
                 }
             }
