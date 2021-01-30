@@ -180,60 +180,8 @@
         name = "第二艦隊"
         naval_base = 1092
         task_force = {
-            name = "第二戦隊"
+            name = "第二航空戦隊"
             location = 1092
-            ship = {
-                name = "長門"
-                definition = battleship
-                start_experience_factor = 0.75
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "Nagato Class"
-                    }
-                }
-            }
-            ship = {
-                name = "陸奥"
-                definition = battleship
-                start_experience_factor = 0.75
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "Yamato Class"
-                    }
-                }
-            }
-            ship = {
-                name = "伊勢"
-                definition = battleship
-                start_experience_factor = 0.65
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "Ise Class"
-                    }
-                }
-            }
-            ship = {
-                name = "日向"
-                definition = battleship
-                start_experience_factor = 0.65
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "Ise Class"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第一航空戦隊"
-            location = 9998
             ship = {
                 name = "翔鶴"
                 definition = carrier
@@ -301,6 +249,132 @@
                         amount = 1
                         owner = JAP
                         version_name = "Suzuya Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "第三航空戦隊"
+            location = 1092
+            ship = {
+                name = "大鳳"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Taiho Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
+				}
+            }
+            ship = {
+                name = "雲龍"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Super Taiho Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
+				}
+            }
+            ship = {
+                name = "榛名"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Kongo Class"
+                    }
+                }
+            }
+            ship = {
+                name = "高雄"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Takao Class"
+                    }
+                }
+            }
+            ship = {
+                name = "愛宕"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Takao Class"
+                    }
+                }
+            }
+        }
+        task_force = {
+            name = "第二戦隊"
+            location = 1092
+            ship = {
+                name = "長門"
+                definition = battleship
+                start_experience_factor = 0.75
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Nagato Class"
+                    }
+                }
+            }
+            ship = {
+                name = "陸奥"
+                definition = battleship
+                start_experience_factor = 0.75
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Yamato Class"
+                    }
+                }
+            }
+            ship = {
+                name = "伊勢"
+                definition = battleship
+                start_experience_factor = 0.65
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Ise Class"
+                    }
+                }
+            }
+            ship = {
+                name = "日向"
+                definition = battleship
+                start_experience_factor = 0.65
+                equipment = {
+                    ship_hull_super_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Ise Class"
                     }
                 }
             }
