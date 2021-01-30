@@ -1,35 +1,26 @@
-state={
-	id=639
-	name="STATE_639"
-	manpower=1035
-	
+state = {
+	id = 639
+	name = "STATE_639"
+	manpower = 1035
 	state_category = small_island
 
-	history={
-		owner = FSM
-		add_core_of = FSM
-		add_core_of = FIJ
-		victory_points = {
-			13021 1 
-		}
+	history = {
+		owner = HAW
+		add_core_of = HAW
+		add_core_of = KIR
+		
 		buildings = {
 			infrastructure = 3
-			13021 = {
-				naval_base = 1
-			}
-			4387 = {
-				naval_base = 1
-			}
-			7393 = {
-				naval_base = 1
-			}
-			13020 = {
-				naval_base = 1
-			}
+			4387 = {	naval_base = 1	}
+			7393 = {	naval_base = 1	}
+			13020 = {	naval_base = 1	}
+			13021 = {	naval_base = 1	}
 		}
+
+		victory_points = {	13021	1	}
 	}
 
-	provinces={
+	provinces = {
 		4387 7393 13020 13021 13022 
 	}
 }
