@@ -123,7 +123,7 @@
             }
             ship = {
                 name = "飛龍"
-                definition = battleship
+                definition = carrier
                 start_experience_factor = 0.5
                 equipment = {
                     ship_hull_carrier_1 = {
@@ -175,6 +175,172 @@
                 }
             }
         }
+        task_force = {
+            name = "第四航空戦隊"
+            location = 9998
+            ship = {
+                name = "鳳翔"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_conversion_ca = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Hosho Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 12 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 6 }
+				}
+            }
+            ship = {
+                name = "龍驤"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Ryujo Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 18 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 9 }
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 9 }
+				}
+            }
+            ship = {
+                name = "霧島"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_heavy_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Kongo Class"
+                    }
+                }
+            }
+            ship = {
+                name = "高雄"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Takao Class"
+                    }
+                }
+            }
+            ship = {
+                name = "愛宕"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Takao Class"
+                    }
+                }
+            }
+            task_force = {
+            name = "第五航空戦隊"
+            location = 9998
+            ship = {
+                name = "瑞鳳"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_conversion_ca = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Zuiho Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 12 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 6 }
+				}
+            }
+            ship = {
+                name = "祥鳳"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_conversion_ca = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Zuiho Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 12 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 6 }
+				}
+            }
+            ship = {
+                name = "隼鷹"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Junyo Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
+				}
+            }
+            ship = {
+                name = "飛鷹"
+                definition = carrier
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_carrier_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Junyo Class"
+                    }
+                }
+                air_wings = { 
+					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
+					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
+					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
+				}
+            }
+            ship = {
+                name = "扶桑"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Fuso Class"
+                    }
+                }
+            }
+            ship = {
+                name = "山城"
+                definition = battleship
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_heavy_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Fuso Class"
+                    }
+                }
+            }
+        }
     }
     fleet = {
         name = "第二艦隊"
@@ -201,7 +367,7 @@
             }
             ship = {
                 name = "瑞鶴"
-                definition = battleship
+                definition = carrier
                 start_experience_factor = 0.5
                 equipment = {
                     ship_hull_carrier_1 = {
@@ -275,7 +441,7 @@
             }
             ship = {
                 name = "雲龍"
-                definition = battleship
+                definition = carrier
                 start_experience_factor = 0.5
                 equipment = {
                     ship_hull_carrier_1 = {
@@ -350,7 +516,7 @@
                     ship_hull_super_heavy_1 = {
                         amount = 1
                         owner = JAP
-                        version_name = "Yamato Class"
+                        version_name = "Nagato Class"
                     }
                 }
             }
