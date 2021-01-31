@@ -59,7 +59,7 @@
                 definition = heavy_cruiser
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_cruiser_2 = {
+                    ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
                         version_name = "Mogami Class"
@@ -71,7 +71,7 @@
                 definition = heavy_cruiser
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_cruiser_2 = {
+                    ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
                         version_name = "Mogami Class"
@@ -230,7 +230,7 @@
                 definition = heavy_cruiser
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_cruiser_2 = {
+                    ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
                         version_name = "Takao Class"
@@ -242,23 +242,24 @@
                 definition = heavy_cruiser
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_cruiser_2 = {
+                    ship_hull_cruiser_1 = {
                         amount = 1
                         owner = JAP
                         version_name = "Takao Class"
                     }
                 }
             }
-            task_force = {
-            name = "第五航空戦隊"
-            location = 9998
-            ship = {
-                name = "瑞鳳"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_conversion_ca = {
-                        amount = 1
+        }
+        task_force = {
+        name = "第五航空戦隊"
+        location = 9998
+        ship = {
+        name = "瑞鳳"
+            definition = carrier
+            start_experience_factor = 0.5
+            equipment = {
+                ship_hull_carrier_conversion_ca = {
+                    amount = 1
                         owner = JAP
                         version_name = "Zuiho Class"
                     }
