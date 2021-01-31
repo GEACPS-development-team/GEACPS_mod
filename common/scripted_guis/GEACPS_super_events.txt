@@ -1,0 +1,47 @@
+scripted_gui = {	
+	GEACPS_second_american_civil_war_background = {
+		context_type = player_context
+		window_name = "GEACPS_second_american_civil_war_background"
+
+		visible = {
+			has_country_flag = super_event_ACW
+		}
+	}
+	GEACPS_second_american_civil_war = {
+		context_type = player_context
+		window_name = "GEACPS_second_american_civil_war"
+
+		visible = {
+			has_country_flag = super_event_ACW
+		}
+		effects = {
+			Option_click = {
+				clr_country_flag = super_event_ACW
+			}
+		}
+	}
+}
+
+scripted_gui = {	
+	GEACPS_templete_background = {
+		context_type = player_context
+		window_name = "GEACPS_type_your_window_name_background" #interface container name
+
+		visible = { #見える条件
+			has_country_flag = type_your_flag_name
+		}
+	}
+	GEACPS_second_american_civil_war = {
+		context_type = player_context
+		window_name = "GEACPS_second_american_civil_war"
+
+		visible = {
+			has_country_flag = type_your_flag_name
+		}
+		effects = {
+			Option_click = {
+				clr_country_flag = type_your_flag_name
+			}
+		}
+	}
+}
