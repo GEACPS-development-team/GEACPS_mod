@@ -1,5 +1,53 @@
 ideas = {
 	country = {
+		GEACPS_IDEA_FRA_1 = {	#ド・ゴール体制
+			allowed = {	always = no	}
+			picture = fra_charles_de_gaulle
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		
+		GEACPS_IDEA_FRA_2 = {	#国内情勢の不安
+			allowed = {	always = no	}
+			picture = fra_political_violence
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		
+		GEACPS_IDEA_FRA_3 = {	#エラン・ヴィタール
+			allowed = {	always = no	}
+			picture = fra_undividable
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.01
+				war_support_factor = 0.01
+			}
+		}
+		
+		GEACPS_IDEA_FRA_4 = {	#グランダルメ
+			allowed = {	always = no	}
+			picture = fra_undividable
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.01
+				war_support_factor = 0.01
+			}
+		}
+		
+		GEACPS_IDEA_FRA_5 = {	#戦闘には負けたが、戦争に負けたわけではない
+			allowed = {	always = no	}
+			picture = scw_intervention_nationalists_focus
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		
 		FRA_revival_army = {	#大陸軍の復活
 			picture = generic_manpower_bonus
 			allowed = {	always = no	}
