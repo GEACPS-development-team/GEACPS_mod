@@ -1,9 +1,7 @@
 ideas = {
 	country = {
 		GEACPS_IDEA_JAP_1 = {	#大東亞共榮圈
-			allowed = {
-				allowed = { original_tag = JAP }
-			}
+			allowed = {	always = no	}
 			picture = jap_militarism_shogun
 			removal_cost = -1
 			modifier = {
@@ -12,9 +10,7 @@ ideas = {
 		}
 		
 		GEACPS_IDEA_JAP_2 = {	#参謀本部と軍令部の対立
-			allowed = {
-				allowed = { original_tag = JAP }
-			}
+			allowed = {	always = no	}
 			picture = chi_incompetent_officers
 			removal_cost = -1
 			modifier = {
@@ -26,9 +22,7 @@ ideas = {
 		}
 		
 		GEACPS_IDEA_JAP_3 = {	#逼迫した財政
-			allowed = {
-				allowed = { original_tag = JAP }
-			}
+			allowed = {	always = no	}
 			picture = chi_hyper_inflation
 			removal_cost = -1
 			modifier = {
@@ -36,9 +30,7 @@ ideas = {
 		}
 		
 		GEACPS_IDEA_JAP_4 = {	#布哇王国との関係
-			allowed = {
-				allowed = { original_tag = JAP }
-			}
+			allowed = {	always = no	}
 			picture = generic_morale_bonus
 			removal_cost = -1
 			modifier = {
@@ -46,7 +38,7 @@ ideas = {
 		}
 
 		JAP_carrier_capacity = {
-			allowed = { allowed = { original_tag = JAP } }
+			allowed = {	always = no	}
 			allowed_civil_war = {
 			NOT = {
 				has_government = fascism
@@ -61,7 +53,7 @@ ideas = {
 		}
 
 		JAP_torpedo_perfect = {
-			allowed = { allowed = { original_tag = JAP } }
+			allowed = {	always = no	}
 
 			removal_cost = -1
 
@@ -71,7 +63,7 @@ ideas = {
 		}
 
 		JAP_capital_ship_made = {
-			allowed = { allowed = { original_tag = JAP } }
+			allowed = {	always = no	}
 			allowed_civil_war = {
 				NOT = {
 					has_government = fascism
