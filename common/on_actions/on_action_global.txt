@@ -1,0 +1,14 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			# unit limit calculations
+			if = {
+				limit = {
+					NOT = { has_global_flag = no_unit_limits }
+				}
+				calculate_actual_division_number = yes
+				calculate_maximum_divisions = yes
+			}
+		}
+	}
+}

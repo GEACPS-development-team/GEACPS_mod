@@ -1,0 +1,173 @@
+### Division Limits ###
+defined_text = {
+	name = unit_limit_count_loc
+	text = {
+		trigger = {
+			check_variable = { num_actual_divisions > max_divisions }
+		}
+		localization_key = unit_limit_count_red
+	}
+	text = {
+		trigger = {
+			check_variable = { num_actual_divisions = max_divisions }
+		}
+		localization_key = unit_limit_count_yellow
+	}
+	text = {
+		localization_key = unit_limit_count_green
+	}
+}
+
+defined_text = {
+	name = above_unit_limit_desc
+	text = {
+		trigger = {
+			has_dynamic_modifier = { modifier = mobilisation_penalty_modifier }
+		}
+		localization_key = unit_limit_desc_above_limit
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = unit_limit_major_power
+	text = {
+		trigger = { is_major = yes }
+		localization_key = unit_limit_major_power_desc
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = unit_limit_world_tension
+	text = {
+		trigger = { threat > 0.69 }
+		localization_key = unit_limit_world_tension_desc
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = unit_limit_economy_law
+	text = {
+		trigger = { has_idea = undisturbed_isolation }
+		localization_key = unit_limit_undisturbed_isolation
+	}
+	text = {
+		trigger = { has_idea = isolation }
+		localization_key = unit_limit_isolation
+	}
+	text = {
+		trigger = { has_idea = civilian_economy }
+		localization_key = unit_limit_civilian_economy
+	}
+	text = {
+		trigger = { has_idea = low_economic_mobilisation }
+		localization_key = unit_limit_low_economic_mobilisation
+	}
+	text = {
+		trigger = { has_idea = partial_economic_mobilisation }
+		localization_key = unit_limit_partial_economic_mobilisation
+	}
+	text = {
+		trigger = { has_idea = war_economy }
+		localization_key = unit_limit_war_economy
+	}
+	text = {
+		trigger = { has_idea = tot_economic_mobilisation }
+		localization_key = unit_limit_tot_economic_mobilisation
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = upper_limit_perc_figure
+	text = {
+		trigger = {
+			check_variable = { upper_limit_from_factory_mult < 0 }
+		}
+		localization_key = upper_limit_perc_figure_neg
+	}
+	text = {
+		localization_key = upper_limit_perc_figure_pos
+	}
+}
+
+defined_text = {
+	name = unit_limit_was_capped
+	text = {
+		trigger = {
+			check_variable = { net_max_divisions > upper_limit }
+		}
+		localization_key = unit_limit_was_capped_desc
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = unit_limit_upper_limit_used
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { lower_limit > upper_limit }
+				check_variable = { net_max_divisions > upper_limit }
+			}
+		}
+		localization_key = unit_limit_cap_used_desc
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = unit_limit_lower_limit_used
+	text = {
+		trigger = {
+			check_variable = { lower_limit > net_max_divisions }
+			check_variable = { lower_limit_from_manpower > lower_limit_from_states }
+			check_variable = { lower_limit_from_manpower > 5 }
+		}
+		localization_key = unit_limit_manpower_used_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { lower_limit > net_max_divisions }
+			check_variable = { lower_limit_from_states > lower_limit_from_manpower }
+			check_variable = { lower_limit_from_states > 5 }
+		}
+		localization_key = unit_limit_num_states_used_desc
+	}
+	text = {
+		trigger = {
+			check_variable = { lower_limit > net_max_divisions }
+		}
+		localization_key = unit_limit_default_used_desc
+	}
+	text = {
+		localization_key = ""
+	}
+}
+
+defined_text = {
+	name = unit_limit_bonus_used
+	text = {
+		trigger = {
+			check_variable = { upper_limit_unit_bonus > 0 }
+		}
+		localization_key = unit_limit_bonus_used_desc
+	}
+	text = {
+		localization_key = ""
+	}
+}
