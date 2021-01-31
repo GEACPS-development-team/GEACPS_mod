@@ -377,6 +377,21 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
+	name = "Junyo Class"
+	type = ship_hull_carrier_1
+	name_group = JAP_CV_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_deck_slot_1 = ship_deck_space
+		fixed_ship_deck_slot_2 = ship_deck_space
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_radar_slot = ship_radar_2
+		fixed_ship_engine_slot = carrier_ship_engine_1
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		front_1_custom_slot = ship_deck_space
+	}
+}
+create_equipment_variant = {
 	name = "Taiho Class"
 	type = ship_hull_carrier_2
 	name_group = JAP_CV_HISTORICAL
@@ -389,8 +404,8 @@ create_equipment_variant = {
 		fixed_ship_engine_slot = carrier_ship_engine_2
 		fixed_ship_secondaries_slot = ship_secondaries_2
 		front_1_custom_slot = ship_deck_space
-		mid_1_custom_slot = ship_carrier_armor
-		mid_2_custom_slot = ship_carrier_armor
+		mid_1_custom_slot = ship_armor_carrier_deck
+		mid_2_custom_slot = ship_armor_carrier_deck
 	}
 }
 create_equipment_variant = {
@@ -406,8 +421,8 @@ create_equipment_variant = {
 		fixed_ship_engine_slot = carrier_ship_engine_2
 		fixed_ship_secondaries_slot = ship_secondaries_2
 		front_1_custom_slot = ship_deck_space
-		mid_1_custom_slot = ship_carrier_armor
-		mid_2_custom_slot = ship_carrier_armor
+		mid_1_custom_slot = ship_armor_carrier_deck
+		mid_2_custom_slot = ship_armor_carrier_deck
 	}
 }
 create_equipment_variant = {
@@ -694,7 +709,7 @@ create_equipment_variant = {
 		front_1_custom_slot = ship_light_medium_battery_2
 		mid_1_custom_slot = ship_torpedo_3
 		mid_2_custom_slot = ship_anti_air_cannon_3
-		rear_1_custom_slot = ship_mine_layer_2
+		rear_1_custom_slot = ship_mine_layer_1
 		rear_2_custom_slot = ship_light_medium_battery_2
 	}
 	obsolete = yes
@@ -792,6 +807,38 @@ create_equipment_variant = {
 }
 create_equipment_variant = {
 	name = "Akatsuki Class"
+	type = ship_hull_light_1
+	name_group = JAP_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = ship_radar_1
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_2
+		mid_1_custom_slot = ship_torpedo_2
+		rear_1_custom_slot = ship_depth_charge_2
+	}
+}
+create_equipment_variant = {
+	name = "Hatsuharu Class"
+	type = ship_hull_light_1
+	name_group = JAP_DD_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_light_battery_2
+		fixed_ship_anti_air_slot = ship_anti_air_1
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+		fixed_ship_radar_slot = ship_radar_1
+		fixed_ship_engine_slot = light_ship_engine_1
+		fixed_ship_torpedo_slot = ship_torpedo_2
+		mid_1_custom_slot = ship_torpedo_2
+		rear_1_custom_slot = ship_depth_charge_2
+	}
+}
+create_equipment_variant = {
+	name = "Shiratsuyu Class"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0

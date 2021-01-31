@@ -429,8 +429,8 @@ focus_tree = {
 		id = GEACPS_NF_JAP_30
 		icon = GFX_focus_jap_pacific_guardian
 		x = 1
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_36
+		y = 2
+		relative_position_id = GEACPS_NF_JAP_25
 		prerequisite = {
 			focus = GEACPS_NF_JAP_36
 			focus = GEACPS_NF_JAP_37
@@ -473,8 +473,8 @@ focus_tree = {
 		id = GEACPS_NF_JAP_33
 		icon = GFX_focus_jap_pacific_guardian
 		x = 1
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_37
+		y = 2
+		relative_position_id = GEACPS_NF_JAP_26
 		prerequisite = {
 			focus = GEACPS_NF_JAP_36
 			focus = GEACPS_NF_JAP_37
@@ -1914,13 +1914,13 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_23
+		id = GEACPS_NF_JAP_navy_25
 		x = 0
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_25
+		relative_position_id = GEACPS_NF_JAP_navy_23
 		cost = 4.28
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_25 }
+			focus = GEACPS_NF_JAP_navy_23 }
 		
 		completion_reward = {
 
@@ -1942,7 +1942,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_25
+		id = GEACPS_NF_JAP_navy_23
 		x = 8
 		y = 1
 		relative_position_id = GEACPS_NF_JAP_navy_01
@@ -2034,10 +2034,9 @@ focus_tree = {
 	focus = {
 		id = GEACPS_NF_JAP_navy_27
 		x = 0
-		y = 2
+		y = 1
 		relative_position_id = GEACPS_NF_JAP_navy_25
 		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_23 }
 		prerequisite = { focus = GEACPS_NF_JAP_navy_25 }
 		
 		completion_reward = {
@@ -2052,7 +2051,7 @@ focus_tree = {
 		relative_position_id = GEACPS_NF_JAP_navy_01
 		cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_25 }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_23 }
 
 		completion_reward = {
 
