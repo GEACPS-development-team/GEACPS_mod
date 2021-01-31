@@ -355,7 +355,7 @@
                 definition = carrier
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_carrier_1 = {
+                    ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
                         version_name = "Shokaku Class"
@@ -372,7 +372,7 @@
                 definition = carrier
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_carrier_1 = {
+                    ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
                         version_name = "Shokaku Class"
@@ -429,7 +429,7 @@
                 definition = carrier
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_carrier_1 = {
+                    ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
                         version_name = "Taiho Class"
@@ -446,7 +446,7 @@
                 definition = carrier
                 start_experience_factor = 0.5
                 equipment = {
-                    ship_hull_carrier_1 = {
+                    ship_hull_carrier_2 = {
                         amount = 1
                         owner = JAP
                         version_name = "Super Taiho Class"
@@ -599,5 +599,19 @@
                 }
             }
         }
+    }
+}
+
+instant_effect = {
+    add_equipment_production = {
+        equipment = {
+            type = ship_hull_carrier_2
+            creator = "JAP"
+            version_name = "Super Taiho Class"
+        }
+        name = "天城" 
+		requested_factories = 1
+		progress = 0.7
+		amount = 1
     }
 }
