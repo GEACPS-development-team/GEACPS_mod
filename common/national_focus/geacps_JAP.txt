@@ -8,7 +8,7 @@ focus_tree = {
 		}
 	}
 	default = no
-	#帝国の未来
+	#東条英機の暗殺未遂
 	focus = {
 		id = GEACPS_NF_JAP_1
 		icon = GFX_focus_jap_pacific_guardian
@@ -18,39 +18,33 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#民主化を推し進める
+	#臨時議会
 	focus = {
 		id = GEACPS_NF_JAP_2
 		icon = GFX_focus_jap_pacific_guardian
-		x = 9
+		x = 13
 		y = 2
 		prerequisite = {
 			focus = GEACPS_NF_JAP_1
-		}
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_3
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#現状維持
+	#次期内閣総理大臣の選出
 	focus = {
 		id = GEACPS_NF_JAP_3
 		icon = GFX_focus_jap_pacific_guardian
 		x = 17
-		y = 2
+		y = 3
 		prerequisite = {
-			focus = GEACPS_NF_JAP_1
-		}
-		mutually_exclusive = {
 			focus = GEACPS_NF_JAP_2
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#女性参政権運動
+	#予算案
 	focus = {
 		id = GEACPS_NF_JAP_4
 		icon = GFX_focus_jap_pacific_guardian
@@ -63,1038 +57,1194 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#皇道派の支持
+	#貴族
 	focus = {
 		id = GEACPS_NF_JAP_5
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 3
+		x = 23
+		y = 4
 		prerequisite = {
 			focus = GEACPS_NF_JAP_3
 		}
 		mutually_exclusive = {
 			focus = GEACPS_NF_JAP_6
 		}
+		mutually_exclusive = {
+			focus = GEACPS_NF_JAP_7
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#統制派の支持
+	#軍人
 	focus = {
 		id = GEACPS_NF_JAP_6
 		icon = GFX_focus_jap_pacific_guardian
 		x = 19
-		y = 3
+		y = 4
 		prerequisite = {
 			focus = GEACPS_NF_JAP_3
 		}
 		mutually_exclusive = {
 			focus = GEACPS_NF_JAP_5
 		}
+		mutually_exclusive = {
+			focus = GEACPS_NF_JAP_7
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#憲法改正
+	#政治家
 	focus = {
 		id = GEACPS_NF_JAP_7
-		icon = GFX_focus_jap_pacific_guardian
-		x = 9
-		y = 4
-		prerequisite = {
-			focus = GEACPS_NF_JAP_4
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#暗殺計画
-	focus = {
-		id = GEACPS_NF_JAP_8
 		icon = GFX_focus_jap_pacific_guardian
 		x = 15
 		y = 4
 		prerequisite = {
+			focus = GEACPS_NF_JAP_3
+		}
+		mutually_exclusive = {
 			focus = GEACPS_NF_JAP_5
 		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#粛軍
-	focus = {
-		id = GEACPS_NF_JAP_9
-		icon = GFX_focus_jap_pacific_guardian
-		x = 19
-		y = 4
-		prerequisite = {
+		mutually_exclusive = {
 			focus = GEACPS_NF_JAP_6
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#議会中心主義
+	#陸軍の予算を増やす
 	focus = {
-		id = GEACPS_NF_JAP_10
-		icon = GFX_focus_jap_pacific_guardian
-		x = 7
-		y = 5
-		prerequisite = {
-			focus = GEACPS_NF_JAP_7
-		}
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_11
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#皇室中心主義
-	focus = {
-		id = GEACPS_NF_JAP_11
+		id = GEACPS_NF_JAP_8
 		icon = GFX_focus_jap_pacific_guardian
 		x = 11
-		y = 5
+		y = 4
 		prerequisite = {
-			focus = GEACPS_NF_JAP_7
+			focus = GEACPS_NF_JAP_4
 		}
 		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_10
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#クーデターの準備
-	focus = {
-		id = GEACPS_NF_JAP_12
-		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 5
-		prerequisite = {
-			focus = GEACPS_NF_JAP_8
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#軍事教育の改善
-	focus = {
-		id = GEACPS_NF_JAP_13
-		icon = GFX_focus_jap_pacific_guardian
-		x = 19
-		y = 5
-		prerequisite = {
 			focus = GEACPS_NF_JAP_9
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#神州
+	#海軍の予算を増やす
 	focus = {
-		id = GEACPS_NF_JAP_14
-		icon = GFX_focus_jap_pacific_guardian
-		x = 17
-		y = 8
-		prerequisite = {
-			focus = GEACPS_NF_JAP_57
-			focus = GEACPS_NF_JAP_58
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#財閥の未来
-	focus = {
-		id = GEACPS_NF_JAP_15
-		icon = GFX_focus_jap_pacific_guardian
-		x = 59
-		y = 1
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#解体
-	focus = {
-		id = GEACPS_NF_JAP_16
-		icon = GFX_focus_jap_pacific_guardian
-		x = -6
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_15
-		prerequisite = {
-			focus = GEACPS_NF_JAP_15
-		}
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_17
-			focus = GEACPS_NF_JAP_18
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#国有化
-	focus = {
-		id = GEACPS_NF_JAP_17
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_15
-		prerequisite = {
-			focus = GEACPS_NF_JAP_15
-		}
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_16
-			focus = GEACPS_NF_JAP_18
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#合体
-	focus = {
-		id = GEACPS_NF_JAP_18
-		icon = GFX_focus_jap_pacific_guardian
-		x = 6
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_15
-		prerequisite = {
-			focus = GEACPS_NF_JAP_15
-		}
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_16
-			focus = GEACPS_NF_JAP_17
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#民間企業の投資
-	focus = {
-		id = GEACPS_NF_JAP_19
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_16
-		prerequisite = {
-			focus = GEACPS_NF_JAP_16
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#三井財閥
-	focus = {
-		id = GEACPS_NF_JAP_20
-		icon = GFX_focus_jap_pacific_guardian
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_17
-		prerequisite = {
-			focus = GEACPS_NF_JAP_17
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#三菱財閥
-	focus = {
-		id = GEACPS_NF_JAP_21
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_17
-		prerequisite = {
-			focus = GEACPS_NF_JAP_17
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#住友財閥
-	focus = {
-		id = GEACPS_NF_JAP_22
-		icon = GFX_focus_jap_pacific_guardian
-		x = 2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_17
-		prerequisite = {
-			focus = GEACPS_NF_JAP_17
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#ただ一つの財閥
-	focus = {
-		id = GEACPS_NF_JAP_23
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_18
-		prerequisite = {
-			focus = GEACPS_NF_JAP_18
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#民需に注力・壱
-	focus = {
-		id = GEACPS_NF_JAP_24
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_19
-		prerequisite = {
-			focus = GEACPS_NF_JAP_19
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#番頭政治
-	focus = {
-		id = GEACPS_NF_JAP_25
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_20
-		prerequisite = {
-			focus = GEACPS_NF_JAP_20
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#独裁政治
-	focus = {
-		id = GEACPS_NF_JAP_26
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_21
-		prerequisite = {
-			focus = GEACPS_NF_JAP_21
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#法治主義
-	focus = {
-		id = GEACPS_NF_JAP_27
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_22
-		prerequisite = {
-			focus = GEACPS_NF_JAP_22
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#軍需に注力・壱
-	focus = {
-		id = GEACPS_NF_JAP_28
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_23
-		prerequisite = {
-			focus = GEACPS_NF_JAP_23
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#民需に注力・弐
-	focus = {
-		id = GEACPS_NF_JAP_29
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_24
-		prerequisite = {
-			focus = GEACPS_NF_JAP_24
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#総力戦研究所海軍部
-	focus = {
-		id = GEACPS_NF_JAP_30
-		icon = GFX_focus_jap_pacific_guardian
-		x = 1
-		y = 2
-		relative_position_id = GEACPS_NF_JAP_25
-		prerequisite = {
-			focus = GEACPS_NF_JAP_36
-			focus = GEACPS_NF_JAP_37
-			focus = GEACPS_NF_JAP_38
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#軍需に注力・弐
-	focus = {
-		id = GEACPS_NF_JAP_31
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_28
-		prerequisite = {
-			focus = GEACPS_NF_JAP_28
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#民需に注力・参
-	focus = {
-		id = GEACPS_NF_JAP_32
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_29
-		prerequisite = {
-			focus = GEACPS_NF_JAP_29
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#総力戦研究所陸軍部
-	focus = {
-		id = GEACPS_NF_JAP_33
-		icon = GFX_focus_jap_pacific_guardian
-		x = 1
-		y = 2
-		relative_position_id = GEACPS_NF_JAP_26
-		prerequisite = {
-			focus = GEACPS_NF_JAP_36
-			focus = GEACPS_NF_JAP_37
-			focus = GEACPS_NF_JAP_38
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#軍需に注力・参
-	focus = {
-		id = GEACPS_NF_JAP_34
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_31	
-		prerequisite = {
-			focus = GEACPS_NF_JAP_31
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#研究枠の追加
-	focus = {
-		id = GEACPS_NF_JAP_35
-		icon = GFX_focus_jap_pacific_guardian
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_30
-		prerequisite = {
-			focus = GEACPS_NF_JAP_30
-			focus = GEACPS_NF_JAP_33
-			focus = GEACPS_NF_JAP_43
-			focus = GEACPS_NF_JAP_44
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#三井研究所
-	focus = {
-		id = GEACPS_NF_JAP_36
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_25
-		prerequisite = {
-			focus = GEACPS_NF_JAP_25
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#三菱研究所
-	focus = {
-		id = GEACPS_NF_JAP_37
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_26
-		prerequisite = {
-			focus = GEACPS_NF_JAP_26
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#住友研究所
-	focus = {
-		id = GEACPS_NF_JAP_38
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_27
-		prerequisite = {
-			focus = GEACPS_NF_JAP_27
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#民間研究所・壱
-	focus = {
-		id = GEACPS_NF_JAP_39
-		icon = GFX_focus_jap_pacific_guardian
-		x = 2
-		y = 0
-		relative_position_id = GEACPS_NF_JAP_24
-		prerequisite = {
-			focus = GEACPS_NF_JAP_19
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#統一研究所・壱
-	focus = {
-		id = GEACPS_NF_JAP_40
-		icon = GFX_focus_jap_pacific_guardian
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_23
-		prerequisite = {
-			focus = GEACPS_NF_JAP_23
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#民間研究所・弐
-	focus = {
-		id = GEACPS_NF_JAP_41
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_39
-		prerequisite = {
-			focus = GEACPS_NF_JAP_39
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#統一研究所・弐
-	focus = {
-		id = GEACPS_NF_JAP_42
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_40
-		prerequisite = {
-			focus = GEACPS_NF_JAP_40
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#民間研究所・参
-	focus = {
-		id = GEACPS_NF_JAP_43
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_41
-		prerequisite = {
-			focus = GEACPS_NF_JAP_41
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#統一研究所・参
-	focus = {
-		id = GEACPS_NF_JAP_44
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_42
-		prerequisite = {
-			focus = GEACPS_NF_JAP_42
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#対外論の選考
-	focus = {
-		id = GEACPS_NF_JAP_45
-		icon = GFX_focus_jap_pacific_guardian
-		x = 13
-		y = 10
-		prerequisite = {
-			focus = GEACPS_NF_JAP_52
-			focus = GEACPS_NF_JAP_53
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#西進論
-	focus = {
-		id = GEACPS_NF_JAP_46
-		icon = GFX_focus_jap_pacific_guardian
-		x = 5
-		y = 11
-		prerequisite = {
-			focus = GEACPS_NF_JAP_45
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#北進論
-	focus = {
-		id = GEACPS_NF_JAP_47
-		icon = GFX_focus_jap_pacific_guardian
-		x = 13
-		y = 11
-		prerequisite = {
-			focus = GEACPS_NF_JAP_45
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#東進論
-	focus = {
-		id = GEACPS_NF_JAP_48
-		icon = GFX_focus_jap_pacific_guardian
-		x = 21
-		y = 11
-		prerequisite = {
-			focus = GEACPS_NF_JAP_45
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#立憲民政党の支持
-	focus = {
-		id = GEACPS_NF_JAP_49
+		id = GEACPS_NF_JAP_9
 		icon = GFX_focus_jap_pacific_guardian
 		x = 7
-		y = 6
+		y = 4
 		prerequisite = {
-			focus = GEACPS_NF_JAP_10
+			focus = GEACPS_NF_JAP_4
+		}
+		mutually_exclusive = {
+			focus = GEACPS_NF_JAP_8
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#立憲政友会の支持
+	#皇族
 	focus = {
-		id = GEACPS_NF_JAP_50
+		id = GEACPS_NF_JAP_10
 		icon = GFX_focus_jap_pacific_guardian
-		x = 11
-		y = 6
+		x = 24
+		y = 5
 		prerequisite = {
+			focus = GEACPS_NF_JAP_5
+		}
+		mutually_exclusive = {
 			focus = GEACPS_NF_JAP_11
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#東洋一の民主国家
+	#華族
 	focus = {
-		id = GEACPS_NF_JAP_51
+		id = GEACPS_NF_JAP_11
 		icon = GFX_focus_jap_pacific_guardian
-		x = 9
-		y = 8
+		x = 22
+		y = 5
 		prerequisite = {
-			focus = GEACPS_NF_JAP_59
-			focus = GEACPS_NF_JAP_60
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	#論理的思考を重視
-	focus = {
-		id = GEACPS_NF_JAP_52
-		icon = GFX_focus_jap_pacific_guardian
-		x = 11
-		y = 9
-		prerequisite = {
-			focus = GEACPS_NF_JAP_14
-			focus = GEACPS_NF_JAP_51
+			focus = GEACPS_NF_JAP_5
 		}
 		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_53
+			focus = GEACPS_NF_JAP_10
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#根性論
+	#陸軍
 	focus = {
-		id = GEACPS_NF_JAP_53
+		id = GEACPS_NF_JAP_12
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 9
+		x = 18
+		y = 5
 		prerequisite = {
-			focus = GEACPS_NF_JAP_14
-			focus = GEACPS_NF_JAP_51
+			focus = GEACPS_NF_JAP_6
 		}
 		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_52
+			focus = GEACPS_NF_JAP_13
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#決行
+	#海軍
 	focus = {
-		id = GEACPS_NF_JAP_54
+		id = GEACPS_NF_JAP_13
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 6
+		x = 20
+		y = 5
 		prerequisite = {
+			focus = GEACPS_NF_JAP_6
+		}
+		mutually_exclusive = {
 			focus = GEACPS_NF_JAP_12
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#軍令部の拡張
+	#平民宰相
+	focus = {
+		id = GEACPS_NF_JAP_14
+		icon = GFX_focus_jap_pacific_guardian
+		x = 15
+		y = 5
+		prerequisite = {
+			focus = GEACPS_NF_JAP_7
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#現状の維持
+	focus = {
+		id = GEACPS_NF_JAP_15
+		icon = GFX_focus_jap_pacific_guardian
+		x = 19
+		y = 6
+		prerequisite = {
+			focus = GEACPS_NF_JAP_10
+			focus = GEACPS_NF_JAP_11
+			focus = GEACPS_NF_JAP_12
+			focus = GEACPS_NF_JAP_13
+		}
+		mutually_exclusive = {
+			focus = GEACPS_NF_JAP_16
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#新体制
+	focus = {
+		id = GEACPS_NF_JAP_16
+		icon = GFX_focus_jap_pacific_guardian
+		x = 17
+		y = 6
+		prerequisite = {
+			focus = GEACPS_NF_JAP_14
+		}
+		mutually_exclusive = {
+			focus = GEACPS_NF_JAP_15
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_17
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_18
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_19
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_20
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_21
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_22
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_23
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_24
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_25
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_26
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_27
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_28
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_29
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_30
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_31
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_32
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_33
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_34
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_35
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_36
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_37
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_38
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_39
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_40
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_41
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_42
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_43
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_44
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_45
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_46
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_47
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_48
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_49
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_50
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_51
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_52
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_53
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
+	focus = {
+		id = GEACPS_NF_JAP_54
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 0
+		prerequisite = {
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	#
 	focus = {
 		id = GEACPS_NF_JAP_55
 		icon = GFX_focus_jap_pacific_guardian
-		x = 18
-		y = 6
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_13
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#参謀本部の拡張
+	#
 	focus = {
 		id = GEACPS_NF_JAP_56
 		icon = GFX_focus_jap_pacific_guardian
-		x = 20
-		y = 6
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_13
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#昭和維新の実現
+	#
 	focus = {
 		id = GEACPS_NF_JAP_57
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 7
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_54
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#軍部の暴走の鎮静化
+	#
 	focus = {
 		id = GEACPS_NF_JAP_58
 		icon = GFX_focus_jap_pacific_guardian
-		x = 19
-		y = 7
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_56
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#議会改革
+	#
 	focus = {
 		id = GEACPS_NF_JAP_59
 		icon = GFX_focus_jap_pacific_guardian
-		x = 7
-		y = 7
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_49
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#皇室改革
+	#
 	focus = {
 		id = GEACPS_NF_JAP_60
 		icon = GFX_focus_jap_pacific_guardian
-		x = 11
-		y = 7
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_50
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#モンゴルを手中に
+	#
 	focus = {
 		id = GEACPS_NF_JAP_61
 		icon = GFX_focus_jap_pacific_guardian
-		x = 1
-		y = 12
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_46
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#志那の統一
+	#
 	focus = {
 		id = GEACPS_NF_JAP_62
 		icon = GFX_focus_jap_pacific_guardian
-		x = 5
-		y = 12
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_46
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#トランスバイカルとの交渉
+	#
 	focus = {
 		id = GEACPS_NF_JAP_63
 		icon = GFX_focus_jap_pacific_guardian
-		x = 13
-		y = 12
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_47
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#対岸の対処
+	#
 	focus = {
 		id = GEACPS_NF_JAP_64
 		icon = GFX_focus_jap_pacific_guardian
-		x = 21
-		y = 12
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_48
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#米国の箱庭
+	#
 	focus = {
 		id = GEACPS_NF_JAP_65
 		icon = GFX_focus_jap_pacific_guardian
-		x = 25
-		y = 12
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_48
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#共産党の対処
+	#
 	focus = {
 		id = GEACPS_NF_JAP_66
 		icon = GFX_focus_jap_pacific_guardian
-		x = 3
-		y = 13
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_62
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#国民党の対処
+	#
 	focus = {
 		id = GEACPS_NF_JAP_67
 		icon = GFX_focus_jap_pacific_guardian
-		x = 7
-		y = 13
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_62
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#東シベリアをトランスバイカルに統合
+	#
 	focus = {
 		id = GEACPS_NF_JAP_68
 		icon = GFX_focus_jap_pacific_guardian
-		x = 11
-		y = 13
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_63
+			focus = 
 		}
 		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_69
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#新たな仲間
+	#
 	focus = {
 		id = GEACPS_NF_JAP_69
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 13
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_63
+			focus = 
 		}
 		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_68
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#ケベックの分離を扇動
+	#
 	focus = {
 		id = GEACPS_NF_JAP_70
 		icon = GFX_focus_jap_pacific_guardian
-		x = 17
-		y = 13
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_64
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#西海岸に介入
+	#
 	focus = {
 		id = GEACPS_NF_JAP_71
 		icon = GFX_focus_jap_pacific_guardian
-		x = 21
-		y = 13
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_64
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#メキシコの奇跡の破壊
+	#
 	focus = {
 		id = GEACPS_NF_JAP_72
 		icon = GFX_focus_jap_pacific_guardian
-		x = 25
-		y = 13
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_64
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#志那の未来
+	#
 	focus = {
 		id = GEACPS_NF_JAP_73
 		icon = GFX_focus_jap_pacific_guardian
-		x = 5
-		y = 14
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_66
-			focus = GEACPS_NF_JAP_67
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#勘察加半島の要求
+	#
 	focus = {
 		id = GEACPS_NF_JAP_74
 		icon = GFX_focus_jap_pacific_guardian
-		x = 13
-		y = 14
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_63
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#ケベック義勇軍
+	#
 	focus = {
 		id = GEACPS_NF_JAP_75
 		icon = GFX_focus_jap_pacific_guardian
-		x = 17
-		y = 14
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_70
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#日仏共同宣言
+	#
 	focus = {
 		id = GEACPS_NF_JAP_76
 		icon = GFX_focus_jap_pacific_guardian
-		x = 19
-		y = 14
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_70
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#米国義勇軍
+	#
 	focus = {
 		id = GEACPS_NF_JAP_77
 		icon = GFX_focus_jap_pacific_guardian
-		x = 21
-		y = 14
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_71
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#革命勢力の蜂起を扇動
+	#
 	focus = {
 		id = GEACPS_NF_JAP_78
 		icon = GFX_focus_jap_pacific_guardian
-		x = 25
-		y = 14
+		x = 0
+		y = 0
 		prerequisite = {
-			focus = GEACPS_NF_JAP_72
+			focus = 
+		}
+		mutually_exclusive = {
+			focus = 
 		}
 		cost = 4.28
 		completion_reward = {
@@ -1320,6 +1470,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	
 	focus = {
         id = GEACPS_NF_JAP_army_00
         icon = GFX_focus_jap_pacific_guardian
