@@ -1,0 +1,114 @@
+guiTypes = {#根幹
+	containerWindowType =  { #GUIウィンドウを追加
+		name = "geacps_debug_menu_open_button_container" #GUIウィンドウの名前 scripted_guiのwindow_nameで使う
+		position = { x = 0  y = 0 } #GUIウィンドウがどこに表示されるか 0でいい
+
+		buttonType = { #ボタンを作る
+			name = "geacps_debug_menu_open_button_button" #ボタンの名前 scripted_guiで使う
+			position = { x = 1010 y = 0 } #ボタンの位置 ゲーム画面見て微調整だ
+			quadTextureSprite ="GFX_button_148x34" #ボタンの画像 これはバニラで既にあるやつ
+			buttonFont = "hoi_16mbs" #ボタンにテキストを入れる場合のフォント これはバニラのフォントを使っている
+			buttonText = "Open debug menu" #ボタンに入れるテキスト Localisationが効かなかった
+			shortcut = "c" #ショートカットキー
+		}
+	}
+	containerWindowType = { #GUIウィンドウを追加
+		name = "geacps_debug_menu_container" #GUIウィンドウの名前 scripted_guiのwindow_nameで使う
+		position = { x = 0 y = 0 } #GUIウィンドウがどこに表示されるか 0でいい
+		size = { width=1000 height=700} #GUIウィンドウのサイズ
+		Orientation = center #しらん
+		Origo = center #しらね
+		background = { #GUIの枠を作れる size = で手軽に大きさを指定できる
+			name = "Background"  #名前 適当でいい
+			quadTextureSprite = "GFX_tiled_bg" #GUIの枠のテクスチャ
+		}
+		instantTextBoxType = { #テキストを追加する
+			name = "unused" #name 適当で
+			position = { x = 25 y = 110 } #位置 見ながら微調整して
+			font = "hoi_16mbs" #テキストのフォント
+			borderSize = {x = 0 y = 0} #しらん
+			text = "geacps_debug_menu_unused" #Localisationが効くテキスト "特になし"と書いてある
+			maxWidth = 200 #テキストボックスの横の広さ 文字数に対して狭いと改行される
+			maxHeight = 24 #テキストボックスの縦の広さ 文字数に対して狭いとはみ出たテキストは消える
+			format = centre #中央揃えにする leftで左揃えにできる rightもあったはず
+		}
+		buttontype = { #ボタン追加
+		name = "geacps_debug_play_no_effect_button"
+		position = { x = 50 y = 130 } 
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = ""
+		}
+		instantTextBoxType = { #世界的事件
+			name = "geacps_world_event"
+			position = { x = 173 y = 110 }
+			font = "hoi_16mbs"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "geacps_debug_menu_world_event"
+			maxWidth = 200
+			maxHeight = 24
+			format = centre
+		}
+		buttontype = {
+		name = "geacps_debug_world_event_world_war_3_button"
+		position = { x = 200 y = 130 } #横のボタンよりx150ほど離すといい感じになる
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "World War 3"
+		}
+		buttontype = {
+		name = "geacps_debug_world_event_Donau_war_button"
+		position = { x = 200 y = 170 } #上のボタンよりy40ほど離すといい感じになる
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = "American Civil War"
+		}
+	}
+	containerWindowType =  { #デバッグメニューの上の方
+		name = "geacps_debug_menu_select_tab_container"
+		position = { x = 0  y = -300 }
+		size = { width=1000 height=100}
+		Orientation = center
+		Origo = center
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+		instantTextBoxType = {
+			name = "Title"
+			position = { x = 275 y = 20 }
+			font = "hoi_30header"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "geacps_debug_menu_title_text"
+			maxWidth = 500
+			maxHeight = 24
+			format = centre
+		}
+		buttontype = {
+		name = "geacps_debug_menu_close_button" #デバッグメニューを消すボタン
+		position = { x = 955 y = 11 }
+		quadTextureSprite = "GFX_closebutton"
+		shortcut = "ESCAPE" #escキーをショートカットキーにする
+		}
+		buttontype = {
+		name = "geacps_debug_tab_country_event_button"
+		position = { x = 20 y = 20 }
+		quadTextureSprite = "GFX_button_148x34"
+		buttonFont = "hoi_16mbs"
+		buttonText = ""
+		}
+		instantTextBoxType = {
+			name = "debug_menu_tab_country_event"
+			position = { x = -158 y = 29 }
+			font = "hoi_16mbs"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "geacps_debug_menu_tab_country_event_text"
+			maxWidth = 500
+			maxHeight = 24
+			format = centre
+		}
+	}
+}
