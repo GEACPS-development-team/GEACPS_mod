@@ -599,6 +599,166 @@
                 }
             }
         }
+        task_force = {
+            name = "第一水雷戦隊"
+            location = 1092
+            ship = {
+                name = "阿武隈"
+                definition = light_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_cruiser_2 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Nagara Class"
+                    }
+                }
+            }
+            ship = {
+                name = "暁"
+                definition = destroyer
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Akatsuki Class"
+                    }
+                }
+            }
+            ship = {
+                name = "響"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Akatsuki Class"
+                    }
+                }
+            }
+            ship = {
+                name = "雷"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Akatsuki Class"
+                    }
+                }
+            }
+            ship = {
+                name = "電"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Akatsuki Class"
+                    }
+                }
+            }
+            ship = {
+                name = "初春"
+                definition = destroyer
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Hatsuharu Class"
+                    }
+                }
+            }
+            ship = {
+                name = "子日"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Hatsuharu Class"
+                    }
+                }
+            }
+            ship = {
+                name = "若葉"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Hatsuharu Class"
+                    }
+                }
+            }
+            ship = {
+                name = "初霜"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Hatsuharu Class"
+                    }
+                }
+            }
+            ship = {
+                name = "有明"
+                definition = destroyer
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Hatsuharu Class"
+                    }
+                }
+            }
+            ship = {
+                name = "夕暮"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Hatsuharu Class"
+                    }
+                }
+            }
+            ship = {
+                name = "白露"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Shiratsuyu Class"
+                    }
+                }
+            }
+            ship = {
+                name = "時雨"
+                definition = heavy_cruiser
+                start_experience_factor = 0.5
+                equipment = {
+                    ship_hull_light_1 = {
+                        amount = 1
+                        owner = JAP
+                        version_name = "Shiratsuyu Class"
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -610,6 +770,19 @@ instant_effect = {
             version_name = "Super Taiho Class"
         }
         name = "天城" 
+		requested_factories = 1
+		progress = 0.7
+		amount = 1
+    }
+}
+instant_effect = {
+    add_equipment_production = {
+        equipment = {
+            type = ship_hull_carrier_2
+            creator = "JAP"
+            version_name = "Super Taiho Class"
+        }
+        name = "葛城" 
 		requested_factories = 1
 		progress = 0.7
 		amount = 1
