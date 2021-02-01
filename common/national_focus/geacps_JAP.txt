@@ -12,13 +12,16 @@ focus_tree = {
 	focus = {
 		id = GEACPS_NF_JAP_1
 		icon = GFX_focus_jap_pacific_guardian
+		available = {
+			hidden_trigger = { always = no }
+		}
 		x = 13
 		y = 1
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#臨時議会
+	#臨時議会の開催
 	focus = {
 		id = GEACPS_NF_JAP_2
 		icon = GFX_focus_jap_pacific_guardian
@@ -44,7 +47,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#予算案
+	#予算案の提出
 	focus = {
 		id = GEACPS_NF_JAP_4
 		icon = GFX_focus_jap_pacific_guardian
@@ -57,7 +60,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#貴族
+	#貴族から
 	focus = {
 		id = GEACPS_NF_JAP_5
 		icon = GFX_focus_jap_pacific_guardian
@@ -76,7 +79,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#軍人
+	#軍人から
 	focus = {
 		id = GEACPS_NF_JAP_6
 		icon = GFX_focus_jap_pacific_guardian
@@ -95,7 +98,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#政治家
+	#政治家から
 	focus = {
 		id = GEACPS_NF_JAP_7
 		icon = GFX_focus_jap_pacific_guardian
@@ -114,7 +117,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#陸軍の予算を増やす
+	#陸軍の予算
 	focus = {
 		id = GEACPS_NF_JAP_8
 		icon = GFX_focus_jap_pacific_guardian
@@ -123,14 +126,11 @@ focus_tree = {
 		prerequisite = {
 			focus = GEACPS_NF_JAP_4
 		}
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_9
-		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#海軍の予算を増やす
+	#海軍の予算
 	focus = {
 		id = GEACPS_NF_JAP_9
 		icon = GFX_focus_jap_pacific_guardian
@@ -139,14 +139,11 @@ focus_tree = {
 		prerequisite = {
 			focus = GEACPS_NF_JAP_4
 		}
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_8
-		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#皇族
+	#皇族出身
 	focus = {
 		id = GEACPS_NF_JAP_10
 		icon = GFX_focus_jap_pacific_guardian
@@ -162,7 +159,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#華族
+	#華族出身
 	focus = {
 		id = GEACPS_NF_JAP_11
 		icon = GFX_focus_jap_pacific_guardian
@@ -178,7 +175,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#陸軍
+	#陸軍出身
 	focus = {
 		id = GEACPS_NF_JAP_12
 		icon = GFX_focus_jap_pacific_guardian
@@ -194,7 +191,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#海軍
+	#海軍出身
 	focus = {
 		id = GEACPS_NF_JAP_13
 		icon = GFX_focus_jap_pacific_guardian
@@ -210,7 +207,7 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#大政翼賛会の解散
+	#大政翼賛会を解散
 	focus = {
 		id = GEACPS_NF_JAP_14
 		icon = GFX_focus_jap_pacific_guardian
@@ -381,17 +378,15 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#
+	#新政権の樹立
 	focus = {
 		id = GEACPS_NF_JAP_25
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
+		x = 19
+		y = 8
 		prerequisite = {
-			focus = 
-		}
-		mutually_exclusive = {
-			focus = 
+			focus = GEACPS_NF_JAP_22
+			focus = GEACPS_NF_JAP_23
 		}
 		cost = 4.28
 		completion_reward = {
