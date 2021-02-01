@@ -20,8 +20,8 @@ add_ideas = {
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	heavy_infantry_equipment0 = 1
-	squad_automatic_weapon0 = 1
+	#heavy_infantry_equipment0 = 1
+	#squad_automatic_weapon0 = 1
 
 	tech_support = 1		
 	tech_recon = 1
@@ -200,7 +200,7 @@ create_country_leader = {
 
 
 create_equipment_variant = {
-	name = "Kongo Class"
+	name = "金剛型"
 	type = ship_hull_heavy_2
 	name_group = JAP_BB_HISTORICAL
 	parent_version = 0
@@ -221,7 +221,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Fuso Class"
+	name = "扶桑型"
 	type = ship_hull_heavy_1
 	name_group = JAP_BB_HISTORICAL
 	parent_version = 0
@@ -243,7 +243,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Ise Class"
+	name = "伊勢型"
 	type = ship_hull_heavy_1
 	name_group = JAP_BB_HISTORICAL
 	parent_version = 0
@@ -265,7 +265,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Nagato Class"
+	name = "長門型"
 	type = ship_hull_heavy_1
 	name_group = JAP_BB_HISTORICAL
 	parent_version = 0
@@ -287,7 +287,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Yamato Class"
+	name = "大和型"
 	type = ship_hull_super_heavy_1
 	name_group = JAP_BB_HISTORICAL
 	parent_version = 0
@@ -309,7 +309,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Shinano Class"
+	name = "信濃型"
 	type = ship_hull_super_heavy_1
 	name_group = JAP_BB_HISTORICAL
 	parent_version = 0
@@ -332,7 +332,7 @@ create_equipment_variant = {
 }
 
 create_equipment_variant = {
-	name = "Ryujo Class"
+	name = "龍驤型"
 	type = ship_hull_carrier_1
 	name_group = JAP_CV_HISTORICAL
 	parent_version = 0
@@ -347,7 +347,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Soryu Class"
+	name = "蒼龍型"
 	type = ship_hull_carrier_1
 	name_group = JAP_CV_HISTORICAL
 	parent_version = 0
@@ -362,7 +362,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Shokaku Class"
+	name = "翔鶴型"
 	type = ship_hull_carrier_2
 	name_group = JAP_CV_HISTORICAL
 	parent_version = 0
@@ -378,7 +378,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Junyo Class"
+	name = "隼鷹型"
 	type = ship_hull_carrier_1
 	name_group = JAP_CV_HISTORICAL
 	parent_version = 0
@@ -393,7 +393,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Taiho Class"
+	name = "大鳳型"
 	type = ship_hull_carrier_2
 	name_group = JAP_CV_HISTORICAL
 	parent_version = 0
@@ -410,7 +410,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Super Taiho Class"
+	name = "超大鳳型"
 	type = ship_hull_carrier_2
 	name_group = JAP_CV_HISTORICAL
 	parent_version = 0
@@ -427,7 +427,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Hosho Class"
+	name = "鳳翔型"
 	type = ship_hull_carrier_conversion_ca
 	name_group = JAP_CVL_HISTORICAL
 	parent_version = 0
@@ -441,7 +441,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Zuiho Class"
+	name = "瑞鳳型"
 	type = ship_hull_carrier_conversion_ca
 	name_group = JAP_CVL_HISTORICAL
 	parent_version = 0
@@ -455,7 +455,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Furutaka Class"
+	name = "古鷹型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -476,7 +476,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Aoba Class"
+	name = "青葉型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -497,7 +497,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Myoko Class"
+	name = "妙高型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -518,7 +518,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Takao Class"
+	name = "高雄型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -539,7 +539,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Mogami Class"
+	name = "最上型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -560,7 +560,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Suzuya Class"
+	name = "鈴谷型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -581,7 +581,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Tone Class"
+	name = "利根型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -602,7 +602,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Ibuki Class"
+	name = "伊吹型"
 	type = ship_hull_cruiser_2
 	name_group = JAP_CA_HISTORICAL
 	parent_version = 0
@@ -623,7 +623,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Kuma Class"
+	name = "球磨型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CL_HISTORICAL
 	parent_version = 0
@@ -641,7 +641,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Nagara Class"
+	name = "長良型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CL_HISTORICAL
 	parent_version = 0
@@ -659,7 +659,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Sendai Class"
+	name = "川内型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CL_HISTORICAL
 	parent_version = 0
@@ -677,7 +677,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Yubari Class"
+	name = "夕張型"
 	type = ship_hull_cruiser_1
 	name_group = JAP_CL_HISTORICAL
 	parent_version = 0
@@ -695,7 +695,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Agano Class"
+	name = "阿賀野型"
 	type = ship_hull_cruiser_3
 	name_group = JAP_CL_HISTORICAL
 	parent_version = 0
@@ -716,7 +716,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Oyodo Class"
+	name = "大淀型"
 	type = ship_hull_cruiser_3
 	name_group = JAP_CL_HISTORICAL
 	parent_version = 0
@@ -737,7 +737,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Super Agano Class"
+	name = "超阿賀野型"
 	type = ship_hull_cruiser_4
 	name_group = JAP_CL_HISTORICAL
 	parent_version = 0
@@ -758,7 +758,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Mutsuki Class"
+	name = "睦月型"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -775,7 +775,7 @@ create_equipment_variant = {
 	obsolete = yes
 }
 create_equipment_variant = {
-	name = "Fubuki Class"
+	name = "吹雪型"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -791,7 +791,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Ayanami Class"
+	name = "綾波型"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -807,7 +807,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Akatsuki Class"
+	name = "暁型"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -823,7 +823,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Hatsuharu Class"
+	name = "初春型"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -839,7 +839,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Shiratsuyu Class"
+	name = "白露型"
 	type = ship_hull_light_1
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -855,7 +855,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Asashio Class"
+	name = "朝潮型"
 	type = ship_hull_light_2
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0
@@ -871,7 +871,7 @@ create_equipment_variant = {
 	}
 }
 create_equipment_variant = {
-	name = "Kagero Class"
+	name = "陽炎型"
 	type = ship_hull_light_2
 	name_group = JAP_DD_HISTORICAL
 	parent_version = 0

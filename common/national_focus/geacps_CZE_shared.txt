@@ -1172,6 +1172,22 @@ shared_focus = {
     }
 }
 shared_focus = {
+    id = CZE_sea_lion
+    icon = GFX_goal_unknown
+    cost = 5.00
+    relative_position_id = CZE_desire_of_us
+	x = -2
+    y = 1
+    prerequisite = {
+        focus = CZE_desire_of_us
+    }
+    mutually_exclusive = {
+        focus = CZE_sea_wolf
+    }
+    completion_reward = {
+    }
+}
+shared_focus = {
     id = CZE_sea_wolf
     icon = GFX_goal_unknown
     cost = 5.00
@@ -1251,22 +1267,6 @@ shared_focus = {
     }
     prerequisite = {
         focus = CZE_focus_on_doctrin
-    }
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_sea_lion
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_desire_of_us
-	x = -2
-    y = 1
-    prerequisite = {
-        focus = CZE_desire_of_us
-    }
-    mutually_exclusive = {
-        focus = CZE_sea_wolf
     }
     completion_reward = {
     }
@@ -1356,7 +1356,7 @@ shared_focus = {
         focus = CZE_socialist_industrialization
 	}
     mutually_exclusive = {
-        focus = CZE_power_to_war_industry
+        focus = CZE_weapon_export
     }
     completion_reward = {
     }
