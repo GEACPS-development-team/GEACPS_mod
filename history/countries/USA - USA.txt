@@ -1,5 +1,6 @@
 ﻿capital = 989
 oob = USA_1946
+set_naval_oob = USA_1946_naval
 
 set_convoys = 1000
 
@@ -36,4 +37,48 @@ create_country_leader = {
 	picture = "gfx/leaders/USA/Portrait_Harry_S_Truman.dds"
 	expire = "1972.12.26"
 	ideology = social_liberalism_ideology
+}
+create_equipment_variant = {
+	name = "アイオワ級"
+	type = ship_hull_heavy_3
+	name_group = USA_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_3
+		fixed_ship_anti_air_slot = ship_anti_air_4
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+		fixed_ship_radar_slot = ship_radar_3
+		fixed_ship_engine_slot = heavy_ship_engine_3
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_2
+		front_1_custom_slot = ship_heavy_battery_3
+#		front_2_custom_slot = ship_heavy_battery_2
+		mid_1_custom_slot = ship_anti_air_cannon_3
+		mid_2_custom_slot = ship_anti_air_4
+		mid_3_custom_slot = ship_anti_air_cannon_3
+		rear_1_custom_slot = ship_heavy_battery_3
+		rear_2_custom_slot = ship_airplane_launcher_2
+	}
+}
+create_equipment_variant = {
+	name = "モンタナ級"
+	type = ship_hull_heavy_3
+	name_group = USA_BB_HISTORICAL
+	parent_version = 0
+	modules = {
+		fixed_ship_battery_slot = ship_heavy_battery_3
+		fixed_ship_anti_air_slot = ship_anti_air_4
+		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+		fixed_ship_radar_slot = ship_radar_3
+		fixed_ship_engine_slot = heavy_ship_engine_3
+		fixed_ship_secondaries_slot = ship_secondaries_1
+		fixed_ship_armor_slot = ship_armor_bb_2
+		front_1_custom_slot = ship_heavy_battery_3
+#		front_2_custom_slot = ship_heavy_battery_2
+		mid_1_custom_slot = ship_anti_air_cannon_3
+		mid_2_custom_slot = ship_airplane_launcher_2
+		mid_3_custom_slot = ship_anti_air_cannon_3
+		rear_1_custom_slot = ship_heavy_battery_3
+		rear_2_custom_slot = ship_heavy_battery_3
+	}
 }

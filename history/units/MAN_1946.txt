@@ -1,1 +1,579 @@
-﻿
+﻿division_template = {
+	name = "步兵師団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "警備旅団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+	priority = 0
+}
+division_template = {
+	name = "騎兵師団"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "歩兵旅団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 0 y = 3 }
+		infantry = { x = 0 y = 4 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "騎兵旅団"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "混成旅団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		artillery_brigade = { x = 1 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "独立旅団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "独立騎兵連隊"
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "砲兵班"
+	regiments = {
+		artillery_brigade = { x = 0 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+division_template = {
+	name = "防空連隊"
+	regiments = {
+		anti_air_brigade = { x = 0 y = 0 }
+	}
+	support = {
+	}
+	priority = 1
+}
+
+##### OOB #####
+units = {
+	division = {
+		name = "第1師団"
+		location = 4572
+		division_template = "步兵師団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1警備旅団"
+		location = 4876
+		division_template = "警備旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1騎兵師団"
+		location = 4572
+		division_template = "騎兵師団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1歩兵旅団"
+		location = 9978
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第2歩兵旅団"
+		location = 10093
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第3歩兵旅団"
+		location = 4160
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第4歩兵旅団"
+		location = 4092
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第5歩兵旅団"
+		location = 9997
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第6歩兵旅団"
+		location = 12426
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第7歩兵旅団"
+		location = 4203
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第8歩兵旅団"
+		location = 9984
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第9歩兵旅団"
+		location = 1089
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第10歩兵旅団"
+		location = 7848
+		division_template = "歩兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1騎兵旅団"
+		location = 7873
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第2騎兵旅団"
+		location = 12077
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第3騎兵旅団"
+		location = 9963
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第4騎兵旅団"
+		location = 9970
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第5騎兵旅団"
+		location = 9997
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第6騎兵旅団"
+		location = 4074
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1混成旅団"
+		location = 10629
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第2混成旅団"
+		location = 10069
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第3混成旅団"
+		location = 1066
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第4混成旅団"
+		location = 7101
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第5混成旅団"
+		location = 7097
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第6混成旅団"
+		location = 4009
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第7混成旅団"
+		location = 4547
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第8混成旅団"
+		location = 12537
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第9混成旅団"
+		location = 12690
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第10混成旅団"
+		location = 12342
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第11混成旅団"
+		location = 7832
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第12混成旅団"
+		location = 9953
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第13混成旅団"
+		location = 1066
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第14混成旅団"
+		location = 11988
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第15混成旅団"
+		location = 4203
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第16混成旅団"
+		location = 1150
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第17混成旅団"
+		location = 10446
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第18混成旅団"
+		location = 12426
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第19混成旅団"
+		location = 10612
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第20混成旅団"
+		location = 12880
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第21混成旅団"
+		location = 1796
+		division_template = "混成旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1独立旅団"
+		location = 6932
+		division_template = "独立旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第2独立旅団"
+		location = 3992
+		division_template = "独立旅団"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1独立騎兵連隊"
+		location = 4205
+		division_template = "独立騎兵連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第2独立騎兵連隊"
+		location = 7035
+		division_template = "独立騎兵連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第3独立騎兵連隊"
+		location = 10367
+		division_template = "独立騎兵連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第4独立騎兵連隊"
+		location = 7004
+		division_template = "独立騎兵連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第5独立騎兵連隊"
+		location = 10541
+		division_template = "独立騎兵連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第6独立騎兵連隊"
+		location = 10521
+		division_template = "独立騎兵連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第7独立騎兵連隊"
+		location = 7743
+		division_template = "独立騎兵連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1砲兵班"
+		location = 3791
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第2砲兵班"
+		location = 9759
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第3砲兵班"
+		location = 3783
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第4砲兵班"
+		location = 11771
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第5砲兵班"
+		location = 11815
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第6砲兵班"
+		location = 11855
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第7砲兵班"
+		location = 1638
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第8砲兵班"
+		location = 4876
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第9砲兵班"
+		location = 10567
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第10砲兵班"
+		location = 12342
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第11砲兵班"
+		location = 12618
+		division_template = "砲兵班"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第1防空連隊"
+		location = 1638
+		division_template = "防空連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第2防空連隊"
+		location = 4572
+		division_template = "防空連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第3防空連隊"
+		location = 6851
+		division_template = "防空連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第4防空連隊"
+		location = 9768
+		division_template = "防空連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+	division = {
+		name = "第5防空連隊"
+		location = 6988
+		division_template = "防空連隊"
+		start_experience_factor = 0.1
+		start_equipment_factor = 0.9
+	}
+}
+
+########## STARTING PRODUCTION ##########
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "MAN"
+		}
+		requested_factories = 1
+		progress = 0.52
+		efficiency = 100
+	}
+}
