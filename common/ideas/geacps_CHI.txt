@@ -1,25 +1,220 @@
 ideas = {
 	country = {
-		GEACPS_IDEA_CHI_1 = {	#反乱を抑圧
-			picture = GFX_idea_hun_secret_rearmament
+		GEACPS_idea_CHI_uneasy_unity = {	#不穏な結束
+			picture = GFX_idea_GEACPS_idea_CHI_uneasy_unity
 			removal_cost = -1
 			modifier = {
-				mobilization_speed = -0.1
+				mobilization_speed = -0.05
+				ai_focus_aggressive_factor = -0.02
+				army_core_attack_factor = -0.05
 			}
 		}
-		GEACPS_IDEA_CHI_2 = {	#反乱を抑圧2
-			picture = GFX_idea_hun_secret_rearmament
+		GEACPS_idea_CHI_suppression_of_rebellion = {	#反乱の抑圧
+			picture = GFX_idea_GEACPS_idea_CHI_suppression_of_rebellion
 			removal_cost = -1
 			modifier = {
-				mobilization_speed = -0.15
+				stability_factor = 0.05
+				political_power_gain = -0.1
 			}
 		}
-		GEACPS_IDEA_CHI_3 = {	#反乱を放置
-			picture = GFX_idea_hun_secret_rearmament
+		GEACPS_idea_CHI_pressure_from_allies = {	#同盟国からの圧力
+			picture = GFX_idea_GEACPS_idea_CHI_pressure_from_allies
 			removal_cost = -1
 			modifier = {
-			stability_factor = -0.15
+				stability_factor = -0.05
 			}
 		}
+		GEACPS_idea_CHI_incompetent_government = {	#無能な政府
+			picture = GFX_idea_GEACPS_idea_CHI_incompetent_government
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.15
+				enemy_justify_war_goal_time = 0.1
+			}
+		}
+		GEACPS_idea_CHI_chinese_united_front = {	#中華統一戦線
+			picture = GFX_idea_GEACPS_idea_CHI_chinese_united_front
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.04
+				defense_bonus_against = 0.04
+			}
+		}
+		GEACPS_idea_CHI_chinese_united_front1 = {	#中華統一戦線１
+			picture = GFX_idea_GEACPS_idea_CHI_chinese_united_front
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.04
+				defense_bonus_against = 0.04
+			}
+
+		}
+		GEACPS_idea_CHI_chinese_united_front2 = {	#中華統一戦線２
+			picture = GFX_idea_GEACPS_idea_CHI_chinese_united_front
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.12
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.07
+				defense_bonus_against = 0.07
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.06
+				defense_bonus_against = 0.06
+			}
+
+		}
+		GEACPS_idea_CHI_chinese_united_front3 = {	#中華統一戦線３
+			picture = GFX_idea_GEACPS_idea_CHI_chinese_united_front
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.14
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.09
+				defense_bonus_against = 0.09
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.09
+				defense_bonus_against = 0.09
+			}
+
+		}
+		GEACPS_idea_CHI_chinese_united_front4 = {	#中華統一戦線４
+			picture = GFX_idea_GEACPS_idea_CHI_chinese_united_front
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.16
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.10
+				defense_bonus_against = 0.10
+			}
+
+		}
+
+		GEACPS_idea_CHI_first_of_all_unity = {	#ひとまずの団結
+			picture = GFX_idea_GEACPS_idea_CHI_first_of_all_unity
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.04
+				defense_bonus_against = 0.04
+			}
+
+		}
+		GEACPS_idea_CHI_the_only_one_china = {	#ただ一つの中華
+			picture = GFX_idea_GEACPS_idea_CHI_the_only_one_china
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		GEACPS_idea_CHI_failed_states = {	#失敗国家
+			picture = GFX_idea_GEACPS_idea_CHI_failed_states
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.25
+				army_morale_factor = -0.05
+			}
+		}
+		GEACPS_idea_CHI_phoenix = {	#不死鳥
+			picture = GFX_idea_GEACPS_idea_CHI_phoenix
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.2
+				defence = 0.15
+				offence = 0.15
+				attrition = -0.15
+				navy_capital_ship_attack_factor = 0.05
+				industrial_capacity_factory = 0.10
+				MONTHLY_POPULATION = 0.1
+				nuclear_production_factor = 0.15
+			}
+		}
+		GEACPS_idea_CHI_counterattack = {	#反撃の狼煙
+			picture = GFX_idea_GEACPS_idea_CHI_counterattack
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.10
+				army_speed_factor = 0.05
+				war_support_factor = 0.10
+			}
+		}
+		GEACPS_idea_CHI_road_to_reunification1 = {	#再統一への道１
+			picture = GFX_idea_GEACPS_idea_CHI_road_to_reunification1
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.10
+			}
+		}
+		GEACPS_idea_CHI_road_to_reunification2 = {	#再統一への道２
+			picture = GFX_idea_GEACPS_idea_CHI_road_to_reunification2
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.07
+				war_support_factor = 0.15
+
+			}
+		}
+		GEACPS_idea_CHI_road_to_reunification3 = {	#再統一への道3
+			picture = GFX_idea_GEACPS_idea_CHI_road_to_reunification3
+			removal_cost = -1
+			modifier = {
+			stability_factor = 0.1
+			war_support_factor = 0.20
+
+			}
+		}
+		GEACPS_idea_CHI_road_to_reunification4 = {	#再統一への道4
+			picture = GFX_idea_GEACPS_idea_CHI_road_to_reunification1
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.15
+				war_support_factor = 0.15
+
+			}
+		}
+
 	}
 }

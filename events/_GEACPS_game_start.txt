@@ -10,5 +10,17 @@ country_event = {
 	option = {
 		name = GEACPS_game_start.1.a
 		ai_chance = { factor = 10 }
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = CHI
+					NOT ={
+						tag = CHI
+					}
+				}
+				set_country_flag = is_in_faction_with_CHI
+			}
+		}
+
 	}
 }
