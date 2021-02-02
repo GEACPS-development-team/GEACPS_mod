@@ -140,6 +140,12 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Selection_of_the_next_Prime_Minister
 		}
+		mutually_exclusive = {
+			focus = JAP_Military_background
+		}
+		mutually_exclusive = {
+			focus = JAP_Politician_by_birth
+		}
 		cost = 4.28
 		completion_reward = {
 		}
@@ -153,6 +159,12 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Selection_of_the_next_Prime_Minister
 		}
+		mutually_exclusive = {
+			focus = JAP_aristocratic_birth
+		}
+		mutually_exclusive = {
+			focus = JAP_Politician_by_birth
+		}
 		cost = 4.28
 		completion_reward = {
 		}
@@ -165,6 +177,12 @@ focus_tree = {
 		y = 4
 		prerequisite = {
 			focus = JAP_Selection_of_the_next_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_aristocratic_birth
+		}
+		mutually_exclusive = {
+			focus = JAP_Military_background
 		}
 		cost = 4.28
 		completion_reward = {
@@ -367,134 +385,181 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#
+	#派閥闘争の終焉
 	focus = {
-		id = GEACPS_NF_JAP_26
+		id = JAP_The_End_of_Factional_Struggle
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 23
+		y = 6
+		prerequisite = {
+			focus = JAP_Militarism
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#軍部の暴走に対処
 	focus = {
-		id = GEACPS_NF_JAP_27
+		id = JAP_Dealing_with_military_violence
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 21
+		y = 6
+		prerequisite = {
+			focus = JAP_Wenmin_System
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#発布！
 	focus = {
-		id = GEACPS_NF_JAP_28
+		id = JAP_promulgation
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 17
+		y = 6
+		prerequisite = {
+			focus = JAP_Passed
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#陸軍工廠の増設
 	focus = {
-		id = GEACPS_NF_JAP_29
+		id = JAP_Expansion_of_the_Army_Arsenal
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 12
+		y = 6
+		prerequisite = {
+			focus = JAP_Reform_of_the_War_Department
+		}
+		prerequisite = {
+			focus = JAP_Expansion_of_the_Army_General_Staff
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#海軍工廠の増設
 	focus = {
-		id = GEACPS_NF_JAP_30
+		id = JAP_Expansion_of_Naval_Arsenal
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 8
+		y = 6
+		prerequisite = {
+			focus = JAP_Reform_of_the_Ministry_of_the_Navy
+		}
+		prerequisite = {
+			focus = JAP_Expansion_of_the_Naval_Command_Center
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#皇道派との和解
 	focus = {
-		id = GEACPS_NF_JAP_31
+		id = JAP_Reconciliation_with_the_Imperialists
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 4
+		y = 6
+		prerequisite = {
+			focus = JAP_Probation_for_thought_crime
+		}
+		mutually_exclusive = {
+			focus = JAP_Tacit_approval_of_coup_preparations
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#クーデター準備の黙認
 	focus = {
-		id = GEACPS_NF_JAP_32
+		id = JAP_Tacit_approval_of_coup_preparations
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 2
+		y = 6
+		prerequisite = {
+			focus = JAP_Probation_for_thought_crime
+		}
+		mutually_exclusive = {
+			focus = JAP_Reconciliation_with_the_Imperialists
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#重臣会議
 	focus = {
-		id = GEACPS_NF_JAP_33
+		id = JAP_Council_of_Ministers
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 25
+		y = 7
+		prerequisite = {
+			focus = JAP_aristocratic_birth
+			focus = JAP_The_End_of_Factional_Struggle
+			focus = JAP_Dealing_with_military_violence
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#施行！
 	focus = {
-		id = GEACPS_NF_JAP_34
+		id = JAP_Implementing
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 17
+		y = 7
+		prerequisite = {
+			focus = JAP_promulgation
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#承認！
 	focus = {
-		id = GEACPS_NF_JAP_35
+		id = JAP_Recognition
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 10
+		y = 7
+		prerequisite = {
+			focus = JAP_Expansion_of_the_Army_Arsenal
+		}
+		prerequisite = {
+			focus = JAP_Expansion_of_Naval_Arsenal
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#天皇による任命
 	focus = {
-		id = GEACPS_NF_JAP_36
+		id = JAP_appointment_by_the_emperor
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 23
+		y = 8
+		prerequisite = {
+			focus = JAP_Council_of_Ministers
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#議会の終結
 	focus = {
-		id = GEACPS_NF_JAP_37
+		id = JAP_Conclusion_of_the_Congress
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 17
+		y = 9
+		prerequisite = {
+			focus = JAP_appointment_by_the_emperor
+		}
+		prerequisite = {
+			focus = JAP_Implementing
+		}
+		prerequisite = {
+			focus = JAP_Recognition
+		}
 		cost = 4.28
 		completion_reward = {
 		}
