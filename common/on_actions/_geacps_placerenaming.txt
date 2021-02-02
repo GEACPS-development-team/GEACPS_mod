@@ -1,0 +1,19 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {	
+				limit = {	has_global_flag = placerenaming_globalflag	}
+				FROM.FROM ={
+					if ={	#Asia
+						limit = {	is_on_continent = asia	}
+						
+						if = {	#Japan
+							limit = {	ROOT = {	country_ja_tag = yes	}	}
+							asia_placerenaming_ja = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}

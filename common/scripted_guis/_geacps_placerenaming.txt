@@ -1,0 +1,34 @@
+scripted_gui = {
+	geacps_placerenaming = {
+		context_type = global_context
+		window_name = "geacps_placerenaming_container"
+		parent_window_token = top_bar
+		dirty = global.placerenaming_frame
+		
+		ai_enabled = {	always = no	}
+		triggers = {
+			placerenaming_button_click_enabled = {
+				NOT = { has_global_flag = is_mp }
+			}
+		}
+		
+		effects = {
+			placerenaming_button_click = {
+				if = {
+					limit = {	has_global_flag = placerenaming_globalflag	}
+					disable_placerenaming = yes
+					set_variable = {	global.placerenaming_frame = 1	}
+				}
+				else = {
+					enable_placerenaming = yes
+					set_variable = {	global.placerenaming_frame = 2	}
+				}
+			}
+		}
+		
+		properties = {
+			placerenaming_button = {	frame = global.placerenaming_frame	}
+		}
+	}
+}
+
