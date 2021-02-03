@@ -1306,8 +1306,7 @@ focus_tree = {
             add_tech_bonus = {
 				name = JAP_cruiser_modernization
 				bonus = 1.0
-				uses = 2
-				category = bc_tech	
+				uses = 1	
 				category = bb_tech	
 			}
         }
@@ -1323,7 +1322,12 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_BB_01 }
 		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_BB_02 }
         completion_reward = {
-            navy_experience = 75
+            add_tech_bonus = {
+				name = JAP_cruiser_modernization
+				bonus = 1.0
+				uses = 1
+				category = shbb_tech	
+			}
         }
     }
 
@@ -1338,7 +1342,7 @@ focus_tree = {
 
         completion_reward = {
             create_equipment_variant = {
-					name = "Super Yamato Class"
+					name = "超大和型"
 					type = ship_hull_super_heavy_2
 					name_group = JAP_BB_HISTORICAL
 					parent_version = 0
@@ -1363,9 +1367,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_super_heavy_2
 						creator = "JAP" 
-						version_name = "Super Yamato Class"
+						version_name = "超大和型"
 					}
-					name = "Suruga" 
+					name = "駿河" 
 					requested_factories = 1
 					progress = 0.5
 					amount = 1
@@ -1374,9 +1378,9 @@ focus_tree = {
 					equipment = {
 						type = ship_hull_super_heavy_2
 						creator = "JAP" 
-						version_name = "Super Yamato Class"
+						version_name = "超大和型"
 					}
-					name = "Oumi" 
+					name = "近江" 
 					requested_factories = 1
 					progress = 0.5
 					amount = 1
@@ -1550,7 +1554,7 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_CV_01 }
 
 		completion_reward = {
-
+			add_ideas = JAP_
 		}
 
 	}
