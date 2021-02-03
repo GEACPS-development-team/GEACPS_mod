@@ -4,13 +4,10 @@
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
-		infantry = { x = 0 y = 2 }
 		infantry = { x = 1 y = 0 }
 		infantry = { x = 1 y = 1 }
-#		artillery_brigade = { x = 1 y = 2 }
 	}
 	support = {
-		artillery = { x = 0 y = 0 }
 	}
 }
 division_template = {
@@ -19,59 +16,52 @@ division_template = {
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
-		cavalry = { x = 1 y = 0 }
-		cavalry = { x = 1 y = 1 }
-		cavalry = { x = 2 y = 0 }
-		cavalry = { x = 2 y = 1 }
+		cavalry = { x = 0 y = 2 }
 
 	}
 }
 units = {
-	#広西軍閥
+	#反乱軍
 	division = {
 		#"第1師団"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7128
+		location = 4999
 		division_template = "歩兵師団"
 		start_experience_factor = 0.15
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.35
 	}
 	division = {
-		#"第2師団"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 2
 		}
-		location = 7137
+		location = 12837
 		division_template = "歩兵師団"
 		start_experience_factor = 0.15
-		start_equipment_factor = 0.15
+		start_equipment_factor = 0.35
 	}
 	division = {
-		#"第3師団"
-		division_name = {
-			is_name_ordered = yes
-			name_order = 3
-		}
-		location = 4125
-		division_template = "歩兵師団"
-		start_experience_factor = 0.15
-		start_equipment_factor = 0.25
-	}
-	division = {
-		#"第1師団"
 		division_name = {
 			is_name_ordered = yes
 			name_order = 1
 		}
-		location = 7044
+		location = 12141
 		division_template = "騎兵旅団"
 		start_experience_factor = 0.15
-		start_equipment_factor = 0.25
+		start_equipment_factor = 0.35
 	}
-
+	division = {
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 4925
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.35
+	}
 
 }

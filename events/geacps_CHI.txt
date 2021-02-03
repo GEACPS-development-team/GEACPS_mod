@@ -1,6 +1,6 @@
 add_namespace = GEACPS_china
 country_event = {
-	id = GEACPS_china.001#w‰c“à‚Ì—£”½
+	id = GEACPS_china.001#”½—‚Ì’›‚µ
 	title = GEACPS_china.001.title
 	desc = GEACPS_china.001.desc
 	picture = GFX_
@@ -10,432 +10,310 @@ country_event = {
 	option = {
 		name = GEACPS_china.001.a
 		ai_chance = { factor = 10 }
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_in_faction_with = CHI
-					NOT ={
-						tag = CHI
-					}
-				}
-				set_country_flag = china_faction
-			}
-			country_event = {
-				id = GEACPS_china.002
-				days = 7
-				random = 2
-			}
+		620 = {
+			add_manpower = -3532
+		}
+		1014 = {
+			add_manpower = 2600
 		}
 	}
 }
 country_event = {
-	id = GEACPS_china.002#‘“à‚Å‚ÌŠv–½‚Ì‘O’›
+	id = GEACPS_china.002#“ss‘aŠJ‚ÌŠJn
 	title = GEACPS_china.002.title
-	desc = {
-		text = GEACPS_china.002.desc.2
-		trigger = {	
-			has_country_flag = china.collapse.1
-		}
-	}
-	desc = {					
-		text = GEACPS_china.002.desc.1
-		trigger = {				
-			NOT = {
-				has_country_flag = china.collapse.1
-			}
-		}
-	}
+	desc = GEACPS_china.002.desc
 	picture = GFX_
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.002.a1#”½—‚ğ—}‚¦‚é(1“x–Ú)
-		ai_chance = { factor = 20 }
-		trigger = {				
-			NOT = {
-				has_country_flag = china.collapse.1
-			}
-		}
-		add_ideas = GEACPS_IDEA_CHI_1
+		name = GEACPS_china.002.a
+		ai_chance = { factor = 10 }
+
 		hidden_effect = {
-			set_country_flag = china.collapse.1
 			country_event = {
 				id = GEACPS_china.002
-				days = 15
+				days = 2
 				random = 2
 			}
 		}
-	}
-	option = {
-		name = GEACPS_china.002.a2#”½—‚ğ—}‚¦‚é(2“x–Ú)
-		ai_chance = { factor = 30 }
-		trigger = {				
-			has_country_flag = china.collapse.1
-		}
-		add_ideas = GEACPS_IDEA_CHI_2
 
-		hidden_effect = {
-			country_event = {
-				id = GEACPS_china.003
-				days = 7
-				random = 2
-			}
-		}
 	}
-	option = {
-		name = GEACPS_china.002.b#ŒğÂ‚·‚é
-		ai_chance = { factor = 10 }
-		country_event = {
-			id = GEACPS_china.004
-		}
-	}
-	option = {
-		name = GEACPS_china.002.c#•ú’u
-		ai_chance = { factor = 10 }
-		add_ideas = GEACPS_IDEA_CHI_3
-
-		hidden_effect = {
-			country_event = {
-				id = GEACPS_china.003
-				days = 7
-				random = 4
-			}
-		}
-	}
-
 }
 country_event = {
-	id = GEACPS_china.003#“ˆêíü‚Ì•ö‰ó
+	id = GEACPS_china.003#•Š¿‚ªè—Ì‚³‚ê‚½I
 	title = GEACPS_china.003.title
 	desc = GEACPS_china.003.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.003.a#•ö‰ó
+		name = GEACPS_china.003.a
 		ai_chance = { factor = 10 }
-		every_country = {
-				limit = {
-					has_country_flag = china_faction
-					NOT ={
-						tag = CHI
-					}
-
-				}
-				leave_faction = yes
-		}
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.0010
-				days = 20
-				random = 5
-			}
-
-			country_event = {
-				id = GEACPS_china.006
+				id = GEACPS_china.004
 				days = 7
-				random = 4
-			}
-			every_country = {
-				limit = {
-					has_country_flag = china_faction
-					NOT ={
-						tag = CHI
-					}
-
-				}
-				country_event = {
-					id = GEACPS_china.005
-					days = 3
-					random = 4
-				}
+				random = 2
 			}
 		}
 	}
-
 }
 country_event = {
-	id = GEACPS_china.004#Še‘‚Æ‚ÌŒğÂ
+	id = GEACPS_china.004#”½‘Î”h‚Ì“®Œü
 	title = GEACPS_china.004.title
 	desc = GEACPS_china.004.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
-
+	
 	option = {
-		name = GEACPS_china.004.a#©¡Œ ‚ÌŠg‘å‚ğ”F‚ß‚éB
-		ai_chance = { factor = 10 }
-			every_country = {
-				limit = {
-					is_in_faction_with = CHI
-					NOT ={
-						tag = CHI
-					}
-				}
-				country_event = {
-					id = GEACPS_china.0041
-					days = 5
-					random = 4
-				}
-			}
-			hidden_effect = {
-				country_event = {
-					id = GEACPS_china.002
-					days = 30
-					random = 2
-				}
-			}	
-
-	}
-	option = {
-		name = GEACPS_china.004.b#‘Î“ú‚Ìd—v«‚ğà‚­
-		ai_chance = { factor = 10 }
+		name = GEACPS_china.004.a#’eˆ³
+		ai_chance = { factor = 1 }
+		add_ideas = GEACPS_idea_CHI_suppression_of_rebellion
 		every_country = {
 			limit = {
-				is_in_faction_with = CHI
-				NOT ={
-				tag = CHI
+				has_country_flag = is_in_faction_with_CHI
+			}
+			add_ideas = GEACPS_idea_CHI_pressure_from_allies
+			hidden_effect = {
+				add_opinion_modifier = {
+					target = CHI
+					modifier = CHI_pressure_on_our_country
 				}
 			}
-			country_event = {
-				id = GEACPS_china.0042
-				days = 5
-				random = 4
-			}
 		}
-	}
-}
-country_event = {
-	id = GEACPS_china.0041#’†‰Ø–¯‘‚©‚ç‚ÌŒğÂ
-	title = GEACPS_china.0041.title
-	desc = GEACPS_china.0041.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
-	option = {
-		name = GEACPS_china.0041.a#‚æ‚­‚¨‚¢‚Å‰º‚³‚Á‚½c
-		ai_chance = { factor = 30 }
-		hidden_effect = {
-			CHI = {
-				country_event = {
-					id = GEACPS_china.0043
-					days = 2
-					random = 4
-				}
-
-			}
-		}
-	}
-	option = {
-		name = GEACPS_china.0041.b#‚Ó‚´‚¯‚ñ‚ÈI
-		ai_chance = { factor = 5 }
-		hidden_effect = {
-			CHI = {
-				country_event = {
-					id = GEACPS_china.0044
-					days = 2
-					random = 4
-				}
-
-			}
-		}
-	}
-
-}
-country_event = {
-	id = GEACPS_china.0042#(“ˆêíüƒƒ“ƒo[)’†‰Ø–¯‘‚Ì˜ø™S‚É‚È‚è‚Ü‚¹‚ñ‚©H
-	title = GEACPS_china.0042.title
-	desc = GEACPS_china.0042.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
-	option = {
-		name = GEACPS_china.0042.a#‚¢‚¢‚æB
-		ai_chance = { factor = 30 }
-		hidden_effect = {
-			set_country_flag = chaina_accept_puppet
-			CHI = {
-				country_event = {
-					id = GEACPS_china.0043
-					days = 2
-					random = 4
-				}
-
-			}
-		}
-	}
-	option = {
-		name = GEACPS_china.0042.b#‚â‚¾‚æ
-		ai_chance = { factor = 10 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.0045
-				days = 3
-				random = 4
-			}
-			CHI = {
-				country_event = {
-					id = GEACPS_china.0044
-					days = 2
-					random = 4
-				}
-
+				id = GEACPS_china.005
+				days = 8
+				random = 2
 			}
 		}
 	}
-
-}
-
-country_event = {
-	id = GEACPS_china.0043#’†‰Ø–¯‘‚©‚ç‚ÌŒğÂ
-	title = GEACPS_china.0043.title
-	desc = GEACPS_china.0043.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
 	option = {
-		name = GEACPS_china.0043.a#‚±‚ê‚Å‚Ğ‚Æ‚Ü‚¸‚ ‚ñ‚µ‚ñ‚¾
-		ai_chance = { factor = 10 }
-		if = {
-			limit = {
-				FROM = {
-					has_country_flag = chaina_accept_puppet
-				}
-			}
-			puppet = FROM
-		}
-	}
-
-}
-country_event = {
-	id = GEACPS_china.0044#FROM‚ª‹‘”ÛI
-	title = GEACPS_china.0044.title
-	desc = GEACPS_china.0044.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
-	option = {
-		name = GEACPS_china.0044.a#‚È‚ñ‚Ä‚±‚Æ‚¾
-		ai_chance = { factor = 10 }
-	}
-
-}
-country_event = {
-	id = GEACPS_china.0045#(“ˆêíüƒƒ“ƒo[)“ˆêíü”²‚¯‚½‚¢‚©‚Ç‚¤‚©
-	title = GEACPS_china.0045.title
-	desc = GEACPS_china.0045.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
-	option = {
-		name = GEACPS_china.0045.a#‚Ü‚¾ˆê‚É‚¢‚Ü‚·
+		name = GEACPS_china.004.b#•ú’u
 		ai_chance = { factor = 15 }
-	}
-	option = {
-		name = GEACPS_china.0045.b#‚±‚ñ‚È‚Æ‚±”²‚¯‚Ä‚â‚ç‚Ÿ
-		ai_chance = { factor = 10 }
-		leave_faction = yes
-		country_event = {
-			id = GEACPS_china.005
-			days = 10
-			random = 5
-		}
-
-		CHI = {
+		add_ideas = GEACPS_idea_CHI_incompetent_government
+		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.0046
-				days = 3
-				random = 4
+				id = GEACPS_china.010
+				days = 7
+				random = 2
 			}
 		}
 	}
-
-}
-country_event = {
-	id = GEACPS_china.0046#FROM‚Í“ˆêíü‚ğ—£’E
-	title = GEACPS_china.0046.title
-	desc = GEACPS_china.0046.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
 	option = {
-		name = GEACPS_china.0046.a#‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ I
-		ai_chance = { factor = 10 }
-		hidden_effect = {
-			clr_country_flag = china_faction
+		name = GEACPS_china.004.c#˜b‡‚¢
+		ai_chance = { factor = 0 }
+		trigger = {				
+			num_faction_members > 1
+		}
+		country_event = {
+			id = GEACPS_china.020
+			days = 7
+			random = 2
 		}
 	}
-}
 
+}
 country_event = {
-	id = GEACPS_china.005#(Œ³“ˆêíü)“ú–{‚Æu˜a‚µ‚æ‚¤‚Ë[‚ ‚Æ’†‰ØE‚»‚¤‚ËB
+	id = GEACPS_china.005#•ö‰ó‚Ì—\Š´
 	title = GEACPS_china.005.title
 	desc = GEACPS_china.005.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
-
-	option = {
-		name = GEACPS_china.005.a#?‰îÎ‚Ô‚Á‚½‚½‚«‚½‚¢
-		ai_chance = { factor = 5 }
-		hidden_effect = {
-			clr_country_flag = china_faction
-		}
-		white_peace = JAP
-		declare_war_on = {
-			target = CHI
-			type = topple_government
-		}
-
-	}
-	option = {
-		name = GEACPS_china.005.b#‚¢‚âƒZƒ“ƒ\ƒEƒn‚à‚¤‚¢‚âc
-		ai_chance = { factor = 25 }
-		white_peace = JAP
-		hidden_effect = {
-			clr_country_flag = china_faction
-		}
-
-	}
-
-}
-country_event = {
-	id = GEACPS_china.006#‚ ‚Æ‘“à•ª—ô‚µ‚½‚æ
-	title = GEACPS_china.006.title
-	desc = GEACPS_china.006.desc
-	picture = GFX_
 	
-	is_triggered_only = yes
-
 	option = {
-		name = GEACPS_china.006.a#‘“à‚Ì”½—
-		ai_chance = { factor = 20 }
+		name = GEACPS_china.005.a#’eˆ³
+		ai_chance = { factor = 10 }
+		add_stability = -0.05
 		hidden_effect = {
-			release = SCH
-			release = GZH
-			SCH = {	
-				declare_war_on = {
-					target = CHI
-					type = topple_government
-				}
+			country_event = {
+				id = GEACPS_china.006
+				days = 4
+				random = 2
 			}
-			GZH = {	
-				declare_war_on = {
-					target = CHI
-					type = topple_government
-				}
+		}
+	}
+	option = {
+		name = GEACPS_china.005.b#•ú’u
+		ai_chance = { factor = 10 }
+		add_ideas = GEACPS_idea_CHI_incompetent_government
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.010
+				days = 7
+				random = 2
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.005.c#˜b‡‚¢
+		ai_chance = { factor = 5 }
+		remove_ideas = GEACPS_idea_CHI_suppression_of_rebellion
+		every_country = {
+			limit = {
+				has_country_flag = is_in_faction_with_CHI
 			}
 			country_event = {
 				id = GEACPS_china.007
 				days = 3
+				random = 2
+			}
+			country_event = {
+				id = GEACPS_china.006
+				days = 10
+				random = 3
+			}
+
+		}
+		hidden_effect = {
+			set_country_flag = negotiations_with_warlords
+		}
+	}
+}
+country_event = {
+	id = GEACPS_china.006#•ö‰ó‚Ì—\Š´‚»‚Ì‚Q
+	title = GEACPS_china.006.title
+	desc = {
+		text = GEACPS_china.006.desc.1
+		trigger = {	
+			NOT = {
+				has_country_flag = CHI_negotiations_with_warlords
+			}
+		}
+	}
+	desc = {
+		text = GEACPS_china.006.desc.2
+		trigger = {	
+			has_country_flag = CHI_negotiations_with_warlords
+			NOT = {
+				has_country_flag = CHI_preventing_collapse
+			}
+		}
+	}
+	desc = {
+		text = GEACPS_china.006.desc.3
+		trigger = {	
+			has_country_flag = CHI_negotiations_with_warlords
+			has_country_flag = CHI_preventing_collapse
+		}
+	}
+
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.006.a#‚Ç‚¤‚µ‚æ‚¤‚à‚È‚¢
+		ai_chance = { factor = 10 }
+		trigger = {				
+			NOT = {
+				has_country_flag = CHI_negotiations_with_warlords
+			}
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.010
+				days = 4
+				random = 4
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.006.b#‚·‚×‚Ä‚Ì‘‚ª—£’E
+
+		ai_chance = { factor = 10 }
+		trigger = {				
+			has_country_flag = CHI_negotiations_with_warlords
+			NOT = {
+				has_country_flag = CHI_preventing_collapse
+			}
+		}
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.011
+				days = 8
+				random = 4
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.006.c#ŒğÂ¬Œ÷
+
+		ai_chance = { factor = 10 }
+		trigger = {				
+			has_country_flag = CHI_negotiations_with_warlords
+			has_country_flag = CHI_preventing_collapse
+
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.007#’†‰›­•{‚ª•à‚İŠñ‚è
+	title = GEACPS_china.007.title
+	desc = GEACPS_china.007.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.007.a#ŒğÂŠJn
+		ai_chance = { factor = 20}
+		hidden_effect = {
+			FROM = {
+				set_country_flag = CHI_preventing_collapse
+				country_event = {
+					id = GEACPS_china.008
+					days = 4
+					random = 4
+				}
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.007.b#ŒğÂ–³‹(—£’E)
+		ai_chance = { factor = 10 }
+		leave_faction = yes
+		hidden_effect = {
+			if = {
+				limit = {
+					has_idea = GEACPS_idea_CHI_pressure_from_allies
+				}
+				remove_idea = GEACPS_idea_CHI_pressure_from_allies
+			}
+			if = {
+				limit = {
+					has_war_with = JAP
+				}
+				country_event = {
+					id = GEACPS_china.022
+				}
+			}
+			FROM = {
+				country_event = {
+					id = GEACPS_china.008
+					days = 1
+				}
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.008#ŠeŒR”´‚Ì—v‹‚ğ—¹³
+	title = GEACPS_china.008.title
+	desc = GEACPS_china.008.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.008.a#”F‚ß‚æ‚¤
+		ai_chance = { factor = 10 }
+		FROM = {
+			country_event = {
+				id = GEACPS_china.009
+				days = 3
 				random = 4
 			}
 		}
@@ -443,124 +321,259 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.007#‚ ‚Æ“àí‚µ‚½‚æ
-	title = GEACPS_china.007.title
-	desc = GEACPS_china.007.desc
+	id = GEACPS_china.009#’†‰Ø–¯‘‚ÍŒR”´‚Ì•ÛØ‚ğŠm–ñ
+	title = GEACPS_china.009.title
+	desc = GEACPS_china.009.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.007.a#‘“à‚Ì”½—
-		ai_chance = { factor = 20 }
-		start_civil_war = {
-			ruling_party = ROOT
-			ideology = reactionary_authoritarianism
-			size = 0.45
-			capital = 620
+		name = GEACPS_china.009.a#‘f°‚ç‚µ‚¢
+		ai_chance = { factor = 10 }
+		remove_ideas = GEACPS_idea_CHI_pressure_from_allies
+		FROM = {
+			country_event = {
+				id = GEACPS_china.035
+				days = 3
+				random = 2
+			}
 		}
 	}
 
 }
 country_event = {
-	id = GEACPS_china.010#“ú–{‚Æu˜a‚µ‚Ä‚à‚¦‚¦‚ñ‚â‚Åc
+	id = GEACPS_china.010#w‰c‚Ì•ö‰ó
 	title = GEACPS_china.010.title
 	desc = GEACPS_china.010.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
+
 	option = {
-		name = GEACPS_china.010.a#u˜aŠJn
-		ai_chance = { factor = 100 }
-		JAP = {
+		name = GEACPS_china.010.a#‚©‚È‚µ‚¢
+		ai_chance = { factor = 10 }
+		add_ideas = GEACPS_idea_CHI_failed_states
+		every_country = {
+			limit = {
+				has_country_flag = is_in_faction_with_CHI
+			}
+			country_event = {
+				id = GEACPS_china.022
+				days = 7
+				random = 3
+			}
+			leave_faction = yes
+		}
+		hidden_effect = {
 			country_event = {
 				id = GEACPS_china.011
-				days = 2
+				days = 10
+				random = 4
 			}
-		}
-	}
 
-	option = {
-		name = GEACPS_china.010.b#u˜a‹‘”Û
-		ai_chance = { factor = 30 }
-		hidden_effect = {
-			set_country_flag = china_alone_war
 		}
-
 	}
 
 }
 country_event = {
-	id = GEACPS_china.011#’†‘‚ªu˜a‚µ‚½‚¢‚Á‚Ä‚³B
+	id = GEACPS_china.011#lì”h‚Ì–I‹N
 	title = GEACPS_china.011.title
 	desc = GEACPS_china.011.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
-	option = {
-		name = GEACPS_china.011.a#u˜a‹‘”Û
-		ai_chance = { factor = 5 }
-		hidden_effect = {
-			FROM = {
-				country_event = {
-					id = GEACPS_china.012
-					days = 1
-				}
-			}
-		}
-	}
-	option = {
-		name = GEACPS_china.011.b#‰ˆŠİB‚ğ‘S•”‚æ‚±‚¹
-		ai_chance = { factor = 40 }
-		hidden_effect = {
-			FROM = {
-				country_event = {
-					id = GEACPS_china.013
-					days = 1
-				}
-			}
-		}
-	}
-	option = {
-		name = GEACPS_china.011.c#Š®‘S”’†u˜a
-		ai_chance = { factor = 5 }
-		hidden_effect = {
-			FROM = {
-				country_event = {
-					id = GEACPS_china.014
-					days = 1
-				}
-			}
-		}
 
+	option = {
+		name = GEACPS_china.011.a#‚©‚È‚µ‚¢
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.012
+				days = 10
+				random = 4
+			}
+			release = SCH
+			SCH = {	
+				load_oob = CHI_civil_war_SCH
+
+				declare_war_on = {
+					target = CHI
+					type = topple_government
+				}
+			}
+
+		}
 	}
 
 }
 country_event = {
-	id = GEACPS_china.012#“ú–{‚ªu˜a‹‘”Û
+	id = GEACPS_china.012#¼“ì”h‚Ì–I‹Ni–¢İ’èj
 	title = GEACPS_china.012.title
 	desc = GEACPS_china.012.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
+
 	option = {
-		name = GEACPS_china.012.a#‚¨‚í‚Á‚½c
-		ai_chance = { factor = 5 }
+		name = GEACPS_china.012.a#‚©‚È‚µ‚¢
+		ai_chance = { factor = 10 }
 		hidden_effect = {
-			set_country_flag = china_alone_war
+			country_event = {
+				id = GEACPS_china.013
+				days = 5
+				random = 4
+			}
+			release = SCH
+			SCH = {	
+				load_oob = CHI_civil_war_SCH
+				declare_war_on = {
+					target = CHI
+					type = topple_government
+				}
+			}
+
 		}
 	}
 }
 country_event = {
-	id = GEACPS_china.013#“ú–{‚ª‰ˆŠİB‚ğ—v‹
+	id = GEACPS_china.013#‹MB”h‚Ì–I‹N
 	title = GEACPS_china.013.title
 	desc = GEACPS_china.013.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
+
 	option = {
-		name = GEACPS_china.013.a#’v‚µ•û‚ ‚é‚Ü‚¢c
+		name = GEACPS_china.013.a#‚©‚È‚µ‚¢
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.014
+				days = 10
+				random = 4
+			}
+			release = GZH
+			GZH = {	
+				load_oob = CHI_civil_war_GZH
+				declare_war_on = {
+					target = CHI
+					type = topple_government
+				}
+			}
+
+		}
+	}
+}
+country_event = {
+	id = GEACPS_china.014#u˜a‚µ‚æ‚¤‚æ
+	title = GEACPS_china.014.title
+	desc = GEACPS_china.014.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.014.a#u˜a
 		ai_chance = { factor = 5 }
+		JAP = {
+			country_event = {
+				id = GEACPS_china.016
+				days = 1
+				random = 2
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.014.b#Ó‰îÎ‚Ì‰‰à
+		ai_chance = { factor = 15 }
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.015
+				days = 1
+				random = 2
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.015#Ó‰îÎ‚Ì‰‰à
+	title = GEACPS_china.015.title
+	desc = GEACPS_china.015.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.015.a#“O’êRí‚¾I
+		ai_chance = { factor = 10 }
+		add_ideas = GEACPS_idea_CHI_the_only_one_china
+		
+	}
+}
+country_event = {
+	id = GEACPS_china.016#’†‰Ø–¯‘‚ªu˜a‚ğ’ñˆÄ
+	title = GEACPS_china.016.title
+	desc = GEACPS_china.016.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.016.a#”’†u˜a
+		ai_chance = { factor = 5 }
+		FROM = {
+			country_event = {
+				id = GEACPS_china.019
+				days = 1
+				random = 2
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.016.b#‰ˆŠİB‚ğŠ„÷
+		ai_chance = { factor = 30 }
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.018
+				days = 1
+				random = 2
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.016.c#u˜a‹‘”Û
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.017
+				days = 1
+				random = 2
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.017#“ú–{‚ªu˜a‹‘”Û
+	title = GEACPS_china.017.title
+	desc = GEACPS_china.017.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.017.a#“O’êRí‚¾I
+		ai_chance = { factor = 10 }
+		country_event = {
+			id = GEACPS_china.015
+			days = 1
+			random = 2
+		}
+	}
+}
+country_event = {
+	id = GEACPS_china.018#“ú–{‚ª‰ˆŠİB‚ÌŠ„÷‚ğğŒ‚Éu˜a
+	title = GEACPS_china.018.title
+	desc = GEACPS_china.018.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.018.a#—¹³
+		ai_chance = { factor = 10 }
 		every_country = {
 			limit = {
 				OR = {
@@ -570,70 +583,552 @@ country_event = {
 			}
 			white_peace = CHI
 		}
-		if = {
+		JAP = {
+			transfer_state = 897
+			transfer_state = 596
+		}
+		NAN = {
+			transfer_state = 901
+			transfer_state = 620
+			transfer_state = 1078
+
+		}
+		GNG = {
+			transfer_state = 593
+		}
+	}
+}
+country_event = {
+	id = GEACPS_china.019#“ú–{‚ª”’†u˜a‚É“¯ˆÓ
+	title = GEACPS_china.019.title
+	desc = GEACPS_china.019.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.019.a#—¹³
+		ai_chance = { factor = 10 }
+		every_country = {
 			limit = {
-				ROOT = {
-					controls_state = 897
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
 				}
 			}
-			JAP = {
-				transfer_state = 897
+			white_peace = CHI
+		}
+		hidden_effect = {
+			add_opinion_modifier = {
+				target = JAP
+				modifier = CHI_kind_peace
 			}
 		}
-		if = {
+
+	}
+
+}
+country_event = {
+	id = GEACPS_china.020#”½‘Î”h‚Ö‚Ì‘Î‰
+	title = GEACPS_china.020.title
+	desc = GEACPS_china.020.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.020.a#—Z˜a
+		ai_chance = { factor = 10 }
+		every_country = {
 			limit = {
-				ROOT = {
-					controls_state = 596
-				}
+				has_country_flag = is_in_faction_with_CHI
 			}
-			JAP = {
-				transfer_state = 596
+			country_event = {
+				id = GEACPS_china.021
+				days = 3
+				random = 3
 			}
 		}
-		if = {
+	}
+	option = {
+		name = GEACPS_china.020.b#“‡
+		ai_chance = { factor = 10 }
+		every_country = {
 			limit = {
-				ROOT = {
-					controls_state = 593
-				}
+				has_country_flag = is_in_faction_with_CHI
 			}
-			GNG = {
-				transfer_state = 593
+			country_event = {
+				id = GEACPS_china.029
+				days = 3
+				random = 3
 			}
 		}
-		if = {
-			limit = {
-				ROOT = {
-					controls_state = 901
+
+	}
+
+}
+country_event = {
+	id = GEACPS_china.021#’†‰Ø–¯‘‚Ì—Z˜a­ô
+	title = GEACPS_china.021.title
+	desc = GEACPS_china.021.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.021.a#—£’E
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = GEACPS_china.034
+					days = 3
+					random = 3
 				}
 			}
-			NAN = {
-				transfer_state = 901
+			if = {
+				limit = {
+					has_war_with = JAP
+				}
+				country_event = {
+					id = GEACPS_china.022
+					days = 1
+					random = 1
+				}
+			}
+			else = {
+				country_event = {
+					id = GEACPS_china.025
+					days = 1
+					random = 1
+				}
 			}
 		}
 	}
 }
 country_event = {
-	id = GEACPS_china.014#“ú–{‚ªŠ®‘S”’†u˜a‚É‰‚¶‚é
-	title = GEACPS_china.014.title
-	desc = GEACPS_china.014.desc
+	id = GEACPS_china.022#“ú–{‚Æ‚Ìí‘ˆ‚©‚ç—£’E
+	title = GEACPS_china.022.title
+	desc = GEACPS_china.022.desc
 	picture = GFX_
-	
 	is_triggered_only = yes
+
 	option = {
-		name = GEACPS_china.014.a#‚¨‚í‚Á‚½c
-		ai_chance = { factor = 5 }
-		every_country = {
-			limit = {
-				OR = {
-					tag = JAP
-					is_in_faction_with = JAP
+		name = GEACPS_china.022.a#”’†u˜a
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+
+			JAP = {
+				country_event = {
+					id = GEACPS_china.023
+					days = 1
+					random = 1
 				}
 			}
-			white_peace = CHI
+			country_event = {
+				id = GEACPS_china.025
+				days = 4
+				random = 1
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.022.b#“ú–{‚Æ‚Íu˜a‚µ‚È‚¢
+		ai_chance = { factor = 10 }
+	}
+
+}
+country_event = {
+	id = GEACPS_china.023#ŠeŒR”´‚ª“ú–{‚Æ‚Ìí‘ˆ‚©‚ç—£’E‚ğŠó–]
+	title = GEACPS_china.023.title
+	desc = GEACPS_china.023.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.023.a#—¹³
+		ai_chance = { factor = 10 }
+		FROM = {
+			country_event = {
+				id = GEACPS_china.024
+				days = 1
+				random = 1
+			}
+		}
+	}
+
+}
+country_event = {
+	id = GEACPS_china.024#“ú–{‚ª”’†u˜a‚ğó‘ø
+	title = GEACPS_china.024.title
+	desc = GEACPS_china.024.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.024.a#—¹³
+		ai_chance = { factor = 10 }
+		white_peace = JAP
+	}
+
+}
+country_event = {
+	id = GEACPS_china.025#’†‰Ø–¯‘‚Ééí•z
+	title = GEACPS_china.025.title
+	desc = GEACPS_china.025.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.025.a#—¹³
+		ai_chance = { factor = 5 }
+		declare_war_on = {
+			target = CHI
+			type = topple_government
+		}
+		hidden_effect = {
+			JAP = {
+				country_event = {
+					id = GEACPS_china.026
+					days = 1
+				}
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.025.b#‹‘”Û
+		ai_chance = { factor = 10 }
+	}
+
+}
+country_event = {
+	id = GEACPS_china.026#ŒR”´‚ğ‘å“ŒˆŸ‹¤‰hŒ—‚Éˆø‚«“ü‚ê‚é
+	title = GEACPS_china.026.title
+	desc = GEACPS_china.026.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.026.a#µ‘Ò‚·‚é
+		ai_chance = { factor = 10 }
+		FROM = {
+			country_event = {
+				id = GEACPS_china.027
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.026.b#µ‘Ò‚µ‚È‚¢
+		ai_chance = { factor = 5 }
+	}
+
+}
+country_event = {
+	id = GEACPS_china.027#“ú–{‚ª‘å“ŒˆŸ‹¤‰hŒ—‚Éµ‘Ò
+	title = GEACPS_china.027.title
+	desc = GEACPS_china.027.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.027.a#—¹³
+		ai_chance = { factor = 1 }
+		JAP = {
+			country_event = {
+				id = GEACPS_china.028
+				days = 1
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.027.b#‹‘”Û
+		ai_chance = { factor = 10 }
+	}
+}
+country_event = {
+	id = GEACPS_china.028#FROM‚Í‘å“ŒˆŸ‹¤‰hŒ—‚É‰Á–¿
+	title = GEACPS_china.028.title
+	desc = GEACPS_china.028.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.028.a#(¿LÍM)¿
+		ai_chance = { factor = 10 }
+		add_to_faction = FROM
+	}
+}
+country_event = {
+	id = GEACPS_china.029#’†‘‚Ì˜ø™S‚É‚È‚é‚©”Û‚©
+	title = GEACPS_china.029.title
+	desc = GEACPS_china.029.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.029.a#—¹³
+		ai_chance = { factor = 20 }
+		add_ideas = GEACPS_idea_CHI_chinese_united_front
+		hidden_effect = {
+			FROM = {
+				country_event = {
+					id = GEACPS_china.030
+				}
+			}
+		}
+	}
+	option = {
+		name = GEACPS_china.029.b#‹‘”Û
+		ai_chance = { factor = 5 }
+		hidden_effect = {
+			country_event = {
+				id = GEACPS_china.021
+			}
+		}
+
+	}
+
+}
+country_event = {
+	id = GEACPS_china.030#FROM‚Í˜ø™S‰»‚ğó‚¯“ü‚ê‚½
+	title = GEACPS_china.030.title
+	desc = GEACPS_china.030.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.030.a#‘f°‚ç‚µ‚¢
+		ai_chance = { factor = 10 }
+		puppet = FROM
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_chinese_united_front3
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_chinese_united_front3
+				add_idea = GEACPS_idea_CHI_chinese_united_front4
+			}
+		}
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_chinese_united_front2
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_chinese_united_front2
+				add_idea = GEACPS_idea_CHI_chinese_united_front3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_chinese_united_front1
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_chinese_united_front1
+				add_idea = GEACPS_idea_CHI_chinese_united_front2
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_idea = GEACPS_idea_CHI_chinese_united_front1
+					has_idea = GEACPS_idea_CHI_chinese_united_front2
+					has_idea = GEACPS_idea_CHI_chinese_united_front3
+					has_idea = GEACPS_idea_CHI_chinese_united_front4
+				}
+			}
+			add_ideas = GEACPS_idea_CHI_chinese_united_front1
 		}
 
 	}
 }
+country_event = {
+	id = GEACPS_china.031#’P“Æ‚Ålì”h‚ğŒ‚”jI
+	title = GEACPS_china.031.title
+	desc = GEACPS_china.031.desc
+	picture = GFX_
+	is_triggered_only = yes
 
+	option = {
+		name = GEACPS_china.031.a#‰äX‚Í‘Å‚¿Ÿ‚ÂI
+		ai_chance = { factor = 10 }
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_road_to_reunification2
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_road_to_reunification2
+				add_idea = GEACPS_idea_CHI_road_to_reunification3
+			}
+			add_ideas = GEACPS_idea_CHI_counterattack
+		}
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_road_to_reunification1
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_road_to_reunification1
+				add_idea = GEACPS_idea_CHI_road_to_reunification2
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = GEACPS_idea_CHI_road_to_reunification1
+					has_idea = GEACPS_idea_CHI_road_to_reunification2
+					has_idea = GEACPS_idea_CHI_road_to_reunification3
+				}
+			}
+			add_ideas = GEACPS_idea_CHI_road_to_reunification1
+		}
+
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_failed_states
+			}
+			remove_ideas = GEACPS_idea_CHI_failed_states
+			remove_ideas = GEACPS_idea_CHI_incompetent_government
+
+		}
+
+	}
+}
+country_event = {
+	id = GEACPS_china.032#’P“Æ‚Å¼“ì”h‚ğŒ‚”jI
+	title = GEACPS_china.032.title
+	desc = GEACPS_china.032.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.032.a#‰äX‚Í‘Å‚¿Ÿ‚ÂI
+		ai_chance = { factor = 10 }
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_road_to_reunification2
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_road_to_reunification2
+				add_idea = GEACPS_idea_CHI_road_to_reunification3
+			}
+			add_ideas = GEACPS_idea_CHI_counterattack
+		}
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_road_to_reunification1
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_road_to_reunification1
+				add_idea = GEACPS_idea_CHI_road_to_reunification2
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = GEACPS_idea_CHI_road_to_reunification1
+					has_idea = GEACPS_idea_CHI_road_to_reunification2
+					has_idea = GEACPS_idea_CHI_road_to_reunification3
+				}
+			}
+			add_ideas = GEACPS_idea_CHI_road_to_reunification1
+		}
+
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_failed_states
+			}
+			remove_ideas = GEACPS_idea_CHI_failed_states
+			remove_ideas = GEACPS_idea_CHI_incompetent_government
+
+		}
+
+	}
+}
+country_event = {
+	id = GEACPS_china.033#’P“Æ‚Å‹MB”h‚ğŒ‚”jI
+	title = GEACPS_china.033.title
+	desc = GEACPS_china.033.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.033.a#‰äX‚Í‘Å‚¿Ÿ‚ÂI
+		ai_chance = { factor = 10 }
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_road_to_reunification2
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_road_to_reunification2
+				add_idea = GEACPS_idea_CHI_road_to_reunification3
+			}
+			add_ideas = GEACPS_idea_CHI_counterattack
+		}
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_road_to_reunification1
+			}
+			swap_ideas = {
+				remove_idea = GEACPS_idea_CHI_road_to_reunification1
+				add_idea = GEACPS_idea_CHI_road_to_reunification2
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_idea = GEACPS_idea_CHI_road_to_reunification1
+					has_idea = GEACPS_idea_CHI_road_to_reunification2
+					has_idea = GEACPS_idea_CHI_road_to_reunification3
+				}
+			}
+			add_ideas = GEACPS_idea_CHI_road_to_reunification1
+		}
+
+		if = {
+			limit = {
+				has_idea = GEACPS_idea_CHI_failed_states
+			}
+			remove_ideas = GEACPS_idea_CHI_failed_states
+			remove_ideas = GEACPS_idea_CHI_incompetent_government
+
+		}
+
+	}
+}
+country_event = {
+	id = GEACPS_china.034#FROM‚ªw‰c‚©‚ç’E‘Ş
+	title = GEACPS_china.034.title
+	desc = GEACPS_china.034.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.034.a#—¹³
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			leave_faction = yes
+			if = {
+				limit = {
+					FROM = {
+						has_idea = GEACPS_idea_CHI_uneasy_unity
+					}
+				}
+				remove_ideas = GEACPS_idea_CHI_uneasy_unity
+			}
+		}
+		
+	}
+}
+country_event = {
+	id = GEACPS_china.035#ŒğÂ‚Ì¬Œ÷
+	title = GEACPS_china.035.title
+	desc = GEACPS_china.035.desc
+	picture = GFX_
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_china.035.a#—¹³
+		ai_chance = { factor = 10 }
+		add_ideas = GEACPS_idea_CHI_first_of_all_unity
+	}
+}
 
 

@@ -1,1 +1,201 @@
-﻿
+﻿division_template = {
+	name = "歩兵師団"
+	division_names_group = NAN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+
+#		artillery_brigade = { x = 1 y = 2 }
+	}
+	support = {
+		artillery = { x = 0 y = 0 }
+	}
+}
+division_template = {
+	name = "騎兵旅団"
+	division_names_group = NAN_CAV_01
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 2 y = 0 }
+		cavalry = { x = 2 y = 1 }
+
+	}
+}
+units = {
+	#南京政府直属軍
+	division = {
+		#"第1師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4619
+		division_template = "歩兵師団"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.45
+	}
+	division = {
+		#"第2師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 7191
+		division_template = "歩兵師団"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.45
+	}
+	division = {
+		#"第3師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 11913
+		division_template = "歩兵師団"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.45
+	}
+	division = {
+		#"第4師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 1628
+		division_template = "歩兵師団"
+		start_experience_factor = 0.15
+		start_equipment_factor = 0.45
+	}
+	division = {
+		#"第5師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 7568
+		division_template = "歩兵師団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#"第6師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 12426
+		division_template = "歩兵師団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.45
+	}
+	division = {
+		#"第7師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 7
+		}
+		location = 1083
+		division_template = "歩兵師団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.35
+	}
+	division = {
+		#"第8師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 8
+		}
+		location = 1083
+		division_template = "歩兵師団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.35
+	}
+	division = {
+		#"第9師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 9
+		}
+		location = 9999
+		division_template = "歩兵師団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.35
+	}
+	division = {
+		#"第10師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 10
+		}
+		location = 10114
+		division_template = "歩兵師団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.35
+	}
+	division = {
+		#"第11師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 11
+		}
+		location = 10501
+		division_template = "歩兵師団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.35
+	}
+
+#騎兵師団
+	division = {
+		#"第1師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 4009
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#"第2師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 12467
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#"第3師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 1628
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.25
+		start_equipment_factor = 0.5
+	}
+	division = {
+		#"第4師団"
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 7035
+		division_template = "騎兵旅団"
+		start_experience_factor = 0.20
+		start_equipment_factor = 0.35
+	}
+
+}
