@@ -1730,16 +1730,218 @@ focus_tree = {
     }
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_05
-		x = 12
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_01
-		icon = GFX_goal_generic_occupy_start_war
-		cost = 4.28
+        id = GEACPS_NF_JAP_navy_Auxiliary_ship
+        icon = GFX_focus_jap_pacific_guardian
+        x = 4
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_01
+        cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_CL_01
+        icon = GFX_focus_jap_pacific_guardian
+        x = -2
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_Auxiliary_ship
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Auxiliary_ship }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_TCL_01
+        icon = GFX_focus_jap_pacific_guardian
+        x = -1
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_CL_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CL_01 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_TCL_02
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 2
+        relative_position_id = GEACPS_NF_JAP_navy_TCL_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_TCL_01 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_ACL_01
+        icon = GFX_focus_jap_pacific_guardian
+        x = 1
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_CL_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CL_01 }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_TCL_01 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_ACL_02
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 2
+        relative_position_id = GEACPS_NF_JAP_navy_ACL_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_ACL_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Proximity_fuze }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_DD_01
+        icon = GFX_focus_jap_pacific_guardian
+        x = 2
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_Auxiliary_ship
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Auxiliary_ship }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_ADD_01
+        icon = GFX_focus_jap_pacific_guardian
+        x = -1
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_DD_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_DD_01 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_Proximity_fuze
+        icon = GFX_focus_jap_pacific_guardian
+        x = -1
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_ADD_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_ACL_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_ADD_01 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_DD_02
+        icon = GFX_focus_jap_pacific_guardian
+        x = 1
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_DD_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_DD_01 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_DD_03
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_DD_02
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_DD_02 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_ADD_02
+        icon = GFX_focus_jap_pacific_guardian
+        x = 1
+        y = 2
+        relative_position_id = GEACPS_NF_JAP_navy_ADD_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_ADD_01 }
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_Proximity_fuze 
+			focus = GEACPS_NF_JAP_navy_DD_03 
+		}
+		
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_SS_01
+		x = 5
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_Auxiliary_ship
+		icon = GFX_focus_jap_pacific_guardian
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Auxiliary_ship }
 
 		completion_reward = {
-			add_ideas = JAP_torpedo_perfect
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_SS_02
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_SS_01
+		icon = GFX_focus_jap_pacific_guardian
+		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_01 }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_SS_03
+		x = 0
+		y = 2
+		relative_position_id = GEACPS_NF_JAP_navy_SS_02
+		icon = GFX_focus_jap_pacific_guardian
+		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_02 }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_torpedo
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_SS_02
+		icon = GFX_goal_generic_occupy_start_war
+		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_02 }
+
+		completion_reward = {
+			icon = GFX_goal_generic_occupy_start_war
 		}
 	}
 
@@ -1781,37 +1983,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_07
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_03
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_03 }
-
-		completion_reward = {
-			add_ideas = JAP_capital_ship_made
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_09
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_06
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_06 }
-
-		completion_reward = {
-			add_ideas = JAP_Battleships_making_skils
-		}
-	}
-
-	focus = {
 		id = GEACPS_NF_JAP_navy_12
 		icon = GFX_focus_jap_pacific_guardian
 		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_10
+		y = 30
+
 		cost = 4.28
 		prerequisite = {
 			focus = GEACPS_NF_JAP_navy_09
@@ -1829,21 +2005,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_Pacific_Guardians
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_13
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_12
-		cost = 4.28
-		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_12
-		}
-
-		completion_reward = {
-			add_ideas = JAP_Angled_flight_deck
 		}
 	}
 
@@ -1866,20 +2027,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_15
-		icon = GFX_goal_generic_navy_submarine
-		x = 2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_12
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_12 }
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
 		id = GEACPS_NF_JAP_navy_16
 		x = 0
 		y = 1
@@ -1889,46 +2036,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_Proximity_fuze
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_17
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_15
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_15 }
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_18
-		x = 4
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_24 }
-
-		completion_reward = {
-			add_ideas = JAP_destroyer_torpedo
-		}
-	}
-	
-	focus = {
-		id = GEACPS_NF_JAP_navy_19
-		x = 8
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_12
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_12 }
-
-		completion_reward = {
-			add_ideas = JAP_destroyer_antiair
 		}
 	}
 
@@ -1959,61 +2066,6 @@ focus_tree = {
 				}
 				set_state_flag = JAP_new_naval_estimates_DY2
 			}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_21
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_20
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_20 }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_18 }
-
-		completion_reward = {
-			add_ideas = JAP_destroyer_torpedo_2
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_22
-		x = 0
-		y = 2
-		relative_position_id = GEACPS_NF_JAP_navy_19
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_19 }
-
-		completion_reward = {
-			add_ideas = JAP_destroyer_antiair_2
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_23
-		x = 8
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_28 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_25
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_23
-		cost = 4.28
-		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_23 }
-		
-		completion_reward = {
-
 		}
 	}
 
@@ -2104,60 +2156,6 @@ focus_tree = {
 						progress = 0.15
 						amount = 1
 					}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_27
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_25
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_25 }
-		
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_28
-		x = 10
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_23 }
-
-		completion_reward = {
-
-		}
-
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_29
-		x = 0
-		Y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_28
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_28 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_30
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_29
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_29 }
-
-		completion_reward = {
-
 		}
 	}
 
