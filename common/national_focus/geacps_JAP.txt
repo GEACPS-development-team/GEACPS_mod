@@ -1946,6 +1946,224 @@ focus_tree = {
 	}
 
 	focus = {
+		id = GEACPS_NF_JAP_navy_modern_fleets
+		icon = GFX_focus_jap_pacific_guardian
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_CA_03
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_Super_Yamato_Class
+			focus = GEACPS_NF_JAP_navy_BB_03 
+		}
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_CV_03
+			focus = GEACPS_NF_JAP_navy_LCV_03
+		}
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_03}
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_TCL_02
+			focus = GEACPS_NF_JAP_navy_ACL_02
+		}
+		prerequisite = { focus = GEACPS_NF_JAP_navy_ADD_02 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_03 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_Big_carrier
+		x = -3
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_Anti_Air_BB
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_Anti_Air_Cannon
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_Big_carrier
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Big_carrier }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_Air_BB }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_fast_small_ships
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_Escort_ships
+		icon = GFX_focus_jap_pacific_guardian
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_fast_small_ships
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_fast_small_ships }
+
+		completion_reward = {
+			create_equipment_variant = {
+				name = "秋雲型"
+				type = ship_hull_light_5
+				name_group = JAP_DD_HISTORICAL
+				parent_version = 0
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_5
+					fixed_ship_anti_air_slot = ship_anti_air_5
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_5
+					fixed_ship_sonar_slot = ship_sonar_5
+					fixed_ship_radar_slot = ship_radar_5
+					fixed_ship_torpedo_slot = ship_torpedo_5
+					fixed_ship_engine_slot = light_ship_engine_5
+					front_1_custom_slot = ssm_2
+					mid_1_custom_slot = ship_anti_air_5
+					mid_2_custom_slot = ship_light_battery_5
+					rear_1_custom_slot = sam_2
+				}
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_5
+					creator = "JAP" 
+					version_name = "秋雲型"
+					}
+				name = "秋雲" 
+				requested_factories = 1
+				progress = 0.3
+				amount = 1
+			}
+            add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_5
+					creator = "JAP" 
+					version_name = "秋雲型"
+				}
+				name = "夕雲" 
+				requested_factories = 1
+				progress = 0.25
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_5
+					creator = "JAP" 
+					version_name = "秋雲型"
+				}
+				name = "巻雲" 
+				requested_factories = 1
+				progress = 0.2
+				amount = 1
+			}
+			add_equipment_production = {
+				equipment = {
+					type = ship_hull_light_5
+					creator = "JAP" 
+					version_name = "秋雲型"
+				}
+				name = "風雲" 
+				requested_factories = 1
+				progress = 0.15
+				amount = 1
+			}
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_Quiet_Submarine
+		x = 3
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_Quiet_Submarine
+		x = 3
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_O2_torpedo	
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_Quiet_Submarine
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Quiet_Submarine }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_pacific_guardian
+		x = 2
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_Anti_Air_Cannon
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_Air_Cannon }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Escort_ships }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_O2_torpedo }
+
+		completion_reward = {
+			navy_experience = 75
+		}
+	}
+
+	focus = {
 		id = GEACPS_NF_JAP_navy_06
 		x = 0
 		y = 1
@@ -2066,96 +2284,6 @@ focus_tree = {
 				}
 				set_state_flag = JAP_new_naval_estimates_DY2
 			}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_24
-		x = 6
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_18 }
-
-		completion_reward = {
-			add_ideas = JAP_escort_vessel_1
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_26
-		x = 0
-		y = 2
-		relative_position_id = GEACPS_NF_JAP_navy_24
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_20 }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_24 }
-
-		completion_reward = {
-			create_equipment_variant = {
-					name = "秋雲型"
-					type = ship_hull_light_5
-					name_group = JAP_DD_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_light_battery_5
-						fixed_ship_anti_air_slot = ship_anti_air_5
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_5
-						fixed_ship_sonar_slot = ship_sonar_5
-						fixed_ship_radar_slot = ship_radar_5
-						fixed_ship_torpedo_slot = ship_torpedo_5
-						fixed_ship_engine_slot = light_ship_engine_5
-						front_1_custom_slot = ssm_2
-						mid_1_custom_slot = ship_anti_air_5
-						mid_2_custom_slot = ship_light_battery_5
-						rear_1_custom_slot = sam_2
-					}
-				}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_light_5
-							creator = "JAP" 
-							version_name = "秋雲型"
-						}
-						name = "秋雲" 
-						requested_factories = 1
-						progress = 0.3
-						amount = 1
-					}
-                    add_equipment_production = {
-						equipment = {
-							type = ship_hull_light_5
-							creator = "JAP" 
-							version_name = "秋雲型"
-						}
-						name = "夕雲" 
-						requested_factories = 1
-						progress = 0.25
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_light_5
-							creator = "JAP" 
-							version_name = "秋雲型"
-						}
-						name = "巻雲" 
-						requested_factories = 1
-						progress = 0.2
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_light_5
-							creator = "JAP" 
-							version_name = "秋雲型"
-						}
-						name = "風雲" 
-						requested_factories = 1
-						progress = 0.15
-						amount = 1
-					}
 		}
 	}
 
