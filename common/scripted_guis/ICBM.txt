@@ -1,0 +1,274 @@
+scripted_gui = {
+    ICBM_Button = {
+        window_name = "ICBM_Button_container"
+		parent_window_token = selected_state_view
+        context_type = selected_state_context
+		ai_enabled = {
+            always = no
+        }
+        visible = {
+			ROOT = {
+				has_country_flag = ICBM_allowed
+			}
+		}
+		triggers = {
+			ICBM_BTN_click_enabled = {
+				ROOT = {
+					num_of_nukes > 0
+					check_variable = { ICBM_amount > 0 }
+				}
+				any_state = {
+					is_controlled_by = ROOT
+					distance_to = {
+						value < 2000
+						target = PREV
+					}
+				}
+			}
+			MRBM_BTN_click_enabled = {
+				ROOT = {
+					num_of_nukes > 0
+					check_variable = { MRBM_amount > 0 }
+				}
+			}
+		}
+        effects = {
+			ICBM_BTN_click = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = yes
+					}
+					add_to_variable = { ICBM_amount = -1 }
+				}
+				PREV = {
+					controller  = {
+						if = {
+							limit = { 
+								AND = { 
+									NOT = { has_war_with = ROOT } 
+									NOT = { tag = ROOT }
+								}
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = liberate_wargoal 
+							}
+						}
+					}
+				}
+			}
+			MRBM_BTN_click = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = yes
+					}
+					add_to_variable = { ICBM_amount = -1 }
+				}
+				PREV = {
+					controller  = {
+						if = {
+							limit = { 
+								AND = { 
+									NOT = { has_war_with = ROOT } 
+									NOT = { tag = ROOT }
+								}
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = liberate_wargoal 
+							}
+						}
+					}
+				}
+			}
+        }
+    }
+	ICBM_Button_2 = {
+        window_name = "ICBM_Button_container_2"
+		parent_window_token = selected_state_view
+        context_type = selected_state_context
+		ai_enabled = {
+            always = no
+        }
+        visible = {
+			ROOT = {
+				has_country_flag = ICBM_allowed
+				has_country_flag = ICBM_upgraded_1
+			}
+		}
+		triggers = {
+			ICBM_BTN_2_click_enabled = {
+				ROOT = {
+					num_of_nukes > 0
+					check_variable = { ICBM_amount > 0 }
+				}
+				any_state = {
+					is_controlled_by = ROOT
+					distance_to = {
+						value < 3000
+						target = PREV
+					}
+				}
+			}
+			MRBM_BTN_click_enabled = {
+				ROOT = {
+					num_of_nukes > 0
+					check_variable = { MRBM_amount > 0 }
+				}
+			}
+		}
+        effects = {
+			ICBM_BTN_2_click = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = yes
+					}
+					add_to_variable = { ICBM_amount = -1 }
+				}
+				PREV = {
+					controller  = {
+						if = {
+							limit = { 
+								AND = { 
+									NOT = { has_war_with = ROOT } 
+									NOT = { tag = ROOT }
+								}
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = liberate_wargoal 
+							}
+						}
+					}
+				}
+			}
+			MRBM_BTN_click = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = yes
+					}
+					add_to_variable = { ICBM_amount = -1 }
+				}
+				PREV = {
+					controller  = {
+						if = {
+							limit = { 
+								AND = { 
+									NOT = { has_war_with = ROOT } 
+									NOT = { tag = ROOT }
+								}
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = liberate_wargoal 
+							}
+						}
+					}
+				}
+			}
+        }
+    }
+	ICBM_Button_3 = {
+        window_name = "ICBM_Button_container_3"
+		parent_window_token = selected_state_view
+        context_type = selected_state_context
+		ai_enabled = {
+            always = no
+        }
+        visible = {
+			ROOT = {
+				has_country_flag = ICBM_allowed
+				has_country_flag = ICBM_upgraded_2
+			}
+		}
+		triggers = {
+			ICBM_BTN_3_click_enabled = {
+				ROOT = {
+					num_of_nukes > 0
+					check_variable = { ICBM_amount > 0 }
+				}
+				any_state = {
+					is_controlled_by = ROOT
+					distance_to = {
+						value < 4000
+						target = PREV
+					}
+				}
+			}
+			MRBM_BTN_click_enabled = {
+				ROOT = {
+					num_of_nukes > 0
+					check_variable = { MRBM_amount > 0 }
+				}
+			}
+		}
+        effects = {
+			ICBM_3_BTN_click = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = yes
+					}
+					add_to_variable = { ICBM_amount = -1 }
+				}
+				PREV = {
+					controller  = {
+						if = {
+							limit = { 
+								AND = { 
+									NOT = { has_war_with = ROOT } 
+									NOT = { tag = ROOT }
+								}
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = liberate_wargoal 
+							}
+						}
+					}
+				}
+			}
+			MRBM_BTN_click = {
+				ROOT = {
+					launch_nuke = {
+						state = PREV
+						use_nuke = yes
+					}
+					add_to_variable = { ICBM_amount = -1 }
+				}
+				PREV = {
+					controller  = {
+						if = {
+							limit = { 
+								AND = { 
+									NOT = { has_war_with = ROOT } 
+									NOT = { tag = ROOT }
+								}
+							}
+						}
+						ROOT = {
+							declare_war_on = {
+								target = PREV
+								type = liberate_wargoal 
+							}
+						}
+					}
+				}
+			}
+        }
+    }
+}

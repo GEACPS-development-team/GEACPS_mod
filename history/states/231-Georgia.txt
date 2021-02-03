@@ -1,22 +1,15 @@
-state={
-	id=231
-	name="STATE_231"
-	manpower=2949413
-	buildings_max_level_factor=1.000
+state = {
+	id = 231
+	name = "STATE_231"
+	manpower = 2949413
+	buildings_max_level_factor = 1.000
+	state_category = town
 	
-	state_category=town
 
-	history={
+	history = {
 		owner = CCS
-		add_core_of = SOV
-		add_core_of = GEO
 		add_core_of = CCS
-		victory_points = {
-			1599 5 
-		}
-		victory_points = {
-			3653 3 
-		}
+		add_core_of = GEO
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -26,9 +19,12 @@ state={
 				coastal_bunker = 1
 			}
 		}
+
+		victory_points = {	1599	5	}
+		victory_points = {	3653	3	}
 	}
 
-	provinces={
+	provinces = {
 		654 772 1530 1599 3653 3656 3658 4534 4605 6436 6669 6671 9626 9702 12309
 	}
 }
