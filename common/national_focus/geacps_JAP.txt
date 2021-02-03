@@ -1303,7 +1303,13 @@ focus_tree = {
         cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_capital_ship }
         completion_reward = {
-            navy_experience = 75
+            add_tech_bonus = {
+				name = JAP_cruiser_modernization
+				bonus = 1.0
+				uses = 2
+				category = bc_tech	
+				category = bb_tech	
+			}
         }
     }
 
@@ -1510,7 +1516,7 @@ focus_tree = {
 						equipment = {
 							type = ship_hull_heavy_5
 							creator = "JAP" 
-							version_name = "Niitaka Class"
+							version_name = "新高型"
 						}
 						name = "愛鷹" 
 						requested_factories = 1
@@ -1520,45 +1526,206 @@ focus_tree = {
         }
 	}
 
-    focus = {
-        id = GEACPS_NF_JAP_navy_03
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_01
-        icon = GFX_goal_generic_navy_doctrines_tactics
-        cost = 4.28
-        prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-        mutually_exclusive = {
-            focus = GEACPS_NF_JAP_navy_02
-            focus = GEACPS_NF_JAP_navy_04
-        }
+	focus = {
+		id = GEACPS_NF_JAP_navy_CV_01
+		icon = GFX_goal_generic_navy_carrier
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_capital_ship
+		prerequisite = { focus = GEACPS_NF_JAP_navy_capital_ship }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_LCV_01 }
 
-        completion_reward = {
-            add_tech_bonus = {
-				name = JAP_cruiser_modernization
-				bonus = 1.5
-				uses = 2
-				category = bc_tech	
-				category = cv_tech	
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_CV_02
+		icon = GFX_goal_generic_navy_carrier
+		x = 0
+		y = 2
+		relative_position_id = GEACPS_NF_JAP_navy_CV_01
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CV_01 }
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_CV_03
+		icon = GFX_goal_generic_navy_carrier
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_CV_02
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CV_02 }
+
+		completion_reward = {
+			create_equipment_variant = {
+					name = "笠置型"
+					type = ship_hull_carrier_4
+					name_group = JAP_CV_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_deck_slot_1 = ship_deck_space
+						fixed_ship_deck_slot_2 = ship_deck_space
+						fixed_ship_anti_air_slot = ship_anti_air_4
+						fixed_ship_radar_slot = ship_radar_3
+						fixed_ship_engine_slot = carrier_ship_engine_4
+						fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon_4
+						front_1_custom_slot = ship_deck_space
+						mid_1_custom_slot = ship_deck_space
+						mid_2_custom_slot = ship_armor_carrier_deck
+						rear_1_custom_slot = ship_armor_carrier_deck
+						rear_2_custom_slot = ship_anti_air_cannon_4
+					}
+				}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_4
+							creator = "JAP" 
+							version_name = "笠置型"
+						}
+						name = "笠置" 
+						requested_factories = 1
+						progress = 0.3
+						amount = 1
+					}
+                    add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_4
+							creator = "JAP" 
+							version_name = "笠置型"
+						}
+						name = "乗鞍" 
+						requested_factories = 1
+						progress = 0.25
+						amount = 1
+					}
+					add_equipment_production = {
+						equipment = {
+							type = ship_hull_carrier_4
+							creator = "JAP" 
+							version_name = "笠置型"
+						}
+						name = "阿蘇" 
+						requested_factories = 1
+						progress = 0.2
+						amount = 1
 			}
+        }
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_Battle_carrier
+		icon = GFX_goal_generic_navy_battleship
+		x = 2
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_BB_01
+		prerequisite = { focus = GEACPS_NF_JAP_navy_BB_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CV_01 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_LCV_01
+		icon = GFX_goal_generic_navy_carrier
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_capital_ship
+		prerequisite = { focus = GEACPS_NF_JAP_navy_capital_ship }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_CV_01 }
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_LCV_02
+		icon = GFX_goal_generic_navy_carrier
+		x = 0
+		y = 2
+		relative_position_id = GEACPS_NF_JAP_navy_LCV_01
+		prerequisite = { focus = GEACPS_NF_JAP_navy_LCV_01 }
+
+		completion_reward = {
+
+		}
+
+	}
+
+	focus = {
+		id = GEACPS_NF_JAP_navy_LCV_03
+		icon = GFX_goal_generic_navy_carrier
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_NF_JAP_navy_LCV_02
+		prerequisite = { focus = GEACPS_NF_JAP_navy_LCV_02 }
+
+		completion_reward = {
+			
+		}
+
+	}
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_CA_01
+        icon = GFX_focus_jap_pacific_guardian
+        x = 3
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_capital_ship
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_capital_ship }
+        completion_reward = {
+            navy_experience = 75
         }
     }
 
-    focus = {
-        id = GEACPS_NF_JAP_navy_04
-        x = -2
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_01
-        icon = GFX_goal_generic_navy_carrier
+	focus = {
+        id = GEACPS_NF_JAP_navy_CA_02
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 2
+        relative_position_id = GEACPS_NF_JAP_navy_CA_01
         cost = 4.28
-        prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-        mutually_exclusive = {
-            focus = GEACPS_NF_JAP_navy_02
-            focus = GEACPS_NF_JAP_navy_03
-        }
-
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_01 }
         completion_reward = {
-			add_ideas = JAP_carrier_capacity
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_CA_03
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_CA_02
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_02 }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_CAC
+        icon = GFX_focus_jap_pacific_guardian
+        x = -1
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_CA_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_LCV_01 }
+        completion_reward = {
+            navy_experience = 75
         }
     }
 
@@ -1627,71 +1794,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_08
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_04
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_04 }
-
-		completion_reward = {
-			create_equipment_variant = {
-					name = "笠置型"
-					type = ship_hull_carrier_4
-					name_group = JAP_CV_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_deck_slot_1 = ship_deck_space
-						fixed_ship_deck_slot_2 = ship_deck_space
-						fixed_ship_anti_air_slot = ship_anti_air_4
-						fixed_ship_radar_slot = ship_radar_3
-						fixed_ship_engine_slot = carrier_ship_engine_4
-						fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon_4
-						front_1_custom_slot = ship_deck_space
-						mid_1_custom_slot = ship_deck_space
-						mid_2_custom_slot = ship_armor_carrier_deck
-						rear_1_custom_slot = ship_armor_carrier_deck
-						rear_2_custom_slot = ship_anti_air_cannon_4
-					}
-				}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_4
-							creator = "JAP" 
-							version_name = "笠置型"
-						}
-						name = "笠置" 
-						requested_factories = 1
-						progress = 0.3
-						amount = 1
-					}
-                    add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_4
-							creator = "JAP" 
-							version_name = "笠置型"
-						}
-						name = "乗鞍" 
-						requested_factories = 1
-						progress = 0.25
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_4
-							creator = "JAP" 
-							version_name = "Katsuragi Class"
-						}
-						name = "阿蘇" 
-						requested_factories = 1
-						progress = 0.2
-						amount = 1
-				}
-            }
-		
-	}
-
-	focus = {
 		id = GEACPS_NF_JAP_navy_09
 		x = 0
 		y = 1
@@ -1701,98 +1803,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = JAP_Battleships_making_skils
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_10
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_07
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_07 }
-
-		completion_reward = {
-			create_equipment_variant = {
-					name = "新高型"
-					type = ship_hull_heavy_5
-					name_group = JAP_BC_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_5
-						fixed_ship_anti_air_slot = ship_anti_air_cannon_5
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_5
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = super_heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_5
-						fixed_ship_armor_slot = ship_armor_bc_2
-						front_1_custom_slot = ship_heavy_battery_5
-						front_2_custom_slot = ship_anti_air_cannon_5
-						mid_1_custom_slot = ship_anti_air_cannon_5
-						mid_2_custom_slot = ship_airplane_launcher_1
-						mid_3_custom_slot = ship_secondaries_5
-						rear_1_custom_slot = ship_heavy_battery_5
-						rear_2_custom_slot = ship_heavy_battery_5
-					}
-				}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "新高" 
-						requested_factories = 1
-						progress = 0.3
-						amount = 1
-					}
-                    add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "富士" 
-						requested_factories = 1
-						progress = 0.25
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "天城" 
-						requested_factories = 1
-						progress = 0.2
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "Niitaka Class"
-						}
-						name = "愛鷹" 
-						requested_factories = 1
-						progress = 0.15
-						amount = 1
-					}
-        }
-	}
-	
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_11
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_08
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_08 }
-
-		completion_reward = {
-			
 		}
 	}
 
