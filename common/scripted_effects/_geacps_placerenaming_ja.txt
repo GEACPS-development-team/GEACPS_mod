@@ -1,0 +1,11 @@
+asia_placerenaming_ja = {
+	if = {
+		limit = {
+			state = 655
+			NOT = {	has_state_flag = placerenamed_state_ja	}
+		}
+		set_state_name = STATE_655_ja
+		set_state_flag = placerenamed_state_ja
+		clr_state_flag = placerenamed_state_ru
+	}
+}

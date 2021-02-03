@@ -1,0 +1,18 @@
+guiTypes = {
+	containerWindowType =  {
+		name = "geacps_placerenaming_container"
+		position = { x=0 y=10 }
+		orientation = upper_right
+		
+		buttonType = {
+			name = "placerenaming_button"
+			position = { x = -353 y = 0 }
+			quadTextureSprite = "GFX_placerenaming_button"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			pdx_tooltip = placerenaming_button_tooltip
+			pdx_tooltip_delayed = placerenaming_button_tooltip_desc
+			shortcut = "ctrl+e"
+		}
+	}
+}

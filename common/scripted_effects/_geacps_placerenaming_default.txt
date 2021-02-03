@@ -1,0 +1,24 @@
+enable_placerenaming ={
+	set_global_flag = placerenaming_globalflag
+	all_placerenames = yes
+}
+
+disable_placerenaming = {
+	clr_global_flag = placerenaming_globalflag
+	every_state = {
+		reset_state_name = yes
+		clr_state_flag = placerenamed_state_ja
+	}
+}
+
+all_placerenames = {
+	every_state = {
+		log = "[THIS.GetName]"
+		controller = { log = "[THIS.GetName]" }
+		
+		if = {	#Japan
+			limit = {	controller = {	country_ja_tag = yes	}	}
+			asia_placerenaming_ja = yes
+		}
+	}
+}
