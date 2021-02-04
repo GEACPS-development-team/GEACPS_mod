@@ -564,68 +564,80 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#
+	#初仕事
 	focus = {
-		id = GEACPS_NF_JAP_38
+		id = JAP_first_work
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 17
+		y = 10
+		prerequisite = {
+			focus = JAP_Conclusion_of_the_Congress
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#対外政策
 	focus = {
-		id = GEACPS_NF_JAP_39
+		id = JAP_foreign_policy
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 9
+		y = 11
+		prerequisite = {
+			focus = JAP_first_work
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#東進論
 	focus = {
-		id = GEACPS_NF_JAP_40
+		id = JAP_East_Progressive_Theory
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 15
+		y = 12
+		prerequisite = {
+			focus = JAP_foreign_policy
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#西進論
 	focus = {
-		id = GEACPS_NF_JAP_41
+		id = JAP_Westward_Movement_Theory
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 11
+		y = 12
+		prerequisite = {
+			focus = JAP_foreign_policy
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#南進論
 	focus = {
-		id = GEACPS_NF_JAP_42
+		id = JAP_Nanjin_Theory
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 7
+		y = 12
+		prerequisite = {
+			focus = JAP_foreign_policy
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#北進論
 	focus = {
-		id = GEACPS_NF_JAP_43
+		id = JAP_The_Northward_Movement
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 3
+		y = 12
+		prerequisite = {
+			focus = JAP_foreign_policy
+		}
 		cost = 4.28
 		completion_reward = {
 		}
