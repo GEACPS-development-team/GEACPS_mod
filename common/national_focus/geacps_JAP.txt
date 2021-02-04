@@ -1667,7 +1667,7 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_LCV_01 }
 
 		completion_reward = {
-
+			add_ideas = JAP_LCV_making
 		}
 
 	}
@@ -1828,7 +1828,12 @@ focus_tree = {
         cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_Auxiliary_ship }
         completion_reward = {
-            navy_experience = 75
+            add_tech_bonus = {
+				name = JAP_cruiser_modernization
+				bonus = 1.0
+				uses = 1	
+				category = cl_tech
+			}
         }
     }
 
@@ -2039,7 +2044,7 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_02 }
 
 		completion_reward = {
-			icon = GFX_goal_generic_occupy_start_war
+			
 		}
 	}
 
@@ -2241,7 +2246,7 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_Quiet_Submarine }
 
 		completion_reward = {
-			navy_experience = 75
+			add_ideas = JAP_torpedo_perfect
 		}
 	}
 
