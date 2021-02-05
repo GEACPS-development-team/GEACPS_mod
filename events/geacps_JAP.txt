@@ -27,3 +27,126 @@ country_event = {
 	}
 
 }
+country_event = {
+	id = GEACPS_japan.002
+	title = GEACPS_japan.002.title
+	desc = GEACPS_japan.002.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_japan.002.a
+		ai_chance = { factor = 10 }
+		country_event = {
+			id = GEACPS_japan.003
+		}
+
+	}
+	option = {
+		name = GEACPS_japan.002.b
+		ai_chance = { factor = 10 }
+		add_tech_bonus = {
+				bonus = 0.2
+				uses = 3
+				category = electronics
+		}
+		add_tech_bonus = {
+				bonus = 0.2
+				uses = 3
+				category = industry
+		}
+
+	}
+
+}
+country_event = {
+	id = GEACPS_japan.003
+	title = GEACPS_japan.003.title
+	desc = GEACPS_japan.003.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_japan.003.a
+		ai_chance = { factor = 10 }
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = armor
+			}
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = artillery
+			}
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = infantry_weapons
+		}
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = motorized_equipment
+		}
+
+	}
+	option = {
+		name = GEACPS_japan.003.b
+		ai_chance = { factor = 10 }
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = dd_tech
+		}
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = bb_tech
+		}
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = cv_tech
+		}
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = ss_tech
+		}
+		add_tech_bonus = {
+				bonus = 0.15
+				uses = 3
+				category = ca_tech
+		}
+
+
+	}
+	option = {
+		name = GEACPS_japan.003.c
+		ai_chance = { factor = 10 }
+		add_tech_bonus = {
+				bonus = 0.2
+				uses = 5
+				category = light_air
+
+		}
+		add_tech_bonus = {
+				bonus = 0.2
+				uses = 5
+				category = medium_air
+
+		}
+		add_tech_bonus = {
+				bonus = 0.2
+				uses = 5
+				category = heavy_air
+
+		}
+
+
+	}
+
+}
