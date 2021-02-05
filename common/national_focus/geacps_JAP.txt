@@ -642,90 +642,116 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#
+	#ワシントン共和国を支援
 	focus = {
-		id = GEACPS_NF_JAP_44
+		id = JAP_Supporting_the_Republic_of_Washington
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 16
+		y = 13
+		prerequisite = {
+			focus = JAP_East_Progressive_Theory
+		}
+		mutually_exclusive = {
+			focus = JAP_Supporting_the_Republic_of_California
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#カルフォルニア共和国を支援
 	focus = {
-		id = GEACPS_NF_JAP_45
+		id = JAP_Supporting_the_Republic_of_California
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 14
+		y = 13
+		prerequisite = {
+			focus = JAP_East_Progressive_Theory
+		}
+		mutually_exclusive = {
+			focus = JAP_Supporting_the_Republic_of_Washington
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#共栄圏を対岸に拡大
 	focus = {
-		id = GEACPS_NF_JAP_46
+		id = JAP_Expand_the_co_prosperity_sphere_to_the_other_side_of_the_river
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 15
+		y = 14
+		prerequisite = {
+			focus = JAP_Supporting_the_Republic_of_Washington
+			focus = JAP_Supporting_the_Republic_of_California
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#内戦に介入
 	focus = {
-		id = GEACPS_NF_JAP_47
+		id = JAP_Intervention_in_civil_war
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 16
+		y = 15
+		prerequisite = {
+			focus = JAP_Expand_the_co_prosperity_sphere_to_the_other_side_of_the_river
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#アラスカ出兵
 	focus = {
-		id = GEACPS_NF_JAP_48
+		id = JAP_Alaskan_Expedition
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 14
+		y = 15
+		prerequisite = {
+			focus = JAP_Expand_the_co_prosperity_sphere_to_the_other_side_of_the_river
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#亜米利加統治委員会の発足
 	focus = {
-		id = GEACPS_NF_JAP_49
+		id = JAP_Formation_of_the_Governing_Board_of_the_United_States_of_America
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 15
+		y = 16
+		prerequisite = {
+			focus = JAP_Intervention_in_civil_war
+		}
+		prerequisite = {
+			focus = JAP_Alaskan_Expedition
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#対岸の瀕死の病人に対処
 	focus = {
-		id = GEACPS_NF_JAP_50
+		id = JAP_Dealing_with_a_dying_sick_man_on_the_other_side_of_the_river
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 15
+		y = 17
+		prerequisite = {
+			focus = JAP_Formation_of_the_Governing_Board_of_the_United_States_of_America
+		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
-	#
+	#亜米利加全土に統治を拡大
 	focus = {
-		id = GEACPS_NF_JAP_51
+		id = JAP_Expanded_governance_to_all_of_sub_America
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
+		x = 15
+		y = 18
+		prerequisite = {
+			focus = JAP_Dealing_with_a_dying_sick_man_on_the_other_side_of_the_river
+		}
 		cost = 4.28
 		completion_reward = {
 		}
