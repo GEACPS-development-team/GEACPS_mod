@@ -1,0 +1,29 @@
+add_namespace = GEACPS_japan
+
+country_event = {
+	id = GEACPS_japan.001
+	title = GEACPS_japan.001.title
+	desc = GEACPS_japan.001.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_japan.001.a
+		ai_chance = { factor = 10 }
+		add_ideas = JAP_air_people
+	}
+	option = {
+		name = GEACPS_japan.001.b
+		ai_chance = { factor = 10 }
+		add_ideas = JAP_big_battery_people
+
+	}
+	option = {
+		name = GEACPS_japan.001.c
+		ai_chance = { factor = 10 }
+		add_ideas = JAP_torpedo_people
+
+	}
+
+}
