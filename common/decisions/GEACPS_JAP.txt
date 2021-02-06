@@ -1,0 +1,19 @@
+JAP_national_policy_research_outline = {
+	national_policy_research_outline = {
+		complete_effect  = {
+			days_remove = 365
+			days_re_enable = 1095
+			cost = 50
+			country_event = {
+				id = GEACPS_japan.002
+			}
+		}
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				has_political_power < 100
+				factor = 5
+			}
+		}
+	}
+}

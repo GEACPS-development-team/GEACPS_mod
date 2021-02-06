@@ -1,11 +1,28 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			every_country = {
+			every_country = { #Debug, Please remove
 				set_country_flag = ICBM_allowed
 				add_to_variable = { ICBM_amount = 10 }
 				add_to_variable = { MRBM_amount = 10 }
 				add_to_variable = { CURRENT_DISTANCE = 2000 }
+			}
+		}
+	}
+	on_nuke_drop = {
+		effect = {
+			FROM = {
+				if = {
+					limit = {
+						NOT = { has_state_flag = nuke_attacked_state }
+					}
+					set_state_flag = nuke_attacked_state
+					add_dynamic_modifier = {
+						modifier = nuke_attacked_state_modifier
+					}
+				}
+				else = {
+				}
 			}
 		}
 	}

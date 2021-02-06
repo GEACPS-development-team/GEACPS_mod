@@ -1,0 +1,28 @@
+ICBM_AI_categories = {
+	ICBM_AI_counterattack = {
+		visible = {
+			any_owned_state = {
+				has_state_flag = nuke_attacked_state
+			}
+			num_of_nukes > 0
+		}
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+	}
+}
+
+ICBM_reconstruction_categories = {
+	ICBM_reconstruction_decision_first_step = {
+		visible = {
+			any_owned_state = {
+				has_state_flag = nuke_attacked_state
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			
+		}
+	}
+}
