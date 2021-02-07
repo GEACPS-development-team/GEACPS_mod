@@ -1,0 +1,15 @@
+autonomy_state = {
+	id = warlord
+	is_puppet = yes
+	min_freedom_level = 0.5
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		OVERLORD = {	tag = CHI	}
+		NOT = { has_idea = colonial_government }
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+		NOT = { OVERLORD = { has_country_flag = soviet_union_flag } }
+	}
+}
