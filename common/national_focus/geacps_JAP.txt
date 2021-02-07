@@ -1751,7 +1751,6 @@ focus_tree = {
         cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_02 }
         completion_reward = {
-            completion_reward = {
 			create_equipment_variant = {
 					name = "型"
 					type = ship_hull_heavy_5
@@ -1818,7 +1817,6 @@ focus_tree = {
 						progress = 0.15
 						amount = 1
 					}
-        }
         }
     }
 
@@ -2222,20 +2220,6 @@ focus_tree = {
 				progress = 0.15
 				amount = 1
 			}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Quiet_Submarine
-		x = 3
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
-
-		completion_reward = {
-			navy_experience = 75
 		}
 	}
 
