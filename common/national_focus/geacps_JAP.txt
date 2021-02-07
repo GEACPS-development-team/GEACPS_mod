@@ -1860,6 +1860,7 @@ focus_tree = {
         relative_position_id = GEACPS_NF_JAP_navy_CL_01
         cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_CL_01 }
+		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_ACL_01 }
         completion_reward = {
             navy_experience = 75
         }
