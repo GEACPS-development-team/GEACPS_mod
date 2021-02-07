@@ -1492,6 +1492,11 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_BB_02 }
 
 		completion_reward = {
+#			transfer_ship = {
+#				prefer_name = "金剛"
+#				type = light_cruiser
+#				target = NZL
+#			}
 			create_equipment_variant = {
 					name = "新高型"
 					type = ship_hull_heavy_5
@@ -1558,7 +1563,7 @@ focus_tree = {
 						progress = 0.15
 						amount = 1
 					}
-        }
+    	}
 	}
 
 	focus = {
