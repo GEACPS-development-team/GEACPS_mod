@@ -90,11 +90,7 @@ ideas = {
 
 		JAP_carrier_capacity = {
 			allowed = {	always = no	}
-			allowed_civil_war = {
-			NOT = {
-				has_government = fascism
-				}
-			}
+			#allowed_civil_war = {}
 			removal_cost = -1
 
 			modifier = {
@@ -123,11 +119,7 @@ ideas = {
 
 		JAP_capital_ship_made = {
 			allowed = {	always = no	}
-			allowed_civil_war = {
-				NOT = {
-					has_government = fascism
-				}
-			}
+			#allowed_civil_war = {}
 			removal_cost = -1
 			modifier = {
 				#capital_ship = {

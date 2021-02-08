@@ -1,0 +1,20 @@
+ideas = {
+	mobilization_laws = { 
+		law = yes
+		use_list_view = yes
+		
+		mobilization_law = {
+			available = {}
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			cancel_if_invalid = no
+			
+			modifier = {
+				conscription = 1.0
+			}
+		}
+	}
+}

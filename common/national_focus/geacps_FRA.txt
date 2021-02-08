@@ -106,12 +106,7 @@
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-				add_popularity = {
-          ideology =  fascism
-           popularity = -0.1
-		}
-	 }
+		completion_reward = {}
 	}
 	#マジノ線の解体
 	focus = {
@@ -179,7 +174,7 @@
 				}
 			}
 			remove_ideas = {
-				FRA_protected_by_the_maginot_line
+#				FRA_protected_by_the_maginot_line
 			}
 		}
 	}
@@ -208,16 +203,7 @@
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-		completion_reward = {
-				add_popularity = {
-          ideology =  communism
-           popularity = -0.05
-		   	add_popularity = {
-          ideology =  fascism
-           popularity = -0.05
-          }
-		}
-	 }
+		completion_reward = {}
 	}
 	#民間経済を救済
 	focus = {
@@ -277,7 +263,7 @@
 		continue_if_invalid = no
 		available_if_capitulated = no
 		completion_reward = {
-			remove_ideas = FRA_disjointed_government
+#			remove_ideas = FRA_disjointed_government
 		}
 	}
 	#自由、博愛、平等
