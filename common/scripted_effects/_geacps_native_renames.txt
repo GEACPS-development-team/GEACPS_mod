@@ -1,0 +1,10 @@
+ja_renames = {
+	if = {
+		limit = {
+			state = 655
+			NOT = {	has_state_flag = renamed_state_ja	}
+		}
+		set_state_name = STATE_655ja
+		set_state_flag = renamed_state_ja
+	}
+}
