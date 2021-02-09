@@ -1,1355 +1,1354 @@
 ﻿units = {
-
-    fleet = {
-        name = "第一艦隊"
-        naval_base = 9998
-        task_force = {
-            name = "第一戦隊"
-            location = 9998
-            ship = {
-                name = "大和"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "大和型"
-                    }
-                }
-            }
-            ship = {
-                name = "武蔵"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "大和型"
-                    }
-                }
-            }
-            ship = {
-                name = "信濃"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "信濃型"
-                    }
-                }
-            }
-            ship = {
-                name = "紀伊"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_super_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "信濃型"
-                    }
-                }
-            }
-            ship = {
-                name = "最上"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "最上型"
-                    }
-                }
-            }
-            ship = {
-                name = "三隈"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "最上型"
-                    }
-                }
-            }
-            ship = {
-                name = "利根"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "利根型"
-                    }
-                }
-            }
-            ship = {
-                name = "筑摩"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "利根型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第一航空戦隊"
-            location = 9998
-            ship = {
-                name = "蒼龍"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "蒼龍型"
-                    }
-                }
-                air_wings = { 
+	fleet = {
+		name = "第一艦隊"
+		naval_base = 9998
+		task_force = {
+			name = "第一戦隊"
+			location = 9998
+			ship = {
+				name = "大和"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_super_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "大和型"
+					}
+				}
+			}
+			ship = {
+				name = "武蔵"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_super_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "大和型"
+					}
+				}
+			}
+			ship = {
+				name = "信濃"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_super_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "信濃型"
+					}
+				}
+			}
+			ship = {
+				name = "紀伊"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_super_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "信濃型"
+					}
+				}
+			}
+			ship = {
+				name = "最上"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "最上型"
+					}
+				}
+			}
+			ship = {
+				name = "三隈"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "最上型"
+					}
+				}
+			}
+			ship = {
+				name = "利根"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "利根型"
+					}
+				}
+			}
+			ship = {
+				name = "筑摩"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "利根型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第一航空戦隊"
+			location = 9998
+			ship = {
+				name = "蒼龍"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "蒼龍型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
 				}
-            }
-            ship = {
-                name = "飛龍"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "蒼龍型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "飛龍"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "蒼龍型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
 				}
-            }
-            ship = {
-                name = "金剛"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "金剛型"
-                    }
-                }
-            }
-            ship = {
-                name = "伊吹"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "伊吹型"
-                    }
-                }
-            }
-            ship = {
-                name = "鞍馬"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "伊吹型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第四航空戦隊"
-            location = 9998
-            ship = {
-                name = "鳳翔"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_conversion_ca = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "鳳翔型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "金剛"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "金剛型"
+					}
+				}
+			}
+			ship = {
+				name = "伊吹"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "伊吹型"
+					}
+				}
+			}
+			ship = {
+				name = "鞍馬"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "伊吹型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第四航空戦隊"
+			location = 9998
+			ship = {
+				name = "鳳翔"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_conversion_ca = {
+						amount = 1
+						owner = JAP
+						version_name = "鳳翔型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 12 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 6 }
 				}
-            }
-            ship = {
-                name = "龍驤"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "龍驤型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "龍驤"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "龍驤型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 18 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 9 }
 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 9 }
 				}
-            }
-            ship = {
-                name = "霧島"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "金剛型"
-                    }
-                }
-            }
-            ship = {
-                name = "高雄"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "高雄型"
-                    }
-                }
-            }
-            ship = {
-                name = "愛宕"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "高雄型"
-                    }
-                }
-            }
-        }
-        task_force = {
-        name = "第五航空戦隊"
-        location = 9998
-        ship = {
-        name = "瑞鳳"
-            definition = carrier
-            start_experience_factor = 0.5
-            equipment = {
-                ship_hull_carrier_conversion_ca = {
-                    amount = 1
-                        owner = JAP
-                        version_name = "瑞鳳型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "霧島"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "金剛型"
+					}
+				}
+			}
+			ship = {
+				name = "高雄"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "高雄型"
+					}
+				}
+			}
+			ship = {
+				name = "愛宕"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "高雄型"
+					}
+				}
+			}
+		}
+		task_force = {
+		name = "第五航空戦隊"
+		location = 9998
+		ship = {
+		name = "瑞鳳"
+			definition = carrier
+			start_experience_factor = 0.5
+			equipment = {
+				ship_hull_carrier_conversion_ca = {
+					amount = 1
+						owner = JAP
+						version_name = "瑞鳳型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 12 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 6 }
 				}
-            }
-            ship = {
-                name = "祥鳳"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_conversion_ca = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "瑞鳳型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "祥鳳"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_conversion_ca = {
+						amount = 1
+						owner = JAP
+						version_name = "瑞鳳型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 12 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 6 }
 				}
-            }
-            ship = {
-                name = "隼鷹"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "隼鷹型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "隼鷹"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "隼鷹型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
 				}
-            }
-            ship = {
-                name = "飛鷹"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "隼鷹型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "飛鷹"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "隼鷹型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
 				}
-            }
-            ship = {
-                name = "扶桑"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "扶桑型"
-                    }
-                }
-            }
-            ship = {
-                name = "山城"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "扶桑型"
-                    }
-                }
-            }
-        }
-    }
-    fleet = {
-        name = "第二艦隊"
-        naval_base = 1092
-        task_force = {
-            name = "第二航空戦隊"
-            location = 1092
-            ship = {
-                name = "翔鶴"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "翔鶴型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "扶桑"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "扶桑型"
+					}
+				}
+			}
+			ship = {
+				name = "山城"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "扶桑型"
+					}
+				}
+			}
+		}
+	}
+	fleet = {
+		name = "第二艦隊"
+		naval_base = 1092
+		task_force = {
+			name = "第二航空戦隊"
+			location = 1092
+			ship = {
+				name = "翔鶴"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "翔鶴型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_3 =  { owner = "JAP" amount = 18 }
 					cv_CAS_equipment_3 = { owner = "JAP" amount = 27 }
 					cv_nav_bomber_equipment_3 =  { owner = "JAP" amount = 27 }
 				}
-            }
-            ship = {
-                name = "瑞鶴"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "翔鶴型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "瑞鶴"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "翔鶴型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_3 =  { owner = "JAP" amount = 18 }
 					cv_CAS_equipment_3 = { owner = "JAP" amount = 27 }
 					cv_nav_bomber_equipment_3 =  { owner = "JAP" amount = 27 }
 				}
-            }
-            ship = {
-                name = "比叡"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "金剛型"
-                    }
-                }
-            }
-            ship = {
-                name = "鈴谷"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "鈴谷型"
-                    }
-                }
-            }
-            ship = {
-                name = "熊野"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "鈴谷型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第三航空戦隊"
-            location = 1092
-            ship = {
-                name = "大鳳"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "大鳳型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "比叡"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "金剛型"
+					}
+				}
+			}
+			ship = {
+				name = "鈴谷"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "鈴谷型"
+					}
+				}
+			}
+			ship = {
+				name = "熊野"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "鈴谷型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第三航空戦隊"
+			location = 1092
+			ship = {
+				name = "大鳳"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "大鳳型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
 				}
-            }
-            ship = {
-                name = "雲龍"
-                definition = carrier
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_carrier_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "改大鳳型"
-                    }
-                }
-                air_wings = { 
+			}
+			ship = {
+				name = "雲龍"
+				definition = carrier
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_carrier_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "改大鳳型"
+					}
+				}
+				air_wings = { 
 					cv_fighter_equipment_1 =  { owner = "JAP" amount = 24 }
 					cv_CAS_equipment_1 = { owner = "JAP" amount = 18 }
 					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 18 }
 				}
-            }
-            ship = {
-                name = "榛名"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "金剛型"
-                    }
-                }
-            }
-            ship = {
-                name = "摩耶"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "高雄型"
-                    }
-                }
-            }
-            ship = {
-                name = "鳥海"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "高雄型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第二戦隊"
-            location = 1092
-            ship = {
-                name = "長門"
-                definition = battleship
-                start_experience_factor = 0.75
-                equipment = {
-                    ship_hull_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "長門型"
-                    }
-                }
-            }
-            ship = {
-                name = "陸奥"
-                definition = battleship
-                start_experience_factor = 0.75
-                equipment = {
-                    ship_hull_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "長門型"
-                    }
-                }
-            }
-            ship = {
-                name = "伊勢"
-                definition = battleship
-                start_experience_factor = 0.65
-                equipment = {
-                    ship_hull_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "伊勢型"
-                    }
-                }
-            }
-            ship = {
-                name = "日向"
-                definition = battleship
-                start_experience_factor = 0.65
-                equipment = {
-                    ship_hull_heavy_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "伊勢型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第三戦隊"
-            location = 1092
-            ship = {
-                name = "古鷹"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "古鷹型"
-                    }
-                }
-            }
-            ship = {
-                name = "加古"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "古鷹型"
-                    }
-                }
-            }
-            ship = {
-                name = "青葉"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "Aoba Class"
-                    }
-                }
-            }
-            ship = {
-                name = "衣笠"
-                definition = heavy_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "青葉型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第一水雷戦隊"
-            location = 1092
-            ship = {
-                name = "阿武隈"
-                definition = light_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "長良型"
-                    }
-                }
-            }
-            ship = {
-                name = "暁"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "暁型"
-                    }
-                }
-            }
-            ship = {
-                name = "響"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "暁型"
-                    }
-                }
-            }
-            ship = {
-                name = "雷"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "暁型"
-                    }
-                }
-            }
-            ship = {
-                name = "電"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "暁型"
-                    }
-                }
-            }
-            ship = {
-                name = "初春"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "初春型"
-                    }
-                }
-            }
-            ship = {
-                name = "子日"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "初春型"
-                    }
-                }
-            }
-            ship = {
-                name = "若葉"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "初春型"
-                    }
-                }
-            }
-            ship = {
-                name = "初霜"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "初春型"
-                    }
-                }
-            }
-            ship = {
-                name = "有明"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "初春型"
-                    }
-                }
-            }
-            ship = {
-                name = "夕暮"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "初春型"
-                    }
-                }
-            }
-            ship = {
-                name = "白露"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "時雨"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第三水雷戦隊"
-            location = 1092
-            ship = {
-                name = "川内"
-                definition = light_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "川内型"
-                    }
-                }
-            }
-            ship = {
-                name = "吹雪"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "白雪"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "初雪"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "叢雲"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "白雲"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "東雲"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "磯波"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "浦波"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "吹雪型"
-                    }
-                }
-            }
-            ship = {
-                name = "綾波"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "敷波"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "朝霧"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "夕霧"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "天霧"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "狭霧"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "第四水雷戦隊"
-            location = 1092
-            ship = {
-                name = "那珂"
-                definition = light_cruiser
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_cruiser_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "川内型"
-                    }
-                }
-            }
-            ship = {
-                name = "村雨"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "夕立"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "春雨"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "五月雨"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "海風"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "山風"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "江風"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "涼風"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "白露型"
-                    }
-                }
-            }
-            ship = {
-                name = "朝雲"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "山雲"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "夏雲"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "峯雲"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-        }
-        task_force = {
-            name = "配属未定艦隊"
-            location = 1092
-            ship = {
-                name = "卯月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "皐月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "水無月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "文月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "長月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "三日月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "望月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "夕月"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "睦月型"
-                    }
-                }
-            }
-            ship = {
-                name = "朧"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "曙"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "漣"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "潮"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_1 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "綾波型"
-                    }
-                }
-            }
-            ship = {
-                name = "朝潮"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "大潮"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "満潮"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "荒潮"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "霞"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-            ship = {
-                name = "霰(沈没済み)"
-                definition = destroyer
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_light_2 = {
-                        amount = 1
-                        owner = JAP
-                        version_name = "朝潮型"
-                    }
-                }
-            }
-        }
-    }
+			}
+			ship = {
+				name = "榛名"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "金剛型"
+					}
+				}
+			}
+			ship = {
+				name = "摩耶"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "高雄型"
+					}
+				}
+			}
+			ship = {
+				name = "鳥海"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "高雄型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第二戦隊"
+			location = 1092
+			ship = {
+				name = "長門"
+				definition = battleship
+				start_experience_factor = 0.75
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "長門型"
+					}
+				}
+			}
+			ship = {
+				name = "陸奥"
+				definition = battleship
+				start_experience_factor = 0.75
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "長門型"
+					}
+				}
+			}
+			ship = {
+				name = "伊勢"
+				definition = battleship
+				start_experience_factor = 0.65
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "伊勢型"
+					}
+				}
+			}
+			ship = {
+				name = "日向"
+				definition = battleship
+				start_experience_factor = 0.65
+				equipment = {
+					ship_hull_heavy_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "伊勢型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第三戦隊"
+			location = 1092
+			ship = {
+				name = "古鷹"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "古鷹型"
+					}
+				}
+			}
+			ship = {
+				name = "加古"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "古鷹型"
+					}
+				}
+			}
+			ship = {
+				name = "青葉"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "Aoba Class"
+					}
+				}
+			}
+			ship = {
+				name = "衣笠"
+				definition = heavy_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "青葉型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第一水雷戦隊"
+			location = 1092
+			ship = {
+				name = "阿武隈"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "長良型"
+					}
+				}
+			}
+			ship = {
+				name = "暁"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "暁型"
+					}
+				}
+			}
+			ship = {
+				name = "響"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "暁型"
+					}
+				}
+			}
+			ship = {
+				name = "雷"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "暁型"
+					}
+				}
+			}
+			ship = {
+				name = "電"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "暁型"
+					}
+				}
+			}
+			ship = {
+				name = "初春"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "初春型"
+					}
+				}
+			}
+			ship = {
+				name = "子日"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "初春型"
+					}
+				}
+			}
+			ship = {
+				name = "若葉"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "初春型"
+					}
+				}
+			}
+			ship = {
+				name = "初霜"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "初春型"
+					}
+				}
+			}
+			ship = {
+				name = "有明"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "初春型"
+					}
+				}
+			}
+			ship = {
+				name = "夕暮"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "初春型"
+					}
+				}
+			}
+			ship = {
+				name = "白露"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "時雨"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第三水雷戦隊"
+			location = 1092
+			ship = {
+				name = "川内"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "川内型"
+					}
+				}
+			}
+			ship = {
+				name = "吹雪"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "白雪"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "初雪"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "叢雲"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "白雲"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "東雲"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "磯波"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "浦波"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "吹雪型"
+					}
+				}
+			}
+			ship = {
+				name = "綾波"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "敷波"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "朝霧"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "夕霧"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "天霧"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "狭霧"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "第四水雷戦隊"
+			location = 1092
+			ship = {
+				name = "那珂"
+				definition = light_cruiser
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_cruiser_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "川内型"
+					}
+				}
+			}
+			ship = {
+				name = "村雨"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "夕立"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "春雨"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "五月雨"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "海風"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "山風"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "江風"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "涼風"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "白露型"
+					}
+				}
+			}
+			ship = {
+				name = "朝雲"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "山雲"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "夏雲"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "峯雲"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+		}
+		task_force = {
+			name = "配属未定艦隊"
+			location = 1092
+			ship = {
+				name = "卯月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "皐月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "水無月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "文月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "長月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "三日月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "望月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "夕月"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "睦月型"
+					}
+				}
+			}
+			ship = {
+				name = "朧"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "曙"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "漣"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "潮"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_1 = {
+						amount = 1
+						owner = JAP
+						version_name = "綾波型"
+					}
+				}
+			}
+			ship = {
+				name = "朝潮"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "大潮"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "満潮"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "荒潮"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "霞"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+			ship = {
+				name = "霰(沈没済み)"
+				definition = destroyer
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_light_2 = {
+						amount = 1
+						owner = JAP
+						version_name = "朝潮型"
+					}
+				}
+			}
+		}
+	}
 }
 
 instant_effect = {
-    add_equipment_production = {
-        equipment = {
-            type = ship_hull_carrier_2
-            creator = "JAP"
-            version_name = "改大鳳型"
-        }
-        name = "天城" 
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_2
+			creator = "JAP"
+			version_name = "改大鳳型"
+		}
+		name = "天城" 
 		requested_factories = 1
 		progress = 0.7
 		amount = 1
-    }
+	}
 }
 instant_effect = {
-    add_equipment_production = {
-        equipment = {
-            type = ship_hull_carrier_2
-            creator = "JAP"
-            version_name = "改大鳳型"
-        }
-        name = "葛城" 
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_carrier_2
+			creator = "JAP"
+			version_name = "改大鳳型"
+		}
+		name = "葛城" 
 		requested_factories = 1
 		progress = 0.7
 		amount = 1
-    }
+	}
 }

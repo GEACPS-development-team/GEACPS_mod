@@ -1,9 +1,5 @@
 ﻿division_template = {
-	name = "Trigonikó Pezikoú" 					# Triangular Infantry Division
-	division_names_group = GRE_INF_01
-	# Prior to 1940 mobilization = 3rd, 4th, 5th, 9th, 10, 13th;
-	# 	6th, 7th, 11th, and 12th had 2 regiments; 14th had 1 regiment
-	# Note: sources have all Greek regular infantry as mountain-trained
+	name = "3単位制師団"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -17,9 +13,7 @@
 	}
 }
 division_template = {
-	name = "Tetrágono Pezikoú" 					# Square Infantry Division
-	division_names_group = GRE_MNT_01
-	# Prior to 1940 mobilization = 1st, 2nd, 8th
+	name = "4単位制師団"
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -32,9 +26,7 @@ division_template = {
 	}
 }
 division_template = {
-	name = "Merarchía Ippikoú" 						# Cavalry Division
-	division_names_group = GRE_CAV_01
-
+	name = "騎兵師団"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -44,136 +36,66 @@ division_template = {
 		cavalry = { x = 1 y = 2 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }      # Motorized recon inf bn
+		recon = { x = 0 y = 0 }
 	}
 }
 
 units = {
-	######## Ellinikó Genikó Epiteleío ########
-	division = { # "V Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 5
-		}
+	division = {
+		division_name = "第5歩兵師団"
 		location = 4078
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
 	division = { # "VIII Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 8
-		}
+		division_name = "第8歩兵師団"
 		location = 3914
-		division_template = "Tetrágono Pezikoú" 
+		division_template = "4単位制師団" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-
-	# A Sóma Stratoú
-	division = { # "II Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 2
-		}
+	division = {
+		division_name = "第2歩兵師団"
 		location = 4109
-		division_template = "Tetrágono Pezikoú" 
+		division_template = "4単位制師団" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
-	division = { # "III Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 3
-		}
+	division = {
+		division_name = "第3歩兵師団"
 		location = 4193
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-	division = { # "IV Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 4
-		}
+	division = {
+		division_name = "第4歩兵師団"
 		location = 7096
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# B Sóma Stratoú
-	division = { # "I Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 1
-		}
+	division = {
+		division_name = "第1歩兵師団"
 		location = 3973
-		division_template = "Tetrágono Pezikoú" 
+		division_template = "4単位制師団" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 
 	}
-	division = { # "IX Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 9
-		}
+	division = {
+		division_name = "第9歩兵師団"
 		location = 966
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
-	# E Sóma Stratoú
-	division = { # "XIII Merarchía Pezikoú"
-		division_name = {
-				is_name_ordered = yes
-				name_order = 13
-		}
+	division = {
+		division_name = "第13師団"
 		location = 11905
-		division_template = "Trigonikó Pezikoú" 
+		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
-
 	}
-
 }
-
-##### Air Force #####
-#air_wings = {
-#	47 = { 														# Athens  
-#		fighter_equipment_0 = { owner = "GRE" creator = "POL" version_name = "PZL P.24" amount = 91 }		# Fighter Gr#oup -- PZL P.24s
-#		CAS_equipment_1 = { owner = "GRE" amount = 64 }			# CAS Bomber Group -- Potez 25, Fairey Battle
-#		tac_bomber_equipment_0 = { owner = "GRE" amount = 102 } # Bomber Group -- Blenheim Is, Battle Is, Potez 633s
-#	}
-#}
-
-### Starting Production ###
-#instant_effect = {
-#	add_equipment_production = {
-#		equipment = {
-#			type = infantry_equipment_1
-#			creator = "GRE"
-#		}
-#		requested_factories = 1
-#		progress = 0.10
-#		efficiency = 100
-#	}
-#	add_equipment_production = {
-#		equipment = {
-#			type = support_equipment_1
-#			creator = "GRE" 
-#		}
-#		requested_factories = 1
-#		progress = 0.56
-#		efficiency = 100
-#	}
-#}

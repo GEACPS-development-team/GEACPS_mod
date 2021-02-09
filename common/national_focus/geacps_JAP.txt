@@ -198,7 +198,7 @@ focus_tree = {
 			focus = JAP_New_draft_constitution
 		}
 		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_12
+			#focus = GEACPS_NF_JAP_12
 		}
 		cost = 4.28
 		completion_reward = {
@@ -2272,10 +2272,10 @@ focus_tree = {
 		id = GEACPS_NF_JAP_navy_06
 		x = 0
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_02
+		#relative_position_id = GEACPS_NF_JAP_navy_02
 		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_02 }
-
+		#prerequisite = { focus = GEACPS_NF_JAP_navy_02 }
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				limit = {
@@ -2309,10 +2309,10 @@ focus_tree = {
 		id = GEACPS_NF_JAP_navy_20
 		x = 1
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_18
+		#relative_position_id = GEACPS_NF_JAP_navy_18
 		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_18 }
-
+		#prerequisite = { focus = GEACPS_NF_JAP_navy_18 }
+		
 		completion_reward = {
 			random_owned_controlled_state = {
 				add_extra_state_shared_building_slots = 2
