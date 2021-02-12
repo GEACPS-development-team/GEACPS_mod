@@ -31,16 +31,16 @@ scripted_gui = { #作ったGUIに効果を持たせるやつだよ
 		triggers = {	#ボタンを実行できる条件?	}
 	}
 	#デバッグメニュー本体の上の方
-	geacps_debug_menu_select_tab = { #ここの名前は適当でいい
-		window_name = "geacps_debug_menu_select_tab_container" #containerWindowTypeのnameを使用する
-		context_type = player_context #よぐわがんね
-		visible = {	#このGUIが見える条件
-			has_country_flag = geacps_debug_menu_opened #geacps_debug_menu_openedというflagを持っているか否か
-		}
-		effects = { #ボタンとか押したときに起こること
-			geacps_debug_menu_close_button_click = { #ボタンのname_click
-				ROOT = {	clr_country_flag = geacps_debug_menu_opened #このボタンを押すとデバッグメニューが消える(またはESCAPEキーを押す)	}
-			}
-		}
-	}
+#	geacps_debug_menu_select_tab = { #ここの名前は適当でいい
+#		window_name = "geacps_debug_menu_select_tab_container" #containerWindowTypeのnameを使用する
+#		context_type = player_context #よぐわがんね
+#		visible = {	#このGUIが見える条件
+#			has_country_flag = geacps_debug_menu_opened #geacps_debug_menu_openedというflagを持っているか否か
+#		}
+#		effects = { #ボタンとか押したときに起こること
+#			geacps_debug_menu_close_button_click = { #ボタンのname_click
+#				ROOT = {	clr_country_flag = geacps_debug_menu_opened #このボタンを押すとデバッグメニューが消える(またはESCAPEキーを押す)	}
+#			}
+#		}
+#	}
 }

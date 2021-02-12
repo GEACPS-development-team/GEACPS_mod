@@ -1,60 +1,60 @@
 ﻿units = {
-    fleet = {
-        name = "大西洋艦隊"
-        location = 788 #ノーフォーク(大西洋)
-        task_force = {
-            name = "高速戦艦隊"
-            location = 9998
-            ship = {
-                name = "アイオワ"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_3 = {
-                        amount = 1
-                        owner = USA
-                        version_name = "アイオワ級"
-                    }
-                }
-            }
-            ship = {
-                name = "ニュージャージー"
-                definition = battleship
-                start_experience_factor = 0.5
-                equipment = {
-                    ship_hull_heavy_3 = {
-                        amount = 1
-                        owner = USA
-                        version_name = "アイオワ級"
-                    }
-                }
-            }
-        }
-    }
+	fleet = {
+		name = "大西洋艦隊"
+		location = 788 #ノーフォーク(大西洋)
+		task_force = {
+			name = "高速戦艦隊"
+			location = 9998
+			ship = {
+				name = "アイオワ"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_3 = {
+						amount = 1
+						owner = USA
+						version_name = "アイオワ級"
+					}
+				}
+			}
+			ship = {
+				name = "ニュージャージー"
+				definition = battleship
+				start_experience_factor = 0.5
+				equipment = {
+					ship_hull_heavy_3 = {
+						amount = 1
+						owner = USA
+						version_name = "アイオワ級"
+					}
+				}
+			}
+		}
+	}
 }
 instant_effect = {
-    add_equipment_production = {
-        equipment = {
-            type = ship_hull_heavy_3
-            creator = "USA"
-            version_name = "モンタナ級"
-        }
-        name = "モンタナ" 
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_3
+			creator = "USA"
+			version_name = "モンタナ級"
+		}
+		name = "モンタナ" 
 		requested_factories = 1
 		progress = 0.7
 		amount = 1
-    }
+	}
 }
 instant_effect = {
-    add_equipment_production = {
-        equipment = {
-            type = ship_hull_heavy_3
-            creator = "USA"
-            version_name = "モンタナ級"
-        }
-        name = "オハイオ" 
+	add_equipment_production = {
+		equipment = {
+			type = ship_hull_heavy_3
+			creator = "USA"
+			version_name = "モンタナ級"
+		}
+		name = "オハイオ" 
 		requested_factories = 1
 		progress = 0.5
 		amount = 1
-    }
+	}
 }
