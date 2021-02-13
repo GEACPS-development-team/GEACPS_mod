@@ -1494,7 +1494,7 @@ focus_tree = {
 		completion_reward = {
 #			transfer_ship = {
 #				prefer_name = "金剛"
-#				type = light_cruiser
+#				type = battleship
 #				target = NZL
 #			}
 			create_equipment_variant = {
@@ -1509,7 +1509,7 @@ focus_tree = {
 						fixed_ship_radar_slot = empty
 						fixed_ship_engine_slot = super_heavy_ship_engine_2
 						fixed_ship_secondaries_slot = ship_secondaries_5
-						fixed_ship_armor_slot = ship_armor_bc_2
+						fixed_ship_armor_slot = ship_armor_bb_5
 						front_1_custom_slot = ship_heavy_battery_5
 						front_2_custom_slot = ship_anti_air_cannon_5
 						mid_1_custom_slot = ship_anti_air_cannon_5
@@ -2115,7 +2115,28 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
 
 		completion_reward = {
-			navy_experience = 75
+			create_equipment_variant = {
+					name = "防空戦艦"
+					type = ship_hull_heavy_6
+					name_group = JAP_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_6
+						fixed_ship_anti_air_slot = ship_anti_air_cannon_6
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_5
+						fixed_ship_radar_slot = ship_radar_6
+						fixed_ship_engine_slot = heavy_ship_engine_6
+						fixed_ship_secondaries_slot = empty
+						fixed_ship_armor_slot = ship_armor_bb_6
+						front_1_custom_slot = ship_heavy_battery_6
+						mid_1_custom_slot = sam_2
+						mid_2_custom_slot = ship_airplane_launcher_2
+						mid_3_custom_slot = ssm_2
+						rear_1_custom_slot = sam_2
+						rear_2_custom_slot = ssm_2
+					}
+				}
+
 		}
 	}
 
