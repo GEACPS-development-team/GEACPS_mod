@@ -352,6 +352,27 @@ country_event = {
 		name = GEACPS_china.010.a#���Ȃ���
 		ai_chance = { factor = 10 }
 		add_ideas = GEACPS_idea_CHI_failed_states
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = is_in_faction_with_CHI
+				}
+				country_event = {
+					id = GEACPS_china.022
+					days = 7
+					random = 3
+				}
+				CHI = {
+					release = PREV.PREV
+				}		
+			}
+			country_event = {
+				id = GEACPS_china.011
+				days = 10
+				random = 4
+			}
+
+		}
 		every_country = {
 			limit = {
 				has_country_flag = is_in_faction_with_CHI
@@ -363,14 +384,7 @@ country_event = {
 			}
 			leave_faction = yes
 		}
-		hidden_effect = {
-			country_event = {
-				id = GEACPS_china.011
-				days = 10
-				random = 4
-			}
 
-		}
 	}
 
 }
@@ -897,7 +911,10 @@ country_event = {
 	option = {
 		name = GEACPS_china.030.a#�f���炵��
 		ai_chance = { factor = 10 }
-		puppet = FROM
+		set_autonomy = {
+			target = FROM
+			autonomy_state = autonomous_province
+		}
 		if = {
 			limit = {
 				has_idea = GEACPS_idea_CHI_chinese_united_front3
