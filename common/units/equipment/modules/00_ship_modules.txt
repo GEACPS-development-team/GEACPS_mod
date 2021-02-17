@@ -5101,5 +5101,73 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 700
 	}
+#Fire extinguishing equipment
+	ship_fire_extinguishing_system_1 = {
+		category = ship_fire_extinguishing_system
+		add_stats = {
+			build_cost_ic = 500
+		}
+		multiply_stats = {
+			reliability = 0.05
+		}
+		add_average_stats = {
+			max_strength = 50
+		}
+		can_convert_from = {
+			module_category = ship_fire_extinguishing_system
+			convert_cost_ic = 50
+		}
+
+	}
+	ship_fire_extinguishing_system_2 = {
+		category = ship_fire_extinguishing_system
+		add_stats = {
+			build_cost_ic = 700
+		}
+		multiply_stats = {
+			reliability = 0.05
+		}
+		add_average_stats = {
+			max_strength = 65
+		}
+		can_convert_from = {
+			module_category = ship_fire_extinguishing_system
+			convert_cost_ic = 60
+		}
+	}
+#Fuel storage for ship
+	ship_fuel_storage_1 = {
+		category = ship_extra_fuel_tank
+		add_stats = {
+			build_cost_ic = 500
+		}
+		multiply_stats = {
+			reliability = -0.10
+		}
+		add_average_stats = {
+			naval_range = 2000
+		}
+		can_convert_from = {
+			module_category = ship_extra_fuel_tank
+			convert_cost_ic = 100
+		}
+
+	}
+	ship_fuel_storage_2 = {
+		category = ship_extra_fuel_tank
+		add_stats = {
+			build_cost_ic = 700
+		}
+		multiply_stats = {
+			reliability = -0.05
+		}
+		add_average_stats = {
+			naval_range = 2000
+		}
+		can_convert_from = {
+			module_category = ship_extra_fuel_tank
+			convert_cost_ic = 100
+		}
+	}
 
 }

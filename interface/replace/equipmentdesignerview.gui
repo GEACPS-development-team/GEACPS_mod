@@ -3,7 +3,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "countryequipmentdesignerview"
 		position = { x=0 y=0}
-		size = { width = 1092 height = 553 }
+		size = { width = 1092 height = 730 }
 		moveable = yes
 		fade_time = 500
 		fade_type = linear
@@ -18,13 +18,13 @@ guiTypes = {
 
 		iconType = {
 			name = "select_model"
-			position = { x=45 y=85 }	
+			position = { x=665 y=525 }	
 			quadTextureSprite = "GFX_3d_view_placeholder"
 		}		
 		
 		containerWindowType = {
 			name = "border_container"
-			position = { x=39 y=83 }
+			position = { x=659 y=523 }
 			size = { width = 96 height = 52 }
 
 			background = {
@@ -37,13 +37,13 @@ guiTypes = {
 
 		iconType = {
 			name = "btn_equipment_icon_bg"
-			position = { x=150 y=81 }	
+			position = { x=660 y=601 }	
 			spriteType = "GFX_eqipment_sprite_bg"
 		}		
 		
 		buttonType = {
 			name = "btn_equipment_icon"
-			position = { x=150 y=89 }	
+			position = { x=660 y=610 }	
 			spriteType = "GFX_locked_icon"
 			scale = 0.7
 		}		
@@ -51,17 +51,17 @@ guiTypes = {
 		iconType = {
 			name = "ship_category_icon"
 			spriteType = "GFX_ship_category_icon_small"
-			position = { x = 490 y = 56 }
+			position = { x = 852 y = 538 }
 		}
 		iconType = {
 			name = "role_icon_bg"
 			spriteType = "GFX_role_icon_bg"
-			position = { x = 452 y = 85 }
+			position = { x = 772 y = 525 }
 		}
 		
 		buttonType = {
 			name = "btn_role"
-			position = { x=460 y=92 }
+			position = { x=780 y=534 }
 			spriteType = "GFX_naval_equipment_role_icons"
 		}
 
@@ -81,7 +81,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "equipment_modules"
 			position = { x=13 y=146 }
-			size = { width=512 height= 350}
+			size = { width=512 height= 650}
 
 			background = {
 				name = "background"
@@ -90,7 +90,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "equipment_preview"
-				position = { x=2 y=49 }
+				position = { x=2 y=143 }
 				size = { width=512 height=260 }
 
 				background = {
@@ -109,8 +109,12 @@ guiTypes = {
 			@fixed_btn_mod_col_4 = 292
 			@fixed_btn_mod_col_5 = 365
 			@fixed_btn_mod_col_6 = 438
-			@fixed_btn_mod_row_icon = 300
-			@fixed_btn_mod_row_button = 302
+			@fixed_btn_mod_row_icon = 488
+			@fixed_btn_mod_row_button = 490
+			@fixed_btn_mod_row_icon_1 = 441
+			@fixed_btn_mod_row_button_1 = 442
+			@fixed_btn_mod_row_icon_2 = 392
+			@fixed_btn_mod_row_button_2 = 394
 
 			@custom_btn_mod_col_0 = 0
 			@custom_btn_mod_col_1 = 73  # +73
@@ -121,6 +125,10 @@ guiTypes = {
 			@custom_btn_mod_col_6 = 438
 			@custom_btn_mod_row_icon = 0
 			@custom_btn_mod_row_button = 2
+			@custom_btn_mod_row_icon_1 = 48
+			@custom_btn_mod_row_button_1 = 50
+			@custom_btn_mod_row_icon_2 = 95
+			@custom_btn_mod_row_button_2 = 97
 
 									
 
@@ -214,6 +222,179 @@ guiTypes = {
 				spriteType = "GFX_locked_icon"
 				pdx_tooltip_anchor = { below = no }
 			}
+			
+			iconType = {
+				name = "icn_custom_module_7"
+				position = { x=@fixed_btn_mod_col_0 y=@custom_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_7"
+				position = { x=@fixed_btn_mod_col_0 y=@custom_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+				pdx_tooltip_anchor = { below = no }
+			}
+
+			iconType = {
+				name = "icn_custom_module_8"
+				position = { x=@fixed_btn_mod_col_1 y=@custom_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_8"
+				position = { x=@fixed_btn_mod_col_1 y=@custom_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+				pdx_tooltip_anchor = { below = no }
+			}
+
+			iconType = {
+				name = "icn_custom_module_9"
+				position = { x=@fixed_btn_mod_col_2 y=@custom_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_9"
+				position = { x=@fixed_btn_mod_col_2 y=@custom_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+				pdx_tooltip_anchor = { below = no }
+			}
+
+			iconType = {
+				name = "icn_custom_module_10"
+				position = { x=@fixed_btn_mod_col_3 y=@custom_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_10"
+				position = { x=@fixed_btn_mod_col_3 y=@custom_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+				pdx_tooltip_anchor = { below = no }
+			}
+
+			iconType = {
+				name = "icn_custom_module_11"
+				position = { x=@fixed_btn_mod_col_4 y=@custom_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_11"
+				position = { x=@fixed_btn_mod_col_4 y=@custom_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+				pdx_tooltip_anchor = { below = no }
+			}
+
+			iconType = {
+				name = "icn_custom_module_12"
+				position = { x=@fixed_btn_mod_col_5 y=@custom_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_12"
+				position = { x=@fixed_btn_mod_col_5 y=@custom_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+				pdx_tooltip_anchor = { below = no }
+			}
+
+			iconType = {
+				name = "icn_custom_module_13"
+				position = { x=@fixed_btn_mod_col_6 y=@custom_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_13"
+				position = { x=@fixed_btn_mod_col_6 y=@custom_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+				pdx_tooltip_anchor = { below = no }
+			}
+			
+			
+			iconType = {
+				name = "icn_custom_module_14"
+				position = { x=@fixed_btn_mod_col_0 y=@custom_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_14"
+				position = { x=@fixed_btn_mod_col_0 y=@custom_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+
+			iconType = {
+				name = "icn_custom_module_15"
+				position = { x=@fixed_btn_mod_col_1 y=@custom_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_15"
+				position = { x=@fixed_btn_mod_col_1 y=@custom_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+
+			iconType = {
+				name = "icn_custom_module_16"
+				position = { x=@fixed_btn_mod_col_2 y=@custom_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_16"
+				position = { x=@fixed_btn_mod_col_2 y=@custom_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+
+			iconType = {
+				name = "icn_custom_module_17"
+				position = { x=@fixed_btn_mod_col_4 y=@custom_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_17"
+				position = { x=@fixed_btn_mod_col_4 y=@custom_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_custom_module_18"
+				position = { x=@fixed_btn_mod_col_5 y=@custom_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_18"
+				position = { x=@fixed_btn_mod_col_5 y=@custom_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_custom_module_19"
+				position = { x=@fixed_btn_mod_col_6 y=@custom_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_custom_module_19"
+				position = { x=@fixed_btn_mod_col_6 y=@custom_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_custom_module_20"
+				position = { x=@fixed_btn_mod_col_3 y=@custom_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+			buttonType = {
+				name = "btn_custom_module_20"
+				position = { x=@fixed_btn_mod_col_3 y=@custom_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+
 
 			iconType = {
 				name = "icn_fixed_module_0"
@@ -298,6 +479,170 @@ guiTypes = {
 				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_button }
 				spriteType = "GFX_locked_icon"
 			}
+			
+			iconType = {
+				name = "icn_fixed_module_7"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_7"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+			}
+
+			iconType = {
+				name = "icn_fixed_module_8"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_8"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+			}
+
+			iconType = {
+				name = "icn_fixed_module_9"
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_9"
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+			}
+
+			iconType = {
+				name = "icn_fixed_module_10"
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_10"
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+			}
+
+			iconType = {
+				name = "icn_fixed_module_11"
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_11"
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+			}
+			
+
+			iconType = {
+				name = "icn_fixed_module_12"
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_12"
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+			}
+			
+
+			iconType = {
+				name = "icn_fixed_module_13"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_icon_1 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_13"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_button_1 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_fixed_module_14"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_14"
+				position = { x=@fixed_btn_mod_col_0 y=@fixed_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_fixed_module_15"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_15"
+				position = { x=@fixed_btn_mod_col_1 y=@fixed_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_fixed_module_16"
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_16"
+				position = { x=@fixed_btn_mod_col_2 y=@fixed_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_fixed_module_17"
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_17"
+				position = { x=@fixed_btn_mod_col_4 y=@fixed_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_fixed_module_18"
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_18"
+				position = { x=@fixed_btn_mod_col_5 y=@fixed_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_fixed_module_19"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_19"
+				position = { x=@fixed_btn_mod_col_6 y=@fixed_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+			iconType = {
+				name = "icn_fixed_module_20"
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_icon_2 }
+				spriteType = "GFX_equipment_module_bg"
+			}
+
+			buttonType = {
+				name = "btn_fixed_module_20"
+				position = { x=@fixed_btn_mod_col_3 y=@fixed_btn_mod_row_button_2 }
+				spriteType = "GFX_locked_icon"
+			}
+
 
 		}
 
@@ -315,7 +660,7 @@ guiTypes = {
 
 			instantTextboxType = {
 					name = "base_stats_label"
-					position = { x = 14 y = 34 }
+					position = { x = 16 y = 34 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_BASE_STATS_LABEL"
 					maxWidth = 165
@@ -326,7 +671,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "base_stats"
-				position = { x = 10 y = 55 }
+				position = { x = 12 y = 55 }
 				size = { width = 176 height = 220 }
 				clipping = yes
 
@@ -349,7 +694,7 @@ guiTypes = {
 
 			instantTextboxType = {
 					name = "combat_stats_label"
-					position = { x = 187 y = 34 }
+					position = { x = 189 y = 34 }
 					font = "hoi4_typewriter22"
 					text = "DESIGNER_COMBAT_STATS_LABEL"
 					maxWidth = 165
@@ -360,7 +705,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "combat_stats"
-				position = { x = 179 y = 55 }
+				position = { x = 181 y = 56 }
 				size = { width = 182 height = 220 }
 				clipping = yes
 
@@ -383,7 +728,7 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "misc_stats_label"
-				position = { x = 362 y = 34 }
+				position = { x = 364 y = 34 }
 				font = "hoi4_typewriter22"
 				text = "FE_MISC_STATS"
 				maxWidth = 165
@@ -394,7 +739,7 @@ guiTypes = {
 
 			containerWindowType = {
 				name = "misc_stats"
-				position = { x = 354 y = 55 }
+				position = { x = 356 y = 57 }
 				size = { width = 200 height = 224 }
 				margin = { top = 3}
 				Orientation = UPPER_LEFT
@@ -439,7 +784,7 @@ guiTypes = {
 					name = "Background"
 					quadTextureSprite ="GFX_tiled_window_transparent"
 				}
-
+				
 				gridboxtype = {
 					name = "stats_grid"
 					position = { x = 0 y = 0 }
@@ -580,7 +925,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "role_icon_selector"
-			position = { x=500 y=82 }
+			position = { x=772 y=525 }
 			size = { width=312 height=53 }
 			
 			background = {
@@ -613,7 +958,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "reset_button"
-			position = { x=10 y=502 }
+			position = { x=10 y=685 }
 			quadTextureSprite ="GFX_button_reset_123x34"
 			buttonText = "EQUIPMENT_DESIGNER_RESET"
 			pdx_tooltip = "EQUIPMENT_DESIGNER_RESET_DESC"
@@ -623,7 +968,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "duplicate_button"
-			position = { x=140 y=502 }
+			position = { x=140 y=685 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "EQUIPMENT_DESIGNER_DUPLICATE"
 			pdx_tooltip = "EQUIPMENT_DESIGNER_DUPLICATE_DESC"
@@ -633,7 +978,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "auto_button"
-			position = { x=270 y=502 }
+			position = { x=270 y=685 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "EQUIPMENT_DESIGNER_AUTO_BUTTON"
 			buttonFont = "hoi_18mbs"
@@ -642,7 +987,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "save_button"
-			position = { x=400 y=502 }
+			position = { x=400 y=685 }
 			quadTextureSprite ="GFX_button_123x34"
 			buttonText = "EQUIPMENT_DESIGNER_SAVE"
 			buttonFont = "hoi_18mbs"
@@ -652,7 +997,7 @@ guiTypes = {
 		# drop down for ship names
 		dropDownBoxType = {
 			name = "equipment_names"
-			position = { x = 245 y = 51 }
+			position = { x = 245 y = 81 }
 			size = { width = 220 height = 30 }
 			
 
@@ -698,8 +1043,8 @@ guiTypes = {
 			
 			expandedWindow = {
 				name = "expanded_window"
-				position = { x=10 y= -160 }	
-				show_position = { x = 10 y = 25 }
+				position = { x=10 y= -110 }	
+				show_position = { x = 10 y = 35 }
 				show_animation_type = decelerated
 				hide_animation_type = accelerated
 				animation_time = 300
@@ -728,7 +1073,7 @@ guiTypes = {
 		# drop down for templates
 		dropDownBoxType = {
 			name = "equipments"
-			position = { x = 15 y = 51 }
+			position = { x = 15 y = 81 }
 			size = { width = 220 height = 30 }
 
 			containerWindowType = {
@@ -811,7 +1156,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_resources"
-			position = { x= 550 y= 511 }
+			position = { x= 550 y= 695 }
 			font = "hoi_18mbs"
 			maxWidth = 100
 			maxHeight = 25
@@ -821,7 +1166,7 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "refit_cost"
-			position = { x= 650 y=510 }
+			position = { x= 650 y=695 }
 			font = "hoi_18mbs"
 			maxWidth = 200
 			maxHeight = 25
@@ -831,9 +1176,9 @@ guiTypes = {
 
 		instantTextboxType = {
 			name = "production_value"
-			position = { x= 800 y=510 }
+			position = { x= 850 y=695 }
 			font = "hoi_18mbs"
-			maxWidth = 260
+			maxWidth = 210
 			maxHeight = 25
 			#pdx_tooltip = "EQUIPMENT_DESIGNER_PRODUCTION_COST_DESC"
 			format = right
@@ -844,9 +1189,7 @@ guiTypes = {
 			name = "module_selector_window"
 			position = { x=2 y=40 }
 			size = { width=538 height=464 }
-			margin = { top = 12 bottom = 12}
 			verticalScrollbar = "right_vertical_slider"
-#			smooth_scrolling = yes
 
 			background = {
 				name = "background"
