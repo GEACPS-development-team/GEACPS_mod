@@ -1,33 +1,20 @@
-state={
-	id=800
-	name="STATE_800" #Van
+state = {
+	id = 800
+	name = "STATE_800"
+	manpower = 365490
+	state_category = town
 
-	history={
+	history = {
 		owner = TUR
-		victory_points = {
-			11853 1 
-		}
+		add_core_of = TUR
+		add_core_of = KUR
 		buildings = {
 			infrastructure = 2
 		}
-		if = {
-			limit = {
-				has_dlc = "Battle for the Bosporus"
-			}
-			add_core_of = KUR
-		}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Battle for the Bosporus" }
-			}
-			add_core_of = TUR
-			add_core_of = KUR
-		}
+		victory_points = {	11853	1	}
 	}
-
-	provinces={
-		652 4583 7470 11880 12376 13121 9858 11853 6976 6991 10403 7454 10472
+	
+	provinces = {
+		652 4583 7470 11880 12376 9858 11853 6976 6991 10403 7454 10472
 	}
-	manpower = 365490
-	state_category = town
 }

@@ -16,11 +16,13 @@ scripted_gui = {
 			placerenaming_button_click = {
 				if = {
 					limit = {	has_global_flag = placerenaming_globalflag	}
-					disable_placerenaming = yes
+					clr_global_flag = placerenaming_globalflag
+					every_state = {	disable_placerenaming = yes	}
 					set_variable = {	global.placerenaming_frame = 1	}
 				}
 				else = {
-					enable_placerenaming = yes
+					set_global_flag = placerenaming_globalflag
+					every_state = {	enable_placerenaming = yes	}
 					set_variable = {	global.placerenaming_frame = 2	}
 				}
 			}
