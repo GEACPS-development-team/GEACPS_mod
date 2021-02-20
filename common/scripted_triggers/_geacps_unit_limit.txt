@@ -1,9 +1,0 @@
-has_reached_maximum_divisions = {
-	if = {
-		limit = { has_variable = num_actual_divisions }
-		check_variable = { num_actual_divisions > max_divisions }
-	}
-	else = {
-		check_variable = { num_divisions > max_divisions }
-	}
-}
