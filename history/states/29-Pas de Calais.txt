@@ -1,43 +1,26 @@
-
-state={
-	id=29
-	name="STATE_29"
-	manpower = 2976400
-	
+state = {
+	id = 29
+	name = "STATE_29"
+	manpower = 1168545
 	state_category = large_city
-	resources={
-		steel=42 # was: 112
-		aluminium=8 # was: 22
+	
+	resources = {
+		steel = 42
+		aluminium = 8
 	}
 
-	history={
+	history = {
 		owner = FRA
-		victory_points = {
-			575 5
-		}
-		victory_points = {
-			11483 10
-		}
-		victory_points = {
-			11548 15
-		}
+		add_core_of = FRA
 		buildings = {
 			infrastructure = 8
-			industrial_complex = 3
+			industrial_complex = 6
 			air_base = 10
-			575 = {
-				naval_base = 6
-			}
 		}
-		add_core_of = FRA
-		1939.1.1 = {
-			buildings = {
-				industrial_complex = 6
-			}
-		}
+		victory_points = {	11548	15	}
 	}
 
-	provinces={
-		575 3536 6504 9500 11483 11548 11606 
+	provinces = {
+		3536 6504 9500 11548  
 	}
 }

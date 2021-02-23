@@ -1,24 +1,174 @@
-enable_placerenaming ={
-	set_global_flag = placerenaming_globalflag
-	all_placerenames = yes
-}
-
 disable_placerenaming = {
-	clr_global_flag = placerenaming_globalflag
-	every_state = {
-		reset_state_name = yes
-		clr_state_flag = placerenamed_state_ja
-	}
+	reset_state_name = yes
+	clr_state_flag = placerenamed_state_ja
+	clr_state_flag = placerenamed_state_en
+	clr_state_flag = placerenamed_state_de
+	clr_state_flag = placerenamed_state_fr
+	clr_state_flag = placerenamed_state_it
+	clr_state_flag = placerenamed_state_ru
+	clr_state_flag = placerenamed_state_nl
+	clr_state_flag = placerenamed_state_lb
+	clr_state_flag = placerenamed_state_cs
+	clr_state_flag = placerenamed_state_pl
+	clr_state_flag = placerenamed_state_da
+	clr_state_flag = placerenamed_state_la
+	clr_state_flag = placerenamed_state_ch
 }
 
-all_placerenames = {
-	every_state = {
-		log = "[THIS.GetName]"
-		controller = { log = "[THIS.GetName]" }
-		
-		if = {	#Japan
-			limit = {	controller = {	country_ja_tag = yes	}	}
-			asia_placerenaming_ja = yes
+enable_placerenaming ={
+	if = {	#日本語
+		limit = {	controller = {	country_ja_tag = yes	}	placerenaming_ja = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ja	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ja	}
+			meta_effect = {	
+				text = {	set_state_name = [ja_state_flag]	}
+				ja_state_flag = "STATE_[THIS.GetId]_ja"
+			}
 		}
 	}
+	else_if = {	#英語
+		limit = {	controller = {	country_en_tag = yes	}	placerenaming_en = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_en	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_en	}
+			meta_effect = {	
+				text = {	set_state_name = [en_state_flag]	}
+				en_state_flag = "STATE_[THIS.GetId]_en"
+			}
+		}
+	}
+	else_if = {	#ドイツ語
+		limit = {	controller = {	country_de_tag = yes	}	placerenaming_de = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_de	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_de	}
+			meta_effect = {	
+				text = {	set_state_name = [de_state_flag]	}
+				de_state_flag = "STATE_[THIS.GetId]_de"
+			}
+		}
+	}
+	else_if = {	#フランス語
+		limit = {	controller = {	country_fr_tag = yes	}	placerenaming_fr = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_fr	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_fr	}
+			meta_effect = {	
+				text = {	set_state_name = [fr_state_flag]	}
+				fr_state_flag = "STATE_[THIS.GetId]_fr"
+			}
+		}
+	}
+	else_if = {	#イタリア語
+		limit = {	controller = {	country_it_tag = yes	}	placerenaming_it = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_it	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_it	}
+			meta_effect = {	
+				text = {	set_state_name = [it_state_flag]	}
+				it_state_flag = "STATE_[THIS.GetId]_it"
+			}
+		}
+	}
+	else_if = {	#ロシア語
+		limit = {	controller = {	country_ru_tag = yes	}	placerenaming_ru = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ru	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru	}
+			meta_effect = {	
+				text = {	set_state_name = [ru_state_flag]	}
+				ru_state_flag = "STATE_[THIS.GetId]_ru"
+			}
+		}
+	}
+	else_if = {	#ルクセンブルク語
+		limit = {	controller = {	tag = LUX	}	placerenaming_lb = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_lb	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_lb	}
+			meta_effect = {	
+				text = {	set_state_name = [lb_state_flag]	}
+				lb_state_flag = "STATE_[THIS.GetId]_lb"
+			}
+		}
+	}
+	else_if = {	#チェコ語
+		limit = {	controller = {	tag = CZE	}	placerenaming_cs = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_cs	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_cs	}
+			meta_effect = {	
+				text = {	set_state_name = [cs_state_flag]	}
+				cs_state_flag = "STATE_[THIS.GetId]_cs"
+			}
+		}
+	}
+	else_if = {	#ポーランド語
+		limit = {	controller = {	tag = POL	}	placerenaming_pl = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_pl	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_pl	}
+			meta_effect = {	
+				text = {	set_state_name = [pl_state_flag]	}
+				pl_state_flag = "STATE_[THIS.GetId]_pl"
+			}
+		}
+	}
+	else_if = {	#デンマーク語
+		limit = {	controller = {	tag = DEN	}	placerenaming_da = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_da	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_da	}
+			meta_effect = {	
+				text = {	set_state_name = [da_state_flag]	}
+				da_state_flag = "STATE_[THIS.GetId]_da"
+			}
+		}
+	}
+	else_if = {	#スウェーデン語
+		limit = {	controller = {	tag = SWE	}	placerenaming_sv = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_sv	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_sv	}
+			meta_effect = {	
+				text = {	set_state_name = [sv_state_flag]	}
+				sv_state_flag = "STATE_[THIS.GetId]_sv"
+			}
+		}
+	}
+	else_if = {	#トルコ語
+		limit = {	controller = {	tag = TUR	}	placerenaming_tr = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_tr	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_tr	}
+			meta_effect = {	
+				text = {	set_state_name = [tr_state_flag]	}
+				tr_state_flag = "STATE_[THIS.GetId]_tr"
+			}
+		}
+	}
+	else_if = {	#ギリシャ語
+		limit = {	controller = {	tag = GRE	}	placerenaming_el = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_el	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_el	}
+			meta_effect = {	
+				text = {	set_state_name = [el_state_flag]	}
+				el_state_flag = "STATE_[THIS.GetId]_el"
+			}
+		}
+	}
+	else_if = {	#ラテン語
+		limit = {	controller = {	country_la_tag = yes	}	placerenaming_la = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_la	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_la	}
+			meta_effect = {	
+				text = {	set_state_name = [la_state_flag]	}
+				la_state_flag = "STATE_[THIS.GetId]_la"
+			}
+		}
+	}
+	else = {	disable_placerenaming = yes	}
 }

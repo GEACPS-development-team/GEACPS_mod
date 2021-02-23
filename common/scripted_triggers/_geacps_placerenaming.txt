@@ -4,3 +4,220 @@ country_ja_tag = {
 		has_cosmetic_tag = COUNTRY_JAP
 	}
 }
+country_en_tag = {
+	OR = {
+		tag = ENG
+		tag = USA
+		tag = CAN
+		tag = AST
+		tag = NZL
+		tag = NFL
+	}
+}
+country_de_tag = {
+	OR = {
+		tag = GER
+		tag = WGR
+		tag = DDR
+		tag = SGR
+	}
+}
+country_fr_tag = {
+	OR = {
+		tag = FRA
+		tag = MCO
+		AND = {
+			is_subject_of = FRA
+			OR = {
+				has_autonomy_state = colony
+				has_autonomy_state = federation_of_colonies
+				has_autonomy_state = overseas_territory
+				has_autonomy_state = colony_and_protectorate
+				has_autonomy_state = protected_territory
+				has_autonomy_state = leased_territory
+				has_autonomy_state = mandate
+			}
+		}
+	}
+}
+country_it_tag = {
+	OR = {
+		tag = ITA
+		tag = SIC
+		tag = SRD
+	}
+}
+
+country_ru_tag = {
+	OR = {
+		tag = RUS
+		tag = SIB
+		tag = BAI
+	}
+}
+country_la_tag = {
+	OR = {
+		tag = VAT
+	}
+}
+
+placerenaming_ja = {
+	OR = {
+		state = 463
+		state = 989
+		
+	}
+}
+
+placerenaming_en = {
+	OR = {
+		state = 3
+		state = 4
+		state = 6
+		state = 8
+		state = 14
+		state = 15
+		state = 19
+		state = 27
+		state = 29
+		state = 34
+		state = 42
+		state = 51
+		state = 52
+		state = 54
+		state = 55
+		state = 57
+		state = 59
+		state = 60
+		state = 61
+		state = 62
+		state = 63
+		state = 64
+		state = 65
+		state = 66
+		state = 67
+		state = 631
+		state = 632
+		state = 635
+		state = 638
+		state = 646
+		state = 647
+		state = 648
+		state = 650
+		state = 863
+	}
+}
+placerenaming_de = {
+	OR = {
+		state = 5
+		state = 6
+		state = 9
+		state = 10
+		state = 12
+		state = 13
+		state = 17
+		state = 27
+		state = 28
+		state = 34
+		state = 39
+		state = 63
+		state = 66
+		state = 67
+		state = 648
+	}
+}
+placerenaming_fr = {
+	OR = {
+		state = 1
+		state = 3
+		state = 6
+		state = 8
+		state = 39
+		state = 42
+		state = 51
+		state = 52
+		state = 54
+		state = 55
+		state = 57
+		state = 59
+		state = 60
+		state = 61
+		state = 64
+		state = 65
+		state = 66
+		state = 67
+		state = 635
+		state = 880
+	}
+}
+placerenaming_it = {
+	OR = {
+		state = 3
+		state = 52
+	}
+}
+placerenaming_ru = {
+	OR = {
+		state = 5
+		state = 10
+		state = 13
+		state = 463
+		state = 537
+		state = 655
+		state = 657
+	}
+}
+placerenaming_lb = {
+	OR = {
+		state = 8
+	}
+}
+placerenaming_cs = {
+	OR = {
+		state = 9
+		state = 66
+		state = 67
+	}
+}
+placerenaming_pl = {
+	OR = {
+		state = 10
+		state = 12
+		state = 62
+	}
+}
+placerenaming_da = {
+	OR = {
+		state = 36
+		state = 58
+	}
+}
+placerenaming_sv = {
+	OR = {
+		state = 37
+	}
+}
+placerenaming_tr = {
+	OR = {
+		state = 46
+		state = 48
+	}
+}
+placerenaming_el = {
+	OR = {
+		state = 47
+	}
+}
+placerenaming_hu = {
+	OR = {
+		state = 45
+		state = 66
+		state = 67
+	}
+}
+placerenaming_la = {
+	OR = {
+		state = 12
+		state = 19
+	}
+}
