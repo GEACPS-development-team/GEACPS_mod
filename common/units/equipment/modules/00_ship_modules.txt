@@ -5169,5 +5169,56 @@ equipment_modules = {
 			convert_cost_ic = 100
 		}
 	}
+	ship_CIWS_1 = {
+		category = CIWS
+		add_stats = {
+			build_cost_ic = 500
+		}
+		multiply_stats = {
+			reliability = -0.05
+			anti_air_attack = 0.1
+		}
+		add_average_stats = {
+			naval_range = -100
+		}
+		can_convert_from = {
+			module_category = CIWS
+			convert_cost_ic = 200
+		}
+	}
+	ship_CIWS_2 = {
+		category = CIWS
+		add_stats = {
+			build_cost_ic = 550
+		}
+		multiply_stats = {
+			reliability = -0.05
+			anti_air_attack = 0.12
+		}
+		add_average_stats = {
+			naval_range = -105
+		}
+		can_convert_from = {
+			module_category = CIWS
+			convert_cost_ic = 200
+		}
+	}
+	ship_CIWS_3 = {
+		category = CIWS
+		add_stats = {
+			build_cost_ic = 600
+		}
+		multiply_stats = {
+			reliability = -0.05
+			anti_air_attack = 0.14
+		}
+		add_average_stats = {
+			naval_range = -110
+		}
+		can_convert_from = {
+			module_category = CIWS
+			convert_cost_ic = 200
+		}
+	}
 
 }
