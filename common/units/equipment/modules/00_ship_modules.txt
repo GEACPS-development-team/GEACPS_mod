@@ -5017,6 +5017,30 @@ equipment_modules = {
 			convert_cost_ic = 500
 		}
 	}
+	ssm_3 = {
+		category = ssm
+		parent = ssm_2
+		add_stats = {
+			build_cost_ic = 2500
+			lg_attack = 20
+			hg_attack = 20
+		}
+		multiply_stats = {
+			reliability = -0.05
+		}
+		add_average_stats = {
+			lg_armor_piercing = 35
+			hg_armor_piercing = 35
+		}
+		can_convert_from = {
+			module_category = ssm
+			convert_cost_ic = 1600
+		}
+		can_convert_from = {
+			module = ssm_1
+			convert_cost_ic = 300
+		}
+	}
 
 	sam_1 = {
 		category = sam
@@ -5169,6 +5193,7 @@ equipment_modules = {
 			convert_cost_ic = 100
 		}
 	}
+#CIWS
 	ship_CIWS_1 = {
 		category = CIWS
 		add_stats = {
