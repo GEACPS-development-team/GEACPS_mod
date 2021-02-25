@@ -1,0 +1,544 @@
+equipments = {
+
+	ship_hull_nuke_carrier = {
+		year = 1922
+		can_be_produced = {
+		}
+
+		is_archetype = yes
+		is_buildable = no
+		type = carrier
+		sprite = carrier
+		group_by = archetype
+		priority = 1000
+		
+		interface_category = interface_category_capital_ships
+		
+		upgrades = {
+			ship_deckspace_upgrade
+			carrier_armor_upgrade
+			ship_engine_upgrade
+			ship_reliability_upgrade			
+		}
+
+		module_slots = {
+			fixed_ship_deck_slot_1 = {
+				required = yes
+				allowed_module_categories = { ship_deck_space }
+				gfx = ship_deck_space_slot
+			}
+			fixed_ship_deck_slot_2 = {
+				required = no
+				allowed_module_categories = { ship_deck_space ship_carrier_armor }
+				gfx = ship_deck_space_slot
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_sonar_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar}
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = {  carrier_ship_nuclear_engine }
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_anti_air_cannon_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air_cannon }
+			}
+
+
+			fixed_ship_deck_slot_3 = {
+				required = no
+				allowed_module_categories = { ship_deck_space }
+				gfx = ship_deck_space_slot
+			}
+			fixed_ship_deck_slot_4 = {
+				required = no
+				allowed_module_categories = { ship_deck_space ship_carrier_armor }
+				gfx = ship_deck_space_slot
+			}
+			fixed_ship_fuel_storage_slot = {
+				required = no
+				allowed_module_categories = { ship_extra_fuel_tank }
+			}
+			fixed_ship_sonar_2_slot = {
+				required = no
+				allowed_module_categories = { ship_sonar}
+			}
+
+			fixed_ship_engine_2_slot = {
+				required = no
+				allowed_module_categories = { carrier_ship_engine carrier_ship_nuclear_engine }
+			}
+			fixed_ship_anti_air_2_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_anti_air_cannon_2_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air_cannon }
+			}
+
+
+			fixed_ship_deck_slot_5 = {
+				required = no
+				allowed_module_categories = { ship_deck_space }
+				gfx = ship_deck_space_slot
+			}
+			fixed_ship_deck_slot_6 = {
+				required = no
+				allowed_module_categories = { ship_deck_space ship_carrier_armor }
+				gfx = ship_deck_space_slot
+			}
+			fixed_ship_fire_extinguishing_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_extinguishing_system }
+			}
+			fixed_ship_engine_3_slot = {
+				required = no
+				allowed_module_categories = { carrier_ship_engine carrier_ship_nuclear_engine }
+			}
+			fixed_ship_anti_air_3_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_anti_air_cannon_3_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air_cannon }
+			}
+			
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					
+				}
+			}
+		}
+		
+		module_count_limit = {
+			category = ship_radar
+			count < 2
+		}
+		
+		default_modules = {
+			fixed_ship_deck_slot_1 = inherit
+			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_sonar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_anti_air_cannon_slot = inherit
+
+			fixed_ship_deck_slot_3 = inherit
+			fixed_ship_deck_slot_4 = inherit
+			fixed_ship_fuel_storage_slot = inherit
+			fixed_ship_sonar_2_slot = inherit
+			fixed_ship_engine_2_slot = inherit
+			fixed_ship_anti_air_2_slot = inherit
+			fixed_ship_anti_air_cannon_2_slot = inherit
+
+			fixed_ship_deck_slot_5 = inherit
+			fixed_ship_deck_slot_6 = inherit
+			fixed_ship_fire_extinguishing_system_slot = inherit
+			fixed_ship_engine_3_slot = inherit
+			fixed_ship_anti_air_3_slot = inherit
+			fixed_ship_anti_air_cannon_3_slot = inherit
+			front_1_custom_slot = empty
+			mid_1_custom_slot = empty
+		}
+		
+		lg_armor_piercing = 0
+		lg_attack = 0
+		
+		hg_armor_piercing = 0
+		hg_attack = 0
+		
+		torpedo_attack = 0
+		sub_attack = 0
+		
+		anti_air_attack = 0
+		
+		armor_value = 0
+
+		
+		surface_detection = 26
+		sub_detection = 5
+		surface_visibility = 30
+		naval_speed = 9.5
+		reliability = 0.80
+		
+		naval_range = 0
+		
+		max_strength = 250
+		
+
+		fuel_consumption = 0
+
+		# (Describes combat behaviour - hidden stat)
+		offensive_weapons = no
+		
+		build_cost_ic = 3000
+		resources = {
+			steel = 3
+			chromium = 1
+		}
+		
+		manpower = 600
+	}
+
+	ship_hull_nuke_carrier_1 = {
+		year = 1936
+		visual_level = 1
+		visual_tech_level_addition = 2
+		archetype = ship_hull_nuke_carrier
+		priority = 1000
+		
+		module_slots = {
+			fixed_ship_deck_slot_1 = inherit
+			fixed_ship_deck_slot_2 = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_sonar_slot = inherit
+			fixed_ship_engine_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_anti_air_cannon_slot = inherit
+
+			fixed_ship_deck_slot_3 = inherit
+			fixed_ship_deck_slot_4 = inherit
+			fixed_ship_fuel_storage_slot = inherit
+			fixed_ship_sonar_2_slot = inherit
+			fixed_ship_engine_2_slot = inherit
+			fixed_ship_anti_air_2_slot = inherit
+			fixed_ship_anti_air_cannon_2_slot = inherit
+
+			fixed_ship_deck_slot_5 = inherit
+			fixed_ship_deck_slot_6 = inherit
+			fixed_ship_fire_extinguishing_system_slot = inherit
+			fixed_ship_engine_3_slot = inherit
+			fixed_ship_anti_air_3_slot = inherit
+			fixed_ship_anti_air_cannon_3_slot = inherit
+
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+			front_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+				}
+			}
+			mid_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+
+				}
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+			rear_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+
+			front_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+			front_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+
+			mid_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+				}
+			}
+			mid_5_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+				}
+			}
+			mid_6_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+				}
+			}
+
+			rear_3_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+			rear_4_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+			front_5_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+			front_6_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+
+			mid_7_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+
+				}
+			}
+			mid_8_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_light_battery
+					ship_medium_battery
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+
+				}
+			}
+#			mid_9_custom_slot = {
+#				required = no
+#				allowed_module_categories = {
+#					ship_deck_space
+#					ship_carrier_armor
+#					ship_light_battery
+#					ship_medium_battery
+#					ship_anti_air
+#					ship_anti_air_cannon
+#					ssm
+#					sam
+#				}
+#			}
+			rear_5_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+
+				}
+			}
+			rear_6_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_deck_space
+					ship_carrier_armor
+					ship_anti_air
+					ship_anti_air_cannon
+					ssm
+					sam
+					CIWS
+				}
+			}
+		}
+	}
+
+}
