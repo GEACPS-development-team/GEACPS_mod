@@ -1,0 +1,1723 @@
+focus_tree = {
+	id = geacps_BAI_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BAI
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 22 y = 1210 }
+	
+	#トランスバイカルの未来系列国家方針-国家強化系列国家方針は537行目から
+	
+	focus = {				#トランスバイカルの未来
+		id = BAI_the_future_of_transbicals
+		icon = GFX_focus_jap_cast_the_die
+		x = 4 
+		y = 0
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_political_power = 50
+		}
+	}
+	
+	focus = {				#自由への行進
+		id = BAI_advance_to_freedom
+		icon = GFX_goal_generic_demand_territory
+		prerequisite = { focus = BAI_the_future_of_transbicals }
+		x = 0
+		y = 1
+		relative_position_id = BAI_the_future_of_transbicals
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_political_power = 50
+		}
+	}
+	
+	focus = {				#セミョーノフの権力維持
+		id = BAI_maintaining_power
+		icon = GFX_focus_generic_home_defense
+		prerequisite = { focus = BAI_advance_to_freedom }
+		x = -1
+		y = 1
+		relative_position_id = BAI_advance_to_freedom
+		mutually_exclusive = { focus = BAI_democratic_coup }
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_political_power = 50
+		}
+	}
+	
+	focus = {				#国家憲兵の強化
+		id = BAI_strengthening_the_national_military_police
+		icon = GFX_goal_generic_political_pressure
+		prerequisite = { focus = BAI_maintaining_power }
+		x = 0
+		y = 1
+		relative_position_id = BAI_maintaining_power
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_stability = 0.1
+		}
+	}
+	
+	focus = {				#独自憲法の配布
+		id = BAI_distribution_of_original_constitution
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = BAI_maintaining_power }
+		x = -2
+		y = 1
+		relative_position_id = BAI_maintaining_power
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_war_support = 0.1
+		}
+	}
+	
+	focus = {				#総統制へ
+		id = BAI_to_the_president_system
+		icon = GFX_focus_generic_strike_at_democracy1
+		prerequisite = { focus = BAI_distribution_of_original_constitution }
+		prerequisite = { focus = BAI_strengthening_the_national_military_police }
+		x = -1
+		y = 1
+		relative_position_id = BAI_strengthening_the_national_military_police
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_ideas = BAI_president_system
+		}
+	}
+	
+	focus = {				#研究財団の開設
+		id = BAI_research_slot_unlock
+		icon = GFX_focus_research
+		prerequisite = { focus = BAI_to_the_president_system }
+		x = 0
+		y = 1
+		relative_position_id = BAI_to_the_president_system
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_research_slot = 1
+		}
+	}
+	
+	focus = {				#独裁体制の確立
+		id = BAI_dictatorship
+		icon = GFX_focus_hol_united_netherlands
+		prerequisite = { focus = BAI_research_slot_unlock }
+		x = 0
+		y = 1
+		relative_position_id = BAI_research_slot_unlock
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+		}
+	}
+	
+	focus = {				#民主派クーデター
+		id = BAI_democratic_coup
+		icon = GFX_goal_continuous_suppression
+		prerequisite = { focus =BAI_advance_to_freedom }
+		x = 1
+		y = 1
+		relative_position_id = BAI_advance_to_freedom
+		mutually_exclusive = { focus = BAI_maintaining_power }
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#自由選挙
+		id = BAI_free_election
+		icon = GFX_goal_generic_forceful_treaty
+		prerequisite = { focus = BAI_democratic_coup }
+		x = 2
+		y = 1
+		relative_position_id =  BAI_democratic_coup
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#カデット
+		id = BAI_cadet
+		icon = GFX_goal_unknown
+		prerequisite = { focus = BAI_free_election }
+		x = -2
+		y = 1
+		relative_position_id =  BAI_free_election
+		mutually_exclusive = { focus = BAI_citizens_party }
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#ロシアの後継者
+		id = BAI_Russian_successor
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		prerequisite = { focus = BAI_cadet }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_cadet
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#国家研究所
+		id = BAI_research_slot_unlock_russian
+		icon = GFX_focus_research
+		prerequisite = { focus = BAI_Russian_successor }
+		x = -1
+		y = 1
+		relative_position_id = BAI_Russian_successor
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_research_slot = 1
+		}
+	}
+	
+	focus = {				#市民党
+		id = BAI_citizens_party
+		icon = GFX_goal_generic_national_unity
+		prerequisite = { focus = BAI_free_election }
+		x = 2
+		y = 1
+		relative_position_id =  BAI_free_election
+		mutually_exclusive = { focus = BAI_cadet }
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#庶民層への教育
+		id = BAI_research_slot_unlock_citizens
+		icon = GFX_focus_research
+		prerequisite = { focus = BAI_citizens_party }
+		x = 0
+		y = 1
+		relative_position_id = BAI_citizens_party
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_research_slot = 1
+		}
+	}
+	
+	focus = {				#憲法採択
+		id = BAI_constitution_adopted
+		icon = GFX_focus_hol_the_foundations_of_defense
+		prerequisite = { focus = BAI_citizens_party focus = BAI_cadet }
+		x = -2
+		y = 1
+		relative_position_id =  BAI_citizens_party
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#君主を戴く
+		id = BAI_monarch
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = BAI_constitution_adopted }
+		prerequisite = { focus = BAI_Russian_successor }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_constitution_adopted
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#大統領を選ぶ
+		id = BAI_president
+		icon = GFX_focus_generic_the_giant_wakes
+		prerequisite = { focus = BAI_constitution_adopted }
+		prerequisite = { focus = BAI_research_slot_unlock_citizens }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_constitution_adopted
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {				#極東の共和国
+		id = BAI_republic
+		icon = GFX_focus_fra_devalue_the_franc
+		prerequisite = { focus = BAI_research_slot_unlock_citizens }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_research_slot_unlock_citizens
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			
+		}
+	}
+	
+	#国家強化系国家方針
+	
+	focus = {				#チタの工業再編
+		id = BAI_industrial_restructuring
+		icon = GFX_goal_generic_construct_civ_factory
+		x = 14
+		y = 0
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			563 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {				#貧困層への仕事
+		id = BAI_work_for_the_poor
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = BAI_industrial_restructuring }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_industrial_restructuring
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_ideas = BAI_work_poor
+		}
+	}
+	
+	focus = {				#日本にならえ
+		id = BAI_japan
+		icon = GFX_focus_jap_pacific_guardian
+		prerequisite = { focus = BAI_work_for_the_poor }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_work_for_the_poor
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 2
+    			category = industry
+			}
+			563 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = industrial_complex
+					level = 4
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {				#オリガルヒの誕生
+		id = BAI_Oligarch
+		icon = GFX_focus_jap_zaibatsu
+		prerequisite = { focus = BAI_japan }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_japan
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+				add_ideas = BAI_oligarch_i
+		}
+	}
+	
+	focus = {				#資源の自活
+		id = BAI_resource
+		icon = GFX_goal_generic_oil_refinery
+		prerequisite = { focus = BAI_industrial_restructuring }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_industrial_restructuring
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			940 = {
+				add_resource = {
+					type = oil
+					amount = 50
+				}
+			}
+			939 = {
+				add_resource = {
+					type = oil
+					amount = 25
+				}
+			}
+		}
+	}
+	
+	focus = {				#鉱業の拡大
+		id = BAI_resource_steal
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = BAI_resource }
+		x = 0
+		y = 2
+		relative_position_id =  BAI_resource
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			564 = {
+				add_resource = {
+					type = steel
+					amount = 20
+				}
+				add_resource = {
+					type = chromium
+					amount = 34
+				}
+				add_resource = {
+					type = tungsten
+					amount = 28
+				}
+				add_resource = {
+					type = aluminium
+					amount = 8
+				}
+			}
+		}
+	}
+	
+	focus = {				#シベリア鉄道の改修
+		id = BAI_Siberian_railway
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BAI_resource_steal focus = BAI_Oligarch }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_resource_steal
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			564 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			563 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			890 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			561 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			889 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			409 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			408 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+		focus = {				#支線の整備
+		id = BAI_Branch_line
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = BAI_Siberian_railway }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_Siberian_railway
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			565 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			936 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			937 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			562 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			888 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			891 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			560 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {				#日本と交渉
+		id = BAI_japan_tech
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		prerequisite = { focus = BAI_Siberian_railway }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_Siberian_railway
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 2
+    			category = industry
+			}
+			657 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {				#トランスバイカル軍
+		id = BAI_BAI_army
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		x = 8
+		y = 0
+		relative_position_id =  BAI_industrial_restructuring
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			army_experience = 30
+		}
+	}
+	
+	focus = {				#空軍創設の予算案
+		id = BAI_BAI_air
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = BAI_BAI_army }
+		x = -4
+		y = 1
+		relative_position_id =  BAI_BAI_army
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			air_experience = 30
+		}
+	}
+	
+	focus = {				#戦闘機生産に注力
+		id = BAI_on_fighters
+		icon = GFX_goal_generic_air_fighter2
+		prerequisite = { focus = BAI_BAI_air }
+		mutually_exclusive = { focus = BAI_on_bombers }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_BAI_air
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_ideas = BAI_fighter
+		}
+	}
+	
+	focus = {				#爆撃機生産に注力
+		id = BAI_on_bombers
+		icon = GFX_goal_generic_air_bomber
+		prerequisite = { focus = BAI_BAI_air }
+		mutually_exclusive = { focus = BAI_on_fighters }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_BAI_air
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_ideas = BAI_bomber
+		}
+	} 
+	
+	focus = {				#正式な空軍へ
+		id = BAI_main_air
+		icon = GFX_goal_generic_build_airforce
+		prerequisite = { focus = BAI_on_fighters focus = BAI_on_bombers }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_on_fighters
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			air_experience = 100
+		}
+	}
+	
+	focus = {				#ドイツ軍の機体を研究
+		id = BAI_GER_air
+		icon = GFX_focus_ger_oppose_hitler
+		prerequisite = { focus = BAI_main_air }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_main_air
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 4
+    			category = air_equipment
+			}
+		}
+	}
+	
+	focus = {				#日本から機体の設計図を入手
+		id = BAI_JAP_air
+		icon = GFX_focus_jap_zero
+		prerequisite = { focus = BAI_main_air }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_main_air
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			custom_effect_tooltip = BAI_JAP_air_tt
+			hidden_effect = { set_technology = { fighter2 = 1
+												 CAS2 = 1
+												 naval_bomber2 = 1 } }
+		
+		}
+	}
+	
+	focus = {				#航空基地の増設
+		id = BAI_air_base
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BAI_main_air }
+		x = 0
+		y = 2
+		relative_position_id =  BAI_main_air
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			564 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			937 = {
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {				#日本から装備を購入
+		id = BAI_JAP_buy
+		icon = GFX_focus_generic_combined_arms
+		prerequisite = { focus = BAI_BAI_army }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_BAI_army
+		
+		cost = 1
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			hidden_effect = { set_technology = { improved_infantry_weapons = 1 } }
+			custom_effect_tooltip = BAI_JAP_buy_tt
+		}
+	}
+	
+	focus = {				#装備の研究に注力
+		id = BAI_equipment
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = BAI_BAI_army }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_BAI_army
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 4
+    			category = infantry_weapons
+			}
+		}
+	}
+	
+	focus = {				#歩兵装備の規格化
+		id = BAI_Standardization
+		icon = GFX_goal_continuous_repairments
+		prerequisite = { focus = BAI_equipment }
+		prerequisite = { focus = BAI_JAP_buy }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_JAP_buy
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_ideas = BAI_Standardization_idea
+		}
+	} 
+	
+	focus = {				#火力戦
+		id = BAI_firepower
+		icon = GFX_goal_generic_army_artillery2
+		prerequisite = { focus = BAI_Standardization }
+		mutually_exclusive = { focus = BAI_warfare }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_Standardization
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 4
+    			category = cat_superior_firepower
+			}
+		}
+	}
+	
+	focus = {				#入念なドクトリン
+		id = BAI_firepower_2
+		icon = GFX_goal_generic_army_artillery
+		prerequisite = { focus = BAI_firepower }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_firepower
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 4
+    			category = cat_superior_firepower
+			}
+		}
+	}
+	
+	focus = {				#機動戦
+		id = BAI_warfare
+		icon = GFX_goal_generic_army_motorized
+		prerequisite = { focus = BAI_Standardization }
+		mutually_exclusive = { focus = BAI_firepower }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_Standardization
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 4
+    			category = cat_mobile_warfare
+			}
+		}
+	}
+	
+	focus = {				#さらなる深みへ
+		id = BAI_warfare_2
+		icon = GFX_goal_generic_army_tanks
+		prerequisite = { focus = BAI_warfare }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_warfare
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 4
+    			category = cat_mobile_warfare
+			}
+		}
+	}
+	
+	focus = {				#補給物資
+		id = BAI_logistics
+		icon = GFX_focus_jap_strike_south
+		prerequisite = { focus = BAI_warfare_2 focus = BAI_firepower_2 }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_warfare_2
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 2
+    			category = logistics_tech
+			}
+		}
+	}
+	
+	focus = {				#トランスバイカルの戦車
+		id = BAI_Armor
+		icon = GFX_focus_NZL_bob_semple_tank
+		prerequisite = { focus = BAI_warfare_2 focus = BAI_firepower_2 }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_warfare_2
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 2
+    			category = armor
+			}
+		}
+	}
+	
+	focus = {				#砲兵の近代化
+		id = BAI_Artillery
+		icon = GFX_goal_generic_allies_build_infantry
+		prerequisite = { focus = BAI_warfare_2 focus = BAI_firepower_2 }
+		x = -3
+		y = 1
+		relative_position_id =  BAI_warfare_2
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 2
+    			category = artillery
+			}
+		}
+	}
+	
+	focus = {				#参謀本部
+		id = BAI_Staff
+		icon = GFX_focus_usa_build_the_pentagon
+		prerequisite = { focus = BAI_Artillery }
+		prerequisite = { focus = BAI_Armor }
+		prerequisite = { focus = BAI_logistics }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_logistics
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_ideas = BAI_staff_idea 
+		}
+	}
+	
+	focus = {				#海軍創設の予算案
+		id = BAI_BAI_navy
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = BAI_BAI_army }
+		x = 4
+		y = 1
+		relative_position_id =  BAI_BAI_army
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			navy_experience = 30
+		}
+	}
+	
+	focus = {				#チュミカン軍港
+		id = BAI_Navy_base
+		icon = GFX_goal_generic_air_doctrine
+		prerequisite = { focus = BAI_BAI_navy }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_BAI_navy
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			888 = {
+				add_building_construction = {
+					type = naval_base
+					province = 1772
+					level = 6
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {				#艦船設計図を購入
+		id = BAI_JAP_navy_buy
+		icon = GFX_focus_generic_navy_battleship2
+		prerequisite = { focus = BAI_BAI_navy }
+		x = -1
+		y = 1
+		relative_position_id =  BAI_BAI_navy
+		
+		cost = 1
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			hidden_effect = { set_technology = { basic_destroyer = 1 } }
+			custom_effect_tooltip = BAI_JAP_navy_tt
+		}
+	}
+	
+	focus = {				#海軍再建！
+		id = BAI_Navy_founded
+		icon = GFX_goal_generic_navy_battleship
+		prerequisite = { focus = BAI_JAP_navy_buy }
+		prerequisite = { focus = BAI_Navy_base }
+		x = 1
+		y = 1
+		relative_position_id =  BAI_JAP_navy_buy
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			888 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {				#潜水艦を発見
+		id = BAI_Submarine
+		icon = GFX_goal_generic_navy_submarine
+		prerequisite = { focus = BAI_Navy_founded }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_Navy_founded
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 2
+    			category = ss_tech
+			}
+		}
+	}
+	
+	focus = {				#海軍軍事顧問
+		id = BAI_Navy_Military_Advisor
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = BAI_Submarine }
+		x = 0
+		y = 1
+		relative_position_id =  BAI_Submarine
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 4
+    			category = naval_doctrine
+			}
+		}
+	}
+	
+	focus = {				#海兵隊を組織
+		id = BAI_Navy_marines
+		icon = GFX_goal_generic_navy_cruiser
+		prerequisite = { focus = BAI_Navy_Military_Advisor }
+		prerequisite = { focus = BAI_Staff }
+		x = 0
+		y = 2
+		relative_position_id =  BAI_Navy_Military_Advisor
+		
+		cost = 10
+		
+		ai_will_do = {
+		
+		}
+		
+		available = {
+		
+		}
+		
+		bypass = {
+
+		}
+		
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+    			uses = 2
+    			category = marine_tech
+			}
+		}
+	}
+}
