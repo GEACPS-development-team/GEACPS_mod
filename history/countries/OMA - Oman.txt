@@ -1,5 +1,6 @@
-﻿capital = 294
+﻿capital = 1112
 #oob = OMA_1946
+set_cosmetic_tag = OMA_muscat_sultanate
 
 set_convoys = 5
 
@@ -20,4 +21,14 @@ set_popularities = {
 	authoritative_democracy = 100
 	reactionary_authoritarianism = 0
 	national_populism = 0
+}
+
+create_dynamic_country = {
+	original_tag = OMA
+	set_country_flag = OMA_imamate_countryflag
+	set_cosmetic_tag = OMA_imamate
+	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+    transfer_state = 294
 }
