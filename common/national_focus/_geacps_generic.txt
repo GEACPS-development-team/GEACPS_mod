@@ -1,12 +1,11 @@
 focus_tree = {
-	id = generic
+	id = _geacps_generic_forcus
 	country = {
 		factor = 1
 	}
 	default = yes
-	focus = {
+	focus = {	#自国資本の強化
 		id = Strengthening_domestic_capital
-		text = 自国資本の強化
 		icon = GFX_focus_generic_the_giant_wakes
 		cost = 10.00
 		x = 4
@@ -26,9 +25,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#軍事力の強化
 		id = Strengthening_military_power
-		text = 軍事力の強化
 		icon = GFX_goal_generic_political_pressure
 		cost = 10.00
 		x = 14
@@ -37,9 +35,8 @@ focus_tree = {
 			add_stability = 0.1
 		}
 	}
-	focus = {
+	focus = {	#初期工業化
 		id = Initial_industrialization
-		text = 初期工業化
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
@@ -79,9 +76,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#軍事への注力 I
 		id = Focus_on_the_military_one
-		text = 軍事への注力 Ⅰ
 		icon = GFX_goal_generic_construct_mil_factory
 		cost = 10.00
 		prerequisite = {
@@ -122,9 +118,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#軍事への注力 II
 		id = Focus_on_the_military_two
-		text = 軍事への注力 Ⅱ
 		icon = GFX_focus_generic_army_tanks2
 		cost = 10.00
 		prerequisite = {
@@ -165,9 +160,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#軍事への注力 III
 		id = Focus_on_the_military_three
-		text = 軍事への注力 Ⅲ
 		icon = GFX_focus_generic_tank_production
 		cost = 10.00
 		prerequisite = {
@@ -208,9 +202,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#民間への注力 I
 		id = Focus_on_the_private_sector_one
-		text = 民間への注力 Ⅰ
 		icon = GFX_focus_generic_industry_1
 		cost = 10.00
 		prerequisite = {
@@ -251,9 +244,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#民間への注力 II
 		id = Focus_on_the_private_sector_two
-		text = 民間への注力 Ⅱ
 		icon = GFX_focus_generic_industry_2
 		cost = 10.00
 		prerequisite = {
@@ -294,9 +286,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#民間への注力 III
 		id = Focus_on_the_private_sector_three
-		text = 民間への注力 Ⅲ
 		icon = GFX_focus_generic_industry_3
 		cost = 10.00
 		prerequisite = {
@@ -337,9 +328,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#国土防衛への注力
 		id = Focus_on_national_defense
-		text = 国土防衛への注力
 		icon = GFX_goal_generic_defence
 		cost = 10.00
 		prerequisite = {
@@ -350,9 +340,8 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = {
+	focus = {	#核兵器の開発
 		id = Development_of_nuclear_weapons
-		text = 核兵器の開発
 		icon = GFX_focus_wonderweapons
 		cost = 10.00
 		prerequisite = {
@@ -362,9 +351,8 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
+	focus = {	#技術への投資
 		id = Investing_in_technology
-		text = 技術への投資
 		icon = GFX_goal_generic_scientific_exchange
 		cost = 10.00
 		prerequisite = {
@@ -376,9 +364,8 @@ focus_tree = {
 			add_research_slot = 1
 		}
 	}
-	focus = {
+	focus = {	#基礎電子工学への注力
 		id = Focus_on_basic_electronics
-		text = 基礎電子工学への注力
 		icon = GFX_goal_generic_production2
 		cost = 10.00
 		prerequisite = {
@@ -395,9 +382,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#建設速度の向上
 		id = Increased_construction_speed
-		text = 建設速度の向上
 		icon = GFX_goal_generic_construct_civilian
 		cost = 10.00
 		prerequisite = {
@@ -414,9 +400,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#産業への注力
 		id = Focus_on_industry
-		text = 産業への注力
 		icon = GFX_goal_generic_production
 		cost = 10.00
 		prerequisite = {
@@ -435,9 +420,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#生産能力の向上
 		id = Increased_production_capacity
-		text = 生産能力の向上
 		icon = GFX_goal_generic_positive_trade_relations
 		cost = 10.00
 		prerequisite = {
@@ -454,9 +438,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#インフラへの投資
 		id = Investing_in_infrastructure
-		text = インフラへの投資
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
@@ -496,9 +479,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#空軍
 		id = Air_Force
-		text = 空軍
 		icon = GFX_goal_generic_build_airforce
 		cost = 10.00
 		prerequisite = {
@@ -510,9 +492,8 @@ focus_tree = {
 			air_experience = 10
 		}
 	}
-	focus = {
+	focus = {	#他国からのレンドリース
 		id = Lend-Lease_from_other_countries
-		text = 他国からのレンドリース
 		icon = GFX_focus_generic_concessions
 		cost = 10.00
 		prerequisite = {
@@ -525,9 +506,8 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
+	focus = {	#独自の研究
 		id = Original_research
-		text = 独自の研究
 		icon = GFX_focus_yug_rogozarski
 		cost = 10.00
 		prerequisite = {
@@ -540,9 +520,8 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
+	focus = {	#海軍との連携
 		id = Cooperation_with_the_Navy
-		text = 海軍との連携
 		icon = GFX_goal_generic_major_alliance
 		cost = 10.00
 		prerequisite = {
@@ -556,9 +535,8 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
+	focus = {	#陸軍との連携
 		id = Cooperation_with_the_Army
-		text = 陸軍との連携
 		icon = GFX_goal_tripartite_pact
 		cost = 10.00
 		prerequisite = {
@@ -572,9 +550,8 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
+	focus = {	#戦略航空機の特化
 		id = Strategic_aircraft_specialization
-		text = 戦略航空機の特化
 		icon = GFX_goal_generic_air_bomber
 		cost = 10.00
 		prerequisite = {
@@ -588,9 +565,8 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = {
+	focus = {	#戦術航空機の特化
 		id = Tactical_aircraft_specialization
-		text = 戦術航空機の特化
 		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
@@ -604,9 +580,8 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = {
+	focus = {	#空軍基地の増設
 		id = Expansion_of_air_force_base
-		text = 空軍基地の増設
 		icon = GFX_goal_generic_air_fighter2
 		cost = 10.00
 		prerequisite = {
@@ -652,9 +627,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#ロケットの開発
 		id = Rocket_development
-		text = ロケットの開発
 		icon = GFX_focus_rocketry
 		cost = 10.00
 		prerequisite = {
@@ -664,9 +638,8 @@ focus_tree = {
 		y = 7
 
 	}
-	focus = {
+	focus = {	#海軍
 		id = Navy
-		text = 海軍
 		icon = GFX_goal_generic_build_navy
 		cost = 10.00
 		prerequisite = {
@@ -678,9 +651,8 @@ focus_tree = {
 			navy_experience = 10
 		}
 	}
-	focus = {
+	focus = {	#柔軟な海軍
 		id = Flexible_navy
-		text = 柔軟な海軍
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 10.00
 		prerequisite = {
@@ -693,9 +665,8 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
+	focus = {	#潜水艦への注力 I
 		id = Focus_on_submarines_one
-		text = 潜水艦への注力 Ⅰ
 		icon = GFX_goal_generic_navy_submarine
 		cost = 10.00
 		prerequisite = {
@@ -705,9 +676,8 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
+	focus = {	#潜水艦への注力 II
 		id = Focus_on_submarines_two
-		text = 潜水艦への注力 Ⅱ
 		icon = GFX_goal_generic_navy_anti_submarine
 		cost = 10.00
 		prerequisite = {
@@ -717,9 +687,8 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = {
+	focus = {	#大規模海軍
 		id = Large_navy
-		text = 大規模海軍
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10.00
 		prerequisite = {
@@ -732,9 +701,8 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
+	focus = {	#主力艦への注力
 		id = Focus_on_capital_ships
-		text = 主力艦への注力
 		icon = GFX_goal_generic_navy_battleship
 		cost = 10.00
 		prerequisite = {
@@ -744,9 +712,8 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
+	focus = {	#航空母艦への注力
 		id = Focus_on_aircraft_carriers
-		text = 航空母艦への注力
 		icon = GFX_goal_generic_navy_carrier
 		cost = 10.00
 		prerequisite = {
@@ -756,9 +723,8 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = {
+	focus = {	#海軍基地の増設
 		id = Expansion_of_naval_base
-		text = 海軍基地の増設
 		icon = GFX_focus_generic_cruiser2
 		cost = 10.00
 		prerequisite = {
@@ -809,9 +775,8 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
+	focus = {	#陸軍
 		id = Army
-		text = 陸軍
 		icon = GFX_goal_generic_axis_build_infantry
 		cost = 10.00
 		prerequisite = {
@@ -823,9 +788,8 @@ focus_tree = {
 			army_experience = 10
 		}
 	}
-	focus = {
+	focus = {	#機甲科への注力 I
 		id = Focus_on_armor_one
-		text = 機甲科への注力 Ⅰ
 		icon = GFX_goal_generic_army_tanks
 		cost = 10.00
 		prerequisite = {
@@ -838,9 +802,8 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
+	focus = {	#機甲科への注力 II
 		id = Focus_on_armor_two
-		text = 機甲科への注力 Ⅱ
 		icon = GFX_goal_continuous_armor_production
 		cost = 10.00
 		prerequisite = {
@@ -850,9 +813,8 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
+	focus = {	#砲兵装備への注力 I
 		id = Focus_on_artillery_equipment_one
-		text = 砲兵装備への注力 Ⅰ
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10.00
 		prerequisite = {
@@ -866,9 +828,8 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
+	focus = {	#砲兵装備への注力 II
 		id = Focus_on_artillery_equipment_two
-		text = 砲兵装備への注力 Ⅱ
 		icon = GFX_goal_generic_army_artillery
 		cost = 10.00
 		prerequisite = {
@@ -878,9 +839,8 @@ focus_tree = {
 		y = 4
 
 	}
-	focus = {
+	focus = {	#本土の要塞化
 		id = Mainland_fortification
-		text = 本土の要塞化
 		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
@@ -889,9 +849,8 @@ focus_tree = {
 		x = 2
 		y = 8
 	}
-	focus = {
+	focus = {	#歩兵装備への注力 I
 		id = Focus_on_infantry_equipment_one
-		text = 歩兵装備への注力 Ⅰ
 		icon = GFX_goal_generic_small_arms
 		cost = 10.00
 		prerequisite = {
@@ -904,9 +863,8 @@ focus_tree = {
 		y = 3
 
 	}
-	focus = {
+	focus = {	#ジェット機の開発
 		id = Jet_aircraft_development
-		text = ジェット機の開発
 		icon = GFX_goal_generic_air_doctrine
 		cost = 10.00
 		prerequisite = {
@@ -916,9 +874,8 @@ focus_tree = {
 		y = 8
 
 	}
-	focus = {
+	focus = {	#特殊部隊への注力
 		id = Focus_on_special_forces
-		text = 特殊部隊への注力
 		icon = GFX_goal_generic_special_forces
 		cost = 10.00
 		prerequisite = {
@@ -930,9 +887,8 @@ focus_tree = {
 		y = 5
 
 	}
-	focus = {
+	focus = {	#ドクトリンへの注力
 		id = Focus_on_doctrine
-		text = ドクトリンへの注力
 		icon = GFX_goal_generic_army_doctrines
 		cost = 10.00
 		prerequisite = {
@@ -942,9 +898,8 @@ focus_tree = {
 		y = 6
 
 	}
-	focus = {
+	focus = {	#歩兵装備への注力 II
 		id = Focus_on_infantry_equipment_two
-		text = 歩兵装備への注力 Ⅱ
 		icon = GFX_focus_BUL_condemn_macedonian_organizations
 		cost = 10.00
 		prerequisite = {

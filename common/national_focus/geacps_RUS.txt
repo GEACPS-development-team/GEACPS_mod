@@ -1,5 +1,5 @@
 focus_tree = {
-	id = RUS
+	id = geacps_RUS_forcus
 	country = {
 		factor = 0
 		modifier = {
@@ -10,7 +10,6 @@ focus_tree = {
 	default = no
 	focus = {
 		id = SOV_New_five_years_plan
-		text = 新五ヵ年計画
 		icon = GFX_focus_generic_treaty
 		cost = 10.00
 		x = 7
@@ -19,7 +18,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Martial_law
-		text = 戒厳令
 		icon = GFX_focus_generic_manpower
 		cost = 10.00
 		x = 5
@@ -28,7 +26,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Stalin's_speech
-		text = スターリンの演説
 		icon = GFX_focus_fra_loyalty_stalin
 		cost = 10.00
 		x = 7
@@ -37,7 +34,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Socialist_propaganda
-		text = 社会主義プロパガンダ
 		icon = GFX_goal_generic_propaganda
 		cost = 10.00
 		x = 9
@@ -46,7 +42,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Restarting_the_military
-		text = 軍隊の再始動
 		icon = GFX_focus_BUL_support_macedonian_organizations
 		cost = 10.00
 		x = 16
@@ -55,7 +50,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_New_industrial_plan
-		text = 新たな産業計画
 		icon = GFX_goal_generic_production2
 		cost = 10.00
 		prerequisite = {
@@ -67,7 +61,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Expand_urban_functions
-		text = 都市機能を拡大
 		icon = GFX_focus_spa_the_spanish_miracle
 		cost = 10.00
 		prerequisite = {
@@ -82,7 +75,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Encourage_movement_by_river
-		text = 河川による移動を奨励
 		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 10.00
 		prerequisite = {
@@ -94,7 +86,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Closed_city_concept
-		text = 閉鎖都市構想
 		icon = GFX_goal_generic_fortify_city
 		cost = 10.00
 		prerequisite = {
@@ -106,7 +97,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Follow_Weber
-		text = ウェーバーにならえ
 		icon = GFX_goal_continuous_increase_nu
 		cost = 10.00
 		prerequisite = {
@@ -120,8 +110,7 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_Appropriate infrastructure_investment
-		text = 適切なインフラ投資
+		id = SOV_Appropriate_infrastructure_investment
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
@@ -133,11 +122,10 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Comprehensive_research_facility_concept
-		text = 総合研究施設構想
 		icon = GFX_focus_research2
 		cost = 10.00
 		prerequisite = {
-			focus = SOV_Appropriate infrastructure_investment
+			focus = SOV_Appropriate_infrastructure_investment
 		}
 		x = 5
 		y = 5
@@ -145,7 +133,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_End_plan
-		text = 計画の終了
 		icon = GFX_goal_generic_production
 		cost = 10.00
 		prerequisite = {
@@ -160,7 +147,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Start_of_local_development
-		text = 地方開発の開始
 		icon = GFX_goal_generic_production2
 		cost = 10.00
 		prerequisite = {
@@ -172,7 +158,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Development_of_the_Kola
-		text = コラの開発
 		icon = GFX_goal_continuous_non_factory_construct
 		cost = 10.00
 		prerequisite = {
@@ -184,7 +169,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Ural_development
-		text = ウラルの開発
 		icon = GFX_goal_generic_construction2
 		cost = 10.00
 		prerequisite = {
@@ -196,7 +180,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Western_redevelopment
-		text = 西部の再開発
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10.00
 		prerequisite = {
@@ -208,7 +191,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_stability_for_the_time_being
-		text = ひとまずの安定
 		icon = GFX_goal_generic_neutrality_focus
 		cost = 10.00
 		prerequisite = {
@@ -226,7 +208,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Military_production_increase_plan
-		text = 軍事的増産計画
 		icon = GFX_focus_generic_tank_production
 		cost = 10.00
 		prerequisite = {
@@ -238,7 +219,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Conscription_reform
-		text = 徴兵改革
 		icon = GFX_focus_generic_little_entente
 		cost = 10.00
 		prerequisite = {
@@ -250,7 +230,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Unification_of_communist_ideals
-		text = 共産理想の統一
 		icon = GFX_goal_support_communism
 		cost = 10.00
 		prerequisite = {
@@ -265,7 +244,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Development_of_the_moscow
-		text = モスクワの開発
 		icon = GFX_focus_ger_strike_at_the_source
 		cost = 10.00
 		prerequisite = {
@@ -277,7 +255,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Development_of_the_Volga_basin
-		text = ヴォルガ川流域の開発
 		icon = GFX_goal_continuous_naval_production
 		cost = 10.00
 		prerequisite = {
@@ -289,7 +266,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Investing_in_research_institutes
-		text = 研究機関への投資
 		icon = GFX_focus_research
 		cost = 10.00
 		prerequisite = {
@@ -301,7 +277,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Cavalry_Modernization
-		text = 騎兵の近代化
 		icon = GFX_focus_cze_military_research_institute
 		cost = 10.00
 		prerequisite = {
@@ -313,7 +288,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Specialized_support_squadrons
-		text = 特化した支援中隊
 		icon = GFX_focus_secret_rearmament
 		cost = 10.00
 		prerequisite = {
@@ -328,7 +302,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Update_personal_firearms
-		text = 個人火器の更新
 		icon = GFX_goal_generic_air_production
 		cost = 10.00
 		prerequisite = {
@@ -340,7 +313,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_A_new_goddess_on_the_battlefield
-		text = 戦場に新しい女神を
 		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
 		cost = 10.00
 		prerequisite = {
@@ -352,7 +324,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Preparing_for_scorched_earth
-		text = 焦土戦への備え
 		icon = GFX_goal_continuous_suppression
 		cost = 10.00
 		prerequisite = {
@@ -367,7 +338,6 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Training_new_officers
-		text = 新たな将校の育成
 		icon = GFX_focus_mex_support_general_cedillo
 		cost = 10.00
 		prerequisite = {
@@ -379,7 +349,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Konev_Plan
-		text = コーネフ案
 		icon = GFX_goal_generic_army_tanks
 		cost = 10.00
 		prerequisite = {
@@ -397,7 +366,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Focus_on_mechanization
-		text = 機械化への注力
 		icon = GFX_focus_generic_tank_production
 		cost = 10.00
 		prerequisite = {
@@ -409,7 +377,6 @@ focus_tree = {
 	}
 	focus = {
 		id = decentralization_of_command
-		text = 指揮権の分散
 		icon = GFX_goal_generic_special_forces
 		cost = 10.00
 		prerequisite = {
@@ -421,7 +388,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Comprehensive_tank_operations
-		text = 戦車の総合運用
 		icon = GFX_focus_generic_tank_production
 		cost = 10.00
 		prerequisite = {
@@ -433,7 +399,6 @@ focus_tree = {
 	}
 	focus = {
 		id = The_All-Purpose_Tank_Initiative
-		text = 万能戦車構想
 		icon = GFX_focus_generic_license_production
 		cost = 10.00
 		prerequisite = {
@@ -445,7 +410,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Zhukov_Plan
-		text = ジューコフ案
 		icon = GFX_focus_generic_combined_arms
 		cost = 10.00
 		prerequisite = {
@@ -463,7 +427,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Principle_of_Center_of_Gravity
-		text = 重心の原則
 		icon = GFX_goal_continuous_armor_production
 		cost = 10.00
 		prerequisite = {
@@ -475,7 +438,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Overwhelm_by_firepower
-		text = 火力での圧倒
 		icon = GFX_goal_generic_army_artillery2
 		cost = 10.00
 		prerequisite = {
@@ -487,7 +449,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Reorganization_of_the_Air_Force
-		text = 空軍の再編成
 		icon = GFX_goal_generic_air_fighter
 		cost = 10.00
 		prerequisite = {
@@ -499,7 +460,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Focus_on_long-range_bombing
-		text = 遠距離爆撃への注力
 		icon = GFX_focus_yug_rogozarski
 		cost = 10.00
 		prerequisite = {
@@ -511,7 +471,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Focus_on_tactical_bombing
-		text = 戦略爆撃への注力
 		icon = GFX_goal_poland_goal
 		cost = 10.00
 		prerequisite = {
@@ -523,7 +482,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Focus_on_aircraft_production
-		text = 機体生産への注力
 		icon = GFX_goal_continuous_air_production
 		cost = 10.00
 		prerequisite = {
@@ -538,7 +496,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Specialization_in_proximity_support
-		text = 近接支援への注力
 		icon = GFX_goal_generic_air_naval_bomber
 		cost = 10.00
 		prerequisite = {
@@ -550,7 +507,6 @@ focus_tree = {
 	}
 	focus = {
 		id = alliance_between_land_an_air_forces
-		text = 陸空提携
 		icon = GFX_focus_generic_license_production
 		cost = 10.00
 		prerequisite = {
@@ -565,7 +521,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Focus_on_air_superiority
-		text = 制空への注力
 		icon = GFX_focus_yug_rogozarski
 		cost = 10.00
 		prerequisite = {
@@ -577,7 +532,6 @@ focus_tree = {
 	}
 	focus = {
 		id = night-bombing_regiment
-		text = 夜間爆撃連隊
 		icon = GFX_goal_continuous_air_production
 		cost = 10.00
 		prerequisite = {
@@ -592,7 +546,6 @@ focus_tree = {
 	}
 	focus = {
 		id = teacher_training
-		text = 師官教育
 		icon = GFX_goal_generic_intelligence_exchange
 		cost = 10.00
 		prerequisite = {
@@ -604,7 +557,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Rebuild_the_shipyard
-		text = 造船所の再整備
 		icon = GFX_goal_continuous_naval_production
 		cost = 10.00
 		prerequisite = {
@@ -616,7 +568,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Development_of_main_armament
-		text = 主力武装の開発
 		icon = GFX_focus_generic_cryptologic_bomb
 		cost = 10.00
 		prerequisite = {
@@ -631,7 +582,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Cruiser_Development
-		text = 巡洋艦の開発
 		icon = GFX_goal_generic_occupy_states_coastal
 		cost = 10.00
 		prerequisite = {
@@ -643,7 +593,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Modernization_of_the_submarine_fleet
-		text = 潜水艦隊の近代化
 		icon = GFX_goal_generic_navy_submarine
 		cost = 10.00
 		prerequisite = {
@@ -655,7 +604,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Reorganize_the_main_fleet
-		text = 主力艦隊を再編
 		icon = GFX_goal_generic_navy_battleship
 		cost = 10.00
 		prerequisite = {
@@ -670,7 +618,6 @@ focus_tree = {
 	}
 	focus = {
 		id = aircraft_carrier
-		text = 空母
 		icon = GFX_goal_generic_navy_carrier
 		cost = 10.00
 		prerequisite = {
@@ -685,7 +632,6 @@ focus_tree = {
 	}
 	focus = {
 		id = battleship
-		text = 戦艦
 		icon = GFX_goal_generic_navy_cruiser
 		cost = 10.00
 		prerequisite = {
@@ -700,7 +646,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Completed_large_ship
-		text = 完成された大型艦
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		cost = 10.00
 		prerequisite = {
@@ -712,22 +657,20 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Our_general_secretary
-		text = 我らが書記長
 		icon = GFX_goal_support_communism
 		cost = 10.00
 		prerequisite = {
 			focus = SOV_stability_for_the_time_being
 		}
 		mutually_exclusive = {
-			focus = Successor?
+			focus = Successor
 		}
 		x = 8
 		y = 9
 
 	}
 	focus = {
-		id = Successor?
-		text = 後継者？
+		id = Successor
 		icon = GFX_focus_spr_torchbearers_of_tomorrow
 		cost = 10.00
 		prerequisite = {
@@ -742,7 +685,6 @@ focus_tree = {
 	}
 	focus = {
 		id = Focus_on_torpedoes
-		text = 魚雷への注力
 		icon = GFX_goal_poland_goal
 		cost = 10.00
 		prerequisite = {
@@ -754,7 +696,6 @@ focus_tree = {
 	}
 	focus = {
 		id = ship-borne_plane
-		text = 艦載機
 		icon = GFX_goal_generic_air_fighter2
 		cost = 10.00
 		prerequisite = {
