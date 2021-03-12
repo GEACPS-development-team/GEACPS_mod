@@ -9,415 +9,912 @@ focus_tree = {
 	}
 	default = no
 	focus = {
-		id = geacps_ENG_third_poor_laws
-		icon = GFX_focus_hol_the_foundations_of_defense
-		cost = 10.00
-		x = 6
+		id = geacps_ENG_0
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 7
 		y = 0
 
 	}
 	focus = {
-		id = geacps_ENG_hope_still_remains
-		icon = GFX_goal_generic_demand_territory
+		id = geacps_ENG_8
+		icon = GFX_goal_unknown
 		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_third_poor_laws
-		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = geacps_ENG_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 1
+		y = 7
+
+	}
+	focus = {
+		id = geacps_ENG_26
+		icon = GFX_goal_unknown
+		cost = 10.00
 		mutually_exclusive = {
-			focus = geacps_ENG_general_election
+			focus = geacps_ENG_41
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = geacps_ENG_41
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = geacps_ENG_26
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = geacps_ENG_75
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 27
+		y = 0
+
+	}
+	focus = {
+		id = geacps_ENG_76
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 26
+		y = 1
+
+	}
+	focus = {
+		id = geacps_ENG_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = geacps_ENG_0
 		}
 		x = 4
 		y = 1
 
 	}
 	focus = {
-		id = geacps_ENG_social_democracy1
+		id = geacps_ENG_2
 		icon = GFX_goal_unknown
-		cost = 10.00
+		cost = 5.00
 		prerequisite = {
-			focus = geacps_ENG_hope_still_remains
+			focus = geacps_ENG_1
 		}
 		x = 3
 		y = 2
 
 	}
 	focus = {
-		id = geacps_ENG_social_democracy3
+		id = geacps_ENG_9
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_social_democracy1
+			focus = geacps_ENG_8
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = geacps_ENG_27
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_26
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = geacps_ENG_28
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_27
+		}
+		x = 3
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_29
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_28
+		}
+		x = 3
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = geacps_ENG_1
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = geacps_ENG_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_3
+		}
+		mutually_exclusive = {
+			focus = geacps_ENG_6
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = geacps_ENG_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_2
+		}
+		prerequisite = {
+			focus = geacps_ENG_3
 		}
 		x = 2
 		y = 3
 
 	}
 	focus = {
-		id = geacps_ENG_social_democracy6
+		id = geacps_ENG_7
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_social_democracy3
+			focus = geacps_ENG_4
+		}
+		prerequisite = {
+			focus = geacps_ENG_5
 		}
 		x = 1
 		y = 4
 
 	}
 	focus = {
-		id = geacps_ENG_social_democracy2
+		id = geacps_ENG_6
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_hope_still_remains
-		}
-		x = 5
-		y = 2
-
-	}
-	focus = {
-		id = geacps_ENG_social_democracy4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_social_democracy1
-		}
-		prerequisite = {
-			focus = geacps_ENG_social_democracy2
+			focus = geacps_ENG_3
 		}
 		mutually_exclusive = {
-			focus = geacps_ENG_social_democracy5
-		}
-		x = 4
-		y = 3
-
-	}
-	focus = {
-		id = geacps_ENG_social_democracy7
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_social_democracy3
-		}
-		prerequisite = {
-			focus = geacps_ENG_social_democracy4
-		}
-		x = 3
-		y = 4
-
-	}
-	focus = {
-		id = geacps_ENG_social_democracy5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_social_democracy2
-		}
-		mutually_exclusive = {
-			focus = geacps_ENG_social_democracy4
+			focus = geacps_ENG_5
 		}
 		x = 6
 		y = 3
 
 	}
 	focus = {
-		id = geacps_ENG_social_democracy8
+		id = geacps_ENG_11
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_social_democracy5
+			focus = geacps_ENG_6
 		}
 		x = 6
 		y = 4
 
 	}
 	focus = {
-		id = geacps_ENG_social_democracy10
+		id = geacps_ENG_12
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_social_democracy8
+			focus = geacps_ENG_11
 		}
 		x = 5
 		y = 5
 
 	}
 	focus = {
-		id = geacps_ENG_general_election
-		icon = GFX_goal_generic_forceful_treaty
+		id = geacps_ENG_10
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_third_poor_laws
+			focus = geacps_ENG_9
+			focus = geacps_ENG_12
 		}
-		mutually_exclusive = {
-			focus = geacps_ENG_hope_still_remains
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = geacps_ENG_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_11
 		}
-		x = 8
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = geacps_ENG_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_27
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_32
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_0
+		}
+		x = 10
 		y = 1
 
 	}
 	focus = {
-		id = geacps_ENG_conservative_party
-		icon = GFX_goal_support_democracy
+		id = geacps_ENG_15
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_general_election
+			focus = geacps_ENG_14
 		}
 		mutually_exclusive = {
-			focus = geacps_ENG_royalist
+			focus = geacps_ENG_46
 		}
 		x = 10
 		y = 2
 
 	}
 	focus = {
-		id = geacps_ENG_churchill
-		icon = GFX_focus_eng_motion_of_no_confidence
+		id = geacps_ENG_16
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_conservative_party
+			focus = geacps_ENG_15
 		}
 		mutually_exclusive = {
-			focus = geacps_ENG_Eden
+			focus = geacps_ENG_18
 		}
 		x = 8
 		y = 3
 
 	}
 	focus = {
-		id = geacps_ENG_churchill1
+		id = geacps_ENG_18
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_churchill
-		}
-		x = 8
-		y = 4
-
-	}
-	focus = {
-		id = geacps_ENG_Eden
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_conservative_party
+			focus = geacps_ENG_15
 		}
 		mutually_exclusive = {
-			focus = geacps_ENG_churchill
+			focus = geacps_ENG_16
 		}
 		x = 10
 		y = 3
 
 	}
 	focus = {
-		id = geacps_ENG_eden1
+		id = geacps_ENG_19
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_Eden
+			focus = geacps_ENG_18
 		}
 		x = 10
 		y = 4
 
 	}
 	focus = {
-		id = geacps_ENG_conservatism2
+		id = geacps_ENG_21
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_churchill1
-		}
-		prerequisite = {
-			focus = geacps_ENG_eden1
-		}
-		x = 9
-		y = 5
-
-	}
-	focus = {
-		id = geacps_ENG_conservatism1
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_conservative_party
+			focus = geacps_ENG_15
 		}
 		x = 12
 		y = 3
 
 	}
 	focus = {
-		id = geacps_ENG_conservatism3
+		id = geacps_ENG_22
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_conservatism1
+			focus = geacps_ENG_21
 		}
 		x = 11
 		y = 5
 
 	}
 	focus = {
-		id = geacps_ENG_conservatism4
+		id = geacps_ENG_24
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_conservatism1
+			focus = geacps_ENG_21
 		}
-		x = 13
-		y = 5
+		x = 12
+		y = 6
 
 	}
 	focus = {
-		id = geacps_ENG_royalist
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		id = geacps_ENG_42
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_general_election
+			focus = geacps_ENG_41
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = geacps_ENG_43
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_42
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_44
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_43
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_46
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_14
 		}
 		mutually_exclusive = {
-			focus = geacps_ENG_conservative_party
+			focus = geacps_ENG_15
 		}
 		x = 18
 		y = 2
 
 	}
 	focus = {
-		id = geacps_ENG_gards
+		id = geacps_ENG_47
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_royalist
+			focus = geacps_ENG_46
 		}
-		x = 15
+		x = 16
 		y = 3
 
 	}
 	focus = {
-		id = geacps_ENG_army
+		id = geacps_ENG_48
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_gards
+			focus = geacps_ENG_47
 		}
-		x = 15
+		x = 16
 		y = 4
 
 	}
 	focus = {
-		id = geacps_ENG_forced
+		id = geacps_ENG_49
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_army
+			focus = geacps_ENG_46
 		}
-		x = 16
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = geacps_ENG_52
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_48
+		}
+		prerequisite = {
+			focus = geacps_ENG_49
+		}
+		x = 17
 		y = 5
 
 	}
 	focus = {
-		id = geacps_ENG_bipartisan_cabinet
-		icon = GFX_focus_eng_the_kings_party
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_royalist
-		}
-		x = 17
-		y = 3
-
-	}
-	focus = {
-		id = geacps_ENG_purge_non_royalists
+		id = geacps_ENG_54
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_royalist
+			focus = geacps_ENG_49
 		}
 		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = geacps_ENG_55
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_54
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = geacps_ENG_56
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_55
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = geacps_ENG_57
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_55
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = geacps_ENG_60
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_57
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_61
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_60
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_50
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_46
+		}
+		x = 19
 		y = 4
 
 	}
 	focus = {
-		id = geacps_ENG_the_strong_country
-		icon = GFX_focus_eng_the_sun_never_sets
+		id = geacps_ENG_51
+		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_conservatism3
-			focus = geacps_ENG_conservatism2
+			focus = geacps_ENG_46
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = geacps_ENG_53
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_51
+		}
+		prerequisite = {
+			focus = geacps_ENG_49
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = geacps_ENG_65
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_55
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = geacps_ENG_66
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_65
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_67
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_65
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_68
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_66
+		}
+		prerequisite = {
+			focus = geacps_ENG_67
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_69
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_65
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_70
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_65
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_71
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_69
+		}
+		prerequisite = {
+			focus = geacps_ENG_70
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_16
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = geacps_ENG_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_17
+			focus = geacps_ENG_19
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = geacps_ENG_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_20
+		}
+		prerequisite = {
+			focus = geacps_ENG_22
 		}
 		x = 10
 		y = 6
 
 	}
 	focus = {
-		id = geacps_ENG_house_of_lords
+		id = geacps_ENG_30
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_royalist
+			focus = geacps_ENG_27
 		}
-		x = 19
-		y = 3
+		x = 5
+		y = 9
 
 	}
 	focus = {
-		id = geacps_ENG_great_charter_of_the_liberties
+		id = geacps_ENG_31
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_house_of_lords
+			focus = geacps_ENG_30
 		}
-		x = 19
-		y = 5
+		x = 5
+		y = 10
 
 	}
 	focus = {
-		id = geacps_ENG_god_save_the_king
-		icon = GFX_focus_eng_god_save_the_king
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_ENG_bipartisan_cabinet
-		}
-		prerequisite = {
-			focus = geacps_ENG_army
-		}
-		prerequisite = {
-			focus = geacps_ENG_house_of_lords
-		}
-		x = 17
-		y = 6
-
-	}
-	focus = {
-		id = geacps_ENG_social_democracy9
+		id = geacps_ENG_34
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_social_democracy7
+			focus = geacps_ENG_29
 		}
-		x = 3
-		y = 5
-
-	}
-	focus = {
-		id = geacps_ENG_social_democracy11
-		icon = GFX_goal_unknown
-		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_social_democracy9
-			focus = geacps_ENG_social_democracy10
+			focus = geacps_ENG_31
+		}
+		prerequisite = {
+			focus = geacps_ENG_33
+		}
+		mutually_exclusive = {
+			focus = geacps_ENG_35
 		}
 		x = 4
-		y = 6
+		y = 11
 
 	}
 	focus = {
-		id = geacps_ENG_social_democracy12
+		id = geacps_ENG_35
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = geacps_ENG_social_democracy8
+			focus = geacps_ENG_33
+		}
+		prerequisite = {
+			focus = geacps_ENG_31
+		}
+		prerequisite = {
+			focus = geacps_ENG_29
+		}
+		mutually_exclusive = {
+			focus = geacps_ENG_34
 		}
 		x = 6
-		y = 6
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_36
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_26
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = geacps_ENG_37
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_36
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_38
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_37
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_39
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_37
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_40
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_39
+		}
+		prerequisite = {
+			focus = geacps_ENG_38
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_45
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_44
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_58
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_57
+		}
+		prerequisite = {
+			focus = geacps_ENG_56
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = geacps_ENG_59
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_58
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = geacps_ENG_62
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_59
+		}
+		prerequisite = {
+			focus = geacps_ENG_61
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_63
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_61
+		}
+		prerequisite = {
+			focus = geacps_ENG_59
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_64
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_59
+		}
+		prerequisite = {
+			focus = geacps_ENG_61
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_72
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_68
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_73
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_71
+		}
+		prerequisite = {
+			focus = geacps_ENG_68
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = geacps_ENG_74
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_ENG_71
+		}
+		x = 25
+		y = 11
 
 	}
 }
