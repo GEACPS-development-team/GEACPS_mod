@@ -1,0 +1,33 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_clock_bg"
+		texturefile = "gfx/interface/special_event/clock_bg.dds"
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_clock_hour"
+		texturefile = "gfx/interface/special_event/clock_hour.dds"
+		noOfFrames = 12
+		animation_rate_fps = 0.016
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_clock_minutes"
+		texturefile = "gfx/interface/special_event/clock_minutes_2.dds"
+		noOfFrames = 30
+		animation_rate_fps = 0.1
+		looping = yes
+		play_on_show = yes
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_clock_second"
+		texturefile = "gfx/interface/special_event/clock_second.dds"
+		noOfFrames = 30
+		animation_rate_fps = 3
+		looping = yes
+		play_on_show = yes
+	}
+
+
+}

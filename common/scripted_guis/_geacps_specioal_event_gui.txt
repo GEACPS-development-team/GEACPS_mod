@@ -1,0 +1,31 @@
+scripted_gui = { #作ったGUIに効果を持たせるやつだよ
+	#デバッグメニュー本体
+	geacps_special_event_window = {#ここの名前は適当でいい
+		window_name = "geacps_special_event_window" #containerWindowTypeのnameを使用する
+		context_type = player_context #よぐわがんね
+		visible = { #このGUIが見える条件
+			has_country_flag = geacps_special_event_window_open #geacps_debug_menu_openedというflagを持っているか否か
+		}
+		
+		effects = {#ボタンとか押したときに起こること
+			example_button_name_click = { #ボタンのname_click
+#			example_write_effects = geacps #なんかeffect書いて
+			}
+		}
+		
+		triggers = {	#ボタンを実行できる条件?	}
+	}
+	#デバッグメニュー本体の上の方
+	geacps_special_event_button = { #ここの名前は適当でいい
+		window_name = "geacps_special_event_button" #containerWindowTypeのnameを使用する
+		context_type = player_context #よぐわがんね
+		visible = {	#このGUIが見える条件
+			has_country_flag = geacps_special_event_window_open #geacps_special_event_window_openというflagを持っているか否か
+		}
+		effects = { #ボタンとか押したときに起こること
+			geacps_special_event_button_click = { #ボタンのname_click
+				clr_country_flag = geacps_special_event_window_open #このボタンを押すとデバッグメニューが消える(またはESCAPEキーを押す)	}
+			}
+		}
+	}
+}

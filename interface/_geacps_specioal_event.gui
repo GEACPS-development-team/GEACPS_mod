@@ -1,0 +1,66 @@
+guiTypes = {#根幹
+	containerWindowType = { #GUIウィンドウを追加
+		name = "geacps_special_event_window" #GUIウィンドウの名前 scripted_guiのwindow_nameで使う
+		position = { x = 0 y = 0 } #GUIウィンドウがどこに表示されるか 0でいい
+		size = { width=1000 height=700} #GUIウィンドウのサイズ
+		Orientation = center #しらん
+		Origo = center #しらね
+		background = { #GUIの枠を作れる size = で手軽に大きさを指定できる
+			name = "Background"  #名前 適当でいい
+			quadTextureSprite = "GFX_tiled_bg" #GUIの枠のテクスチャ
+		}
+		instantTextBoxType = { #テキストを追加する
+			name = "geacps_special_event_text" #name 適当で
+			position = { x = 400 y = 60 } #位置 見ながら微調整して
+			font = "hoi_30header" #テキストのフォント
+			borderSize = {x = 0 y = 0} #しらん
+			text = "geacps_special_event_TEXT" #Localisationが効くテキスト "
+			maxWidth = 200 #テキストボックスの横の広さ 文字数に対して狭いと改行される
+			maxHeight = 24 #テキストボックスの縦の広さ 文字数に対して狭いとはみ出たテキストは消える
+			format = centre #中央揃えにする leftで左揃えにできる rightもあったはず
+		}
+		iconType = {
+			name ="image_clock_bg"
+			spriteType = "GFX_clock_bg"
+			position = { x = -150 y = -100 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="image_minutes"
+			spriteType = "GFX_clock_minutes"
+			position = { x = -150 y = -100 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="image_hour"
+			spriteType = "GFX_clock_hour"
+			position = { x = -150 y = -100 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="image_second"
+			spriteType = "GFX_clock_second"
+			position = { x = -150 y = -100 }
+			Orientation = center
+			alwaystransparent = yes
+		}
+	}
+	buttonType = { #GUIウィンドウを追加
+		name = "geacps_special_event_button" #GUIウィンドウの名前 scripted_guiのwindow_nameで使う
+		position = { x = 0 y = 0 } #GUIウィンドウがどこに表示されるか 0でいい
+		size = { width=100 height=100} #GUIウィンドウのサイズ
+		Orientation = center #しらん
+		Origo = center #しらね
+
+		buttontype = { #ボタン追加
+			name = "geacps_special_event_button"
+			position = { x = 50 y = 50 } 
+			quadTextureSprite = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = ""
+		}
+	}
+}

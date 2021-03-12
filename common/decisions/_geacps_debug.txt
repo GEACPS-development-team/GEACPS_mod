@@ -24,4 +24,17 @@ debug_decisions = {
 		add_ideas = GEACPS_idea_CHI_road_to_reunification4
 		}
 	}
+	debug_special_event = {
+		icon = generic_operation
+		complete_effect = {
+			set_country_flag = geacps_special_event_window_open
+		}
+	}
+	debug_special_even_escape = {
+		icon = generic_operation
+		complete_effect = {
+			clr_country_flag = geacps_special_event_window_open
+		}
+	}
+
 }
