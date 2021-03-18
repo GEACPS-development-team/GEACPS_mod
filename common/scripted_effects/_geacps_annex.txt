@@ -1,0 +1,30 @@
+create_new_puppet_country = {
+	hidden_effect = {
+		set_temp_variable = {	target_country = THIS	}
+		if = {
+			limit = {	country_exists = target_country	}
+			create_dynamic_country = {
+				original_tag = target_country
+				set_temp_variable = {	new_country = THIS	}
+				every_state = {
+					limit = {
+						is_core_of = new_country
+						is_fully_controlled_by = ROOT
+					}
+					var:new_country = {	transfer_state = PREV	}
+				}
+				ROOT = {	puppet = new_country	}
+			}
+		}
+		else = {
+			every_state = {
+				limit = {
+					is_core_of = target_country
+					is_fully_controlled_by = ROOT
+				}
+				var:target_country = {	transfer_state = PREV	}
+			}
+			ROOT = {	puppet = target_country	}
+		}
+	}
+}
