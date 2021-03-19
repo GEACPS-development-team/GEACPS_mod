@@ -6,6 +6,7 @@ autonomy_state = {
 	
 	allowed = {
 		NOT = { has_idea = colonial_government }
+		NOT = { has_idea = protectorate_government }
 		NOT = {	OVERLORD = {	tag = JAP	}	}
 		NOT = {	OVERLORD = {	tag = SOV	}	}
 		NOT = {	OVERLORD = { has_country_flag = soviet_union_flag }	}
