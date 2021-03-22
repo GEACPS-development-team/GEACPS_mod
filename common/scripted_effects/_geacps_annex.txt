@@ -1,30 +1,45 @@
-create_new_puppet_country = {
-	hidden_effect = {
-		set_temp_variable = {	target_country = THIS	}
-		if = {
-			limit = {	country_exists = target_country	}
-			create_dynamic_country = {
-				original_tag = target_country
-				set_temp_variable = {	new_country = THIS	}
-				every_state = {
-					limit = {
-						is_core_of = new_country
-						is_fully_controlled_by = ROOT
-					}
-					var:new_country = {	transfer_state = PREV	}
-				}
-				ROOT = {	puppet = new_country	}
-			}
+remove_government_ideas = {
+	remove_ideas = colonial_government
+	remove_ideas = protectorate_government
+	remove_ideas = mandate_government
+	remove_ideas = condominium_government
+	remove_ideas = leased_territory_government
+}
+
+set_up_puppet_states = {
+	remove_government_ideas = yes
+	set_temp_variable = {	new_country = THIS	}
+	every_state = {
+		limit = {
+			is_core_of = new_country
+			is_fully_controlled_by = ROOT
 		}
-		else = {
-			every_state = {
-				limit = {
-					is_core_of = target_country
-					is_fully_controlled_by = ROOT
-				}
-				var:target_country = {	transfer_state = PREV	}
-			}
-			ROOT = {	puppet = target_country	}
-		}
+		var:new_country = {	transfer_state = PREV	}
 	}
+}
+
+set_up_colony_states = {
+	remove_government_ideas = yes
+	set_temp_variable = {	new_country = THIS	}
+	every_state = {
+		limit = {
+			is_core_of = new_country
+			is_fully_controlled_by = ROOT
+		}
+		var:new_country = {	transfer_state = PREV	}
+	}
+	add_ideas = colonial_government
+}
+
+set_up_protectorate_states = {
+	remove_government_ideas = yes
+	set_temp_variable = {	new_country = THIS	}
+	every_state = {
+		limit = {
+			is_core_of = new_country
+			is_fully_controlled_by = ROOT
+		}
+		var:new_country = {	transfer_state = PREV	}
+	}
+	add_ideas = protectorate_government
 }

@@ -1,29 +1,24 @@
-state={
-	id=4
-	name="STATE_4"
+state = {
+	id = 4
+	name = "STATE_4"
 	manpower = 2595983
-	
-	resources={
-		oil=1 # was: 2
-	}
-	
 	state_category = city
 	
-	history={
+	resources = {	oil = 1	}
+	
+	history = {
 		owner = RUS
 		add_core_of = AUS
-		victory_points = {
-			11666 30.0 
-		}
 		buildings = {
 			infrastructure = 7
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 6
 		}
+		victory_points = {	11666	30	}
 	}
 
-	provinces={
+	provinces = {
 		704 3718 6690 6739 9527 9661 11666 6552 6723 11651
 	}
 }

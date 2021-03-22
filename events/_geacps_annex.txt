@@ -1,13 +1,82 @@
 add_namespace = geacps_annex
 country_event = {
-	id = geacps_annex.0
-	title = geacps_annex.0.t
-	desc = geacps_annex.0.d
+	id = geacps_annex.AFG
+	title = geacps_annex.AFG.t
+	desc = geacps_annex.AFG.d
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		name = geacps_annex.0.a
+		name = geacps_annex.AFG.0
 		ai_chance = {	base = 10	}
-		AFG = {	create_new_puppet_country = yes	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = AFG	}
+				create_dynamic_country = {
+					original_tag = AFG
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = AFG_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				AFG = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = AFG_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.AFG.1
+		ai_chance = {	base = 0	}
+		trigger = {	tag = ENG	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = AFG	}
+				create_dynamic_country = {
+					original_tag = AFG
+					set_up_colony_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				AFG = {
+					set_up_colony_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.AFG.2
+		ai_chance = {	base = 100	}
+		trigger = {	tag = ENG	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = AFG	}
+				create_dynamic_country = {
+					original_tag = AFG
+					set_up_protectorate_states = yes
+					ROOT = {
+						set_autonomy = {
+							target = new_country
+							autonomy_state = protected_state
+						}
+					}
+				}
+			}
+			else = {
+				AFG = {
+					set_up_protectorate_states = yes
+					ROOT = {
+						set_autonomy = {
+							target = new_country
+							autonomy_state = protected_state
+						}
+					}
+				}
+			}
+		}
 	}
 }

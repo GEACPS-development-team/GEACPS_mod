@@ -1,25 +1,22 @@
-state= {
-	id=2
-	name="STATE_2" # Latium
+state = {
+	id = 2
+	name = "STATE_2"
 	manpower = 2781971
-	
 	state_category = city
 
-	history={
+	history = {
 		owner = ITA
 		add_core_of = ITA
 		buildings = {
 			infrastructure = 8
-			air_base = 8
-			arms_factory = 1
 			industrial_complex = 4
-			11751 = {
-				naval_base = 5
-			}
+			arms_factory = 1
+			air_base = 8
+			11751 = {	naval_base = 5	}
 		}
 	}
 
-	provinces= {
+	provinces = {
 		6862 9794 11751 3885 11861 6926 11790
  	}
 }

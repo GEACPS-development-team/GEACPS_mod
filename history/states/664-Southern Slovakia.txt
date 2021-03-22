@@ -1,28 +1,26 @@
-state={
-	id=664
-	name="STATE_664"
+state = {
+	id = 664
+	name = "STATE_664"
 	manpower = 854300
-	
-	resources={
-		steel=13 # was: 20
-		chromium = 3 # was: 4
-	}
-	
 	state_category = town
+	
+	resources = {
+		steel = 13
+		chromium = 3
+	}
 	
 	history={
 		owner = CZE
 		add_core_of = CZE
-		victory_points = {
-			6573 1 
-		}
+		add_core_of = SLO
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
 		}
+		victory_points = {	6573	1	}
 	}
 	
-	provinces={
+	provinces = {
 		3565 3716 6561 6573 9537 11679 
 	}
 }
