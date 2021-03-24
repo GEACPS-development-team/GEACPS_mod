@@ -1,24 +1,22 @@
-state={
-	id=1071
-	name="STATE_1071"
-	manpower=368200
-	buildings_max_level_factor=1.000
-	
+state = {
+	id = 1071
+	name = "STATE_1071"
+	manpower = 368200
+	buildings_max_level_factor = 1
 	state_category = pastoral
 
-	history={
+	history = {
 		owner = TIB
 		add_core_of = TIB
-		victory_points = {
-			10856 1
-		}
+		add_core_of = CHI
+		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
-
 		}
+		victory_points = {	10856	1	}
 	}
 
-	provinces={
+	provinces = {
 		4407 5018 5102 8041 8059 10741 10856
 	}
 }

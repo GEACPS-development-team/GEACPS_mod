@@ -1,28 +1,26 @@
-state={
-	id=65
-	name="STATE_65"
+state = {
+	id = 65
+	name = "STATE_65"
 	manpower = 5592576
+	state_category = large_city
 	
-	resources={
-		steel=53 # was: 90
+	resources = {
+		steel = 53
 	}
 
-	state_category = large_city
-
-	history={
+	history = {
 		owner = DDR
 		add_core_of = DDR
-		victory_points = {
-			3535 5 
-		}
+		add_core_of = SAX
 		buildings = {
 			infrastructure = 7
-			arms_factory = 2
 			industrial_complex = 6
+			arms_factory = 2
 		}
+		victory_points = {	3535	5	}
 	}
 
-	provinces={
+	provinces = {
 		573 3514 3535 6559 9441 9471 9535 11481
 	}
 }

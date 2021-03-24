@@ -1,24 +1,21 @@
-state={
-	id=943
-	name="STATE_943"
-	manpower=500
-	buildings_max_level_factor=1
-	
+state = {
+	id = 943
+	name = "STATE_943"
+	manpower = 500
+	buildings_max_level_factor = 1
 	state_category="wasteland"
 
-	history={
+	history = {
 		owner = JAP
 		add_core_of = BAI
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 2
-			12207 = {
-				naval_base = 1
-			}
+			12207 = {	naval_base = 1	}
 		}
 	}
 
-	provinces={
+	provinces = {
 		12207
 	}
 }

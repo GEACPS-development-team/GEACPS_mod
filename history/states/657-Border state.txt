@@ -1,32 +1,24 @@
-state={
-	id=657
-	name="STATE_657" # Birobidzhan
+state = {
+	id = 657
+	name = "STATE_657"
 	manpower = 308380
-	
-	resources={
-		steel=18 # was: 24
-	}
-
 	state_category = town
+	
+	resources = {	steel = 18	}
 
-	history={
-		owner = JAP
+	history = {
+		owner = BAI
 		add_core_of = BAI
 		add_core_of = RUS
-		add_core_of = MAN
-		victory_points = {
-			957 15
-		}
 		buildings = {
 			infrastructure = 3
-			957 = {
-				naval_base = 8
-				coastal_bunker = 3
-			}
+			957 = {	naval_base = 8	}
+			957 = {	coastal_bunker = 3	}
 		}
+		victory_points = {	957	15	}
 	}
 
-	provinces={
+	provinces = {
 		957
 	}
 }
