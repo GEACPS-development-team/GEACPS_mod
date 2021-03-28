@@ -6,7 +6,7 @@
 	set_convoys = 5
 
 	set_politics = {
-		ruling_party = total_socialism
+		ruling_party = social_conservatism
 		last_election = "1945.11.4"
 		election_frequency = 48
 		elections_allowed = no
@@ -22,5 +22,13 @@
 		authoritative_democracy = 0
 		reactionary_authoritarianism = 0
 		national_populism = 0
+	}
+	
+	create_country_leader = {
+		name = "ティルディ・ゾルターン"
+		desc = ""
+		picture = "GFX_Zoltan_Tildy"
+		expire = "1961.8.3"
+		ideology = social_conservatism_ideology
 	}
 }
