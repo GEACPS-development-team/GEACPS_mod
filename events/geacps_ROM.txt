@@ -15,7 +15,7 @@ country_event = {#12月革命
 	}
 	
 	mean_time_to_happen = {
-		days = 2
+		days = 728
 	}
 	
 	option = {#全ての権力を共産党に...
@@ -27,6 +27,7 @@ country_event = {#12月革命
 				factor = 100
 			}
 		}
+		set_cosmetic_tag = ROM_republic_total_socialism_from_1947_to_1965
 		set_politics = {
 			ruling_party = total_socialism
 			last_election = "1939.6.1"
@@ -35,7 +36,7 @@ country_event = {#12月革命
 		}
 	}
 	
-	option = {#ルーマニアの臣民よ、王の元に団結せよ!
+	option = {#王に力を
 		name = geacps_ROM.1.b
  		ai_chance = {
 			factor = 50
@@ -45,6 +46,7 @@ country_event = {#12月革命
 			}
 		}
 		add_political_power = 100
-		add_stability = 1
+		add_stability = 0.1
+		leave_faction = yes
 	}
 }
