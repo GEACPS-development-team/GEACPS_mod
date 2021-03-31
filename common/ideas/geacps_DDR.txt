@@ -10,9 +10,8 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = hol_the_foundations_of_defense
 			modifier = {
-				political_power_factor = 1
-				political_power_gain = 1
-				political_power_cost = 1
+				political_power_factor = -0.1
+				political_power_cost = 0.01
 			}
 		}
 		DDR_potsdam_agreement = {#ポツダム協定
@@ -38,7 +37,7 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = generic_fascism_banned
 			modifier = {
-				national_populism_drift = -1
+				national_populism_drift = -0.01
 			}
 		}
 		DDR_hegemonic_party_system = {#ヘゲモニー政党制
@@ -51,11 +50,11 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = hol_haven_of_tolerance
 			modifier = {
-				total_socialism_drift = 1
-				radical_socialism = 1
-				social_democracy_drift = 1
-				social_liberalism_drift = 1
-				social_conservatism_drift = 1
+				total_socialism_drift = 0.01
+				radical_socialism_drift = 0.01
+				social_democracy_drift = 0.01
+				social_liberalism_drift = 0.01
+				social_conservatism_drift = 0.01
 			}
 		}
 		DDR_stasi = {#シュタージ

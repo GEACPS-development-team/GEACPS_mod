@@ -1,0 +1,50 @@
+add_namespace = geacps_ROM
+
+country_event = {#12月革命
+	id = geacps_ROM.1
+	title = geacps_ROM.1.t
+	desc = geacps_ROM.1.d
+	picture = GFX_event_test
+	
+	trigger = {
+		tag = ROM
+		or = {
+			has_government = authoritative_democracy
+			has_government = reactionary_authoritarianism
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {#全ての権力を共産党に...
+		name = geacps_ROM.1.a
+ 		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+		set_politics = {
+			ruling_party = total_socialism
+			last_election = "1939.6.1"
+			election_frequency = 48
+			elections_allowed = no
+		}
+	}
+	
+	option = {#ルーマニアの臣民よ、王の元に団結せよ!
+		name = geacps_ROM.1.b
+ 		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		add_political_power = 100
+		add_stability = 1
+	}
+}

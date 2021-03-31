@@ -32,7 +32,13 @@ create_dynamic_country = {
     transfer_state = 1090	1090 = {	add_core_of = PREV	}
 }
 
+#独立保障
+RHI = { give_guarantee = ENG }
+
+#軍事通行権
 WGR = { give_military_access = ENG }
+SIB = { give_military_access = ENG }
+RHI = { give_military_access = ENG }
 
 #傀儡, 植民地
 AST	= {	set_cosmetic_tag = AST_ENG-GBR	add_ideas = colonial_government	}

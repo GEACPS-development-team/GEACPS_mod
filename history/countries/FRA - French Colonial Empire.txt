@@ -16,7 +16,13 @@ create_dynamic_country = {
 	transfer_state = 320	320 = {	add_core_of = PREV	}
 }
 
+#独立保障
+RHI = { give_guarantee = FRA }
+
+#軍事通行権
 SGR = { give_military_access = FRA }
+SIB = { give_military_access = FRA }
+RHI = { give_military_access = FRA }
 
 #傀儡, 植民地
 CAY	= {	set_cosmetic_tag = COUNTRY_FRA	add_ideas = colonial_government	}
