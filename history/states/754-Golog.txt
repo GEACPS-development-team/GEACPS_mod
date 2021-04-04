@@ -1,22 +1,23 @@
-state={
-	id=754
-	name="STATE_754"
-	provinces={
-		1882 4536 10817 12815 
-	}
+state = {
+	id = 754
+	name = "STATE_754"
 	manpower=400000
 	buildings_max_level_factor=1.000
 	state_category = rural
-	history={
-		owner = XSM
-		add_core_of = XSM
+	
+	history = {
+		owner = CHI
 		add_core_of = CHI
+		add_core_of = XSM
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			arms_factory = 1
-
+			arms_factory = 1		
 		}
+	}
+
+	provinces = {
+		1882 4536 10817 12815 
 	}
 }

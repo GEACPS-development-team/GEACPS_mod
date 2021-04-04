@@ -1,20 +1,19 @@
-state={
-	id=594
-	name="STATE_594"
+state = {
+	id = 594
+	name = "STATE_594"
 	manpower = 6550000
-	
-	resources={
-		tungsten=11 # was: 14
-		steel = 8 # was: 10
-		chromium = 3 # was: 4
-	}
-	
 	state_category = town
+	
+	resources = {
+		tungsten = 11
+		steel = 8
+		chromium = 3
+	}
 
 	history={
-		owner = GXC
-		add_core_of = GXC
+		owner = CHI
 		add_core_of = CHI
+		add_core_of = GXC
 		add_core_of = PRC
 		buildings = {
 			infrastructure = 3
@@ -22,7 +21,7 @@ state={
 		}
 	}
 
-	provinces={
-		4121 4177 1469
+	provinces = {
+		1469 4121 4177
 	}
 }

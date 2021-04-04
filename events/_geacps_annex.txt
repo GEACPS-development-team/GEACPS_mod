@@ -36,13 +36,13 @@ country_event = {
 				limit = {	country_exists = AFG	}
 				create_dynamic_country = {
 					original_tag = AFG
-					set_up_colony_states = yes
+					set_up_colony_and_states = yes
 					ROOT = {	puppet = new_country	}
 				}
 			}
 			else = {
 				AFG = {
-					set_up_colony_states = yes
+					set_up_colony_and_states = yes
 					ROOT = {	puppet = new_country	}
 				}
 			}
@@ -57,7 +57,7 @@ country_event = {
 				limit = {	country_exists = AFG	}
 				create_dynamic_country = {
 					original_tag = AFG
-					set_up_protectorate_states = yes
+					set_up_protectorate_and_states = yes
 					ROOT = {
 						set_autonomy = {
 							target = new_country
@@ -68,7 +68,7 @@ country_event = {
 			}
 			else = {
 				AFG = {
-					set_up_protectorate_states = yes
+					set_up_protectorate_and_states = yes
 					ROOT = {
 						set_autonomy = {
 							target = new_country

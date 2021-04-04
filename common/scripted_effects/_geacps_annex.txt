@@ -6,7 +6,7 @@ remove_government_ideas = {
 	remove_ideas = leased_territory_government
 }
 
-set_up_puppet_states = {
+set_up_puppet_and_states = {
 	remove_government_ideas = yes
 	set_temp_variable = {	new_country = THIS	}
 	every_state = {
@@ -18,7 +18,7 @@ set_up_puppet_states = {
 	}
 }
 
-set_up_colony_states = {
+set_up_colony_and_states = {
 	remove_government_ideas = yes
 	set_temp_variable = {	new_country = THIS	}
 	every_state = {
@@ -31,7 +31,7 @@ set_up_colony_states = {
 	add_ideas = colonial_government
 }
 
-set_up_protectorate_states = {
+set_up_protectorate_and_states = {
 	remove_government_ideas = yes
 	set_temp_variable = {	new_country = THIS	}
 	every_state = {
