@@ -1,5 +1,6 @@
 focus_tree = {
 	id = geacps_JAP_focus
+	
 	country = {
 		factor = 0
 		modifier = {
@@ -7,9 +8,14 @@ focus_tree = {
 			tag = JAP
 		}
 	}
+	
 	default = no
-	#東条英機の暗殺未遂
-	focus = {
+	
+	continuous_focus_position = {
+		x = 50 y = 1100
+	}
+	
+	focus = {#東条英機の暗殺未遂
 		id = JAP_Attempted_assassination_of_Hideki_Tojo
 		icon = GFX_focus_jap_pacific_guardian
 		available = {
@@ -21,8 +27,8 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#臨時議会の開催
-	focus = {
+	
+	focus = {#臨時議会の開催
 		id = JAP_Holding_a_special_meeting_of_the_assembly
 		icon = GFX_focus_jap_pacific_guardian
 		x = 17
@@ -37,8 +43,8 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	#戒厳令の発布
-	focus = {
+	
+	focus = {#戒厳令の発布
 		id = JAP_Proclamation_of_Martial_Law
 		icon = GFX_focus_jap_pacific_guardian
 		x = 3
