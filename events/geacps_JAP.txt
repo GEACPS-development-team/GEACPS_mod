@@ -7,24 +7,49 @@ country_event = {#一・二二事件
 	picture = GFX_event_test
 	
 	fire_only_once = yes
+	hidden = yes
 	
 	trigger = {
 		tag = JAP
 		or = {
 			has_government = national_populism
 		}
-		date = 1946.1.2
+		date > 1946.1.1
+		date < 1946.1.5
 	}
 	
 	mean_time_to_happen = {
-		days = 1
-	}
+        days = 1
+    }
 	
-	option = {#首謀者を逮捕しろ！
+	option = {
 		name = geacps_JAP.1.a
  		ai_chance = {
 			factor = 100
 		}
+		JAP = {
+			country_event = {
+				id = geacps_JAP.2
+				days = 3
+			}
+		}
+	}
+}
+country_event = {#一・二二事件
+	id = geacps_JAP.2
+	title = geacps_JAP.2.t
+	desc = geacps_JAP.2.d
+	picture = GFX_event_test
+	
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {#首謀者を逮捕しろ！
+		name = geacps_JAP.2.a
+ 		ai_chance = {
+			factor = 100
+		}
+		add_stability = -0.1
 	}
 }
 country_event = {
