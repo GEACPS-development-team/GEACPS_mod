@@ -4,7 +4,7 @@ oob = SAF_1946
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = liberal_conservatism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -15,11 +15,19 @@ set_popularities = {
 	social_democracy = 0
 	social_liberalism = 0
 	classical_liberalism = 0
-	liberal_conservatism = 0
+	liberal_conservatism = 100
 	social_conservatism = 0
-	authoritative_democracy = 100
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "ギデオン・ブランド・バン・ジル"
+	desc = ""
+	picture = "GFX_Gideon_Brand_van_Zyl"
+	expire = "1956.11.1"
+	ideology = liberal_conservatism_ideology
 }
 
 NMB = {	add_ideas = mandate_government	set_cosmetic_tag = NMB_SAF	}

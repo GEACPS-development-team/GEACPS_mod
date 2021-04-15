@@ -18,6 +18,14 @@ set_popularities = {
 	liberal_conservatism = 0
 	social_conservatism = 0
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
-	national_populism = 100
+	reactionary_authoritarianism = 100
+	national_populism = 0
+}
+
+create_country_leader = {
+	name = "安藤利吉"
+	desc = ""
+	picture = "GFX_Rikichi_Ando"
+	#expire = "1946.4.19"
+	ideology = reactionary_authoritarianism_ideology
 }

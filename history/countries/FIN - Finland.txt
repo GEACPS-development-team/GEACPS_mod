@@ -26,7 +26,11 @@ set_popularities = {
 create_country_leader = {
 	name = "カール・グスタフ・エミール・マンネルヘイム"
 	desc = ""
-	picture = "gfx/leaders/FIN/Portrait_Carl_Gustaf_Emil_Mannerheim.dds"
+	picture = "GFX_Carl_Gustaf_Emil_Mannerheim"
 	expire = "1947.4.20"
 	ideology = authoritative_democracy_ideology
 }
+
+#傀儡, 植民地
+ALA	= {	add_ideas = colonial_government	}
+set_autonomy = {	target = ALA	autonomous_state = dominion	}
