@@ -30,3 +30,7 @@ create_country_leader = {
 	expire = "1947.4.20"
 	ideology = authoritative_democracy_ideology
 }
+
+#傀儡, 植民地
+ALA	= {	add_ideas = colonial_government	}
+set_autonomy = {	target = ALA	autonomous_state = dominion	}

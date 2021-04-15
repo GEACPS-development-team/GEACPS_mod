@@ -4,20 +4,28 @@
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
+	ruling_party = social_liberalism
+	last_election = "1944.11.7"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
+	social_democracy = 2
+	social_liberalism = 53
 	classical_liberalism = 0
 	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 100
+	social_conservatism = 45
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "レックスフォード・タグウェル"
+	desc = ""
+	picture = "GFX_Rexford_Tugwell"
+	expire = "1979.7.21"
+	ideology = social_liberalism_ideology
 }
