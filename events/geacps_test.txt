@@ -1,0 +1,17 @@
+add_namespace = GEACPS_test
+country_event = {
+	id = GEACPS_test.1
+	title = GEACPS_test.1.title
+	desc = GEACPS_test.1.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_test.1.a
+		ai_chance = { factor = 10 }
+		JAP = {
+			add_political_power = 100
+		}
+	}
+}
