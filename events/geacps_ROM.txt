@@ -7,19 +7,7 @@ country_event = {#12月革命
 	picture = GFX_event_test
 	
 	fire_only_once = yes
-	
-	trigger = {
-		tag = ROM
-		or = {
-			has_government = authoritative_democracy
-			has_government = reactionary_authoritarianism
-		}
-		date = 1947.12.30
-	}
-	
-	mean_time_to_happen = {
-		days = 1
-	}
+	is_triggered_only = yes
 	
 	option = {#全ての権力を共産党に...
 		name = geacps_ROM.1.a
