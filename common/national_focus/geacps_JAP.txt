@@ -21,39 +21,33 @@ focus_tree = {
 		available = {
 			hidden_trigger = { always = no }
 		}
-		x = 10
+		x = 3
 		y = 1
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {#臨時議会の開催
-		id = JAP_Holding_a_special_meeting_of_the_assembly
+	focus = {#臨時会の開会
+		id = JAP_Opening_of_the_extraordinary_session
 		icon = GFX_focus_jap_pacific_guardian
-		x = 17
+		x = 5
 		y = 2
 		prerequisite = {
-			focus = JAP_Attempted_assassination_of_Hideki_Tojo
-		}
-		mutually_exclusive = {
-			focus = JAP_Proclamation_of_Martial_Law
+			focus = JAP_1-22_Incident
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {#戒厳令の発布
-		id = JAP_Proclamation_of_Martial_Law
+	focus = {#戒厳の宣告
+		id = JAP_Declaration_of_martial_law
 		icon = GFX_focus_jap_pacific_guardian
-		x = 3
+		x = 1
 		y = 2
 		prerequisite = {
-			focus = JAP_Attempted_assassination_of_Hideki_Tojo
-		}
-		mutually_exclusive = {
-			focus = JAP_Holding_a_special_meeting_of_the_assembly
+			focus = JAP_1-22_Incident
 		}
 		cost = 4.28
 		completion_reward = {
