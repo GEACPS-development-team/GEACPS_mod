@@ -1,13 +1,14 @@
 add_namespace = geacps_annex
 country_event = {
-	id = geacps_annex.AFG
-	title = geacps_annex.AFG.t
-	desc = geacps_annex.AFG.d
+	id = geacps_annex.1
+	title = geacps_annex.1.t
+	desc = geacps_annex.1.d
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		name = geacps_annex.AFG.0
+		name = geacps_annex.1.0
 		ai_chance = {	base = 10	}
+		trigger = {	NOT = {	tag = ENG	}	}
 		hidden_effect = {
 			if = {
 				limit = {	country_exists = AFG	}
@@ -28,7 +29,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = geacps_annex.AFG.1
+		name = geacps_annex.1.1
 		ai_chance = {	base = 0	}
 		trigger = {	tag = ENG	}
 		hidden_effect = {
@@ -49,7 +50,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = geacps_annex.AFG.2
+		name = geacps_annex.1.2
 		ai_chance = {	base = 100	}
 		trigger = {	tag = ENG	}
 		hidden_effect = {
@@ -80,3 +81,656 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = geacps_annex.2
+	title = geacps_annex.2.t
+	desc = geacps_annex.2.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.2.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = ARM	}
+				create_dynamic_country = {
+					original_tag = ARM
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = AFG_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				ARM = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = ARM_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.3
+	title = geacps_annex.3.t
+	desc = geacps_annex.3.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.3.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = AZR	}
+				create_dynamic_country = {
+					original_tag = AZR
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = AZR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				AZR = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = AZR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.4
+	title = geacps_annex.4.t
+	desc = geacps_annex.4.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.4.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = BAN	}
+				create_dynamic_country = {
+					original_tag = BAN
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = BAN_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				BAN = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = BAN_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.5
+	title = geacps_annex.5.t
+	desc = geacps_annex.5.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.5.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = BHU	}
+				create_dynamic_country = {
+					original_tag = BHU
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = BHU_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				BHU = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = BHU_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.6
+	title = geacps_annex.6.t
+	desc = geacps_annex.6.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.6.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = BRM	}
+				create_dynamic_country = {
+					original_tag = BRM
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = BRM_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				BRM = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = BRM_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.6.1
+		ai_chance = {	base = 0	}
+		trigger = {	tag = ENG	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = BRM	}
+				create_dynamic_country = {
+					original_tag = BRM
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				BRM = {
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.7
+	title = geacps_annex.7.t
+	desc = geacps_annex.7.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.7.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = CAM	}
+				create_dynamic_country = {
+					original_tag = CAM
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = CAM_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				CAM = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = CAM_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.8
+	title = geacps_annex.8.t
+	desc = geacps_annex.8.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.8.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = CHI	}
+				create_dynamic_country = {
+					original_tag = CHI
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = CHI_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				CHI = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = CHI_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.8.1
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			country_event = geacps_annex.10
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.9
+	title = geacps_annex.9.t
+	desc = geacps_annex.9.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.9.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = GEO	}
+				create_dynamic_country = {
+					original_tag = GEO
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = GEO_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				GEO = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = GEO_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.10
+	title = geacps_annex.10.t
+	desc = geacps_annex.10.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.10.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = GXC	}
+				create_dynamic_country = {
+					original_tag = GXC
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = GXC_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				GXC = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = GXC_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.11
+	title = geacps_annex.11.t
+	desc = geacps_annex.11.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.11.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = INS	}
+				create_dynamic_country = {
+					original_tag = INS
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = INS_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				INS = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = INS_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.11.1
+		ai_chance = {	base = 0	}
+		trigger = {	tag = HOL	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = INS	}
+				create_dynamic_country = {
+					original_tag = INS
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				INS = {
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.12
+	title = geacps_annex.12.t
+	desc = geacps_annex.12.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.12.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = IRQ	}
+				create_dynamic_country = {
+					original_tag = IRQ
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = IRQ_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				IRQ = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = IRQ_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.12.1
+		ai_chance = {	base = 0	}
+		trigger = {	tag = ENG	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = IRQ	}
+				create_dynamic_country = {
+					original_tag = IRQ
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				IRQ = {
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.13
+	title = geacps_annex.13.t
+	desc = geacps_annex.13.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.13.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = JAP	}
+				create_dynamic_country = {
+					original_tag = JAP
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = JAP_state
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				JAP = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = JAP_state
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.14
+	title = geacps_annex.14.t
+	desc = geacps_annex.14.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.14.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = JOR	}
+				create_dynamic_country = {
+					original_tag = JOR
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = JOR_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				JOR = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = JOR_kingdom
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.14.1
+		ai_chance = {	base = 0	}
+		trigger = {	tag = ENG	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = JOR	}
+				create_dynamic_country = {
+					original_tag = JOR
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				JOR = {
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.15
+	title = geacps_annex.15.t
+	desc = geacps_annex.15.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.15.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = KAZ	}
+				create_dynamic_country = {
+					original_tag = KAZ
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KAZ_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				KAZ = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KAZ_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.16
+	title = geacps_annex.16.t
+	desc = geacps_annex.16.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.16.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = KOR	}
+				create_dynamic_country = {
+					original_tag = KOR
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KOR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				KOR = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KOR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.17
+	title = geacps_annex.17.t
+	desc = geacps_annex.17.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.17.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = KUR	}
+				create_dynamic_country = {
+					original_tag = KUR
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KUR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				KUR = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KUR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.18
+	title = geacps_annex.18.t
+	desc = geacps_annex.18.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.18.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = KUW	}
+				create_dynamic_country = {
+					original_tag = KUW
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KUW_state
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				KUW = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KUW_state
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+	option = {
+		name = geacps_annex.18.1
+		ai_chance = {	base = 0	}
+		trigger = {	tag = ENG	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = KUW	}
+				create_dynamic_country = {
+					original_tag = KUW
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				KUW = {
+					set_up_colony_and_states = yes
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = geacps_annex.19
+	title = geacps_annex.19.t
+	desc = geacps_annex.19.d
+	#picture = 
+	is_triggered_only = yes
+	option = {
+		name = geacps_annex.19.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = KYR	}
+				create_dynamic_country = {
+					original_tag = KYR
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KYR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+			else = {
+				KYR = {
+					set_up_puppet_and_states = yes
+					set_cosmetic_tag = KYR_republic
+					ROOT = {	puppet = new_country	}
+				}
+			}
+		}
+	}
+}
+

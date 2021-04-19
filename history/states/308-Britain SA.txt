@@ -1,29 +1,23 @@
+state = {
+	id = 308
+	name = "STATE_308"
+	manpower = 25678
+	buildings_max_level_factor = 1
+	state_category = tiny_island
 
-state={
-	id=308
-	name="STATE_308"
-
-	history={
-		owner = ENG
+	history = {
+		owner = LEW
+		add_core_of = LEW
+		add_core_of = SKN
+		add_core_of = MSR
 		buildings = {
 			infrastructure = 4
-			4450 = {
-				naval_base = 1
-
-			}
-			7123 = {
-				naval_base = 1
-
-			}
-
+			4450 = {	naval_base = 1	}
+			7123 = {	naval_base = 1	}
 		}
-
 	}
 
-	provinces={
-		4450 
+	provinces = {
+		4450
 	}
-	manpower=25678
-	buildings_max_level_factor=1.000
-	state_category=tiny_island
 }

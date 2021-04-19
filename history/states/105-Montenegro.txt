@@ -1,33 +1,28 @@
-state={
-	id=105
-	name="STATE_105"
-	manpower=895500
-	buildings_max_level_factor=1.000
+state = {
+	id = 105
+	name = "STATE_105"
+	manpower = 895500
+	buildings_max_level_factor = 1
+	state_category = rural
 	
-	resources={
-		chromium=20.000
-		aluminium=70.000
+	resources = {
+		chromium = 20
+		aluminium = 70
 	}
-	
-	state_category=rural
 
-	history={
-		owner = SER
+	history = {
+		owner = MNT
 		add_core_of = MNT
 		add_core_of = YUG
-		victory_points = {
-			9809 3
-		}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			9809 = {
-				naval_base = 1
-			}
+			9809 = {	naval_base = 1	}
 		}
+		victory_points = {	9809	3	}
 	}
 
-	provinces={
+	provinces = {
 		937 6913 9809 9821 11858 
 	}
 }

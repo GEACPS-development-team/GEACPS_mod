@@ -1,17 +1,21 @@
-state={
-	id=1120
-	name="STATE_1120"
+state = {
+	id = 1120
+	name = "STATE_1120"
 	state_category = city
+	buildings_max_level_factor = 1
+	manpower = 1000
+
 	history = {
-		owner = ENG
-		add_core_of = ENG
+		owner = VIR
+		add_core_of = VIR
+		add_core_of = AGU
+
 		buildings = {
 			infrastructure = 3
 		}
 	}
-	provinces={
+
+	provinces = {
 		13084 
 	}
-	manpower=1000
-	buildings_max_level_factor=1.000
 }

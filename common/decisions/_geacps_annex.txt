@@ -3,6 +3,7 @@ annexation_decisions = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
+				NOT = {	is_core_of = ROOT	}
 				is_core_of = AFG
 				is_owned_by = ROOT
 			}
@@ -10,7 +11,232 @@ annexation_decisions = {
 				NOT = {	original_tag = AFG	}
 			}
 		}
-		complete_effect = {	country_event = geacps_annex.AFG	}
+		complete_effect = {	country_event = geacps_annex.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_ARM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = ARM
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = ARM	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.2	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_AZR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = AZR
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = AZR	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.3	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_BAN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = BAN
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = BAN	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.4	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_BHU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = BHU
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = BAN	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.5	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_BRM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = BRM
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = BRM	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.6	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_CAM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = CAM
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = CAM	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.7	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_CHI = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = CHI
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = CHI	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.8	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_GEO = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = GEO
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = GEO	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.9	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_GXC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = GXC
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = GXC	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.10	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_INS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = INS
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = INS	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.11	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_IRQ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = IRQ
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = IRQ	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.12	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_JAP = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = JAP
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = JAP	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.13	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_JOR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = JOR
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = JOR	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.14	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_KAZ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = KAZ
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = KAZ	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.15	}
+		ai_will_do = {	factor = 100	}
+	}
+	annexation_KOR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				NOT = {	is_core_of = ROOT	}
+				is_core_of = KOR
+				is_owned_by = ROOT
+			}
+			ROOT = {
+				NOT = {	original_tag = KOR	}
+			}
+		}
+		complete_effect = {	country_event = geacps_annex.16	}
 		ai_will_do = {	factor = 100	}
 	}
 }

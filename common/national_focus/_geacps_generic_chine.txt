@@ -1,0 +1,27 @@
+﻿focus_tree = {
+	id = _geacps_generic_chine_forcus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			OR = {
+				tag = ETR
+				tag = FNG
+				tag = GNG
+				tag = GXC
+				tag = GZH
+				tag = NAN
+				tag = SCH
+				tag = SHX
+				tag = SIK
+				tag = XSM
+				tag = YUN
+				tag = ZHI
+			}
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 50 y = 1350 }
+}
