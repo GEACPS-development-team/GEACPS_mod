@@ -1,0 +1,1018 @@
+focus_tree = {
+	id = geacps_TUR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = TUR
+		}
+	}
+	default = no
+	focus = {
+		id = TUR-geasps-1
+		icon = GFX_goal_generic_demand_territory
+		cost = 10.00
+		mutually_exclusive = {
+			focus = TUR-geasps-2
+		}
+		x = 6
+		y = 0
+
+	}
+	focus = {
+		id = TUR-geasps-2
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		mutually_exclusive = {
+			focus = TUR-geasps-1
+		}
+		x = 24
+		y = 0
+
+	}
+	focus = {
+		id = TUR-geasps-26
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		x = 8
+		y = 10
+
+	}
+	focus = {
+		id = TUR-geasps-18
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		x = 2
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-3
+		icon = GFX_goal_support_communism
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-1
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-4
+			focus = TUR-geasps-5
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = TUR-geasps-7
+		icon = GFX_goal_generic_war_with_comintern
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-3
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = TUR-geasps-15
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-7
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-16
+		}
+		x = 2
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-27
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 3
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-28
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-27
+		}
+		x = 3
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-29
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-28
+		}
+		x = 3
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-16
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-7
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-15
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-17
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-16
+		}
+		x = 4
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-4
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-1
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-3
+			focus = TUR-geasps-5
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = TUR-geasps-10
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-4
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = TUR-geasps-8
+		icon = GFX_focus_chi_british_cooperation
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-4
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-9
+		}
+		x = 6
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-9
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-4
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-8
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-11
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-8
+			focus = TUR-geasps-9
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-12
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-11
+		}
+		x = 6
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-76
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-60
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-11
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-61
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-60
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
+		id = TUR-geasps-13
+		icon = GFX_focus_chi_reach_out_to_france
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-11
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-14
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-33
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-34
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-33
+		}
+		x = 10
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-35
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-34
+		}
+		x = 10
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-62
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-60
+		}
+		x = 11
+		y = 9
+
+	}
+	focus = {
+		id = TUR-geasps-36
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-37
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-36
+		}
+		x = 13
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-38
+		icon = GFX_goal_generic_construct_naval_dockyard
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-37
+		}
+		x = 13
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-14
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-11
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-13
+		}
+		x = 14
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-5
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-1
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-3
+			focus = TUR-geasps-4
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = TUR-geasps-20
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-5
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = TUR-geasps-21
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-20
+		}
+		x = 18
+		y = 4
+
+	}
+	focus = {
+		id = TUR-geasps-80
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-21
+		}
+		x = 16
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-81
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-21
+		}
+		x = 18
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-82
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-21
+		}
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-83
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-80
+			focus = TUR-geasps-81
+			focus = TUR-geasps-82
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-23
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-2
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = TUR-geasps-24
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-23
+		}
+		x = 22
+		y = 2
+
+	}
+	focus = {
+		id = TUR-geasps-6
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-23
+		}
+		x = 24
+		y = 3
+
+	}
+	focus = {
+		id = TUR-geasps-22
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-6
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = TUR-geasps-41
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-22
+		}
+		x = 23
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-42
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-41
+		}
+		x = 22
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-46
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-42
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-79
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-42
+		}
+		x = 24
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-25
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-23
+		}
+		x = 26
+		y = 2
+
+	}
+	focus = {
+		id = TUR-geasps-77
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-22
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-78
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-42
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-43
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-46
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = TUR-geasps-44
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-43
+		}
+		x = 27
+		y = 10
+
+	}
+	focus = {
+		id = TUR-geasps-45
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-22
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-48
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-50
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-45
+		}
+		x = 29
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-52
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-44
+		}
+		prerequisite = {
+			focus = TUR-geasps-50
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-47
+		}
+		x = 29
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-53
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-52
+		}
+		x = 29
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-63
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-53
+		}
+		x = 27
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-55
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-53
+		}
+		x = 29
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-64
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-53
+		}
+		x = 31
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-67
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-64
+		}
+		x = 30
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-69
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-64
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-68
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-64
+		}
+		x = 28
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-66
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-64
+		}
+		x = 32
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-65
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-64
+		}
+		x = 34
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-72
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-65
+		}
+		prerequisite = {
+			focus = TUR-geasps-66
+		}
+		prerequisite = {
+			focus = TUR-geasps-67
+		}
+		prerequisite = {
+			focus = TUR-geasps-68
+		}
+		prerequisite = {
+			focus = TUR-geasps-69
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-71
+			focus = TUR-geasps-70
+		}
+		x = 32
+		y = 15
+
+	}
+	focus = {
+		id = TUR-geasps-71
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-69
+		}
+		prerequisite = {
+			focus = TUR-geasps-68
+		}
+		prerequisite = {
+			focus = TUR-geasps-67
+		}
+		prerequisite = {
+			focus = TUR-geasps-66
+		}
+		prerequisite = {
+			focus = TUR-geasps-65
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-72
+			focus = TUR-geasps-70
+		}
+		x = 29
+		y = 15
+
+	}
+	focus = {
+		id = TUR-geasps-48
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-22
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-45
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-30
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-31
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-30
+		}
+		x = 6
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-32
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-31
+		}
+		x = 6
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-39
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-29
+			focus = TUR-geasps-32
+			focus = TUR-geasps-35
+			focus = TUR-geasps-38
+		}
+		x = 8
+		y = 15
+
+	}
+	focus = {
+		id = TUR-geasps-40
+		icon = GFX_goal_tfv_generic_tech_sharing
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-39
+		}
+		x = 8
+		y = 16
+
+	}
+	focus = {
+		id = TUR-geasps-47
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-46
+		}
+		prerequisite = {
+			focus = TUR-geasps-43
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-52
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-49
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-48
+		}
+		prerequisite = {
+			focus = TUR-geasps-51
+		}
+		x = 36
+		y = 18
+
+	}
+	focus = {
+		id = TUR-geasps-51
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-47
+		}
+		x = 21
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-54
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-49
+		}
+		x = 34
+		y = 19
+
+	}
+	focus = {
+		id = TUR-geasps-56
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-49
+		}
+		x = 38
+		y = 19
+
+	}
+	focus = {
+		id = TUR-geasps-57
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-56
+		}
+		x = 37
+		y = 20
+
+	}
+	focus = {
+		id = TUR-geasps-58
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-56
+		}
+		x = 39
+		y = 20
+
+	}
+	focus = {
+		id = TUR-geasps-59
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-58
+		}
+		x = 39
+		y = 21
+
+	}
+	focus = {
+		id = TUR-geasps-70
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-69
+		}
+		prerequisite = {
+			focus = TUR-geasps-68
+		}
+		prerequisite = {
+			focus = TUR-geasps-67
+		}
+		prerequisite = {
+			focus = TUR-geasps-66
+		}
+		prerequisite = {
+			focus = TUR-geasps-65
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-72
+			focus = TUR-geasps-71
+		}
+		x = 26
+		y = 15
+
+	}
+	focus = {
+		id = TUR-geasps-73
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-57
+		}
+		x = 37
+		y = 21
+
+	}
+	focus = {
+		id = TUR-geasps-74
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-54
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-75
+		}
+		x = 35
+		y = 20
+
+	}
+	focus = {
+		id = TUR-geasps-75
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-54
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-74
+		}
+		x = 33
+		y = 20
+
+	}
+}
