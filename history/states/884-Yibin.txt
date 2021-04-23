@@ -1,25 +1,21 @@
-state={
-	id=884
-	name="STATE_884"
-	manpower=15000
-	buildings_max_level_factor=1.000
+state = {
+	id = 884
+	name = "STATE_884"
+	manpower = 15000
+	buildings_max_level_factor = 1
+		state_category = pastoral
 	
-	state_category=pastoral
-	
-	history={
+	history = {
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		add_core_of = GZH
-		victory_points = {
-			1010 3
-		}
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {	1010	3	}
 	}
 	
-	provinces={
+	provinces = {
 		4431 11972 1010 9939 4141
 	}
 }

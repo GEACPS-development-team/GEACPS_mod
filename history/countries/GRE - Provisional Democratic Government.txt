@@ -1,0 +1,18 @@
+﻿#ギリシャ臨時民主政府
+create_dynamic_country = {
+	original_tag = GRE
+	set_country_flag = GRE_republic_countryflag
+	set_cosmetic_tag = GRE_provisional_democratic_government
+	set_politics = {	ruling_party = total_socialism	}
+	set_popularities = {	total_socialism = 100	}
+
+	load_oob = PDG_1946
+	transfer_state = 47
+	transfer_state = 184
+	set_province_controller = 1173
+	set_province_controller = 4178
+	set_province_controller = 7127
+	set_province_controller = 9916
+	set_province_controller = 11965
+	declare_war_on = {	target = GRE	type = civil_war	}
+}

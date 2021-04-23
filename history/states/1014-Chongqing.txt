@@ -1,29 +1,23 @@
-state={
-	id=1014
-	name="STATE_1014"
-	manpower=52963300
-	buildings_max_level_factor=1.000
+state = {
+	id = 1014
+	name = "STATE_1014"
+	manpower = 52963300
+	buildings_max_level_factor = 1
+	state_category = city
 	
-	resources={
-		steel=14.000
-	}
+	resources = {	steel = 14	}
 	
-	state_category=city
-
-	history={
+	history = {
 		owner = CHI
-		add_core_of = NAN
 		add_core_of = CHI
-		add_core_of = PRC
-		victory_points = {
-			6999 20 
-		}
+		add_core_of = NAN
+		victory_points = {	6999	20	}
 		buildings = {
 			infrastructure = 4
 		}
 	}
 
-	provinces={
+	provinces = {
 		1893 6999 10144 11865
 	}
 }

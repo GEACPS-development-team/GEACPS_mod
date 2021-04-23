@@ -1124,32 +1124,6 @@ CHI_ai_behavior = {
 		desc = "RULE_OPTION_RANDOM_AI_DESC"
 	}
 }
-PRC_ai_behavior = {
-	name = "PRC_AI_BEHAVIOR"
-	required_dlc = "Waking the Tiger"
-	group = "RULE_GROUP_AI_BEHAVIOR"
-	default = {
-		name = DEFAULT
-		text = "RULE_OPTION_DEFAULT"
-		desc = "RULE_OPTION_DEFAULT_AI_DESC"
-	}
-	option = {
-		name = HISTORICAL
-		text = "RULE_OPTION_HISTORICAL"
-		desc = "RULE_OPTION_HISTORICAL_PRC_AI_DESC"
-		allow_achievements = yes
-	}
-	option = {
-		name = ALTERNATE
-		text = "RULE_OPTION_ALTERNATE"
-		desc = "RULE_OPTION_ALTERNATE_PRC_AI_DESC"
-	}
-	option = {
-		name = RANDOM
-		text = "RULE_OPTION_RANDOM"
-		desc = "RULE_OPTION_RANDOM_AI_DESC"
-	}
-}
 MAN_ai_behavior = {
 	name = "MAN_AI_BEHAVIOR"
 	required_dlc = "Waking the Tiger"

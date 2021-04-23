@@ -1,29 +1,21 @@
-state={
-	id=752
-	name="STATE_752"
-	manpower=300000
-	buildings_max_level_factor=1.000
-	
+state = {
+	id = 752
+	name = "STATE_752"
+	manpower = 300000
+	buildings_max_level_factor = 1
 	state_category = city
 	
-	history={
+	history = {
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		add_core_of = SCH
-		victory_points = {
-			4999 1
-		}
 		buildings = {
 			infrastructure = 1
 		}
-		
-		PRC = {
-			set_province_controller = 4999
-		}
+		victory_points = {	4999	1	}
 	}
 	
-	provinces={
+	provinces = {
 		8104 12724 12837 1999 1918 7988 4999
 	}
 }

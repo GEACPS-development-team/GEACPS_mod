@@ -1,45 +1,33 @@
-state= {
-	id=593
-	name="STATE_593"
+state = {
+	id = 593
+	name = "STATE_593"
 	manpower = 12700000
-	
-	resources={
-		tungsten=15 # was: 20
-		steel= 15 # was: 20
-		chromium = 3 # was: 4
-	}
-	
 	state_category = town
+	
+	resources = {
+		tungsten = 15
+		steel = 15
+		chromium = 3
+	}
 
-	history= {
+	history = {
 		owner = GNG
-		add_core_of = GXC
-		add_core_of = CHI
-		add_core_of = PRC
 		add_core_of = GNG
-		victory_points = {
-			1047 5
-		}
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			9938 = {
-				naval_base = 1
-				coastal_bunker = 1
-				bunker = 1
-			}
-			1047 = {
-				naval_base = 5
-				coastal_bunker = 1
-				bunker = 1
-			}
+			9938 = {	bunker = 1	}
+			1047 = {	bunker = 1	}
+			9938 = {	naval_base = 1	}
+			1047 = {	naval_base = 5	}
+			9938 = {	coastal_bunker = 1	}
+			1047 = {	coastal_bunker = 1	}
 		}
-		CHI = {
-			set_province_controller = 9938
-		}
+		victory_points = {	1047	5	}
 	}
 	
-	provinces={
+	provinces = {
 		1078 1120 1162 1202 4050 4165 4207 7067 7108 7141 7182 9938 9970 9978 9997 10080 12014 12095 4092 11941 7152 1047 1087 1187 11938
 	}
 }

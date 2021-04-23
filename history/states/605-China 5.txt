@@ -1,32 +1,26 @@
-state={
-	id=605
-	name="STATE_605"
-	manpower=52963300
-	buildings_max_level_factor=1.000
-	
-	resources={
-		steel=14.000
-	}
-	
+state = {
+	id = 605
+	name = "STATE_605"
+	manpower = 52963300
+	buildings_max_level_factor = 1
 	state_category = city
-
-	history={
+	
+	resources = {	steel = 14	}
+	
+	history = {
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = PRC
 		add_core_of = SCH
-		victory_points = {
-			4925 5 
-		}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 3
 			industrial_complex = 2
+			arms_factory = 3
 			air_base = 2
 		}
+		victory_points = {	4925	5	}
 	}
 
-	provinces={
+	provinces = {
 		1367 1395 2030 2091 4925 5048 7240 7256 8026 12274 12705 12767
 	}
 }
