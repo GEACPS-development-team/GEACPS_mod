@@ -1,0 +1,34 @@
+autonomy_state = {
+	id = warlord
+	is_puppet = yes
+	min_freedom_level = 0.5
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		OVERLORD = {	tag = CHI	}
+	}
+}
+autonomy_state = {
+	id = autonomous_province
+	is_puppet = yes
+	min_freedom_level = 0.0
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		OVERLORD = {	tag = CHI	}
+	}
+}
+
+autonomy_state = {
+	id = tributary_state
+	is_puppet = yes
+	min_freedom_level = 0.0
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		OVERLORD = {	tag = CHI	}
+	}
+}

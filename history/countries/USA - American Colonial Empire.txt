@@ -6,8 +6,8 @@ SIB = { give_military_access = USA }
 RHI = { give_military_access = USA }
 
 #傀儡, 植民地
-ALS	= {	add_ideas = colonial_government	}
-PUE	= {	add_ideas = colonial_government	}
+ALS	= {	set_colony_variable = yes	}
+PUE	= {	set_colony_variable = yes	}
 
 set_autonomy = {	target = ALS	autonomous_state = us_territory	}
 set_autonomy = {	target = PUE	autonomous_state = us_commonwealth	}

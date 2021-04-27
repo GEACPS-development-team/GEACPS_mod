@@ -1,0 +1,116 @@
+autonomy_state = {
+	id = dominion
+	is_puppet = yes
+	min_freedom_level = 0.6
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = no
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	modifier = {
+		extra_trade_to_overlord_factor = 0.25
+		overlord_trade_cost_factor = -0.25
+	}
+	
+	allowed = {
+		has_variable = colony_trigger_variable
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = federation_of_colonies
+	default = yes
+	is_puppet = yes
+	min_freedom_level = 0.3
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	allowed = {
+		has_variable = colony_trigger_variable
+		has_variable = federal_government_variable
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = colony
+	is_puppet = yes
+	min_freedom_level = 0.3
+	default = yes
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	allowed = {
+		has_variable = colony_trigger_variable
+		NOT = {	has_variable = federal_government_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = overseas_territory
+	is_puppet = yes
+	min_freedom_level = 0.0
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	allowed = {
+		has_variable = colony_trigger_variable
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}

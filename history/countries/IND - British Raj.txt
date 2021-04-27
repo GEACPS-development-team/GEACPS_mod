@@ -1,0 +1,33 @@
+﻿1946.1.1 = {
+	capital = 439
+	oob = IND_1946
+	
+	set_convoys = 10
+	
+	set_politics = {
+		ruling_party = reactionary_authoritarianism
+		last_election = "1946.1.1"
+		election_frequency = 48
+		elections_allowed = no
+	}
+	set_popularities = {
+		total_socialism = 0
+		radical_socialism = 0
+		social_democracy = 0
+		social_liberalism = 0
+		classical_liberalism = 0
+		liberal_conservatism = 0
+		social_conservatism = 0
+		authoritative_democracy = 0
+		reactionary_authoritarianism = 100
+		national_populism = 0
+	}
+	
+	create_country_leader = {
+		name = "アーチボルド・パーシヴァル・ウェーヴェル"
+		desc = ""
+		picture = "GFX_Archibald_Wavell"
+		expire = "1950.5.24"
+		ideology = reactionary_authoritarianism_ideology
+	}
+}

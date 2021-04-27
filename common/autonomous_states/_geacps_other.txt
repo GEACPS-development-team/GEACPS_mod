@@ -1,0 +1,76 @@
+autonomy_state = {
+	id = colony_and_protectorate
+	
+	min_freedom_level = 0.5
+	manpower_influence = 0.7
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = colony_trigger_variable
+		has_variable = protectorate_trigger_variable
+	}
+}
+
+autonomy_state = {
+	id = condominium
+	
+	min_freedom_level = 0.0
+	manpower_influence = 1.0
+	
+	allowed = {
+		has_variable = condominium_trigger_variable
+	}
+}
+
+autonomy_state = {
+	id = junior_partner_state
+	is_puppet = yes
+	min_freedom_level = 0.0
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = personal_union_trigger_variable
+	}
+}
+
+autonomy_state = {
+	id = leased_territory
+	
+	min_freedom_level = 0.0
+	manpower_influence = 1.0
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = leased_territory_trigger_variable
+	}
+}
+
+autonomy_state = {
+	id = mandate
+	
+	min_freedom_level = 0
+	manpower_influence = 0
+	
+	is_puppet = yes
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = mandate_trigger_variable
+	}
+}
+
+autonomy_state = {
+	id = princely_state
+	is_puppet = yes
+	min_freedom_level = 0.0
+	default = yes
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = princely_state_trigger_variable
+	}
+}

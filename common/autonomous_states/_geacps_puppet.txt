@@ -1,0 +1,100 @@
+autonomy_state = {
+	id = nominal_puppet
+	is_puppet = yes
+
+	min_freedom_level = 0.8
+	
+	allowed = {
+		NOT = {	has_variable = colony_trigger_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	has_variable = protectorate_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = autonomous_puppet
+	is_puppet = yes
+
+	min_freedom_level = 0.6
+	
+	rule = {
+		can_decline_call_to_war = no
+	}
+	
+	allowed = {
+		NOT = {	has_variable = colony_trigger_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	has_variable = protectorate_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = puppet
+	is_puppet = yes
+
+	min_freedom_level = 0.4
+
+	default = yes
+	
+	allowed = {
+		NOT = {	has_variable = colony_trigger_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	has_variable = protectorate_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = occupied_puppet
+	is_puppet = yes
+	
+	min_freedom_level = 0.2
+	
+	allowed = {
+		NOT = {	has_variable = colony_trigger_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	has_variable = protectorate_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = integrated_puppet
+	is_puppet = yes
+	min_freedom_level = 0.0
+	
+	allowed = {
+		NOT = {	has_variable = colony_trigger_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	has_variable = protectorate_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}

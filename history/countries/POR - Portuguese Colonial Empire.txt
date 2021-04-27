@@ -1,14 +1,14 @@
 ﻿create_dynamic_country = {
-	original_tag = RAJ
+	original_tag = IND
 	set_country_flag = IND_POR_countryflag
 	set_cosmetic_tag = COUNTRY_POR
 	set_politics = {	ruling_party = reactionary_authoritarianism	}
 	set_popularities = {	reactionary_authoritarianism = 100	}
 	
-	add_ideas = colonial_government
+	set_colony_variable = yes
 	
 	every_state = {
-		limit = {	is_core_of = RAJ	}
+		limit = {	is_core_of = IND	}
 		remove_core_of = PREV
 	}
 	
@@ -16,13 +16,13 @@
 	321 = {	add_core_of = PREV	}
 }
 
-CPV	= {	set_cosmetic_tag = COUNTRY_POR	add_ideas = colonial_government	}
-STP	= {	set_cosmetic_tag = COUNTRY_POR	add_ideas = colonial_government	}
-MZB	= {	set_cosmetic_tag = COUNTRY_POR	add_ideas = colonial_government	}
-MCA	= {	set_cosmetic_tag = COUNTRY_POR	add_ideas = colonial_government	}
-TLS	= {	set_cosmetic_tag = COUNTRY_POR	add_ideas = colonial_government	}
-ANG	= {	set_cosmetic_tag = COUNTRY_POR	add_ideas = colonial_government	}
-GNB	= {	set_cosmetic_tag = COUNTRY_POR	add_ideas = colonial_government	}
+CPV	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_POR	}
+STP	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_POR	}
+MZB	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_POR	}
+MCA	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_POR	}
+TLS	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_POR	}
+ANG	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_POR	}
+GNB	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_POR	}
 
 set_autonomy = {	target = CPV	autonomous_state = colony	}
 set_autonomy = {	target = STP	autonomous_state = colony	}

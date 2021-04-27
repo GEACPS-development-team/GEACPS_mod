@@ -1,0 +1,43 @@
+autonomy_state = {
+	id = protected_state
+	
+	min_freedom_level = 0.75
+	manpower_influence = 0.2
+	
+	is_puppet = yes
+	use_overlord_color = no
+	
+	allowed = {
+		has_variable = protectorate_trigger_variable
+		NOT = {	has_variable = colony_trigger_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}
+autonomy_state = {
+	id = protected_territory
+	
+	min_freedom_level = 0.5
+	manpower_influence = 0.7
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = protectorate_trigger_variable
+		NOT = {	has_variable = colony_trigger_variable	}
+		NOT = {	has_variable = condominium_trigger_variable	}
+		NOT = {	has_variable = leased_territory_trigger_variable	}
+		NOT = {	has_variable = mandate_trigger_variable	}
+		NOT = {	has_variable = personal_union_trigger_variable	}
+		NOT = {	has_variable = princely_state_trigger_variable	}
+		NOT = {	OVERLORD = {	tag = CHI	}	}
+		NOT = {	OVERLORD = {	tag = JAP	}	}
+		NOT = {	OVERLORD = {	tag = SOV	}	}
+	}
+}

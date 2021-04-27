@@ -22,8 +22,8 @@ set_popularities = {
 	national_populism = 0
 }
 
-DDR = { give_military_access = SOV }
-DDR = { give_military_access = RUS }
+EGR = { give_military_access = SOV }
+EGR = { give_military_access = RUS }
 
 create_faction = コミンフォルム
 add_to_faction = SOV
@@ -45,7 +45,7 @@ add_to_faction = HUN
 add_to_faction = POL
 add_to_faction = ROM
 
-RUS = {	set_cosmetic_tag = RUS_SOV	add_ideas = federal_state	}
+RUS = {	set_cosmetic_tag = RUS_SOV	set_variable = {	federal_government_variable = 1	}	}
 UKR = {	set_cosmetic_tag = UKR_SOV	}
 BLR = {	set_cosmetic_tag = BLR_SOV	}
 EST = {	set_cosmetic_tag = EST_SOV	}
@@ -72,7 +72,7 @@ set_autonomy = {	target = YNN	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = AKM	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = BUL	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = CZE	autonomous_state = soviet_satellite	}
-set_autonomy = {	target = DDR	autonomous_state = soviet_satellite	}
+set_autonomy = {	target = EGR	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = HUN	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = POL	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = ROM	autonomous_state = soviet_satellite	}
