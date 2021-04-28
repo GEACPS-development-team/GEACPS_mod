@@ -6,7 +6,7 @@ create_dynamic_country = {
 	set_politics = {	ruling_party = reactionary_authoritarianism	}
 	set_popularities = {	reactionary_authoritarianism = 100	}
 	
-	add_ideas = mandate_government
+	set_mandate_variable = yes
 	
 	every_state = {
 		limit = {	is_core_of = CMR	}
@@ -23,7 +23,7 @@ create_dynamic_country = {
 	set_politics = {	ruling_party = reactionary_authoritarianism	}
 	set_popularities = {	reactionary_authoritarianism = 100	}
 	
-	add_ideas = mandate_government
+	set_mandate_variable = yes
 	
 	every_state = {
 		limit = {	is_core_of = TOG	}
@@ -41,51 +41,51 @@ SIB = { give_military_access = ENG }
 RHI = { give_military_access = ENG }
 
 #傀儡, 植民地
-AST	= {	set_cosmetic_tag = AST_ENG-GBR	add_ideas = colonial_government	}
-CAN	= {	set_cosmetic_tag = CAN_ENG-GBR	add_ideas = colonial_government	}
-NFL	= {	set_cosmetic_tag = NFL_ENG-GBR	add_ideas = colonial_government	}
-NZL	= {	set_cosmetic_tag = NZL_ENG-GBR	add_ideas = colonial_government	}
-SAF	= {	set_cosmetic_tag = SAF_UK	add_ideas = colonial_government	}
-BAH	= {	set_cosmetic_tag = BAH_ENG-GBR	add_ideas = colonial_government	}
-BLZ	= {	set_cosmetic_tag = BLZ_ENG-GBR	add_ideas = colonial_government	}
-BMU	= {	set_cosmetic_tag = BMU_ENG-GBR	add_ideas = colonial_government	}
-CYP	= {	set_cosmetic_tag = CYP_ENG-GBR	add_ideas = colonial_government	}
-GHA	= {	set_cosmetic_tag = GHA_ENG-GBR	add_ideas = colonial_government	}
-GIB	= {	set_cosmetic_tag = GIB_ENG-GBR	add_ideas = colonial_government	}
-GYA	= {	set_cosmetic_tag = GYA_ENG-GBR	add_ideas = colonial_government	}
-JAM	= {	set_cosmetic_tag = JAM_ENG-GBR	add_ideas = colonial_government	}
-LSO	= {	set_cosmetic_tag = LSO_ENG-GBR	add_ideas = colonial_government	}
-MLT	= {	set_cosmetic_tag = MLT_ENG-GBR	add_ideas = colonial_government	}
-MUS	= {	set_cosmetic_tag = MUS_ENG-GBR	add_ideas = colonial_government	}
-RAJ	= {	set_cosmetic_tag = RAJ_ENG-GBR	add_ideas = colonial_government	}
-SHN	= {	set_cosmetic_tag = SHN_ENG-GBR	add_ideas = colonial_government	}
-SRL	= {	set_cosmetic_tag = SRL_ENG-GBR	add_ideas = colonial_government	}
-SYC	= {	set_cosmetic_tag = SYC_ENG-GBR	add_ideas = colonial_government	}
-TRI	= {	set_cosmetic_tag = TRI_ENG-GBR	add_ideas = colonial_government	}
-ZIM	= {	set_cosmetic_tag = ZIM_ENG-GBR	add_ideas = colonial_government	}
-MNN	= {	add_ideas = colonial_government	}
-LEW	= {	set_cosmetic_tag = LEW_ENG-GBR	add_ideas = colonial_government	add_ideas = federal_state	}
-WIW	= {	set_cosmetic_tag = WIW_ENG-GBR	add_ideas = colonial_government	add_ideas = federal_state	}
-GAM	= {	set_cosmetic_tag = GAM_ENG-GBR	add_ideas = colonial_government	add_ideas = protectorate_government	}
-KEN	= {	set_cosmetic_tag = KEN_ENG-GBR	add_ideas = colonial_government	add_ideas = protectorate_government	}
-NGA	= {	set_cosmetic_tag = NGA_ENG-GBR	add_ideas = colonial_government	add_ideas = protectorate_government	}
-SIE	= {	set_cosmetic_tag = SIE_ENG-GBR	add_ideas = colonial_government	add_ideas = protectorate_government	}
-OMA	= {	add_ideas = protectorate_government	}
-UAE	= {	add_ideas = protectorate_government	}
-BOT	= {	set_cosmetic_tag = COUNTRY_ENG-GBR	add_ideas = protectorate_government	}
-KUW	= {	add_ideas = protectorate_government	}
-MLD	= {	add_ideas = protectorate_government	}
-MLW	= {	set_cosmetic_tag = MLW_ENG-GBR	add_ideas = protectorate_government	}
-SML	= {	set_cosmetic_tag = SML_ENG-GBR	add_ideas = protectorate_government	}
-SWL	= {	set_cosmetic_tag = COUNTRY_ENG-GBR	add_ideas = protectorate_government	}
-SYE	= {	set_cosmetic_tag = Aden_ENG-GBR	add_ideas  = protectorate_government	}
-UGA	= {	set_cosmetic_tag = UGA_ENG-GBR	add_ideas = protectorate_government	}
-ZAM	= {	set_cosmetic_tag = ZAM_ENG-GBR	add_ideas = protectorate_government	}
-ZAN	= {	set_cosmetic_tag = ZAN_ENG	add_ideas = protectorate_government	}
-CYR	= {	set_cosmetic_tag = COUNTRY_ENG-GBR	add_ideas = mandate_government	}
-SOM	= {	set_cosmetic_tag = COUNTRY_ENG-GBR	add_ideas = mandate_government	}
-TRP	= {	set_cosmetic_tag = COUNTRY_ENG-GBR	add_ideas = mandate_government	}
-TZN	= {	set_cosmetic_tag = TZN_ENG-GBR	add_ideas = mandate_government	}
+AST	= {	set_colony_variable = yes	set_cosmetic_tag = AST_ENG-GBR	}
+CAN	= {	set_colony_variable = yes	set_cosmetic_tag = CAN_ENG-GBR	}
+NFL	= {	set_colony_variable = yes	set_cosmetic_tag = NFL_ENG-GBR	}
+NZL	= {	set_colony_variable = yes	set_cosmetic_tag = NZL_ENG-GBR	}
+SAF	= {	set_colony_variable = yes	set_cosmetic_tag = SAF_UK	}
+BAH	= {	set_colony_variable = yes	set_cosmetic_tag = BAH_ENG-GBR	}
+BLZ	= {	set_colony_variable = yes	set_cosmetic_tag = BLZ_ENG-GBR	}
+BMU	= {	set_colony_variable = yes	set_cosmetic_tag = BMU_ENG-GBR	}
+CYP	= {	set_colony_variable = yes	set_cosmetic_tag = CYP_ENG-GBR	}
+GHA	= {	set_colony_variable = yes	set_cosmetic_tag = GHA_ENG-GBR	}
+GIB	= {	set_colony_variable = yes	set_cosmetic_tag = GIB_ENG-GBR	}
+GYA	= {	set_colony_variable = yes	set_cosmetic_tag = GYA_ENG-GBR	}
+JAM	= {	set_colony_variable = yes	set_cosmetic_tag = JAM_ENG-GBR	}
+LSO	= {	set_colony_variable = yes	set_cosmetic_tag = LSO_ENG-GBR	}
+MLT	= {	set_colony_variable = yes	set_cosmetic_tag = MLT_ENG-GBR	}
+MUS	= {	set_colony_variable = yes	set_cosmetic_tag = MUS_ENG-GBR	}
+IND	= {	set_colony_variable = yes	set_cosmetic_tag = IND_ENG-GBR	}
+SHN	= {	set_colony_variable = yes	set_cosmetic_tag = SHN_ENG-GBR	}
+SRL	= {	set_colony_variable = yes	set_cosmetic_tag = SRL_ENG-GBR	}
+SYC	= {	set_colony_variable = yes	set_cosmetic_tag = SYC_ENG-GBR	}
+TRI	= {	set_colony_variable = yes	set_cosmetic_tag = TRI_ENG-GBR	}
+ZIM	= {	set_colony_variable = yes	set_cosmetic_tag = ZIM_ENG-GBR	}
+MNN	= {	set_colony_variable = yes	}
+LEW	= {	set_fc_variable = yes	set_cosmetic_tag = LEW_ENG-GBR	}
+WIW	= {	set_fc_variable = yes	set_cosmetic_tag = WIW_ENG-GBR	}
+GAM	= {	set_cp_variable = yes	set_cosmetic_tag = GAM_ENG-GBR	}
+KEN	= {	set_cp_variable = yes	set_cosmetic_tag = KEN_ENG-GBR	}
+NGA	= {	set_cp_variable = yes	set_cosmetic_tag = NGA_ENG-GBR	}
+SIE	= {	set_cp_variable = yes	set_cosmetic_tag = SIE_ENG-GBR	}
+OMA	= {	set_protectorate_variable = yes	}
+UAE	= {	set_protectorate_variable = yes	}
+BOT	= {	set_protectorate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
+KUW	= {	set_protectorate_variable = yes	}
+MLD	= {	set_protectorate_variable = yes	}
+MLW	= {	set_protectorate_variable = yes	set_cosmetic_tag = MLW_ENG-GBR	}
+SML	= {	set_protectorate_variable = yes	set_cosmetic_tag = SML_ENG-GBR	}
+SWL	= {	set_protectorate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
+SYE	= {	set_protectorate_variable = yes	set_cosmetic_tag = Aden_ENG-GBR	}
+UGA	= {	set_protectorate_variable = yes	set_cosmetic_tag = UGA_ENG-GBR	}
+ZAM	= {	set_protectorate_variable = yes	set_cosmetic_tag = ZAM_ENG-GBR	}
+ZAN	= {	set_protectorate_variable = yes	set_cosmetic_tag = ZAN_ENG	}
+CYR	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
+SOM	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
+TRP	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
+TZN	= {	set_mandate_variable = yes	set_cosmetic_tag = TZN_ENG-GBR	add_ideas = mandate_government	}
 
 
 set_autonomy = {	target = AST	autonomous_state = dominion	}
@@ -104,7 +104,7 @@ set_autonomy = {	target = JAM	autonomous_state = colony	}
 set_autonomy = {	target = LSO	autonomous_state = colony	}
 set_autonomy = {	target = MLT	autonomous_state = colony	}
 set_autonomy = {	target = MUS	autonomous_state = colony	}
-set_autonomy = {	target = RAJ	autonomous_state = colony	}
+set_autonomy = {	target = IND	autonomous_state = colony	}
 set_autonomy = {	target = SHN	autonomous_state = colony	}
 set_autonomy = {	target = SRL	autonomous_state = colony	}
 set_autonomy = {	target = SYC	autonomous_state = colony	}

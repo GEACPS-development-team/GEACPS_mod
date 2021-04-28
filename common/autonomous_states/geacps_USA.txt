@@ -1,0 +1,21 @@
+autonomy_state = {
+	id = us_commonwealth
+	min_freedom_level = 0.45
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = colony_trigger_variable
+		OVERLORD = {	original_tag = USA	}
+	}
+}
+autonomy_state = {
+	id = us_territory
+	is_puppet = yes
+	min_freedom_level = 0.15
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = colony_trigger_variable
+		OVERLORD = {	original_tag = USA	}
+	}
+}

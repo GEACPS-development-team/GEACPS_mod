@@ -1,24 +1,24 @@
 ﻿
 HAW	= {	set_cosmetic_tag = HAW_JAP	}
-TWN	= {	set_cosmetic_tag = COUNTRY_JAP	}
-KWA	= {	set_cosmetic_tag = COUNTRY_JAP	add_ideas = leased_territory_government	}
 KOR	= {	set_cosmetic_tag = COUNTRY_JAP	}
-FSM	= {	set_cosmetic_tag = FSM_JAP     add_ideas = mandate_government }
+TWN	= {	set_cosmetic_tag = COUNTRY_JAP	}
 INS	= {	set_cosmetic_tag = INSandMAL_JAP	}
+FSM	= {	set_mandate_variable = yes	set_cosmetic_tag = FSM_JAP	}
+KWA	= {	set_lt_variable = yes	set_cosmetic_tag = COUNTRY_JAP	}
 
-set_autonomy = {	target = HAW	autonomous_state = imperial_member	}
-set_autonomy = {	target = TWN	autonomous_state = imperial_overseas_territory	}
-set_autonomy = {	target = KWA	autonomous_state = leased_territory	}
 set_autonomy = {	target = KOR	autonomous_state = imperial_overseas_territory	}
-set_autonomy = {	target = FSM	autonomous_state = mandate	}
+set_autonomy = {	target = TWN	autonomous_state = imperial_overseas_territory	}
+set_autonomy = {	target = HAW	autonomous_state = imperial_member	}
+set_autonomy = {	target = CAM	autonomous_state = imperial_protected_state	}
+set_autonomy = {	target = INS	autonomous_state = imperial_protected_state	}
+set_autonomy = {	target = LAO	autonomous_state = imperial_protected_state	}
 set_autonomy = {	target = MAN	autonomous_state = imperial_protected_state	}
 set_autonomy = {	target = MEN	autonomous_state = imperial_protected_state	}
-set_autonomy = {	target = ZHI	autonomous_state = imperial_protected_state	}
 set_autonomy = {	target = NAN	autonomous_state = imperial_protected_state	}
 set_autonomy = {	target = VIN	autonomous_state = imperial_protected_state	}
-set_autonomy = {	target = CAM	autonomous_state = imperial_protected_state	}
-set_autonomy = {	target = LAO	autonomous_state = imperial_protected_state	}
-set_autonomy = {	target = INS	autonomous_state = imperial_protected_state	}
+set_autonomy = {	target = ZHI	autonomous_state = imperial_protected_state	}
+set_autonomy = {	target = FSM	autonomous_state = mandate	}
+set_autonomy = {	target = KWA	autonomous_state = leased_territory	}
 
 #陣営
 create_faction = 大東亞共榮圈
@@ -27,8 +27,8 @@ add_to_faction = MAN
 add_to_faction = MEN
 add_to_faction = ZHI
 add_to_faction = NAN
-add_to_faction = FNG
-add_to_faction = GNG
+add_to_faction = FUJ
+add_to_faction = GND
 add_to_faction = SIA
 add_to_faction = PHI
 add_to_faction = CAM

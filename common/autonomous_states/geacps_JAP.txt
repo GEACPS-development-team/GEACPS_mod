@@ -1,0 +1,65 @@
+autonomy_state = {
+	id = imperial_protected_state
+	
+	min_freedom_level = 0.75
+	manpower_influence = 0.2
+	
+	default = yes
+	is_puppet = yes
+	use_overlord_color = no
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = no
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	allowed = {
+		OVERLORD = { original_tag = JAP }
+	}
+}
+autonomy_state = {
+	id = imperial_member
+	
+	min_freedom_level = 0.5
+	manpower_influence = 0.7
+	
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	allowed = {
+		OVERLORD = { original_tag = JAP }
+	}
+}
+autonomy_state = {
+	id = imperial_overseas_territory
+	
+	min_freedom_level = 0.25
+	manpower_influence = 0.9
+	
+	use_overlord_color = yes
+	
+	rule = {
+		can_not_declare_war = yes
+		can_decline_call_to_war = no
+		units_deployed_to_overlord = yes
+		can_be_spymaster = no
+		contributes_operatives = no
+		can_create_collaboration_government = no
+	}
+	
+	allowed = {
+		OVERLORD = { original_tag = JAP }
+	}
+}

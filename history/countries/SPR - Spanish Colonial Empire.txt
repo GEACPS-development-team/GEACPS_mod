@@ -4,7 +4,7 @@
 	set_politics = {	ruling_party = reactionary_authoritarianism	}
 	set_popularities = {	reactionary_authoritarianism = 100	}
 	
-	add_ideas = protectorate_government
+	set_protectorate_variable = yes
 	
 	every_state = {
 		limit = {	is_core_of = MOR	}
@@ -15,8 +15,8 @@
 	290 = {	add_core_of = PREV	}
 }
 
-EQG	= {	set_cosmetic_tag = COUNTRY_SPR_national_populism	add_ideas = colonial_government	}
-WES	= {	set_cosmetic_tag = COUNTRY_SPR_national_populism	add_ideas = colonial_government	}
+EQG	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_SPR_national_populism	}
+WES	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_SPR_national_populism	}
 
 set_autonomy = {	target = EQG	autonomous_state = colony	}
 set_autonomy = {	target = WES	autonomous_state = colony	}

@@ -94,5 +94,5 @@ create_country_leader = {
 	ideology = national_populism_ideology
 }
 
-SUD	= {	set_cosmetic_tag = SUD_ENG-GBRandEGY	add_ideas = condominium_government	}
+SUD	= {	set_condominium_variable = yes	set_cosmetic_tag = SUD_ENG-GBRandEGY	}
 set_autonomy = {	target = SUD	autonomous_state = condominium	}

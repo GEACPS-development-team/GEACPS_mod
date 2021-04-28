@@ -1,0 +1,12 @@
+puppet_trigger = {
+	NOT = {	has_variable = colony_trigger_variable	}
+	NOT = {	has_variable = condominium_trigger_variable	}
+	NOT = {	has_variable = leased_territory_trigger_variable	}
+	NOT = {	has_variable = mandate_trigger_variable	}
+	NOT = {	has_variable = personal_union_trigger_variable	}
+	NOT = {	has_variable = princely_state_trigger_variable	}
+	NOT = {	has_variable = protectorate_trigger_variable	}
+	NOT = {	OVERLORD = {	tag = CHI	}	}
+	NOT = {	OVERLORD = {	tag = JAP	}	}
+	NOT = {	OVERLORD = {	tag = SOV	}	}
+}

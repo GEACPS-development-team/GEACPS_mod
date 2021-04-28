@@ -28,7 +28,7 @@ set_up_colony_and_states = {
 		}
 		var:new_country = {	transfer_state = PREV	}
 	}
-	add_ideas = colonial_government
+	set_colony_variable = yes
 }
 
 set_up_protectorate_and_states = {
@@ -41,5 +41,5 @@ set_up_protectorate_and_states = {
 		}
 		var:new_country = {	transfer_state = PREV	}
 	}
-	add_ideas = protectorate_government
+	set_protectorate_variable = yes
 }
