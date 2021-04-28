@@ -575,13 +575,14 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 x = 9
 y = 0
     completion_reward = {
+        navy_experience = 30
     }
 }
 #造船業の拡大
 shared_focus = {
     id = SIC_Expansion_of_shipbuilding_industry
     icon = GFX_goal_generic_construct_naval_dockyard
-    cost = 5.00
+    cost = 7.00
     prerequisite = {
         focus = SIC_Reconstruction_of_Two_Sicilian_Navies
         }
@@ -601,6 +602,22 @@ search_filters = { FOCUS_FILTER_POLITICAL }
 x = 10
 y = 1
     completion_reward = {
+        random_owned_state = {
+            limit = {
+                is_coastal = yes
+                free_building_slots = {
+                    building = dockyard
+                    size > 0
+                    include_locked = yes
+                }
+            }
+            add_extra_state_shared_building_slots = 1
+            add_building_construction = {
+                type = dockyard
+                level = 1
+                instant_build = yes
+            }
+        }
     }
 }
 #海峡要塞
@@ -632,15 +649,17 @@ y = 2
     completion_reward = {
     }
 }
-#陸軍師団の拡張
+#タラント軍港
 shared_focus = {
-    id = SIC_Expansion_of_Army_Division
+    id = SIC_Tarrant_Port
     icon = GFX_focus_generic_coastal_fort
     cost = 5.00
     prerequisite = {
-        }
+        focus = SIC_Construction_of_Strait_Fortress
+        focus = SIC_Focus_on_Transports
+    }
     mutually_exclusive = {
-        }
+    }
     available = {
     }
 ai_will_do = {
@@ -652,12 +671,37 @@ cancel_if_invalid = yes
 continue_if_invalid = no
 available_if_capitulated = no
 search_filters = { FOCUS_FILTER_POLITICAL }
-x = 12
-y = 0
+x = 8
+y = 3
     completion_reward = {
     }
 }
-#師団の状況を改善
+#陸軍師団の拡張
+shared_focus = {
+    id = SIC_Expansion_of_Army_Division
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 12
+    y = 0
+    completion_reward = {
+    }
+}
+#師団状況の改善
 shared_focus = {
     id = SIC_Improving_the_situation_of_the_division
     icon = GFX_focus_generic_coastal_fort
@@ -680,6 +724,140 @@ available_if_capitulated = no
 search_filters = { FOCUS_FILTER_POLITICAL }
 x = 12
 y = 1
+    completion_reward = {
+    }
+}
+#中隊の追加
+shared_focus = {
+    id = SIC_Add_Company
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Improving_the_situation_of_the_division
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 12
+    y = 2
+    completion_reward = {
+    }
+}
+#輸送艦への注力
+shared_focus = {
+    id = SIC_Focus_on_Transports
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Improving_the_situation_of_the_division
+        focus = SIC_Expansion_of_shipbuilding_industry
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 10
+    y = 2
+    completion_reward = {
+    }
+}
+#艦隊の近代化改修
+shared_focus = {
+    id = SIC_Fleet_Modernization
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Focus_on_Transports
+        focus = SIC_Construction_of_Strait_Fortress
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 10
+    y = 3
+    completion_reward = {
+    }
+}
+#地中海艦隊
+shared_focus = {
+    id = SIC_Mediterranean_Fleet
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Tarrant_Port
+        focus = SIC_Fleet_Modernization
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 9
+    y = 4
+    completion_reward = {
+    }
+}
+#空母への挑戦
+shared_focus = {
+    id = SIC_Challenge_to_Carrier
+    icon = GFX_focus_generic_coastal_fort
+    cost = 5.00
+    prerequisite = {
+        focus = SIC_Tarrant_Port
+        focus = SIC_Fleet_Modernization
+        }
+    mutually_exclusive = {
+        }
+    available = {
+    }
+    ai_will_do = {
+        factor = 5
+    }
+    bypass = {
+    }
+    cancel_if_invalid = yes
+    continue_if_invalid = no
+    available_if_capitulated = no
+    search_filters = { FOCUS_FILTER_POLITICAL }
+    x = 9
+    y = 4
     completion_reward = {
     }
 }
