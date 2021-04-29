@@ -1,7 +1,7 @@
 state = {
 	id = 632
 	name = "STATE_632"
-	manpower = 150
+	manpower = 0
 	
 	state_category = tiny_island
 
@@ -10,9 +10,13 @@ state = {
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 3
-			13047 = {	naval_base = 1	}
+			13047 = {
+				naval_base = 1
+			}
 		}
-		victory_points = {	13047	1	}
+		victory_points = {
+			13047 1
+		}
 	}
 	
 	provinces = {
