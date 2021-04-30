@@ -120,3 +120,47 @@ country_event = {#ドナウ連邦構想
 		set_state_owner = 1002
 	}
 }
+country_event = {#汎ベルギー主義
+	id = GEACPS_game_start.3
+	title = GEACPS_game_start.3.t
+	desc = GEACPS_game_start.3.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {#現状維持
+		name = GEACPS_game_start.3.a
+ 		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 100
+			}
+		}
+	}
+	
+	option = {#自然国境説
+		name = GEACPS_game_start.3.b
+ 		ai_chance = {
+			factor = 50
+			modifier = {
+				is_historical_focus_on = yes
+				factor = 0
+			}
+		}
+		annex_country = {
+			target = LUX
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = RHI
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = SAR
+			transfer_troops = yes
+		}
+		set_state_owner = 35
+		set_state_owner = 1133
+		set_state_owner = 1134
+	}
