@@ -1,0 +1,32 @@
+﻿#中華民国広州政府
+create_dynamic_country = {
+	original_tag = CHI
+	set_country_flag = CHI_republic_guangzhou_government_countryflag
+	set_cosmetic_tag = CHI_republic_guangzhou_government
+	set_politics = {	ruling_party = authoritative_democracy	}
+	set_popularities = {	authoritative_democracy = 100	}
+	
+    set_capital = 595
+	load_oob = FNG_1946
+	transfer_state = 591
+	transfer_state = 592
+	transfer_state = 593
+	transfer_state = 728
+	transfer_state = 874
+
+	every_state = {
+		limit = {
+            OR = {
+                is_core_of = TWN
+                is_core_of = MAN
+                is_core_of = MEN
+                is_core_of = MON
+                is_core_of = TIB
+            }
+        }
+		remove_core_of = PREV
+	}
+    
+    JAP = { add_to_faction = PREV   }
+	declare_war_on = {	target = CHI	type = civil_war	}
+}
