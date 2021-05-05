@@ -1707,163 +1707,52 @@ focus_tree = {
 	}
 
 	focus = {
-        id = GEACPS_NF_JAP_navy_CA_01
+		id = GEACPS_NF_JAP_navy_small_ships
+		icon = GFX_focus_jap_pacific_guardian
+		x = 8
+		y = 0
+		relative_position_id = GEACPS_NF_JAP_navy_big_ships
+
+		completion_reward = {
+			navy_experience = 75
+		}
+
+	}
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_torpedo_CL_01
         icon = GFX_focus_jap_pacific_guardian
-        x = -1
+        x = -3
         y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_01
+        relative_position_id = GEACPS_NF_JAP_navy_small_ships
         cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
         completion_reward = {
             navy_experience = 75
         }
     }
 
 	focus = {
-        id = GEACPS_NF_JAP_navy_CA_02
+        id = GEACPS_NF_JAP_navy_torpedo_CL_02
         icon = GFX_focus_jap_pacific_guardian
         x = 0
-        y = 2
-        relative_position_id = GEACPS_NF_JAP_navy_CA_01
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_torpedo_CL_01
         cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_torpedo_CL_01 }
         completion_reward = {
             navy_experience = 75
         }
     }
 
 	focus = {
-        id = GEACPS_NF_JAP_navy_CA_03
+        id = GEACPS_NF_JAP_navy_torpedo_CL_03
         icon = GFX_focus_jap_pacific_guardian
         x = 0
         y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_CA_02
+        relative_position_id = GEACPS_NF_JAP_navy_torpedo_CL_02
         cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_02 }
-        completion_reward = {
-			create_equipment_variant = {
-					name = "型"
-					type = ship_hull_heavy_5
-					name_group = JAP_BC_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_5
-						fixed_ship_anti_air_slot = ship_anti_air_cannon_5
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_5
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = super_heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_5
-						fixed_ship_armor_slot = ship_armor_bc_2
-						front_1_custom_slot = ship_heavy_battery_5
-						front_2_custom_slot = ship_anti_air_cannon_5
-						mid_1_custom_slot = ship_anti_air_cannon_5
-						mid_2_custom_slot = ship_airplane_launcher_2
-						mid_3_custom_slot = ship_secondaries_5
-						rear_1_custom_slot = ship_heavy_battery_5
-						rear_2_custom_slot = ship_heavy_battery_5
-					}
-				}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "-" 
-						requested_factories = 1
-						progress = 0.3
-						amount = 1
-					}
-                    add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "--" 
-						requested_factories = 1
-						progress = 0.25
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "---" 
-						requested_factories = 1
-						progress = 0.2
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "----" 
-						requested_factories = 1
-						progress = 0.15
-						amount = 1
-					}
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_CAC
-        icon = GFX_focus_jap_pacific_guardian
-        x = -1
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_CA_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_01 }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_LCV_01 }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_CL_01
-        icon = GFX_focus_jap_pacific_guardian
-        x = 2
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-        completion_reward = {
-            add_tech_bonus = {
-				name = JAP_cruiser_modernization
-				bonus = 1.0
-				uses = 1	
-				category = cl_tech
-			}
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_TCL_01
-        icon = GFX_focus_jap_pacific_guardian
-        x = -1
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_CL_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_CL_01 }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_ACL_01 }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_TCL_02
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 2
-        relative_position_id = GEACPS_NF_JAP_navy_TCL_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_TCL_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_torpedo_CL_02 }
         completion_reward = {
             add_equipment_production = {
 				equipment = {
@@ -1891,54 +1780,96 @@ focus_tree = {
     }
 
 	focus = {
-        id = GEACPS_NF_JAP_navy_ACL_01
-        icon = GFX_focus_jap_pacific_guardian
-        x = 1
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_CL_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_CL_01 }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_TCL_01 }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_ACL_02
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 2
-        relative_position_id = GEACPS_NF_JAP_navy_ACL_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_ACL_01 }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Proximity_fuze }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_DD_01
-        icon = GFX_focus_jap_pacific_guardian
-        x = 6
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_01 }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_ADD_01
+        id = GEACPS_NF_JAP_navy_Anti_air_CL_01
         icon = GFX_focus_jap_pacific_guardian
         x = -1
         y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_DD_01
+        relative_position_id = GEACPS_NF_JAP_navy_small_ships
         cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_DD_01 }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
+        completion_reward = {
+            navy_experience = 75
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_Anti_air_CL_02
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_Anti_air_CL_01
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_air_CL_01 }
+        completion_reward = {
+            add_tech_bonus = {
+				name = JAP_cruiser_modernization
+				bonus = 1.0
+				uses = 1	
+				category = cl_tech
+			}
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_Anti_air_CL_03
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_Anti_air_CL_02
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_air_CL_02 }
+        completion_reward = {
+            add_ideas = JAP_Protecter_of_Fleets
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_quality_of_Destoryers
+        icon = GFX_focus_jap_pacific_guardian
+        x = 1
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_small_ships
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
+        completion_reward = {
+            add_ideas = JAP_quality_of_Destoryers
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_New_Oxygen_torpedo
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_quality_of_Destoryers
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_quality_of_Destoryers }
+        completion_reward = {
+            add_ideas = JAP_New_Oxygen_torpedo
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_General_purpose_destroyer
+        icon = GFX_focus_jap_pacific_guardian
+        x = 0
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_New_Oxygen_torpedo
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_New_Oxygen_torpedo }
+        completion_reward = {
+            add_ideas = JAP_General_purpose_destroyer_plans
+        }
+    }
+
+	focus = {
+        id = GEACPS_NF_JAP_navy_a_lot_of_Destoryers
+        icon = GFX_focus_jap_pacific_guardian
+        x = 3
+        y = 1
+        relative_position_id = GEACPS_NF_JAP_navy_small_ships
+        cost = 4.28
+		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
         completion_reward = {
             navy_experience = 75
         }
