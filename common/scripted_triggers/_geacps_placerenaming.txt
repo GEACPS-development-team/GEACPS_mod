@@ -55,6 +55,28 @@ country_ru_tag = {
 		tag = BAI
 	}
 }
+country_es_tag = {
+	OR = {
+		tag = SPR
+		tag = MEX
+		tag = COS
+		tag = GUA
+		tag = ELS
+		tag = PAN
+		tag = HON
+		tag = NIC
+		tag = CUB
+		tag = DOM
+		tag = PUE
+		tag = COL
+		tag = VEN
+		tag = ECU
+		tag = BOL
+		tag = CHL
+		tag = ARG
+		tag = URG
+	}
+}
 country_la_tag = {
 	OR = {
 		tag = VAT
@@ -96,6 +118,8 @@ placerenaming_en = {
 		state = 65
 		state = 66
 		state = 67
+		state = 115
+		state = 267
 		state = 631
 		state = 632
 		state = 635
@@ -203,6 +227,11 @@ placerenaming_tr = {
 		state = 48
 	}
 }
+placerenaming_es = {
+	OR = {
+		state = 115
+	}
+}
 placerenaming_el = {
 	OR = {
 		state = 47
@@ -219,5 +248,6 @@ placerenaming_la = {
 	OR = {
 		state = 12
 		state = 19
+		state = 115
 	}
 }

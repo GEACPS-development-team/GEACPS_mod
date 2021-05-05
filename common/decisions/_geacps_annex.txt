@@ -3,13 +3,11 @@ annexation_decisions = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
-				NOT = {	is_core_of = ROOT	}
-				is_core_of = AFG
 				is_owned_by = ROOT
+				check_variable = {	AFG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
 			}
-			ROOT = {
-				NOT = {	original_tag = AFG	}
-			}
+			ROOT = {	NOT = {	original_tag = AFG	}	}
 		}
 		complete_effect = {	country_event = geacps_annex.1	}
 		ai_will_do = {	factor = 100	}

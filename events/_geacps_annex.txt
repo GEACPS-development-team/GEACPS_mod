@@ -14,16 +14,30 @@ country_event = {
 				limit = {	country_exists = AFG	}
 				create_dynamic_country = {
 					original_tag = AFG
-					set_up_puppet_and_states = yes
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AFG_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	}
+					}
 					set_cosmetic_tag = AFG_kingdom
-					ROOT = {	puppet = new_country	}
+					ROOT = {	puppet = PREV	}
 				}
 			}
 			else = {
 				AFG = {
-					set_up_puppet_and_states = yes
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AFG_state_variable = 1	}
+						}
+						AFG = {	transfer_state = PREV	}
+					}
 					set_cosmetic_tag = AFG_kingdom
-					ROOT = {	puppet = new_country	}
+					ROOT = {	puppet = AFG	}
 				}
 			}
 		}
@@ -37,14 +51,32 @@ country_event = {
 				limit = {	country_exists = AFG	}
 				create_dynamic_country = {
 					original_tag = AFG
-					set_up_colony_and_states = yes
-					ROOT = {	puppet = new_country	}
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AFG_state_variable = 1	}
+						}
+						transfer_state = PREV
+					}
+					set_colony_variable = yes
+					set_cosmetic_tag = AFG_kingdom
+					ROOT = {	puppet = PREV	}
 				}
 			}
 			else = {
 				AFG = {
-					set_up_colony_and_states = yes
-					ROOT = {	puppet = new_country	}
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AFG_state_variable = 1	}
+						}
+						AFG = {	transfer_state = PREV	}
+					}
+					set_colony_variable = yes
+					set_cosmetic_tag = AFG_kingdom
+					ROOT = {	puppet = AFG	}
 				}
 			}
 		}
@@ -58,24 +90,32 @@ country_event = {
 				limit = {	country_exists = AFG	}
 				create_dynamic_country = {
 					original_tag = AFG
-					set_up_protectorate_and_states = yes
-					ROOT = {
-						set_autonomy = {
-							target = new_country
-							autonomy_state = protected_state
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AFG_state_variable = 1	}
 						}
+						transfer_state = PREV
 					}
+					set_colony_variable = yes
+					set_cosmetic_tag = AFG_kingdom
+					ROOT = {	set_autonomy = {	target = PREV	autonomy_state = protected_state	}	}
 				}
 			}
 			else = {
 				AFG = {
-					set_up_protectorate_and_states = yes
-					ROOT = {
-						set_autonomy = {
-							target = new_country
-							autonomy_state = protected_state
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AFG_state_variable = 1	}
 						}
+						AFG = {	transfer_state = PREV	}
 					}
+					set_colony_variable = yes
+					set_cosmetic_tag = AFG_kingdom
+					ROOT = {	set_autonomy = {	target = AFG	autonomy_state = protected_state	}	}
 				}
 			}
 		}

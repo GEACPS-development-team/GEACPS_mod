@@ -11,6 +11,7 @@ disable_placerenaming = {
 	clr_state_flag = placerenamed_state_cs
 	clr_state_flag = placerenamed_state_pl
 	clr_state_flag = placerenamed_state_da
+	clr_state_flag = placerenamed_state_es
 	clr_state_flag = placerenamed_state_la
 	clr_state_flag = placerenamed_state_ch
 }
@@ -156,6 +157,17 @@ enable_placerenaming ={
 			meta_effect = {	
 				text = {	set_state_name = [el_state_flag]	}
 				el_state_flag = "STATE_[THIS.GetId]_el"
+			}
+		}
+	}
+	else_if = {	#ƒXƒyƒCƒ“Œê
+		limit = {	controller = {	country_es_tag = yes	}	placerenaming_es = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_es	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_es	}
+			meta_effect = {	
+				text = {	set_state_name = [es_state_flag]	}
+				el_state_flag = "STATE_[THIS.GetId]_es"
 			}
 		}
 	}
