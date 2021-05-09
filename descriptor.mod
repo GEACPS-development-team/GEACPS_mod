@@ -16,7 +16,7 @@ tags={
 	"Military"
 	"Map"
 }
-name = "Greater East Asia Co-Prosperity Sphere"
+name="Greater East Asia Co-Prosperity Sphere"
 dependencies={
 	"Japanese Language mod"
 }
@@ -57,4 +57,5 @@ replace_path="history/countries"
 replace_path="history/states"
 replace_path="events"
 replace_path="music"
-supported_version="1.10.4"
+supported_version="1.10.5"
+remote_file_id="2080137628"
