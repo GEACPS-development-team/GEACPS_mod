@@ -136,16 +136,30 @@ country_event = {
 				limit = {	country_exists = ARM	}
 				create_dynamic_country = {
 					original_tag = ARM
-					set_up_puppet_and_states = yes
-					set_cosmetic_tag = AFG_kingdom
-					ROOT = {	puppet = new_country	}
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	ARM_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	}
+					}
+					set_cosmetic_tag = ARM_republic
+					ROOT = {	puppet = PREV	}
 				}
 			}
 			else = {
 				ARM = {
-					set_up_puppet_and_states = yes
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	ARM_state_variable = 1	}
+						}
+						ARM = {	transfer_state = PREV	}
+					}
 					set_cosmetic_tag = ARM_republic
-					ROOT = {	puppet = new_country	}
+					ROOT = {	puppet = ARM	}
 				}
 			}
 		}
@@ -166,16 +180,30 @@ country_event = {
 				limit = {	country_exists = AZR	}
 				create_dynamic_country = {
 					original_tag = AZR
-					set_up_puppet_and_states = yes
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AZR_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	}
+					}
 					set_cosmetic_tag = AZR_republic
-					ROOT = {	puppet = new_country	}
+					ROOT = {	puppet = PREV	}
 				}
 			}
 			else = {
 				AZR = {
-					set_up_puppet_and_states = yes
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	AZR_state_variable = 1	}
+						}
+						AZR = {	transfer_state = PREV	}
+					}
 					set_cosmetic_tag = AZR_republic
-					ROOT = {	puppet = new_country	}
+					ROOT = {	puppet = AZR	}
 				}
 			}
 		}
@@ -196,16 +224,30 @@ country_event = {
 				limit = {	country_exists = BAN	}
 				create_dynamic_country = {
 					original_tag = BAN
-					set_up_puppet_and_states = yes
-					set_cosmetic_tag = BAN_republic
-					ROOT = {	puppet = new_country	}
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	BAN_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	}
+					}
+					set_cosmetic_tag = BAN_peoples_republic
+					ROOT = {	puppet = PREV	}
 				}
 			}
 			else = {
 				BAN = {
-					set_up_puppet_and_states = yes
-					set_cosmetic_tag = BAN_republic
-					ROOT = {	puppet = new_country	}
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	BAN_state_variable = 1	}
+						}
+						BAN = {	transfer_state = PREV	}
+					}
+					set_cosmetic_tag = BAN_peoples_republic
+					ROOT = {	puppet = BAN	}
 				}
 			}
 		}
@@ -218,28 +260,38 @@ country_event = {
 	desc = geacps_annex.5.d
 	#picture = 
 	is_triggered_only = yes
-	option = {
-		name = geacps_annex.5.0
-		ai_chance = {	base = 10	}
-		hidden_effect = {
+	hidden_effect = {
 			if = {
 				limit = {	country_exists = BHU	}
 				create_dynamic_country = {
 					original_tag = BHU
-					set_up_puppet_and_states = yes
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	BHU_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	}
+					}
 					set_cosmetic_tag = BHU_kingdom
-					ROOT = {	puppet = new_country	}
+					ROOT = {	puppet = PREV	}
 				}
 			}
 			else = {
-				BHU = {
-					set_up_puppet_and_states = yes
+				BAN = {
+					remove_government_ideas = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							check_variable = {	BHU_state_variable = 1	}
+						}
+						BHU = {	transfer_state = PREV	}
+					}
 					set_cosmetic_tag = BHU_kingdom
-					ROOT = {	puppet = new_country	}
+					ROOT = {	puppet = BHU	}
 				}
 			}
 		}
-	}
 }
 
 country_event = {
