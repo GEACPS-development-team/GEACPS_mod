@@ -9,35 +9,31 @@ annexation_decisions = {
 			}
 			ROOT = {	NOT = {	original_tag = AFG	}	}
 		}
-		complete_effect = {	country_event = geacps_annex.1	}
+		complete_effect = {	country_event = geacps_annex_AFG.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	annexation_ARM = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
-				NOT = {	is_core_of = ROOT	}
-				is_core_of = ARM
 				is_owned_by = ROOT
+				check_variable = {	ARM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
 			}
-			ROOT = {
-				NOT = {	original_tag = ARM	}
-			}
+			ROOT = {	NOT = {	original_tag = ARM	}	}
 		}
-		complete_effect = {	country_event = geacps_annex.2	}
+		complete_effect = {	country_event = geacps_annex_ARM.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	annexation_AZR = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
-				NOT = {	is_core_of = ROOT	}
-				is_core_of = AZR
 				is_owned_by = ROOT
+				check_variable = {	AZR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
 			}
-			ROOT = {
-				NOT = {	original_tag = AZR	}
-			}
+			ROOT = {	NOT = {	original_tag = AZR	}	}
 		}
 		complete_effect = {	country_event = geacps_annex.3	}
 		ai_will_do = {	factor = 100	}
@@ -46,13 +42,11 @@ annexation_decisions = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
-				NOT = {	is_core_of = ROOT	}
-				is_core_of = BAN
 				is_owned_by = ROOT
+				check_variable = {	BAN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
 			}
-			ROOT = {
-				NOT = {	original_tag = BAN	}
-			}
+			ROOT = {	NOT = {	original_tag = BAN	}	}
 		}
 		complete_effect = {	country_event = geacps_annex.4	}
 		ai_will_do = {	factor = 100	}
@@ -61,13 +55,11 @@ annexation_decisions = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
-				NOT = {	is_core_of = ROOT	}
-				is_core_of = BHU
 				is_owned_by = ROOT
+				check_variable = {	BHU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
 			}
-			ROOT = {
-				NOT = {	original_tag = BAN	}
-			}
+			ROOT = {	NOT = {	original_tag = BHU	}	}
 		}
 		complete_effect = {	country_event = geacps_annex.5	}
 		ai_will_do = {	factor = 100	}
@@ -76,13 +68,11 @@ annexation_decisions = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
-				NOT = {	is_core_of = ROOT	}
-				is_core_of = BRM
 				is_owned_by = ROOT
+				check_variable = {	BRM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
 			}
-			ROOT = {
-				NOT = {	original_tag = BRM	}
-			}
+			ROOT = {	NOT = {	original_tag = BRM	}	}
 		}
 		complete_effect = {	country_event = geacps_annex.6	}
 		ai_will_do = {	factor = 100	}

@@ -2,3 +2,133 @@ is_core_or_claimed = {
 	is_core_of = ROOT
 	is_claimed_by = ROOT
 }
+
+is_north_africa_country = {
+	OR = {
+		original_tag = ALG
+		original_tag = EGY
+		original_tag = LBA
+		original_tag = MOR
+		original_tag = SUD
+		original_tag = TUN
+		original_tag = WES
+	}
+}
+
+is_west_africa_country = {
+	OR = {
+		original_tag = DAH
+		original_tag = CPV
+		original_tag = IVO
+		original_tag = GAM
+		original_tag = GHA
+		original_tag = GNA
+		original_tag = GNB
+		original_tag = LIB
+		original_tag = MLI
+		original_tag = MRI
+		original_tag = NIG
+		original_tag = NGA
+		original_tag = SEN
+		original_tag = SIE
+		original_tag = TOG
+		original_tag = VOL
+	}
+}
+
+is_middle_africa_country = {
+	OR = {
+		original_tag = CMR
+		original_tag = CAR
+		original_tag = COG
+		original_tag = EQG
+		original_tag = GAB
+		original_tag = STP
+		original_tag = CHA
+		original_tag = RCG
+	}
+}
+
+is_east_africa_country = {
+	OR = {
+		original_tag = BRD
+		original_tag = COM
+		original_tag = DJI
+		original_tag = ERI
+		original_tag = ETH
+		original_tag = KEN
+		original_tag = MAD
+		original_tag = MLW
+		original_tag = MUS
+		original_tag = MZB
+		original_tag = RUW
+		original_tag = SYC
+		original_tag = SOM
+		original_tag = SML
+		original_tag = SSD
+		original_tag = TZN
+		original_tag = UGA
+		original_tag = ZAN
+		original_tag = ZIM
+	}
+}
+
+is_south_africa_country = {
+	OR = {
+		original_tag = BOT
+		original_tag = LSO
+		original_tag = NMB
+		original_tag = SWL
+		original_tag = SAF
+	}
+}
+
+is_africa_country = {
+	OR = {
+		is_north_africa_country = yes
+		is_west_africa_country = yes
+		is_middle_africa_country = yes
+		is_east_africa_country = yes
+		is_south_africa_country = yes
+	}
+}
+
+is_core_of_north_africa = {
+	AND = {
+		is_core_of = ALG
+	}
+}
+
+is_core_of_west_africa = {
+	AND = {
+		is_core_of = DAH
+		is_core_of = CPV
+	}
+}
+
+is_core_of_middle_africa = {
+	AND = {
+		is_core_of = CMR
+		is_core_of = CAR
+	}
+}
+
+is_core_of_east_africa = {
+	OR = {
+		is_core_of = BRD
+		is_core_of = COM
+	}
+}
+
+is_core_of_south_africa = {
+	OR = {
+		is_core_of = SAF
+	}
+}
+
+is_core_of_africa = {
+	AND = {
+		is_core_of_east_africa = yes
+		is_core_of_south_africa = yes
+	}
+}

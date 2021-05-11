@@ -1,0 +1,24 @@
+state = {
+	id = 1183
+	name = "STATE_1183"
+	manpower = 39500
+	state_category = town
+	
+	history = {
+		owner = BRM
+		add_core_of = BRM
+		add_core_of = YUN
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 3
+		}
+		set_variable = {	var = BRM_state_variable	value = 1	}
+		set_variable = {	var = YUN_state_variable	value = 3	}
+		set_variable = {	var = CHI_state_variable	value = 3	}
+		set_variable = {	var = IND_state_variable	value = 3	}
+	}
+	
+	provinces = {
+		13280
+	}
+}

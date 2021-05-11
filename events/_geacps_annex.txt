@@ -1,6 +1,6 @@
-add_namespace = geacps_annex
+add_namespace = geacps_annex_AFG
 country_event = {
-	id = geacps_annex.1
+	id = geacps_annex_AFG.1
 	title = geacps_annex.1.t
 	desc = geacps_annex.1.d
 	#picture = 
@@ -43,7 +43,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = geacps_annex.1.1
+		name = geacps_annex_AFG.1.1
 		ai_chance = {	base = 0	}
 		trigger = {	tag = ENG	}
 		hidden_effect = {
@@ -82,7 +82,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = geacps_annex.1.2
+		name = geacps_annex_AFG.1.2
 		ai_chance = {	base = 100	}
 		trigger = {	tag = ENG	}
 		hidden_effect = {
@@ -120,16 +120,37 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = geacps_annex_AFG.1.3
+		ai_chance = {	base = 100	}
+		trigger = {
+			OR = {
+				tag = IND
+				IND = {	is_subject_of = ROOT	}
+			}
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					check_variable = {	IND_state_variable = 3	}
+				}
+				IND = {	transfer_state = PREV	}
+				add_core_of = IND
+			}
+		}
+	}
 }
 
+add_namespace = geacps_annex_ARM
 country_event = {
-	id = geacps_annex.2
-	title = geacps_annex.2.t
-	desc = geacps_annex.2.d
+	id = geacps_annex_ARM.1
+	title = geacps_annex_ARM.1.t
+	desc = geacps_annex_ARM.1.d
 	#picture = 
 	is_triggered_only = yes
 	option = {
-		name = geacps_annex.2.0
+		name = geacps_annex_ARM.1.0
 		ai_chance = {	base = 10	}
 		hidden_effect = {
 			if = {
