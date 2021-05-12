@@ -1,13 +1,10 @@
 state = {
 	id = 640
-	name = "STATE_640" # Mandalay
+	name = "STATE_640"
 	manpower = 3944600
-	
-	resources = {
-		tungsten = 120 
-	}
-	
 	state_category = town
+	
+	resources = {	tungsten = 120	}
 	
 	history = {
 		owner = BRM
@@ -16,9 +13,11 @@ state = {
 			infrastructure = 3
 			air_base = 1
 		}
+		set_variable = {	var = BRM_state_variable	value = 1	}
+		set_variable = {	var = IND_state_variable	value = 3	}
 	}
 	
 	provinces = {
-		4588 10386 10486 12335 12464 12492 7534 7163 1197 4087
+		4588	7163	7534	10386	10486	12335	12464	12492
 	}
 }

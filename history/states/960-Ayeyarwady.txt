@@ -1,8 +1,7 @@
 state = {
 	id = 960
 	name = "STATE_960"
-	manpower = 53500
-	
+	manpower = 829000
 	state_category = town
 
 	history = {
@@ -11,9 +10,11 @@ state = {
 		buildings = {
 			infrastructure = 4
 		}
+		set_variable = {	var = BRM_state_variable	value = 1	}
+		set_variable = {	var = IND_state_variable	value = 3	}
 	}
 
 	provinces = {
-		7254 7382 10223 12284 12267 12197
+		7254	7382	10223	12197	12267	12284
 	}
 }

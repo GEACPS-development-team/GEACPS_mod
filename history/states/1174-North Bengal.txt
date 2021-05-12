@@ -1,0 +1,24 @@
+state = {
+	id = 1174
+	name = "STATE_1174"
+	manpower = 10600000
+	buildings_max_level_factor = 1
+	state_category = town
+
+	history = {
+		owner = IND
+		add_core_of = IND
+		add_core_of = BAN
+		add_core_of = PAK
+		buildings = {
+			infrastructure = 5
+		}
+		set_variable = {	var = BAN_state_variable	value = 1	}
+		set_variable = {	var = IND_state_variable	value = 2	}
+		set_variable = {	var = PAK_state_variable	value = 2	}
+	}
+
+	provinces = {
+        4616    7662    10389   10443
+	}
+}

@@ -1,0 +1,14 @@
+formation_decisions = {
+	formation_Africa_Union = {
+		visible = {
+			ROOT = {
+				is_africa_country = yes
+				is_puppet = no
+			}
+			any_state = {
+				if = {	is_core_of_africa = yes	}
+				is_controlled_by = ROOT
+			}
+		}
+	}
+}
