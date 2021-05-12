@@ -1,27 +1,23 @@
-
 state = {
 	id = 454
-	name = "STATE_454" #Palestine
+	name = "STATE_454"
 	manpower = 933142
-	
 	state_category = rural
 
 	history = {
 		owner = PAL
+		add_core_of = PAL
+		add_core_of = ISR
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 1
 			air_base = 2
-			
 		}
-		victory_points = {
-			1086 1 
-		}
-		
-		add_core_of = PAL
-		add_core_of = ISR
+		victory_points = {	1086	1	}
+		set_variable = {	var = PAL_state_variable	value = 1	}
 	}
+
 	provinces = {
-		1 1086 4088 7107
+		1	1086	4088	7107
 	}
 }

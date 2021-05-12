@@ -3,7 +3,6 @@ state = {
 	name = "STATE_738"
 	manpower = 36146
 	buildings_max_level_factor = 1
-	
 	state_category = "small_island"
 
 	history = {
@@ -11,13 +10,12 @@ state = {
 		add_core_of = INS
 		buildings = {
 			infrastructure = 1
-			4579 = {
-				naval_base = 1
-			}
+			4579 = {	naval_base = 1	}
 		}
+		set_variable = {	var = INS_state_variable	value = 1	}
 	}
 
 	provinces = {
-		4579 
+		4579
 	}
 }

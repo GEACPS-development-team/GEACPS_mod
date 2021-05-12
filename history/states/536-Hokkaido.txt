@@ -12,19 +12,15 @@ state = {
 			infrastructure = 3
 			arms_factory = 1
 			dockyard = 1
-			10512 = {
-				naval_base = 2
-			}
-			7532 = {
-				naval_base = 3
-			}
+			7532 = {	naval_base = 3	}
+			10512 = {	naval_base = 2	}
 		}
-		victory_points = {
-			10444 10
-		}
+		victory_points = {	10444	10	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
+		set_variable = {	var = EZO_state_variable	value = 1	}
 	}
 
 	provinces = {
-		7532 10444 10512 12421
+		7532	10444	10512	12421
 	}
 }

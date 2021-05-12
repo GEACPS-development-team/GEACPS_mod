@@ -2,21 +2,19 @@ state = {
 	id = 406
 	name = "STATE_406"
 	manpower = 146494
-	
 	state_category = rural
 
 	history = {
 		owner = KAZ
 		add_core_of = KAZ
-		victory_points = {
-			3618 1
-		}
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {	3618	1	}
+		set_variable = {	var = KAZ_state_variable	value = 1	}
 	}
 
 	provinces = {
-		554 3618 6615 7322 9453 11442 11455 11469 11591 642 13008
+		554	642	3618	6615	7322	9453	11442	11455	11469	11591	13008
 	}
 }

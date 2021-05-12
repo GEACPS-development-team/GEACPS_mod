@@ -4,9 +4,7 @@ state = {
 	manpower = 2800
 	buildings_max_level_factor = 1
 	
-	resources = {
-		chromium = 15.000
-	}
+	resources = {	chromium = 15	}
 	
 	state_category = rural
 
@@ -16,9 +14,10 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	var = KAZ_state_variable	value = 1	}
 	}
 
 	provinces = {
-		4581 4638 7486 4578 4636 10353
+		4581	4578	4636	4638	7486	10353
 	}
 }

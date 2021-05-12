@@ -3,7 +3,6 @@ state = {
 	name = "STATE_856"
 	manpower = 2500
 	buildings_max_level_factor = 1
-	
 	state_category = rural
 
 	history = {
@@ -12,9 +11,10 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
+		set_variable = {	var = KAZ_state_variable	value = 1	}
 	}
 
 	provinces = {
-		475 10262
+		475	10262
 	}
 }

@@ -2,13 +2,10 @@ state = {
 	id = 560
 	name = "STATE_560"
 	manpower = 97663
-
-	resources = {
-		steel = 18 # was: 24
-	}
-	
 	state_category = rural
 
+	resources = {	steel = 18	}
+	
 	history = {
 		owner = BAI
 		add_core_of = BAI
@@ -16,9 +13,14 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	var = BAI_state_variable	value = 1	}
+		set_variable = {	var = SIB_state_variable	value = 1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
+		set_variable = {	var = MAN_state_variable	value = 2	}
+		set_variable = {	var = CHI_state_variable	value = 2	}
 	}
 
 	provinces = {
-		3664 4290 7748  9659 10571 12559 12569 12638 675 4246 4701 7616 12192 12261 12263
+		675	3664	4246	4290	4701	7616	7748	9659	10571	12192	12261	12263	12559	12569	12638
 	}
 }

@@ -2,7 +2,6 @@ state = {
 	id = 531
 	name = "STATE_531"
 	manpower = 6864000
-	
 	state_category = metropolis
 
 	history = {
@@ -12,25 +11,16 @@ state = {
 			infrastructure = 8
 			industrial_complex = 8
 			arms_factory = 2
-			7072 = {
-				naval_base = 8
-			}
+			7072 = {	naval_base = 8	}
 		}
-		victory_points = {
-			1051 1
-		}
-		victory_points = {
-			7113 1
-		}
-		victory_points = {
-			7072 50
-		}
-		victory_points = {
-			11960 50
-		}
+		victory_points = {	1051	1	}
+		victory_points = {	7113	1	}
+		victory_points = {	7072	50	}
+		victory_points = {	11960	50	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
 	}
 
 	provinces = {
-		1051 1133 4054 7072 7113 11960
+		1051	1133	4054	7072	7113	11960
 	}
 }

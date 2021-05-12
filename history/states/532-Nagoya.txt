@@ -2,6 +2,7 @@ state = {
 	id = 532
 	name = "STATE_532"
 	manpower = 3448000
+	state_category = megalopolis
 	
 	resources = {
 		steel = 9
@@ -9,36 +10,25 @@ state = {
 		rubber = 1
 	}
 	
-	state_category = megalopolis
-
 	history = {
 		owner = JAP
 		add_core_of = JAP
-		victory_points = {
-			7157 1
-		}
-		victory_points = {
-			7087 1
-		}
-		victory_points = {
-			9998 50
-		}
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 6
 			arms_factory = 2
 			dockyard = 4
 			radar_station = 1
-			7087 = {
-				naval_base = 3
-			}
-			9998 = {
-				naval_base = 10
-			}
+			7087 = {	naval_base = 3	}
+			9998 = {	naval_base = 10	}
 		}
+		victory_points = {	7157	1	}
+		victory_points = {	7087	1	}
+		victory_points = {	9998	50	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
 	}
 
 	provinces = {
-		7087 7157 9998
+		7087	7157	9998
 	}
 }

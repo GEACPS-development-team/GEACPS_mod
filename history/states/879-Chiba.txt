@@ -2,24 +2,22 @@ state = {
 	id = 879
 	name = "STATE_879"
 	manpower = 1966000
-	
 	state_category = megalopolis
 
 	history = {
 		owner = JAP
 		add_core_of = JAP
-		victory_points = {
-			4188 1
-		}
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 9
 			arms_factory = 3
 			radar_station = 1
 		}
+		victory_points = {	4188	1	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
 	}
 
 	provinces = {
-		4184 4188 4100
+		4100	4184	4188
 	}
 }

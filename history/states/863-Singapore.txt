@@ -10,12 +10,12 @@ state = {
 		add_core_of = MAL
 		buildings = {
 			infrastructure = 5
-			12299 = {
-				naval_base = 8
-				coastal_bunker = 3
-			}
+			12299 = {	naval_base = 8	}
+			12299 = {	coastal_bunker = 3	}
 		}
 		victory_points = {	12299	10	}
+		set_variable = {	var = SIN_state_variable	value = 1	}
+		set_variable = {	var = MAL_state_variable	value = 1	}
 	}
 
 	provinces = {

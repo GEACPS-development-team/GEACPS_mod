@@ -2,7 +2,6 @@ state = {
 	id = 891
 	name = "STATE_891"
 	manpower = 1000
-	
 	state_category = rural
 
 	history = {
@@ -12,9 +11,14 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	var = BAI_state_variable	value = 1	}
+		set_variable = {	var = SIB_state_variable	value = 1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
+		set_variable = {	var = MAN_state_variable	value = 2	}
+		set_variable = {	var = CHI_state_variable	value = 2	}
 	}
 
 	provinces = {
-		7871 10577 4844
+		4844	7871	10577
 	}
 }

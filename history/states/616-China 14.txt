@@ -9,12 +9,16 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = NIG
+		add_core_of = MEN
 		buildings = {
 			infrastructure = 2
 		}
+		set_variable = {	var = NIG_state_variable	value = 1	}
+		set_variable = {	var = MEN_state_variable	value = 1	}
+		set_variable = {	var = CHI_state_variable	value = 1	}
 	}
 
 	provinces = {
-		3742 5031 5057 5100 7511 8055 8081 8127 10724 12327 12750 12776 
+		3742	5031	5057	5100	7511	8055	8081	8127	10724	12327	12750	12776
 	}
 }
