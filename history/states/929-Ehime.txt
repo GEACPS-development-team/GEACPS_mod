@@ -10,9 +10,6 @@ state = {
 	}
 	
 	history = {
-		victory_points = {
-			4179 10
-		}
 		owner = JAP
 		add_core_of = JAP
 		buildings = {
@@ -20,10 +17,10 @@ state = {
 			industrial_complex = 3
 			arms_factory = 2
 			dockyard = 1
-			4179 = {
-				naval_base = 6
-			}
+			4179 = {	naval_base = 6	}
 		}
+		victory_points = {	4179	10	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
 	}
 	
 	provinces = {

@@ -9,15 +9,13 @@ state = {
 		owner = JAP
 		add_core_of = JAP
 		add_core_of = RUS
-		victory_points = {
-			12207 1
-		}
 		buildings = {
 			infrastructure = 2
-			12207 = {
-				naval_base = 1
-			}
+			12207 = {	naval_base = 1	}
 		}
+		victory_points = {	12207	1	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
 	}
 
 	provinces = {

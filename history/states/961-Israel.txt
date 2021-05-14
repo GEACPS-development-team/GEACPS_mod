@@ -1,26 +1,21 @@
-
 state = {
 	id = 961
 	name = "STATE_961" 
 	manpower = 933142
-	
 	state_category = rural
 
 	history = {
 		owner = ISR
-		buildings = {
-			4206 = {
-				naval_base = 3
-			}
-		}
-		
-		victory_points = {
-			4206 1 
-		}
-		add_core_of = PAL
 		add_core_of = ISR
+		add_core_of = PAL
+		buildings = {
+			4206 = {	naval_base = 3	}
+		}
+		victory_points = {	4206	1	}
+		set_variable = {	var = PAL_state_variable	value = 1	}
 	}
+
 	provinces = {
-		1065 1201 4206 11970 7176 1015
+		1065	1201	4206	11970	7176	1015
 	}
 }

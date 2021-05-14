@@ -4,9 +4,7 @@ state = {
 	manpower = 351000
 	state_category = rural
 	
-	resources = {
-		chromium = 3
-	}
+	resources = {	chromium = 3	}
 
 	history = {
 		owner = JAP
@@ -17,9 +15,11 @@ state = {
 			arms_factory = 1
 			industrial_complex = 1
 		}
+		set_variable = {	var = JAP_state_variable	value = 1	}
+		set_variable = {	var = EZO_state_variable	value = 1	}
 	}
 
 	provinces = {
-		1512 4646 7595 12493
+		1512	4646	7595	12493
 	}
 }

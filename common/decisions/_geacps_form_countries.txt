@@ -1,0 +1,24 @@
+formation_decisions = {
+	form_Africa_Union = {
+		visible = {
+			ROOT = {	capital_scope = {	is_on_continent = Africa	}	}
+			is_subject = no
+			NOT = {
+				any_other_country = {
+					all_owned_state = {
+						controller = {
+							is_on_continent = Africa
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			set_cosmetic_tag = AFRICA_union
+			every_state = {
+				limit = {	is_on_continent = Africa	}
+				add_core_of = ROOT
+			}
+		}
+	}
+}

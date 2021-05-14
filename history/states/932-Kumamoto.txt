@@ -2,7 +2,6 @@ state = {
 	id = 932
 	name = "STATE_932"
 	manpower = 1556000
-	
 	state_category = large_city
 
 	history = {
@@ -12,13 +11,12 @@ state = {
 			infrastructure = 7
 			industrial_complex = 3
 			arms_factory = 1
-			12006 = {
-				naval_base = 3
-			}
+			12006 = {	naval_base = 3	}
 		}
+		set_variable = {	var = JAP_state_variable	value = 1	}
 	}
 
 	provinces = {
-		1183 11925 12006
+		1183	11925	12006
 	}
 }

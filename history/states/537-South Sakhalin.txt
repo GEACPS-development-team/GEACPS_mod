@@ -13,16 +13,15 @@ state = {
 			infrastructure = 3
 			arms_factory = 1
 			industrial_complex = 1
-			12446 = {
-				naval_base = 1
-			}
+			12446 = {	naval_base = 1	}
 		}
-		victory_points = {
-			12446 1
-		}
+		victory_points = {	12446	1	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
+		set_variable = {	var = EZO_state_variable	value = 1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
 	}
 
 	provinces = {
-		1322 1820 12446
+		1322	1820	12446
 	}
 }

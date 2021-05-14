@@ -2,16 +2,15 @@ state = {
 	id = 817
 	name = "STATE_817"
 	manpower = 115300
-	
 	state_category = town
 
 	history = {
 		owner = INS
 		add_core_of = INS
-		add_core_of = MAL
 		buildings = {
 			infrastructure = 4
 		}
+		set_variable = {	var = INS_state_variable	value = 1	}
 	}
 
 	provinces = {

@@ -8,34 +8,23 @@ state = {
 	history = {
 		owner = JAP
 		add_core_of = JAP
-		victory_points = {
-			1158 10
-		}
-		victory_points = {
-			10011 1
-		}
-		victory_points = {
-			9950 1
-		}
 		buildings = {
 			infrastructure = 7
-			air_base = 3
 			industrial_complex = 1
 			arms_factory = 4
 			dockyard = 1
-			7110 = {
-				naval_base = 8
-			}
-			9950 = {
-				naval_base = 9
-			}
-			1158 = {
-				naval_base = 10
-			}
+			air_base = 3
+			7110 = {	naval_base = 8	}
+			9950 = {	naval_base = 9	}
+			1158 = {	naval_base = 10	}
 		}
+		victory_points = {	1158	10	}
+		victory_points = {	9950	1	}
+		victory_points = {	10011	1	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
 	}
 
 	provinces = {
-		1158 7110 9950 10011
+		1158	7110	9950	10011
 	}
 }

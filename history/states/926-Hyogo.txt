@@ -2,14 +2,13 @@ state = {
 	id = 926
 	name = "STATE_926"
 	manpower = 3265000
+	state_category = metropolis
 	
 	resources = {
 		chromium = 3
 		tungsten = 4
 	}
 	
-	state_category = metropolis
-
 	history = {
 		owner = JAP
 		add_core_of = JAP
@@ -18,19 +17,14 @@ state = {
 			industrial_complex = 1
 			arms_factory = 1
 			dockyard = 2
-			12031 = {
-				naval_base = 7
-			}
+			12031 = {	naval_base = 7	}
 		}
-		victory_points = {
-			10055 1
-		}
-		victory_points = {
-			12031 50
-		}
+		victory_points = {	10055	1	}
+		victory_points = {	12031	50	}
+		set_variable = {	var = JAP_state_variable	value = 1	}
 	}
 
 	provinces = {
-		9985 12031 10055
+		9985	12031	10055
 	}
 }

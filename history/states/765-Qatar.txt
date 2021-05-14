@@ -2,21 +2,19 @@ state = {
 	id = 765
 	name = "STATE_765"
 	manpower = 51600
-	
 	state_category = pastoral
 
 	history = {
 		owner = QAT
 		add_core_of = QAT
-		victory_points = {
-			8051 1
-		}
 		buildings = {
 			infrastructure = 2
-			8051 = {
-				naval_base = 2
-			}
+			8051 = {	naval_base = 2	}
 		}
+		victory_points = {	8051	1	}
+		set_variable = {	var = QAT_state_variable	value = 1	}
+		set_variable = {	var = UAE_state_variable	value = 2	}
+		set_variable = {	var = OMA_state_variable	value = 2	}
 	}
 
 	provinces = {

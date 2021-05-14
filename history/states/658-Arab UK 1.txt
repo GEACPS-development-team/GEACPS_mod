@@ -2,11 +2,10 @@ state = {
 	id = 658
 	name = "STATE_658"
 	manpower = 170200
+	state_category = pastoral
 	
 	resources = {	oil = 5	}
 	
-	state_category = pastoral
-
 	history = {
 		owner = UAE
 		add_core_of = UAE
@@ -15,9 +14,11 @@ state = {
 			7960 = {	naval_base = 3	}
 		}
 		victory_points = {	7960	1	}
+		set_variable = {	var = UAE_state_variable	value = 1	}
+		set_variable = {	var = OMA_state_variable	value = 2	}
 	}
 
 	provinces = {
-		2048 7960 8108 10904 
+		2048	7960	8108	10904
 	}
 }

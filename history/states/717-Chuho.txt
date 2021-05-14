@@ -7,15 +7,17 @@ state = {
 
 	history = {
 		owner = MAN
-		add_core_of = CHI
 		add_core_of = MAN
+		add_core_of = CHI
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {	10433	1	}
+		set_variable = {	var = MAN_state_variable	value = 1	}
+		set_variable = {	var = CHI_state_variable	value = 1	}
 	}
 
 	provinces = {
-		783 810 944 973 3791 3944 6806 6811 6964 9766 9897 10376 10503 11893 11906 12355 12482 10433
+		783	810	944	973	3791	3944	6806	6811	6964	9766	9897	10376	10433	10503	11893	11906	12355	12482
 	}
 }

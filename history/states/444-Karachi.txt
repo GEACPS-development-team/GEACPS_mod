@@ -1,10 +1,9 @@
 state = {
 	id = 444
-	name = "STATE_444" # Baluchistan
+	name = "STATE_444"
 	manpower = 463500
-	
 	state_category = rural
-
+	
 	history = {
 		owner = IND
 		add_core_of = IND
@@ -15,9 +14,13 @@ state = {
 		}
 		victory_points = {	5105	1	}
 		victory_points = {	8066	1	}
+		set_variable = {	var = BAL_state_variable	value = 1	}
+		set_variable = {	var = PAK_state_variable	value = 1	}
+		set_variable = {	var = IND_state_variable	value = 2	}
+		set_variable = {	var = AFG_state_variable	value = 2	}
 	}
 
 	provinces = {
-		1179 5043 5075 7917 8013 8066 12761 12774 4990 5105 7847 7975 8044 8098 10813
+		1179	4990	5043	5075	5105	7847	7917	7975	8013	8044	8066	8098	10813	12761	12774
 	}
 }
