@@ -1564,7 +1564,27 @@ focus_tree = {
 		prerequisite = { focus = GEACPS_NF_JAP_navy_Super_CA }
 
 		completion_reward = {
-
+			create_equipment_variant = {
+					name = "防空戦艦"
+					type = ship_hull_heavy_6
+					name_group = JAP_BB_HISTORICAL
+					parent_version = 0
+					modules = {
+						fixed_ship_battery_slot = ship_heavy_battery_6
+						fixed_ship_anti_air_slot = ship_anti_air_cannon_6
+						fixed_ship_fire_control_system_slot = ship_fire_control_system_5
+						fixed_ship_radar_slot = ship_radar_6
+						fixed_ship_engine_slot = heavy_ship_engine_6
+						fixed_ship_secondaries_slot = empty
+						fixed_ship_armor_slot = ship_armor_bb_6
+						front_1_custom_slot = ship_heavy_battery_6
+						mid_1_custom_slot = sam_2
+						mid_2_custom_slot = ship_airplane_launcher_2
+						mid_3_custom_slot = ssm_2
+						rear_1_custom_slot = sam_2
+						rear_2_custom_slot = ssm_2
+					}
+				}
 		}
 	}
 
@@ -1956,12 +1976,29 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_SS_03
+		id = GEACPS_NF_JAP_navy_VS_American_Navy
 		x = 0
 		y = 2
-		relative_position_id = GEACPS_NF_JAP_navy_SS_02
+		relative_position_id = GEACPS_NF_JAP_navy_Anti_air_CL_03
 		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_02 }
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_Super_Yamato_Class
+			focus = GEACPS_NF_JAP_antiair_Battleship
+		}
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_Medium_CV_03
+			focus = GEACPS_NF_JAP_navy_Official_CV_03
+		}
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_Anti_air_CL_03
+			focus = GEACPS_NF_JAP_navy_torpedo_CL_03
+		}
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_General_purpose_destroyer
+			focus = GEACPS_NF_JAP_navy_the_way_of_Smallships_making
+		}
+		prerequisite = { focus = GEACPS_NF_JAP_navy_faster_submarines }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_the_sub_carrier }
 
 		completion_reward = {
 			navy_experience = 75
@@ -1969,12 +2006,12 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_torpedo
-		x = 1
+		id = GEACPS_NF_JAP_navy_500_ships
+		x = 0
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_SS_02
-		icon = GFX_goal_generic_occupy_start_war
-		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_02 }
+		relative_position_id = GEACPS_NF_JAP_navy_VS_American_Navy
+		icon = GFX_focus_jap_pacific_guardian
+		prerequisite = { focus = GEACPS_NF_JAP_navy_VS_American_Navy }
 
 		completion_reward = {
 			
@@ -1984,24 +2021,28 @@ focus_tree = {
 	focus = {
 		id = GEACPS_NF_JAP_navy_modern_fleets
 		icon = GFX_focus_jap_pacific_guardian
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_CA_03
+		relative_position_id = GEACPS_NF_JAP_navy_Official_CV_03
+		icon = GFX_focus_jap_pacific_guardian
 		prerequisite = {
 			focus = GEACPS_NF_JAP_navy_Super_Yamato_Class
-			focus = GEACPS_NF_JAP_navy_BB_03 
+			focus = GEACPS_NF_JAP_antiair_Battleship
 		}
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_CV_03
-			focus = GEACPS_NF_JAP_navy_LCV_03
+			focus = GEACPS_NF_JAP_navy_Medium_CV_03
+			focus = GEACPS_NF_JAP_navy_Official_CV_03
 		}
-		prerequisite = { focus = GEACPS_NF_JAP_navy_CA_03}
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_TCL_02
-			focus = GEACPS_NF_JAP_navy_ACL_02
+			focus = GEACPS_NF_JAP_navy_Anti_air_CL_03
+			focus = GEACPS_NF_JAP_navy_torpedo_CL_03
 		}
-		prerequisite = { focus = GEACPS_NF_JAP_navy_ADD_02 }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_SS_03 }
+		prerequisite = {
+			focus = GEACPS_NF_JAP_navy_General_purpose_destroyer
+			focus = GEACPS_NF_JAP_navy_the_way_of_Smallships_making
+		}
+		prerequisite = { focus = GEACPS_NF_JAP_navy_faster_submarines }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_the_sub_carrier }
 
 		completion_reward = {
 
@@ -2009,8 +2050,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_Big_carrier
-		x = -3
+		id = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter
+		x = -1
 		y = 1
 		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
 		icon = GFX_focus_jap_pacific_guardian
@@ -2023,48 +2064,28 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_Anti_Air_BB
-		x = -1
+		id = GEACPS_NF_JAP_navy_technologies_of_Missle
+		x = -2
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
+		relative_position_id = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter }
 
 		completion_reward = {
-			create_equipment_variant = {
-					name = "防空戦艦"
-					type = ship_hull_heavy_6
-					name_group = JAP_BB_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_6
-						fixed_ship_anti_air_slot = ship_anti_air_cannon_6
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_5
-						fixed_ship_radar_slot = ship_radar_6
-						fixed_ship_engine_slot = heavy_ship_engine_6
-						fixed_ship_secondaries_slot = empty
-						fixed_ship_armor_slot = ship_armor_bb_6
-						front_1_custom_slot = ship_heavy_battery_6
-						mid_1_custom_slot = sam_2
-						mid_2_custom_slot = ship_airplane_launcher_2
-						mid_3_custom_slot = ssm_2
-						rear_1_custom_slot = sam_2
-						rear_2_custom_slot = ssm_2
-					}
-				}
+			
 
 		}
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_Anti_Air_Cannon
-		x = 1
+		id = GEACPS_NF_JAP_navy_New_system
+		x = 0
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Big_carrier
+		relative_position_id = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Big_carrier }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter }
 		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_Air_BB }
 
 		completion_reward = {
@@ -2087,11 +2108,11 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GEACPS_NF_JAP_navy_Escort_ships
+		id = GEACPS_NF_JAP_navy_Modern_YamatoClass
 		icon = GFX_focus_jap_pacific_guardian
-		x = 0
+		x = -2
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_fast_small_ships
+		relative_position_id = GEACPS_NF_JAP_navy_New_system
 		cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_fast_small_ships }
 
@@ -2162,33 +2183,6 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = GEACPS_NF_JAP_navy_Quiet_Submarine
-		x = 3
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
-
-		completion_reward = {
-			navy_experience = 75
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_O2_torpedo	
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Quiet_Submarine
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Quiet_Submarine }
-
-		completion_reward = {
-			add_ideas = JAP_torpedo_perfect
-		}
-	}
 
 	focus = {
 		id = GEACPS_NF_JAP_navy_pacific_guardian
