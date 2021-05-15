@@ -1,0 +1,53 @@
+ideas = {
+	economy = { 
+		law = yes
+		use_list_view = yes
+		
+		generic_economy_law = {
+			default = yes
+			available = {}
+			cancel_if_invalid = no
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			#modifier = {}
+			#ai_will_do = {}
+		}
+	}
+	trade_laws = { 
+		law = yes
+		use_list_view = yes
+		
+		generic_trade_law = {
+			default = yes
+			available = {}
+			cancel_if_invalid = no
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			#modifier = {}
+			#ai_will_do = {}
+		}
+	}
+	mobilization_laws = { 
+		law = yes
+		use_list_view = yes
+		
+		mobilization_law = {
+			default = yes
+			available = {}
+			cancel_if_invalid = no
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			modifier = {	conscription = 1.0	}
+			#ai_will_do = {}
+		}
+	}
+}

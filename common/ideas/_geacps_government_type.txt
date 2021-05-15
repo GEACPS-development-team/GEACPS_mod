@@ -1,33 +1,24 @@
 ideas = {
-	hidden_ideas = {
-		colonial_government = {	#植民地政府
-			allowed = {	always = no	}
-			allowed_civil_war = {	always = no	}
+	power_structure = {
+		anarchy = {
+			available = {	always = no	}
+			visible = {	always = yes	}
+			cancel_if_invalid = no
 		}
-		protectorate_government = {	#保護領及び保護国
-			allowed = {	always = no	}
-			allowed_civil_war = {	always = no	}
+		confederation_state = {
+			available = {	always = no	}
+			visible = {	always = yes	}
+			cancel_if_invalid = no
 		}
-		mandate_government = {	#委任統治領
-			allowed = {	always = no	}
-			allowed_civil_war = {	always = no	}
+		unitary_state = {
+			available = {	always = no	}
+			visible = {	always = yes	}
+			cancel_if_invalid = no
 		}
-		condominium_government = {	#共同統治領
-			allowed = {	always = no	}
-			allowed_civil_war = {	always = no	}
-		}
-		leased_territory_government = {	#租借地
-			allowed = {	always = no	}
-			allowed_civil_war = {	always = no	}
-		}
-		federal_state = {	#連邦国家
-			allowed = {	always = no	}
-			allowed_civil_war = {	always = no	}
-		}
-		
-		personal_union = {	#同君連合
-			allowed = {	always = no	}
-			allowed_civil_war = {	always = no	}
+		federation_state = {
+			available = {	always = no	}
+			visible = {	always = yes	}
+			cancel_if_invalid = no
 		}
 	}
 }

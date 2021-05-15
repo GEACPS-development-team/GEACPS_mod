@@ -323,18 +323,15 @@ ideas = {#新規国民精神
 	}
 }
 
-ideas = {#首長
-	political_advisor = {
-		JAP_Hideki_Tojo = {#東條英機
-		allowed = {
-			original_tag = "JAP"
-		}
-		allowed_civil_war = {
-			always = yes
-		}
-		removal_cost = -1
-		picture = JAP_Hideki_Tojo
-		modifier = {
+ideas = {
+	head_of_government = {
+		JAP_Hideki_Tojo = {
+			allowed = {	original_tag = JAP	}
+			allowed_civil_war = {	always = yes	}
+			
+			removal_cost = -1
+			picture = JAP_Hideki_Tojo
+			#modifier = {}
 		}
 	}
 }

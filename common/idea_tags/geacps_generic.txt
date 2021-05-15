@@ -1,0 +1,49 @@
+idea_categories = {
+	government_forms = {	#政府形態
+		slot = power_structure	#権力構造
+		slot = power_source	#
+		slot = power_ideology	#権力イデオロギー
+	}
+	cabinet = {	#内閣
+		slot = head_of_government
+		slot = political_advisor
+		slot = political_advisor
+		slot = political_advisor
+	}
+	law_category = {	#法律
+		slot = economy
+		slot = trade_laws
+		slot = mobilization_laws
+		
+		ledger = civilian
+		
+		cost = 150
+		removal_cost = 0
+	}
+	company_category = {	#企業
+		slot = industrial_concern
+		slot = materiel_manufacturer
+		slot = tank_manufacturer
+		slot = naval_manufacturer
+		slot = aircraft_manufacturer
+		slot = theorist
+		
+		ledger = civilian
+		
+		cost = 150
+		removal_cost = 0
+	}
+	military_category = {	#軍部
+		slot = army_chief 
+		slot = navy_chief 
+		slot = air_chief
+		slot = high_command
+		slot = high_command
+		slot = high_command
+		
+		ledger = invalid
+		
+		cost = 150
+		removal_cost = 0
+	}
+}

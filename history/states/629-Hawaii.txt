@@ -2,29 +2,23 @@ state = {
 	id = 629
 	name = "STATE_629"
 	manpower = 368336
-	
 	state_category = town
 	
 	history = {
 		owner = HAW
 		add_core_of = HAW
-		victory_points = {
-			4180 15
-		}
-		victory_points = {
-			12021 3
-		}
 		buildings = {
 			infrastructure = 3
 			air_base = 5
-			4180 = {
-				naval_base = 10
-			}
+			4180 = {	naval_base = 10	}
 		}
+		victory_points = {	4180	15	}
+		victory_points = {	12021	3	}
+		set_variable = {	var = HAW_state_variable	value = 1	}
 		set_demilitarized_zone = yes
 	}
 
 	provinces = {
-		4180 7112 7195 10048 12021 
+		4180	7112	7195	10048	12021
 	}
 }

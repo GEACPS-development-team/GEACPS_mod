@@ -1,4 +1,45 @@
 release_decisions = {
+	release_AFG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	AFG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = AFG	}	}
+		}
+		complete_effect = {	country_event = fate_of_AFG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ARM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ARM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ARM	}	}
+		}
+		complete_effect = {	country_event = fate_of_ARM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_AZR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	AZR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = AZR	}	}
+		}
+		complete_effect = {	country_event = fate_of_AZR.1	}
+		ai_will_do = {	factor = 100	}
+	}
 	
 	release_BAN = {
 		icon = generic_form_nation
@@ -70,45 +111,17 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_FIJ = {
+	release_GEO = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	FIJ_state_variable = 1	}
+				check_variable = {	GEO_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = FIJ	}	}
+			NOT = {	ROOT = {	original_tag = GEO	}	}
 		}
-		complete_effect = {	country_event = fate_of_FIJ.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_FSM = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	FSM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = FSM	}	}
-		}
-		complete_effect = {	country_event = fate_of_FSM.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_GUM = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	GUM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = GUM	}	}
-		}
-		complete_effect = {	country_event = fate_of_GUM.1	}
+		complete_effect = {	country_event = fate_of_GEO.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -126,20 +139,6 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_HAW = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	HAW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = HAW	}	}
-		}
-		complete_effect = {	country_event = fate_of_HAW.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
 	release_INS = {
 		icon = generic_form_nation
 		visible = {
@@ -154,6 +153,34 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_IRQ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	IRQ_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = IRQ	}	}
+		}
+		complete_effect = {	country_event = fate_of_IRQ.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ISR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ISR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ISR	}	}
+		}
+		complete_effect = {	country_event = fate_of_ISR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_JAP = {
 		icon = generic_form_nation
 		visible = {
@@ -165,6 +192,20 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = JAP	}	}
 		}
 		complete_effect = {	country_event = fate_of_JAP.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_JOR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	JOR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = JOR	}	}
+		}
+		complete_effect = {	country_event = fate_of_JOR.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -196,6 +237,34 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_KUR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KUR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KUR	}	}
+		}
+		complete_effect = {	country_event = fate_of_KUR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_KUW = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KUW_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KUW	}	}
+		}
+		complete_effect = {	country_event = fate_of_KUW.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_KYR = {
 		icon = generic_form_nation
 		visible = {
@@ -221,6 +290,20 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = LAO	}	}
 		}
 		complete_effect = {	country_event = fate_of_LAO.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_LEB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	LEB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = LEB	}	}
+		}
+		complete_effect = {	country_event = fate_of_LEB.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -308,6 +391,20 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_OMA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	OMA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = OMA	}	}
+		}
+		complete_effect = {	country_event = fate_of_OMA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_PAK = {
 		icon = generic_form_nation
 		visible = {
@@ -319,6 +416,34 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = PAK	}	}
 		}
 		complete_effect = {	country_event = fate_of_PAK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PAL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PAL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PAL	}	}
+		}
+		complete_effect = {	country_event = fate_of_PAL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PER = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PER_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PER	}	}
+		}
+		complete_effect = {	country_event = fate_of_PER.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -336,17 +461,17 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_PNG = {
+	release_QAT = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	PNG_state_variable = 1	}
+				check_variable = {	QAT_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = PNG	}	}
+			NOT = {	ROOT = {	original_tag = QAT	}	}
 		}
-		complete_effect = {	country_event = fate_of_PNG.1	}
+		complete_effect = {	country_event = fate_of_QAT.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -364,17 +489,17 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_SAM = {
+	release_SAU = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	SAM_state_variable = 1	}
+				check_variable = {	SAU_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = SAM	}	}
+			NOT = {	ROOT = {	original_tag = SAU	}	}
 		}
-		complete_effect = {	country_event = fate_of_SAM.1	}
+		complete_effect = {	country_event = fate_of_SAU.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -420,20 +545,6 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_SOL = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SOL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SOL	}	}
-		}
-		complete_effect = {	country_event = fate_of_SOL.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
 	release_SRL = {
 		icon = generic_form_nation
 		visible = {
@@ -448,17 +559,17 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_TAH = {
+	release_SYR = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	TAH_state_variable = 1	}
+				check_variable = {	SYR_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = TAH	}	}
+			NOT = {	ROOT = {	original_tag = SYR	}	}
 		}
-		complete_effect = {	country_event = fate_of_TAH.1	}
+		complete_effect = {	country_event = fate_of_SYR.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -518,6 +629,34 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_TUR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TUR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TUR	}	}
+		}
+		complete_effect = {	country_event = fate_of_TUR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_UAE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	UAE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = UAE	}	}
+		}
+		complete_effect = {	country_event = fate_of_UAE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_UZB = {
 		icon = generic_form_nation
 		visible = {
@@ -560,272 +699,6 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_YUN = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	YUN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = YUN	}	}
-		}
-		complete_effect = {	country_event = fate_of_YUN.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_AFG = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	AFG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = AFG	}	}
-		}
-		complete_effect = {	country_event = fate_of_AFG.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_ARM = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	ARM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = ARM	}	}
-		}
-		complete_effect = {	country_event = fate_of_ARM.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_AZR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	AZR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = AZR	}	}
-		}
-		complete_effect = {	country_event = fate_of_AZR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_GEO = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	GEO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = GEO	}	}
-		}
-		complete_effect = {	country_event = fate_of_GEO.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_IRQ = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	IRQ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = IRQ	}	}
-		}
-		complete_effect = {	country_event = fate_of_IRQ.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_ISR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	ISR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = ISR	}	}
-		}
-		complete_effect = {	country_event = fate_of_ISR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_JOR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	JOR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = JOR	}	}
-		}
-		complete_effect = {	country_event = fate_of_JOR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_KUR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	KUR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = KUR	}	}
-		}
-		complete_effect = {	country_event = fate_of_KUR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_KUW = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	KUW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = KUW	}	}
-		}
-		complete_effect = {	country_event = fate_of_KUW.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_LEB = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	LEB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = LEB	}	}
-		}
-		complete_effect = {	country_event = fate_of_LEB.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_OMA = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	OMA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = OMA	}	}
-		}
-		complete_effect = {	country_event = fate_of_OMA.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_PAL = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	PAL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = PAL	}	}
-		}
-		complete_effect = {	country_event = fate_of_PAL.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_PER = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	PER_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = PER	}	}
-		}
-		complete_effect = {	country_event = fate_of_PER.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_QAT = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	QAT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = QAT	}	}
-		}
-		complete_effect = {	country_event = fate_of_QAT.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SAU = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SAU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SAU	}	}
-		}
-		complete_effect = {	country_event = fate_of_SAU.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SYR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SYR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SYR	}	}
-		}
-		complete_effect = {	country_event = fate_of_SYR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_TUR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	TUR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = TUR	}	}
-		}
-		complete_effect = {	country_event = fate_of_TUR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_UAE = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	UAE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = UAE	}	}
-		}
-		complete_effect = {	country_event = fate_of_UAE.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
 	release_YEM = {
 		icon = generic_form_nation
 		visible = {
@@ -840,101 +713,17 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_AST = {
+	release_YUN = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	AST_state_variable = 1	}
+				check_variable = {	YUN_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = AST	}	}
+			NOT = {	ROOT = {	original_tag = YUN	}	}
 		}
-		complete_effect = {	country_event = fate_of_AST.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_CAN = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	CAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = CAN	}	}
-		}
-		complete_effect = {	country_event = fate_of_CAN.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_ENG = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	ENG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = ENG	}	}
-		}
-		complete_effect = {	country_event = fate_of_ENG.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_NIR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	NIR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = NIR	}	}
-		}
-		complete_effect = {	country_event = fate_of_NIR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_NZL = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	NZL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = NZL	}	}
-		}
-		complete_effect = {	country_event = fate_of_NZL.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SCO = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SCO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SCO	}	}
-		}
-		complete_effect = {	country_event = fate_of_SCO.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_WLS = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	WLS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = WLS	}	}
-		}
-		complete_effect = {	country_event = fate_of_WLS.1	}
+		complete_effect = {	country_event = fate_of_YUN.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -949,6 +738,20 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = ADU	}	}
 		}
 		complete_effect = {	country_event = fate_of_ADU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ALB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ALB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ALB	}	}
+		}
+		complete_effect = {	country_event = fate_of_ALB.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -994,6 +797,34 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_BLR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BLR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BLR	}	}
+		}
+		complete_effect = {	country_event = fate_of_BLR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BOS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BOS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BOS	}	}
+		}
+		complete_effect = {	country_event = fate_of_BOS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_BRI = {
 		icon = generic_form_nation
 		visible = {
@@ -1005,6 +836,20 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = BRI	}	}
 		}
 		complete_effect = {	country_event = fate_of_BRI.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BUL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BUL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BUL	}	}
+		}
+		complete_effect = {	country_event = fate_of_BUL.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -1036,17 +881,17 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_CSA = {
+	release_CRO = {
 		icon = generic_form_nation
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	CSA_state_variable = 1	}
+				check_variable = {	CRO_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = CSA	}	}
+			NOT = {	ROOT = {	original_tag = CRO	}	}
 		}
-		complete_effect = {	country_event = fate_of_CSA.1	}
+		complete_effect = {	country_event = fate_of_CRO.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -1064,6 +909,34 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_CZE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CZE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CZE	}	}
+		}
+		complete_effect = {	country_event = fate_of_CZE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_EGR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	EGR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = EGR	}	}
+		}
+		complete_effect = {	country_event = fate_of_EGR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_DEN = {
 		icon = generic_form_nation
 		visible = {
@@ -1075,6 +948,48 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = DEN	}	}
 		}
 		complete_effect = {	country_event = fate_of_DEN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ENG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ENG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ENG	}	}
+		}
+		complete_effect = {	country_event = fate_of_ENG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_EST = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	EST_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = EST	}	}
+		}
+		complete_effect = {	country_event = fate_of_EST.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FIN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FIN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FIN	}	}
+		}
+		complete_effect = {	country_event = fate_of_FIN.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -1120,6 +1035,20 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_GRE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GRE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GRE	}	}
+		}
+		complete_effect = {	country_event = fate_of_GRE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_HAN = {
 		icon = generic_form_nation
 		visible = {
@@ -1145,6 +1074,34 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = HOL	}	}
 		}
 		complete_effect = {	country_event = fate_of_HOL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HRZ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HRZ_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HRZ	}	}
+		}
+		complete_effect = {	country_event = fate_of_HRZ.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HUN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HUN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HUN	}	}
+		}
+		complete_effect = {	country_event = fate_of_HUN.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -1190,398 +1147,6 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
-	release_LUX = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	LUX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = LUX	}	}
-		}
-		complete_effect = {	country_event = fate_of_LUX.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_MEK = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	MEK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = MEK	}	}
-		}
-		complete_effect = {	country_event = fate_of_MEK.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_MLT = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	MLT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = MLT	}	}
-		}
-		complete_effect = {	country_event = fate_of_MLT.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_NAV = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	NAV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = NAV	}	}
-		}
-		complete_effect = {	country_event = fate_of_NAV.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_NOR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	NOR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = NOR	}	}
-		}
-		complete_effect = {	country_event = fate_of_NOR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_OCC = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	OCC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = OCC	}	}
-		}
-		complete_effect = {	country_event = fate_of_OCC.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_POR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	POR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = POR	}	}
-		}
-		complete_effect = {	country_event = fate_of_POR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_PRE = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	PRE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = PRE	}	}
-		}
-		complete_effect = {	country_event = fate_of_PRE.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SAX = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SAX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SAX	}	}
-		}
-		complete_effect = {	country_event = fate_of_SAX.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SHL = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SHL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SHL	}	}
-		}
-		complete_effect = {	country_event = fate_of_SHL.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SPR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SPR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SPR	}	}
-		}
-		complete_effect = {	country_event = fate_of_SPR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SWE = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SWE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SWE	}	}
-		}
-		complete_effect = {	country_event = fate_of_SWE.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_SWI = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SWI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SWI	}	}
-		}
-		complete_effect = {	country_event = fate_of_SWI.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_USA = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	USA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = USA	}	}
-		}
-		complete_effect = {	country_event = fate_of_USA.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_WGR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	WGR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = WGR	}	}
-		}
-		complete_effect = {	country_event = fate_of_WGR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_WUR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	WUR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = WUR	}	}
-		}
-		complete_effect = {	country_event = fate_of_WUR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_ALB = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	ALB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = ALB	}	}
-		}
-		complete_effect = {	country_event = fate_of_ALB.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_BLR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	BLR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = BLR	}	}
-		}
-		complete_effect = {	country_event = fate_of_BLR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_BOS = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	BOS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = BOS	}	}
-		}
-		complete_effect = {	country_event = fate_of_BOS.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_BUL = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	BUL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = BUL	}	}
-		}
-		complete_effect = {	country_event = fate_of_BUL.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_CRO = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	CRO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = CRO	}	}
-		}
-		complete_effect = {	country_event = fate_of_CRO.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_CZE = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	CZE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = CZE	}	}
-		}
-		complete_effect = {	country_event = fate_of_CZE.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_EGR = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	EGR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = EGR	}	}
-		}
-		complete_effect = {	country_event = fate_of_EGR.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_EST = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	EST_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = EST	}	}
-		}
-		complete_effect = {	country_event = fate_of_EST.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_FIN = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	FIN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = FIN	}	}
-		}
-		complete_effect = {	country_event = fate_of_FIN.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_GRE = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	GRE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = GRE	}	}
-		}
-		complete_effect = {	country_event = fate_of_GRE.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_HRZ = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	HRZ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = HRZ	}	}
-		}
-		complete_effect = {	country_event = fate_of_HRZ.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
-	release_HUN = {
-		icon = generic_form_nation
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	HUN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = HUN	}	}
-		}
-		complete_effect = {	country_event = fate_of_HUN.1	}
-		ai_will_do = {	factor = 100	}
-	}
-	
 	release_KOS = {
 		icon = generic_form_nation
 		visible = {
@@ -1624,6 +1189,20 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_LUX = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	LUX_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = LUX	}	}
+		}
+		complete_effect = {	country_event = fate_of_LUX.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_MAC = {
 		icon = generic_form_nation
 		visible = {
@@ -1635,6 +1214,34 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = MAC	}	}
 		}
 		complete_effect = {	country_event = fate_of_MAC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MEK = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MEK_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MEK	}	}
+		}
+		complete_effect = {	country_event = fate_of_MEK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MLT = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MLT_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MLT	}	}
+		}
+		complete_effect = {	country_event = fate_of_MLT.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -1666,6 +1273,62 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_NAV = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NAV_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NAV	}	}
+		}
+		complete_effect = {	country_event = fate_of_NAV.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NIR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NIR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NIR	}	}
+		}
+		complete_effect = {	country_event = fate_of_NIR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NOR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NOR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NOR	}	}
+		}
+		complete_effect = {	country_event = fate_of_NOR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_OCC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	OCC_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = OCC	}	}
+		}
+		complete_effect = {	country_event = fate_of_OCC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_POL = {
 		icon = generic_form_nation
 		visible = {
@@ -1677,6 +1340,34 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = POL	}	}
 		}
 		complete_effect = {	country_event = fate_of_POL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_POR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	POR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = POR	}	}
+		}
+		complete_effect = {	country_event = fate_of_POR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PRE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PRE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PRE	}	}
+		}
+		complete_effect = {	country_event = fate_of_PRE.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -1694,6 +1385,34 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_SAX = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SAX_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SAX	}	}
+		}
+		complete_effect = {	country_event = fate_of_SAX.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SCO = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SCO_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SCO	}	}
+		}
+		complete_effect = {	country_event = fate_of_SCO.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_SER = {
 		icon = generic_form_nation
 		visible = {
@@ -1705,6 +1424,20 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = SER	}	}
 		}
 		complete_effect = {	country_event = fate_of_SER.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SHL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SHL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SHL	}	}
+		}
+		complete_effect = {	country_event = fate_of_SHL.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -1750,6 +1483,48 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_SPR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SPR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SPR	}	}
+		}
+		complete_effect = {	country_event = fate_of_SPR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SWE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SWE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SWE	}	}
+		}
+		complete_effect = {	country_event = fate_of_SWE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SWI = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SWI_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SWI	}	}
+		}
+		complete_effect = {	country_event = fate_of_SWI.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_TRA = {
 		icon = generic_form_nation
 		visible = {
@@ -1775,6 +1550,48 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = UKR	}	}
 		}
 		complete_effect = {	country_event = fate_of_UKR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WGR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WGR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WGR	}	}
+		}
+		complete_effect = {	country_event = fate_of_WGR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WLS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WLS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WLS	}	}
+		}
+		complete_effect = {	country_event = fate_of_WLS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WUR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WUR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WUR	}	}
+		}
+		complete_effect = {	country_event = fate_of_WUR.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -2520,6 +2337,20 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_CAN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CAN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CAN	}	}
+		}
+		complete_effect = {	country_event = fate_of_CAN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_CAY = {
 		icon = generic_form_nation
 		visible = {
@@ -2587,6 +2418,20 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = CRC	}	}
 		}
 		complete_effect = {	country_event = fate_of_CRC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CSA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CSA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CSA	}	}
+		}
+		complete_effect = {	country_event = fate_of_CSA.1	}
 		ai_will_do = {	factor = 100	}
 	}
 	
@@ -2856,6 +2701,20 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_USA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	USA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = USA	}	}
+		}
+		complete_effect = {	country_event = fate_of_USA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
 	release_VEN = {
 		icon = generic_form_nation
 		visible = {
@@ -2870,4 +2729,2355 @@ release_decisions = {
 		ai_will_do = {	factor = 100	}
 	}
 	
+	release_AST = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	AST_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = AST	}	}
+		}
+		complete_effect = {	country_event = fate_of_AST.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FIJ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FIJ_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FIJ	}	}
+		}
+		complete_effect = {	country_event = fate_of_FIJ.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FSM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FSM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FSM	}	}
+		}
+		complete_effect = {	country_event = fate_of_FSM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GUM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GUM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GUM	}	}
+		}
+		complete_effect = {	country_event = fate_of_GUM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HAW = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HAW_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HAW	}	}
+		}
+		complete_effect = {	country_event = fate_of_HAW.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MHL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MHL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MHL	}	}
+		}
+		complete_effect = {	country_event = fate_of_MHL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NZL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NZL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NZL	}	}
+		}
+		complete_effect = {	country_event = fate_of_NZL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PNG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PNG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PNG	}	}
+		}
+		complete_effect = {	country_event = fate_of_PNG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SAM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SAM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SAM	}	}
+		}
+		complete_effect = {	country_event = fate_of_SAM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SOL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SOL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SOL	}	}
+		}
+		complete_effect = {	country_event = fate_of_SOL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TAH = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TAH_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TAH	}	}
+		}
+		complete_effect = {	country_event = fate_of_TAH.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ABK = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ABK_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ABK	}	}
+		}
+		complete_effect = {	country_event = fate_of_ABK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ANH = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ANH_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ANH	}	}
+		}
+		complete_effect = {	country_event = fate_of_ANH.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_AZA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	AZA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = AZA	}	}
+		}
+		complete_effect = {	country_event = fate_of_AZA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BAL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BAL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BAL	}	}
+		}
+		complete_effect = {	country_event = fate_of_BAL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BHK = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BHK_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BHK	}	}
+		}
+		complete_effect = {	country_event = fate_of_BHK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BHR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BHR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BHR	}	}
+		}
+		complete_effect = {	country_event = fate_of_BHR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BNG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BNG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BNG	}	}
+		}
+		complete_effect = {	country_event = fate_of_BNG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BRN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BRN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BRN	}	}
+		}
+		complete_effect = {	country_event = fate_of_BRN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CCS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CCS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CCS	}	}
+		}
+		complete_effect = {	country_event = fate_of_CCS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ETR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ETR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ETR	}	}
+		}
+		complete_effect = {	country_event = fate_of_ETR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_EZO = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	EZO_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = EZO	}	}
+		}
+		complete_effect = {	country_event = fate_of_EZO.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FUJ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FUJ_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FUJ	}	}
+		}
+		complete_effect = {	country_event = fate_of_FUJ.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GAN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GAN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GAN	}	}
+		}
+		complete_effect = {	country_event = fate_of_GAN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GND = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GND_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GND	}	}
+		}
+		complete_effect = {	country_event = fate_of_GND.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GZH = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GZH_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GZH	}	}
+		}
+		complete_effect = {	country_event = fate_of_GZH.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HEB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HEB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HEB	}	}
+		}
+		complete_effect = {	country_event = fate_of_HEB.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HEN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HEN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HEN	}	}
+		}
+		complete_effect = {	country_event = fate_of_HEN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HKG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HKG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HKG	}	}
+		}
+		complete_effect = {	country_event = fate_of_HKG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HNN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HNN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HNN	}	}
+		}
+		complete_effect = {	country_event = fate_of_HNN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HUB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HUB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HUB	}	}
+		}
+		complete_effect = {	country_event = fate_of_HUB.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_HYD = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	HYD_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = HYD	}	}
+		}
+		complete_effect = {	country_event = fate_of_HYD.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_INC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	INC_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = INC	}	}
+		}
+		complete_effect = {	country_event = fate_of_INC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_JAK = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	JAK_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = JAK	}	}
+		}
+		complete_effect = {	country_event = fate_of_JAK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_JIA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	JIA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = JIA	}	}
+		}
+		complete_effect = {	country_event = fate_of_JIA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_JGS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	JGS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = JGS	}	}
+		}
+		complete_effect = {	country_event = fate_of_JGS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_JOH = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	JOH_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = JOH	}	}
+		}
+		complete_effect = {	country_event = fate_of_JOH.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_KED = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KED_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KED	}	}
+		}
+		complete_effect = {	country_event = fate_of_KED.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_KEL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KEL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KEL	}	}
+		}
+		complete_effect = {	country_event = fate_of_KEL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_KUM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KUM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KUM	}	}
+		}
+		complete_effect = {	country_event = fate_of_KUM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_KWA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KWA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KWA	}	}
+		}
+		complete_effect = {	country_event = fate_of_KWA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MCA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MCA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MCA	}	}
+		}
+		complete_effect = {	country_event = fate_of_MCA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MOU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MOU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MOU	}	}
+		}
+		complete_effect = {	country_event = fate_of_MOU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MYS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MYS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MYS	}	}
+		}
+		complete_effect = {	country_event = fate_of_MYS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NAN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NAN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NAN	}	}
+		}
+		complete_effect = {	country_event = fate_of_NAN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NIG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NIG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NIG	}	}
+		}
+		complete_effect = {	country_event = fate_of_NIG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ORI = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ORI_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ORI	}	}
+		}
+		complete_effect = {	country_event = fate_of_ORI.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_OTT = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	OTT_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = OTT	}	}
+		}
+		complete_effect = {	country_event = fate_of_OTT.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PRL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PRL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PRL	}	}
+		}
+		complete_effect = {	country_event = fate_of_PRL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PUD = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PUD_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PUD	}	}
+		}
+		complete_effect = {	country_event = fate_of_PUD.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_QAH = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	QAH_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = QAH	}	}
+		}
+		complete_effect = {	country_event = fate_of_QAH.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_QIG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	QIG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = QIG	}	}
+		}
+		complete_effect = {	country_event = fate_of_QIG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_RYU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	RYU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = RYU	}	}
+		}
+		complete_effect = {	country_event = fate_of_RYU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SAB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SAB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SAB	}	}
+		}
+		complete_effect = {	country_event = fate_of_SAB.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SCH = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SCH_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SCH	}	}
+		}
+		complete_effect = {	country_event = fate_of_SCH.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SGH = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SGH_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SGH	}	}
+		}
+		complete_effect = {	country_event = fate_of_SGH.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SIN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SIN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SIN	}	}
+		}
+		complete_effect = {	country_event = fate_of_SIN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SHA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SHA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SHA	}	}
+		}
+		complete_effect = {	country_event = fate_of_SHA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SHD = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SHD_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SHD	}	}
+		}
+		complete_effect = {	country_event = fate_of_SHD.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SKM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SKM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SKM	}	}
+		}
+		complete_effect = {	country_event = fate_of_SKM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SRW = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SRW_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SRW	}	}
+		}
+		complete_effect = {	country_event = fate_of_SRW.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SUY = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SUY_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SUY	}	}
+		}
+		complete_effect = {	country_event = fate_of_SUY.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SYE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SYE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SYE	}	}
+		}
+		complete_effect = {	country_event = fate_of_SYE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TER = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TER_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TER	}	}
+		}
+		complete_effect = {	country_event = fate_of_TER.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TLS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TLS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TLS	}	}
+		}
+		complete_effect = {	country_event = fate_of_TLS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TNG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TNG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TNG	}	}
+		}
+		complete_effect = {	country_event = fate_of_TNG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TRV = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TRV_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TRV	}	}
+		}
+		complete_effect = {	country_event = fate_of_TRV.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TWN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TWN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TWN	}	}
+		}
+		complete_effect = {	country_event = fate_of_TWN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_VPS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	VPS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = VPS	}	}
+		}
+		complete_effect = {	country_event = fate_of_VPS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WTR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WTR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WTR	}	}
+		}
+		complete_effect = {	country_event = fate_of_WTR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_XIK = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	XIK_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = XIK	}	}
+		}
+		complete_effect = {	country_event = fate_of_XIK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_YNN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	YNN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = YNN	}	}
+		}
+		complete_effect = {	country_event = fate_of_YNN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ZHI = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ZHI_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ZHI	}	}
+		}
+		complete_effect = {	country_event = fate_of_ZHI.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ZHE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ZHE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ZHE	}	}
+		}
+		complete_effect = {	country_event = fate_of_ZHE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ADR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ADR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ADR	}	}
+		}
+		complete_effect = {	country_event = fate_of_ADR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ALA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ALA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ALA	}	}
+		}
+		complete_effect = {	country_event = fate_of_ALA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BAI = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BAI_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BAI	}	}
+		}
+		complete_effect = {	country_event = fate_of_BAI.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_DAL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	DAL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = DAL	}	}
+		}
+		complete_effect = {	country_event = fate_of_DAL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_DON = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	DON_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = DON	}	}
+		}
+		complete_effect = {	country_event = fate_of_DON.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FLN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FLN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FLN	}	}
+		}
+		complete_effect = {	country_event = fate_of_FLN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FRO = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FRO_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FRO	}	}
+		}
+		complete_effect = {	country_event = fate_of_FRO.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GIB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GIB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GIB	}	}
+		}
+		complete_effect = {	country_event = fate_of_GIB.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GUE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GUE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GUE	}	}
+		}
+		complete_effect = {	country_event = fate_of_GUE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_IST = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	IST_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = IST	}	}
+		}
+		complete_effect = {	country_event = fate_of_IST.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_JER = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	JER_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = JER	}	}
+		}
+		complete_effect = {	country_event = fate_of_JER.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_KAR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KAR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KAR	}	}
+		}
+		complete_effect = {	country_event = fate_of_KAR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_LIE = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	LIE_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = LIE	}	}
+		}
+		complete_effect = {	country_event = fate_of_LIE.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MCO = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MCO_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MCO	}	}
+		}
+		complete_effect = {	country_event = fate_of_MCO.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MNN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MNN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MNN	}	}
+		}
+		complete_effect = {	country_event = fate_of_MNN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MRV = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MRV_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MRV	}	}
+		}
+		complete_effect = {	country_event = fate_of_MRV.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_RHI = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	RHI_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = RHI	}	}
+		}
+		complete_effect = {	country_event = fate_of_RHI.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_RUS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	RUS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = RUS	}	}
+		}
+		complete_effect = {	country_event = fate_of_RUS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SAR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SAR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SAR	}	}
+		}
+		complete_effect = {	country_event = fate_of_SAR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SIB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SIB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SIB	}	}
+		}
+		complete_effect = {	country_event = fate_of_SIB.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SIC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SIC_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SIC	}	}
+		}
+		complete_effect = {	country_event = fate_of_SIC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SGR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SGR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SGR	}	}
+		}
+		complete_effect = {	country_event = fate_of_SGR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SLA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SLA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SLA	}	}
+		}
+		complete_effect = {	country_event = fate_of_SLA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SMR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SMR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SMR	}	}
+		}
+		complete_effect = {	country_event = fate_of_SMR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SRD = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SRD_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SRD	}	}
+		}
+		complete_effect = {	country_event = fate_of_SRD.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_VAL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	VAL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = VAL	}	}
+		}
+		complete_effect = {	country_event = fate_of_VAL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_VAT = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	VAT_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = VAT	}	}
+		}
+		complete_effect = {	country_event = fate_of_VAT.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_VNC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	VNC_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = VNC	}	}
+		}
+		complete_effect = {	country_event = fate_of_VNC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_VOJ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	VOJ_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = VOJ	}	}
+		}
+		complete_effect = {	country_event = fate_of_VOJ.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WLL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WLL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WLL	}	}
+		}
+		complete_effect = {	country_event = fate_of_WLL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_COM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	COM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = COM	}	}
+		}
+		complete_effect = {	country_event = fate_of_COM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CPV = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CPV_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CPV	}	}
+		}
+		complete_effect = {	country_event = fate_of_CPV.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CYR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CYR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CYR	}	}
+		}
+		complete_effect = {	country_event = fate_of_CYR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_EQA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	EQA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = EQA	}	}
+		}
+		complete_effect = {	country_event = fate_of_EQA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FEZ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FEZ_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FEZ	}	}
+		}
+		complete_effect = {	country_event = fate_of_FEZ.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_LSO = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	LSO_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = LSO	}	}
+		}
+		complete_effect = {	country_event = fate_of_LSO.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MUS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MUS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MUS	}	}
+		}
+		complete_effect = {	country_event = fate_of_MUS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MYT = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MYT_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MYT	}	}
+		}
+		complete_effect = {	country_event = fate_of_MYT.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_R-U = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	R-U_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = R-U	}	}
+		}
+		complete_effect = {	country_event = fate_of_R-U.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_REU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	REU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = REU	}	}
+		}
+		complete_effect = {	country_event = fate_of_REU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SML = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SML_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SML	}	}
+		}
+		complete_effect = {	country_event = fate_of_SML.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SSD = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SSD_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SSD	}	}
+		}
+		complete_effect = {	country_event = fate_of_SSD.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_STP = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	STP_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = STP	}	}
+		}
+		complete_effect = {	country_event = fate_of_STP.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SWL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SWL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SWL	}	}
+		}
+		complete_effect = {	country_event = fate_of_SWL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SYC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SYC_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SYC	}	}
+		}
+		complete_effect = {	country_event = fate_of_SYC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TRP = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TRP_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TRP	}	}
+		}
+		complete_effect = {	country_event = fate_of_TRP.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WAF = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WAF_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WAF	}	}
+		}
+		complete_effect = {	country_event = fate_of_WAF.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ZAN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ZAN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ZAN	}	}
+		}
+		complete_effect = {	country_event = fate_of_ZAN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_AGU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	AGU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = AGU	}	}
+		}
+		complete_effect = {	country_event = fate_of_AGU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ARB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ARB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ARB	}	}
+		}
+		complete_effect = {	country_event = fate_of_ARB.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ATG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ATG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ATG	}	}
+		}
+		complete_effect = {	country_event = fate_of_ATG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BMU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BMU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BMU	}	}
+		}
+		complete_effect = {	country_event = fate_of_BMU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_BRB = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BRB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BRB	}	}
+		}
+		complete_effect = {	country_event = fate_of_BRB.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CYM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CYM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CYM	}	}
+		}
+		complete_effect = {	country_event = fate_of_CYM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_DMA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	DMA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = DMA	}	}
+		}
+		complete_effect = {	country_event = fate_of_DMA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_FKL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	FKL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = FKL	}	}
+		}
+		complete_effect = {	country_event = fate_of_FKL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GRD = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GRD_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GRD	}	}
+		}
+		complete_effect = {	country_event = fate_of_GRD.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GRL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GRL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GRL	}	}
+		}
+		complete_effect = {	country_event = fate_of_GRL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_LEW = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	LEW_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = LEW	}	}
+		}
+		complete_effect = {	country_event = fate_of_LEW.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MSR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MSR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MSR	}	}
+		}
+		complete_effect = {	country_event = fate_of_MSR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_MTQ = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	MTQ_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = MTQ	}	}
+		}
+		complete_effect = {	country_event = fate_of_MTQ.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NFL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NFL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NFL	}	}
+		}
+		complete_effect = {	country_event = fate_of_NFL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SBL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SBL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SBL	}	}
+		}
+		complete_effect = {	country_event = fate_of_SBL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SHN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SHN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SHN	}	}
+		}
+		complete_effect = {	country_event = fate_of_SHN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SKN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SKN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SKN	}	}
+		}
+		complete_effect = {	country_event = fate_of_SKN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SLC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SLC_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SLC	}	}
+		}
+		complete_effect = {	country_event = fate_of_SLC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SPM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SPM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SPM	}	}
+		}
+		complete_effect = {	country_event = fate_of_SPM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_SVG = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	SVG_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = SVG	}	}
+		}
+		complete_effect = {	country_event = fate_of_SVG.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TCA = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TCA_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TCA	}	}
+		}
+		complete_effect = {	country_event = fate_of_TCA.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_VIR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	VIR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = VIR	}	}
+		}
+		complete_effect = {	country_event = fate_of_VIR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WIW = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WIW_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WIW	}	}
+		}
+		complete_effect = {	country_event = fate_of_WIW.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CHR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CHR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CHR	}	}
+		}
+		complete_effect = {	country_event = fate_of_CHR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_COC = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	COC_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = COC	}	}
+		}
+		complete_effect = {	country_event = fate_of_COC.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_COK = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	COK_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = COK	}	}
+		}
+		complete_effect = {	country_event = fate_of_COK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_KIR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	KIR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = KIR	}	}
+		}
+		complete_effect = {	country_event = fate_of_KIR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NCL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NCL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NCL	}	}
+		}
+		complete_effect = {	country_event = fate_of_NCL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NFK = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NFK_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NFK	}	}
+		}
+		complete_effect = {	country_event = fate_of_NFK.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NIU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NIU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NIU	}	}
+		}
+		complete_effect = {	country_event = fate_of_NIU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NMR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NMR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NMR	}	}
+		}
+		complete_effect = {	country_event = fate_of_NMR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PCN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PCN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PCN	}	}
+		}
+		complete_effect = {	country_event = fate_of_PCN.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_PLW = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	PLW_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = PLW	}	}
+		}
+		complete_effect = {	country_event = fate_of_PLW.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TKL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TKL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TKL	}	}
+		}
+		complete_effect = {	country_event = fate_of_TKL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TON = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TON_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TON	}	}
+		}
+		complete_effect = {	country_event = fate_of_TON.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TVL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TVL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TVL	}	}
+		}
+		complete_effect = {	country_event = fate_of_TVL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_VUT = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	VUT_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = VUT	}	}
+		}
+		complete_effect = {	country_event = fate_of_VUT.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WLF = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WLF_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WLF	}	}
+		}
+		complete_effect = {	country_event = fate_of_WLF.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_ALS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ALS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ALS	}	}
+		}
+		complete_effect = {	country_event = fate_of_ALS.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CAL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CAL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CAL	}	}
+		}
+		complete_effect = {	country_event = fate_of_CAL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_CLU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CLU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CLU	}	}
+		}
+		complete_effect = {	country_event = fate_of_CLU.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_GLR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	GLR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = GLR	}	}
+		}
+		complete_effect = {	country_event = fate_of_GLR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NEL = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NEL_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NEL	}	}
+		}
+		complete_effect = {	country_event = fate_of_NEL.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_NMX = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	NMX_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = NMX	}	}
+		}
+		complete_effect = {	country_event = fate_of_NMX.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_TEX = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	TEX_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = TEX	}	}
+		}
+		complete_effect = {	country_event = fate_of_TEX.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	
+	release_WAS = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	WAS_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = WAS	}	}
+		}
+		complete_effect = {	country_event = fate_of_WAS.1	}
+		ai_will_do = {	factor = 100	}
+	}
 }
