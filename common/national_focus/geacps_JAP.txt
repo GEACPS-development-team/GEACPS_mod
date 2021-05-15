@@ -2114,72 +2114,9 @@ focus_tree = {
 		y = 1
 		relative_position_id = GEACPS_NF_JAP_navy_New_system
 		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_fast_small_ships }
+		prerequisite = { focus = GEACPS_NF_JAP_navy_New_system }
 
 		completion_reward = {
-			create_equipment_variant = {
-				name = "秋雲型"
-				type = ship_hull_light_5
-				name_group = JAP_DD_HISTORICAL
-				parent_version = 0
-				modules = {
-					fixed_ship_battery_slot = ship_light_battery_5
-					fixed_ship_anti_air_slot = ship_anti_air_5
-					fixed_ship_fire_control_system_slot = ship_fire_control_system_5
-					fixed_ship_sonar_slot = ship_sonar_5
-					fixed_ship_radar_slot = ship_radar_5
-					fixed_ship_torpedo_slot = ship_torpedo_5
-					fixed_ship_engine_slot = light_ship_engine_5
-					front_1_custom_slot = ssm_2
-					mid_1_custom_slot = ship_anti_air_5
-					mid_2_custom_slot = ship_light_battery_5
-					rear_1_custom_slot = sam_2
-				}
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_light_5
-					creator = "JAP" 
-					version_name = "秋雲型"
-					}
-				name = "秋雲" 
-				requested_factories = 1
-				progress = 0.3
-				amount = 1
-			}
-            add_equipment_production = {
-				equipment = {
-					type = ship_hull_light_5
-					creator = "JAP" 
-					version_name = "秋雲型"
-				}
-				name = "夕雲" 
-				requested_factories = 1
-				progress = 0.25
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_light_5
-					creator = "JAP" 
-					version_name = "秋雲型"
-				}
-				name = "巻雲" 
-				requested_factories = 1
-				progress = 0.2
-				amount = 1
-			}
-			add_equipment_production = {
-				equipment = {
-					type = ship_hull_light_5
-					creator = "JAP" 
-					version_name = "秋雲型"
-				}
-				name = "風雲" 
-				requested_factories = 1
-				progress = 0.15
-				amount = 1
-			}
 		}
 	}
 
