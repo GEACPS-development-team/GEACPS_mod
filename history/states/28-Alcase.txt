@@ -1,41 +1,29 @@
 state = {
 	id = 28
-	name = "STATE_28" # Alsace-Lorraine
+	name = "STATE_28"
 	manpower = 1915600
-	
-	resources = {
-		steel = 100 # was: 236
-	}
-	
 	state_category = city
-
+	
+	resources = {	steel = 100	}
+	
 	history = {
 		owner = FRA
 		add_core_of = FRA
-		victory_points = { 
-			678 5
-		}
-		victory_points = { 
-			9503 5
-		}
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
-			678 = {
-				bunker = 10
-			}
-			6529 = {
-				bunker = 10
-			}
-			9503 = {
-				bunker = 10
-			}
 			anti_air_building = 5
 			air_base = 5
+			678 = {	bunker = 10	}
+			6529 = {	bunker = 10	}
+			9503 = {	bunker = 10	}
 		}
+		victory_points = {	678	5	}
+		victory_points = { 	9503	5	}
+		set_variable = {	var = FRA_state_variable	value = 1	}
 	}
 
 	provinces = {
-		678 6529 9503
+		678	6529	9503
 	}
 }

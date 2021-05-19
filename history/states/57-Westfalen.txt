@@ -2,34 +2,27 @@ state = {
 	id = 57
 	name = "STATE_57"
 	manpower = 5109333
-	
-	resources = {
-		steel = 30 # was: 54
-	}
-	
 	state_category = large_city
-
+	
+	resources = {	steel = 30	}
+	
 	history = {
 		owner = WGR
 		add_core_of = WGR
-		victory_points = {
-			495 5 
-		}
-		victory_points = {
-			6469 5
-		}
-		victory_points = {
-			6570 10 
-		}
 		buildings = {
 			infrastructure = 8
 			arms_factory = 3
 			industrial_complex = 1
 			air_base = 3
 		}
+		victory_points = {	495	5	}
+		victory_points = {	6469	5	}
+		victory_points = {	6570	10	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = WGR_state_variable	value = 1	}
 	}
 
 	provinces = {
-		405 495 3355 3398 6535 6622 9443 9509 11346 11431 9547 11233 529 3512 6469 6570 9482
+		405	495	 529	3355	3398	3512	6469	6535	6570	6622	9443	9509	9482	9547	11233	11346	11431
 	}
 }

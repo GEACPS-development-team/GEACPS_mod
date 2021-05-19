@@ -20,6 +20,23 @@ create_dynamic_country = {
 	1172 = {	add_core_of = PREV	}
 	1173 = {	add_core_of = PREV	}
 }
+create_dynamic_country = {
+	original_tag = AUS
+	set_country_flag = AUS_FRA_countryflag
+	set_cosmetic_tag = COUNTRY_FRA
+	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+	set_ot_variable = yes
+	
+	every_state = {
+		limit = {	is_core_of = AUS	}
+		remove_core_of = PREV
+	}
+    transfer_state = 39	39 = {	add_core_of = PREV	}
+    transfer_state = 153	153 = {	add_core_of = PREV	}
+    transfer_state = 1002	1002 = {	add_core_of = PREV	}
+}
 
 #独立保障
 FRA = { give_guarantee = RHI }
@@ -61,6 +78,7 @@ set_autonomy = {	target = VAL	autonomous_state = protected_territory	}
 set_autonomy = {	target = CMR	autonomous_state = mandate	}
 set_autonomy = {	target = FEZ	autonomous_state = mandate	}
 set_autonomy = {	target = TOG	autonomous_state = mandate	}
+set_autonomy = {	target = AT1	autonomous_state = occupied_territory	}
 
 #陣営
 create_faction = 西欧同盟

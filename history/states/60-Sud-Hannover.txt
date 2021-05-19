@@ -2,37 +2,31 @@ state = {
 	id = 60
 	name = "STATE_60"
 	manpower = 3005214
+	state_category = large_city
 	
 	resources = {
-		steel = 13 # was: 20
-		chromium = 3 # was: 4
-		tungsten = 3 # was: 4
+		steel = 13
+		chromium = 3
+		tungsten = 3
 	}
 	
-	state_category = large_city
-
 	history = {
 		owner = EGR
 		add_core_of = EGR
-		victory_points = { 
-			3561 5 
-		}
-		victory_points = { 
-			425 3 
-		}
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 1
-			3561 = {
-				bunker = 1
-			}
-			13116 = {
-				bunker = 1
-			}
+			3561 = {	bunker = 1	}
+			13116 = {	bunker = 1	}
 		}
+		victory_points = { 	425	3	}
+		victory_points = {	3561	5	}
+		set_variable = {	var = HAN_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = WGR_state_variable	value = 1	}
 	}
 
 	provinces = {
-		425 482 3500 3561 6524 9497 13116
+		425	482	3500	3561	6524	9497	13116
 	}
 }

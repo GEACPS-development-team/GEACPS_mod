@@ -2,32 +2,27 @@ state = {
 	id = 61
 	name = "STATE_61"
 	manpower = 836353
-
 	state_category = large_city
 
 	history = {
 		owner = EGR
 		add_core_of = EGR
-		victory_points = {
-			321 5
-		}
-		victory_points = {
-			11305 3
-		}
+		add_core_of = MEK
 		buildings = {
 			infrastructure = 6
 			arms_factory = 3
-			321 = {
-				naval_base = 6
-			}
 			air_base = 3
-			11305 = {
-				bunker = 1
-			}
+			321 = {	naval_base = 6	}
+			11305 = {	bunker = 1	}
 		}
+		victory_points = {	321	5	}
+		victory_points = {	11305	3	}
+		set_variable = {	var = MEK_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = EGR_state_variable	value = 1	}
 	}
 
 	provinces = {
-		268 293 321 9294 11276 11305 3258
+		268	293	321	3258	9294	11276	11305
 	}
 }

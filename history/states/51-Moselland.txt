@@ -2,18 +2,18 @@ state = {
 	id = 51
 	name = "STATE_51"
 	manpower = 614500
-
 	state_category = large_city
 	
 	history = {
-		owner = ENG
+		owner = SHL
 		add_core_of = SHL
-		victory_points = {
-			9347 20
-		}
 		buildings = {
 			infrastructure = 8
 		}
+		victory_points = {	9347	20	}
+		set_variable = {	var = SHL_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = WGR_state_variable	value = 1	}
 	}
 
 	provinces = {

@@ -2,27 +2,29 @@ state = {
 	id = 42
 	name = "STATE_42"
 	manpower = 3027739
+	state_category = metropolis
 	
 	resources = {
-		steel = 59 # was: 100
-		aluminium = 14 # was: 24
+		steel = 59
+		aluminium = 14
 	}
 	
-	state_category = metropolis
-
 	history = {
 		owner = RHI
 		add_core_of = RHI
-		victory_points = {
-			11560 10
-		}
+		add_core_of = GER
+		add_core_of = WGR
 		buildings = {
 			infrastructure = 7
 			industrial_complex = 3
 		}
+		victory_points = {	11560	10	}
+		set_variable = {	var = RHI_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = WGR_state_variable	value = 1	}
 	}
 
 	provinces = {
-		563 3423 3558 11547 11560 9575
+		563	3423	3558	9575	11547	11560
 	}
 }

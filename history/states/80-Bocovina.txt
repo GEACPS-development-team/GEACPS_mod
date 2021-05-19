@@ -2,21 +2,19 @@ state = {
 	id = 80
 	name = "STATE_80"
 	manpower = 474600
-	
 	state_category = town
 	
 	history = {
 		owner = UKR
 		add_core_of = UKR
-		victory_points = {
-			577 1 
-		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 		}
+		victory_points = {	577	1	}
+		set_variable = {	var = UKR_state_variable	value = 1	}
 	}
 	provinces = {
-		577 9548 3407
+		577	3407	9548
 	}
 }

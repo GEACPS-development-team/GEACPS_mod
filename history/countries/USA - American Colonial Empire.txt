@@ -1,4 +1,22 @@
-﻿#独立保障
+﻿#国家生成
+create_dynamic_country = {
+	original_tag = AUS
+	set_country_flag = AUS_USA_countryflag
+	set_cosmetic_tag = COUNTRY_USA
+	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+	set_ot_variable = yes
+	
+	every_state = {
+		limit = {	is_core_of = AUS	}
+		remove_core_of = PREV
+	}
+    transfer_state = 152	152 = {	add_core_of = PREV	}
+	transfer_state = 1004	1004 = {	add_core_of = PREV	}
+}
+
+#独立保障
 USA = { give_guarantee = RHI }
 
 #軍事通行権
@@ -11,3 +29,5 @@ PUE	= {	set_colony_variable = yes	}
 
 set_autonomy = {	target = ALS	autonomous_state = us_territory	}
 set_autonomy = {	target = PUE	autonomous_state = us_commonwealth	}
+set_autonomy = {	target = PUE	autonomous_state = us_commonwealth	}
+set_autonomy = {	target = AT3	autonomous_state = occupied_territory	}

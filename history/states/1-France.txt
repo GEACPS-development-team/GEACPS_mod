@@ -15,9 +15,7 @@ state = {
 			3838 = {	naval_base = 3	}
 		}
 		victory_points = {	3838	1	}
-		set_state_flag = COR_state_flag
-		set_state_flag = FRA_state_flag
-		set_state_flag = ITA_state_flag
+		set_variable = {	var = COR_state_variable	value = 1	}
 	}
 	
 	provinces = {

@@ -5,10 +5,20 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	AFG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = AFG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = AFG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
+		
 		complete_effect = {	country_event = fate_of_AFG.1	}
 		ai_will_do = {	factor = 100	}
 	}
@@ -19,9 +29,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ARM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ARM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ARM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ARM.1	}
 		ai_will_do = {	factor = 100	}
@@ -33,9 +52,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	AZR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = AZR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = AZR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_AZR.1	}
 		ai_will_do = {	factor = 100	}
@@ -47,9 +75,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -61,9 +98,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BHU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BHU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BHU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BHU.1	}
 		ai_will_do = {	factor = 100	}
@@ -75,9 +121,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BRM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BRM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BRM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BRM.1	}
 		ai_will_do = {	factor = 100	}
@@ -89,9 +144,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CAM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CAM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CAM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CAM.1	}
 		ai_will_do = {	factor = 100	}
@@ -103,9 +167,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CHI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CHI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CHI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CHI.1	}
 		ai_will_do = {	factor = 100	}
@@ -117,9 +190,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GEO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GEO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GEO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GEO.1	}
 		ai_will_do = {	factor = 100	}
@@ -131,9 +213,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GXC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GXC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GXC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GXC.1	}
 		ai_will_do = {	factor = 100	}
@@ -145,9 +236,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	INS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = INS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = INS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_INS.1	}
 		ai_will_do = {	factor = 100	}
@@ -159,9 +259,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	IRQ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = IRQ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = IRQ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_IRQ.1	}
 		ai_will_do = {	factor = 100	}
@@ -173,9 +282,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ISR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ISR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ISR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ISR.1	}
 		ai_will_do = {	factor = 100	}
@@ -187,9 +305,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JAP_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JAP	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JAP
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JAP.1	}
 		ai_will_do = {	factor = 100	}
@@ -201,9 +328,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JOR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JOR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JOR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JOR.1	}
 		ai_will_do = {	factor = 100	}
@@ -215,9 +351,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KAZ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KAZ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KAZ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KAZ.1	}
 		ai_will_do = {	factor = 100	}
@@ -229,9 +374,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KOR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KOR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KOR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KOR.1	}
 		ai_will_do = {	factor = 100	}
@@ -243,9 +397,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KUR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KUR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KUR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KUR.1	}
 		ai_will_do = {	factor = 100	}
@@ -257,9 +420,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KUW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KUW	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KUW
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KUW.1	}
 		ai_will_do = {	factor = 100	}
@@ -271,9 +443,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KYR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KYR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KYR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KYR.1	}
 		ai_will_do = {	factor = 100	}
@@ -285,9 +466,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LAO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LAO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LAO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LAO.1	}
 		ai_will_do = {	factor = 100	}
@@ -299,9 +489,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LEB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LEB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LEB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LEB.1	}
 		ai_will_do = {	factor = 100	}
@@ -313,9 +512,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MAL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MAL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MAL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MAL.1	}
 		ai_will_do = {	factor = 100	}
@@ -327,9 +535,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -341,9 +558,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MEN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MEN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MEN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MEN.1	}
 		ai_will_do = {	factor = 100	}
@@ -355,9 +581,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MLD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MLD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MLD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MLD.1	}
 		ai_will_do = {	factor = 100	}
@@ -369,9 +604,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MON_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MON	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MON
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MON.1	}
 		ai_will_do = {	factor = 100	}
@@ -383,9 +627,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NEP_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NEP	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NEP
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NEP.1	}
 		ai_will_do = {	factor = 100	}
@@ -397,9 +650,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	OMA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = OMA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = OMA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_OMA.1	}
 		ai_will_do = {	factor = 100	}
@@ -411,9 +673,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PAK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PAK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PAK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PAK.1	}
 		ai_will_do = {	factor = 100	}
@@ -425,9 +696,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PAL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PAL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PAL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PAL.1	}
 		ai_will_do = {	factor = 100	}
@@ -439,9 +719,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PER_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PER	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PER
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PER.1	}
 		ai_will_do = {	factor = 100	}
@@ -453,9 +742,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PHI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PHI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PHI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PHI.1	}
 		ai_will_do = {	factor = 100	}
@@ -467,9 +765,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	QAT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = QAT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = QAT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_QAT.1	}
 		ai_will_do = {	factor = 100	}
@@ -481,9 +788,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	IND_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = IND	}	}
+			NOT = {	
+				any_country = {
+					original_tag = IND
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_IND.1	}
 		ai_will_do = {	factor = 100	}
@@ -495,9 +811,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SAU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SAU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SAU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SAU.1	}
 		ai_will_do = {	factor = 100	}
@@ -509,9 +834,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SHX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SHX	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SHX
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SHX.1	}
 		ai_will_do = {	factor = 100	}
@@ -523,9 +857,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SIA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SIA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SIA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SIA.1	}
 		ai_will_do = {	factor = 100	}
@@ -537,9 +880,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SIK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SIK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SIK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SIK.1	}
 		ai_will_do = {	factor = 100	}
@@ -551,9 +903,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SRL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SRL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SRL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SRL.1	}
 		ai_will_do = {	factor = 100	}
@@ -565,9 +926,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SYR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SYR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SYR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SYR.1	}
 		ai_will_do = {	factor = 100	}
@@ -579,9 +949,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TAJ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TAJ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TAJ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TAJ.1	}
 		ai_will_do = {	factor = 100	}
@@ -593,9 +972,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TUV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TUV	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TUV
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TUV.1	}
 		ai_will_do = {	factor = 100	}
@@ -607,9 +995,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TIB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TIB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TIB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TIB.1	}
 		ai_will_do = {	factor = 100	}
@@ -621,9 +1018,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TMS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TMS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TMS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TMS.1	}
 		ai_will_do = {	factor = 100	}
@@ -635,9 +1041,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TUR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TUR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TUR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TUR.1	}
 		ai_will_do = {	factor = 100	}
@@ -649,9 +1064,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	UAE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = UAE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = UAE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_UAE.1	}
 		ai_will_do = {	factor = 100	}
@@ -663,9 +1087,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	UZB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = UZB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = UZB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_UZB.1	}
 		ai_will_do = {	factor = 100	}
@@ -677,9 +1110,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VIN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VIN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VIN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VIN.1	}
 		ai_will_do = {	factor = 100	}
@@ -691,9 +1133,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	XSM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = XSM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = XSM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_XSM.1	}
 		ai_will_do = {	factor = 100	}
@@ -705,9 +1156,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	YEM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = YEM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = YEM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_YEM.1	}
 		ai_will_do = {	factor = 100	}
@@ -719,9 +1179,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	YUN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = YUN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = YUN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_YUN.1	}
 		ai_will_do = {	factor = 100	}
@@ -733,9 +1202,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ADU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ADU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ADU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ADU.1	}
 		ai_will_do = {	factor = 100	}
@@ -747,9 +1225,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ALB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ALB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ALB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ALB.1	}
 		ai_will_do = {	factor = 100	}
@@ -761,9 +1248,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	AUS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = AUS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = AUS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_AUS.1	}
 		ai_will_do = {	factor = 100	}
@@ -775,9 +1271,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BAY_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BAY	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BAY
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BAY.1	}
 		ai_will_do = {	factor = 100	}
@@ -789,9 +1294,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BEL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BEL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BEL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BEL.1	}
 		ai_will_do = {	factor = 100	}
@@ -803,9 +1317,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BLR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BLR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BLR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BLR.1	}
 		ai_will_do = {	factor = 100	}
@@ -817,9 +1340,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BOS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BOS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BOS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BOS.1	}
 		ai_will_do = {	factor = 100	}
@@ -831,9 +1363,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BRI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BRI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BRI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BRI.1	}
 		ai_will_do = {	factor = 100	}
@@ -845,9 +1386,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BUL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BUL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BUL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BUL.1	}
 		ai_will_do = {	factor = 100	}
@@ -859,9 +1409,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CAT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CAT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CAT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CAT.1	}
 		ai_will_do = {	factor = 100	}
@@ -873,9 +1432,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	COR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = COR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = COR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_COR.1	}
 		ai_will_do = {	factor = 100	}
@@ -887,9 +1455,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CRO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CRO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CRO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CRO.1	}
 		ai_will_do = {	factor = 100	}
@@ -901,9 +1478,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CYP_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CYP	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CYP
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CYP.1	}
 		ai_will_do = {	factor = 100	}
@@ -915,9 +1501,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CZE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CZE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CZE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CZE.1	}
 		ai_will_do = {	factor = 100	}
@@ -929,9 +1524,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	EGR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = EGR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = EGR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_EGR.1	}
 		ai_will_do = {	factor = 100	}
@@ -943,9 +1547,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	DEN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = DEN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = DEN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_DEN.1	}
 		ai_will_do = {	factor = 100	}
@@ -957,9 +1570,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ENG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ENG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ENG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ENG.1	}
 		ai_will_do = {	factor = 100	}
@@ -971,9 +1593,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	EST_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = EST	}	}
+			NOT = {	
+				any_country = {
+					original_tag = EST
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_EST.1	}
 		ai_will_do = {	factor = 100	}
@@ -985,9 +1616,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FIN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FIN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FIN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FIN.1	}
 		ai_will_do = {	factor = 100	}
@@ -999,9 +1639,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FRA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FRA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FRA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FRA.1	}
 		ai_will_do = {	factor = 100	}
@@ -1013,9 +1662,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GER_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GER	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GER
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GER.1	}
 		ai_will_do = {	factor = 100	}
@@ -1027,9 +1685,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GLC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GLC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GLC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GLC.1	}
 		ai_will_do = {	factor = 100	}
@@ -1041,9 +1708,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GRE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GRE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GRE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GRE.1	}
 		ai_will_do = {	factor = 100	}
@@ -1055,9 +1731,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -1069,9 +1754,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HOL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HOL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HOL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HOL.1	}
 		ai_will_do = {	factor = 100	}
@@ -1083,9 +1777,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HRZ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HRZ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HRZ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HRZ.1	}
 		ai_will_do = {	factor = 100	}
@@ -1097,9 +1800,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HUN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HUN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HUN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HUN.1	}
 		ai_will_do = {	factor = 100	}
@@ -1111,9 +1823,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ICE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ICE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ICE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ICE.1	}
 		ai_will_do = {	factor = 100	}
@@ -1125,9 +1846,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	IRE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = IRE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = IRE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_IRE.1	}
 		ai_will_do = {	factor = 100	}
@@ -1139,9 +1869,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ITA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ITA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ITA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ITA.1	}
 		ai_will_do = {	factor = 100	}
@@ -1153,9 +1892,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KOS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KOS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KOS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KOS.1	}
 		ai_will_do = {	factor = 100	}
@@ -1167,9 +1915,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LAT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LAT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LAT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LAT.1	}
 		ai_will_do = {	factor = 100	}
@@ -1181,9 +1938,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LIT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LIT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LIT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LIT.1	}
 		ai_will_do = {	factor = 100	}
@@ -1195,9 +1961,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LUX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LUX	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LUX
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LUX.1	}
 		ai_will_do = {	factor = 100	}
@@ -1209,9 +1984,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MAC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MAC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MAC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MAC.1	}
 		ai_will_do = {	factor = 100	}
@@ -1223,9 +2007,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MEK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MEK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MEK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MEK.1	}
 		ai_will_do = {	factor = 100	}
@@ -1237,9 +2030,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MLT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MLT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MLT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MLT.1	}
 		ai_will_do = {	factor = 100	}
@@ -1251,9 +2053,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MNT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MNT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MNT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MNT.1	}
 		ai_will_do = {	factor = 100	}
@@ -1265,9 +2076,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MOL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MOL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MOL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MOL.1	}
 		ai_will_do = {	factor = 100	}
@@ -1279,9 +2099,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NAV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NAV	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NAV
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NAV.1	}
 		ai_will_do = {	factor = 100	}
@@ -1293,9 +2122,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NIR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NIR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NIR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NIR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1307,9 +2145,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NOR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NOR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NOR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NOR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1321,9 +2168,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	OCC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = OCC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = OCC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_OCC.1	}
 		ai_will_do = {	factor = 100	}
@@ -1335,9 +2191,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	POL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = POL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = POL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_POL.1	}
 		ai_will_do = {	factor = 100	}
@@ -1349,9 +2214,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	POR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = POR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = POR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_POR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1363,9 +2237,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PRE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PRE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PRE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PRE.1	}
 		ai_will_do = {	factor = 100	}
@@ -1377,9 +2260,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ROM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ROM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ROM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ROM.1	}
 		ai_will_do = {	factor = 100	}
@@ -1391,9 +2283,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SAX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SAX	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SAX
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SAX.1	}
 		ai_will_do = {	factor = 100	}
@@ -1405,9 +2306,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SCO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SCO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SCO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SCO.1	}
 		ai_will_do = {	factor = 100	}
@@ -1419,9 +2329,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SER_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SER	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SER
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SER.1	}
 		ai_will_do = {	factor = 100	}
@@ -1433,9 +2352,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SHL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SHL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SHL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SHL.1	}
 		ai_will_do = {	factor = 100	}
@@ -1447,9 +2375,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SLO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SLO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SLO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SLO.1	}
 		ai_will_do = {	factor = 100	}
@@ -1461,9 +2398,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SLV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SLV	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SLV
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SLV.1	}
 		ai_will_do = {	factor = 100	}
@@ -1475,9 +2421,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SOV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SOV	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SOV
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SOV.1	}
 		ai_will_do = {	factor = 100	}
@@ -1489,9 +2444,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SPR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SPR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SPR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SPR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1503,9 +2467,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SWE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SWE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SWE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SWE.1	}
 		ai_will_do = {	factor = 100	}
@@ -1517,9 +2490,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SWI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SWI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SWI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SWI.1	}
 		ai_will_do = {	factor = 100	}
@@ -1531,9 +2513,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TRA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TRA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TRA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TRA.1	}
 		ai_will_do = {	factor = 100	}
@@ -1545,9 +2536,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	UKR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = UKR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = UKR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_UKR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1559,9 +2559,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WGR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WGR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WGR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WGR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1573,9 +2582,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WLS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WLS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WLS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WLS.1	}
 		ai_will_do = {	factor = 100	}
@@ -1587,9 +2605,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WUR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WUR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WUR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WUR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1601,9 +2628,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	YUG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = YUG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = YUG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_YUG.1	}
 		ai_will_do = {	factor = 100	}
@@ -1615,9 +2651,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ALG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ALG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ALG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ALG.1	}
 		ai_will_do = {	factor = 100	}
@@ -1629,9 +2674,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ANG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ANG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ANG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ANG.1	}
 		ai_will_do = {	factor = 100	}
@@ -1643,9 +2697,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BOT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BOT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BOT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BOT.1	}
 		ai_will_do = {	factor = 100	}
@@ -1657,9 +2720,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BRD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BRD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BRD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BRD.1	}
 		ai_will_do = {	factor = 100	}
@@ -1671,9 +2743,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CAR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CAR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CAR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CAR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1685,9 +2766,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CHA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CHA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CHA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CHA.1	}
 		ai_will_do = {	factor = 100	}
@@ -1699,9 +2789,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CMR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CMR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CMR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CMR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1713,9 +2812,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	COG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = COG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = COG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_COG.1	}
 		ai_will_do = {	factor = 100	}
@@ -1727,9 +2835,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	DAH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = DAH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = DAH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_DAH.1	}
 		ai_will_do = {	factor = 100	}
@@ -1741,9 +2858,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	DJI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = DJI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = DJI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_DJI.1	}
 		ai_will_do = {	factor = 100	}
@@ -1755,9 +2881,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	EGY_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = EGY	}	}
+			NOT = {	
+				any_country = {
+					original_tag = EGY
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_EGY.1	}
 		ai_will_do = {	factor = 100	}
@@ -1769,9 +2904,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	EQG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = EQG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = EQG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_EQG.1	}
 		ai_will_do = {	factor = 100	}
@@ -1783,9 +2927,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ERI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ERI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ERI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ERI.1	}
 		ai_will_do = {	factor = 100	}
@@ -1797,9 +2950,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ETH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ETH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ETH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ETH.1	}
 		ai_will_do = {	factor = 100	}
@@ -1811,9 +2973,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GAB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GAB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GAB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GAB.1	}
 		ai_will_do = {	factor = 100	}
@@ -1825,9 +2996,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GAM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GAM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GAM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GAM.1	}
 		ai_will_do = {	factor = 100	}
@@ -1839,9 +3019,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GHA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GHA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GHA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GHA.1	}
 		ai_will_do = {	factor = 100	}
@@ -1853,9 +3042,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GNA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GNA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GNA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GNA.1	}
 		ai_will_do = {	factor = 100	}
@@ -1867,9 +3065,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GNB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GNB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GNB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GNB.1	}
 		ai_will_do = {	factor = 100	}
@@ -1881,9 +3088,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	IVO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = IVO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = IVO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_IVO.1	}
 		ai_will_do = {	factor = 100	}
@@ -1895,9 +3111,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KEN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KEN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KEN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KEN.1	}
 		ai_will_do = {	factor = 100	}
@@ -1909,9 +3134,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LBA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LBA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LBA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LBA.1	}
 		ai_will_do = {	factor = 100	}
@@ -1923,9 +3157,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LIB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LIB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LIB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LIB.1	}
 		ai_will_do = {	factor = 100	}
@@ -1937,9 +3180,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MAD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MAD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MAD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MAD.1	}
 		ai_will_do = {	factor = 100	}
@@ -1951,9 +3203,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MLI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MLI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MLI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MLI.1	}
 		ai_will_do = {	factor = 100	}
@@ -1965,9 +3226,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MLW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MLW	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MLW
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MLW.1	}
 		ai_will_do = {	factor = 100	}
@@ -1979,9 +3249,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MOR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MOR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MOR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MOR.1	}
 		ai_will_do = {	factor = 100	}
@@ -1993,9 +3272,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MRT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MRT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MRT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MRT.1	}
 		ai_will_do = {	factor = 100	}
@@ -2007,9 +3295,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MZB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MZB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MZB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MZB.1	}
 		ai_will_do = {	factor = 100	}
@@ -2021,9 +3318,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NGA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NGA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NGA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NGA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2035,9 +3341,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NGR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NGR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NGR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NGR.1	}
 		ai_will_do = {	factor = 100	}
@@ -2049,9 +3364,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NMB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NMB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NMB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NMB.1	}
 		ai_will_do = {	factor = 100	}
@@ -2063,9 +3387,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	RCG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = RCG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = RCG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_RCG.1	}
 		ai_will_do = {	factor = 100	}
@@ -2077,9 +3410,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	RWA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = RWA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = RWA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_RWA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2091,9 +3433,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SAF_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SAF	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SAF
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SAF.1	}
 		ai_will_do = {	factor = 100	}
@@ -2105,9 +3456,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SEN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SEN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SEN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SEN.1	}
 		ai_will_do = {	factor = 100	}
@@ -2119,9 +3479,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SIE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SIE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SIE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SIE.1	}
 		ai_will_do = {	factor = 100	}
@@ -2133,9 +3502,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SOM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SOM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SOM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SOM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2147,9 +3525,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SUD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SUD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SUD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SUD.1	}
 		ai_will_do = {	factor = 100	}
@@ -2161,9 +3548,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TOG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TOG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TOG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TOG.1	}
 		ai_will_do = {	factor = 100	}
@@ -2175,9 +3571,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TUN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TUN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TUN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TUN.1	}
 		ai_will_do = {	factor = 100	}
@@ -2189,9 +3594,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TZN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TZN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TZN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TZN.1	}
 		ai_will_do = {	factor = 100	}
@@ -2203,9 +3617,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	UGA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = UGA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = UGA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_UGA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2217,9 +3640,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VOL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VOL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VOL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VOL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2231,9 +3663,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WES_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WES	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WES
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WES.1	}
 		ai_will_do = {	factor = 100	}
@@ -2245,9 +3686,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ZAM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ZAM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ZAM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ZAM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2259,9 +3709,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ZIM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ZIM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ZIM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ZIM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2273,9 +3732,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ARG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ARG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ARG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ARG.1	}
 		ai_will_do = {	factor = 100	}
@@ -2287,9 +3755,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BAH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BAH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BAH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BAH.1	}
 		ai_will_do = {	factor = 100	}
@@ -2301,9 +3778,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BLZ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BLZ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BLZ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BLZ.1	}
 		ai_will_do = {	factor = 100	}
@@ -2315,9 +3801,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BOL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BOL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BOL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BOL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2329,9 +3824,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BRA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BRA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BRA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BRA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2343,9 +3847,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -2357,9 +3870,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CAY_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CAY	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CAY
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CAY.1	}
 		ai_will_do = {	factor = 100	}
@@ -2371,9 +3893,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CHL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CHL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CHL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CHL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2385,9 +3916,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	COL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = COL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = COL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_COL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2399,9 +3939,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	COS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = COS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = COS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_COS.1	}
 		ai_will_do = {	factor = 100	}
@@ -2413,9 +3962,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CRC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CRC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CRC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CRC.1	}
 		ai_will_do = {	factor = 100	}
@@ -2427,9 +3985,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CSA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CSA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CSA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CSA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2441,9 +4008,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CUB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CUB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CUB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CUB.1	}
 		ai_will_do = {	factor = 100	}
@@ -2455,9 +4031,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	DOM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = DOM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = DOM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_DOM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2469,9 +4054,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ECU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ECU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ECU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ECU.1	}
 		ai_will_do = {	factor = 100	}
@@ -2483,9 +4077,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ELS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ELS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ELS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ELS.1	}
 		ai_will_do = {	factor = 100	}
@@ -2497,9 +4100,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GDL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GDL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GDL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GDL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2511,9 +4123,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GUA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GUA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GUA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GUA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2525,9 +4146,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GYA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GYA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GYA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GYA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2539,9 +4169,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HAI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HAI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HAI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HAI.1	}
 		ai_will_do = {	factor = 100	}
@@ -2553,9 +4192,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HON_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HON	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HON
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HON.1	}
 		ai_will_do = {	factor = 100	}
@@ -2567,9 +4215,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JAM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JAM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JAM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JAM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2581,9 +4238,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MEX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MEX	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MEX
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MEX.1	}
 		ai_will_do = {	factor = 100	}
@@ -2595,9 +4261,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NIC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NIC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NIC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NIC.1	}
 		ai_will_do = {	factor = 100	}
@@ -2609,9 +4284,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -2623,9 +4307,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PAR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PAR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PAR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PAR.1	}
 		ai_will_do = {	factor = 100	}
@@ -2637,9 +4330,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PRU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PRU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PRU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PRU.1	}
 		ai_will_do = {	factor = 100	}
@@ -2651,9 +4353,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PUE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PUE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PUE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PUE.1	}
 		ai_will_do = {	factor = 100	}
@@ -2665,9 +4376,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SUR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SUR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SUR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SUR.1	}
 		ai_will_do = {	factor = 100	}
@@ -2679,9 +4399,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TRI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TRI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TRI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TRI.1	}
 		ai_will_do = {	factor = 100	}
@@ -2693,9 +4422,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	URG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = URG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = URG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_URG.1	}
 		ai_will_do = {	factor = 100	}
@@ -2707,9 +4445,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	USA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = USA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = USA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_USA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2721,9 +4468,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VEN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VEN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VEN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VEN.1	}
 		ai_will_do = {	factor = 100	}
@@ -2735,9 +4491,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	AST_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = AST	}	}
+			NOT = {	
+				any_country = {
+					original_tag = AST
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_AST.1	}
 		ai_will_do = {	factor = 100	}
@@ -2749,9 +4514,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FIJ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FIJ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FIJ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FIJ.1	}
 		ai_will_do = {	factor = 100	}
@@ -2763,9 +4537,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FSM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FSM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FSM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FSM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2777,9 +4560,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GUM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GUM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GUM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GUM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2791,9 +4583,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HAW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HAW	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HAW
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HAW.1	}
 		ai_will_do = {	factor = 100	}
@@ -2805,9 +4606,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MHL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MHL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MHL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MHL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2819,9 +4629,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NZL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NZL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NZL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NZL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2833,9 +4652,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PNG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PNG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PNG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PNG.1	}
 		ai_will_do = {	factor = 100	}
@@ -2847,9 +4675,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SAM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SAM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SAM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SAM.1	}
 		ai_will_do = {	factor = 100	}
@@ -2861,9 +4698,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SOL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SOL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SOL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SOL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2875,9 +4721,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TAH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TAH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TAH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TAH.1	}
 		ai_will_do = {	factor = 100	}
@@ -2889,9 +4744,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ABK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ABK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ABK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ABK.1	}
 		ai_will_do = {	factor = 100	}
@@ -2903,9 +4767,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ANH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ANH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ANH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ANH.1	}
 		ai_will_do = {	factor = 100	}
@@ -2917,9 +4790,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	AZA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = AZA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = AZA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_AZA.1	}
 		ai_will_do = {	factor = 100	}
@@ -2931,9 +4813,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BAL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BAL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BAL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BAL.1	}
 		ai_will_do = {	factor = 100	}
@@ -2945,9 +4836,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BHK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BHK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BHK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BHK.1	}
 		ai_will_do = {	factor = 100	}
@@ -2959,9 +4859,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BHR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BHR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BHR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BHR.1	}
 		ai_will_do = {	factor = 100	}
@@ -2973,9 +4882,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BNG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BNG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BNG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BNG.1	}
 		ai_will_do = {	factor = 100	}
@@ -2987,9 +4905,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BRN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BRN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BRN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BRN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3001,9 +4928,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CCS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CCS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CCS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CCS.1	}
 		ai_will_do = {	factor = 100	}
@@ -3015,9 +4951,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ETR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ETR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ETR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ETR.1	}
 		ai_will_do = {	factor = 100	}
@@ -3029,9 +4974,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	EZO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = EZO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = EZO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_EZO.1	}
 		ai_will_do = {	factor = 100	}
@@ -3043,9 +4997,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FUJ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FUJ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FUJ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FUJ.1	}
 		ai_will_do = {	factor = 100	}
@@ -3057,9 +5020,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3071,9 +5043,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GND_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GND	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GND
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GND.1	}
 		ai_will_do = {	factor = 100	}
@@ -3085,9 +5066,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GZH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GZH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GZH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GZH.1	}
 		ai_will_do = {	factor = 100	}
@@ -3099,9 +5089,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HEB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HEB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HEB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HEB.1	}
 		ai_will_do = {	factor = 100	}
@@ -3113,9 +5112,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HEN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HEN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HEN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HEN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3127,9 +5135,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HKG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HKG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HKG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HKG.1	}
 		ai_will_do = {	factor = 100	}
@@ -3141,9 +5158,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HNN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HNN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HNN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HNN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3155,9 +5181,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HUB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HUB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HUB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HUB.1	}
 		ai_will_do = {	factor = 100	}
@@ -3169,9 +5204,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	HYD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = HYD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = HYD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_HYD.1	}
 		ai_will_do = {	factor = 100	}
@@ -3183,9 +5227,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	INC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = INC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = INC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_INC.1	}
 		ai_will_do = {	factor = 100	}
@@ -3197,9 +5250,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JAK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JAK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JAK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JAK.1	}
 		ai_will_do = {	factor = 100	}
@@ -3211,9 +5273,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JIA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JIA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JIA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JIA.1	}
 		ai_will_do = {	factor = 100	}
@@ -3225,9 +5296,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JGS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JGS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JGS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JGS.1	}
 		ai_will_do = {	factor = 100	}
@@ -3239,9 +5319,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JOH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JOH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JOH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JOH.1	}
 		ai_will_do = {	factor = 100	}
@@ -3253,9 +5342,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KED_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KED	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KED
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KED.1	}
 		ai_will_do = {	factor = 100	}
@@ -3267,9 +5365,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KEL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KEL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KEL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KEL.1	}
 		ai_will_do = {	factor = 100	}
@@ -3281,9 +5388,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KUM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KUM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KUM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KUM.1	}
 		ai_will_do = {	factor = 100	}
@@ -3295,9 +5411,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KWA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KWA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KWA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KWA.1	}
 		ai_will_do = {	factor = 100	}
@@ -3309,9 +5434,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MCA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MCA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MCA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MCA.1	}
 		ai_will_do = {	factor = 100	}
@@ -3323,9 +5457,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MOU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MOU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MOU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MOU.1	}
 		ai_will_do = {	factor = 100	}
@@ -3337,9 +5480,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MYS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MYS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MYS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MYS.1	}
 		ai_will_do = {	factor = 100	}
@@ -3351,9 +5503,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3365,9 +5526,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NIG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NIG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NIG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NIG.1	}
 		ai_will_do = {	factor = 100	}
@@ -3379,9 +5549,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ORI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ORI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ORI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ORI.1	}
 		ai_will_do = {	factor = 100	}
@@ -3393,9 +5572,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	OTT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = OTT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = OTT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_OTT.1	}
 		ai_will_do = {	factor = 100	}
@@ -3407,9 +5595,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PRL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PRL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PRL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PRL.1	}
 		ai_will_do = {	factor = 100	}
@@ -3421,9 +5618,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PUD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PUD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PUD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PUD.1	}
 		ai_will_do = {	factor = 100	}
@@ -3435,9 +5641,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	QAH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = QAH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = QAH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_QAH.1	}
 		ai_will_do = {	factor = 100	}
@@ -3449,9 +5664,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	QIG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = QIG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = QIG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_QIG.1	}
 		ai_will_do = {	factor = 100	}
@@ -3463,9 +5687,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	RYU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = RYU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = RYU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_RYU.1	}
 		ai_will_do = {	factor = 100	}
@@ -3477,9 +5710,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SAB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SAB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SAB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SAB.1	}
 		ai_will_do = {	factor = 100	}
@@ -3491,9 +5733,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SCH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SCH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SCH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SCH.1	}
 		ai_will_do = {	factor = 100	}
@@ -3505,9 +5756,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SGH_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SGH	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SGH
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SGH.1	}
 		ai_will_do = {	factor = 100	}
@@ -3519,9 +5779,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SIN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SIN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SIN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SIN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3533,9 +5802,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SHA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SHA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SHA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SHA.1	}
 		ai_will_do = {	factor = 100	}
@@ -3547,9 +5825,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SHD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SHD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SHD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SHD.1	}
 		ai_will_do = {	factor = 100	}
@@ -3561,9 +5848,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SKM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SKM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SKM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SKM.1	}
 		ai_will_do = {	factor = 100	}
@@ -3575,9 +5871,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SRW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SRW	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SRW
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SRW.1	}
 		ai_will_do = {	factor = 100	}
@@ -3589,9 +5894,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SUY_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SUY	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SUY
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SUY.1	}
 		ai_will_do = {	factor = 100	}
@@ -3603,9 +5917,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SYE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SYE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SYE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SYE.1	}
 		ai_will_do = {	factor = 100	}
@@ -3617,9 +5940,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TER_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TER	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TER
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TER.1	}
 		ai_will_do = {	factor = 100	}
@@ -3631,9 +5963,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TLS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TLS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TLS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TLS.1	}
 		ai_will_do = {	factor = 100	}
@@ -3645,9 +5986,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TNG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TNG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TNG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TNG.1	}
 		ai_will_do = {	factor = 100	}
@@ -3659,9 +6009,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TRV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TRV	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TRV
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TRV.1	}
 		ai_will_do = {	factor = 100	}
@@ -3673,9 +6032,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TWN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TWN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TWN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TWN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3687,9 +6055,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VPS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VPS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VPS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VPS.1	}
 		ai_will_do = {	factor = 100	}
@@ -3701,9 +6078,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WTR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WTR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WTR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WTR.1	}
 		ai_will_do = {	factor = 100	}
@@ -3715,9 +6101,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	XIK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = XIK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = XIK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_XIK.1	}
 		ai_will_do = {	factor = 100	}
@@ -3729,9 +6124,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	YNN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = YNN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = YNN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_YNN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3743,9 +6147,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ZHI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ZHI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ZHI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ZHI.1	}
 		ai_will_do = {	factor = 100	}
@@ -3757,9 +6170,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ZHE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ZHE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ZHE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ZHE.1	}
 		ai_will_do = {	factor = 100	}
@@ -3771,9 +6193,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ADR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ADR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ADR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ADR.1	}
 		ai_will_do = {	factor = 100	}
@@ -3785,9 +6216,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ALA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ALA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ALA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ALA.1	}
 		ai_will_do = {	factor = 100	}
@@ -3799,9 +6239,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BAI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BAI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BAI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BAI.1	}
 		ai_will_do = {	factor = 100	}
@@ -3813,9 +6262,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	DAL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = DAL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = DAL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_DAL.1	}
 		ai_will_do = {	factor = 100	}
@@ -3827,9 +6285,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	DON_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = DON	}	}
+			NOT = {	
+				any_country = {
+					original_tag = DON
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_DON.1	}
 		ai_will_do = {	factor = 100	}
@@ -3841,9 +6308,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FLN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FLN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FLN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FLN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3855,9 +6331,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FRO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FRO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FRO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FRO.1	}
 		ai_will_do = {	factor = 100	}
@@ -3869,9 +6354,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GIB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GIB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GIB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GIB.1	}
 		ai_will_do = {	factor = 100	}
@@ -3883,9 +6377,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GUE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GUE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GUE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GUE.1	}
 		ai_will_do = {	factor = 100	}
@@ -3897,9 +6400,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	IST_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = IST	}	}
+			NOT = {	
+				any_country = {
+					original_tag = IST
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_IST.1	}
 		ai_will_do = {	factor = 100	}
@@ -3911,9 +6423,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	JER_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = JER	}	}
+			NOT = {	
+				any_country = {
+					original_tag = JER
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_JER.1	}
 		ai_will_do = {	factor = 100	}
@@ -3925,9 +6446,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KAR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KAR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KAR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KAR.1	}
 		ai_will_do = {	factor = 100	}
@@ -3939,9 +6469,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LIE_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LIE	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LIE
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LIE.1	}
 		ai_will_do = {	factor = 100	}
@@ -3953,9 +6492,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MCO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MCO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MCO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MCO.1	}
 		ai_will_do = {	factor = 100	}
@@ -3967,9 +6515,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MNN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MNN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MNN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MNN.1	}
 		ai_will_do = {	factor = 100	}
@@ -3981,9 +6538,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MRV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MRV	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MRV
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MRV.1	}
 		ai_will_do = {	factor = 100	}
@@ -3995,9 +6561,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	RHI_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = RHI	}	}
+			NOT = {	
+				any_country = {
+					original_tag = RHI
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_RHI.1	}
 		ai_will_do = {	factor = 100	}
@@ -4009,9 +6584,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	RUS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = RUS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = RUS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_RUS.1	}
 		ai_will_do = {	factor = 100	}
@@ -4023,9 +6607,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SAR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SAR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SAR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SAR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4037,9 +6630,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SIB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SIB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SIB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SIB.1	}
 		ai_will_do = {	factor = 100	}
@@ -4051,9 +6653,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SIC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SIC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SIC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SIC.1	}
 		ai_will_do = {	factor = 100	}
@@ -4065,9 +6676,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SGR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SGR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SGR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SGR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4079,9 +6699,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SLA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SLA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SLA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SLA.1	}
 		ai_will_do = {	factor = 100	}
@@ -4093,9 +6722,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SMR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SMR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SMR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SMR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4107,9 +6745,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SRD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SRD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SRD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SRD.1	}
 		ai_will_do = {	factor = 100	}
@@ -4121,9 +6768,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VAL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VAL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VAL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VAL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4135,9 +6791,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VAT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VAT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VAT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VAT.1	}
 		ai_will_do = {	factor = 100	}
@@ -4149,9 +6814,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VNC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VNC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VNC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VNC.1	}
 		ai_will_do = {	factor = 100	}
@@ -4163,9 +6837,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VOJ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VOJ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VOJ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VOJ.1	}
 		ai_will_do = {	factor = 100	}
@@ -4177,9 +6860,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WLL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WLL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WLL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WLL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4191,9 +6883,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	COM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = COM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = COM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_COM.1	}
 		ai_will_do = {	factor = 100	}
@@ -4205,9 +6906,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CPV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CPV	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CPV
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CPV.1	}
 		ai_will_do = {	factor = 100	}
@@ -4219,9 +6929,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CYR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CYR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CYR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CYR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4233,9 +6952,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	EQA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = EQA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = EQA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_EQA.1	}
 		ai_will_do = {	factor = 100	}
@@ -4247,9 +6975,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FEZ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FEZ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FEZ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FEZ.1	}
 		ai_will_do = {	factor = 100	}
@@ -4261,9 +6998,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LSO_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LSO	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LSO
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LSO.1	}
 		ai_will_do = {	factor = 100	}
@@ -4275,9 +7021,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MUS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MUS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MUS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MUS.1	}
 		ai_will_do = {	factor = 100	}
@@ -4289,9 +7044,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MYT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MYT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MYT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MYT.1	}
 		ai_will_do = {	factor = 100	}
@@ -4303,9 +7067,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	R-U_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = R-U	}	}
+			NOT = {	
+				any_country = {
+					original_tag = R-U
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_R-U.1	}
 		ai_will_do = {	factor = 100	}
@@ -4317,9 +7090,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	REU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = REU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = REU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_REU.1	}
 		ai_will_do = {	factor = 100	}
@@ -4331,9 +7113,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SML_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SML	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SML
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SML.1	}
 		ai_will_do = {	factor = 100	}
@@ -4345,9 +7136,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SSD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SSD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SSD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SSD.1	}
 		ai_will_do = {	factor = 100	}
@@ -4359,9 +7159,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	STP_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = STP	}	}
+			NOT = {	
+				any_country = {
+					original_tag = STP
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_STP.1	}
 		ai_will_do = {	factor = 100	}
@@ -4373,9 +7182,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SWL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SWL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SWL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SWL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4387,9 +7205,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SYC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SYC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SYC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SYC.1	}
 		ai_will_do = {	factor = 100	}
@@ -4401,9 +7228,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TRP_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TRP	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TRP
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TRP.1	}
 		ai_will_do = {	factor = 100	}
@@ -4415,9 +7251,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WAF_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WAF	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WAF
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WAF.1	}
 		ai_will_do = {	factor = 100	}
@@ -4429,9 +7274,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ZAN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ZAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ZAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ZAN.1	}
 		ai_will_do = {	factor = 100	}
@@ -4443,9 +7297,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	AGU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = AGU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = AGU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_AGU.1	}
 		ai_will_do = {	factor = 100	}
@@ -4457,9 +7320,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ARB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ARB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ARB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ARB.1	}
 		ai_will_do = {	factor = 100	}
@@ -4471,9 +7343,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ATG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ATG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ATG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ATG.1	}
 		ai_will_do = {	factor = 100	}
@@ -4485,9 +7366,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BMU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BMU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BMU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BMU.1	}
 		ai_will_do = {	factor = 100	}
@@ -4499,9 +7389,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	BRB_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = BRB	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BRB
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_BRB.1	}
 		ai_will_do = {	factor = 100	}
@@ -4513,9 +7412,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CYM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CYM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CYM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CYM.1	}
 		ai_will_do = {	factor = 100	}
@@ -4527,9 +7435,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	DMA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = DMA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = DMA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_DMA.1	}
 		ai_will_do = {	factor = 100	}
@@ -4541,9 +7458,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	FKL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = FKL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = FKL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_FKL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4555,9 +7481,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GRD_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GRD	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GRD
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GRD.1	}
 		ai_will_do = {	factor = 100	}
@@ -4569,9 +7504,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GRL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GRL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GRL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GRL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4583,9 +7527,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	LEW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = LEW	}	}
+			NOT = {	
+				any_country = {
+					original_tag = LEW
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_LEW.1	}
 		ai_will_do = {	factor = 100	}
@@ -4597,9 +7550,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MSR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MSR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MSR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MSR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4611,9 +7573,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	MTQ_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = MTQ	}	}
+			NOT = {	
+				any_country = {
+					original_tag = MTQ
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_MTQ.1	}
 		ai_will_do = {	factor = 100	}
@@ -4625,9 +7596,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NFL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NFL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NFL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NFL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4639,9 +7619,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SBL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SBL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SBL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SBL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4653,9 +7642,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SHN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SHN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SHN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SHN.1	}
 		ai_will_do = {	factor = 100	}
@@ -4667,9 +7665,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SKN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SKN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SKN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SKN.1	}
 		ai_will_do = {	factor = 100	}
@@ -4681,9 +7688,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SLC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SLC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SLC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SLC.1	}
 		ai_will_do = {	factor = 100	}
@@ -4695,9 +7711,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SPM_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SPM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SPM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SPM.1	}
 		ai_will_do = {	factor = 100	}
@@ -4709,9 +7734,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	SVG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = SVG	}	}
+			NOT = {	
+				any_country = {
+					original_tag = SVG
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_SVG.1	}
 		ai_will_do = {	factor = 100	}
@@ -4723,9 +7757,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TCA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TCA	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TCA
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TCA.1	}
 		ai_will_do = {	factor = 100	}
@@ -4737,9 +7780,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VIR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VIR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VIR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VIR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4751,9 +7803,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WIW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WIW	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WIW
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WIW.1	}
 		ai_will_do = {	factor = 100	}
@@ -4765,9 +7826,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CHR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CHR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CHR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CHR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4779,9 +7849,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	COC_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = COC	}	}
+			NOT = {	
+				any_country = {
+					original_tag = COC
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_COC.1	}
 		ai_will_do = {	factor = 100	}
@@ -4793,9 +7872,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	COK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = COK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = COK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_COK.1	}
 		ai_will_do = {	factor = 100	}
@@ -4807,9 +7895,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	KIR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = KIR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = KIR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_KIR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4821,9 +7918,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NCL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NCL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NCL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NCL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4835,9 +7941,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NFK_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NFK	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NFK
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NFK.1	}
 		ai_will_do = {	factor = 100	}
@@ -4849,9 +7964,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NIU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NIU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NIU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NIU.1	}
 		ai_will_do = {	factor = 100	}
@@ -4863,9 +7987,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NMR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NMR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NMR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NMR.1	}
 		ai_will_do = {	factor = 100	}
@@ -4877,9 +8010,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PCN_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PCN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PCN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PCN.1	}
 		ai_will_do = {	factor = 100	}
@@ -4891,9 +8033,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	PLW_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = PLW	}	}
+			NOT = {	
+				any_country = {
+					original_tag = PLW
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_PLW.1	}
 		ai_will_do = {	factor = 100	}
@@ -4905,9 +8056,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TKL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TKL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TKL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TKL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4919,9 +8079,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TON_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TON	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TON
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TON.1	}
 		ai_will_do = {	factor = 100	}
@@ -4933,9 +8102,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TVL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TVL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TVL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TVL.1	}
 		ai_will_do = {	factor = 100	}
@@ -4947,9 +8125,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	VUT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = VUT	}	}
+			NOT = {	
+				any_country = {
+					original_tag = VUT
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_VUT.1	}
 		ai_will_do = {	factor = 100	}
@@ -4961,9 +8148,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WLF_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WLF	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WLF
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WLF.1	}
 		ai_will_do = {	factor = 100	}
@@ -4975,9 +8171,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	ALS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = ALS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ALS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_ALS.1	}
 		ai_will_do = {	factor = 100	}
@@ -4989,9 +8194,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CAL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CAL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CAL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CAL.1	}
 		ai_will_do = {	factor = 100	}
@@ -5003,9 +8217,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	CLU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = CLU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = CLU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_CLU.1	}
 		ai_will_do = {	factor = 100	}
@@ -5017,9 +8240,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	GLR_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = GLR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = GLR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_GLR.1	}
 		ai_will_do = {	factor = 100	}
@@ -5031,9 +8263,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NEL_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NEL	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NEL
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NEL.1	}
 		ai_will_do = {	factor = 100	}
@@ -5045,9 +8286,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	NMX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = NMX	}	}
+			NOT = {	
+				any_country = {
+					original_tag = NMX
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_NMX.1	}
 		ai_will_do = {	factor = 100	}
@@ -5059,9 +8309,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	TEX_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = TEX	}	}
+			NOT = {	
+				any_country = {
+					original_tag = TEX
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_TEX.1	}
 		ai_will_do = {	factor = 100	}
@@ -5073,9 +8332,18 @@ release_decisions = {
 			any_state = {
 				is_owned_by = ROOT
 				check_variable = {	WAS_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
 			NOT = {	ROOT = {	original_tag = WAS	}	}
+			NOT = {	
+				any_country = {
+					original_tag = WAS
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
 		}
 		complete_effect = {	country_event = fate_of_WAS.1	}
 		ai_will_do = {	factor = 100	}

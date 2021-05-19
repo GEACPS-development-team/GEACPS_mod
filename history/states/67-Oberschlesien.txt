@@ -2,29 +2,28 @@ state = {
 	id = 67
 	name = "STATE_67"
 	manpower = 1402591
+	state_category = city
 	
 	resources = {
-		steel = 19 # was: 60
-		aluminium = 6 # was: 20
+		steel = 19
+		aluminium = 6
 	}
 	
-	state_category = city
-
 	history = {
 		owner = POL
 		add_core_of = GER
-		victory_points = {
-			11467 5
-		}
-		victory_points = {
-			9511 3
-		}
 		buildings = {
 			infrastructure = 6
 		}
+		victory_points = {	9511	3	}
+		victory_points = {	11467	5	}
+		set_variable = {	var = PRE_state_variable	value = 1	}
+		set_variable = {	var = POL_state_variable	value = 1	}
+		set_variable = {	var = EGR_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
 	}
 
 	provinces = {
-		479 6512 9457 9511 11467
+		479	6512	9457	9511	11467
 	}
 }

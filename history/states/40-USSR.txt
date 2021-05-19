@@ -1,23 +1,21 @@
 state = {
 	id = 40
-	name = "STATE_40" # Barnaul
+	name = "STATE_40"
 	manpower = 2107451
-	
 	state_category = town
 
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		victory_points = {
-			1794 1
-		}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
+		victory_points = {	1794	1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
 	}
 
 	provinces = {
-		1297 1779 1794 1797 4803 7680 10537 10546 11410 12515 12528 12613 
+		1297	1779	1794	1797	4803	7680	10537	10546	11410	12515	12528	12613
 	}
 }

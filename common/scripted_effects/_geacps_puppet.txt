@@ -27,6 +27,9 @@ set_jps_variable = {
 set_ps_variable = {
 	set_variable = {	princely_state_trigger_variable = 1	}
 }
+set_ot_variable = {
+	set_variable = {	occupied_territory_trigger_variable = 1	}
+}
 clear_autonomous_states_variable = {
 	clear_variable = colony_trigger_variable
 	clear_variable = protectorate_trigger_variable
@@ -35,4 +38,18 @@ clear_autonomous_states_variable = {
 	clear_variable = mandate_trigger_variable
 	clear_variable = personal_union_trigger_variable
 	clear_variable = princely_state_trigger_variable
+	clear_variable = occupied_territory_trigger_variable
+}
+
+retire_all_ideology_leader = {
+	retire_ideology_leader = total_socialism
+	retire_ideology_leader = radical_socialism
+	retire_ideology_leader = social_democracy
+	retire_ideology_leader = social_liberalism
+	retire_ideology_leader = classical_liberalism
+	retire_ideology_leader = liberal_conservatism
+	retire_ideology_leader = social_conservatism
+	retire_ideology_leader = authoritative_democracy
+	retire_ideology_leader = reactionary_authoritarianism
+	retire_ideology_leader = national_populism
 }

@@ -2,14 +2,12 @@ state = {
 	id = 77
 	name = "STATE_77"
 	manpower = 378000
-	
 	state_category = town
 
 	history = {
 		owner = BUL
-		add_core_of = ROM
 		add_core_of = BUL
-		add_claim_by = BUL
+		add_core_of = ROM
 		victory_points = {
 			11597 1
 		}
@@ -17,9 +15,11 @@ state = {
 			infrastructure = 5
 			industrial_complex = 2
 		}
+		set_variable = {	var = BUL_state_variable	value = 1	}
+		set_variable = {	var = ROM_state_variable	value = 1	}
 	}
 
 	provinces = {
-		9614 11597 
+		9614	11597
 	}
 }
