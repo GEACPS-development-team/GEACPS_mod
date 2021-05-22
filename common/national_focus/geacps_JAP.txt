@@ -8,6 +8,10 @@ focus_tree = {
 			tag = JAP
 		}
 	}
+
+	initial_show_position = {
+		x = 0 y = 0
+	}
 	
 	default = no
 	
@@ -212,7 +216,7 @@ focus_tree = {
 	focus = {#近衛文麿
 		id = JAP_Fumimaro_Konoe
 		icon = GFX_focus_jap_pacific_guardian
-		x = 29
+		x = 33
 		y = 4
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
@@ -231,7 +235,7 @@ focus_tree = {
 	focus = {#小磯國昭
 		id = JAP_Kuniaki_Koiso
 		icon = GFX_focus_jap_pacific_guardian
-		x = 35
+		x = 43
 		y = 4
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
@@ -422,13 +426,26 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#日本列島改造論
+		id = JAP_The_Transformation_of_the_Japanese_Archipelago
+		icon = GFX_focus_jap_pacific_guardian
+		x = 23
+		y = 9
+		prerequisite = {
+			focus = JAP_Suzuki_Nomics
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
 	focus = {#鈴木と阿南
 		id = JAP_Suzuki_and_Anan
 		icon = GFX_focus_jap_pacific_guardian
 		x = 25
-		y = 5
+		y = 6
 		prerequisite = {
-			focus = JAP_Kantaro_Suzuki
+			focus = JAP_Oni_no_Kantaro
 		}
 		cost = 4.28
 		completion_reward = {
@@ -439,22 +456,9 @@ focus_tree = {
 		id = JAP_Civilian_System
 		icon = GFX_focus_jap_pacific_guardian
 		x = 25
-		y = 6
-		prerequisite = {
-			focus = JAP_Suzuki_and_Anan
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#専守防衛
-		id = JAP_Exclusively_Defense-Oriented_Policy
-		icon = GFX_focus_jap_pacific_guardian
-		x = 25
 		y = 7
 		prerequisite = {
-			focus = JAP_Civilian_System
+			focus = JAP_Suzuki_and_Anan
 		}
 		cost = 4.28
 		completion_reward = {
@@ -467,7 +471,7 @@ focus_tree = {
 		x = 25
 		y = 8
 		prerequisite = {
-			focus = JAP_Exclusively_Defense-Oriented_Policy
+			focus = JAP_Civilian_System
 		}
 		cost = 4.28
 		completion_reward = {
@@ -491,9 +495,9 @@ focus_tree = {
 		id = JAP_First_California-Japanese_Treaty
 		icon = GFX_focus_jap_pacific_guardian
 		x = 27
-		y = 5
+		y = 6
 		prerequisite = {
-			focus = JAP_Kantaro_Suzuki
+			focus = JAP_Oni_no_Kantaro
 		}
 		cost = 4.28
 		completion_reward = {
@@ -504,7 +508,7 @@ focus_tree = {
 		id = JAP_Second_California-Japanese_Treaty
 		icon = GFX_focus_jap_pacific_guardian
 		x = 27
-		y = 6
+		y = 7
 		prerequisite = {
 			focus = JAP_First_California-Japanese_Treaty
 		}
@@ -517,7 +521,7 @@ focus_tree = {
 		id = JAP_Third_California-Japanese_Treaty
 		icon = GFX_focus_jap_pacific_guardian
 		x = 27
-		y = 7
+		y = 8
 		prerequisite = {
 			focus = JAP_Second_California-Japanese_Treaty
 		}
@@ -530,7 +534,7 @@ focus_tree = {
 		id = JAP_Treaty_on_the_Annexation_of_California
 		icon = GFX_focus_jap_pacific_guardian
 		x = 27
-		y = 8
+		y = 9
 		prerequisite = {
 			focus = JAP_Third_California-Japanese_Treaty
 		}
@@ -539,73 +543,34 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#新体制運動
-		id = JAP_New_institutional_movement
+	focus = {#英国との協調
+		id = JAP_Working_with_the_UK
 		icon = GFX_focus_jap_pacific_guardian
 		x = 29
 		y = 5
 		prerequisite = {
-			focus = JAP_Fumimaro_Konoe
+			focus = JAP_Kantaro_Suzuki
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {#革新官僚の任命
-		id = JAP_Appointment_of_innovative_bureaucrats
+	focus = {#東郷・ベヴィン協定
+		id = JAP_Togo-Bevin_Agreement
 		icon = GFX_focus_jap_pacific_guardian
 		x = 29
 		y = 6
 		prerequisite = {
-			focus = JAP_New_institutional_movement
+			focus = JAP_Working_with_the_UK
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {#経済新体制確立
-		id = JAP_Establishment_of_a_new_economic_system
-		icon = GFX_focus_jap_pacific_guardian
-		x = 29
-		y = 7
-		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#東亜新秩序
-		id = JAP_New_Order_of_East_Asia
-		icon = GFX_focus_jap_pacific_guardian
-		x = 29
-		y = 8
-		prerequisite = {
-			focus = JAP_Establishment_of_a_new_economic_system
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#統制派との連携
-		id = JAP_Cooperation_with_control_groups
-		icon = GFX_focus_jap_pacific_guardian
-		x = 31
-		y = 5
-		prerequisite = {
-			focus = JAP_Fumimaro_Konoe
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#外地の新体制運動
-		id = JAP_New_regime_movement_in_the_outer_regions
+	focus = {#公爵閣下
+		id = JAP_Lord_Duke
 		icon = GFX_focus_jap_pacific_guardian
 		x = 33
 		y = 5
@@ -617,10 +582,192 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#新体制運動
+		id = JAP_New_institutional_movement
+		icon = GFX_focus_jap_pacific_guardian
+		x = 33
+		y = 6
+		prerequisite = {
+			focus = JAP_Lord_Duke
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#革新官僚の任命
+		id = JAP_Appointment_of_innovative_bureaucrats
+		icon = GFX_focus_jap_pacific_guardian
+		x = 33
+		y = 7
+		prerequisite = {
+			focus = JAP_New_institutional_movement
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#経済新体制確立
+		id = JAP_Establishment_of_a_new_economic_system
+		icon = GFX_focus_jap_pacific_guardian
+		x = 33
+		y = 8
+		prerequisite = {
+			focus = JAP_Appointment_of_innovative_bureaucrats
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#東亜新秩序
+		id = JAP_New_Order_of_East_Asia
+		icon = GFX_focus_jap_pacific_guardian
+		x = 33
+		y = 9
+		prerequisite = {
+			focus = JAP_Establishment_of_a_new_economic_system
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#統制派との連携
+		id = JAP_Cooperation_with_control_groups
+		icon = GFX_focus_jap_pacific_guardian
+		x = 35
+		y = 6
+		prerequisite = {
+			focus = JAP_Lord_Duke
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#軍部大臣現役武官制の撤廃
+		id = JAP_Abolition_of_the_system_of_military_ministers_on_active_service
+		icon = GFX_focus_jap_pacific_guardian
+		x = 35
+		y = 7
+		prerequisite = {
+			focus = JAP_Cooperation_with_control_groups
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#興亜派の結成
+		id = JAP_Formation_of_the_Koaha
+		icon = GFX_focus_jap_pacific_guardian
+		x = 35
+		y = 8
+		prerequisite = {
+			focus = JAP_Abolition_of_the_system_of_military_ministers_on_active_service
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#興亜派の台頭
+		id = JAP_The_rise_of_Koaha
+		icon = GFX_focus_jap_pacific_guardian
+		x = 35
+		y = 9
+		prerequisite = {
+			focus = JAP_Formation_of_the_Koaha
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#外地の新体制運動
+		id = JAP_New_regime_movement_in_the_outer_regions
+		icon = GFX_focus_jap_pacific_guardian
+		x = 37
+		y = 6
+		prerequisite = {
+			focus = JAP_Lord_Duke
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#マレー義勇軍の支援
+		id = JAP_Support_for_the_Malayan_Volunteer_Force
+		icon = GFX_focus_jap_pacific_guardian
+		x = 37
+		y = 7
+		prerequisite = {
+			focus = JAP_New_regime_movement_in_the_outer_regions
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#ボルネオ義勇軍の支援
+		id = JAP_Support_for_the_Borneo_Volunteer_Force
+		icon = GFX_focus_jap_pacific_guardian
+		x = 37
+		y = 8
+		prerequisite = {
+			focus = JAP_Support_for_the_Malayan_Volunteer_Force
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#ビルマ国民軍の支援
+		id = JAP_Support_for_the_Burmese_National_Army
+		icon = GFX_focus_jap_pacific_guardian
+		x = 37
+		y = 9
+		prerequisite = {
+			focus = JAP_Support_for_the_Borneo_Volunteer_Force
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#英米本位の平和主義を排す
+		id = JAP_No_Anglo-American_pacifism
+		icon = GFX_focus_jap_pacific_guardian
+		x = 39
+		y = 5
+		prerequisite = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#東方会議の開催
+		id = JAP_Organisation_of_the_Eastern_Conference
+		icon = GFX_focus_jap_pacific_guardian
+		x = 39
+		y = 6
+		prerequisite = {
+			focus = JAP_No_Anglo-American_pacifism
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
 	focus = {#朝鮮の虎
 		id = JAP_Korean_Tiger
 		icon = GFX_focus_jap_pacific_guardian
-		x = 35
+		x = 43
 		y = 5
 		prerequisite = {
 			focus = JAP_Kuniaki_Koiso
@@ -630,10 +777,10 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#保守官僚の任命
-		id = JAP_Conservative_bureaucratic_appointments
+	focus = {#内鮮一体
+		id = JAP_Nae_Seon_Il_Che
 		icon = GFX_focus_jap_pacific_guardian
-		x = 35
+		x = 43
 		y = 6
 		prerequisite = {
 			focus = JAP_Korean_Tiger
@@ -643,13 +790,39 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#保守官僚の任命
+		id = JAP_Conservative_bureaucratic_appointments
+		icon = GFX_focus_jap_pacific_guardian
+		x = 43
+		y = 7
+		prerequisite = {
+			focus = JAP_Nae_Seon_Il_Che
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#ガソリン自動車
+		id = JAP_Gasoline_vehicles
+		icon = GFX_focus_jap_pacific_guardian
+		x = 43
+		y = 8
+		prerequisite = {
+			focus = JAP_Conservative_bureaucratic_appointments
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
 	focus = {#日満支経済ブロック
 		id = JAP_Japan-Manchuria-Shina_Economic_Bloc
 		icon = GFX_focus_jap_pacific_guardian
-		x = 35
-		y = 7
+		x = 43
+		y = 9
 		prerequisite = {
-			focus = JAP_Conservative_bureaucratic_appointments
+			focus = JAP_Gasoline_vehicles
 		}
 		cost = 4.28
 		completion_reward = {
@@ -659,10 +832,36 @@ focus_tree = {
 	focus = {#小磯と米内
 		id = JAP_Koiso_and_Yonai
 		icon = GFX_focus_jap_pacific_guardian
-		x = 37
-		y = 5
+		x = 45
+		y = 6
 		prerequisite = {
-			focus = JAP_Kuniaki_Koiso
+			focus = JAP_Korean_Tiger
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#最高戦争指導会議の設置
+		id = JAP_Establishment_of_the_Supreme_War_Guidance_Council
+		icon = GFX_focus_jap_pacific_guardian
+		x = 45
+		y = 7
+		prerequisite = {
+			focus = JAP_Koiso_and_Yonai
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#軍部を抑えよう
+		id = JAP_Let_s_keep_the_military_in_check
+		icon = GFX_focus_jap_pacific_guardian
+		x = 45
+		y = 8
+		prerequisite = {
+			focus = JAP_Establishment_of_the_Supreme_War_Guidance_Council
 		}
 		cost = 4.28
 		completion_reward = {
@@ -672,10 +871,10 @@ focus_tree = {
 	focus = {#最高幕僚長の設置
 		id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
 		icon = GFX_focus_jap_pacific_guardian
-		x = 37
-		y = 6
+		x = 45
+		y = 9
 		prerequisite = {
-			focus = JAP_Koiso_and_Yonai
+			focus = JAP_Let_s_keep_the_military_in_check
 		}
 		cost = 4.28
 		completion_reward = {
@@ -685,10 +884,10 @@ focus_tree = {
 	focus = {#援繆ルート
 		id = JAP_Miao_Pin_route
 		icon = GFX_focus_jap_pacific_guardian
-		x = 39
-		y = 5
+		x = 47
+		y = 6
 		prerequisite = {
-			focus = JAP_Kuniaki_Koiso
+			focus = JAP_Korean_Tiger
 		}
 		cost = 4.28
 		completion_reward = {
@@ -698,8 +897,8 @@ focus_tree = {
 	focus = {#小磯・繆斌協定
 		id = JAP_The_Koiso-Miao_Pin_Agreement
 		icon = GFX_focus_jap_pacific_guardian
-		x = 39
-		y = 6
+		x = 47
+		y = 7
 		prerequisite = {
 			focus = JAP_Miao_Pin_route
 		}
@@ -708,54 +907,40 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#亜米利加統治委員会の発足
-		id = JAP_Formation_of_the_Governing_Board_of_the_United_States_of_America
+	focus = {#対岸経営
+		id = JAP_Opposite_shore_management
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 16
+		x = 47
+		y = 8
 		prerequisite = {
-			focus = JAP_Intervention_in_civil_war
-		}
-		prerequisite = {
-			focus = JAP_Alaskan_Expedition
+			focus = JAP_The_Koiso-Miao_Pin_Agreement
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {#対岸の瀕死の病人に対処
-		id = JAP_Dealing_with_a_dying_sick_man_on_the_other_side_of_the_river
+	focus = {#福建への影響力拡大
+		id = JAP_Expanding_influence_on_Fujian
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 17
+		x = 47
+		y = 9
 		prerequisite = {
-			focus = JAP_Formation_of_the_Governing_Board_of_the_United_States_of_America
+			focus = JAP_Opposite_shore_management
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {#亜米利加全土に統治を拡大
-		id = JAP_Expanded_governance_to_all_of_sub_America
+	focus = {#日仏協調...？
+		id = JAP_Franco-Japanese_cooperation
 		icon = GFX_focus_jap_pacific_guardian
-		x = 15
-		y = 18
+		x = 49
+		y = 5
 		prerequisite = {
-			focus = JAP_Dealing_with_a_dying_sick_man_on_the_other_side_of_the_river
+			focus = JAP_Kuniaki_Koiso
 		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#
-		id = GEACPS_NF_JAP_52
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 0
-		
 		cost = 4.28
 		completion_reward = {
 		}
