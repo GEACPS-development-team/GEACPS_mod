@@ -76,7 +76,6 @@ JAM	= {	set_colony_variable = yes	set_cosmetic_tag = JAM_ENG-GBR	}
 LSO	= {	set_colony_variable = yes	set_cosmetic_tag = LSO_ENG-GBR	}
 MLT	= {	set_colony_variable = yes	set_cosmetic_tag = MLT_ENG-GBR	}
 MUS	= {	set_colony_variable = yes	set_cosmetic_tag = MUS_ENG-GBR	}
-IND	= {	set_colony_variable = yes	set_cosmetic_tag = IND_ENG-GBR	}
 SHN	= {	set_colony_variable = yes	set_cosmetic_tag = SHN_ENG-GBR	}
 SIN	= {	set_colony_variable = yes	set_cosmetic_tag = STRAITS_ENG-GBR	}
 SRL	= {	set_colony_variable = yes	set_cosmetic_tag = SRL_ENG-GBR	}
@@ -113,6 +112,7 @@ CYR	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 SOM	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 TRP	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 TZN	= {	set_mandate_variable = yes	set_cosmetic_tag = TZN_ENG-GBR	add_ideas = mandate_government	}
+IND	= {	set_jps_variable = yes	set_cosmetic_tag = IND_ENG-GBR	}
 
 
 set_autonomy = {	target = AST	autonomous_state = dominion	}
@@ -131,7 +131,6 @@ set_autonomy = {	target = JAM	autonomous_state = colony	}
 set_autonomy = {	target = LSO	autonomous_state = colony	}
 set_autonomy = {	target = MLT	autonomous_state = colony	}
 set_autonomy = {	target = MUS	autonomous_state = colony	}
-set_autonomy = {	target = IND	autonomous_state = colony	}
 set_autonomy = {	target = SHN	autonomous_state = colony	}
 set_autonomy = {	target = SIN	autonomous_state = colony	}
 set_autonomy = {	target = SRL	autonomous_state = colony	}
@@ -170,6 +169,7 @@ set_autonomy = {	target = SOM	autonomous_state = mandate	}
 set_autonomy = {	target = TG0	autonomous_state = mandate	}
 set_autonomy = {	target = TRP	autonomous_state = mandate	}
 set_autonomy = {	target = TZN	autonomous_state = mandate	}
+set_autonomy = {	target = IND	autonomous_state = junior_partner_state	}
 set_autonomy = {	target = AT0	autonomous_state = occupied_territory	}
 
 #陣営
