@@ -197,7 +197,7 @@ focus_tree = {
 	focus = {#鈴木貫太郎
 		id = JAP_Kantaro_Suzuki
 		icon = GFX_focus_jap_pacific_guardian
-		x = 23
+		x = 29
 		y = 4
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
@@ -216,7 +216,7 @@ focus_tree = {
 	focus = {#近衛文麿
 		id = JAP_Fumimaro_Konoe
 		icon = GFX_focus_jap_pacific_guardian
-		x = 33
+		x = 39
 		y = 4
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
@@ -235,7 +235,7 @@ focus_tree = {
 	focus = {#小磯國昭
 		id = JAP_Kuniaki_Koiso
 		icon = GFX_focus_jap_pacific_guardian
-		x = 43
+		x = 49
 		y = 4
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
@@ -251,7 +251,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#大日本産業報国会
+	focus = {#大日本産業報國会
 		id = JAP_Dai_Nippon_Sangyo_Hoho_Diet
 		icon = GFX_focus_jap_pacific_guardian
 		x = 11
@@ -377,7 +377,7 @@ focus_tree = {
 	focus = {#鬼の貫太郎
 		id = JAP_Oni_no_Kantaro
 		icon = GFX_focus_jap_pacific_guardian
-		x = 23
+		x = 25
 		y = 5
 		prerequisite = {
 			focus = JAP_Kantaro_Suzuki
@@ -543,8 +543,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#英国との協調
-		id = JAP_Working_with_the_UK
+	focus = {#鈴木外交
+		id = JAP_Suzuki_Diplomacy
 		icon = GFX_focus_jap_pacific_guardian
 		x = 29
 		y = 5
@@ -562,7 +562,33 @@ focus_tree = {
 		x = 29
 		y = 6
 		prerequisite = {
-			focus = JAP_Working_with_the_UK
+			focus = JAP_Suzuki_Diplomacy
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#第四次日英同盟
+		id = JAP_The_Fourth_Japanese-British_Alliancet
+		icon = GFX_focus_jap_pacific_guardian
+		x = 29
+		y = 9
+		prerequisite = {
+			focus = 
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#米國國民の覇権主義に対峙
+		id = JAP_Confronting_the_hegemony_of_the_American_people
+		icon = GFX_focus_jap_pacific_guardian
+		x = 31
+		y = 6
+		prerequisite = {
+			focus = JAP_Suzuki_Diplomacy
 		}
 		cost = 4.28
 		completion_reward = {
@@ -572,7 +598,7 @@ focus_tree = {
 	focus = {#公爵閣下
 		id = JAP_Lord_Duke
 		icon = GFX_focus_jap_pacific_guardian
-		x = 33
+		x = 35
 		y = 5
 		prerequisite = {
 			focus = JAP_Fumimaro_Konoe
@@ -725,7 +751,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#ビルマ国民軍の支援
+	focus = {#ビルマ國民軍の支援
 		id = JAP_Support_for_the_Burmese_National_Army
 		icon = GFX_focus_jap_pacific_guardian
 		x = 37
@@ -764,10 +790,42 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#重光・アルバレス協定
+		id = JAP_Shigemitsu-Alvarez_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		x = 39
+		y = 7
+		prerequisite = {
+			focus = JAP_Organisation_of_the_Eastern_Conference
+		}
+		mutually_exclusive = {
+			focus = JAP_The_New_One_Nation_Movement
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#一國新体制運動論
+		id = JAP_The_New_One_Nation_Movement
+		icon = GFX_focus_jap_pacific_guardian
+		x = 41
+		y = 7
+		prerequisite = {
+			focus = JAP_Organisation_of_the_Eastern_Conference
+		}
+		mutually_exclusive = {
+			focus = JAP_Shigemitsu-Alvarez_Agreement
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
 	focus = {#朝鮮の虎
 		id = JAP_Korean_Tiger
 		icon = GFX_focus_jap_pacific_guardian
-		x = 43
+		x = 45
 		y = 5
 		prerequisite = {
 			focus = JAP_Kuniaki_Koiso
