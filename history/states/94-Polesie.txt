@@ -3,27 +3,21 @@ state = {
 	name = "STATE_94"
 	manpower = 1232200
 	buildings_max_level_factor = 1
-	
 	state_category = town
 
 	history = {
 		owner = BLR
 		add_core_of = BLR
-		victory_points = {
-			9304 1
-		}
-		victory_points = {
-			3392 1
-		}
-		victory_points = {
-			560 1
-		}
+		victory_points = {	560	1	}
+		victory_points = {	3392	1	}
+		victory_points = {	9304	1	}
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	var = BLR_state_variable	value = 1	}
 	}
 
 	provinces = {
-		535 560 3256 3309 3392 3496 3556 6280 6306 6415 6546 6579 9520 11285 11503 11528 11341 9304
-	}
+		535	560	3256	3309	3392	3496	3556	6280	6306	6415	6546	6579	9304	9520	11285	11341	11503	11528
+	}	
 }
