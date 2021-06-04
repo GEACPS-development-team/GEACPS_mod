@@ -2,28 +2,24 @@ state = {
 	id = 85
 	name = "STATE_85"
 	manpower = 1080100
-	
 	state_category = city
 	
 	history = {
 		owner = POL
 		add_core_of = POL
-		victory_points = {
-			3295 5
-		}
-		victory_points = {
-			279 1
-		}
 		buildings = {
 			infrastructure = 6
-			arms_factory = 2
 			industrial_complex = 1
+			arms_factory = 2
 			dockyard = 1
 			air_base = 3
 		}
+		victory_points = {	279	1	}
+		victory_points = {	3295	5	}
+		set_variable = {	var = POL_state_variable	value = 1	}
 	}
 
 	provinces = {
-		243 279 334 389 3295 3324 9263 6347
+		243	279	334	389	3295	3324	6347	9263
 	}
 }
