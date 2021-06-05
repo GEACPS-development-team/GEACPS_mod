@@ -5,14 +5,13 @@ state = {
 	state_category = enclave
 	
 	history = {
-		owner = ICE
-		add_core_of = ICE
+		owner = FRO
 		add_core_of = FRO
-
 		buildings = {
 			infrastructure = 4
 			13003 = {	naval_base = 1	}
 		}
+		set_variable = {	var = FRO_state_variable	value = 1	}
 	}
 	
 	provinces = {
