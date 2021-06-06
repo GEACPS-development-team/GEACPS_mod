@@ -15,8 +15,6 @@ country_event = {#大日本帝國
  		ai_chance = {
 			factor = 100
 		}
-		add_stability = -0.1
-		complete_national_focus = JAP_1-22_Incident
 	}
 }
 country_event = {#一・二二事件
@@ -35,6 +33,8 @@ country_event = {#一・二二事件
 			factor = 100
 		}
 		add_stability = -0.1
+		remove_ideas_with_trait = head_of_government
+		add_ideas = 
 		complete_national_focus = JAP_1-22_Incident
 	}
 }
