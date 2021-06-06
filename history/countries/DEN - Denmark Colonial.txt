@@ -1,0 +1,44 @@
+﻿#植民地国家生成
+create_dynamic_country = {
+	original_tag = GRL
+	set_country_flag = North_GRL_countryflag
+	set_cosmetic_tag = NORTH-GREENLAND_DEN
+	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+	set_colony_variable = yes
+	DEN = {	set_autonomy = {	target = PREV	autonomous_state = colony	}	}
+	
+	every_state = {
+		limit = {	is_core_of = GRL	}
+		remove_core_of = PREV
+	}
+	
+	transfer_state = 1209	1209 = {	add_core_of = PREV	}
+	transfer_state = 1210	1210 = {	add_core_of = PREV	}
+	transfer_state = 1212	1212 = {	add_core_of = PREV	}
+}
+create_dynamic_country = {
+	original_tag = GRL
+	set_country_flag = South_GRL_countryflag
+	set_cosmetic_tag = SOUTH-GREENLAND_DEN
+	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+	set_colony_variable = yes
+	DEN = {	set_autonomy = {	target = PREV	autonomous_state = colony	}	}
+	
+	every_state = {
+		limit = {	is_core_of = GRL	}
+		remove_core_of = PREV
+	}
+	
+	transfer_state = 101	101 = {	add_core_of = PREV	}
+	transfer_state = 1211	1211 = {	add_core_of = PREV	}
+	transfer_state = 1213	1213 = {	add_core_of = PREV	}
+}
+
+#傀儡, 植民地
+FRO	= {	set_colony_variable = yes	set_cosmetic_tag = COUNTRY_DEN	}
+
+set_autonomy = {	target = FRO	autonomous_state = colony	}

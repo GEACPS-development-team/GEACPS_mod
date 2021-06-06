@@ -33,9 +33,9 @@ create_dynamic_country = {
 		limit = {	is_core_of = AUS	}
 		remove_core_of = PREV
 	}
-    transfer_state = 39	39 = {	add_core_of = PREV	}
-    transfer_state = 153	153 = {	add_core_of = PREV	}
-    transfer_state = 1002	1002 = {	add_core_of = PREV	}
+	 transfer_state = 39	39 = {	add_core_of = PREV	}
+	 transfer_state = 153	153 = {	add_core_of = PREV	}
+	 transfer_state = 1002	1002 = {	add_core_of = PREV	}
 }
 
 #独立保障
@@ -47,20 +47,20 @@ SIB = { give_military_access = FRA }
 RHI = { give_military_access = FRA }
 
 #傀儡, 植民地
-CAY	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_FRA	}
-DJI	= {	set_colony_variable = yes   set_cosmetic_tag = DJI_FRA	}
-EQA	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_FRA	}
-MAD	= {	set_colony_variable = yes   set_cosmetic_tag = MAD_FRA	}
-SPM	= {	set_colony_variable = yes   set_cosmetic_tag = COUNTRY_FRA }
+CAY	= {	set_colony_variable = yes	set_cosmetic_tag = COUNTRY_FRA	}
+DJI	= {	set_colony_variable = yes	set_cosmetic_tag = DJI_FRA	}
+EQA	= {	set_colony_variable = yes	set_cosmetic_tag = COUNTRY_FRA	}
+MAD	= {	set_colony_variable = yes	set_cosmetic_tag = MAD_FRA	}
+SPM	= {	set_colony_variable = yes	set_cosmetic_tag = COUNTRY_FRA }
 WAF	= {	set_fc_variable = yes	set_cosmetic_tag = COUNTRY_FRA	}
 MOR	= {	set_protectorate_variable = yes	set_cosmetic_tag = MOR_FRA	}
 RHI	= {	set_protectorate_variable = yes	set_cosmetic_tag = RHI_FRA	}
 SAR	= {	set_protectorate_variable = yes	set_cosmetic_tag = SAR_FRA	}
 TUN	= {	set_protectorate_variable = yes	set_cosmetic_tag = TUN_FRA	}
 VAL	= {	set_protectorate_variable = yes	set_cosmetic_tag = VAL_FRA	}
-CMR	= {	set_mandate_variable = yes   set_cosmetic_tag = COUNTRY_FRA	}
-FEZ	= {	set_mandate_variable = yes   set_cosmetic_tag = COUNTRY_FRA	}
-TOG	= {	set_mandate_variable = yes   set_cosmetic_tag = TOG_FRA	}
+FEZ	= {	set_ot_variable = yes	set_cosmetic_tag = COUNTRY_FRA	}
+CMR	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_FRA	}
+TOG	= {	set_mandate_variable = yes	set_cosmetic_tag = TOG_FRA	}
 
 
 set_autonomy = {	target = CAY	autonomous_state = colony	}
@@ -75,10 +75,10 @@ set_autonomy = {	target = RHI	autonomous_state = protected_territory	}
 set_autonomy = {	target = SAR	autonomous_state = protected_territory	}
 set_autonomy = {	target = TUN	autonomous_state = protected_territory	}
 set_autonomy = {	target = VAL	autonomous_state = protected_territory	}
-set_autonomy = {	target = CMR	autonomous_state = mandate	}
-set_autonomy = {	target = FEZ	autonomous_state = mandate	}
-set_autonomy = {	target = TOG	autonomous_state = mandate	}
 set_autonomy = {	target = AT1	autonomous_state = occupied_territory	}
+set_autonomy = {	target = FEZ	autonomous_state = occupied_territory	}
+set_autonomy = {	target = CMR	autonomous_state = mandate	}
+set_autonomy = {	target = TOG	autonomous_state = mandate	}
 
 #陣営
 create_faction = 西欧同盟
