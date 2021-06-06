@@ -27,14 +27,20 @@ country_event = {#一・二二事件
 	fire_only_once = yes
 	is_triggered_only = yes
 	
-	option = {#首謀者を逮捕しろ！
+	option = {#東條の腹心・分身の安藤紀三郎に
 		name = geacps_JAP.2.a
  		ai_chance = {
 			factor = 100
 		}
-		add_stability = -0.1
 		remove_ideas_with_trait = head_of_government
-		add_ideas = 
+		add_ideas = JAP_Kisaburo_Ando
+		complete_national_focus = JAP_1-22_Incident
+	}
+	
+	option = {#"欠点がない"重光葵に
+		name = geacps_JAP.2.b
+		remove_ideas_with_trait = head_of_government
+		add_ideas = JAP_Mamoru_Shigemitsu
 		complete_national_focus = JAP_1-22_Incident
 	}
 }

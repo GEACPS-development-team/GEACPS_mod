@@ -323,14 +323,34 @@ ideas = {#新規国民精神
 	}
 }
 
-ideas = {
-	head_of_government = {
+ideas = {#政府首班
+	head_of_government = {#東條英機
 		JAP_Hideki_Tojo = {
 			allowed = {	original_tag = JAP	}
 			allowed_civil_war = {	always = yes	}
 			
 			removal_cost = -1
 			picture = JAP_Hideki_Tojo
+			#modifier = {}
+		}
+	}
+	head_of_government = {#安藤紀三郎
+		JAP_Kisaburo_Ando = {
+			allowed = {	original_tag = JAP	}
+			allowed_civil_war = {	always = yes	}
+			
+			removal_cost = -1
+			picture = JAP_Kisaburo_Ando
+			#modifier = {}
+		}
+	}
+	head_of_government = {#重光葵
+		JAP_Mamoru_Shigemitsu = {
+			allowed = {	original_tag = JAP	}
+			allowed_civil_war = {	always = yes	}
+			
+			removal_cost = -1
+			picture = JAP_Mamoru_Shigemitsu
 			#modifier = {}
 		}
 	}
