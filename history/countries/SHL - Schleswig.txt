@@ -1,31 +1,25 @@
-﻿capital = 426
-oob = ORI_1946
-	
-set_convoys = 10
-	
+﻿capital = 58
+set_cosmetic_tag = SHL_duchy
+
+oob = SHL_1946
+
+set_convoys = 5
+
 set_politics = {
-	ruling_party = total_socialism
+	ruling_party = authoritative_democracy
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	total_socialism = 100
+	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
 	social_liberalism = 0
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 0
+	authoritative_democracy = 100
 	reactionary_authoritarianism = 0
 	national_populism = 0
-}
-	
-create_country_leader = {
-	name = "プラン・チャンド・ジョシ"
-	desc = ""
-	picture = "gfx/leaders/ORI/.dds"
-	expire = "1980.11.9"
-	ideology = total_socialism_ideology
 }

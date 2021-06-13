@@ -1,10 +1,8 @@
-﻿capital = 430
-oob = AZA_1946
-
-set_convoys = 5
+﻿capital = 880
+oob = VAL_1946
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = national_populism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -17,7 +15,15 @@ set_popularities = {
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 100
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
-	national_populism = 0
+	national_populism = 100
+}
+
+create_country_leader = {
+	name = "シャルル・ド・ゴール"
+	desc = ""
+	picture = "GFX_Charles_de_Gaulle"
+	expire = "1970.11.9"
+	ideology = national_populism_ideology
 }

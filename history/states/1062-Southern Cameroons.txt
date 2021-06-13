@@ -1,24 +1,20 @@
 state = {
 	id = 1062
-	name = "STATE_1062" # Cameroon
+	name = "STATE_1062"
 	manpower = 2945782
-	
 	state_category = rural
-
+	
 	history = {
-		owner = NGA
-		add_core_of = NGA
-		victory_points = {
-			6039 10 
-		}
+		owner = AMB
+		add_core_of = AMB
+		add_core_of = CMR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
-			6039 = {
-				naval_base = 1
-			}
+			6039 = {	naval_base = 1	}
 		}
+		victory_points = {	6039	10	}
 	}
 
 	provinces = {

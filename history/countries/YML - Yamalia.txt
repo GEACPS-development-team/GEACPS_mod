@@ -1,15 +1,15 @@
-﻿capital = 880
-oob = VAL_1946
-set_cosmetic_tag = VAL_FRA
+﻿capital = 579
+oob = YML_1946
+set_cosmetic_tag = YML_SOV
 
 set_politics = {
-	ruling_party = national_populism
+	ruling_party = total_socialism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	total_socialism = 0
+	total_socialism = 100
 	radical_socialism = 0
 	social_democracy = 0
 	social_liberalism = 0
@@ -18,13 +18,5 @@ set_popularities = {
 	social_conservatism = 0
 	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
-	national_populism = 100
-}
-
-create_country_leader = {
-	name = "シャルル・ド・ゴール"
-	desc = ""
-	picture = "GFX_Charles_de_Gaulle"
-	expire = "1970.11.9"
-	ideology = national_populism_ideology
+	national_populism = 0
 }
