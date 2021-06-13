@@ -24,16 +24,38 @@ debug_decisions = {
 		add_ideas = GEACPS_idea_CHI_road_to_reunification4
 		}
 	}
-	debug_special_event = {
+	debug_special_event_test_2020 = {
 		icon = generic_operation
 		complete_effect = {
-			set_country_flag = geacps_special_event_window_open
+			set_variable = { special_event_ID = 1 }
+			set_variable = { special_event_back_map = 2 }
+			set_variable = { special_event_clock_time_hour = 15 }
+
 		}
 	}
-	debug_special_even_escape = {
+	debug_special_event_test_2021 = {
 		icon = generic_operation
 		complete_effect = {
-			clr_country_flag = geacps_special_event_window_open
+			set_variable = { special_event_ID = 2 }
+			set_variable = { special_event_back_map = 5 }
+			set_variable = { special_event_clock_time_hour = 2 }
+			set_variable = { special_event_clock_time_minutes = 15 }
+
+		}
+	}
+
+	debug_special_event_add = {
+		icon = generic_operation
+		complete_effect = {
+			add_to_variable = { special_event_back_map = 1 }
+			add_to_variable = { special_event_clock_time_hour = 1 }
+		}
+	}
+	debug_special_event_decrease = {
+		icon = generic_operation
+		complete_effect = {
+			add_to_variable = { special_event_back_map = -1 }
+			add_to_variable = { special_event_clock_time_hour = -1 }
 		}
 	}
 
