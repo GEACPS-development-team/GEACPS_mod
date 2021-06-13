@@ -1,3 +1,29 @@
+JAP_1-22_Incident = {#一・二二事件
+
+	JAP_Outbreak_of_the_1-22_Incident = {#一・二二事件の発生
+	
+		icon = jap_pacific_guardian
+	
+		available = {
+			has_idea = {	JAP_Hideki_Tojo	}
+			has_war = yes
+		}
+		
+		visible = {	original_tag = JAP	}
+		
+		fire_only_once = yes
+		
+		activation = { original_tag = JAP }
+		
+		days_mission_timeout = 22
+		
+		cost = 0
+		
+		timeout_effect = { country_event = {	id = geacps_JAP.2	}	}
+
+	}
+}
+
 JAP_national_policy_research_outline = {
 	national_policy_research_outline = {
 		days_remove = 365
