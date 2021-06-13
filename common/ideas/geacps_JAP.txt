@@ -113,6 +113,23 @@ ideas = {#既存国民精神
 
 ideas = {#新規国民精神
 	country = {
+		JAP_Martial_law = {#戒嚴令
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = hun_treaty_of_trianon
+			modifier = {
+				stability_factor = -0.1
+				mobilization_speed = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+		
 		JAP_air_people = {
 			removal_cost = -1
 
