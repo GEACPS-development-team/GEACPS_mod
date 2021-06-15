@@ -1,30 +1,5 @@
 add_namespace = GEACPS_game_start
 
-country_event = {
-	id = GEACPS_game_start.1
-	title = GEACPS_game_start.1.title
-	desc = GEACPS_game_start.1.desc
-	picture = GFX_
-	
-	is_triggered_only = yes
-
-	option = {
-		name = GEACPS_game_start.1.a
-		ai_chance = { factor = 10 }
-		hidden_effect = {
-			every_country = {
-				limit = {
-					is_in_faction_with = CHI
-					NOT ={
-						tag = CHI
-					}
-				}
-				set_country_flag = is_in_faction_with_CHI
-			}
-		}
-
-	}
-}
 country_event = {#ドナウ連邦構想
 	id = GEACPS_game_start.2
 	title = GEACPS_game_start.2.t
