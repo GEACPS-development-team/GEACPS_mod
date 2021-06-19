@@ -53,9 +53,72 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_1-22_Incident
 		}
-		cost = 0.14
+		cost = 0
 		completion_reward = {
 			add_ideas = JAP_Martial_law
+			986 = {	set_demilitarized_zone = yes	}
+		}
+	}
+	
+	focus = {#皇道派を再排除
+		id = JAP_Re-exclusion_of_imperialists
+		icon = GFX_focus_jap_pacific_guardian
+		x = 5
+		y = 3
+		prerequisite = {
+			focus = JAP_Declaration_of_martial_law
+		}
+		cost = 4.28
+		completion_reward = {
+			stability_factor = -0.1
+		}
+	}
+	
+	focus = {#農本主義者の監視
+		id = JAP_Agrarian_watchdog
+		icon = GFX_focus_jap_pacific_guardian
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = JAP_Declaration_of_martial_law
+		}
+		cost = 4.28
+		completion_reward = {
+			stability_factor = -0.1
+		}
+	}
+	
+	focus = {#海軍士官の粛軍
+		id = JAP_Naval_officer_s_purge
+		icon = GFX_focus_jap_pacific_guardian
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = JAP_Declaration_of_martial_law
+		}
+		cost = 4.28
+		completion_reward = {
+			stability_factor = -0.1
+		}
+	}
+	
+	focus = {#事態の安定
+		id = JAP_Stability_of_the_situation
+		icon = GFX_focus_jap_pacific_guardian
+		x = 1
+		y = 4
+		prerequisite = {
+			focus = JAP_Re-exclusion_of_imperialists
+		}
+		prerequisite = {
+			focus = JAP_Agrarian_watchdog
+		}
+		prerequisite = {
+			focus = JAP_Naval_officer_s_purge
+		}
+		cost = 4.28
+		completion_reward = {
+			remove_ideas = JAP_Martial_law
 		}
 	}
 	
@@ -92,64 +155,6 @@ focus_tree = {
 		y = 3
 		prerequisite = {
 			focus = JAP_Opening_of_the_extraordinary_session
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#皇道派を再排除
-		id = JAP_Re-exclusion_of_imperialists
-		icon = GFX_focus_jap_pacific_guardian
-		x = 5
-		y = 3
-		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#農本主義者の監視
-		id = JAP_Agrarian_watchdog
-		icon = GFX_focus_jap_pacific_guardian
-		x = 3
-		y = 3
-		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#海軍士官の粛軍
-		id = JAP_Naval_officer_s_purge
-		icon = GFX_focus_jap_pacific_guardian
-		x = 1
-		y = 3
-		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#事態の安定
-		id = JAP_Stability_of_the_situation
-		icon = GFX_focus_jap_pacific_guardian
-		x = 1
-		y = 4
-		prerequisite = {
-			focus = JAP_Re-exclusion_of_imperialists
-		}
-		prerequisite = {
-			focus = JAP_Agrarian_watchdog
-		}
-		prerequisite = {
-			focus = JAP_Naval_officer_s_purge
 		}
 		cost = 4.28
 		completion_reward = {
