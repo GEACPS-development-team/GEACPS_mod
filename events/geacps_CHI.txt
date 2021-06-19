@@ -1,14 +1,14 @@
-add_namespace = GEACPS_china
+add_namespace = CHI
 country_event = {
-	id = GEACPS_china.001#?????????
-	title = GEACPS_china.001.title
-	desc = GEACPS_china.001.desc
+	id = CHI.001#?????????
+	title = CHI.001.title
+	desc = CHI.001.desc
 	picture = GFX_
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.001.a
+		name = CHI.001.a
 		ai_chance = { factor = 10 }
 		620 = {
 			add_manpower = -3532
@@ -19,20 +19,20 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.002#?s?s?a?J??J?n
-	title = GEACPS_china.002.title
-	desc = GEACPS_china.002.desc
+	id = CHI.002#?s?s?a?J??J?n
+	title = CHI.002.title
+	desc = CHI.002.desc
 	picture = GFX_
 	
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.002.a
+		name = CHI.002.a
 		ai_chance = { factor = 10 }
 
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.002
+				id = CHI.002
 				days = 2
 				random = 2
 			}
@@ -41,18 +41,18 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.003#?????????????I
-	title = GEACPS_china.003.title
-	desc = GEACPS_china.003.desc
+	id = CHI.003#?????????????I
+	title = CHI.003.title
+	desc = CHI.003.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.003.a
+		name = CHI.003.a
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.004
+				id = CHI.004
 				days = 7
 				random = 2
 			}
@@ -60,14 +60,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.004#???Δh?????
-	title = GEACPS_china.004.title
-	desc = GEACPS_china.004.desc
+	id = CHI.004#???Δh?????
+	title = CHI.004.title
+	desc = CHI.004.desc
 	picture = GFX_
 	is_triggered_only = yes
 	
 	option = {
-		name = GEACPS_china.004.a#?e??
+		name = CHI.004.a#?e??
 		ai_chance = { factor = 1 }
 		add_ideas = GEACPS_idea_CHI_suppression_of_rebellion
 		every_country = {
@@ -84,32 +84,32 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.005
+				id = CHI.005
 				days = 8
 				random = 2
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.004.b#???u
+		name = CHI.004.b#???u
 		ai_chance = { factor = 15 }
 		add_ideas = GEACPS_idea_CHI_incompetent_government
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.010
+				id = CHI.010
 				days = 7
 				random = 2
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.004.c#?b????
+		name = CHI.004.c#?b????
 		ai_chance = { factor = 0 }
 		trigger = {				
 			num_faction_members > 1
 		}
 		country_event = {
-			id = GEACPS_china.020
+			id = CHI.020
 			days = 7
 			random = 2
 		}
@@ -117,38 +117,38 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.005#?????\??
-	title = GEACPS_china.005.title
-	desc = GEACPS_china.005.desc
+	id = CHI.005#?????\??
+	title = CHI.005.title
+	desc = CHI.005.desc
 	picture = GFX_
 	is_triggered_only = yes
 	
 	option = {
-		name = GEACPS_china.005.a#?e??
+		name = CHI.005.a#?e??
 		ai_chance = { factor = 10 }
 		add_stability = -0.05
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.006
+				id = CHI.006
 				days = 4
 				random = 2
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.005.b#???u
+		name = CHI.005.b#???u
 		ai_chance = { factor = 10 }
 		add_ideas = GEACPS_idea_CHI_incompetent_government
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.010
+				id = CHI.010
 				days = 7
 				random = 2
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.005.c#?b????
+		name = CHI.005.c#?b????
 		ai_chance = { factor = 5 }
 		remove_ideas = GEACPS_idea_CHI_suppression_of_rebellion
 		every_country = {
@@ -156,12 +156,12 @@ country_event = {
 				has_country_flag = is_in_faction_with_CHI
 			}
 			country_event = {
-				id = GEACPS_china.007
+				id = CHI.007
 				days = 3
 				random = 2
 			}
 			country_event = {
-				id = GEACPS_china.006
+				id = CHI.006
 				days = 10
 				random = 3
 			}
@@ -173,10 +173,10 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.006#?????\??????Q
-	title = GEACPS_china.006.title
+	id = CHI.006#?????\??????Q
+	title = CHI.006.title
 	desc = {
-		text = GEACPS_china.006.desc.1
+		text = CHI.006.desc.1
 		trigger = {	
 			NOT = {
 				has_country_flag = CHI_negotiations_with_warlords
@@ -184,7 +184,7 @@ country_event = {
 		}
 	}
 	desc = {
-		text = GEACPS_china.006.desc.2
+		text = CHI.006.desc.2
 		trigger = {	
 			has_country_flag = CHI_negotiations_with_warlords
 			NOT = {
@@ -193,7 +193,7 @@ country_event = {
 		}
 	}
 	desc = {
-		text = GEACPS_china.006.desc.3
+		text = CHI.006.desc.3
 		trigger = {	
 			has_country_flag = CHI_negotiations_with_warlords
 			has_country_flag = CHI_preventing_collapse
@@ -204,7 +204,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.006.a#????????????
+		name = CHI.006.a#????????????
 		ai_chance = { factor = 10 }
 		trigger = {				
 			NOT = {
@@ -214,14 +214,14 @@ country_event = {
 
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.010
+				id = CHI.010
 				days = 4
 				random = 4
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.006.b#????????????E
+		name = CHI.006.b#????????????E
 
 		ai_chance = { factor = 10 }
 		trigger = {				
@@ -232,14 +232,14 @@ country_event = {
 		}
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.011
+				id = CHI.011
 				days = 8
 				random = 4
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.006.c#?????????
+		name = CHI.006.c#?????????
 
 		ai_chance = { factor = 10 }
 		trigger = {				
@@ -251,20 +251,20 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.007#???????{????????
-	title = GEACPS_china.007.title
-	desc = GEACPS_china.007.desc
+	id = CHI.007#???????{????????
+	title = CHI.007.title
+	desc = CHI.007.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.007.a#????J?n
+		name = CHI.007.a#????J?n
 		ai_chance = { factor = 20}
 		hidden_effect = {
 			FROM = {
 				set_country_flag = CHI_preventing_collapse
 				country_event = {
-					id = GEACPS_china.008
+					id = CHI.008
 					days = 4
 					random = 4
 				}
@@ -272,7 +272,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = GEACPS_china.007.b#???????(???E)
+		name = CHI.007.b#???????(???E)
 		ai_chance = { factor = 10 }
 		leave_faction = yes
 		hidden_effect = {
@@ -287,12 +287,12 @@ country_event = {
 					has_war_with = JAP
 				}
 				country_event = {
-					id = GEACPS_china.022
+					id = CHI.022
 				}
 			}
 			FROM = {
 				country_event = {
-					id = GEACPS_china.008
+					id = CHI.008
 					days = 1
 				}
 			}
@@ -301,18 +301,18 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.008#?e?R????v??? ?
-	title = GEACPS_china.008.title
-	desc = GEACPS_china.008.desc
+	id = CHI.008#?e?R????v??? ?
+	title = CHI.008.title
+	desc = CHI.008.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.008.a#?F???
+		name = CHI.008.a#?F???
 		ai_chance = { factor = 10 }
 		FROM = {
 			country_event = {
-				id = GEACPS_china.009
+				id = CHI.009
 				days = 3
 				random = 4
 			}
@@ -321,19 +321,19 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.009#?????????R????????m??
-	title = GEACPS_china.009.title
-	desc = GEACPS_china.009.desc
+	id = CHI.009#?????????R????????m??
+	title = CHI.009.title
+	desc = CHI.009.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.009.a#?f??????
+		name = CHI.009.a#?f??????
 		ai_chance = { factor = 10 }
 		remove_ideas = GEACPS_idea_CHI_pressure_from_allies
 		FROM = {
 			country_event = {
-				id = GEACPS_china.035
+				id = CHI.035
 				days = 3
 				random = 2
 			}
@@ -342,14 +342,14 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.010#?w?c?????
-	title = GEACPS_china.010.title
-	desc = GEACPS_china.010.desc
+	id = CHI.010#?w?c?????
+	title = CHI.010.title
+	desc = CHI.010.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.010.a#???????
+		name = CHI.010.a#???????
 		ai_chance = { factor = 10 }
 		add_ideas = GEACPS_idea_CHI_failed_states
 		hidden_effect = {
@@ -358,7 +358,7 @@ country_event = {
 					has_country_flag = is_in_faction_with_CHI
 				}
 				country_event = {
-					id = GEACPS_china.022
+					id = CHI.022
 					days = 7
 					random = 3
 				}
@@ -368,7 +368,7 @@ country_event = {
 				}		
 			}
 			country_event = {
-				id = GEACPS_china.011
+				id = CHI.011
 				days = 10
 				random = 4
 			}
@@ -385,18 +385,18 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.011#?l??h??I?N
-	title = GEACPS_china.011.title
-	desc = GEACPS_china.011.desc
+	id = CHI.011#?l??h??I?N
+	title = CHI.011.title
+	desc = CHI.011.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.011.a#???????
+		name = CHI.011.a#???????
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.012
+				id = CHI.012
 				days = 10
 				random = 4
 			}
@@ -415,18 +415,18 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.012#????h??I?N?i?????j
-	title = GEACPS_china.012.title
-	desc = GEACPS_china.012.desc
+	id = CHI.012#????h??I?N?i?????j
+	title = CHI.012.title
+	desc = CHI.012.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.012.a#???????
+		name = CHI.012.a#???????
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.013
+				id = CHI.013
 				days = 5
 				random = 4
 			}
@@ -443,18 +443,18 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.013#?M?B?h??I?N
-	title = GEACPS_china.013.title
-	desc = GEACPS_china.013.desc
+	id = CHI.013#?M?B?h??I?N
+	title = CHI.013.title
+	desc = CHI.013.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.013.a#???????
+		name = CHI.013.a#???????
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.014
+				id = CHI.014
 				days = 10
 				random = 4
 			}
@@ -471,29 +471,29 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.014#?u?a??????
-	title = GEACPS_china.014.title
-	desc = GEACPS_china.014.desc
+	id = CHI.014#?u?a??????
+	title = CHI.014.title
+	desc = CHI.014.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.014.a#?u?a
+		name = CHI.014.a#?u?a
 		ai_chance = { factor = 5 }
 		JAP = {
 			country_event = {
-				id = GEACPS_china.016
+				id = CHI.016
 				days = 1
 				random = 2
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.014.b#????????
+		name = CHI.014.b#????????
 		ai_chance = { factor = 15 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.015
+				id = CHI.015
 				days = 1
 				random = 2
 			}
@@ -502,54 +502,54 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.015#????????
-	title = GEACPS_china.015.title
-	desc = GEACPS_china.015.desc
+	id = CHI.015#????????
+	title = CHI.015.title
+	desc = CHI.015.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.015.a#?O??R???I
+		name = CHI.015.a#?O??R???I
 		ai_chance = { factor = 10 }
 		add_ideas = GEACPS_idea_CHI_the_only_one_china
 		
 	}
 }
 country_event = {
-	id = GEACPS_china.016#??????????u?a????
-	title = GEACPS_china.016.title
-	desc = GEACPS_china.016.desc
+	id = CHI.016#??????????u?a????
+	title = CHI.016.title
+	desc = CHI.016.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.016.a#?????u?a
+		name = CHI.016.a#?????u?a
 		ai_chance = { factor = 5 }
 		FROM = {
 			country_event = {
-				id = GEACPS_china.019
+				id = CHI.019
 				days = 1
 				random = 2
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.016.b#????B??????
+		name = CHI.016.b#????B??????
 		ai_chance = { factor = 30 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.018
+				id = CHI.018
 				days = 1
 				random = 2
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.016.c#?u?a????
+		name = CHI.016.c#?u?a????
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.017
+				id = CHI.017
 				days = 1
 				random = 2
 			}
@@ -558,31 +558,31 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.017#???{???u?a????
-	title = GEACPS_china.017.title
-	desc = GEACPS_china.017.desc
+	id = CHI.017#???{???u?a????
+	title = CHI.017.title
+	desc = CHI.017.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.017.a#?O??R???I
+		name = CHI.017.a#?O??R???I
 		ai_chance = { factor = 10 }
 		country_event = {
-			id = GEACPS_china.015
+			id = CHI.015
 			days = 1
 			random = 2
 		}
 	}
 }
 country_event = {
-	id = GEACPS_china.018#???{??????B?????????????u?a
-	title = GEACPS_china.018.title
-	desc = GEACPS_china.018.desc
+	id = CHI.018#???{??????B?????????????u?a
+	title = CHI.018.title
+	desc = CHI.018.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.018.a#????
+		name = CHI.018.a#????
 		ai_chance = { factor = 10 }
 		every_country = {
 			limit = {
@@ -609,14 +609,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.019#???{???????u?a?????
-	title = GEACPS_china.019.title
-	desc = GEACPS_china.019.desc
+	id = CHI.019#???{???????u?a?????
+	title = CHI.019.title
+	desc = CHI.019.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.019.a#????
+		name = CHI.019.a#????
 		ai_chance = { factor = 10 }
 		every_country = {
 			limit = {
@@ -638,35 +638,35 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.020#???Δh?????
-	title = GEACPS_china.020.title
-	desc = GEACPS_china.020.desc
+	id = CHI.020#???Δh?????
+	title = CHI.020.title
+	desc = CHI.020.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.020.a#?Z?a
+		name = CHI.020.a#?Z?a
 		ai_chance = { factor = 10 }
 		every_country = {
 			limit = {
 				has_country_flag = is_in_faction_with_CHI
 			}
 			country_event = {
-				id = GEACPS_china.021
+				id = CHI.021
 				days = 3
 				random = 3
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.020.b#????
+		name = CHI.020.b#????
 		ai_chance = { factor = 10 }
 		every_country = {
 			limit = {
 				has_country_flag = is_in_faction_with_CHI
 			}
 			country_event = {
-				id = GEACPS_china.029
+				id = CHI.029
 				days = 3
 				random = 3
 			}
@@ -676,19 +676,19 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.021#?????????Z?a????
-	title = GEACPS_china.021.title
-	desc = GEACPS_china.021.desc
+	id = CHI.021#?????????Z?a????
+	title = CHI.021.title
+	desc = CHI.021.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.021.a#???E
+		name = CHI.021.a#???E
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 			FROM = {
 				country_event = {
-					id = GEACPS_china.034
+					id = CHI.034
 					days = 3
 					random = 3
 				}
@@ -698,14 +698,14 @@ country_event = {
 					has_war_with = JAP
 				}
 				country_event = {
-					id = GEACPS_china.022
+					id = CHI.022
 					days = 1
 					random = 1
 				}
 			}
 			else = {
 				country_event = {
-					id = GEACPS_china.025
+					id = CHI.025
 					days = 1
 					random = 1
 				}
@@ -714,50 +714,50 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.022#???{???????痣?E
-	title = GEACPS_china.022.title
-	desc = GEACPS_china.022.desc
+	id = CHI.022#???{???????痣?E
+	title = CHI.022.title
+	desc = CHI.022.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.022.a#?????u?a
+		name = CHI.022.a#?????u?a
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 
 			JAP = {
 				country_event = {
-					id = GEACPS_china.023
+					id = CHI.023
 					days = 1
 					random = 1
 				}
 			}
 			country_event = {
-				id = GEACPS_china.025
+				id = CHI.025
 				days = 4
 				random = 1
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.022.b#???{???u?a?????
+		name = CHI.022.b#???{???u?a?????
 		ai_chance = { factor = 10 }
 	}
 
 }
 country_event = {
-	id = GEACPS_china.023#?e?R???????{???????痣?E????]
-	title = GEACPS_china.023.title
-	desc = GEACPS_china.023.desc
+	id = CHI.023#?e?R???????{???????痣?E????]
+	title = CHI.023.title
+	desc = CHI.023.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.023.a#????
+		name = CHI.023.a#????
 		ai_chance = { factor = 10 }
 		FROM = {
 			country_event = {
-				id = GEACPS_china.024
+				id = CHI.024
 				days = 1
 				random = 1
 			}
@@ -766,28 +766,28 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.024#???{???????u?a?????
-	title = GEACPS_china.024.title
-	desc = GEACPS_china.024.desc
+	id = CHI.024#???{???????u?a?????
+	title = CHI.024.title
+	desc = CHI.024.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.024.a#????
+		name = CHI.024.a#????
 		ai_chance = { factor = 10 }
 		white_peace = JAP
 	}
 
 }
 country_event = {
-	id = GEACPS_china.025#???????????z??
-	title = GEACPS_china.025.title
-	desc = GEACPS_china.025.desc
+	id = CHI.025#???????????z??
+	title = CHI.025.title
+	desc = CHI.025.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.025.a#????
+		name = CHI.025.a#????
 		ai_chance = { factor = 5 }
 		declare_war_on = {
 			target = CHI
@@ -796,101 +796,101 @@ country_event = {
 		hidden_effect = {
 			JAP = {
 				country_event = {
-					id = GEACPS_china.026
+					id = CHI.026
 					days = 1
 				}
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.025.b#????
+		name = CHI.025.b#????
 		ai_chance = { factor = 10 }
 	}
 
 }
 country_event = {
-	id = GEACPS_china.026#?R??????????h????????????
-	title = GEACPS_china.026.title
-	desc = GEACPS_china.026.desc
+	id = CHI.026#?R??????????h????????????
+	title = CHI.026.title
+	desc = CHI.026.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.026.a#???????
+		name = CHI.026.a#???????
 		ai_chance = { factor = 10 }
 		FROM = {
 			country_event = {
-				id = GEACPS_china.027
+				id = CHI.027
 				days = 1
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.026.b#????????
+		name = CHI.026.b#????????
 		ai_chance = { factor = 5 }
 	}
 
 }
 country_event = {
-	id = GEACPS_china.027#???{?????????h???????
-	title = GEACPS_china.027.title
-	desc = GEACPS_china.027.desc
+	id = CHI.027#???{?????????h???????
+	title = CHI.027.title
+	desc = CHI.027.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.027.a#????
+		name = CHI.027.a#????
 		ai_chance = { factor = 1 }
 		JAP = {
 			country_event = {
-				id = GEACPS_china.028
+				id = CHI.028
 				days = 1
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.027.b#????
+		name = CHI.027.b#????
 		ai_chance = { factor = 10 }
 	}
 }
 country_event = {
-	id = GEACPS_china.028#FROM????????h???????
-	title = GEACPS_china.028.title
-	desc = GEACPS_china.028.desc
+	id = CHI.028#FROM????????h???????
+	title = CHI.028.title
+	desc = CHI.028.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.028.a#(???L??M)??
+		name = CHI.028.a#(???L??M)??
 		ai_chance = { factor = 10 }
 		add_to_faction = FROM
 	}
 }
 country_event = {
-	id = GEACPS_china.029#????????S???????
-	title = GEACPS_china.029.title
-	desc = GEACPS_china.029.desc
+	id = CHI.029#????????S???????
+	title = CHI.029.title
+	desc = CHI.029.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.029.a#????
+		name = CHI.029.a#????
 		ai_chance = { factor = 20 }
 		add_ideas = GEACPS_idea_CHI_chinese_united_front
 		hidden_effect = {
 			FROM = {
 				country_event = {
-					id = GEACPS_china.030
+					id = CHI.030
 				}
 			}
 		}
 	}
 	option = {
-		name = GEACPS_china.029.b#????
+		name = CHI.029.b#????
 		ai_chance = { factor = 5 }
 		hidden_effect = {
 			country_event = {
-				id = GEACPS_china.021
+				id = CHI.021
 			}
 		}
 
@@ -898,14 +898,14 @@ country_event = {
 
 }
 country_event = {
-	id = GEACPS_china.030#FROM????S????? ???
-	title = GEACPS_china.030.title
-	desc = GEACPS_china.030.desc
+	id = CHI.030#FROM????S????? ???
+	title = CHI.030.title
+	desc = CHI.030.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.030.a#?f??????
+		name = CHI.030.a#?f??????
 		ai_chance = { factor = 10 }
 		set_autonomy = {
 			target = FROM
@@ -954,14 +954,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.031#?P???l??h?????j?I
-	title = GEACPS_china.031.title
-	desc = GEACPS_china.031.desc
+	id = CHI.031#?P???l??h?????j?I
+	title = CHI.031.title
+	desc = CHI.031.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.031.a#??X????????I
+		name = CHI.031.a#??X????????I
 		ai_chance = { factor = 10 }
 		if = {
 			limit = {
@@ -1005,14 +1005,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.032#?P??????h?????j?I
-	title = GEACPS_china.032.title
-	desc = GEACPS_china.032.desc
+	id = CHI.032#?P??????h?????j?I
+	title = CHI.032.title
+	desc = CHI.032.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.032.a#??X????????I
+		name = CHI.032.a#??X????????I
 		ai_chance = { factor = 10 }
 		if = {
 			limit = {
@@ -1056,14 +1056,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.033#?P???M?B?h?????j?I
-	title = GEACPS_china.033.title
-	desc = GEACPS_china.033.desc
+	id = CHI.033#?P???M?B?h?????j?I
+	title = CHI.033.title
+	desc = CHI.033.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.033.a#??X????????I
+		name = CHI.033.a#??X????????I
 		ai_chance = { factor = 10 }
 		if = {
 			limit = {
@@ -1107,14 +1107,14 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.034#FROM???w?c????E??
-	title = GEACPS_china.034.title
-	desc = GEACPS_china.034.desc
+	id = CHI.034#FROM???w?c????E??
+	title = CHI.034.title
+	desc = CHI.034.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.034.a#????
+		name = CHI.034.a#????
 		ai_chance = { factor = 10 }
 		hidden_effect = {
 			CHI = {
@@ -1136,16 +1136,41 @@ country_event = {
 	}
 }
 country_event = {
-	id = GEACPS_china.035#????????
-	title = GEACPS_china.035.title
-	desc = GEACPS_china.035.desc
+	id = CHI.035#????????
+	title = CHI.035.title
+	desc = CHI.035.desc
 	picture = GFX_
 	is_triggered_only = yes
 
 	option = {
-		name = GEACPS_china.035.a#????
+		name = CHI.035.a#????
 		ai_chance = { factor = 10 }
 		add_ideas = GEACPS_idea_CHI_first_of_all_unity
+	}
+}
+country_event = {
+	id = GEACPS_game_start.1
+	title = GEACPS_game_start.1.title
+	desc = GEACPS_game_start.1.desc
+	picture = GFX_
+	
+	is_triggered_only = yes
+
+	option = {
+		name = GEACPS_game_start.1.a
+		ai_chance = { factor = 10 }
+		hidden_effect = {
+			every_country = {
+				limit = {
+					is_in_faction_with = CHI
+					NOT ={
+						tag = CHI
+					}
+				}
+				set_country_flag = is_in_faction_with_CHI
+			}
+		}
+
 	}
 }
 
