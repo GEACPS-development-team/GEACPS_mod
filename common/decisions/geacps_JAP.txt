@@ -3,71 +3,25 @@ JAP_1-22_Incident = {#一・二二事件
 	Outbreak_of_the_1-22_Incident = {#一・二二事件の発生
 	
 		icon = jap_pacific_guardian
-	
-		available = {
-			has_war = no
-		}
+		
+		activation = {	original_tag = JAP	}
 		
 		visible = {	original_tag = JAP	}
+	
+		available = {	has_war = no	}
 		
 		fire_only_once = yes
 		
-		activation = { original_tag = JAP }
+		is_good = no
 		
 		days_mission_timeout = 22
 		
-		cost = 0
-		
-		timeout_effect = { country_event = {	id = geacps_JAP.2	}	}
-
-	}
-	
-	Japan_Civil_War_in_the_making = {#日本内戦の予感
-	
-		icon = jap_pacific_guardian
-	
-		available = {
-			has_war = no
+		timeout_effect = {
+			country_event = {	id = geacps_JAP.2	}
 		}
-		
-		visible = {	original_tag = JAP	}
-		
-		fire_only_once = yes
-		
-		activation = { original_tag = JAP }
-		
-		days_mission_timeout = 100
-		
-		cost = 0
-		
-		timeout_effect = { country_event = {	id = 	}	}
 
 	}
-}
-
-JAP_The_Second_Japanese_Civil_War = {#第二次日本内戦
-
-	The_Second_Japanese_Civil_War = {#第二次日本内戦
 	
-		icon = jap_pacific_guardian
-	
-		available = {
-			has_war = no
-		}
-		
-		visible = {	original_tag = JAP	}
-		
-		fire_only_once = yes
-		
-		activation = { original_tag = JAP }
-		
-		days_mission_timeout = 100
-		
-		cost = 0
-		
-		timeout_effect = { country_event = {	id = 	}	}
-
-	}
 }
 
 JAP_national_policy_research_outline = {
