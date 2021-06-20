@@ -3,7 +3,7 @@ set_cosmetic_tag = THAILAND_kingdom
 
 oob = SIA_1946
 
-set_convoys = 5
+set_convoys = 100
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -23,6 +23,8 @@ set_popularities = {
 	reactionary_authoritarianism = 1
 	national_populism = 1
 }
+
+declare_war_on = {	target = CHI	type = annex_everything	}
 
 create_country_leader = {
 	name = "ラーマ8世"

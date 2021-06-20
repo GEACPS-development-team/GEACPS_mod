@@ -2,7 +2,7 @@
 oob = PHI_1946
 set_cosmetic_tag = PHI_republic
 
-set_convoys = 5
+set_convoys = 100
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -22,6 +22,8 @@ set_popularities = {
 	reactionary_authoritarianism = 0
 	national_populism = 0
 }
+
+declare_war_on = {	target = CHI	type = annex_everything	}
 
 create_country_leader = {
 	name = "ホセ・パシアノ・ラウレル・イ・ガルシア"
