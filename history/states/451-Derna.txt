@@ -1,7 +1,10 @@
 state = {
 	id = 451
 	name = "STATE_451"
-
+	manpower = 45628
+	buildings_max_level_factor = 1
+	state_category = wasteland
+	
 	history = {
 		owner = CYR
 		add_core_of = CYR
@@ -9,20 +12,14 @@ state = {
 		buildings = {
 			infrastructure = 2
 			air_base = 4
-			1130 = {
-				naval_base = 6
-
-			}
-
+			1130 = {	naval_base = 6	}
 		}
 		victory_points = {	1130	5	}
+		set_variable = {	var = CYR_state_variable	value = 1	}
 		set_variable = {	var = LBA_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		1130 4060 4136 7206 10120 13078 
+		1130	4060	4136	7206	10120	13078
 	}
-	manpower = 45628
-	buildings_max_level_factor = 1
-	state_category = wasteland
 }

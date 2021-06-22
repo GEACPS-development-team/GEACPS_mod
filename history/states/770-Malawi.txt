@@ -4,19 +4,18 @@ state = {
 	manpower = 1603975
 	buildings_max_level_factor = 1
 	state_category = pastoral
-
+	
 	history = {
 		owner = MLW
 		add_core_of = MLW
-		victory_points = {
-			12986 1 
-		}
 		buildings = {
 			infrastructure = 3
 		}
+		victory_points = {	12986	1	}
+		set_variable = {	var = MLW_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		2255 12908 12986 13209 
+		12908	12986	13209
 	}
 }

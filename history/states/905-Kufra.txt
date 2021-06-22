@@ -5,7 +5,6 @@ state = {
 	impassable = yes
 	state_category = wasteland
 	
-
 	history = {
 		owner = CYR
 		add_core_of = CYR
@@ -13,10 +12,11 @@ state = {
 		buildings = {
 			infrastructure = 0
 		}
+		set_variable = {	var = CYR_state_variable	value = 1	}
 		set_variable = {	var = LBA_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		1057 1060 1140 4191 10104 10754 10785 11951
+		1057	1060	1140	4191	10104	10754	10785	11951
 	}
 }

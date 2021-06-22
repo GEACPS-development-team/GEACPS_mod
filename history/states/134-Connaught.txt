@@ -3,16 +3,17 @@ state = {
 	name = "STATE_134"
 	manpower = 667100
 	state_category = city
-
+	
 	history = {
 		owner = IRE
+		add_core_of = IRE
 		buildings = {
 			infrastructure = 6
 		}
-		add_core_of = IRE
+		set_variable = {	var = IRE_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		3396 9255 9303 9321 9369 11238 11287 11371
+		3396	9255	9303	9321	9369	11238	11287	11371
 	}
 }

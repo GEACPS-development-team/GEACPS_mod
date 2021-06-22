@@ -3,29 +3,24 @@ state= {
 	name = "STATE_99"
 	manpower = 1672235
 	state_category = town
-
+	
 	resources = {	aluminium = 6	}
 	
 	history = {
 		owner = DEN
-		victory_points = {
-			6364 3 
-		}
+		add_core_of = DEN
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 3
 			air_base = 2
-			394 = {
-				naval_base = 3
-			}
-			6364 = {
-				naval_base = 1
-			}
+			394 = {	naval_base = 3	}
+			6364 = {	naval_base = 1	}
 		}
-		add_core_of = DEN
+		victory_points = {	6364	3	}
+		set_variable = {	var = DEN_state_variable	value = 1	}
 	}
-	provinces=
-	{
-		316 394 399 3206 3277 3341 6235 6364
+	
+	provinces = {
+		316	394	399	3206	3277	3341	6235	6364
 	}
 }

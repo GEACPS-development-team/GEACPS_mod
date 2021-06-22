@@ -7,12 +7,16 @@ state= {
 	history = {
 		owner = DEN
 		add_core_of = DEN
+		add_core_of = WGR
 		buildings = {
 			infrastructure = 6
 		}
+		set_variable = {	var = SHL_state_variable	value = 1	}
+		set_variable = {	var = DEN_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
 	}
-
-	provinces= {
-		317 11366
- 	}
+	
+	provinces = {
+		317	11366
+	}
 }

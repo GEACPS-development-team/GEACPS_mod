@@ -4,7 +4,7 @@ state = {
 	manpower = 4000
 	buildings_max_level_factor = 1
 	state_category = rural
-
+	
 	history = {
 		owner = CHI
 		add_core_of = CHI
@@ -12,11 +12,13 @@ state = {
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
-			arms_factory = 1		
+			arms_factory = 1
 		}
+		set_variable = {	var = CHI_state_variable	value = 1	}
+		set_variable = {	var = QIG_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		2053 10490 13146
+		2053 10490
 	}
 }

@@ -3,20 +3,19 @@ state = {
 	name = "STATE_1060"
 	manpower = 3962157
 	state_category = city
-
+	
 	history = {
 		owner = LSO
 		add_core_of = LSO
-		victory_points = {
-			4556 10 
-		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
 			air_base = 1
 		}
+		victory_points = {	4556	10	}
+		set_variable = {	var = LSO_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
 		4556
 	}

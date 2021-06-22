@@ -3,15 +3,16 @@ state = {
 	name = "STATE_1003"
 	manpower = 16600
 	state_category = city
-
+	
 	history = {
 		owner = ENG
 		add_core_of = AUS
 		buildings = {
 			infrastructure = 5
 		}
+		set_variable = {	var = AUS_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
 		671
 	}

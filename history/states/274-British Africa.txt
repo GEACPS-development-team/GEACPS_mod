@@ -5,7 +5,6 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = rural
 	
-
 	history = {
 		owner = GHA
 		add_core_of = GHA
@@ -14,9 +13,10 @@ state = {
 			10862 = {	naval_base = 2	}
 		}
 		victory_points = {	10862	1	}
+		set_variable = {	var = GHA_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		8039 8096 10862 12742 12785 12787 13136 
+		8039	8096	10862	12742	12785	12787
 	}
 }

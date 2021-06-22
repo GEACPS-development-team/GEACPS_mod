@@ -4,23 +4,21 @@ state = {
 	manpower = 469136
 	state_category = enclave
 	
-
 	history = {
 		owner = TRP
 		add_core_of = TRP
 		add_core_of = LBA
-		victory_points = {
-			1149 10 
-		}
 		buildings = {
 			infrastructure = 3
 			air_base = 6
 			1149 = {	naval_base = 5	}
 		}
+		victory_points = {	1149	10	}
+		set_variable = {	var = TRP_state_variable	value = 1	}
 		set_variable = {	var = LBA_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		1149 1189 4194 7209 9980 12039 
+		1149	1189	4194	7209	9980	12039
 	}
 }

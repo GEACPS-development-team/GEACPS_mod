@@ -7,14 +7,15 @@ state = {
 	history = {
 		owner = RHI
 		add_core_of = RHI
-		victory_points = {
-			587 5 
-		}
 		buildings = {
 			infrastructure = 8
 		}
+		victory_points = {	587	5	}
+		set_variable = {	var = RHI_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = WGR_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
 		587 3444 9522 3547 11470 11494 13237
 	}

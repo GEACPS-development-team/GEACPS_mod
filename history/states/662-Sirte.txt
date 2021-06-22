@@ -4,7 +4,6 @@ state = {
 	manpower = 13213
 	state_category = wasteland
 	
-	
 	history = {
 		owner = TRP
 		add_core_of = TRP
@@ -12,10 +11,11 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
+		set_variable = {	var = TRP_state_variable	value = 1	}
 		set_variable = {	var = LBA_state_variable	value = 1	}
 	}
 	
 	provinces = {
-		7136 13073
+		7136	13073
 	}
 }

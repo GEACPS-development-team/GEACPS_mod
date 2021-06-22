@@ -4,18 +4,19 @@ state = {
 	manpower = 4630
 	state_category = rural
 	
-	history = {	
+	history = {
 		owner = KAR
 		add_core_of = KAR
-		victory_points = {
-			197 1
-		}
+		victory_points = {	197	1	}
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	var = KAR_state_variable	value = 1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
+		set_variable = {	var = FIN_state_variable	value = 2	}
 	}
-
+	
 	provinces = {
-		197 9158 11085 	
+		197	9158	11085
 	}
 }

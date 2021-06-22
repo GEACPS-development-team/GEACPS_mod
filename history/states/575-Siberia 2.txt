@@ -1,22 +1,22 @@
 state = {
 	id = 575
-	name = "STATE_575" # Kirensk
+	name = "STATE_575"
 	manpower = 146494
 	state_category = wasteland
-
+	
 	history = {
 		owner = SIB
 		add_core_of = SIB
 		add_core_of = RUS
-		victory_points = {
-			4797 3 
-		}
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {	4797	3	}
+		set_variable = {	var = SIB_state_variable	value = 1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		1792 4737 4795 4868 7726 7759 7828 10628 10688 12538 12668 12681 10583 10654 10549 7713 10562 1876 7841 10570 7876 4808 10699 1735 1803 1813 4750 7769 7902 10664 1707 1727 1829 4797 4815 7838 10524 10596 10661 12525 12540 12647 13152
+		1707	1727	1735	1792	1803	1813	1829	1876	4737	4750	4795	4797	4808	4815	4868	7713	7726	7759	7769	7828	7838	7841	7876	7902	10524	10549	10562	10570	10583	10596	10628	10654	10661	10664	10688	10699	12525	12538	12540	12647	12668	12681
 	}
 }

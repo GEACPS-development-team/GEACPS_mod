@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1123"
 	manpower = 707500
 	state_category = town
-		
+	
 	history = {
 		owner = CZE
 		add_core_of = CZE
@@ -11,9 +11,13 @@ state = {
 		buildings = {
 			infrastructure = 8
 		}
+		set_variable = {	var = CZE_state_variable	value = 1	}
+		set_variable = {	var = MRV_state_variable	value = 1	}
+		set_variable = {	var = AUS_state_variable	value = 2	}
+		set_variable = {	var = GER_state_variable	value = 3	}
 	}
 	
 	provinces = {
-		557 11525
+		557	11525
 	}
 }

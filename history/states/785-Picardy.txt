@@ -3,24 +3,24 @@ state = {
 	name = "STATE_785"
 	manpower = 1580000
 	state_category = city
+	
 	resources = {
-		steel = 20 # was: 112
-		aluminium = 4 # was: 22
+		steel = 20
+		aluminium = 4
 	}
 	
 	history = {
-		victory_points = {
-			11420 5
-		}
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
 			infrastructure = 8
 			industrial_complex = 1
 		}
+		victory_points = {	11420	5	}
+		set_variable = {	var = FRA_state_variable	value = 1	}
 	}
 
 	provinces = {
-		454 3402 3447 6585 9561 11420 11549 3476
+		454	3402	3447	3476	6585	9561	11420	11549
 	}
 }

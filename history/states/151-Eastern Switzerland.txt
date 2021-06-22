@@ -5,7 +5,7 @@ state = {
 	state_category = city
 	
 	resources = {	aluminium = 15	}
-
+	
 	history = {
 		owner = SWI
 		add_core_of = SWI
@@ -13,9 +13,10 @@ state = {
 			infrastructure = 6
 			industrial_complex = 3
 		}
+		set_variable = {	var = SWI_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		658 3660 3662
+		658	3660	3662
 	}
 }

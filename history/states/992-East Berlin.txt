@@ -7,17 +7,16 @@ state = {
 	history = {
 		owner = EGR
 		add_core_of = EGR
-		victory_points = {
-			13238 50 
-		}
 		buildings = {
 			infrastructure = 8
-			13238 = {
-				bunker = 1
-			}
+			13238 = {	bunker = 1	}
 		}
+		victory_points = {	13238	50	}
+		set_variable = {	var = HAN_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = EGR_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
 		13238
 	}

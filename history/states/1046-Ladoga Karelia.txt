@@ -4,16 +4,20 @@ state = {
 	manpower = 214858
 	state_category = rural
 	buildings_max_level_factor = 1
-
+	
 	history = {
 		owner = KAR
 		add_core_of = KAR
+		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	var = KAR_state_variable	value = 1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
+		set_variable = {	var = FIN_state_variable	value = 2	}
 	}
-
+	
 	provinces = {
-		2332 6150 3187 3133 6052 9176 11046 6153 11156
+		6150	3187	3133	6052	9176	11046	6153	11156
 	}
 }

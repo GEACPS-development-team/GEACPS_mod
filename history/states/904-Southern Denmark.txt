@@ -4,16 +4,19 @@ state = {
 	manpower = 100
 	buildings_max_level_factor = 1
 	state_category = town
-
+	
 	history = {
 		owner = DEN
 		add_core_of = DEN
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	var = SHL_state_variable	value = 1	}
+		set_variable = {	var = DEN_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 2	}
 	}
-
+	
 	provinces = {
-		332 11251
+		332	11251
 	}
 }

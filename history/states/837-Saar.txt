@@ -3,18 +3,21 @@ state = {
 	name = "STATE_837"
 	manpower = 30300
 	state_category = metropolis
-
+	
 	history = {
 		owner = SAR
 		add_core_of = SAR
-		victory_points = {
-			11531 10
-		}
 		buildings = {
 			infrastructure = 7
 		}
+		victory_points = {	11531	10	}
+		set_variable = {	var = SAR_state_variable	value = 1	}
+		set_variable = {	var = RHI_state_variable	value = 1	}
+		set_variable = {	var = GER_state_variable	value = 1	}
+		set_variable = {	var = WGR_state_variable	value = 1	}
+		set_variable = {	var = SGR_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
 		11531
 	}

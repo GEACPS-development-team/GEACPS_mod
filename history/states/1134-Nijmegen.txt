@@ -1,19 +1,20 @@
 state = {
 	id = 1134
 	name = "STATE_1134"
-
+	manpower = 2364000
+	buildings_max_level_factor = 1
+	state_category = city
+	
 	history = {
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 6
 		}
+		set_variable = {	var = HOL_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
 		11456
 	}
-	manpower = 2364000
-	buildings_max_level_factor = 1
-	state_category = city
 }

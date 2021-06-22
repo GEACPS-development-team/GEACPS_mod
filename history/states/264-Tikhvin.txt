@@ -3,20 +3,19 @@ state = {
 	name = "STATE_264"
 	manpower = 185559
 	state_category = town
-
+	
 	history = {
 		owner = RUS
-		victory_points = {
-			3140 1 
-		}
+		add_core_of = RUS
 		buildings = {
 			infrastructure = 4
 			air_base = 1
 		}
-		add_core_of = RUS
+		victory_points = {	3140	1	}
+		set_variable = {	var = RUS_state_variable	value = 1	}
 	}
-
+	
 	provinces = {
-		57 152 172 3140 3142 6131 6169 9082 9107 9184 9190 11059 13129 11153 6057 3084 6106 70 6095 11174
+		57	70	152	172	3084	3140	3142	6057	6095	6106	6131	6169	9082	9107	9184	9190	11059	11153	11174
 	}
 }

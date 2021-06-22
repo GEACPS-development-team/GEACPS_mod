@@ -4,7 +4,7 @@ state = {
 	manpower = 10600
 	buildings_max_level_factor = 1
 	state_category = city
-
+	
 	history = {
 		owner = IST
 		add_core_of = IST
@@ -13,8 +13,11 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
+		set_variable = {	var = IST_state_variable	value = 1	}
+		set_variable = {	var = CRO_state_variable	value = 1	}
+		set_variable = {	var = ITA_state_variable	value = 2	}
 	}
-
+	
 	provinces = {
 		11735
 	}
