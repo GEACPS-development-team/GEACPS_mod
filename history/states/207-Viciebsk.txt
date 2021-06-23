@@ -2,22 +2,20 @@ state = {
 	id = 207
 	name = "STATE_207"
 	manpower =  1217854
-	
 	state_category = large_town
-
+	
 	history = {
 		owner = BLR
 		add_core_of = BLR
-		victory_points = {
-			11241 5
-		}
 		buildings = {
 			infrastructure = 5
 			air_base = 5
 		}
+		victory_points = {	11241	5	}
+		set_variable = {	BLR_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		323 3219 3331 6220 6249 6326 6371 9241 9323 11220 11241 233 358 9341
+		233	323	358	3219	3331	6220	6249	6326	6371	9241	9323	9341	11220	11241
 	}
 }

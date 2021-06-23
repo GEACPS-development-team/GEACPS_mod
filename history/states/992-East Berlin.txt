@@ -2,23 +2,21 @@ state = {
 	id = 992
 	name = "STATE_992"
 	manpower = 5609000
-	
 	state_category = megalopolis
 	
 	history = {
 		owner = EGR
 		add_core_of = EGR
-		victory_points = {
-			13238 50 
-		}
 		buildings = {
 			infrastructure = 8
-			13238 = {
-				bunker = 1
-			}
+			13238 = {	bunker = 1	}
 		}
+		victory_points = {	13238	50	}
+		set_variable = {	HAN_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
+		set_variable = {	EGR_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		13238
 	}

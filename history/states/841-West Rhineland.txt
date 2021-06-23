@@ -2,20 +2,20 @@ state = {
 	id = 841
 	name = "STATE_841"
 	manpower = 61500
-
 	state_category = metropolis
 	
 	history = {
 		owner = RHI
 		add_core_of = RHI
-		victory_points = {
-			587 5 
-		}
 		buildings = {
 			infrastructure = 8
 		}
+		victory_points = {	587	5	}
+		set_variable = {	RHI_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
+		set_variable = {	WGR_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		587 3444 9522 3547 11470 11494 13237
 	}

@@ -2,7 +2,6 @@ state = {
 	id = 1006
 	name = "STATE_1006"
 	manpower = 22800
-	
 	state_category = city
 	
 	history = {
@@ -11,9 +10,11 @@ state = {
 		buildings = {
 			infrastructure = 7
 		}
+		set_variable = {	AUS_state_variable = 1	}
+		set_variable = {	HUN_state_variable	value = 2	}
 	}
-
+	
 	provinces = {
-		3700 11630
+		3700	11630
 	}
 }

@@ -3,25 +3,23 @@ state = {
 	name = "STATE_1047"
 	manpower = 418635
 	buildings_max_level_factor = 1
-
 	state_category = city
-
+	
 	history = {
 		owner = KAR
 		add_core_of = KAR
-		victory_points = {
-			9206 3 
-		}
 		buildings = {
 			infrastructure = 5
 			industrial_complex = 2
-			9206 = {
-				coastal_bunker = 1
-			}
+			9206 = {	coastal_bunker = 1	}
 		}
+		victory_points = {	9206	3	}
+		set_variable = {	KAR_state_variable = 1	}
+		set_variable = {	RUS_state_variable = 1	}
+		set_variable = {	FIN_state_variable	value = 2	}
 	}
-
+	
 	provinces = {
-		3050 3060 9100 9105 9150 9206 11162
+		3050	3060	9100	9105	9150	9206	11162
 	}
 }

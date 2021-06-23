@@ -2,18 +2,23 @@ state = {
 	id = 1040
 	name = "STATE_1040"
 	manpower = 1124417
-	
 	state_category = city
 
 	history = {
 		owner = POL
 		add_core_of = GER
+		add_core_of = PRE
+		add_claim_by = POL
 		buildings = {
 			infrastructure = 6
 		}
+		set_variable = {	PRE_state_variable = 1	}
+		set_variable = {	POL_state_variable = 1	}
+		set_variable = {	EGR_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
 	}
 
 	provinces = {
-		9252 11288 11260
+		9252	11288	11260
 	}
 }

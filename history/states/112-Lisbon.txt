@@ -1,36 +1,29 @@
 state = {
 	id = 112
 	name = "STATE_112"
-	resources = {
-		tungsten = 50.000
-	}
-
+	manpower = 1995800
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {	tungsten = 50	}
+	
 	history = {
 		owner = POR
-		victory_points = {
-			11805 20 
-		}
-		victory_points = {
-			3798 1 
-		}
+		add_core_of = POR
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
 			industrial_complex = 2
 			air_base = 5
 			dockyard = 2
-			11805 = {
-				naval_base = 8
-			}
+			11805 = {	naval_base = 8	}
 		}
-		add_core_of = POR
-
+		victory_points = {	3798	1	}
+		victory_points = {	11805	20	}
+		set_variable = {	POR_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		799 3798 3861 6924 11805 
+		799	3798	3861	6924	11805
 	}
-	manpower = 1995800
-	buildings_max_level_factor = 1
-	state_category = city
 }

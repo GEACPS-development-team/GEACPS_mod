@@ -2,9 +2,8 @@ state = {
 	id = 731
 	name = "STATE_731"
 	manpower = 1155700
-	
 	state_category = town
-
+	
 	history = {
 		owner = GRE
 		add_core_of = GRE
@@ -14,9 +13,11 @@ state = {
 			industrial_complex = 2
 			air_base = 2
 		}
+		set_variable = {	GRE_state_variable = 1	}
+		set_variable = {	MAC_state_variable	value = 3	}
 	}
 	
 	provinces = {
-		841 966 9837 3980
+		841	966	3980	9837
 	}
 }

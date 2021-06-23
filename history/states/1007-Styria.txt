@@ -2,21 +2,19 @@ state = {
 	id = 1007
 	name = "STATE_1007"
 	manpower = 1600000
-	
 	state_category = city
 	
 	history = {
 		owner = ENG
 		add_core_of = AUS
-		victory_points = {
-			9648 5 
-		}
 		buildings = {
 			infrastructure = 7
 		}
+		victory_points = {	9648	5	}
+		set_variable = {	AUS_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		9648 9679 9650 6691 6687 653 9646
+		653	6687	6691	9646	9648	9650	9679
 	}
 }

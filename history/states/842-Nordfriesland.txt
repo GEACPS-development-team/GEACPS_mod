@@ -2,18 +2,21 @@ state= {
 	id = 842
 	name = "STATE_842"
 	manpower = 32500
-	
 	state_category = large_city
 	
 	history = {
 		owner = DEN
 		add_core_of = DEN
+		add_core_of = WGR
 		buildings = {
 			infrastructure = 6
 		}
+		set_variable = {	SHL_state_variable = 1	}
+		set_variable = {	DEN_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
 	}
-
-	provinces= {
-		317 11366
- 	}
+	
+	provinces = {
+		317	11366
+	}
 }

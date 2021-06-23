@@ -2,21 +2,19 @@ state = {
 	id = 987
 	name = "STATE_987"
 	manpower = 2171000
-	
 	state_category = metropolis
 	
 	history = {
 		owner = FRA
 		add_core_of = FRA
-		victory_points = {
-			11506 50 
-		}
 		buildings = {
 			infrastructure = 8
 		}
+		victory_points = {	11506	50	}
+		set_variable = {	FRA_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		11506 
+		11506
 	}
 }

@@ -4,7 +4,7 @@ state = {
 	manpower = 8400
 	buildings_max_level_factor = 1
 	state_category = town
-
+	
 	history = {
 		owner = VOJ
 		add_core_of = VOJ
@@ -13,8 +13,10 @@ state = {
 		buildings = {
 			infrastructure = 6
 		}
+		set_variable = {	CRO_state_variable = 1	}
+		set_variable = {	VOJ_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		9608
 	}

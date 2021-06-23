@@ -1,4 +1,3 @@
-
 state = {
 	id = 300
 	name = "STATE_300"
@@ -9,7 +8,7 @@ state = {
 		oil = 1
 		steel = 1
 	}
-
+	
 	history = {
 		owner = URG
 		add_core_of = URG
@@ -24,9 +23,9 @@ state = {
 			10362 = {	coastal_bunker = 1	}
 		}
 		victory_points = {	10362	5	}
-		set_variable = {	var = URG_state_variable	value = 1	}
+		set_variable = {	URG_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		1613	1626	1641	1654	4457	10347	10362	10502	12336	12440	12468	12481	12496
 	}

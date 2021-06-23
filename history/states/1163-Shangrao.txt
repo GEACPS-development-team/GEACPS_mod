@@ -4,7 +4,7 @@ state = {
 	manpower = 15820400
 	buildings_max_level_factor = 1
 	state_category = town
-
+	
 	history = {
 		owner = CHI
 		add_core_of = CHI
@@ -13,9 +13,11 @@ state = {
 			infrastructure = 3
 			industrial_complex = 2
 		}
+		set_variable = {	CHI_state_variable = 1	}
+		set_variable = {	JIA_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		1066 4038 13141
+		1066	4038
 	}
 }

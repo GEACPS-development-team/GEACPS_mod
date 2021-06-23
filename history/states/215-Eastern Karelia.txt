@@ -1,25 +1,23 @@
 state = {
 	id = 215
 	name = "STATE_215"
-	resources = {
-		steel = 30 # was: 52.000
-	}
-
+	manpower = 214858
+	state_category = rural
+	buildings_max_level_factor = 1
+	
+	resources = {	steel = 30	}
+	
 	history = {
 		owner = KAR
 		add_core_of = KAR
 		buildings = {
 			infrastructure = 3
-
 		}
-
+		set_variable = {	KAR_state_variable = 1	}
+		set_variable = {	RUS_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		3 18 36 86 94 134 170 176 3008 3067 3078 3189 6021 6029 6090 6096 6159 6175 9045 9055 9074 9119 9195 9198 11045 11054 11094 11096 11175 11181 11212 26 11178 89 127 6109 138
 	}
-	manpower = 214858
-	
-	state_category = rural
-	buildings_max_level_factor = 1
 }

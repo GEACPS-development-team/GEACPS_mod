@@ -2,21 +2,21 @@ state = {
 	id = 147
 	name = "STATE_147"
 	manpower = 4630
-	
 	state_category = rural
 	
-	history = {	
+	history = {
 		owner = KAR
 		add_core_of = KAR
-		victory_points = {
-			197 1
-		}
+		victory_points = {	197	1	}
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	KAR_state_variable = 1	}
+		set_variable = {	RUS_state_variable = 1	}
+		set_variable = {	FIN_state_variable	value = 2	}
 	}
-
+	
 	provinces = {
-		197 9158 11085 	
+		197	9158	11085
 	}
 }

@@ -5,24 +5,19 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = metropolis
 	
-	resources = {
-		steel = 4
-	}
-
+	resources = {	steel = 4	}
+	
 	history = {
 		owner = HOL
 		add_core_of = HOL
 		buildings = {
 			infrastructure = 8
-			9498 = {
-				naval_base = 10
-			}
+			9498 = {	naval_base = 10	}
 		}
-		victory_points = {
-			9498 20
-		}
+		victory_points = {	9498	20	}
+		set_variable = {	HOL_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		9498
 	}

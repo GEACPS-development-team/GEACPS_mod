@@ -2,18 +2,22 @@ state = {
 	id = 1000
 	name = "STATE_1000"
 	manpower = 2508000
-
 	state_category = city
-
+	
 	history = {
 		owner = SGR
 		add_core_of = SGR
+		add_core_of = BAY
 		buildings = {
 			infrastructure = 7
 		}
+		set_variable = {	BAY_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
+		set_variable = {	WGR_state_variable = 1	}
+		set_variable = {	SGR_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		3474 9416 11404
+		3474	9416	11404
 	}
 }

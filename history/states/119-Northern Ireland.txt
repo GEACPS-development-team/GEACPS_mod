@@ -3,34 +3,29 @@ state = {
 	name = "STATE_119"
 	manpower = 1198537
 	buildings_max_level_factor = 1
-	
-	resources = {
-		aluminium = 2
-	}
-	
 	state_category = "city"
-
+	
+	resources = {	aluminium = 2	}
+	
 	history = {
 		owner = IRE
-		add_core_of = ENG
 		add_core_of = IRE
+		add_core_of = ENG
 		add_core_of = NIR
-		victory_points = {
-			3379 5 
-		}
 		buildings = {
 			infrastructure = 6
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 1
 			dockyard = 2
-			3379 = {
-				naval_base = 4
-			}
+			3379 = {	naval_base = 4	}
 		}
+		victory_points = {	3379	5	}
+		set_variable = {	IRE_state_variable = 1	}
+		set_variable = {	NIR_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		276 385 3217 3242 3329 3379 11257 
+		276	385	3242	3329	3379	11257
 	}
 }

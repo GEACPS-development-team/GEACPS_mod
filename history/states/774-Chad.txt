@@ -3,22 +3,20 @@ state = {
 	name = "STATE_774"
 	manpower = 1442456
 	buildings_max_level_factor = 1
-	
 	state_category = pastoral
-
+	
 	history = {
 		owner = EQA
 		add_core_of = EQA
 		add_core_of = CHA
-		victory_points = {
-			2081 1
-		}
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {	2081	1	}
+		set_variable = {	CHA_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		1473 1883 1993 2081 3123 3181 4897 4978 7919 9152 13138 13211 
+		1473	1883	1993	2081	3123	3181	4897	4978	7919	9152	13211
 	}
 }

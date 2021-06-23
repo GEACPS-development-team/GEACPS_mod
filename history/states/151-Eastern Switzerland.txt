@@ -2,9 +2,10 @@ state = {
 	id = 151
 	name = "STATE_151"
 	manpower = 1854711
-	resources = {	aluminium = 15	}
 	state_category = city
-
+	
+	resources = {	aluminium = 15	}
+	
 	history = {
 		owner = SWI
 		add_core_of = SWI
@@ -12,9 +13,10 @@ state = {
 			infrastructure = 6
 			industrial_complex = 3
 		}
+		set_variable = {	SWI_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		658 3660 3662
+		658	3660	3662
 	}
 }

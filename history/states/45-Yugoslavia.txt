@@ -4,7 +4,7 @@ state = {
 	manpower = 838621
 	buildings_max_level_factor = 1
 	state_category = town
-
+	
 	history = {
 		owner = VOJ
 		add_core_of = VOJ
@@ -14,10 +14,10 @@ state = {
 			infrastructure = 6
 		}
 		victory_points = {	619	3	}
-		set_variable = {	var = SER_state_variable	value = 1	}
-		set_variable = {	var = VOJ_state_variable	value = 1	}
+		set_variable = {	SER_state_variable = 1	}
+		set_variable = {	VOJ_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		619	3617	3623	9621
 	}
