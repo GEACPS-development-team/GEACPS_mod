@@ -7,19 +7,17 @@ state = {
 	history = {
 		owner = KUR
 		add_core_of = KUR
+		add_core_of = AZR
 		add_core_of = PER
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {
-			PER_state_variable value = 1
-		}
-		set_variable = {
-			AZR_state_variable value = 2
-		}
+		set_variable = {	PER_state_variable value = 1	}
+		set_variable = {	KUR_state_variable value = 1	}
+		set_variable = {	AZR_state_variable value = 2	}
 	}
 
 	provinces = {
-		1636 7604
+		1636	7604
 	}
 }

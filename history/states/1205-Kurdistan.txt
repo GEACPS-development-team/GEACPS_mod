@@ -3,25 +3,21 @@ state = {
 	name = "STATE_1205"
 	manpower = 1431714
 	state_category = rural
-
+	
 	history = {
 		owner = KUR
 		add_core_of = KUR
+		add_core_of = AZR
 		add_core_of = PER
 		buildings = {
 			infrastructure = 3
 		}
-		victory_points = {
-			1822 10
-		}
-		set_variable = {
-			PER_state_variable value = 1
-		}
-		set_variable = {
-			AZR_state_variable value = 2
-		}
+		victory_points = {	1822	10	}
+		set_variable = {	PER_state_variable value = 1	}
+		set_variable = {	KUR_state_variable value = 1	}
+		set_variable = {	AZR_state_variable value = 2	}
 	}
-
+	
 	provinces = {
 		1822
 	}

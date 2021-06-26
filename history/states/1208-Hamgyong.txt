@@ -3,7 +3,7 @@ state = {
 	name = "STATE_1208"
 	manpower = 2416000
 	state_category = town
-
+	
 	history = {
 		owner = KOR
 		add_core_of = KOR
@@ -11,13 +11,10 @@ state = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		set_variable = {
-			KOR_state_variable
-			value = 1
-		}
+		set_variable = {	KOR_state_variable = 1	}
 	}
-
+	
 	provinces = {
-		848 852 898 959 3803 3852 3860 3904 3981 6822 6922 6928 6944 9899 9981 10083 11770 11878
+		848	852	898	959	3803	3852	3860	3904	3981	6822	6922	6928	6944	9899	9981	10083	11770	11878
 	}
 }
