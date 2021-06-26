@@ -12,6 +12,12 @@ defined_text = {#タイトル
 		}
 		localization_key = special_event_title_nepal
 	}
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 3 }
+		}
+		localization_key = special_event_german_reunification_by_empire.t
+	}
 
 }
 defined_text = {#説明
@@ -27,6 +33,12 @@ defined_text = {#説明
 			check_variable = { special_event_ID = 2 }
 		}
 		localization_key = special_event_desc_nepal
+	}
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 3 }
+		}
+		localization_key = special_event_german_reunification_by_empire.d
 	}
 
 }
@@ -44,7 +56,13 @@ defined_text = {#閉じるボタン
 		}
 		localization_key = special_event_exit_nepal
 	}
-
+	
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 3 }
+		}
+		localization_key = special_event_german_reunification_by_empire.e
+	}
 }
 
 defined_text = {#写真
@@ -61,7 +79,12 @@ defined_text = {#写真
 		}
 		localization_key = GFX_special_event_nepal
 	}
-
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 3 }
+		}
+		localization_key = GFX_special_event_german_reunification_by_empire
+	}
 }
 defined_text = {#地図
 	name = se_back_map
