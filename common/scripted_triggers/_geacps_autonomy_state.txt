@@ -10,3 +10,10 @@ puppet_trigger = {
 	NOT = {	OVERLORD = {	tag = JAP	}	}
 	NOT = {	OVERLORD = {	tag = SOV	}	}
 }
+soviet_member_trigger = {
+	OR = {
+		has_autonomy_state = soviet_member_federal_republic
+		has_autonomy_state = soviet_member_republic
+		has_autonomy_state = soviet_autonomous_republic
+	}
+}
