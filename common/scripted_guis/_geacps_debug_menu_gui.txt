@@ -8,8 +8,14 @@ scripted_gui = { #作ったGUIに効果を持たせるやつだよ
 		}
 		effects = { #ボタンとか押したときに起こること
 			geacps_debug_menu_open_button_button_click = { #ボタンのname_click
-				ROOT = {
-					set_country_flag = geacps_debug_menu_opened #このボタンを押すとデバッグメニューが表示される(またはcキー
+				if = {
+					limit = {
+						has_country_flag = geacps_debug_menu_opened
+					}
+					clr_country_flag = geacps_debug_menu_opened #このボタンを押すとデバッグメニューが表示される(またはcキー
+					else = {
+						set_country_flag = geacps_debug_menu_opened
+					}
 				}
 			}
 		}

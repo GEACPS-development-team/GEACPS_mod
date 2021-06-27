@@ -271,4 +271,32 @@ scripted_gui = {
 			}
         }
     }
+	ICBM_Button_enable = {
+        window_name = "ICBM_Button_container_close"
+        parent_window_token = selected_state_view
+        context_type = selected_state_context
+		ai_enabled = {
+            always = no
+        }
+        visible = {
+			is_debug = yes
+		}
+		triggers = {
+		}
+        effects = {
+			ICBM_BTN_enable_click = {
+				ROOT = {
+					if = {
+						limit = {
+							has_country_flag = ICBM_allowed
+						}
+							clr_country_flag = ICBM_allowed
+						else = {
+							set_country_flag = ICBM_allowed
+						}
+					}
+				}
+			}
+        }
+    }
 }

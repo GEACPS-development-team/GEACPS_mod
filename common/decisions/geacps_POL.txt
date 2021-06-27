@@ -1,0 +1,69 @@
+POL_German_Resistance_category = {
+	POL_debug_level_up = {
+		icon = generic_form_nation
+		visible = {
+			always = yes
+		}
+		complete_effect = {	
+			5 = {
+				POL_German_Resistance_level_up = yes
+			}
+		}
+	}
+	POL_debug_level_down = {
+		icon = generic_form_nation
+		visible = {
+			always = yes
+		}
+		complete_effect = {	
+			5 = {
+				POL_German_Resistance_level_down = yes
+			}
+		}
+	}
+	POL_riot_level_up = {
+		icon = generic_form_nation
+		visible = {
+			always = yes
+		}
+		available = {
+			always = no
+		}
+		mission = yes
+		days_mission_timeout = 50
+		timeout_effect = {
+			random_list = {
+				10 = {
+					
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+				10 = {
+
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+ideas = {
+	country = {
+		POL_legacy_of_world_war = { #大戦の遺恨
+			allowed = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+
+			picture = hol_the_foundations_of_defense
+			modifier = {
+			MONTHLY_POPULATION = -0.25
+			}
+		}
+		POL_reconstruction_economy = { #復興経済
+			allowed = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+
+			picture = hol_the_foundations_of_defense
+			modifier = {
+			min_export = 0.30
+			consumer_goods_factor = -0.10
+			industrial_capacity_factory = 0.10
+			industrial_capacity_dockyard = 0.10
+			production_factory_max_efficiency_factor = -0.10
+			}
+			hidden_modifier = {
+			ai_license_acceptance = 0.20
+			}
+		}
+		POL_german_problem_1 = { #ドイツ人問題-未解決
+			allowed = {
+			}
+			allowed_civil_war = {
+			}
+			removal_cost = -1
+
+			picture = hol_the_foundations_of_defense
+			modifier = {
+			stability_factor = -0.20
+			}
+		}
+	}
+}
