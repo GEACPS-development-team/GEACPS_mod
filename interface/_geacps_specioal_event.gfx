@@ -7,12 +7,20 @@ spriteTypes = {
 		name = "GFX_special_event_nepal"
 		texturefile = "gfx/interface/special_event/se_picture/special_event_nepal.png"
 	}
-	spriteType = {
+	frameAnimatedSpriteType = {
 		name = "GFX_special_event_EGR_unification"
 		texturefile = "gfx/interface/special_event/se_picture/special_event_EGR_unification.png"
+		noOfFrames = 2
+		animation_rate_fps = 0.4
+		looping = yes
+		play_on_show = yes
+	}
+	spriteType = {
+		name = "GFX_special_event_WGR_unification"
+		texturefile = "gfx/interface/special_event/se_picture/special_event_WGR_unification.png"
 	}
 
-	frameAnimatedSpriteType = {
+	spriteType = {
 		name = "GFX_clock_hour"
 		texturefile = "gfx/interface/special_event/clock_hour.png"
 		noOfFrames = 24

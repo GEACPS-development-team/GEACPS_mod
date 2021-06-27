@@ -31,3 +31,14 @@ special_event_EGR_unification = {
 		set_variable = { special_event_clock_time_hour = 7 }
 	}
 }
+special_event_WGR_unification = {
+	every_country = {
+		limit = {
+			is_ai = no
+		}
+		play_song = "special_event_WGR_unification"
+		set_variable = { special_event_ID = 4 }
+		set_variable = { special_event_back_map = 2 }
+		set_variable = { special_event_clock_time_hour = 8 }
+	}
+}

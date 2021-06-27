@@ -18,6 +18,13 @@ defined_text = {#�^�C�g��
 		}
 		localization_key = special_event_title_EGR_unification
 	}
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 4 }
+		}
+		localization_key = special_event_title_WGR_unification
+	}
+
 }
 defined_text = {#����
 	name = special_event_desc_text
@@ -38,6 +45,12 @@ defined_text = {#����
 			check_variable = { special_event_ID = 3 }
 		}
 		localization_key = special_event_desc_EGR_unification
+	}
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 4 }
+		}
+		localization_key = special_event_desc_WGR_unification
 	}
 
 }
@@ -61,6 +74,13 @@ defined_text = {#����{�^��
 		}
 		localization_key = special_event_exit_EGR_unification
 	}
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 4 }
+		}
+		localization_key = special_event_exit_WGR_unification
+	}
+
 }
 
 defined_text = {#�ʐ^
@@ -82,6 +102,12 @@ defined_text = {#�ʐ^
 			check_variable = { special_event_ID = 3 }
 		}
 		localization_key = GFX_special_event_EGR_unification
+	}
+	text = {
+		trigger = {
+			check_variable = { special_event_ID = 4 }
+		}
+		localization_key = GFX_special_event_WGR_unification
 	}
 
 }
