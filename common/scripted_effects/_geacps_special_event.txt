@@ -1,0 +1,33 @@
+special_event_test = {
+	every_country = {
+		limit = {
+			is_ai = no
+		}
+		play_song = "special_event_test"
+		set_variable = { special_event_ID = 1 }
+		set_variable = { special_event_back_map = 2 }
+		set_variable = { special_event_clock_time_hour = 15 }
+	}
+}
+special_event_nepal = {
+	every_country = {
+		limit = {
+			is_ai = no
+		}
+		play_song = "special_event_nepal"
+		set_variable = { special_event_ID = 2 }
+		set_variable = { special_event_back_map = 1 }
+		set_variable = { special_event_clock_time_hour = 3 }
+	}
+}
+special_event_EGR_unification = {
+	every_country = {
+		limit = {
+			is_ai = no
+		}
+		play_song = "special_event_EGR_unification"
+		set_variable = { special_event_ID = 3 }
+		set_variable = { special_event_back_map = 2 }
+		set_variable = { special_event_clock_time_hour = 7 }
+	}
+}
