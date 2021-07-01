@@ -17,6 +17,8 @@ country_event = {
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
+							NOT = {	is_core_of = ROOT	}
+							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = AFG_great_flag	}	}
 								check_variable = {	AFG_state_variable < 2	}
@@ -62,6 +64,8 @@ country_event = {
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
+							NOT = {	is_core_of = ROOT	}
+							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = AFG_great_flag	}	}
 								check_variable = {	0 < AFG_state_variable < 3	}
@@ -217,6 +221,7 @@ country_event = {
 				check_variable = {	AFG_state_variable = 1	}
 			}
 			IND = {	transfer_state = PREV	add_state_claim = PREV	}
+			country_event = fate_of_AFG.1
 		}
 	}
 	option = {
@@ -229,6 +234,7 @@ country_event = {
 				check_variable = {	AFG_state_variable = 1	}
 			}
 			PAK = {	transfer_state = PREV	add_state_claim = PREV	}
+			country_event = fate_of_AFG.1
 		}
 	}
 	option = {
@@ -241,6 +247,7 @@ country_event = {
 				check_variable = {	AFG_state_variable = 1	}
 			}
 			PER = {	transfer_state = PREV	add_state_claim = PREV	}
+			country_event = fate_of_AFG.1
 		}
 	}
 }
