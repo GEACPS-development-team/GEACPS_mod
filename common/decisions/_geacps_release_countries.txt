@@ -91,4 +91,27 @@ release_decisions = {
 		complete_effect = {	country_event = fate_of_BAN.1	}
 		ai_will_do = {	factor = 100	}
 	}
+	release_BHU = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BHU_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BHU	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BHU
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		
+		complete_effect = {	country_event = fate_of_BHU.1	}
+		ai_will_do = {	factor = 100	}
+	}
 }
