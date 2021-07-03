@@ -3,7 +3,7 @@ state = {
 	name = "STATE_800"
 	manpower = 365490
 	state_category = town
-
+	
 	history = {
 		owner = TUR
 		add_core_of = TUR
@@ -11,9 +11,11 @@ state = {
 			infrastructure = 2
 		}
 		victory_points = {	11853	1	}
+		set_variable = {	TUR_state_variable = 1	}
+		set_variable = {	ARM_state_variable = 2	}
 	}
 	
 	provinces = {
-		652	4583	7470	11880	12376	9858	11853	6976	6991	10403	7454	10472
+		652	4583	6976	6991	7454	7470	9858	10403	10472	11853	11880	12376
 	}
 }

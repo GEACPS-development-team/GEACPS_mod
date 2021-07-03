@@ -22,4 +22,73 @@ release_decisions = {
 		complete_effect = {	country_event = fate_of_AFG.1	}
 		ai_will_do = {	factor = 100	}
 	}
+	release_ARM = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	ARM_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = ARM	}	}
+			NOT = {	
+				any_country = {
+					original_tag = ARM
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		
+		complete_effect = {	country_event = fate_of_ARM.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	release_AZR = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	AZR_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = AZR	}	}
+			NOT = {	
+				any_country = {
+					original_tag = AZR
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		
+		complete_effect = {	country_event = fate_of_AZR.1	}
+		ai_will_do = {	factor = 100	}
+	}
+	release_BAN = {
+		icon = generic_form_nation
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	BAN_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = BAN	}	}
+			NOT = {	
+				any_country = {
+					original_tag = BAN
+					OR = {
+						is_subject_of = ROOT
+						is_in_faction_with = ROOT
+					}
+				}
+			}
+		}
+		
+		complete_effect = {	country_event = fate_of_BAN.1	}
+		ai_will_do = {	factor = 100	}
+	}
 }
