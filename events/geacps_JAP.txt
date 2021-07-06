@@ -91,26 +91,26 @@ country_event = {#日本内戦の予感
 	}
 }
 country_event = {
-	id = geacps_JAP.001
-	title = geacps_JAP.001.title
-	desc = geacps_JAP.001.desc
+	id = geacps_JAP_military.001
+	title = geacps_JAP_military.001.title
+	desc = geacps_JAP_military.001.desc
 	picture = GFX_
 	
 	is_triggered_only = yes
 
 	option = {
-		name = geacps_JAP.001.a
+		name = geacps_JAP_military.001.a
 		ai_chance = { factor = 10 }
 		add_ideas = JAP_air_people
 	}
 	option = {
-		name = geacps_JAP.001.b
+		name = geacps_JAP_military.001.b
 		ai_chance = { factor = 10 }
 		add_ideas = JAP_big_battery_people
 
 	}
 	option = {
-		name = geacps_JAP.001.c
+		name = geacps_JAP_military.001.c
 		ai_chance = { factor = 10 }
 		add_ideas = JAP_torpedo_people
 
@@ -118,23 +118,23 @@ country_event = {
 
 }
 country_event = {
-	id = geacps_JAP.002
-	title = geacps_JAP.002.title
-	desc = geacps_JAP.002.desc
+	id = geacps_JAP_military.002
+	title = geacps_JAP_military.002.title
+	desc = geacps_JAP_military.002.desc
 	picture = GFX_
 	
 	is_triggered_only = yes
 
 	option = {
-		name = geacps_JAP.002.a
+		name = geacps_JAP_military.002.a
 		ai_chance = { factor = 10 }
 		country_event = {
-			id = geacps_JAP.003
+			id = geacps_JAP_military.003
 		}
 
 	}
 	option = {
-		name = geacps_JAP.002.b
+		name = geacps_JAP_military.002.b
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
 				bonus = 0.2
@@ -151,15 +151,15 @@ country_event = {
 
 }
 country_event = {
-	id = geacps_JAP.003
-	title = geacps_JAP.003.title
-	desc = geacps_JAP.003.desc
+	id = geacps_JAP_military.003
+	title = geacps_JAP_military.003.title
+	desc = geacps_JAP_military.003.desc
 	picture = GFX_
 	
 	is_triggered_only = yes
 
 	option = {
-		name = geacps_JAP.003.a
+		name = geacps_JAP_military.003.a
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
 				bonus = 0.15
@@ -184,7 +184,7 @@ country_event = {
 
 	}
 	option = {
-		name = geacps_JAP.003.b
+		name = geacps_JAP_military.003.b
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
 				bonus = 0.15
@@ -215,7 +215,7 @@ country_event = {
 
 	}
 	option = {
-		name = geacps_JAP.003.c
+		name = geacps_JAP_military.003.c
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
 				bonus = 0.2
