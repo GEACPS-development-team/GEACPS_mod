@@ -21,7 +21,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = AFG_great_flag	}	}
-								check_variable = {	AFG_state_variable < 2	}
+								check_variable = {	AFG_state_variable > 0	}
+								check_variable = {	AFG_state_variable < 3	}
 							}
 							else = {	check_variable = {	AFG_state_variable = 1	}	}
 						}
@@ -68,7 +69,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = AFG_great_flag	}	}
-								check_variable = {	0 < AFG_state_variable < 3	}
+								check_variable = {	AFG_state_variable > 0	}
+								check_variable = {	AFG_state_variable < 3	}
 							}
 							else = {	check_variable = {	AFG_state_variable = 1	}	}
 						}
@@ -272,7 +274,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = ARM_united_flag	}	}
-								check_variable = {	ARM_state_variable < 2	}
+								check_variable = {	ARM_state_variable > 0	}
+								check_variable = {	ARM_state_variable < 3	}
 							}
 							else = {	check_variable = {	ARM_state_variable = 1	}	}
 						}
@@ -305,7 +308,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = ARM_united_flag	}	}
-								check_variable = {	0 < ARM_state_variable < 3	}
+								check_variable = {	ARM_state_variable > 0	}
+								check_variable = {	ARM_state_variable < 3	}
 							}
 							else = {	check_variable = {	ARM_state_variable = 1	}	}
 						}
@@ -444,7 +448,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = AZR_united_flag	}	}
-								check_variable = {	AZR_state_variable < 2	}
+								check_variable = {	AZR_state_variable > 0	}
+								check_variable = {	AZR_state_variable < 3	}
 							}
 							else = {	check_variable = {	AZR_state_variable = 1	}	}
 						}
@@ -477,7 +482,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = AZR_united_flag	}	}
-								check_variable = {	0 < AZR_state_variable < 3	}
+								check_variable = {	AZR_state_variable > 0	}
+								check_variable = {	AZR_state_variable < 3	}
 							}
 							else = {	check_variable = {	AZR_state_variable = 1	}	}
 						}
@@ -572,7 +578,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = BAN_greater_flag	}	}
-								check_variable = {	BAN_state_variable < 2	}
+								check_variable = {	BAN_state_variable > 0	}
+								check_variable = {	BAN_state_variable < 3	}
 							}
 							else = {	check_variable = {	BAN_state_variable = 1	}	}
 						}
@@ -605,7 +612,8 @@ country_event = {
 							NOT = {	is_claimed_by = ROOT	}
 							if = {
 								limit = {	ROOT = {	has_country_flag = BAN_greater_flag	}	}
-								check_variable = {	0 < BAN_state_variable < 3	}
+								check_variable = {	BAN_state_variable > 0	}
+								check_variable = {	BAN_state_variable < 3	}
 							}
 							else = {	check_variable = {	BAN_state_variable = 1	}	}
 						}
@@ -724,7 +732,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fate_of_PAK.3.0
+		name = fate_of_BAN.3.1
 		trigger = {	PAK = {	is_in_faction_with = ROOT	}	}
 		ai_chance = {	base = 0	}
 		every_state = {

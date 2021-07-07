@@ -4,15 +4,6 @@ set_cosmetic_tag = CHI_republic_wuhan_government
 
 set_convoys = 5
 
-add_ideas = CHI_war_of_17_years
-add_ideas = CHI_warloads
-add_ideas = CHI_northern_expedition
-add_ideas = CHI_lost_democracy
-add_ideas = CHI_changed_capital_once
-add_timed_idea = {
-	idea = add_ideas = CHI_small_support_from_USA
-	days = 120
-}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -25,12 +16,6 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 	basic_machine_tools = 1
-}
-
-country_event = {
-	id = GEACPS_china.001
-	days = 10
-	random = 6
 }
 
 set_province_controller = 4091
