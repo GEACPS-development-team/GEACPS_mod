@@ -33,11 +33,11 @@ guiTypes = {#根幹
 			format = centre #中央揃えにする leftで左揃えにできる rightもあったはず
 		}
 		buttontype = { #ボタン追加
-		name = "geacps_debug_play_no_effect_button"
-		position = { x = 50 y = 130 } 
-		quadTextureSprite = "GFX_button_148x34"
-		buttonFont = "hoi_16mbs"
-		buttonText = "no_effect"
+			name = "geacps_debug_play_no_effect_button"
+			position = { x = 50 y = 130 } 
+			quadTextureSprite = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "no_effect"
 		}
 		instantTextBoxType = { #世界的事件
 			name = "geacps_world_event"
@@ -51,21 +51,21 @@ guiTypes = {#根幹
 			format = centre
 		}
 		buttontype = {
-		name = "geacps_debug_world_event_world_war_3_button"
-		position = { x = 200 y = 130 } #横のボタンよりx150ほど離すといい感じになる
-		quadTextureSprite = "GFX_button_148x34"
-		buttonFont = "hoi_16mbs"
-		buttonText = "World War 3"
+			name = "geacps_debug_world_event_world_war_3_button"
+			position = { x = 200 y = 130 } #横のボタンよりx150ほど離すといい感じになる
+			quadTextureSprite = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "World War 3"
 		}
 		buttontype = {
-		name = "geacps_debug_world_event_Donau_war_button"
-		position = { x = 200 y = 170 } #上のボタンよりy40ほど離すといい感じになる
-		quadTextureSprite = "GFX_button_148x34"
-		buttonFont = "hoi_16mbs"
-		buttonText = "American Civil War"
+			name = "geacps_debug_world_event_Donau_war_button"
+			position = { x = 200 y = 170 }
+			quadTextureSprite = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = "American Civil War"
 		}
 	}
-	containerWindowType =  { #デバッグメニューの上の方
+	containerWindowType =  {
 		name = "geacps_debug_menu_select_tab_container"
 		position = { x = 0  y = -300 }
 		size = { width=1000 height=100}
@@ -87,17 +87,18 @@ guiTypes = {#根幹
 			format = centre
 		}
 		buttontype = {
-		name = "geacps_debug_menu_close_button" #デバッグメニューを消すボタン
-		position = { x = 155 y = 11 }
-		quadTextureSprite = "GFX_closebutton"
-		shortcut = "ESCAPE" #escキーをショートカットキーにする
+			name = "geacps_debug_menu_close_button"
+			position = { x = 950 y = 13 }
+			orientation = left
+			quadTextureSprite = "GFX_closebutton"
+			shortcut = "ESCAPE"
 		}
 		buttontype = {
-		name = "geacps_debug_tab_country_event_button"
-		position = { x = 20 y = 20 }
-		quadTextureSprite = "GFX_button_148x34"
-		buttonFont = "hoi_16mbs"
-		buttonText = ""
+			name = "geacps_debug_tab_country_event_button"
+			position = { x = 20 y = 20 }
+			quadTextureSprite = "GFX_button_148x34"
+			buttonFont = "hoi_16mbs"
+			buttonText = ""
 		}
 		instantTextBoxType = {
 			name = "debug_menu_tab_country_event"
