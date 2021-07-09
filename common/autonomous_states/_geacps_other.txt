@@ -43,6 +43,11 @@ autonomy_state = {
 	
 	use_overlord_color = yes
 	
+	modifier = {
+		cic_to_overlord_factor = 1
+		mic_to_overlord_factor = 1
+	}
+	
 	allowed = {
 		has_variable = leased_territory_trigger_variable
 	}
@@ -69,6 +74,11 @@ autonomy_state = {
 	default = yes
 	
 	use_overlord_color = yes
+	
+	modifier = {
+		cic_to_overlord_factor = 1
+		mic_to_overlord_factor = 1
+	}
 	
 	allowed = {
 		has_variable = occupied_territory_trigger_variable

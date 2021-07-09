@@ -26,9 +26,9 @@ country_event = {#一・二二事件の発生
 	
 	option = {#叛乱軍を捕らえよ！
 		name = geacps_JAP.2.a
+		complete_national_focus = JAP_1-22_Incident
 		country_event = {
 			id = geacps_JAP.3
-			days = 1
 		}
 	}
 }
@@ -49,14 +49,12 @@ country_event = {#臨時代理
 		}
 		remove_ideas_with_trait = head_of_government
 		add_ideas = JAP_Kisaburo_Ando
-		complete_national_focus = JAP_1-22_Incident
 	}
 	
 	option = {#"欠点がない"重光葵に
 		name = geacps_JAP.3.b
 		remove_ideas_with_trait = head_of_government
 		add_ideas = JAP_Mamoru_Shigemitsu
-		complete_national_focus = JAP_1-22_Incident
 	}
 }
 country_event = {#日本内戦の予感
