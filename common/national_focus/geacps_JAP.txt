@@ -420,9 +420,9 @@ focus_tree = {
     focus = {
         id = GEACPS_NF_JAP_navy_big_ships
         icon = GFX_focus_jap_pacific_guardian
-        x = 51
+        x = 24
         y = 0
-        relative_position_id = JAP_Attempted_assassination_of_Hideki_Tojo
+        relative_position_id = JAP_1-22_Incident
         cost = 4.28
         completion_reward = {
             navy_experience = 75
@@ -990,7 +990,6 @@ focus_tree = {
         y = 0
         relative_position_id = GEACPS_NF_JAP_navy_small_ships
         cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_DD_02 }
         completion_reward = {
             navy_experience = 75
         }
@@ -1074,9 +1073,6 @@ focus_tree = {
 		icon = GFX_focus_jap_pacific_guardian
 		prerequisite = {
 			focus = GEACPS_NF_JAP_navy_Super_Yamato_Class
-			focus = GEACPS_NF_JAP_antiair_Battleship
-		}
-		prerequisite = {
 			focus = GEACPS_NF_JAP_navy_Medium_CV_03
 			focus = GEACPS_NF_JAP_navy_Official_CV_03
 		}
@@ -1133,7 +1129,6 @@ focus_tree = {
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		prerequisite = { focus = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_Air_BB }
 
 		completion_reward = {
 			navy_experience = 75
