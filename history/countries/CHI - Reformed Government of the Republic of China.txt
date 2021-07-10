@@ -1,59 +1,78 @@
 ﻿#中華民国維新政府
-create_dynamic_country = {
-	original_tag = CHI
-	set_country_flag = CHI_reformed_countryflag
-	set_cosmetic_tag = CHI_republic_reformed_government
-	set_politics = {	ruling_party = authoritative_democracy	}
-	set_popularities = {	authoritative_democracy = 100	}
+1946.1.1 = {
+	create_dynamic_country = {
+		original_tag = CHI
+		set_country_flag = CHI_reformed_countryflag
+		set_cosmetic_tag = CHI_republic_reformed_government
 	
-    set_capital = 614
-	load_oob = ZHI_1946
-	transfer_state = 598
-	transfer_state = 600
-	transfer_state = 606
-	transfer_state = 607
-	transfer_state = 613
-	transfer_state = 749
-	transfer_state = 826
-	transfer_state = 900
-	transfer_state = 1079
-	transfer_state = 1080
-	transfer_state = 1081
-	transfer_state = 1082
-	transfer_state = 1083
-	transfer_state = 1084
-	transfer_state = 1085
-	transfer_state = 1086
-	transfer_state = 1089
-	transfer_state = 1148
-	transfer_state = 1149
-	transfer_state = 1151
-	transfer_state = 1153
-	transfer_state = 1154
-	transfer_state = 1155
-	transfer_state = 1156
-	transfer_state = 1157
-	transfer_state = 1158
-	transfer_state = 1159
-    transfer_state = 1160
-    transfer_state = 1161
-    transfer_state = 1162
-    transfer_state = 1163
-    transfer_state = 1164
-    
-	every_state = {
-		limit = {
-            OR = {
-                is_core_of = TWN
-                is_core_of = MAN
-                is_core_of = MEN
-                is_core_of = MON
-                is_core_of = TIB
-            }
-        }
-		remove_core_of = PREV
+		set_capital = 613
+		load_oob = ZHI_1946
+		transfer_state = 598
+		transfer_state = 600
+		transfer_state = 606
+		transfer_state = 607
+		transfer_state = 613
+		transfer_state = 749
+		transfer_state = 826
+		transfer_state = 900
+		transfer_state = 1079
+		transfer_state = 1080
+		transfer_state = 1081
+		transfer_state = 1082
+		transfer_state = 1083
+		transfer_state = 1084
+		transfer_state = 1085
+		transfer_state = 1086
+		transfer_state = 1089
+		transfer_state = 1148
+		transfer_state = 1149
+		transfer_state = 1151
+		transfer_state = 1153
+		transfer_state = 1154
+		transfer_state = 1155
+		transfer_state = 1156
+		transfer_state = 1157
+		transfer_state = 1158
+		transfer_state = 1159
+		transfer_state = 1160
+		transfer_state = 1161
+		transfer_state = 1162
+		transfer_state = 1163
+		transfer_state = 1164
+	
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = TWN
+					is_core_of = MAN
+					is_core_of = MEN
+					is_core_of = MON
+					is_core_of = TIB
+				}
+			}
+			remove_core_of = PREV
+		}
+	
+		JAP = { set_autonomy = {	target = PREV	autonomous_state = imperial_protected_state	}   }
+		declare_war_on = {	target = CHI	type = civil_war	}
+
+		set_politics = {
+			ruling_party = national_populism
+			last_election = "1938.3.28"
+			election_frequency = 72
+			elections_allowed = no
+		}
+		set_popularities = {
+			total_socialism = 0
+			radical_socialism = 0
+			social_democracy = 0
+			social_liberalism = 0
+			classical_liberalism = 0
+			liberal_conservatism = 0
+			social_conservatism = 0
+			authoritative_democracy = 0
+			reactionary_authoritarianism = 0
+			national_populism = 100
+		}
 	}
-    
-    JAP = { set_autonomy = {	target = PREV	autonomous_state = imperial_protected_state	}   }
-	declare_war_on = {	target = CHI	type = civil_war	}
 }

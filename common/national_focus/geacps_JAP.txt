@@ -32,19 +32,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#臨時会の開会
-		id = JAP_Opening_of_the_extraordinary_session
-		icon = GFX_focus_jap_pacific_guardian
-		x = 11
-		y = 2
-		prerequisite = {
-			focus = JAP_1-22_Incident
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
 	focus = {#戒厳の宣告
 		id = JAP_Declaration_of_martial_law
 		icon = GFX_focus_jap_pacific_guardian
@@ -122,39 +109,13 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#首相の選出
-		id = JAP_Election_of_Prime_Minister
+	focus = {#臨時会の開会
+		id = JAP_Opening_of_the_extraordinary_session
 		icon = GFX_focus_jap_pacific_guardian
-		x = 23
-		y = 3
+		x = 11
+		y = 2
 		prerequisite = {
-			focus = JAP_Opening_of_the_extraordinary_session
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#憲法草案
-		id = JAP_Draft_Constitution
-		icon = GFX_focus_jap_pacific_guardian
-		x = 19
-		y = 3
-		prerequisite = {
-			focus = JAP_Opening_of_the_extraordinary_session
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#統帥権干渉問題
-		id = JAP_Question_of_interference_with_the_General_Staff
-		icon = GFX_focus_jap_pacific_guardian
-		x = 19
-		y = 4
-		prerequisite = {
-			focus = JAP_Draft_Constitution
+			focus = JAP_1-22_Incident
 		}
 		cost = 4.28
 		completion_reward = {
@@ -184,6 +145,7 @@ focus_tree = {
 		}
 		cost = 4.28
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	
@@ -223,69 +185,9 @@ focus_tree = {
 		}
 		cost = 4.28
 		completion_reward = {
-		}
-	}
-	
-	focus = {#鈴木貫太郎
-		id = JAP_Kantaro_Suzuki
-		icon = GFX_focus_jap_pacific_guardian
-		x = 21
-		y = 4
-		prerequisite = {
-			focus = JAP_Election_of_Prime_Minister
-		}
-		mutually_exclusive = {
-			focus = JAP_Fumimaro_Konoe
-		}
-		mutually_exclusive = {
-			focus = JAP_Kuniaki_Koiso
-		}
-		cost = 4.28
-		completion_reward = {
-			remove_ideas_with_trait = head_of_government
-			add_ideas = JAP_Kantaro_Suzuki
-		}
-	}
-	
-	focus = {#近衛文麿
-		id = JAP_Fumimaro_Konoe
-		icon = GFX_focus_jap_pacific_guardian
-		x = 23
-		y = 4
-		prerequisite = {
-			focus = JAP_Election_of_Prime_Minister
-		}
-		mutually_exclusive = {
-			focus = JAP_Kantaro_Suzuki
-		}
-		mutually_exclusive = {
-			focus = JAP_Kuniaki_Koiso
-		}
-		cost = 4.28
-		completion_reward = {
-			remove_ideas_with_trait = head_of_government
-			add_ideas = JAP_Fumimaro_Konoe
-		}
-	}
-	
-	focus = {#小磯國昭
-		id = JAP_Kuniaki_Koiso
-		icon = GFX_focus_jap_pacific_guardian
-		x = 25
-		y = 4
-		prerequisite = {
-			focus = JAP_Election_of_Prime_Minister
-		}
-		mutually_exclusive = {
-			focus = JAP_Kantaro_Suzuki
-		}
-		mutually_exclusive = {
-			focus = JAP_Fumimaro_Konoe
-		}
-		cost = 4.28
-		completion_reward = {
-			remove_ideas_with_trait = head_of_government
-			add_ideas = JAP_Kuniaki_Koiso
+			army_experience = 10
+			navy_experience = 10
+			air_experience = 10
 		}
 	}
 	
@@ -460,6 +362,108 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+		}
+	}
+	
+	focus = {#憲法草案
+		id = JAP_Draft_Constitution
+		icon = GFX_focus_jap_pacific_guardian
+		x = 19
+		y = 3
+		prerequisite = {
+			focus = JAP_Opening_of_the_extraordinary_session
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#統帥権干渉問題
+		id = JAP_Question_of_interference_with_the_General_Staff
+		icon = GFX_focus_jap_pacific_guardian
+		x = 19
+		y = 4
+		prerequisite = {
+			focus = JAP_Draft_Constitution
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#首相の選出
+		id = JAP_Election_of_Prime_Minister
+		icon = GFX_focus_jap_pacific_guardian
+		x = 23
+		y = 3
+		prerequisite = {
+			focus = JAP_Opening_of_the_extraordinary_session
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#鈴木貫太郎
+		id = JAP_Kantaro_Suzuki
+		icon = GFX_focus_jap_pacific_guardian
+		x = 21
+		y = 4
+		prerequisite = {
+			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		mutually_exclusive = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		cost = 4.28
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Kantaro_Suzuki
+		}
+	}
+	
+	focus = {#近衛文麿
+		id = JAP_Fumimaro_Konoe
+		icon = GFX_focus_jap_pacific_guardian
+		x = 23
+		y = 4
+		prerequisite = {
+			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Kantaro_Suzuki
+		}
+		mutually_exclusive = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		cost = 4.28
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Fumimaro_Konoe
+		}
+	}
+	
+	focus = {#小磯國昭
+		id = JAP_Kuniaki_Koiso
+		icon = GFX_focus_jap_pacific_guardian
+		x = 25
+		y = 4
+		prerequisite = {
+			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Kantaro_Suzuki
+		}
+		mutually_exclusive = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		cost = 4.28
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Kuniaki_Koiso
 		}
 	}
 	
