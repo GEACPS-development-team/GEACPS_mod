@@ -1,22 +1,20 @@
-add_namespace = GEACPS_game_start
+add_namespace = HUN
 
-country_event = {#ドナウ連邦構想
-	id = GEACPS_game_start.2
-	title = GEACPS_game_start.2.t
-	desc = GEACPS_game_start.2.d
+country_event = {	#ドナウ連邦構想
+	id = HUN.0
+	title = HUN.0.t
+	desc = HUN.0.d
 	picture = GFX_event_test
 	
 	is_triggered_only = yes
 	
 	option = {#一度こわしたら二度ともとに戻ることはない...
-		name = GEACPS_game_start.2.a
- 		ai_chance = {
-			factor = 100
-		}
+		name = HUN.0.0
+ 		ai_chance = {	factor = 100	}
 	}
 	
-	option = {#中欧諸国の経済力は脆弱なため、社会民主的経済共同体を作るべきである。
-		name = GEACPS_game_start.2.b
+	option = {	#中欧諸国の経済力は脆弱なため、社会民主的経済共同体を作るべきである。
+		name = HUN.0.1
  		ai_chance = {
 			factor = 0
 		}
@@ -50,7 +48,7 @@ country_event = {#ドナウ連邦構想
 	}
 	
 	option = {#中欧諸国の経済力は脆弱なため、権威民主的経済共同体を作るべきである。
-		name = GEACPS_game_start.2.c
+		name = HUN.0.2
  		ai_chance = {
 			factor = 0
 		}
@@ -83,40 +81,3 @@ country_event = {#ドナウ連邦構想
 		set_state_owner = 1002
 	}
 }
-country_event = {#汎ベルギー主義
-	id = GEACPS_game_start.3
-	title = GEACPS_game_start.3.t
-	desc = GEACPS_game_start.3.d
-	picture = GFX_event_test
-	
-	is_triggered_only = yes
-	
-	option = {#現状維持
-		name = GEACPS_game_start.3.a
- 		ai_chance = {
-			factor = 100
-		}
-	}
-	
-	option = {#自然国境説
-		name = GEACPS_game_start.3.b
- 		ai_chance = {
-			factor = 0
-		}
-		annex_country = {
-			target = LUX
-			transfer_troops = yes
-		}
-		annex_country = {
-			target = RHI
-			transfer_troops = yes
-		}
-		annex_country = {
-			target = SAR
-			transfer_troops = yes
-		}
-		set_state_owner = 35
-		set_state_owner = 1133
-		set_state_owner = 1134
-		set_state_owner = 1108
-	}

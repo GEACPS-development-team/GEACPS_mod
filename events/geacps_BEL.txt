@@ -1,0 +1,25 @@
+add_namespace = BEL
+country_event = {	#汎ベルギー主義
+	id = BEL.0
+	title = BEL.0.t
+	desc = BEL.0.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {	#現状維持
+		name = BEL.0.0
+ 		ai_chance = {	factor = 100	}
+	}
+	option = {#自然国境説
+		name = BEL.0.1
+ 		ai_chance = {	factor = 0	}
+		annex_country = {	target = LUX	transfer_troops = yes	}
+		annex_country = {	target = RHI	transfer_troops = yes	}
+		annex_country = {	target = SAR	transfer_troops = yes	}
+		set_state_owner = 35
+		set_state_owner = 1133
+		set_state_owner = 1134
+		set_state_owner = 1108
+	}
+}
