@@ -450,7 +450,7 @@ focus_tree = {
 		id = JAP_Election_of_Prime_Minister
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 16
+		x = 19
 		y = 1
 		relative_position_id = JAP_Opening_of_the_extraordinary_session
 		prerequisite = {
@@ -464,7 +464,7 @@ focus_tree = {
 		id = JAP_Kantaro_Suzuki
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -4
+		x = -5
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -497,6 +497,76 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#鈴木ノミクス
+		id = JAP_Suzuki_Nomics
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Five_Reform_Directives
+		prerequisite = {
+			focus = JAP_Five_Reform_Directives
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日本列島改造論
+		id = JAP_The_Transformation_of_the_Japanese_Archipelago
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Suzuki_Nomics
+		prerequisite = {
+			focus = JAP_Suzuki_Nomics
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#東郷・ベヴィン協定
+		id = JAP_Togo-Bevin_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 3
+		relative_position_id = JAP_Kantaro_Suzuki
+		prerequisite = {
+			focus = JAP_Kantaro_Suzuki
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日英合同海軍技術研究所
+		id = JAP_Japanese-English_Contract_Naval_Technology_Institute
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Togo-Bevin_Agreement
+		prerequisite = {
+			focus = JAP_Togo-Bevin_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日英合同海軍委員会
+		id = JAP_Japanese-British_Contract_Naval_Committee
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Togo-Bevin_Agreement
+		prerequisite = {
+			focus = JAP_Togo-Bevin_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
 	focus = {#鈴木と阿南
 		id = JAP_Suzuki_and_Anan
 		icon = GFX_focus_jap_pacific_guardian
@@ -506,6 +576,34 @@ focus_tree = {
 		relative_position_id = JAP_Kantaro_Suzuki
 		prerequisite = {
 			focus = JAP_Kantaro_Suzuki
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#文民統制
+		id = JAP_Civilian_System
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Suzuki_and_Anan
+		prerequisite = {
+			focus = JAP_Suzuki_and_Anan
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#太平洋の防波堤
+		id = JAP_Breakwaters_of_the_Pacific
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Civilian_System
+		prerequisite = {
+			focus = JAP_Civilian_System
 		}
 		completion_reward = {
 		}
@@ -564,11 +662,73 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#革新官僚の任命
+		id = JAP_Appointment_of_innovative_bureaucrats
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_New_institutional_movement
+		prerequisite = {
+			focus = JAP_New_institutional_movement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#東方会議の開催
+		id = JAP_Organisation_of_the_Eastern_Conference
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		prerequisite = {
+			focus = JAP_Appointment_of_innovative_bureaucrats
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#一國新体制運動論
+		id = JAP_The_New_One_Nation_Movement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Organisation_of_the_Eastern_Conference
+		prerequisite = {
+			focus = JAP_Organisation_of_the_Eastern_Conference
+		}
+		mutually_exclusive = {
+			focus = JAP_Shigemitsu-Alvarez_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#重光・アルバレス協定
+		id = JAP_Shigemitsu-Alvarez_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Organisation_of_the_Eastern_Conference
+		prerequisite = {
+			focus = JAP_Organisation_of_the_Eastern_Conference
+		}
+		mutually_exclusive = {
+			focus = JAP_The_New_One_Nation_Movement
+		}
+		completion_reward = {
+		}
+	}
+	
 	focus = {#小磯國昭
 		id = JAP_Kuniaki_Koiso
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 4
+		x = 5
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -602,6 +762,90 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#保守官僚の任命
+		id = JAP_Conservative_bureaucratic_appointments
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Nae_Seon_Il_Che
+		prerequisite = {
+			focus = JAP_Nae_Seon_Il_Che
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#半島を内地に
+		id = JAP_Bringing_the_peninsula_inland
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Conservative_bureaucratic_appointments
+		prerequisite = {
+			focus = JAP_Conservative_bureaucratic_appointments
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#小磯・繆斌協定
+		id = JAP_The_Koiso-Miao_Pin_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 3
+		relative_position_id = JAP_Kuniaki_Koiso
+		prerequisite = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#A
+		id = JAP_A
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -2
+		y = 1
+		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
+		prerequisite = {
+			focus = JAP_The_Koiso-Miao_Pin_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#B
+		id = JAP_B
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
+		prerequisite = {
+			focus = JAP_The_Koiso-Miao_Pin_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#C
+		id = JAP_C
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 2
+		y = 1
+		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
+		prerequisite = {
+			focus = JAP_The_Koiso-Miao_Pin_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
 	focus = {#小磯・米内連立内閣
 		id = JAP_The_Koiso-Yonai_coalition_cabinet
 		icon = GFX_focus_jap_pacific_guardian
@@ -613,6 +857,20 @@ focus_tree = {
 			focus = JAP_Kuniaki_Koiso
 		}
 		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#最高幕僚長の設置
+		id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_The_Koiso-Yonai_coalition_cabinet
+		prerequisite = {
+			focus = JAP_The_Koiso-Yonai_coalition_cabinet
+		}
 		completion_reward = {
 		}
 	}
