@@ -662,6 +662,35 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#東亜協同体論
+		id = JAP_East_Asia_Cooperativism
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Formation_of_the_Koaha
+		prerequisite = {
+			focus = JAP_Formation_of_the_Koaha
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#外地の新体制運動を加速
+		id = JAP_New_regime_movement_in_the_outer_regions
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_New_institutional_movement
+		prerequisite = {
+			focus = JAP_New_institutional_movement
+		}
+		completion_reward = {
+		}
+	}
+	
 	focus = {#革新官僚の任命
 		id = JAP_Appointment_of_innovative_bureaucrats
 		icon = GFX_focus_jap_pacific_guardian
@@ -804,8 +833,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#A
-		id = JAP_A
+	focus = {#福建は日本の生命線
+		id = JAP_Fujian_is_Japan's_lifeline
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = -2
@@ -818,8 +847,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#B
-		id = JAP_B
+	focus = {#対岸経営
+		id = JAP_Opposite_shore_management
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = 0
@@ -832,8 +861,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#C
-		id = JAP_C
+	focus = {#三五公司
+		id = JAP_Sanwu_Corporation
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = 2
