@@ -653,6 +653,18 @@
  DLI_JAP_leased_territory_DEF:0 "$OVERLORDADJ$領関東州"
  DLI_JAP_leased_territory_ADJ:0 "$OVERLORDADJ$領関東州"
  
+ EIN_dominion:0 "$NONIDEOLOGY$連邦"
+ EIN_dominion_DEF:0 "$NONIDEOLOGY$連邦"
+ EIN_colony:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島植民地"
+ EIN_colony_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島植民地"
+ EIN_colony_ADJ:0 "$OVERLORDADJ$領$OVERLORDADJ$諸島"
+ EIN_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島"
+ EIN_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島"
+ EIN_overseas_territory_ADJ:0 "$OVERLORDADJ$領$OVERLORDADJ$諸島"
+ EIN_federation_of_colonies:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島連邦"
+ EIN_federation_of_colonies_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島連邦"
+ EIN_federation_of_colonies_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$諸島"
+ 
  HKG_dominion:0 "$NONIDEOLOGY$自治領"
  HKG_dominion_DEF:0 "$NONIDEOLOGY$自治領"
  HKG_colony:0 "$OVERLORDADJ$領$NONIDEOLOGY$植民地"
@@ -671,6 +683,18 @@
  MCA_overseas_territory_DEF:0 "$OVERLORDADJ$領マカオ"
  MCA_overseas_territory_ADJ:0 "$OVERLORDADJ$領マカオ"
  
+ SAB_dominion:0 "北ボルネオ自治領"
+ SAB_dominion_DEF:0 "北ボルネオ自治領"
+ SAB_colony:0 "$OVERLORDADJ$領北ボルネオ植民地"
+ SAB_colony_DEF:0 "$OVERLORDADJ$領北ボルネオ植民地"
+ SAB_colony_ADJ:0 "$OVERLORDADJ$領北ボルネオ"
+ SAB_overseas_territory:0 "$OVERLORDADJ$領北ボルネオ"
+ SAB_overseas_territory_DEF:0 "$OVERLORDADJ$領北ボルネオ"
+ SAB_overseas_territory_ADJ:0 "$OVERLORDADJ$領北ボルネオ"
+ SAB_protected_territory:0 "$OVERLORDADJ$保護領北ボルネオ"
+ SAB_protected_territory_DEF:0 "$OVERLORDADJ$保護領北ボルネオ"
+ SAB_protected_territory_ADJ:0 "$OVERLORDADJ$領北ボルネオ"
+ 
  TLS_dominion:0 "ティモール自治領"
  TLS_dominion_DEF:0 "ティモール自治領"
  TLS_colony:0 "$OVERLORDADJ$領ティモール植民地"
@@ -682,12 +706,12 @@
  TLS_POR_overseas_territory_DEF:0 "$OVERLORDADJ$領ティモール海外州"
  TLS_overseas_territory_ADJ:0 "$OVERLORDADJ$領ティモール"
  
- TWN_imperial_member:0 "$OVERLORDADJ$領台湾王国"
- TWN_imperial_member_DEF:0 "$OVERLORDADJ$領台湾王国"
- TWN_imperial_member_ADJ:0 "$OVERLORDADJ$領台湾"
- TWN_imperial_overseas_territory:0 "$OVERLORDADJ$領台湾"
- TWN_imperial_overseas_territory_DEF:0 "$OVERLORDADJ$領台湾"
- TWN_imperial_overseas_territory_ADJ:0 "$OVERLORDADJ$領台湾"
+ TWN_imperial_member:0 "$OVERLORDADJ$領$NONIDEOLOGY$王国"
+ TWN_imperial_member_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$王国"
+ TWN_imperial_member_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ TWN_imperial_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ TWN_imperial_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ TWN_imperial_overseas_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
  
  YML_soviet_member_republic:0 "$NONIDEOLOGY$・$OVERLORDADJ$共和国"
  YML_soviet_member_republic_DEF:0 "$NONIDEOLOGY$・$OVERLORDADJ$共和国"
@@ -987,6 +1011,18 @@
  SPM_overseas_territory_DEF:0 "$OVERLORDADJ$領サンピエール島及びミクロン島"
  SPM_overseas_territory_ADJ:0 "$OVERLORDADJ$領サンピエール島及びミクロン島"
  
+ WIN_dominion:0 "$NONIDEOLOGY$連邦"
+ WIN_dominion_DEF:0 "$NONIDEOLOGY$連邦"
+ WIN_colony:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島植民地"
+ WIN_colony_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島植民地"
+ WIN_colony_ADJ:0 "$OVERLORDADJ$領$OVERLORDADJ$諸島"
+ WIN_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島"
+ WIN_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島"
+ WIN_overseas_territory_ADJ:0 "$OVERLORDADJ$領$OVERLORDADJ$諸島"
+ WIN_federation_of_colonies:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島連邦"
+ WIN_federation_of_colonies_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島連邦"
+ WIN_federation_of_colonies_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$諸島"
+ 
  WIW_dominion:0 "$NONIDEOLOGY$諸島自治領"
  WIW_dominion_DEF:0 "$NONIDEOLOGY$諸島自治領"
  WIW_colony:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島植民地"
@@ -1000,6 +1036,22 @@
  WIW_federation_of_colonies_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$諸島"
  
 ##コズメティック
+#ヨーロッパ
+ KAR-FIN_SOV_soviet_member_republic:0 "カレロ＝フィン・$OVERLORDADJ$共和国"
+ KAR-FIN_SOV_soviet_member_republic_DEF:0 "カレロ＝フィン・$OVERLORDADJ$共和国"
+ KAR-FIN_SOV_total_socialism_soviet_member_republic:0 "カレロ＝フィン・$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_total_socialism_soviet_member_republic_DEF:0 "カレロ＝フィン・$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_radical_socialism_soviet_member_republic:0 "カレロ＝フィン・$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_radical_socialism_soviet_member_republic_DEF:0 "カレロ＝フィン・$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_soviet_member_republic_ADJ:0 "カレロ＝フィン・$OVERLORDADJ$"
+ KAR-FIN_SOV_soviet_soviet_autonomous_republic:0 "カレロ＝フィン自治$OVERLORDADJ$共和国"
+ KAR-FIN_SOV_soviet_soviet_autonomous_republic_DEF:0 "カレロ＝フィン自治$OVERLORDADJ$共和国"
+ KAR-FIN_SOV_total_socialism_soviet_soviet_autonomous_republic:0 "カレロ＝フィン自治$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_total_socialism_soviet_soviet_autonomous_republic_DEF:0 "カレロ＝フィン自治$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_radical_socialism_soviet_soviet_autonomous_republic:0 "カレロ＝フィン自治$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_radical_socialism_soviet_soviet_autonomous_republic_DEF:0 "カレロ＝フィン自治$OVERLORDADJ$社会主義共和国"
+ KAR-FIN_SOV_soviet_soviet_autonomous_republic_ADJ:0 "カレロ＝フィン・$OVERLORDADJ$"
+ 
 #新大陸
  NORTH-GREENLAND_DEN_dominion:0 "北グリーンランド自治領"
  NORTH-GREENLAND_DEN_dominion_DEF:0 "北グリーンランド自治領"
@@ -1018,7 +1070,7 @@
  SOUTH-GREENLAND_DEN_overseas_territory:0 "$OVERLORDADJ$領南グリーンランド"
  SOUTH-GREENLAND_DEN_overseas_territory_DEF:0 "$OVERLORDADJ$領南グリーンランド"
  SOUTH-GREENLAND_DEN_overseas_territory_ADJ:0 "$OVERLORDADJ$領南グリーンランド"
-
+ 
 ##その他
 #汎用
  COUNTRY_occupied_territory:0 "$OVERLORDADJ$統治下$NONIDEOLOGY$占領地域"
