@@ -4,19 +4,21 @@ state = {
 	manpower = 76485
 	buildings_max_level_factor = 1
 	state_category = small_island
-
+	
 	history = {
 		owner = WIW
 		add_core_of = WIW
 		add_core_of = BRD
-
+	
 		buildings = {
 			infrastructure = 4
 			11350 = {	naval_base = 1	}
 		}
 		victory_points = {	11350	1	}
+		set_variable = {	BRD_state_variable = 1	}
+		set_variable = {	WIW_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		11350 
 	}

@@ -22,14 +22,11 @@ set_popularities = {
 	national_populism = 0
 }
 
-EGR = { give_military_access = SOV }
-EGR = { give_military_access = RUS }
-
 create_dynamic_country = {
 	original_tag = AUS
 	set_country_flag = AUS_SOV_countryflag
 	set_cosmetic_tag = COUNTRY_SOV
-	set_politics = {	ruling_party = reactionary_authoritarianism	}
+	set_politics = {	ruling_party = total_socialism	}
 	set_popularities = {	reactionary_authoritarianism = 100	}
 	
 	set_ot_variable = yes
@@ -40,6 +37,28 @@ create_dynamic_country = {
 	}
     transfer_state = 4	4 = {	add_core_of = PREV	}
     transfer_state = 1006	1006 = {	add_core_of = PREV	}
+}
+
+create_dynamic_country = {
+	original_tag = KAZ
+	set_cosmetic_tag = KAZ_SOV
+	set_politics = {	ruling_party = total_socialism	}
+	set_popularities = {	reactionary_authoritarianism = 100	}
+	
+	SOV = {	set_autonomy = {	target = PREV	autonomous_state = soviet_member_republic	}	}
+	
+	every_state = {
+		limit = {	is_core_of = KAZ	}
+		remove_core_of = PREV
+	}
+    transfer_state = 407	407 = {	add_core_of = PREV	}
+    transfer_state = 835	835 = {	add_core_of = PREV	}
+    transfer_state = 583	583 = {	add_core_of = PREV	}
+    transfer_state = 590	590 = {	add_core_of = PREV	}
+    transfer_state = 854	854 = {	add_core_of = PREV	}
+    transfer_state = 853	853 = {	add_core_of = PREV	}
+    transfer_state = 588	588 = {	add_core_of = PREV	}
+    transfer_state = 855	855 = {	add_core_of = PREV	}
 }
 
 create_faction = COMINFORM
@@ -86,7 +105,6 @@ set_autonomy = {	target = KAR	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = DON	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = ABK	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = YML	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = AKM	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = BUL	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = CZE	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = EGR	autonomous_state = soviet_satellite	}

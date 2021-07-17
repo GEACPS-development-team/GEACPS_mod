@@ -4,17 +4,18 @@ state = {
 	manpower = 566600
 	state_category = large_town
 	
-	history= {
+	history = {
 		owner = UKR
 		add_core_of = UKR
-		victory_points = {	6727	1	}
+		add_core_of = MOL
 		buildings = {
 			infrastructure = 4
 			dockyard = 1
-			6727 = {
-				naval_base = 3
-			}
+			6727 = {	naval_base = 3	}
 		}
+		victory_points = {	6727	1	}
+		set_variable = {	UKR_state_variable = 1	}
+		set_variable = {	MOL_state_variable = 1	}
 	}
 	
 	provinces = {
