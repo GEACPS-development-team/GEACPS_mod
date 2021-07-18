@@ -3,17 +3,19 @@ state = {
 	name = "STATE_311"
 	manpower = 51000
 	state_category = pastoral
+	
 	history = {
 		owner = BLZ
 		add_core_of = BLZ
-		victory_points = {	2077	1 
-		}
 		buildings = {
 			infrastructure = 4
-			2077 = {
-				naval_base = 1
-			}
+			2077 = {	naval_base = 1	}
 		}
+		victory_points = {	2077	1	}
+		set_variable = {	BLZ_state_variable = 1	}
 	}
-	provinces = {	2077	}
+	
+	provinces = {
+		2077
+	}
 }

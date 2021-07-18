@@ -10,25 +10,18 @@ state = {
 	
 	history = {
 		owner = CHL
+		add_core_of = CHL
 		buildings = {
 			infrastructure = 5
 			arms_factory = 1
 			industrial_complex = 7
 			air_base = 3
-			8222 = {
-				naval_base = 5
-			}
-			5121 = {
-				naval_base = 1
-			}
-			650 = {
-				bunker = 1
-			}
+			8222 = {	naval_base = 5	}
+			5121 = {	naval_base = 1	}
+			650 = {	bunker = 1	}
 		}
-		add_core_of = CHL
-		victory_points = {	650	10
-		}
-	
+		victory_points = {	650	10	}
+		set_variable = {	CHL_state_variable = 1	}
 	}
 	
 	provinces = {

@@ -9,21 +9,17 @@ state = {
 	}
 	history = {
 		owner = DOM
+		add_core_of = DOM
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
-			7660 = {
-				naval_base = 2
-			}
+			7660 = {	naval_base = 2	}
 		}
-		add_core_of = DOM
-		victory_points = {	7660	5 
-		}
-		victory_points = {	4598	1 
-		}
-	
+		victory_points = {	4598	1	}
+		victory_points = {	7660	5	}
+		set_variable = {	DOM_state_variable = 1	}
 	}
 	provinces = {
 		4598	7632	7660	10484

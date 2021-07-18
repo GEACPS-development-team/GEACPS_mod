@@ -1,25 +1,21 @@
 state = {
 	id = 739
 	name = "STATE_739"
+	manpower = 12684
+	buildings_max_level_factor = 1	
+	state_category = "small_island"
 	
 	history = {
 		owner = CAN
+		add_core_of = CAN
 		buildings = {
 			infrastructure = 1
-	
-			1869 = {
-				naval_base = 1
-	
-			}
-	
+			1869 = {	naval_base = 1	}
 		}
-		add_core_of = CAN
+		set_variable = {	CAN_state_variable = 1	}
 	}
 	
 	provinces = {
 		1869
 	}
-	manpower = 12684
-	buildings_max_level_factor = 1	
-	state_category = "small_island"
 }

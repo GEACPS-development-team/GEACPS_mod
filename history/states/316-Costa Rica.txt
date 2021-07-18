@@ -2,14 +2,13 @@ state = {
 	id = 316
 	name = "STATE_316"
 	manpower = 503856
-	resources = {
-		chromium = 1
-	}
 	state_category = town
 	
+	resources = {	chromium = 1	}
 	
 	history = {
 		owner = COS
+		add_core_of = COS
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
@@ -19,9 +18,8 @@ state = {
 				naval_base = 1
 			}
 		}
-		add_core_of = COS
 		victory_points = {	13087	3	}
-	
+		set_variable = {	COS_state_variable = 1	}
 	}
 	
 	provinces = {

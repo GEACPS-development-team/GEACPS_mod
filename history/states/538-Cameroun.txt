@@ -3,15 +3,16 @@ state = {
 	name = "STATE_538"
 	manpower = 1693974
 	state_category = wasteland
-	resources = {
-		rubber = 5
-	}
+	
+	resources = {	rubber = 5	}
+	
 	history = {
 		owner = COG
+		add_core_of = COG
 		buildings = {
 			infrastructure = 1
 		}
-		add_core_of = COG
+		set_variable = {	COG_state_variable = 1	}
 	}
 	
 	provinces = {

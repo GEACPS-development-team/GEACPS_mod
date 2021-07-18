@@ -2,32 +2,29 @@ state = {
 	id = 315
 	name = "STATE_315"
 	manpower = 3607919
+	state_category = town
+	
 	resources = {
 		steel = 3
 		chromium = 90
 	}
-	state_category = town
 	
 	history = {
 		owner = CUB
+		add_core_of = CUB
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 1
-			7622 = {
-				naval_base = 3
-			}
-			1550 = {
-				naval_base = 1
-			}
-		}
-		add_core_of = CUB
-		victory_points = {	7622	5 
+			7622 = {	naval_base = 3	}
+			1550 = {	naval_base = 1	}
 		}
 		victory_points = {	7590	1	}
-	
+		victory_points = {	7622	5	}
+		set_variable = {	COL_state_variable = 1	}
 	}
+	
 	provinces = {
 		1550	4476	4600	7451	7546	7590	7622	10374	10498	12347
 	}
