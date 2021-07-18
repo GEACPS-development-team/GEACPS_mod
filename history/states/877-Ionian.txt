@@ -3,16 +3,17 @@ state = {
 	name = "STATE_877"
 	manpower = 7600
 	state_category = small_island
-
+	
 	history = {
-		owner = ENG
+		owner = GRE
 		add_core_of = GRE
-		victory_points = {	10203	1	}
 		buildings = {
 			infrastructure = 4
 		}
+		victory_points = {	10203	1	}
+		set_variable = {	GRE_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		1106	10203
 	}

@@ -4,7 +4,7 @@ state = {
 	state_category = city
 	buildings_max_level_factor = 1
 	manpower = 1000
-
+	
 	history = {
 		owner = WIW
 		add_core_of = WIW
@@ -12,8 +12,10 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
+		set_variable = {	SVG_state_variable = 1	}
+		set_variable = {	WIW_state_variable = 1	}
 	}
-
+	
 	provinces = {
 		379 
 	}

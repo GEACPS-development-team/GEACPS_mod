@@ -1,17 +1,21 @@
 state = {
 	id = 1118
 	name = "STATE_1118"
-	state_category = city
-	history = {
-		owner = FRA
-		add_core_of = FRA
-		buildings = {
-			infrastructure = 3
-		}
-	}
-	provinces = {
-		177 
-	}
 	manpower = 1000
 	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
+		owner = MTQ
+		add_core_of = MTQ
+		buildings = {
+			infrastructure = 3
+			177 = {	naval_base = 3	}
+		}
+		set_variable = {	MTQ_state_variable = 1	}
+	}
+	
+	provinces = {
+		177
+	}
 }
