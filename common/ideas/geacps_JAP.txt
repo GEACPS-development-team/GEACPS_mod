@@ -166,6 +166,30 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
+		JAP_Commander-in-Chief_of_the_Southern_Army = {#南方軍総司令官
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+			}
+		}
+		JAP_The_commander_of_Operation_Ichi-Go = {#一号作戦の指揮官
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+			}
+		}
 		
 		JAP_air_people = {
 			removal_cost = -1
@@ -478,6 +502,32 @@ ideas = {#政府首班
 			
 			removal_cost = -1
 			picture = JAP_Kuniaki_Koiso
+			#modifier = {}
+		}
+	}
+	head_of_government = {#寺内寿一
+		JAP_Hisaichi_Terauchi = {
+			allowed = {	original_tag = JAP	}
+			allowed_civil_war = {	always = yes	}
+			available = {
+				hidden_trigger = {	always = no	}
+			}
+			
+			removal_cost = -1
+			picture = JAP_Hisaichi_Terauchi
+			#modifier = {}
+		}
+	}
+	head_of_government = {#畑俊六
+		JAP_Shunroku_Hata = {
+			allowed = {	original_tag = JAP	}
+			allowed_civil_war = {	always = yes	}
+			available = {
+				hidden_trigger = {	always = no	}
+			}
+			
+			removal_cost = -1
+			picture = JAP_Shunroku_Hata
 			#modifier = {}
 		}
 	}

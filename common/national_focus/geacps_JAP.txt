@@ -16,7 +16,7 @@ focus_tree = {
 	default = no
 	
 	continuous_focus_position = {
-		x = 50 y = 1100
+		x = 0 y = 3000
 	}
 	
 	focus = {#落ちぶれた日の出
@@ -148,313 +148,15 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#臨時会の開会
-		id = JAP_Opening_of_the_extraordinary_session
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 4
-		y = 1
-		relative_position_id = JAP_1-22_Incident
-		prerequisite = {
-			focus = JAP_1-22_Incident
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#予算案
-		id = JAP_Draft_budget
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 1
-		relative_position_id = JAP_Opening_of_the_extraordinary_session
-		prerequisite = {
-			focus = JAP_Opening_of_the_extraordinary_session
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#経済
-		id = JAP_Economy
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 1
-		relative_position_id = JAP_Draft_budget
-		prerequisite = {
-			focus = JAP_Draft_budget
-		}
-		completion_reward = {
-			add_political_power = 100
-		}
-	}
-	
-	focus = {#各地の産業報国連盟を支援
-		id = JAP_Supporting_local_industrial_news_federations
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_Economy
-		prerequisite = {
-			focus = JAP_Economy
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#財閥
-		id = JAP_Zaibatsu
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -1
-		y = 1
-		relative_position_id = JAP_Economy
-		prerequisite = {
-			focus = JAP_Economy
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#軍事
-		id = JAP_Military
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 5
-		y = 1
-		relative_position_id = JAP_Draft_budget
-		prerequisite = {
-			focus = JAP_Draft_budget
-		}
-		completion_reward = {
-			army_experience = 10
-			navy_experience = 10
-			air_experience = 10
-		}
-	}
-	
-	focus = {#横須賀海軍工廠
-		id = JAP_Yokosuka_Naval_Arsenal
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -2
-		y = 1
-		relative_position_id = JAP_Military
-		prerequisite = {
-			focus = JAP_Military
-		}
-		completion_reward = {
-			532 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#呉海軍工廠
-		id = JAP_Kure_Naval_Arsenal
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -1
-		y = 1
-		relative_position_id = JAP_Yokosuka_Naval_Arsenal
-		prerequisite = {
-			focus = JAP_Yokosuka_Naval_Arsenal
-		}
-		completion_reward = {
-			529 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#舞鶴海軍工廠
-		id = JAP_Maizuru_Naval_Factory
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_Yokosuka_Naval_Arsenal
-		prerequisite = {
-			focus = JAP_Yokosuka_Naval_Arsenal
-		}
-		completion_reward = {
-			924 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#佐世保海軍工廠
-		id = JAP_Sasebo_Naval_Factory
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 2
-		relative_position_id = JAP_Yokosuka_Naval_Arsenal
-		prerequisite = {
-			focus = JAP_Kure_Naval_Arsenal
-		}
-		prerequisite = {
-			focus = JAP_Maizuru_Naval_Factory
-		}
-		completion_reward = {
-			528 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = dockyard
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#小倉陸軍造兵廠
-		id = JAP_Kokura_Army_Arsenal
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 2
-		y = 1
-		relative_position_id = JAP_Military
-		prerequisite = {
-			focus = JAP_Military
-		}
-		completion_reward = {
-			931 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#唐栄砲兵工廠を創立
-		id = JAP_Tang_Rong_Artillery_Factory
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -1
-		y = 1
-		relative_position_id = JAP_Kokura_Army_Arsenal
-		prerequisite = {
-			focus = JAP_Kokura_Army_Arsenal
-		}
-		completion_reward = {
-			1191 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#平壌兵器製造所
-		id = JAP_Pyongyang_Weapons_Factory
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_Kokura_Army_Arsenal
-		prerequisite = {
-			focus = JAP_Kokura_Army_Arsenal
-		}
-		completion_reward = {
-			527 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#陸軍航空工廠
-		id = JAP_Army_Aviation_Factory
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 2
-		relative_position_id = JAP_Kokura_Army_Arsenal
-		prerequisite = {
-			focus = JAP_Tang_Rong_Artillery_Factory
-		}
-		prerequisite = {
-			focus = JAP_Pyongyang_Weapons_Factory
-		}
-		completion_reward = {
-			986 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	
-	focus = {#憲法草案
-		id = JAP_Draft_Constitution
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 10
-		y = 1
-		relative_position_id = JAP_Opening_of_the_extraordinary_session
-		prerequisite = {
-			focus = JAP_Opening_of_the_extraordinary_session
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#統帥権干渉問題
-		id = JAP_Question_of_interference_with_the_General_Staff
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 1
-		relative_position_id = JAP_Draft_Constitution
-		prerequisite = {
-			focus = JAP_Draft_Constitution
-		}
-		completion_reward = {
-		}
-	}
-	
 	focus = {#首相の選出
 		id = JAP_Election_of_Prime_Minister
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 19
+		x = 9
 		y = 1
-		relative_position_id = JAP_Opening_of_the_extraordinary_session
+		relative_position_id = JAP_1-22_Incident
 		prerequisite = {
-			focus = JAP_Opening_of_the_extraordinary_session
+			focus = JAP_1-22_Incident
 		}
 		completion_reward = {
 		}
@@ -475,6 +177,12 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = JAP_Kuniaki_Koiso
+		}
+		mutually_exclusive = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		mutually_exclusive = {
+			focus = JAP_Shunroku_Hata
 		}
 		completion_reward = {
 			remove_ideas_with_trait = head_of_government
@@ -625,6 +333,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_Kuniaki_Koiso
 		}
+		mutually_exclusive = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		mutually_exclusive = {
+			focus = JAP_Shunroku_Hata
+		}
 		completion_reward = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = JAP_Fumimaro_Konoe
@@ -769,6 +483,12 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = JAP_Fumimaro_Konoe
 		}
+		mutually_exclusive = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		mutually_exclusive = {
+			focus = JAP_Shunroku_Hata
+		}
 		completion_reward = {
 			remove_ideas_with_trait = head_of_government
 			add_ideas = JAP_Kuniaki_Koiso
@@ -827,7 +547,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = JAP_Kuniaki_Koiso
 		prerequisite = {
-			focus = JAP_Kuniaki_Koiso
+			focus = JAP_Conservative_bureaucratic_appointments
 		}
 		completion_reward = {
 		}
@@ -837,7 +557,7 @@ focus_tree = {
 		id = JAP_Fujian_is_Japan's_lifeline
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
 		prerequisite = {
@@ -851,7 +571,7 @@ focus_tree = {
 		id = JAP_Opposite_shore_management
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 0
+		x = 1
 		y = 1
 		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
 		prerequisite = {
@@ -865,11 +585,11 @@ focus_tree = {
 		id = JAP_Sanwu_Corporation
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 2
+		x = 0
 		y = 1
-		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
+		relative_position_id = JAP_Opposite_shore_management
 		prerequisite = {
-			focus = JAP_The_Koiso-Miao_Pin_Agreement
+			focus = JAP_Opposite_shore_management
 		}
 		completion_reward = {
 		}
@@ -904,15 +624,90 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#～政治、軍事～
-		id = JAP_Politics_Military
+	focus = {#寺内寿一
+		id = JAP_Hisaichi_Terauchi
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		available = {
-			hidden_trigger = { always = no }
-		}
-		x = 50
+		x = 10
 		y = 1
+		relative_position_id = JAP_Election_of_Prime_Minister
+		prerequisite = {
+			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Kantaro_Suzuki
+		}
+		mutually_exclusive = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		mutually_exclusive = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		mutually_exclusive = {
+			focus = JAP_Shunroku_Hata
+		}
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Hisaichi_Terauchi
+			add_ideas = JAP_Commander-in-Chief_of_the_Southern_Army
+		}
+	}
+	
+	focus = {#皇民化運動
+		id = JAP_Royalization_Movement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Hisaichi_Terauchi
+		prerequisite = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#畑俊六
+		id = JAP_Shunroku_Hata
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 15
+		y = 1
+		relative_position_id = JAP_Election_of_Prime_Minister
+		prerequisite = {
+			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Kantaro_Suzuki
+		}
+		mutually_exclusive = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		mutually_exclusive = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		mutually_exclusive = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Shunroku_Hata
+			add_ideas = JAP_The_commander_of_Operation_Ichi-Go
+		}
+	}
+	
+	focus = {#一中コンビ
+		id = JAP_Ichichu_duo
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Shunroku_Hata
+		prerequisite = {
+			focus = JAP_Shunroku_Hata
+		}
+		cost = 4.28
 		completion_reward = {
 		}
 	}
