@@ -2,11 +2,9 @@ state = {
 	id = 183
 	name = "STATE_183"
 	manpower = 347959
-	
-	resources = {
-		chromium = 3
-	}
 	state_category = rural
+	
+	resources = {	chromium = 3	}
 	
 	history = {
 		owner = CYP
@@ -20,7 +18,10 @@ state = {
 				naval_base = 2
 			}
 		}
+		set_variable = {	CYP_state_variable = 1	}
 	}
 	
-	provinces = {	7193	11984	}
+	provinces = {
+		7193	11984
+	}
 }

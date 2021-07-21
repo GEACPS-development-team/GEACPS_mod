@@ -3,16 +3,17 @@ state = {
 	name = "STATE_246"
 	manpower = 1025458
 	state_category = large_town
-	resources = {
-		steel = 16
-	}
+
+	resources = {	steel = 16	}
 	
 	history = {
 		owner = BLR
 		add_core_of = BLR
+		add_core_of = RUS
 		buildings = {
 			infrastructure = 5
 		}
+		set_variable = {	RUS_state_variable = 1	}
 	}
 	
 	provinces = {

@@ -2,30 +2,23 @@ state = {
 	id = 493
 	name = "STATE_493"
 	manpower = 2826781
-	resources = {
-		oil = 15
-	}
 	state_category = town
+	
+	resources = {	oil = 15	}
 	
 	history = {
 		owner = COL
+		add_core_of = COL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 4
-			12790 = {
-				naval_base = 5
-			}
-			8056 = {
-				naval_base = 1
-			}
+			8056 = {	naval_base = 1	}
+			12790 = {	naval_base = 5	}
 		}
-		add_core_of = COL
-		victory_points = {	2023	1 
-		}
-		victory_points = {	12790	5 
-		}
-	
+		victory_points = {	2023	1	}
+		victory_points = {	12790	5	}
+		set_variable = {	COL_state_variable = 1	}
 	}
 	
 	provinces = {

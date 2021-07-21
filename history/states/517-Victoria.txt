@@ -12,24 +12,19 @@ state = {
 	
 	history = {
 		owner = AST
+		add_core_of = AST
 		buildings = {
 			infrastructure = 6
 			arms_factory = 2
 			industrial_complex = 5
 			air_base = 3
-			7798 = {
-				naval_base = 4
-				coastal_bunker = 1
-			}
-			12910 = {
-				naval_base = 2
-			}
+			7798 = {	naval_base = 4	}
+			12910 = {	naval_base = 2	}
+			7798 = {	coastal_bunker = 1	}
 		}
-		victory_points = {	7798	20
-		}
-		victory_points = {	12910	5 
-		}
-		add_core_of = AST
+		victory_points = {	7798	20	}
+		victory_points = {	12910	5 	}
+		set_variable = {	AST_state_variable = 1	}
 	}
 	
 	provinces = {

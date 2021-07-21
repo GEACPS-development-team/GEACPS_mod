@@ -1,6 +1,9 @@
 state = {
 	id = 450
 	name = "STATE_450"
+	manpower = 82535
+	buildings_max_level_factor = 1
+	state_category = enclave
 	
 	history = {
 		owner = CYR
@@ -9,20 +12,14 @@ state = {
 		buildings = {
 			infrastructure = 3
 			air_base = 1
-			11954 = {
-				naval_base = 1
-	
-			}
-	
+			11954 = {	naval_base = 1	}
 		}
 		victory_points = {	11954	3	}
+		set_variable = {	CYR_state_variable = 1	}
 		set_variable = {	LBA_state_variable = 1	}
 	}
 	
 	provinces = {
 		1062	1186	1204	4063	4120	4151	7082	7139	9992	10049	10123	11954	12025	12079	12094 
 	}
-	manpower = 82535
-	buildings_max_level_factor = 1
-	state_category = enclave
 }
