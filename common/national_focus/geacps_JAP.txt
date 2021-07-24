@@ -152,7 +152,7 @@ focus_tree = {
 		id = JAP_Election_of_Prime_Minister
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 9
+		x = 25
 		y = 1
 		relative_position_id = JAP_1-22_Incident
 		prerequisite = {
@@ -162,15 +162,85 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#鈴木貫太郎
-		id = JAP_Kantaro_Suzuki
+	focus = {#岡田啓介
+		id = JAP_Keisuke_Okada
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -5
+		x = -21
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Mitsumasa_Yonai
+		}
+		mutually_exclusive = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		mutually_exclusive = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		mutually_exclusive = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		mutually_exclusive = {
+			focus = JAP_Shunroku_Hata
+		}
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Kantaro_Suzuki
+			add_ideas = JAP_Oni_no_Kantaro
+		}
+	}
+	
+	focus = {#米内光政
+		id = JAP_Mitsumasa_Yonai
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -14
+		y = 1
+		relative_position_id = JAP_Election_of_Prime_Minister
+		prerequisite = {
+			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Keisuke_Okada
+		}
+		mutually_exclusive = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		mutually_exclusive = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		mutually_exclusive = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		mutually_exclusive = {
+			focus = JAP_Shunroku_Hata
+		}
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Kantaro_Suzuki
+			add_ideas = JAP_Oni_no_Kantaro
+		}
+	}
+	
+	focus = {#鈴木貫太郎
+		id = JAP_Kantaro_Suzuki
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -7
+		y = 1
+		relative_position_id = JAP_Election_of_Prime_Minister
+		prerequisite = {
+			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Keisuke_Okada
+		}
+		mutually_exclusive = {
+			focus = JAP_Mitsumasa_Yonai
 		}
 		mutually_exclusive = {
 			focus = JAP_Fumimaro_Konoe
@@ -275,6 +345,93 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#太平洋安全保障条約の締結
+		id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Togo-Bevin_Agreement
+		prerequisite = {
+			focus = JAP_Japanese-English_Contract_Naval_Technology_Institute
+		}
+		prerequisite = {
+			focus = JAP_Japanese-British_Contract_Naval_Committee
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日印貿易協定の締結
+		id = JAP_Signing_of_the_India-Japan_Trade_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -3
+		y = 1
+		relative_position_id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		prerequisite = {
+			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日豪友好協力基本条約の締結
+		id = JAP_Signing_of_the_Basic_Treaty_of_Friendship_and_Co-operation_between_Australia_and_Japan
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		prerequisite = {
+			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#第四次日英同盟の調印
+		id = JAP_The_Fourth_Japanese-British_Alliance_is_signed
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		prerequisite = {
+			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日新通商協定の締結
+		id = JAP_Conclusion_of_Japan-New_Zealand_Trade_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		prerequisite = {
+			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#英領マレーの錫
+		id = JAP_British_Malayan_Tina
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 3
+		y = 1
+		relative_position_id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		prerequisite = {
+			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		}
+		completion_reward = {
+		}
+	}
+	
 	focus = {#鈴木と阿南
 		id = JAP_Suzuki_and_Anan
 		icon = GFX_focus_jap_pacific_guardian
@@ -326,6 +483,12 @@ focus_tree = {
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Keisuke_Okada
+		}
+		mutually_exclusive = {
+			focus = JAP_Mitsumasa_Yonai
 		}
 		mutually_exclusive = {
 			focus = JAP_Kantaro_Suzuki
@@ -409,11 +572,11 @@ focus_tree = {
 		id = JAP_Appointment_of_innovative_bureaucrats
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_New_institutional_movement
+		x = 0
+		y = 2
+		relative_position_id = JAP_Fumimaro_Konoe
 		prerequisite = {
-			focus = JAP_New_institutional_movement
+			focus = JAP_Fumimaro_Konoe
 		}
 		completion_reward = {
 		}
@@ -471,11 +634,17 @@ focus_tree = {
 		id = JAP_Kuniaki_Koiso
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 5
+		x = 7
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Keisuke_Okada
+		}
+		mutually_exclusive = {
+			focus = JAP_Mitsumasa_Yonai
 		}
 		mutually_exclusive = {
 			focus = JAP_Kantaro_Suzuki
@@ -511,8 +680,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#保守官僚の任命
-		id = JAP_Conservative_bureaucratic_appointments
+	focus = {#半島を内地に
+		id = JAP_Bringing_the_peninsula_inland
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = 0
@@ -525,15 +694,15 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#半島を内地に
-		id = JAP_Bringing_the_peninsula_inland
+	focus = {#保守官僚の任命
+		id = JAP_Conservative_bureaucratic_appointments
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -1
-		y = 1
-		relative_position_id = JAP_Conservative_bureaucratic_appointments
+		x = 0
+		y = 3
+		relative_position_id = JAP_Kuniaki_Koiso
 		prerequisite = {
-			focus = JAP_Conservative_bureaucratic_appointments
+			focus = JAP_Kuniaki_Koiso
 		}
 		completion_reward = {
 		}
@@ -544,8 +713,8 @@ focus_tree = {
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = 0
-		y = 3
-		relative_position_id = JAP_Kuniaki_Koiso
+		y = 1
+		relative_position_id = JAP_Conservative_bureaucratic_appointments
 		prerequisite = {
 			focus = JAP_Conservative_bureaucratic_appointments
 		}
@@ -628,11 +797,17 @@ focus_tree = {
 		id = JAP_Hisaichi_Terauchi
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 10
+		x = 14
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Keisuke_Okada
+		}
+		mutually_exclusive = {
+			focus = JAP_Mitsumasa_Yonai
 		}
 		mutually_exclusive = {
 			focus = JAP_Kantaro_Suzuki
@@ -672,11 +847,17 @@ focus_tree = {
 		id = JAP_Shunroku_Hata
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 15
+		x = 21
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
 			focus = JAP_Election_of_Prime_Minister
+		}
+		mutually_exclusive = {
+			focus = JAP_Keisuke_Okada
+		}
+		mutually_exclusive = {
+			focus = JAP_Mitsumasa_Yonai
 		}
 		mutually_exclusive = {
 			focus = JAP_Kantaro_Suzuki
