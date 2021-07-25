@@ -112,21 +112,6 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#皇道派を再排除
-		id = JAP_Re-exclusion_of_imperialists
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 2
-		y = 1
-		relative_position_id = JAP_Declaration_of_martial_law
-		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
-		}
-		completion_reward = {
-			add_stability = -0.1
-		}
-	}
-	
 	focus = {#事態の安定
 		id = JAP_Stability_of_the_situation
 		icon = GFX_focus_jap_pacific_guardian
@@ -134,9 +119,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JAP_Agrarian_watchdog
-		prerequisite = {
-			focus = JAP_Re-exclusion_of_imperialists
-		}
 		prerequisite = {
 			focus = JAP_Agrarian_watchdog
 		}
@@ -152,7 +134,7 @@ focus_tree = {
 		id = JAP_Election_of_Prime_Minister
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 25
+		x = 34
 		y = 1
 		relative_position_id = JAP_1-22_Incident
 		prerequisite = {
@@ -166,7 +148,7 @@ focus_tree = {
 		id = JAP_Keisuke_Okada
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -21
+		x = -30
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -278,6 +260,23 @@ focus_tree = {
 			focus = 
 		}
 		completion_reward = {
+			diplomatic_relation = {
+    			country = USA
+    			relation = puppet
+    			active = yes
+			}
+			diplomatic_relation = {
+    			country = USA
+    			relation = military_access
+    			active = yes
+			}
+			USA = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = military_access
+    				active = yes
+				}
+			}
 		}
 	}
 	
@@ -285,7 +284,7 @@ focus_tree = {
 		id = JAP_Mitsumasa_Yonai
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -14
+		x = -20
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -397,6 +396,18 @@ focus_tree = {
 			focus = 
 		}
 		completion_reward = {
+			diplomatic_relation = {
+    			country = RUS
+    			relation = military_access
+    			active = yes
+			}
+			RUS = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = military_access
+    				active = yes
+				}
+			}
 		}
 	}
 	
@@ -404,7 +415,7 @@ focus_tree = {
 		id = JAP_Kantaro_Suzuki
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -7
+		x = -10
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -617,6 +628,18 @@ focus_tree = {
 			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
 		}
 		completion_reward = {
+			diplomatic_relation = {
+    			country = ENG
+    			relation = docking_rights
+    			active = yes
+			}
+			ENG = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = docking_rights
+    				active = yes
+				}
+			}
 		}
 	}
 	
@@ -697,88 +720,15 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#新体制運動
-		id = JAP_New_institutional_movement
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -1
-		y = 1
-		relative_position_id = JAP_Fumimaro_Konoe
-		prerequisite = {
-			focus = JAP_Fumimaro_Konoe
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#興亜派の結成
-		id = JAP_Formation_of_the_Koaha
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_Fumimaro_Konoe
-		prerequisite = {
-			focus = JAP_Fumimaro_Konoe
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#東亜協同体論
-		id = JAP_East_Asia_Cooperativism
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_Formation_of_the_Koaha
-		prerequisite = {
-			focus = JAP_Formation_of_the_Koaha
-		}
-		cost = 4.28
-		completion_reward = {
-		}
-	}
-	
-	focus = {#外地の新体制運動を加速
-		id = JAP_New_regime_movement_in_the_outer_regions
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -1
-		y = 1
-		relative_position_id = JAP_New_institutional_movement
-		prerequisite = {
-			focus = JAP_New_institutional_movement
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#革新官僚の任命
-		id = JAP_Appointment_of_innovative_bureaucrats
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 2
-		relative_position_id = JAP_Fumimaro_Konoe
-		prerequisite = {
-			focus = JAP_Fumimaro_Konoe
-		}
-		completion_reward = {
-		}
-	}
-	
 	focus = {#東方会議の開催
 		id = JAP_Organisation_of_the_Eastern_Conference
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 0
+		x = -1
 		y = 1
-		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		relative_position_id = JAP_Fumimaro_Konoe
 		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
+			focus = JAP_Fumimaro_Konoe
 		}
 		completion_reward = {
 		}
@@ -789,7 +739,7 @@ focus_tree = {
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = -1
-		y = 1
+		y = 2
 		relative_position_id = JAP_Organisation_of_the_Eastern_Conference
 		prerequisite = {
 			focus = JAP_Organisation_of_the_Eastern_Conference
@@ -801,19 +751,426 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#東洋最大の神器
+		id = JAP_The_greatest_divine_weapon_of_the_Orient
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -4
+		y = 1
+		relative_position_id = JAP_The_New_One_Nation_Movement
+		prerequisite = {
+			focus = JAP_The_New_One_Nation_Movement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日本の生命線
+		id = JAP_Japan's_lifeline
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -2
+		y = 1
+		relative_position_id = JAP_The_New_One_Nation_Movement
+		prerequisite = {
+			focus = JAP_The_New_One_Nation_Movement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#高度軍事国家の建設
+		id = JAP_Building_a_highly_military_state
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_The_New_One_Nation_Movement
+		prerequisite = {
+			focus = JAP_The_New_One_Nation_Movement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日満支経済ブロックの構築
+		id = JAP_Japan-Manchuria_Economic_Bloc
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -2
+		y = 4
+		relative_position_id = JAP_The_New_One_Nation_Movement
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+		}
+	}
+	
 	focus = {#重光・アルバレス協定
 		id = JAP_Shigemitsu-Alvarez_Agreement
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = JAP_Organisation_of_the_Eastern_Conference
 		prerequisite = {
 			focus = JAP_Organisation_of_the_Eastern_Conference
 		}
+		prerequisite = {
+			focus = JAP_Cooperation_of_the_Imperialists
+		}
 		mutually_exclusive = {
 			focus = JAP_The_New_One_Nation_Movement
 		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#フィリピンでのスペイン語の使用の禁止を撤回
+		id = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Shigemitsu-Alvarez_Agreement
+		prerequisite = {
+			focus = JAP_Shigemitsu-Alvarez_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#西班牙国ノ共産「コミンフォルム」ニ対スル協定
+		id = JAP_Agreement_on_the_Communist_Cominform_of_the_West_Bank
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
+		prerequisite = {
+			focus = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#革新官僚の任命
+		id = JAP_Appointment_of_innovative_bureaucrats
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Fumimaro_Konoe
+		prerequisite = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#皇道派の協力
+		id = JAP_Cooperation_of_the_Imperialists
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		prerequisite = {
+			focus = JAP_Appointment_of_innovative_bureaucrats
+		}
+		mutually_exclusive = {
+			focus = JAP_Formation_of_Konoe_New_Party
+		}
+		mutually_exclusive = {
+			focus = JAP_Cooperation_of_control_groups
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#国家に対する打撃
+		id = JAP_A_blow_to_the_nation
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Cooperation_of_the_Imperialists
+		prerequisite = {
+			focus = JAP_Cooperation_of_the_Imperialists
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#憲法の停止
+		id = JAP_Suspension_of_the_Constitution
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_A_blow_to_the_nation
+		prerequisite = {
+			focus = JAP_A_blow_to_the_nation
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#両院を解散
+		id = JAP_Dissolution_of_both_Houses
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Suspension_of_the_Constitution
+		prerequisite = {
+			focus = JAP_Suspension_of_the_Constitution
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#全国での戒嚴令
+		id = JAP_Martial_law_throughout_the_country
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Dissolution_of_both_Houses
+		prerequisite = {
+			focus = JAP_Dissolution_of_both_Houses
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#昭和維新を開始
+		id = JAP_Start_of_the_Showa_Restoration
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Martial_law_throughout_the_country
+		prerequisite = {
+			focus = JAP_Martial_law_throughout_the_country
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#特権階級の排除
+		id = JAP_Elimination_of_the_privileged_class
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_A_blow_to_the_nation
+		prerequisite = {
+			focus = JAP_A_blow_to_the_nation
+			focus = JAP_Formation_of_Konoe_New_Party
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#近衛新党を結成
+		id = JAP_Formation_of_Konoe_New_Party
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 3
+		y = 1
+		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		prerequisite = {
+			focus = JAP_Appointment_of_innovative_bureaucrats
+		}
+		mutually_exclusive = {
+			focus = JAP_Cooperation_of_the_Imperialists
+		}
+		mutually_exclusive = {
+			focus = JAP_Cooperation_of_control_groups
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#新体制運動を再加速
+		id = JAP_Re-acceleration_of_the_new_regime_movement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Formation_of_Konoe_New_Party
+		prerequisite = {
+			focus = JAP_Formation_of_Konoe_New_Party
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#外地の新体制運動を加速
+		id = JAP_New_regime_movement_in_the_outer_regions
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		prerequisite = {
+			focus = JAP_Re-acceleration_of_the_new_regime_movement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#太平洋経済ブロックの構築
+		id = JAP_Building_the_Pacific_Economic_Bloc
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_New_regime_movement_in_the_outer_regions
+		prerequisite = {
+			focus = JAP_New_regime_movement_in_the_outer_regions
+		}
+		prerequisite = {
+			focus = JAP_Competition_with_the_imperialist_powers
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#英米本位の平和主義を排す
+		id = JAP_No_Anglo-American_pacifism
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Building_the_Pacific_Economic_Bloc
+		prerequisite = {
+			focus = JAP_Building_the_Pacific_Economic_Bloc
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#私有財産制の廃止
+		id = JAP_Abolition_of_the_private_property_system
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		prerequisite = {
+			focus = JAP_Re-acceleration_of_the_new_regime_movement
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#帝国主義列強との競争
+		id = JAP_Competition_with_the_imperialist_powers
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 2
+		y = 2
+		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		prerequisite = {
+			focus = JAP_Re-acceleration_of_the_new_regime_movement
+			focus = JAP_Re-exclusion_of_imperialists
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#統制派の協力
+		id = JAP_Cooperation_of_control_groups
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 5
+		y = 1
+		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		prerequisite = {
+			focus = JAP_Appointment_of_innovative_bureaucrats
+		}
+		mutually_exclusive = {
+			focus = JAP_Cooperation_of_the_Imperialists
+		}
+		mutually_exclusive = {
+			focus = JAP_Formation_of_Konoe_New_Party
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#皇道派を再排除
+		id = JAP_Re-exclusion_of_imperialists
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 1
+		y = 2
+		relative_position_id = JAP_Cooperation_of_control_groups
+		prerequisite = {
+			focus = JAP_Cooperation_of_control_groups
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {#総力戦への対応
+		id = JAP_Response_to_total_war
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Competition_with_the_imperialist_powers
+		prerequisite = {
+			focus = JAP_Competition_with_the_imperialist_powers
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {#大陸を支配せよ!
+		id = JAP_Dominate_the_continent
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Response_to_total_war
+		prerequisite = {
+			focus = JAP_Response_to_total_war
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {#大東亜共同経済圏を確立
+		id = JAP_Establishment_of_Greater_East_Asia_Common_Economic_Area
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 5
+		y = 2
+		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		prerequisite = {
+			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_Cooperation_of_control_groups
+		}
+		cost = 4.28
 		completion_reward = {
 		}
 	}
@@ -826,9 +1183,21 @@ focus_tree = {
 		y = 7
 		relative_position_id = JAP_Fumimaro_Konoe
 		prerequisite = {
-			focus = 
+			focus = JAP_Agreement_on_the_Communist_Cominform_of_the_West_Bank
 		}
 		completion_reward = {
+			diplomatic_relation = {
+    			country = SPR
+    			relation = docking_rights
+    			active = yes
+			}
+			SPR = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = docking_rights
+    				active = yes
+				}
+			}
 		}
 	}
 	
@@ -836,7 +1205,7 @@ focus_tree = {
 		id = JAP_Kuniaki_Koiso
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 7
+		x = 10
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -999,7 +1368,7 @@ focus_tree = {
 		id = JAP_Hisaichi_Terauchi
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 14
+		x = 20
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -1119,7 +1488,7 @@ focus_tree = {
 		id = JAP_Shunroku_Hata
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = 21
+		x = 30
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -1224,9 +1593,9 @@ focus_tree = {
 	focus = {
         id = GEACPS_NF_JAP_army_00
         icon = GFX_focus_jap_pacific_guardian
-        x = 75
+        x = 18
         y = 0
-		relative_position_id = JAP_1-22_Incident
+		relative_position_id = GEACPS_NF_JAP_navy_big_ships
         cost = 4.28
         completion_reward = {
 
@@ -1236,7 +1605,7 @@ focus_tree = {
     focus = {
         id = GEACPS_NF_JAP_navy_big_ships
         icon = GFX_focus_jap_pacific_guardian
-        x = 55
+        x = 70
         y = 0
         relative_position_id = JAP_1-22_Incident
         cost = 4.28
@@ -1600,7 +1969,7 @@ focus_tree = {
 	focus = {
 		id = GEACPS_NF_JAP_navy_small_ships
 		icon = GFX_focus_jap_pacific_guardian
-		x = 8
+		x = 7
 		y = 0
 		relative_position_id = GEACPS_NF_JAP_navy_big_ships
 
