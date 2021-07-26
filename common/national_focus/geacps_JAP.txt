@@ -720,8 +720,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#東方会議の開催
-		id = JAP_Organisation_of_the_Eastern_Conference
+	focus = {#近衛外交
+		id = JAP_Konoe_Diplomacy
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = -1
@@ -734,94 +734,15 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#一國新体制運動論
-		id = JAP_The_New_One_Nation_Movement
+	focus = {#スペインとの交渉
+		id = JAP_Negotiations_with_Spain
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
-		x = -1
-		y = 2
-		relative_position_id = JAP_Organisation_of_the_Eastern_Conference
-		prerequisite = {
-			focus = JAP_Organisation_of_the_Eastern_Conference
-		}
-		mutually_exclusive = {
-			focus = JAP_Shigemitsu-Alvarez_Agreement
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#東洋最大の神器
-		id = JAP_The_greatest_divine_weapon_of_the_Orient
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -4
+		x = -5
 		y = 1
-		relative_position_id = JAP_The_New_One_Nation_Movement
+		relative_position_id = JAP_Konoe_Diplomacy
 		prerequisite = {
-			focus = JAP_The_New_One_Nation_Movement
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#日本の生命線
-		id = JAP_Japan's_lifeline
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -2
-		y = 1
-		relative_position_id = JAP_The_New_One_Nation_Movement
-		prerequisite = {
-			focus = JAP_The_New_One_Nation_Movement
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#高度軍事国家の建設
-		id = JAP_Building_a_highly_military_state
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 1
-		relative_position_id = JAP_The_New_One_Nation_Movement
-		prerequisite = {
-			focus = JAP_The_New_One_Nation_Movement
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#日満支経済ブロックの構築
-		id = JAP_Japan-Manchuria_Economic_Bloc
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = -2
-		y = 4
-		relative_position_id = JAP_The_New_One_Nation_Movement
-		prerequisite = {
-			focus = 
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#重光・アルバレス協定
-		id = JAP_Shigemitsu-Alvarez_Agreement
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 1
-		y = 2
-		relative_position_id = JAP_Organisation_of_the_Eastern_Conference
-		prerequisite = {
-			focus = JAP_Organisation_of_the_Eastern_Conference
-		}
-		prerequisite = {
-			focus = JAP_Cooperation_of_the_Imperialists
-		}
-		mutually_exclusive = {
-			focus = JAP_The_New_One_Nation_Movement
+			focus = JAP_Konoe_Diplomacy
 		}
 		completion_reward = {
 		}
@@ -832,10 +753,10 @@ focus_tree = {
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
 		x = 0
-		y = 2
-		relative_position_id = JAP_Shigemitsu-Alvarez_Agreement
+		y = 1
+		relative_position_id = JAP_Negotiations_with_Spain
 		prerequisite = {
-			focus = JAP_Shigemitsu-Alvarez_Agreement
+			focus = JAP_Negotiations_with_Spain
 		}
 		completion_reward = {
 		}
@@ -852,6 +773,126 @@ focus_tree = {
 			focus = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
 		}
 		completion_reward = {
+		}
+	}
+	
+	focus = {#日西同盟
+		id = JAP_Japan-Spain_Alliance
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 3
+		relative_position_id = JAP_Agreement_on_the_Communist_Cominform_of_the_West_Bank
+		prerequisite = {
+			focus = JAP_Agreement_on_the_Communist_Cominform_of_the_West_Bank
+		}
+		completion_reward = {
+			diplomatic_relation = {
+    			country = SPR
+    			relation = docking_rights
+    			active = yes
+			}
+			SPR = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = docking_rights
+    				active = yes
+				}
+			}
+		}
+	}
+	
+	focus = {#重光・ブラムグリア協定
+		id = JAP_Shigemitsu-Bramglia_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -3
+		y = 1
+		relative_position_id = JAP_Konoe_Diplomacy
+		prerequisite = {
+			focus = JAP_Konoe_Diplomacy
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日亜同盟
+		id = JAP_Japan-Argentina_relations
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -3
+		y = 6
+		relative_position_id = JAP_Konoe_Diplomacy
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			diplomatic_relation = {
+    			country = ARG
+    			relation = docking_rights
+    			active = yes
+			}
+			ARG = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = docking_rights
+    				active = yes
+				}
+			}
+		}
+	}
+	
+	focus = {#ティモール返還
+		id = JAP_Timor_return
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Konoe_Diplomacy
+		prerequisite = {
+			focus = JAP_Konoe_Diplomacy
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#重光・サラザール協定
+		id = JAP_Shigemitsu-Salazar_Agreement
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Timor_return
+		prerequisite = {
+			focus = JAP_Timor_return
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日葡同盟
+		id = JAP_Japanese-Portuguese_Alliance
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 4.28
+		x = -1
+		y = 6
+		relative_position_id = JAP_Konoe_Diplomacy
+		prerequisite = {
+			focus = 
+		}
+		completion_reward = {
+			diplomatic_relation = {
+    			country = POR
+    			relation = docking_rights
+    			active = yes
+			}
+			POR = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = docking_rights
+    				active = yes
+				}
+			}
 		}
 	}
 	
@@ -981,7 +1022,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#近衛新党を結成
+	focus = {#近衛新党を結成#大日本党
 		id = JAP_Formation_of_Konoe_New_Party
 		icon = GFX_focus_jap_pacific_guardian
 		cost = 4.28
@@ -1172,32 +1213,6 @@ focus_tree = {
 		}
 		cost = 4.28
 		completion_reward = {
-		}
-	}
-	
-	focus = {#日西同盟
-		id = JAP_Japan-Spain_Alliance
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		x = 0
-		y = 7
-		relative_position_id = JAP_Fumimaro_Konoe
-		prerequisite = {
-			focus = JAP_Agreement_on_the_Communist_Cominform_of_the_West_Bank
-		}
-		completion_reward = {
-			diplomatic_relation = {
-    			country = SPR
-    			relation = docking_rights
-    			active = yes
-			}
-			SPR = {
-				diplomatic_relation = {
-    				country = JAP
-    				relation = docking_rights
-    				active = yes
-				}
-			}
 		}
 	}
 	
