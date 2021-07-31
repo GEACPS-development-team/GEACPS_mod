@@ -178,6 +178,21 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
+		JAP_Innovation_bureaucrats = {#革新官僚
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = eng_imperial_conscription
+			modifier = {
+				total_socialism_drift = 0.01
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
 		JAP_Korean_Tiger = {#朝鮮の虎
 			allowed = {
 				always = no

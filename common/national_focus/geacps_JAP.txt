@@ -687,7 +687,7 @@ focus_tree = {
 	
 	focus = {#近衛文麿
 		id = JAP_Fumimaro_Konoe
-		icon = GFX_focus_jap_pacific_guardian
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
@@ -1053,6 +1053,7 @@ focus_tree = {
 			focus = JAP_Fumimaro_Konoe
 		}
 		completion_reward = {
+			add_ideas = JAP_Innovation_bureaucrats
 		}
 	}
 	
@@ -1186,6 +1187,10 @@ focus_tree = {
 		}
 		cost = 4.28
 		completion_reward = {
+			set_party_name = {
+				ideology = national_populism
+				name = JAP_national_populism_party_Greater_Japan_Party
+			}
 		}
 	}
 	
