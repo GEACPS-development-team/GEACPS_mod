@@ -731,6 +731,7 @@ focus_tree = {
 			focus = JAP_Fumimaro_Konoe
 		}
 		completion_reward = {
+			add_political_power = 100
 		}
 	}
 	
@@ -745,6 +746,16 @@ focus_tree = {
 			focus = JAP_Konoe_Diplomacy
 		}
 		completion_reward = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = The_sick_in_Europe
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = A_small_country_of_coloured_people
+				}
+			}
 		}
 	}
 	
@@ -760,10 +771,10 @@ focus_tree = {
 			focus = JAP_Our_relationship_with_the_collapsed_free_world
 		}
 		completion_reward = {
-			add_opinion_modifier = {
-				ARG = {
-					target = ROOT
-					modifier = Support_for_Argentina_in_the_Falkland_Islands_dispute
+			ARG = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = Support_our_country_on_the_Falkland_Islands_dispute
 				}
 			}
 		}
@@ -839,6 +850,16 @@ focus_tree = {
 			focus = JAP_Konoe_Diplomacy
 		}
 		completion_reward = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = Ghostly_Middy
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = A_Jap's_a_Jap_and_that's_all_there_is_to_it.
+				}
+			}
 		}
 	}
 	
@@ -853,6 +874,12 @@ focus_tree = {
 			focus = JAP_Our_relationship_with_the_collapsed_free_world
 		}
 		completion_reward = {
+			SPR = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = Konoe_cabinet_makes_concessions
+				}
+			}
 		}
 	}
 	
@@ -866,7 +893,7 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
 		}
-		completion_reward = {
+		completion_reward = {#いつか追加するかも...？
 		}
 	}
 	
@@ -923,6 +950,16 @@ focus_tree = {
 			focus = JAP_Konoe_Diplomacy
 		}
 		completion_reward = {
+			add_opinion_modifier = {
+				target = RUS
+				modifier = Social_Imperialism
+			}
+			RUS = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = Anti-Japanese_Imperialism
+				}
+			}
 		}
 	}
 	
