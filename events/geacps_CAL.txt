@@ -1,0 +1,38 @@
+add_namespace = CAL
+country_event = {
+	id = CAL.0
+	title = CAL.0.t
+	desc = CAL.0.d
+	
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = CAL.0.0
+		hidden_effect = {	
+			release = CAL
+			FROM = {	country_event = CAL.1	}
+		}
+	}
+}
+country_event = {
+	id = CAL.1
+	title = CAL.1.t
+	desc = CAL.1.d
+	
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CAL.1.0
+	}
+	option = {
+		name = CAL.1.1
+		hidden_effect = {
+			CAL = {	change_tag_from = ROOT	}
+		}
+	}
+}
