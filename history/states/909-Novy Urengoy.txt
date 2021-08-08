@@ -1,16 +1,18 @@
 state = {
 	id = 909
 	name = "STATE_909"
+	manpower = 100
+	buildings_max_level_factor = 1
+	state_category = town
 	
 	history = {
 		owner = YML
 		add_core_of = YML
+		set_variable = {	YML_state_variable = 1	}
+		set_variable = {	SIB_state_variable = 1	}
 	}
 	
 	provinces = {
 		96	1729	10564
 	}
-	manpower = 100
-	buildings_max_level_factor = 1
-	state_category = town
 }

@@ -6,19 +6,17 @@ state = {
 	
 	history = {
 		owner = PHI
+		add_core_of = PHI
 		buildings = {
 			infrastructure = 3
-			12118 = {
-				naval_base = 1
-			}
+			12118 = {	naval_base = 1	}
 		}
-		
-		victory_points = {	12118	1 
-		}
-		add_core_of = PHI
+		victory_points = {	12118	1	}
+		set_variable = {	PHI_state_variable = 1	}
+		set_variable = {	EIN_state_variable = 1	}
 	}
 	
 	provinces = {
-		1261	1368	7385	7423	10186	10302	12112	12118	12153 
+		1261	1368	7385	7423	10186	10302	12112	12118	12153
 	}
 }

@@ -2,18 +2,19 @@ state = {
 	id = 798
 	name = "STATE_798"
 	provinces = {
-		919	3807	3862	3964	11826	11844 
+		919	3807	3862	3964	11826	11844
 	}
 	manpower = 531172
 	state_category = rural
 	
 	history = {
 		owner = TUR
-		victory_points = {	3862	3	}
-		victory_points = {	919	5	}
+		add_core_of = TUR
 		buildings = {
 			infrastructure = 3
 		}
-		add_core_of = TUR
+		victory_points = {	919	5	}
+		victory_points = {	3862	3	}
+		set_variable = {	TUR_state_variable = 1	}
 	}
 }

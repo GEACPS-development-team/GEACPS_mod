@@ -2,12 +2,12 @@ state = {
 	id = 341
 	name = "STATE_341"
 	manpower = 1404509
+	state_category = city
 	
 	resources = {
 		chromium = 45
 		steel = 10
 	}
-	state_category = city
 	
 	history = {
 		owner = TUR
@@ -19,8 +19,10 @@ state = {
 			arms_factory = 2
 			air_base = 4
 		}
+		set_variable = {	TUR_state_variable = 1	}
 	}
 	
 	provinces = {
-849	922	3879	3893	6895	11842	}
+		849	922	3879	3893	6895	11842
+	}
 }

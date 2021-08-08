@@ -2,6 +2,7 @@ state = {
 	id = 158
 	name = "STATE_158"
 	manpower = 4765476
+	state_category = metropolis
 	
 	resources = {
 		steel = 24
@@ -9,19 +10,18 @@ state = {
 		chromium = 2
 		tungsten = 1
 	}
-	state_category = metropolis
 	
 	history = {
 		owner = ITA
 		add_core_of = ITA
-		victory_points = {	6780	5 
-		}
 		buildings = {
 			infrastructure = 7
 			arms_factory = 7
 			industrial_complex = 1
 			air_base = 8
 		}
+		victory_points = {	6780	5	}
+		set_variable = {	ITA_state_variable = 1	}
 	}
 	
 	provinces = {

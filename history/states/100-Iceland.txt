@@ -4,17 +4,15 @@ state = {
 	manpower = 115870
 	state_category = rural
 	
-	
 	history = {
 		owner = ICE
 		add_core_of = ICE
-		victory_points = {	12674	1	}
 		buildings = {
 			infrastructure = 2
-			12674 ={
-				naval_base = 1
-			}
+			12674 ={	naval_base = 1	}
 		}
+		victory_points = {	12674	1	}
+		set_variable = {	ICE_state_variable = 1	}
 	}
 	
 	provinces = {

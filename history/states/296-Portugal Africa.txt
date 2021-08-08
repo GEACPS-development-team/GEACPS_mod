@@ -3,22 +3,21 @@ state = {
 	name = "STATE_296"
 	manpower = 364900
 	state_category = enclave
-	resources = {
-		rubber = 1
-	}
+	
+	resources = {	rubber = 1	}
+	
 	history = {
 		owner = GNB
 		add_core_of = GNB
 		victory_points = {	12891	1	}
 		buildings = {
 			infrastructure = 2
-			12891 ={
-				naval_base = 1
-			}
+			12891 ={	naval_base = 1	}
 		}
+		set_variable = {	GNB_state_variable = 1	}
 	}
 	
 	provinces = {
-		12747	12891 
+		12747	12891
 	}
 }

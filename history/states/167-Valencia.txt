@@ -6,24 +6,20 @@ state = {
 	
 	history = {
 		owner = SPR
-		victory_points = {	6906	10
-		}
-		victory_points = {	4098	3	}
+		add_core_of = SPR
 		buildings = {
 			infrastructure = 6
 			dockyard = 1
 			air_base = 3
-			6906 = {
-				naval_base = 3
-			}
-			4098 = {
-				naval_base = 2
-			}
+			4098 = {	naval_base = 2	}
+			6906 = {	naval_base = 3	}
 		}
-		add_core_of = SPR
+		victory_points = {	4098	3	}
+		victory_points = {	6906	10	}
+		set_variable = {	SPR_state_variable = 1	}
 	}
 	
 	provinces = {
-		962	3799	3873	4098	6817	6856	6906	6959	9889	9896 
+		962	3799	3873	4098	6817	6856	6906	6959	9889	9896
 	}
 }

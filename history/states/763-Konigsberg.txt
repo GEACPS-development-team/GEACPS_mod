@@ -7,6 +7,7 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = GER
+		add_claim_by = RUS
 		buildings = {
 			infrastructure = 6
 			anti_air_building = 2
@@ -15,6 +16,9 @@ state = {
 			6332 = {	naval_base = 5	}
 		}
 		victory_points = {	6332	10	}
+		set_variable = {	PRE_state_variable = 1	}
+		set_variable = {	EGR_state_variable = 3	}
+		set_variable = {	GER_state_variable = 3	}
 	}
 	
 	provinces = {

@@ -4,25 +4,22 @@ state = {
 	manpower = 2380000
 	state_category = town
 	
-	resources = {
-		chromium = 2
-	}
+	resources = {	chromium = 2	}
+	
 	history = {
 		owner = HAI
+		add_core_of = HAI
 		buildings = {
 			infrastructure = 4
 			arms_factory = 1
-			industrial_complex = 2 
+			industrial_complex = 2
 			air_base = 1
-			4641 = {
-				naval_base = 3
-			}
+			4641 = {	naval_base = 3	}
 		}
-		add_core_of = HAI
-		victory_points = {	4641	5 
-		}
-	
+		victory_points = {	4641	5	}
+		set_variable = {	HAI_state_variable = 1	}
 	}
+	
 	provinces = {
 		1594	1635	4641
 	}

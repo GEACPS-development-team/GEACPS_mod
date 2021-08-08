@@ -2,11 +2,9 @@ state = {
 	id = 577
 	manpower = 29299
 	name = "STATE_577"
-	
-	resources = {
-		oil = 13
-	}
 	state_category = town
+	
+	resources = {	oil = 13	}
 	
 	history = {
 		owner = RUS
@@ -14,6 +12,7 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
+		set_variable = {	SIB_state_variable = 1	}
 	}
 	
 	provinces = {

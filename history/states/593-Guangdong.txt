@@ -12,31 +12,20 @@ state = {
 	
 	history = {
 		owner = CHI
-		add_core_of = GND
 		add_core_of = CHI
+		add_core_of = GND
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			9938 = {
-				bunker = 1
-			}
-			1047 = {
-				bunker = 1
-			}
-			9938 = {
-				naval_base = 1
-			}
-			1047 = {
-				naval_base = 5
-			}
-			9938 = {
-				coastal_bunker = 1
-			}
-			1047 = {
-				coastal_bunker = 1
-			}
+			1047 = {	bunker = 1	}
+			9938 = {	bunker = 1	}
+			1047 = {	naval_base = 5	}
+			9938 = {	naval_base = 1	}
+			1047 = {	coastal_bunker = 1	}
+			9938 = {	coastal_bunker = 1	}
 		}
 		victory_points = {	1047	5	}
+		set_variable = {	GND_state_variable = 1	}
 	}
 	
 	provinces = {

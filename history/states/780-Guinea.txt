@@ -8,14 +8,12 @@ state = {
 		owner = WAF
 		add_core_of = WAF
 		add_core_of = GNA
-		victory_points = {	1909	1 
-		}
 		buildings = {
 			infrastructure = 3
-			1909 = {
-				naval_base = 1
-			}
+			1909 = {	naval_base = 1	}
 		}
+		victory_points = {	1909	1	}
+		set_variable = {	GNA_state_variable = 1	}
 	}
 	
 	provinces = {

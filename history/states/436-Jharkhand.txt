@@ -4,16 +4,15 @@ state = {
 	manpower = 14123100
 	state_category = rural
 	
-	resources = {
-		chromium = 4
-	}
+	resources = {	chromium = 4	}
 	
 	history = {
 		owner = IND
+		add_core_of = IND
 		buildings = {
 			infrastructure = 4
 		}
-	
+		set_variable = {	IND_state_variable = 1	}
 	}
 	
 	provinces = {

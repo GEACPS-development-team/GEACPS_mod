@@ -2,11 +2,9 @@ state = {
 	id = 772
 	name = "STATE_772"
 	manpower = 746415
-	
-	resources = {
-		rubber = 1
-	}
 	state_category = pastoral
+	
+	resources = {	rubber = 1	}
 	
 	history = {
 		owner = EQA
@@ -15,13 +13,12 @@ state = {
 		victory_points = {	8193	2	}
 		buildings = {
 			infrastructure = 3
-			12975 = {
-				naval_base = 1
-			}
+			12975 = {	naval_base = 1	}
 		}
+		set_variable = {	RCG_state_variable = 1	}
 	}
 	
 	provinces = {
-		2192	3109	6008	8193	12975 
+		2192	3109	6008	8193	12975
 	}
 }

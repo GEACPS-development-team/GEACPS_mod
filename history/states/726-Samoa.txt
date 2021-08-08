@@ -5,19 +5,17 @@ state = {
 	state_category = small_island
 	
 	history = {
-		owner = FSM
-		add_core_of = FSM
+		owner = JAP
 		add_core_of = SAM
-		victory_points = {	7290	1	}
 		buildings = {
 			infrastructure = 3
-			7290 = {
-				naval_base = 1
-			}
+			7290 = {	naval_base = 1	}
 		}
+		victory_points = {	7290	1	}
+		set_variable = {	SAM_state_variable = 1	}
 	}
 	
 	provinces = {
-		7290	13080 
+		7290	13080
 	}
 }

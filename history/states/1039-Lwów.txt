@@ -1,6 +1,9 @@
 state = {
 	id = 1039
 	name = "STATE_1039"
+	manpower = 3692800
+	buildings_max_level_factor = 1
+	state_category = town
 	
 	history = {
 		owner = POL
@@ -8,12 +11,10 @@ state = {
 		buildings = {
 			infrastructure = 6
 		}
+		set_variable = {	POL_state_variable = 1	}
 	}
 	
 	provinces = {
 		466	6522	11507
 	}
-	manpower = 3692800
-	buildings_max_level_factor = 1
-	state_category = town
 }

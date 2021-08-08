@@ -3,19 +3,21 @@ state = {
 	name = "STATE_136"
 	manpower = 745466
 	state_category = town
+	
 	resources = {
 		tungsten = 4
 		aluminium = 3
 	}
 	
 	history = {
-		add_core_of = SCO
 		owner = ENG
+		add_core_of = ENG
+		add_core_of = SCO
 		buildings = {
 			infrastructure = 6
 			dockyard = 2
 		}
-		add_core_of = ENG
+		set_variable = {	SCO_state_variable = 1	}
 	}
 	
 	provinces = {

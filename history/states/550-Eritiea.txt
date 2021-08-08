@@ -6,16 +6,16 @@ state = {
 	
 	history = {
 		owner = ETH
-		add_core_of = ERI
 		add_core_of = ETH
-		victory_points = {	12766	1	}
+		add_core_of = ERI
 		buildings = {
 			infrastructure = 4
 			air_base = 3
-			12766 = {
-				naval_base = 3
-			}
+			12766 = {	naval_base = 3	}
 		}
+		victory_points = {	12766	1	}
+		set_variable = {	ERI_state_variable = 1	}
+		set_variable = {	ETH_state_variable = 2	}
 	}
 	
 	provinces = {

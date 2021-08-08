@@ -7,16 +7,15 @@ state = {
 	
 	history = {
 		owner = VNC
-		add_core_of = ITA
 		add_core_of = VNC
-		victory_points = {	6626	1 
-		}
+		add_core_of = ITA
+		victory_points = {	6626	1	}
 		buildings = {
 			infrastructure = 2
-			6626 = {
-				naval_base = 5
-			}
+			6626 = {	naval_base = 5	}
 		}
+		set_variable = {	VNC_state_variable = 1	}
+		set_variable = {	ITA_state_variable = 1	}
 	}
 	
 	provinces = {

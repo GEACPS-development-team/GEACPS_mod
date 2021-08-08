@@ -2,12 +2,12 @@ state = {
 	id = 671
 	name = "STATE_671"
 	manpower = 11528000
+	state_category = town
 	
 	resources = {
 		chromium = 6
 		tungsten = 27
 	}
-	state_category = town
 	
 	history = {
 		owner = VIN
@@ -17,6 +17,7 @@ state = {
 			industrial_complex = 1
 			air_base = 1
 		}
+		set_variable = {	VIN_state_variable = 1	}
 	}
 	
 	provinces = {

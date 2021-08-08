@@ -12,14 +12,15 @@ state = {
 	
 	history = {
 		owner = CHI
-		add_core_of = GND
 		add_core_of = CHI
+		add_core_of = GND
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
 			air_base = 3
 		}
+		set_variable = {	GND_state_variable = 1	}
 	}
 	
 	provinces = {

@@ -8,11 +8,13 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = SIK
 		add_core_of = ETR
+		add_core_of = SIK
 		buildings = {
 			infrastructure = 1
 		}
+		set_variable = {	ETR_state_variable = 1	}
+		set_variable = {	SIK_state_variable = 1	}
 	}
 	
 	provinces = {

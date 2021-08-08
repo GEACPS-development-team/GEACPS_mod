@@ -2,25 +2,22 @@ state = {
 	id = 687
 	name = "STATE_687"
 	manpower = 309000
-	
-	resources = {
-		aluminium = 64
-	}
 	state_category = pastoral
+	
+	resources = {	aluminium = 64	}
 	
 	history = {
 		owner = GYA
 		add_core_of = GYA
-		victory_points = {	4982	1	}
 		buildings = {
 			infrastructure = 2
-			4982 = {
-				naval_base = 1
-			}
+			4982 = {	naval_base = 1	}
 		}
+		victory_points = {	4982	1	}
+		set_variable = {	GYA_state_variable = 1	}
 	}
 	
 	provinces = {
-		4982	8107	12716 
+		4982	8107	12716
 	}
 }

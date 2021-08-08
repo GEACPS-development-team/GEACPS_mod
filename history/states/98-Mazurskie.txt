@@ -6,14 +6,15 @@ state = {
 	history = {
 		owner = POL
 		add_core_of = POL
-		victory_points = {	362	10
-		}
 		buildings = {
 			infrastructure = 6
-			362 = {
-				naval_base = 5
-			}
+			362 = {	naval_base = 5	}
 		}
+		victory_points = {	362	10	}
+		set_variable = {	POL_state_variable = 1	}
+		set_variable = {	PRE_state_variable = 1	}
+		set_variable = {	EGR_state_variable = 4	}
+		set_variable = {	GER_state_variable = 4	}
 	}
 	
 	provinces = {

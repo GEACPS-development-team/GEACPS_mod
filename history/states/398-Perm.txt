@@ -2,11 +2,9 @@ state = {
 	id = 398
 	name = "STATE_398"
 	manpower = 2135879
-	
-	resources = {
-		aluminium = 6
-	}
 	state_category = town
+	
+	resources = {	aluminium = 6	}
 	
 	history = {
 		owner = RUS
@@ -15,6 +13,7 @@ state = {
 			infrastructure = 6
 			arms_factory = 1
 		}
+		set_variable = {	RUS_state_variable = 1	}
 	}
 	
 	provinces = {

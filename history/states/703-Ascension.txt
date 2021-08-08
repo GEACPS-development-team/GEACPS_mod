@@ -3,18 +3,18 @@ state = {
 	name = "STATE_703"
 	manpower = 458
 	state_category = tiny_island
+	
 	history = {
 		owner = SHN
 		add_core_of = SHN
 		buildings = {
 			infrastructure = 1
-			13013 = {
-				naval_base = 1
-			}
+			13013 = {	naval_base = 1	}
 		}
+		set_variable = {	SHN_state_variable = 1	}
 	}
 	
 	provinces = {
-		13013 
+		13013
 	}
 }

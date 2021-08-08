@@ -7,7 +7,6 @@ state = {
 	history = {
 		owner = ENG
 		add_core_of = ENG
-		victory_points = {	271	5	}
 		buildings = {
 			infrastructure = 7
 			arms_factory = 1
@@ -15,13 +14,11 @@ state = {
 			anti_air_building = 2
 			radar_station = 7
 			air_base = 10
-			271 = {
-				naval_base = 3
-			}
-			11374 = {
-				naval_base = 10
-			}
+			271 = {	naval_base = 3	}
+			11374 = {	naval_base = 10	}
 		}
+		victory_points = {	271	5	}
+		set_variable = {	ENG_state_variable = 1	}
 	}
 	
 	provinces = {

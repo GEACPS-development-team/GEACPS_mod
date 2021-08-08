@@ -6,18 +6,16 @@ state = {
 	
 	history = {
 		owner = POR
-		victory_points = {	1751	3 
-		}
+		add_core_of = POR
 		buildings = {
 			infrastructure = 3
-			1751 = {
-				naval_base = 3
-			}
+			1751 = {	naval_base = 3	}
 		}
-		add_core_of = POR
+		victory_points = {	1751	3	}
+		set_variable = {	POR_state_variable = 1	}
 	}
 	
 	provinces = {
-		1751 
+		1751
 	}
 }

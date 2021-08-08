@@ -1,25 +1,22 @@
 state = {
 	id = 803
 	name = "STATE_803"
-	
-	history = {
-		victory_points = {	11857	1 
-		}
-		owner = SER
-		buildings = {
-			infrastructure = 4
-	
-		}
-		add_core_of = YUG
-		add_core_of = SER
-		add_claim_by = BUL
-	
-	}
-	
-	provinces = {
-		11832	11857	11868 
-	}
 	manpower = 210000
 	buildings_max_level_factor = 1
 	state_category = pastoral
+	
+	history = {
+		owner = SER
+		add_core_of = SER
+		add_core_of = YUG
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {	11857	1	}
+		set_variable = {	SER_state_variable = 1	}
+	}
+	
+	provinces = {
+		11832	11857	11868
+	}
 }
