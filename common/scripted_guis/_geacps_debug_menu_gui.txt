@@ -31,6 +31,34 @@ scripted_gui = { #作ったGUIに効果を持たせるやつだよ
 		effects = {
 			example_button_name_click = {
 			}
+			geacps_se_ZZZ_test_event_click = {
+				ROOT = {	
+					se_ZZZ_test_event = yes
+				}
+			}
+			geacps_se_NEP_greater_nepal_event_click = {
+				ROOT = {	
+					se_NEP_greater_nepal = yes
+				}
+			}
+			geacps_se_GER_reunification_by_hohenzollern_event_click = {
+				ROOT = {	
+					se_GER_reunification_by_democratic_republic = yes
+				}
+			}
+			geacps_se_GER_reunification_by_democratic_republic_event_click = {
+				ROOT = {	
+					se_GER_reunification_by_hohenzollern = yes
+				}
+			}
+
+			geacps_se_GER_reunification_by_republic_t_event_click = {
+				ROOT = {	
+					se_GER_reunification_by_republic = yes
+				}
+			}
+
+
 		}
 		
 		triggers = {
@@ -51,4 +79,5 @@ scripted_gui = { #作ったGUIに効果を持たせるやつだよ
 			}
 		}
 	}
+
 }
