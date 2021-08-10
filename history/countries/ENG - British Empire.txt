@@ -53,13 +53,15 @@ create_dynamic_country = {
 
 #独立保障
 give_guarantee = BRM
+give_guarantee = SCZ
 give_guarantee = SIB
 give_guarantee = TIB
 
 #軍事通行権
-WGR = { give_military_access = ENG }
-SIB = { give_military_access = ENG }
 RHI = { give_military_access = ENG }
+SCZ = { give_military_access = ENG }
+SIB = { give_military_access = ENG }
+WGR = { give_military_access = ENG }
 
 #傀儡, 植民地
 AST	= {	set_colony_variable = yes	set_cosmetic_tag = AST_ENG-GBR	}
@@ -71,14 +73,17 @@ BAH	= {	set_colony_variable = yes	set_cosmetic_tag = BAH_ENG-GBR	}
 BLZ	= {	set_colony_variable = yes	set_cosmetic_tag = BLZ_ENG-GBR	}
 BMU	= {	set_colony_variable = yes	set_cosmetic_tag = BMU_ENG-GBR	}
 CYP	= {	set_colony_variable = yes	set_cosmetic_tag = CYP_ENG-GBR	}
-HKG	= {	set_colony_variable = yes	set_cosmetic_tag = HKG_ENG-GBR	}
+FIJ	= {	set_colony_variable = yes	set_cosmetic_tag = FIJ_ENG-GBR	}
 GHA	= {	set_colony_variable = yes	set_cosmetic_tag = GHA_ENG-GBR	}
 GIB	= {	set_colony_variable = yes	set_cosmetic_tag = GIB_ENG-GBR	}
 GYA	= {	set_colony_variable = yes	set_cosmetic_tag = GYA_ENG-GBR	}
+HKG	= {	set_colony_variable = yes	set_cosmetic_tag = HKG_ENG-GBR	}
 JAM	= {	set_colony_variable = yes	set_cosmetic_tag = JAM_ENG-GBR	}
+KIR	= {	set_colony_variable = yes	set_cosmetic_tag = KIR_ENG-GBR	}
 LSO	= {	set_colony_variable = yes	set_cosmetic_tag = LSO_ENG-GBR	}
 MLT	= {	set_colony_variable = yes	set_cosmetic_tag = MLT_ENG-GBR	}
 MUS	= {	set_colony_variable = yes	set_cosmetic_tag = MUS_ENG-GBR	}
+PCN	= {	set_colony_variable = yes	set_cosmetic_tag = PCN_ENG-GBR	}
 SHN	= {	set_colony_variable = yes	set_cosmetic_tag = SHN_ENG-GBR	}
 SIN	= {	set_colony_variable = yes	set_cosmetic_tag = STRAITS_ENG-GBR	}
 SRL	= {	set_colony_variable = yes	set_cosmetic_tag = SRL_ENG-GBR	}
@@ -108,6 +113,7 @@ MLW	= {	set_protectorate_variable = yes	set_cosmetic_tag = MLW_ENG-GBR	}
 SAB	= {	set_protectorate_variable = yes	set_cosmetic_tag = NORTH-BORNEO_ENG-GBR	}
 SKM	= {	set_protectorate_variable = yes	}
 SML	= {	set_protectorate_variable = yes	set_cosmetic_tag = SML_ENG-GBR	}
+SOL	= {	set_protectorate_variable = yes	set_cosmetic_tag = SOL_ENG-GBR	}
 SRW	= {	set_protectorate_variable = yes	}
 SWL	= {	set_protectorate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 SYE	= {	set_protectorate_variable = yes	set_cosmetic_tag = Aden_ENG-GBR	}
@@ -131,14 +137,17 @@ set_autonomy = {	target = BAH	autonomous_state = colony	}
 set_autonomy = {	target = BLZ	autonomous_state = colony	}
 set_autonomy = {	target = BMU	autonomous_state = colony	}
 set_autonomy = {	target = CYP	autonomous_state = colony	}
-set_autonomy = {	target = HKG	autonomous_state = colony	}
+set_autonomy = {	target = FIJ	autonomous_state = colony	}
 set_autonomy = {	target = GHA	autonomous_state = colony	}
 set_autonomy = {	target = GIB	autonomous_state = colony	}
 set_autonomy = {	target = GYA	autonomous_state = colony	}
+set_autonomy = {	target = HKG	autonomous_state = colony	}
 set_autonomy = {	target = JAM	autonomous_state = colony	}
+set_autonomy = {	target = KIR	autonomous_state = colony	}
 set_autonomy = {	target = LSO	autonomous_state = colony	}
 set_autonomy = {	target = MLT	autonomous_state = colony	}
 set_autonomy = {	target = MUS	autonomous_state = colony	}
+set_autonomy = {	target = PCN	autonomous_state = colony	}
 set_autonomy = {	target = SHN	autonomous_state = colony	}
 set_autonomy = {	target = SIN	autonomous_state = colony	}
 set_autonomy = {	target = SRL	autonomous_state = colony	}
@@ -169,6 +178,7 @@ set_autonomy = {	target = MLW	autonomous_state = protected_territory	}
 set_autonomy = {	target = SAB	autonomous_state = protected_territory	}
 set_autonomy = {	target = SKM	autonomous_state = protected_territory	}
 set_autonomy = {	target = SML	autonomous_state = protected_territory	}
+set_autonomy = {	target = SOL	autonomous_state = protected_territory	}
 set_autonomy = {	target = SRW	autonomous_state = protected_territory	}
 set_autonomy = {	target = SWL	autonomous_state = protected_territory	}
 set_autonomy = {	target = SYE	autonomous_state = protected_territory	}
@@ -189,3 +199,21 @@ add_to_faction = ENG
 add_to_faction = EGY
 add_to_faction = WGR
 add_to_faction = SRD
+
+#
+AST = {
+	NMR = {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_AST_ENG-GBR	}
+	PNG = {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_AST_ENG-GBR	}
+	set_autonomy = {	target = PNG	autonomous_state = mandate	}
+	set_autonomy = {	target = NMB	autonomous_state = mandate	}
+}
+
+SAF = {
+	NMB = {	set_mandate_variable = yes	set_cosmetic_tag = NMB_SAF	}
+	set_autonomy = {	target = NMB	autonomous_state = mandate	}
+}
+
+NZL = {
+	SAM = {	set_mandate_variable = yes	set_cosmetic_tag = SAM_NZL_ENG-GBR	}
+	set_autonomy = {	target = SAM	autonomous_state = mandate	}
+}

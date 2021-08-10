@@ -46,7 +46,9 @@ SGR = {	give_military_access = USA	}
 #傀儡, 植民地
 ALS	= {	set_colony_variable = yes	}
 PUE	= {	set_colony_variable = yes	}
+PCZ	= {	set_lt_variable = yes	set_cosmetic_tag = PCZ_AMERICA	}
 
 set_autonomy = {	target = ALS	autonomous_state = us_territory	}
 set_autonomy = {	target = PUE	autonomous_state = us_commonwealth	}
 set_autonomy = {	target = AT3	autonomous_state = occupied_territory	}
+set_autonomy = {	target = PCZ	autonomous_state = leased_territory	}

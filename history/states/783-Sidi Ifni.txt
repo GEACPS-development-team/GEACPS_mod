@@ -5,13 +5,15 @@ state = {
 	state_category = pastoral
 	
 	history = {
-		owner = SPR
+		owner = IFN
+		add_core_of = IFN
 		add_core_of = MOR
 		buildings = {
 			infrastructure = 1
 			12857 = {	naval_base = 1	}
 		}
 		victory_points = {	12857	1	}
+		set_variable = {	IFN_state_variable = 1	}
 		set_variable = {	MOR_state_variable = 1	}
 	}
 	

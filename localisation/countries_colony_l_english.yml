@@ -582,6 +582,15 @@
  AST_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
  AST_overseas_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
  
+ FIJ_dominion:0 "$NONIDEOLOGY$自治領"
+ FIJ_dominion_DEF:0 "$NONIDEOLOGY$自治領"
+ FIJ_colony:0 "$OVERLORDADJ$領$NONIDEOLOGY$植民地"
+ FIJ_colony_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$植民地"
+ FIJ_colony_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ FIJ_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ FIJ_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ FIJ_overseas_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ 
  FSM_mandate:0 "$OVERLORDADJ$委任統治領$NONIDEOLOGY$地域"
  FSM_mandate_DEF:0 "$OVERLORDADJ$委任統治領$NONIDEOLOGY$地域"
  FSM_JAP_mandate:0 "$OVERLORDADJ$委任統治領南洋諸島"
@@ -618,6 +627,18 @@
  NZL_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
  NZL_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
  NZL_overseas_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ 
+ PNG_mandate:0 "$OVERLORDADJ$委任統治領パプア及びニューギニア地域"
+ PNG_mandate_DEF:0 "$OVERLORDADJ$委任統治領パプア及びニューギニア地域"
+ PNG_mandate_ADJ:0 "$OVERLORDADJ$領パプア及びニューギニア"
+ 
+ SAM_mandate:0 "$OVERLORDADJ$委任統治領$NONIDEOLOGY$地域"
+ SAM_mandate_DEF:0 "$OVERLORDADJ$委任統治領$NONIDEOLOGY$地域"
+ SAM_mandate_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ 
+ SOL_protected_territory:0 "$OVERLORDADJ$保護領$NONIDEOLOGY$"
+ SOL_protected_territory_DEF:0 "$OVERLORDADJ$保護領$NONIDEOLOGY$"
+ SOL_protected_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
  
 ##GEACPS追加国家
 #アジア
@@ -859,6 +880,17 @@
  EQA_federation_of_colonies_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$連邦"
  EQA_federation_of_colonies_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
  
+ IFN_dominion:0 "$NONIDEOLOGY$自治領"
+ IFN_dominion_DEF:0 "$NONIDEOLOGY$自治領"
+ IFN_colony:0 "$OVERLORDADJ$領$NONIDEOLOGY$植民地"
+ IFN_colony_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$植民地""
+ IFN_colony_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ IFN_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ IFN_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ IFN_SPR_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$州"
+ IFN_SPR_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$州"
+ IFN_overseas_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ 
  LSO_dominion:0 "バストランド自治領"
  LSO_dominion_DEF:0 "バストランド自治領"
  LSO_colony:0 "$OVERLORDADJ$領バストランド植民地"
@@ -1068,6 +1100,10 @@
  NMX_us_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$準州"
  NMX_us_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
  
+ PCZ_leased_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ PCZ_leased_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ PCZ_leased_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ 
  SPM_dominion:0 "サンピエール島及びミクロン島自治領"
  SPM_dominion_DEF:0 "サンピエール島及びミクロン島自治領"
  SPM_colony:0 "$OVERLORDADJ$領サンピエール島及びミクロン島植民地"
@@ -1157,6 +1193,29 @@
  WIW_federation_of_colonies:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島連邦"
  WIW_federation_of_colonies_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$諸島連邦"
  WIW_federation_of_colonies_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$諸島"
+ 
+#大洋州
+ KIR_dominion:0 "ギルバート諸島及びエリス諸島自治領"
+ KIR_dominion_DEF:0 "ギルバート諸島及びエリス諸島自治領"
+ KIR_colony:0 "$OVERLORDADJ$領ギルバート諸島及びエリス諸島植民地"
+ KIR_colony_DEF:0 "$OVERLORDADJ$領ギルバート諸島及びエリス諸島植民地"
+ KIR_colony_ADJ:0 "$OVERLORDADJ$領ギルバート諸島及びエリス諸島"
+ KIR_overseas_territory:0 "$OVERLORDADJ$領ギルバート諸島及びエリス諸島"
+ KIR_overseas_territory_DEF:0 "$OVERLORDADJ$領ギルバート諸島及びエリス諸島"
+ KIR_overseas_territory_ADJ:0 "$OVERLORDADJ$領ギルバート諸島及びエリス諸島"
+ 
+ NMR_mandate:0 "$OVERLORDADJ$委任統治領$NONIDEOLOGY$地域"
+ NMR_mandate_DEF:0 "$OVERLORDADJ$委任統治領$NONIDEOLOGY$地域"
+ NMR_mandate_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ 
+ PCN_dominion:0 "$NONIDEOLOGY$自治領"
+ PCN_dominion_DEF:0 "$NONIDEOLOGY$自治領"
+ PCN_colony:0 "$OVERLORDADJ$領$NONIDEOLOGY$植民地"
+ PCN_colony_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$植民地"
+ PCN_colony_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
+ PCN_overseas_territory:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ PCN_overseas_territory_DEF:0 "$OVERLORDADJ$領$NONIDEOLOGY$"
+ PCN_overseas_territory_ADJ:0 "$OVERLORDADJ$領$NONIDEOLOGYADJ$"
  
 ##コズメティック
 #アジア
