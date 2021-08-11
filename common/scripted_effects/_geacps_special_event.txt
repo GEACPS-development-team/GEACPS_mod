@@ -1,55 +1,124 @@
+se_back_map_setting = {
+	if = {
+		limit = {
+			any_state = {
+				is_owned_by = ROOT
+				is_capital = yes
+				OR = {
+					is_on_continent = asia
+					is_on_continent = australia
+				}
+			}
+		}
+		set_variable = {	special_event_back_map = 1	}
+	}
+	else_if = {
+		limit = {
+			any_state = {
+				is_owned_by = ROOT
+				is_capital = yes
+				OR = {
+					is_on_continent = europe
+					is_on_continent = africa
+				}
+			}
+		}
+		set_variable = {	special_event_back_map = 2	}
+	}
+	else_if = {
+		limit = {
+			any_state = {
+				is_owned_by = ROOT
+				is_capital = yes
+				is_on_continent = north_america
+			}
+		}
+		set_variable = {	special_event_back_map = 3	}
+	}
+	else_if = {
+		limit = {
+			any_state = {
+				is_owned_by = ROOT
+				is_capital = yes
+				is_on_continent = south_america
+			}
+		}
+		set_variable = {	special_event_back_map = 4	}
+	}
+	else = {
+		set_variable = {	special_event_back_map = 0	}
+	}
+}
+
 se_ZZZ_test_event = {
 	every_country = {
-		limit = {
-			is_ai = no
-		}
+		limit = {	is_ai = no	}
 		play_song = "Test_Song_1"
-		set_variable = { special_event_ID = 1 }
-		set_variable = { special_event_back_map = 2 }
+		set_variable = {	special_event_ID = 1	}
 		set_variable = { special_event_clock_time_hour = 15 }
+		se_back_map_setting = yes
 	}
 }
 se_NEP_greater_nepal = {
 	every_country = {
-		limit = {
-			is_ai = no
-		}
+		limit = {	is_ai = no	}
 		play_song = "Sayaun_Thunga_Phulka"
-		set_variable = { special_event_ID = 2 }
-		set_variable = { special_event_back_map = 1 }
-		set_variable = { special_event_clock_time_hour = 3 }
-	}
-}
-se_GER_reunification_by_democratic_republic  = {
-	every_country = {
-		limit = {
-			is_ai = no
-		}
-		play_song = "Auferstanden_aus_Ruinen"
-		set_variable = { special_event_ID = 3 }
-		set_variable = { special_event_back_map = 2 }
-		set_variable = { special_event_clock_time_hour = 7 }
+		set_variable = {	special_event_ID = 2	}
+		set_variable = {	special_event_clock_time_hour = 3	}
+		se_back_map_setting = yes
 	}
 }
 se_GER_reunification_by_hohenzollern = {
 	every_country = {
-		limit = {
-			is_ai = no
-		}
-		play_song = "Marsch_des_einigen_Deutschlands"
-		set_variable = { special_event_ID = 4 }
-		set_variable = { special_event_back_map = 2 }
-		set_variable = { special_event_clock_time_hour = 8 }
+		limit = {	is_ai = no	}
+		play_song = "Heil_dir_im_Siegerkranz"
+		set_variable = {	special_event_ID = 3	}
+		set_variable = {	special_event_clock_time_hour = 8	}
+		se_back_map_setting = yes
+	}
+}
+se_GER_reunification_by_wittelsbach = {
+	every_country = {
+		limit = {	is_ai = no	}
+		play_song = "Heil_unserm_Konig_Heil"
+		set_variable = {	special_event_ID = 4	}
+		set_variable = {	special_event_clock_time_hour = 8	}
+		se_back_map_setting = yes
 	}
 }
 se_GER_reunification_by_republic = {
 	every_country = {
-		limit = {
-			is_ai = no
-		}
-		play_song = "Marsch_des_einigen_Deutschlands"
+		limit = {	is_ai = no	}
+		play_song = "Das_Lied_der_Deutschen"
 		set_variable = { special_event_ID = 5 }
-		set_variable = { special_event_back_map = 2 }
 		set_variable = { special_event_clock_time_hour = 8 }
+		se_back_map_setting = yes
+	}
+}
+se_GER_reunification_by_democratic_republic  = {
+	every_country = {
+		limit = {	is_ai = no	}
+		play_song = "Auferstanden_aus_Ruinen"
+		set_variable = {	special_event_ID = 6	}
+		set_variable = {	special_event_clock_time_hour = 7	}
+		se_back_map_setting = yes
+	}
+}
+se_GER_establishment_of_greater_germany  = {
+	every_country = {
+		limit = {	is_ai = no	}
+		play_song = "Was_ist_des_Deutschen_Vaterland"
+		set_variable = {	special_event_ID = 7	}
+		set_variable = {	special_event_clock_time_hour = 7	}
+		se_back_map_setting = yes
+	}
+}
+se_AUS_establishment_of_greater_germany  = {
+	every_country = {
+		limit = {	is_ai = no	}
+		play_song = "Marsch_des_einigen_Deutschlands"
+		set_variable = {	special_event_ID = 8	}
+		set_variable = {	special_event_clock_time_hour = 7	}
+		se_back_map_setting = yes
 	}
 }

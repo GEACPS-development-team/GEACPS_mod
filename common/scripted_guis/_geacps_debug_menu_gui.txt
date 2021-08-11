@@ -1,66 +1,55 @@
-scripted_gui = { #作ったGUIに効果を持たせるやつだよ
-	#デバッグメニューを開くボタン 経験値欄の隣にあるよ
-	geacps_debug_menu_open_button = { #ここの名前は適当でいい
-		window_name = "geacps_debug_menu_open_button_container"#containerWindowTypeのnameを使用する
-		context_type = player_context #よぐわがんね
-		visible = { #このGUIが見える条件
-			is_debug = yes #デバッグモードか否か
+scripted_gui = {	#作ったGUIに効果を持たせるやつだよ	#デバッグメニューを開くボタン 経験値欄の隣にあるよ
+	geacps_debug_menu_open_button = {	#ここの名前は適当でいい
+		window_name = "geacps_debug_menu_open_button_container"	#containerWindowTypeのnameを使用する
+		context_type = player_context	#よぐわがんね
+		visible = {	#このGUIが見える条件
+			is_debug = yes	#デバッグモードか否か
 		}
-		effects = { #ボタンとか押したときに起こること
-			geacps_debug_menu_open_button_button_click = { #ボタンのname_click
+		effects = {	#ボタンとか押したときに起こること
+			geacps_debug_menu_open_button_button_click = {	#ボタンのname_click
 				if = {
-					limit = {
-						has_country_flag = geacps_debug_menu_opened
-					}
-					clr_country_flag = geacps_debug_menu_opened #このボタンを押すとデバッグメニューが表示される(またはcキー
-					else = {
-						set_country_flag = geacps_debug_menu_opened
-					}
+					limit = {	has_country_flag = geacps_debug_menu_opened	}
+					clr_country_flag = geacps_debug_menu_opened	#このボタンを押すとデバッグメニューが表示される(またはcキー
+					else = {	set_country_flag = geacps_debug_menu_opened	}
 				}
 			}
 		}
 	}
-	#デバッグメニュー本体
-	geacps_debug_menu = {#ここの名前は適当でいい
-		window_name = "geacps_debug_menu_container" #containerWindowTypeのnameを使用する
-		context_type = player_context #よぐわがんね
-		visible = { #このGUIが見える条件
-			has_country_flag = geacps_debug_menu_opened #geacps_debug_menu_openedというflagを持っているか否か
+	geacps_debug_menu = {
+		window_name = "geacps_debug_menu_container"
+		context_type = player_context
+		visible = {
+			has_country_flag = geacps_debug_menu_opened	#geacps_debug_menu_openedというflagを持っているか否か
 		}
 		
 		effects = {
 			example_button_name_click = {
 			}
 			geacps_se_ZZZ_test_event_click = {
-				ROOT = {	
-					se_ZZZ_test_event = yes
-				}
+				ROOT = {	se_ZZZ_test_event = yes	}
 			}
 			geacps_se_NEP_greater_nepal_event_click = {
-				ROOT = {	
-					se_NEP_greater_nepal = yes
-				}
+				ROOT = {	se_NEP_greater_nepal = yes	}
 			}
 			geacps_se_GER_reunification_by_hohenzollern_event_click = {
-				ROOT = {	
-					se_GER_reunification_by_democratic_republic = yes
-				}
+				ROOT = {	se_GER_reunification_by_hohenzollern = yes	}
+			}
+			geacps_se_GER_reunification_by_wittelsbach_click = {
+				ROOT = {	se_GER_reunification_by_wittelsbach = yes	}
+			}
+			geacps_se_GER_reunification_by_republic_t_event_click = {
+				ROOT = {	se_GER_reunification_by_republic = yes	}
 			}
 			geacps_se_GER_reunification_by_democratic_republic_event_click = {
-				ROOT = {	
-					se_GER_reunification_by_hohenzollern = yes
-				}
+				ROOT = {	se_GER_reunification_by_democratic_republic = yes	}
 			}
-
-			geacps_se_GER_reunification_by_republic_t_event_click = {
-				ROOT = {	
-					se_GER_reunification_by_republic = yes
-				}
+			geacps_se_GER_establishment_of_greater_germany_event_click = {
+				ROOT = {	se_GER_establishment_of_greater_germany = yes	}
 			}
-
-
+			geacps_se_AUS_establishment_of_greater_germany_event_click = {
+				ROOT = {	se_AUS_establishment_of_greater_germany = yes	}
+			}
 		}
-		
 		triggers = {
 		}
 	}
