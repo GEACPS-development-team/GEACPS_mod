@@ -1,0 +1,285 @@
+spriteTypes = {
+	spriteType = {	#シナリオ選択
+		name = "GFX_bookmark_entry_bg"
+		texturefile = "gfx/interface/front/bookmark_entry_bg.png"
+		noOfFrames = 2
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {	#国家選択画面
+		name = "GFX_country_selection_bg"
+		texturefile = "gfx/interface/front/country_selection_bg.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {	#国家選択
+		name = "GFX_country_selection_entry"
+		texturefile = "gfx/interface/front/country_selection_entry.png"
+		noOfFrames = 2		
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}
+	spriteType = {	#国家選択(小)
+		name = "GFX_country_selection_minor_entry"
+		texturefile = "gfx/interface/front/country_selection_minor_entry.png"
+		noOfFrames = 2
+	}
+	spriteType = {	#実績
+		name = "GFX_enabled_achievement_icons"
+		texturefile = "gfx/interface/front/enabled_achievement_icons.png"
+		noOfFrames = 3
+	}
+	spriteType = {	#
+		name = "GFX_extended_country_button"
+		textureFile = "gfx/interface/front/extended_country_button.png"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_frontend_task_force_composition_editor_upper_bar"
+		texturefile = "gfx/interface/front/frontend_task_force_composition_editor_upper_bar.png"
+	}
+	spriteType = {
+		name = "GFX_game_settings_bg"
+		texturefile = "gfx/interface/front/game_settings_bg.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"		
+	}
+	spriteType = {	#ロードゲーム画面下部
+		name = "GFX_load_save_bottom"
+		texturefile = "gfx/interface/front/load_save_bottom.png"
+	}
+	spriteType = {	#ロードゲーム画面下部(スクリーン)
+		name = "GFX_load_save_bottom_screen"
+		texturefile = "gfx/interface/front/load_save_bottom_screen.png"
+	}
+	spriteType = {	#ロードゲーム画面上部
+		name = "GFX_load_save_top_screen"
+		texturefile = "gfx/interface/front/load_save_top_screen.png"
+	}
+	spriteType = {	#サイドパネル(右下)
+			name = "GFX_lobby_lower_right_sidepanel_bg"
+			texturefile = "gfx/interface/front/lobby_lower_right_sidepanel_bg.png"
+			effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {	#サイドパネル(右上)
+		name = "GFX_lobby_right_sidepanel_bg"
+		texturefile = "gfx/interface/front/lobby_right_sidepanel_bg.png"
+	}
+	spriteType = {	#メニュー(上)
+		name = "GFX_menu_top_bg_bg"
+		textureFile = "gfx/interface/front/menu_top_bg.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {	#ポートレート小枠
+		name = "GFX_minor_portrait_overlay"
+		texturefile = "gfx/interface/front/minor_portrait_overlay.png"
+	}
+	spriteType = {	#切断ボタン
+		name = "GFX_disconnected_button"
+		textureFile = "gfx/interface/front/save_game_disconnected.png"
+	}
+	spriteType = {	#セーブロードボタン
+		name = "GFX_save_load_file_btn"
+		textureFile = "gfx/interface/front/save_load_file_disconnected_3frames.png"
+		noOfFrames = 3
+	}
+	spriteType = {	#シナリオ選択画面
+		name = "GFX_select_date_bg"
+		texturefile = "gfx/interface/front/select_date_bg.png"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {	#シナリオ1
+		name = "GFX_select_date_1936"
+		texturefile = "gfx/interface/front/select_the_chaos_of_europe.png"
+	}
+	spriteType = {	#シナリオ2
+		name = "GFX_select_date_1939"
+		texturefile = "gfx/interface/front/select_the_gorious_far_east_empire.png"
+	}
+	
+	
+	
+	
+	spriteType = {	#実績解除不可
+		name = "GFX_game_rule_option_disallow_achievements"
+		texturefile = "gfx/interface/game_rule_option_disallow_achievements.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_strip_selected"
+		texturefile = "gfx/interface/lobby_country_mapmode_strip_selected.dds"
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_strip"
+		texturefile = "gfx/interface/lobby_country_mapmode_strip.dds"
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_lobby_player_mapmode_button"
+		texturefile = "gfx/interface/lobby_player_mapmode_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lobby_player_mapmode_button_selected"
+		texturefile = "gfx/interface/lobby_player_mapmode_button_selected.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_button"
+		texturefile = "gfx/interface/lobby_country_mapmode_button.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lobby_country_mapmode_button_selected"
+		texturefile = "gfx/interface/lobby_country_mapmode_button_selected.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_generic_checkbox3"
+		texturefile = "gfx/interface/generic_checkbox3.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_generic_checkbox2"
+		texturefile = "gfx/interface/generic_checkbox2.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_checkbox_small4"
+		texturefile = "gfx/interface/decisionview/checkbox_small4.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_checkbox_small5"
+		texturefile = "gfx/interface/decisionview/checkbox_small5.dds"
+		noOfFrames = 3
+	}
+
+	SpriteType = {
+		name = "GFX_play_button_ready"
+		texturefile = "gfx/interface/play_button_ready.dds"
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/play_button_mask.dds"
+			animationtexturefile = "gfx/interface/unitcontrol/execute_btn_texture3.dds"
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = yes			# yes or no ;)
+			animationtime = 2.0				# in seconds
+			animationdelay = 0.2			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_play_button"
+		textureFile = "gfx/interface/play_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"		
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_frontend_upper_bar"
+		size= { x=484 y=128 }
+		textureFile = "gfx/interface/tiles/tiled_frontend_upper_bar.dds"
+		borderSize = { x=70 y=70 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+        corneredTileSpriteType = {
+                name = "GFX_tiled_frontend_lower_bar"
+                size= { x=484 y=128 }
+                textureFile = "gfx//interface//tiles//tiled_frontend_lower_bar.dds"
+                borderSize = { x=70 y=70 }
+                tilingCenter = yes
+                effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+        }
+	
+        spriteType = {
+                name = "GFX_load_save_entry2"
+                texturefile = "gfx/interface/load_save_entry2.dds"
+				noOfFrames = 2
+        }		
+		
+        spriteType = {
+                name = "GFX_load_save_entry"
+                texturefile = "gfx/interface/load_save_entry.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_recruit"
+                texturefile = "gfx/interface/difficulty_button_recruit.dds"
+				noOfFrames = 2
+        }
+
+		spriteType = {
+                name = "GFX_difficulty_button_civilian"
+                texturefile = "gfx/interface/difficulty_button_civilian.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_veteran"
+                texturefile = "gfx/interface/difficulty_button_veteran.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_regular"
+                texturefile = "gfx/interface/difficulty_button_regular.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_difficulty_button_elite"
+                texturefile = "gfx/interface/difficulty_button_elite.dds"
+				noOfFrames = 2
+        }
+		
+		spriteType = {
+                name = "GFX_custom_set_button_2"
+                texturefile = "gfx/interface/custom_set_button_2.dds"
+				noOfFrames = 2
+        }
+		
+
+	spriteType = {
+		name = "GFX_custom_setting_slider_bg"
+		texturefile = "gfx/interface/custom_difficulty_slider_bg.dds"
+			
+	}
+	
+	spriteType = {
+		name = "GFX_changed_slider_indicator"
+		texturefile = "gfx/interface/changed_slider_indicator.dds"
+		noOfFrames = 2
+			
+	}
+	
+	spriteType = {
+		name = "GFX_custom_set_button"
+		texturefile = "gfx/interface/custom_set_button.dds"
+		noOfFrames = 2
+			
+	}
+	
+	spriteType = {
+		name = "GFX_mini_country_selector"
+		texturefile = "gfx/interface/diplo_countrylist_flag_frame_mini.dds"
+		noOfFrames = 2
+			
+	}
+
+	spriteType = {
+        name = "GFX_missing_dlc_warning_sign"
+        texturefile = "gfx/interface/unsafe_savegame_icon.dds"
+    }
+}
