@@ -1172,29 +1172,6 @@ release_decisions = {
 		ai_will_do = {	base = 100	}
 	}
 	
-	release_ADU = {
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	ADU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = ADU	}	}
-		}
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	ADU_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = ADU	}	}
-		}
-		complete_effect = {	country_event = fate_of_ADU.0	}
-		ai_will_do = {	base = 100	}
-	}
-	
 	release_ALB = {
 		icon = generic_prepare_civil_war
 		cost = 0
@@ -1214,7 +1191,7 @@ release_decisions = {
 			}
 			NOT = {	ROOT = {	original_tag = ALB	}	}
 		}
-		complete_effect = {	country_event = fate_of_ALB.0	}
+		complete_effect = {	country_event = fate_of_ALB.1	}
 		ai_will_do = {	base = 100	}
 	}
 	
@@ -1237,30 +1214,7 @@ release_decisions = {
 			}
 			NOT = {	ROOT = {	original_tag = AUS	}	}
 		}
-		complete_effect = {	country_event = fate_of_AUS.0	}
-		ai_will_do = {	base = 100	}
-	}
-	
-	release_BAY = {
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	BAY_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = BAY	}	}
-		}
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	BAY_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = BAY	}	}
-		}
-		complete_effect = {	country_event = fate_of_BAY.0	}
+		complete_effect = {	country_event = fate_of_AUS.1	}
 		ai_will_do = {	base = 100	}
 	}
 	
@@ -2388,29 +2342,6 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = SLV	}	}
 		}
 		complete_effect = {	country_event = fate_of_SLV.0	}
-		ai_will_do = {	base = 100	}
-	}
-	
-	release_SOV = {
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SOV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SOV	}	}
-		}
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	SOV_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = SOV	}	}
-		}
-		complete_effect = {	country_event = fate_of_SOV.0	}
 		ai_will_do = {	base = 100	}
 	}
 	
@@ -3955,29 +3886,6 @@ release_decisions = {
 		ai_will_do = {	base = 100	}
 	}
 	
-	release_CSA = {
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	CSA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = CSA	}	}
-		}
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	CSA_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = CSA	}	}
-		}
-		complete_effect = {	country_event = fate_of_CSA.0	}
-		ai_will_do = {	base = 100	}
-	}
-	
 	release_CUB = {
 		icon = generic_prepare_civil_war
 		cost = 0
@@ -5493,29 +5401,6 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = NIG	}	}
 		}
 		complete_effect = {	country_event = fate_of_NIG.0	}
-		ai_will_do = {	base = 100	}
-	}
-	
-	release_OTT = {
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	OTT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = OTT	}	}
-		}
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	OTT_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = OTT	}	}
-		}
-		complete_effect = {	country_event = fate_of_OTT.0	}
 		ai_will_do = {	base = 100	}
 	}
 	
