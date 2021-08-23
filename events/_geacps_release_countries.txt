@@ -23496,7 +23496,26 @@ country_event = {
 					}
 					retire_all_ideology_leader = yes
 					drop_cosmetic_tag = yes
-					ROOT = {	puppet = PREV	}
+					if = {
+						limit = {	ROOT = {	has_country_flag = ALS_republic_flag	}	}
+						ROOT = {	clr_country_flag = ALS_republic_flag	}
+						set_cosmetic_tag = ALS_republic
+					}
+					else_if = {
+						limit = {	ROOT = {	has_country_flag = ALS_republic_flag	}	}
+						ROOT = {	clr_country_flag = ALS_republic_flag	}
+						set_cosmetic_tag = ALS_republic
+					}
+					if = {
+						limit = {	ROOT = {	has_country_flag = ALS_colony_flag	}	}
+						if = {
+							limit = {	ROOT = {	original_tag = RUS	has_cosmetic_tag = RUS_empire	}	}
+							set_cosmetic_tag = AMERICA_RUS
+						}
+						set_colony_variable = yes
+						ROOT = {	set_autonomy = {	target = PREV	autonomous_state = colony	}	}
+					}
+					else = {	ROOT = {	puppet = PREV	}	}
 				}
 			}
 			else = {
@@ -23513,7 +23532,28 @@ country_event = {
 					}
 					retire_all_ideology_leader = yes
 					drop_cosmetic_tag = yes
-					ROOT = {	puppet = PREV	}
+					if = {
+						limit = {	ROOT = {	has_country_flag = ALS_republic_flag	}	}
+						ROOT = {	clr_country_flag = ALS_republic_flag	}
+						set_cosmetic_tag = ALS_republic
+					}
+					else_if = {
+						limit = {	ROOT = {	has_country_flag = ALS_republic_flag	}	}
+						ROOT = {	clr_country_flag = ALS_republic_flag	}
+						set_cosmetic_tag = ALS_republic
+					}
+					if = {
+						limit = {	ROOT = {	has_country_flag = ALS_colony_flag	}	}
+						if = {
+							limit = {	ROOT = {	original_tag = RUS	has_cosmetic_tag = RUS_empire	}	}
+							set_cosmetic_tag = AMERICA_RUS
+						}
+						ROOT = {
+							PREV = {	set_colony_variable = yes	}
+							set_autonomy = {	target = PREV	autonomous_state = colony	}
+						}
+					}
+					else = {	ROOT = {	puppet = PREV	}	}
 				}
 			}
 		}
@@ -23525,13 +23565,169 @@ country_event = {
 	desc = fate_of_ALS.1.d
 	is_triggered_only = yes
 	
-	option = {
+	option = {	#アラスカ地域に従順な国家を
 		name = fate_of_ALS.1.0
 		ai_chance = {	base = 10	}
+		country_event = fate_of_ALS.2
+	}
+	option = {	#友邦に領土を与えよ
+		name = fate_of_ALS.1.1
+		ai_chance = {	base = 10	}
+		trigger = {
+			all_country = {
+				OR = {
+					originl_tag = RUS
+					originl_tag = CAN
+					originl_tag = LIE
+				}
+				is_in_faction_with = ROOT
+				NOT = {	original_tag = ROOT	}
+			}
+		}
+		country_event = fate_of_ALS.3
+	}
+}
+country_event = {
+	id = fate_of_ALS.2
+	title = fate_of_ALS.2.t
+	desc = fate_of_ALS.2.d
+	is_triggered_only = yes
+	
+	option = {	#共和国として解放
+		name = fate_of_ALS.2.0
+		ai_chance = {	base = 10	}
+		ROOT = {	set_country_flag = ALS_republic_flag	}
+		country_event = fate_of_ALS.0
+	}
+	option = {	#新たなるアメリカの誕生を
+		name = fate_of_ALS.2.1
+		ai_chance = {	base = 10	}
+		trigger = {	always = no	}
+		country_event = fate_of_ALS.2
+	}
+	option = {	#植民地政府を樹立
+		name = fate_of_ALS.2.2
+		ai_chance = {	base = 100	}
+		trigger = {
+			OR = {
+				original_tag = RUS
+				original_tag = CAN
+				original_tag = USA
+				original_tag = LIE
+			}
+		}
+		ROOT = {	set_country_flag = ALS_colony_flag	}
+		country_event = fate_of_ALS.0
+	}
+	option = {	#リヒテンシュタイン＝アラスカの成立を宣言だ
+		name = fate_of_ALS.2.3
+		ai_chance = {	base = 100	}
+		trigger = {
+			original_tag = LIE
+			has_cosmetic_tag = LIE_principality
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	}
+				NOT = {	is_claimed_by = ROOT	}
+				check_variable = {	ALS_state_variable = 1	}
+			}
+			ROOT = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+		set_cosmetic_tag = LIEandALS_united_principality
+	}
+	option = {	#同君主の新たな政府を樹立
+		name = fate_of_ALS.2.4
+		ai_chance = {	base = 100	}
+		trigger = {	original_tag = LIE	}
+		ROOT = {	set_country_flag = ALS_LIE_kingdom_flag	}
 		country_event = fate_of_ALS.0
 	}
 }
+country_event = {
+	id = fate_of_ALS.3
+	title = fate_of_ALS.3.t
+	desc = fate_of_ALS.3.d
+	is_triggered_only = yes
 	
+	option = {	#ロシアに与えよう
+		name = fate_of_ALS.3.0
+		ai_chance = {	base = 10	}
+		trigger = {
+			all_country = {
+				original_tag = RUS
+				is_in_faction_with = ROOT
+				NOT = {	original_tag = ROOT	}
+			}
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				check_variable = {	ALS_state_variable = 1	}
+			}
+			every_country = {
+				limit = {
+					original_tag = RUS
+					is_in_faction_with = ROOT
+					NOT = {	original_tag = ROOT	}
+				}
+				transfer_state = PREV
+			}
+		}
+	}
+	option = {	#アメリカに与えよう
+		name = fate_of_ALS.3.0
+		ai_chance = {	base = 10	}
+		trigger = {
+			all_country = {
+				original_tag = USA
+				is_in_faction_with = ROOT
+				NOT = {	original_tag = ROOT	}
+			}
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				check_variable = {	ALS_state_variable = 1	}
+			}
+			every_country = {
+				limit = {
+					original_tag = USA
+					is_in_faction_with = ROOT
+					NOT = {	original_tag = ROOT	}
+				}
+				transfer_state = PREV
+			}
+		}
+	}
+	option = {	#リヒテンシュタイン侯殿下に彼の地を…
+		name = fate_of_ALS.3.0
+		ai_chance = {	base = 10	}
+		trigger = {
+			all_country = {
+				original_tag = LIE
+				is_in_faction_with = ROOT
+				NOT = {	original_tag = ROOT	}
+			}
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				check_variable = {	ALS_state_variable = 1	}
+			}
+			every_country = {
+				limit = {
+					original_tag = LIE
+					is_in_faction_with = ROOT
+					NOT = {	original_tag = ROOT	}
+				}
+				transfer_state = PREV
+			}
+		}
+	}
+}
+
 add_namespace = fate_of_CAL
 country_event = {
 	id = fate_of_CAL.0
