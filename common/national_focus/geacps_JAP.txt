@@ -441,6 +441,9 @@ focus_tree = {
 		prerequisite = {
 			focus = JAP_Yonai_Diplomacy
 		}
+		mutually_exclusive = {
+			focus = JAP_Red_Empire
+		}
 		completion_reward = {
 		}
 	}
@@ -473,15 +476,58 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#独立守備隊を西比利亜へ
-		id = JAP_Independent_garrison_to_West_Hialeah
+	focus = {#西比利亜自治團の支援
+		id = JAP_Support_for_the_Siberian_Autonomous_Regiment
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Freedom_to_light_up_West_Africa
+		relative_position_id = JAP_Cooperation_with_Western_countries
 		prerequisite = {
 			focus = JAP_Cooperation_with_Western_countries
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#独立守備隊を派遣
+		id = JAP_Sending_an_independent_garrison
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Freedom_to_light_up_West_Africa
+		prerequisite = {
+			focus = JAP_Freedom_to_light_up_West_Africa
+			focus = JAP_Cossack_Country
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#貝加爾湖・黒龍江鉄道に投資
+		id = JAP_Investment_in_the_Heilongjiang_Railway_Kaji_Lake
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Sending_an_independent_garrison
+		prerequisite = {
+			focus = JAP_Sending_an_independent_garrison
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#烏蘇里鉄道に投資
+		id = JAP_Investment_in_Ussuri_Railway
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Sending_an_independent_garrison
+		prerequisite = {
+			focus = JAP_Sending_an_independent_garrison
 		}
 		completion_reward = {
 		}
@@ -493,9 +539,12 @@ focus_tree = {
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Cooperation_with_Western_countries
+		relative_position_id = JAP_Sending_an_independent_garrison
 		prerequisite = {
-			focus = JAP_Independent_garrison_to_West_Hialeah
+			focus = JAP_Investment_in_the_Heilongjiang_Railway_Kaji_Lake
+		}
+		prerequisite = {
+			focus = JAP_Investment_in_Ussuri_Railway
 		}
 		completion_reward = {
 		}
@@ -505,9 +554,12 @@ focus_tree = {
 		id = JAP_Friendship_with_Siberia
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = JAP_Extension_of_the_Heilongjiang_Railway_to_Lake_Kaijia
+		prerequisite = {
+			focus = JAP_Support_for_the_Siberian_Autonomous_Regiment
+		}
 		prerequisite = {
 			focus = JAP_Extension_of_the_Heilongjiang_Railway_to_Lake_Kaijia
 		}
@@ -559,25 +611,11 @@ focus_tree = {
 		id = JAP_Dispatch_of_military_advisers
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
-		x = -1
-		y = 1
+		x = 0
+		y = 2
 		relative_position_id = JAP_Support_for_Ataman
 		prerequisite = {
 			focus = JAP_Support_for_Ataman
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#貝加爾湖・黒龍江鉄道に投資
-		id = JAP_Investment_in_the_Heilongjiang_Railway_Kaji_Lake
-		icon = GFX_focus_JAP_Losange
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_Dispatch_of_military_advisers
-		prerequisite = {
-			focus = JAP_Dispatch_of_military_advisers
 		}
 		completion_reward = {
 		}
@@ -589,9 +627,12 @@ focus_tree = {
 		cost = 4.28
 		x = -1
 		y = 1
-		relative_position_id = JAP_Investment_in_the_Heilongjiang_Railway_Kaji_Lake
+		relative_position_id = JAP_Dispatch_of_military_advisers
 		prerequisite = {
-			focus = JAP_Investment_in_the_Heilongjiang_Railway_Kaji_Lake
+			focus = JAP_Support_for_the_Siberian_Autonomous_Regiment
+		}
+		prerequisite = {
+			focus = JAP_Dispatch_of_military_advisers
 		}
 		completion_reward = {
 			diplomatic_relation = {
@@ -623,8 +664,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#
-		id = JAP_10
+	focus = {#海軍の良識派
+		id = JAP_Naval_Conscience
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 1
@@ -637,22 +678,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#
-		id = JAP_11
-		icon = GFX_focus_JAP_Losange
-		cost = 4.28
-		x = 3
-		y = 1
-		relative_position_id = JAP_A_true_peace-lover
-		prerequisite = {
-			focus = JAP_A_true_peace-lover
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#
-		id = JAP_12
+	focus = {#陸軍の制御
+		id = JAP_Military_control
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 5
