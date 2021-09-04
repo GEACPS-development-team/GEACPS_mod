@@ -678,8 +678,53 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#陸軍の制御
-		id = JAP_Military_control
+	focus = {#大角人事の報復
+		id = JAP_Retaliation_for_big_angle_appointments
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Naval_Conscience
+		prerequisite = {
+			focus = JAP_Naval_Conscience
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#左派トリオの復活
+		id = JAP_The_return_of_the_leftist_trio
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Retaliation_for_big_angle_appointments
+		prerequisite = {
+			focus = JAP_Retaliation_for_big_angle_appointments
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#太平洋の守護者
+		id = JAP_Guardians_of_the_Pacific
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 3
+		y = 6
+		relative_position_id = JAP_A_true_peace-lover
+		prerequisite = {
+			focus = JAP_The_return_of_the_leftist_trio
+		}
+		prerequisite = {
+			focus = JAP_Resolution_of_the_question_of_the_drought_of_the_Admiralty
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#軍部大臣現役武官制の廃止
+		id = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 5
@@ -687,6 +732,34 @@ focus_tree = {
 		relative_position_id = JAP_A_true_peace-lover
 		prerequisite = {
 			focus = JAP_A_true_peace-lover
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#最高幕僚長の設置
+		id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
+		prerequisite = {
+			focus = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#統帥権干犯問題の解決...?
+		id = JAP_Resolution_of_the_question_of_the_drought_of_the_Admiralty
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
+		prerequisite = {
+			focus = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
 		}
 		completion_reward = {
 		}
