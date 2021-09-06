@@ -3908,13 +3908,13 @@ country_event = {
 	desc = fate_of_ADU.1.d
 	is_triggered_only = yes
 	
-	option = {	#ƒiƒXƒ‹’©ƒOƒ‰ƒiƒ_‰¤‘‘ã‚ÌŒ`‚Å‰ğ•ú‚¹‚æ
+	option = {	#ï¿½iï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½Oï¿½ï¿½ï¿½iï¿½_ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌŒ`ï¿½Å‰ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		name = fate_of_ADU.1.0
 		ai_chance = {	base = 10	}
 		ROOT = {	set_country_flag = GRANADA_region_flag	}
 		country_event = fate_of_ADU.2
 	}
-	option = {	#ƒAƒ“ƒ_ƒ‹ƒVƒA‘Sˆæ‚É]‡‚È‘‰Æ‚ğ
+	option = {	#ï¿½Aï¿½ï¿½ï¿½_ï¿½ï¿½ï¿½Vï¿½Aï¿½Sï¿½ï¿½É]ï¿½ï¿½ï¿½Èï¿½ï¿½Æ‚ï¿½
 		name = fate_of_ADU.1.1
 		ai_chance = {	base = 10	}
 		country_event = fate_of_ADU.2
@@ -3926,13 +3926,13 @@ country_event = {
 	desc = fate_of_ADU.2.d
 	is_triggered_only = yes
 	
-	option = {	#‹¤˜a‘‚Æ‚µ‚Ä‰ğ•ú
+	option = {	#ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Ä‰ï¿½ï¿½
 		name = fate_of_ADU.2.0
 		ai_chance = {	base = 10	}
 		country_event = fate_of_ADU.0
 		ROOT = {	set_country_flag = ADU_republic_flag	}
 	}
-	option = {	#ƒOƒŒƒiƒ_ñ’·‘‚Ì•œŒÃ‚ğ
+	option = {	#ï¿½Oï¿½ï¿½ï¿½iï¿½_ï¿½ñ’·ï¿½ï¿½Ì•ï¿½ï¿½Ã‚ï¿½
 		name = fate_of_ADU.2.1
 		ai_chance = {	base = 10	}
 		country_event = fate_of_ADU.0
@@ -23343,6 +23343,69 @@ country_event = {
 	}
 }
 	
+add_namespace = fate_of_UVF
+country_event = {
+	id = fate_of_UVF.0
+	title = fate_of_UVF.0.t
+	desc = fate_of_UVF.0.d
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = fate_of_UVF.0.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = UVF	}
+				create_dynamic_country = {
+					original_tag = UVF
+					clear_autonomous_states_variable = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							NOT = {	is_core_of = ROOT	}
+							NOT = {	is_claimed_by = ROOT	}
+							check_variable = {	UVF_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	add_state_core = PREV	}
+					}
+					retire_all_ideology_leader = yes
+					drop_cosmetic_tag = yes
+					ROOT = {	puppet = PREV	}
+				}
+			}
+			else = {
+				UVF = {
+					clear_autonomous_states_variable = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							NOT = {	is_core_of = ROOT	}
+							NOT = {	is_claimed_by = ROOT	}
+							check_variable = {	UVF_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	add_state_core = PREV	}
+					}
+					retire_all_ideology_leader = yes
+					drop_cosmetic_tag = yes
+					ROOT = {	puppet = PREV	}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = fate_of_UVF.1
+	title = fate_of_UVF.1.t
+	desc = fate_of_UVF.1.d
+	is_triggered_only = yes
+	
+	option = {
+		name = fate_of_UVF.1.0
+		ai_chance = {	base = 10	}
+		country_event = fate_of_UVF.0
+	}
+}
+	
 add_namespace = fate_of_VUT
 country_event = {
 	id = fate_of_VUT.0
@@ -23403,69 +23466,6 @@ country_event = {
 		name = fate_of_VUT.1.0
 		ai_chance = {	base = 10	}
 		country_event = fate_of_VUT.0
-	}
-}
-	
-add_namespace = fate_of_WLF
-country_event = {
-	id = fate_of_WLF.0
-	title = fate_of_WLF.0.t
-	desc = fate_of_WLF.0.d
-	is_triggered_only = yes
-	hidden = yes
-	option = {
-		name = fate_of_WLF.0.0
-		ai_chance = {	base = 10	}
-		hidden_effect = {
-			if = {
-				limit = {	country_exists = WLF	}
-				create_dynamic_country = {
-					original_tag = WLF
-					clear_autonomous_states_variable = yes
-					every_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							NOT = {	is_core_of = ROOT	}
-							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	WLF_state_variable = 1	}
-						}
-						PREV = {	transfer_state = PREV	add_state_core = PREV	}
-					}
-					retire_all_ideology_leader = yes
-					drop_cosmetic_tag = yes
-					ROOT = {	puppet = PREV	}
-				}
-			}
-			else = {
-				WLF = {
-					clear_autonomous_states_variable = yes
-					every_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							NOT = {	is_core_of = ROOT	}
-							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	WLF_state_variable = 1	}
-						}
-						PREV = {	transfer_state = PREV	add_state_core = PREV	}
-					}
-					retire_all_ideology_leader = yes
-					drop_cosmetic_tag = yes
-					ROOT = {	puppet = PREV	}
-				}
-			}
-		}
-	}
-}
-country_event = {
-	id = fate_of_WLF.1
-	title = fate_of_WLF.1.t
-	desc = fate_of_WLF.1.d
-	is_triggered_only = yes
-	
-	option = {
-		name = fate_of_WLF.1.0
-		ai_chance = {	base = 10	}
-		country_event = fate_of_WLF.0
 	}
 }
 	
@@ -23565,12 +23565,12 @@ country_event = {
 	desc = fate_of_ALS.1.d
 	is_triggered_only = yes
 	
-	option = {	#ƒAƒ‰ƒXƒJ’nˆæ‚É]‡‚È‘‰Æ‚ğ
+	option = {	#ï¿½Aï¿½ï¿½ï¿½Xï¿½Jï¿½nï¿½ï¿½É]ï¿½ï¿½ï¿½Èï¿½ï¿½Æ‚ï¿½
 		name = fate_of_ALS.1.0
 		ai_chance = {	base = 10	}
 		country_event = fate_of_ALS.2
 	}
-	option = {	#—F–M‚É—Ì“y‚ğ—^‚¦‚æ
+	option = {	#ï¿½Fï¿½Mï¿½É—Ì“yï¿½ï¿½^ï¿½ï¿½ï¿½ï¿½
 		name = fate_of_ALS.1.1
 		ai_chance = {	base = 10	}
 		trigger = {
@@ -23593,19 +23593,19 @@ country_event = {
 	desc = fate_of_ALS.2.d
 	is_triggered_only = yes
 	
-	option = {	#‹¤˜a‘‚Æ‚µ‚Ä‰ğ•ú
+	option = {	#ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½Æ‚ï¿½ï¿½Ä‰ï¿½ï¿½
 		name = fate_of_ALS.2.0
 		ai_chance = {	base = 10	}
 		ROOT = {	set_country_flag = ALS_republic_flag	}
 		country_event = fate_of_ALS.0
 	}
-	option = {	#V‚½‚È‚éƒAƒƒŠƒJ‚Ì’a¶‚ğ
+	option = {	#ï¿½Vï¿½ï¿½ï¿½È‚ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½Ì’aï¿½ï¿½ï¿½ï¿½
 		name = fate_of_ALS.2.1
 		ai_chance = {	base = 10	}
 		trigger = {	always = no	}
 		country_event = fate_of_ALS.2
 	}
-	option = {	#A–¯’n­•{‚ğ÷—§
+	option = {	#ï¿½Aï¿½ï¿½ï¿½nï¿½ï¿½ï¿½{ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		name = fate_of_ALS.2.2
 		ai_chance = {	base = 100	}
 		trigger = {
@@ -23619,7 +23619,7 @@ country_event = {
 		ROOT = {	set_country_flag = ALS_colony_flag	}
 		country_event = fate_of_ALS.0
 	}
-	option = {	#ƒŠƒqƒeƒ“ƒVƒ…ƒ^ƒCƒ“ƒAƒ‰ƒXƒJ‚Ì¬—§‚ğéŒ¾‚¾
+	option = {	#ï¿½ï¿½ï¿½qï¿½eï¿½ï¿½ï¿½Vï¿½ï¿½ï¿½^ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½Xï¿½Jï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½éŒ¾ï¿½ï¿½
 		name = fate_of_ALS.2.3
 		ai_chance = {	base = 100	}
 		trigger = {
@@ -23637,7 +23637,7 @@ country_event = {
 		}
 		set_cosmetic_tag = LIEandALS_united_principality
 	}
-	option = {	#“¯ŒNå‚ÌV‚½‚È­•{‚ğ÷—§
+	option = {	#ï¿½ï¿½ï¿½Nï¿½ï¿½ÌVï¿½ï¿½ï¿½Èï¿½ï¿½{ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		name = fate_of_ALS.2.4
 		ai_chance = {	base = 100	}
 		trigger = {	original_tag = LIE	}
@@ -23651,7 +23651,7 @@ country_event = {
 	desc = fate_of_ALS.3.d
 	is_triggered_only = yes
 	
-	option = {	#ƒƒVƒA‚É—^‚¦‚æ‚¤
+	option = {	#ï¿½ï¿½ï¿½Vï¿½Aï¿½É—^ï¿½ï¿½ï¿½æ‚¤
 		name = fate_of_ALS.3.0
 		ai_chance = {	base = 10	}
 		trigger = {
@@ -23676,7 +23676,7 @@ country_event = {
 			}
 		}
 	}
-	option = {	#ƒAƒƒŠƒJ‚É—^‚¦‚æ‚¤
+	option = {	#ï¿½Aï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½É—^ï¿½ï¿½ï¿½æ‚¤
 		name = fate_of_ALS.3.0
 		ai_chance = {	base = 10	}
 		trigger = {
@@ -23701,7 +23701,7 @@ country_event = {
 			}
 		}
 	}
-	option = {	#ƒŠƒqƒeƒ“ƒVƒ…ƒ^ƒCƒ“Œò“a‰º‚É”Ş‚Ì’n‚ğc
+	option = {	#ï¿½ï¿½ï¿½qï¿½eï¿½ï¿½ï¿½Vï¿½ï¿½ï¿½^ï¿½Cï¿½ï¿½ï¿½ï¿½aï¿½ï¿½ï¿½É”Ş‚Ì’nï¿½ï¿½ï¿½c
 		name = fate_of_ALS.3.0
 		ai_chance = {	base = 10	}
 		trigger = {
