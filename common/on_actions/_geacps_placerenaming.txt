@@ -7,4 +7,25 @@ on_actions = {
 			}
 		}
 	}
+	on_subject_autonomy_level_change = {
+		effect = {
+			if = {
+				limit = {	ROOT = {	has_autonomy_state = imperial_member	}	}
+				ROOT = {
+					drop_cosmetic_tag = yes
+					meta_effect = {	
+						text = {	set_cosmetic_tag = [JAP_cosmetic_tag]	}
+						JAP_cosmetic_tag = "[THIS.GetTag]_JAP"
+					}
+				}
+			}
+			if = {
+				limit = {	ROOT = {	has_autonomy_state = imperial_overseas_territory	}	}
+				ROOT = {
+					drop_cosmetic_tag = yes
+					set_cosmetic_tag = COUNTRY_JAP
+				}
+			}
+		}
+	}
 }
