@@ -1237,7 +1237,7 @@ release_decisions = {
 			}
 			NOT = {	ROOT = {	original_tag = BEL	}	}
 		}
-		complete_effect = {	country_event = fate_of_BEL.0	}
+		complete_effect = {	country_event = fate_of_BEL.1	}
 		ai_will_do = {	base = 100	}
 	}
 	
@@ -8003,6 +8003,29 @@ release_decisions = {
 		ai_will_do = {	base = 100	}
 	}
 	
+	release_UVF = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		available = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	UVF_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = UVF	}	}
+		}
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	UVF_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = UVF	}	}
+		}
+		complete_effect = {	country_event = fate_of_UVF.0	}
+		ai_will_do = {	base = 100	}
+	}
+	
 	release_VUT = {
 		icon = generic_prepare_civil_war
 		cost = 0
@@ -8026,29 +8049,6 @@ release_decisions = {
 		ai_will_do = {	base = 100	}
 	}
 	
-	release_WLF = {
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	WLF_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = WLF	}	}
-		}
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	WLF_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = WLF	}	}
-		}
-		complete_effect = {	country_event = fate_of_WLF.0	}
-		ai_will_do = {	base = 100	}
-	}
-	
 	release_ALS = {
 		icon = generic_prepare_civil_war
 		cost = 0
@@ -8068,7 +8068,7 @@ release_decisions = {
 			}
 			NOT = {	ROOT = {	original_tag = ALS	}	}
 		}
-		complete_effect = {	country_event = fate_of_ALS.0	}
+		complete_effect = {	country_event = fate_of_ALS.1	}
 		ai_will_do = {	base = 100	}
 	}
 	

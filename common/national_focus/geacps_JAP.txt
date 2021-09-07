@@ -148,7 +148,7 @@ focus_tree = {
 		id = JAP_Keisuke_Okada
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
-		x = -41
+		x = -42
 		y = 1
 		relative_position_id = JAP_Election_of_Prime_Minister
 		prerequisite = {
@@ -249,7 +249,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#日本国及米国間相互協力及安全保障条約
+	focus = {#日本國及米國間相互協力及安全保障条約
 		id = JAP_Treaty_of_Mutual_Cooperation_and_Security_Between_the_United_States_and_Japan
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -315,8 +315,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#
-		id = JAP_6
+	focus = {#米内外交
+		id = JAP_Yonai_Diplomacy
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = -1
@@ -329,71 +329,91 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#
-		id = JAP_7
+	focus = {#赤い帝國
+		id = JAP_Red_Empire
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
-		x = -1
+		x = -5
 		y = 1
-		relative_position_id = JAP_6
+		relative_position_id = JAP_Yonai_Diplomacy
 		prerequisite = {
-			focus = JAP_6
+			focus = JAP_Yonai_Diplomacy
+		}
+		mutually_exclusive = {
+			focus = JAP_Breakwater_against_the_red
 		}
 		completion_reward = {
 		}
 	}
 	
-	focus = {#
-		id = JAP_8
+	focus = {#東側諸国との関係
+		id = JAP_Relations_with_Eastern_countries
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 2
+		relative_position_id = JAP_Red_Empire
+		prerequisite = {
+			focus = JAP_Red_Empire
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日本國及ソヴイエト連邦間ノ友好、同盟及相互援助条約
+		id = JAP_Treaty_of_Friendship_and_Mutual_Assistance_between_the_Soviet_Union_and_Japan
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Mitsumasa_Yonai
+		relative_position_id = JAP_Arita-Molotov_Agreement
 		prerequisite = {
-			focus = JAP_Mitsumasa_Yonai
+			focus = JAP_Arita-Molotov_Agreement
 		}
 		completion_reward = {
 		}
 	}
 	
-	focus = {#
-		id = JAP_9
-		icon = GFX_focus_JAP_Losange
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_Mitsumasa_Yonai
-		prerequisite = {
-			focus = JAP_Mitsumasa_Yonai
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#
-		id = JAP_10
-		icon = GFX_focus_JAP_Losange
-		cost = 4.28
-		x = 1
-		y = 1
-		relative_position_id = JAP_9
-		prerequisite = {
-			focus = JAP_9
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#日ソ同盟
-		id = JAP_The_Soviet-Japanese_Alliance
+	focus = {#有田・モロトフ協定
+		id = JAP_Arita-Molotov_Agreement
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 0
-		y = 7
-		relative_position_id = JAP_Mitsumasa_Yonai
+		y = 1
+		relative_position_id = JAP_Red_Empire
 		prerequisite = {
-			focus = 
+			focus = JAP_Red_Empire
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#雪解け
+		id = JAP_Thawing
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Relations_with_Eastern_countries
+		prerequisite = {
+			focus = JAP_Relations_with_Eastern_countries
+		}
+		prerequisite = {
+			focus = JAP_Treaty_of_Friendship_and_Mutual_Assistance_between_the_Soviet_Union_and_Japan
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#ユーラシア枢軸国
+		id = JAP_The_Soviet-Japanese_Alliance
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Thawing
+		prerequisite = {
+			focus = JAP_Thawing
 		}
 		completion_reward = {
 			diplomatic_relation = {
@@ -408,6 +428,340 @@ focus_tree = {
     				active = yes
 				}
 			}
+		}
+	}
+	
+	focus = {#赤に対する防波堤
+		id = JAP_Breakwater_against_the_red
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Yonai_Diplomacy
+		prerequisite = {
+			focus = JAP_Yonai_Diplomacy
+		}
+		mutually_exclusive = {
+			focus = JAP_Red_Empire
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#西比利亜を照らす自由
+		id = JAP_Freedom_to_light_up_West_Africa
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -2
+		y = 1
+		relative_position_id = JAP_Breakwater_against_the_red
+		prerequisite = {
+			focus = JAP_Breakwater_against_the_red
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#西側諸国との協力
+		id = JAP_Cooperation_with_Western_countries
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Freedom_to_light_up_West_Africa
+		prerequisite = {
+			focus = JAP_Freedom_to_light_up_West_Africa
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#西比利亜自治團の支援
+		id = JAP_Support_for_the_Siberian_Autonomous_Regiment
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Cooperation_with_Western_countries
+		prerequisite = {
+			focus = JAP_Cooperation_with_Western_countries
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#独立守備隊を派遣
+		id = JAP_Sending_an_independent_garrison
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Freedom_to_light_up_West_Africa
+		prerequisite = {
+			focus = JAP_Freedom_to_light_up_West_Africa
+			focus = JAP_Cossack_Country
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#貝加爾湖・黒龍江鉄道に投資
+		id = JAP_Investment_in_the_Heilongjiang_Railway_Kaji_Lake
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Sending_an_independent_garrison
+		prerequisite = {
+			focus = JAP_Sending_an_independent_garrison
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#烏蘇里鉄道に投資
+		id = JAP_Investment_in_Ussuri_Railway
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Sending_an_independent_garrison
+		prerequisite = {
+			focus = JAP_Sending_an_independent_garrison
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#貝加爾湖・黒龍江鉄道の延伸
+		id = JAP_Extension_of_the_Heilongjiang_Railway_to_Lake_Kaijia
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Sending_an_independent_garrison
+		prerequisite = {
+			focus = JAP_Investment_in_the_Heilongjiang_Railway_Kaji_Lake
+		}
+		prerequisite = {
+			focus = JAP_Investment_in_Ussuri_Railway
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日西共栄
+		id = JAP_Friendship_with_Siberia
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Extension_of_the_Heilongjiang_Railway_to_Lake_Kaijia
+		prerequisite = {
+			focus = JAP_Support_for_the_Siberian_Autonomous_Regiment
+		}
+		prerequisite = {
+			focus = JAP_Extension_of_the_Heilongjiang_Railway_to_Lake_Kaijia
+		}
+		completion_reward = {
+			diplomatic_relation = {
+    			country = RUS
+    			relation = military_access
+    			active = yes
+			}
+			RUS = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = military_access
+    				active = yes
+				}
+			}
+		}
+	}
+	
+	focus = {#コサックの國
+		id = JAP_Cossack_Country
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Breakwater_against_the_red
+		prerequisite = {
+			focus = JAP_Breakwater_against_the_red
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#アタマンの支援
+		id = JAP_Support_for_Ataman
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Cossack_Country
+		prerequisite = {
+			focus = JAP_Cossack_Country
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#軍事顧問団の派遣
+		id = JAP_Dispatch_of_military_advisers
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Support_for_Ataman
+		prerequisite = {
+			focus = JAP_Support_for_Ataman
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日知共栄
+		id = JAP_Friendship_with_Chita
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Dispatch_of_military_advisers
+		prerequisite = {
+			focus = JAP_Support_for_the_Siberian_Autonomous_Regiment
+		}
+		prerequisite = {
+			focus = JAP_Dispatch_of_military_advisers
+		}
+		completion_reward = {
+			diplomatic_relation = {
+    			country = RUS
+    			relation = military_access
+    			active = yes
+			}
+			RUS = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = military_access
+    				active = yes
+				}
+			}
+		}
+	}
+	
+	focus = {#真の平和愛好者
+		id = JAP_A_true_peace-lover
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Mitsumasa_Yonai
+		prerequisite = {
+			focus = JAP_Mitsumasa_Yonai
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#海軍の良識派
+		id = JAP_Naval_Conscience
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_A_true_peace-lover
+		prerequisite = {
+			focus = JAP_A_true_peace-lover
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#大角人事の報復
+		id = JAP_Retaliation_for_big_angle_appointments
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Naval_Conscience
+		prerequisite = {
+			focus = JAP_Naval_Conscience
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#左派トリオの復活
+		id = JAP_The_return_of_the_leftist_trio
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Retaliation_for_big_angle_appointments
+		prerequisite = {
+			focus = JAP_Retaliation_for_big_angle_appointments
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#太平洋の守護者
+		id = JAP_Guardians_of_the_Pacific
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 3
+		y = 6
+		relative_position_id = JAP_A_true_peace-lover
+		prerequisite = {
+			focus = JAP_The_return_of_the_leftist_trio
+		}
+		prerequisite = {
+			focus = JAP_Resolution_of_the_question_of_the_drought_of_the_Admiralty
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#軍部大臣現役武官制の廃止
+		id = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 5
+		y = 1
+		relative_position_id = JAP_A_true_peace-lover
+		prerequisite = {
+			focus = JAP_A_true_peace-lover
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#最高幕僚長の設置
+		id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
+		prerequisite = {
+			focus = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#統帥権干犯問題の解決...?
+		id = JAP_Resolution_of_the_question_of_the_drought_of_the_Admiralty
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
+		prerequisite = {
+			focus = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
+		}
+		completion_reward = {
 		}
 	}
 	
@@ -460,7 +814,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#英国国王の王冠にはめ込まれた最大の宝石
+	focus = {#英國國王の王冠にはめ込まれた最大の宝石
 		id = JAP_The_greatest_jewel_in_the_crown_of_an_English_king
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -516,7 +870,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#そしてもう一つの太陽の沈まぬ国
+	focus = {#そしてもう一つの太陽の沈まぬ國
 		id = JAP_And_another_land_where_the_sun_never_sets
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -604,7 +958,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#英国海軍との合同演習
+	focus = {#英國海軍との合同演習
 		id = JAP_Joint_exercises_with_the_Royal_Navy
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -932,7 +1286,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#東洋の自由主義国家
+	focus = {#東洋の自由主義國家
 		id = JAP_The_liberal_states_of_the_East
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -1140,7 +1494,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#崩壊した自由の国との関係
+	focus = {#崩壊した自由の國との関係
 		id = JAP_Our_relationship_with_the_collapsed_free_world
 		icon = GFX_focus_JAP_Our_relationship_with_the_collapsed_free_world
 		cost = 4.28
@@ -1292,7 +1646,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#バイカル・アムール鉄道の経営
+	focus = {#貝加爾・黒龍江鉄道株式会社の設立
 		id = JAP_Management_of_the_Baikal-Amur_Railway
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -1323,7 +1677,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#英米ソ本位の帝国主義を排す
+	focus = {#英米ソ本位の帝國主義を排す
 		id = JAP_No_more_Anglo-American_and_Soviet-oriented_imperialism
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -1379,7 +1733,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#国家に対する打撃
+	focus = {#國家に対する打撃
 		id = JAP_A_blow_to_the_nation
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -1424,7 +1778,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#全国での戒嚴令
+	focus = {#全國での戒嚴令
 		id = JAP_Martial_law_throughout_the_country
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
@@ -1570,7 +1924,7 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#帝国主義列強との競争
+	focus = {#帝國主義列強との競争
 		id = JAP_Competition_with_the_imperialist_powers
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
