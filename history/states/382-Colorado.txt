@@ -2,19 +2,20 @@ state = {
 	id = 382
 	name = "STATE_382"
 	manpower = 1035790
-	resources = {
-		oil = 14
-	}
 	state_category = rural
+	
+	resources = {	oil = 14	}
 	
 	history = {
 		owner = USA
 		add_core_of = USA
+		add_core_of = CLD
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
 		victory_points = {	1827	5	}
+		set_variable = {	CLD_state_variable = 1	}
 	}
 	
 	provinces = {

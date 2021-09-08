@@ -2,20 +2,20 @@ state = {
 	id = 394
 	name = "STATE_394"
 	manpower = 2939004
-	
-	resources = {
-		steel = 53
-	}
 	state_category = metropolis
+	
+	resources = {	steel = 53	}
 	
 	history = {
 		owner = USA
 		add_core_of = USA
-		victory_points = {	12357	5	}
+		add_core_of = WSC
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
 		}
+		victory_points = {	12357	5	}
+		set_variable = {	WSC_state_variable = 1	}
 	}
 	
 	provinces = {

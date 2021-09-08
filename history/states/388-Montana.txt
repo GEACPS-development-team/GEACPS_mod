@@ -2,19 +2,19 @@ state = {
 	id = 388
 	name = "STATE_388"
 	manpower = 537605
-	
-	resources = {
-		tungsten = 11
-	}
 	state_category = rural
+	
+	resources = {	tungsten = 11	}
 	
 	history = {
 		owner = USA
 		add_core_of = USA
-		victory_points = {	4860	1	}
+		add_core_of = MTA
 		buildings = {
 			infrastructure = 4
 		}
+		victory_points = {	4860	1	}
+		set_variable = {	MTA_state_variable = 1	}
 	}
 	
 	provinces = {
