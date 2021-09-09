@@ -7,20 +7,18 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		victory_points = {	788	10
-		}
-		victory_points = {	10412	15
-		}
+		add_core_of = VRG
 		buildings = {
 			infrastructure = 6
 			industrial_complex = 3
 			dockyard = 4
 			air_base = 10
 			fuel_silo = 1
-			788 = {
-				naval_base = 10
-			}
+			788 = {	naval_base = 10	}
 		}
+		victory_points = {	788	10	}
+		victory_points = {	10412	15	}
+		set_variable = {	VRG_state_variable = 1	}
 	}
 	
 	provinces = {

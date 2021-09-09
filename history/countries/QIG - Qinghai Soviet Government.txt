@@ -1,0 +1,22 @@
+﻿#青海ソビエト政府
+create_dynamic_country = {
+	original_tag = QIG
+	set_country_flag = QIG_soviet_countryflag
+	set_cosmetic_tag = QIG_soviet_government
+	set_politics = {	ruling_party = total_socialism	}
+	set_popularities = {	total_socialism = 100	}
+	
+	load_oob = CH7_1946
+	transfer_state = 1010
+	transfer_state = 868
+	
+	declare_war_on = {	target = CHI	type = civil_war	}
+	
+	create_country_leader = {
+		name = "毛沢東"
+		desc = ""
+		picture = "GFX_Mao_Zedong"
+		expire = "1976.9.9"
+		ideology = total_socialism_ideology
+	}
+}

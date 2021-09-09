@@ -9,11 +9,12 @@ create_dynamic_country = {
 	load_oob = CH0_1946
 	transfer_state = 622
 	transfer_state = 746
-	transfer_state = 1010
-	set_province_controller = 4999
 	
 	create_faction = CHINESE_PEOPLE'S_FRONT
 	add_to_faction = THIS
+	add_to_faction = CH5
+	add_to_faction = CH6
+	add_to_faction = CH7
 	declare_war_on = {	target = CHI	type = civil_war	}
 	
 	create_country_leader = {
