@@ -1,0 +1,33 @@
+ideas = {#既存国民精神
+	country = {
+		AFG_graveyard_of_empires = {#帝国の墓場
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = idea_graveyard_of_empires
+			modifier = {
+				defensive_war_stability_factor = 0.01
+				forced_surrender_limit = -0.01
+				ENG = {
+					attack_bonus_against = 0.01
+					defense_bonus_against = 0.01
+					breakthrough_bonus_against = 0.01
+				}
+				RUS = {
+					attack_bonus_against = 0.01
+					defense_bonus_against = 0.01
+					breakthrough_bonus_against = 0.01
+				}
+				USA = {
+					attack_bonus_against = 0.01
+					defense_bonus_against = 0.01
+					breakthrough_bonus_against = 0.01
+				}
+			}
+		}
+	}
+}
