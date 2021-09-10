@@ -1,0 +1,57 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_conference_action_turn_entry"
+		texturefile = "gfx/interface/peaceconference/conference_action_turn_entry.png"	
+	}
+	spriteType = {
+		name = "GFX_peace_turn_bg"
+		texturefile = "gfx/interface/peaceconference/peace_turn_bg.png"	
+	}
+	spriteType = {
+		name = "GFX_peace_drop_down_button"
+		texturefile = "gfx/interface/peaceconference/peace_drop_down_button.png"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_peace_drop_down_icon"
+		texturefile = "gfx/interface/peaceconference/peace_drop_down_icon.png"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_peace_action_bottom"
+		texturefile = "gfx/interface/peaceconference/peace_action_bottom.png"
+	}
+	spriteType = {
+		name = "GFX_select_marker"
+		texturefile = "gfx/interface/peaceconference/select_marker.png"
+	}
+	spriteType = {
+		name = "GFX_conference_top_right"
+		texturefile = "gfx/interface/peaceconference/conference_top_right.png"
+	}
+	spriteType = {
+		name = "GFX_conference_top_left"
+		texturefile = "gfx/interface/peaceconference/conference_top_left.png"
+	}
+	spriteType = {
+		name = "GFX_conference_action_header"
+		texturefile = "gfx/interface/peaceconference/conference_action_header.png"
+	}
+	spriteType = {
+		name = "GFX_conference_action_delimiter_entry"
+		texturefile = "gfx/interface/peaceconference/conference_action_delimiter_entry.png"
+	}
+	spriteType = {
+		name = "GFX_conference_action_entry_bg"
+		texturefile = "gfx/interface/peaceconference/conference_action_entry_bg.png"
+		noOfFrames = 3		
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tiled_peace_upper_bar"
+		size= { x=363 y=96 }
+		textureFile = "gfx/interface/tiles/tiled_peace_upper_bar.png"
+		borderSize = { x=52 y=52 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+}

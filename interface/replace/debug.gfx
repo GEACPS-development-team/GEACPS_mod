@@ -1,0 +1,40 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_tiled_special_cut_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/tiles/tiled_special_cut_bg.png"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_no_frame_special_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/debug/no_frame_special_bg.png"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_no_frame_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/debug/no_frame_bg.png"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+	}
+	corneredTileSpriteType = {
+		name = "GFX_placeholder_checked"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/debug/placeholder_checked.png"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+	}
+		
+	corneredTileSpriteType = {
+		name = "GFX_placeholder"
+		size= { x=192 y=192 }
+		textureFile = "gfx/interface/debug/placeholder_pink.png"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+	}
+}
