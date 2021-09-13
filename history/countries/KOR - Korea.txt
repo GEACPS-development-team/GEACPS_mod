@@ -1,31 +1,31 @@
 ﻿capital = 525
 #oob = KOR_1946
 
-set_convoys = 10
+set_convoys = 100
 
 set_politics = {
-	ruling_party = national_populism
-	last_election = "1946.1.1"
+	ruling_party = reactionary_authoritarianism
+	last_election = "1910.9.30"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	total_socialism = 1
-	radical_socialism = 3
-	social_democracy = 6
-	social_liberalism = 4
-	classical_liberalism = 7
-	liberal_conservatism = 4
-	social_conservatism = 2
-	authoritative_democracy = 5
-	reactionary_authoritarianism = 8
-	national_populism = 60
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 0
+	social_liberalism = 0
+	classical_liberalism = 0
+	liberal_conservatism = 0
+	social_conservatism = 0
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 100
+	national_populism = 0
 }
 
 create_country_leader = {
 	name = "阿部信行"
-	desc = ""
+	desc = "POLITICS_NOBUYUKI_ABE_DESC"
 	picture = "GFX_Nobuyuki_Abe"
 	expire = "1953.9.7"
-	ideology = national_populism_ideology
+	ideology = reactionary_authoritarianism_ideology
 }
