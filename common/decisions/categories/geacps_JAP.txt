@@ -13,10 +13,13 @@ JAP_national_policy_research_outline = {
 }
 
 JAP_military_clique = {#軍閥
+	priority = 100
 
 	icon = power_struggle
 
 	picture = GFX_decision_cat_picture_faction_management_bulgaria
+	
+	visible = {	has_cosmetic_tag = JAP_great_empire	}
 	
 	available = {	original_tag = JAP	}
 
