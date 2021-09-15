@@ -1,26 +1,3 @@
-#
-# List of options showing in the Game Rules screen
-#
-# format is:
-# rule_token = {
-#	name = "TEXT_KEY_FOR_NAME"
-#	required_dlc = "Name of the Required DLC"
-#	desc = "TEXT_KEY_FOR_LONG_DESC"
-#	group = "TEXT_KEY_FOR_GROUP"					# Used for filtering. A single rule can be in multiple groups 
-#	icon = gfx_option_token							# Optional icon
-#	option = {										# Unless other specified, the first option is the default option
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		allow_achievements = no						# Achievements cannot be earned if one or more game rules are set to an option that has this property set to no.
-#													# If not specified, this is set to yes for default options and no for all other options.
-#	}
-#	default = {										# Specify an option with the "default" token to override the behavior of treating the first option as the default.
-#		name = option_token
-#		text = "TEXT_KEY_FOR_OPTION_NAME"
-#		...
-#	}
-# }
-
 allow_wargoals = {
 	name = "RULE_ALLOW_WARGOALS"
 	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
@@ -278,12 +255,6 @@ allow_take_over_faction = {
 		desc = "RULE_ALLOW_TAKE_OVER_FACTION_BLOCKED_DESC"
 	}
 }
-
- ##   ##  #   # ### ###  ###      ##   ##  ### ###  ##  #  #  ## 
-#  # #  # #   # #   #  #  #      #  # #  #  #   #  #  # ## # #   
-#    #  #  # #  ##  ###   #      #### #     #   #  #  # # ##  #  
-#  # #  #  # #  #   #  #  #      #  # #  #  #   #  #  # #  #   # 
- ##   ##    #   ### #  #  #      #  #  ##   #  ###  ##  #  # ##  
 
 allow_coups = {
 	name = "RULE_ALLOW_COUPS"

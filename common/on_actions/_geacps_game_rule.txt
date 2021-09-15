@@ -1,0 +1,274 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = annex_colonial_states
+						option = OPTION_ANNEX_COLONIAL_STATES
+					}
+				}
+				every_state = {	#AST
+					limit = {	is_owned_by = PNG	}
+					AST = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#BEL
+					limit = {
+						OR = {
+							is_owned_by = COG
+							is_owned_by = R-U
+						}
+					}
+					BEL = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#DEN
+					limit = {
+						OR = {
+							is_owned_by = FRO
+							state = 1209
+							state = 1210
+							state = 1212
+							state = 101
+							state = 1211
+							state = 1213
+						}
+					}
+					DEN = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#EGY
+					limit = {
+						OR = {
+							is_owned_by = SUD
+						}
+					}
+					EGY = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#ENG
+					limit = {
+						OR = {
+							is_owned_by = BAH
+							is_owned_by = BLZ
+							is_owned_by = BMU
+							is_owned_by = CYP
+							is_owned_by = FIJ
+							is_owned_by = GHA
+							is_owned_by = GIB
+							is_owned_by = GYA
+							is_owned_by = HKG
+							is_owned_by = JAM
+							is_owned_by = KIR
+							is_owned_by = LSO
+							is_owned_by = MLT
+							is_owned_by = MUS
+							is_owned_by = PCN
+							is_owned_by = SHN
+							is_owned_by = SIN
+							is_owned_by = SRL
+							is_owned_by = SYC
+							is_owned_by = TRI
+							is_owned_by = ZAN
+							is_owned_by = ZIM
+							is_owned_by = GUE
+							is_owned_by = JER
+							is_owned_by = MNN
+							is_owned_by = LEW
+							is_owned_by = WIW
+							is_owned_by = GAM
+							is_owned_by = KEN
+							is_owned_by = NGA
+							is_owned_by = SIE
+							is_owned_by = BOT
+							is_owned_by = MLD
+							is_owned_by = MLW
+							is_owned_by = SKM
+							is_owned_by = SML
+							is_owned_by = SOL
+							is_owned_by = SWL
+							is_owned_by = SYE
+							is_owned_by = UGA
+							is_owned_by = ZAM
+							is_owned_by = AT0
+							is_owned_by = CYR
+							is_owned_by = SOM
+							is_owned_by = TRP
+							is_owned_by = AMB
+							is_owned_by = TG0
+							is_owned_by = TAN
+						}
+					}
+					ENG = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#FIN
+					limit = {
+						OR = {
+							is_owned_by = ALA
+						}
+					}
+					FIN = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#FRA
+					limit = {
+						OR = {
+							is_owned_by = CAY
+							is_owned_by = DJI
+							is_owned_by = EQA
+							is_owned_by = GDL
+							is_owned_by = IN1
+							is_owned_by = MAD
+							is_owned_by = MTQ
+							is_owned_by = SPM
+							is_owned_by = WAF
+							is_owned_by = MOR
+							is_owned_by = RHI
+							is_owned_by = SAR
+							is_owned_by = TUN
+							is_owned_by = AOS
+							is_owned_by = AT1
+							is_owned_by = FEZ
+							is_owned_by = CMR
+							is_owned_by = TOG
+						}
+					}
+					FRA = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#HOL
+					limit = {
+						OR = {
+							is_owned_by = CRC
+							is_owned_by = SUR
+						}
+					}
+					HOL = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#JAP
+					limit = {
+						OR = {
+							is_owned_by = KOR
+							is_owned_by = TWN
+							is_owned_by = HAW
+							is_owned_by = INS
+							is_owned_by = FSM
+							is_owned_by = DLI
+						}
+					}
+					JAP = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#NZL
+					limit = {
+						OR = {
+							is_owned_by = SAM
+						}
+					}
+					NZL = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#POR
+					limit = {
+						OR = {
+							is_owned_by = CPV
+							is_owned_by = STP
+							is_owned_by = MZB
+							is_owned_by = IN0
+							is_owned_by = MCA
+							is_owned_by = TLS
+							is_owned_by = ANG
+							is_owned_by = GNB
+						}
+					}
+					POR = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#SAF
+					limit = {
+						OR = {
+							is_owned_by = NMB
+						}
+					}
+					SAF = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#SPR
+					limit = {
+						OR = {
+							is_owned_by = EQG
+							is_owned_by = IFN
+							is_owned_by = WES
+							is_owned_by = MR0
+						}
+					}
+					SPR = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+				every_state = {	#USA
+					limit = {
+						OR = {
+							is_owned_by = ALS
+							is_owned_by = PUE
+							is_owned_by = PCZ
+							is_owned_by = AT3
+							state = 1223
+							state = 1224
+							state = 1225
+						}
+					}
+					USA = {
+						transfer_state = PREV
+						add_state_claim	= PREV
+					}
+				}
+
+				every_country = {
+					limit = {	is_ai = no	}
+					every_country = {	#AST
+						limit = {	original_tag = PNG	}
+						AST = {	change_tag_from = ROOT	}
+					}
+					every_country = {	#DEN
+						limit = {	
+							OR = {
+								original_tag = FRO
+								original_tag = GRL
+							}
+						}
+						DEN = {	change_tag_from = ROOT	}
+					}
+				}
+			}
+		}
+	}
+}
