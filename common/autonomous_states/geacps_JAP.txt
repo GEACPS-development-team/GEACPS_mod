@@ -18,8 +18,13 @@ autonomy_state = {
 	}
 	
 	modifier = {
-		cic_to_overlord_factor = 0.1
-		mic_to_overlord_factor = 0.1
+		autonomy_manpower_share = 0.5
+		can_master_build_for_us = 1
+		cic_to_overlord_factor = 0.5
+		mic_to_overlord_factor = 0.5
+		extra_trade_to_overlord_factor = 0.5
+		overlord_trade_cost_factor = -0.5
+		ai_desired_divisions_factor = 0
 	}
 	
 	allowed = {
@@ -44,8 +49,13 @@ autonomy_state = {
 	}
 	
 	modifier = {
-		cic_to_overlord_factor = 0.3
-		mic_to_overlord_factor = 0.3
+		autonomy_manpower_share = 0.8
+		can_master_build_for_us = 1
+		cic_to_overlord_factor = 0.8
+		mic_to_overlord_factor = 0.8
+		extra_trade_to_overlord_factor = 0.8
+		overlord_trade_cost_factor = -0.8
+		ai_desired_divisions_factor = 0
 	}
 	
 	allowed = {
@@ -70,8 +80,13 @@ autonomy_state = {
 	}
 	
 	modifier = {
-		cic_to_overlord_factor = 0.5
-		mic_to_overlord_factor = 0.5
+		autonomy_manpower_share = 1
+		can_master_build_for_us = 1
+		cic_to_overlord_factor = 1
+		mic_to_overlord_factor = 1
+		extra_trade_to_overlord_factor = 1
+		overlord_trade_cost_factor = -1
+		ai_desired_divisions_factor = 0
 	}
 	
 	allowed = {
