@@ -20,6 +20,11 @@ set_variable = { JAP_nsm_popularity = 40 }
 set_variable = { JAP_faction_interaction_cost_standard = 20 }
 set_variable = { JAP_broad_socialist_opression_cost_standard = 20 }
 
+add_opinion_modifier = {
+    target = USA
+    modifier = American_Empire
+}
+
 add_ideas = {
 	JAP_high_defence_state_system
 	JAP_planning_institute
