@@ -18,8 +18,8 @@ set_popularities = {
 	liberal_conservatism = 0
 	social_conservatism = 0
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 100
-	national_populism = 0
+	reactionary_authoritarianism = 0
+	national_populism = 100
 }
 
 create_country_leader = {
@@ -27,5 +27,24 @@ create_country_leader = {
 	desc = "POLITICS_NOBUYUKI_ABE_DESC"
 	picture = "GFX_Nobuyuki_Abe"
 	expire = "1953.9.7"
-	ideology = reactionary_authoritarianism_ideology
+	ideology = national_populism
+}
+
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+illegalization_of_social_democracy_party = yes
+illegalization_of_social_liberalism_party = yes
+illegalization_of_classical_liberalism_party = yes
+illegalization_of_liberal_conservatism_party = yes
+illegalization_of_social_conservatism_party = yes
+illegalization_of_authoritative_democracy_party = yes
+set_party_name = {	#朝鮮総督府
+	ideology = reactionary_authoritarianism
+	name = PARTY_choson_government-general
+	long_name = PARTY_choson_government-general_long
+}
+set_party_name = {	#国民総力朝鮮連盟
+	ideology = national_populism
+	name = PARTY_national_mobilization_choson_league
+	long_name = PARTY_national_mobilization_choson_league_long
 }
