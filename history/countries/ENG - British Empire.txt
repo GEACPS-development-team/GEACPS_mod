@@ -15,24 +15,6 @@ create_dynamic_country = {
     transfer_state = 1090	1090 = {	add_core_of = PREV	}
 }
 create_dynamic_country = {
-	original_tag = VIR
-	set_cosmetic_tag = VIR_ENG-GBR
-	set_politics = {	ruling_party = reactionary_authoritarianism	}
-	set_popularities = {	reactionary_authoritarianism = 100	}
-	
-	set_colony_variable = yes
-	ENG = {	set_autonomy = {	target = PREV	autonomous_state = colony	}	}
-	
-	every_state = {
-		limit = {	is_core_of = VIR	}
-		remove_core_of = PREV
-	}
-    transfer_state = 1226	1226 = {	add_core_of = PREV	}
-    transfer_state = 1227	1227 = {	add_core_of = PREV	}
-    transfer_state = 1228	1228 = {	add_core_of = PREV	}
-    transfer_state = 1229	1229 = {	add_core_of = PREV	}
-}
-create_dynamic_country = {
 	original_tag = AUS
 	set_country_flag = AUS_ENG_countryflag
 	set_cosmetic_tag = COUNTRY_ENG-GBR
@@ -49,7 +31,6 @@ create_dynamic_country = {
     transfer_state = 1005	1005 = {	add_core_of = PREV	}
     transfer_state = 1007	1007 = {	add_core_of = PREV	}
 }
-
 
 #独立保障
 give_guarantee = BRM
@@ -84,7 +65,7 @@ LSO	= {	set_colony_variable = yes	set_cosmetic_tag = LSO_ENG-GBR	}
 MLT	= {	set_colony_variable = yes	set_cosmetic_tag = MLT_ENG-GBR	}
 MUS	= {	set_colony_variable = yes	set_cosmetic_tag = MUS_ENG-GBR	}
 PCN	= {	set_colony_variable = yes	set_cosmetic_tag = PCN_ENG-GBR	}
-SHN	= {	set_colony_variable = yes	set_cosmetic_tag = SHN_ENG-GBR	}
+SHN	= {	set_colony_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 SIN	= {	set_colony_variable = yes	set_cosmetic_tag = STRAITS_ENG-GBR	}
 SRL	= {	set_colony_variable = yes	set_cosmetic_tag = SRL_ENG-GBR	}
 SYC	= {	set_colony_variable = yes	set_cosmetic_tag = SYC_ENG-GBR	}
@@ -101,10 +82,7 @@ NGA	= {	set_cp_variable = yes	set_cosmetic_tag = NGA_ENG-GBR	}
 SIE	= {	set_cp_variable = yes	set_cosmetic_tag = SIE_ENG-GBR	}
 BHU	= {	set_protectorate_variable = yes	}
 BRN	= {	set_protectorate_variable = yes	}
-KED	= {	set_protectorate_variable = yes	}
-KEL	= {	set_protectorate_variable = yes	}
 KUW	= {	set_protectorate_variable = yes	}
-JOH	= {	set_protectorate_variable = yes	}
 MAL	= {	set_protectorate_variable = yes	}
 OMA	= {	set_protectorate_variable = yes	}
 UAE	= {	set_protectorate_variable = yes	}
@@ -167,10 +145,7 @@ set_autonomy = {	target = NGA	autonomous_state = colony_and_protectorate	}
 set_autonomy = {	target = SIE	autonomous_state = colony_and_protectorate	}
 set_autonomy = {	target = BHU	autonomous_state = protected_state	}
 set_autonomy = {	target = BRN	autonomous_state = protected_state	}
-set_autonomy = {	target = KED	autonomous_state = protected_state	}
-set_autonomy = {	target = KEL	autonomous_state = protected_state	}
 set_autonomy = {	target = KUW	autonomous_state = protected_state	}
-set_autonomy = {	target = JOH	autonomous_state = protected_state	}
 set_autonomy = {	target = MAL	autonomous_state = protected_state	}
 set_autonomy = {	target = OMA	autonomous_state = protected_state	}
 set_autonomy = {	target = SAB	autonomous_state = protected_state	}

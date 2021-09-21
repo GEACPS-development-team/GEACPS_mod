@@ -74,11 +74,8 @@ add_to_faction = KAR
 add_to_faction = DON
 add_to_faction = ABK
 add_to_faction = YML
-add_to_faction = BUL
-add_to_faction = CZE
-add_to_faction = HUN
 add_to_faction = POL
-add_to_faction = ROM
+add_to_faction = EGR
 
 RUS = {	set_cosmetic_tag = RUS_SOV	set_variable = {	federal_government_variable = 1	}	}
 UKR = {	set_cosmetic_tag = UKR_SOV	}
@@ -103,10 +100,21 @@ set_autonomy = {	target = KAR	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = DON	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = ABK	autonomous_state = soviet_member_republic	}
 set_autonomy = {	target = YML	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = BUL	autonomous_state = soviet_satellite	}
-set_autonomy = {	target = CZE	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = EGR	autonomous_state = soviet_satellite	}
-set_autonomy = {	target = HUN	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = POL	autonomous_state = soviet_satellite	}
-set_autonomy = {	target = ROM	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = AT2	autonomous_state = occupied_territory	}
+
+#軍事通行権
+every_country = {
+	limit = {
+		OR = {
+			original_tag = SOV
+			has_autonomy_state = soviet_member_republic
+			has_autonomy_state = soviet_member_federal_republic
+		}
+	}
+	BUL = {	give_military_access = PREV	}
+	CZE = {	give_military_access = PREV	}
+	HUN = {	give_military_access = PREV	}
+	ROM = {	give_military_access = PREV	}
+}

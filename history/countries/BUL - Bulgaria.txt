@@ -1,34 +1,32 @@
-﻿1946.1.1 = {
-	capital = 48
-	oob = BUL_1946
-	set_cosmetic_tag = BUL_republic
+﻿capital = 48
+oob = BUL_1946
+set_cosmetic_tag = BUL_tsardom
 
-	set_convoys = 5
+set_convoys = 5
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1945.11.18"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 54
-		radical_socialism = 0
-		social_democracy = 2
-		social_liberalism = 1
-		classical_liberalism = 42
-		liberal_conservatism = 0
-		social_conservatism = 1
-		authoritative_democracy = 0
-		reactionary_authoritarianism = 0
-		national_populism = 0
-	}
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1945.11.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	total_socialism = 54
+	radical_socialism = 0
+	social_democracy = 2
+	social_liberalism = 1
+	classical_liberalism = 42
+	liberal_conservatism = 0
+	social_conservatism = 1
+	authoritative_democracy = 0
+	reactionary_authoritarianism = 0
+	national_populism = 0
+}
 
-	create_country_leader = {	#ヴァシル・ペトロフ・コラロフ
-		name = "ヴァシル・コラロフ"
-		desc = ""
-		picture = "GFX_Vasil_Kolarov"
-		expire = "1950.1.23"
-		ideology = total_socialism_ideology
-	}
+create_country_leader = {	#ヴァシル・ペトロフ・コラロフ
+	name = "ヴァシル・コラロフ"
+	desc = ""
+	picture = "GFX_Vasil_Kolarov"
+	expire = "1950.1.23"
+	ideology = total_socialism_ideology
 }
