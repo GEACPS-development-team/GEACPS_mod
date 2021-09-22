@@ -1,0 +1,190 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "jap_gunbatsu_decision_ui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		#background = {
+		#	name = "Background"		
+		#	quadTextureSprite ="GFX_scripted_gui_window_background"
+		#}
+
+		#ズヴェノ(統制派)
+		iconType ={
+			name ="production_header_bg"
+			spriteType = "GFX_decision_faction_jap_toseiha"
+			position = { x = 10 y = 30 }
+			Orientation = "UPPER_LEFT"
+		}	
+		
+		instantTextBoxType = {
+			name ="zveno_name_text"
+			position = { x = 55 y = 40 }
+			font = "hoi_18mbs"
+			text = "BUL_zveno_name_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		#社会民主労働者党広義派
+		iconType = {
+			name ="bs_icon"
+			spriteType = "GFX_decision_faction_bul_bs"
+			position = { x = 10 y = 75 }
+		}
+		
+		instantTextBoxType = {
+			name ="bs_name_text"
+			position = { x = 55 y = 85 }
+			font = "hoi_18mbs"
+			text = "BUL_bs_name_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		#農民同盟
+		iconType = {
+			name ="bzns_icon"
+			spriteType = "GFX_decision_faction_bul_bzns"
+			position = { x = 10 y = 120 }
+		}
+		
+		instantTextBoxType = {
+			name ="bzns_name_text"
+			position = { x = 55 y = 130 }
+			font = "hoi_18mbs"
+			text = "BUL_bzns_name_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		#国家社会主義運動
+		iconType = {
+			name ="nsm_icon"
+			spriteType = "GFX_decision_faction_bul_nsm"
+			position = { x = 10 y = 165 }
+		}
+		
+		instantTextBoxType = {
+			name ="nsm_name_text"
+			position = { x = 55 y = 175 }
+			font = "hoi_18mbs"
+			text = "BUL_nsm_name_text"
+			format = left
+			maxHeight = 24
+		}
+		
+		#忠誠
+		instantTextBoxType = {
+			name ="loyalty_header"
+			position = { x = 240 y = 0 }
+			font = "hoi_18mbs"
+			text = "BUL_ui_loyalty_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_zveno_loyalty_status"
+			position = { x = 240 y = 40 }
+			font = "hoi_18mbs"
+			text = "BUL_zveno_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_bs_loyalty_status"
+			position = { x = 240 y = 85 }
+			font = "hoi_18mbs"
+			text = "BUL_bs_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_bzns_loyalty_status"
+			position = { x = 240 y = 130 }
+			font = "hoi_18mbs"
+			text = "BUL_bzns_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_nsm_loyalty_status"
+			position = { x = 240 y = 175 }
+			font = "hoi_18mbs"
+			text = "BUL_nsm_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		#支持率
+		instantTextBoxType = {
+			name ="popularity_header"
+			position = { x = 380 y = 0 }
+			font = "hoi_18mbs"
+			text = "BUL_ui_popularity_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_zveno_popularity_status"
+			position = { x = 380 y = 40 }
+			font = "hoi_18mbs"
+			text = "BUL_zveno_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_bs_popularity_status"
+			position = { x = 380 y = 85 }
+			font = "hoi_18mbs"
+			text = "BUL_bs_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_bzns_popularity_status"
+			position = { x = 380 y = 130 }
+			font = "hoi_18mbs"
+			text = "BUL_bzns_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_nsm_popularity_status"
+			position = { x = 380 y = 175 }
+			font = "hoi_18mbs"
+			text = "BUL_nsm_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		#instantTextboxType = {
+		#	name = "political_title"
+		#	position = { x = 45 y = 8 }
+		#	font = "hoi_36header"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "POLITICAL_POLITICAL"
+		#	maxWidth = 400
+		#	maxHeight = 20
+		#	fixedsize = yes
+		#}
+	}
+}
