@@ -256,9 +256,7 @@ focus_tree = {
 		x = 0
 		y = 7
 		relative_position_id = JAP_Keisuke_Okada
-		prerequisite = {
-			focus = 
-		}
+		
 		completion_reward = {
 			diplomatic_relation = {
     			country = USA
@@ -1194,7 +1192,7 @@ focus_tree = {
 	}
 	
 	focus = {#婦人参政権
-		id = JAP_Women's_suffrage
+		id = JAP_Women_suffrage
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = -3
@@ -1243,7 +1241,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_Start_of_liberalisation
 		prerequisite = {
-			focus = JAP_Women's_suffrage
+			focus = JAP_Women_suffrage
 		}
 		prerequisite = {
 			focus = JAP_Repeal_of_oppressive_legislation
@@ -1415,7 +1413,7 @@ focus_tree = {
 	}
 	
 	focus = {#フォークランド諸島問題におけるアルゼンチンの支持
-		id = JAP_Argentina's_support_in_the_Falkland_Islands_dispute
+		id = JAP_Argentina_support_in_the_Falkland_Islands_dispute
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = -4
@@ -1450,7 +1448,7 @@ focus_tree = {
 	}
 	
 	focus = {#マラヤ人民抗英軍の支援
-		id = JAP_Support_for_the_Malayan_People's_Anti-British_Army
+		id = JAP_Support_for_the_Malayan_Peoples_Anti-British_Army
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 0
@@ -1485,7 +1483,7 @@ focus_tree = {
 		y = -1
 		relative_position_id = JAP_No_more_Anglo-American_and_Soviet-oriented_imperialism
 		prerequisite = {
-			focus = JAP_Support_for_the_Malayan_People's_Anti-British_Army
+			focus = JAP_Support_for_the_Malayan_Peoples_Anti-British_Army
 		}
 		prerequisite = {
 			focus = JAP_Education_for_the_Borneo_Volunteer_Army
@@ -1512,7 +1510,7 @@ focus_tree = {
 			USA = {
 				add_opinion_modifier = {
 					target = JAP
-					modifier = A_Jap's_a_Jap_and_that's_all_there_is_to_it.
+					modifier = A_Japs_a_Jap_and_thats_all_there_is_to_it
 				}
 			}
 		}
@@ -1896,7 +1894,7 @@ focus_tree = {
 	}
 	
 	focus = {#バスに乗り遅れるな
-		id = JAP_Don't_miss_the_bus
+		id = JAP_Do_not_miss_the_bus
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 0
@@ -2114,7 +2112,7 @@ focus_tree = {
 	}
 	
 	focus = {#福建は日本の生命線
-		id = JAP_Fujian_is_Japan's_lifeline
+		id = JAP_Fujian_is_Japans_lifeline
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = -1
@@ -2296,10 +2294,10 @@ focus_tree = {
 		cost = 4.28
 		x = 0
 		y = 7
-		relative_position_id = JAP_Hisaichi_Terauchi
-		prerequisite = {
-			focus = 
-		}
+		# relative_position_id = JAP_Hisaichi_Terauchi
+		# prerequisite = {
+		# 	focus = 
+		# }
 		completion_reward = {
 		}
 	}
