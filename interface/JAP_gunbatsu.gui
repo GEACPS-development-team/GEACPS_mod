@@ -1,3 +1,18 @@
+@FACTION_TEXT_X = 90
+@LOYALTY_TEXT_X = 250
+@POPULARITY_TEXT_X = 390
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 
+
+@ZVENO_Y = 30
+@ZVENO_TEXT_Y = 50
+@BS_Y = 100
+@BS_TEXT_Y = 120
+@BZNS_Y = 170
+@BZNS_TEXT_Y = 190
+@NSM_Y = 240
+@NSM_TEXT_Y = 260
+
 guiTypes = {
 
 	containerWindowType = {
@@ -17,33 +32,33 @@ guiTypes = {
 		#	quadTextureSprite ="GFX_scripted_gui_window_background"
 		#}
 
-		#ズヴェノ(統制派)
+		#統制派
 		iconType ={
 			name ="production_header_bg"
 			spriteType = "GFX_decision_faction_jap_toseiha"
-			position = { x = 10 y = 30 }
+			position = { x = @FACTION_ICONS_X y = @ZVENO_Y }
 			Orientation = "UPPER_LEFT"
 		}	
 		
 		instantTextBoxType = {
 			name ="zveno_name_text"
-			position = { x = 55 y = 40 }
+			position = { x = @FACTION_TEXT_X y = @ZVENO_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_zveno_name_text"
 			format = left
 			maxHeight = 24
 		}
 		
-		#社会民主労働者党広義派
+		#皇道派
 		iconType = {
 			name ="bs_icon"
-			spriteType = "GFX_decision_faction_bul_bs"
-			position = { x = 10 y = 75 }
+			spriteType = "GFX_decision_faction_jap_kodoha"
+			position = { x = @FACTION_ICONS_X y = @BS_Y }
 		}
 		
 		instantTextBoxType = {
 			name ="bs_name_text"
-			position = { x = 55 y = 85 }
+			position = { x = @FACTION_TEXT_X y = @BS_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_bs_name_text"
 			format = left
@@ -54,12 +69,12 @@ guiTypes = {
 		iconType = {
 			name ="bzns_icon"
 			spriteType = "GFX_decision_faction_bul_bzns"
-			position = { x = 10 y = 120 }
+			position = { x = @FACTION_ICONS_X y = @BZNS_Y }
 		}
 		
 		instantTextBoxType = {
 			name ="bzns_name_text"
-			position = { x = 55 y = 130 }
+			position = { x = @FACTION_TEXT_X y = @BZNS_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_bzns_name_text"
 			format = left
@@ -70,12 +85,12 @@ guiTypes = {
 		iconType = {
 			name ="nsm_icon"
 			spriteType = "GFX_decision_faction_bul_nsm"
-			position = { x = 10 y = 165 }
+			position = { x = @FACTION_ICONS_X y = @NSM_Y }
 		}
 		
 		instantTextBoxType = {
 			name ="nsm_name_text"
-			position = { x = 55 y = 175 }
+			position = { x = @FACTION_TEXT_X y = @NSM_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_nsm_name_text"
 			format = left
@@ -85,7 +100,7 @@ guiTypes = {
 		#忠誠
 		instantTextBoxType = {
 			name ="loyalty_header"
-			position = { x = 240 y = 0 }
+			position = { x = @LOYALTY_TEXT_X y = 0 }
 			font = "hoi_18mbs"
 			text = "BUL_ui_loyalty_header"
 			format = center
@@ -95,7 +110,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="BUL_zveno_loyalty_status"
-			position = { x = 240 y = 40 }
+			position = { x = @LOYALTY_TEXT_X y = @ZVENO_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_zveno_loyalty_status"
 			format = center
@@ -104,7 +119,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="BUL_bs_loyalty_status"
-			position = { x = 240 y = 85 }
+			position = { x = @LOYALTY_TEXT_X y = @BS_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_bs_loyalty_status"
 			format = center
@@ -113,7 +128,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="BUL_bzns_loyalty_status"
-			position = { x = 240 y = 130 }
+			position = { x = @LOYALTY_TEXT_X y = @BZNS_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_bzns_loyalty_status"
 			format = center
@@ -122,7 +137,7 @@ guiTypes = {
 		
 		instantTextBoxType = {
 			name ="BUL_nsm_loyalty_status"
-			position = { x = 240 y = 175 }
+			position = { x = @LOYALTY_TEXT_X y = @NSM_TEXT_Y  }
 			font = "hoi_18mbs"
 			text = "BUL_nsm_loyalty_status"
 			format = center
@@ -132,7 +147,7 @@ guiTypes = {
 		#支持率
 		instantTextBoxType = {
 			name ="popularity_header"
-			position = { x = 380 y = 0 }
+			position = { x = @POPULARITY_TEXT_X y = 0 }
 			font = "hoi_18mbs"
 			text = "BUL_ui_popularity_header"
 			format = center
@@ -142,7 +157,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="BUL_zveno_popularity_status"
-			position = { x = 380 y = 40 }
+			position = { x = @POPULARITY_TEXT_X y = @ZVENO_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_zveno_popularity_status"
 			format = center
@@ -151,7 +166,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="BUL_bs_popularity_status"
-			position = { x = 380 y = 85 }
+			position = { x = @POPULARITY_TEXT_X y = @BS_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_bs_popularity_status"
 			format = center
@@ -160,7 +175,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="BUL_bzns_popularity_status"
-			position = { x = 380 y = 130 }
+			position = { x = @POPULARITY_TEXT_X y = @BZNS_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_bzns_popularity_status"
 			format = center
@@ -169,7 +184,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="BUL_nsm_popularity_status"
-			position = { x = 380 y = 175 }
+			position = { x = @POPULARITY_TEXT_X y = @NSM_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "BUL_nsm_popularity_status"
 			format = center

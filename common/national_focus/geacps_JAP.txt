@@ -496,7 +496,6 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_Freedom_to_light_up_West_Africa
 		prerequisite = {
-			focus = JAP_Freedom_to_light_up_West_Africa
 			focus = JAP_Cossack_Country
 		}
 		completion_reward = {
@@ -511,7 +510,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_Sending_an_independent_garrison
 		prerequisite = {
-			focus = JAP_Sending_an_independent_garrison
+			focus = JAP_Cooperation_with_Western_countries
 		}
 		completion_reward = {
 		}
@@ -735,6 +734,20 @@ focus_tree = {
 		}
 	}
 	
+	focus = {#統帥権干犯問題の解決...?
+		id = JAP_Resolution_of_the_question_of_the_drought_of_the_Admiralty
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 4
+		relative_position_id = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
+		prerequisite = {
+			focus = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
+		}
+		completion_reward = {
+		}
+	}
+	
 	focus = {#最高幕僚長の設置
 		id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
 		icon = GFX_focus_JAP_Losange
@@ -744,20 +757,6 @@ focus_tree = {
 		relative_position_id = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
 		prerequisite = {
 			focus = JAP_Abolition_of_the_active_military_service_system_of_the_Minister_of_War
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#統帥権干犯問題の解決...?
-		id = JAP_Resolution_of_the_question_of_the_drought_of_the_Admiralty
-		icon = GFX_focus_JAP_Losange
-		cost = 4.28
-		x = 0
-		y = 2
-		relative_position_id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
-		prerequisite = {
-			focus = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
 		}
 		completion_reward = {
 		}
@@ -2294,10 +2293,10 @@ focus_tree = {
 		cost = 4.28
 		x = 0
 		y = 7
-		# relative_position_id = JAP_Hisaichi_Terauchi
-		# prerequisite = {
-		# 	focus = 
-		# }
+		relative_position_id = JAP_Hisaichi_Terauchi
+		prerequisite = {
+			focus = JAP_12
+		}
 		completion_reward = {
 		}
 	}
