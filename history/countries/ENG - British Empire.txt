@@ -104,7 +104,7 @@ SOM	= {	set_ot_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 TRP	= {	set_ot_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 AMB	= {	set_mandate_variable = yes	set_cosmetic_tag = CMR_ENG-GBR	}
 TAN	= {	set_mandate_variable = yes	set_cosmetic_tag = TAN_ENG-GBR	}
-IND	= {	set_jps_variable = yes	set_cosmetic_tag = IND_ENG-GBR	}
+IND	= {	set_jpc_variable = yes	set_cosmetic_tag = IND_ENG-GBR	}
 
 
 set_autonomy = {	target = AST	autonomous_state = dominion	}
@@ -168,7 +168,7 @@ set_autonomy = {	target = TRP	autonomous_state = occupied_territory	}
 set_autonomy = {	target = AMB	autonomous_state = mandate	}
 set_autonomy = {	target = TG0	autonomous_state = mandate	}
 set_autonomy = {	target = TAN	autonomous_state = mandate	}
-set_autonomy = {	target = IND	autonomous_state = junior_partner_state	}
+set_autonomy = {	target = IND	autonomous_state = junior_partner_colony	}
 
 #陣営
 create_faction = WESTMINSTER_TREATY_ORGANIZATION

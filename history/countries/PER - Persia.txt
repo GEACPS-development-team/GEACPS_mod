@@ -14,11 +14,11 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
+	social_liberalism = 100
 	classical_liberalism = 0
 	liberal_conservatism = 0
 	social_conservatism = 0
-	authoritative_democracy = 100
+	authoritative_democracy = 0
 	reactionary_authoritarianism = 0
 	national_populism = 0
 }
@@ -92,4 +92,55 @@ create_country_leader = {
 	picture = "GFX_Mohammad_Reza_Pahlavi"
 	expire = "1980.7.27"
 	ideology = national_populism_ideology
+}
+
+set_party_name = {	#イラン・トゥーデ党
+	ideology = total_socialism
+	name = PARTY_iran_tudeh_party
+	long_name = PARTY_iran_tudeh_party_long
+}
+set_party_name = {	#イラン・トゥーデ党
+	ideology = radical_socialism
+	name = PARTY_iran_tudeh_party
+	long_name = PARTY_iran_tudeh_party_long
+}
+set_party_name = {	#国民戦線
+	ideology = social_democracy
+	name = PARTY_national_front
+	long_name = PARTY_national_front_long
+}
+set_party_name = {	#復興党
+	ideology = social_liberalism
+	name = PARTY_revival_party
+	long_name = PARTY_revival_party_long
+}
+set_party_name = {	#国民戦線
+	ideology = classical_liberalism
+	name = PARTY_national_front
+	long_name = PARTY_national_front_long
+}
+set_party_name = {	#人民党
+	ideology = liberal_conservatism
+	name = PARTY_people's_party
+	long_name = PARTY_people's_party_long
+}
+set_party_name = {	#国民党
+	ideology = social_conservatism
+	name = PARTY_nationalists_party
+	long_name = PARTY_nationalists_party_long
+}
+set_party_name = {	#イラン民主党
+	ideology = authoritative_democracy
+	name = PARTY_iran_democrat_party
+	long_name = PARTY_iran_democrat_party_long
+}
+set_party_name = {	#新イラン党
+	ideology = reactionary_authoritarianism
+	name = PARTY_iran_novin_party
+	long_name = PARTY_iran_novin_party_long
+}
+set_party_name = {	#イラン人民復活党
+	ideology = national_populism
+	name = PARTY_iran_people_rastakhiz_party
+	long_name = PARTY_iran_people_rastakhiz_party_long
 }

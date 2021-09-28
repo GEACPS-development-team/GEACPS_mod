@@ -24,9 +24,22 @@ autonomy_state = {
 }
 
 autonomy_state = {
-	id = junior_partner_state
+	id = junior_partner_colony
 	is_puppet = yes
 	min_freedom_level = 0.0
+	
+	use_overlord_color = yes
+	
+	allowed = {
+		has_variable = personal_union_trigger_variable
+		has_variable = colony_trigger_variable
+	}
+}
+
+autonomy_state = {
+	id = junior_partner_state
+	is_puppet = yes
+	min_freedom_level = 0.5
 	
 	use_overlord_color = yes
 	
