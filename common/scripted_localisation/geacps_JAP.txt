@@ -1,12 +1,3 @@
-# Allows you to create your own dynamic keys
-# to be called in localization.
-# defined_text -> this is it, we're defining the text
-# text -> a discrete entry that can be picked to display in loc.
-# trigger -> determines if a text entry will be picked or not.
-# (The triggers need to be valid for the scope the key is called in
-# (eg Root or From.From).)
-# localization_key -> points to the localization key
-# that'll be used if trigger passes
 defined_text = {
 	name = GetZvenoName
 	text = {
@@ -75,7 +66,7 @@ defined_text = {
 		trigger = {
 			original_tag = JAP
 			has_war_with = SOV
-			NOT = { SOV = { has_government = communism } }
+			NOT = { SOV = { has_government = total_socialism } }
 		}
 		localization_key = JAP_ff_percentage_at_war_with_sov
 	}
@@ -83,7 +74,7 @@ defined_text = {
 		trigger = {
 			original_tag = JAP
 			has_war_with = SOV
-			SOV = { has_government = communism }
+			SOV = { has_government = total_socialism }
 		}
 		localization_key = JAP_ff_percentage_at_war_with_communist_sov
 	}
@@ -100,7 +91,7 @@ defined_text = {
 			any_allied_country = {
 				has_war_with = SOV
 			}
-			NOT = { SOV = { has_government = communism } }
+			NOT = { SOV = { has_government = total_socialism } }
 		}
 		localization_key = JAP_ff_percentage_ally_at_war_with_sov
 	}
@@ -110,7 +101,7 @@ defined_text = {
 			any_allied_country = {
 				has_war_with = SOV
 			}
-			SOV = { has_government = communism }
+			SOV = { has_government = total_socialism }
 		}
 		localization_key = JAP_ff_percentage_ally_at_war_with_communist_sov
 	}
@@ -127,7 +118,7 @@ defined_text = {
 			any_neighbor_country = {
 				tag = SOV
 			}
-			SOV = { has_government = communism }
+			SOV = { has_government = total_socialism }
 			NOT = {
 				any_allied_country = {
 					has_war_with = SOV
@@ -143,7 +134,7 @@ defined_text = {
 			any_neighbor_country = {
 				tag = SOV
 			}
-			SOV = { has_government = communism }
+			SOV = { has_government = total_socialism }
 			OR = {
 				any_allied_country = {
 					has_war_with = SOV
@@ -163,7 +154,7 @@ defined_text = {
 	text = {
 		trigger = {
 			original_tag = JAP
-			SOV = { has_government = communism }
+			SOV = { has_government = total_socialism }
 		}
 		localization_key = JAP_ff_percentage_sov_communist
 	}
@@ -466,7 +457,7 @@ defined_text = {
 	text = {
 		trigger = {
 			GER = {
-				has_government = neutrality
+				has_government = reactionary_authoritarianism
 				is_faction_leader = yes
 			}
 		}
@@ -488,7 +479,7 @@ defined_text = {
 	text = {
 		trigger = {
 			GER = {
-				has_government = neutrality
+				has_government = reactionary_authoritarianism
 				is_faction_leader = yes
 			}
 		}
@@ -517,7 +508,7 @@ defined_text = {
 	text = {
 		trigger = {
 			GER = {
-				has_government = neutrality
+				has_government = reactionary_authoritarianism
 				is_faction_leader = yes
 			}
 		}
@@ -925,8 +916,8 @@ defined_text = {
 			FROM = {
 				NOT = { has_government = ROOT }
 				OR = {
-					has_government = fascism
-					has_government = neutrality
+					has_government = national_populism
+					has_government = reactionary_authoritarianism
 				}
 			}
 		}
@@ -1319,7 +1310,7 @@ defined_text = {
 	name = GetJAPgarianLeaderToMeetStalin
 	text = {
 		trigger = {
-			JAP = { NOT = { has_government = communism } }
+			JAP = { NOT = { has_government = total_socialism } }
 		}
 		localization_key = bftb_JAPgaria_soviet_influence.1.desc_diplomat
 	}
@@ -1586,7 +1577,7 @@ defined_text = {
 	name = GetLukovLeader
 	text = {
 		trigger = {
-			has_government = fascism
+			has_government = national_populism
 		}
 		localization_key = JAP_hristo_lukov_death_leader_country
 	}
@@ -1599,7 +1590,7 @@ defined_text = {
 	name = GetLukovPartisans
 	text = {
 		trigger = {
-			has_government = communism
+			has_government = total_socialism
 		}
 		localization_key = JAP_hristo_lukov_death_partisans_communism
 	}
@@ -1612,7 +1603,7 @@ defined_text = {
 	name = GetLukovCriminals
 	text = {
 		trigger = {
-			has_government = communism
+			has_government = total_socialism
 		}
 		localization_key = JAP_hristo_lukov_death_criminals_communism
 	}
@@ -1625,7 +1616,7 @@ defined_text = {
 	name = GetLukovSecondAssailant
 	text = {
 		trigger = {
-			has_government = communism
+			has_government = total_socialism
 		}
 		localization_key = JAP_hristo_lukov_death_second_assailant_communism
 	}
@@ -1638,7 +1629,7 @@ defined_text = {
 	name = GetLukovAccomplice
 	text = {
 		trigger = {
-			has_government = communism
+			has_government = total_socialism
 		}
 		localization_key = JAP_hristo_lukov_death_accomplice_communism
 	}
@@ -1651,7 +1642,7 @@ defined_text = {
 	name = GetLukovConclusion
 	text = {
 		trigger = {
-			has_government = fascism
+			has_government = national_populism
 		}
 		localization_key = JAP_hristo_lukov_death_conclusion_other
 	}
