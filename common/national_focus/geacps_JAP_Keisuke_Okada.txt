@@ -1,0 +1,136 @@
+focus_tree = {
+	id = geacps_JAP_Keisuke_Okada_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	
+	reset_on_civil_war = no
+	
+	default = no
+	
+	continuous_focus_position = {
+		x = 1500 y = 0
+	}
+
+	initial_show_position = {
+		focus = JAP_Keisuke_Okada
+	}
+	
+	focus = {#岡田啓介
+		id = JAP_Keisuke_Okada
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 7
+		y = 0
+		relative_position_id = JAP_Election_of_Prime_Minister
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Keisuke_Okada
+			add_ideas = JAP_A_great_raccoon_who_cares_for_his_country
+		}
+	}
+	
+	focus = {#
+		id = JAP_1
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Keisuke_Okada
+		prerequisite = {
+			focus = JAP_Keisuke_Okada
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_2
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_1
+		prerequisite = {
+			focus = JAP_1
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_3
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Keisuke_Okada
+		prerequisite = {
+			focus = JAP_Keisuke_Okada
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_4
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Keisuke_Okada
+		prerequisite = {
+			focus = JAP_Keisuke_Okada
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_5
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_4
+		prerequisite = {
+			focus = JAP_4
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#日本國及米國間相互協力及安全保障条約
+		id = JAP_Treaty_of_Mutual_Cooperation_and_Security_Between_the_United_States_and_Japan
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 7
+		relative_position_id = JAP_Keisuke_Okada
+		
+		completion_reward = {
+			diplomatic_relation = {
+    			country = USA
+    			relation = puppet
+    			active = yes
+			}
+			diplomatic_relation = {
+    			country = USA
+    			relation = military_access
+    			active = yes
+			}
+			USA = {
+				diplomatic_relation = {
+    				country = JAP
+    				relation = military_access
+    				active = yes
+				}
+			}
+		}
+	}
+}

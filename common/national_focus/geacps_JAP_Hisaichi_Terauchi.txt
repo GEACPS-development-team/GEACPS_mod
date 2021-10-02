@@ -1,0 +1,122 @@
+focus_tree = {
+	id = geacps_JAP_Hisaichi_Terauchi_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	
+	reset_on_civil_war = no
+	
+	default = no
+	
+	continuous_focus_position = {
+		x = 1500 y = 0
+	}
+
+	initial_show_position = {
+		focus = JAP_Hisaichi_Terauchi
+	}
+	
+	focus = {#寺内寿一
+		id = JAP_Hisaichi_Terauchi
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 7
+		y = 0
+		relative_position_id = JAP_Election_of_Prime_Minister
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Hisaichi_Terauchi
+			add_ideas = JAP_Commander-in-Chief_of_the_Southern_Army
+		}
+	}
+	
+	focus = {#皇民化運動
+		id = JAP_Royalization_Movement
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Hisaichi_Terauchi
+		prerequisite = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_11
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Royalization_Movement
+		prerequisite = {
+			focus = JAP_Royalization_Movement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_12
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Hisaichi_Terauchi
+		prerequisite = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_13
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Hisaichi_Terauchi
+		prerequisite = {
+			focus = JAP_Hisaichi_Terauchi
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_14
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_13
+		prerequisite = {
+			focus = JAP_13
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#東亜協同体の建設
+		id = JAP_Construction_of_the_East_Asia_Cooperative
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 7
+		relative_position_id = JAP_Hisaichi_Terauchi
+		prerequisite = {
+			focus = JAP_12
+		}
+		completion_reward = {
+		}
+	}
+}

@@ -1,0 +1,165 @@
+focus_tree = {
+	id = geacps_JAP_Kuniaki_Koiso_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	
+	reset_on_civil_war = no
+	
+	default = no
+	
+	continuous_focus_position = {
+		x = 1500 y = 0
+	}
+
+	initial_show_position = {
+		focus = JAP_Kuniaki_Koiso
+	}
+	
+	focus = {#小磯國昭
+		id = JAP_Kuniaki_Koiso
+		icon = GFX_focus_JAP_Kuniaki_Koiso
+		cost = 4.28
+		x = 7
+		y = 0
+		relative_position_id = JAP_Election_of_Prime_Minister
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Kuniaki_Koiso
+			add_ideas = JAP_Korean_Tiger
+		}
+	}
+	
+	focus = {#内鮮一体
+		id = JAP_Nae_Seon_Il_Che
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Kuniaki_Koiso
+		prerequisite = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#半島を内地に
+		id = JAP_Bringing_the_peninsula_inland
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Nae_Seon_Il_Che
+		prerequisite = {
+			focus = JAP_Nae_Seon_Il_Che
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#保守官僚の任命
+		id = JAP_Conservative_bureaucratic_appointments
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Kuniaki_Koiso
+		prerequisite = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#小磯・繆斌協定
+		id = JAP_The_Koiso-Miao_Pin_Agreement
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Conservative_bureaucratic_appointments
+		prerequisite = {
+			focus = JAP_Conservative_bureaucratic_appointments
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#福建は日本の生命線
+		id = JAP_Fujian_is_Japans_lifeline
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
+		prerequisite = {
+			focus = JAP_The_Koiso-Miao_Pin_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#対岸経営
+		id = JAP_Opposite_shore_management
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_The_Koiso-Miao_Pin_Agreement
+		prerequisite = {
+			focus = JAP_The_Koiso-Miao_Pin_Agreement
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#三五公司
+		id = JAP_Sanwu_Corporation
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Opposite_shore_management
+		prerequisite = {
+			focus = JAP_Opposite_shore_management
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#小磯・米内連立内閣
+		id = JAP_The_Koiso-Yonai_coalition_cabinet
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Kuniaki_Koiso
+		prerequisite = {
+			focus = JAP_Kuniaki_Koiso
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#最高幕僚長の設置
+		id = JAP_Establishment_of_the_Chief_of_the_Supreme_Command
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_The_Koiso-Yonai_coalition_cabinet
+		prerequisite = {
+			focus = JAP_The_Koiso-Yonai_coalition_cabinet
+		}
+		completion_reward = {
+		}
+	}
+}
