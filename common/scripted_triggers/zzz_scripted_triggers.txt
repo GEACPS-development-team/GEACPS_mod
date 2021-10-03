@@ -41,7 +41,7 @@ ai_land_doctrine_tier_2_trigger = {
 anti_submarine_strategy_required_trigger = {
 	OR = {
 		AND = {
-			tag = ENG
+			tag = GBR
 			not = {	is_in_faction_with = GER	}
 			GER = {	has_navy_size = {	type = submarine	size > 30	}	}
 		}

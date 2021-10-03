@@ -327,13 +327,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EGY_reminder_to_ENG_FRA
+	id = EGY_reminder_to_GBR_FRA
 	icon = GFX_goal_unknown
 	cost = 2
 	x = -1
 	y = 1
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EGY_reminder_to_ENG_FRA"
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_reminder_to_GBR_FRA"
 	}
 	mutually_exclusive = {	focus = EGY_assiut_agreement	}
 	relative_position_id = EGY_cairo_airport
@@ -349,7 +349,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EGY_assiut_agreement"
 	}
-	mutually_exclusive = {	focus = EGY_reminder_to_ENG_FRA	}
+	mutually_exclusive = {	focus = EGY_reminder_to_GBR_FRA	}
 	relative_position_id = EGY_cairo_airport
 	prerequisite = { focus = EGY_cairo_airport }
 }
@@ -694,13 +694,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EGY_buy_from_ENG
+	id = EGY_buy_from_GBR
 	icon = GFX_goal_unknown
 	cost = 2
 	x = -1
 	y = 1
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_from_ENG"
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_from_GBR"
 	}
 	relative_position_id = EGY_egyptan_fire_powar_warfare
 	prerequisite = { focus = EGY_egyptan_fire_powar_warfare }
@@ -720,7 +720,7 @@ shared_focus = {
 	relative_position_id = EGY_establishment_of_special_forces
 	prerequisite = { focus = EGY_establishment_of_special_forces }
 	prerequisite = { focus = EGY_egyptan_fire_powar_warfare }
-	mutually_exclusive = {	focus = EGY_buy_from_ENG	}
+	mutually_exclusive = {	focus = EGY_buy_from_GBR	}
 	mutually_exclusive = {	focus = EGY_weapons_from_eastern_bloc	}
 }
 
@@ -736,7 +736,7 @@ shared_focus = {
 	relative_position_id = EGY_establishment_of_special_forces
 	prerequisite = { focus = EGY_establishment_of_special_forces }
 	mutually_exclusive = {	focus = EGY_contract_with_FRA	}
-	mutually_exclusive = {	focus = EGY_buy_from_ENG	}
+	mutually_exclusive = {	focus = EGY_buy_from_GBR	}
 }
 
 shared_focus = {
@@ -753,13 +753,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EGY_buy_ENG_ships
+	id = EGY_buy_GBR_ships
 	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_ENG_ships"
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_GBR_ships"
 	}
 	mutually_exclusive = { focus = EGY_buy_JAP_ships	}
 	relative_position_id = EGY_naval_reorganization
@@ -775,8 +775,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EGY_socotra_joint_exercise"
 	}
-	relative_position_id = EGY_buy_ENG_ships
-	prerequisite = { focus = EGY_buy_ENG_ships }
+	relative_position_id = EGY_buy_GBR_ships
+	prerequisite = { focus = EGY_buy_GBR_ships }
 }
 
 shared_focus = {
@@ -788,7 +788,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_JAP_ships"
 	}
-	mutually_exclusive = { focus = EGY_buy_ENG_ships	}
+	mutually_exclusive = { focus = EGY_buy_GBR_ships	}
 	relative_position_id = EGY_naval_reorganization
 	prerequisite = { focus = EGY_naval_reorganization }
 }
@@ -1007,13 +1007,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EGY_utilization_ENG_connections
+	id = EGY_utilization_GBR_connections
 	icon = GFX_goal_unknown
 	cost = 2
 	x = -1
 	y = 2
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EGY_utilization_ENG_connections"
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_utilization_GBR_connections"
 	}
 	relative_position_id = EGY_democratic_constitutional_reform
 	prerequisite = { focus = EGY_democratic_constitutional_reform }
@@ -1029,8 +1029,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EGY_talks_with_ISR"
 	}
-	relative_position_id = EGY_utilization_ENG_connections
-	prerequisite = { focus = EGY_utilization_ENG_connections }
+	relative_position_id = EGY_utilization_GBR_connections
+	prerequisite = { focus = EGY_utilization_GBR_connections }
 	prerequisite = { focus = EGY_to_western_bloc }
 }
 

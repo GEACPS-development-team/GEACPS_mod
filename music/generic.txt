@@ -5,22 +5,24 @@ music = {
 	chance = {	modifier = {	factor = 1	}	}
 }
 
-#en^‰pŒê
+#en^ï¿½pï¿½ï¿½
 music = {
 	song = "I_Vow_to_Thee_My_Country"
 	chance = {
 		modifier = {
 			factor = 0
 			NOT = {	original_tag = ENG	}
+			NOT = {	original_tag = GBR	}
 		}
 		modifier = {
 			factor = 2
 			original_tag = ENG
+			original_tag = GBR
 		}
 	}
 }
 
-#es^ƒXƒyƒCƒ“Œê
+#es^ï¿½Xï¿½yï¿½Cï¿½ï¿½ï¿½ï¿½
 music = {
 	song = "Hijos_del_Pueblo"
 	chance = {
@@ -35,21 +37,21 @@ music = {
 	}
 }
 
-#sco	ƒXƒRƒbƒgƒ‰ƒ“ƒhŒê
+#sco	ï¿½Xï¿½Rï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½hï¿½ï¿½
 music = {
 	song = "Auld_Lang_Syne"
 	chance = {
 		modifier = {
 			factor = 0
 			NOT = {
-				original_tag = ENG
+				original_tag = GBR
 				original_tag = SCO
 			}
 		}
 		modifier = {
 			factor = 2
 			OR = {
-				original_tag = ENG
+				original_tag = GBR
 				original_tag = SCO
 			}
 		}
