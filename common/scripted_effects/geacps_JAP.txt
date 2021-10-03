@@ -1622,7 +1622,7 @@ JAP_set_buz_faction_values = {
 JAP_add_hidden_targeted_ns = {
 	if = {
 		limit = {
-			original_tag = ENG
+			original_tag = GBR
 		}
 		ROOT = {
 			add_ideas = JAP_anti_capitalism_eng
@@ -1966,7 +1966,7 @@ JAP_tsar_boris_may_die_effect = {
 				OR = {
 					has_war_with = SOV
 					has_war_with = GER
-					has_war_with = ENG
+					has_war_with = GBR
 				}
 			}
 			add_to_variable = { JAP_tsar_boris_death_probability = 10 }

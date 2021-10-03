@@ -580,7 +580,7 @@ defined_text = {
 					AND = {
 						NOT = {
 							SOV = { is_faction_leader = yes }
-							ENG = { is_faction_leader = yes }
+							GBR = { is_faction_leader = yes }
 						}
 					}
 				}
@@ -598,7 +598,7 @@ defined_text = {
 					AND = {
 						NOT = {
 							GER = { is_faction_leader = yes }
-							ENG = { is_faction_leader = yes }
+							GBR = { is_faction_leader = yes }
 						}
 					}
 				}
@@ -609,10 +609,10 @@ defined_text = {
 	text = {
 		trigger = {
 			JAP = {
-				is_in_faction_with = ENG
-				ENG = { has_capitulated = no }
+				is_in_faction_with = GBR
+				GBR = { has_capitulated = no }
 				OR = {
-					ENG = { is_faction_leader = yes }
+					GBR = { is_faction_leader = yes }
 					AND = {
 						NOT = {
 							GER = { is_faction_leader = yes }
