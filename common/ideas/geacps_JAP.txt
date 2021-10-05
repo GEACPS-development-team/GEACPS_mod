@@ -67,21 +67,6 @@ ideas = {#既存国民精神
 			}
 		}
 		
-		JAP_presidency_of_the_house_of_representatives = {#衆議統裁
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_disjointed_gov
-			modifier = {
-				political_power_factor = 0.1
-				stability_factor = -0.1
-			}
-		}
-		
 		JAP_suppression_of_ideas_by_the_security_law = {#治安維持法による思想弾圧
 			allowed = {
 				always = no
@@ -90,7 +75,7 @@ ideas = {#既存国民精神
 				always = yes
 			}
 			removal_cost = -1
-			picture = generic_spy_coup
+			picture = suppression_of_ideas_by_the_security_law
 			modifier = {
 				stability_factor = -0.1
 				total_socialism_drift = -0.01
