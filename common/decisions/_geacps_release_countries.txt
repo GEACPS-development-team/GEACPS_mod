@@ -2667,6 +2667,29 @@ release_decisions = {
 		ai_will_do = {	base = 100	}
 	}
 	
+	release_CGB = {
+		icon = generic_prepare_civil_war
+		cost = 0
+		available = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CGB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CGB	}	}
+		}
+		visible = {
+			any_state = {
+				is_owned_by = ROOT
+				check_variable = {	CGB_state_variable = 1	}
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+			}
+			NOT = {	ROOT = {	original_tag = CGB	}	}
+		}
+		complete_effect = {	country_event = fate_of_CGB.0	}
+		ai_will_do = {	base = 100	}
+	}
+	
 	release_CHA = {
 		icon = generic_prepare_civil_war
 		cost = 0
@@ -3285,29 +3308,6 @@ release_decisions = {
 			NOT = {	ROOT = {	original_tag = NMB	}	}
 		}
 		complete_effect = {	country_event = fate_of_NMB.0	}
-		ai_will_do = {	base = 100	}
-	}
-	
-	release_RCG = {
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	RCG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = RCG	}	}
-		}
-		visible = {
-			any_state = {
-				is_owned_by = ROOT
-				check_variable = {	RCG_state_variable = 1	}
-				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-			}
-			NOT = {	ROOT = {	original_tag = RCG	}	}
-		}
-		complete_effect = {	country_event = fate_of_RCG.0	}
 		ai_will_do = {	base = 100	}
 	}
 	
