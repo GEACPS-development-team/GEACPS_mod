@@ -15,14 +15,19 @@ state = {
 			arms_factory = 2
 			dockyard = 1
 			air_base = 3
-			10052 = {	naval_base = 3	}
 			1092 = {	naval_base = 10	}
+			7212 = {	naval_base = 5	}
+			10052 = {	naval_base = 3	}
+			11985 = {	naval_base = 4	}
 		}
 		victory_points = {	1092	10	}
+		victory_points = {	7212	1	}
+		victory_points = {	11946	1	}
+		victory_points = {	11985	1	}
 		set_variable = {	JAP_state_variable = 1	}
 	}
 	
 	provinces = {
-		1092	10052
+		1092	4197	7212	9968	10052	11946	11985
 	}
 }
