@@ -11,15 +11,7 @@ ideas = {#既存国民精神
 			picture = high_defence_state_system
 			modifier = {
 				defensive_war_stability_factor = 0.1
-				war_support_factor = 0.1
-				command_power_gain_mult = 0.1
-				forced_surrender_limit = 0.1
-				max_surrender_limit_offset = 0.1
-				monthly_population = 0.1
-				recruitable_population = 0.1
-				recruitable_population_factor = 0.1
-				mobilization_speed = 0.1
-				army_core_defence_factor = 0.1
+				army_core_defence_factor = 0.01
 			}
 		}
 		
@@ -33,7 +25,7 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = privy_council
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.01
 			}
 		}
 		
@@ -47,8 +39,8 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = planning_institute
 			modifier = {
-				max_planning = 0.1
-				planning_speed = 0.1
+				max_planning = 0.01
+				planning_speed = 0.01
 			}
 		}
 		
@@ -62,7 +54,7 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = active_military_service_for_ministers_of_war
 			modifier = {
-				stability_factor = -0.1
+				stability_factor = -0.01
 				war_support_factor = 0.1
 			}
 		}
@@ -77,6 +69,7 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = suppression_of_ideas_by_the_security_law
 			modifier = {
+				political_power_factor = 0.01
 				stability_factor = -0.1
 				total_socialism_drift = -0.01
 				radical_socialism_drift = -0.01
@@ -93,7 +86,7 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			picture = victory_in_the_greater_east_asia_war
 			modifier = {
-				stability_factor = 0.1
+				stability_factor = 0.01
 				war_support_factor = 0.1
 			}
 		}
