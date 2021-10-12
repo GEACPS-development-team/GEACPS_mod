@@ -14,45 +14,11 @@ focus_tree = {
 	default = no
 	
 	continuous_focus_position = {
-		x = 100 y = 1000
+		x = 570 y = 10
 	}
 
 	initial_show_position = {
 		focus = JAP_The_fallen_sunrise
-	}
-	
-	focus = {#落ちぶれた日の出
-		id = JAP_The_fallen_sunrise
-		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 2
-		y = 0
-		relative_position_id = JAP_1-22_Incident
-		mutually_exclusive = {
-			focus = JAP_Victory_in_the_China_Incident
-		}
-		available = {
-			hidden_trigger = { always = no }
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#支那事変で勝利
-		id = JAP_Victory_in_the_China_Incident
-		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 4
-		y = 0
-		relative_position_id = JAP_1-22_Incident
-		mutually_exclusive = {
-			focus = JAP_The_fallen_sunrise
-		}
-		available = {
-			hidden_trigger = { always = no }
-		}
-		completion_reward = {
-		}
 	}
 	
 	focus = {#一・二二事件
@@ -67,25 +33,56 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	
-	focus = {#戒厳の宣告
-		id = JAP_Declaration_of_martial_law
+
+	focus = {#重臣会議を開催する
+		id = JAP_Organise_a_meeting_of_the_chief_ministers
 		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 0
+		cost = 1
+		x = -1
 		y = 1
 		relative_position_id = JAP_1-22_Incident
 		prerequisite = {
 			focus = JAP_1-22_Incident
 		}
 		completion_reward = {
-			add_ideas = JAP_Martial_law
-			986 = {	set_demilitarized_zone = yes	}
+		}
+	}
+
+	focus = {#閣議を開く
+		id = JAP_Cabinet_meeting
+		icon = GFX_focus_JAP_Losange
+		cost = 1
+		x = 1
+		y = 1
+		relative_position_id = JAP_1-22_Incident
+		prerequisite = {
+			focus = JAP_1-22_Incident
+		}
+		completion_reward = {
 		}
 	}
 	
-	focus = {#海軍士官を粛軍
-		id = JAP_Naval_officer_s_purge
+	focus = {#戒厳の宣告
+		id = JAP_Declaration_of_martial_law
+		icon = GFX_focus_JAP_Losange
+		cost = 1
+		x = 0
+		y = 2
+		relative_position_id = JAP_1-22_Incident
+		prerequisite = {
+			focus = JAP_Organise_a_meeting_of_the_chief_ministers
+		}
+		prerequisite = {
+			focus = JAP_Cabinet_meeting
+		}
+		completion_reward = {
+			add_ideas = JAP_Martial_law
+			282 = {	set_demilitarized_zone = yes	}
+		}
+	}
+	
+	focus = {#海軍士官の裁判
+		id = JAP_Trial_of_naval_officers
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = -2
@@ -99,11 +96,26 @@ focus_tree = {
 		}
 	}
 	
-	focus = {#農本主義者を監視
-		id = JAP_Agrarian_watchdog
+	focus = {#農本主義者を逮捕
+		id = JAP_Arrest_of_agronomists
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 0
+		y = 1
+		relative_position_id = JAP_Declaration_of_martial_law
+		prerequisite = {
+			focus = JAP_Declaration_of_martial_law
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {#皇道派将校の裁判
+		id = JAP_Trial_of_Imperialist_officers
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 2
 		y = 1
 		relative_position_id = JAP_Declaration_of_martial_law
 		prerequisite = {
@@ -119,32 +131,23 @@ focus_tree = {
 		icon = GFX_focus_JAP_Losange
 		cost = 4.28
 		x = 0
-		y = 1
-		relative_position_id = JAP_Agrarian_watchdog
+		y = 2
+		relative_position_id = JAP_Declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Agrarian_watchdog
+			focus = JAP_Trial_of_naval_officers
 		}
 		prerequisite = {
-			focus = JAP_Naval_officer_s_purge
+			focus = JAP_Arrest_of_agronomists
+		}
+		prerequisite = {
+			focus = JAP_Trial_of_Imperialist_officers
 		}
 		completion_reward = {
 			remove_ideas = JAP_Martial_law
 		}
 	}
-	
-	focus = {#首相の選出
-		id = JAP_Election_of_Prime_Minister
-		icon = GFX_focus_JAP_Losange
-		cost = 4.28
-		x = 2
-		y = 1
-		relative_position_id = JAP_1-22_Incident
-		prerequisite = {
-			focus = JAP_1-22_Incident
-		}
-		completion_reward = {
-		}
-	}
+
+####################################################################################################
 	
 	focus = {
         id = GEACPS_NF_JAP_army_00
