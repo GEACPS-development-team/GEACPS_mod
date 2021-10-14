@@ -1,21 +1,22 @@
 state = {
 	id = 844
 	name = "STATE_844"
-	manpower = 29800
+	manpower = 2979335
 	state_category = city
 	
 	history = {
-		owner = SIC
+		owner = ITA
 		add_core_of = ITA
-		add_core_of = SIC
+		victory_points = {	925	1	}
 		buildings = {
 			infrastructure = 6
-			6831 = {	naval_base = 1	}
+			industrial_complex = 1
+			925 = {	naval_base = 4	}
 		}
 		set_variable = {	ITA_state_variable = 1	}
 	}
 	
 	provinces = {
-		963	3923	3966	6831	3910	9838	11882
+		925	967
 	}
 }
