@@ -14,7 +14,7 @@ focus_tree = {
 	default = no
 	
 	continuous_focus_position = {
-		x = 570 y = 10
+		x = 100 y = 600
 	}
 
 	initial_show_position = {
@@ -25,7 +25,7 @@ focus_tree = {
 		id = JAP_1-22_Incident
 		icon = GFX_focus_JAP_Losange
 		cost = 0
-		x = 2
+		x = 9
 		y = 0
 		available = {
 			hidden_trigger = { always = no }
@@ -45,6 +45,9 @@ focus_tree = {
 			focus = JAP_1-22_Incident
 		}
 		completion_reward = {
+			country_event = {
+				id = geacps_JAP.4
+			}
 		}
 	}
 
@@ -59,6 +62,9 @@ focus_tree = {
 			focus = JAP_1-22_Incident
 		}
 		completion_reward = {
+			country_event = {
+				id = geacps_JAP.5
+			}
 		}
 	}
 	
@@ -164,7 +170,7 @@ focus_tree = {
     focus = {
         id = GEACPS_NF_JAP_navy_big_ships
         icon = GFX_focus_jap_pacific_guardian
-        x = 0
+        x = -7
         y = 11
         relative_position_id = JAP_1-22_Incident
         cost = 4.28
