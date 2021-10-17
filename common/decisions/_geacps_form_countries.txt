@@ -11,4 +11,27 @@ formation_decisions = {
 			}
 		}
 	}
+	form_EUROPE_union = {
+		available = {
+			HOL = {	is_subject_of = ROOT	}
+			BEL = {	is_subject_of = ROOT	}
+			LUX = {	is_subject_of = ROOT	}
+			ITA = {	is_subject_of = ROOT	}
+			FRA = {	is_subject_of = ROOT	}
+			GER = {	is_subject_of = ROOT	}
+		}
+		complete_effect = {
+			set_cosmetic_tag = EUROPE_union
+			annex_country = {	target = HOL	transfer_troops = yes	}
+			annex_country = {	target = BEL	transfer_troops = yes	}
+			annex_country = {	target = LUX	transfer_troops = yes	}
+			annex_country = {	target = ITA	transfer_troops = yes	}
+			annex_country = {	target = FRA	transfer_troops = yes	}
+			annex_country = {	target = GER	transfer_troops = yes	}
+			every_state = {
+				limit = {	is_on_continent = europe	}
+				add_core_of = ROOT
+			}
+		}
+	}
 }
