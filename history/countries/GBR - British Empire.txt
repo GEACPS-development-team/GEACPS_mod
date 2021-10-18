@@ -90,9 +90,12 @@ CYR	= {	set_ot_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 SOM	= {	set_ot_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 TRP	= {	set_ot_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 AMB	= {	set_mandate_variable = yes	set_cosmetic_tag = CMR_ENG-GBR	}
+JOR	= {	set_mandate_variable = yes	set_cosmetic_tag = TRANSJORDAN_emirate	}
+PAL	= {	set_mandate_variable = yes	set_cosmetic_tag = PAL_ENG-GBR	}
 TAN	= {	set_mandate_variable = yes	set_cosmetic_tag = TAN_ENG-GBR	}
 WTG	= {	set_mandate_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 IND	= {	set_jpc_variable = yes	set_cosmetic_tag = IND_ENG-GBR	}
+SCZ	= {	set_lt_variable = yes	set_cosmetic_tag = COUNTRY_ENG-GBR	}
 
 
 set_autonomy = {	target = AST	autonomous_state = dominion	}
@@ -156,9 +159,12 @@ set_autonomy = {	target = CYR	autonomous_state = occupied_territory	}
 set_autonomy = {	target = SOM	autonomous_state = occupied_territory	}
 set_autonomy = {	target = TRP	autonomous_state = occupied_territory	}
 set_autonomy = {	target = AMB	autonomous_state = mandate	}
+set_autonomy = {	target = JOR	autonomous_state = mandate	}
+set_autonomy = {	target = PAL	autonomous_state = mandate	}
 set_autonomy = {	target = TAN	autonomous_state = mandate	}
 set_autonomy = {	target = WTG	autonomous_state = mandate	}
 set_autonomy = {	target = IND	autonomous_state = junior_partner_colony	}
+set_autonomy = {	target = SCZ	autonomous_state = leased_territory	}
 
 #陣営
 create_faction = WESTMINSTER_TREATY_ORGANIZATION
