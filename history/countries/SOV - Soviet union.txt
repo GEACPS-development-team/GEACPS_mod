@@ -1,8 +1,6 @@
 ﻿capital = 219
 #oob = SOV_1946
 
-set_convoys = 5
-
 set_politics = {
 	ruling_party = total_socialism
 	last_election = "1946.1.1"
@@ -61,22 +59,26 @@ create_dynamic_country = {
     transfer_state = 855	855 = {	add_core_of = PREV	}
 }
 
-create_faction = COMINFORM
-add_to_faction = SOV
-add_to_faction = RUS
-add_to_faction = UKR
-add_to_faction = BLR
-add_to_faction = EST
-add_to_faction = LAT
-add_to_faction = LIT
-add_to_faction = MOL
-add_to_faction = KAR
-add_to_faction = DON
-add_to_faction = ABK
-add_to_faction = YML
-add_to_faction = POL
-add_to_faction = EGR
+#独立保障
+give_guarantee = EGR
 
+#軍事通行権
+every_country = {
+	limit = {
+		OR = {
+			original_tag = SOV
+			has_autonomy_state = soviet_member_republic
+			has_autonomy_state = soviet_member_federal_republic
+		}
+	}
+	BUL = {	give_military_access = PREV	}
+	CZE = {	give_military_access = PREV	}
+	EGR = {	give_military_access = PREV	}
+	HUN = {	give_military_access = PREV	}
+	ROM = {	give_military_access = PREV	}
+}
+
+#傀儡, 植民地
 RUS = {	set_cosmetic_tag = RUS_SOV	set_variable = {	federal_government_variable = 1	}	}
 UKR = {	set_cosmetic_tag = UKR_SOV	}
 BLR = {	set_cosmetic_tag = BLR_SOV	}
@@ -88,6 +90,7 @@ KAR = {	set_cosmetic_tag = KAR-FIN_SOV	}
 DON = {	set_cosmetic_tag = DON_SOV	}
 ABK = {	set_cosmetic_tag = ABK_SOV	}
 YML = {	set_cosmetic_tag = YML_SOV	}
+
 
 set_autonomy = {	target = RUS	autonomous_state = soviet_member_federal_republic	}
 set_autonomy = {	target = UKR	autonomous_state = soviet_member_republic	}
@@ -104,17 +107,19 @@ set_autonomy = {	target = EGR	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = POL	autonomous_state = soviet_satellite	}
 set_autonomy = {	target = AT2	autonomous_state = occupied_territory	}
 
-#軍事通行権
-every_country = {
-	limit = {
-		OR = {
-			original_tag = SOV
-			has_autonomy_state = soviet_member_republic
-			has_autonomy_state = soviet_member_federal_republic
-		}
-	}
-	BUL = {	give_military_access = PREV	}
-	CZE = {	give_military_access = PREV	}
-	HUN = {	give_military_access = PREV	}
-	ROM = {	give_military_access = PREV	}
-}
+#陣営
+create_faction = COMINFORM
+add_to_faction = SOV
+add_to_faction = RUS
+add_to_faction = UKR
+add_to_faction = BLR
+add_to_faction = EST
+add_to_faction = LAT
+add_to_faction = LIT
+add_to_faction = MOL
+add_to_faction = KAR
+add_to_faction = DON
+add_to_faction = ABK
+add_to_faction = YML
+add_to_faction = POL
+add_to_faction = EGR
