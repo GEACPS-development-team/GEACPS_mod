@@ -1,4 +1,17 @@
-﻿
+﻿if = {
+	limit = { has_dlc = "La Resistance" }
+	create_intelligence_agency = yes
+	create_operative_leader = {
+		name = ""
+		GFX = GFX_
+		traits = {
+		}
+		bypass_recruitment = 
+		available_to_spy_master = 
+		nationalities = {}
+	}
+}
+
 HAW	= {	set_cosmetic_tag = HAW_JAP	}
 KOR	= {	set_cosmetic_tag = COUNTRY_JAP	}
 TWN	= {	set_cosmetic_tag = COUNTRY_JAP	}
