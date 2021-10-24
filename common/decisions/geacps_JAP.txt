@@ -1,27 +1,31 @@
 JAP_Coup_detat_in_the_offing = {#クーデターの予感
-
 	Outbreak_of_the_1-22_Incident = {#一・二二事件の発生
-	
 		icon = jap_pacific_guardian
 		
-		activation = {	original_tag = JAP	}
+		allowed = {	original_tag = JAP	}
 		
-		visible = {	original_tag = JAP	}
+		visible = {}
 	
 		available = {	has_war = no	}
 		
+		activation = {	has_war = yes	}
+		
+		is_good = yes
+		
 		fire_only_once = yes
 		
-		is_good = no
+		selectable_mission = yes
 		
 		days_mission_timeout = 22
 		
 		timeout_effect = {
 			country_event = {	id = geacps_JAP.2	}
 		}
-
+		
+		complete_effect = {
+			political_power_factor = 100
+		}
 	}
-	
 }
 
 JAP_national_policy_research_outline = {
@@ -41,7 +45,43 @@ JAP_national_policy_research_outline = {
 }
 
 JAP_gunbatsu = {#軍閥
-
-	JAP_a_royal_visit  = {#天皇の行幸
+	JAP_a_royal_visit  = {#天皇陛下の行幸
+		icon = jap_pacific_guardian
+		
+		priority = 100
+		
+		visible = {
+			has_country_leader = {
+				name = "昭和天皇"
+			}
+		}
+	
+		available = {	original_tag = JAP	}
+		
+		allowed = {	original_tag = JAP	}
+		
+		ai_will_do = {	factor = 100	}
+		
+		fire_only_once = no
+		
+		cost = 10
+		
+		days_remove = 7
+		
+		days_re_enable = 365
+		
+		modifier = {
+			political_power_gain = 1
+		}
+		
+		remove_effect = {
+			random_list =  {
+				70 = {}
+				20 = {	set_country_flag = BUL_a_royal_visit_extra_success_flag	}
+				10 = {	set_country_flag = BUL_a_royal_visit_failure_flag	}
+			}
+			country_event = { id = bftb_bulgaria_tsar_boris.1 }
+			clr_country_flag = BUL_internal_affairs_ongoing_flag
+		}
 	}
 }

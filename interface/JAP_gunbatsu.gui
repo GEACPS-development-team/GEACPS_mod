@@ -65,10 +65,10 @@ guiTypes = {
 			maxHeight = 24
 		}
 		
-		#農民同盟
+		#艦隊派
 		iconType = {
 			name ="bzns_icon"
-			spriteType = "GFX_decision_faction_bul_bzns"
+			spriteType = "GFX_decision_faction_jap_fleet_faction"
 			position = { x = @FACTION_ICONS_X y = @BZNS_Y }
 		}
 		
@@ -76,15 +76,15 @@ guiTypes = {
 			name ="bzns_name_text"
 			position = { x = @FACTION_TEXT_X y = @BZNS_TEXT_Y }
 			font = "hoi_18mbs"
-			text = "BUL_bzns_name_text"
+			text = "JAP_fleet_faction_name_text"
 			format = left
 			maxHeight = 24
 		}
 		
-		#国家社会主義運動
+		#条約派
 		iconType = {
 			name ="nsm_icon"
-			spriteType = "GFX_decision_faction_bul_nsm"
+			spriteType = "GFX_decision_faction_jap_treaty_faction"
 			position = { x = @FACTION_ICONS_X y = @NSM_Y }
 		}
 		
@@ -92,7 +92,7 @@ guiTypes = {
 			name ="nsm_name_text"
 			position = { x = @FACTION_TEXT_X y = @NSM_TEXT_Y }
 			font = "hoi_18mbs"
-			text = "BUL_nsm_name_text"
+			text = "JAP_treaty_faction_name_text"
 			format = left
 			maxHeight = 24
 		}

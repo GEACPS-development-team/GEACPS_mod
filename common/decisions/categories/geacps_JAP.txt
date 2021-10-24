@@ -1,9 +1,9 @@
 JAP_Coup_detat_in_the_offing = {#クーデターの予感
-
 	icon = jap_pacific_guardian
 	
-	available = {	original_tag = JAP	}
+	allowed = {	original_tag = JAP	}
 	
+	visible = {	original_tag = JAP	}
 }
 
 JAP_national_policy_research_outline = {
@@ -19,10 +19,11 @@ JAP_gunbatsu = {#軍閥
 
 	picture = GFX_decision_cat_picture_gunbatsu
 	
+	allowed = {	original_tag = JAP	}
+	
 	visible = {	has_cosmetic_tag = JAP_great_empire	}
 	
-	available = {	original_tag = JAP	}
+	visible_when_empty = yes
 
 	scripted_gui = jap_gunbatsu_decision_ui
-	
 }
