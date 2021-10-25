@@ -34,7 +34,7 @@ guiTypes = {
 
 		#統制派
 		iconType ={
-			name ="production_header_bg"
+			name ="toseiha_header_bg"
 			spriteType = "GFX_decision_faction_jap_toseiha"
 			position = { x = @FACTION_ICONS_X y = @ZVENO_Y }
 			Orientation = "UPPER_LEFT"
@@ -48,10 +48,18 @@ guiTypes = {
 			format = left
 			maxHeight = 24
 		}
+
+		instantTextBoxType = {
+			name ="toseiha_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_TOSEIHA_TOOLTIP
+		}
 		
 		#皇道派
 		iconType = {
-			name ="bs_icon"
+			name ="kodoha_icon"
 			spriteType = "GFX_decision_faction_jap_kodoha"
 			position = { x = @FACTION_ICONS_X y = @BS_Y }
 		}
@@ -64,37 +72,61 @@ guiTypes = {
 			format = left
 			maxHeight = 24
 		}
+
+		instantTextBoxType = {
+			name ="kodoha_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_KODOHA_TOOLTIP
+		}
 		
 		#艦隊派
 		iconType = {
-			name ="bzns_icon"
+			name ="fleet_faction_icon"
 			spriteType = "GFX_decision_faction_jap_fleet_faction"
 			position = { x = @FACTION_ICONS_X y = @BZNS_Y }
 		}
 		
 		instantTextBoxType = {
-			name ="bzns_name_text"
+			name ="fleet_faction_name_text"
 			position = { x = @FACTION_TEXT_X y = @BZNS_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "JAP_fleet_faction_name_text"
 			format = left
 			maxHeight = 24
 		}
+
+		instantTextBoxType = {
+			name ="fleet_faction_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_FLEET_FACTION_TOOLTIP
+		}
 		
 		#条約派
 		iconType = {
-			name ="nsm_icon"
+			name ="treaty_faction_icon"
 			spriteType = "GFX_decision_faction_jap_treaty_faction"
 			position = { x = @FACTION_ICONS_X y = @NSM_Y }
 		}
 		
 		instantTextBoxType = {
-			name ="nsm_name_text"
+			name ="treaty_faction_name_text"
 			position = { x = @FACTION_TEXT_X y = @NSM_TEXT_Y }
 			font = "hoi_18mbs"
 			text = "JAP_treaty_faction_name_text"
 			format = left
 			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="treaty_faction_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_TREATY_FACTION_TOOLTIP
 		}
 		
 		#忠誠
