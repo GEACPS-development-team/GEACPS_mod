@@ -9,7 +9,7 @@ add_ideas = {
 }
 
 set_politics = {
-	ruling_party = liberal_conservatism
+	ruling_party = conservative_democracy
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,12 +18,10 @@ set_popularities = {
 	total_socialism = 5
 	radical_socialism = 5
 	social_democracy = 33
-	social_liberalism = 8
-	classical_liberalism = 8
-	liberal_conservatism = 30
-	social_conservatism = 7
+	liberal_democracy = 16
+	conservative_democracy = 37
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 4
 }
 
@@ -32,5 +30,5 @@ create_country_leader = {	#カール・ボロメオ・アルノルト
 	desc = ""
 	picture = "GFX_Karl_Arnold"
 	expire = "1958.6.29"
-	ideology = liberal_conservatism_ideology
+	ideology = conservative_democracy_ideology
 }

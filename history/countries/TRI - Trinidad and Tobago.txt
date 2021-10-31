@@ -4,7 +4,7 @@
 set_convoys = 5
 
 set_politics = {
-	ruling_party = reactionary_authoritarianism
+	ruling_party = national_authoritarianism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -13,12 +13,10 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 100
+	national_authoritarianism = 100
 	national_populism = 0
 }
 
@@ -27,5 +25,5 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_Bede_Clifford"
 	expire = "1969.10.6"
-	ideology = reactionary_authoritarianism_ideology
+	ideology = national_authoritarianism_ideology
 }

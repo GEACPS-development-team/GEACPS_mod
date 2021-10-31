@@ -5,7 +5,7 @@ set_cosmetic_tag = NETHERLANDS_kingdom
 set_convoys = 10
 
 set_politics = {
-	ruling_party = social_conservatism
+	ruling_party = conservative_democracy
 	last_election = "1937.5.26"
 	election_frequency = 48
 	elections_allowed = yes
@@ -14,12 +14,10 @@ set_popularities = {
 	total_socialism = 2
 	radical_socialism = 1
 	social_democracy = 27
-	social_liberalism = 6
-	classical_liberalism = 7
-	liberal_conservatism = 17
-	social_conservatism = 36
+	liberal_democracy = 13
+	conservative_democracy = 53
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 4
 }
 
@@ -28,68 +26,5 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_Wilhelmina"
 	expire = "1962.11.28"
-	ideology = total_socialism_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = radical_socialism_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = social_democracy_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = classical_liberalism_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = social_conservatism_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = authoritative_democracy_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = reactionary_authoritarianism_ideology
-}
-create_country_leader = {
-	name = "ウィルヘルミナ"
-	desc = ""
-	picture = "GFX_Wilhelmina"
-	expire = "1962.11.28"
-	ideology = national_populism_ideology
+	ideology = conservative_democracy_ideology
 }

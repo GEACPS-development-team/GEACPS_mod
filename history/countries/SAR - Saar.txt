@@ -4,7 +4,7 @@
 	set_cosmetic_tag = SAR_FRA
 
 	set_politics = {
-		ruling_party = social_conservatism
+		ruling_party = conservative_democracy
 		last_election = "1932.2.13"
 		election_frequency = 48
 		elections_allowed = no
@@ -13,12 +13,10 @@
 		total_socialism = 7
 		radical_socialism = 1
 		social_democracy = 32
-		social_liberalism = 7
-		classical_liberalism = 1
-		liberal_conservatism = 1
-		social_conservatism = 51
+		liberal_democracy = 8
+		conservative_democracy = 52
 		authoritative_democracy = 0
-		reactionary_authoritarianism = 0
+		national_authoritarianism = 0
 		national_populism = 0
 	}
 
@@ -27,7 +25,7 @@
 		desc = ""
 		picture = "GFX_Charles_de_Gaulle"
 		expire = "1970.11.9"
-		ideology = social_conservatism_ideology
+		ideology = conservative_democracy_ideology
 	}
 	
 	set_party_name = {	#ザールラント共産党
@@ -46,27 +44,17 @@
 		long_name = PARTY_saarland_social_democratic_party_long
 	}
 	set_party_name = {	#ザールラント民主党
-		ideology = social_liberalism
-		name = PARTY_saarland_democratic_party
-		long_name = PARTY_saarland_democratic_party_long
-	}
-	set_party_name = {	#ザールラント民主党
-		ideology = classical_liberalism
+		ideology = liberal_democracy
 		name = PARTY_saarland_democratic_party
 		long_name = PARTY_saarland_democratic_party_long
 	}
 	set_party_name = {	#ザールラント・キリスト教人民党
-		ideology = liberal_conservatism
+		ideology = conservative_democracy
 		name = PARTY_imperial_rule_assistance_association
 		long_name = PARTY_imperial_rule_assistance_association_long
 	}
-	set_party_name = {	#ザールラント・キリスト教人民党
-		ideology = social_conservatism
-		name = PARTY_saarland_christian_people's_party
-		long_name = PARTY_saarland_christian_people's_party_long
-	}
 	set_party_name = {	#高等弁務官事務所
-		ideology = reactionary_authoritarianism
+		ideology = national_authoritarianism
 		name = PARTY_high_commissioner_office
 		long_name = PARTY_high_commissioner_office_long
 	}

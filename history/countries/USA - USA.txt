@@ -12,7 +12,7 @@ add_opinion_modifier = {
 }
 
 set_politics = {
-	ruling_party = social_liberalism
+	ruling_party = liberal_democracy
 	last_election = "1944.11.7"
 	election_frequency = 48
 	elections_allowed = yes
@@ -21,12 +21,10 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 2
-	social_liberalism = 53
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 45
+	liberal_democracy = 53
+	conservative_democracy = 45
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
@@ -43,7 +41,7 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_Harry_S_Truman"
 	expire = "1972.12.26"
-	ideology = social_liberalism_ideology
+	ideology = liberal_democracy_ideology
 }
 create_equipment_variant = {
 	name = "アイオワ級"

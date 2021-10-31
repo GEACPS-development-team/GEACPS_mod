@@ -14,12 +14,10 @@
 		total_socialism = 0
 		radical_socialism = 0
 		social_democracy = 100
-		social_liberalism = 0
-		classical_liberalism = 0
-		liberal_conservatism = 0
-		social_conservatism = 0
+		liberal_democracy = 0
+		conservative_democracy = 0
 		authoritative_democracy = 0
-		reactionary_authoritarianism = 0
+		national_authoritarianism = 0
 		national_populism = 0
 	}
 	
@@ -49,28 +47,14 @@
 		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
 		picture = "GFX_Henry_William_Frederick_Albert"
 		expire = "1974.6.10"
-		ideology = social_liberalism_ideology
+		ideology = liberal_democracy_ideology
 	}
 	create_country_leader = {
 		name = "グロスター公爵ヘンリー"
 		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
 		picture = "GFX_Henry_William_Frederick_Albert"
 		expire = "1974.6.10"
-		ideology = classical_liberalism_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = liberal_conservatism_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = social_conservatism_ideology
+		ideology = conservative_democracy_ideology
 	}
 	create_country_leader = {
 		name = "グロスター公爵ヘンリー"
@@ -84,7 +68,7 @@
 		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
 		picture = "GFX_Henry_William_Frederick_Albert"
 		expire = "1974.6.10"
-		ideology = reactionary_authoritarianism_ideology
+		ideology = national_authoritarianism_ideology
 	}
 	create_country_leader = {
 		name = "グロスター公爵ヘンリー"
@@ -109,23 +93,13 @@
 		name = PARTY_australia_labour_party
 		long_name = PARTY_australia_labour_party_long
 	}
-	set_party_name = {	#オーストラリア労働党
-		ideology = social_liberalism
-		name = PARTY_australia_labour_party
-		long_name = PARTY_australia_labour_party_long
-	}
 	set_party_name = {	#オーストラリア自由党
-		ideology = classical_liberalism
-		name = PARTY_australia_liberal_party
-		long_name = PARTY_australia_liberal_party_long
-	}
-	set_party_name = {	#オーストラリア自由党
-		ideology = liberal_conservatism
+		ideology = liberal_democracy
 		name = PARTY_australia_liberal_party
 		long_name = PARTY_australia_liberal_party_long
 	}
 	set_party_name = {	#オーストラリア国民党
-		ideology = social_conservatism
+		ideology = conservative_democracy
 		name = PARTY_australia_national_party
 		long_name = PARTY_australia_national_party_long
 	}
@@ -135,7 +109,7 @@
 		long_name = PARTY_australia_national_party_long
 	}
 	set_party_name = {	#中央党
-		ideology = reactionary_authoritarianism
+		ideology = national_authoritarianism
 		name = PARTY_centre_party
 		long_name = PARTY_centre_party_long
 	}

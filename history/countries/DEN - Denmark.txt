@@ -5,7 +5,7 @@ set_cosmetic_tag = DEN_kingdom
 set_convoys = 5
 
 set_politics = {
-	ruling_party = liberal_conservatism
+	ruling_party = conservative_democracy
 	last_election = "1945.11.7"
 	election_frequency = 48
 	elections_allowed = yes
@@ -14,12 +14,10 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 100
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 100
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
@@ -28,68 +26,5 @@ create_country_leader = {
 	desc = ""
 	picture = "GFX_Christian_X"
 	expire = "1947.4.20"
-	ideology = total_socialism_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = radical_socialism_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = social_democracy_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = classical_liberalism_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = social_conservatism_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = authoritative_democracy_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = reactionary_authoritarianism_ideology
-}
-create_country_leader = {
-	name = "クリスチャン10世"
-	desc = ""
-	picture = "GFX_Christian_X"
-	expire = "1947.4.20"
-	ideology = national_populism_ideology
+	ideology = conservative_democracy_ideology
 }

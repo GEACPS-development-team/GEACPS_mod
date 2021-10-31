@@ -1,6 +1,5 @@
 ideologies = {
-	#全体的社会主義
-	total_socialism = {
+	total_socialism = {	#全体的社会主義
 		
 		types = {
 			total_socialism_ideology = {
@@ -51,8 +50,7 @@ ideologies = {
 		can_host_government_in_exile = yes
 		can_be_boosted = yes
 	}
-	#急進的社会主義
-	radical_socialism = {
+	radical_socialism = {	#急進的社会主義
 		
 		types = {
 			radical_socialism_ideology = {
@@ -107,12 +105,8 @@ ideologies = {
 		}
 		can_host_government_in_exile = yes
 		can_be_boosted = yes
-
 	}
-
-	#社会民主主義
-	social_democracy = {
-	
+	social_democracy = {	#社会民主主義
 		types = {
 			social_democracy_ideology = {
 			}
@@ -127,7 +121,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_DEMOCRACY_6"
 		}
 		
-		color = { 194 30 86 }
+		color = { 255 0 127 }
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -165,13 +159,9 @@ ideologies = {
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
-
-	#社会自由主義
-	social_liberalism = {
-	
+	liberal_democracy = {	#自由民主主義
 		types = {
-			social_liberalism_ideology = {
-			}
+			liberal_democracy_ideology = {}
 		}
 		
 		dynamic_faction_names = {
@@ -222,126 +212,9 @@ ideologies = {
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
-
-	#古典的自由主義
-	classical_liberalism = {
-	
+	conservative_democracy = {	#保守民主主義
 		types = {
-			classical_liberalism_ideology = {
-			}
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_CLASSICAL_LIBERALISM_1"
-			"FACTION_NAME_CLASSICAL_LIBERALISM_2"
-			"FACTION_NAME_CLASSICAL_LIBERALISM_3"
-			"FACTION_NAME_CLASSICAL_LIBERALISM_4"
-			"FACTION_NAME_CLASSICAL_LIBERALISM_5"
-			"FACTION_NAME_CLASSICAL_LIBERALISM_6"
-		}
-		
-		color = { 255 170 0 }
-		
-		rules = {
-			can_create_collaboration_government = yes
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = yes
-			can_join_factions = no
-		}
-		
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.25
-		
-		modifiers = {
-			mobilization_speed = -0.03
-			generate_wargoal_tension = 0.50
-			join_faction_tension = 0.50
-			lend_lease_tension = 0.10
-			send_volunteers_tension = 0.10
-			guarantee_tension = 0.30
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 5.0
-			compliance_gain = 0.05
-		}
-		
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.20
-		}
-		can_host_government_in_exile = yes
-		can_collaborate = yes
-		can_be_boosted = yes
-	}
-
-	#自由保守主義
-	liberal_conservatism = {
-	
-		types = {
-			liberal_conservatism_ideology = {
-			}
-		}
-		
-		dynamic_faction_names = {
-			"FACTION_NAME_LIBERAL_CONSERVATISM_1"
-			"FACTION_NAME_LIBERAL_CONSERVATISM_2"
-			"FACTION_NAME_LIBERAL_CONSERVATISM_3"
-			"FACTION_NAME_LIBERAL_CONSERVATISM_4"
-			"FACTION_NAME_LIBERAL_CONSERVATISM_5"
-			"FACTION_NAME_LIBERAL_CONSERVATISM_6"
-		}
-		
-		color = { 255 216 0 }
-		
-		rules = {
-			can_create_collaboration_government = yes
-			can_declare_war_on_same_ideology = yes
-			can_force_government = yes
-			can_send_volunteers = yes
-			can_puppet = yes
-			can_lower_tension = yes
-			can_only_justify_war_on_threat_country = no
-			can_guarantee_other_ideologies = yes
-			can_join_factions = no
-		}
-		
-		can_host_government_in_exile = yes
-		
-		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
-		faction_impact_on_world_tension = 0.25
-		
-		modifiers = {
-			mobilization_speed = -0.03
-			generate_wargoal_tension = 0.50
-			join_faction_tension = 0.50
-			lend_lease_tension = 0.10
-			send_volunteers_tension = 0.10
-			guarantee_tension = 0.30
-			civilian_intel_to_others = 20.0
-			army_intel_to_others = 10.0
-			navy_intel_to_others = 10.0
-			airforce_intel_to_others = 5.0
-			compliance_gain = 0.05
-		}
-		
-		faction_modifiers = {
-			faction_trade_opinion_factor = 0.10
-		}
-		can_host_government_in_exile = yes
-		can_collaborate = yes
-		can_be_boosted = yes
-	}
-
-	#社会保守主義
-	social_conservatism = {
-	
-		types = {
-			social_conservatism_ideology = {
+			conservative_democracy_ideology = {
 			}
 		}
 		
@@ -392,15 +265,10 @@ ideologies = {
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
-
-	#権威的民主主義
-	authoritative_democracy = {
-	
+	authoritative_democracy = {	#権威民主主義
 		types = {
-			authoritative_democracy_ideology = {
-			}
+			authoritative_democracy_ideology = {}
 		}
-
 		dynamic_faction_names = {
 			"FACTION_NAME_AUTHORITATIVE_DEMOCRACY_1"
 			"FACTION_NAME_AUTHORITATIVE_DEMOCRACY_2"
@@ -409,7 +277,7 @@ ideologies = {
 			"FACTION_NAME_AUTHORITATIVE_DEMOCRACY_5"
 		}
 		
-		color = { 110 110 110 }
+		color = { 127 127 127 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -448,12 +316,9 @@ ideologies = {
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
-
-	#反動的権威主義
-	reactionary_authoritarianism = {
-	
+	national_authoritarianism = {	#国家権威主義
 		types = {
-			reactionary_authoritarianism_ideology = {
+			national_authoritarianism_ideology = {
 			}
 		}
 
@@ -465,7 +330,7 @@ ideologies = {
 			"FACTION_NAME_REACTIONARY_AUTHORITARIANISM_5"
 		}
 		
-		color = { 45 45 45 }
+		color = { 63 63 63 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -506,13 +371,9 @@ ideologies = {
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
-
-	#国家大衆主義
-	national_populism = {
-	
+	national_populism = {	#国家大衆主義
 		types = {
-			national_populism_ideology = {
-			}
+			national_populism_ideology = {}
 		}
 		
 		dynamic_faction_names = {
@@ -523,7 +384,7 @@ ideologies = {
 			"FACTION_NAME_NATIONAL_POPULISM_5"
 		}
 		
-		color = { 142 57 0 }
+		color = { 127 63 0 }
 		
 		war_impact_on_world_tension = 0.25			#evil!
 		faction_impact_on_world_tension = 0.25
@@ -560,5 +421,4 @@ ideologies = {
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
-
 }
