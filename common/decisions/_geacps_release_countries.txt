@@ -4691,26 +4691,26 @@ release_decisions = {
 		ai_will_do = {	base = 100	}
 	}
 	
-	release_BHK = {
+	release_BUK = {
 		icon = generic_prepare_civil_war
 		cost = 0
 		available = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	BHK_state_variable = 1	}
+				check_variable = {	BUK_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = BHK	}	}
+			NOT = {	ROOT = {	original_tag = BUK	}	}
 		}
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	BHK_state_variable = 1	}
+				check_variable = {	BUK_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = BHK	}	}
+			NOT = {	ROOT = {	original_tag = BUK	}	}
 		}
-		complete_effect = {	country_event = fate_of_BHK.0	}
+		complete_effect = {	country_event = fate_of_BUK.0	}
 		ai_will_do = {	base = 100	}
 	}
 	
@@ -5910,26 +5910,26 @@ release_decisions = {
 		ai_will_do = {	base = 100	}
 	}
 	
-	release_YML = {
+	release_YAM = {
 		icon = generic_prepare_civil_war
 		cost = 0
 		available = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	YML_state_variable = 1	}
+				check_variable = {	YAM_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = YML	}	}
+			NOT = {	ROOT = {	original_tag = YAM	}	}
 		}
 		visible = {
 			any_state = {
 				is_owned_by = ROOT
-				check_variable = {	YML_state_variable = 1	}
+				check_variable = {	YAM_state_variable = 1	}
 				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
 			}
-			NOT = {	ROOT = {	original_tag = YML	}	}
+			NOT = {	ROOT = {	original_tag = YAM	}	}
 		}
-		complete_effect = {	country_event = fate_of_YML.0	}
+		complete_effect = {	country_event = fate_of_YAM.0	}
 		ai_will_do = {	base = 100	}
 	}
 	
