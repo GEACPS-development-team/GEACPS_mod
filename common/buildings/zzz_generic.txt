@@ -6,14 +6,15 @@ buildings = {
 
 
 	infrastructure = {
-		base_cost = 3000
+		base_cost = 6000
 		icon_frame = 3
 		infrastructure = yes
-		max_level = 10
+		max_level = 5
 		value = 1
 
 		show_modifier = yes
-		max_fuel_building = 0.75 #k
+		max_fuel_building = 1.5 #k
+		allied_build = yes
 	}
 
 	arms_factory = {
@@ -48,8 +49,32 @@ buildings = {
 		max_level = 10
 		value = 1
 		damage_factor = 0.5
+		allied_build = yes
 	}
 
+	supply_node = {
+		show_on_map = 1
+		base_cost = 20000
+		provincial = yes
+		disabled_in_dmz = yes
+		icon_frame = 15
+		max_level = 1
+		centered = yes
+		supply_node = yes
+		damage_factor = 0.1
+		allied_build = yes
+		always_shown = yes
+	}	
+	
+	rail_way = {
+		base_cost = 170
+		per_level_extra_cost = 130
+		provincial = yes
+		disabled_in_dmz = yes
+		icon_frame = 16
+		max_level = 1
+	}
+	
 	naval_base = {
 		show_on_map = 1
 		show_on_map_meshes = 3
@@ -61,6 +86,7 @@ buildings = {
 		icon_frame = 6
 		max_level = 10
 		value = 1
+		allied_build = yes
 	}
 
 	bunker = {
@@ -75,7 +101,7 @@ buildings = {
 		max_level = 10
 		value = 1
 	}
-
+	
 	coastal_bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
@@ -112,7 +138,7 @@ buildings = {
 		anti_air = yes
 		disabled_in_dmz = yes
 		air_defence = 1
-		max_level = 10 # This is the max unlock level
+		max_level = 5 # This is the max unlock level
 		damage_factor = 0.1
 		value = 1
 	}
@@ -124,7 +150,7 @@ buildings = {
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 10 # This is the max unlock level
+		max_level = 3 # This is the max unlock level
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -153,9 +179,11 @@ buildings = {
 		icon_frame = 11
 		radar = yes
 		#max_level = 0 # max: 5
-		max_level = 10 # This is the max unlock level
+		max_level = 6 # This is the max unlock level
 		damage_factor = 0.5
 		value = 4
+		centered = yes
+		allied_build = yes
 	}
 
 	rocket_site = {
