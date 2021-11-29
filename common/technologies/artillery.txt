@@ -2,7 +2,7 @@ technologies = {
 
 	gw_artillery = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -10,6 +10,8 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_1
+			tank_small_cannon
+			secondary_turret_small_cannon
 		}
 		
 		path = {
@@ -59,7 +61,7 @@ technologies = {
 	
 	interwar_artillery = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -86,7 +88,12 @@ technologies = {
 		modern_sp_artillery_brigade = {
 			soft_attack = 0.05
 		}
-		
+		enable_equipment_modules = {
+			tank_medium_howitzer
+			tank_small_cannon_2
+			tank_close_support_gun
+			secondary_turret_close_support_gun
+		}
 		path = {
 			leads_to_tech = artillery1
 			research_cost_coeff = 1
@@ -126,19 +133,18 @@ technologies = {
 	
 	artillery1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
 			artillery_equipment_2
 		}
 
-		#artillery = {
-		#	soft_attack = 0.1
-		#}
-		#artillery_brigade = {
-		#	soft_attack = 0.1
-		#}
+		enable_equipment_modules = {
+			tank_medium_howitzer_2
+			tank_medium_cannon
+
+		}
 		
 		path = {
 			leads_to_tech = artillery2
@@ -179,7 +185,7 @@ technologies = {
 	
 	artillery2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -251,7 +257,7 @@ technologies = {
 	
 	artillery3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -277,6 +283,10 @@ technologies = {
 		}
 		modern_sp_artillery_brigade = {
 			soft_attack = 0.05
+		}
+		
+		enable_equipment_modules = {
+			tank_medium_cannon_2
 		}
 		
 		path = {
@@ -313,19 +323,16 @@ technologies = {
 	
 	artillery4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
 			artillery_equipment_3
 		}
 
-		#artillery = { 
-		#	soft_attack = 0.1
-		#}
-		#artillery_brigade = {
-		#	soft_attack = 0.1
-		#}
+		enable_equipment_modules = {
+			tank_heavy_howitzer
+		}
 		
 		path = {
 			leads_to_tech = artillery5
@@ -366,7 +373,7 @@ technologies = {
 	
 	artillery5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -433,7 +440,7 @@ technologies = {
 	
 	artillery6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -486,7 +493,7 @@ technologies = {
 	
 	artillery7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -517,7 +524,7 @@ technologies = {
 	
 	artillery8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -570,7 +577,7 @@ technologies = {
 	
 	artillery9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -623,7 +630,7 @@ technologies = {
 	
 	artillery10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -654,7 +661,7 @@ technologies = {
 	
 	artillery11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -707,7 +714,7 @@ technologies = {
 	
 	artillery12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -760,7 +767,7 @@ technologies = {
 	
 	artillery13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -791,7 +798,7 @@ technologies = {
 	
 	artillery14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -844,7 +851,7 @@ technologies = {
 	
 	artillery15 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -893,7 +900,7 @@ technologies = {
 	
 	rocket_artillery = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -932,7 +939,7 @@ technologies = {
 	
 	rocket_artillery2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -978,7 +985,7 @@ technologies = {
 	
 	rocket_artillery3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1023,7 +1030,7 @@ technologies = {
 	
 	rocket_artillery4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1068,7 +1075,7 @@ technologies = {
 
 	rocket_artillery5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1113,7 +1120,7 @@ technologies = {
 	
 	rocket_artillery6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1158,7 +1165,7 @@ technologies = {
 	
 	rocket_artillery7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1196,7 +1203,7 @@ technologies = {
 	
 	rocket_artillery8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1241,7 +1248,7 @@ technologies = {
 	
 	rocket_artillery9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1286,7 +1293,7 @@ technologies = {
 	
 	rocket_artillery10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1324,7 +1331,7 @@ technologies = {
 	
 	rocket_artillery11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1369,7 +1376,7 @@ technologies = {
 	
 	rocket_artillery12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1414,7 +1421,7 @@ technologies = {
 	
 	rocket_artillery13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1453,7 +1460,7 @@ technologies = {
 		
 	rocket_artillery14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1493,7 +1500,7 @@ technologies = {
 	
 	interwar_antiair = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -1562,7 +1569,7 @@ technologies = {
 	
 	antiair1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1630,7 +1637,7 @@ technologies = {
 	
 	antiair2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1686,7 +1693,7 @@ technologies = {
 	
 	antiair3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1754,7 +1761,7 @@ technologies = {
 	
 	antiair4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1822,7 +1829,7 @@ technologies = {
 	
 	antiair5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -1877,7 +1884,7 @@ technologies = {
 	
 	antiair6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1945,7 +1952,7 @@ technologies = {
 	
 	antiair7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2013,7 +2020,7 @@ technologies = {
 	
 	antiair8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -2061,7 +2068,7 @@ technologies = {
 	
 	antiair9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2129,7 +2136,7 @@ technologies = {
 	
 	antiair10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2197,7 +2204,7 @@ technologies = {
 	
 	antiair11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -2245,7 +2252,7 @@ technologies = {
 	
 	antiair12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2313,7 +2320,7 @@ technologies = {
 	
 	antiair13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2381,7 +2388,7 @@ technologies = {
 	
 	antiair14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -2429,7 +2436,7 @@ technologies = {
 	
 	antiair15 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2493,7 +2500,7 @@ technologies = {
 
 	interwar_antitank = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -2574,7 +2581,7 @@ technologies = {
 	
 	antitank1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -2666,7 +2673,7 @@ technologies = {
 	
 	antitank2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		
 		enable_equipments = {
@@ -2753,7 +2760,7 @@ technologies = {
 	
 	antitank3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -2851,7 +2858,7 @@ technologies = {
 	
 	antitank4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -2944,7 +2951,7 @@ technologies = {
 	
 	antitank5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
@@ -3019,7 +3026,7 @@ technologies = {
 	
 	antitank6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -3102,7 +3109,7 @@ technologies = {
 	
 	antitank7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -3185,7 +3192,7 @@ technologies = {
 	
 	antitank8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
@@ -3239,7 +3246,7 @@ technologies = {
 	
 	antitank9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -3322,7 +3329,7 @@ technologies = {
 	
 	antitank10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -3405,7 +3412,7 @@ technologies = {
 	
 	antitank11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
@@ -3459,7 +3466,7 @@ technologies = {
 	
 	antitank12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -3542,7 +3549,7 @@ technologies = {
 	
 	antitank13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -3625,7 +3632,7 @@ technologies = {
 	
 	antitank14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
@@ -3679,7 +3686,7 @@ technologies = {
 	
 	antitank15 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
@@ -3757,7 +3764,7 @@ technologies = {
 	
 	antiairbuilding1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3786,7 +3793,7 @@ technologies = {
 
 	antiairbuilding2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3815,7 +3822,7 @@ technologies = {
 
 	antiairbuilding3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3844,7 +3851,7 @@ technologies = {
 
 	antiairbuilding4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3873,7 +3880,7 @@ technologies = {
 
 	antiairbuilding5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
