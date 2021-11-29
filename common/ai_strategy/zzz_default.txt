@@ -425,7 +425,7 @@ default_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = scandinavia
-		value = 100
+		value = 0
 	}
 	
 	ai_strategy = {
@@ -437,7 +437,7 @@ default_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = south_america
-		value = 50
+		value = 40
 	}
 	
 	ai_strategy = {
@@ -461,13 +461,13 @@ default_area_priority = {
 	ai_strategy = {
 		type = area_priority
 		id = pacific
-		value = 300
+		value = 50
 	}
 	
 	ai_strategy = {
 		type = area_priority
 		id = oceania
-		value = 80
+		value = 75
 	}
 }
 
@@ -477,12 +477,27 @@ default_area_priority_non_africa = {
 	ai_strategy = {
 		type = area_priority
 		id = africa
-		value = -90
+		value = -70
 	}
 	ai_strategy = {
 		type = area_priority
 		id = suez
-		value = -90
+		value = -40
+	}
+}
+
+default_railway_gun_management = {
+	enable = {
+		num_divisions > 150
+		is_major = yes
+		has_dlc = "No Step Back"
+	}
+	abort = {
+		num_divisions < 120
+	}
+	ai_strategy = {
+		type = railway_gun_divisions_ratio
+		value = 4
 	}
 }
 
@@ -815,5 +830,20 @@ minors_dont_spy = {
 		type = unit_ratio
 		id = scout_plane
 		value = -10
+	}
+}
+
+default_produce_floating_harbors = {
+	enable = {
+		is_historical_focus_on = no
+		has_war = yes
+		num_of_naval_factories > 25
+		num_of_military_factories > 40
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = unit_ratio
+		id = floating_harbor
+		value = 10
 	}
 }
