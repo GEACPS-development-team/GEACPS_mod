@@ -5,10 +5,10 @@ idea_categories = {
 		slot = power_ideology	#å†óÕÉCÉfÉIÉçÉMÅ[
 	}
 	cabinet = {	#ì‡ät
-		slot = head_of_government
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
+		character_slot = head_of_government
+		character_slot = political_advisor
+		character_slot = political_advisor
+		character_slot = political_advisor
 	}
 	law_category = {	#ñ@ó•
 		slot = economy
@@ -26,20 +26,20 @@ idea_categories = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
-		slot = theorist
+		character_slot = theorist
 		
 		ledger = civilian
 		
 		cost = 150
 		removal_cost = 0
 	}
-	military_category = {	#åRïî
-		slot = army_chief 
-		slot = navy_chief 
-		slot = air_chief
-		slot = high_command
-		slot = high_command
-		slot = high_command
+	military_category = {	#åRïî{
+		character_slot = army_chief 
+		character_slot = navy_chief 
+		character_slot = air_chief
+		character_slot = high_command
+		character_slot = high_command
+		character_slot = high_command
 		
 		ledger = invalid
 		
