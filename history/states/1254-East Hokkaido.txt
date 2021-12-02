@@ -1,0 +1,25 @@
+state = {
+	id = 1254
+	name = "STATE_1254"
+	manpower = 351000
+	state_category = rural
+	
+	resources = {	chromium = 3	}
+	
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		add_core_of = EZO
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		set_variable = {	EZO_state_variable = 1	}
+		set_variable = {	JAP_state_variable = 1	}
+	}
+	
+	provinces = {
+		1512	4646	7595	12493
+	}
+}

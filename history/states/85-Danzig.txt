@@ -1,28 +1,31 @@
 state = {
 	id = 85
 	name = "STATE_85"
-	manpower = 1080100
+	manpower = 366730
 	state_category = city
 	
 	history = {
 		owner = POL
 		add_core_of = POL
+		add_core_of = DNZ
+		add_core_of = KSH
 		buildings = {
 			infrastructure = 6
-			industrial_complex = 1
 			arms_factory = 2
-			dockyard = 1
-			air_base = 3
+			industrial_complex = 1
+			dockyard = 3
+			362 = {	naval_base = 5	}
 		}
-		victory_points = {	279	1	}
-		victory_points = {	3295	5	}
+		victory_points = {	362	10	}
 		set_variable = {	POL_state_variable = 1	}
+		set_variable = {	DZN_state_variable = 1	}
+		set_variable = {	KSH_state_variable = 1	}
 		set_variable = {	PRE_state_variable = 1	}
 		set_variable = {	EGR_state_variable = 4	}
 		set_variable = {	GER_state_variable = 4	}
 	}
 	
 	provinces = {
-		243	279	334	389	3295	3324	6347	9263
+		362
 	}
 }
