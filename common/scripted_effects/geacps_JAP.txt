@@ -1442,36 +1442,20 @@ JAP_replace_national_industrial_designer = {
 		limit = {
 			has_idea =  JAP_petrol_ad
 		}
-		swap_ideas = {
-			remove_idea = JAP_petrol_ad
-			add_idea = JAP_petrol_ad_improved
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_ira
-		}
-		swap_ideas = {
-			remove_idea = JAP_ira
-			add_idea = JAP_ira_improved
 		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_pirin
 		}
-		swap_ideas = {
-			remove_idea = JAP_pirin
-			add_idea = JAP_pirin_improved
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_vulkan_cement
-		}
-		swap_ideas = {
-			remove_idea = JAP_vulkan_cement
-			add_idea = JAP_vulkan_cement_improved
 		}
 	}	
 }
@@ -1483,10 +1467,6 @@ JAP_replace_national_naval_designer = {
 		}
 		custom_effect_tooltip = JAP_replace_national_naval_designer_tt
 		hidden_effect = {
-			swap_ideas = {
-				remove_idea = JAP_varna_naval_dockyard
-				add_idea = JAP_varna_naval_dockyard_improved
-			}
 		}
 	}
 	else = {
@@ -1499,36 +1479,20 @@ JAP_replace_national_aircraft_designer = {
 		limit = {
 			has_idea = JAP_dar
 		}
-		swap_ideas = {
-			remove_idea = JAP_dar
-			add_idea = JAP_dar_improved
-		}
 	}
 	if = {
 		limit = {
 			has_idea = JAP_kaproni_JAPgarski
-		}
-		swap_ideas = {
-			remove_idea = JAP_kaproni_JAPgarski
-			add_idea = JAP_kaproni_JAPgarski_improved
 		}
 	}
 	if = {
 		limit = {
 			has_idea = JAP_dvf
 		}
-		swap_ideas = {
-			remove_idea = JAP_dvf
-			add_idea = JAP_dvf_improved
-		}
 	}
 	if = {
 		limit = {
 			has_idea = JAP_dvf_sopot
-		}
-		swap_ideas = {
-			remove_idea = JAP_dvf_sopot
-			add_idea = JAP_dvf_sopot_improved
 		}
 	}
 }
@@ -1851,54 +1815,30 @@ JAP_add_improved_prussia_of_the_balkans_ns = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_01
 		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_01
-			add_idea = JAP_prussia_of_the_balkans_02
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_02
-		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_02
-			add_idea = JAP_prussia_of_the_balkans_03
 		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_03
 		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_03
-			add_idea = JAP_prussia_of_the_balkans_04
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_weakened_01
-		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_weakened_01
-			add_idea = JAP_prussia_of_the_balkans_01
 		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_weakened_02
 		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_weakened_02
-			add_idea = JAP_prussia_of_the_balkans_weakened_01
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_weakened_03
-		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_weakened_03
-			add_idea = JAP_prussia_of_the_balkans_02
 		}
 	}
 }
@@ -1908,45 +1848,25 @@ JAP_add_weakened_prussia_of_the_balkans_ns = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_01
 		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_01
-			add_idea = JAP_prussia_of_the_balkans_weakened_01
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_02
-		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_02
-			add_idea = JAP_prussia_of_the_balkans_01
 		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_03
 		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_03
-			add_idea = JAP_prussia_of_the_balkans_02
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_weakened_01
 		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_weakened_01
-			add_idea = JAP_prussia_of_the_balkans_weakened_02
-		}
 	}
 	else_if = {
 		limit = {
 			has_idea = JAP_prussia_of_the_balkans_weakened_02
-		}
-		swap_ideas = {
-			remove_idea = JAP_prussia_of_the_balkans_weakened_02
-			add_idea = JAP_prussia_of_the_balkans_weakened_03
 		}
 	}
 }
