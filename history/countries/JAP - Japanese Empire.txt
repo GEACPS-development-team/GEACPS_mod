@@ -2,13 +2,40 @@
 	limit = { has_dlc = "La Resistance" }
 	create_intelligence_agency = yes
 	create_operative_leader = {
-		name = ""
+		name = "中村天風"
+		GFX = GFX_
+		traits = {
+		}
+		bypass_recruitment = no
+		available_to_spy_master = yes
+		nationalities = { JAP }
+	}
+	create_operative_leader = {
+		name = "藤原岩市"
+		GFX = GFX_
+		traits = {
+		}#F機関
+		bypass_recruitment = 
+		available_to_spy_master = 
+		nationalities = { JAP }
+	}
+	create_operative_leader = {
+		name = "神本利男"
 		GFX = GFX_
 		traits = {
 		}
 		bypass_recruitment = 
 		available_to_spy_master = 
-		nationalities = {}
+		nationalities = { JAP MAN }
+	}
+	create_operative_leader = {
+		name = "堀栄三"
+		GFX = GFX_
+		traits = {
+		}#マッカーサー参謀
+		bypass_recruitment = 
+		available_to_spy_master = 
+		nationalities = { JAP }
 	}
 }
 
