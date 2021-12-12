@@ -34,7 +34,6 @@ add_ideas = {
 	JAP_victory_in_the_greater_east_asia_war
 	JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration
 	
-	JAP_Hideki_Tojo
 }
 set_technology = {
 	infantry_weapons = 1
@@ -201,20 +200,31 @@ set_popularities = {
 	national_populism = 77
 }
 
-create_country_leader = {
-	name = "昭和天皇"
-	desc = "POLITICS_HIROHITO_DESC"
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = national_populism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-
 set_imperial_rule_assistance_association = yes
 illegalization_of_total_socialism_party = yes
 illegalization_of_radical_socialism_party = yes
+
+recruit_character = CHARACTER_hirohito
+recruit_character = CHARACTER_fumimaro_konoe
+recruit_character = CHARACTER_mamoru_shigemitsu
+recruit_character = CHARACTER_hideki_tojo
+recruit_character = CHARACTER_hisaichi_terauchi
+recruit_character = CHARACTER_kisaburo_ando
+recruit_character = CHARACTER_kuniaki_koiso
+recruit_character = CHARACTER_shunroku_hata
+recruit_character = CHARACTER_kantaro_suzuki
+recruit_character = CHARACTER_keisuke_okada
+recruit_character = CHARACTER_mitsumasa_yonai
+
+recruit_character = CHARACTER_tempu_nakamura
+
+add_ideas = {
+	JAP_hideki_tojo_hg
+	JAP_hideki_tojo_am
+	JAP_hideki_tojo_cm
+	JAP_mamoru_shigemitsu_fm
+	JAP_kisaburo_ando_hm
+}
 
 create_equipment_variant = {
 	name = "金剛型"

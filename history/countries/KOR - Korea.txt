@@ -4,7 +4,7 @@
 set_convoys = 100
 
 set_politics = {
-	ruling_party = national_authoritarianism
+	ruling_party = national_populism
 	last_election = "1910.9.30"
 	election_frequency = 48
 	elections_allowed = no
@@ -18,14 +18,6 @@ set_popularities = {
 	authoritative_democracy = 0
 	national_authoritarianism = 0
 	national_populism = 100
-}
-
-create_country_leader = {
-	name = "阿部信行"
-	desc = "POLITICS_NOBUYUKI_ABE_DESC"
-	picture = "GFX_Nobuyuki_Abe"
-	expire = "1953.9.7"
-	ideology = national_populism_ideology
 }
 
 illegalization_of_total_socialism_party = yes
@@ -44,3 +36,5 @@ set_party_name = {	#国民総力朝鮮連盟
 	name = PARTY_national_mobilization_choson_league
 	long_name = PARTY_national_mobilization_choson_league_long
 }
+
+recruit_character = CHARACTER_nobuyuki_abe
