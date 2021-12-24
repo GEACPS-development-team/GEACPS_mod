@@ -26,17 +26,6 @@ set_popularities = {
 	national_populism = 100
 }
 
-create_country_leader = {
-	name = "康徳帝"
-	desc = "POLITICS_PUYI_DESC"
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = national_populism_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-
 illegalization_of_total_socialism_party = yes
 illegalization_of_radical_socialism_party = yes
 illegalization_of_social_democracy_party = yes
@@ -48,3 +37,5 @@ set_party_name = {	#満州国協和会
 	name = PARTY_manchukuo_concordia_association
 	long_name = PARTY_manchukuo_concordia_association_long
 }
+
+recruit_character = CHARACTER_aisin-gioro_puyi
