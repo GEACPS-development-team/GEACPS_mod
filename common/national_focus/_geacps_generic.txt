@@ -1005,7 +1005,7 @@ focus_tree = {
 			focus = Army
 		}
 		mutually_exclusive = {
-			focus = Focus_on_artillery_equipment_one
+			focus = Focus_on_artillery_equipment_I
 		}
 		x = 17
 		y = 3
@@ -1061,10 +1061,8 @@ focus_tree = {
 		prerequisite = {
 			focus = Army
 		}
-		mutually_exclusive = {
-			focus = Focus_on_armor_one
-			focus = Focus_on_infantry_equipment_one
-		}
+		mutually_exclusive = {	focus = Focus_on_light_tanks	}
+		mutually_exclusive = {	focus = Focus_on_infantry_equipment_I	}
 		x = 19
 		y = 3
 		completion_reward = {
@@ -1120,7 +1118,7 @@ focus_tree = {
 			focus = Army
 		}
 		mutually_exclusive = {
-			focus = Focus_on_artillery_equipment_one
+			focus = Focus_on_artillery_equipment_I
 		}
 		x = 21
 		y = 3

@@ -14,8 +14,7 @@ create_dynamic_country = {
 		ideology = authoritative_democracy_ideology
 	}
 	
-    set_capital = 595
-	load_oob = FNG_1946
+	#load_oob = FNG_1946
 	transfer_state = 591
 	transfer_state = 592
 	transfer_state = 593
@@ -26,17 +25,17 @@ create_dynamic_country = {
 
 	every_state = {
 		limit = {
-            OR = {
-                is_core_of = TWN
-                is_core_of = MAN
-                is_core_of = MEN
-                is_core_of = MON
-                is_core_of = TIB
-            }
-        }
+			OR = {
+				is_core_of = TWN
+				is_core_of = MAN
+				is_core_of = MEN
+				is_core_of = MON
+				is_core_of = TIB
+			}
+		}
 		remove_core_of = PREV
 	}
-    
-    JAP = { add_to_faction = PREV   }
+	
+	JAP = { add_to_faction = PREV   }
 	declare_war_on = {	target = CHI	type = civil_war	}
 }

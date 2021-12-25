@@ -1,0 +1,2000 @@
+defined_text = {
+	name = GetZvenoName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_zveno_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetBsName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_bs_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetBznsName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_bzns_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetNsmName
+	text = {
+		trigger = {
+			original_tag = JAP
+		}
+		localization_key = JAP_nsm_name_and_icon
+	}
+}
+
+defined_text = {
+	name = GetFfDecisionCategoryDesc
+	text = {
+		trigger = {
+			original_tag = JAP
+			NOT = { has_country_flag = JAP_ff_coup_planned_flag }
+		}
+		localization_key = JAP_the_fatherland_front_desc_planning
+	}
+	text = {
+		localization_key = JAP_the_fatherland_front_desc_coup
+	}
+}
+
+defined_text = {
+	name = GetAtWarFfPercentage
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_war = yes
+			NOT = { has_war_with = SOV }
+		}
+		localization_key = JAP_ff_percentage_at_war
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_war_with = SOV
+			NOT = { SOV = { has_government = total_socialism } }
+		}
+		localization_key = JAP_ff_percentage_at_war_with_sov
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_war_with = SOV
+			SOV = { has_government = total_socialism }
+		}
+		localization_key = JAP_ff_percentage_at_war_with_communist_sov
+	}
+	text = {
+		localization_key = JAP_ff_percentage_no_war
+	}
+}
+
+defined_text = {
+	name = GetAllyAtWarFfPercentage
+	text = {
+		trigger = {
+			original_tag = JAP
+			any_allied_country = {
+				has_war_with = SOV
+			}
+			NOT = { SOV = { has_government = total_socialism } }
+		}
+		localization_key = JAP_ff_percentage_ally_at_war_with_sov
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			any_allied_country = {
+				has_war_with = SOV
+			}
+			SOV = { has_government = total_socialism }
+		}
+		localization_key = JAP_ff_percentage_ally_at_war_with_communist_sov
+	}
+	text = {
+		localization_key = JAP_ff_percentage_ally_no_war_with_sov
+	}
+}
+
+defined_text = {
+	name = GetSovNeighborFfPercentage
+	text = {
+		trigger = {
+			original_tag = JAP
+			any_neighbor_country = {
+				tag = SOV
+			}
+			SOV = { has_government = total_socialism }
+			NOT = {
+				any_allied_country = {
+					has_war_with = SOV
+				}
+			}
+			NOT = {	has_war_with = SOV }
+		}
+		localization_key = JAP_ff_percentage_sov_is_neighbor
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			any_neighbor_country = {
+				tag = SOV
+			}
+			SOV = { has_government = total_socialism }
+			OR = {
+				any_allied_country = {
+					has_war_with = SOV
+				}
+				has_war_with = SOV
+			}
+		}
+		localization_key = JAP_ff_percentage_enemy_sov_is_neighbor
+	}
+	text = {
+		localization_key = JAP_ff_percentage_sov_is_not_neighbor
+	}
+}
+
+defined_text = {
+	name = GetCommunistSovFfPercentage
+	text = {
+		trigger = {
+			original_tag = JAP
+			SOV = { has_government = total_socialism }
+		}
+		localization_key = JAP_ff_percentage_sov_communist
+	}
+	text = {
+		localization_key = JAP_ff_percentage_sov_no_communist
+	}
+}
+
+defined_text = {
+	name = GetMilitaryFactoriesDamaged
+	text = {
+		trigger = {
+			original_tag = JAP
+			check_variable = { JAP_damaged_mils_state = 0 compare = not_equals }
+			check_variable = { JAP_damaged_mils_state = JAP_damaged_civs_state compare = not_equals }
+		}
+		localization_key = JAP_bs_strikes_military_factories_damaged_other_state
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			check_variable = { JAP_damaged_mils_state = 0 compare = not_equals }
+			check_variable = { JAP_damaged_mils_state = JAP_damaged_civs_state }
+		}
+		localization_key = JAP_bs_strikes_military_factories_damaged_same_state
+	}
+	text = {
+		localization_key = JAP_bs_strikes_no_military_factories_damaged
+	}
+}
+
+defined_text = {
+	name = GetInfrastructureDamaged
+	text = {
+		trigger = {
+			original_tag = JAP
+			check_variable = { JAP_damaged_infrastructure_state = 0 compare = not_equals }
+		}
+		localization_key = JAP_bs_strikes_infrastructure_damaged
+	}
+	text = {
+		localization_key = JAP_bs_strikes_no_infrastructure_damaged
+	}
+}
+
+defined_text = {
+	name = GetImroDecisionCategoryDesc
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_completed_focus = JAP_support_macedonian_organizations
+		}
+		localization_key = JAP_macedonian_revolutionary_organizations_cooperation_desc
+	}
+	text = {
+		localization_key = JAP_macedonian_revolutionary_organizations_hostile_desc
+	}
+}
+
+defined_text = { #This works together with scripted effect (JAP_get_random_JAPgarian_destination_royal_visit)
+	name = GetDestinationName
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 1 }
+		}
+		localization_key = JAP_dest_sofia
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 2 }
+		}
+		localization_key = JAP_dest_plovdiv
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 3 }
+		}
+		localization_key = JAP_dest_ruse
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 4 }
+		}
+		localization_key = JAP_dest_varna
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 5 }
+		}
+		localization_key = JAP_dest_burgas
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 6 }
+		}
+		localization_key = JAP_dest_vidin
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 7 }
+		}
+		localization_key = JAP_dest_tarnovo
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 8 }
+		}
+		localization_key = JAP_dest_stara_zagora
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 9 }
+		}
+		localization_key = JAP_dest_haskovo
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 10 }
+		}
+		localization_key = JAP_dest_shumen
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 11 }
+		}
+		localization_key = JAP_dest_sliven
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 12 }
+		}
+		localization_key = JAP_dest_yambol
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 13 }
+		}
+		localization_key = JAP_dest_pleven
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 14 }
+		}
+		localization_key = JAP_dest_dobrich
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 15 }
+		}
+		localization_key = JAP_dest_skopje
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 16 }
+		}
+		localization_key = JAP_dest_ohrid
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_tsars_destination = 17 }
+		}
+		localization_key = JAP_dest_leskovac
+	}
+}
+
+defined_text = { #This works together with scripted effect (JAP_get_random_JAPgarian_destination_march)
+	name = GetMarchDestinationName
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 1 }
+		}
+		localization_key = JAP_dest_sofia
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 2 }
+		}
+		localization_key = JAP_dest_plovdiv
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 3 }
+		}
+		localization_key = JAP_dest_ruse
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 4 }
+		}
+		localization_key = JAP_dest_varna
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 5 }
+		}
+		localization_key = JAP_dest_burgas
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 6 }
+		}
+		localization_key = JAP_dest_vidin
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 7 }
+		}
+		localization_key = JAP_dest_tarnovo
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 8 }
+		}
+		localization_key = JAP_dest_stara_zagora
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 9 }
+		}
+		localization_key = JAP_dest_haskovo
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 10 }
+		}
+		localization_key = JAP_dest_shumen
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 11 }
+		}
+		localization_key = JAP_dest_sliven
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 12 }
+		}
+		localization_key = JAP_dest_yambol
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 13 }
+		}
+		localization_key = JAP_dest_pleven
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 14 }
+		}
+		localization_key = JAP_dest_dobrich
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 15 }
+		}
+		localization_key = JAP_dest_skopje
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 16 }
+		}
+		localization_key = JAP_dest_ohrid
+	}
+	text = {
+		trigger = {
+			check_variable = { JAP_march_destination = 17 }
+		}
+		localization_key = JAP_dest_leskovac
+	}
+}
+
+defined_text = { 
+	name = GetPlotAgainstBorisFocusName
+	text = {
+		trigger = {
+			has_country_flag = JAP_tsar_boris_is_dead_flag
+		}
+		localization_key = JAP_plot_against_boris_death
+	}
+	text = {
+		localization_key = JAP_plot_against_boris_plot
+	}
+}
+
+defined_text = { 
+	name = GetPlotAgainstBorisFocusDesc
+	text = {
+		trigger = {
+			has_country_flag = JAP_tsar_boris_is_dead_flag
+		}
+		localization_key = JAP_plot_against_boris_desc_death
+	}
+	text = {
+		localization_key = JAP_plot_against_boris_desc_plot
+	}
+}
+
+defined_text = { 
+	name = GetGermanFactionName
+	text = {
+		trigger = {
+			GER = {
+				has_government = national_authoritarianism
+				is_faction_leader = yes
+			}
+		}
+		localization_key = JAP_join_the_tripartite_pact_central_powers
+	}
+	text = {
+		localization_key = JAP_join_the_tripartite_pact_axis
+	}
+}
+
+defined_text = { 
+	name = GetGermanFactionNameDef
+	text = {
+		trigger = {
+			has_completed_focus = JAP_the_fate_of_the_balkans
+		}
+		localization_key = JAP_JAPgarian_administration_of_the_balkans_independent_name_def
+	}
+	text = {
+		trigger = {
+			GER = {
+				has_government = national_authoritarianism
+				is_faction_leader = yes
+			}
+		}
+		localization_key = JAP_JAPgarian_administration_of_the_balkans_central_powers_name_def
+	}
+	text = {
+		localization_key = JAP_JAPgarian_administration_of_the_balkans_axis_name_def
+	}
+}
+
+defined_text = { 
+	name = GetGermanOrIndependent
+	text = {
+		trigger = {
+			has_completed_focus = JAP_the_fate_of_the_balkans
+		}
+		localization_key = JAP_JAPgarian_administration_of_the_balkans_everyone_name
+	}
+	text = {
+		localization_key = JAP_JAPgarian_administration_of_the_balkans_germans_name
+	}
+}
+
+defined_text = { 
+	name = GetJoinTripartitePactFocusDesc
+	text = {
+		trigger = {
+			GER = {
+				has_government = national_authoritarianism
+				is_faction_leader = yes
+			}
+		}
+		localization_key = JAP_join_the_tripartite_pact_desc_central_powers
+	}
+	text = {
+		localization_key = JAP_join_the_tripartite_pact_desc_axis
+	}
+}
+
+defined_text = { 
+	name = GetNapTarget
+	text = {
+		trigger = {
+			JAP = { has_non_aggression_pact_with = GRE }
+		}
+		localization_key = JAP_nap_with_greece
+	}
+	text = {
+		trigger = {
+			JAP = { has_non_aggression_pact_with = YUG }
+		}
+		localization_key = JAP_nap_with_yugoslavia
+	}
+	text = {
+		trigger = {
+			JAP = { has_non_aggression_pact_with = ROM }
+		}
+		localization_key = JAP_nap_with_romania
+	}
+	text = {
+		trigger = {
+			JAP = { has_non_aggression_pact_with = TUR }
+		}
+		localization_key = JAP_nap_with_turkey
+	}
+}
+
+defined_text = { 
+	name = GetJAPgarianFactionName
+	text = {
+		trigger = {
+			is_in_faction = yes
+		}
+		localization_key = JAP_refuse_army_restrictions_faction_name
+	}
+	text = {
+		localization_key = JAP_refuse_army_restrictions_no_faction
+	}
+}
+
+defined_text = { 
+	name = GetBorisDeathContext
+	text = {
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_tsar_boris_assassinated_flag
+			}
+		}
+		localization_key = JAP_context_of_death_assassinated
+	}
+	text = {
+		trigger = {
+			JAP = {
+				is_in_faction_with = GER
+				GER = { has_capitulated = no }
+				OR = {
+					GER = { is_faction_leader = yes }
+					AND = {
+						NOT = {
+							SOV = { is_faction_leader = yes }
+							GBR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+		}
+		localization_key = JAP_context_of_death_ger
+	}
+	text = {
+		trigger = {
+			JAP = {
+				is_in_faction_with = SOV
+				SOV = { has_capitulated = no }
+				OR = {
+					SOV = { is_faction_leader = yes }
+					AND = {
+						NOT = {
+							GER = { is_faction_leader = yes }
+							GBR = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+		}
+		localization_key = JAP_context_of_death_sov
+	}
+	text = {
+		trigger = {
+			JAP = {
+				is_in_faction_with = GBR
+				GBR = { has_capitulated = no }
+				OR = {
+					GBR = { is_faction_leader = yes }
+					AND = {
+						NOT = {
+							GER = { is_faction_leader = yes }
+							SOV = { is_faction_leader = yes }
+						}
+					}
+				}
+			}
+		}
+		localization_key = JAP_context_of_death_eng
+	}
+	text = {
+		localization_key = JAP_context_of_death_basic
+	}
+}
+
+defined_text = { 
+	name = GetBorisGermanMeetingLocation
+	text = {
+		trigger = {
+			GER = { has_full_control_of_state = 5 }
+		}
+		localization_key = JAP_boris_german_meeting_location_historical
+	}
+	text = {
+		localization_key = JAP_boris_german_meeting_location_capital
+	}
+}
+
+defined_text = { 
+	name = GetSuspicionsAboutBorisDeath
+	text = {
+		trigger = {
+			JAP = {
+				has_country_flag = JAP_tsar_boris_assassinated_flag
+			}
+		}
+		localization_key = JAP_popular_suspicions_about_death_assassinated
+	}
+	text = {
+		localization_key = JAP_popular_suspicions_about_death_basic
+	}
+}
+
+defined_text = {
+	name = GetAvailableArtilleryToPurchase
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = interwar_antiair
+				NOT = { has_tech = interwar_antitank }
+			}
+		}
+		localization_key = JAP_purchase_artillery_anti_air_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = interwar_antitank
+				NOT = { has_tech = interwar_antiair }
+			}
+		}
+		localization_key = JAP_purchase_artillery_anti_tank_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = interwar_antitank
+				has_tech = interwar_antiair
+			}
+		}
+		localization_key = JAP_purchase_artillery_everything_available
+	}
+	text = {
+		localization_key = JAP_purchase_artillery_only_artillery_available
+	}
+}
+
+defined_text = {
+	name = GetAvailableVehiclesToPurchase
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = mechanised_infantry
+				NOT = { has_tech = armored_car1 }
+			}
+		}
+		localization_key = JAP_purchase_vehicles_mechanized_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = armored_car1
+				NOT = { has_tech = mechanised_infantry }
+			}
+		}
+		localization_key = JAP_purchase_vehicles_armored_car_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = mechanised_infantry
+				has_tech = armored_car1
+			}
+		}
+		localization_key = JAP_purchase_vehicles_everything_available
+	}
+	text = {
+		localization_key = JAP_purchase_vehicles_only_motorized_available
+	}
+}
+
+defined_text = {
+	name = GetAvailableArmorToPurchase
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = basic_medium_tank
+				NOT = { has_tech = basic_heavy_tank }
+			}
+		}
+		localization_key = JAP_purchase_armor_medium_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = basic_heavy_tank
+				NOT = { has_tech = basic_medium_tank }
+			}
+		}
+		localization_key = JAP_purchase_armor_heavy_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = basic_medium_tank
+				has_tech = basic_heavy_tank
+			}
+		}
+		localization_key = JAP_purchase_armor_everything_available
+	}
+	text = {
+		localization_key = JAP_purchase_armor_only_light_available
+	}
+}
+
+defined_text = {
+	name = GetAvailableAircraftToPurchase
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = naval_bomber1
+				NOT = { has_tech = early_bomber }
+			}
+		}
+		localization_key = JAP_purchase_aircraft_naval_bomber_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = early_bomber
+				NOT = { has_tech = naval_bomber1 }
+			}
+		}
+		localization_key = JAP_purchase_aircraft_tactical_bomber_available
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_tech = naval_bomber1
+				has_tech = early_bomber
+			}
+		}
+		localization_key = JAP_purchase_aircraft_everything_available
+	}
+	text = {
+		localization_key = JAP_purchase_aircraf_only_fighter_available
+	}
+}
+
+defined_text = {
+	name = GetBalkanFactionName
+	text = {
+		trigger = {
+			has_completed_focus = JAP_balkan_federation_of_socialist_republics
+		}
+		localization_key = JAP_bury_the_grudges_of_the_past_communist
+	}
+	text = {
+		trigger = {
+			has_completed_focus = JAP_a_balkan_confederation
+		}
+		localization_key = JAP_bury_the_grudges_of_the_past_democratic
+	}
+	text = {
+		localization_key = JAP_bury_the_grudges_of_the_past_no_faction
+	}
+}
+
+defined_text = {
+	name = GetFactionMembersToPersuade
+	text = {
+		trigger = {
+			has_country_flag = JAP_zveno_integrated_flag
+		}
+		localization_key = JAP_persuade_zveno_members
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bs_integrated_flag
+		}
+		localization_key = JAP_persuade_bs_members
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bzns_integrated_flag
+		}
+		localization_key = JAP_persuade_bzns_members
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_nsm_integrated_flag
+		}
+		localization_key = JAP_persuade_nsm_members
+	}
+	text = {
+		localization_key = JAP_persuade_generic_members
+	}
+}
+
+defined_text = {
+	name = GetUltimatumOpinion
+	text = {
+		trigger = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value > 50
+				}
+			}
+		}
+		localization_key = JAP_ultimatum_opinion_high
+	}
+	text = {
+		trigger = {
+			FROM = {
+				has_opinion = {
+					target = ROOT
+					value < 0
+				}
+			}
+		}
+		localization_key = JAP_ultimatum_opinion_low
+	}
+	text = {
+		localization_key = JAP_ultimatum_opinion_medium
+	}
+}
+
+defined_text = {
+	name = GetUltimatumStrength
+	text = {
+		trigger = {
+			original_tag = JAP
+			FROM = {
+				strength_ratio = {
+					tag = ROOT
+					ratio < 1
+				}
+			}
+		}
+		localization_key = JAP_ultimatum_strength_high
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			FROM = {
+				strength_ratio = {
+					tag = ROOT
+					ratio > 1
+				}
+			}
+		}
+		localization_key = JAP_ultimatum_strength_low
+	}
+	text = {
+		localization_key = JAP_ultimatum_strength_medium
+	}
+}
+
+defined_text = {
+	name = GetUltimatumIdeology
+	text = {
+		trigger = {
+			has_government = FROM
+		}
+		localization_key = JAP_ultimatum_ideology_high
+	}
+	text = {
+		trigger = {
+			FROM = {
+				NOT = { has_government = ROOT }
+				OR = {
+					has_government = national_populism
+					has_government = national_authoritarianism
+				}
+			}
+		}
+		localization_key = JAP_ultimatum_ideology_medium
+	}
+	text = {
+		localization_key = JAP_ultimatum_ideology_low
+	}
+}
+
+defined_text = {
+	name = GetUltimatumFaction
+	text = {
+		trigger = {
+			FROM = {
+				is_in_faction = no
+			}
+		}
+		localization_key = JAP_ultimatum_faction_good
+	}
+	text = {
+		localization_key = JAP_ultimatum_faction_bad
+	}
+}
+
+defined_text = {
+	name = GetUltimatumInfluence
+	text = {
+		trigger = {
+			FROM = {
+				has_country_flag = JAP_fate_of_the_balkans_government_influenced_flag
+			}
+		}
+		localization_key = JAP_ultimatum_influence_good
+	}
+	text = {
+		localization_key = JAP_ultimatum_influence_bad
+	}
+}
+
+defined_text = {
+	name = GetUltimatumNeighbor
+	text = {
+		trigger = {
+			is_neighbor_of = FROM
+		}
+		localization_key = JAP_ultimatum_neighbor_good
+	}
+	text = {
+		localization_key = JAP_ultimatum_neighbor_bad
+	}
+}
+
+defined_text = {
+	name = GetUltimatumMajor
+	text = {
+		trigger = {
+			FROM = { is_major = yes }
+		}
+		localization_key = JAP_ultimatum_is_major
+	}
+	text = {
+		localization_key = JAP_ultimatum_is_not_major
+	}
+}
+
+defined_text = {
+	name = GetBsFfSupport
+	text = {
+		trigger = {
+			has_country_flag = JAP_bs_joined_ff_flag
+		}
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_has_bs_support
+	}
+	text = {
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_no_support
+	}
+}
+
+defined_text = {
+	name = GetBznsFfSupport
+	text = {
+		trigger = {
+			has_country_flag = JAP_bzns_joined_ff_flag
+		}
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_has_bzns_support
+	}
+	text = {
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_no_support
+	}
+}
+
+defined_text = {
+	name = GetZvenoFfSupport
+	text = {
+		trigger = {
+			has_country_flag = JAP_zveno_joined_ff_flag
+		}
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_has_zveno_support
+	}
+	text = {
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_no_support
+	}
+}
+
+defined_text = {
+	name = GetPartisanFfSupport
+	text = {
+		trigger = {
+			any_controlled_state = {
+				OR = {
+					is_core_of = GRE
+					is_core_of = YUG
+				}
+				has_state_flag = JAP_ff_state_flag
+			}
+		}
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_has_partisan_support
+	}
+	text = {
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_no_support
+	}
+}
+
+defined_text = {
+	name = GetPartisanFfSupportNationalities
+	text = {
+		trigger = {
+			any_controlled_state = {
+				is_core_of = GRE
+				has_state_flag = JAP_ff_state_flag
+			}
+			NOT = {
+				any_controlled_state = {
+					is_core_of = YUG
+					has_state_flag = JAP_ff_state_flag
+				}
+			}
+		}
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_partisans_gre
+	}
+	text = {
+		trigger = {
+			any_controlled_state = {
+				is_core_of = YUG
+				has_state_flag = JAP_ff_state_flag
+			}
+			NOT = {
+				any_controlled_state = {
+					is_core_of = GRE
+					has_state_flag = JAP_ff_state_flag
+				}
+			}
+		}
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_partisans_yug
+	}
+	text = {
+		localization_key = bftb_JAPgaria_fatherland_front.2.desc_partisans_both
+	}
+}
+
+defined_text = {
+	name = GetReasonForNotAbiding
+	text = {
+		trigger = {
+			JAP = { is_in_faction = yes }
+		}
+		localization_key = bftb_JAPgaria_rearmament.9.desc_reason_faction
+	}
+	text = {
+		localization_key = bftb_JAPgaria_rearmament.9.desc_reason_war
+	}
+}
+
+defined_text = {
+	name = GetTsarLoyalistOrPartyName
+	text = {
+		trigger = {
+			JAP = {
+				OR = {
+					has_country_leader = {
+						name = "Boris III"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Ferdinand I"
+						ruling_only = yes
+					}
+					has_country_leader = {
+						name = "Regency Council"
+						ruling_only = yes
+					}
+				}
+			}
+		}
+		localization_key = bftb_JAPgaria_nationalization.1.desc_tsar_loyalists
+	}
+	text = {
+		localization_key = bftb_JAPgaria_nationalization.1.desc_party_name
+	}
+}
+
+defined_text = {
+	name = GetLeaderNameIfRegencyCouncil
+	text = {
+		trigger = {
+			JAP = {
+				has_country_leader = {
+					name = "Regency Council"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = bftb_JAPgaria_nationalization.1.desc_regency_council
+	}
+	text = {
+		localization_key = bftb_JAPgaria_nationalization.1.desc_regular_leader
+	}
+}
+
+defined_text = {
+	name = GetEmbargoAllies
+	text = {
+		trigger = {
+			FROM = {
+				is_faction_leader = yes
+				any_other_country = {
+					is_in_faction_with = FROM
+					NOT = { original_tag = JAP }
+				}
+			}
+		}
+		localization_key = bftb_JAPgaria_nationalization.2.desc_allies
+	}
+	text = {
+		localization_key = bftb_JAPgaria_nationalization.2.desc_no_allies
+	}
+}
+
+defined_text = {
+	name = GetEmbargoAndKickAllies
+	text = {
+		trigger = {
+			FROM = {
+				is_faction_leader = yes
+				any_other_country = {
+					is_in_faction_with = FROM
+					NOT = { original_tag = JAP }
+				}
+			}
+		}
+		localization_key = bftb_JAPgaria_nationalization.3.desc_allies
+	}
+	text = {
+		localization_key = bftb_JAPgaria_nationalization.3.desc_no_allies
+	}
+}
+
+defined_text = {
+	name = GetFirstDonation
+	text = {
+		trigger = {
+			NOT = { has_country_flag = JAP_german_aircraft_donation_flag }
+		}
+		localization_key = bftb_JAPgaria_german_influence.1.desc_first_donation
+	}
+	text = {
+		localization_key = bftb_JAPgaria_german_influence.1.desc_more_donations
+	}
+}
+
+defined_text = {
+	name = GetLeaderToChallenge
+	text = {
+		trigger = {
+			OR = {
+				has_country_leader = {
+					name = "Boris III"
+					ruling_only = yes
+				}
+				has_country_leader = {
+					name = "Ferdinand I"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = bftb_JAPgaria_german_influence.4.desc_tsar
+	}
+	text = {
+		trigger = {
+			has_country_leader = {
+				name = "Regency Council"
+				ruling_only = yes
+			}
+		}
+		localization_key = bftb_JAPgaria_german_influence.4.desc_regency_council
+	}
+	text = {
+		localization_key = bftb_JAPgaria_german_influence.4.desc_no_tsar
+	}
+}
+
+defined_text = {
+	name = GetDominanceInTheAegeanDesc
+	text = {
+		trigger = {
+			has_country_flag = JAP_black_sea_mission_success_flag
+			NOT = { has_country_flag = JAP_adriatic_sea_mission_failure_flag }
+			NOT = { has_country_flag = JAP_adriatic_sea_mission_success_flag }
+		}
+		localization_key = JAP_dominance_in_the_aegean_black_sea_success
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_black_sea_mission_failure_flag
+			NOT = { has_country_flag = JAP_adriatic_sea_mission_failure_flag }
+			NOT = { has_country_flag = JAP_adriatic_sea_mission_success_flag }
+		}
+		localization_key = JAP_dominance_in_the_aegean_black_sea_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_adriatic_sea_mission_success_flag
+		}
+		localization_key = JAP_dominance_in_the_aegean_adriatic_success
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_adriatic_sea_mission_failure_flag
+			NOT = { has_country_flag = JAP_black_sea_mission_failure_flag }
+		}
+		localization_key = JAP_dominance_in_the_aegean_adriatic_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_adriatic_sea_mission_failure_flag
+			has_country_flag = JAP_black_sea_mission_failure_flag
+		}
+		localization_key = JAP_dominance_in_the_aegean_total_failure
+	}
+	text = {
+		localization_key = JAP_dominance_in_the_aegean_default
+	}
+}
+
+defined_text = {
+	name = GetDominanceInTheAdriaticDesc
+	text = {
+		trigger = {
+			has_country_flag = JAP_black_sea_mission_success_flag
+			NOT = { has_country_flag = JAP_aegean_sea_mission_failure_flag }
+			NOT = { has_country_flag = JAP_aegean_sea_mission_success_flag }
+		}
+		localization_key = JAP_dominance_in_the_adriatic_black_sea_success
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_black_sea_mission_failure_flag
+			NOT = { has_country_flag = JAP_aegean_sea_mission_failure_flag }
+			NOT = { has_country_flag = JAP_aegean_sea_mission_success_flag }
+		}
+		localization_key = JAP_dominance_in_the_adriatic_black_sea_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_aegean_sea_mission_success_flag
+		}
+		localization_key = JAP_dominance_in_the_adriatic_aegean_success
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_aegean_sea_mission_failure_flag
+			NOT = { has_country_flag = JAP_black_sea_mission_failure_flag }
+		}
+		localization_key = JAP_dominance_in_the_adriatic_aegean_failure
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_aegean_sea_mission_failure_flag
+			has_country_flag = JAP_black_sea_mission_failure_flag
+		}
+		localization_key = JAP_dominance_in_the_adriatic_total_failure
+	}
+	text = {
+		localization_key = JAP_dominance_in_the_adriatic_default
+	}
+}
+
+defined_text = {
+	name = GetJAPgarianLeaderToMeetStalin
+	text = {
+		trigger = {
+			JAP = { NOT = { has_government = total_socialism } }
+		}
+		localization_key = bftb_JAPgaria_soviet_influence.1.desc_diplomat
+	}
+	text = {
+		localization_key = bftb_JAPgaria_soviet_influence.1.desc_leader
+	}
+}
+
+defined_text = {
+	name = GetVictoryOrDefeatRepublicans
+	text = {
+		trigger = {
+			country_exists = SPD
+		}
+		localization_key = bftb_JAPgaria_scw_volunteers.1.desc_republicans_victorious
+	}
+	text = {
+		localization_key = bftb_JAPgaria_scw_volunteers.1.desc_republicans_defeated
+	}
+}
+
+defined_text = {
+	name = GetVictoryOrDefeatNationalists
+	text = {
+		trigger = {
+			country_exists = SPA
+		}
+		localization_key = bftb_JAPgaria_scw_volunteers.1.desc_nationalists_victorious
+	}
+	text = {
+		localization_key = bftb_JAPgaria_scw_volunteers.1.desc_nationalists_defeated
+	}
+}
+
+defined_text = {
+	name = GetJAPgarianTsar
+	text = {
+		trigger = {
+			has_country_leader = { 
+				name = "Boris III"
+			}
+		}
+		localization_key = JAP_tsar_is_boris
+	}
+	text = {
+		trigger = {
+			has_country_leader = { 
+				name = "Ferdinand I"
+			}
+		}
+		localization_key = JAP_tsar_is_ferdinand
+	}
+	text = {
+		trigger = {
+			has_country_leader = { 
+				name = "Regency Council"
+			}
+		}
+		localization_key = JAP_tsar_is_simeon
+	}
+	text = {
+		localization_key = JAP_tsar_is_unknown
+	}
+}
+
+defined_text = {
+	name = GetSpanishStruggleFocusLoc
+	text = {
+		localization_key = JAP_the_spanish_struggle_desc
+	}
+}
+
+defined_text = {
+	name = GetTrainTheYouthWingsFocusLoc
+	text = {
+		localization_key = JAP_train_the_youth_wings_desc
+	}
+}
+
+defined_text = {
+	name = GetAntiCapitalismFocusLoc
+	text = {
+		localization_key = JAP_the_anti_capitalist_fight_desc
+	}
+}
+
+defined_text = {
+	name = GetUnitedWeShallPrevailFocusLoc
+	text = {
+		localization_key = JAP_united_we_shall_prevail_desc
+	}
+}
+
+defined_text = {
+	name = GetDefyingMoscowFocusLoc
+	text = {
+		localization_key = JAP_defy_moscow_desc
+	}
+}
+
+defined_text = {
+	name = GetTheFateOfTheBalkansFocusLoc
+	text = {
+		localization_key = JAP_the_fate_of_the_balkans_desc
+	}
+}
+
+defined_text = {
+	name = GetSupportTheSpanishCoupFocusLoc
+	text = {
+		localization_key = JAP_support_the_spanish_coup_desc
+	}
+}
+
+defined_text = {
+	name = GetIntegrateTheRatniksFocusLoc
+	text = {
+		localization_key = JAP_integrate_the_ratniks_desc
+	}
+}
+
+defined_text = {
+	name = GetPlotAgainstBorisFocusLoc
+	text = {
+		localization_key = JAP_plot_against_boris_desc
+	}
+}
+
+defined_text = {
+	name = GetConsolidateTheThirdJAPgarianStateFocusLoc
+	text = {
+		localization_key = JAP_consolidate_the_third_JAPgarian_state_desc
+	}
+}
+
+defined_text = {
+	name = GetFightTyrannyFocusLoc
+	text = {
+		localization_key = JAP_fight_tyranny_desc
+	}
+}
+
+defined_text = {
+	name = GetObliterateTheBolshevikThreatFocusLoc
+	text = {
+		localization_key = JAP_obliterate_the_bolshevik_threat_desc
+	}
+}
+
+defined_text = {
+	name = GetABalkanConfederationFocusLoc
+	text = {
+		localization_key = JAP_a_balkan_confederation_desc
+	}
+}
+
+defined_text = {
+	name = GetJAPgarianLeader
+	text = {
+		trigger = {
+			JAP = {
+				OR = {
+					has_country_leader = { 
+						name = "Boris III"
+						ruling_only = yes
+					}
+					has_country_leader = { 
+						name = "Ferdinand I"
+						ruling_only = yes
+					}
+				}
+			}
+			
+		}
+		localization_key = JAP_leader_is_tsar
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_country_leader = { 
+					name = "Regency Council"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = JAP_leader_is_regency_council
+	}
+	text = {
+		localization_key = JAP_leader_is_a_politician
+	}
+}
+
+defined_text = {
+	name = GetJAPgarianLeaderDiplomaticMission
+	text = {
+		trigger = {
+			JAP = {
+				OR = {
+					has_country_leader = { 
+						name = "Boris III"
+						ruling_only = yes
+					}
+					has_country_leader = { 
+						name = "Ferdinand I"
+						ruling_only = yes
+					}
+				}
+			}
+			
+		}
+		localization_key = JAP_tsar_leads_diplomatic_mission
+	}
+	text = {
+		trigger = {
+			JAP = {
+				has_country_leader = { 
+					name = "Regency Council"
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = JAP_JAPgarian_government
+	}
+	text = {
+		localization_key = JAP_politician_leads_diplomatic_mission
+	}
+}
+
+defined_text = {
+	name = GetSpanishRepublicFlag
+	text = {
+		trigger = {
+			has_dlc = "La Resistance"
+			has_global_flag = spanish_civil_war
+		}
+		localization_key = JAP_spd_flag
+	}
+	text = {
+		trigger = {
+			has_dlc = "La Resistance"
+			NOT = { has_global_flag = spanish_civil_war }
+		}
+		localization_key = JAP_spr_flag
+	}
+	text = {
+		localization_key = JAP_no_spr_flag
+	}
+}
+
+defined_text = {
+	name = GetNationalistSpainFlag
+	text = {
+		trigger = {
+			has_dlc = "La Resistance"
+		}
+		localization_key = JAP_spa_flag
+	}
+	text = {
+		localization_key = JAP_no_spa_flag
+	}
+}
+
+defined_text = {
+	name = GetLukovLeader
+	text = {
+		trigger = {
+			has_government = national_populism
+		}
+		localization_key = JAP_hristo_lukov_death_leader_country
+	}
+	text = {
+		localization_key = JAP_hristo_lukov_death_leader_party
+	}
+}
+
+defined_text = {
+	name = GetLukovPartisans
+	text = {
+		trigger = {
+			has_government = total_socialism
+		}
+		localization_key = JAP_hristo_lukov_death_partisans_communism
+	}
+	text = {
+		localization_key = JAP_hristo_lukov_death_partisans_other
+	}
+}
+
+defined_text = {
+	name = GetLukovCriminals
+	text = {
+		trigger = {
+			has_government = total_socialism
+		}
+		localization_key = JAP_hristo_lukov_death_criminals_communism
+	}
+	text = {
+		localization_key = JAP_hristo_lukov_death_criminals_other
+	}
+}
+
+defined_text = {
+	name = GetLukovSecondAssailant
+	text = {
+		trigger = {
+			has_government = total_socialism
+		}
+		localization_key = JAP_hristo_lukov_death_second_assailant_communism
+	}
+	text = {
+		localization_key = JAP_hristo_lukov_death_second_assailant_other
+	}
+}
+
+defined_text = {
+	name = GetLukovAccomplice
+	text = {
+		trigger = {
+			has_government = total_socialism
+		}
+		localization_key = JAP_hristo_lukov_death_accomplice_communism
+	}
+	text = {
+		localization_key = JAP_hristo_lukov_death_accomplice_other
+	}
+}
+
+defined_text = {
+	name = GetLukovConclusion
+	text = {
+		trigger = {
+			has_government = national_populism
+		}
+		localization_key = JAP_hristo_lukov_death_conclusion_other
+	}
+	text = {
+		localization_key = JAP_hristo_lukov_death_conclusion_communism
+	}
+}
+
+defined_text = {
+	name = GetFormerLeaderBeforeFerdinand
+	text = {
+		trigger = {
+			JAP = {
+				check_variable = { JAP_former_leader_before_ferdinand = 1 }
+			}
+		}
+		localization_key = JAP_former_leader_before_ferdinand_kyoseivanov
+	}
+	text = {
+		trigger = {
+			JAP = {
+				check_variable = { JAP_former_leader_before_ferdinand = 2 }
+			}
+		}
+		localization_key = JAP_former_leader_before_ferdinand_filov
+	}
+	text = {
+		trigger = {
+			JAP = {
+				check_variable = { JAP_former_leader_before_ferdinand = 3 }
+			}
+		}
+		localization_key = JAP_former_leader_before_ferdinand_mushanov
+	}
+	text = {
+		trigger = {
+			JAP = {
+				check_variable = { JAP_former_leader_before_ferdinand = 4 }
+			}
+		}
+		localization_key = JAP_former_leader_before_ferdinand_lukov
+	}
+	text = {
+		trigger = {
+			JAP = {
+				check_variable = { JAP_former_leader_before_ferdinand = 5 }
+			}
+		}
+		localization_key = JAP_former_leader_before_ferdinand_tsankov
+	}
+	text = {
+		localization_key = JAP_former_leader_before_ferdinand_generic
+	}
+}
+
+defined_text = {
+	name = GetDemocraticBalkanConfederationName
+	text = {
+		localization_key = JAP_balkan_federation_democratic
+	}
+}
+
+defined_text = {
+	name = GetFederationOrConfederation
+	text = {
+		trigger = {
+			has_completed_focus = JAP_democratic_principles
+		}
+		localization_key = JAP_confederation
+	}
+	text = {
+		localization_key = JAP_federation
+	}
+}
+
+defined_text = {
+	name = GetDecisionCooldownTooltip
+	text = {
+		localization_key = JAP_days_re_enable_tt
+	}
+}
+
+defined_text = {
+	name = GetZvenoCoupTitle
+	text = {
+		localization_key = bftb_JAPgaria_factions.12.t
+	}
+}
+
+defined_text = {
+	name = GetZvenoCoupDesc
+	text = {
+		localization_key = bftb_JAPgaria_factions.12.desc
+	}
+}
+
+defined_text = {
+	name = GetSimeonsAge
+	text = {
+		trigger = {
+			date > 1946.6.16
+		}
+		localization_key = JAP_simeon_is_9
+	}
+	text = {
+		trigger = {
+			date > 1945.6.16
+		}
+		localization_key = JAP_simeon_is_8
+	}
+	text = {
+		trigger = {
+			date > 1944.6.16
+		}
+		localization_key = JAP_simeon_is_7
+	}
+	text = {
+		trigger = {
+			date > 1943.6.16
+		}
+		localization_key = JAP_simeon_is_6
+	}
+	text = {
+		trigger = {
+			date > 1942.6.16
+		}
+		localization_key = JAP_simeon_is_5
+	}
+	text = {
+		trigger = {
+			date > 1941.6.16
+		}
+		localization_key = JAP_simeon_is_4
+	}
+	text = {
+		trigger = {
+			date > 1940.6.16
+		}
+		localization_key = JAP_simeon_is_3
+	}
+	text = {
+		trigger = {
+			date > 1939.6.16
+		}
+		localization_key = JAP_simeon_is_2
+	}
+	text = {
+		trigger = {
+			date > 1938.6.16
+		}
+		localization_key = JAP_simeon_is_1
+	}
+	text = {
+		trigger = {
+			date > 1937.6.16
+		}
+		localization_key = JAP_simeon_is_super_baby
+	}
+	text = {
+		localization_key = JAP_simeon_is_underage
+	}
+}
+
+defined_text = {
+	name = GetTriggerForMacedonia
+	text = {
+		trigger = {
+			has_country_flag = JAP_imro_awakened_in_macedonia_flag
+		}
+		localization_key = JAP_destroy_imro_foreign_cancel_trigger_macedonia
+	}
+	text = {
+		localization_key = JAP_destroy_imro_foreign_cancel_trigger_null
+	}
+}
+
+defined_text = {
+	name = GetTriggerForCentralMacedonia
+	text = {
+		trigger = {
+			has_country_flag = JAP_imro_awakened_in_central_macedonia_flag
+		}
+		localization_key = JAP_destroy_imro_foreign_cancel_trigger_central_macedonia
+	}
+	text = {
+		localization_key = JAP_destroy_imro_foreign_cancel_trigger_null
+	}
+}
+
+defined_text = {
+	name = GetTriggerForThrace
+	text = {
+		trigger = {
+			has_country_flag = JAP_imro_awakened_in_thrace_flag
+		}
+		localization_key = JAP_destroy_imro_foreign_cancel_trigger_thrace
+	}
+	text = {
+		localization_key = JAP_destroy_imro_foreign_cancel_trigger_null
+	}
+}
+
+defined_text = {
+	name = GetZvenoLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_zveno_destroyed_flag
+		}
+		localization_key = JAP_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_country_flag = JAP_zveno_integrated_flag
+		}
+		localization_key = JAP_loyalty_status_integrated
+	}
+	text = {
+		localization_key = JAP_zveno_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetBsLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_bs_destroyed_flag
+		}
+		localization_key = JAP_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bs_integrated_flag
+		}
+		localization_key = JAP_loyalty_status_integrated
+	}
+	text = {
+		localization_key = JAP_bs_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetBznsLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_bzns_destroyed_flag
+		}
+		localization_key = JAP_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bzns_integrated_flag
+		}
+		localization_key = JAP_loyalty_status_integrated
+	}
+	text = {
+		localization_key = JAP_bzns_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetNsmLoyaltyStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_nsm_destroyed_flag
+		}
+		localization_key = JAP_loyalty_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_nsm_integrated_flag
+		}
+		localization_key = JAP_loyalty_status_integrated
+	}
+	text = {
+		localization_key = JAP_nsm_loyalty_status_amount
+	}
+}
+
+defined_text = {
+	name = GetZvenoPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_zveno_destroyed_flag
+		}
+		localization_key = JAP_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			original_tag = JAP
+			has_country_flag = JAP_zveno_integrated_flag
+		}
+		localization_key = JAP_popularity_status_integrated
+	}
+	text = {
+		localization_key = JAP_zveno_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetBsPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_bs_destroyed_flag
+		}
+		localization_key = JAP_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bs_integrated_flag
+		}
+		localization_key = JAP_popularity_status_integrated
+	}
+	text = {
+		localization_key = JAP_bs_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetBznsPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_bzns_destroyed_flag
+		}
+		localization_key = JAP_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_bzns_integrated_flag
+		}
+		localization_key = JAP_popularity_status_integrated
+	}
+	text = {
+		localization_key = JAP_bzns_popularity_status_amount
+	}
+}
+
+defined_text = {
+	name = GetNsmPopularityStatus
+	text = {
+		trigger = {
+			has_country_flag = JAP_nsm_destroyed_flag
+		}
+		localization_key = JAP_popularity_status_crushed
+	}
+	text = {
+		trigger = {
+			has_country_flag = JAP_nsm_integrated_flag
+		}
+		localization_key = JAP_popularity_status_integrated
+	}
+	text = {
+		localization_key = JAP_nsm_popularity_status_amount
+	}
+}

@@ -1,0 +1,106 @@
+focus_tree = {
+	id = geacps_JAP_Shunroku_Hata_focus
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JAP
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = {
+		x = 1500 y = 0
+	}
+
+	initial_show_position = {
+		focus = JAP_Shunroku_Hata
+	}
+	
+	focus = {#畑俊六
+		id = JAP_Shunroku_Hata
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 7
+		y = 0
+		relative_position_id = JAP_Election_of_Prime_Minister
+		completion_reward = {
+			remove_ideas_with_trait = head_of_government
+			add_ideas = JAP_Shunroku_Hata
+			add_ideas = JAP_The_commander_of_Operation_Ichi-Go
+		}
+	}
+	
+	focus = {#
+		id = JAP_15
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Shunroku_Hata
+		prerequisite = {
+			focus = JAP_Shunroku_Hata
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_16
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_15
+		prerequisite = {
+			focus = JAP_15
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_17
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Shunroku_Hata
+		prerequisite = {
+			focus = JAP_Shunroku_Hata
+		}
+		completion_reward = {
+		}
+	}
+	
+	focus = {#一中コンビ
+		id = JAP_Ichichu_duo
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Shunroku_Hata
+		prerequisite = {
+			focus = JAP_Shunroku_Hata
+		}
+		cost = 4.28
+		completion_reward = {
+		}
+	}
+	
+	focus = {#
+		id = JAP_18
+		icon = GFX_focus_JAP_Losange
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Ichichu_duo
+		prerequisite = {
+			focus = JAP_Ichichu_duo
+		}
+		completion_reward = {
+		}
+	}
+}

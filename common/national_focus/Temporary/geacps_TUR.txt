@@ -1,5 +1,5 @@
 focus_tree = {
-	id = geacps_TUR_focus
+	id = geacs_Turkish_focus
 	country = {
 		factor = 0
 		modifier = {
@@ -8,15 +8,19 @@ focus_tree = {
 		}
 	}
 	default = no
+	continuous_focus_position = {
+		x = 50 y = 3000
+	}
 	focus = {
 		id = TUR-geasps-1
 		icon = GFX_goal_generic_demand_territory
 		cost = 10.00
-		mutually_exclusive = {
-			focus = TUR-geasps-2
-		}
+		mutually_exclusive = { focus = TUR-geasps-2 }
 		x = 6
 		y = 0
+        completion_reward{
+            add_political_power = 100
+        }
 
 	}
 	focus = {
@@ -26,125 +30,32 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TUR-geasps-1
 		}
-		x = 24
+		x = 23
 		y = 0
+		completion_reward = {
+                add_manpower = 100000
+                add_popularity = {
+                    ideology = authoritarianism
+                    popularity = 0.2
+                }
 
-	}
-	focus = {
-		id = TUR-geasps-26
-		icon = GFX_goal_generic_air_production
-		cost = 10.00
-		x = 8
-		y = 10
-
-	}
-	focus = {
-		id = TUR-geasps-18
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
-		x = 2
-		y = 7
-
+		}
 	}
 	focus = {
 		id = TUR-geasps-3
-		icon = GFX_goal_support_communism
+		icon = GFX_goal_tripartite_pact
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-1
 		}
 		mutually_exclusive = {
 			focus = TUR-geasps-4
-			focus = TUR-geasps-5
 		}
 		x = 3
 		y = 2
 
 	}
-	focus = {
-		id = TUR-geasps-7
-		icon = GFX_goal_generic_war_with_comintern
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-3
-		}
-		x = 3
-		y = 4
-
-	}
-	focus = {
-		id = TUR-geasps-15
-		icon = GFX_focus_chi_mission_to_the_soviet_union
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-7
-		}
-		mutually_exclusive = {
-			focus = TUR-geasps-16
-		}
-		x = 2
-		y = 6
-
-	}
-	focus = {
-		id = TUR-geasps-27
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-26
-		}
-		x = 3
-		y = 11
-
-	}
-	focus = {
-		id = TUR-geasps-28
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-27
-		}
-		x = 3
-		y = 12
-
-	}
-	focus = {
-		id = TUR-geasps-29
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-28
-		}
-		x = 3
-		y = 13
-
-	}
-	focus = {
-		id = TUR-geasps-16
-		icon = GFX_goal_generic_alliance
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-7
-		}
-		mutually_exclusive = {
-			focus = TUR-geasps-15
-		}
-		x = 4
-		y = 6
-
-	}
-	focus = {
-		id = TUR-geasps-17
-		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-16
-		}
-		x = 4
-		y = 7
-
-	}
-	focus = {
+	focus = { #民のために
 		id = TUR-geasps-4
 		icon = GFX_goal_support_democracy
 		cost = 10.00
@@ -159,33 +70,62 @@ focus_tree = {
 		y = 2
 
 	}
-	focus = {
-		id = TUR-geasps-10
-		icon = GFX_focus_generic_the_giant_wakes
+	focus = { #ファシズム
+		id = TUR-geasps-5
+		icon = GFX_goal_support_fascism
 		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-4
+			focus = TUR-geasps-1
 		}
-		x = 6
+		mutually_exclusive = {
+			focus = TUR-geasps-4
+			focus = TUR-geasps-3
+		}
+		x = 13
+		y = 2
+
+	}
+	focus = {
+		id = TUR-geasps-6
+		text = 帝国化
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-23
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = { #トルココミューン
+		id = TUR-geasps-7
+		icon = GFX_goal_tripartite_pact
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-3
+		}
+		x = 3
 		y = 3
 
 	}
 	focus = {
 		id = TUR-geasps-8
+		text = イギリスに支援を要請
 		icon = GFX_focus_chi_british_cooperation
 		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-4
+		focus = TUR-geasps-4
 		}
 		mutually_exclusive = {
 			focus = TUR-geasps-9
 		}
-		x = 6
+		x = 7
 		y = 5
 
 	}
 	focus = {
 		id = TUR-geasps-9
+		text = フランスに支援を要請
 		icon = GFX_focus_chi_reach_out_to_france
 		cost = 10.00
 		prerequisite = {
@@ -194,8 +134,19 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TUR-geasps-8
 		}
-		x = 10
+		x = 9
 		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-10
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-4
+		}
+		x = 7
+		y = 3
 
 	}
 	focus = {
@@ -217,41 +168,11 @@ focus_tree = {
 		prerequisite = {
 			focus = TUR-geasps-11
 		}
+		mutually_exclusive = {
+			focus = TUR-geasps-12
+		}
 		x = 6
-		y = 8
-
-	}
-	focus = {
-		id = TUR-geasps-76
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-26
-		}
-		x = 8
-		y = 12
-
-	}
-	focus = {
-		id = TUR-geasps-60
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-11
-		}
-		x = 10
-		y = 8
-
-	}
-	focus = {
-		id = TUR-geasps-61
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-60
-		}
-		x = 9
-		y = 9
+		y = 7
 
 	}
 	focus = {
@@ -262,14 +183,245 @@ focus_tree = {
 			focus = TUR-geasps-11
 		}
 		mutually_exclusive = {
-			focus = TUR-geasps-14
+			focus = TUR-geasps-12-A
 		}
-		x = 10
+		x = 9
 		y = 7
 
 	}
 	focus = {
+		id = TUR-geasps-14
+		text = 西欧同盟と結合
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-11
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-12
+		}
+		x = 11
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-15
+		text = コミンフォルムに参加
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		cost = 10.00
+		prerequisite = {     
+		focus = TUR-geasps-7     
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-16
+		}
+		x = 2
+		y = 4
+
+	}
+	focus = {
+		id = TUR-geasps-16
+		text = 自作陣営
+		icon = GFX_goal_generic_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-7
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-15
+		}
+		x = 4
+		y = 4
+
+	}	
+	focus = {
+		id = TUR-geasps-17
+		text = アルメニア（？）を招待
+		icon = GFX_goal_generic_major_alliance
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-16
+		}
+		x = 4
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-18
+		text = アラブ連邦を併合
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-15
+		}
+		x = 2
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-20
+		text = ファシズムは世界を救う
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-5
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = TUR-geasps-21
+		text = 大トルコ帝国
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-20
+		}
+		x = 13
+		y = 4
+
+	}
+		focus = {
+		id = TUR-geasps-22
+		text = 皇帝を配置
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-6
+		}
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = TUR-geasps-23
+		text = 内戦の時だ
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-2
+		}
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = TUR-geasps-24
+		text = 軍人動員
+		icon = GFX_goal_generic_small_arms
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-23
+		}
+		x = 21
+		y = 2
+
+	}
+		focus = {
+		id = TUR-geasps-25
+		text = 戦争の正当化
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-23
+		}
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = TUR-geasps-26
+		icon = GFX_goal_generic_air_production
+		cost = 10.00
+		x = 8
+		y = 10
+		completion_reward = {
+		}
+
+	}
+
+	
+
+	focus = {
+		id = TUR-geasps-27
+		text = 兵器生産Ⅰ
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 4
+		y = 11
+
+
+	}
+
+	focus = {
+		id = TUR-geasps-28
+		text = 兵器生産Ⅱ
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-27
+		}
+		x = 4
+		y = 12
+
+	}
+
+	focus = {
+		id = TUR-geasps-29
+		text = 兵器生産Ⅲ
+		icon = GFX_goal_generic_construct_mil_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-28
+		}
+		x = 4
+		y = 13
+
+	}
+	
+	focus = {
+		id = TUR-geasps-30
+		text = 民需工場Ⅰ
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-31
+		text = 民需工場Ⅱ
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-30
+		}
+		x = 6
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-32
+		text = 民需工場Ⅲ
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-31
+		}
+		x = 6
+		y = 13
+
+	}
+	focus = {
 		id = TUR-geasps-33
+		text = インフラを強化Ⅰ
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
@@ -281,6 +433,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR-geasps-34
+		text = インフラを強化Ⅱ
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
@@ -292,6 +445,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR-geasps-35
+		text = インフラを強化Ⅲ
 		icon = GFX_goal_generic_construct_infrastructure
 		cost = 10.00
 		prerequisite = {
@@ -302,269 +456,101 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TUR-geasps-62
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-60
-		}
-		x = 11
-		y = 9
-
-	}
-	focus = {
 		id = TUR-geasps-36
+		text = 海軍強化
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-26
 		}
-		x = 13
+		x = 12
 		y = 11
 
 	}
 	focus = {
 		id = TUR-geasps-37
+		text = 海軍強化Ⅱ
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-36
 		}
-		x = 13
+		x = 12
 		y = 12
 
 	}
 	focus = {
 		id = TUR-geasps-38
+		text = 海軍強化Ⅲ
 		icon = GFX_goal_generic_construct_naval_dockyard
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-37
 		}
-		x = 13
+		x = 12
 		y = 13
 
 	}
 	focus = {
-		id = TUR-geasps-14
-		icon = GFX_goal_anschluss
+		id = TUR-geasps-39
+		text = 研究所増加Ⅰ
+		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-11
+			focus = TUR-geasps-29
+			focus = TUR-geasps-32
+			focus = TUR-geasps-35
+			focus = TUR-geasps-38
 		}
-		mutually_exclusive = {
-			focus = TUR-geasps-13
-		}
-		x = 14
-		y = 7
+		x = 8
+		y = 15
+        completion_reward{
+            add_research_slot = 1
+        }
+
 
 	}
 	focus = {
-		id = TUR-geasps-5
-		icon = GFX_goal_support_fascism
+		id = TUR-geasps-40
+		text = 研究所増加Ⅱ
+		icon = GFX_goal_tfv_generic_tech_sharing
 		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-1
+			focus = TUR-geasps-39
 		}
-		mutually_exclusive = {
-			focus = TUR-geasps-3
-			focus = TUR-geasps-4
-		}
-		x = 18
-		y = 2
-
-	}
-	focus = {
-		id = TUR-geasps-20
-		icon = GFX_goal_molotov_ribbentrop_pact
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-5
-		}
-		x = 18
-		y = 3
-
-	}
-	focus = {
-		id = TUR-geasps-21
-		icon = GFX_focus_generic_strike_at_democracy1
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-20
-		}
-		x = 18
-		y = 4
-
-	}
-	focus = {
-		id = TUR-geasps-80
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-21
-		}
-		x = 16
-		y = 5
-
-	}
-	focus = {
-		id = TUR-geasps-81
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-21
-		}
-		x = 18
-		y = 5
-
-	}
-	focus = {
-		id = TUR-geasps-82
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-21
-		}
-		x = 20
-		y = 5
-
-	}
-	focus = {
-		id = TUR-geasps-83
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-80
-			focus = TUR-geasps-81
-			focus = TUR-geasps-82
-		}
-		x = 18
-		y = 6
-
-	}
-	focus = {
-		id = TUR-geasps-23
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-2
-		}
-		x = 24
-		y = 1
-
-	}
-	focus = {
-		id = TUR-geasps-24
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-23
-		}
-		x = 22
-		y = 2
-
-	}
-	focus = {
-		id = TUR-geasps-6
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-23
-		}
-		x = 24
-		y = 3
-
-	}
-	focus = {
-		id = TUR-geasps-22
-		icon = GFX_goal_generic_political_pressure
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-6
-		}
-		x = 24
-		y = 4
-
+		x = 8
+		y = 16
+                completion_reward{
+                        add_research_slot = 1
+                }
 	}
 	focus = {
 		id = TUR-geasps-41
+		text = 中東政策
 		icon = GFX_goal_generic_territory_or_war
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-22
 		}
-		x = 23
+		x = 22
 		y = 6
 
 	}
 	focus = {
 		id = TUR-geasps-42
+		text = アラブ連邦を併合
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-41
 		}
-		x = 22
+		x = 21
 		y = 7
 
 	}
 	focus = {
-		id = TUR-geasps-46
-		icon = GFX_goal_generic_occupy_states_ongoing_war
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-42
-		}
-		x = 21
-		y = 8
-
-	}
-	focus = {
-		id = TUR-geasps-79
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-42
-		}
-		x = 24
-		y = 8
-
-	}
-	focus = {
-		id = TUR-geasps-25
-		icon = GFX_focus_rom_royal_dictatorship
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-23
-		}
-		x = 26
-		y = 2
-
-	}
-	focus = {
-		id = TUR-geasps-77
-		icon = GFX_focus_generic_home_defense
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-22
-		}
-		x = 26
-		y = 6
-
-	}
-	focus = {
-		id = TUR-geasps-78
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-42
-		}
-		x = 26
-		y = 8
-
-	}
-	focus = {
 		id = TUR-geasps-43
+		text = ビジャーズを要求
 		icon = GFX_goal_generic_military_deal
 		cost = 10.00
 		prerequisite = {
@@ -576,6 +562,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR-geasps-44
+		text = サウード家に天誅を
 		icon = GFX_goal_generic_major_war
 		cost = 10.00
 		prerequisite = {
@@ -585,8 +572,9 @@ focus_tree = {
 		y = 10
 
 	}
-	focus = {
+		focus = {
 		id = TUR-geasps-45
+		text = イランの一部を要求
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
@@ -600,7 +588,69 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TUR-geasps-46
+		text = イエメン・イハク
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-42
+		}
+		x = 21
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-47
+		text = オスマン帝国復興
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-46
+		}
+		prerequisite = {
+			focus = TUR-geasps-43
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-52
+		}
+	    
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-48
+		text = バルカン政策
+		icon = GFX_goal_generic_territory_or_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-22
+		}
+		mutually_exclusive = {
+			focus = TUR-geasps-45
+		}
+		x = 35
+		y = 7
+
+	}
+	focus = {
+		id = TUR-geasps-49
+		text = ギリシャに宣戦
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-48
+		}
+		prerequisite = {
+			focus = TUR-geasps-51
+		}
+		x = 29
+		y = 17
+
+	}
+	focus = {
 		id = TUR-geasps-50
+		text = イランの解体
 		icon = GFX_goal_generic_major_war
 		cost = 10.00
 		prerequisite = {
@@ -610,8 +660,25 @@ focus_tree = {
 		y = 8
 
 	}
+
+	
+	
+	
+	focus = {
+		id = TUR-geasps-51
+		text = 帝国領復興
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-47
+		}
+		x = 21
+		y = 12
+
+	}
 	focus = {
 		id = TUR-geasps-52
+		text = イスラム帝国建国
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		cost = 10.00
 		prerequisite = {
@@ -629,6 +696,7 @@ focus_tree = {
 	}
 	focus = {
 		id = TUR-geasps-53
+		text = オマーン併合
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
@@ -639,7 +707,116 @@ focus_tree = {
 
 	}
 	focus = {
+		id = TUR-geasps-54
+		text = 共産主義戦争に便乗
+		icon = GFX_goal_demand_sudetenland
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-49
+		}
+		x = 27
+		y = 18
+
+	}
+	focus = {
+		id = TUR-geasps-55
+		text = アフガニスタンを要求
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-53
+		}
+		x = 29
+		y = 13
+
+	}
+	focus = {
+		id = TUR-geasps-56
+		text = バルカン同盟に復習
+		icon = GFX_goal_generic_political_pressure
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-49
+		}
+		x = 30
+		y = 18
+
+	}
+	focus = {
+		id = TUR-geasps-57
+		text = ボスニアを要求
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-56
+		}
+		x = 29
+		y = 20
+
+	}
+	focus = {
+		id = TUR-geasps-58
+		text = クロアチアを要求
+		icon = GFX_goal_generic_major_war
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-56
+		}
+		x = 31
+		y = 20
+
+	}
+	focus = {
+		id = TUR-geasps-59
+		text = スロベニアを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-58
+		}
+		x = 31
+		y = 21
+
+	}
+	focus = {
+		id = TUR-geasps-60
+		text = バルカンを浄化
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-11
+		}
+		x = 8
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-61
+		text = ブルガリアを浄化
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-60
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = TUR-geasps-62
+		text = ユーゴスラビアを浄化
+		icon = GFX_goal_generic_propaganda
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-60
+		}
+		x = 9
+		y = 9
+
+	}
+	focus = {
 		id = TUR-geasps-63
+		text = インドを開放
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -650,18 +827,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TUR-geasps-55
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-53
-		}
-		x = 29
-		y = 13
-
-	}
-	focus = {
 		id = TUR-geasps-64
+		text = アフリカ要求
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -672,51 +839,8 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TUR-geasps-67
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-64
-		}
-		x = 30
-		y = 14
-
-	}
-	focus = {
-		id = TUR-geasps-69
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-64
-		}
-		x = 26
-		y = 14
-
-	}
-	focus = {
-		id = TUR-geasps-68
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-64
-		}
-		x = 28
-		y = 14
-
-	}
-	focus = {
-		id = TUR-geasps-66
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-64
-		}
-		x = 32
-		y = 14
-
-	}
-	focus = {
 		id = TUR-geasps-65
+		text = エジプトを要求
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -727,34 +851,84 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TUR-geasps-72
+		id = TUR-geasps-66
+		text = リビアを要求
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-65
+			focus = TUR-geasps-64
 		}
+		x = 32
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-67
+		text = アルジェリアを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-66
+			focus = TUR-geasps-64
 		}
+		x = 30
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-68
+		text = チュニジアを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-67
+			focus = TUR-geasps-64
+		}
+		x = 28
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-69
+		text = モロッコを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-64
+		}
+		x = 26
+		y = 14
+
+	}
+	focus = {
+		id = TUR-geasps-70
+		text = スペイン併合
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-69
 		}
 		prerequisite = {
 			focus = TUR-geasps-68
 		}
 		prerequisite = {
-			focus = TUR-geasps-69
+			focus = TUR-geasps-67
+		}
+		prerequisite = {
+			focus = TUR-geasps-66
+		}
+		prerequisite = {
+			focus = TUR-geasps-65
 		}
 		mutually_exclusive = {
 			focus = TUR-geasps-71
-			focus = TUR-geasps-70
+			focus = TUR-geasps-72
 		}
-		x = 32
+		x = 26
 		y = 15
 
 	}
 	focus = {
 		id = TUR-geasps-71
+		text = スペインを保護
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -781,214 +955,48 @@ focus_tree = {
 
 	}
 	focus = {
-		id = TUR-geasps-48
-		icon = GFX_goal_generic_territory_or_war
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-22
-		}
-		mutually_exclusive = {
-			focus = TUR-geasps-45
-		}
-		x = 35
-		y = 7
-
-	}
-	focus = {
-		id = TUR-geasps-30
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-26
-		}
-		x = 6
-		y = 11
-
-	}
-	focus = {
-		id = TUR-geasps-31
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-30
-		}
-		x = 6
-		y = 12
-
-	}
-	focus = {
-		id = TUR-geasps-32
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-31
-		}
-		x = 6
-		y = 13
-
-	}
-	focus = {
-		id = TUR-geasps-39
-		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-29
-			focus = TUR-geasps-32
-			focus = TUR-geasps-35
-			focus = TUR-geasps-38
-		}
-		x = 8
-		y = 15
-
-	}
-	focus = {
-		id = TUR-geasps-40
-		icon = GFX_goal_tfv_generic_tech_sharing
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-39
-		}
-		x = 8
-		y = 16
-
-	}
-	focus = {
-		id = TUR-geasps-47
-		icon = GFX_focus_generic_home_defense
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-46
-		}
-		prerequisite = {
-			focus = TUR-geasps-43
-		}
-		mutually_exclusive = {
-			focus = TUR-geasps-52
-		}
-		x = 21
-		y = 11
-
-	}
-	focus = {
-		id = TUR-geasps-49
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-48
-		}
-		prerequisite = {
-			focus = TUR-geasps-51
-		}
-		x = 36
-		y = 18
-
-	}
-	focus = {
-		id = TUR-geasps-51
-		icon = GFX_goal_generic_military_deal
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-47
-		}
-		x = 21
-		y = 12
-
-	}
-	focus = {
-		id = TUR-geasps-54
-		icon = GFX_goal_demand_sudetenland
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-49
-		}
-		x = 34
-		y = 19
-
-	}
-	focus = {
-		id = TUR-geasps-56
-		icon = GFX_goal_generic_political_pressure
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-49
-		}
-		x = 38
-		y = 19
-
-	}
-	focus = {
-		id = TUR-geasps-57
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-56
-		}
-		x = 37
-		y = 20
-
-	}
-	focus = {
-		id = TUR-geasps-58
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-56
-		}
-		x = 39
-		y = 20
-
-	}
-	focus = {
-		id = TUR-geasps-59
+		id = TUR-geasps-72
+		text = スペインと友好
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
-			focus = TUR-geasps-58
-		}
-		x = 39
-		y = 21
-
-	}
-	focus = {
-		id = TUR-geasps-70
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = TUR-geasps-69
-		}
-		prerequisite = {
-			focus = TUR-geasps-68
-		}
-		prerequisite = {
-			focus = TUR-geasps-67
+			focus = TUR-geasps-65
 		}
 		prerequisite = {
 			focus = TUR-geasps-66
 		}
 		prerequisite = {
-			focus = TUR-geasps-65
+			focus = TUR-geasps-67
+		}
+		prerequisite = {
+			focus = TUR-geasps-68
+		}
+		prerequisite = {
+			focus = TUR-geasps-69
 		}
 		mutually_exclusive = {
-			focus = TUR-geasps-72
 			focus = TUR-geasps-71
+			focus = TUR-geasps-70
 		}
-		x = 26
+		x = 32
 		y = 15
 
 	}
 	focus = {
 		id = TUR-geasps-73
+		text = アルバニアを要求
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
 			focus = TUR-geasps-57
 		}
-		x = 37
+		x = 29
 		y = 21
 
 	}
 	focus = {
 		id = TUR-geasps-74
+		text = 日本と友好
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -997,12 +1005,13 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TUR-geasps-75
 		}
-		x = 35
+		x = 27
 		y = 20
 
 	}
 	focus = {
 		id = TUR-geasps-75
+		text = レッド計画
 		icon = GFX_goal_unknown
 		cost = 10.00
 		prerequisite = {
@@ -1011,8 +1020,239 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = TUR-geasps-74
 		}
-		x = 33
+		x = 25
 		y = 20
 
 	}
+	focus = {
+		id = TUR-geasps-76
+		text = 全分野を発達
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-26
+		}
+		x = 8
+		y = 12
+
+	}
+	focus = {
+		id = TUR-geasps-77
+		text = 皇帝精神
+		icon = GFX_focus_generic_home_defense
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-22
+		}
+		x = 26
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-78
+		text = シリアを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-42
+		}
+		x = 26
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-79
+		text = ヨルダンを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-42
+		}
+		x = 24
+		y = 8
+
+	}
+
+
+
+	focus = {
+		id = TUR-geasps-80
+		text = シリアを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-21
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-81
+		text = キプロスを要求
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-21
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-82
+		text = コサフーカス？を併合
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-21
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = TUR-geasps-83
+		text = ギリシャを保護
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-80
+			focus = TUR-geasps-81
+			focus = TUR-geasps-82
+		}
+		x = 14
+		y = 7
+
+	}
+		focus = {
+		id = TUR-geasps-83-A
+		text = 帝国の野望
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-80
+			focus = TUR-geasps-81
+			focus = TUR-geasps-82
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = TUR-geasps-84
+		text = ブルガリアに制裁を
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-83
+		}
+		x = 14
+		y = 8
+
+	}
+	focus = {
+		id = TUR-geasps-85
+		text = セルビアに制裁を
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-87
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = TUR-geasps-86
+		text = マケドニアに軍事介入
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-87
+		}
+		x = 15
+		y = 10
+
+	}
+	focus = {
+		id = TUR-geasps-87
+		text = ユーゴスラビアに介入
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-84
+		}
+		x = 14
+		y = 9
+
+	}
+	focus = {
+		id = TUR-geasps-88
+		text = モンテネグロを懲罰
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-85
+			focus = TUR-geasps-86
+			focus = TUR-geasps-89
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = TUR-geasps-89
+		text = コソボに天罰を
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-87
+		}
+		x = 17
+		y = 10
+
+	}
+	
+	focus = {
+		id = TUR-geasps-90
+		text = アルバニア併合
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-88
+		}
+		x = 15
+		y = 12
+
+	}
+    focus = {
+		id = TUR-geasps-91
+		text = 戦争の準備
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = TUR-geasps-74
+			focus = TUR-geasps-75
+		}
+		x = 26
+		y = 21
+
+	}
+	focus = {
+		id = TUR-geasps-92
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 26
+		y = 22
+    }
+	focus = {
+	    id = TUR-geasps-93
+	    icon = GFX_goal_unknown
+	    cost = 10.00
+	    completion_reward = {
+	    }
+	}
+		
+
 }

@@ -159,7 +159,7 @@ focus_tree = {
         icon = GFX_focus_jap_pacific_guardian
         x = 18
         y = 0
-		relative_position_id = GEACPS_NF_JAP_navy_big_ships
+		mutually_exclusive = {	focus = GEACPS_NF_JAP_navy_big_ships	}
         cost = 4.28
         completion_reward = {
 
@@ -172,6 +172,7 @@ focus_tree = {
         x = -7
         y = 11
         relative_position_id = JAP_1-22_Incident
+		relative_position_id = GEACPS_NF_JAP_army_00
         cost = 4.28
         completion_reward = {
             navy_experience = 75

@@ -20,20 +20,6 @@ focus_tree = {
 }
 
 shared_focus = {
-	id = EGY_nationalization_of_industry
-	icon = GFX_goal_unknown
-	cost = 2
-	x = -1
-	y = 1
-	mutually_exclusive = {	focus = EGY_steering_toward_liberalization	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EGY_nationalization_of_industry"
-	}
-	relative_position_id = EGY_support_for_misr_group
-	prerequisite = { focus = EGY_support_for_misr_group }
-}
-
-shared_focus = {
 	id = EGY_end_of_war_economy
 	icon = GFX_goal_unknown
 	cost = 2
@@ -55,6 +41,20 @@ shared_focus = {
 	}
 	relative_position_id = EGY_end_of_war_economy
 	prerequisite = { focus = EGY_end_of_war_economy }
+}
+
+shared_focus = {
+	id = EGY_nationalization_of_industry
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	mutually_exclusive = {	focus = EGY_steering_toward_liberalization	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_nationalization_of_industry"
+	}
+	relative_position_id = EGY_support_for_misr_group
+	prerequisite = { focus = EGY_support_for_misr_group }
 }
 
 shared_focus = {
@@ -1035,19 +1035,6 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EGY_leader_of_middle_east
-	icon = GFX_goal_unknown
-	cost = 2
-	x = 0
-	y = 1
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EGY_leader_of_middle_east"
-	}
-	relative_position_id = EGY_overthrow
-	prerequisite = { focus = EGY_overthrow }
-}
-
-shared_focus = {
 	id = EGY_overthrow
 	icon = GFX_goal_unknown
 	cost = 2
@@ -1059,6 +1046,19 @@ shared_focus = {
 	mutually_exclusive = {	focus = EGY_settlement	}
 	relative_position_id = EGY_talks_with_ISR
 	prerequisite = { focus = EGY_talks_with_ISR }
+}
+
+shared_focus = {
+	id = EGY_leader_of_middle_east
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_leader_of_middle_east"
+	}
+	relative_position_id = EGY_overthrow
+	prerequisite = { focus = EGY_overthrow }
 }
 
 shared_focus = {
