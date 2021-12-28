@@ -4,6 +4,7 @@ technologies = {
 		doctrine_name = "TITLE_FLEET_IN_BEING"
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Fleet in being is mainly focused on Battleships (and Battlecrusiers/Heavy cruisers) and ASW with carriers and submarines being used to a lesser extent. The fleet may not have to do anything at all to be useful - simply having a powerful fleet in a protected port forces your enemies to keep a fleet of their own nearby in order you fight you if you emerge
 		#Bonus org for BB/BC/CA
@@ -73,6 +74,7 @@ technologies = {
 	battlefleet_concentration = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT #############
 		battleship = {
@@ -113,7 +115,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -132,6 +134,7 @@ technologies = {
 	subsidiary_carrier_role = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Carriers support the Battleships
 		
@@ -168,7 +171,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -196,6 +199,7 @@ technologies = {
 	hunter_killer_groups = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Groups of Destroyers (and CVEs should those ever be added) formed to hunt down enemy subs
 		
@@ -238,7 +242,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -261,6 +265,7 @@ technologies = {
 	floating_fortress = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Large, powerful gun armed ships are clearly the best ships
 		
@@ -313,6 +318,7 @@ technologies = {
 	floating_airfield = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Non base strike trees get a late CV booster
 		
@@ -364,6 +370,7 @@ technologies = {
 	grand_battlefleet = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Top tech for the Battlefleet tree. 
 		
@@ -391,6 +398,17 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				set_technology = {
+					new_doctrine = 1
+				}
+			}
+		}
+		
 		categories = {
 			naval_doctrine
 			fleet_in_being_tree
@@ -405,7 +423,7 @@ technologies = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -431,6 +449,7 @@ technologies = {
 	convoy_sailing = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Convoy escort/ ASW branch
 		
@@ -470,7 +489,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -489,6 +508,7 @@ technologies = {
 	convoy_escorts = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Assigning dedicated convoy escorts to keep them safe
 		
@@ -528,7 +548,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -555,6 +575,7 @@ technologies = {
 	escort_carriers = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Small carriers/converted merchant ships sail with convoys for increased defense against subs and raiders
 
@@ -593,7 +614,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -620,6 +641,7 @@ technologies = {
 	integrated_convoy_defence = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#The top convoy tech, basically now all the earlier concepts are working well with each other for maximum effect
 		
@@ -666,7 +688,7 @@ technologies = {
 				factor = 5
 			}
 			modifier = {
-				tag = GBR
+				tag = ENG
 				factor = 2
 			}
 			modifier = {
@@ -693,6 +715,7 @@ technologies = {
 	submarine_operations = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# Basic sub-boosting tree, not as good as Trade Interdiction's 
 				
@@ -737,6 +760,7 @@ technologies = {
 	undersea_blockade = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# Sub boost
 
@@ -789,6 +813,7 @@ technologies = {
 	convoy_interdiction = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# Sub boost
 		# EFFECT ##############
@@ -841,6 +866,7 @@ technologies = {
 	submarine_offensive = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# Sub boost
 		# EFFECT ##############
@@ -888,6 +914,7 @@ technologies = {
 		doctrine_name = "TITLE_TRADE_INTERDICTION"
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# This tree is focused on sinking convoys, and boosting Subs and all types of Cruiser. It has some boosts for CVs and Battleships, but the CVs should be a bit worse and the BBs a lot worse than Fleet in being's.
 
@@ -968,6 +995,7 @@ technologies = {
 	convoy_interdiction_ti = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		# same as convoy interdiction
@@ -1026,6 +1054,7 @@ technologies = {
 	unrestricted_submarine_warfare = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Nice bonus for subs vs convoys
 		
@@ -1091,6 +1120,7 @@ technologies = {
 	wolfpacks = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# More sub bonuses - subs operate in groups to sink convoys
 		
@@ -1157,6 +1187,7 @@ technologies = {
 	advanced_submarine_warfare = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# More sub bonuses - subs are deployed in numbers and the navy is better at putting them in the right places
 		
@@ -1222,6 +1253,7 @@ technologies = {
 	combined_operations_raiding = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#top raiding idea - subs and surface raiders act in harmony to destroy convoys
 		# EFFECT ##############
@@ -1256,6 +1288,16 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				set_technology = {
+					new_doctrine = 1
+				}
+			}
+		}
 		categories = {
 			naval_doctrine
 			trade_interdiction_tree
@@ -1303,6 +1345,7 @@ technologies = {
 	raider_patrols = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Surface raiding Branch + some boosts for Battleships
 		# EFFECT ##############		
@@ -1355,6 +1398,7 @@ technologies = {
 	capital_ship_raiders = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Battleships/Battlecrusiers are used as raiders rather than in the line of battle in a fleet
 
@@ -1417,6 +1461,7 @@ technologies = {
 	battlefleet_concentration_ti = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as battlefleet_concentration
@@ -1473,6 +1518,7 @@ technologies = {
 	floating_fortress_ti = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as floating_fortress
@@ -1523,6 +1569,7 @@ technologies = {
 	floating_airfield_ti = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as floating_airfield
@@ -1569,6 +1616,7 @@ technologies = {
 	carrier_operations = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# Carrier/Convoy defense branch - not great at either of them, should have worse CVs than Fleet in Being
 
@@ -1621,6 +1669,7 @@ technologies = {
 	convoy_sailing_ti = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as convoy_sailing
@@ -1666,6 +1715,7 @@ technologies = {
 	subsidiary_carrier_role_ti = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as subsidiary_carrier_role
@@ -1709,6 +1759,7 @@ technologies = {
 	naval_air_operations = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# slightly improved CV operation
 
@@ -1755,6 +1806,7 @@ technologies = {
 		doctrine_name = "TITLE_BASE_STRIKE"
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#This tree is primarily focused on Carriers. It should have the best Carriers, Battleships that are better than Trade interdiction but worse than Fleet in being, and has the same Sub tree as FiB. Convoy defense is better than TI but worse than FiB
 		# EFFECT ##############
@@ -1823,6 +1875,7 @@ technologies = {
 	carrier_primacy = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#The idea that the carrier is the primary naval weapon and that other ships, even the BB, exist to support them
 		# EFFECT ##############
@@ -1892,6 +1945,7 @@ technologies = {
 	carrier_task_forces = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Task forces are based around carrier flagship 
 		# EFFECT ##############
@@ -1966,6 +2020,7 @@ technologies = {
 	floating_airfield_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as floating_airfield
@@ -2040,6 +2095,7 @@ technologies = {
 	massed_strikes = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#CAGs are larger and more effort is made to have all planes arrive at the target at the same time, even when launched from multiple CVs
 		# EFFECT #############
@@ -2119,6 +2175,7 @@ technologies = {
 	floating_fortress_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as floating_fortress
@@ -2184,6 +2241,7 @@ technologies = {
 	carrier_battlegroups = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		#Larger carrier-lead fleets
 		
@@ -2206,6 +2264,16 @@ technologies = {
 		doctrine = yes	
 		research_cost = 3
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				set_technology = {
+					new_doctrine = 1
+				}
+			}
+		}
 		categories = {
 			naval_doctrine
 			base_strike_main
@@ -2263,6 +2331,7 @@ technologies = {
 	submarine_operations_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		# same as submarine_operations
@@ -2317,6 +2386,7 @@ technologies = {
 	undersea_blockade_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		# same as undersea_blockade
@@ -2378,6 +2448,7 @@ technologies = {
 	convoy_interdiction_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		# same as convoy_interdiction
@@ -2441,6 +2512,7 @@ technologies = {
 	submarine_offensive_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# same as submarine_offensive
 		# EFFECT ##############
@@ -2497,6 +2569,7 @@ technologies = {
 	convoy_escorts_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as convoy_escorts
@@ -2553,6 +2626,7 @@ technologies = {
 	escort_patrols = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# Lesser version of hunter-killer groups
 		
@@ -2622,6 +2696,7 @@ technologies = {
 	convoy_sailing_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as convoy_sailing
@@ -2686,6 +2761,7 @@ technologies = {
 	integrated_convoy_defence_bs = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 
 		#same as integrated_convoy_defence
@@ -2732,6 +2808,7 @@ technologies = {
 	new_doctrine = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		naval_morale_factor  = 0.1
 
@@ -2759,10 +2836,13 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				date < "1950.1.1"
-			}
+#			modifier = {
+#				factor = 0
+#				date < "1950.1.1"
+#			}
+		}
+		ai_research_weights = {
+			naval_doctrine = -1.0
 		}
 
 	}
@@ -2770,6 +2850,7 @@ technologies = {
 	fleet_in_being001 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		xor = {trade_interdiction001 base_strike001}
 		# EFFECT ##############
@@ -2826,6 +2907,7 @@ technologies = {
 	fleet_in_being011 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_capital_ship_attack_factor = 0.1
@@ -2873,6 +2955,7 @@ technologies = {
 	fleet_in_being012 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		carrier = {
@@ -2913,6 +2996,7 @@ technologies = {
 	fleet_in_being013 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_anti_air_attack_factor = 0.20
@@ -2948,6 +3032,7 @@ technologies = {
 	fleet_in_being014 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_capital_ship_attack_factor = 0.1
@@ -2985,6 +3070,7 @@ technologies = {
 	fleet_in_being015 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		naval_detection = 0.1
@@ -3021,6 +3107,7 @@ technologies = {
 	fleet_in_being016 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_capital_ship_defence_factor = 0.1
@@ -3064,6 +3151,7 @@ technologies = {
 	fleet_in_being021 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -3102,6 +3190,7 @@ technologies = {
 	fleet_in_being022 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -3147,6 +3236,7 @@ technologies = {
 	fleet_in_being023 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -3192,6 +3282,7 @@ technologies = {
 	fleet_in_being024 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -3234,6 +3325,7 @@ technologies = {
 	fleet_in_being031 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -3274,6 +3366,7 @@ technologies = {
 	fleet_in_being032 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		submarine = {
@@ -3316,6 +3409,7 @@ technologies = {
 	fleet_in_being033 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -3357,6 +3451,7 @@ technologies = {
 	fleet_in_being034 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -3396,6 +3491,7 @@ technologies = {
 	trade_interdiction001 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		xor = {base_strike001 fleet_in_being001 }
 		# EFFECT ##############
@@ -3453,6 +3549,7 @@ technologies = {
 	trade_interdiction011 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		naval_detection = 0.1
@@ -3489,6 +3586,7 @@ technologies = {
 	trade_interdiction012 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_anti_air_attack_factor = 0.20
@@ -3524,6 +3622,7 @@ technologies = {
 	trade_interdiction013 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_capital_ship_attack_factor = 0.1
@@ -3561,6 +3660,7 @@ technologies = {
 	trade_interdiction014 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -3602,6 +3702,7 @@ technologies = {
 	trade_interdiction021 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		carrier = {
@@ -3657,6 +3758,7 @@ technologies = {
 	trade_interdiction022 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_screen_attack_factor = 0.2
@@ -3702,6 +3804,7 @@ technologies = {
 	trade_interdiction023 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_screen_attack_factor = 0.1
@@ -3748,6 +3851,7 @@ technologies = {
 	trade_interdiction024 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -3789,6 +3893,7 @@ technologies = {
 	trade_interdiction031 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		submarine = {
@@ -3830,6 +3935,7 @@ technologies = {
 	trade_interdiction032 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -3871,6 +3977,7 @@ technologies = {
 	trade_interdiction033 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		submarine = {
@@ -3911,6 +4018,7 @@ technologies = {
 	trade_interdiction034 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		submarine = {
@@ -3953,6 +4061,7 @@ technologies = {
 	trade_interdiction035 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -3994,6 +4103,7 @@ technologies = {
 	trade_interdiction036 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -4033,6 +4143,7 @@ technologies = {
 	base_strike001 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		xor = {fleet_in_being001 trade_interdiction001}
 		# EFFECT ##############
@@ -4090,6 +4201,7 @@ technologies = {
 	base_strike011 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -4134,6 +4246,7 @@ technologies = {
 	base_strike012 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_anti_air_attack_factor = 0.20
@@ -4168,6 +4281,7 @@ technologies = {
 	base_strike013 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -4212,6 +4326,7 @@ technologies = {
 	base_strike014 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_screen_attack_factor = 0.1
@@ -4253,6 +4368,7 @@ technologies = {
 	base_strike021 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -4292,6 +4408,7 @@ technologies = {
 	base_strike022 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		submarine = {
@@ -4333,6 +4450,7 @@ technologies = {
 	base_strike023 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -4373,6 +4491,7 @@ technologies = {
 	base_strike024 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_submarine_attack_factor = 0.1
@@ -4411,6 +4530,7 @@ technologies = {
 	base_strike031 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_carrier_air_agility_factor = 0.10
@@ -4451,6 +4571,7 @@ technologies = {
 	base_strike032 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		convoy_escort_efficiency = 0.1
@@ -4488,6 +4609,7 @@ technologies = {
 	base_strike033 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		navy_capital_ship_attack_factor = 0.1
@@ -4524,6 +4646,7 @@ technologies = {
 	base_strike034 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		sortie_efficiency = 0.2
@@ -4566,6 +4689,7 @@ technologies = {
 	base_strike035 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		sortie_efficiency = 0.1
@@ -4608,6 +4732,7 @@ technologies = {
 	base_strike036 = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
+		
 
 		# EFFECT ##############
 		sortie_efficiency = 0.1

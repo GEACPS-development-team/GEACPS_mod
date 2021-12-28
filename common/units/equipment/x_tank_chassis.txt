@@ -330,6 +330,7 @@ equipments = {
 			steel = 4
 		}
 	}
+	
 	light_tank_equipment_4 = {
 		year = 1945
 	
@@ -355,6 +356,7 @@ equipments = {
 		
 		build_cost_ic = 10.5
 		resources = {
+#			oil = 2
 			steel = 4
 		}
 	}
@@ -383,7 +385,7 @@ equipments = {
 		
 		build_cost_ic = 11
 		resources = {
-		#oil = 2
+#			oil = 2
 			steel = 5
 		}
 	}
@@ -412,7 +414,7 @@ equipments = {
 		
 		build_cost_ic = 11.5
 		resources = {
-		#oil = 2
+#			oil = 2
 			steel = 5
 		}
 	}
@@ -441,15 +443,16 @@ equipments = {
 		
 		build_cost_ic = 12
 		resources = {
-			#oil = 3
+#			oil = 3
 			steel = 5
 		}
 	}
+
 	light_tank_artillery_equipment_1 = {
 		year = 1934
 
 		archetype = light_tank_artillery_chassis
-		#family = light_tank_equipment_1
+#		family = light_tank_equipment_1
 		priority = 20
 		visual_level = 0
 		can_convert_from = { 
@@ -493,7 +496,7 @@ equipments = {
 
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_1
-		#family = light_tank_equipment_2
+#		family = light_tank_equipment_2
 		priority = 20
 		visual_level = 1
 		can_convert_from = { 
@@ -526,7 +529,7 @@ equipments = {
 
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_2
-		#family = light_tank_equipment_3
+#		family = light_tank_equipment_3
 		priority = 20
 		visual_level = 2
 		can_convert_from = { 
@@ -553,11 +556,13 @@ equipments = {
 			tungsten = 1
 		}
 	}
+
+
 	light_tank_artillery_equipment_4 = {
 		year = 1945
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_3
-		#family = light_tank_equipment_4
+		family = light_tank_equipment_4
 		priority = 20
 		visual_level = 3
 		can_convert_from = { 
@@ -581,6 +586,7 @@ equipments = {
 		
 		build_cost_ic = 10.5
 		resources = {
+#			oil = 2
 			steel = 4
 			tungsten = 1
 		}
@@ -590,7 +596,7 @@ equipments = {
 		year = 1949
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_4
-		#family = light_tank_equipment_5
+		family = light_tank_equipment_5
 		priority = 20
 		visual_level = 4
 		can_convert_from = { 
@@ -614,6 +620,7 @@ equipments = {
 		
 		build_cost_ic = 11
 		resources = {
+#			oil = 2
 			steel = 5
 			tungsten = 1
 		}
@@ -623,7 +630,7 @@ equipments = {
 		year = 1953
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_5
-		#family = light_tank_equipment_6
+		family = light_tank_equipment_6
 		priority = 20
 		visual_level = 5
 		can_convert_from = { 
@@ -647,6 +654,7 @@ equipments = {
 		
 		build_cost_ic = 11.5
 		resources = {
+#			oil = 2
 			steel = 5
 			tungsten = 2
 		}
@@ -656,7 +664,7 @@ equipments = {
 		year = 1958
 		archetype = light_tank_artillery_chassis
 		parent = light_tank_artillery_equipment_6
-		#family = light_tank_equipment_7
+		family = light_tank_equipment_7
 		priority = 20
 		visual_level = 6
 		can_convert_from = { 
@@ -680,17 +688,17 @@ equipments = {
 		
 		build_cost_ic = 12
 		resources = {
-			#oil = 3
+#			oil = 3
 			steel = 5
 			tungsten = 2
 		}
 	}
 
-
 	light_tank_destroyer_equipment_1 = {
 		year = 1934
 
 		archetype = light_tank_destroyer_chassis
+#		family = light_tank_equipment_1
 		priority = 40
 		visual_level = 0
 		can_convert_from = { 
@@ -732,6 +740,7 @@ equipments = {
 
 		archetype = light_tank_destroyer_chassis
 		parent = light_tank_destroyer_equipment_1
+#		family = light_tank_equipment_2
 		priority = 40
 		visual_level = 1
 		can_convert_from = { 
@@ -766,6 +775,7 @@ equipments = {
 
 		archetype = light_tank_destroyer_chassis
 		parent = light_tank_destroyer_equipment_2
+#		family = light_tank_equipment_3
 		priority = 40
 		visual_level = 2
 		can_convert_from = { 
@@ -793,10 +803,13 @@ equipments = {
 			tungsten = 2
 		}
 	}
+
+
 	light_tank_destroyer_equipment_4 = {
 		year = 1945
 		archetype = light_tank_destroyer_chassis
 		parent = light_tank_destroyer_equipment_3
+		family = light_tank_equipment_4
 		priority = 40
 		visual_level = 3
 		can_convert_from = { 
@@ -813,6 +826,7 @@ equipments = {
 
 		build_cost_ic = 10.5
 		resources = {
+#			oil = 2
 			steel = 4
 			tungsten = 2
 		}
@@ -822,7 +836,7 @@ equipments = {
 		year = 1949
 		archetype = light_tank_destroyer_chassis
 		parent = light_tank_destroyer_equipment_4
-		#family = light_tank_equipment_5
+		family = light_tank_equipment_5
 		priority = 40
 		visual_level = 4
 		can_convert_from = { 
@@ -839,6 +853,7 @@ equipments = {
 
 		build_cost_ic = 11
 		resources = {
+#			oil = 2
 			steel = 5
 			tungsten = 3
 		}
@@ -848,7 +863,7 @@ equipments = {
 		year = 1953
 		archetype = light_tank_destroyer_chassis
 		parent = light_tank_destroyer_equipment_5
-		#family = light_tank_equipment_6
+		family = light_tank_equipment_6
 		priority = 40
 		visual_level = 5
 		can_convert_from = { 
@@ -865,6 +880,7 @@ equipments = {
 
 		build_cost_ic = 11.5
 		resources = {
+#			oil = 2
 			steel = 5
 			tungsten = 3
 		}
@@ -874,7 +890,7 @@ equipments = {
 		year = 1958
 		archetype = light_tank_destroyer_chassis
 		parent = light_tank_destroyer_equipment_6
-		#family = light_tank_equipment_7
+		family = light_tank_equipment_7
 		priority = 40
 		visual_level = 6
 		can_convert_from = { 
@@ -891,16 +907,17 @@ equipments = {
 
 		build_cost_ic = 12
 		resources = {
+#			oil = 3
 			steel = 5
 			tungsten = 3
 		}
 	}
 
-
 	light_tank_aa_equipment_1 = {
 		year = 1934
 
 		archetype = light_tank_aa_chassis
+#		family = light_tank_equipment_1
 		priority = 30
 		visual_level = 0
 		can_convert_from = { 
@@ -941,6 +958,7 @@ equipments = {
 
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_1
+#		family = light_tank_equipment_2
 		priority = 30
 		visual_level = 1
 		can_convert_from = { 
@@ -974,6 +992,7 @@ equipments = {
 
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_2
+#		family = light_tank_equipment_3
 		priority = 30
 		visual_level = 2
 		can_convert_from = { 
@@ -1001,11 +1020,12 @@ equipments = {
 			steel = 4
 		}
 	}
+
 	light_tank_aa_equipment_4 = {
 		year = 1945
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_3
-		#family = light_tank_equipment_4
+		family = light_tank_equipment_4
 		priority = 30
 		visual_level = 3
 		can_convert_from = { 
@@ -1022,6 +1042,7 @@ equipments = {
 		air_attack = 36
 		build_cost_ic = 12.5
 		resources = {
+#			oil = 2
 			steel = 4
 		}
 	}
@@ -1030,7 +1051,7 @@ equipments = {
 		year = 1949
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_4
-		#family = light_tank_equipment_5
+		family = light_tank_equipment_5
 		priority = 30
 		visual_level = 4
 		can_convert_from = { 
@@ -1047,6 +1068,7 @@ equipments = {
 		air_attack = 39
 		build_cost_ic = 13
 		resources = {
+#			oil = 2
 			steel = 4
 		}
 	}
@@ -1055,7 +1077,7 @@ equipments = {
 		year = 1953
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_5
-		#family = light_tank_equipment_6
+		family = light_tank_equipment_6
 		priority = 30
 		visual_level = 5
 		can_convert_from = { 
@@ -1072,6 +1094,7 @@ equipments = {
 		air_attack = 42
 		build_cost_ic = 13.5
 		resources = {
+#			oil = 2
 			steel = 5
 		}
 	}
@@ -1080,7 +1103,7 @@ equipments = {
 		year = 1958
 		archetype = light_tank_aa_chassis
 		parent = light_tank_aa_equipment_6
-		#family = light_tank_equipment_7
+		family = light_tank_equipment_7
 		priority = 30
 		visual_level = 6
 		can_convert_from = { 
@@ -1097,6 +1120,7 @@ equipments = {
 		air_attack = 45
 		build_cost_ic = 14
 		resources = {
+#			oil = 2
 			steel = 5
 		}
 	}
@@ -1211,6 +1235,7 @@ equipments = {
 		year = 1939
 
 		archetype = medium_tank_artillery_chassis
+#		family = medium_tank_equipment_1
 		priority = 60
 		visual_level = 0
 		can_convert_from = { 
@@ -1253,6 +1278,7 @@ equipments = {
 
 		archetype = medium_tank_artillery_chassis
 		parent = medium_tank_artillery_equipment_1
+#		family = medium_tank_equipment_2
 		priority = 60
 		visual_level = 1
 		can_convert_from = { 
@@ -1286,6 +1312,7 @@ equipments = {
 
 		archetype = medium_tank_artillery_chassis
 		parent = medium_tank_artillery_equipment_2
+#		family = medium_tank_equipment_3
 		priority = 60
 		visual_level = 2
 		can_convert_from = { 
@@ -1318,6 +1345,7 @@ equipments = {
 		year = 1939
 
 		archetype = medium_tank_destroyer_chassis
+#		family = medium_tank_equipment_1
 		priority = 80
 		visual_level = 0
 		can_convert_from = { 
@@ -1361,6 +1389,7 @@ equipments = {
 
 		archetype = medium_tank_destroyer_chassis
 		parent = medium_tank_destroyer_equipment_1
+#		family = medium_tank_equipment_2
 		priority = 80
 		visual_level = 1
 		can_convert_from = { 
@@ -1396,6 +1425,7 @@ equipments = {
 
 		archetype = medium_tank_destroyer_chassis
 		parent = medium_tank_destroyer_equipment_2
+#		family = medium_tank_equipment_3
 		priority = 80
 		visual_level = 2
 		can_convert_from = { 
@@ -1429,6 +1459,7 @@ equipments = {
 		year = 1939
 
 		archetype = medium_tank_aa_chassis
+#		family = medium_tank_equipment_1
 		priority = 70
 		visual_level = 0
 		can_convert_from = { 
@@ -1471,6 +1502,7 @@ equipments = {
 
 		archetype = medium_tank_aa_chassis
 		parent = medium_tank_aa_equipment_1
+#		family = medium_tank_equipment_2
 		priority = 70
 		visual_level = 1
 		can_convert_from = { 
@@ -1506,6 +1538,7 @@ equipments = {
 
 		archetype = medium_tank_aa_chassis
 		parent = medium_tank_aa_equipment_2
+#		family = medium_tank_equipment_3
 		priority = 70
 		visual_level = 2
 		can_convert_from = { 
@@ -1580,6 +1613,7 @@ equipments = {
 			tank_gun_upgrade
 		}
 	}
+
 	# 1941
 	heavy_tank_equipment_2 = {
 		year = 1941
@@ -1605,10 +1639,12 @@ equipments = {
 		
 		build_cost_ic = 27 
 		resources = {
+#			oil = 1
 			steel = 3
 			chromium = 3
 		}
 	}
+
 	# 1943
 	heavy_tank_equipment_3 = {
 		year = 1943
@@ -1639,6 +1675,7 @@ equipments = {
 			chromium = 3
 		}
 	}
+
 	heavy_tank_equipment_4 = {
 		year = 1948
 
@@ -1663,10 +1700,12 @@ equipments = {
 		
 		build_cost_ic = 33
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 4
 		}
 	}
+
 	heavy_tank_equipment_5 = {
 		year = 1956
 
@@ -1691,10 +1730,12 @@ equipments = {
 		
 		build_cost_ic = 33
 		resources = {
+#			oil = 2
 			steel = 7
 			chromium = 5
 		}
 	}
+
 
 	heavy_tank_artillery_equipment_1 = {
 		year = 1934
@@ -1736,6 +1777,7 @@ equipments = {
 		}
 		fuel_consumption = 2.2
 	}
+
 	heavy_tank_artillery_equipment_2 = {
 		year = 1941
 
@@ -1768,6 +1810,7 @@ equipments = {
 			chromium = 3
 		}
 	}
+
 	heavy_tank_artillery_equipment_3 = {
 		year = 1943
 
@@ -1800,12 +1843,13 @@ equipments = {
 			chromium = 3
 		}
 	}
+
 	heavy_tank_artillery_equipment_4 = {
 		year = 1948
 
 		archetype = heavy_tank_artillery_chassis
 		parent = heavy_tank_artillery_equipment_3
-		#family = heavy_tank_equipment_4
+		family = heavy_tank_equipment_4
 		can_convert_from = { 
 			heavy_tank_equipment_3
 			heavy_tank_equipment_4
@@ -1827,16 +1871,18 @@ equipments = {
 		
 		build_cost_ic = 33
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 4
 		}
 	}
+
 	heavy_tank_artillery_equipment_5 = {
 		year = 1956
 
 		archetype = heavy_tank_artillery_chassis
 		parent = heavy_tank_artillery_equipment_4
-		#family = heavy_tank_equipment_5
+		family = heavy_tank_equipment_5
 		can_convert_from = { 
 			heavy_tank_equipment_4
 			heavy_tank_equipment_5
@@ -1858,11 +1904,11 @@ equipments = {
 		
 		build_cost_ic = 38
 		resources = {
+#			oil = 2
 			steel = 8
 			chromium = 5
 		}
 	}
-
 
 	heavy_tank_destroyer_equipment_1 = {
 		year = 1934
@@ -1904,6 +1950,7 @@ equipments = {
 		}
 		fuel_consumption = 2.2
 	}
+
 	heavy_tank_destroyer_equipment_2 = {
 		year = 1941
 
@@ -1938,6 +1985,7 @@ equipments = {
 			chromium = 3
 		}
 	}
+
 	heavy_tank_destroyer_equipment_3 = {
 		year = 1943
 
@@ -1972,12 +2020,14 @@ equipments = {
 			chromium = 4
 		}
 	}
+
+
 	heavy_tank_destroyer_equipment_4 = {
 		year = 1948
 
 		archetype = heavy_tank_destroyer_chassis
 		parent = heavy_tank_destroyer_equipment_3
-		#family = heavy_tank_equipment_4
+		family = heavy_tank_equipment_4
 		can_convert_from = { 
 			heavy_tank_equipment_3
 			heavy_tank_equipment_4
@@ -2001,16 +2051,18 @@ equipments = {
 		
 		build_cost_ic = 33
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 5
 		}
 	}
+
 	heavy_tank_destroyer_equipment_5 = {
 		year = 1956
 
 		archetype = heavy_tank_destroyer_chassis
 		parent = heavy_tank_destroyer_equipment_4
-		#family = heavy_tank_equipment_5
+		family = heavy_tank_equipment_5
 		can_convert_from = { 
 			heavy_tank_equipment_4
 			heavy_tank_equipment_5
@@ -2034,6 +2086,7 @@ equipments = {
 		
 		build_cost_ic = 38
 		resources = {
+#			oil = 2
 			steel = 7
 			chromium = 6
 		}
@@ -2079,6 +2132,7 @@ equipments = {
 		}
 		fuel_consumption = 1.1
 	}
+
 	heavy_tank_aa_equipment_2 = {
 		year = 1941
 
@@ -2113,6 +2167,7 @@ equipments = {
 			chromium = 3
 		}
 	}
+
 	heavy_tank_aa_equipment_3 = {
 		year = 1943
 
@@ -2150,12 +2205,13 @@ equipments = {
 		}
 		
 	}
+
 	heavy_tank_aa_equipment_4 = {
 		year = 1948
 
 		archetype = heavy_tank_aa_chassis
 		parent = heavy_tank_aa_equipment_3
-		#family = heavy_tank_equipment_4
+		family = heavy_tank_equipment_4
 		can_convert_from = { 
 			heavy_tank_equipment_3
 			heavy_tank_equipment_4
@@ -2181,17 +2237,19 @@ equipments = {
 		
 		build_cost_ic = 33
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 4
 		}
 		
 	}
+
 	heavy_tank_aa_equipment_5 = {
 		year = 1956
 
 		archetype = heavy_tank_aa_chassis
 		parent = heavy_tank_aa_equipment_4
-		#family = heavy_tank_equipment_5
+		family = heavy_tank_equipment_5
 		can_convert_from = { 
 			heavy_tank_equipment_4
 			heavy_tank_equipment_5
@@ -2217,12 +2275,12 @@ equipments = {
 		
 		build_cost_ic = 38
 		resources = {
+#			oil = 2
 			steel = 7
 			chromium = 5
 		}
 		
 	}
-
 
 	modern_tank_equipment_1 = {
 		year = 1945
@@ -2265,6 +2323,7 @@ equipments = {
 		
 		fuel_consumption = 5
 	}
+	
 	modern_tank_equipment_2 = {
 		year = 1948
 		is_convertable = yes
@@ -2281,6 +2340,7 @@ equipments = {
 		ap_attack = 121
 		build_cost_ic = 29
 		resources = {
+#			oil = 2
 			steel = 4
 			chromium = 4
 		}
@@ -2302,6 +2362,7 @@ equipments = {
 		ap_attack = 143
 		build_cost_ic = 30
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 5
 		}
@@ -2323,6 +2384,7 @@ equipments = {
 		ap_attack = 166
 		build_cost_ic = 31
 		resources = {
+#			oil = 2
 			steel = 6
 			chromium = 5
 		}
@@ -2344,10 +2406,13 @@ equipments = {
 		ap_attack = 186
 		build_cost_ic = 32
 		resources = {
+#			oil = 3
 			steel = 6
 			chromium = 6
 		}
 	}
+
+
 	modern_tank_artillery_equipment_1 = {
 		year = 1945
 
@@ -2388,11 +2453,12 @@ equipments = {
 		}
 		fuel_consumption = 2.5
 	}
+
 	modern_tank_artillery_equipment_2 = {
 		year = 1948
 		archetype = modern_tank_artillery_chassis
 		parent = modern_tank_artillery_equipment_1
-		#family = modern_tank_equipment_2
+		family = modern_tank_equipment_2
 		priority = 180
 		visual_level = 1
 		can_convert_from = { 
@@ -2407,15 +2473,17 @@ equipments = {
 		hard_attack = 3.5
 		build_cost_ic = 29
 		resources = {
+#			oil = 2
 			steel = 4
 			chromium = 4
 		}
 	}
+
 	modern_tank_artillery_equipment_3 = {
 		year = 1951
 		archetype = modern_tank_artillery_chassis
 		parent = modern_tank_artillery_equipment_2
-		#family = modern_tank_equipment_3
+		family = modern_tank_equipment_3
 		priority = 180
 		visual_level = 2
 		can_convert_from = { 
@@ -2430,15 +2498,17 @@ equipments = {
 		hard_attack = 4
 		build_cost_ic = 30
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 5
 		}
 	}
+
 	modern_tank_artillery_equipment_4 = {
 		year = 1956
 		archetype = modern_tank_artillery_chassis
 		parent = modern_tank_artillery_equipment_3
-		#family = modern_tank_equipment_4
+		family = modern_tank_equipment_4
 		priority = 180
 		visual_level = 3
 		can_convert_from = { 
@@ -2453,15 +2523,17 @@ equipments = {
 		hard_attack = 4.5
 		build_cost_ic = 31
 		resources = {
+#			oil = 2
 			steel = 6
 			chromium = 5
 		}
 	}
+
 	modern_tank_artillery_equipment_5 = {
 		year = 1960
 		archetype = modern_tank_artillery_chassis
 		parent = modern_tank_artillery_equipment_4
-		#family = modern_tank_equipment_5
+		family = modern_tank_equipment_5
 		priority = 180
 		visual_level = 4
 		can_convert_from = { 
@@ -2476,6 +2548,7 @@ equipments = {
 		hard_attack = 5
 		build_cost_ic = 32
 		resources = {
+#			oil = 3
 			steel = 6
 			chromium = 6
 		}
@@ -2522,11 +2595,12 @@ equipments = {
 		}
 		fuel_consumption = 2.5
 	}
+
 	modern_tank_destroyer_equipment_2 = {
 		year = 1948
 		archetype = modern_tank_destroyer_chassis
 		parent = modern_tank_destroyer_equipment_1
-		#family = modern_tank_equipment_2
+		family = modern_tank_equipment_2
 		priority = 200
 		visual_level = 1
 		can_convert_from = { 
@@ -2542,6 +2616,7 @@ equipments = {
 		ap_attack = 178
 		build_cost_ic = 29
 		resources = {
+#			oil = 2
 			steel = 4
 			chromium = 4
 		}
@@ -2551,7 +2626,7 @@ equipments = {
 		year = 1951
 		archetype = modern_tank_destroyer_chassis
 		parent = modern_tank_destroyer_equipment_2
-		#family = modern_tank_equipment_3
+		family = modern_tank_equipment_3
 		priority = 200
 		visual_level = 2
 		can_convert_from = { 
@@ -2567,6 +2642,7 @@ equipments = {
 		ap_attack = 190
 		build_cost_ic = 30
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 5
 		}
@@ -2576,7 +2652,7 @@ equipments = {
 		year = 1956
 		archetype = modern_tank_destroyer_chassis
 		parent = modern_tank_destroyer_equipment_3
-		#family = modern_tank_equipment_4
+		family = modern_tank_equipment_4
 		priority = 200
 		visual_level = 3
 		can_convert_from = { 
@@ -2592,6 +2668,7 @@ equipments = {
 		ap_attack = 205
 		build_cost_ic = 31
 		resources = {
+#			oil = 2
 			steel = 6
 			chromium = 5
 		}
@@ -2601,7 +2678,7 @@ equipments = {
 		year = 1960
 		archetype = modern_tank_destroyer_chassis
 		parent = modern_tank_destroyer_equipment_4
-		#family = modern_tank_equipment_5
+		family = modern_tank_equipment_5
 		priority = 200
 		visual_level = 4
 		can_convert_from = { 
@@ -2617,6 +2694,7 @@ equipments = {
 		ap_attack = 220
 		build_cost_ic = 32
 		resources = {
+#			oil = 3
 			steel = 6
 			chromium = 6
 		}
@@ -2662,11 +2740,12 @@ equipments = {
 		}
 		fuel_consumption = 1.25
 	}
+
 	modern_tank_aa_equipment_2 = {
 		year = 1948
 		archetype = modern_tank_aa_chassis
 		parent = modern_tank_aa_equipment_1
-		#family = modern_tank_equipment_2
+		family = modern_tank_equipment_2
 		priority = 200
 		visual_level = 1
 		can_convert_from = { 
@@ -2683,6 +2762,7 @@ equipments = {
 		air_attack = 59
 		build_cost_ic = 29
 		resources = {
+#			oil = 2
 			steel = 4
 			chromium = 4
 		}
@@ -2692,7 +2772,7 @@ equipments = {
 		year = 1951
 		archetype = modern_tank_aa_chassis
 		parent = modern_tank_aa_equipment_2
-		#family = modern_tank_equipment_3
+		family = modern_tank_equipment_3
 		priority = 200
 		visual_level = 2
 		can_convert_from = { 
@@ -2709,6 +2789,7 @@ equipments = {
 		air_attack = 68
 		build_cost_ic = 30
 		resources = {
+#			oil = 2
 			steel = 5
 			chromium = 5
 		}
@@ -2718,7 +2799,7 @@ equipments = {
 		year = 1956
 		archetype = modern_tank_aa_chassis
 		parent = modern_tank_aa_equipment_3
-		#family = modern_tank_equipment_4
+		family = modern_tank_equipment_4
 		priority = 200
 		visual_level = 3
 		can_convert_from = { 
@@ -2735,6 +2816,7 @@ equipments = {
 		air_attack = 77
 		build_cost_ic = 31
 		resources = {
+#			oil = 2
 			steel = 6
 			chromium = 5
 		}
@@ -2744,7 +2826,7 @@ equipments = {
 		year = 1960
 		archetype = modern_tank_aa_chassis
 		parent = modern_tank_aa_equipment_4
-		#family = modern_tank_equipment_5
+		family = modern_tank_equipment_5
 		priority = 200
 		visual_level = 4
 		can_convert_from = { 
@@ -2761,6 +2843,7 @@ equipments = {
 		air_attack = 86
 		build_cost_ic = 32
 		resources = {
+#			oil = 3
 			steel = 6
 			chromium = 6
 		}
@@ -2807,48 +2890,6 @@ equipments = {
 		
 		fuel_consumption = 10
 	}
-	super_heavy_tank_equipment_2 = {
-		year = 1948
-		is_convertable = yes
-		archetype = super_heavy_tank_chassis
-		parent = super_heavy_tank_equipment_1
-		priority = 130
-		visual_level = 1
-		maximum_speed = 3.6
-		defense = 11.5
-		breakthrough = 105
-		armor_value = 170
-		soft_attack = 42
-		hard_attack = 49
-		ap_attack = 171
-
-		build_cost_ic = 110
-		resources = {
-			steel = 4
-			chromium = 4
-		}
-	}
-	super_heavy_tank_equipment_3 = {
-		year = 1956
-		is_convertable = yes
-		archetype = super_heavy_tank_chassis
-		parent = super_heavy_tank_equipment_2
-		priority = 130
-		visual_level = 2
-		maximum_speed = 3.8
-		defense = 13
-		breakthrough = 140
-		armor_value = 210
-		soft_attack = 55
-		hard_attack = 55
-		ap_attack = 211
-
-		build_cost_ic = 115
-		resources = {
-			steel = 5
-			chromium = 5
-		}
-	}
 
 	super_heavy_tank_artillery_equipment_1 = {
 		year = 1943
@@ -2888,56 +2929,6 @@ equipments = {
 			chromium = 4
 		}
 		fuel_consumption = 5
-	}
-	super_heavy_tank_artillery_equipment_2 = {
-		year = 1948
-		archetype = super_heavy_tank_artillery_chassis
-		parent = super_heavy_tank_artillery_equipment_1
-		#family = super_heavy_tank_equipment_2
-		priority = 140
-		visual_level = 1
-		can_convert_from = { 
-			super_heavy_tank_equipment_1
-			super_heavy_tank_equipment_2
-		}
-		maximum_speed = 3.6
-		defense = 8
-		breakthrough = 6
-		armor_value = 133
-		soft_attack = 166
-		hard_attack = 3.5
-
-
-		build_cost_ic = 110
-		resources = {
-			steel = 4
-			chromium = 4
-		}
-	}
-	super_heavy_tank_artillery_equipment_3 = {
-		year = 1956
-		archetype = super_heavy_tank_artillery_chassis
-		parent = super_heavy_tank_artillery_equipment_2
-		#family = super_heavy_tank_equipment_3
-		priority = 140
-		visual_level = 2
-		can_convert_from = { 
-			super_heavy_tank_equipment_2
-			super_heavy_tank_equipment_3
-		}
-		maximum_speed = 3.8
-		defense = 10
-		breakthrough = 8
-		armor_value = 140
-		soft_attack = 210
-		hard_attack = 4.5
-
-
-		build_cost_ic = 115
-		resources = {
-			steel = 5
-			chromium = 5
-		}
 	}
 
 	super_heavy_tank_destroyer_equipment_1 = {
@@ -2979,56 +2970,6 @@ equipments = {
 		}
 		fuel_consumption = 5
 	}
-	super_heavy_tank_destroyer_equipment_2 = {
-		year = 1948
-		archetype = super_heavy_tank_destroyer_chassis
-		parent = super_heavy_tank_destroyer_equipment_1
-		family = super_heavy_tank_equipment_2
-		priority = 160
-		visual_level = 1
-		can_convert_from = { 
-			super_heavy_tank_equipment_1
-			super_heavy_tank_equipment_2
-		}
-		maximum_speed = 3.6
-		defense = 8
-		breakthrough = 2
-		armor_value = 170
-		soft_attack = 14
-		hard_attack = 83
-		ap_attack = 210
-
-		build_cost_ic = 110
-		resources = {
-			steel = 4
-			chromium = 4
-		}
-	}
-	super_heavy_tank_destroyer_equipment_3 = {
-		year = 1956
-		archetype = super_heavy_tank_destroyer_chassis
-		parent = super_heavy_tank_destroyer_equipment_2
-		family = super_heavy_tank_equipment_3
-		priority = 160
-		visual_level = 2
-		can_convert_from = { 
-			super_heavy_tank_equipment_2
-			super_heavy_tank_equipment_3
-		}
-		maximum_speed = 3.8
-		defense = 10
-		breakthrough = 2.5
-		armor_value = 210
-		soft_attack = 18
-		hard_attack = 100
-		ap_attack = 220
-
-		build_cost_ic = 115
-		resources = {
-			steel = 5
-			chromium = 5
-		}
-	}
 
 	super_heavy_tank_aa_equipment_1 = {
 		year = 1943
@@ -3068,56 +3009,6 @@ equipments = {
 			chromium = 4
 		}
 		fuel_consumption = 2.5
-	}
-	super_heavy_tank_aa_equipment_2 = {
-		year = 1948
-		archetype = super_heavy_tank_aa_chassis
-		parent = super_heavy_tank_aa_equipment_1
-		#family = super_heavy_tank_equipment_2
-		priority = 150
-		visual_level = 1
-		can_convert_from = { 
-			super_heavy_tank_equipment_1
-			super_heavy_tank_equipment_2
-		}
-		maximum_speed = 3.6
-		defense = 4
-		breakthrough = 4
-		armor_value = 133
-		soft_attack = 13
-		hard_attack = 10
-		ap_attack = 115
-		air_attack = 60
-		build_cost_ic = 110
-		resources = {
-			steel = 4
-			chromium = 4
-		}
-	}
-	super_heavy_tank_aa_equipment_3 = {
-		year = 1956
-		archetype = super_heavy_tank_aa_chassis
-		parent = super_heavy_tank_aa_equipment_2
-		#family = super_heavy_tank_equipment_3
-		priority = 150
-		visual_level = 2
-		can_convert_from = { 
-			super_heavy_tank_equipment_2
-			super_heavy_tank_equipment_3
-		}
-		maximum_speed = 3.8
-		defense = 5
-		breakthrough = 5
-		armor_value = 140
-		soft_attack = 14
-		hard_attack = 11
-		ap_attack = 150
-		air_attack = 80
-		build_cost_ic = 115
-		resources = {
-			steel = 5
-			chromium = 5
-		}
 	}
 
 	amphibious_tank_equipment_1 = {

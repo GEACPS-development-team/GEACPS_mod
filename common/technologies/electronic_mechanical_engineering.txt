@@ -50,6 +50,7 @@ technologies = {
 
 		# units with radios can more efficiently join combats when there is room
 		land_reinforce_rate = 0.05
+		coordination_bonus = 0.04
 		
 		path = {
 			leads_to_tech = radio_detection 
@@ -63,6 +64,10 @@ technologies = {
 			position = { x = -3 y = 2 }
 		}
 		
+		enable_equipment_modules = { 
+			tank_radio_1
+		}
+
 		folder = {
 			name = support_folder
 			position = { x = 14 y = 3 }
@@ -97,7 +102,7 @@ technologies = {
 			building = radar_station
 			level = 1
 		}
-		
+		coordination_bonus = 0.01
 		path = {
 			leads_to_tech = decimetric_radar 
 			research_cost_coeff = 1
@@ -127,22 +132,17 @@ technologies = {
 	decimetric_radar = {
 
 		# can build radars/radar boost in air/sea combat depends on radar level
-		enable_equipment_modules = { 
-			ship_radar_1
-		}
-		enable_building = {
-			building = radar_station
-			level = 2
-		}
-		
 		path = {
 			leads_to_tech = improved_decimetric_radar 
 			research_cost_coeff = 1
 		}
-		
+		coordination_bonus = 0.01
 		research_cost = 1.25
 		start_year = 1938
-		
+		enable_equipment_modules = { 
+			ship_radar_1
+			tank_radio_2
+		}
 		folder = {
 			name = electronics_folder
 			position = { x = -3 y = 6 }
@@ -152,7 +152,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -168,6 +168,10 @@ technologies = {
 			radar_tech
 		}
 		
+		enable_building = {
+			building = radar_station
+			level = 2
+		}
 	}
 	
 	improved_decimetric_radar = {
@@ -177,6 +181,7 @@ technologies = {
 			building = radar_station
 			level = 3
 		}
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_2
 		}
@@ -198,7 +203,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -222,8 +227,10 @@ technologies = {
 			building = radar_station
 			level = 4
 		}
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_3
+			tank_radio_3
 		}
 		static_anti_air_hit_chance_factor = 0.2
 		
@@ -244,7 +251,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 4
@@ -268,6 +275,7 @@ technologies = {
 			building = radar_station
 			level = 5
 		}
+		coordination_bonus = 0.01
 		static_anti_air_hit_chance_factor = 0.2
 		
 		path = {
@@ -296,7 +304,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 4
@@ -320,6 +328,7 @@ technologies = {
 			building = radar_station
 			level = 6
 		}		
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_4
 		}
@@ -349,7 +358,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -367,6 +376,7 @@ technologies = {
 			building = radar_station
 			level = 7
 		}		
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_5
 		}
@@ -396,7 +406,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -414,6 +424,7 @@ technologies = {
 			building = radar_station
 			level = 8
 		}		
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_6
 		}
@@ -443,7 +454,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -461,6 +472,7 @@ technologies = {
 			building = radar_station
 			level = 9
 		}		
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_7
 		}
@@ -490,7 +502,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -508,6 +520,7 @@ technologies = {
 			building = radar_station
 			level = 10
 		}		
+		coordination_bonus = 0.01
 		enable_equipment_modules = { 
 			ship_radar_8
 		}
@@ -537,7 +550,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -555,6 +568,7 @@ technologies = {
 		air_weather_penalty = -0.04
 		static_anti_air_hit_chance_factor = 0.1
 		
+		coordination_bonus = 0.01
 		path = {
 			leads_to_tech = airborne_radar7
 			research_cost_coeff = 1
@@ -576,7 +590,7 @@ technologies = {
 			factor = 1
 			modifier = {
 				OR = {
-					tag = GBR
+					tag = ENG
 					tag = USA
 				}
 				factor = 5
@@ -973,7 +987,9 @@ technologies = {
 
 		# small boost to research speed
 		research_speed_factor = 0.08
-		
+		enable_equipment_modules = {
+			stabilizer
+		}
 		path = {
 			leads_to_tech = advanced_computing_machine 
 			research_cost_coeff = 1
@@ -2064,25 +2080,22 @@ technologies = {
 		
 		start_year = 1944
 		research_cost = 2
-
+		enable_equipment_modules = {
+			tank_gas_turbine_engine
+		}
 		folder = {
 			name = air_techs_folder
 			position = { x = 6 y = 13 }
 		}
-		folder = {
-			name = helicopter_folder
-			position = { x = 3 y = 3 }
-		}
-
 #		folder = {
 #			name = naval_folder
 #			position = { x = 6 y = 32 }
 #		}
 		
-		desc = "JET_GBRINES_SPECIAL"
+		desc = "JET_ENGINES_SPECIAL"
 
 		on_research_complete = {
-			custom_effect_tooltip = JET_GBRINES_RESEARCHED
+			custom_effect_tooltip = JET_ENGINES_RESEARCHED
 		}
 		
 		ai_will_do = {
@@ -2208,6 +2221,15 @@ technologies = {
 		
 		nuclear_production = 1
 		
+		on_research_complete = {
+			if = {
+				limit = {
+					tag = USA
+					has_war_with = JAP
+				}
+				play_warning_to_japan_effect = yes
+			}
+		}
 		categories = {
 			nuclear
 		}

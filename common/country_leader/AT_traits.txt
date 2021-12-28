@@ -1,0 +1,86 @@
+leader_traits = {
+	famous_aviator_jet = {
+		random = no
+		equipment_bonus = {
+			jet_tac_bomber_equipment = {
+				air_range = 0.01
+			}
+			jet_fighter_equipment = {
+				air_range = 0.01
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	light_aircraft_manufacturer_jet = {
+		random = no
+		equipment_bonus = {
+			jet_fighter_equipment = {
+				air_agility = 0.1 maximum_speed = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	light_aircraft_manufacturer_2_jet = { 
+		random = no
+		equipment_bonus = {
+			jet_fighter_equipment = {
+				air_agility = 0.2 maximum_speed = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	
+	medium_aircraft_manufacturer_jet = {
+		random = no
+		equipment_bonus = {
+			jet_tac_bomber_equipment = {
+				reliability = 0.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	fuel_efficient_aircraft_manufacturer_jet = { 
+		random = no
+		equipment_bonus = {
+			jet_fighter_equipment = {
+				air_range = 0.1
+			}
+			jet_tac_bomber_equipment = {
+				reliability = 0.2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavy_aircraft_manufacturer_jet = {
+		random = no
+		equipment_bonus = {
+			jet_strat_bomber_equipment = {
+				air_bombing = 0.1
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+}

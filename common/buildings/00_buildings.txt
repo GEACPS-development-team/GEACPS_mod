@@ -15,6 +15,8 @@ buildings = {
 		show_modifier = yes
 		max_fuel_building = 1.5 #k
 		allied_build = yes
+
+		infrastructure_construction_effect = yes
 	}
 
 	arms_factory = {
@@ -50,6 +52,7 @@ buildings = {
 		value = 1
 		damage_factor = 0.5
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	supply_node = {
@@ -64,6 +67,7 @@ buildings = {
 		damage_factor = 0.1
 		allied_build = yes
 		always_shown = yes
+		infrastructure_construction_effect = yes
 	}	
 	
 	rail_way = {
@@ -73,13 +77,15 @@ buildings = {
 		disabled_in_dmz = yes
 		icon_frame = 16
 		max_level = 1
+		infrastructure_construction_effect = yes
 	}
-
+	
 	naval_base = {
 		show_on_map = 1
 		show_on_map_meshes = 3
 		always_shown = yes
-		base_cost = 3000
+		base_cost = 5000
+		per_level_extra_cost = 1000
 		provincial = yes
 		only_costal = yes
 		is_port = yes
@@ -87,6 +93,7 @@ buildings = {
 		max_level = 10
 		value = 1
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	bunker = {
@@ -100,8 +107,9 @@ buildings = {
 		land_fort = 1
 		max_level = 10
 		value = 1
+		infrastructure_construction_effect = yes
 	}
-
+	
 	coastal_bunker = {
 		show_on_map = 1
 		has_destroyed_mesh = yes
@@ -114,6 +122,7 @@ buildings = {
 		naval_fort = 1
 		max_level = 10
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	dockyard = {
@@ -141,6 +150,7 @@ buildings = {
 		max_level = 10 # This is the max unlock level
 		damage_factor = 0.1
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	synthetic_refinery = {
@@ -184,6 +194,7 @@ buildings = {
 		value = 4
 		centered = yes
 		allied_build = yes
+		infrastructure_construction_effect = yes
 	}
 
 	rocket_site = {

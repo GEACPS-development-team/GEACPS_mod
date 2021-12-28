@@ -91,12 +91,13 @@ technology_categories = {
 	asw_tech
 	naval_minesweeping
 	naval_minelaying
-	cat_scout_planetrain_tech
+	cat_scout_plane
+	train_tech
 	cat_production
 	cat_synth_rubber
 	cat_synth_oil
+	
 	helicopter
-	cat_scout_plane
 }
 
 technology_folders = {
@@ -123,13 +124,12 @@ technology_folders = {
 	artillery_folder = {
 		ledger = army
 	}
-	air_techs_folder = {
-		ledger = air
-	}
 	helicopter_folder = {
 		ledger = air
 	}
-
+	air_techs_folder = {
+		ledger = air
+	}
 	naval_folder = {
 		available = {
 			not = { has_dlc = "Man the Guns" }
@@ -140,6 +140,7 @@ technology_folders = {
 		available = {
 			has_dlc = "Man the Guns"
 		}
+		ledger = navy
 	}
 	industry_folder = {
 		ledger = civilian
@@ -159,7 +160,6 @@ technology_folders = {
 	electronics_folder = {
 		ledger = civilian
 	}
-
 	#secret_weapons_folder
 }
 
