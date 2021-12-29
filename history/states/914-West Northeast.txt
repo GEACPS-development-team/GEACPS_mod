@@ -1,21 +1,25 @@
 state = {
 	id = 914
 	name = "STATE_914"
-	manpower = 115300
+	manpower = 10000000
 	state_category = town
 	
+	resources = {	rubber = 2	}
+	
 	history = {
-		owner = INS
-		add_core_of = INS
+		owner = ETH
+		add_core_of = ETH
 		buildings = {
 			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
 		}
-		set_variable = {	INS_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		set_variable = {	ETH_state_variable = 1	}
 	}
 	
 	provinces = {
-		12113
+		4995
 	}
 	local_supplies = 0.0
 }
