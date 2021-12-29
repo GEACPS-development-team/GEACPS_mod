@@ -1,30 +1,25 @@
 state = {
 	id = 1272
 	name = "STATE_1272"
-	manpower = 13527937
+	manpower = 10000000
 	state_category = town
 	
-	resources = {
-		rubber = 64
-	}
+	resources = {	rubber = 2	}
 	
 	history = {
-		owner = INS
-		add_core_of = INS
+		owner = ETH
+		add_core_of = ETH
 		buildings = {
-			infrastructure = 7
-			industrial_complex = 1
-			arms_factory = 1
-			1648 = {	naval_base = 1	}
-			4652 = {	naval_base = 3	}
+			infrastructure = 2
+			arms_factory = 2
+			industrial_complex = 2
+			air_base = 1
 		}
-		victory_points = {	4652	1	}
-		set_variable = {	INS_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		set_variable = {	ETH_state_variable = 1	}
 	}
 	
 	provinces = {
-		1460	1648	4446	4652	7673	10522	12126
+		4995	12714	12757	12812
 	}
 	local_supplies = 0.0
 }

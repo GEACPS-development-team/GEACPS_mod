@@ -1,25 +1,21 @@
 state = {
 	id = 914
 	name = "STATE_914"
-	manpower = 10000000
-	state_category = town
-	
-	resources = {	rubber = 2	}
+	manpower = 3392000
+	state_category = rural
 	
 	history = {
-		owner = ETH
-		add_core_of = ETH
+		owner = KEN
+		add_core_of = KEN
 		buildings = {
 			infrastructure = 2
-			arms_factory = 2
-			industrial_complex = 2
-			air_base = 1
+			industrial_complex = 1
 		}
-		set_variable = {	ETH_state_variable = 1	}
+		set_variable = {	KEN_state_variable = 1	}
 	}
 	
 	provinces = {
-		4995
+		8133	10761	12927
 	}
 	local_supplies = 0.0
 }
