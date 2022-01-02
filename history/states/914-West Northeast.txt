@@ -1,21 +1,21 @@
 state = {
 	id = 914
 	name = "STATE_914"
-	manpower = 115300
-	state_category = town
+	manpower = 3392000
+	state_category = rural
 	
 	history = {
-		owner = INS
-		add_core_of = INS
+		owner = KEN
+		add_core_of = KEN
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 1
 		}
-		set_variable = {	INS_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		set_variable = {	KEN_state_variable = 1	}
 	}
 	
 	provinces = {
-		12113
+		8133	10761	12927
 	}
 	local_supplies = 0.0
 }

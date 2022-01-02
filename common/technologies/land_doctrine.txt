@@ -5,6 +5,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
+		
 		xor = { superior_firepower trench_warfare mass_assault } 
 
 		path = {
@@ -52,6 +53,7 @@ technologies = {
 	delay = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 15
@@ -97,6 +99,7 @@ technologies = {
 	elastic_defence = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_reinforce_rate = 0.02
 
@@ -155,6 +158,7 @@ technologies = {
 	mobile_infantry = { #Branch focuses on infantry, included Motorised and Mechanised.
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor={
 			armored_spearhead
@@ -242,6 +246,7 @@ technologies = {
 	mass_motorization = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 		category_all_infantry = {
 			max_organisation = 10
 		}	
@@ -293,6 +298,7 @@ technologies = {
 	mechanised_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		motorized = {
 			max_organisation = 15
@@ -364,6 +370,7 @@ technologies = {
 	armored_spearhead = { #Branch focused on Tanks 
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		category_tanks = {
 			max_organisation = 3
@@ -426,6 +433,7 @@ technologies = {
 	schwerpunk = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 2
@@ -483,25 +491,24 @@ technologies = {
 	blitzkrieg = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 1
 		}
-		armored_car = {
-			default_morale = 0.1
-		}
 
 		category_all_armor = {
 			default_morale = 0.1
+		}
+		armored_car = {
+			default_morale = 0.1
+			max_organisation = 7
 		}
 		
 		enable_tactic = tactic_breakthrough
 		
 		motorized = {
 			max_organisation = 5
-		}
-		armored_car = {
-			max_organisation = 7
 		}
 		mechanized = {
 			max_organisation = 5
@@ -558,6 +565,7 @@ technologies = {
 	kampfgruppe = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			default_morale = 0.2
@@ -618,6 +626,7 @@ technologies = {
 	firebrigades = { #Branch focused on mobile warfares
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor={
 			volkssturm
@@ -680,6 +689,7 @@ technologies = {
 	backhand_blow = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 	
 		enable_tactic = tactic_backhand_blow
@@ -724,6 +734,7 @@ technologies = {
 	modern_blitzkrieg = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 3
@@ -783,6 +794,7 @@ technologies = {
 	volkssturm = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor={
 			firebrigades
@@ -827,10 +839,6 @@ technologies = {
 				not = { ai_air_doctrine_tier_2_trigger = yes }
 				factor = 0.5
 			}
-			modifier = {
-				tag = GER
-				factor = 0
-			}
 		}
 		
 		ai_research_weights = {
@@ -841,6 +849,7 @@ technologies = {
 	nd_conscription = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		conscription = 0.03
 
@@ -884,6 +893,7 @@ technologies = {
 	werwolf_guerillas = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		
 		#Increased Partisan effect on your land occupied by others
@@ -930,6 +940,7 @@ technologies = {
 		doctrine_name = "SUPERIOR_FIREPOWER_DOCTRINE"
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = { mobile_warfare trench_warfare mass_assault } 
 
@@ -976,6 +987,7 @@ technologies = {
 	sup_delay = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_light_infantry = {
 			max_organisation = 10
@@ -1019,6 +1031,7 @@ technologies = {
 	mobile_defence = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			defense = 0.10
@@ -1069,6 +1082,7 @@ technologies = {
 	intergrated_support = { #This Branch is focused on boosting stuff in the support column 
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor={
 			dispersed_support
@@ -1126,6 +1140,7 @@ technologies = {
 	regimental_combat_teams = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_support_battalions = {
 			max_organisation = 10
@@ -1179,6 +1194,7 @@ technologies = {
 	dispersed_support = { # Branch is focused on support units as part of the regular brigades
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 		
 		xor = {
 			intergrated_support
@@ -1234,11 +1250,12 @@ technologies = {
 	overwhelming_firepower = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_line_artillery = {
 			soft_attack = 0.10
 		}
-		
+		coordination_bonus = 0.05
 		enable_tactic = tactic_overwhelming_fire
 		
 		path = {
@@ -1287,6 +1304,7 @@ technologies = {
 	sup_mechanized_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			breakthrough = 0.10
@@ -1346,6 +1364,7 @@ technologies = {
 	concentrated_fire_plans = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor = {
 			centralized_fire_control
@@ -1401,6 +1420,7 @@ technologies = {
 	combined_arms = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		
 		category_all_armor = {
@@ -1457,6 +1477,7 @@ technologies = {
 	tactical_control = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_reinforce_rate = 0.02
 	
@@ -1508,6 +1529,7 @@ technologies = {
 	air_land_battle = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_front_line = {
 			max_organisation = 5
@@ -1560,6 +1582,7 @@ technologies = {
 	centralized_fire_control = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor = {
 			concentrated_fire_plans
@@ -1618,6 +1641,7 @@ technologies = {
 	forward_observers = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_reinforce_rate = 0.02
 
@@ -1671,6 +1695,7 @@ technologies = {
 	advanced_firebases = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 10
@@ -1736,6 +1761,7 @@ technologies = {
 	shock_and_awe = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_front_line = {
 			 soft_attack = 0.05
@@ -1797,6 +1823,7 @@ technologies = {
 		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = { mobile_warfare superior_firepower mass_assault } 
 	
@@ -1842,6 +1869,7 @@ technologies = {
 	grand_battle_plan = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 
 		path = {
@@ -1851,6 +1879,7 @@ technologies = {
 		
 		#planning max bonus increase
 		max_planning = 0.1
+		command_power_gain = 0.25
 
 		doctrine = yes	
 		research_cost = 4.5
@@ -1876,7 +1905,7 @@ technologies = {
 			}
 			modifier = {
 				factor = 0.25
-				#has_idea = FRA_victors_of_wwi
+				has_idea = FRA_victors_of_wwi
 			}
 		}
 		
@@ -1891,6 +1920,7 @@ technologies = {
 	prepared_defense = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			defense = 0.10
@@ -1935,6 +1965,7 @@ technologies = {
 	grand_assault = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_army = {
 			breakthrough = 0.10
@@ -1993,6 +2024,7 @@ technologies = {
 	grand_mechanized_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor = {
 			infantry_offensive
@@ -2062,6 +2094,7 @@ technologies = {
 	assault_concentration = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		max_planning = 0.1
 
@@ -2114,6 +2147,7 @@ technologies = {
 	branch_interoperation = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 5
@@ -2124,6 +2158,7 @@ technologies = {
 		armored_car = {
 			max_organisation = 1
 		}
+		coordination_bonus = 0.1
 		
 		path = {
 			leads_to_tech = assault_breakthrough 
@@ -2171,6 +2206,7 @@ technologies = {
 	assault_breakthrough = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_army = {
 			breakthrough = 0.10
@@ -2226,9 +2262,10 @@ technologies = {
 	central_planning = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		max_planning = 0.1
-		
+		max_command_power = 30
 		
 		path = {
 			leads_to_tech = c3i_theory 
@@ -2276,6 +2313,7 @@ technologies = {
 	c3i_theory = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_reinforce_rate = 0.02
 		category_all_infantry = {
@@ -2333,6 +2371,7 @@ technologies = {
 	infantry_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor = {
 			grand_mechanized_offensive
@@ -2390,6 +2429,7 @@ technologies = {
 	armored_operations = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 2
@@ -2452,8 +2492,10 @@ technologies = {
 	infiltration_assault = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		supply_consumption_factor = -0.10
+		command_power_gain_mult = 0.15
 		
 		path = {
 			leads_to_tech = night_assault_tactics 
@@ -2501,6 +2543,7 @@ technologies = {
 	night_assault_tactics = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		#reduce land night combat penalty
 		land_night_attack = 0.25 # negates half of base penalty
@@ -2554,6 +2597,7 @@ technologies = {
 	attritional_containment = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 5
@@ -2610,6 +2654,7 @@ technologies = {
 	infiltration_in_depth = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_reinforce_rate = 0.02
 		
@@ -2663,6 +2708,7 @@ technologies = {
 		doctrine_name = "MASS_ASSAULT_DOCTRINE"
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = { mobile_warfare superior_firepower trench_warfare } 
 
@@ -2706,6 +2752,7 @@ technologies = {
 	pocket_defence = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		#reduced pocketed combat penalty and/or reduces the out of supply penalty or increases time before moving to worse penalty
 		no_supply_grace = 48 # more hours before supply penalty changes
@@ -2748,6 +2795,7 @@ technologies = {
 	defence_in_depth = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		max_dig_in = 5
 
@@ -2797,6 +2845,7 @@ technologies = {
 	large_front_operations = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			peoples_army
@@ -2842,6 +2891,8 @@ technologies = {
 
 				OR = {
 					tag = CHI
+					tag = PRC
+					tag = XSM
 					tag = SIK
 					tag = GXC
 					tag = SHX
@@ -2866,6 +2917,7 @@ technologies = {
 	deep_operations = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 2
@@ -2922,6 +2974,7 @@ technologies = {
 	operational_concentration = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		max_planning = 0.10
 		land_reinforce_rate = 0.05
@@ -2973,6 +3026,7 @@ technologies = {
 	vast_offensives = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		supply_consumption_factor = -0.10
 		
@@ -3028,6 +3082,7 @@ technologies = {
 	breakthrough_priority = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 1
@@ -3089,6 +3144,7 @@ technologies = {
 	mechanized_wave = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 2
@@ -3160,6 +3216,7 @@ technologies = {
 	continuous_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		org_loss_when_moving = -0.25
 		land_reinforce_rate = 0.05
@@ -3210,6 +3267,7 @@ technologies = {
 	peoples_army = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 	
 		xor = {
 			large_front_operations
@@ -3265,6 +3323,8 @@ technologies = {
 
 				OR = {
 					tag = CHI
+					tag = PRC
+					tag = XSM
 					tag = SIK
 					tag = GXC
 					tag = SHX
@@ -3281,6 +3341,7 @@ technologies = {
 	human_infantry_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		infantry = {
 			default_morale = 0.30
@@ -3325,6 +3386,7 @@ technologies = {
 	large_front_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 10
@@ -3374,6 +3436,7 @@ technologies = {
 	human_wave_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		conscription = 0.05
 				
@@ -3422,6 +3485,7 @@ technologies = {
 	guerilla_warfare = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		out_of_supply_factor = -0.30
 		category_army = {
@@ -3467,6 +3531,7 @@ technologies = {
 	mobile_warfare001 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
 
@@ -3491,10 +3556,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
-				factor = 0
-				date < "1946.1.1"
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
 			}
 		}
 		
@@ -3506,6 +3575,7 @@ technologies = {
 	mobile_warfare002 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		infantry = {
 			urban = {
@@ -3609,7 +3679,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3621,6 +3699,7 @@ technologies = {
 	mobile_warfare003 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		infantry = {
 			urban = {
@@ -3724,7 +3803,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3736,6 +3823,7 @@ technologies = {
 	mobile_warfare004 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		minimum_training_level = -0.1		
 
@@ -3760,7 +3848,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3771,6 +3867,7 @@ technologies = {
 	mobile_warfare005 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1 
 
@@ -3795,7 +3892,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3806,6 +3911,7 @@ technologies = {
 	mobile_warfare006 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			defense = 0.10
@@ -3838,7 +3944,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3850,6 +3964,7 @@ technologies = {
 	mobile_warfare007 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		conscription = 0.02
 
@@ -3874,7 +3989,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3885,6 +4008,7 @@ technologies = {
 	mobile_warfare008 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_army = {
 			soft_attack = 0.05
@@ -3913,7 +4037,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3925,6 +4057,7 @@ technologies = {
 	mobile_warfare009 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_reinforce_rate = 0.02
 	
@@ -3951,7 +4084,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3962,6 +4103,7 @@ technologies = {
 	mobile_warfare010 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_light_infantry = {
 			soft_attack = 0.25
@@ -3983,7 +4125,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -3995,6 +4145,7 @@ technologies = {
 	mobile_warfare101 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_army = {
 			breakthrough = 0.10
@@ -4027,7 +4178,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4038,6 +4197,7 @@ technologies = {
 	mobile_warfare111 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			mobile_warfare121
@@ -4069,7 +4229,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4081,6 +4249,7 @@ technologies = {
 	mobile_warfare112 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_line_artillery = {
 			soft_attack = 0.1
@@ -4109,7 +4278,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4120,6 +4297,7 @@ technologies = {
 	mobile_warfare121 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			mobile_warfare111
@@ -4155,7 +4333,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4166,6 +4352,7 @@ technologies = {
 	mobile_warfare122 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			maximum_speed = 0.1
@@ -4196,7 +4383,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4207,6 +4402,7 @@ technologies = {
 	mobile_warfare102 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_tanks = {
 			max_organisation = 3
@@ -4239,7 +4435,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4250,6 +4454,7 @@ technologies = {
 	mobile_warfare103 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		infantry = {
 			urban = {
@@ -4459,7 +4664,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4470,6 +4683,7 @@ technologies = {
 	mobile_warfare104 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		marine = {
 			soft_attack = 0.1
@@ -4506,7 +4720,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4518,6 +4740,7 @@ technologies = {
 	mobile_warfare105 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			reliability = 0.1
@@ -4552,7 +4775,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4563,6 +4794,7 @@ technologies = {
 	mobile_warfare113 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			mobile_warfare123
@@ -4589,7 +4821,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4600,6 +4840,7 @@ technologies = {
 	mobile_warfare114 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		motorized = {
 			max_organisation = 10
@@ -4637,7 +4878,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4648,6 +4897,7 @@ technologies = {
 	mobile_warfare115 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		infantry = {
 			urban = {
@@ -4746,7 +4996,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4759,6 +5017,7 @@ technologies = {
 	mobile_warfare123 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			mobile_warfare113
@@ -4794,7 +5053,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4807,6 +5074,7 @@ technologies = {
 	mobile_warfare124 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			soft_attack = 0.1
@@ -4837,7 +5105,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4850,6 +5126,7 @@ technologies = {
 	mobile_warfare125 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		resistance_damage_to_garrison = -0.1
 		
@@ -4866,7 +5143,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 	}
@@ -4874,6 +5159,7 @@ technologies = {
 	superior_firepower001 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		motorized = {
 			max_organisation = 5
@@ -4919,10 +5205,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
-				factor = 0
-				date < "1946.1.1"
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
 			}
 		}
 		
@@ -4934,6 +5224,7 @@ technologies = {
 	superior_firepower002 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			soft_attack = 0.1
@@ -4965,7 +5256,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -4976,6 +5275,7 @@ technologies = {
 	superior_firepower003 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_night_attack = 0.25 
 
@@ -5000,7 +5300,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5011,6 +5319,7 @@ technologies = {
 	superior_firepower004 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		heat_attrition = -0.2
 		winter_attrition = -0.2 
@@ -5036,7 +5345,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5047,6 +5364,7 @@ technologies = {
 	superior_firepower005 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			reliability = 0.1
@@ -5082,7 +5400,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5093,6 +5419,7 @@ technologies = {
 	superior_firepower006 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			soft_attack = 0.1
@@ -5140,7 +5467,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5151,6 +5486,7 @@ technologies = {
 	superior_firepower011 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			superior_firepower021
@@ -5180,7 +5516,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5191,6 +5535,7 @@ technologies = {
 	superior_firepower012 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		resistance_damage_to_garrison = -0.1
 
@@ -5215,7 +5560,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5226,6 +5579,7 @@ technologies = {
 	superior_firepower013 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		cavalry = {
 			suppression = 1
@@ -5255,7 +5609,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5266,6 +5628,7 @@ technologies = {
 	superior_firepower014 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		enable_tactic = tactic_human_wave_tactics
 		category_army = {
@@ -5290,7 +5653,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5301,6 +5672,7 @@ technologies = {
 	superior_firepower021 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			superior_firepower011
@@ -5328,7 +5700,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5339,6 +5719,7 @@ technologies = {
 	superior_firepower022 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		mechanized = {
 			max_organisation = 5
@@ -5367,7 +5748,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5378,6 +5767,7 @@ technologies = {
 	superior_firepower023 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		motorized = {
 			max_organisation = 5
@@ -5406,7 +5796,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5417,6 +5815,7 @@ technologies = {
 	superior_firepower024 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_support_battalions = {
 			max_organisation = 10
@@ -5440,7 +5839,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5451,6 +5858,7 @@ technologies = {
 	grand_battle_plan001 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 5
@@ -5478,10 +5886,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
-				factor = 0
-				date < "1946.1.1"
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
 			}
 		}
 		
@@ -5494,6 +5906,7 @@ technologies = {
 	grand_battle_plan002 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			max_organisation = 2
@@ -5527,7 +5940,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5539,10 +5960,11 @@ technologies = {
 	grand_battle_plan003 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_army = {
 			breakthrough = 0.10
-			soft_attack = 0.5
+			soft_attack = 0.05
 		}
 		
 		
@@ -5566,7 +5988,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5578,6 +6008,7 @@ technologies = {
 	grand_battle_plan004 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_army = {
 			default_morale = 0.1
@@ -5609,7 +6040,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5621,6 +6060,7 @@ technologies = {
 	grand_battle_plan011 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			grand_battle_plan021
@@ -5651,7 +6091,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5663,6 +6111,7 @@ technologies = {
 	grand_battle_plan012 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		motorized = {
 			soft_attack = 0.1
@@ -5697,7 +6146,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5709,6 +6166,7 @@ technologies = {
 	grand_battle_plan013 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			max_organisation = 1
@@ -5741,7 +6199,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5753,6 +6219,7 @@ technologies = {
 	grand_battle_plan021 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {
 			grand_battle_plan011
@@ -5780,7 +6247,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5792,6 +6267,7 @@ technologies = {
 	grand_battle_plan022 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		enable_tactic = tactic_tactical_withdrawal
 		category_all_infantry = {
@@ -5818,7 +6294,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5830,6 +6314,7 @@ technologies = {
 	grand_battle_plan023 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 5
@@ -5856,7 +6341,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5868,6 +6361,7 @@ technologies = {
 	grand_battle_plan005 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_armor = {
 			soft_attack = 0.1
@@ -5898,7 +6392,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5910,6 +6412,7 @@ technologies = {
 	grand_battle_plan006 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		special_forces_attack_factor = 0.1
 		special_forces_defence_factor = 0.1
@@ -5938,7 +6441,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5950,6 +6461,7 @@ technologies = {
 	grand_battle_plan014 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {grand_battle_plan024}
 		mechanized = {
@@ -5981,7 +6493,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -5993,6 +6513,7 @@ technologies = {
 	grand_battle_plan024 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		xor = {grand_battle_plan014}
 		category_all_infantry = {
@@ -6021,7 +6542,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6033,6 +6562,7 @@ technologies = {
 	mass_assault901 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		supply_consumption_factor = -0.10
 
@@ -6058,7 +6588,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6070,6 +6608,7 @@ technologies = {
 	mass_assault902 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_light_infantry = {
 			max_organisation = 5
@@ -6098,7 +6637,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6110,6 +6657,7 @@ technologies = {
 	mass_assault001 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		land_reinforce_rate = 0.03
 		category_all_infantry = {
@@ -6138,10 +6686,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 20
+			factor = 10
 			modifier = {
-				factor = 0
-				date < "1946.1.1"
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
 			}
 		}
 		
@@ -6154,6 +6706,7 @@ technologies = {
 	mass_assault002 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 5
@@ -6179,7 +6732,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6191,6 +6752,7 @@ technologies = {
 	mass_assault003 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 5
@@ -6217,7 +6779,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6229,6 +6799,7 @@ technologies = {
 	mass_assault004 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		no_supply_grace = 24 
 		out_of_supply_factor = -0.10
@@ -6253,7 +6824,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6265,6 +6844,7 @@ technologies = {
 	mass_assault005 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		attrition = -0.1
 		
@@ -6292,7 +6872,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6304,6 +6892,7 @@ technologies = {
 	mass_assault011 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		motorized = {
 			max_organisation = 5
@@ -6348,7 +6937,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6360,6 +6957,7 @@ technologies = {
 	mass_assault012 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		motorized = {
 			soft_attack = 0.1
@@ -6394,7 +6992,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6406,6 +7012,7 @@ technologies = {
 	mass_assault013 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_line_artillery = {
 			soft_attack = 0.1
@@ -6432,7 +7039,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6444,6 +7059,7 @@ technologies = {
 	mass_assault014 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_army = {
 			max_organisation = 5
@@ -6472,7 +7088,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6484,6 +7108,7 @@ technologies = {
 	mass_assault015 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		infantry = {
 			urban = {
@@ -6686,7 +7311,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6698,6 +7331,7 @@ technologies = {
 	mass_assault021 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		resistance_damage_to_garrison = -0.1
 		
@@ -6721,7 +7355,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6733,6 +7375,7 @@ technologies = {
 	mass_assault022 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		army_core_attack_factor = 0.1
 
@@ -6756,7 +7399,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6768,6 +7419,7 @@ technologies = {
 	mass_assault023 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		army_core_defence_factor = 0.1
 		
@@ -6791,7 +7443,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6803,6 +7463,7 @@ technologies = {
 	mass_assault024 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		category_all_infantry = {
 			max_organisation = 5
@@ -6829,7 +7490,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6841,6 +7510,7 @@ technologies = {
 	mass_assault025 = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		
 
 		minimum_training_level = -0.1		
 		land_reinforce_rate = 0.02
@@ -6860,7 +7530,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 0.7
+			factor = 10
+			modifier = {
+				not = { ai_air_doctrine_tier_1_trigger = yes }
+				factor = 0.15
+			}
+			modifier = {
+				not = { ai_air_doctrine_tier_2_trigger = yes }
+				factor = 0.5
+			}
 		}
 		
 		ai_research_weights = {
@@ -6869,4 +7547,17 @@ technologies = {
 		}
 	}
 	
+
+	masterful_blitz = {
+		enable_tactic = tactic_masterful_blitz
+
+		doctrine = yes
+		research_cost = 1
+
+		#set at gamestart
+		allow = {
+			always = no
+		}
+	}
+
 }

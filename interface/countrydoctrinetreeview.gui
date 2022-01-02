@@ -11,7 +11,6 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_plain_bg2"
 		}
 
-
 		containerWindowType = {
 			name = "land_doctrine_folder"
 			position = { x=0 y=47 }
@@ -20,6 +19,7 @@ guiTypes = {
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
+			scroll_wheel_factor = 40
 
 			background = {
 				name = "Background"
@@ -339,7 +339,9 @@ guiTypes = {
 				
 			gridboxtype = {
 				name = "mobile_warfare_tree"
+				#position = { x=80 y=172 }
 				position = { x=70 y=172 }
+				#size = { width = 478 height = 1350 }
 				size = { width = 478 height = 2600 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
@@ -404,6 +406,7 @@ guiTypes = {
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
+			scroll_wheel_factor = 40
 
 			background = {
 				name = "Background"
@@ -521,7 +524,7 @@ guiTypes = {
 
 				
 			}
-			
+
 			gridboxtype = {
 				name = "fleet_in_being2_tree"
 				position = { x=80 y=172 }
@@ -564,8 +567,6 @@ guiTypes = {
 					position = { x=960 y=-150 }					
 				}
 			}
-
-
 			gridboxtype = {
 				name = "fleet_in_being001_tree"
 				position = { x=80 y=1252 }
@@ -607,7 +608,6 @@ guiTypes = {
 					position = { x=0 y=-50 }					
 				}
 			}
-
 		}
 
 		containerWindowType = {
@@ -618,6 +618,7 @@ guiTypes = {
 			drag_scroll = { left middle }
 			verticalScrollbar = "right_vertical_slider"
 			horizontalScrollbar = "bottom_horizontal_slider"
+			scroll_wheel_factor = 40
 
 			background = {
 				name = "Background"
@@ -627,7 +628,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "size_filler"
 				position = { x=0 y=0 }
-				size = { width = 1440 height = 1000 }	
+				size = { width = 1440 height = 1482 }	
 			}
 
 			iconType = {
@@ -727,32 +728,48 @@ guiTypes = {
 				#strategic_destruction_tree Needs to be named after first tech (air_superiority)
 				name = "air_superiority_tree"
 				position = { x=80 y=172 }
-				size = { width = 400 height = 1050 }
+				size = { width = 427 height = 2535 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }					
+				}
 			}
 
 			gridboxtype = {
 				#battlefield_support_tree Needs to be named after first tech (formation_flying)
 				name = "formation_flying_tree"
-				position = { x=600 y=172 }
-				size = { width = 400 height = 1050 }
+				position = { x=595 y=172 }
+				size = { width = 427 height = 2535 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }					
+				}
 			}
 
 			gridboxtype = {
 				#operational_integrity_tree Needs to be named after first tech (force_rotation)
 				name = "force_rotation_tree"
 				position = { x=1100 y=172 }
-				size = { width = 400 height = 1050 }
+				size = { width = 427 height = 2535 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
+				background = {
+					name = "Background"
+					quadTextureSprite ="GFX_fullborder_tiled"
+					position = { x=0 y=-150 }					
+				}
 			}
 		}
+
 		containerWindowType = {
 			name = "folder_tabs"
 			position = { x=350 y=7 }

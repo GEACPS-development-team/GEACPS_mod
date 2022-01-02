@@ -11,10 +11,19 @@ technologies = {
 	@1943 = 10
 	@1944 = 11
 	@1945 = 12
-	@1946 = 20
+	@1948 = 14
+	@1949 = 15
+	@1951 = 16
+	@1953 = 17
+	@1956 = 18
+	@1958 = 19
+	@1960 = 20
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			light_tank_chassis_0
@@ -143,6 +152,9 @@ technologies = {
 	}
 
 	basic_light_tank_chassis = { #Panzer I
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			light_tank_chassis_1
@@ -228,6 +240,9 @@ technologies = {
 	}
 
 	improved_light_tank_chassis = { #Panzer II
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			light_tank_chassis_2
@@ -296,6 +311,9 @@ technologies = {
 
 
 	amphibious_tank_chassis = { #SchwimmPanzer II
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			amphibious_tank_chassis_1
@@ -356,7 +374,9 @@ technologies = {
 	}
 
 	amphibious_drive = { #SchwimmPanzer II
-
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipment_modules = {
 			amphibious_drive
@@ -364,17 +384,28 @@ technologies = {
 
 		enable_equipments = {
 			light_tank_amphibious_chassis_0
-			medium_tank_amphibious_chassis_0
-			heavy_tank_amphibious_chassis_0
 			light_tank_amphibious_chassis_1
-			medium_tank_amphibious_chassis_1
-			heavy_tank_amphibious_chassis_1
 			light_tank_amphibious_chassis_2
-			medium_tank_amphibious_chassis_2
-			heavy_tank_amphibious_chassis_2
 			light_tank_amphibious_chassis_3
+			light_tank_amphibious_chassis_4
+			light_tank_amphibious_chassis_5
+			light_tank_amphibious_chassis_6
+			light_tank_amphibious_chassis_7
+			medium_tank_amphibious_chassis_0
+			medium_tank_amphibious_chassis_1
+			medium_tank_amphibious_chassis_2
 			medium_tank_amphibious_chassis_3
+			heavy_tank_amphibious_chassis_0
+			heavy_tank_amphibious_chassis_1
+			heavy_tank_amphibious_chassis_2
 			heavy_tank_amphibious_chassis_3
+			heavy_tank_amphibious_chassis_4
+			heavy_tank_amphibious_chassis_5
+			modern_tank_amphibious_chassis_1
+			modern_tank_amphibious_chassis_2
+			modern_tank_amphibious_chassis_3
+			modern_tank_amphibious_chassis_4
+			modern_tank_amphibious_chassis_5
 		}
 
 		research_cost = 2
@@ -416,6 +447,9 @@ technologies = {
 	}
 
 	advanced_light_tank_chassis = { #Leopard
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			light_tank_chassis_3
@@ -426,6 +460,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = main_battle_tank_chassis
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_light_tank_chassis_4
 			research_cost_coeff = 1
 		}
 
@@ -466,7 +504,221 @@ technologies = {
 		}
 	}
 
+	tech_light_tank_chassis_4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			light_tank_chassis_4
+			light_tank_destroyer_chassis_4
+			light_tank_artillery_chassis_4
+			light_tank_aa_chassis_4
+		}
+
+		path = {
+			leads_to_tech = tech_light_tank_chassis_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1945
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = @1945 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1946.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1947.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1948.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	tech_light_tank_chassis_5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			light_tank_chassis_5
+			light_tank_destroyer_chassis_5
+			light_tank_artillery_chassis_5
+			light_tank_aa_chassis_5
+		}
+
+		path = {
+			leads_to_tech = tech_light_tank_chassis_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1949
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = @1949 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1951.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1952.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	tech_light_tank_chassis_6 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			light_tank_chassis_6
+			light_tank_destroyer_chassis_6
+			light_tank_artillery_chassis_6
+			light_tank_aa_chassis_6
+		}
+
+		path = {
+			leads_to_tech = tech_light_tank_chassis_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1953
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = @1953 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1954.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1955.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1956.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
+	tech_light_tank_chassis_7 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			light_tank_chassis_7
+			light_tank_destroyer_chassis_7
+			light_tank_artillery_chassis_7
+			light_tank_aa_chassis_7
+		}
+
+		research_cost = 2
+		start_year = 1958
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -4 y = @1958 }
+		}
+
+		ai_will_do = {
+			factor = 0.5
+			modifier = {
+				is_major = no
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1959.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1960.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1961.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_light_armor
+		}
+	}
+
 	basic_medium_tank_chassis = { #Panzer III
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			medium_tank_chassis_1
@@ -570,6 +822,9 @@ technologies = {
 
 
 	improved_medium_tank_chassis = { #Panzer IV
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			medium_tank_chassis_2
@@ -639,6 +894,9 @@ technologies = {
 	}
 
 	advanced_medium_tank_chassis = { #Panther
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			medium_tank_chassis_3
@@ -686,6 +944,9 @@ technologies = {
 	}
 
 	main_battle_tank_chassis = { #E-50
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			modern_tank_chassis_1
@@ -695,6 +956,11 @@ technologies = {
 		}
 		enable_subunits = {
 			modern_armor
+		}
+
+		path = {
+			leads_to_tech = tech_main_battle_tank_chassis_2
+			research_cost_coeff = 1
 		}
 
 		research_cost = 2.5
@@ -730,8 +996,203 @@ technologies = {
 		}
 	}
 
+	tech_main_battle_tank_chassis_2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			modern_tank_chassis_2
+			modern_tank_destroyer_chassis_2
+			modern_tank_artillery_chassis_2
+			modern_tank_aa_chassis_2
+		}
+		path = {
+			leads_to_tech = tech_main_battle_tank_chassis_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1948
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1948 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1951.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	tech_main_battle_tank_chassis_3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			modern_tank_chassis_3
+			modern_tank_destroyer_chassis_3
+			modern_tank_artillery_chassis_3
+			modern_tank_aa_chassis_3
+		}
+		path = {
+			leads_to_tech = tech_main_battle_tank_chassis_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1951
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1951 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1952.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1953.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1954.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	tech_main_battle_tank_chassis_4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			modern_tank_chassis_4
+			modern_tank_destroyer_chassis_4
+			modern_tank_artillery_chassis_4
+			modern_tank_aa_chassis_4
+		}
+		path = {
+			leads_to_tech = tech_main_battle_tank_chassis_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1956
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1956 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1957.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1958.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1959.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
+	tech_main_battle_tank_chassis_5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			modern_tank_chassis_5
+			modern_tank_destroyer_chassis_5
+			modern_tank_artillery_chassis_5
+			modern_tank_aa_chassis_5
+		}
+
+		research_cost = 2.5
+		start_year = 1960
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1960 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				date > "1961.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1962.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1963.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_medium_armor
+		}
+	}
+
 
 	basic_heavy_tank_chassis = { #Grosstraktor
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			heavy_tank_chassis_1
@@ -818,6 +1279,9 @@ technologies = {
 	}
 
 	improved_heavy_tank_chassis = { #Tiger
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			heavy_tank_chassis_2
@@ -875,6 +1339,9 @@ technologies = {
 
 
 	advanced_heavy_tank_chassis = { #King Tiger
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			heavy_tank_chassis_3
@@ -885,6 +1352,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = main_battle_tank_chassis
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_heavy_tank_chassis_4
 			research_cost_coeff = 1
 		}
 
@@ -921,7 +1392,105 @@ technologies = {
 		}
 	}
 
+	tech_heavy_tank_chassis_4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			heavy_tank_chassis_4
+			heavy_tank_destroyer_chassis_4
+			heavy_tank_artillery_chassis_4
+			heavy_tank_aa_chassis_4
+		}
+
+		path = {
+			leads_to_tech = tech_heavy_tank_chassis_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1948
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 5 y = @1948 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
+
+			modifier = {
+				factor = 1.2
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1951.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
+	tech_heavy_tank_chassis_5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			heavy_tank_chassis_5
+			heavy_tank_destroyer_chassis_5
+			heavy_tank_artillery_chassis_5
+			heavy_tank_aa_chassis_5
+		}
+
+		research_cost = 2.5
+		start_year = 1956
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 5 y = @1956 }
+		}
+
+		ai_will_do = {
+			factor = 0.8
+
+			modifier = {
+				factor = 1.2
+				date > "1957.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1958.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1959.1.1"
+			}
+		}
+
+		categories = {
+			armor
+			cat_heavy_armor
+		}
+	}
+
 	super_heavy_tank_chassis = { #Maus
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			super_heavy_tank_chassis_1
@@ -956,6 +1525,9 @@ technologies = {
 	}
 
 	armor_tech_1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 		enable_equipment_modules = {
 			tank_welded_armor
 		}
@@ -1011,6 +1583,9 @@ technologies = {
 	}
 
 	armor_tech_2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		enable_equipment_modules = {
 			armor_skirts
@@ -1066,7 +1641,9 @@ technologies = {
 	}
 
 	armor_tech_3 = {
-
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		path = {
 			leads_to_tech = armor_tech_4
@@ -1099,17 +1676,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1942.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "1943.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1939.1.1"
+				date > "1944.1.1"
 			}
 		}
 
@@ -1119,6 +1696,13 @@ technologies = {
 	}
 
 	armor_tech_4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = armor_tech_5
+			research_cost_coeff = 1
+		}
 
 		research_cost = 1
 		start_year = 1944
@@ -1146,17 +1730,228 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1945.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "1946.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1939.1.1"
+				date > "1947.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	armor_tech_5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = armor_tech_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1948
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = @1948 }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_5_tt
+		}
+		show_effect_as_desc = yes
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1951.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	armor_tech_6 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = armor_tech_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1951
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = @1951 }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_6_tt
+		}
+		show_effect_as_desc = yes
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1952.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1953.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1954.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	armor_tech_7 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = armor_tech_8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1956
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = @1956 }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_7_tt
+		}
+		show_effect_as_desc = yes
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1957.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1958.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1959.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	armor_tech_8 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 3 y = @1960 }
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_tech_8_tt
+		}
+		show_effect_as_desc = yes
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1961.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1962.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1963.1.1"
 			}
 		}
 
@@ -1166,7 +1961,9 @@ technologies = {
 	}
 
 	engine_tech_1 = {
-
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		path = {
 			leads_to_tech = engine_tech_2
@@ -1217,7 +2014,9 @@ technologies = {
 	}
 
 	engine_tech_2 = {
-
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		path = {
 			leads_to_tech = engine_tech_3
@@ -1270,7 +2069,9 @@ technologies = {
 	}
 
 	engine_tech_3 = {
-
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
 
 		path = {
 			leads_to_tech = engine_tech_4
@@ -1301,17 +2102,17 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1941.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "1942.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1939.1.1"
+				date > "1943.1.1"
 			}
 		}
 
@@ -1321,7 +2122,13 @@ technologies = {
 	}
 
 	engine_tech_4 = {
-
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = engine_tech_5
+			research_cost_coeff = 1
+		}
 		research_cost = 1
 		start_year = 1944
 		folder = {
@@ -1346,17 +2153,213 @@ technologies = {
 
 			modifier = {
 				factor = 1.1
-				date > "1937.1.1"
+				date > "1945.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1938.1.1"
+				date > "1946.1.1"
 			}
 
 			modifier = {
 				factor = 1.1
-				date > "1939.1.1"
+				date > "1947.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	engine_tech_5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = engine_tech_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1948
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1948 }
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_5_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1949.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1950.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1951.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	engine_tech_6 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = engine_tech_7
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1951
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1951 }
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_6_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1952.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1953.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1954.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	engine_tech_7 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		path = {
+			leads_to_tech = engine_tech_8
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 1956
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1956 }
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_7_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1957.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1958.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1959.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+	engine_tech_8 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		research_cost = 1
+		start_year = 1960
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 2 y = @1960 }
+		}
+		on_research_complete = {
+			custom_effect_tooltip = engine_tech_8_tt
+		}
+		show_effect_as_desc = yes
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				has_war = yes
+				factor = 2
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1961.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1962.1.1"
+			}
+
+			modifier = {
+				factor = 1.1
+				date > "1963.1.1"
 			}
 		}
 
