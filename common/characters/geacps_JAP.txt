@@ -22,8 +22,25 @@ characters = {	#皇族
 			expire = "1989.1.7"
 		}
 	}
+	CHARACTER_morimasa_nashimoto = {	#梨本宮守正王
+		name = CHARACTER_prince_morimasa_nashimoto
+		
+		portraits = {
+			army = {
+				small = "GFX_morimasa_nashimoto_small"
+				large = "GFX_morimasa_nashimoto_large"
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
 }
-	
+
 characters = {	#文民
 	CHARACTER_fumimaro_konoe = {	#近衛文麿
 		name = CHARACTER_fumimaro_konoe
@@ -66,6 +83,23 @@ characters = {	#文民
 }
 
 characters = {	#陸軍
+	CHARACTER_hajime_sugiyama = {	#杉山元
+		name = CHARACTER_hajime_sugiyama
+		
+		portraits = {
+			army = {
+				small = GFX_hajime_sugiyama_small
+				large = GFX_hajime_sugiyama_large
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
 	CHARACTER_hideki_tojo = {	#東條英機
 		name = CHARACTER_hideki_tojo
 		
@@ -117,6 +151,13 @@ characters = {	#陸軍
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
 		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
 	}
 	CHARACTER_kisaburo_ando = {	#安藤喜三郎
 		name = CHARACTER_kisaburo_ando
@@ -164,6 +205,23 @@ characters = {	#陸軍
 			allowed = {	original_tag = JAP	}
 		}
 	}
+	CHARACTER_nobuyoshi_muto = {	#武藤信義
+		name = CHARACTER_nobuyoshi_muto
+		
+		portraits = {
+			army = {
+				small = GFX_nobuyoshi_muto_small
+				large = GFX_nobuyoshi_muto_large
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
 	CHARACTER_nobuyuki_abe = {	#阿部信行
 		name = CHARACTER_nobuyuki_abe
 		
@@ -201,7 +259,6 @@ characters = {	#陸軍
 			expire = "1965.7.18"
 		}
 	}
-	
 	CHARACTER_rikichi_ando = {	#安藤利吉
 		name = CHARACTER_rikichi_ando
 		
@@ -238,6 +295,13 @@ characters = {	#陸軍
 			idea_token = JAP_shunroku_hata_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
 		}
 	}
 }

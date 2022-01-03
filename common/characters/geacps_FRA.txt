@@ -1,0 +1,23 @@
+characters = {	#文民
+	CHARACTER_charles_andre_joseph_marie_de_gaulle = {	#シャルル・ド・ゴール
+		name = CHARACTER_charles_de_gaulle
+		
+		portraits = {
+			civilian = {
+				small = GFX_charles_andre_joseph_marie_de_gaulle_small
+				large = GFX_charles_andre_joseph_marie_de_gaulle_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_charles_andre_joseph_marie_de_gaulle_desc"
+			expire = "1970.11.9"
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = FRA_charles_andre_joseph_marie_de_gaulle_hg
+			removal_cost = -1
+			allowed = {	original_tag = FRA	}
+		}
+	}
+}
