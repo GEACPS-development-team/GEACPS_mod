@@ -1563,7 +1563,7 @@ guiTypes = {
 	containerWindowType = {
 		name ="gamesetup_gameplay_settings_window"
 		position = { x=0 y=196}	
-		show_position = { x=5 y =-85}
+		show_position = { x=5 y =-40}
 		animation_type = decelerated
 		animation_time = 1000
 		
@@ -1653,7 +1653,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = {x=18 y=53 }
+			position = { x = 18 y = 53 }
 			name = "civilian_text"
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}	
@@ -1665,7 +1665,7 @@ guiTypes = {
 		}
 
 		instantTextBoxType={
-			position = {x=133 y=53 }
+			position = { x = 133 y = 53 }
 			name = "beginner_text"
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}	
@@ -1677,7 +1677,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x=250 y=53 }
+			position = { x = 250 y = 53 }
 			name = "normal_text"
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}	
@@ -1689,7 +1689,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x=368 y=53 }
+			position = { x = 368 y = 53 }
 			name = "hard_text"
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -1701,7 +1701,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x=480 y=53 }
+			position = { x = 480 y = 53 }
 			name = "very_hard_text"
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -1713,7 +1713,7 @@ guiTypes = {
 		}
 		
 		instantTextBoxType={
-			position = {x = 30 y = 103 }
+			position = { x = 30 y = 103 }
 			name = "ironman_text"
 			font = "hoi_24header"
 			maxWidth = 370
@@ -1726,27 +1726,8 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "ironman_cb"
-			position = { x=530 y =101}
+			position = { x = 530 y = 100 }
 			quadTextureSprite ="GFX_generic_checkbox"	
-			clicksound = click_checkbox
-		}
-		
-		instantTextBoxType={
-			position = {x = 30 y = 148 }
-			name = "historical_text"
-			font = "hoi_24header"
-			maxWidth = 370
-			maxHeight = 16
-			text = "FE_HISTORICAL"
-			pdx_tooltip = "FE_HISTORICAL_TOOLTIP"
-			format = left
-			fixedsize = yes			
-		}
-		
-		checkboxType = {
-			name = "historical_cb"
-			position = { x=530 y =145}
-			quadTextureSprite ="GFX_generic_checkbox"
 			clicksound = click_checkbox
 		}
 	}
