@@ -2,8 +2,6 @@
 #oob = BRL_1946
 set_cosmetic_tag = BRL_free_city
 
-set_convoys = 5
-
 set_politics = {
 	ruling_party = authoritative_democracy
 	last_election = "1946.1.1"
@@ -19,4 +17,12 @@ set_popularities = {
 	authoritative_democracy = 100
 	national_authoritarianism = 0
 	national_populism = 0
+}
+
+create_country_leader = {
+	name = "ベルリン暫定政府"
+	desc = ""
+	picture = "GFX_Reichstag"
+	expire = "1990.10.3"
+	ideology = authoritative_democracy_ideology
 }
