@@ -1,20 +1,23 @@
 state = {
 	id = 1058
 	name = "STATE_1058"
-	manpower = 592000
+	manpower = 1110100
 	state_category = pastoral
 	
 	history = {
 		owner = LAO
 		add_core_of = LAO
+		add_core_of = CHM
 		buildings = {
 			infrastructure = 1
 		}
+		victory_points = {	1374	1	}
 		set_variable = {	LAO_state_variable = 1	}
+		set_variable = {	CHM_state_variable = 1	}
 	}
 	
 	provinces = {
-		1374	1563	10453
+		1374	1563	1577	4554	7426	10453	12210
 	}
 	local_supplies = 0.0
 }
