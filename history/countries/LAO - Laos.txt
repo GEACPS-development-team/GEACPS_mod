@@ -1,10 +1,10 @@
-﻿capital = 670
+﻿capital = 1299
 #oob = LAO_1946
 set_cosmetic_tag = LAO_kingdom
 
 set_politics = {
 	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
+	last_election = "1945.4.8"
 	election_frequency = 48
 	elections_allowed = no
 }
@@ -17,4 +17,11 @@ set_popularities = {
 	authoritative_democracy = 100
 	national_authoritarianism = 0
 	national_populism = 0
+}
+
+1058 = {
+	start_resistance = yes
+	set_compliance = 50
+	set_resistance = 50
+	set_garrison_strength = 1.0
 }

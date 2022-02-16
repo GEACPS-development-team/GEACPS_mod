@@ -1,7 +1,7 @@
 ﻿#植民地国家生成
 create_dynamic_country = {
 	original_tag = AUS
-	set_capital = 1007
+	set_capital = {	state = 1007	}
 	set_country_flag = AUS_ENG_countryflag
 	set_cosmetic_tag = COUNTRY_ENG-GBR
 	set_politics = {	ruling_party = national_authoritarianism	}
@@ -20,6 +20,7 @@ create_dynamic_country = {
 
 #独立保障
 give_guarantee = BRL
+give_guarantee = VIE
 give_guarantee = BRM
 give_guarantee = SIB
 give_guarantee = TIB
