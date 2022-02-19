@@ -1,21 +1,25 @@
 state = {
 	id = 1034
 	name = "STATE_1034"
-	manpower = 5245000
+	manpower = 19129113
 	buildings_max_level_factor = 1
-	state_category = town
+	state_category = large_town
+	
+	resources = {	rubber = 49	}
 	
 	history = {
 		owner = VIN
 		add_core_of = VIN
+		add_core_of = NAM
 		buildings = {
-			infrastructure = 2
+			infrastructure = 4
 			industrial_complex = 1
-			air_base = 2
-			4401 = {	naval_base = 4	}
+			4401 = {	naval_base = 5	}
 		}
 		victory_points = {	4401	3	}
+		victory_points = {	10261	1	}
 		set_variable = {	VIN_state_variable = 1	}
+		set_variable = {	NAM_state_variable = 1	}
 	}
 	
 	provinces = {
