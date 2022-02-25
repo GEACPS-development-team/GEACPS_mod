@@ -1,22 +1,31 @@
-state = {
-	id = 203
-	name = "STATE_203"
-	manpower = 2405190
-	state_category = large_town
-	
-	history = {
+
+state={
+	id=203
+	name="STATE_203"
+	state_category = pastoral
+
+	history={
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
+
 		}
-		victory_points = {	488	5	}
-		set_variable = {	UKR_state_variable = 1	}
+		victory_points = {
+			488 5 
+		}
+		set_variable = {
+			UKR_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		458	488	9451	9491	11424	11438	11454	11530
+
+	provinces={
+		458 488 9451 11424 11438 11454 
 	}
-	local_supplies = 0.0
+	manpower=2405190
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

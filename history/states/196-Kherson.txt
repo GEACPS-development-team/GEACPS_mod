@@ -1,24 +1,35 @@
-state = {
-	id = 196
-	name = "STATE_196"
-	manpower = 728363
-	state_category = town
-	
-	resources = {	chromium = 15	}
-	
-	history = {
+
+state={
+	id=196
+	name="STATE_196"
+	state_category = rural
+
+	resources={
+		chromium=15.000
+	}
+
+	history={
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
 			air_base = 3
+
 		}
-		victory_points = {	721	1	}
-		set_variable = {	UKR_state_variable = 1	}
+		victory_points = {
+			721 1 
+		}
+		set_variable = {
+			UKR_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		568	721	737	767	3573	6771	9712	11715
+
+	provinces={
+		568 721 737 767 3573 6771 9712 
 	}
-	local_supplies = 0.0
+	manpower=728363
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }

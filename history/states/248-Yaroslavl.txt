@@ -1,23 +1,31 @@
-state = {
-	id = 248
-	name = "STATE_248"
-	manpower = 1664541
-	state_category = large_town
-	
-	history = {
+state={
+	id=248
+	name="STATE_248"
+	state_category=rural
+
+	history={
 		owner = RUS
 		add_core_of = RUS
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
+
 		}
-		victory_points = {	121	5	}
-		set_variable = {	RUS_state_variable = 1	}
+		victory_points = {
+			121 5 
+		}
+		set_variable = {
+			RUS_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		2	62	121	164	231	252	3077	3220	6056	6101	6143	6167	6356	9122	9188	9345	11039	11099	11166	11205
+
+	provinces={
+		121 231 252 3077 3220 6056 6101 6167 6356 9122 9345 11039 11205 
 	}
-	local_supplies = 0.0
+	manpower=1664541
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
 }
