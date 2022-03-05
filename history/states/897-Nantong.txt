@@ -9,13 +9,16 @@ state = {
 		add_core_of = CHI
 		add_core_of = JGS
 		add_core_of = NAN
-		CHI = {
-			set_province_controller = 11928
-		}
 		buildings = {
 			infrastructure = 3
 		}
 		set_variable = {	JGS_state_variable = 1	}
+
+		1946.1.1 = {
+			CHI = {
+				set_province_controller = 11928
+			}
+		}
 	}
 	
 	provinces = {

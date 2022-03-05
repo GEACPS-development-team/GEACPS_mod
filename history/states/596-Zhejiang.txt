@@ -9,10 +9,6 @@ state = {
 		add_core_of = CHI
 		add_core_of = ZHE
 		add_core_of = NAN
-		CHI = {
-			set_province_controller = 7058
-			set_province_controller = 9974
-		}
 		buildings = {
 			infrastructure = 2
 			1055 = {	bunker = 1	}
@@ -24,6 +20,13 @@ state = {
 		}
 		victory_points = {	9974	1	}
 		set_variable = {	ZHE_state_variable = 1	}
+
+		1946.1.1 = {
+			CHI = {
+				set_province_controller = 7058
+				set_province_controller = 9974
+			}
+		}
 	}
 	
 	provinces = {
