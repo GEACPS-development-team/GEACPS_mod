@@ -1,5 +1,5 @@
 add_namespace = geacps_JAP
-country_event = {#大日本帝國
+country_event = {	#大日本帝國
 	id = geacps_JAP.1
 	title = geacps_JAP.1.t
 	desc = geacps_JAP.1.d
@@ -12,11 +12,11 @@ country_event = {#大日本帝國
 	immediate = {
 	}
 	
-	option = {#天皇陛下万歳！大日本帝国万歳！
+	option = {	#天皇陛下万歳！大日本帝国万歳！
 		name = geacps_JAP.1.a
 	}
 }
-country_event = {#一・二二事件の発生
+country_event = {	#一・二二事件の発生
 	id = geacps_JAP.2
 	title = geacps_JAP.2.t
 	desc = geacps_JAP.2.d
@@ -29,18 +29,18 @@ country_event = {#一・二二事件の発生
 	immediate = {
 	}
 	
-	option = {#叛乱軍を捕らえよ！
+	option = {	#叛乱軍を捕らえよ！
 		name = geacps_JAP.2.a
 		complete_national_focus = JAP_1-22_Incident
 		remove_ideas_with_trait = head_of_government
-		#kill_head_of_government = yes　#効果不明
+		#kill_head_of_government = yes	#効果不明
 		add_manpower = -1000
 		country_event = {
 			id = geacps_JAP.3
 		}
 	}
 }
-country_event = {#臨時代理
+country_event = {	#臨時代理
 	id = geacps_JAP.3
 	title = geacps_JAP.3.t
 	desc = geacps_JAP.3.d
@@ -53,7 +53,7 @@ country_event = {#臨時代理
 	immediate = {
 	}
 	
-	option = {#東條の腹心の安藤紀三郎に
+	option = {	#東條の腹心の安藤紀三郎に
 		name = geacps_JAP.3.a
  		ai_chance = {
 			factor = 100
@@ -62,13 +62,13 @@ country_event = {#臨時代理
 		add_war_support = 0.1
 	}
 	
-	option = {#"欠点がない"重光葵に
+	option = {	#"欠点がない"重光葵に
 		name = geacps_JAP.3.b
 		add_ideas = JAP_Mamoru_Shigemitsu
 		add_stability = 0.1
 	}
 }
-country_event = {#重臣会議
+country_event = {	#重臣会議
 	id = geacps_JAP.4
 	title = geacps_JAP.4.t
 	desc = geacps_JAP.4.d
@@ -81,25 +81,25 @@ country_event = {#重臣会議
 	immediate = {
 	}
 	
-	option = {#奏薦されたのは陸軍将校だ！
+	option = {	#奏薦されたのは陸軍将校だ！
 		name = geacps_JAP.4.a
  		ai_chance = {
 			factor = 75
 		}
 	}
 	
-	option = {#いいや、海軍士官が奏薦された！
+	option = {	#いいや、海軍士官が奏薦された！
 		name = geacps_JAP.4.b
  		ai_chance = {
 			factor = 25
 		}
 	}
 	
-	option = {#軍部の意見なんぞ無視してしまえ...
+	option = {	#軍部の意見なんぞ無視してしまえ...
 		name = geacps_JAP.4.c
 	}
 }
-country_event = {#閣議
+country_event = {	#閣議
 	id = geacps_JAP.5
 	title = geacps_JAP.5.t
 	desc = geacps_JAP.5.d
@@ -112,11 +112,11 @@ country_event = {#閣議
 	immediate = {
 	}
 	
-	option = {#決まりだな
+	option = {	#決まりだな
 		name = geacps_JAP.5.a
 	}
 }
-country_event = {#海軍士官の裁判
+country_event = {	#海軍士官の裁判
 	id = geacps_JAP.6
 	title = geacps_JAP.6.t
 	desc = geacps_JAP.6.d
@@ -129,21 +129,21 @@ country_event = {#海軍士官の裁判
 	immediate = {
 	}
 	
-	option = {#公正な判決を下す
+	option = {	#公正な判決を下す
 		name = geacps_JAP.6.a
  		ai_chance = {
 			factor = 50
 		}
 	}
 	
-	option = {#臣民が助命嘆願運動を行っている...
+	option = {	#臣民が助命嘆願運動を行っている...
 		name = geacps_JAP.6.b
  		ai_chance = {
 			factor = 50
 		}
 	}
 }
-country_event = {#農本主義者を逮捕
+country_event = {	#農本主義者を逮捕
 	id = geacps_JAP.7
 	title = geacps_JAP.7.t
 	desc = geacps_JAP.7.d
@@ -156,21 +156,21 @@ country_event = {#農本主義者を逮捕
 	immediate = {
 	}
 	
-	option = {#全国の農本主義者達の思想を"保護観察"しよう
+	option = {	#全国の農本主義者達の思想を"保護観察"しよう
 		name = geacps_JAP.7.a
  		ai_chance = {
 			factor = 50
 		}
 	}
 	
-	option = {#投獄でもしておけ
+	option = {	#投獄でもしておけ
 		name = geacps_JAP.7.b
  		ai_chance = {
 			factor = 50
 		}
 	}
 }
-country_event = {#皇道派将校の裁判
+country_event = {	#皇道派将校の裁判
 	id = geacps_JAP.8
 	title = geacps_JAP.8.t
 	desc = geacps_JAP.8.d
@@ -183,14 +183,14 @@ country_event = {#皇道派将校の裁判
 	immediate = {
 	}
 	
-	option = {#公正な判決なんてもんはない
+	option = {	#公正な判決なんてもんはない
 		name = geacps_JAP.8.a
  		ai_chance = {
 			factor = 95
 		}
 	}
 	
-	option = {#もしかしたら...
+	option = {	#もしかしたら...
 		name = geacps_JAP.8.b
  		ai_chance = {
 			factor = 5
@@ -198,11 +198,20 @@ country_event = {#皇道派将校の裁判
 	}
 }
 
-country_event = {#日本内戦の予感
+country_event = {	#武漢作戦
 	id = geacps_JAP.100
 	title = geacps_JAP.100.t
 	desc = geacps_JAP.100.d
 	picture = GFX_event_test
+	
+	major = yes
+	
+	trigger = {
+		JAP = {	has_war_with = CHI	}
+		JAP = {	controls_province = 4619	}
+		CH1 = {	controls_province = 4619	}
+		CH2 = {	controls_province = 4619	}
+	}
 	
 	is_triggered_only = yes
 	hidden = no
@@ -211,25 +220,8 @@ country_event = {#日本内戦の予感
 	immediate = {
 	}
 	
-	option = {#A
+	option = {	#祝武漢入城
 		name = geacps_JAP.100.a
- 		ai_chance = {
-			factor = 
-		}
-	}
-	
-	option = {#B
-		name = geacps_JAP.100.b
- 		ai_chance = {
-			factor = 
-		}
-	}
-	
-	option = {#C
-		name = geacps_JAP.100.c
- 		ai_chance = {
-			factor = 
-		}
 	}
 }
 

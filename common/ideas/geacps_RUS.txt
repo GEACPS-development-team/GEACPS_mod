@@ -1,6 +1,6 @@
-ideas = {#既存国民精神
+ideas = {	#既存国民精神
 	country = {
-		RUS_general_directorate_of_state_security = {#国家保安総局
+		RUS_peoples_commissariat_of_internal_affairs = {	#NKVD
 			allowed = {
 				always = no
 			}
@@ -8,12 +8,25 @@ ideas = {#既存国民精神
 				always = yes
 			}
 			removal_cost = -1
-			picture = nkvd_2
+			picture = peoples_commissariat_of_internal_affairs
 			modifier = {
 				agency_upgrade_time = -0.1
 			}
 		}
-		RUS_reigniting_the_ethnic_question = {#民族問題の再燃
+		RUS_committee_for_state_security = {	#KGB
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GFX_idea_RUS_committee_for_state_security
+			modifier = {
+				agency_upgrade_time = -0.1
+			}
+		}
+		RUS_reigniting_the_ethnic_question = {	#民族問題の再燃
 			allowed = {
 				always = no
 			}
@@ -26,7 +39,7 @@ ideas = {#既存国民精神
 				stability_factor = -0.01
 			}
 		}
-		RUS_federalism_in_turmoil = {#連邦制の動揺
+		RUS_federalism_in_turmoil = {	#連邦制の動揺
 			allowed = {
 				always = no
 			}
@@ -39,7 +52,7 @@ ideas = {#既存国民精神
 				autonomy_gain = 1
 			}
 		}
-		RUS_victory_in_the_great_patriotic_war = {#大祖国戦争に勝利
+		RUS_victory_in_the_great_patriotic_war = {	#大祖国戦争に勝利
 			allowed = {
 				always = no
 			}
@@ -53,7 +66,7 @@ ideas = {#既存国民精神
 				war_support_factor = 0.1
 			}
 		}
-		RUS_defeat_in_the_far_east = {#極東における敗北
+		RUS_defeat_in_the_far_east = {	#極東における敗北
 			allowed = {
 				always = no
 			}
@@ -67,5 +80,10 @@ ideas = {#既存国民精神
 				war_support_factor = -0.1
 			}
 		}
+	}
+}
+
+ideas = {	#新規国民精神
+	country = {
 	}
 }
