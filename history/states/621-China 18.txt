@@ -1,25 +1,40 @@
-state = {
-	id = 621
-	name = "STATE_621"
-	manpower = 1583700
-	buildings_max_level_factor = 1
-	state_category = pastoral
-	
-	history = {
-		owner = MEN
-		add_core_of = MEN
-		add_core_of = SUY
+
+state={
+	id=621
+	name="STATE_621"
+
+	history={
+		owner = CHI
 		add_core_of = CHI
+		add_core_of = GND
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
+			1047 = {
+				bunker = 1
+
+			}
+			1047 = {
+				coastal_bunker = 1
+
+			}
+
 		}
-		victory_points = {	4525	1	}
-		set_variable = {	SUY_state_variable = 1	}
+		victory_points = {
+			1047 5 
+		}
+		set_variable = {
+			GND_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		2087	4525	7631	10424	10629	12609	12880
+
+	provinces={
+		1047 
 	}
-	local_supplies = 0.0
+	manpower=1583700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }
