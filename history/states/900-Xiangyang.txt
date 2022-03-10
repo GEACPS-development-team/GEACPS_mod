@@ -1,23 +1,28 @@
-state = {
-	id = 900
-	name = "STATE_900"
-	manpower = 255000
-	buildings_max_level_factor = 1
-	state_category = city
-	
-	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = HUB
-		add_core_of = NAN
+
+state={
+	id=900
+	name="STATE_900"
+
+	history={
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
 		buildings = {
 			infrastructure = 2
+
 		}
-		set_variable = {	HUB_state_variable = 1	}
+		set_variable = {
+			CAL_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		4009	10474	7609
+
+	provinces={
+		766 781 3588 4331 6482 6665 10159 11698 
 	}
-	local_supplies = 0.0
+	manpower=255000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

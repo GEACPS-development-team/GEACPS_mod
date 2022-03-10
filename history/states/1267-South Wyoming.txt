@@ -1,21 +1,28 @@
-state = {
-	id = 1267
-	name = "STATE_1267"
-	manpower = 2260
-	state_category = rural
-	
-	history = {
+
+state={
+	id=1267
+	name="STATE_1267"
+
+	history={
 		owner = USA
 		add_core_of = USA
-		add_core_of = WYO
+		add_core_of = CAL
 		buildings = {
 			infrastructure = 2
+
 		}
-		set_variable = {	WYO_state_variable = 1	}
+		set_variable = {
+			CAL_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		10640
+
+	provinces={
+		986 3784 3840 6861 6881 9637 11859 11876 
 	}
-	local_supplies = 0.0
+	manpower=2260
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

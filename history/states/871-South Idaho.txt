@@ -1,21 +1,35 @@
-state = {
-	id = 871
-	name = "STATE_871"
-	manpower = 4500
-	state_category = rural
-	
-	history = {
+
+state={
+	id=871
+	name="STATE_871"
+
+	history={
 		owner = USA
 		add_core_of = USA
-		add_core_of = IDA
+		add_core_of = CAL
 		buildings = {
 			infrastructure = 2
+			9671 = {
+				naval_base = 4
+
+			}
+
 		}
-		set_variable = {	IDA_state_variable = 1	}
+		victory_points = {
+			9671 25 
+		}
+		set_variable = {
+			CAL_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		12607
+
+	provinces={
+		677 3677 3678 9671 
 	}
-	local_supplies = 0.0
+	manpower=4500
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
