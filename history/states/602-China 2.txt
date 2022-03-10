@@ -1,13 +1,12 @@
-state = {
-	id = 602
-	name = "STATE_602"
-	manpower = 20293700
-	buildings_max_level_factor = 1
-	state_category = town
-	
-	resources = {	tungsten = 6	}
-	
-	history = {
+
+state={
+	id=602
+	name="STATE_602"
+	resources={
+		tungsten=6.000
+	}
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = HNN
@@ -16,12 +15,20 @@ state = {
 			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
+
 		}
-		set_variable = {	HNN_state_variable = 1	}
+		set_variable = {
+			HNN_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		4125	4480	7201	7665	10304	10335	10377	10517	10757	12017	12053	12086	12310	12378	12414
+
+	provinces={
+		4125 4480 7201 7665 9999 10304 10335 10377 10517 10757 12017 12053 12086 12310 12378 12414 
 	}
-	local_supplies = 0.0
+	manpower=20293700
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

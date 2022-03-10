@@ -1,10 +1,9 @@
-state = {
-	id = 608
-	name = "STATE_608"
-	manpower = 965000
-	state_category = town
-	
-	history = {
+
+state={
+	id=608
+	name="STATE_608"
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = SHX
@@ -13,13 +12,23 @@ state = {
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 3
+
 		}
-		victory_points = {	1575	1	}
-		set_variable = {	SHX_state_variable = 1	}
+		victory_points = {
+			1575 1 
+		}
+		set_variable = {
+			SHX_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1575
+
+	provinces={
+		1034 1531 1575 4074 4174 7571 10367 12300 
 	}
-	local_supplies = 0.0
+	manpower=965000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

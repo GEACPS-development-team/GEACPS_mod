@@ -1,16 +1,14 @@
-state = {
-	id = 592
-	name = "STATE_592"
-	manpower = 178400
-	state_category = city
-	
-	resources = {
-		tungsten = 8
-		steel = 15
-		chromium = 3
+
+state={
+	id=592
+	name="STATE_592"
+	resources={
+		tungsten=8.000
+		steel=15.000
+		chromium=3.000
 	}
-	
-	history = {
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = GND
@@ -19,12 +17,20 @@ state = {
 			industrial_complex = 2
 			arms_factory = 2
 			air_base = 3
+
 		}
-		set_variable = {	GND_state_variable = 1	}
+		set_variable = {
+			GND_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		9963
+
+	provinces={
+		1087 1187 9963 11938 
 	}
-	local_supplies = 0.0
+	manpower=178400
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

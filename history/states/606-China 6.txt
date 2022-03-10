@@ -1,15 +1,12 @@
-state = {
-	id = 606
-	name = "STATE_606"
-	manpower = 18265400
-	buildings_max_level_factor = 1
-	
-	resources = {
-		steel = 11
+
+state={
+	id=606
+	name="STATE_606"
+	resources={
+		steel=11.000
 	}
-	state_category = town
-	
-	history = {
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = NAN
@@ -17,13 +14,23 @@ state = {
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
-		victory_points = {	7222	1	}
-		set_variable = {	ANH_state_variable = 1	}
+		victory_points = {
+			7222 1 
+		}
+		set_variable = {
+			ANH_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1083	4203	7035	7222	10017	10064	11994	12036	12061	1153	1171	4105	4173	10044	11937
+
+	provinces={
+		1083 1146 4203 7035 7222 10008 10017 10064 11994 12061 
 	}
-	local_supplies = 0.0
+	manpower=18265400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }
