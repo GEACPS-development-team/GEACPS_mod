@@ -7,24 +7,30 @@ state={
 	}
 
 	history={
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = FUJ
+		owner = CHL
+		add_core_of = CHL
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
+			12994 = {
+				naval_base = 1
+
+			}
 
 		}
+		victory_points = {
+			12994 1 
+		}
 		set_variable = {
-			FUJ_state_variable = 1
+			CHL_state_variable = 1
 
 		}
 
 	}
 
 	provinces={
-		10010 10054 10093 
+		5146 8231 12994 
 	}
 	manpower=20293700
 	buildings_max_level_factor=1.000

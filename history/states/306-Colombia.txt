@@ -1,10 +1,9 @@
-state = {
-	id = 306
-	name = "STATE_306"
-	manpower = 4953049
-	state_category = city
-	
-	history = {
+
+state={
+	id=306
+	name="STATE_306"
+
+	history={
 		owner = COL
 		add_core_of = COL
 		buildings = {
@@ -12,13 +11,23 @@ state = {
 			arms_factory = 1
 			industrial_complex = 5
 			air_base = 2
+
 		}
-		victory_points = {	10747	10	}
-		set_variable = {	COL_state_variable = 1	}
+		victory_points = {
+			10747 10 
+		}
+		set_variable = {
+			COL_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		2079	7936	7991	7993	10747	10790	10846
+
+	provinces={
+		4969 7936 7991 10494 12872 
 	}
-	local_supplies = 0.0
+	manpower=4953049
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }

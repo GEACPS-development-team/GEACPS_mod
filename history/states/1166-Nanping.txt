@@ -1,22 +1,28 @@
-state = {
-	id = 1166
-	name = "STATE_1166"
-	manpower = 11755600
-	state_category = city
-	
-	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = FUJ
+
+state={
+	id=1166
+	name="STATE_1166"
+
+	history={
+		owner = PRU
+		add_core_of = PRU
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
-		set_variable = {	FUJ_state_variable = 1	}
+		set_variable = {
+			PRU_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		4070	4113	10012	10042
+
+	provinces={
+		10942 12969 
 	}
-	local_supplies = 0.0
+	manpower=11755600
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
 }
