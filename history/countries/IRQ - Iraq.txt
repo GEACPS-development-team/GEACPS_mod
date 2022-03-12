@@ -1,7 +1,9 @@
 ﻿capital = 291
 oob = IRQ_1946
-set_cosmetic_tag = IRQ_hashemite_kingdom
 
+GBR = {	set_autonomy = {	target = IRQ	autonomous_state = puppet	}	}
+
+set_cosmetic_tag = IRQ_hashemite_kingdom
 set_convoys = 5
 
 set_politics = {
@@ -21,10 +23,4 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "ファイサル2世"
-	desc = ""
-	picture = "GFX_Faisal_II"
-	expire = "1958.7.14"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_faisal_bin_ghazi_bin_faisal_bin_hussein_bin_ali

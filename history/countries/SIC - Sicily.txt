@@ -1,16 +1,8 @@
 ﻿capital = 117
-set_cosmetic_tag = TWOSICILIES_kingdom
 oob = SIC_1946
 
+set_cosmetic_tag = TWOSICILIES_kingdom
 set_convoys = 10
-
-add_ideas = {
-	SIC_idea_1
-}
-
-set_technology = {
-	tech_support = 1
-}
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -29,9 +21,11 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = authoritative_democracy_ideology
+recruit_character = CHARACTER_ferdinando_pio_di_borbone-due_sicilie
+
+add_ideas = {	#国民精神
+	SIC_idea_1
+}
+set_technology = {
+	tech_support = 1
 }

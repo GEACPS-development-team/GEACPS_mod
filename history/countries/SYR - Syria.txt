@@ -1,7 +1,9 @@
 ﻿capital = 554
 oob = SYR_1946
-set_cosmetic_tag = SYR_republic
 
+FRA = {	set_mandate = yes	}
+
+set_cosmetic_tag = SYR_republic
 set_convoys = 5
 
 set_politics = {
@@ -21,10 +23,4 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "シュクリー・アル＝クーワトリー"
-	desc = ""
-	picture = "GFX_Shukri_al-Quwatli"
-	expire = "1967.6.30"
-	ideology = conservative_democracy_ideology
-}
+recruit_character = CHARACTER_shukri_al-quwatli

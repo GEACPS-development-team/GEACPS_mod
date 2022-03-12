@@ -1,0 +1,17 @@
+﻿create_dynamic_country = {
+	original_tag = IND
+	
+	POR = {	set_colony = yes	}
+	
+	set_capital = {	state = 321	}
+	set_country_flag = IND_POR_countryflag
+	set_cosmetic_tag = COUNTRY_POR
+	set_dictatorship = yes
+	
+	recruit_character = CHARACTER_paulo_benard_guedes
+	
+	every_core_state = {	remove_core_of = PREV	}
+	321 = {	set_owner_and_core_of = yes	}
+	1170 = {	set_owner_and_core_of = yes	}
+	1171 = {	set_owner_and_core_of = yes	}
+}

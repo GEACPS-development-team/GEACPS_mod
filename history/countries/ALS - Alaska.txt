@@ -1,7 +1,7 @@
 ﻿capital = 463
 oob = ALS_1946
 
-set_convoys = 5
+USA = {	set_us_territory = yes	}
 
 set_politics = {
 	ruling_party = liberal_democracy
@@ -20,10 +20,4 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "アーネスト・グリューニング"
-	desc = ""
-	picture = "GFX_Ernest_Gruening"
-	expire = "	1974.6.26"
-	ideology = liberal_democracy_ideology
-}
+recruit_character = CHARACTER_ernest_henry_gruening

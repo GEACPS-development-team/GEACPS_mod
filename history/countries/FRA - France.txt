@@ -1,16 +1,8 @@
 ﻿capital = 987
 oob = "FRA_1946"
+
 set_cosmetic_tag = FRA_republic
-
 set_convoys = 500
-
-add_ideas = {
-	FRA_de_gaulle_regime
-	FRA_fighting_france
-	FRA_monet_plan
-	FRA_purge_against_the_collaboraturs
-	FRA_our_dearest_enemy
-}
 
 set_politics = {
 	ruling_party = national_authoritarianism
@@ -28,7 +20,6 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 0
 }
-
 set_party_name = {	#フランス共産党
 	ideology = total_socialism
 	name = PARTY_french_communist_party
@@ -73,6 +64,23 @@ illegalization_of_national_populism_party = yes
 
 recruit_character = CHARACTER_charles_andre_joseph_marie_de_gaulle
 
-add_ideas = {
+add_ideas = {	#内閣
 	FRA_charles_andre_joseph_marie_de_gaulle_hg
 }
+
+add_ideas = {	#国民精神
+	FRA_de_gaulle_regime
+	FRA_fighting_france
+	FRA_monet_plan
+	FRA_purge_against_the_collaboraturs
+	FRA_our_dearest_enemy
+}
+
+#陣営
+create_faction = WESTERN_EUROPEAN_ALLIANCE
+add_to_faction = FRA
+add_to_faction = SGR
+add_to_faction = ITA
+
+give_guarantee = SIB
+give_military_access = USA

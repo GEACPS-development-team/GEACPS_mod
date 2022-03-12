@@ -1,0 +1,16 @@
+﻿create_dynamic_country = {	#ソビエト統治下オーストリア占領地
+	original_tag = AUS
+	
+	SOV = {	set_occupied_territory = yes	}
+	
+	set_capital = {	state = 4	}
+	set_country_flag = AUS_SOV_countryflag
+	set_cosmetic_tag = COUNTRY_SOV
+	set_dictatorship = yes
+	
+	recruit_character = CHARACTER_ivan_stepanovich_konev
+	
+	every_core_state = {	remove_core_of = PREV	}
+	4 = {	set_owner_and_core_of = yes	}
+	1006 = {	set_owner_and_core_of = yes	}
+}

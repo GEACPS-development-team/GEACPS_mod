@@ -1,11 +1,11 @@
 ﻿capital = 111
 oob = FIN_1946
-set_cosmetic_tag = FIN_republic
 
+set_cosmetic_tag = FIN_republic
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = conservative_democracy
 	last_election = "1944.8.4"
 	election_frequency = 72
 	elections_allowed = yes
@@ -15,20 +15,10 @@ set_popularities = {
 	radical_socialism = 0
 	social_democracy = 0
 	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 100
+	conservative_democracy = 100
+	authoritative_democracy = 0
 	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "カール・グスタフ・エミール・マンネルヘイム"
-	desc = ""
-	picture = "GFX_Carl_Gustaf_Emil_Mannerheim"
-	expire = "1947.4.20"
-	ideology = authoritative_democracy_ideology
-}
-
-#傀儡, 植民地
-ALA	= {	set_colony_variable = yes	}
-set_autonomy = {	target = ALA	autonomous_state = dominion	}
+recruit_character =  CHARACTER_carl_gustaf_emil_mannerheim

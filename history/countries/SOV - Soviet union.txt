@@ -1,5 +1,6 @@
 ﻿capital = 219
-#oob = SOV_1946
+
+set_cosmetic_tag = SOV_union_republics
 
 set_politics = {
 	ruling_party = total_socialism
@@ -18,46 +19,23 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_dynamic_country = {
-	original_tag = AUS
-	set_country_flag = AUS_SOV_countryflag
-	set_cosmetic_tag = COUNTRY_SOV
-	set_politics = {	ruling_party = total_socialism	}
-	set_popularities = {	national_authoritarianism = 100	}
-	
-	set_ot_variable = yes
-	
-	every_state = {
-		limit = {	is_core_of = AUS	}
-		remove_core_of = PREV
-	}
-    transfer_state = 4	4 = {	add_core_of = PREV	}
-    transfer_state = 1006	1006 = {	add_core_of = PREV	}
-}
+#陣営
+create_faction = COMINFORM
+add_to_faction = SOV
+add_to_faction = RUS
+add_to_faction = UKR
+add_to_faction = BLR
+add_to_faction = EST
+add_to_faction = LAT
+add_to_faction = LIT
+add_to_faction = MOL
+add_to_faction = KAR
+add_to_faction = DON
+add_to_faction = ABK
+add_to_faction = YAM
+add_to_faction = POL
+add_to_faction = EGR
 
-create_dynamic_country = {
-	original_tag = KAZ
-	set_cosmetic_tag = KAZ_SOV
-	set_politics = {	ruling_party = total_socialism	}
-	set_popularities = {	national_authoritarianism = 100	}
-	
-	SOV = {	set_autonomy = {	target = PREV	autonomous_state = soviet_member_republic	}	}
-	
-	every_state = {
-		limit = {	is_core_of = KAZ	}
-		remove_core_of = PREV
-	}
-    transfer_state = 407	407 = {	add_core_of = PREV	}
-    transfer_state = 835	835 = {	add_core_of = PREV	}
-    transfer_state = 583	583 = {	add_core_of = PREV	}
-    transfer_state = 590	590 = {	add_core_of = PREV	}
-    transfer_state = 854	854 = {	add_core_of = PREV	}
-    transfer_state = 853	853 = {	add_core_of = PREV	}
-    transfer_state = 588	588 = {	add_core_of = PREV	}
-    transfer_state = 855	855 = {	add_core_of = PREV	}
-}
-
-#独立保障
 give_guarantee = EGR
 
 #軍事通行権
@@ -75,53 +53,3 @@ every_country = {
 	HUN = {	give_military_access = PREV	}
 	ROM = {	give_military_access = PREV	}
 }
-
-#傀儡, 植民地
-RUS = {	set_cosmetic_tag = RUS_SOV	set_variable = {	federal_government_variable = 1	}	}
-ABK = {	set_cosmetic_tag = ABK_SOV	}
-BLR = {	set_cosmetic_tag = BLR_SOV	}
-DON = {	set_cosmetic_tag = DON_SOV	}
-EST = {	set_cosmetic_tag = EST_SOV	}
-KAR = {	set_cosmetic_tag = KAR-FIN_SOV	}
-KOM = {	set_cosmetic_tag = KOM_SOV	}
-LAT = {	set_cosmetic_tag = LAT_SOV	}
-LIT = {	set_cosmetic_tag = LIT_SOV	}
-MOL = {	set_cosmetic_tag = MOL_SOV	}
-NEN = {	set_cosmetic_tag = NEN_SOV	}
-UKR = {	set_cosmetic_tag = UKR_SOV	}
-YAM = {	set_cosmetic_tag = YAM_SOV	}
-
-
-set_autonomy = {	target = RUS	autonomous_state = soviet_member_federal_republic	}
-set_autonomy = {	target = ABK	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = BLR	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = DON	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = EST	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = KAR	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = KOM	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = LAT	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = LIT	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = MOL	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = NEN	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = UKR	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = YAM	autonomous_state = soviet_member_republic	}
-set_autonomy = {	target = EGR	autonomous_state = soviet_satellite	}
-set_autonomy = {	target = POL	autonomous_state = soviet_satellite	}
-set_autonomy = {	target = AT2	autonomous_state = occupied_territory	}
-
-#陣営
-create_faction = COMINFORM
-add_to_faction = SOV
-add_to_faction = RUS
-add_to_faction = UKR
-add_to_faction = BLR
-add_to_faction = EST
-add_to_faction = LAT
-add_to_faction = LIT
-add_to_faction = MOL
-add_to_faction = KAR
-add_to_faction = DON
-add_to_faction = ABK
-add_to_faction = YAM
-add_to_faction = POL
-add_to_faction = EGR

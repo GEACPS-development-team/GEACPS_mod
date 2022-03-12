@@ -1,30 +1,8 @@
 ﻿capital = 993
 oob = VAT_1946
+
 set_cosmetic_tag = CHURCH_state
-
 set_convoys = 1
+set_dictatorship = yes
 
-set_politics = {
-	ruling_party = national_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 0
-	national_authoritarianism = 100
-	national_populism = 0
-}
-
-create_country_leader = {
-	name = "ピウス12世"
-	desc = ""
-	picture = "GFX_Pius_XII"
-	expire = "1958.10.9"
-	ideology = national_authoritarianism_ideology
-}
+recruit_character = CHARACTER_eugenio_maria_giuseppe_giovanni_pacelli

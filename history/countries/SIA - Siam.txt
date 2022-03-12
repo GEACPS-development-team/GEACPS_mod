@@ -1,8 +1,7 @@
 ﻿capital = 289
-set_cosmetic_tag = THAILAND_kingdom
-
 oob = SIA_1946
 
+set_cosmetic_tag = THAILAND_kingdom
 set_convoys = 100
 
 set_politics = {
@@ -21,20 +20,6 @@ set_popularities = {
 	national_authoritarianism = 1
 	national_populism = 1
 }
-
-#不可侵条約
-diplomatic_relation = { country = GBR	relation = non_aggression_pact }
-diplomatic_relation = { country = MAL	relation = non_aggression_pact }
-diplomatic_relation = { country = SIN	relation = non_aggression_pact }
-
-create_country_leader = {
-	name = "ラーマ8世"
-	desc = ""
-	picture = "GFX_Rama_VIII"
-	expire = "1946.6.9"
-	ideology = authoritative_democracy_ideology
-}
-
 set_party_name = {	#タイ共産党
 	ideology = total_socialism
 	name = PARTY_thailand_communist_party
@@ -65,3 +50,10 @@ set_party_name = {	#人民党
 	name = PARTY_people's_party
 	long_name = PARTY_people's_party_long
 }
+
+recruit_character = CHARACTER_ananda_mahidol
+
+#不可侵条約
+diplomatic_relation = { country = GBR	relation = non_aggression_pact }
+diplomatic_relation = { country = MAL	relation = non_aggression_pact }
+diplomatic_relation = { country = SIN	relation = non_aggression_pact }

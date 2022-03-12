@@ -1,5 +1,8 @@
 ﻿capital = 612
 oob = MEN_1946
+
+JAP = {	set_imperial_protected_state = yes	}
+
 set_cosmetic_tag = MEN_autonomous_federation
 
 set_politics = {
@@ -18,15 +21,6 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 100
 }
-
-create_country_leader = {
-	name = "徳王"
-	desc = "POLITICS_DEMCHUGDONGRUB_DESC"
-	picture = "GFX_Demchugdongrub"
-	expire = "1966.5.23"
-	ideology = national_populism_ideology
-}
-
 illegalization_of_total_socialism_party = yes
 illegalization_of_radical_socialism_party = yes
 illegalization_of_social_democracy_party = yes
@@ -43,3 +37,5 @@ set_party_name = {	#蒙古政務委員会
 	name = PARTY_menggu_political_council
 	long_name = PARTY_menggu_political_council_long
 }
+
+recruit_character = CHARACTER_demchugdongrub

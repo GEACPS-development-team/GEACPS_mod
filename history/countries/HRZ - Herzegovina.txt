@@ -1,27 +1,7 @@
 ﻿capital = 804
-#oob = HRZ_1946
+oob = HRZ_1946
 
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 100
-	national_authoritarianism = 0
-	national_populism = 0
-}
+SER = {	set_junior_partner_state = yes	}
 
-create_country_leader = {
-	name = "ペータル2世"
-	desc = ""
-	picture = "GFX_Peter_II"
-	expire = "1970.11.3"
-	ideology = authoritative_democracy_ideology
-}
+set_cosmetic_tag = HRZ_southslab_kingdom
+set_dictatorship = yes

@@ -1,4 +1,4 @@
-characters = {	#皇族
+characters = {	#皇室
 	CHARACTER_hirohito = {	#昭和天皇
 		name = CHARACTER_JAP_reigning_emperor
 		
@@ -159,6 +159,25 @@ characters = {	#陸軍
 			logistics_skill = 3
 		}
 	}
+	CHARACTER_hitoshi_imamura = {	#今村均
+		name = CHARACTER_hitoshi_imamura
+		
+		portraits = {
+			civilian = {
+				small = GFX_hitoshi_imamura_small
+				large = GFX_hitoshi_imamura_large
+			}
+			army = {
+				small = GFX_hitoshi_imamura_small
+				large = GFX_hitoshi_imamura_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_hitoshi_imamura_desc"
+			expire = "1968.10.4"
+		}
+	}
 	CHARACTER_kisaburo_ando = {	#安藤喜三郎
 		name = CHARACTER_kisaburo_ando
 		
@@ -236,7 +255,7 @@ characters = {	#陸軍
 			}
 		}
 		country_leader = {
-			ideology = national_populism_ideology
+			ideology = national_authoritarianism_ideology
 			desc = "CHARACTER_nobuyuki_abe_desc"
 			expire = "1953.9.7"
 		}
@@ -255,7 +274,7 @@ characters = {	#陸軍
 			}
 		}
 		country_leader={
-			ideology = national_populism_ideology
+			ideology = national_authoritarianism_ideology
 			expire = "1965.7.18"
 		}
 	}
@@ -273,7 +292,7 @@ characters = {	#陸軍
 			}
 		}
 		country_leader={
-			ideology = national_populism_ideology
+			ideology = national_authoritarianism_ideology
 			#expire = "1946.4.19"
 		}
 	}
@@ -321,7 +340,7 @@ characters = {	#海軍
 			}
 		}
 		country_leader={
-			ideology = national_populism_ideology
+			ideology = national_authoritarianism_ideology
 			expire = "1964.2.8"
 		}
 	}

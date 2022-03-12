@@ -1,30 +1,10 @@
 ﻿capital = 765
-#oob = QAT_1946
+oob = QAT_1946
+
+IND = {	set_protected_state = yes	}
+
 set_cosmetic_tag = QAT_state
-
 set_convoys = 5
+set_dictatorship = yes
 
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 100
-	national_authoritarianism = 0
-	national_populism = 0
-}
-
-create_country_leader = {
-	name = "シャイフ・アブドゥッラー・ビン・ジャーシム・アール＝サーニー"
-	desc = ""
-	picture = "GFX_Abdullah_bin_Jassim_Al_Thani"
-	expire = "1957.4.27"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_abdullah_bin_jassim_bin_mohammed_al_thani

@@ -5,7 +5,7 @@ set_cosmetic_tag = IRAN_imperial_state
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = liberal_democracy
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -20,15 +20,6 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 0
 }
-
-create_country_leader = {
-	name = "モハンマド・レザー・パフラヴィー"
-	desc = ""
-	picture = "GFX_Mohammad_Reza_Pahlavi"
-	expire = "1980.7.27"
-	ideology = liberal_democracy_ideology
-}
-
 set_party_name = {	#イラン・トゥーデ党
 	ideology = total_socialism
 	name = PARTY_iran_tudeh_party
@@ -69,3 +60,5 @@ set_party_name = {	#イラン人民復活党
 	name = PARTY_iran_people_rastakhiz_party
 	long_name = PARTY_iran_people_rastakhiz_party_long
 }
+
+recruit_character = CHARACTER_mohammad_reza_shah_pahlavi

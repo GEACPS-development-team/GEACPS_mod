@@ -1,6 +1,9 @@
 ﻿capital = 216
 oob = KAR_1946
-set_cosmetic_tag = KAR_SOV
+
+SOV = {	set_soviet_member_republic = yes	}
+
+set_cosmetic_tag = KAR-FIN_SOV
 
 set_politics = {
 	ruling_party = total_socialism
@@ -19,10 +22,4 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "オットー・クーシネン"
-	desc = ""
-	picture = "GFX_Otto_Kuusinen"
-	expire = "	1964.5.17"
-	ideology = total_socialism_ideology
-}
+recruit_character = CHARACTER_otto_vilgelmovich_kuusinen

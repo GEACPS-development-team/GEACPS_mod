@@ -1,121 +1,75 @@
-﻿1946.1.1 = {
-	capital = 285
-	oob = AST_1946
-	
-	set_convoys = 100
-	
-	set_politics = {
-		ruling_party = social_democracy
-		last_election = "1946.1.1"
-		election_frequency = 36
-		elections_allowed = yes
-	}
-	set_popularities = {
-		total_socialism = 0
-		radical_socialism = 0
-		social_democracy = 100
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = total_socialism_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = radical_socialism_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = social_democracy_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = liberal_democracy_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = conservative_democracy_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = authoritative_democracy_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = national_authoritarianism_ideology
-	}
-	create_country_leader = {
-		name = "グロスター公爵ヘンリー"
-		desc = "POLITICS_PRINCE_HENRY_DUKE_OF_GLOUCESTER_DESC"
-		picture = "GFX_Henry_William_Frederick_Albert"
-		expire = "1974.6.10"
-		ideology = national_populism_ideology
-	}
-	
-	set_party_name = {	#オーストラリア共産党
-		ideology = total_socialism
-		name = PARTY_australia_communist_party
-		long_name = PARTY_australia_communist_party_long
-	}
-	set_party_name = {	#オーストラリア共産党
-		ideology = radical_socialism
-		name = PARTY_australia_communist_party
-		long_name = PARTY_australia_communist_party_long
-	}
-	set_party_name = {	#オーストラリア労働党
-		ideology = social_democracy
-		name = PARTY_australia_labour_party
-		long_name = PARTY_australia_labour_party_long
-	}
-	set_party_name = {	#オーストラリア自由党
-		ideology = liberal_democracy
-		name = PARTY_australia_liberal_party
-		long_name = PARTY_australia_liberal_party_long
-	}
-	set_party_name = {	#オーストラリア国民党
-		ideology = conservative_democracy
-		name = PARTY_australia_national_party
-		long_name = PARTY_australia_national_party_long
-	}
-	set_party_name = {	#オーストラリア国民党
-		ideology = authoritative_democracy
-		name = PARTY_australia_national_party
-		long_name = PARTY_australia_national_party_long
-	}
-	set_party_name = {	#中央党
-		ideology = national_authoritarianism
-		name = PARTY_centre_party
-		long_name = PARTY_centre_party_long
-	}
-	set_party_name = {	#中央党
-		ideology = national_populism
-		name = PARTY_centre_party
-		long_name = PARTY_centre_party_long
-	}
+﻿capital = 285
+oob = AST_1946
+
+GBR = {	set_dominion = yes	}
+
+set_cosmetic_tag = AST_ENG-GBR
+set_convoys = 100
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1943.8.21"
+	election_frequency = 36
+	elections_allowed = yes
+}
+set_popularities = {
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 47
+	liberal_democracy = 30
+	conservative_democracy = 14
+	authoritative_democracy = 9
+	national_authoritarianism = 0
+	national_populism = 0
+}
+set_party_name = {	#オーストラリア共産党
+	ideology = total_socialism
+	name = PARTY_australia_communist_party
+	long_name = PARTY_australia_communist_party_long
+}
+set_party_name = {	#オーストラリア共産党
+	ideology = radical_socialism
+	name = PARTY_australia_communist_party
+	long_name = PARTY_australia_communist_party_long
+}
+set_party_name = {	#オーストラリア労働党
+	ideology = social_democracy
+	name = PARTY_australia_labour_party
+	long_name = PARTY_australia_labour_party_long
+}
+set_party_name = {	#オーストラリア自由党
+	ideology = liberal_democracy
+	name = PARTY_australia_liberal_party
+	long_name = PARTY_australia_liberal_party_long
+}
+set_party_name = {	#オーストラリア国民党
+	ideology = conservative_democracy
+	name = PARTY_australia_national_party
+	long_name = PARTY_australia_national_party_long
+}
+set_party_name = {	#無所属
+	ideology = authoritative_democracy
+	name = PARTY_independent_politician
+	long_name = PARTY_independent_politician_long
+}
+set_party_name = {	#総督
+	ideology = national_authoritarianism
+	name = PARTY_governor_general
+	long_name = PARTY_governor_general_long
+}
+set_party_name = {	#中央党
+	ideology = national_populism
+	name = PARTY_centre_party
+	long_name = PARTY_centre_party_long
+}
+
+recruit_character = CHARACTER_henry_william_frederick_albert
+
+PNG = {
+	AST = {	set_mandate = yes	}
+	set_dictatorship = yes
+}
+NMR = {
+	AST = {	set_mandate = yes	}
+	set_dictatorship = yes
 }

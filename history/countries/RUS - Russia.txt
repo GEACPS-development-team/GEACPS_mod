@@ -1,54 +1,41 @@
-﻿1946.1.1 = {
-	capital = 990
-	oob = RUS_1946
+﻿capital = 990
+oob = RUS_1946
 
-	set_convoys = 300
+SOV = {	set_soviet_member_federal_republic = yes	}
 
-	set_technology = {
-		gw_artillery = 1
-		interwar_antitank = 1
-		motorised_infantry = 1
-		tech_support = 1
-	}
+set_cosmetic_tag = RUS_SOV
+set_convoys = 300
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1937.12.12"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 100
-		radical_socialism = 0
-		social_democracy = 0
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 0
-		national_populism = 0
-	}
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1937.12.12"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
 
-	add_ideas = {
-		RUS_general_directorate_of_state_security
-		RUS_reigniting_the_ethnic_question
-		RUS_federalism_in_turmoil
-		RUS_victory_in_the_great_patriotic_war
-		RUS_defeat_in_the_far_east
-	}
+recruit_character = CHARACTER_nikolai_mikhailovich_shvernik
 
-	#create_country_leader = {		#ニコライ・ミハイロヴィチ・シュヴェルニク
-	#	name = "ニコライ・シュヴェルニク"
-	#	desc = "POLITICS_NIKOLAI_SHVERNIK_DESC"
-	#	picture = "GFX_Nikolai_Shvernik"
-	#	expire = "1970.12.24"
-	#	ideology = total_socialism_ideology
-	#}
+add_ideas = {
+	RUS_general_directorate_of_state_security
+	RUS_reigniting_the_ethnic_question
+	RUS_federalism_in_turmoil
+	RUS_victory_in_the_great_patriotic_war
+	RUS_defeat_in_the_far_east
+}
 
-	create_country_leader = {	#ハロウィン
-		name = "ウラジーミル・レーニン"
-		desc = "POLITICS_VLADIMIR_LENIN_DESC"
-		picture = "GFX_Vladimir_Lenin"
-		expire = "1991.1.21"
-		ideology = total_socialism_ideology
-	}
+set_technology = {
+	gw_artillery = 1
+	interwar_antitank = 1
+	motorised_infantry = 1
+	tech_support = 1
 }

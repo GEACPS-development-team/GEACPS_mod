@@ -1,41 +1,35 @@
-﻿1946.1.1 = {
-	capital = 64
-	oob = EGR_1946
-	set_cosmetic_tag = GER_democratic_republic
+﻿capital = 64
+oob = EGR_1946
 
-	set_convoys = 10
-	
-	add_ideas = {
-		EGR_the_berlin_declaration
-		EGR_potsdam_agreement
-		EGR_denazification
-		EGR_hegemonic_party_system
-		EGR_stasi
-		EGR_the_east-west_german_wall
-	}
+SOV = {	set_soviet_satellite = yes	}
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1938.4.10"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		total_socialism = 100
-		radical_socialism = 0
-		social_democracy = 0
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 0
-		national_populism = 0
-	}
+set_cosmetic_tag = GER_democratic_republic
+set_convoys = 10
 
-	create_country_leader = {	#フリードリヒ・ヴィルヘルム・ラインホルト・ピーク
-		name = "ヴィルヘルム・ピーク"
-		desc = ""
-		picture = "GFX_Wilhelm_Pieck"
-		expire = "1960.9.7"
-		ideology = total_socialism_ideology
-	}
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1938.4.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_friedrich_wilhelm_reinhold_pieck
+
+add_ideas = {	#国民精神
+	EGR_the_berlin_declaration
+	EGR_potsdam_agreement
+	EGR_denazification
+	EGR_hegemonic_party_system
+	EGR_stasi
+	EGR_the_east-west_german_wall
 }

@@ -1,4 +1,19 @@
-characters = {	#王族
+characters = {	#王室
+	CHARACTER_edward_albert_christian_george_andrew_patrick_david = {	#エドワード8世
+		name = CHARACTER_windsor_duke_prince_edward
+		
+		portraits = {
+			civilian = {
+				small = GFX_edward_albert_christian_george_andrew_patrick_david_small
+				large = GFX_edward_albert_christian_george_andrew_patrick_david_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_edward_albert_christian_george_andrew_patrick_david_desc"
+			expire = "1972.5.28"
+		}
+	}
 	CHARACTER_albert_frederick_arthur_george = {	#ジョージ6世
 		name = CHARACTER_george_vi
 		
@@ -12,6 +27,581 @@ characters = {	#王族
 			ideology = social_democracy_ideology
 			desc = "CHARACTER_albert_frederick_arthur_george_desc"
 			expire = "1952.2.6"
+		}
+	}
+	CHARACTER_henry_william_frederick_albert = {	#グロスター公爵ヘンリー王子
+		name = CHARACTER_gloucester_duke_prince_henry
+		
+		portraits = {
+			civilian = {
+				small = GFX_henry_william_frederick_albert_small
+				large = GFX_henry_william_frederick_albert_large
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_ideology
+			desc = "CHARACTER_henry_william_frederick_albert_desc"
+			expire = "1974.6.10"
+		}
+	}
+}
+characters = {	#文民
+	CHARACTER_alan_cuthbert_maxwell_burns = {	#アラン・カスバート・マクスウェル・バーンズ
+		name = CHARACTER_alan_cuthbert_maxwell_burns
+		
+		portraits = {
+			civilian = {
+				small = GFX_alan_cuthbert_maxwell_burns_small
+				large = GFX_alan_cuthbert_maxwell_burns_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_alan_cuthbert_maxwell_burns_desc"
+			expire = "1980.9.29"
+		}
+	}
+	CHARACTER_anthony_sillery = {	#アンソニー・シレリー
+		name = CHARACTER_anthony_sillery
+		
+		portraits = {
+			civilian = {
+				small = GFX_anthony_sillery_small
+				large = GFX_anthony_sillery_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_anthony_sillery_desc"
+		}
+	}
+	CHARACTER_arthur_francis_grimble = {	#アーサー・フランシス・グリンブル
+		name = CHARACTER_arthur_francis_grimble
+		
+		portraits = {
+			civilian = {
+				small = GFX_arthur_francis_grimble_small
+				large = GFX_arthur_francis_grimble_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_arthur_francis_grimble_desc"
+			expire = "1956.12.13"
+		}
+	}
+	CHARACTER_arthur_frederick_richards = {	#アーサー・フレデリック・リチャーズ
+		name = CHARACTER_arthur_frederick_richards
+		
+		portraits = {
+			civilian = {
+				small = GFX_arthur_frederick_richards_small
+				large = GFX_arthur_frederick_richards_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_arthur_frederick_richards_desc"
+			expire = "1978.10.27"
+		}
+	}
+	CHARACTER_bede_edmund_hugh_clifford = {	#ビード・エドマンド・ヒュー・クリフォード
+		name = CHARACTER_bede_edmund_hugh_clifford
+		
+		portraits = {
+			civilian = {
+				small = GFX_bede_edmund_hugh_clifford_small
+				large = GFX_bede_edmund_hugh_clifford_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_bede_edmund_hugh_clifford_desc"
+			expire = "1969.10.6"
+		}
+	}
+	CHARACTER_edmund_charles_smith_richards = {	#エドモンド・チャールズ・スミス・リチャーズ
+		name = CHARACTER_edmund_charles_smith_richards
+		
+		portraits = {
+			civilian = {
+				small = GFX_edmund_charles_smith_richards_small
+				large = GFX_edmund_charles_smith_richards_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_edmund_charles_smith_richards_desc"
+			expire = "1955.12.31"	#仮
+		}
+	}
+	CHARACTER_eubule_john_waddington = {	#ユーブル・ジョン・ウォディントン
+		name = CHARACTER_eubule_john_waddington
+		
+		portraits = {
+			civilian = {
+				small = GFX_eubule_john_waddington_small
+				large = GFX_eubule_john_waddington_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_eubule_john_waddington_desc"
+			expire = "1957.1.18"
+		}
+	}
+	CHARACTER_frank_b_bridges = {	#フランク・B・ブリッジズ
+		name = CHARACTER_frank_b_bridges
+		
+		portraits = {
+			civilian = {
+				small = GFX_frank_b_bridges_small
+				large = GFX_frank_b_bridges_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_frank_b_bridges_desc"
+			#expire = ""
+		}
+	}
+	CHARACTER_gideon_brand_van_zyl = {	#ギデオン・ブランド・バン・ジル
+		name = CHARACTER_gideon_brand_van_zyl
+		
+		portraits = {
+			civilian = {
+				small = GFX_gideon_brand_van_zyl_small
+				large = GFX_gideon_brand_van_zyl_large
+			}
+		}
+		country_leader = {
+			ideology = conservative_democracy_ideology
+			desc = "CHARACTER_gideon_brand_van_zyl_desc"
+			expire = "1956.11.1"
+		}
+	}
+	CHARACTER_gordon_james_lethem = {	#ゴードン・ジェイムズ・レセム
+		name = CHARACTER_gordon_james_lethem
+		
+		portraits = {
+			civilian = {
+				small = GFX_gordon_james_lethem_small
+				large = GFX_gordon_james_lethem_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_gordon_james_lethem_desc"
+			expire = "1962.8.14"
+		}
+	}
+	CHARACTER_henry_charles_donald_cleaveland_mackenzie-kennedy = {	#ドナルド・マッケンジー＝ケネディ
+		name = CHARACTER_donald_mackenzie-kennedy
+		
+		portraits = {
+			civilian = {
+				small = GFX_henry_charles_donald_cleaveland_mackenzie-kennedy_small
+				large = GFX_henry_charles_donald_cleaveland_mackenzie-kennedy_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_henry_charles_donald_cleaveland_mackenzie-kennedy_desc"
+			expire = "1965.8.2"
+		}
+	}
+	CHARACTER_henry_monck-mason_moore = {	#ヘンリー・モンク＝メイソン・ムーア
+		name = CHARACTER_henry_monck-mason_moore
+		
+		portraits = {
+			civilian = {
+				small = GFX_henry_monck-mason_moore_small
+				large = GFX_henry_monck-mason_moore_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_henry_monck-mason_moore_desc"
+			expire = "1964.3.26"
+		}
+	}
+	CHARACTER_hilary_rudolph_robert_blood = {	#ヒラリー・ルドルフ・ロバート・ブラッド
+		name = CHARACTER_hilary_rudolph_robert_blood
+		
+		portraits = {
+			civilian = {
+				small = GFX_hilary_rudolph_robert_blood_small
+				large = GFX_hilary_rudolph_robert_blood_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_hilary_rudolph_robert_blood_desc"
+			expire = "1967.6.20"
+		}
+	}
+	CHARACTER_hubert_craddock_stevenson = {	#ヒューバート・クラドック・スティーヴンソン
+		name = CHARACTER_hubert_craddock_stevenson
+		
+		portraits = {
+			civilian = {
+				small = GFX_hubert_craddock_stevenson_small
+				large = GFX_hubert_craddock_stevenson_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_hubert_craddock_stevenson_desc"
+			#expire = ""	#不明
+		}
+	}
+	CHARACTER_john_adams_hunter = {	#ジョン・アダムス・ハンター
+		name = CHARACTER_john_adams_hunter
+		
+		portraits = {
+			civilian = {
+				small = GFX_john_adams_hunter_small
+				large = GFX_john_adams_hunter_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_john_adams_hunter_desc"
+		}
+	}
+	CHARACTER_john_hathorn_hall = {	#ジョン・ハソーン・ホール
+		name = CHARACTER_john_hathorn_hall
+		
+		portraits = {
+			civilian = {
+				small = GFX_john_hathorn_hall_small
+				large = GFX_john_hathorn_hall_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_john_hathorn_hall_desc"
+			expire = "1979.6.17"
+		}
+	}
+	CHARACTER_john_huggins = {	#ジョン・ハギンズ
+		name = CHARACTER_john_huggins
+		
+		portraits = {
+			civilian = {
+				small = GFX_john_huggins_small
+				large = GFX_john_huggins_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_john_huggins_desc"
+			expire = "1971.12.31"	#仮
+		}
+	}
+	CHARACTER_philip_euen_mitchell = {	#フィリップ・ユーエン・ミッチェル
+		name = CHARACTER_philip_euen_mitchell
+		
+		portraits = {
+			civilian = {
+				small = GFX_philip_euen_mitchell_small
+				large = GFX_philip_euen_mitchell_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_philip_euen_mitchell_desc"
+			expire = "1964.10.11"
+		}
+	}
+	CHARACTER_raymond_clive_murphy = {	#レイモンド・クライヴ・マーフィー
+		name = CHARACTER_raymond_clive_murphy
+		
+		portraits = {
+			civilian = {
+				small = GFX_raymond_clive_murphy_small
+				large = GFX_raymond_clive_murphy_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_raymond_clive_murphy_desc"
+			#expire = ""	#不明
+		}
+	}
+	CHARACTER_william_denis_battershill = {	#ウィリアム・デニス・バタシル
+		name = CHARACTER_william_denis_battershill
+		
+		portraits = {
+			civilian = {
+				small = GFX_william_denis_battershill_small
+				large = GFX_william_denis_battershill_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_william_denis_battershill_desc"
+			expire = "1959.8.11"
+		}
+	}
+	CHARACTER_william_marston_logan = {	#ウィリアム・マーストン・ローガン
+		name = CHARACTER_william_marston_logan
+		
+		portraits = {
+			civilian = {
+				small = GFX_william_marston_logan_small
+				large = GFX_william_marston_logan_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_william_marston_logan_desc"
+			#expire = ""	#不明
+		}
+	}
+}
+characters = {	#陸軍
+	CHARACTER_alexander_augustus_frederick_william_alfred_george_cambridge = {	#アレグザンダー・ケンブリッジ
+		name = CHARACTER_alexander_cambridge
+		
+		portraits = {
+			civilian = {
+				small = GFX_alexander_augustus_frederick_william_alfred_george_cambridge_small
+				large = GFX_alexander_augustus_frederick_william_alfred_george_cambridge_large
+			}
+			army = {
+				small = GFX_alexander_augustus_frederick_william_alfred_george_cambridge_small
+				large = GFX_alexander_augustus_frederick_william_alfred_george_cambridge_large
+			}
+		}
+		country_leader = {
+			ideology = liberal_democracy_ideology
+			desc = "CHARACTER_alexander_augustus_frederick_william_alfred_george_cambridge_desc"
+			expire = "1952.2.6"
+		}
+	}
+	CHARACTER_alexander_william_george_herder_grantham = {	#アレグザンダー・ウィリアム・ジョージ・ヘルダー・グランサム
+		name = CHARACTER_alexander_william_george_herder_grantham
+		
+		portraits = {
+			civilian = {
+				small = GFX_alexander_william_george_herder_grantham_small
+				large = GFX_alexander_william_george_herder_grantham_large
+			}
+			army = {
+				small = GFX_alexander_william_george_herder_grantham_small
+				large = GFX_alexander_william_george_herder_grantham_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_alexander_william_george_herder_grantham_desc"
+			expire = "1983.12.4"
+		}
+	}
+	CHARACTER_archibald_percival_wavell = {	#アーチボルド・パーシヴァル・ウェーヴェル
+		name = CHARACTER_archibald_percival_wavell
+		
+		portraits = {
+			civilian = {
+				small = GFX_archibald_percival_wavell_small
+				large = GFX_archibald_percival_wavell_large
+			}
+			army = {
+				small = GFX_archibald_percival_wavell_small
+				large = GFX_archibald_percival_wavell_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_archibald_percival_wavell_desc"
+			expire = "1950.5.24"
+		}
+	}
+	CHARACTER_charles_campbell_woolley = {	#チャールズ・キャンベル・ウーリー
+		name = CHARACTER_charles_campbell_woolley
+		
+		portraits = {
+			civilian = {
+				small = GFX_charles_campbell_woolley_small
+				large = GFX_charles_campbell_woolley_large
+			}
+			army = {
+				small = GFX_charles_campbell_woolley_small
+				large = GFX_charles_campbell_woolley_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_charles_campbell_woolley_desc"
+			expire = "1981.8.20"
+		}
+	}
+	CHARACTER_edmond_charles_acton_schreiber = {	#エドムンド・チャールズ・アクトン・シュライバー
+		name = CHARACTER_edmond_charles_acton_schreiber
+		
+		portraits = {
+			civilian = {
+				small = GFX_edmond_charles_acton_schreiber_small
+				large = GFX_edmond_charles_acton_schreiber_large
+			}
+			army = {
+				small = GFX_edmond_charles_acton_schreiber_small
+				large = GFX_edmond_charles_acton_schreiber_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_edmond_charles_acton_schreiber_desc"
+			expire = "1972.10.8"
+		}
+	}
+	CHARACTER_gerald_thomas_fisher = {	#ジェラルド・トーマス・フィッシャー
+		name = CHARACTER_gerald_thomas_fisher
+		
+		portraits = {
+			civilian = {
+				small = GFX_gerald_thomas_fisher_small
+				large = GFX_gerald_thomas_fisher_large
+			}
+			army = {
+				small = GFX_gerald_thomas_fisher_small
+				large = GFX_gerald_thomas_fisher_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_gerald_thomas_fisher_desc"
+			expire = "1965.12.31"	#仮
+		}
+	}
+	CHARACTER_hubert_jervoise_huddleston = {	#ヒューバート・ジャーヴォイス・ハドルストン
+		name = CHARACTER_hubert_jervoise_huddleston
+		
+		portraits = {
+			civilian = {
+				small = GFX_hubert_jervoise_huddleston_small
+				large = GFX_hubert_jervoise_huddleston_large
+			}
+			army = {
+				small = GFX_hubert_jervoise_huddleston_small
+				large = GFX_hubert_jervoise_huddleston_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_hubert_jervoise_huddleston_desc"
+			expire = "1950.10.2"
+		}
+	}
+	CHARACTER_richard_loudon_mccreery = {	#リチャード・ラウドン・マクレリー
+		name = CHARACTER_richard_loudon_mccreery
+		
+		portraits = {
+			civilian = {
+				small = GFX_richard_loudon_mccreery_small
+				large = GFX_richard_loudon_mccreery_large
+			}
+			army = {
+				small = GFX_richard_loudon_mccreery_small
+				large = GFX_richard_loudon_mccreery_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_richard_loudon_mccreery_desc"
+			expire = "1967.10.18"
+		}
+	}
+	CHARACTER_thomas_ralph_eastwood = {	#トマス・ラルフ・イーストウッド
+		name = CHARACTER_thomas_ralph_eastwood
+		
+		portraits = {
+			civilian = {
+				small = GFX_thomas_ralph_eastwood_small
+				large = GFX_thomas_ralph_eastwood_large
+			}
+			army = {
+				small = GFX_thomas_ralph_eastwood_small
+				large = GFX_thomas_ralph_eastwood_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_thomas_ralph_eastwood_desc"
+			expire = "1959.2.15"
+		}
+	}
+}
+characters = {	#海軍
+	CHARACTER_ralph_leatham = {	#ラルフ・リータム
+		name = CHARACTER_ralph_leatham
+		
+		portraits = {
+			civilian = {
+				small = GFX_ralph_leatham_small
+				large = GFX_ralph_leatham_large
+			}
+			navy = {
+				small = GFX_ralph_leatham_small
+				large = GFX_ralph_leatham_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_ralph_leatham_desc"
+			expire = "1954.3.10"
+		}
+	}
+	CHARACTER_william_eric_campbell_tait = {	#ウィリアム・エリック・キャンベル・テイト
+		name = CHARACTER_william_eric_campbell_tait
+		
+		portraits = {
+			civilian = {
+				small = GFX_william_eric_campbell_tait_small
+				large = GFX_william_eric_campbell_tait_large
+			}
+			navy = {
+				small = GFX_william_eric_campbell_tait_small
+				large = GFX_william_eric_campbell_tait_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_william_eric_campbell_tait_desc"
+			expire = "1946.7.17"
+		}
+	}
+}
+characters = {	#空軍
+	CHARACTER_cyril_louis_norton_newall = {	#シリル・ルイ・ノートン・ニューオール
+		name = CHARACTER_cyril_louis_norton_newall
+		
+		portraits = {
+			civilian = {
+				small = GFX_cyril_louis_norton_newall_small
+				large = GFX_cyril_louis_norton_newall_large
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_ideology
+			desc = "CHARACTER_cyril_louis_norton_newall_desc"
+			expire = "1963.11.30"
+		}
+	}
+	CHARACTER_geoffrey_rhodes_bromet = {	#ジェフリー・ローズ・ブロメット
+		name = CHARACTER_geoffrey_rhodes_bromet
+		
+		portraits = {
+			civilian = {
+				small = GFX_geoffrey_rhodes_bromet_small
+				large = GFX_geoffrey_rhodes_bromet_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_geoffrey_rhodes_bromet_desc"
+			expire = "1983.11.16"
 		}
 	}
 }

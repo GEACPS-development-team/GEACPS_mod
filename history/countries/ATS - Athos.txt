@@ -1,28 +1,7 @@
 ﻿capital = 1215
-#oob = ATS_1946
+oob = ATS_1946
+
 set_cosmetic_tag = HOLY-MOUNTAIN_autonomous_monastic_state
+set_dictatorship = yes
 
-set_politics = {
-	ruling_party = national_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 0
-	national_authoritarianism = 100
-	national_populism = 0
-}
-
-create_country_leader = {
-	name = "神聖な共同体"
-	desc = "POLITICS_SACRED_COMMUNITY_DESC"
-	picture = "GFX_Sacred_Community"
-	#expire = ""
-	ideology = national_authoritarianism_ideology
-}
+recruit_character = CHARACTER_iera_kinotita

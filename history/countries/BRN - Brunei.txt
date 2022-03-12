@@ -1,22 +1,15 @@
 ﻿capital = 1216
-#oob = BRN_1946
 set_cosmetic_tag = BRN_sultanate
 
 set_convoys = 5
 
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+GBR = {	set_protected_state = yes	}
+
+set_dictatorship = yes
+set_party_name = {	#ボルキア家
+	ideology = national_authoritarianism
+	name = PARTY_bolkiah_house
+	long_name = PARTY_bolkiah_house_long
 }
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 100
-	national_authoritarianism = 0
-	national_populism = 0
-}
+
+recruit_character = CHARACTER_ahmad_tajuddin_akhazul_khairi_waddien

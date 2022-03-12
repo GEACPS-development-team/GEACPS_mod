@@ -1,30 +1,39 @@
 ﻿capital = 306
 oob = COL_1946
-set_cosmetic_tag = COL_republic
 
+set_cosmetic_tag = COL_republic
 set_convoys = 5
 
 set_politics = {
 	ruling_party = liberal_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "1945.3.18"
+	election_frequency = 24
+	elections_allowed = yes
 }
 set_popularities = {
-	total_socialism = 0
+	total_socialism = 3
 	radical_socialism = 0
 	social_democracy = 0
-	liberal_democracy = 100
-	conservative_democracy = 0
+	liberal_democracy = 63
+	conservative_democracy = 34
 	authoritative_democracy = 0
 	national_authoritarianism = 0
 	national_populism = 0
 }
-
-create_country_leader = {
-	name = "アルフォンソ・ロペス・プマレホ"
-	desc = ""
-	picture = "COL_Alfonso_Lopez_Pumarejo"
-	expire = "1959.11.20"
-	ideology = liberal_democracy_ideology
+set_party_name = {	#コロンビア共産党
+	ideology = liberal_democracy
+	name = PARTY_colombian_communist_party
+	long_name = PARTY_colombian_communist_party_long
 }
+set_party_name = {	#コロンビア自由党
+	ideology = liberal_democracy
+	name = PARTY_colombian_liberal_party
+	long_name = PARTY_colombian_liberal_party_long
+}
+set_party_name = {	#コロンビア保守党
+	ideology = conservative_democracy
+	name = PARTY_colombian_conservative_party
+	long_name = PARTY_colombian_conservative_party_long
+}
+
+recruit_character = CHARACTER_alfonso_lopez_pumarejo

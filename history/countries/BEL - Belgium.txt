@@ -1,13 +1,8 @@
 ﻿capital = 6
 oob = BEL_1946
-set_cosmetic_tag = BEL_kingdom
 
+set_cosmetic_tag = BEL_kingdom
 set_convoys = 10
-	
-country_event = {
-	id = GEACPS_game_start.3
-	days = 1
-}
 
 set_politics = {
 	ruling_party = conservative_democracy
@@ -26,59 +21,6 @@ set_popularities = {
 	national_populism = 4
 }
 
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = total_socialism_ideology
-}
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = radical_socialism_ideology
-}
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = social_democracy_ideology
-}
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = liberal_democracy_ideology
-}
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = conservative_democracy_ideology
-}
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = authoritative_democracy_ideology
-}
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = national_authoritarianism_ideology
-}
-create_country_leader = {
-	name = "レオポルド3世"
-	desc = ""
-	picture = "GFX_Leopold_III"
-	expire = "1951.7.16"
-	ideology = national_populism_ideology
-}
+recruit_character = CHARACTER_leopold_philippe_charles_albert_meinrad_hubert_marie_michel
+
+country_event = {	id = BEL.0	days = 1	}

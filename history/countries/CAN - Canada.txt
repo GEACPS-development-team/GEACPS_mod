@@ -1,31 +1,65 @@
-﻿1946.1.1 = {
-	capital = 276
-	oob = CAN_1946
-	
-	set_convoys = 100
-	
-	set_politics = {
-		ruling_party = liberal_democracy
-		last_election = "1946.1.1"
-		election_frequency = 48
-		elections_allowed = yes
-	}
-	set_popularities = {
-		total_socialism = 7
-		radical_socialism = 1
-		social_democracy = 16
-		liberal_democracy = 50
-		conservative_democracy = 20
-		authoritative_democracy = 1
-		national_authoritarianism = 1
-		national_populism = 4
-	}
-	
-	create_country_leader = {	#アレクサンダー・アウグスト・フレドリック・ウィリアム・アルフレッド・ジョージ
-		name = "アレクサンダー・ケンブリッジ"
-		desc = ""
-		picture = "GFX_Alexander_Cambridge"
-		expire = "1957.1.16"
-		ideology = liberal_democracy_ideology
-	}
+﻿capital = 276
+oob = CAN_1946
+
+GBR = {	set_dominion = yes	}
+
+set_cosmetic_tag = CAN_ENG-GBR
+set_convoys = 100
+
+set_politics = {
+	ruling_party = liberal_democracy
+	last_election = "1945.6.11"
+	election_frequency = 60
+	elections_allowed = yes
 }
+set_popularities = {
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 11
+	liberal_democracy = 51
+	conservative_democracy = 27
+	authoritative_democracy = 6
+	national_authoritarianism = 0
+	national_populism = 5
+}
+set_party_name = {	#労働進歩党
+	ideology = total_socialism
+	name = PARTY_labor-progressive_party
+	long_name = PARTY_labor-progressive_party_long
+}
+set_party_name = {	#労働進歩党
+	ideology = radical_socialism
+	name = PARTY_labor-progressive_party
+	long_name = PARTY_labor-progressive_party_long
+}
+set_party_name = {	#協同連邦党
+	ideology = social_democracy
+	name = PARTY_co-operative_commonwealth_federation
+	long_name = PARTY_co-operative_commonwealth_federation_long
+}
+set_party_name = {	#カナダ自由党
+	ideology = liberal_democracy
+	name = PARTY_canada_liberal_party
+	long_name = PARTY_canada_liberal_party_long
+}
+set_party_name = {	#カナダ進歩保守党
+	ideology = conservative_democracy
+	name = PARTY_canada_progressive_conservative_party
+	long_name = PARTY_canada_progressive_conservative_party_long
+}
+set_party_name = {	#無所属
+	ideology = authoritative_democracy
+	name = PARTY_independent_politician
+	long_name = PARTY_independent_politician_long
+}
+set_party_name = {	#総督
+	ideology = national_authoritarianism
+	name = PARTY_governor_general
+	long_name = PARTY_governor_general_long
+}
+set_party_name = {	#カナダ社会信用党
+	ideology = national_populism
+	name = PARTY_canada_social_credit_party
+	long_name = PARTY_canada_social_credit_party_long
+}
+recruit_character = CHARACTER_alexander_augustus_frederick_william_alfred_george_cambridge
