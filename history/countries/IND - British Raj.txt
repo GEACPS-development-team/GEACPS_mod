@@ -1,31 +1,15 @@
-﻿1946.1.1 = {
-	capital = 439
-	oob = IND_1946
-	
-	set_convoys = 10
-	
-	set_politics = {
-		ruling_party = national_authoritarianism
-		last_election = "1946.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 0
-		radical_socialism = 0
-		social_democracy = 0
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 100
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "アーチボルド・パーシヴァル・ウェーヴェル"
-		desc = ""
-		picture = "GFX_Archibald_Wavell"
-		expire = "1950.5.24"
-		ideology = national_authoritarianism_ideology
-	}
+﻿capital = 439
+oob = IND_1946
+
+GBR = {	set_junior_partner_colony = yes	}
+
+set_cosmetic_tag = IND_ENG-GBR
+set_convoys = 10
+set_dictatorship = yes
+
+recruit_character = CHARACTER_archibald_percival_wavell
+
+BHR = {
+	IND = {	set_protected_state = yes	}
+	set_dictatorship = yes
 }

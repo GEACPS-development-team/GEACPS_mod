@@ -1,8 +1,8 @@
 ﻿capital = 112
 oob = POR_1946
-set_cosmetic_tag = POR_republic
 
-set_convoys = 5
+set_cosmetic_tag = POR_republic
+set_convoys = 100
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -21,10 +21,4 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_country_leader = {	#アントニオ・オスカル・フラゴソ・カルモナ
-	name = "オスカル・カルモナ"
-	desc = ""
-	picture = "GFX_Oscar_Carmona"
-	expire = "1951.4.18"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_antonio_oscar_fragoso_carmona

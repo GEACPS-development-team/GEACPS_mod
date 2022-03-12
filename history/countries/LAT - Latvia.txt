@@ -1,30 +1,25 @@
-﻿1946.1.1 = {
-	capital = 12
-	oob = LAT_1946
-	set_cosmetic_tag = LAT_SOV
+﻿capital = 12
+oob = LAT_1946
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1931.10.3"
-		election_frequency = 108
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 100
-		radical_socialism = 0
-		social_democracy = 0
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "アウグスツ・キルヘンシュタインス"
-		desc = ""
-		picture = "GFX_Augusts_Kirhensteins"
-		expire = "	1963.11.3"
-		ideology = total_socialism_ideology
-	}
+SOV = {	set_soviet_member_republic = yes	}
+
+set_cosmetic_tag = LAT_SOV
+
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1931.10.3"
+	election_frequency = 108
+	elections_allowed = no
 }
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_augusts_kirhensteins

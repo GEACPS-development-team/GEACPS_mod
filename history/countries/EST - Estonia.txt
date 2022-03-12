@@ -1,30 +1,25 @@
-﻿1946.1.1 = {
-	capital = 191
-	oob = EST_1946
-	set_cosmetic_tag = EST_SOV
+﻿capital = 191
+oob = EST_1946
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1932.5.21"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 100
-		radical_socialism = 0
-		social_democracy = 0
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "ヨハネス・バレス"
-		desc = ""
-		picture = "GFX_Johannes_Vares"
-		expire = "1946.11.29"
-		ideology = total_socialism_ideology
-	}
+SOV = {	set_soviet_member_republic = yes	}
+
+set_cosmetic_tag = EST_SOV
+
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1932.5.21"
+	election_frequency = 48
+	elections_allowed = no
 }
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_johannes_vares_barbarus

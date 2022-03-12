@@ -1,29 +1,25 @@
-﻿1946.1.1 = {
-	capital = 96
-	oob = UKR_1946
+﻿capital = 96
+oob = UKR_1946
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1938.6.26"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 100
-		radical_socialism = 0
-		social_democracy = 0
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "ムィハーイロ・フレチュカ"
-		desc = ""
-		picture = "GFX_Mykhailo_Hrechukha"
-		expire = "1976.5.15"
-		ideology = total_socialism_ideology
-	}
+SOV = {	set_soviet_member_republic = yes	}
+
+set_cosmetic_tag = UKR_SOV
+
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1938.6.26"
+	election_frequency = 48
+	elections_allowed = no
 }
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_mykhailo_serhiyovych_hrechukha

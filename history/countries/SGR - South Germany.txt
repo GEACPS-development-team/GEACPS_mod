@@ -1,12 +1,7 @@
 ﻿capital = 52
 oob = SGR_1946
-set_cosmetic_tag = GER_federal_republic
 
-add_ideas = {
-	SGR_the_berlin_declaration
-	SGR_potsdam_agreement
-	SGR_denazification
-}
+set_cosmetic_tag = GER_federal_republic
 
 set_politics = {
 	ruling_party = conservative_democracy
@@ -25,10 +20,12 @@ set_popularities = {
 	national_populism = 4
 }
 
-create_country_leader = {	#カール・ボロメオ・アルノルト
-	name = "カール・アルノルト"
-	desc = ""
-	picture = "GFX_Karl_Arnold"
-	expire = "1958.6.29"
-	ideology = conservative_democracy_ideology
+recruit_character = CHARACTER_karl_borromaus_arnold
+
+add_ideas = {	#国民精神
+	SGR_the_berlin_declaration
+	SGR_potsdam_agreement
+	SGR_denazification
 }
+
+give_military_access = USA

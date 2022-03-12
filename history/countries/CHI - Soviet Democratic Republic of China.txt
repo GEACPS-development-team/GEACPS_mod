@@ -1,12 +1,30 @@
-﻿#中華ソビエト民主共和国
-create_dynamic_country = {
+﻿create_dynamic_country = {	#中華ソビエト民主共和国
 	original_tag = CHI
+	
+	set_capital = {	state = 622	}
 	set_country_flag = CHI_soviet_countryflag
 	set_cosmetic_tag = CHI_soviet_democratic_republic
 	set_politics = {	ruling_party = total_socialism	}
 	set_popularities = {	total_socialism = 100	}
+	set_party_name = {	#中国共産党
+		ideology = total_socialism
+		name = PARTY_chines_communist_party
+		long_name = PARTY_chines_communist_party_long
+	}
+	set_party_name = {	#中国共産党
+		ideology = radical_socialism
+		name = PARTY_chines_communist_party
+		long_name = PARTY_chines_communist_party_long
+	}
+	illegalization_of_social_democracy_party = yes
+	illegalization_of_liberal_democracy_party = yes
+	illegalization_of_conservative_democracy_party = yes
+	illegalization_of_authoritative_democracy_party = yes
+	illegalization_of_national_authoritarianism_party = yes
+	illegalization_of_national_populism_party = yes
 	
-	load_oob = CH0_1946
+	recruit_character = CHARACTER_mao_zedong
+	
 	transfer_state = 622
 	
 	create_faction = CHINESE_PEOPLE'S_FRONT
@@ -14,13 +32,6 @@ create_dynamic_country = {
 	add_to_faction = CH5
 	add_to_faction = CH6
 	add_to_faction = CH7
-	declare_war_on = {	target = CHI	type = civil_war	}
 	
-	create_country_leader = {
-		name = "毛沢東"
-		desc = ""
-		picture = "GFX_Mao_Zedong"
-		expire = "1976.9.9"
-		ideology = total_socialism_ideology
-	}
+	declare_war_on = {	target = CHI	type = civil_war	}
 }

@@ -1,31 +1,25 @@
 ﻿capital = 284
 oob = NZL_1946
 
-set_convoys = 5
+GBR = {	set_dominion = yes	}
 
+set_cosmetic_tag = NZL_ENG-GBR
+set_convoys = 5
 set_politics = {
 	ruling_party = social_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	last_election = "1943.9.25"
+	election_frequency = 36
+	elections_allowed = yes
 }
 set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
-	social_democracy = 100
+	social_democracy = 48
 	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 0
+	conservative_democracy = 43
+	authoritative_democracy = 9
 	national_authoritarianism = 0
 	national_populism = 0
-}
-
-create_country_leader = {	#シリル・ルイ・ノートン・ニューオール
-	name = "シリル・ニューオール"
-	desc = ""
-	picture = "GFX_Cyril_Newall"
-	expire = "1963.11.30"
-	ideology = social_democracy_ideology
 }
 set_party_name = {	#ニュージーランド共産党
 	ideology = total_socialism
@@ -47,8 +41,26 @@ set_party_name = {	#ニュージーランド国民党
 	name = PARTY_new_zealand_national_party
 	long_name = PARTY_new_zealand_national_party_long
 }
+set_party_name = {	#無所属
+	ideology = authoritative_democracy
+	name = PARTY_independent_politician
+	long_name = PARTY_independent_politician_long
+}
+set_party_name = {	#総督
+	ideology = national_authoritarianism
+	name = PARTY_governor_general
+	long_name = PARTY_governor_general_long
+}
 set_party_name = {	#ニュージーランド軍団
 	ideology = national_populism
 	name = PARTY_new_zealand_legion
 	long_name = PARTY_new_zealand_legion_long
+}
+
+recruit_character = CHARACTER_cyril_louis_norton_newall
+
+SAM = {
+	set_variable = {	mandate_trigger_variable = 1	}
+	PREV = {	set_autonomy = {	target = PREV	autonomous_state = mandate	}	}
+	set_dictatorship = yes
 }

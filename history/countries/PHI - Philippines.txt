@@ -1,11 +1,13 @@
 ﻿capital = 327
 oob = PHI_1946
-set_cosmetic_tag = PHI_republic
 
+JAP = {	set_imperial_protected_state = yes	}
+
+set_cosmetic_tag = PHI_republic
 set_convoys = 100
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = national_populism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -16,17 +18,9 @@ set_popularities = {
 	social_democracy = 0
 	liberal_democracy = 0
 	conservative_democracy = 0
-	authoritative_democracy = 100
+	authoritative_democracy = 0
 	national_authoritarianism = 0
-	national_populism = 0
+	national_populism = 100
 }
 
-declare_war_on = {	target = CHI	type = annex_everything	}
-
-create_country_leader = {
-	name = "ホセ・パシアノ・ラウレル・イ・ガルシア"
-	desc = ""
-	picture = "GFX_Jose_P_Laurel"
-	expire = "1959.11.6"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_jose_paciano_laurel_y_garcia

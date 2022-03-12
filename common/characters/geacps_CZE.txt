@@ -1,0 +1,32 @@
+characters = {	#文民
+	CHARACTER_edvard_benes = {	#エドヴァルド・ベネシュ
+		name = CHARACTER_edvard_benes
+		
+		portraits = {
+			civilian = {
+				small = GFX_edvard_benes_small
+				large = GFX_edvard_benes_large
+			}
+		}
+		country_leader = {
+			ideology = liberal_democracy_ideology
+			desc = "CHARACTER_edvard_benes_desc"
+			expire = "1948.9.3"
+		}
+	}
+	CHARACTER_klement_gottwald = {	#クレメント・ゴットヴァルト
+		name = CHARACTER_klement_gottwald
+		
+		portraits = {
+			civilian = {
+				small = GFX_klement_gottwald_small
+				large = GFX_klement_gottwald_large
+			}
+		}
+		country_leader = {
+			ideology = total_socialism_ideology
+			desc = "CHARACTER_klement_gottwald_desc"
+			expire = "1953.3.14"
+		}
+	}
+}

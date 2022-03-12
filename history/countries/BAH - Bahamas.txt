@@ -1,78 +1,9 @@
 ﻿capital = 690
-#oob = BAH_1946
+oob = BAH_1946
 
-set_convoys = 5
+GBR = {	set_colony = yes	}
 
-set_politics = {
-	ruling_party = national_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 0
-	national_authoritarianism = 100
-	national_populism = 0
-}
+set_cosmetic_tag = BAH_ENG-GBR
+set_dictatorship = yes
 
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = total_socialism_ideology
-}
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = radical_socialism_ideology
-}
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = social_democracy_ideology
-}
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = liberal_democracy_ideology
-}
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = conservative_democracy_ideology
-}
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = authoritative_democracy_ideology
-}
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = national_authoritarianism_ideology
-}
-create_country_leader = {
-	name = "ウィリアム・リンゼイ・マーフィー"
-	desc = ""
-	picture = "GFX_Governor_of_Bahamas(Great_Britain)"
-	expire = "1965.12.31"	#仮
-	ideology = national_populism_ideology
-}
+recruit_character = CHARACTER_edward_albert_christian_george_andrew_patrick_david

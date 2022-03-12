@@ -1,28 +1,7 @@
 ﻿capital = 330
 oob = MON_1946
+
 set_cosmetic_tag = MON_state
+set_dictatorship = yes
 
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 100
-	national_authoritarianism = 0
-	national_populism = 0
-}
-
-create_country_leader = {
-	name = "ジェプツンダンバ・ホトクト9世"
-	desc = "POLITICS_9TH_JEBTSUNDAMBA_KHUTUGHTU_DESC"
-	picture = "GFX_Bogd_Khaanate"
-	expire = "2012.3.1"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_jampal_namdrol_chokyi_gyaltsen

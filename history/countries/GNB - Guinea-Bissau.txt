@@ -1,29 +1,9 @@
 ﻿capital = 296
-#oob = GNB_1946
+oob = GNB_1946
 
-set_convoys = 5
+POR = {	set_colony = yes	}
 
-set_politics = {
-	ruling_party = national_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 0
-	national_authoritarianism = 100
-	national_populism = 0
-}
+set_cosmetic_tag = COUNTRY_POR
+set_dictatorship = yes
 
-create_country_leader = {
-	name = "サルメント・ロドリゲス"
-	desc = ""
-	picture = "GFX_Governor_of_Guinea(Portugal)"
-	expire = "1979.8.1"
-	ideology = national_authoritarianism_ideology
-}
+recruit_character = CHARACTER_manuel_maria_sarmento_rodrigues

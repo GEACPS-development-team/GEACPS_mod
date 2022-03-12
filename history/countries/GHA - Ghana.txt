@@ -1,29 +1,9 @@
 ﻿capital = 274
-#oob = GHA_1946
+oob = GHA_1946
 
-set_convoys = 5
+GBR = {	set_colony = yes	}
 
-set_politics = {
-	ruling_party = national_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 0
-	national_authoritarianism = 100
-	national_populism = 0
-}
+set_cosmetic_tag = GHA_ENG-GBR
+set_dictatorship = yes
 
-create_country_leader = {
-	name = "アラン・バーンズ"
-	desc = ""
-	picture = "GFX_United_Kingdom_of_Great_Britain"
-	expire = "1980.9.29"
-	ideology = national_authoritarianism_ideology
-}
+recruit_character = CHARACTER_alan_cuthbert_maxwell_burns

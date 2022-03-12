@@ -1,48 +1,27 @@
-﻿1946.1.1 = {
-	capital = 684
-	#oob = FSM_1946
+﻿capital = 647
+oob = FSM_1946
 
-	set_convoys = 10
+JAP = {	set_mandate = yes	}
 
-	set_politics = {
-		ruling_party = national_authoritarianism
-		last_election = "1946.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 0
-		radical_socialism = 0
-		social_democracy = 0
-		liberal_democracy = 0
-		conservative_democracy = 0
-		authoritative_democracy = 0
-		national_authoritarianism = 100
-		national_populism = 0
-	}
+set_cosmetic_tag = FSM_JAP
+set_convoys = 10
+set_dictatorship = yes
 
-	create_country_leader = {
-		name = "細萱戊子郎"
-		desc = ""
-		picture = "GFX_Boshiro_Hosogaya"
-		expire = "1964.2.8"
-		ideology = national_authoritarianism_ideology
-	}
-		
-	illegalization_of_total_socialism_party = yes
-	illegalization_of_radical_socialism_party = yes
-	illegalization_of_social_democracy_party = yes
-	illegalization_of_liberal_democracy_party = yes
-	illegalization_of_conservative_democracy_party = yes
-	illegalization_of_authoritative_democracy_party = yes
-	set_party_name = {	#南洋庁
-		ideology = national_authoritarianism
-		name = PARTY_south_seas_agency
-		long_name = PARTY_south_seas_agency_long
-	}
-	set_party_name = {	#大政翼賛会
-		ideology = national_populism
-		name = PARTY_imperial_rule_assistance_association
-		long_name = PARTY_imperial_rule_assistance_association_long
-	}
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+illegalization_of_social_democracy_party = yes
+illegalization_of_liberal_democracy_party = yes
+illegalization_of_conservative_democracy_party = yes
+illegalization_of_authoritative_democracy_party = yes
+set_party_name = {	#南洋庁
+	ideology = national_authoritarianism
+	name = PARTY_south_seas_agency
+	long_name = PARTY_south_seas_agency_long
 }
+set_party_name = {	#大政翼賛会
+	ideology = national_populism
+	name = PARTY_imperial_rule_assistance_association
+	long_name = PARTY_imperial_rule_assistance_association_long
+}
+
+recruit_character = CHARACTER_boshiro_hosogaya
