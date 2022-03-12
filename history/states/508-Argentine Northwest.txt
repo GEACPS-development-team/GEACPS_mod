@@ -1,22 +1,31 @@
-state = {
-	id = 508
-	name = "STATE_508"
-	manpower = 781311
-	state_category = rural
-	
-	history = {
+
+state={
+	id=508
+	name="STATE_508"
+
+	history={
 		owner = ARG
 		add_core_of = ARG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
-		victory_points = {	8216	1	}
-		set_variable = {	ARG_state_variable = 1	}
+		victory_points = {
+			8216 1 
+		}
+		set_variable = {
+			ARG_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		2136	2224	8195	8216	8253	11001	12928	12978
+
+	provinces={
+		2208 5143 8169 8216 8253 8255 10965 12978 
 	}
-	local_supplies = 0.0
+	manpower=781311
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

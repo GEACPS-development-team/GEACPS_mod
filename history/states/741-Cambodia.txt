@@ -1,7 +1,7 @@
 state = {
 	id = 741
 	name = "STATE_741"
-	manpower = 2622500
+	manpower = 1448667
 	buildings_max_level_factor = 1
 	state_category = town
 	
@@ -9,16 +9,18 @@ state = {
 		owner = CAM
 		add_core_of = CAM
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
 			7432 = {	naval_base = 1	}
 		}
 		victory_points = {	7376	1	}
+		victory_points = {	12191	1	}
 		set_variable = {	CAM_state_variable = 1	}
 		set_variable = {	SIA_state_variable = 2	}
 	}
 	
 	provinces = {
-		1324	4302	4359	4639	7319	7376	7404	7432	10289	10317	12191	12447	12475
+		4359	7319	7376	7404	7432	10289	10317	12191
 	}
 	local_supplies = 0.0
 }

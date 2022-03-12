@@ -1,28 +1,34 @@
-state = {
-	id = 594
-	name = "STATE_594"
-	manpower = 6550000
-	state_category = town
-	
-	resources = {
-		tungsten = 11
-		steel = 8
-		chromium = 3
+
+state={
+	id=594
+	name="STATE_594"
+	resources={
+		tungsten=11.000
+		steel=8.000
+		chromium=3.000
 	}
-	
-	history = {
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = GXC
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
-		set_variable = {	GXC_state_variable = 1	}
+		set_variable = {
+			GXC_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1469	4121	4177
+
+	provinces={
+		1018 1469 4077 4121 4177 4656 10004 11926 
 	}
-	local_supplies = 0.0
+	manpower=6550000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

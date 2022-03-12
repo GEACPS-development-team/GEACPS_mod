@@ -1,25 +1,29 @@
-state = {
-	id = 506
-	name = "STATE_506"
-	manpower = 283605
-	state_category = rural
-	
-	history = {
+
+state={
+	id=506
+	name="STATE_506"
+
+	history={
 		owner = CHL
 		add_core_of = CHL
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			air_base = 1
-			5228 = {	naval_base = 2	}
-			12994 = {	naval_base = 1	}
+
 		}
-		victory_points = {	12994	1	}
-		set_variable = {	CHL_state_variable = 1	}
+		set_variable = {
+			CHL_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		5131	5146	5171	5192	5228	8217	8231	11000	12914	12994
+
+	provinces={
+		5171 5192 11000 
 	}
-	local_supplies = 0.0
+	manpower=283605
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

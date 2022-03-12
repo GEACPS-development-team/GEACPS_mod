@@ -1,21 +1,28 @@
-state = {
-	id = 874
-	name = "STATE_874"
-	manpower = 43500
-	state_category = town
-	
-	history = {
+
+state={
+	id=874
+	name="STATE_874"
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = GND
 		buildings = {
 			infrastructure = 1
+
 		}
-		set_variable = {	GND_state_variable = 1	}
+		set_variable = {
+			GND_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		4160	7135	12077	1131
+
+	provinces={
+		1131 4160 7039 7135 12077 
 	}
-	local_supplies = 0.0
+	manpower=43500
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

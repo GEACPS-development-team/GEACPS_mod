@@ -1,15 +1,22 @@
 state = {
 	id = 1022
 	name = "STATE_1022"
-	manpower = 11528000
-	state_category = town
+	manpower = 9425741
+	state_category = pastoral
+	
+	resources = {
+		chromium = 9
+		tungsten = 6
+	}
 	
 	history = {
 		owner = VIN
 		add_core_of = VIN
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 		}
+		victory_points = {	9948	1	}
+		victory_points = {	12008	3	}
 		set_variable = {	VIN_state_variable = 1	}
 	}
 	

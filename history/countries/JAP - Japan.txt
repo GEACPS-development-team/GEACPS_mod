@@ -8,6 +8,7 @@ set_fuel_ratio = 0.1
 set_convoys = 1000
 set_research_slots = 5
 
+<<<<<<< HEAD
 set_politics = {
 	ruling_party = national_populism
 	last_election = "1941.10.18"
@@ -58,8 +59,10 @@ add_ideas = {	#国民精神
 	JAP_suppression_of_ideas_by_the_security_law
 	JAP_victory_in_the_greater_east_asia_war
 	JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration
-	
 }
+
+complete_national_focus = JAP_Lugou_Bridge_Incident
+complete_national_focus = JAP_Nanjing_Tips
 
 country_event = {	id = geacps_JAP.1	days = 1	}
 country_event = {	id = geacps_JAP.2	days = 22	}
@@ -79,16 +82,18 @@ diplomatic_relation = { country = GBR	relation = non_aggression_pact }
 declare_war_on = {	target = CHI	type = annex_everything	}
 add_opinion_modifier = {	target = USA	modifier = American_Empire	}
 
-set_variable = { JAP_zveno_loyalty = 15 }
-set_variable = { JAP_zveno_popularity = 50 }
-set_variable = { JAP_bs_loyalty = 25 }
-set_variable = { JAP_bs_popularity = 60 }
-set_variable = { JAP_bzns_loyalty = 30 }
-set_variable = { JAP_bzns_popularity = 70 }
-set_variable = { JAP_nsm_loyalty = 60 }
-set_variable = { JAP_nsm_popularity = 40 }
+set_variable = { JAP_toseiha_loyalty = 15 }
+set_variable = { JAP_toseiha_popularity = 50 }
+set_variable = { JAP_kodoha_loyalty = 25 }
+set_variable = { JAP_kodoha_popularity = 60 }
+set_variable = { JAP_fleet_faction_loyalty = 30 }
+set_variable = { JAP_fleet_faction_popularity = 70 }
+set_variable = { JAP_treaty_faction_loyalty = 60 }
+set_variable = { JAP_treaty_faction_popularity = 40 }
+
 set_variable = { JAP_faction_interaction_cost_standard = 20 }
 set_variable = { JAP_broad_socialist_opression_cost_standard = 20 }
+
 #if = {
 #	limit = { has_dlc = "La Resistance" }
 #	create_intelligence_agency = yes

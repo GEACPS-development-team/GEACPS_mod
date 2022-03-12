@@ -1,22 +1,25 @@
 state = {
 	id = 716
 	name = "STATE_716"
-	manpower = 10264620
+	manpower = 9407000
 	buildings_max_level_factor = 1
-	state_category = rural
+	state_category = town
 	
-	resources = {	steel = 27	}
+	resources = {
+		aluminium = 14
+		steel = 12
+	}
 	
 	history = {
 		owner = MAN
 		add_core_of = MAN
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 2
-			arms_factory = 1
+			infrastructure = 3
+			arms_factory = 2
 			industrial_complex = 1
-			air_base = 5
-			964 = {	naval_base = 3	}
+			air_base = 1
+			892 = {	naval_base = 1	}
 		}
 		victory_points = {	892	10	}
 		victory_points = {	11771	10	}

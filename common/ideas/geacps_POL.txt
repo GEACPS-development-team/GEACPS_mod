@@ -1,5 +1,18 @@
-ideas = {
+ideas = {	#既存国民精神
 	country = {
+		POL_ministry_of_public_security = {	#MBP
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ministry_of_public_security
+			modifier = {
+				agency_upgrade_time = -0.1
+			}
+		}
 		POL_legacy_of_world_war = { #大戦の遺恨
 			allowed = {
 			}
@@ -40,5 +53,10 @@ ideas = {
 			stability_factor = -0.20
 			}
 		}
+	}
+}
+
+ideas = {	#新規国民精神
+	country = {
 	}
 }

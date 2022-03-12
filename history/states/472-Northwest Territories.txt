@@ -1,21 +1,27 @@
-state = {
-	id = 472
-	name = "STATE_472"
-	manpower = 27681
-	buildings_max_level_factor = 1
-	state_category = wasteland
-	
-	history = {
+
+state={
+	id=472
+	name="STATE_472"
+
+	history={
 		owner = CAN
 		add_core_of = CAN
 		buildings = {
 			infrastructure = 1
+
 		}
-		set_variable = {	CAN_state_variable = 1	}
+		set_variable = {
+			CAN_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1671	2407	3800	4695	6779	7348	7696	7830	7858	7901	10527	10703	12534	12682	13075
+
+	provinces={
+		2407 7696 7830 7901 10703 13075 
 	}
-	local_supplies = 0.0
+	manpower=27681
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
 }

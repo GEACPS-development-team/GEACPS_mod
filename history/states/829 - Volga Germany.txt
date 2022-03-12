@@ -1,28 +1,38 @@
-state = {
-	id = 829
-	name = "STATE_829"
-	manpower = 618530
-	state_category = rural
-	
-	resources = {
-		steel = 14
-		tungsten = 6
+
+state={
+	id=829
+	name="STATE_829"
+	resources={
+		steel=14.000
+		tungsten=6.000
 	}
-	
-	history = {
+
+	history={
 		owner = RUS
 		add_core_of = RUS
 		add_core_of = VGE
 		buildings = {
 			infrastructure = 2
+
 		}
-		victory_points = {	9432	1	}
-		victory_points = {	11523	2	}
-		set_variable = {	VGE_state_variable = 1	}
+		victory_points = {
+			9432 1 
+		}
+		victory_points = {
+			11523 2 
+		}
+		set_variable = {
+			VGE_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		3517	3518	6479	6506	6539	6575	6601	9432	9475	11395	11460	11523
+
+	provinces={
+		6528 9464 11555 
 	}
-	local_supplies = 0.0
+	manpower=618530
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

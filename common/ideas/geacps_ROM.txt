@@ -1,0 +1,35 @@
+ideas = {	#既存国民精神
+	country = {
+		ROM_department_of_state_security = {	#セクリターテ
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = department_of_state_security
+			modifier = {
+				agency_upgrade_time = -0.1
+			}
+		}
+		ROM_Michael_I_In_Exile = {	#ミハイ1世の亡命
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = GFX_idea_ROM_Michael_I_In_Exile
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	}
+}
+
+ideas = {	#新規国民精神
+	country = {
+	}
+}

@@ -1,22 +1,29 @@
-state = {
-	id = 490
-	name = "STATE_490"
-	manpower = 70020
-	state_category = pastoral
-	
-	history = {
+
+state={
+	id=490
+	name="STATE_490"
+
+	history={
 		owner = PRU
 		add_core_of = PRU
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
+
 		}
-		set_variable = {	PRU_state_variable = 1	}
+		set_variable = {
+			PRU_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		8149	10942
+
+	provinces={
+		8149 10970 
 	}
-	local_supplies = 0.0
+	manpower=70020
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

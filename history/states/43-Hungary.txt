@@ -1,15 +1,13 @@
-state = {
-	id = 43
-	name = "STATE_43"
-	manpower = 3750752
-	state_category = large_city
-	
-	resources = {
-		steel = 3
-		aluminium = 100
+
+state={
+	id=43
+	name="STATE_43"
+	resources={
+		steel=3.000
+		aluminium=100.000
 	}
-	
-	history = {
+
+	history={
 		owner = HUN
 		add_core_of = HUN
 		buildings = {
@@ -17,13 +15,23 @@ state = {
 			arms_factory = 4
 			industrial_complex = 4
 			air_base = 4
+
 		}
-		victory_points = {	9660	20	}
-		set_variable = {	HUN_state_variable = 1	}
+		victory_points = {
+			9660 20 
+		}
+		set_variable = {
+			HUN_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		684	716	3713	3731	6716	6751	9660	9690	11520
+
+	provinces={
+		716 3713 3731 6751 9690 11520 
 	}
-	local_supplies = 0.0
+	manpower=3750752
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
 }

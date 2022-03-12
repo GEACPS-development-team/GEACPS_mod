@@ -1,23 +1,30 @@
-state = {
-	id = 1163
-	name = "STATE_1163"
-	manpower = 15820400
-	buildings_max_level_factor = 1
-	state_category = town
-	
-	history = {
+
+state={
+	id=1163
+	name="STATE_1163"
+
+	history={
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = JIA
+		add_core_of = HUB
+		add_core_of = NAN
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
+
 		}
-		set_variable = {	JIA_state_variable = 1	}
+		set_variable = {
+			HUB_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1066	4038
+
+	provinces={
+		1036 4631 
 	}
-	local_supplies = 0.0
+	manpower=15820400
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

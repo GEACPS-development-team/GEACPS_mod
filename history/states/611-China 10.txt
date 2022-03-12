@@ -1,23 +1,28 @@
-state = {
-	id = 611
-	name = "STATE_611"
-	manpower = 1470000
-	state_category = pastoral
-	
-	history = {
+
+state={
+	id=611
+	name="STATE_611"
+
+	history={
 		owner = MEN
 		add_core_of = MEN
 		add_core_of = SUY
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 1
 		}
-		set_variable = {	SUY_state_variable = 1	}
+		set_variable = {
+			SUY_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		7048	7158	12331	12403
+
+	provinces={
+		2087 4525 7048 7158 7631 10424 10629 12331 12403 12609 12880 
 	}
-	local_supplies = 0.0
+	manpower=1710000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }
