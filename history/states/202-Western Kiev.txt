@@ -1,15 +1,16 @@
-
-state={
-	id=202
-	name="STATE_202"
+state = {
+	id = 202
+	name = "STATE_202"
+	manpower = 2495352
+	buildings_max_level_factor = 1
 	state_category = rural
-
-	resources={
-		oil=8.000
-		aluminium=7.000
+	
+	resources = {
+		oil = 8
+		aluminium = 7
 	}
-
-	history={
+	
+	history = {
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
@@ -18,19 +19,12 @@ state={
 			industrial_complex = 3
 			fuel_silo = 1
 			air_base = 8
-
 		}
-		set_variable = {
-			UKR_state_variable = 1
-
-		}
-
+		set_variable = {	UKR_state_variable = 1	}
 	}
-
-	provinces={
-		489 504 3494 3543 6497 9465 9568 
+	
+	provinces = {
+		489	504	3494	3543	6497	9465	9568
 	}
-	manpower=2495352
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies = 0.0
 }

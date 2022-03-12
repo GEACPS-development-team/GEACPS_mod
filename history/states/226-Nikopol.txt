@@ -1,39 +1,27 @@
-
-state={
-	id=226
-	name="STATE_226"
+state = {
+	id = 226
+	name = "STATE_226"
+	manpower = 2391047
+	buildings_max_level_factor = 1
 	state_category = wasteland
-
-	resources={
-		oil=4.000
-	}
-
-	history={
+	
+	resources = {	oil = 4	}
+	
+	history = {
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 2
-
 		}
-		victory_points = {
-			11437 10 
-		}
-		victory_points = {
-			11561 1 
-		}
-		set_variable = {
-			UKR_state_variable = 1
-
-		}
-
+		victory_points = {	11437	10	}
+		victory_points = {	11561	1	}
+		set_variable = {	UKR_state_variable = 1	}
 	}
-
-	provinces={
-		453 472 486 9463 9479 11452 
+	
+	provinces = {
+		453	472	486	9463	9479	11452
 	}
-	manpower=2391047
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies = 0.0
 }

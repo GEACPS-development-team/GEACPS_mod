@@ -1,12 +1,13 @@
-
-state={
-	id=140
-	name="STATE_140"
-	resources={
-		steel=6.000
-	}
-
-	history={
+state = {
+	id = 140
+	name = "STATE_140"
+	manpower = 1282827
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	resources = {	steel = 6	}
+	
+	history = {
 		owner = SWE
 		add_core_of = SWE
 		buildings = {
@@ -15,34 +16,16 @@ state={
 			industrial_complex = 1
 			dockyard = 1
 			air_base = 1
-			383 = {
-				naval_base = 5
-
-			}
-			383 = {
-				coastal_bunker = 5
-
-			}
-
+			383 = {	naval_base = 5	}
+			383 = {	coastal_bunker = 5	}
 		}
-		victory_points = {
-			383 10 
-		}
-		victory_points = {
-			11114 1 
-		}
-		set_variable = {
-			SWE_state_variable = 1
-
-		}
-
+		victory_points = {	383	10 }
+		victory_points = {	11114	1	}
+		set_variable = {	SWE_state_variable = 1	}
 	}
-
-	provinces={
-		69 171 295 383 3063 3286 3375 3386 6310 6331 6406 11070 
+	
+	provinces = {
+		69	171	295	383	3063	3286	3375	3386	6310	6331	6406	11070
 	}
-	manpower=1282827
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+	local_supplies = 0.0
 }
