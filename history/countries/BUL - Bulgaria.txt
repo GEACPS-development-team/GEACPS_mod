@@ -1,14 +1,11 @@
 ﻿capital = 48
 oob = BUL_1946
+
 set_cosmetic_tag = BUL_tsardom
-	
-add_ideas = {
-	BUL_committee_for_state_security
-	BUL_Simeon_Saxe_Coburg_Gotha_In_Exile
-}
+set_convoys = 5
 
 set_politics = {
-	ruling_party = total_socialism
+	ruling_party = national_populism
 	last_election = "1945.11.18"
 	election_frequency = 48
 	elections_allowed = no
@@ -24,10 +21,9 @@ set_popularities = {
 	national_populism = 0
 }
 
-create_country_leader = {	#ヴァシル・ペトロフ・コラロフ
-	name = "ヴァシル・コラロフ"
-	desc = ""
-	picture = "GFX_Vasil_Kolarov"
-	expire = "1950.1.23"
-	ideology = total_socialism_ideology
+recruit_character = CHARACTER_simeon_borisov_sakskoburggotski
+
+add_ideas = {
+	BUL_committee_for_state_security
+	BUL_Simeon_Saxe_Coburg_Gotha_In_Exile
 }

@@ -1,36 +1,30 @@
-﻿1946.1.1 = {
-	capital = 46
-	oob = ROM_1946
-	set_cosmetic_tag = ROM_kingdom
-	
-	add_ideas = {
-		ROM_department_of_state_security
-	}
-	
-	country_event = {	id = geacps_ROM.1	days = 110	}
+capital = 46
+oob = ROM_1946
 
-	set_politics = {
-		ruling_party = authoritative_democracy
-		last_election = "1939.6.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 73
-		radical_socialism = 5
-		social_democracy = 5
-		liberal_democracy = 2
-		conservative_democracy = 1
-		authoritative_democracy = 12
-		national_authoritarianism = 0
-		national_populism = 2
-	}
-	
-	create_country_leader = {
-		name = "ミハイ1世"
-		desc = ""
-		picture = "GFX_Michael_I"
-		expire = "2017.12.5"
-		ideology = authoritative_democracy_ideology
-	}
+set_cosmetic_tag = ROM_kingdom
+set_convoys = 5
+
+set_politics = {
+	ruling_party = authoritative_democracy
+	last_election = "1939.6.1"
+	election_frequency = 48
+	elections_allowed = no
 }
+set_popularities = {
+	total_socialism = 73
+	radical_socialism = 5
+	social_democracy = 5
+	liberal_democracy = 2
+	conservative_democracy = 1
+	authoritative_democracy = 12
+	national_authoritarianism = 0
+	national_populism = 2
+}
+
+recruit_character = CHARACTER_mihai_de_hohenzollern-sigmaringen
+
+add_ideas = {
+	ROM_department_of_state_security
+}
+
+country_event = {	id = geacps_ROM.1	days = 110	}

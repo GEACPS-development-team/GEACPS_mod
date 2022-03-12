@@ -1,10 +1,8 @@
 ﻿capital = 44
 oob = ALB_1946
-set_cosmetic_tag = ALB_democratic_government
 
-add_ideas = {
-	ALB_directorate_of_state_security
-}
+set_cosmetic_tag = ALB_democratic_government
+set_convoys = 5
 
 set_politics = {
 	ruling_party = total_socialism
@@ -23,10 +21,8 @@ set_popularities = {
 	national_populism = 4
 }
 
-create_country_leader = {
-	name = "オメル・ニシャニ"
-	desc = ""
-	picture = "GFX_Omer_Nishani"
-	expire = "	1954.5.26"
-	ideology = total_socialism_ideology
+recruit_character = CHARACTER_omer_nishani
+
+add_ideas = {
+	ALB_directorate_of_state_security
 }

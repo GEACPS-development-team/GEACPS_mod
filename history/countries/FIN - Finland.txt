@@ -1,7 +1,7 @@
 ﻿capital = 111
 oob = FIN_1946
-set_cosmetic_tag = FIN_republic
 
+set_cosmetic_tag = FIN_republic
 set_convoys = 5
 
 set_politics = {
@@ -21,14 +21,4 @@ set_popularities = {
 	national_populism = 1
 }
 
-create_country_leader = {
-	name = "カール・グスタフ・エミール・マンネルヘイム"
-	desc = "POLITICS_Carl_Gustaf_Emil_Mannerheim_DESC"
-	picture = "GFX_Carl_Gustaf_Emil_Mannerheim"
-	expire = "1947.4.20"
-	ideology = authoritative_democracy_ideology
-}
-
-#傀儡, 植民地
-ALA	= {	set_colony_variable = yes	}
-set_autonomy = {	target = ALA	autonomous_state = dominion	}
+recruit_character =  CHARACTER_carl_gustaf_emil_mannerheim

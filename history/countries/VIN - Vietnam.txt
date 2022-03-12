@@ -1,28 +1,9 @@
 ﻿capital = 671
-#oob = VIN_1946
+oob = VIN_1946
+
+JAP = {	set_imperial_protected_state = yes	}
+
 set_cosmetic_tag = VIN_empire
+set_dictatorship = yes
 
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1945.3.11"
-	election_frequency = 60
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 100
-	national_authoritarianism = 0
-	national_populism = 0
-}
-
-create_country_leader = {
-	name = "保大帝"
-	desc = ""
-	picture = "GFX_Bao_Dai_Emperor"
-	expire = "1997.7.30"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_nguyen_phuc_vinh_thuy

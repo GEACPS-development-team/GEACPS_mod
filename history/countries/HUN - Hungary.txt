@@ -1,37 +1,30 @@
-﻿1946.1.1 = {
-	set_capital = {	state = 1307	}
-	oob = HUN_1946
-	set_cosmetic_tag = HUN_provisional_national_government
-	
-	add_ideas = {
+capital = 43
+oob = HUN_1946
+
+set_cosmetic_tag = HUN_republic
+
+set_politics = {
+	ruling_party = conservative_democracy
+	last_election = "1945.11.4"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	total_socialism = 17
+	radical_socialism = 0
+	social_democracy = 24
+	liberal_democracy = 1
+	conservative_democracy = 58
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_zoltan_tildy
+
+add_ideas = {	#国民精神
 		HUN_state_protection_authority
 		HUN_Miklos_Horthy_In_Exile
-	}
-	
-	country_event = {	id = HUN.0	days = 1	}
-
-	set_politics = {
-		ruling_party = conservative_democracy
-		last_election = "1945.11.4"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 17
-		radical_socialism = 0
-		social_democracy = 24
-		liberal_democracy = 1
-		conservative_democracy = 58
-		authoritative_democracy = 0
-		national_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "ティルディ・ゾルターン"
-		desc = ""
-		picture = "GFX_Zoltan_Tildy"
-		expire = "1961.8.3"
-		ideology = conservative_democracy_ideology
-	}
 }
+
+country_event = {	id = HUN.0	days = 1	}

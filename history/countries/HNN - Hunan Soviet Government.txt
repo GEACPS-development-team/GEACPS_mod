@@ -1,20 +1,13 @@
-﻿#湖南ソビエト政府
-create_dynamic_country = {
+﻿create_dynamic_country = {	#湖南ソビエト政府
 	original_tag = HNN
+	
+	set_capital = {	state = 1240	}
 	set_country_flag = HNN_soviet_countryflag
 	set_cosmetic_tag = HNN_soviet_government
 	set_politics = {	ruling_party = total_socialism	}
 	set_popularities = {	total_socialism = 100	}
 	
-	load_oob = CH5_1946
+	transfer_state = 1240
 	
 	declare_war_on = {	target = CHI	type = civil_war	}
-	
-	create_country_leader = {
-		name = "毛沢東"
-		desc = ""
-		picture = "GFX_Mao_Zedong"
-		expire = "1976.9.9"
-		ideology = total_socialism_ideology
-	}
 }

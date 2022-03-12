@@ -1,14 +1,7 @@
 ﻿capital = 57
 oob = WGR_1946
-set_cosmetic_tag = GER_empire
 
-add_ideas = {
-	WGR_the_berlin_declaration
-	WGR_potsdam_agreement
-	WGR_denazification
-	WGR_republic_of_Bonn
-	WGR_the_east-west_german_wall
-	}
+set_cosmetic_tag = GER_empire
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -25,6 +18,16 @@ set_popularities = {
 	authoritative_democracy = 5
 	national_authoritarianism = 4
 	national_populism = 3
+}
+
+recruit_character = CHARACTER_friedrich_wilhelm_victor_august_ernst
+
+add_ideas = {
+	WGR_the_berlin_declaration
+	WGR_potsdam_agreement
+	WGR_denazification
+	WGR_republic_of_Bonn
+	WGR_the_east-west_german_wall
 }
 
 create_country_leader = {

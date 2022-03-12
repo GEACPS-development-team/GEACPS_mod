@@ -14,6 +14,7 @@ ideas = {#既存国民精神
 				army_core_defence_factor = 0.01
 			}
 		}
+		
 		JAP_privy_council = {#枢密院
 			allowed = {
 				always = no
@@ -27,6 +28,7 @@ ideas = {#既存国民精神
 				stability_factor = 0.01
 			}
 		}
+		
 		JAP_planning_institute = {#企画院
 			allowed = {
 				always = no
@@ -41,6 +43,7 @@ ideas = {#既存国民精神
 				planning_speed = 0.01
 			}
 		}
+		
 		JAP_active_military_service_for_ministers_of_war = {#軍部大臣現役武官制
 			allowed = {
 				always = no
@@ -55,6 +58,7 @@ ideas = {#既存国民精神
 				war_support_factor = 0.1
 			}
 		}
+		
 		JAP_suppression_of_ideas_by_the_security_law = {#治安維持法による思想弾圧
 			allowed = {
 				always = no
@@ -71,6 +75,7 @@ ideas = {#既存国民精神
 				radical_socialism_drift = -0.01
 			}
 		}
+		
 		JAP_victory_in_the_greater_east_asia_war = {#大東亜戦争に勝利
 			allowed = {
 				always = no
@@ -85,6 +90,7 @@ ideas = {#既存国民精神
 				war_support_factor = 0.1
 			}
 		}
+		
 		JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration = {#大東亜会議と大東亜共同宣言
 			allowed = {
 				always = no
@@ -447,117 +453,6 @@ ideas = {#新規国民精神
 
 		JAP_General_purpose_destroyer_plans = {
 
-		}
-	}
-}
-
-ideas = {#政府首班
-	head_of_government = {
-		JAP_Hideki_Tojo = {#東條英機
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			removal_cost = -1
-			picture = GFX_idea_JAP_Hideki_Tojo
-			#modifier = {}
-		}
-		JAP_Kisaburo_Ando = {#安藤紀三郎 #臨時代理
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Kisaburo_Ando
-			#modifier = {}
-		}
-		JAP_Mamoru_Shigemitsu = {#重光葵 #臨時代理
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Mamoru_Shigemitsu
-			#modifier = {}
-		}
-		JAP_Keisuke_Okada = {#岡田啓介
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Keisuke_Okada
-			#modifier = {}
-		}
-		JAP_Mitsumasa_Yonai = {#米内光政
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Mitsumasa_Yonai
-			#modifier = {}
-		}
-		JAP_Kantaro_Suzuki = {#鈴木貫太郎
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Kantaro_Suzuki
-			#modifier = {}
-		}
-		JAP_Fumimaro_Konoe = {#近衛文麿
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Fumimaro_Konoe
-			#modifier = {}
-		}
-		JAP_Kuniaki_Koiso = {#小磯國昭
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Kuniaki_Koiso
-			#modifier = {}
-		}
-		JAP_Hisaichi_Terauchi = {#寺内寿一
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Hisaichi_Terauchi
-			#modifier = {}
-		}
-		JAP_Shunroku_Hata = {#畑俊六
-			allowed = {	original_tag = JAP	}
-			allowed_civil_war = {	always = yes	}
-			available = {
-				hidden_trigger = {	always = no	}
-			}
-			
-			removal_cost = -1
-			picture = GFX_JAP_Shunroku_Hata
-			#modifier = {}
 		}
 	}
 }

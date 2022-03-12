@@ -1,13 +1,85 @@
 ﻿capital = 282
 oob = JAP_1946
-set_naval_oob = JAP_1946_naval
-set_cosmetic_tag = JAP_great_empire
 
+set_cosmetic_tag = JAP_great_empire
 set_stability = 0.5
 set_war_support = 0.5
-set_research_slots = 5
 set_fuel_ratio = 0.1
 set_convoys = 1000
+set_research_slots = 5
+
+set_politics = {
+	ruling_party = national_populism
+	last_election = "1941.10.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 2
+	liberal_democracy = 4
+	conservative_democracy = 14
+	authoritative_democracy = 2
+	national_authoritarianism = 1
+	national_populism = 77
+}
+set_imperial_rule_assistance_association = yes
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+
+recruit_character = CHARACTER_hirohito
+recruit_character = CHARACTER_morimasa_nashimoto
+recruit_character = CHARACTER_fumimaro_konoe
+recruit_character = CHARACTER_mamoru_shigemitsu
+recruit_character = CHARACTER_hideki_tojo
+recruit_character = CHARACTER_hisaichi_terauchi
+recruit_character = CHARACTER_kisaburo_ando
+recruit_character = CHARACTER_kuniaki_koiso
+recruit_character = CHARACTER_nobuyoshi_muto
+recruit_character = CHARACTER_shunroku_hata
+recruit_character = CHARACTER_kantaro_suzuki
+recruit_character = CHARACTER_keisuke_okada
+recruit_character = CHARACTER_mitsumasa_yonai
+
+add_ideas = {	#内閣
+	JAP_hideki_tojo_hg
+	JAP_hideki_tojo_am
+	JAP_hideki_tojo_cm
+	JAP_mamoru_shigemitsu_fm
+	JAP_kisaburo_ando_hm
+}
+
+add_ideas = {	#国民精神
+	JAP_high_defence_state_system
+	JAP_privy_council
+	JAP_planning_institute
+	JAP_active_military_service_for_ministers_of_war
+	JAP_suppression_of_ideas_by_the_security_law
+	JAP_victory_in_the_greater_east_asia_war
+	JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration
+}
+
+complete_national_focus = JAP_Lugou_Bridge_Incident
+complete_national_focus = JAP_Nanjing_Tips
+
+country_event = {	id = geacps_JAP.1	days = 1	}
+country_event = {	id = geacps_JAP.2	days = 22	}
+
+#陣営
+create_faction = GREATER_EAST_ASIA_CO-PROSPERITY_SPHERE
+add_to_faction = JAP
+add_to_faction = SIA
+add_to_faction = CH3
+add_to_faction = CH4
+
+give_guarantee = BRM
+give_guarantee = AMR
+give_guarantee = MON
+
+diplomatic_relation = { country = GBR	relation = non_aggression_pact }
+declare_war_on = {	target = CHI	type = annex_everything	}
+add_opinion_modifier = {	target = USA	modifier = American_Empire	}
 
 set_variable = { JAP_toseiha_loyalty = 15 }
 set_variable = { JAP_toseiha_popularity = 50 }
@@ -21,25 +93,46 @@ set_variable = { JAP_treaty_faction_popularity = 40 }
 set_variable = { JAP_faction_interaction_cost_standard = 20 }
 set_variable = { JAP_broad_socialist_opression_cost_standard = 20 }
 
-add_opinion_modifier = {
-    target = USA
-    modifier = American_Empire
-}
-
-complete_national_focus = JAP_Lugou_Bridge_Incident
-complete_national_focus = JAP_Nanjing_Tips
-
-add_ideas = {
-	JAP_high_defence_state_system
-	JAP_privy_council
-	JAP_planning_institute
-	JAP_active_military_service_for_ministers_of_war
-	JAP_suppression_of_ideas_by_the_security_law
-	JAP_victory_in_the_greater_east_asia_war
-	JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration
-	
-	JAP_Hideki_Tojo
-}
+#if = {
+#	limit = { has_dlc = "La Resistance" }
+#	create_intelligence_agency = yes
+#	create_operative_leader = {
+#		name = "中村天風"
+#		GFX = GFX_
+#		traits = {
+#		}
+#		bypass_recruitment = no
+#		available_to_spy_master = yes
+#		nationalities = { JAP }
+#	}
+#	create_operative_leader = {
+#		name = "藤原岩市"
+#		GFX = GFX_
+#		traits = {
+#		}#F機関
+#		bypass_recruitment = 
+#		available_to_spy_master = 
+#		nationalities = { JAP }
+#	}
+#	create_operative_leader = {
+#		name = "神本利男"
+#		GFX = GFX_
+#		traits = {
+#		}
+#		bypass_recruitment = 
+#		available_to_spy_master = 
+#		nationalities = { JAP MAN }
+#	}
+#	create_operative_leader = {
+#		name = "堀栄三"
+#		GFX = GFX_
+#		traits = {
+#		}#マッカーサー参謀
+#		bypass_recruitment = 
+#		available_to_spy_master = 
+#		nationalities = { JAP }
+#	}
+#}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -176,51 +269,6 @@ if = {
 		armored_car1 = 1
 	}
 }
-
-declare_war_on = {	target = CHI	type = annex_everything	}
-
-country_event = {
-	id = geacps_JAP.1
-	days = 1
-}
-country_event = {
-	id = geacps_JAP.2
-	days = 22
-}
-
-set_politics = {
-	ruling_party = national_populism
-	last_election = "1941.10.18"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 2
-	liberal_democracy = 4
-	conservative_democracy = 14
-	authoritative_democracy = 2
-	national_authoritarianism = 1
-	national_populism = 77
-}
-
-recruit_character = CHARACTER_hirohito
-
-create_country_leader = {
-	name = "昭和天皇"
-	desc = "POLITICS_HIROHITO_DESC"
-	picture = "GFX_hirohito_large"
-	expire = "1989.1.7"
-	ideology = national_populism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-
-set_imperial_rule_assistance_association = yes
-illegalization_of_total_socialism_party = yes
-illegalization_of_radical_socialism_party = yes
 
 create_equipment_variant = {
 	name = "金剛型"
