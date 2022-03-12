@@ -1,10 +1,9 @@
-state = {
-	id = 327
-	name = "STATE_327"
-	manpower = 3548684
-	state_category = town
-	
-	history = {
+
+state={
+	id=327
+	name="STATE_327"
+
+	history={
 		owner = PHI
 		add_core_of = PHI
 		buildings = {
@@ -12,16 +11,27 @@ state = {
 			arms_factory = 1
 			industrial_complex = 3
 			air_base = 6
-			10265 = {	naval_base = 5	}
+
 		}
-		victory_points = {	1221	1	}
-		victory_points = {	10265	15	}
-		set_variable = {	PHI_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		victory_points = {
+			1221 1 
+		}
+		set_variable = {
+			PHI_state_variable = 1
+
+		}
+		set_variable = {
+			EIN_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1221	1288	7275	7323	7351	10165	10236	10265	12236
+
+	provinces={
+		1221 1288 1388 4233 10236 10306 12236 
 	}
-	local_supplies = 0.0
+	manpower=3548684
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

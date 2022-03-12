@@ -1,22 +1,28 @@
-state = {
-	id = 753
-	name = "STATE_753"
-	manpower = 3000000
-	buildings_max_level_factor = 1
-	state_category = rural
-	
-	history = {
+
+state={
+	id=753
+	name="STATE_753"
+
+	history={
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = GAN
 		buildings = {
 			infrastructure = 2
+
 		}
-		set_variable = {	GAN_state_variable = 1	}
+		set_variable = {
+			GAN_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1257	4375	4403	9966	10787	10903
+
+	provinces={
+		10903 
 	}
-	local_supplies = 0.0
+	manpower=3000000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
