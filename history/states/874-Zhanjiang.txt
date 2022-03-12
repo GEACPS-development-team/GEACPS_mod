@@ -4,22 +4,25 @@ state={
 	name="STATE_874"
 
 	history={
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = GND
+		owner = PHI
+		add_core_of = PHI
 		buildings = {
 			infrastructure = 1
 
 		}
 		set_variable = {
-			GND_state_variable = 1
+			PHI_state_variable = 1
+
+		}
+		set_variable = {
+			EIN_state_variable = 1
 
 		}
 
 	}
 
 	provinces={
-		1131 4160 7039 7135 12077 
+		7385 
 	}
 	manpower=43500
 	buildings_max_level_factor=1.000

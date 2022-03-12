@@ -4,25 +4,28 @@ state={
 	name="STATE_901"
 
 	history={
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = GXC
+		owner = PHI
+		add_core_of = PHI
 		buildings = {
 			infrastructure = 2
+			10265 = {
+				naval_base = 5
+
+			}
 
 		}
 		victory_points = {
-			10404 3 
+			10265 15 
 		}
 		set_variable = {
-			GXC_state_variable = 1
+			PHI_state_variable = 1
 
 		}
 
 	}
 
 	provinces={
-		1023 4152 7128 7168 7210 10121 10404 12407 
+		7275 7323 7351 10165 10265 
 	}
 	manpower=158000
 	buildings_max_level_factor=1.000
