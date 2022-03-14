@@ -1,35 +1,24 @@
-
-state={
-	id=624
-	name="STATE_624"
-
-	history={
+state = {
+	id = 624
+	name = "STATE_624"
+	manpower = 1290672
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = PHI
 		add_core_of = PHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-
 		}
-		victory_points = {
-			4288 1 
-		}
-		set_variable = {
-			PHI_state_variable = 1
-
-		}
-		set_variable = {
-			EIN_state_variable = 1
-
-		}
-
+		victory_points = {	4288	1	}
+		set_variable = {	PHI_state_variable = 1	}	
+		set_variable = {	EIN_state_variable = 1	}
 	}
-
-	provinces={
-		1372 4228 4377 7307 12279 
+	
+	provinces = {
+		1372	4228	4377	7307	12279
 	}
-	manpower=1290672
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

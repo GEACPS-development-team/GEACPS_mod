@@ -1,9 +1,11 @@
-
-state={
-	id=750
-	name="STATE_750"
-
-	history={
+state = {
+	id = 750
+	name = "STATE_750"
+	manpower = 8000000
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = ALS
 		add_core_of = ALS
 		buildings = {
@@ -11,20 +13,12 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
-
 		}
-		set_variable = {
-			ALS_state_variable = 1
-
-		}
-
+		set_variable = {	ALS_state_variable = 1	}
 	}
-
-	provinces={
-		7855 
+	
+	provinces = {
+		7855
 	}
-	manpower=8000000
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

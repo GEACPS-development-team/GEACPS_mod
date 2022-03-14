@@ -1,27 +1,21 @@
-
-state={
-	id=674
-	name="STATE_674"
-
-	history={
+state = {
+	id = 674
+	name = "STATE_674"
+	manpower = 30000
+	buildings_max_level_factor = 1
+	state_category = wasteland
+	
+	history = {
 		owner = AST
 		add_core_of = AST
 		buildings = {
 			infrastructure = 1
-
 		}
-		set_variable = {
-			AST_state_variable = 1
-
-		}
-
+		set_variable = {	AST_state_variable = 1	}
 	}
-
-	provinces={
-		2223 8237 11013 12992 
+	
+	provinces = {
+		2223	8237	11013	12992
 	}
-	manpower=30000
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+	local_supplies = 0.0
 }

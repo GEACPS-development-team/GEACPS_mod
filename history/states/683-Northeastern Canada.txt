@@ -1,30 +1,23 @@
-
-state={
-	id=683
-	name="STATE_683"
-	resources={
-		aluminium=7.000
-	}
-
-	history={
+state = {
+	id = 683
+	name = "STATE_683"
+	manpower = 46135
+	buildings_max_level_factor = 1
+	state_category = wasteland
+	
+	resources = {	aluminium = 7	}
+	
+	history = {
 		owner = CAN
 		add_core_of = CAN
 		buildings = {
 			infrastructure = 1
-
 		}
-		set_variable = {
-			CAN_state_variable = 1
-
-		}
-
+		set_variable = {	CAN_state_variable = 1	}
 	}
-
-	provinces={
-		2947 8962 10527 10721 
+	
+	provinces = {
+		2947	8962	10527	10721
 	}
-	manpower=46135
-	buildings_max_level_factor=1.000
-	state_category=wasteland
-	local_supplies=0.000
+	local_supplies = 0.0
 }

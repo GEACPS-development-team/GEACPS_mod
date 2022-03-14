@@ -1,29 +1,23 @@
-
-state={
-	id=612
-	name="STATE_612"
-
-	history={
+state = {
+	id = 612
+	name = "STATE_612"
+	manpower = 75027
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
 		owner = MEN
 		add_core_of = MEN
 		add_core_of = QAH
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
-
 		}
-		set_variable = {
-			QAH_state_variable = 1
-
-		}
-
+		set_variable = {	QAH_state_variable = 1	}
 	}
-
-	provinces={
-		1551 1608 1796 1811 1871 4222 4555 4612 7578 7648 10363 10372 12348 12448 12554 
+	
+	provinces = {
+		1551	1608	1796	1811	1871	4222	4555	4612	7578	7648	10363	10372	12348	12448	12554
 	}
-	manpower=75027
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+	local_supplies = 0.0
 }

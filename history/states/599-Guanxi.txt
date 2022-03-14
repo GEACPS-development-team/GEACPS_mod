@@ -1,14 +1,17 @@
-
-state={
-	id=599
-	name="STATE_599"
-	resources={
-		tungsten=15.000
-		steel=15.000
-		chromium=3.000
+state = {
+	id = 599
+	name = "STATE_599"
+	manpower = 8685200
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+		tungsten = 15
+		steel = 15
+		chromium = 3
 	}
-
-	history={
+	
+	history = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = GXC
@@ -17,23 +20,13 @@ state={
 			industrial_complex = 2
 			arms_factory = 1
 			air_base = 2
-
 		}
-		victory_points = {
-			7137 10 
-		}
-		set_variable = {
-			GXC_state_variable = 1
-
-		}
-
+		victory_points = {	7137	10	}
+		set_variable = {	GXC_state_variable = 1	}
 	}
-
-	provinces={
-		1018 1023 1469 1597 1625 4023 4028 4077 4085 4121 4134 4152 4177 4628 4656 7044 7095 7128 7137 7168 7192 7210 7650 10004 10039 10050 10105 10121 10404 10431 10459 11926 11983 12023 12407 12436 
+	
+	provinces = {
+		1018	1023	1469	1597	1625	4023	4028	4077	4085	4121	4134	4152	4177	4628	4656	7044	7095	7128	7137	7168	7192	7210	7650	10004	10039	10050	10105	10121	10404	10431	10459	11926	11983	12023	12407	12436
 	}
-	manpower=8685200
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

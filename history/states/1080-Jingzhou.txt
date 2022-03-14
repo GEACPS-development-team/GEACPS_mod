@@ -1,9 +1,11 @@
-
-state={
-	id=1080
-	name="STATE_1080"
-
-	history={
+state = {
+	id = 1080
+	name = "STATE_1080"
+	manpower = 25541600
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
 		owner = USA
 		add_core_of = USA
 		add_core_of = CAL
@@ -11,27 +13,14 @@ state={
 			infrastructure = 2
 			arms_factory = 3
 			industrial_complex = 2
-			1562 = {
-				naval_base = 10
-
-			}
-
+			1562 = {	naval_base = 10	}
 		}
-		victory_points = {
-			1562 15 
-		}
-		set_variable = {
-			CAL_state_variable = 1
-
-		}
-
+		victory_points = {	1562	15	}
+		set_variable = {	CAL_state_variable = 1	}
 	}
-
-	provinces={
-		1562 7517 11757 12374 
+	
+	provinces = {
+		1562	7517	11757	12374
 	}
-	manpower=25541600
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+	local_supplies = 0.0
 }

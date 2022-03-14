@@ -1,35 +1,25 @@
-
-state={
-	id=744
-	name="STATE_744"
-
-	history={
+state = {
+	id = 744
+	name = "STATE_744"
+	manpower = 9000000
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = SHA
 		add_core_of = NAN
 		buildings = {
 			infrastructure = 2
-
 		}
-		victory_points = {
-			7418 1 
-		}
-		victory_points = {
-			10257 1 
-		}
-		set_variable = {
-			SHA_state_variable = 1
-
-		}
-
+		victory_points = {	7418	1	}
+		victory_points = {	10257	1	}
+		set_variable = {	SHA_state_variable = 1	}
 	}
-
-	provinces={
-		1976 2006 12713 
+	
+	provinces = {
+		1976	2006	12713
 	}
-	manpower=9000000
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

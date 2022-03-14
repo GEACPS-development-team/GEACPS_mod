@@ -1,32 +1,25 @@
-
-state={
-	id=1085
-	name="STATE_1085"
-	resources={
-		tungsten=6.000
-	}
-
-	history={
+state = {
+	id = 1085
+	name = "STATE_1085"
+	manpower = 20293700
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {	tungsten = 6	}
+	
+	history = {
 		owner = ARG
 		add_core_of = ARG
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
-
 		}
-		set_variable = {
-			ARG_state_variable = 1
-
-		}
-
+		set_variable = {	ARG_state_variable = 1	}
 	}
-
-	provinces={
-		2224 8195 10944 11001 
+	
+	provinces = {
+		2224	8195	10944	11001
 	}
-	manpower=20293700
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }
