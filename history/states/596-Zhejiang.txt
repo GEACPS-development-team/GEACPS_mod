@@ -1,29 +1,23 @@
-
-state={
-	id=596
-	name="STATE_596"
-
-	history={
+state = {
+	id = 596
+	name = "STATE_596"
+	manpower = 21230700
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = ZHE
 		add_core_of = NAN
 		buildings = {
 			infrastructure = 2
-
 		}
-		set_variable = {
-			ZHE_state_variable = 1
-
-		}
-
+		set_variable = {	ZHE_state_variable = 1	}
 	}
-
-	provinces={
-		1096 1168 1195 4013 4099 7058 7086 7146 7174 9944 9972 10058 11920 11947 12059 
+	
+	provinces = {
+		1096	1168	1195	4013	4099	7058	7086	7146	7174	9944	9972	10058	11920	11947	12059
 	}
-	manpower=21230700
-	buildings_max_level_factor=1.000
-	state_category=city
-	local_supplies=0.000
+	local_supplies = 0.0
 }

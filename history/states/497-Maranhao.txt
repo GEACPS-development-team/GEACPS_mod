@@ -1,39 +1,27 @@
-
-state={
-	id=497
-	name="STATE_497"
-	resources={
-		rubber=23.000
-	}
-
-	history={
+state = {
+	id = 497
+	name = "STATE_497"
+	manpower = 2950100
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	resources = {	rubber = 23	}
+	
+	history = {
 		owner = BRA
 		add_core_of = BRA
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
-			12853 = {
-				naval_base = 2
-
-			}
-
+			12853 = {	naval_base = 2	}
 		}
-		victory_points = {
-			12853 1 
-		}
-		set_variable = {
-			BRA_state_variable = 1
-
-		}
-
+		victory_points = {	12853	1	}
+		set_variable = {	BRA_state_variable = 1	}
 	}
-
-	provinces={
-		2150 2228 5153 5204 5220 10984 12913 12933 12947 
+	
+	provinces = {
+		2150	2228	5153	5204	5220	10984	12913	12933	12947
 	}
-	manpower=2950100
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }

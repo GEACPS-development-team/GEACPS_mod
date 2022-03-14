@@ -1,9 +1,11 @@
-
-state={
-	id=1162
-	name="STATE_1162"
-
-	history={
+state = {
+	id = 1162
+	name = "STATE_1162"
+	manpower = 15820400
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = HUB
@@ -11,23 +13,13 @@ state={
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
-
 		}
-		victory_points = {
-			4619 30 
-		}
-		set_variable = {
-			HUB_state_variable = 1
-
-		}
-
+		victory_points = {	4619	30	}
+		set_variable = {	HUB_state_variable = 1	}
 	}
-
-	provinces={
-		4619 7167 
+	
+	provinces = {
+		4619	7167
 	}
-	manpower=15820400
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

@@ -1,32 +1,23 @@
-
-state={
-	id=1155
-	name="STATE_1155"
-
-	history={
+state = {
+	id = 1155
+	name = "STATE_1155"
+	manpower = 18265400
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = CHL
 		add_core_of = CHL
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-			5228 = {
-				naval_base = 2
-
-			}
-
+			5228 = {	naval_base = 2	}
 		}
-		set_variable = {
-			ANH_state_variable = 1
-
-		}
-
+		set_variable = {	ANH_state_variable = 1	}
 	}
-
-	provinces={
-		5191 5228 8194 12914 
+	
+	provinces = {
+		5191	5228	8194	12914
 	}
-	manpower=18265400
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

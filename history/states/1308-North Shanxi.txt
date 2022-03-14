@@ -1,9 +1,11 @@
-
-state={
-	id=1308
-	name="STATE_1308"
-
-	history={
+state = {
+	id = 1308
+	name = "STATE_1308"
+	manpower = 5032914
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = MEN
 		add_core_of = MEN
 		add_core_of = QAH
@@ -12,20 +14,12 @@ state={
 		add_core_of = ZHI
 		buildings = {
 			infrastructure = 4
-
 		}
-		set_variable = {
-			QAH_state_variable = 1
-
-		}
-
+		set_variable = {	QAH_state_variable = 1	}
 	}
 	
-	provinces={
-		10480 10507 12432 
+	provinces = {
+		10480	10507	12432
 	}
-	manpower=5032914
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

@@ -1,12 +1,13 @@
-
-state={
-	id=279
-	name="STATE_279"
-	resources={
-		steel=16.000
-	}
-
-	history={
+state = {
+	id = 279
+	name = "STATE_279"
+	manpower = 3935146
+	buildings_max_level_factor = 1
+	state_category = large_city
+	
+	resources = {	steel = 16	}
+	
+	history = {
 		owner = CHL
 		add_core_of = CHL
 		buildings = {
@@ -14,31 +15,15 @@ state={
 			arms_factory = 1
 			industrial_complex = 7
 			air_base = 3
-			8222 = {
-				naval_base = 5
-
-			}
-			650 = {
-				bunker = 1
-
-			}
-
+			8222 = {	naval_base = 5	}
+			650 = {	bunker = 1	}
 		}
-		victory_points = {
-			650 10 
-		}
-		set_variable = {
-			CHL_state_variable = 1
-
-		}
-
+		victory_points = {	650	10	}
+		set_variable = {	CHL_state_variable = 1	}
 	}
-
-	provinces={
-		650 8222 8229 
+	
+	provinces = {
+		650	8222	8229
 	}
-	manpower=3935146
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
+	local_supplies = 0.0
 }

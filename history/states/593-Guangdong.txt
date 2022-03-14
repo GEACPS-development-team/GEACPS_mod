@@ -1,33 +1,28 @@
-
-state={
-	id=593
-	name="STATE_593"
-	resources={
-		tungsten=15.000
-		steel=15.000
-		chromium=3.000
+state = {
+	id = 593
+	name = "STATE_593"
+	manpower = 12700000
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {
+		tungsten = 15
+		steel = 15
+		chromium = 3
 	}
-
-	history={
+	
+	history = {
 		owner = COL
 		add_core_of = COL
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
-
 		}
-		set_variable = {
-			COL_state_variable = 1
-
-		}
-
+		set_variable = {	COL_state_variable = 1	}
 	}
-
-	provinces={
-		1937 2085 8056 10864 12703 12790 
+	
+	provinces = {
+		1937	2085	8056	10864	12703	12790
 	}
-	manpower=12700000
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

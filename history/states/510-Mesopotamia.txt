@@ -1,12 +1,13 @@
-
-state={
-	id=510
-	name="STATE_510"
-	resources={
-		oil=8.000
-	}
-
-	history={
+state = {
+	id = 510
+	name = "STATE_510"
+	manpower = 3497169
+	buildings_max_level_factor = 1
+	state_category = large_town
+	
+	resources = {	oil = 8	}
+	
+	history = {
 		owner = ARG
 		add_core_of = ARG
 		buildings = {
@@ -14,23 +15,13 @@ state={
 			industrial_complex = 4
 			air_base = 1
 			arms_factory = 1
-
 		}
-		victory_points = {
-			7500 1 
-		}
-		set_variable = {
-			ARG_state_variable = 1
-
-		}
-
+		victory_points = {	7500	1	}
+		set_variable = {	ARG_state_variable = 1	}
 	}
-
-	provinces={
-		2172 5163 5184 7500 8208 10975 10985 11022 12942 13000 
+	
+	provinces = {
+		2172	5163	5184	7500	8208	10975	10985	11022	12942	13000
 	}
-	manpower=3497169
-	buildings_max_level_factor=1.000
-	state_category=large_town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

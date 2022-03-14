@@ -1,34 +1,23 @@
-
-state={
-	id=494
-	name="STATE_494"
-
-	history={
+state = {
+	id = 494
+	name = "STATE_494"
+	manpower = 735826
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
 		owner = PRU
 		add_core_of = PRU
 		buildings = {
 			infrastructure = 2
-			12997 = {
-				naval_base = 5
-
-			}
-
+			12997 = {	naval_base = 5	}
 		}
-		victory_points = {
-			12997 5 
-		}
-		set_variable = {
-			PRU_state_variable = 1
-
-		}
-
+		victory_points = {	12997	5	}
+		set_variable = {	PRU_state_variable = 1	}
 	}
-
-	provinces={
-		2162 2212 2226 8160 12983 12997 
+	
+	provinces = {
+		2162	2212	2226	8160	12983	12997
 	}
-	manpower=735826
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }

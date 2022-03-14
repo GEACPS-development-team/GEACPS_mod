@@ -1,28 +1,22 @@
-
-state={
-	id=1161
-	name="STATE_1161"
-
-	history={
+state = {
+	id = 1161
+	name = "STATE_1161"
+	manpower = 15820400
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = PHI
 		add_core_of = PHI
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
-
 		}
-		set_variable = {
-			PHI_state_variable = 1
-
-		}
-
+		set_variable = {	PHI_state_variable = 1	}
 	}
-
-	provinces={
-		4288 10272 
+	
+	provinces = {
+		4288	10272
 	}
-	manpower=15820400
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

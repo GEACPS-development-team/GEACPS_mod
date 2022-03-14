@@ -1,27 +1,21 @@
-
-state={
-	id=486
-	name="STATE_486"
-
-	history={
+state = {
+	id = 486
+	name = "STATE_486"
+	manpower = 213160
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
 		owner = COL
 		add_core_of = COL
 		buildings = {
 			infrastructure = 1
-
 		}
-		set_variable = {
-			COL_state_variable = 1
-
-		}
-
+		set_variable = {	COL_state_variable = 1	}
 	}
-
-	provinces={
-		10792 10846 12729 12770 12825 
+	
+	provinces = {
+		10792	10846	12729	12770	12825
 	}
-	manpower=213160
-	buildings_max_level_factor=1.000
-	state_category=pastoral
-	local_supplies=0.000
+	local_supplies = 0.0
 }

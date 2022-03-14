@@ -1,13 +1,16 @@
-
-state={
-	id=378
-	name="STATE_378"
-	resources={
-		oil=180.000
-		aluminium=8.000
+state = {
+	id = 378
+	name = "STATE_378"
+	manpower = 5677248
+	buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	resources = {
+		oil = 180
+		aluminium = 8
 	}
-
-	history={
+	
+	history = {
 		owner = USA
 		add_core_of = USA
 		add_core_of = CAL
@@ -17,23 +20,13 @@ state={
 			arms_factory = 2
 			dockyard = 2
 			air_base = 10
-
 		}
-		victory_points = {
-			9713 1 
-		}
-		set_variable = {
-			CAL_state_variable = 1
-
-		}
-
+		victory_points = {	9713	1	}
+		set_variable = {	CAL_state_variable = 1	}
 	}
-
-	provinces={
-		768 9697 9713 11658 
+	
+	provinces = {
+		768	9697	9713	11658
 	}
-	manpower=5677248
-	buildings_max_level_factor=1.000
-	state_category=metropolis
-	local_supplies=0.000
+	local_supplies = 0.0
 }

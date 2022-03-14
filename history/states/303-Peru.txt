@@ -1,12 +1,11 @@
-
-state={
-	id=303
-	name="STATE_303"
-	resources={
-		oil=14.000
+state = {
+	id = 303
+	name = "STATE_303"
+	resources = {
+		oil = 14
 	}
-
-	history={
+	
+	history = {
 		owner = PRU
 		add_core_of = PRU
 		buildings = {
@@ -14,20 +13,15 @@ state={
 			arms_factory = 1
 			industrial_complex = 6
 			air_base = 3
-
 		}
-		set_variable = {
-			PRU_state_variable = 1
-
-		}
-
+		set_variable = {	PRU_state_variable = 1	}
 	}
-
-	provinces={
-		2156 5162 5190 8199 8213 12869 
+	
+	provinces = {
+		2156	5162	5190	8199	8213	12869
 	}
-	manpower=3563249
-	buildings_max_level_factor=1.000
-	state_category=large_city
-	local_supplies=0.000
+	manpower = 3563249
+	buildings_max_level_factor = 1
+	state_category = large_city
+	local_supplies = 0.0
 }

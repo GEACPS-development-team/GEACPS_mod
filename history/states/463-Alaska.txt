@@ -1,35 +1,24 @@
-
-state={
-	id=463
-	name="STATE_463"
-
-	history={
+state = {
+	id = 463
+	name = "STATE_463"
+	manpower = 67500
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
 		owner = ALS
 		add_core_of = ALS
 		buildings = {
 			infrastructure = 1
 			air_base = 1
-			13091 = {
-				naval_base = 1
-
-			}
-
+			13091 = {	naval_base = 1	}
 		}
-		victory_points = {
-			13091 3 
-		}
-		set_variable = {
-			ALS_state_variable = 1
-
-		}
-
+		victory_points = {	13091	3	}
+		set_variable = {	ALS_state_variable = 1	}
 	}
-
-	provinces={
-		4833 4848 10679 10707 13091 
+	
+	provinces = {
+		4833	4848	10679	10707	13091
 	}
-	manpower=67500
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }
