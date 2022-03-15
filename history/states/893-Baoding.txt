@@ -1,34 +1,23 @@
-
-state={
-	id=893
-	name="STATE_893"
-
-	history={
+state = {
+	id = 893
+	name = "STATE_893"
+	manpower = 96500
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
 		owner = EQG
 		add_core_of = EQG
 		buildings = {
 			infrastructure = 3
-			1903 = {
-				naval_base = 1
-
-			}
-
+			1903 = {	naval_base = 1	}
 		}
-		victory_points = {
-			1903 1 
-		}
-		set_variable = {
-			EQG_state_variable = 1
-
-		}
-
+		victory_points = {	1903	1	}
+		set_variable = {	EQG_state_variable = 1	}
 	}
-
-	provinces={
-		1903 
+	
+	provinces = {
+		1903
 	}
-	manpower=96500
-	buildings_max_level_factor=1.000
-	state_category=town
-	local_supplies=0.000
+	local_supplies = 0.0
 }

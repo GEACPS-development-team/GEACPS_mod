@@ -1,31 +1,22 @@
-
-state={
-	id=297
-	name="STATE_297"
-
-	history={
+state = {
+	id = 297
+	name = "STATE_297"
+	manpower = 185000
+	buildings_max_level_factor = 1
+	state_category = enclave
+	
+	history = {
 		owner = EQG
 		add_core_of = EQG
 		buildings = {
 			infrastructure = 1
-			8244 = {
-				naval_base = 1
-
-			}
-
+			8244 = {	naval_base = 1	}
 		}
-		set_variable = {
-			EQG_state_variable = 1
-
-		}
-
+		set_variable = {	EQG_state_variable = 1	}
 	}
-
-	provinces={
-		8244 
+	
+	provinces = {
+		8244
 	}
-	manpower=185000
-	buildings_max_level_factor=1.000
-	state_category=enclave
-	local_supplies=0.000
+	local_supplies = 0.0
 }
