@@ -4,14 +4,21 @@ state={
 	name="STATE_893"
 
 	history={
-		owner = ARG
-		add_core_of = ARG
+		owner = EQG
+		add_core_of = EQG
 		buildings = {
 			infrastructure = 3
+			1903 = {
+				naval_base = 1
+
+			}
 
 		}
+		victory_points = {
+			1903 1 
+		}
 		set_variable = {
-			ARG_state_variable = 1
+			EQG_state_variable = 1
 
 		}
 
