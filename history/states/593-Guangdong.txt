@@ -2,6 +2,7 @@ state = {
 	id = 593
 	name = "STATE_593"
 	manpower = 12700000
+	buildings_max_level_factor = 1
 	state_category = town
 	
 	resources = {
@@ -11,24 +12,20 @@ state = {
 	}
 	
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = GND
+		owner = COL
+		add_core_of = COL
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
-			1047 = {	bunker = 1	}
-			9938 = {	bunker = 1	}
-			1047 = {	naval_base = 5	}
-			9938 = {	naval_base = 1	}
-			1047 = {	coastal_bunker = 1	}
-			9938 = {	coastal_bunker = 1	}
+			8056 = {	naval_base = 1	}
+			12790 = {	naval_base = 5	}
 		}
-		victory_points = {	1047	5	}
-		set_variable = {	GND_state_variable = 1	}
+		victory_points = {	12790	5	}
+		set_variable = {	COL_state_variable = 1	}
 	}
 	
 	provinces = {
-		1120	4165	7067	7108	7141	7182	9938	9970	9978	9997	10080	12014	12095	4092	11941	7152	1047	1087	1187	11938
+		1937	2085	8056	10864	12703	12790
 	}
+	local_supplies = 0.0
 }

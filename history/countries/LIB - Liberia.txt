@@ -5,7 +5,7 @@ set_cosmetic_tag = LIB_republic
 set_convoys = 5
 
 set_politics = {
-	ruling_party = social_conservatism
+	ruling_party = conservative_democracy
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,19 +14,11 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 100
+	liberal_democracy = 0
+	conservative_democracy = 100
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "ウィリアム・タブマン"
-	desc = ""
-	picture = "GFX_William_Tubman"
-	expire = "1971.7.23"
-	ideology = social_conservatism_ideology
-}
+recruit_character = CHARACTER_william_vacanarat_sharach_tubman

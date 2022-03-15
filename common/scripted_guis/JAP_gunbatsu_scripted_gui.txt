@@ -1,0 +1,38 @@
+scripted_gui = {
+	jap_gunbatsu_decision_ui = {
+		window_name = "jap_gunbatsu_decision_ui_window"
+		context_type = decision_category
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+		}
+
+		triggers = {
+		}
+
+		dynamic_lists = {
+		}
+
+		properties = {
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+		ai_test_interval = 290  # The higher, the long it takes the ai to do actions
+		ai_test_variance = 0.5
+
+		ai_check = {
+		}
+
+		ai_check_scope = {
+		}
+
+		ai_weights = {
+		}
+	}
+}

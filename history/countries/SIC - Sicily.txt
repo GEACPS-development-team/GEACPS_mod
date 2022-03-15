@@ -1,16 +1,8 @@
 ﻿capital = 117
-set_cosmetic_tag = TWOSICILIES_kingdom
 oob = SIC_1946
 
+set_cosmetic_tag = TWOSICILIES_kingdom
 set_convoys = 10
-
-add_ideas = {
-	SIC_idea_1
-}
-
-set_technology = {
-	tech_support = 1
-}
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -22,72 +14,18 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
 	authoritative_democracy = 100
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = total_socialism_ideology
+recruit_character = CHARACTER_ferdinando_pio_di_borbone-due_sicilie
+
+add_ideas = {	#国民精神
+	SIC_idea_1
 }
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = radical_socialism_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = social_democracy_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = classical_liberalism_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = social_conservatism_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = authoritative_democracy_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = reactionary_authoritarianism_ideology
-}
-create_country_leader = {
-	name = "フェルディナンド・ピオ"
-	desc = ""
-	picture = "GFX_King_of_the_Two_Sicilies"
-	ideology = national_populism_ideology
+set_technology = {
+	tech_support = 1
 }

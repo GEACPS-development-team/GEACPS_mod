@@ -1,7 +1,9 @@
 ﻿capital = 145
-#oob = ALA_1946
+oob = ALA_1946
 
-set_convoys = 5
+FIN = {	set_dominion = yes	}
+
+set_cosmetic_tag = COUNTRY_FIN
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -13,19 +15,11 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
 	authoritative_democracy = 100
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "ハーマン・コロレフ"
-	desc = ""
-	picture = "GFX_Governor_of_the_Aland_Islands"
-	expire = "1957.4.5"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_herman_koroleff

@@ -1,0 +1,16 @@
+﻿create_dynamic_country = {	#アメリカ統治下オーストリア占領地
+	original_tag = AUS
+	
+	USA = {	set_occupied_territory = yes	}
+	
+	set_capital = {	state = 1004	}
+	set_country_flag = AUS_USA_countryflag
+	set_cosmetic_tag = COUNTRY_AMERICA_united_states_48
+	set_dictatorship = yes
+	
+	recruit_character = CHARACTER_mark_wayne_clark
+	
+	every_core_state = {	remove_core_of = PREV	}
+	152 = {	set_owner_and_core_of = yes	}
+	1004 = {	set_owner_and_core_of = yes	}
+}

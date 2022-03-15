@@ -2,23 +2,23 @@ state = {
 	id = 463
 	name = "STATE_463"
 	manpower = 67500
-	state_category = "rural"
 	buildings_max_level_factor = 1
+	state_category = rural
 	
 	history = {
 		owner = ALS
 		add_core_of = ALS
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			air_base = 1
 			13091 = {	naval_base = 1	}
 		}
-		victory_points = {	13090	1	}
 		victory_points = {	13091	3	}
 		set_variable = {	ALS_state_variable = 1	}
 	}
 	
 	provinces = {
-		1135	1830	4833	4848	7855	7884	10679	10694	10707	12661	13069	13090	13091	13202	13203
+		4833	4848	10679	10707	13091
 	}
+	local_supplies = 0.0
 }

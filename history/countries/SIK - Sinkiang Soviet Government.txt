@@ -1,22 +1,14 @@
-﻿#新疆ソビエト政府
-create_dynamic_country = {
+﻿create_dynamic_country = {	#新疆ソビエト政府
 	original_tag = SIK
+	
+	set_capital = {	state = 965	}
 	set_country_flag = SIK_soviet_countryflag
 	set_cosmetic_tag = SIK_soviet_government
 	set_politics = {	ruling_party = total_socialism	}
 	set_popularities = {	total_socialism = 100	}
 	
-	load_oob = CH6_1946
 	transfer_state = 618
-	transfer_state = 968
+	transfer_state = 965
 	
 	declare_war_on = {	target = CHI	type = civil_war	}
-	
-	create_country_leader = {
-		name = "毛沢東"
-		desc = ""
-		picture = "GFX_Mao_Zedong"
-		expire = "1976.9.9"
-		ideology = total_socialism_ideology
-	}
 }

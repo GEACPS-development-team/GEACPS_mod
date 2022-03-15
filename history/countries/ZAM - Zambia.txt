@@ -1,29 +1,9 @@
 ﻿capital = 771
-#oob = ZAM_1946
+oob = ZAM_1946
 
-set_politics = {
-	ruling_party = reactionary_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 0
-	reactionary_authoritarianism = 100
-	national_populism = 0
-}
+GBR = {	set_protected_territory = yes	}
 
-create_country_leader = {
-	name = "ジョン・ウォディントン"
-	desc = ""
-	picture = "GFX_United_Kingdom_of_Great_Britain"
-	expire = "1957.1.18"
-	ideology = reactionary_authoritarianism_ideology
-}
+set_cosmetic_tag = ZAM_ENG-GBR
+set_dictatorship = yes
+
+recruit_character = CHARACTER_eubule_john_waddington

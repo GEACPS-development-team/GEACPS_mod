@@ -1,0 +1,26 @@
+state = {
+	id = 1192
+	name = "STATE_1192"
+	manpower = 93000
+	state_category = large_town
+	
+	history = {
+		owner = TWN
+		add_core_of = TWN
+		add_core_of = CHI
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			dockyard = 1
+			11914 = {	naval_base = 7	}
+		}
+		victory_points = {	11914	1	}
+		set_variable = {	TWN_state_variable = 1	}
+	}
+	
+	provinces = {
+		1175	11914	12068
+	}
+	local_supplies = 0.0
+}

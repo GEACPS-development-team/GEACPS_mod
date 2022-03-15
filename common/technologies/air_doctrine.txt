@@ -7,8 +7,8 @@ technologies = {
 		air_superiority_detect_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		xor = { force_rotation formation_flying }
 		
@@ -46,16 +46,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -70,8 +60,8 @@ technologies = {
 		air_cas_present_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		path = {
@@ -103,16 +93,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -128,8 +108,8 @@ technologies = {
 		air_interception_detect_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = naval_strike_tactics
@@ -160,16 +140,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -184,8 +154,8 @@ technologies = {
 		air_nav_efficiency = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = fighter_sweeps
@@ -221,16 +191,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -246,8 +206,8 @@ technologies = {
 		air_mission_xp_gain_factor = 0.05
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		xor={
 			dogfighting_experience
@@ -282,16 +242,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -307,8 +257,8 @@ technologies = {
 		air_mission_xp_gain_factor = 0.05
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		xor={
 			fighter_sweeps
@@ -347,16 +297,6 @@ technologies = {
 				has_war = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -378,8 +318,8 @@ technologies = {
 		#}
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = logistical_bombing
@@ -410,16 +350,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -434,8 +364,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		path = {
@@ -472,16 +402,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -497,8 +417,8 @@ technologies = {
 		air_strategic_bomber_night_penalty = -0.5
 		###########		
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		XOR = {
 			day_bombing
@@ -541,16 +461,6 @@ technologies = {
 				tag = USA
 				factor = 0.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -566,8 +476,8 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.3
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		XOR = {
 			night_bombing
@@ -610,16 +520,6 @@ technologies = {
 				tag = USA
 				factor = 1.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -635,8 +535,8 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		path = {
@@ -668,16 +568,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 3
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -693,8 +583,8 @@ technologies = {
 		air_escort_efficiency = 0.25
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = flying_fortress
@@ -725,16 +615,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -750,8 +630,8 @@ technologies = {
 		air_strategic_bomber_defence_factor = 0.25
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = offensive_formations
@@ -787,16 +667,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 3
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -812,8 +682,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		path = {
 			leads_to_tech = strategic_destruction001
@@ -843,16 +713,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -867,8 +727,8 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		path = {
 			leads_to_tech = strategic_destruction001
 			research_cost_coeff = 1
@@ -898,16 +758,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -931,8 +781,8 @@ technologies = {
 		air_mission_xp_gain_factor = 0.05
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = dive_bombing
@@ -972,16 +822,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -996,8 +836,8 @@ technologies = {
 		air_cas_efficiency = 0.20
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = direct_ground_support
@@ -1033,16 +873,6 @@ technologies = {
 				tag = GER
 				factor = 0.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1058,8 +888,8 @@ technologies = {
 		air_cas_present_factor = 0.20
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = formation_fighting
@@ -1100,16 +930,6 @@ technologies = {
 				tag = GER
 				factor = 0.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1126,8 +946,8 @@ technologies = {
 		air_mission_xp_gain_factor = 0.05
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		xor = {
 			fighter_ace_initiative
@@ -1166,16 +986,6 @@ technologies = {
 				tag = GER
 				factor = 0.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1191,8 +1001,8 @@ technologies = {
 		air_mission_xp_gain_factor = 0.05
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		xor = {
 			formation_fighting
@@ -1231,16 +1041,6 @@ technologies = {
 				tag = GER
 				factor = 0.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1255,8 +1055,8 @@ technologies = {
 		air_cas_efficiency = 0.20
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = combat_unit_destruction
@@ -1291,16 +1091,6 @@ technologies = {
 				tag = GER
 				factor = 0.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1319,8 +1109,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		path = {
 			leads_to_tech = battlefield_support
@@ -1365,16 +1155,6 @@ technologies = {
 				tag = GER
 				factor = 0.5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1390,8 +1170,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		path = {
@@ -1423,16 +1203,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1450,8 +1220,8 @@ technologies = {
 		}
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		path = {
@@ -1484,16 +1254,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1509,8 +1269,8 @@ technologies = {
 		air_cas_present_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		path = {
 			leads_to_tech = naval_strike_torpedo_tactics
@@ -1541,16 +1301,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1566,8 +1316,8 @@ technologies = {
 		air_nav_efficiency = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		path = {
 			leads_to_tech = strategic_destruction
@@ -1598,16 +1348,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1623,8 +1363,8 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		path = {
@@ -1656,16 +1396,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1681,8 +1411,8 @@ technologies = {
 		air_interception_detect_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 				
 		path = {
 			leads_to_tech = battlefield_support001
@@ -1712,16 +1442,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1744,8 +1464,8 @@ technologies = {
 		air_mission_xp_gain_factor = 0.05
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = fighter_baiting
@@ -1781,16 +1501,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 5
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 	}
 	
@@ -1801,8 +1511,8 @@ technologies = {
 		air_ace_generation_chance_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = low_echelon_support
@@ -1833,16 +1543,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1857,8 +1557,8 @@ technologies = {
 		air_cas_present_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		path = {
@@ -1890,16 +1590,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1915,8 +1605,8 @@ technologies = {
 		air_superiority_detect_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_destruction
@@ -1947,16 +1637,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -1971,8 +1651,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = fighter_veteran_initiative
@@ -2008,16 +1688,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2039,8 +1709,8 @@ technologies = {
 			air_training_xp_gain_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = naval_strike_torpedo_tactics_oi
@@ -2071,16 +1741,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2096,8 +1756,8 @@ technologies = {
 		air_nav_efficiency = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 
 		path = {
 			leads_to_tech = infiltration_bombing
@@ -2128,16 +1788,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2155,8 +1805,8 @@ technologies = {
 		air_training_xp_gain_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = carousel_bombing
@@ -2187,16 +1837,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2214,8 +1854,8 @@ technologies = {
 		}
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = infiltration_bombing
@@ -2246,16 +1886,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2271,8 +1901,8 @@ technologies = {
 		strategic_bomb_visibility = -0.5 #Strat bombers are harder to detect, both in night and day.
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = air_skirmish
@@ -2303,16 +1933,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2329,8 +1949,8 @@ technologies = {
 		air_ace_generation_chance_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = high_level_bombing
@@ -2361,16 +1981,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2385,8 +1995,8 @@ technologies = {
 		air_strategic_bomber_defence_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity001
@@ -2416,16 +2026,6 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
-			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
 			}
 		}
 		
@@ -2711,8 +2311,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction002
@@ -2743,16 +2343,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2768,8 +2358,8 @@ technologies = {
 		air_superiority_efficiency = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction011
@@ -2804,16 +2394,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2828,8 +2408,8 @@ technologies = {
 		air_strategic_bomber_defence_factor = 0.25
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction003
@@ -2860,16 +2440,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2885,8 +2455,8 @@ technologies = {
 		air_escort_efficiency = 0.25
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction003
@@ -2917,16 +2487,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2942,8 +2502,8 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction004
@@ -2974,16 +2534,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -2999,8 +2549,8 @@ technologies = {
 		air_weather_penalty = -0.5
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction005
@@ -3031,16 +2581,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3056,8 +2596,8 @@ technologies = {
 		air_intercept_efficiency = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction006
@@ -3088,16 +2628,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3112,8 +2642,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction007
@@ -3144,16 +2674,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3168,8 +2688,8 @@ technologies = {
 		air_cas_present_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction008
@@ -3200,16 +2720,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3224,8 +2734,8 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		path = {
 			leads_to_tech = strategic_destruction012
@@ -3260,16 +2770,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3285,8 +2785,8 @@ technologies = {
 		air_cas_efficiency = 0.10
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		doctrine = yes	
 		research_cost = 3
@@ -3312,16 +2812,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3337,8 +2827,8 @@ technologies = {
 		air_strategic_bomber_defence_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 			
 		doctrine = yes	
 		research_cost = 3
@@ -3364,16 +2854,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3388,8 +2868,8 @@ technologies = {
 		air_intercept_efficiency = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support002
@@ -3420,16 +2900,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3443,8 +2913,8 @@ technologies = {
 		air_cas_efficiency = 0.10
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support011
@@ -3479,16 +2949,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3502,8 +2962,8 @@ technologies = {
 		air_interception_detect_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support012
@@ -3534,16 +2994,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3557,8 +3007,8 @@ technologies = {
 		air_weather_penalty = -0.5
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support003
@@ -3589,16 +3039,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3612,8 +3052,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support022
@@ -3644,16 +3084,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3667,8 +3097,8 @@ technologies = {
 		air_cas_efficiency = 0.10
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support003
@@ -3699,16 +3129,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3722,8 +3142,8 @@ technologies = {
 		air_superiority_efficiency = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support004
@@ -3754,16 +3174,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3777,8 +3187,8 @@ technologies = {
 		air_cas_efficiency = 0.10
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support005
@@ -3809,16 +3219,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3832,8 +3232,8 @@ technologies = {
 		air_cas_present_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support006
@@ -3864,16 +3264,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3887,8 +3277,8 @@ technologies = {
 		air_bombing_targetting = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support007
@@ -3919,16 +3309,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3943,8 +3323,8 @@ technologies = {
 		ground_attack_factor = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support008
@@ -3975,16 +3355,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -3998,8 +3368,8 @@ technologies = {
 		air_cas_present_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = battlefield_support009
@@ -4030,16 +3400,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4054,8 +3414,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity002
@@ -4086,16 +3446,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4110,8 +3460,8 @@ technologies = {
 		air_intercept_efficiency = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity003
@@ -4142,16 +3492,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4166,8 +3506,8 @@ technologies = {
 		air_cas_efficiency = 0.10
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity011
@@ -4202,16 +3542,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4226,8 +3556,8 @@ technologies = {
 		air_superiority_detect_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity012
@@ -4258,16 +3588,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4282,8 +3602,8 @@ technologies = {
 		air_superiority_efficiency = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity004
@@ -4314,16 +3634,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4338,8 +3648,8 @@ technologies = {
 		air_bombing_targetting = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity022
@@ -4370,16 +3680,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4394,8 +3694,8 @@ technologies = {
 		air_cas_efficiency = 0.10
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity004
@@ -4426,16 +3726,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4450,8 +3740,8 @@ technologies = {
 		air_intercept_efficiency = 0.2
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity005
@@ -4482,16 +3772,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4511,8 +3791,8 @@ technologies = {
 			}
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity006
@@ -4543,16 +3823,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4567,8 +3837,8 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.15
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity007
@@ -4599,16 +3869,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4624,8 +3884,8 @@ technologies = {
 		air_cas_present_factor = 0.1
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		path = {
 			leads_to_tech = operational_integrity008
@@ -4656,16 +3916,6 @@ technologies = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
 			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
-			}
 		}
 		
 		ai_research_weights = {
@@ -4686,8 +3936,8 @@ technologies = {
 			}
 		###########
 		xp_research_type = air
-		xp_research_cost = 100
-		xp_research_bonus = 1.00
+		xp_unlock_cost = 100
+		
 		
 		
 		doctrine = yes	
@@ -4713,16 +3963,6 @@ technologies = {
 			modifier = {
 				ai_land_doctrine_tier_2_trigger = yes
 				factor = 2
-			}
-			modifier = {
-				factor = 0
-				and = {
-					has_deployed_air_force_size = { size < 50 type = fighter }
-					has_deployed_air_force_size = { size < 50 type = cas }
-					has_deployed_air_force_size = { size < 50 type = naval_bomber }
-					has_deployed_air_force_size = { size < 50 type = tactical_bomber }
-					has_deployed_air_force_size = { size < 50 type = strategic_bomber }
-				}
 			}
 		}
 		

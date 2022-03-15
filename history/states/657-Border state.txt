@@ -9,13 +9,15 @@ state = {
 	history = {
 		owner = AMR
 		add_core_of = AMR
+		add_core_of = VLA
 		add_core_of = RUS
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			957 = {	naval_base = 8	}
 			957 = {	coastal_bunker = 3	}
 		}
 		victory_points = {	957	15	}
+		set_variable = {	VLA_state_variable = 1	}
 		set_variable = {	SIB_state_variable = 1	}
 		set_variable = {	AMR_state_variable = 2	}
 		set_variable = {	MAN_state_variable = 2	}
@@ -24,4 +26,5 @@ state = {
 	provinces = {
 		957
 	}
+	local_supplies = 0.0
 }

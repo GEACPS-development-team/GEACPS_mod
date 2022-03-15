@@ -8,17 +8,18 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		add_core_of = HUB
-		add_core_of = NAN
+		add_core_of = SHD
+		add_core_of = ZHI
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
 		}
-		set_variable = {	HUB_state_variable = 1	}
+		set_variable = {	SHD_state_variable = 1	}
 	}
 	
 	provinces = {
-		9999
+		1104	1200	4157	4186	7105
 	}
+	local_supplies = 0.0
 }

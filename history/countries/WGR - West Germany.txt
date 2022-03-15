@@ -1,16 +1,7 @@
 ﻿capital = 57
 oob = WGR_1946
+
 set_cosmetic_tag = GER_empire
-
-set_convoys = 10
-
-add_ideas = {
-	WGR_the_berlin_declaration
-	WGR_potsdam_agreement
-	WGR_denazification
-	WGR_republic_of_Bonn
-	WGR_the_east-west_german_wall
-	}
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -22,82 +13,19 @@ set_popularities = {
 	total_socialism = 4
 	radical_socialism = 4
 	social_democracy = 22
-	social_liberalism = 7
-	classical_liberalism = 27
-	liberal_conservatism = 18
-	social_conservatism = 6
+	liberal_democracy = 34
+	conservative_democracy = 24
 	authoritative_democracy = 5
-	reactionary_authoritarianism = 4
+	national_authoritarianism = 4
 	national_populism = 3
 }
 
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = total_socialism_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = radical_socialism_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = social_democracy_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = classical_liberalism_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = social_conservatism_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = authoritative_democracy_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = reactionary_authoritarianism_ideology
-}
-create_country_leader = {
-	name = "ヴィルヘルム3世"
-	desc = ""
-	picture = "GFX_Wilhelm_III"
-	expire = "1951.7.20"
-	ideology = national_populism_ideology
+recruit_character = CHARACTER_friedrich_wilhelm_victor_august_ernst_von_preusen
+
+add_ideas = {
+	WGR_the_berlin_declaration
+	WGR_potsdam_agreement
+	WGR_denazification
+	WGR_republic_of_Bonn
+	WGR_the_east-west_german_wall
 }

@@ -1,5 +1,4 @@
 debug_decisions = {
-
 	debug_special_event_add = {
 		icon = generic_operation
 		complete_effect = {
@@ -13,8 +12,5 @@ debug_decisions = {
 			add_to_variable = { special_event_back_map = -1 }
 			add_to_variable = { special_event_clock_time_hour = -1 }
 		}
-	}
-	debug_america_die = {
-		complete_effect = {	country_event = {	debug_USA.1	day = 1}	}
 	}
 }

@@ -2,20 +2,20 @@ state = {
 	id = 902
 	name = "STATE_902"
 	manpower = 116000
+	buildings_max_level_factor = 1
 	state_category = town
 	
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = SHX
-		add_core_of = ZHI
+		owner = ARG
+		add_core_of = ARG
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
-		set_variable = {	SHX_state_variable = 1	}
+		set_variable = {	ARG_state_variable = 1	}
 	}
 	
 	provinces = {
-		1034	7571
+		1449	8187	8238	10515	10943	11007	12453	12964
 	}
+	local_supplies = 0.0
 }

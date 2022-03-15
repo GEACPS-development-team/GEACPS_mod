@@ -1,109 +1,133 @@
-spriteTypes = {
+spriteTypes = {	#puppet
 	spriteType = {	#名目的傀儡国
 		name = "GFX_nominal_puppet_icon"
-		textureFile = "gfx/interface/autonomy/nominal_puppet_icon.png"
+		textureFile = "gfx/interface/autonomy/_puppet/nominal_puppet_icon.png"
 	}
 	spriteType = {	#自治傀儡国
 		name = "GFX_autonomous_puppet_icon"
-		textureFile = "gfx/interface/autonomy/autonomous_puppet_icon.png"
+		textureFile = "gfx/interface/autonomy/_puppet/autonomous_puppet_icon.png"
 	}
 	spriteType = {	#傀儡国
 		name = "GFX_puppet_icon"
-		textureFile = "gfx/interface/autonomy/puppet_icon.png"
+		textureFile = "gfx/interface/autonomy/_puppet/puppet_icon.png"
 	}
 	spriteType = {	#占領地傀儡国
 		name = "GFX_occupied_puppet_icon"
-		textureFile = "gfx/interface/autonomy/occupied_puppet_icon.png"
+		textureFile = "gfx/interface/autonomy/_puppet/occupied_puppet_icon.png"
 	}
 	spriteType = {	#統合傀儡国
 		name = "GFX_integrated_puppet_icon"
-		textureFile = "gfx/interface/autonomy/integrated_puppet_icon.png"
+		textureFile = "gfx/interface/autonomy/_puppet/integrated_puppet_icon.png"
 	}
-	
-	spriteType = {	#海外領土
-		name = "GFX_overseas_territory_icon"
-		textureFile = "gfx/interface/autonomy/overseas_territory_icon.png"
+}
+spriteTypes = {	#colony
+	spriteType = {	#自治領
+		name = "GFX_dominion_icon"
+		textureFile = "gfx/interface/autonomy/_colony/dominion_icon.png"
 	}
 	spriteType = {	#植民地
 		name = "GFX_colony_icon"
-		textureFile = "gfx/interface/autonomy/colony_icon.png"
+		textureFile = "gfx/interface/autonomy/_colony/colony_icon.png"
 	}
-	spriteType = {	#自治領
-		name = "GFX_dominion_icon"
-		textureFile = "gfx/interface/autonomy/dominion_icon.png"
-	}
-	
 	spriteType = {	#連邦植民地
 		name = "GFX_federation_of_colonies_icon"
-		textureFile = "gfx/interface/autonomy/federation_of_colonies_icon.png"
+		textureFile = "gfx/interface/autonomy/_colony/colony_icon.png"
 	}
-	
-	spriteType = {	#植民地及び保護領
-		name = "GFX_colony_and_protectorate_icon"
-		textureFile = "gfx/interface/autonomy/colony_and_protectorate_icon.png"
+	spriteType = {	#海外領土
+		name = "GFX_overseas_territory_icon"
+		textureFile = "gfx/interface/autonomy/_colony/overseas_territory_icon.png"
 	}
-	
-	spriteType = {	#保護領
-		name = "GFX_protected_territory_icon"
-		textureFile = "gfx/interface/autonomy/protected_territory_icon.png"
-	}
+}
+spriteTypes = {	#protectorate
 	spriteType = {	#保護国
 		name = "GFX_protected_state_icon"
-		textureFile = "gfx/interface/autonomy/protected_state_icon.png"
+		textureFile = "gfx/interface/autonomy/_protectorate/protected_state_icon.png"
 	}
-	
-	spriteType = {	#委任統治領
-		name = "GFX_mandate_icon"
-		textureFile = "gfx/interface/autonomy/mandate_icon.png"
+	spriteType = {	#保護領
+		name = "GFX_protected_territory_icon"
+		textureFile = "gfx/interface/autonomy/_protectorate/protected_territory_icon.png"
 	}
-	
-	spriteType = {	#租借地
-		name = "GFX_leased_territory_icon"
-		textureFile = "gfx/interface/autonomy/leased_territory_icon.png"
-	}
-	
-	
-	spriteType = {	#共同統治領
-		name = "GFX_condominium_icon"
-		textureFile = "gfx/interface/autonomy/condominium_icon.png"
-	}
-	
-	spriteType = {	#帝国保護国
-		name = "GFX_imperial_protected_state_icon"
-		textureFile = "gfx/interface/autonomy/imperial_protected_state_icon.png"
-	}
-	spriteType = {	#帝国構成国
-		name = "GFX_imperial_member_icon"
-		textureFile = "gfx/interface/autonomy/imperial_member_icon.png"
-	}
-	spriteType = {	#外地
-		name = "GFX_imperial_overseas_territory_icon"
-		textureFile = "gfx/interface/autonomy/imperial_overseas_territory_icon.png"
-	}
-	
+}
+spriteTypes = {	#CHI-China
 	spriteType = {	#軍閥
 		name = "GFX_warlord_icon"
-		textureFile = "gfx/interface/autonomy/warlord_icon.png"
+		textureFile = "gfx/interface/autonomy/CHI/warlord_icon.png"
 	}
 	spriteType = {	#自治省
 		name = "GFX_autonomous_province_icon"
-		textureFile = "gfx/interface/autonomy/autonomous_province_icon.png"
+		textureFile = "gfx/interface/autonomy/CHI/autonomous_province_icon.png"
 	}
 	
 	spriteType = {	#衛星国
 		name = "GFX_soviet_satellite_icon"
-		textureFile = "gfx/interface/autonomy/soviet_satellite_icon.png"
+		textureFile = "gfx/interface/autonomy/SOV/soviet_satellite_icon.png"
 	}
+}
+spriteTypes = {	#JAP-Japan
+	spriteType = {	#帝国保護国
+		name = "GFX_imperial_protected_state_icon"
+		textureFile = "gfx/interface/autonomy/JAP/imperial_protected_state_icon.png"
+	}
+	spriteType = {	#帝国構成国
+		name = "GFX_imperial_member_icon"
+		textureFile = "gfx/interface/autonomy/JAP/imperial_member_icon.png"
+	}
+	spriteType = {	#外地
+		name = "GFX_imperial_overseas_territory_icon"
+		textureFile = "gfx/interface/autonomy/JAP/imperial_overseas_territory_icon.png"
+	}
+}
+spriteTypes = {	#SOV-Soviet
 	spriteType = {	#ソビエト構成国
 		name = "GFX_soviet_member_republic_icon"
-		textureFile = "gfx/interface/autonomy/soviet_member_republic_icon.png"
+		textureFile = "gfx/interface/autonomy/SOV/soviet_member_republic_icon.png"
 	}
 	spriteType = {	#ソビエト構成国(連邦)
 		name = "GFX_soviet_member_federal_republic_icon"
-		textureFile = "gfx/interface/autonomy/soviet_member_republic_icon.png"
+		textureFile = "gfx/interface/autonomy/SOV/soviet_member_republic_icon.png"
 	}
 	spriteType = {	#ソビエト自治共和国
 		name = "GFX_soviet_autonomous_republic_icon"
-		textureFile = "gfx/interface/autonomy/soviet_autonomous_republic_icon.png"
+		textureFile = "gfx/interface/autonomy/SOV/soviet_autonomous_republic_icon.png"
+	}
+}
+spriteTypes = {	#USA-America
+	spriteType = {	#自治連邦区
+		name = "GFX_us_commonwealth_icon"
+		textureFile = "gfx/interface/autonomy/USA/us_commonwealth_icon.png"
+	}
+	spriteType = {	#準州
+		name = "GFX_us_territory_icon"
+		textureFile = "gfx/interface/autonomy/USA/us_territory_icon.png"
+	}
+}
+spriteTypes = {	#others
+	spriteType = {	#植民地及び保護領
+		name = "GFX_colony_and_protectorate_icon"
+		textureFile = "gfx/interface/autonomy/zzz_other/colony_and_protectorate_icon.png"
+	}
+	spriteType = {	#共同統治領
+		name = "GFX_condominium_icon"
+		textureFile = "gfx/interface/autonomy/zzz_other/condominium_icon.png"
+	}
+	spriteType = {	#同君連合下位国
+		name = "GFX_junior_partner_colony_icon"
+		textureFile = "gfx/interface/autonomy/zzz_other/junior_partner_colony_icon.png"
+	}
+	spriteType = {	#同君連合下位国
+		name = "GFX_junior_partner_state_icon"
+		textureFile = "gfx/interface/autonomy/zzz_other/junior_partner_state_icon.png"
+	}
+	spriteType = {	#租借地
+		name = "GFX_leased_territory_icon"
+		textureFile = "gfx/interface/autonomy/zzz_other/leased_territory_icon.png"
+	}
+	spriteType = {	#委任統治領
+		name = "GFX_mandate_icon"
+		textureFile = "gfx/interface/autonomy/zzz_other/mandate_icon.png"
+	}
+	spriteType = {	#占領統治領
+		name = "GFX_occupied_territory_icon"
+		textureFile = "gfx/interface/autonomy/zzz_other/occupied_territory_icon.png"
 	}
 }

@@ -1,22 +1,25 @@
 state = {
 	id = 1033
 	name = "STATE_1033"
-	manpower = 11528000
+	manpower = 22785750
 	state_category = town
-	set_demilitarized_zone = yes
+	
 	
 	history = {
 		owner = VIN
 		add_core_of = VIN
 		buildings = {
-			infrastructure = 4
-			1185 = {	naval_base = 1	}
+			infrastructure = 2
+			1185 = {	naval_base = 2	}
 		}
-		victory_points = {	4075	1	}
+		victory_points = {	1185	1	}
+		victory_points = {	4075	3	}
+		victory_points = {	4119	1	}
 		set_variable = {	VIN_state_variable = 1	}
 	}
 	
 	provinces = {
 		1185	4075	4119
 	}
+	local_supplies = 0.0
 }

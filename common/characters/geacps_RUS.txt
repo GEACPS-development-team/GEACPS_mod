@@ -1,0 +1,55 @@
+characters = {	#文民
+	CHARACTER_nikolai_mikhailovich_shvernik = {	#ニコライ・ミハイロヴィチ・シュヴェルニク
+		name = CHARACTER_nikolai_mikhailovich_shvernik
+		
+		portraits = {
+			civilian = {
+				small = GFX_nikolai_mikhailovich_shvernik_small
+				large = GFX_nikolai_mikhailovich_shvernik_large
+			}
+		}
+		country_leader = {
+			ideology = total_socialism_ideology
+			desc = "CHARACTER_nikolai_mikhailovich_shvernik_desc"
+			expire = "1970.12.24"
+		}
+	}
+}
+characters = {	#陸軍
+	CHARACTER_ivan_stepanovich_konev = {	#イワン・ステパノヴィチ・コーネフ
+		name = CHARACTER_ivan_stepanovich_konev
+		
+		portraits = {
+			civilian = {
+				small = GFX_ivan_stepanovich_konev_small
+				large = GFX_ivan_stepanovich_konev_large
+			}
+			army = {
+				small = GFX_ivan_stepanovich_konev_small
+				large = GFX_ivan_stepanovich_konev_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_ivan_stepanovich_konev_desc"
+			expire = "1973.5.21"
+		}
+	}
+}
+characters = {
+	CHARACTER_vladimir_ilyich_ulyanov = {	#レーニン
+		name = CHARACTER_lenin
+		
+		portraits = {
+			civilian = {
+				small = GFX_vladimir_ilyich_ulyanov_small
+				large = GFX_vladimir_ilyich_ulyanov_large
+			}
+		}
+		country_leader = {
+			ideology = total_socialism_ideology
+			desc = "CHARACTER_vladimir_ilyich_ulyanov_desc"
+			expire = "1991.12.25"
+		}
+	}
+}

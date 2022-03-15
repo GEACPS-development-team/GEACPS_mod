@@ -5,23 +5,23 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = town
 	
-	resources = {	tungsten = 6	}
+	resources = {
+		tungsten = 6
+	}
 	
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = HNN
-		add_core_of = NAN
+		owner = ALS
+		add_core_of = ALS
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
 		}
-		victory_points = {	7097	5	}
-		set_variable = {	HNN_state_variable = 1	}
+		set_variable = {	ALS_state_variable = 1	}
 	}
 	
 	provinces = {
-		1640	7097
+		7884
 	}
+	local_supplies = 0.0
 }

@@ -1,14 +1,18 @@
 state = {
 	id = 1203
 	name = "STATE_1203"
-	manpower = 1529000
-	state_category = town
+	manpower = 1529071
+	state_category = pastoral
+	
+	resources = {
+		steel = 13
+	}
 	
 	history = {
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 		}
 		set_variable = {	KOR_state_variable = 1	}
 	}
@@ -16,4 +20,5 @@ state = {
 	provinces = {
 		1148	4004	7021	9936	11912	11958	12011	13289	13290
 	}
+	local_supplies = 0.0
 }

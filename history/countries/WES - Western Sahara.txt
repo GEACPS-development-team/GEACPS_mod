@@ -1,31 +1,9 @@
 ﻿capital = 699
-#oob = WES_1946
+oob = WES_1946
 
-set_convoys = 5
+SPR = {	set_colony = yes	}
 
-set_politics = {
-	ruling_party = reactionary_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 0
-	reactionary_authoritarianism = 100
-	national_populism = 0
-}
+set_cosmetic_tag = COUNTRY_SPR_state
+set_dictatorship = yes
 
-create_country_leader = {
-	name = "ホセ・ベルメホ・ロペス"
-	desc = ""
-	picture = "GFX_Governor_of_Sahara(Spain)"
-	expire = "1971.12.31"	#仮
-	ideology = reactionary_authoritarianism_ideology
-}
+recruit_character = CHARACTER_jose_nermejo_lopez

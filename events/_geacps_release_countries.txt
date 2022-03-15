@@ -8600,7 +8600,70 @@ country_event = {
 		country_event = fate_of_CAR.0
 	}
 }
+
+add_namespace = fate_of_CGB
+country_event = {
+	id = fate_of_CGB.0
+	title = fate_of_CGB.0.t
+	desc = fate_of_CGB.0.d
+	is_triggered_only = yes
+	hidden = yes
+	option = {
+		name = fate_of_CGB.0.0
+		ai_chance = {	base = 10	}
+		hidden_effect = {
+			if = {
+				limit = {	country_exists = CGB	}
+				create_dynamic_country = {
+					original_tag = CGB
+					clear_autonomous_states_variable = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							NOT = {	is_core_of = ROOT	}
+							NOT = {	is_claimed_by = ROOT	}
+							check_variable = {	CGB_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	add_state_core = PREV	}
+					}
+					retire_all_ideology_leader = yes
+					drop_cosmetic_tag = yes
+					ROOT = {	puppet = PREV	}
+				}
+			}
+			else = {
+				CGB = {
+					clear_autonomous_states_variable = yes
+					every_state = {
+						limit = {
+							is_fully_controlled_by = ROOT
+							NOT = {	is_core_of = ROOT	}
+							NOT = {	is_claimed_by = ROOT	}
+							check_variable = {	CGB_state_variable = 1	}
+						}
+						PREV = {	transfer_state = PREV	add_state_core = PREV	}
+					}
+					retire_all_ideology_leader = yes
+					drop_cosmetic_tag = yes
+					ROOT = {	puppet = PREV	}
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = fate_of_CGB.1
+	title = fate_of_CGB.1.t
+	desc = fate_of_CGB.1.d
+	is_triggered_only = yes
 	
+	option = {
+		name = fate_of_CGB.1.0
+		ai_chance = {	base = 10	}
+		country_event = fate_of_CGB.0
+	}
+}
+
 add_namespace = fate_of_CHA
 country_event = {
 	id = fate_of_CHA.0
@@ -10301,70 +10364,7 @@ country_event = {
 		country_event = fate_of_NMB.0
 	}
 }
-	
-add_namespace = fate_of_RCG
-country_event = {
-	id = fate_of_RCG.0
-	title = fate_of_RCG.0.t
-	desc = fate_of_RCG.0.d
-	is_triggered_only = yes
-	hidden = yes
-	option = {
-		name = fate_of_RCG.0.0
-		ai_chance = {	base = 10	}
-		hidden_effect = {
-			if = {
-				limit = {	country_exists = RCG	}
-				create_dynamic_country = {
-					original_tag = RCG
-					clear_autonomous_states_variable = yes
-					every_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							NOT = {	is_core_of = ROOT	}
-							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	RCG_state_variable = 1	}
-						}
-						PREV = {	transfer_state = PREV	add_state_core = PREV	}
-					}
-					retire_all_ideology_leader = yes
-					drop_cosmetic_tag = yes
-					ROOT = {	puppet = PREV	}
-				}
-			}
-			else = {
-				RCG = {
-					clear_autonomous_states_variable = yes
-					every_state = {
-						limit = {
-							is_fully_controlled_by = ROOT
-							NOT = {	is_core_of = ROOT	}
-							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	RCG_state_variable = 1	}
-						}
-						PREV = {	transfer_state = PREV	add_state_core = PREV	}
-					}
-					retire_all_ideology_leader = yes
-					drop_cosmetic_tag = yes
-					ROOT = {	puppet = PREV	}
-				}
-			}
-		}
-	}
-}
-country_event = {
-	id = fate_of_RCG.1
-	title = fate_of_RCG.1.t
-	desc = fate_of_RCG.1.d
-	is_triggered_only = yes
-	
-	option = {
-		name = fate_of_RCG.1.0
-		ai_chance = {	base = 10	}
-		country_event = fate_of_RCG.0
-	}
-}
-	
+
 add_namespace = fate_of_RWA
 country_event = {
 	id = fate_of_RWA.0
@@ -14208,28 +14208,28 @@ country_event = {
 	}
 }
 	
-add_namespace = fate_of_BHK
+add_namespace = fate_of_BUK
 country_event = {
-	id = fate_of_BHK.0
-	title = fate_of_BHK.0.t
-	desc = fate_of_BHK.0.d
+	id = fate_of_BUK.0
+	title = fate_of_BUK.0.t
+	desc = fate_of_BUK.0.d
 	is_triggered_only = yes
 	hidden = yes
 	option = {
-		name = fate_of_BHK.0.0
+		name = fate_of_BUK.0.0
 		ai_chance = {	base = 10	}
 		hidden_effect = {
 			if = {
-				limit = {	country_exists = BHK	}
+				limit = {	country_exists = BUK	}
 				create_dynamic_country = {
-					original_tag = BHK
+					original_tag = BUK
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	BHK_state_variable = 1	}
+							check_variable = {	BUK_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -14239,14 +14239,14 @@ country_event = {
 				}
 			}
 			else = {
-				BHK = {
+				BUK = {
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	BHK_state_variable = 1	}
+							check_variable = {	BUK_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -14259,15 +14259,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = fate_of_BHK.1
-	title = fate_of_BHK.1.t
-	desc = fate_of_BHK.1.d
+	id = fate_of_BUK.1
+	title = fate_of_BUK.1.t
+	desc = fate_of_BUK.1.d
 	is_triggered_only = yes
 	
 	option = {
-		name = fate_of_BHK.1.0
+		name = fate_of_BUK.1.0
 		ai_chance = {	base = 10	}
-		country_event = fate_of_BHK.0
+		country_event = fate_of_BUK.0
 	}
 }
 	
@@ -17610,28 +17610,28 @@ country_event = {
 	}
 }
 	
-add_namespace = fate_of_YML
+add_namespace = fate_of_YAM
 country_event = {
-	id = fate_of_YML.0
-	title = fate_of_YML.0.t
-	desc = fate_of_YML.0.d
+	id = fate_of_YAM.0
+	title = fate_of_YAM.0.t
+	desc = fate_of_YAM.0.d
 	is_triggered_only = yes
 	hidden = yes
 	option = {
-		name = fate_of_YML.0.0
+		name = fate_of_YAM.0.0
 		ai_chance = {	base = 10	}
 		hidden_effect = {
 			if = {
-				limit = {	country_exists = YML	}
+				limit = {	country_exists = YAM	}
 				create_dynamic_country = {
-					original_tag = YML
+					original_tag = YAM
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	YML_state_variable = 1	}
+							check_variable = {	YAM_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -17641,14 +17641,14 @@ country_event = {
 				}
 			}
 			else = {
-				YML = {
+				YAM = {
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	YML_state_variable = 1	}
+							check_variable = {	YAM_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -17661,15 +17661,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = fate_of_YML.1
-	title = fate_of_YML.1.t
-	desc = fate_of_YML.1.d
+	id = fate_of_YAM.1
+	title = fate_of_YAM.1.t
+	desc = fate_of_YAM.1.d
 	is_triggered_only = yes
 	
 	option = {
-		name = fate_of_YML.1.0
+		name = fate_of_YAM.1.0
 		ai_chance = {	base = 10	}
-		country_event = fate_of_YML.0
+		country_event = fate_of_YAM.0
 	}
 }
 	
@@ -23576,9 +23576,9 @@ country_event = {
 		trigger = {
 			all_country = {
 				OR = {
-					originl_tag = RUS
-					originl_tag = CAN
-					originl_tag = LIE
+					original_tag = RUS
+					original_tag = CAN
+					original_tag = LIE
 				}
 				is_in_faction_with = ROOT
 				NOT = {	original_tag = ROOT	}

@@ -11,15 +11,18 @@ state = {
 	
 	history = {
 		owner = POL
+		add_core_of = SIL
 		add_core_of = GER
 		add_claim_by = POL
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			industrial_complex = 1
 			air_base = 6
 		}
-		victory_points = {	9570	10	}
+		victory_points = {	6595	3	}
+		victory_points = {	9570	30	}
 		set_variable = {	POL_state_variable = 1	}
+		set_variable = {	SIL_state_variable = 1	}
 		set_variable = {	EGR_state_variable = 2	}
 		set_variable = {	GER_state_variable = 2	}
 	}
@@ -27,4 +30,5 @@ state = {
 	provinces = {
 		552	3283	3438	3485	3510	3545	6462	6534	6595	9470	9570	11517
 	}
+	local_supplies = 0.0
 }

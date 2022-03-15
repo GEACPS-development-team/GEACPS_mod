@@ -1,32 +1,25 @@
-﻿1946.1.1 = {
-	capital = 78
-	oob = MOL_1946
-	set_cosmetic_tag = MOL_SOV
+﻿capital = 78
+oob = MOL_1946
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1941.1.12"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 100
-		radical_socialism = 0
-		social_democracy = 0
-		social_liberalism = 0
-		classical_liberalism = 0
-		liberal_conservatism = 0
-		social_conservatism = 0
-		authoritative_democracy = 0
-		reactionary_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "フョードル・ブロフコ"
-		desc = ""
-		picture = "GFX_Fyodor_Brovko"
-		expire = "1960.1.24"
-		ideology = total_socialism_ideology
-	}
+SOV = {	set_soviet_member_republic = yes	}
+
+set_cosmetic_tag = MOL_SOV
+
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1941.1.12"
+	election_frequency = 48
+	elections_allowed = no
 }
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_fiodor_grigorievici_brovko

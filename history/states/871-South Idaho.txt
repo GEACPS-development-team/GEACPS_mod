@@ -1,0 +1,24 @@
+state = {
+	id = 871
+	name = "STATE_871"
+	manpower = 4500
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		add_core_of = CAL
+		buildings = {
+			infrastructure = 2
+			9671 = {	naval_base = 4	}
+		}
+		victory_points = {	9671	25	}
+		set_variable = {	CAL_state_variable = 1	}
+	}
+	
+	provinces = {
+		677	3677	3678	9671
+	}
+	local_supplies = 0.0
+}

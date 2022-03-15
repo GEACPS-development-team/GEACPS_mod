@@ -2,7 +2,7 @@ technologies = {
 
 	gw_artillery = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -10,6 +10,8 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_1
+			tank_small_cannon
+			secondary_turret_small_cannon
 		}
 		
 		path = {
@@ -59,7 +61,7 @@ technologies = {
 	
 	interwar_artillery = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -72,19 +74,25 @@ technologies = {
 			soft_attack = 0.1
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
+		}
+		
+		enable_equipment_modules = {
+			tank_small_cannon_2
+			tank_close_support_gun
+			secondary_turret_close_support_gun
 		}
 		
 		path = {
@@ -126,19 +134,17 @@ technologies = {
 	
 	artillery1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
 			artillery_equipment_2
 		}
 
-		#artillery = {
-		#	soft_attack = 0.1
-		#}
-		#artillery_brigade = {
-		#	soft_attack = 0.1
-		#}
+		enable_equipment_modules = {
+			tank_medium_howitzer
+			tank_medium_cannon
+		}
 		
 		path = {
 			leads_to_tech = artillery2
@@ -179,7 +185,7 @@ technologies = {
 	
 	artillery2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -192,19 +198,19 @@ technologies = {
 			soft_attack = 0.1
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		
 		path = {
@@ -251,7 +257,7 @@ technologies = {
 	
 	artillery3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -264,19 +270,24 @@ technologies = {
 			soft_attack = 0.1
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
+		}
+		enable_equipment_modules = {
+			tank_medium_cannon_2
+			tank_medium_howitzer_2
+			tank_small_cannon_3
 		}
 		
 		path = {
@@ -313,19 +324,12 @@ technologies = {
 	
 	artillery4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
 			artillery_equipment_3
 		}
-
-		#artillery = { 
-		#	soft_attack = 0.1
-		#}
-		#artillery_brigade = {
-		#	soft_attack = 0.1
-		#}
 		
 		path = {
 			leads_to_tech = artillery5
@@ -366,7 +370,7 @@ technologies = {
 	
 	artillery5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -379,19 +383,25 @@ technologies = {
 			soft_attack = 0.1
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.05
+			soft_attack = 0.1
+		}
+		enable_equipment_modules = {
+			tank_medium_cannon_3
+			tank_medium_howitzer_3
+			tank_heavy_howitzer
+			auto_loader
 		}
 		
 		path = {
@@ -433,7 +443,7 @@ technologies = {
 	
 	artillery6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -446,19 +456,19 @@ technologies = {
 			soft_attack = 0.05
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -486,7 +496,7 @@ technologies = {
 	
 	artillery7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -517,7 +527,7 @@ technologies = {
 	
 	artillery8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -530,19 +540,25 @@ technologies = {
 			soft_attack = 0.05
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
+		}
+		enable_equipment_modules = {
+			tank_medium_cannon_4
+			tank_medium_howitzer_4
+			tank_small_cannon_4
+			tank_heavy_howitzer_2
 		}
 		
 		path = {
@@ -570,7 +586,7 @@ technologies = {
 	
 	artillery9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -583,19 +599,19 @@ technologies = {
 			soft_attack = 0.05
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -623,7 +639,7 @@ technologies = {
 	
 	artillery10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -654,7 +670,7 @@ technologies = {
 	
 	artillery11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -667,19 +683,25 @@ technologies = {
 			soft_attack = 0.05
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
+		}
+		enable_equipment_modules = {
+			tank_medium_cannon_5
+			tank_medium_howitzer_5
+			tank_small_cannon_5
+			tank_heavy_howitzer_3
 		}
 		
 		path = {
@@ -707,7 +729,7 @@ technologies = {
 	
 	artillery12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -720,19 +742,19 @@ technologies = {
 			soft_attack = 0.05
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		
 		path = {
@@ -760,7 +782,7 @@ technologies = {
 	
 	artillery13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -791,7 +813,7 @@ technologies = {
 	
 	artillery14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -804,19 +826,25 @@ technologies = {
 			soft_attack = 0.05
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
+		}
+		enable_equipment_modules = {
+			tank_medium_cannon_6
+			tank_medium_howitzer_6
+			tank_small_cannon_6
+			tank_heavy_howitzer_4
 		}
 		
 		path = {
@@ -844,7 +872,7 @@ technologies = {
 	
 	artillery15 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		artillery = {
@@ -857,19 +885,19 @@ technologies = {
 			soft_attack = 0.05
 		}
 		light_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		medium_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		super_heavy_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		modern_sp_artillery_brigade = {
-			soft_attack = 0.025
+			soft_attack = 0.05
 		}
 		
 		research_cost = 1
@@ -893,7 +921,7 @@ technologies = {
 	
 	rocket_artillery = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -902,6 +930,9 @@ technologies = {
 #		enable_subunits = {
 #			rocket_artillery_brigade
 #		}
+		enable_equipment_modules = {
+			tank_rocket_launcher
+		}
 		
 		path = {
 			leads_to_tech = rocket_artillery2
@@ -932,7 +963,7 @@ technologies = {
 	
 	rocket_artillery2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -978,7 +1009,7 @@ technologies = {
 	
 	rocket_artillery3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1023,7 +1054,7 @@ technologies = {
 	
 	rocket_artillery4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1033,12 +1064,10 @@ technologies = {
 			soft_attack = 0.3
 		}
 
-		#rocket_artillery = {
-		#	soft_attack = 0.15
-		#}
-		#rocket_artillery_brigade = {
-		#	soft_attack = 0.15
-		#}
+		enable_equipment_modules = {
+			tank_rocket_launcher_2
+		}
+
 		path = {
 			leads_to_tech = rocket_artillery5
 			research_cost_coeff = 1
@@ -1068,7 +1097,7 @@ technologies = {
 
 	rocket_artillery5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1113,7 +1142,7 @@ technologies = {
 	
 	rocket_artillery6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1158,7 +1187,7 @@ technologies = {
 	
 	rocket_artillery7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1166,6 +1195,9 @@ technologies = {
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
+		}
+		enable_equipment_modules = {
+			tank_rocket_launcher_3
 		}
 		path = {
 			leads_to_tech = rocket_artillery8
@@ -1196,7 +1228,7 @@ technologies = {
 	
 	rocket_artillery8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1241,7 +1273,7 @@ technologies = {
 	
 	rocket_artillery9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1286,7 +1318,7 @@ technologies = {
 	
 	rocket_artillery10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1294,6 +1326,9 @@ technologies = {
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
+		}
+		enable_equipment_modules = {
+			tank_rocket_launcher_4
 		}
 		path = {
 			leads_to_tech = rocket_artillery11
@@ -1324,7 +1359,7 @@ technologies = {
 	
 	rocket_artillery11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1369,7 +1404,7 @@ technologies = {
 	
 	rocket_artillery12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1414,7 +1449,7 @@ technologies = {
 	
 	rocket_artillery13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1422,6 +1457,9 @@ technologies = {
 		}
 		motorized_rocket_brigade = {
 			soft_attack = 0.15
+		}
+		enable_equipment_modules = {
+			tank_rocket_launcher_5
 		}
 
 		path = {
@@ -1453,7 +1491,7 @@ technologies = {
 		
 	rocket_artillery14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		rocket_artillery = {
@@ -1493,7 +1531,7 @@ technologies = {
 	
 	interwar_antiair = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -1501,6 +1539,9 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_2
+			tank_auto_cannon
+			tank_anti_air_cannon
+			tank_heavy_cannon
 		}
 		enable_building = {
 			building = anti_air_building
@@ -1532,6 +1573,7 @@ technologies = {
 
 				OR = {
 					tag = CHI
+					tag = PRC
 					tag = XSM
 					tag = SIK
 					tag = GXC
@@ -1557,12 +1599,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1625,12 +1668,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 	
 		enable_equipments = {
@@ -1638,6 +1682,9 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_3
+			tank_auto_cannon_2
+			tank_heavy_cannon_2
+			tank_anti_air_cannon_2
 		}
 		static_anti_air_damage_factor = 0.1
 
@@ -1681,12 +1728,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1749,12 +1797,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1817,12 +1866,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -1830,6 +1880,10 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_4
+			tank_heavy_cannon_3
+			tank_anti_air_cannon_3
+			auto_loader
+			tank_auto_cannon_3
 		}
 		static_anti_air_damage_factor = 0.1
 		
@@ -1872,12 +1926,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -1940,12 +1995,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2008,12 +2064,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -2023,6 +2080,11 @@ technologies = {
 			ship_anti_air_5
 		}
 		static_anti_air_damage_factor = 0.1
+		enable_equipment_modules = { 
+			tank_heavy_cannon_4
+			tank_anti_air_cannon_4
+			tank_auto_cannon_4
+		}
 		path = {
 			leads_to_tech = antiair9
 			research_cost_coeff = 1
@@ -2056,12 +2118,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2124,12 +2187,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2192,12 +2256,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -2207,6 +2272,11 @@ technologies = {
 			ship_anti_air_6
 		}
 		static_anti_air_damage_factor = 0.1
+		enable_equipment_modules = { 
+			tank_heavy_cannon_5
+			tank_anti_air_cannon_5
+			tank_auto_cannon_5
+		}
 		path = {
 			leads_to_tech = antiair12
 			research_cost_coeff = 1
@@ -2240,12 +2310,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2308,12 +2379,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2376,12 +2448,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
@@ -2389,6 +2462,11 @@ technologies = {
 		}
 		enable_equipment_modules = { 
 			ship_anti_air_7
+		}
+		enable_equipment_modules = { 
+			tank_heavy_cannon_6
+			tank_anti_air_cannon_6
+			tank_auto_cannon_6
 		}
 		static_anti_air_damage_factor = 0.1
 		path = {
@@ -2424,12 +2502,13 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 	
 	antiair15 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_air = {
@@ -2488,16 +2567,21 @@ technologies = {
 		
 		categories = {
 			artillery
+			cat_anti_air
 		}
 	}
 
 	interwar_antitank = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		enable_equipments = {
 			anti_tank_equipment_1
+		}
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
+			tank_heavy_cannon
 		}
 		
 		path = {
@@ -2522,6 +2606,7 @@ technologies = {
 
 				OR = {
 					tag = CHI
+					tag = PRC
 					tag = XSM
 					tag = SIK
 					tag = GXC
@@ -2574,40 +2659,44 @@ technologies = {
 	
 	antitank1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.2
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.2
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.2
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.2
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.2
+		}
+		enable_equipment_modules = {
+			tank_medium_cannon
+			squeezebore_adaptor
 		}
 		
 		path = {
@@ -2666,21 +2755,21 @@ technologies = {
 	
 	antitank2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		
+		mot_anti_tank_brigade = {
+			hard_attack = 0.2
+			ap_attack = 0.2
+		}
+
 		enable_equipments = {
 			anti_tank_equipment_2
 		}
-		
-		#anti_tank = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.015
-		#}
-		#anti_tank_brigade = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.015
-		#}
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_2
+			tank_heavy_cannon_2
+		}
 		
 		path = {
 			leads_to_tech = antitank3
@@ -2753,40 +2842,43 @@ technologies = {
 	
 	antitank3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
+		enable_equipment_modules = {
+			tank_medium_cannon_2
+		}
 		anti_tank = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.1
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.1
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.1
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		
 		path = {
@@ -2851,40 +2943,40 @@ technologies = {
 	
 	antitank4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.1
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.1
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.1
-			ap_attack = 0.03
+			ap_attack = 0.1
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.015
+			hard_attack = 0.1
+			ap_attack = 0.1
 		}
 	
 		path = {
@@ -2944,21 +3036,19 @@ technologies = {
 	
 	antitank5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
 			anti_tank_equipment_3
 		}	
 			
-		#anti_tank = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.015
-		#}
-		#anti_tank_brigade = {
-		#	hard_attack = 0.1
-		#	ap_attack = 0.015
-		#}
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_3
+			tank_heavy_cannon_3
+			auto_loader
+			tank_medium_cannon_3
+		}
 		
 		path = {
 			leads_to_tech = antitank6
@@ -3019,40 +3109,40 @@ technologies = {
 	
 	antitank6 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		
 		path = {
@@ -3102,40 +3192,40 @@ technologies = {
 	
 	antitank7 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 	
 		path = {
@@ -3185,12 +3275,17 @@ technologies = {
 	
 	antitank8 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
 			anti_tank_equipment_4
 		}	
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_4
+			tank_heavy_cannon_4
+			tank_medium_cannon_4
+		}
 		
 		path = {
 			leads_to_tech = antitank9
@@ -3239,40 +3334,40 @@ technologies = {
 	
 	antitank9 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		
 		path = {
@@ -3322,40 +3417,40 @@ technologies = {
 	
 	antitank10 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 	
 		path = {
@@ -3405,12 +3500,17 @@ technologies = {
 	
 	antitank11 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
 			anti_tank_equipment_5
 		}	
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_5
+			tank_heavy_cannon_5
+			tank_medium_cannon_5
+		}
 		
 		path = {
 			leads_to_tech = antitank12
@@ -3459,40 +3559,40 @@ technologies = {
 	
 	antitank12 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		
 		path = {
@@ -3542,40 +3642,40 @@ technologies = {
 	
 	antitank13 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 	
 		path = {
@@ -3625,12 +3725,17 @@ technologies = {
 	
 	antitank14 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 			
 		enable_equipments = {
 			anti_tank_equipment_6
 		}	
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_6
+			tank_heavy_cannon_6
+			tank_medium_cannon_6
+		}
 		
 		path = {
 			leads_to_tech = antitank15
@@ -3679,40 +3784,40 @@ technologies = {
 	
 	antitank15 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 
 		anti_tank = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		mot_anti_tank_brigade = {
 			hard_attack = 0.05
-			ap_attack = 0.015
+			ap_attack = 0.05
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		super_heavy_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		modern_tank_destroyer_brigade = {
-			hard_attack = 0.025
-			ap_attack = 0.01
+			hard_attack = 0.05
+			ap_attack = 0.05
 		}
 		
 		research_cost = 1
@@ -3757,7 +3862,7 @@ technologies = {
 	
 	antiairbuilding1 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3786,7 +3891,7 @@ technologies = {
 
 	antiairbuilding2 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3815,7 +3920,7 @@ technologies = {
 
 	antiairbuilding3 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3844,7 +3949,7 @@ technologies = {
 
 	antiairbuilding4 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building
@@ -3873,7 +3978,7 @@ technologies = {
 
 	antiairbuilding5 = {
 		xp_research_type = army
-		xp_research_cost = 50
+		xp_boost_cost = 50
 		xp_research_bonus = 0.50
 		enable_building = {
 			building = anti_air_building

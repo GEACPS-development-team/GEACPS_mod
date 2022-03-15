@@ -2,7 +2,8 @@ state = {
 	id = 202
 	name = "STATE_202"
 	manpower = 2495352
-	state_category = city
+	buildings_max_level_factor = 1
+	state_category = rural
 	
 	resources = {
 		oil = 8
@@ -13,16 +14,14 @@ state = {
 		owner = UKR
 		add_core_of = UKR
 		buildings = {
-			infrastructure = 7
-			arms_factory = 2
-			industrial_complex = 3
-			fuel_silo = 1
+			infrastructure = 4
 			air_base = 8
 		}
 		set_variable = {	UKR_state_variable = 1	}
 	}
 	
 	provinces = {
-		489	504	582	3494	3543	6497	9465	9543	9568	11557
+		489	504	3494	3543	6497	9465	9568
 	}
+	local_supplies = 0.0
 }

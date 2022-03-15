@@ -1,7 +1,7 @@
 ﻿capital = 49
 oob = TUR_1946
-set_cosmetic_tag = TUR_republic
 
+set_cosmetic_tag = TUR_republic
 set_convoys = 5
 
 set_politics = {
@@ -14,19 +14,11 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 86
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 14
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 14
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "ムスタファ・イスメト・イノニュ"
-	desc = ""
-	picture = "GFX_Ismet_Inonu"
-	expire = "1973.12.25"
-	ideology = social_democracy_ideology
-}
+recruit_character = CHARACTER_mustafa_ismet_inonu

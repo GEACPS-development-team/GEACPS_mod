@@ -1,0 +1,407 @@
+characters = {	#皇室
+	CHARACTER_hirohito = {	#昭和天皇
+		name = CHARACTER_JAP_reigning_emperor
+		
+		portraits = {
+			civilian = {
+				small = "GFX_hirohito_small"
+				large = "GFX_hirohito_large"
+			}
+			army = {
+				small = "GFX_hirohito_small"
+				large = "GFX_hirohito_large"
+			}
+			navy = {
+				small = "GFX_hirohito_small"
+				large = "GFX_hirohito_large"
+			}
+		}
+		country_leader = {
+			ideology = national_populism_ideology
+			desc = "CHARACTER_hirohito_desc"
+			expire = "1989.1.7"
+		}
+	}
+	CHARACTER_morimasa_nashimoto = {	#梨本宮守正王
+		name = CHARACTER_prince_morimasa_nashimoto
+		
+		portraits = {
+			army = {
+				small = "GFX_morimasa_nashimoto_small"
+				large = "GFX_morimasa_nashimoto_large"
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+}
+
+characters = {	#文民
+	CHARACTER_fumimaro_konoe = {	#近衛文麿
+		name = CHARACTER_fumimaro_konoe
+		
+		portraits = {
+			civilian = {
+				small = GFX_fumimaro_konoe_small
+				large = GFX_fumimaro_konoe_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_fumimaro_konoe_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+	CHARACTER_mamoru_shigemitsu = {	#重光葵
+		name = CHARACTER_mamoru_shigemitsu
+		
+		portraits = {
+			civilian = {
+				small = GFX_mamoru_shigemitsu_small
+				large = GFX_mamoru_shigemitsu_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_mamoru_shigemitsu_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		advisor = {
+			slot = foreign_minister
+			idea_token = JAP_mamoru_shigemitsu_fm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+}
+
+characters = {	#陸軍
+	CHARACTER_hajime_sugiyama = {	#杉山元
+		name = CHARACTER_hajime_sugiyama
+		
+		portraits = {
+			army = {
+				small = GFX_hajime_sugiyama_small
+				large = GFX_hajime_sugiyama_large
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	CHARACTER_hideki_tojo = {	#東條英機
+		name = CHARACTER_hideki_tojo
+		
+		portraits = {
+			civilian = {
+				small = GFX_hideki_tojo_small
+				large = GFX_hideki_tojo_large
+			}
+			army = {
+				small = GFX_hideki_tojo_small
+				large = GFX_hideki_tojo_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_hideki_tojo_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		advisor = {
+			slot = commerce_minister
+			idea_token = JAP_hideki_tojo_cm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		advisor = {
+			slot = army_minister
+			idea_token = JAP_hideki_tojo_am
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+	CHARACTER_hisaichi_terauchi = {	#寺内寿一
+		name = CHARACTER_hisaichi_terauchi
+		
+		portraits = {
+			civilian = {
+				small = GFX_hisaichi_terauchi_small
+				large = GFX_hisaichi_terauchi_large
+			}
+			army = {
+				small = GFX_hisaichi_terauchi_small
+				large = GFX_hisaichi_terauchi_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_hisaichi_terauchi_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	CHARACTER_hitoshi_imamura = {	#今村均
+		name = CHARACTER_hitoshi_imamura
+		
+		portraits = {
+			civilian = {
+				small = GFX_hitoshi_imamura_small
+				large = GFX_hitoshi_imamura_large
+			}
+			army = {
+				small = GFX_hitoshi_imamura_small
+				large = GFX_hitoshi_imamura_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_hitoshi_imamura_desc"
+			expire = "1968.10.4"
+		}
+	}
+	CHARACTER_kisaburo_ando = {	#安藤喜三郎
+		name = CHARACTER_kisaburo_ando
+		
+		portraits = {
+			civilian = {
+				small = GFX_kisaburo_ando_small
+				large = GFX_kisaburo_ando_large
+			}
+			army = {
+				small = GFX_kisaburo_ando_small
+				large = GFX_kisaburo_ando_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_kisaburo_ando_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		advisor = {
+			slot = home_minister
+			idea_token = JAP_kisaburo_ando_hm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+	CHARACTER_kuniaki_koiso = {	#小磯国昭
+		name = CHARACTER_kuniaki_koiso
+		
+		portraits = {
+			civilian = {
+				small = GFX_kuniaki_koiso_small
+				large = GFX_kuniaki_koiso_large
+			}
+			army = {
+				small = GFX_kuniaki_koiso_small
+				large = GFX_kuniaki_koiso_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_kuniaki_koiso_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+	CHARACTER_nobuyoshi_muto = {	#武藤信義
+		name = CHARACTER_nobuyoshi_muto
+		
+		portraits = {
+			army = {
+				small = GFX_nobuyoshi_muto_small
+				large = GFX_nobuyoshi_muto_large
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	CHARACTER_nobuyuki_abe = {	#阿部信行
+		name = CHARACTER_nobuyuki_abe
+		
+		portraits = {
+			civilian = {
+				small = GFX_nobuyuki_abe_small
+				large = GFX_nobuyuki_abe_large
+			}
+			army = {
+				small = GFX_nobuyuki_abe_small
+				large = GFX_nobuyuki_abe_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_nobuyuki_abe_desc"
+			expire = "1953.9.7"
+		}
+	}
+	CHARACTER_otozo_yamada = {	#山田乙三
+		name = CHARACTER_otozo_yamada
+		
+		portraits = {
+			civilian = {
+				small = GFX_otozo_yamada_small
+				large = GFX_otozo_yamada_large
+			}
+			army = {
+				small = GFX_otozo_yamada_small
+				large = GFX_otozo_yamada_large
+			}
+		}
+		country_leader={
+			ideology = national_authoritarianism_ideology
+			expire = "1965.7.18"
+		}
+	}
+	CHARACTER_rikichi_ando = {	#安藤利吉
+		name = CHARACTER_rikichi_ando
+		
+		portraits = {
+			civilian = {
+				small = GFX_rikichi_ando_small
+				large = GFX_rikichi_ando_large
+			}
+			army = {
+				small = GFX_rikichi_ando_small
+				large = GFX_rikichi_ando_large
+			}
+		}
+		country_leader={
+			ideology = national_authoritarianism_ideology
+			#expire = "1946.4.19"
+		}
+	}
+	CHARACTER_shunroku_hata = {	#畑俊六
+		name = CHARACTER_shunroku_hata
+		
+		portraits = {
+			civilian = {
+				small = GFX_shunroku_hata_small
+				large = GFX_shunroku_hata_large
+			}
+			army = {
+				small = GFX_shunroku_hata_small
+				large = GFX_shunroku_hata_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_shunroku_hata_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 5
+			planning_skill = 5
+			logistics_skill = 4
+		}
+	}
+}
+
+characters = {	#海軍
+	CHARACTER_boshiro_hosogaya = {	#細萱戊子郎
+		name = CHARACTER_boshiro_hosogaya
+		
+		portraits = {
+			civilian = {
+				small = GFX_boshiro_hosogaya_small
+				large = GFX_boshiro_hosogaya_large
+			}
+			navy = {
+				small = GFX_boshiro_hosogaya_small
+				large = GFX_boshiro_hosogaya_large
+			}
+		}
+		country_leader={
+			ideology = national_authoritarianism_ideology
+			expire = "1964.2.8"
+		}
+	}
+	CHARACTER_kantaro_suzuki = {	#鈴木貫太郎
+		name = CHARACTER_kantaro_suzuki
+		
+		portraits = {
+			civilian = {
+				small = GFX_kantaro_suzuki_small
+				large = GFX_kantaro_suzuki_large
+			}
+			navy = {
+				small = GFX_kantaro_suzuki_small
+				large = GFX_kantaro_suzuki_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_kantaro_suzuki_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+	CHARACTER_keisuke_okada = {	#岡田啓介
+		name = CHARACTER_keisuke_okada
+		
+		portraits = {
+			civilian = {
+				small = GFX_keisuke_okada_small
+				large = GFX_keisuke_okada_large
+			}
+			navy = {
+				small = GFX_keisuke_okada_small
+				large = GFX_keisuke_okada_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_keisuke_okada_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+	CHARACTER_mitsumasa_yonai = {	#米内光政
+		name = CHARACTER_mitsumasa_yonai
+		
+		portraits = {
+			civilian = {
+				small = GFX_mitsumasa_yonai_small
+				large = GFX_mitsumasa_yonai_large
+			}
+			navy = {
+				small = GFX_mitsumasa_yonai_small
+				large = GFX_mitsumasa_yonai_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_mitsumasa_yonai_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
+}

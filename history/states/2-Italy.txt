@@ -8,16 +8,18 @@ state = {
 		owner = ITA
 		add_core_of = ITA
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			industrial_complex = 4
 			arms_factory = 1
 			air_base = 8
 			11751 = {	naval_base = 5	}
 		}
+		victory_points = {	11751	3	}
 		set_variable = {	ITA_state_variable = 1	}
 	}
 	
 	provinces = {
-		3885	6862	6926	9794	11751	11861	11790
+		6862	9794	11751	
 	}
+	local_supplies = 0.0
 }

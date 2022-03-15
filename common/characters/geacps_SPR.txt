@@ -1,0 +1,63 @@
+characters = {	#文民
+	CHARACTER_juan_maria_bonelli_rubio = {	#フアン・マリア・ボネリ・ルビオ
+		name = CHARACTER_juan_maria_bonelli_rubio
+		
+		portraits = {
+			civilian = {
+				small = GFX_juan_maria_bonelli_rubio_small
+				large = GFX_juan_maria_bonelli_rubio_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_juan_maria_bonelli_rubio_desc"
+			#expire = ""
+		}
+	}
+}
+characters = {	#陸軍
+	CHARACTER_jose_nermejo_lopez = {	#ホセ・ベルメホ・ロペス
+		name = CHARACTER_jose_nermejo_lopez
+		
+		portraits = {
+			civilian = {
+				small = GFX_jose_nermejo_lopez_small
+				large = GFX_jose_nermejo_lopez_large
+			}
+			army = {
+				small = GFX_jose_nermejo_lopez_small
+				large = GFX_jose_nermejo_lopez_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_jose_nermejo_lopez_desc"
+			expire = "1971.12.31"
+		}
+	}
+	CHARACTER_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama = {	#フランシスコ・フランコ・バアモンデ
+		name = CHARACTER_francisco_franco_bahamonde
+		
+		portraits = {
+			civilian = {
+				small = GFX_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama_small
+				large = GFX_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama_large
+			}
+			army = {
+				small = GFX_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama_small
+				large = GFX_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = SPR_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama_hg
+			removal_cost = -1
+			allowed = {	original_tag = SPR	}
+		}
+		country_leader = {
+			ideology = national_populism_ideology
+			desc = "CHARACTER_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama_desc"
+			expire = "1975.11.20"
+		}
+	}
+}

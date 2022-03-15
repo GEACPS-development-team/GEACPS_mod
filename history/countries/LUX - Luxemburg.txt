@@ -3,7 +3,7 @@ oob = LUX_1946
 set_cosmetic_tag = LUX_grand_duchy
 
 set_politics = {
-	ruling_party = liberal_conservatism
+	ruling_party = conservative_democracy
 	last_election = "1945.10.21"
 	election_frequency = 48
 	elections_allowed = yes
@@ -12,82 +12,11 @@ set_popularities = {
 	total_socialism = 6
 	radical_socialism = 5
 	social_democracy = 23
-	social_liberalism = 1
-	classical_liberalism = 1
-	liberal_conservatism = 45
-	social_conservatism = 18
+	liberal_democracy = 2
+	conservative_democracy = 63
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 1
 }
 
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = total_socialism_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = radical_socialism_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = social_democracy_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = classical_liberalism_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = liberal_conservatism_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = social_conservatism_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = authoritative_democracy_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = reactionary_authoritarianism_ideology
-}
-create_country_leader = {
-	name = "シャルロット"
-	desc = ""
-	picture = "GFX_Charlotte"
-	expire = "1985.7.9"
-	ideology = national_populism_ideology
-}
+recruit_character = CHARACTER_charlotte_aldegonde_elisabeth_marie_wilhelmine

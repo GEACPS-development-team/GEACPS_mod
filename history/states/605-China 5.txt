@@ -5,23 +5,25 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = city
 	
-	resources = {	steel = 14	}
+	resources = {
+		steel = 14
+	}
 	
 	history = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = SCH
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 3
 			air_base = 2
 		}
-		victory_points = {	4925	5	}
 		set_variable = {	SCH_state_variable = 1	}
 	}
 	
 	provinces = {
-		1367	1395	2030	2091	4925	5048	7240	7256	8026	12274	12705	12767
+		1395	2030	2091	5048	7240	7256	8026	12274	12705	12767
 	}
+	local_supplies = 0.0
 }

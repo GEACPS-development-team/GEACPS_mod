@@ -1,8 +1,8 @@
 ﻿capital = 41
 oob = SPR_1946
-set_cosmetic_tag = SPR_state
 
-set_convoys = 5
+set_cosmetic_tag = SPR_state
+set_convoys = 100
 
 set_politics = {
 	ruling_party = national_populism
@@ -14,19 +14,15 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 100
 }
 
-create_country_leader = {	#フランシスコ・フランコ・バアモンデ
-	name = "フランシスコ・フランコ"
-	desc = ""
-	picture = "GFX_Francisco_Franco"
-	expire = "1975.11.20"
-	ideology = national_populism_ideology
+recruit_character = CHARACTER_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama
+
+add_ideas = {
+	SPR_francisco_paulino_hermenegildo_teodulo_franco_bahamonde_salgado-araujo_y_pardo_de_lama_hg
 }

@@ -1,32 +1,25 @@
-﻿1946.1.1 = {
-	capital = 206
-	oob = BLR_1946
-	set_cosmetic_tag = BLR_SOV
+﻿capital = 206
+oob = BLR_1946
 
-	set_politics = {
-		ruling_party = total_socialism
-		last_election = "1939.10.22"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 100
-		radical_socialism = 0
-		social_democracy = 0
-		social_liberalism = 0
-		classical_liberalism = 0
-		liberal_conservatism = 0
-		social_conservatism = 0
-		authoritative_democracy = 0
-		reactionary_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "ニキフォル・ナタレヴィチ"
-		desc = ""
-		picture = "GFX_Nicypar_Natalevic"
-		expire = "1964.3.28"
-		ideology = total_socialism_ideology
-	}
+SOV = {	set_soviet_member_republic = yes	}
+
+set_cosmetic_tag = BLR_SOV
+
+set_politics = {
+	ruling_party = total_socialism
+	last_election = "1939.10.22"
+	election_frequency = 48
+	elections_allowed = no
 }
+set_popularities = {
+	total_socialism = 100
+	radical_socialism = 0
+	social_democracy = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_nichipar_yakovlevich_natalevich

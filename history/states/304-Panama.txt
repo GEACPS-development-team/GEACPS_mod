@@ -2,6 +2,7 @@ state = {
 	id = 304
 	name = "STATE_304"
 	manpower = 467459
+	buildings_max_level_factor = 1
 	state_category = town
 	
 	resources = {	oil = 1	}
@@ -10,19 +11,18 @@ state = {
 		owner = PAN
 		add_core_of = PAN
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 1
-			4611 = {	naval_base = 1	}
 			7630 = {	naval_base = 4	}
 		}
-		victory_points = {	4611	1	}
 		victory_points = {	7630	5	}
 		set_variable = {	PAN_state_variable = 1	}
 	}
 	
 	provinces = {
-		1633	4611	4624	7630	10482
+		7630	10482
 	}
+	local_supplies = 0.0
 }

@@ -1,36 +1,29 @@
-﻿1946.1.1 = {
-	capital = 9
-	oob = CZE_1946
-	set_cosmetic_tag = CZECHSLOVAKIA_republic
-	
-	add_ideas = {
-		CZE_People's_Democracy_Manifesto
-	}
+capital = 9
+oob = CZE_1946
 
-	set_politics = {
-		ruling_party = social_liberalism
-		last_election = "1938.5.22"
-		election_frequency = 60
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 31
-		radical_socialism = 4
-		social_democracy = 12
-		social_liberalism = 21
-		classical_liberalism = 0
-		liberal_conservatism = 14
-		social_conservatism = 18
-		authoritative_democracy = 0
-		reactionary_authoritarianism = 0
-		national_populism = 0
-	}
-	
-	create_country_leader = {
-		name = "クレメント・ゴットワルト"
-		desc = ""
-		picture = "GFX_Klement_Gottwald"
-		expire = "1953.3.14"
-		ideology = total_socialism_ideology
-	}
+set_cosmetic_tag = CZECHSLOVAKIA_republic
+
+set_politics = {
+	ruling_party = liberal_democracy
+	last_election = "1938.5.22"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	total_socialism = 31
+	radical_socialism = 4
+	social_democracy = 12
+	liberal_democracy = 21
+	conservative_democracy = 32
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+recruit_character = CHARACTER_edvard_benes
+recruit_character = CHARACTER_klement_gottwald
+
+add_ideas = {	#国民精神
+	CZE_state_security
+	CZE_People's_Democracy_Manifesto
 }

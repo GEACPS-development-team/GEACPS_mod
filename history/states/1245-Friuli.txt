@@ -1,0 +1,23 @@
+state = {
+	id = 1245
+	name = "STATE_1245"
+	manpower = 10600
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
+		owner = VNC
+		add_core_of = VNC
+		add_core_of = ITA
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	VNC_state_variable = 1	}
+		set_variable = {	ITA_state_variable = 1	}
+	}
+	
+	provinces = {
+		628	9613
+	}
+	local_supplies = 0.0
+}

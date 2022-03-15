@@ -1,0 +1,1922 @@
+focus_tree = {
+	id = geacps_GBR_focus
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = GBR
+		}
+	}
+
+	initial_show_position = {
+		x = 0 y = 0
+	}
+	
+	default = no
+	
+	continuous_focus_position = {
+		x = 2800 y = 1000
+	}
+	
+	focus = {
+		id = geacps_GBR_0
+		icon = GFX_goal_unknown
+		cost = 5.00
+		x = 7
+		y = 0
+
+	}
+	focus = {
+		id = geacps_GBR_8
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = geacps_GBR_25
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 1
+		y = 7
+
+	}
+	focus = {
+		id = geacps_GBR_26
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = geacps_GBR_41
+		}
+		x = 7
+		y = 7
+
+	}
+	focus = {
+		id = geacps_GBR_41
+		icon = GFX_goal_unknown
+		cost = 10.00
+		mutually_exclusive = {
+			focus = geacps_GBR_26
+		}
+		x = 13
+		y = 7
+
+	}
+	focus = {
+		id = geacps_GBR_75
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 28
+		y = 0
+
+	}
+	focus = {
+		id = geacps_GBR_76
+		icon = GFX_goal_unknown
+		cost = 10.00
+		x = 26
+		y = 1
+		prerequisite = { focus = geacps_GBR_75 }
+
+	}
+	focus = {
+		id = geacps_GBR_1
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = geacps_GBR_0
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = geacps_GBR_2
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = geacps_GBR_1
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = geacps_GBR_9
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_8
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = geacps_GBR_27
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_26
+		}
+		x = 5
+		y = 8
+
+	}
+	focus = {
+		id = geacps_GBR_28
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_27
+		}
+		x = 3
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_29
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_28
+		}
+		x = 3
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_3
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = geacps_GBR_1
+		}
+		x = 5
+		y = 2
+
+	}
+	focus = {
+		id = geacps_GBR_5
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_3
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_6
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_4
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_2
+		}
+		prerequisite = {
+			focus = geacps_GBR_3
+		}
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_7
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_4
+		}
+		prerequisite = {
+			focus = geacps_GBR_5
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = geacps_GBR_6
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_3
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_5
+		}
+		x = 6
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_11
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_6
+		}
+		x = 6
+		y = 4
+
+	}
+	focus = {
+		id = geacps_GBR_12
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_11
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = geacps_GBR_10
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_9
+			focus = geacps_GBR_12
+		}
+		x = 4
+		y = 6
+
+	}
+	focus = {
+		id = geacps_GBR_13
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_11
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = geacps_GBR_32
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_27
+		}
+		x = 7
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_33
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_32
+		}
+		x = 7
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_14
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_0
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = geacps_GBR_15
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_14
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_46
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = geacps_GBR_16
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_15
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_18
+		}
+		x = 8
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_18
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_15
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_16
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_19
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_18
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = geacps_GBR_21
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_15
+		}
+		x = 12
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_22
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_21
+		}
+		x = 11
+		y = 5
+
+	}
+	focus = {
+		id = geacps_GBR_24
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_21
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = geacps_GBR_42
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_41
+		}
+		x = 13
+		y = 8
+
+	}
+	focus = {
+		id = geacps_GBR_43
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_42
+		}
+		x = 13
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_44
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_43
+		}
+		x = 13
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_46
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_14
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_15
+		}
+		x = 18
+		y = 2
+
+	}
+	focus = {
+		id = geacps_GBR_47
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_46
+		}
+		x = 16
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_48
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_47
+		}
+		x = 16
+		y = 4
+
+	}
+	focus = {
+		id = geacps_GBR_49
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_46
+		}
+		x = 18
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_52
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_48
+		}
+		prerequisite = {
+			focus = geacps_GBR_49
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = geacps_GBR_54
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_49
+		}
+		x = 18
+		y = 6
+
+	}
+	focus = {
+		id = geacps_GBR_55
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_54
+		}
+		x = 18
+		y = 7
+
+	}
+	focus = {
+		id = geacps_GBR_56
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_55
+		}
+		x = 16
+		y = 8
+
+	}
+	focus = {
+		id = geacps_GBR_57
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_55
+		}
+		x = 18
+		y = 8
+
+	}
+	focus = {
+		id = geacps_GBR_60
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_57
+		}
+		x = 18
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_61
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_60
+		}
+		x = 18
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_50
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_46
+		}
+		x = 19
+		y = 4
+
+	}
+	focus = {
+		id = geacps_GBR_51
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_46
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = geacps_GBR_53
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_51
+		}
+		prerequisite = {
+			focus = geacps_GBR_49
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = geacps_GBR_65
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_55
+		}
+		x = 23
+		y = 8
+
+	}
+	focus = {
+		id = geacps_GBR_66
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_65
+		}
+		x = 20
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_67
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_65
+		}
+		x = 22
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_68
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_66
+		}
+		prerequisite = {
+			focus = geacps_GBR_67
+		}
+		x = 21
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_69
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_65
+		}
+		x = 24
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_70
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_65
+		}
+		x = 26
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_71
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_69
+		}
+		prerequisite = {
+			focus = geacps_GBR_70
+		}
+		x = 25
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_17
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_16
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = geacps_GBR_20
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_17
+			focus = geacps_GBR_19
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = geacps_GBR_23
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_20
+		}
+		prerequisite = {
+			focus = geacps_GBR_22
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = geacps_GBR_30
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_27
+		}
+		x = 5
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_31
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_30
+		}
+		x = 5
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_34
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_29
+		}
+		prerequisite = {
+			focus = geacps_GBR_31
+		}
+		prerequisite = {
+			focus = geacps_GBR_33
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_35
+		}
+		x = 4
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_35
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_33
+		}
+		prerequisite = {
+			focus = geacps_GBR_31
+		}
+		prerequisite = {
+			focus = geacps_GBR_29
+		}
+		mutually_exclusive = {
+			focus = geacps_GBR_34
+		}
+		x = 6
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_36
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_26
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = geacps_GBR_37
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_36
+		}
+		x = 10
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_38
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_37
+		}
+		x = 9
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_39
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_37
+		}
+		x = 11
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_40
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_39
+		}
+		prerequisite = {
+			focus = geacps_GBR_38
+		}
+		x = 10
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_45
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_44
+		}
+		x = 13
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_58
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_57
+		}
+		prerequisite = {
+			focus = geacps_GBR_56
+		}
+		x = 16
+		y = 9
+
+	}
+	focus = {
+		id = geacps_GBR_59
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_58
+		}
+		x = 16
+		y = 10
+
+	}
+	focus = {
+		id = geacps_GBR_62
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_59
+		}
+		prerequisite = {
+			focus = geacps_GBR_61
+		}
+		x = 15
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_63
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_61
+		}
+		prerequisite = {
+			focus = geacps_GBR_59
+		}
+		x = 17
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_64
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_59
+		}
+		prerequisite = {
+			focus = geacps_GBR_61
+		}
+		x = 19
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_72
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_68
+		}
+		x = 21
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_73
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_71
+		}
+		prerequisite = {
+			focus = geacps_GBR_68
+		}
+		x = 23
+		y = 11
+
+	}
+	focus = {
+		id = geacps_GBR_74
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = geacps_GBR_71
+		}
+		x = 25
+		y = 11
+
+	}
+
+	focus = {
+		id = GEACPS_GBR_77
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = geacps_GBR_76
+		prerequisite = { focus = geacps_GBR_76 }
+		mutually_exclusive = { focus = GEACPS_GBR_82 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = { 
+		id = GEACPS_GBR_78
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_77
+		prerequisite = { focus = GEACPS_GBR_77 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_79
+		icon = GFX_goal_unknown
+		x = 0
+		y = 3
+		relative_position_id = GEACPS_GBR_78
+		prerequisite = { focus = GEACPS_GBR_78 }
+		prerequisite = { focus = GEACPS_GBR_81 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_80
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = GEACPS_GBR_78
+			focus = GEACPS_GBR_83
+		}
+		relative_position_id = GEACPS_GBR_78
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_81
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_80
+		prerequisite = { focus = GEACPS_GBR_80 }
+
+		completion_reward ={
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_82
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = geacps_GBR_76
+		prerequisite = { focus = geacps_GBR_76 }
+		mutually_exclusive = { focus =GEACPS_GBR_77 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_83
+		icon = GFX_goal_unknown 
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_82
+		prerequisite = { focus = GEACPS_GBR_82 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_84
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_83
+		prerequisite = { focus = GEACPS_GBR_83 }
+		prerequisite = { focus = GEACPS_GBR_86 }
+
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_85
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = geacps_GBR_76
+		prerequisite = { focus = geacps_GBR_76 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_86
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_85
+		prerequisite = { focus = GEACPS_GBR_85 }
+	}
+
+	focus = {
+		id = GEACPS_GBR_87
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_86
+		prerequisite = { focus = GEACPS_GBR_86 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_88
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_87
+		prerequisite = { focus = GEACPS_GBR_87 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_89
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_88
+		prerequisite = {
+			focus = GEACPS_GBR_88
+			focus = GEACPS_GBR_95
+		}
+		mutually_exclusive = { focus = GEACPS_GBR_96 }
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GEACPS_GBR_90
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = geacps_GBR_75
+		prerequisite = { focus = geacps_GBR_75 }
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_91
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_GBR_90
+		prerequisite = { focus = GEACPS_GBR_90 }
+		mutually_exclusive = { focus = GEACPS_GBR_92 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_92
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_90
+		prerequisite = { focus = GEACPS_GBR_90 }
+		mutually_exclusive = { focus = GEACPS_GBR_91 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_93
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_91
+		prerequisite = {
+			focus = GEACPS_GBR_91
+			focus = GEACPS_GBR_92
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_94
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_93
+		prerequisite = { focus = GEACPS_GBR_93 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_95
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_94
+		prerequisite =  { focus = GEACPS_GBR_94 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_96
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_95
+		prerequisite = {
+			focus = GEACPS_GBR_88
+			focus = GEACPS_GBR_95
+		}
+		mutually_exclusive = { focus = GEACPS_GBR_89 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_97
+		icon = GFX_goal_unknown
+		x = 7
+		y = 13
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_98
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_GBR_97
+		prerequisite = { focus = GEACPS_GBR_97 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_99
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_97
+		prerequisite = { focus = GEACPS_GBR_97 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_100
+		icon = GFX_goal_unknown
+		x = 6
+		y = 0
+		relative_position_id = GEACPS_GBR_97
+		
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_101
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = GEACPS_GBR_100
+		prerequisite = { focus = GEACPS_GBR_100 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_102
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = GEACPS_GBR_101
+		prerequisite = { focus = GEACPS_GBR_98 }
+		prerequisite = { focus = GEACPS_GBR_99 }
+		prerequisite = { focus = GEACPS_GBR_101 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_103
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_GBR_101
+		prerequisite = { focus = GEACPS_GBR_98 }
+		prerequisite = { focus = GEACPS_GBR_99 }
+		prerequisite = { focus = GEACPS_GBR_101 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_104
+		icon = GFX_goal_unknown
+		x = -3
+		y = 1
+		relative_position_id = GEACPS_GBR_102
+		prerequisite = { focus = GEACPS_GBR_102 }
+		mutually_exclusive = { focus = GEACPS_GBR_108 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_105
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = GEACPS_GBR_104
+		prerequisite = { focus = GEACPS_GBR_104 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_106
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = GEACPS_GBR_105
+		prerequisite = { focus = GEACPS_GBR_105 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_107
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_106
+		prerequisite = { focus = GEACPS_GBR_106 }
+		prerequisite = { focus = GEACPS_GBR_110}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_108
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_GBR_102
+		prerequisite = { focus = GEACPS_GBR_102 }
+		mutually_exclusive = { focus = GEACPS_GBR_104 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_109
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = GEACPS_GBR_108
+		prerequisite = { focus = GEACPS_GBR_108 }
+
+		completion_reward ={
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_110
+		icon = GFX_goal_unknown
+		x = 0
+		y = 2
+		relative_position_id = GEACPS_GBR_109
+		prerequisite = { focus = GEACPS_GBR_109 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_111
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_GBR_103
+		prerequisite = { focus = GEACPS_GBR_103 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_112
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_111
+		prerequisite = { focus = GEACPS_GBR_111 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_113
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_103
+		prerequisite = { focus = GEACPS_GBR_103 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_114
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_113
+		prerequisite = { focus = GEACPS_GBR_113 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_115
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_112
+		prerequisite = { focus = GEACPS_GBR_112 }
+		prerequisite = { focus = GEACPS_GBR_114 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_116
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = GEACPS_GBR_115
+		prerequisite = { focus = GEACPS_GBR_115 }
+		mutually_exclusive = { focus = GEACPS_GBR_117 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_117
+		icon = GFX_goal_unknown 
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_115
+		prerequisite = { focus = GEACPS_GBR_115 }
+		mutually_exclusive = { focus = GEACPS_GBR_116 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_118
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = GEACPS_GBR_106
+		prerequisite = {
+			focus = GEACPS_GBR_106
+			focus = GEACPS_GBR_110
+		}
+		prerequisite = {
+			focus = GEACPS_GBR_116
+			focus = GEACPS_GBR_117
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_119
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_114
+		prerequisite = { focus = GEACPS_GBR_114 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_120
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_119
+		prerequisite = { focus = GEACPS_GBR_119 }
+		prerequisite = { focus = GEACPS_GBR_127 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_121
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = GEACPS_GBR_100
+		prerequisite = { focus = GEACPS_GBR_100 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_122
+		icon = GFX_goal_unknown
+		x = -4
+		y = 1
+		relative_position_id = GEACPS_GBR_121
+		prerequisite = { focus = GEACPS_GBR_121 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_123
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_122
+		prerequisite = { focus = GEACPS_GBR_122 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_124
+		icon = GFX_goal_unknown
+		x = -2
+		y = 1
+		relative_position_id = GEACPS_GBR_121
+		prerequisite = { focus = GEACPS_GBR_121 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_125
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_124
+		prerequisite = { focus = GEACPS_GBR_124 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_126
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_GBR_125
+		prerequisite = { focus = GEACPS_GBR_125 }
+
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = GEACPS_GBR_127
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_126
+		prerequisite = { focus = GEACPS_GBR_125 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_128
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_127
+		prerequisite = { focus = GEACPS_GBR_126 }
+		prerequisite = { focus = GEACPS_GBR_119 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_129
+		icon = GFX_goal_unknown
+		x = 3
+		y = 1
+		relative_position_id = GEACPS_GBR_120
+		prerequisite = { focus = GEACPS_GBR_120 }
+		prerequisite = { focus = GEACPS_GBR_128 }
+
+		completion_reward ={
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_130
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = GEACPS_GBR_125
+		prerequisite = { focus = GEACPS_GBR_125 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_131
+		icon = GFX_goal_unknown
+		x = -1
+		y = 1
+		relative_position_id = GEACPS_GBR_130
+		prerequisite = { focus = GEACPS_GBR_130 }
+		mutually_exclusive = { focus = GEACPS_GBR_133 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_132
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_131
+		prerequisite = { focus = GEACPS_GBR_131 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_133
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_130
+		prerequisite = { focus = GEACPS_GBR_130 }
+		mutually_exclusive = { focus = GEACPS_GBR_131 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_134
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_133
+		prerequisite = { focus = GEACPS_GBR_133 }
+
+		completion_reward ={
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_135
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_121
+		prerequisite = { focus = GEACPS_GBR_121 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_136
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_135
+		prerequisite = { focus = GEACPS_GBR_135 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_137
+		icon = GFX_goal_unknown
+		x = 2
+		y = 1
+		relative_position_id = GEACPS_GBR_121
+		prerequisite = { focus = GEACPS_GBR_121 }
+		mutually_exclusive = {
+			focus = GEACPS_GBR_142
+			focus = GEACPS_GBR_146
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_138
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_137
+		prerequisite = { focus = GEACPS_GBR_137 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_139
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_138
+		prerequisite = { focus = GEACPS_GBR_138 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_140
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_139
+		prerequisite = {
+			focus = GEACPS_GBR_139
+			focus = GEACPS_GBR_144
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_141
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_140
+		prerequisite = { focus = GEACPS_GBR_140 }
+		prerequisite = { focus = GEACPS_GBR_145 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_142
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		relative_position_id = GEACPS_GBR_121
+		prerequisite = { focus = GEACPS_GBR_121 }
+		mutually_exclusive = {
+			focus = GEACPS_GBR_137
+			focus = GEACPS_GBR_146
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_143
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_142
+		prerequisite = { focus = GEACPS_GBR_142 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_144
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_143
+		prerequisite = { focus = GEACPS_GBR_143 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_145
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		relative_position_id = GEACPS_GBR_144
+		prerequisite = {
+			focus = GEACPS_GBR_144
+			focus = GEACPS_GBR_148
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_146
+		icon = GFX_goal_unknown
+		x = 6
+		y = 1
+		relative_position_id = GEACPS_GBR_121
+		prerequisite = { focus = GEACPS_GBR_121 }
+		mutually_exclusive = {
+			focus = GEACPS_GBR_137
+			focus = GEACPS_GBR_142
+		}
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_147
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_146
+		prerequisite = { focus = GEACPS_GBR_146 }
+
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = GEACPS_GBR_148
+		icon = GFX_goal_unknown
+		x = 0
+		y = 1
+		relative_position_id = GEACPS_GBR_147
+		prerequisite = { focus = GEACPS_GBR_147 }
+
+		completion_reward = {
+
+		}
+	}
+}

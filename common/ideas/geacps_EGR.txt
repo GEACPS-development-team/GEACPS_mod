@@ -1,6 +1,19 @@
-ideas = {#既存国民精神
+ideas = {	#既存国民精神
 	country = {
-		EGR_the_berlin_declaration = {#ベルリン宣言
+		EGR_ministry_for_state_security = {	#シュタージ
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ministry_for_state_security
+			modifier = {
+				agency_upgrade_time = -0.1
+			}
+		}
+		EGR_the_berlin_declaration = {	#ベルリン宣言
 			allowed = {
 				always = no
 			}
@@ -14,7 +27,7 @@ ideas = {#既存国民精神
 				political_power_cost = 0.01
 			}
 		}
-		EGR_potsdam_agreement = {#ポツダム協定
+		EGR_potsdam_agreement = {	#ポツダム協定
 			allowed = {
 				always = no
 			}
@@ -27,7 +40,7 @@ ideas = {#既存国民精神
 				#要件等
 			}
 		}
-		EGR_denazification = {#非ナチ化
+		EGR_denazification = {	#非ナチ化
 			allowed = {
 				always = no
 			}
@@ -40,7 +53,7 @@ ideas = {#既存国民精神
 				national_populism_drift = -0.01
 			}
 		}
-		EGR_hegemonic_party_system = {#ヘゲモニー政党制
+		EGR_hegemonic_party_system = {	#ヘゲモニー政党制
 			allowed = {
 				always = no
 			}
@@ -53,24 +66,11 @@ ideas = {#既存国民精神
 				total_socialism_drift = 0.01
 				radical_socialism_drift = 0.01
 				social_democracy_drift = 0.01
-				social_liberalism_drift = 0.01
-				social_conservatism_drift = 0.01
+				liberal_democracy_drift = 0.01
+				conservative_democracy_drift = 0.01
 			}
 		}
-		EGR_stasi = {#シュタージ
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_secret_police
-			modifier = {
-				agency_upgrade_time = -0.1
-			}
-		}
-		EGR_the_east-west_german_wall = {#東西ドイツの壁
+		EGR_the_east-west_german_wall = {	#東西ドイツの壁
 			allowed = {
 				always = no
 			}
@@ -87,9 +87,9 @@ ideas = {#既存国民精神
 	}
 }
 
-ideas = {#新規国民精神
+ideas = {	#新規国民精神
 	country = {
-		EGR_an_honours_student_in_the_eastern_european_economy = {#東欧経済における優等生
+		EGR_an_honours_student_in_the_eastern_european_economy = {	#東欧経済における優等生
 			allowed = {
 				always = no
 			}

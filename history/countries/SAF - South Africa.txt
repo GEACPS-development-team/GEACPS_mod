@@ -1,31 +1,55 @@
 ﻿capital = 275
 oob = SAF_1946
 
+GBR = {	set_dominion = yes	}
+
 set_convoys = 5
 
 set_politics = {
-	ruling_party = liberal_conservatism
-	last_election = "1946.1.1"
-	election_frequency = 48
+	ruling_party = conservative_democracy
+	last_election = "1943.7.7"
+	election_frequency = 60
 	elections_allowed = no
 }
 set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 100
-	social_conservatism = 0
-	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
-	national_populism = 0
+	social_democracy = 4
+	liberal_democracy = 0
+	conservative_democracy = 50
+	authoritative_democracy = 7
+	national_authoritarianism = 0
+	national_populism = 39
+}
+set_party_name = {	#南アフリカ労働党
+	ideology = social_democracy
+	name = PARTY_south_african_labour_party
+	long_name = PARTY_south_african_labour_party_long
+}
+set_party_name = {	#統一南アフリカ党
+	ideology = conservative_democracy
+	name = PARTY_united_south_african_party
+	long_name = PARTY_united_south_african_party_long
+}
+set_party_name = {	#無所属
+	ideology = authoritative_democracy
+	name = PARTY_independent_politician
+	long_name = PARTY_independent_politician_long
+}
+set_party_name = {	#総督
+	ideology = national_authoritarianism
+	name = PARTY_governor_general
+	long_name = PARTY_governor_general_long
+}
+set_party_name = {	#ヘルスティグテ・ナシオナーレ党
+	ideology = national_populism
+	name = PARTY_herenigde_nasionale_party
+	long_name = PARTY_herenigde_nasionale_party_long
 }
 
-create_country_leader = {
-	name = "ギデオン・ブランド・バン・ジル"
-	desc = ""
-	picture = "GFX_Gideon_Brand_van_Zyl"
-	expire = "1956.11.1"
-	ideology = liberal_conservatism_ideology
+recruit_character = CHARACTER_gideon_brand_van_zyl
+
+NMB = {
+	SAF = {	set_mandate = yes	}
+	set_dictatorship = yes
 }

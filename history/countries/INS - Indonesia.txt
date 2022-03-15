@@ -1,23 +1,27 @@
 ﻿capital = 335
 oob = INS_1946
 
-set_convoys = 10
+JAP = {	set_occupied_territory = yes	}
 
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+set_cosmetic_tag = COUNTRY_JAP
+set_convoys = 100
+set_dictatorship = yes
+
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+illegalization_of_social_democracy_party = yes
+illegalization_of_liberal_democracy_party = yes
+illegalization_of_conservative_democracy_party = yes
+illegalization_of_authoritative_democracy_party = yes
+set_party_name = {	#南方軍軍政監部
+	ideology = national_authoritarianism
+	name = PARTY_southern_army_military_government
+	long_name = PARTY_southern_army_military_government_long
 }
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 100
-	reactionary_authoritarianism = 0
-	national_populism = 0
+set_party_name = {	#インドネシア奉公会
+	ideology = national_populism
+	name = PARTY_indonesia_service_association
+	long_name = PARTY_indonesia_service_association_long
 }
+
+recruit_character = CHARACTER_hitoshi_imamura

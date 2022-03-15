@@ -1,36 +1,138 @@
-﻿capital = 986
+﻿capital = 282
 oob = JAP_1946
-set_naval_oob = JAP_1946_naval
-set_cosmetic_tag = JAP_great_empire
 
-set_stability = 1.0
-set_war_support = 0.8
-set_research_slots = 4
-set_fuel_ratio = 1.0
+set_cosmetic_tag = GREATJAPAN_empire
+set_stability = 0.5
+set_war_support = 0.5
+set_fuel_ratio = 0.1
 set_convoys = 1000
+set_research_slots = 5
 
-set_variable = { JAP_zveno_loyalty = 15 }
-set_variable = { JAP_zveno_popularity = 50 }
-set_variable = { JAP_bs_loyalty = 25 }
-set_variable = { JAP_bs_popularity = 60 }
-set_variable = { JAP_bzns_loyalty = 30 }
-set_variable = { JAP_bzns_popularity = 70 }
-set_variable = { JAP_nsm_loyalty = 60 }
-set_variable = { JAP_nsm_popularity = 40 }
-set_variable = { JAP_faction_interaction_cost_standard = 20 }
-set_variable = { JAP_broad_socialist_opression_cost_standard = 20 }
+set_politics = {
+	ruling_party = national_populism
+	last_election = "1941.10.18"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	total_socialism = 0
+	radical_socialism = 0
+	social_democracy = 2
+	liberal_democracy = 4
+	conservative_democracy = 14
+	authoritative_democracy = 2
+	national_authoritarianism = 1
+	national_populism = 77
+}
+set_imperial_rule_assistance_association = yes
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
 
-add_ideas = {
+recruit_character = CHARACTER_hirohito
+recruit_character = CHARACTER_morimasa_nashimoto
+recruit_character = CHARACTER_fumimaro_konoe
+recruit_character = CHARACTER_mamoru_shigemitsu
+recruit_character = CHARACTER_hideki_tojo
+recruit_character = CHARACTER_hisaichi_terauchi
+recruit_character = CHARACTER_kisaburo_ando
+recruit_character = CHARACTER_kuniaki_koiso
+recruit_character = CHARACTER_nobuyoshi_muto
+recruit_character = CHARACTER_shunroku_hata
+recruit_character = CHARACTER_kantaro_suzuki
+recruit_character = CHARACTER_keisuke_okada
+recruit_character = CHARACTER_mitsumasa_yonai
+
+add_ideas = {	#内閣
+	JAP_hideki_tojo_hg
+	JAP_hideki_tojo_am
+	JAP_hideki_tojo_cm
+	JAP_mamoru_shigemitsu_fm
+	JAP_kisaburo_ando_hm
+}
+
+add_ideas = {	#国民精神
 	JAP_high_defence_state_system
+	JAP_privy_council
 	JAP_planning_institute
 	JAP_active_military_service_for_ministers_of_war
-	JAP_presidency_of_the_house_of_representatives
 	JAP_suppression_of_ideas_by_the_security_law
 	JAP_victory_in_the_greater_east_asia_war
 	JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration
-	
-	JAP_Hideki_Tojo
 }
+
+complete_national_focus = JAP_Lugou_Bridge_Incident
+complete_national_focus = JAP_Nanjing_Tips
+
+country_event = {	id = geacps_JAP.1	days = 1	}
+country_event = {	id = geacps_JAP.2	days = 22	}
+
+#陣営
+create_faction = GREATER_EAST_ASIA_CO-PROSPERITY_SPHERE
+add_to_faction = JAP
+add_to_faction = SIA
+add_to_faction = CH3
+add_to_faction = CH4
+
+give_guarantee = BRM
+give_guarantee = AMR
+give_guarantee = MON
+
+diplomatic_relation = { country = GBR	relation = non_aggression_pact }
+declare_war_on = {	target = CHI	type = annex_everything	}
+add_opinion_modifier = {	target = USA	modifier = American_Empire	}
+
+set_variable = { JAP_toseiha_loyalty = 15 }
+set_variable = { JAP_toseiha_popularity = 50 }
+set_variable = { JAP_kodoha_loyalty = 25 }
+set_variable = { JAP_kodoha_popularity = 60 }
+set_variable = { JAP_fleet_faction_loyalty = 30 }
+set_variable = { JAP_fleet_faction_popularity = 70 }
+set_variable = { JAP_treaty_faction_loyalty = 60 }
+set_variable = { JAP_treaty_faction_popularity = 40 }
+
+set_variable = { JAP_faction_interaction_cost_standard = 20 }
+set_variable = { JAP_broad_socialist_opression_cost_standard = 20 }
+
+#if = {
+#	limit = { has_dlc = "La Resistance" }
+#	create_intelligence_agency = yes
+#	create_operative_leader = {
+#		name = "中村天風"
+#		GFX = GFX_
+#		traits = {
+#		}
+#		bypass_recruitment = no
+#		available_to_spy_master = yes
+#		nationalities = { JAP }
+#	}
+#	create_operative_leader = {
+#		name = "藤原岩市"
+#		GFX = GFX_
+#		traits = {
+#		}#F機関
+#		bypass_recruitment = 
+#		available_to_spy_master = 
+#		nationalities = { JAP }
+#	}
+#	create_operative_leader = {
+#		name = "神本利男"
+#		GFX = GFX_
+#		traits = {
+#		}
+#		bypass_recruitment = 
+#		available_to_spy_master = 
+#		nationalities = { JAP MAN }
+#	}
+#	create_operative_leader = {
+#		name = "堀栄三"
+#		GFX = GFX_
+#		traits = {
+#		}#マッカーサー参謀
+#		bypass_recruitment = 
+#		available_to_spy_master = 
+#		nationalities = { JAP }
+#	}
+#}
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
@@ -168,864 +270,732 @@ if = {
 	}
 }
 
-declare_war_on = {	target = CHI	type = annex_everything	}
+# create_equipment_variant = {
+# 	name = "金剛型"
+# 	type = ship_hull_heavy_2
+# 	name_group = JAP_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_heavy_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = heavy_ship_engine_3
+# 		fixed_ship_armor_slot = ship_armor_bb_1
+# 		front_1_custom_slot = ship_heavy_battery_1
+# #		front_2_custom_slot = ship_heavy_battery_1
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_heavy_battery_1
+# #		mid_3_custom_slot = ship_heavy_battery_1
+# 		rear_1_custom_slot = ship_heavy_battery_1
+# #		rear_2_custom_slot = ship_airplane_launcher_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "扶桑型"
+# 	type = ship_hull_heavy_1
+# 	name_group = JAP_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_heavy_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = heavy_ship_engine_2
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 		fixed_ship_armor_slot = ship_armor_bb_1
+# 		front_1_custom_slot = ship_heavy_battery_1
+# #		front_2_custom_slot = ship_heavy_battery_1
+# 		mid_1_custom_slot = ship_heavy_battery_1
+# 		mid_2_custom_slot = ship_anti_air_cannon_3
+# #		mid_3_custom_slot = ship_heavy_battery_1
+# 		rear_1_custom_slot = ship_heavy_battery_1
+# 		rear_2_custom_slot = ship_airplane_launcher_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "伊勢型"
+# 	type = ship_hull_heavy_1
+# 	name_group = JAP_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_heavy_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = heavy_ship_engine_2
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 		fixed_ship_armor_slot = ship_armor_bb_1
+# 		front_1_custom_slot = ship_heavy_battery_1
+# #		front_2_custom_slot = ship_heavy_battery_1
+# 		mid_1_custom_slot = ship_heavy_battery_1
+# 		mid_2_custom_slot = ship_anti_air_cannon_3
+# #		mid_3_custom_slot = ship_heavy_battery_1
+# 		rear_1_custom_slot = ship_heavy_battery_1
+# 		rear_2_custom_slot = ship_airplane_launcher_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "長門型"
+# 	type = ship_hull_heavy_1
+# 	name_group = JAP_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_heavy_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = heavy_ship_engine_2
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 		fixed_ship_armor_slot = ship_armor_bb_1
+# 		front_1_custom_slot = ship_heavy_battery_2
+# #		front_2_custom_slot = ship_heavy_battery_2
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_heavy_battery_2
+# #		mid_3_custom_slot = ship_heavy_battery_2
+# 		rear_1_custom_slot = ship_heavy_battery_2
+# 		rear_2_custom_slot = ship_airplane_launcher_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "大和型"
+# 	type = ship_hull_super_heavy_1
+# 	name_group = JAP_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_super_heavy_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = super_heavy_ship_engine_1
+# 		fixed_ship_secondaries_slot = ship_secondaries_2
+# 		fixed_ship_armor_slot = ship_armor_shbb
+# 		front_1_custom_slot = ship_super_heavy_battery_1
+# 		front_2_custom_slot = ship_anti_air_2
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_anti_air_cannon_3
+# 		mid_3_custom_slot = ship_anti_air_cannon_3
+# 		rear_1_custom_slot = ship_super_heavy_battery_1
+# 		rear_2_custom_slot = ship_airplane_launcher_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "信濃型"
+# 	type = ship_hull_super_heavy_1
+# 	name_group = JAP_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_super_heavy_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_3
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_engine_slot = super_heavy_ship_engine_1
+# 		fixed_ship_secondaries_slot = ship_secondaries_2
+# 		fixed_ship_armor_slot = ship_armor_shbb
+# 		front_1_custom_slot = ship_super_heavy_battery_1
+# 		front_2_custom_slot = ship_anti_air_3
+# 		mid_1_custom_slot = ship_anti_air_cannon_4
+# 		mid_2_custom_slot = ship_anti_air_cannon_4
+# 		mid_3_custom_slot = ship_anti_air_cannon_4
+# 		rear_1_custom_slot = ship_super_heavy_battery_1
+# 		rear_2_custom_slot = ship_airplane_launcher_2
+# 	}
+# }
 
-country_event = {
-	id = geacps_JAP.1
-	days = 1
-}
-country_event = {
-	id = geacps_JAP.2
-	days = 22
-}
-
-set_politics = {
-	ruling_party = national_populism
-	last_election = "1941.10.18"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 2
-	social_liberalism = 1
-	classical_liberalism = 3
-	liberal_conservatism = 11
-	social_conservatism = 3
-	authoritative_democracy = 2
-	reactionary_authoritarianism = 1
-	national_populism = 77
-}
-
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = total_socialism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = radical_socialism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = social_democracy_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = classical_liberalism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = liberal_conservatism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = liberal_conservatism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = social_conservatism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = authoritative_democracy_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = reactionary_authoritarianism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-create_country_leader = {
-	name = "昭和天皇"
-	desc = ""
-	picture = "GFX_Showa_Emperor"
-	expire = "1989.1.7"
-	ideology = national_populism_ideology
-	traits = {
-		JAP_emperor
-	}
-}
-
-
-create_equipment_variant = {
-	name = "金剛型"
-	type = ship_hull_heavy_2
-	name_group = JAP_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = heavy_ship_engine_3
-		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_heavy_battery_1
-#		front_2_custom_slot = ship_heavy_battery_1
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_heavy_battery_1
-#		mid_3_custom_slot = ship_heavy_battery_1
-		rear_1_custom_slot = ship_heavy_battery_1
-#		rear_2_custom_slot = ship_airplane_launcher_1
-	}
-}
-create_equipment_variant = {
-	name = "扶桑型"
-	type = ship_hull_heavy_1
-	name_group = JAP_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = heavy_ship_engine_2
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_heavy_battery_1
-#		front_2_custom_slot = ship_heavy_battery_1
-		mid_1_custom_slot = ship_heavy_battery_1
-		mid_2_custom_slot = ship_anti_air_cannon_3
-#		mid_3_custom_slot = ship_heavy_battery_1
-		rear_1_custom_slot = ship_heavy_battery_1
-		rear_2_custom_slot = ship_airplane_launcher_1
-	}
-}
-create_equipment_variant = {
-	name = "伊勢型"
-	type = ship_hull_heavy_1
-	name_group = JAP_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = heavy_ship_engine_2
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_heavy_battery_1
-#		front_2_custom_slot = ship_heavy_battery_1
-		mid_1_custom_slot = ship_heavy_battery_1
-		mid_2_custom_slot = ship_anti_air_cannon_3
-#		mid_3_custom_slot = ship_heavy_battery_1
-		rear_1_custom_slot = ship_heavy_battery_1
-		rear_2_custom_slot = ship_airplane_launcher_1
-	}
-}
-create_equipment_variant = {
-	name = "長門型"
-	type = ship_hull_heavy_1
-	name_group = JAP_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = heavy_ship_engine_2
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_1
-		front_1_custom_slot = ship_heavy_battery_2
-#		front_2_custom_slot = ship_heavy_battery_2
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_heavy_battery_2
-#		mid_3_custom_slot = ship_heavy_battery_2
-		rear_1_custom_slot = ship_heavy_battery_2
-		rear_2_custom_slot = ship_airplane_launcher_1
-	}
-}
-create_equipment_variant = {
-	name = "大和型"
-	type = ship_hull_super_heavy_1
-	name_group = JAP_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_super_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = super_heavy_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_2
-		fixed_ship_armor_slot = ship_armor_shbb
-		front_1_custom_slot = ship_super_heavy_battery_1
-		front_2_custom_slot = ship_anti_air_2
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_anti_air_cannon_3
-		mid_3_custom_slot = ship_anti_air_cannon_3
-		rear_1_custom_slot = ship_super_heavy_battery_1
-		rear_2_custom_slot = ship_airplane_launcher_2
-	}
-}
-create_equipment_variant = {
-	name = "信濃型"
-	type = ship_hull_super_heavy_1
-	name_group = JAP_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_super_heavy_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_3
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_engine_slot = super_heavy_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_2
-		fixed_ship_armor_slot = ship_armor_shbb
-		front_1_custom_slot = ship_super_heavy_battery_1
-		front_2_custom_slot = ship_anti_air_3
-		mid_1_custom_slot = ship_anti_air_cannon_4
-		mid_2_custom_slot = ship_anti_air_cannon_4
-		mid_3_custom_slot = ship_anti_air_cannon_4
-		rear_1_custom_slot = ship_super_heavy_battery_1
-		rear_2_custom_slot = ship_airplane_launcher_2
-	}
-}
-
-create_equipment_variant = {
-	name = "龍驤型"
-	type = ship_hull_carrier_1
-	name_group = JAP_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_deck_space
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = carrier_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		front_1_custom_slot = empty
-	}
-}
-create_equipment_variant = {
-	name = "蒼龍型"
-	type = ship_hull_carrier_1
-	name_group = JAP_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_deck_space
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = carrier_ship_engine_3
-		fixed_ship_secondaries_slot = ship_secondaries_2
-		front_1_custom_slot = ship_deck_space
-	}
-}
-create_equipment_variant = {
-	name = "翔鶴型"
-	type = ship_hull_carrier_2
-	name_group = JAP_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_deck_space
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = carrier_ship_engine_4
-		fixed_ship_secondaries_slot = ship_secondaries_2
-		front_1_custom_slot = ship_deck_space
-		mid_1_custom_slot = ship_deck_space
-	}
-}
-create_equipment_variant = {
-	name = "隼鷹型"
-	type = ship_hull_carrier_1
-	name_group = JAP_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_deck_space
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = carrier_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		front_1_custom_slot = ship_deck_space
-	}
-}
-create_equipment_variant = {
-	name = "大鳳型"
-	type = ship_hull_carrier_2
-	name_group = JAP_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_deck_space
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_engine_slot = carrier_ship_engine_4
-		fixed_ship_secondaries_slot = ship_secondaries_2
-		front_1_custom_slot = ship_deck_space
-		mid_1_custom_slot = ship_armor_carrier_deck
-		mid_2_custom_slot = ship_armor_carrier_deck
-	}
-}
-create_equipment_variant = {
-	name = "改大鳳型"
-	type = ship_hull_carrier_2
-	name_group = JAP_CV_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = ship_deck_space
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_engine_slot = carrier_ship_engine_4
-		fixed_ship_secondaries_slot = ship_secondaries_2
-		front_1_custom_slot = ship_deck_space
-		mid_1_custom_slot = ship_armor_carrier_deck
-		mid_2_custom_slot = ship_armor_carrier_deck
-	}
-}
-create_equipment_variant = {
-	name = "鳳翔型"
-	type = ship_hull_carrier_conversion_ca
-	name_group = JAP_CVL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = empty
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = carrier_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-	}
-}
-create_equipment_variant = {
-	name = "瑞鳳型"
-	type = ship_hull_carrier_conversion_ca
-	name_group = JAP_CVL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_deck_slot_1 = ship_deck_space
-		fixed_ship_deck_slot_2 = empty
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = carrier_ship_engine_1
-		fixed_ship_secondaries_slot = ship_secondaries_1
-	}
-}
-create_equipment_variant = {
-	name = "古鷹型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = empty
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_sonar_slot = ship_sonar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_3
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		front_1_custom_slot = ship_medium_battery_2
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_torpedo_3
-		mid_2_custom_slot = empty
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_medium_battery_2
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "青葉型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_sonar_slot = ship_sonar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_3
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		front_1_custom_slot = ship_medium_battery_2
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_torpedo_3
-		mid_2_custom_slot = ship_anti_air_1
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_medium_battery_2
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "妙高型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_sonar_slot = ship_sonar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_3
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		front_1_custom_slot = ship_medium_battery_2
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_anti_air_2
-		mid_2_custom_slot = ship_anti_air_cannon_3
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_medium_battery_2
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "高雄型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_sonar_slot = ship_sonar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_3
-		fixed_ship_armor_slot = ship_armor_cruiser_2
-		front_1_custom_slot = ship_anti_air_cannon_3
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_torpedo_3
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_medium_battery_2
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "最上型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_sonar_slot = ship_sonar_3
-		fixed_ship_engine_slot = cruiser_ship_engine_4
-		fixed_ship_armor_slot = ship_armor_cruiser_2
-		front_1_custom_slot = ship_medium_battery_2
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_torpedo_3
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = empty
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "鈴谷型"
-	type = ship_hull_cruiser_2
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_sonar_slot = ship_sonar_2
-		fixed_ship_engine_slot = cruiser_ship_engine_4
-		fixed_ship_armor_slot = ship_armor_cruiser_2
-		front_1_custom_slot = ship_medium_battery_2
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_torpedo_3
-		mid_2_custom_slot = ship_torpedo_3
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_medium_battery_2
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "利根型"
-	type = ship_hull_cruiser_2
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_sonar_slot = ship_sonar_3
-		fixed_ship_engine_slot = cruiser_ship_engine_4
-		fixed_ship_armor_slot = ship_armor_cruiser_2
-		front_1_custom_slot = ship_medium_battery_2
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_medium_battery_2
-		mid_2_custom_slot = ship_torpedo_3
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = empty
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "伊吹型"
-	type = ship_hull_cruiser_2
-	name_group = JAP_CA_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_sonar_slot = ship_sonar_2
-		fixed_ship_engine_slot = cruiser_ship_engine_4
-		fixed_ship_armor_slot = ship_armor_cruiser_2
-		front_1_custom_slot = ship_medium_battery_2
-#		front_2_custom_slot = ship_medium_battery_2
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_torpedo_3
-#		mid_3_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_medium_battery_2
-#		rear_2_custom_slot = ship_medium_battery_2
-	}
-}
-create_equipment_variant = {
-	name = "球磨型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_1
-		fixed_ship_anti_air_slot = empty
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_sonar_slot = ship_sonar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_2
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		mid_1_custom_slot = ship_light_medium_battery_1
-		mid_2_custom_slot = ship_torpedo_1
-		rear_1_custom_slot = ship_mine_layer_1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "長良型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_sonar_slot = ship_sonar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_2
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		mid_1_custom_slot = ship_light_medium_battery_1
-		mid_2_custom_slot = ship_torpedo_2
-		rear_1_custom_slot = ship_mine_layer_1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "川内型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_sonar_slot = ship_sonar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_2
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		mid_1_custom_slot = ship_torpedo_2
-		mid_2_custom_slot = ship_airplane_launcher_1
-		rear_1_custom_slot = ship_mine_layer_1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "夕張型"
-	type = ship_hull_cruiser_1
-	name_group = JAP_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_1
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = cruiser_ship_engine_1
-		fixed_ship_armor_slot = ship_armor_cruiser_1
-		mid_1_custom_slot = ship_torpedo_1
-		mid_2_custom_slot = empty
-		rear_1_custom_slot = ship_depth_charge_1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "阿賀野型"
-	type = ship_hull_cruiser_3
-	name_group = JAP_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_3
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_2		
-		fixed_ship_engine_slot = cruiser_ship_engine_3
-		fixed_ship_sonar_slot = ship_sonar_2
-		fixed_ship_armor_slot = ship_armor_cruiser_3
-		front_1_custom_slot = ship_light_medium_battery_2
-		mid_1_custom_slot = ship_torpedo_3
-		mid_2_custom_slot = ship_anti_air_cannon_3
-		rear_1_custom_slot = ship_depth_charge_1
-		rear_2_custom_slot = ship_light_medium_battery_2
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "大淀型"
-	type = ship_hull_cruiser_3
-	name_group = JAP_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_3
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_3		
-		fixed_ship_engine_slot = cruiser_ship_engine_3
-		fixed_ship_sonar_slot = ship_sonar_3
-		fixed_ship_armor_slot = ship_armor_cruiser_3
-		front_1_custom_slot = ship_light_medium_battery_3
-		mid_1_custom_slot = ship_anti_air_2
-		mid_2_custom_slot = ship_anti_air_cannon_4
-		rear_1_custom_slot = ship_airplane_launcher_2
-		rear_2_custom_slot = ship_airplane_launcher_2
-	}
-}
-create_equipment_variant = {
-	name = "改阿賀野型"
-	type = ship_hull_cruiser_4
-	name_group = JAP_CL_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_medium_battery_3
-		fixed_ship_anti_air_slot = ship_anti_air_4
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_3
-		fixed_ship_radar_slot = ship_radar_3		
-		fixed_ship_engine_slot = cruiser_ship_engine_4
-		fixed_ship_sonar_slot = ship_sonar_3
-		fixed_ship_armor_slot = ship_armor_cruiser_3
-		front_1_custom_slot = ship_light_medium_battery_3
-		mid_1_custom_slot = ship_light_medium_battery_3
-		mid_2_custom_slot = ship_anti_air_cannon_4
-		rear_1_custom_slot = ship_light_medium_battery_3
-		rear_2_custom_slot = ship_airplane_launcher_2
-	}
-}
-create_equipment_variant = {
-	name = "睦月型"
-	type = ship_hull_light_1
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_1
-		fixed_ship_anti_air_slot = empty
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-		fixed_ship_radar_slot = empty
-		fixed_ship_engine_slot = light_ship_engine_1
-		fixed_ship_torpedo_slot = ship_torpedo_1
-		mid_1_custom_slot = ship_torpedo_1
-		rear_1_custom_slot = ship_depth_charge_1
-	}
-	obsolete = yes
-}
-create_equipment_variant = {
-	name = "吹雪型"
-	type = ship_hull_light_1
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = empty
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = light_ship_engine_2
-		fixed_ship_torpedo_slot = ship_torpedo_2
-		mid_1_custom_slot = ship_torpedo_2
-		rear_1_custom_slot = ship_depth_charge_1
-	}
-}
-create_equipment_variant = {
-	name = "綾波型"
-	type = ship_hull_light_1
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = light_ship_engine_2
-		fixed_ship_torpedo_slot = ship_torpedo_2
-		mid_1_custom_slot = ship_torpedo_2
-		rear_1_custom_slot = ship_depth_charge_1
-	}
-}
-create_equipment_variant = {
-	name = "暁型"
-	type = ship_hull_light_1
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = light_ship_engine_2
-		fixed_ship_torpedo_slot = ship_torpedo_2
-		mid_1_custom_slot = ship_torpedo_2
-		rear_1_custom_slot = ship_depth_charge_2
-	}
-}
-create_equipment_variant = {
-	name = "初春型"
-	type = ship_hull_light_1
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = light_ship_engine_1
-		fixed_ship_torpedo_slot = ship_torpedo_2
-		mid_1_custom_slot = ship_torpedo_2
-		rear_1_custom_slot = ship_depth_charge_2
-	}
-}
-create_equipment_variant = {
-	name = "白露型"
-	type = ship_hull_light_1
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_1
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = light_ship_engine_1
-		fixed_ship_torpedo_slot = ship_torpedo_2
-		mid_1_custom_slot = ship_torpedo_2
-		rear_1_custom_slot = ship_depth_charge_2
-	}
-}
-create_equipment_variant = {
-	name = "朝潮型"
-	type = ship_hull_light_2
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_1
-		fixed_ship_engine_slot = light_ship_engine_2
-		fixed_ship_torpedo_slot = ship_torpedo_3
-		mid_1_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_depth_charge_2
-	}
-}
-create_equipment_variant = {
-	name = "陽炎型"
-	type = ship_hull_light_2
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = light_ship_engine_3
-		fixed_ship_torpedo_slot = ship_torpedo_3
-		mid_1_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_depth_charge_2
-	}
-}
-create_equipment_variant = {
-	name = "夕雲型(史実)"
-	type = ship_hull_light_3
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_2
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_2
-		fixed_ship_engine_slot = light_ship_engine_3
-		fixed_ship_torpedo_slot = ship_torpedo_3
-		mid_1_custom_slot = ship_torpedo_3
-		rear_1_custom_slot = ship_depth_charge_2
-	}
-}
-create_equipment_variant = {
-	name = "秋月型(史実)"
-	type = ship_hull_light_3
-	name_group = JAP_DD_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_light_battery_3
-		fixed_ship_anti_air_slot = ship_anti_air_2
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_engine_slot = light_ship_engine_3
-		fixed_ship_torpedo_slot = ship_torpedo_3
-		front_1_custom_slot = ship_light_battery_3
-		mid_1_custom_slot = ship_light_battery_3
-		rear_1_custom_slot = ship_depth_charge_2
-	}
-}
+# create_equipment_variant = {
+# 	name = "龍驤型"
+# 	type = ship_hull_carrier_1
+# 	name_group = JAP_CV_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = ship_deck_space
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = carrier_ship_engine_1
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 		front_1_custom_slot = empty
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "蒼龍型"
+# 	type = ship_hull_carrier_1
+# 	name_group = JAP_CV_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = ship_deck_space
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = carrier_ship_engine_3
+# 		fixed_ship_secondaries_slot = ship_secondaries_2
+# 		front_1_custom_slot = ship_deck_space
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "翔鶴型"
+# 	type = ship_hull_carrier_2
+# 	name_group = JAP_CV_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = ship_deck_space
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = carrier_ship_engine_4
+# 		fixed_ship_secondaries_slot = ship_secondaries_2
+# 		front_1_custom_slot = ship_deck_space
+# 		mid_1_custom_slot = ship_deck_space
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "隼鷹型"
+# 	type = ship_hull_carrier_1
+# 	name_group = JAP_CV_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = ship_deck_space
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = carrier_ship_engine_1
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 		front_1_custom_slot = ship_deck_space
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "大鳳型"
+# 	type = ship_hull_carrier_2
+# 	name_group = JAP_CV_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = ship_deck_space
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_engine_slot = carrier_ship_engine_4
+# 		fixed_ship_secondaries_slot = ship_secondaries_2
+# 		front_1_custom_slot = ship_deck_space
+# 		mid_1_custom_slot = ship_armor_carrier_deck
+# 		mid_2_custom_slot = ship_armor_carrier_deck
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "改大鳳型"
+# 	type = ship_hull_carrier_2
+# 	name_group = JAP_CV_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = ship_deck_space
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_engine_slot = carrier_ship_engine_4
+# 		fixed_ship_secondaries_slot = ship_secondaries_2
+# 		front_1_custom_slot = ship_deck_space
+# 		mid_1_custom_slot = ship_armor_carrier_deck
+# 		mid_2_custom_slot = ship_armor_carrier_deck
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "鳳翔型"
+# 	type = ship_hull_carrier_conversion_ca
+# 	name_group = JAP_CVL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = empty
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = carrier_ship_engine_1
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "瑞鳳型"
+# 	type = ship_hull_carrier_conversion_ca
+# 	name_group = JAP_CVL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_deck_slot_1 = ship_deck_space
+# 		fixed_ship_deck_slot_2 = empty
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = carrier_ship_engine_1
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "古鷹型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = empty
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_sonar_slot = ship_sonar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_3
+# 		fixed_ship_armor_slot = ship_armor_cruiser_1
+# 		front_1_custom_slot = ship_medium_battery_2
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_torpedo_3
+# 		mid_2_custom_slot = empty
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_medium_battery_2
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "青葉型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_sonar_slot = ship_sonar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_3
+# 		fixed_ship_armor_slot = ship_armor_cruiser_1
+# 		front_1_custom_slot = ship_medium_battery_2
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_torpedo_3
+# 		mid_2_custom_slot = ship_anti_air_1
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_medium_battery_2
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "妙高型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_sonar_slot = ship_sonar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_3
+# 		fixed_ship_armor_slot = ship_armor_cruiser_1
+# 		front_1_custom_slot = ship_medium_battery_2
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_anti_air_2
+# 		mid_2_custom_slot = ship_anti_air_cannon_3
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_medium_battery_2
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "高雄型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_sonar_slot = ship_sonar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_3
+# 		fixed_ship_armor_slot = ship_armor_cruiser_2
+# 		front_1_custom_slot = ship_anti_air_cannon_3
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_torpedo_3
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_medium_battery_2
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "最上型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_sonar_slot = ship_sonar_3
+# 		fixed_ship_engine_slot = cruiser_ship_engine_4
+# 		fixed_ship_armor_slot = ship_armor_cruiser_2
+# 		front_1_custom_slot = ship_medium_battery_2
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_torpedo_3
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = empty
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "鈴谷型"
+# 	type = ship_hull_cruiser_2
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_sonar_slot = ship_sonar_2
+# 		fixed_ship_engine_slot = cruiser_ship_engine_4
+# 		fixed_ship_armor_slot = ship_armor_cruiser_2
+# 		front_1_custom_slot = ship_medium_battery_2
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_torpedo_3
+# 		mid_2_custom_slot = ship_torpedo_3
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_medium_battery_2
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "利根型"
+# 	type = ship_hull_cruiser_2
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_sonar_slot = ship_sonar_3
+# 		fixed_ship_engine_slot = cruiser_ship_engine_4
+# 		fixed_ship_armor_slot = ship_armor_cruiser_2
+# 		front_1_custom_slot = ship_medium_battery_2
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_medium_battery_2
+# 		mid_2_custom_slot = ship_torpedo_3
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = empty
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "伊吹型"
+# 	type = ship_hull_cruiser_2
+# 	name_group = JAP_CA_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_sonar_slot = ship_sonar_2
+# 		fixed_ship_engine_slot = cruiser_ship_engine_4
+# 		fixed_ship_armor_slot = ship_armor_cruiser_2
+# 		front_1_custom_slot = ship_medium_battery_2
+# #		front_2_custom_slot = ship_medium_battery_2
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_torpedo_3
+# #		mid_3_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_medium_battery_2
+# #		rear_2_custom_slot = ship_medium_battery_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "球磨型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_medium_battery_1
+# 		fixed_ship_anti_air_slot = empty
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_sonar_slot = ship_sonar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_2
+# 		fixed_ship_armor_slot = ship_armor_cruiser_1
+# 		mid_1_custom_slot = ship_light_medium_battery_1
+# 		mid_2_custom_slot = ship_torpedo_1
+# 		rear_1_custom_slot = ship_mine_layer_1
+# 	}
+# 	obsolete = yes
+# }
+# create_equipment_variant = {
+# 	name = "長良型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_medium_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_sonar_slot = ship_sonar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_2
+# 		fixed_ship_armor_slot = ship_armor_cruiser_1
+# 		mid_1_custom_slot = ship_light_medium_battery_1
+# 		mid_2_custom_slot = ship_torpedo_2
+# 		rear_1_custom_slot = ship_mine_layer_1
+# 	}
+# 	obsolete = yes
+# }
+# create_equipment_variant = {
+# 	name = "川内型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_medium_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_sonar_slot = ship_sonar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_2
+# 		fixed_ship_armor_slot = ship_armor_cruiser_1
+# 		mid_1_custom_slot = ship_torpedo_2
+# 		mid_2_custom_slot = ship_airplane_launcher_1
+# 		rear_1_custom_slot = ship_mine_layer_1
+# 	}
+# 	obsolete = yes
+# }
+# create_equipment_variant = {
+# 	name = "夕張型"
+# 	type = ship_hull_cruiser_1
+# 	name_group = JAP_CL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_medium_battery_1
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = cruiser_ship_engine_1
+# 		fixed_ship_armor_slot = ship_armor_cruiser_1
+# 		mid_1_custom_slot = ship_torpedo_1
+# 		mid_2_custom_slot = empty
+# 		rear_1_custom_slot = ship_depth_charge_1
+# 	}
+# 	obsolete = yes
+# }
+# create_equipment_variant = {
+# 	name = "阿賀野型"
+# 	type = ship_hull_cruiser_3
+# 	name_group = JAP_CL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_medium_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_3
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_2		
+# 		fixed_ship_engine_slot = cruiser_ship_engine_3
+# 		fixed_ship_sonar_slot = ship_sonar_2
+# 		fixed_ship_armor_slot = ship_armor_cruiser_3
+# 		front_1_custom_slot = ship_light_medium_battery_2
+# 		mid_1_custom_slot = ship_torpedo_3
+# 		mid_2_custom_slot = ship_anti_air_cannon_3
+# 		rear_1_custom_slot = ship_depth_charge_1
+# 		rear_2_custom_slot = ship_light_medium_battery_2
+# 	}
+# 	obsolete = yes
+# }
+# create_equipment_variant = {
+# 	name = "大淀型"
+# 	type = ship_hull_cruiser_3
+# 	name_group = JAP_CL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_medium_battery_3
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_3		
+# 		fixed_ship_engine_slot = cruiser_ship_engine_3
+# 		fixed_ship_sonar_slot = ship_sonar_3
+# 		fixed_ship_armor_slot = ship_armor_cruiser_3
+# 		front_1_custom_slot = ship_light_medium_battery_3
+# 		mid_1_custom_slot = ship_anti_air_2
+# 		mid_2_custom_slot = ship_anti_air_cannon_4
+# 		rear_1_custom_slot = ship_airplane_launcher_2
+# 		rear_2_custom_slot = ship_airplane_launcher_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "改阿賀野型"
+# 	type = ship_hull_cruiser_4
+# 	name_group = JAP_CL_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_medium_battery_3
+# 		fixed_ship_anti_air_slot = ship_anti_air_4
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+# 		fixed_ship_radar_slot = ship_radar_3		
+# 		fixed_ship_engine_slot = cruiser_ship_engine_4
+# 		fixed_ship_sonar_slot = ship_sonar_3
+# 		fixed_ship_armor_slot = ship_armor_cruiser_3
+# 		front_1_custom_slot = ship_light_medium_battery_3
+# 		mid_1_custom_slot = ship_light_medium_battery_3
+# 		mid_2_custom_slot = ship_anti_air_cannon_4
+# 		rear_1_custom_slot = ship_light_medium_battery_3
+# 		rear_2_custom_slot = ship_airplane_launcher_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "睦月型"
+# 	type = ship_hull_light_1
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_1
+# 		fixed_ship_anti_air_slot = empty
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+# 		fixed_ship_radar_slot = empty
+# 		fixed_ship_engine_slot = light_ship_engine_1
+# 		fixed_ship_torpedo_slot = ship_torpedo_1
+# 		mid_1_custom_slot = ship_torpedo_1
+# 		rear_1_custom_slot = ship_depth_charge_1
+# 	}
+# 	obsolete = yes
+# }
+# create_equipment_variant = {
+# 	name = "吹雪型"
+# 	type = ship_hull_light_1
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = empty
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = light_ship_engine_2
+# 		fixed_ship_torpedo_slot = ship_torpedo_2
+# 		mid_1_custom_slot = ship_torpedo_2
+# 		rear_1_custom_slot = ship_depth_charge_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "綾波型"
+# 	type = ship_hull_light_1
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = light_ship_engine_2
+# 		fixed_ship_torpedo_slot = ship_torpedo_2
+# 		mid_1_custom_slot = ship_torpedo_2
+# 		rear_1_custom_slot = ship_depth_charge_1
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "暁型"
+# 	type = ship_hull_light_1
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = light_ship_engine_2
+# 		fixed_ship_torpedo_slot = ship_torpedo_2
+# 		mid_1_custom_slot = ship_torpedo_2
+# 		rear_1_custom_slot = ship_depth_charge_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "初春型"
+# 	type = ship_hull_light_1
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = light_ship_engine_1
+# 		fixed_ship_torpedo_slot = ship_torpedo_2
+# 		mid_1_custom_slot = ship_torpedo_2
+# 		rear_1_custom_slot = ship_depth_charge_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "白露型"
+# 	type = ship_hull_light_1
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_1
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = light_ship_engine_1
+# 		fixed_ship_torpedo_slot = ship_torpedo_2
+# 		mid_1_custom_slot = ship_torpedo_2
+# 		rear_1_custom_slot = ship_depth_charge_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "朝潮型"
+# 	type = ship_hull_light_2
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_1
+# 		fixed_ship_engine_slot = light_ship_engine_2
+# 		fixed_ship_torpedo_slot = ship_torpedo_3
+# 		mid_1_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_depth_charge_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "陽炎型"
+# 	type = ship_hull_light_2
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = light_ship_engine_3
+# 		fixed_ship_torpedo_slot = ship_torpedo_3
+# 		mid_1_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_depth_charge_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "夕雲型(史実)"
+# 	type = ship_hull_light_3
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_2
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_2
+# 		fixed_ship_engine_slot = light_ship_engine_3
+# 		fixed_ship_torpedo_slot = ship_torpedo_3
+# 		mid_1_custom_slot = ship_torpedo_3
+# 		rear_1_custom_slot = ship_depth_charge_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "秋月型(史実)"
+# 	type = ship_hull_light_3
+# 	name_group = JAP_DD_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_light_battery_3
+# 		fixed_ship_anti_air_slot = ship_anti_air_2
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_engine_slot = light_ship_engine_3
+# 		fixed_ship_torpedo_slot = ship_torpedo_3
+# 		front_1_custom_slot = ship_light_battery_3
+# 		mid_1_custom_slot = ship_light_battery_3
+# 		rear_1_custom_slot = ship_depth_charge_2
+# 	}
+# }

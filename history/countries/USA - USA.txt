@@ -1,13 +1,11 @@
 ﻿capital = 989
 oob = USA_1946
-set_naval_oob = USA_1946_naval
 
 set_cosmetic_tag = AMERICA_united_states_48
-
 set_convoys = 1000
 
 set_politics = {
-	ruling_party = social_liberalism
+	ruling_party = liberal_democracy
 	last_election = "1944.11.7"
 	election_frequency = 48
 	elections_allowed = yes
@@ -16,16 +14,16 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 2
-	social_liberalism = 53
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 45
+	liberal_democracy = 53
+	conservative_democracy = 45
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-add_ideas = {
+recruit_character = CHARACTER_harry_s_truman
+
+add_ideas = {	#国民精神
 	USA_sour_loser
 	USA_failed_new_deal
 	USA_war_debt
@@ -33,13 +31,13 @@ add_ideas = {
 	USA_spread_dissatisfaction
 }
 
-create_country_leader = {
-	name = "ハリー・S・トルーマン"
-	desc = ""
-	picture = "GFX_Harry_S_Truman"
-	expire = "1972.12.26"
-	ideology = social_liberalism_ideology
-}
+give_guarantee = IRE
+give_guarantee = RHI
+give_guarantee = SGR
+
+add_opinion_modifier = {	target = JAP	modifier = Yellow_Monkey	}
+
+set_naval_oob = USA_1946_naval
 create_equipment_variant = {
 	name = "アイオワ級"
 	type = ship_hull_heavy_3

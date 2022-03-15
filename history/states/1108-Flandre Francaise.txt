@@ -1,7 +1,7 @@
 state = {
 	id = 1108
 	name = "STATE_1108"
-	manpower = 1168545
+	manpower = 2604361
 	state_category = large_city
 	
 	history = {
@@ -9,13 +9,13 @@ state = {
 		add_core_of = FRA
 		add_core_of = FLN
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			industrial_complex = 6
 			air_base = 10
 			575 = {	naval_base = 6	}
 		}
-		victory_points = {	575	5	}
-		victory_points = {	11483	10	}
+		victory_points = {	575	1	}
+		victory_points = {	11483	50	}
 		set_variable = {	FRA_state_variable = 1	}
 		set_variable = {	FLN_state_variable = 1	}
 		set_variable = {	BEL_state_variable = 2	}
@@ -24,4 +24,5 @@ state = {
 	provinces = {
 		575	11483
 	}
+	local_supplies = 0.0
 }

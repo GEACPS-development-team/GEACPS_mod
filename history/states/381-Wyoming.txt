@@ -2,6 +2,7 @@ state = {
 	id = 381
 	name = "STATE_381"
 	manpower = 225564
+	buildings_max_level_factor = 1
 	state_category = rural
 	
 	history = {
@@ -9,12 +10,13 @@ state = {
 		add_core_of = USA
 		add_core_of = WYO
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 		set_variable = {	WYO_state_variable = 1	}
 	}
 	
 	provinces = {
-		1815	4610	4794	4820	7814	10711	12651	4723	7688	7888	12633	12561
+		1815	4610	4723	4794	4820	7688	7814	7888	10640	10711	12561	12633	12651
 	}
+	local_supplies = 0.0
 }

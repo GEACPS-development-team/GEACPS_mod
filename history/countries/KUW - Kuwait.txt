@@ -1,24 +1,15 @@
 ﻿capital = 656
-#oob = KUW_1946
+oob = KUW_1946
+
+IND = {	set_protected_state = yes	}
+
 set_cosmetic_tag = KUW_sheikhdom
-
 set_convoys = 5
+set_dictatorship = yes
+set_party_name = {	#サバーハ家
+	ideology = national_authoritarianism
+	name = PARTY_sabah_house
+	long_name = PARTY_sabah_house_long
+}
 
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 100
-	reactionary_authoritarianism = 0
-	national_populism = 0
-}
+recruit_character = CHARACTER_ahmad_al-jaber_al-sabah

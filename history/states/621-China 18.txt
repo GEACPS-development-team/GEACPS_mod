@@ -6,18 +6,22 @@ state = {
 	state_category = pastoral
 	
 	history = {
-		owner = MEN
-		add_core_of = MEN
-		add_core_of = SUY
+		owner = CHI
 		add_core_of = CHI
+		add_core_of = GND
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			industrial_complex = 1
+			1047 = {	bunker = 1	}
+			1047 = {	coastal_bunker = 1	}
+			1047 = {	naval_base = 5	}
 		}
-		set_variable = {	SUY_state_variable = 1	}
+		victory_points = {	1047	5	}
+		set_variable = {	GND_state_variable = 1	}
 	}
 	
 	provinces = {
-		2087	4525	7631	10424	10629	12609	12880
+		1047
 	}
+	local_supplies = 0.0
 }

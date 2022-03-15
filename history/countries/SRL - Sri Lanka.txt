@@ -1,33 +1,9 @@
-﻿1946.1.1 = {
-	capital = 422
-	#oob = SRL_1946
+﻿capital = 422
+oob = SRL_1946
 
-	set_convoys = 5
+GBR = {	set_colony = yes	}
 
-	set_politics = {
-		ruling_party = reactionary_authoritarianism
-		last_election = "1946.1.1"
-		election_frequency = 48
-		elections_allowed = no
-	}
-	set_popularities = {
-		total_socialism = 0
-		radical_socialism = 0
-		social_democracy = 0
-		social_liberalism = 0
-		classical_liberalism = 0
-		liberal_conservatism = 0
-		social_conservatism = 0
-		authoritative_democracy = 0
-		reactionary_authoritarianism = 100
-		national_populism = 0
-	}
+set_cosmetic_tag = SRL_ENG-GBR
+set_dictatorship = yes
 
-	create_country_leader = {
-		name = "ヘンリー・モンク＝メイソン・ムーア"
-		desc = ""
-		picture = "GFX_United_Kingdom_of_Great_Britain"
-		expire = "1964.3.26"
-		ideology = reactionary_authoritarianism_ideology
-	}
-}
+recruit_character = CHARACTER_henry_monck-mason_moore

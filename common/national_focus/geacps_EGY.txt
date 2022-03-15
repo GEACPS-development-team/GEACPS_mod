@@ -1,0 +1,1464 @@
+focus_tree = {
+	id = geacps_EGY_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EGY
+		}
+	}
+	continuous_focus_position = {
+		x = 30 y = 2000
+	}
+	default = no
+	shared_focus = EGY_end_of_war_economy
+	shared_focus = EGY_arab_league_conception
+	shared_focus = EGY_military_preparation
+	shared_focus = EGY_development_of_air_force
+	shared_focus = EGY_survival_of_monarchy
+	shared_focus = EGY_revolution_made
+}
+
+shared_focus = {
+	id = EGY_end_of_war_economy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 5
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_end_of_war_economy"
+	}
+}
+
+shared_focus = {
+	id = EGY_support_for_misr_group
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_support_for_misr_group"
+	}
+	relative_position_id = EGY_end_of_war_economy
+	prerequisite = { focus = EGY_end_of_war_economy }
+}
+
+shared_focus = {
+	id = EGY_nationalization_of_industry
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	mutually_exclusive = {	focus = EGY_steering_toward_liberalization	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_nationalization_of_industry"
+	}
+	relative_position_id = EGY_support_for_misr_group
+	prerequisite = { focus = EGY_support_for_misr_group }
+}
+
+shared_focus = {
+	id = EGY_egyptian_economic_independence_plan
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_egyptian_economic_independence_plan"
+	}
+	relative_position_id = EGY_end_of_war_economy
+	prerequisite = { focus = EGY_end_of_war_economy }
+}
+
+shared_focus = {
+	id = EGY_steering_toward_liberalization
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	mutually_exclusive = {	focus = EGY_nationalization_of_industry	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_steering_toward_liberalization"
+	}
+	relative_position_id = EGY_support_for_misr_group
+	prerequisite = { focus = EGY_support_for_misr_group }
+}
+
+shared_focus = {
+	id = EGY_economic_management_agency
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_economic_management_agency"
+	}
+	relative_position_id = EGY_nationalization_of_industry
+	prerequisite = { focus = EGY_nationalization_of_industry }
+}
+
+shared_focus = {
+	id = EGY_support_for_company_start_up
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_support_for_company_start_up"
+	}
+	relative_position_id = EGY_steering_toward_liberalization
+	prerequisite = { focus = EGY_steering_toward_liberalization }
+}
+
+shared_focus = {
+	id = EGY_achieve_increase_in_domestic_demand
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_achieve_increase_in_domestic_demand"
+	}
+	relative_position_id = EGY_economic_management_agency
+	prerequisite = { 
+		focus = EGY_economic_management_agency
+		focus = EGY_support_for_company_start_up
+	}
+}
+
+shared_focus = {
+	id = EGY_establishment_of_modern_banks
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_establishment_of_modern_banks"
+	}
+	relative_position_id = EGY_egyptian_economic_independence_plan
+	prerequisite = { focus = EGY_egyptian_economic_independence_plan }
+}
+
+shared_focus = {
+	id = EGY_subsidies_for_islamic_banks
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_subsidies_for_islamic_banks"
+	}
+	relative_position_id = EGY_establishment_of_modern_banks
+	prerequisite = { focus = EGY_establishment_of_modern_banks }
+}
+
+shared_focus = {
+	id = EGY_promoting_entrepreneurship_to_wealthy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_promoting_entrepreneurship_to_wealthy"
+	}
+	relative_position_id = EGY_egyptian_economic_independence_plan
+	prerequisite = { focus = EGY_egyptian_economic_independence_plan }
+}
+
+shared_focus = {
+	id = EGY_regulation_of_foreigninvested_enterprises
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_regulation_of_foreigninvested_enterprises"
+	}
+	relative_position_id = EGY_promoting_entrepreneurship_to_wealthy
+	prerequisite = { focus = EGY_promoting_entrepreneurship_to_wealthy }
+}
+
+shared_focus = {
+	id = EGY_investment_in_cotton_industry
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_investment_in_cotton_industry"
+	}
+	relative_position_id = EGY_egyptian_economic_independence_plan
+	prerequisite = { focus = EGY_egyptian_economic_independence_plan }
+}
+
+shared_focus = {
+	id = EGY_modernization_of_agriculture
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_modernization_of_agriculture"
+	}
+	relative_position_id = EGY_investment_in_cotton_industry
+	prerequisite = { focus = EGY_investment_in_cotton_industry }
+}
+
+shared_focus = {
+	id = EGY_construction_of_nile_dam
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_construction_of_nile_dam"
+	}
+	relative_position_id = EGY_regulation_of_foreigninvested_enterprises
+	prerequisite = { focus = EGY_subsidies_for_islamic_banks }
+	prerequisite = { focus = EGY_regulation_of_foreigninvested_enterprises }
+	prerequisite = { focus = EGY_modernization_of_agriculture }
+}
+
+shared_focus = {
+	id = EGY_the_second_plan
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_the_second_plan"
+	}
+	relative_position_id = EGY_end_of_war_economy
+	prerequisite = { focus = EGY_achieve_increase_in_domestic_demand }
+	prerequisite = { focus = EGY_construction_of_nile_dam }
+}
+
+shared_focus = {
+	id = EGY_tourism_industry
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_tourism_industry"
+	}
+	relative_position_id = EGY_the_second_plan
+	prerequisite = { focus = EGY_the_second_plan }
+}
+
+shared_focus = {
+	id = EGY_cairo_airport
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_cairo_airport"
+	}
+	relative_position_id = EGY_tourism_industry
+	prerequisite = { focus = EGY_tourism_industry }
+}
+
+shared_focus = {
+	id = EGY_suez_canal
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_suez_canal"
+	}
+	relative_position_id = EGY_the_second_plan
+	prerequisite = { focus = EGY_the_second_plan }
+}
+
+shared_focus = {
+	id = EGY_overseas_worker
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 4
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_overseas_worker"
+	}
+	relative_position_id = EGY_the_second_plan
+	prerequisite = { focus = EGY_the_second_plan }
+}
+
+shared_focus = {
+	id = EGY_gather_immigrants
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_gather_immigrants"
+	}
+	relative_position_id = EGY_overseas_worker
+	prerequisite = { focus = EGY_overseas_worker }
+}
+
+shared_focus = {
+	id = EGY_monopoly_on_stocks
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_monopoly_on_stocks"
+	}
+	mutually_exclusive = {	focus = EGY_nationalization_of_canal	}
+	relative_position_id = EGY_suez_canal
+	prerequisite = { focus = EGY_suez_canal }
+}
+
+shared_focus = {
+	id = EGY_nationalization_of_canal
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_nationalization_of_canal"
+	}
+	mutually_exclusive = {	focus = EGY_monopoly_on_stocks	}
+	relative_position_id = EGY_suez_canal
+	prerequisite = { focus = EGY_suez_canal }
+}
+
+shared_focus = {
+	id = EGY_reminder_to_GBR_FRA
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_reminder_to_GBR_FRA"
+	}
+	mutually_exclusive = {	focus = EGY_assiut_agreement	}
+	relative_position_id = EGY_cairo_airport
+	prerequisite = { focus = EGY_cairo_airport }
+}
+
+shared_focus = {
+	id = EGY_assiut_agreement
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_assiut_agreement"
+	}
+	mutually_exclusive = {	focus = EGY_reminder_to_GBR_FRA	}
+	relative_position_id = EGY_cairo_airport
+	prerequisite = { focus = EGY_cairo_airport }
+}
+
+shared_focus = {
+	id = EGY_promote_influx
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_promote_influx"
+	}
+	mutually_exclusive = {	focus = EGY_encourage_job_growth	}
+	relative_position_id = EGY_overseas_worker
+	prerequisite = { focus = EGY_overseas_worker }
+}
+
+shared_focus = {
+	id = EGY_encourage_job_growth
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_encourage_job_growth"
+	}
+	mutually_exclusive = {	focus = EGY_promote_influx	}
+	relative_position_id = EGY_overseas_worker
+	prerequisite = { focus = EGY_overseas_worker }
+}
+
+shared_focus = {
+	id = EGY_simplification_of_passport_applications
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_simplification_of_passport_applications"
+	}
+	relative_position_id = EGY_promote_influx
+	prerequisite = { focus = EGY_promote_influx }
+}
+
+shared_focus = {
+	id = EGY_expansion_of_public_works
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_expansion_of_public_works"
+	}
+	relative_position_id = EGY_encourage_job_growth
+	prerequisite = { focus = EGY_encourage_job_growth }
+}
+
+shared_focus = {
+	id = EGY_measures_for_overcrowded_cities
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_measures_for_overcrowded_cities"
+	}
+	relative_position_id = EGY_simplification_of_passport_applications
+	prerequisite = {
+		focus = EGY_simplification_of_passport_applications
+		focus = EGY_expansion_of_public_works
+	}
+}
+
+shared_focus = {
+	id = EGY_development_of_red_sea_coast
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_development_of_red_sea_coast"
+	}
+	relative_position_id = EGY_gather_immigrants
+	prerequisite = { focus = EGY_gather_immigrants }
+	prerequisite = { focus = EGY_assiut_agreement }
+}
+
+shared_focus = {
+	id = EGY_suez_management_agency
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_suez_management_agency"
+	}
+	relative_position_id = EGY_monopoly_on_stocks
+	prerequisite = {
+		focus = EGY_monopoly_on_stocks
+		focus = EGY_nationalization_of_canal
+	}
+}
+
+
+shared_focus = {
+	id = EGY_arab_league_conception
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 17
+	y = 0
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_arab_league_conception"
+	}
+}
+
+shared_focus = {
+	id = EGY_national_unity_with_SYR
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_national_unity_with_SYR"
+	}
+	relative_position_id = EGY_arab_league_conception
+	prerequisite = { focus = EGY_arab_league_conception }
+}
+
+shared_focus = {
+	id = EGY_strong_coalition_concept
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_strong_coalition_concept"
+	}
+	mutually_exclusive = { focus = EGY_loose_cooperation	}
+	relative_position_id = EGY_arab_league_conception
+	prerequisite = { focus = EGY_arab_league_conception }
+}
+
+shared_focus = {
+	id = EGY_loose_cooperation
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_loose_cooperation"
+	}
+	mutually_exclusive = { focus = EGY_strong_coalition_concept	}
+	relative_position_id = EGY_arab_league_conception
+	prerequisite = { focus = EGY_arab_league_conception }
+}
+
+shared_focus = {
+	id = EGY_support_PAL
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_support_PAL"
+	}
+	relative_position_id = EGY_arab_league_conception
+	prerequisite = { focus = EGY_arab_league_conception }
+}
+
+shared_focus = {
+	id = EGY_middle_east_war
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_middle_east_war"
+	}
+	relative_position_id = EGY_support_PAL
+	prerequisite = { focus = EGY_support_PAL }
+}
+
+shared_focus = {
+	id = EGY_joint_defence_council
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_joint_defence_council"
+	}
+	relative_position_id = EGY_loose_cooperation
+	prerequisite = {
+		focus = EGY_strong_coalition_concept
+		focus = EGY_loose_cooperation
+	}
+}
+
+shared_focus = {
+	id = EGY_pressure_on_LEB
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_pressure_on_LEB"
+	}
+	relative_position_id = EGY_strong_coalition_concept
+	prerequisite = { focus = EGY_strong_coalition_concept }
+}
+
+shared_focus = {
+	id = EGY_red_sea_free_agreement
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_red_sea_free_agreement"
+	}
+	relative_position_id = EGY_loose_cooperation
+	prerequisite = { focus = EGY_loose_cooperation }
+}
+
+shared_focus = {
+	id = EGY_islamic_countries_defense_pact
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_islamic_countries_defense_pact"
+	}
+	relative_position_id = EGY_red_sea_free_agreement
+	prerequisite = { focus = EGY_red_sea_free_agreement }
+}
+
+shared_focus = {
+	id = EGY_arab_union
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_arab_union"
+	}
+	relative_position_id = EGY_national_unity_with_SYR
+	prerequisite = { focus = EGY_national_unity_with_SYR }
+	prerequisite = { focus = EGY_middle_east_war }
+	prerequisite = { focus = EGY_pressure_on_LEB }
+}
+
+shared_focus = {
+	id = EGY_military_preparation
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 5
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_military_preparation"
+	}
+}
+
+shared_focus = {
+	id = EGY_army_reorganization
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_army_reorganization"
+	}
+	relative_position_id = EGY_military_preparation
+	prerequisite = { focus = EGY_military_preparation }
+}
+
+shared_focus = {
+	id = EGY_formulation_of_doctrine
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_formulation_of_doctrine"
+	}
+	relative_position_id = EGY_army_reorganization
+	prerequisite = { focus = EGY_army_reorganization }
+}
+
+shared_focus = {
+	id = EGY_reform_of_national_military_academy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_reform_of_national_military_academy"
+	}
+	relative_position_id = EGY_army_reorganization
+	prerequisite = { focus = EGY_army_reorganization }
+}
+
+shared_focus = {
+	id = EGY_establishment_of_special_forces
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_establishment_of_special_forces"
+	}
+	relative_position_id = EGY_reform_of_national_military_academy
+	prerequisite = { focus = EGY_reform_of_national_military_academy }
+}
+
+shared_focus = {
+	id = EGY_desert_tank
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_desert_tank"
+	}
+	relative_position_id = EGY_army_reorganization
+	prerequisite = { focus = EGY_army_reorganization }
+}
+
+shared_focus = {
+	id = EGY_egyptan_fire_powar_warfare
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_egyptan_fire_powar_warfare"
+	}
+	relative_position_id = EGY_formulation_of_doctrine
+	prerequisite = { focus = EGY_formulation_of_doctrine }
+	prerequisite = { focus = EGY_desert_tank }
+}
+
+shared_focus = {
+	id = EGY_buy_from_GBR
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_from_GBR"
+	}
+	relative_position_id = EGY_egyptan_fire_powar_warfare
+	prerequisite = { focus = EGY_egyptan_fire_powar_warfare }
+	mutually_exclusive = {	focus = EGY_contract_with_FRA	}
+	mutually_exclusive = {	focus = EGY_weapons_from_eastern_bloc	}
+}
+
+shared_focus = {
+	id = EGY_contract_with_FRA
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_contract_with_FRA"
+	}
+	relative_position_id = EGY_establishment_of_special_forces
+	prerequisite = { focus = EGY_establishment_of_special_forces }
+	prerequisite = { focus = EGY_egyptan_fire_powar_warfare }
+	mutually_exclusive = {	focus = EGY_buy_from_GBR	}
+	mutually_exclusive = {	focus = EGY_weapons_from_eastern_bloc	}
+}
+
+shared_focus = {
+	id = EGY_weapons_from_eastern_bloc
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_weapons_from_eastern_bloc"
+	}
+	relative_position_id = EGY_establishment_of_special_forces
+	prerequisite = { focus = EGY_establishment_of_special_forces }
+	mutually_exclusive = {	focus = EGY_contract_with_FRA	}
+	mutually_exclusive = {	focus = EGY_buy_from_GBR	}
+}
+
+shared_focus = {
+	id = EGY_naval_reorganization
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_naval_reorganization"
+	}
+	relative_position_id = EGY_military_preparation
+	prerequisite = { focus = EGY_military_preparation }
+}
+
+shared_focus = {
+	id = EGY_buy_GBR_ships
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_GBR_ships"
+	}
+	mutually_exclusive = { focus = EGY_buy_JAP_ships	}
+	relative_position_id = EGY_naval_reorganization
+	prerequisite = { focus = EGY_naval_reorganization }
+}
+
+shared_focus = {
+	id = EGY_socotra_joint_exercise
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_socotra_joint_exercise"
+	}
+	relative_position_id = EGY_buy_GBR_ships
+	prerequisite = { focus = EGY_buy_GBR_ships }
+}
+
+shared_focus = {
+	id = EGY_buy_JAP_ships
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_JAP_ships"
+	}
+	mutually_exclusive = { focus = EGY_buy_GBR_ships	}
+	relative_position_id = EGY_naval_reorganization
+	prerequisite = { focus = EGY_naval_reorganization }
+}
+
+shared_focus = {
+	id = EGY_exchange_student_agreements
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_exchange_student_agreements"
+	}
+	relative_position_id = EGY_buy_JAP_ships
+	prerequisite = { focus = EGY_buy_JAP_ships }
+}
+
+shared_focus = {
+	id = EGY_alexandria_military_port
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_alexandria_military_port"
+	}
+	relative_position_id = EGY_socotra_joint_exercise
+	prerequisite = {
+		focus = EGY_socotra_joint_exercise
+		focus = EGY_exchange_student_agreements
+	}
+}
+
+shared_focus = {
+	id = EGY_development_of_air_force
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 12
+	y = 10
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_development_of_air_force"
+	}
+}
+
+shared_focus = {
+	id = EGY_western_bloc
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_western_bloc"
+	}
+	mutually_exclusive = { focus = EGY_eastern_bloc	}
+	relative_position_id = EGY_development_of_air_force
+	prerequisite = { focus = EGY_development_of_air_force }
+}
+
+shared_focus = {
+	id = EGY_eastern_bloc
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_eastern_bloc"
+	}
+	mutually_exclusive = { focus = EGY_western_bloc	}
+	relative_position_id = EGY_development_of_air_force
+	prerequisite = { focus = EGY_development_of_air_force }
+}
+
+shared_focus = {
+	id = EGY_cairo_air_base
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_cairo_air_base"
+	}
+	relative_position_id = EGY_development_of_air_force
+	prerequisite = { focus = EGY_development_of_air_force }
+}
+
+shared_focus = {
+	id = EGY_training_of_pilots
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_training_of_pilots"
+	}
+	relative_position_id = EGY_western_bloc
+	prerequisite = {
+		focus = EGY_western_bloc
+		focus = EGY_eastern_bloc
+	}
+}
+
+shared_focus = {
+	id = EGY_air_defence_network_for_whole_country
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_air_defence_network_for_whole_country"
+	}
+	relative_position_id = EGY_training_of_pilots
+	prerequisite = { focus = EGY_training_of_pilots }
+}
+
+shared_focus = {
+	id = EGY_buy_radar
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_buy_radar"
+	}
+	relative_position_id = EGY_training_of_pilots
+	prerequisite = { focus = EGY_training_of_pilots }
+}
+
+shared_focus = {
+	id = EGY_survival_of_monarchy
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 16
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_survival_of_monarchy"
+	}
+	mutually_exclusive = {	focus = EGY_revolution_made	}
+}
+
+shared_focus = {
+	id = EGY_hold_a_parliamentary_session
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_hold_a_parliamentary_session"
+	}
+	relative_position_id = EGY_survival_of_monarchy
+	prerequisite = { focus = EGY_survival_of_monarchy }
+}
+
+shared_focus = {
+	id = EGY_lifting_ban_on_strikes
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_lifting_ban_on_strikes"
+	}
+	relative_position_id = EGY_hold_a_parliamentary_session
+	prerequisite = { focus = EGY_hold_a_parliamentary_session }
+}
+
+shared_focus = {
+	id = EGY_democratic_constitutional_reform
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_democratic_constitutional_reform"
+	}
+	relative_position_id = EGY_hold_a_parliamentary_session
+	prerequisite = { focus = EGY_hold_a_parliamentary_session }
+}
+
+shared_focus = {
+	id = EGY_development_of_insurance_system
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_development_of_insurance_system"
+	}
+	relative_position_id = EGY_lifting_ban_on_strikes
+	prerequisite = { focus = EGY_lifting_ban_on_strikes }
+}
+
+shared_focus = {
+	id = EGY_royal_foundation
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -3
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_royal_foundation"
+	}
+	relative_position_id = EGY_survival_of_monarchy
+	prerequisite = { focus = EGY_survival_of_monarchy }
+}
+
+shared_focus = {
+	id = EGY_cairo_national_museum
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_cairo_national_museum"
+	}
+	relative_position_id = EGY_royal_foundation
+	prerequisite = { focus = EGY_royal_foundation }
+}
+
+shared_focus = {
+	id = EGY_utilization_GBR_connections
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_utilization_GBR_connections"
+	}
+	relative_position_id = EGY_democratic_constitutional_reform
+	prerequisite = { focus = EGY_democratic_constitutional_reform }
+	prerequisite = { focus = EGY_development_of_insurance_system }
+}
+
+shared_focus = {
+	id = EGY_talks_with_ISR
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_talks_with_ISR"
+	}
+	relative_position_id = EGY_utilization_GBR_connections
+	prerequisite = { focus = EGY_utilization_GBR_connections }
+	prerequisite = { focus = EGY_to_western_bloc }
+}
+
+shared_focus = {
+	id = EGY_overthrow
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_overthrow"
+	}
+	mutually_exclusive = {	focus = EGY_settlement	}
+	relative_position_id = EGY_talks_with_ISR
+	prerequisite = { focus = EGY_talks_with_ISR }
+}
+
+shared_focus = {
+	id = EGY_leader_of_middle_east
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_leader_of_middle_east"
+	}
+	relative_position_id = EGY_overthrow
+	prerequisite = { focus = EGY_overthrow }
+}
+
+shared_focus = {
+	id = EGY_cairo_conference
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_cairo_conference"
+	}
+	mutually_exclusive = {	focus = EGY_friendship_with_YUG	}
+	relative_position_id = EGY_leader_of_middle_east
+	prerequisite = {
+		focus = EGY_leader_of_middle_east
+		focus = EGY_as_nonaligned_nation
+	}
+}
+
+shared_focus = {
+	id = EGY_revolution_made
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 21
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_revolution_made"
+	}
+	mutually_exclusive = {	focus = EGY_survival_of_monarchy	}
+}
+
+shared_focus = {
+	id = EGY_new_constitution
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_new_constitution"
+	}
+	relative_position_id = EGY_revolution_made
+	prerequisite = { focus = EGY_revolution_made }
+}
+
+shared_focus = {
+	id = EGY_utilization_of_royal_property
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_utilization_of_royal_property"
+	}
+	relative_position_id = EGY_new_constitution
+	prerequisite = { focus = EGY_new_constitution }
+}
+
+shared_focus = {
+	id = EGY_diplomacy_diversion
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_diplomacy_diversion"
+	}
+	relative_position_id = EGY_democratic_constitutional_reform
+	prerequisite = {
+		focus = EGY_democratic_constitutional_reform
+		focus = EGY_utilization_of_royal_property
+	}
+}
+
+shared_focus = {
+	id = EGY_to_western_bloc
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_to_western_bloc"
+	}
+	mutually_exclusive = {	focus = EGY_to_eastern_bloc	}
+	relative_position_id = EGY_diplomacy_diversion
+	prerequisite = { focus = EGY_diplomacy_diversion }
+}
+
+shared_focus = {
+	id = EGY_settlement
+	icon = GFX_goal_unknown
+	cost = 2
+	x = -1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_settlement"
+	}
+	mutually_exclusive = {	focus = EGY_overthrow	}
+	relative_position_id = EGY_talks_with_ISR
+	prerequisite = { focus = EGY_talks_with_ISR }
+}
+
+shared_focus = {
+	id = EGY_join_western_bloc
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_join_western_bloc"
+	}
+	relative_position_id = EGY_settlement
+	prerequisite = { focus = EGY_settlement }
+}
+
+shared_focus = {
+	id = EGY_from_the_arab_to_world
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_from_the_arab_to_world"
+	}
+	relative_position_id = EGY_join_western_bloc
+	prerequisite = { focus = EGY_join_western_bloc }
+}
+
+shared_focus = {
+	id = EGY_to_eastern_bloc
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 1
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_to_eastern_bloc"
+	}
+	mutually_exclusive = {	focus = EGY_to_western_bloc	}
+	relative_position_id = EGY_diplomacy_diversion
+	prerequisite = { focus = EGY_diplomacy_diversion }
+}
+
+shared_focus = {
+	id = EGY_free_officers_movement
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_free_officers_movement"
+	}
+	mutually_exclusive = {	focus = EGY_communist_party	}
+	relative_position_id = EGY_revolution_made
+	prerequisite = { focus = EGY_revolution_made }
+}
+
+shared_focus = {
+	id = EGY_nasser_guidance
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_nasser_guidance"
+	}
+	relative_position_id = EGY_free_officers_movement
+	prerequisite = { focus = EGY_free_officers_movement }
+}
+
+shared_focus = {
+	id = EGY_socialist_division
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_socialist_division"
+	}
+	relative_position_id = EGY_nasser_guidance
+	prerequisite = { focus = EGY_nasser_guidance }
+}
+
+shared_focus = {
+	id = EGY_incite_nationalism
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_incite_nationalism"
+	}
+	relative_position_id = EGY_socialist_division
+	prerequisite = { focus = EGY_socialist_division }
+}
+
+shared_focus = {
+	id = EGY_weapons_from_CZE
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_weapons_from_CZE"
+	}
+	relative_position_id = EGY_nasser_guidance
+	prerequisite = {
+		focus = EGY_nasser_guidance
+		focus = EGY_faction_integration
+	}
+}
+
+shared_focus = {
+	id = EGY_communist_party
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 6
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_communist_party"
+	}
+	mutually_exclusive = {	focus = EGY_free_officers_movement	}
+	relative_position_id = EGY_revolution_made
+	prerequisite = { focus = EGY_revolution_made }
+}
+
+shared_focus = {
+	id = EGY_faction_integration
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_faction_integration"
+	}
+	relative_position_id = EGY_communist_party
+	prerequisite = { focus = EGY_communist_party }
+}
+
+shared_focus = {
+	id = EGY_penetration_to_workers
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_penetration_to_workers"
+	}
+	relative_position_id = EGY_faction_integration
+	prerequisite = { focus = EGY_faction_integration }
+}
+
+shared_focus = {
+	id = EGY_grasp_of_military
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_grasp_of_military"
+	}
+	relative_position_id = EGY_penetration_to_workers
+	prerequisite = { focus = EGY_penetration_to_workers }
+}
+
+shared_focus = {
+	id = EGY_certain_distance
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_certain_distance"
+	}
+	mutually_exclusive = {	focus = EGY_arab_socialism	}
+	relative_position_id = EGY_incite_nationalism
+	prerequisite = { focus = EGY_to_eastern_bloc }
+	prerequisite = { focus = EGY_incite_nationalism }
+}
+
+shared_focus = {
+	id = EGY_arab_socialism
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_arab_socialism"
+	}
+	mutually_exclusive = {	focus = EGY_certain_distance	}
+	relative_position_id = EGY_grasp_of_military
+	prerequisite = { focus = EGY_to_eastern_bloc }
+	prerequisite = { focus = EGY_grasp_of_military }
+}
+
+shared_focus = {
+	id = EGY_nonmilitary_exchange
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_nonmilitary_exchange"
+	}
+	relative_position_id = EGY_certain_distance
+	prerequisite = { focus = EGY_certain_distance }
+}
+
+shared_focus = {
+	id = EGY_joining_baath_party
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_joining_baath_party"
+	}
+	relative_position_id = EGY_arab_socialism
+	prerequisite = { focus = EGY_arab_socialism }
+}
+
+shared_focus = {
+	id = EGY_as_nonaligned_nation
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_as_nonaligned_nation"
+	}
+	relative_position_id = EGY_nonmilitary_exchange
+	prerequisite = { focus = EGY_nonmilitary_exchange }
+}
+
+shared_focus = {
+	id = EGY_friendship_with_YUG
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_friendship_with_YUG"
+	}
+	mutually_exclusive = {	focus = EGY_cairo_conference	}
+	relative_position_id = EGY_as_nonaligned_nation
+	prerequisite = { 
+		focus = EGY_leader_of_middle_east
+		focus = EGY_as_nonaligned_nation
+	}
+}
+
+shared_focus = {
+	id = EGY_request_to_PER
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_request_to_PER"
+	}
+	relative_position_id = EGY_joining_baath_party
+	prerequisite = { focus = EGY_joining_baath_party }
+}
+
+shared_focus = {
+	id = EGY_arab_recovery
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_arab_recovery"
+	}
+	relative_position_id = EGY_request_to_PER
+	prerequisite = { focus = EGY_request_to_PER }
+}
+
+shared_focus = {
+	id = EGY_railroad_from_HUN
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_railroad_from_HUN"
+	}
+	relative_position_id = EGY_weapons_from_CZE
+	prerequisite = {
+		focus = EGY_nonmilitary_exchange
+		focus = EGY_joining_baath_party
+	}
+}
+
+shared_focus = {
+	id = EGY_independence_of_arab_world
+	icon = GFX_goal_unknown
+	cost = 2
+	x = 0
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_independence_of_arab_world"
+	}
+	relative_position_id = EGY_from_the_arab_to_world
+	prerequisite = { focus = EGY_from_the_arab_to_world }
+}

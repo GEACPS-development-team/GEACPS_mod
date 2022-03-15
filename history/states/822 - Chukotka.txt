@@ -1,0 +1,27 @@
+state = {
+	id = 822
+	name = "STATE_822"
+	manpower = 34182
+	buildings_max_level_factor = 1
+	state_category = "pastoral"
+	
+	history = {
+		owner = AMR
+		add_core_of = AMR
+		add_core_of = CKK
+		add_core_of = FER
+		buildings = {
+			infrastructure = 1
+			13204 = {	naval_base = 1	}
+		}
+		victory_points = {	13063	1	}
+		set_variable = {	CKK_state_variable = 1	}
+		set_variable = {	SIB_state_variable = 1	}
+		set_variable = {	AMR_state_variable = 2	}
+	}
+	
+	provinces = {
+		4744	5264	13062	13063	13204
+	}
+	local_supplies = 0.0
+}

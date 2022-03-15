@@ -1,7 +1,7 @@
 ﻿capital = 313
-#oob = GUA_1946
-set_cosmetic_tag = GUA_republic
+oob = GUA_1946
 
+set_cosmetic_tag = GUA_republic
 set_convoys = 5
 
 set_politics = {
@@ -14,19 +14,11 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 100
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "フアン・ホセ・アレバロ"
-	desc = ""
-	picture = "GFX_Juan_Jose_Arevalo"
-	expire = "1990.10.8"
-	ideology = social_democracy_ideology
-}
+recruit_character = CHARACTER_juan_jose_arevalo_bermejo

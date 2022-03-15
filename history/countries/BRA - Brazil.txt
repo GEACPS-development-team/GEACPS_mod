@@ -1,32 +1,59 @@
 ﻿capital = 500
 oob = BRA_1946
-set_cosmetic_tag = BRA_united_states
 
+set_cosmetic_tag = BRA_united_states
 set_convoys = 5
 
 set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = liberal_democracy
+	last_election = "1945.6.11"
+	election_frequency = 60
+	elections_allowed = yes
 }
 set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 100
-	reactionary_authoritarianism = 0
-	national_populism = 0
+	total_socialism = 9
+	radical_socialism = 2
+	social_democracy = 10
+	liberal_democracy = 27
+	conservative_democracy = 42
+	authoritative_democracy = 6
+	national_authoritarianism = 0
+	national_populism = 4
+}
+set_party_name = {	#ブラジル共産党
+	ideology = total_socialism
+	name = PARTY_brazilian_communist_party
+	long_name = PARTY_brazilian_communist_party_long
+}
+set_party_name = {	#サンディカリズム大衆党
+	ideology = radical_socialism
+	name = PARTY_syndicalist_popular_party
+	long_name = PARTY_syndicalist_popular_party_long
+}
+set_party_name = {	#ブラジル労働党
+	ideology = social_democracy
+	name = PARTY_brazilian_labour_party
+	long_name = PARTY_brazilian_labour_party_long
+}
+set_party_name = {	#国民民主連合
+	ideology = conservative_democracy
+	name = PARTY_national_democratic_union
+	long_name = PARTY_national_democratic_union_long
+}
+set_party_name = {	#社会民主党
+	ideology = conservative_democracy
+	name = PARTY_social_democratic_party
+	long_name = PARTY_social_democratic_party_long
+}
+set_party_name = {	#無所属
+	ideology = authoritative_democracy
+	name = PARTY_independent_politician
+	long_name = PARTY_independent_politician_long
+}
+set_party_name = {	#共和党
+	ideology = national_populism
+	name = PARTY_republican_party
+	long_name = PARTY_republican_party_long
 }
 
-create_country_leader = {
-	name = "ジョゼ・リニャレス"
-	desc = ""
-	picture = "GFX_Jose_Linhares"
-	expire = "1957.1.26"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_jose_linhares

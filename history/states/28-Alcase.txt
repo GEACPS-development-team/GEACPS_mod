@@ -1,8 +1,8 @@
 state = {
 	id = 28
 	name = "STATE_28"
-	manpower = 1915600
-	state_category = city
+	manpower = 1144986
+	state_category = megalopolis
 	
 	resources = {	steel = 100	}
 	
@@ -10,7 +10,7 @@ state = {
 		owner = FRA
 		add_core_of = FRA
 		buildings = {
-			infrastructure = 7
+			infrastructure = 4
 			industrial_complex = 3
 			anti_air_building = 5
 			air_base = 5
@@ -18,12 +18,13 @@ state = {
 			6529 = {	bunker = 10	}
 			9503 = {	bunker = 10	}
 		}
-		victory_points = {	678	5	}
-		victory_points = {	9503	5	}
+		victory_points = {	678	1	}
+		victory_points = {	9503	30	}
 		set_variable = {	FRA_state_variable = 1	}
 	}
 	
 	provinces = {
 		678	6529	9503
 	}
+	local_supplies = 0.0
 }

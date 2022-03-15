@@ -1,22 +1,23 @@
 state = {
 	id = 1019
 	name = "STATE_1019"
-	manpower = 7536266
-	state_category = rural
-	
-	resources = {	aluminium = 7	}
+	manpower = 2971000
+	state_category = town
 	
 	history = {
 		owner = MAN
 		add_core_of = MAN
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
+		victory_points = {	945	10	}
+		victory_points = {	9759	10	}
 		set_variable = {	MAN_state_variable = 1	}
 	}
 	
 	provinces = {
 		800	861	887	927	945	3888	3949	6868	6905	9759	9803	9841	9848	9866	11781	11823	11850
 	}
+	local_supplies = 0.0
 }

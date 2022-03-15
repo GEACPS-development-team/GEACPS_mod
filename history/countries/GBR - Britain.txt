@@ -1,0 +1,85 @@
+﻿capital = 988
+oob = GBR_1946
+set_cosmetic_tag = GBRbyENG_united_kingdom
+
+set_convoys = 1000
+
+set_politics = {
+	ruling_party = social_democracy
+	last_election = "1945.7.19"
+	election_frequency = 60
+	elections_allowed = yes
+}
+set_popularities = {
+	total_socialism = 1
+	radical_socialism = 1
+	social_democracy = 48
+	liberal_democracy = 11
+	conservative_democracy = 36
+	authoritative_democracy = 3
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+add_ideas = {
+	GBR_from_the_cradle_to_the_grave
+	GBR_nationalisation_of_key_industries
+	GBR_france-united_kingdom_relations
+}
+set_technology = {
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	improved_decimetric_radar = 1
+	centimetric_radar = 1
+	improved_centimetric_radar = 1
+	advanced_centimetric_radar = 1
+	radar_7 = 1
+}
+
+set_party_name = {	#グレートブリテン共産党
+	ideology = total_socialism
+	name = PARTY_great_britain_communist_party
+	long_name = PARTY_great_britain_communist_party_long
+}
+set_party_name = {	#連邦党
+	ideology = radical_socialism
+	name = PARTY_common_wealth_party
+	long_name = PARTY_common_wealth_party_long
+}
+set_party_name = {	#労働党
+	ideology = social_democracy
+	name = PARTY_labour_party
+	long_name = PARTY_labour_party_long
+}
+set_party_name = {	#自由党
+	ideology = liberal_democracy
+	name = PARTY_liberal_party
+	long_name = PARTY_liberal_party_long
+}
+set_party_name = {	#保守党
+	ideology = conservative_democracy
+	name = PARTY_conservative_party
+	long_name = PARTY_conservative_party_long
+}
+set_party_name = {	#無所属
+	ideology = authoritative_democracy
+	name = PARTY_independent_politician
+	long_name = PARTY_independent_politician_long
+}
+illegalization_of_national_authoritarianism_party = yes
+illegalization_of_national_populism_party = yes
+
+recruit_character = CHARACTER_albert_frederick_arthur_george
+
+#陣営
+create_faction = WESTMINSTER_TREATY_ORGANIZATION
+add_to_faction = GBR
+add_to_faction = EGY
+add_to_faction = WGR
+add_to_faction = SRD
+
+give_guarantee = BRM
+give_guarantee = SIB
+give_guarantee = TIB

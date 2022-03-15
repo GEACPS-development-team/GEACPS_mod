@@ -1,29 +1,9 @@
 ﻿capital = 880
-oob = VAL_1946
+oob = AOS_1946
 
-set_politics = {
-	ruling_party = national_populism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
-	national_populism = 100
-}
+FRA = {	set_protected_territory = yes	}
 
-create_country_leader = {
-	name = "シャルル・ド・ゴール"
-	desc = ""
-	picture = "GFX_Charles_de_Gaulle"
-	expire = "1970.11.9"
-	ideology = national_populism_ideology
-}
+set_cosmetic_tag = AOS_FRA
+set_dictatorship = yes
+
+#recruit_character = CHARACTER_charles_andre_joseph_marie_de_gaulle

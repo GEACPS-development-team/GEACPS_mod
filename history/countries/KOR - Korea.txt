@@ -1,31 +1,26 @@
 ﻿capital = 525
-#oob = KOR_1946
+oob = KOR_1946
 
-set_convoys = 10
+JAP = {	set_imperial_overseas_territory = yes	}
 
-set_politics = {
-	ruling_party = national_populism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+set_cosmetic_tag = COUNTRY_JAP
+set_convoys = 100
+set_dictatorship = yes
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+illegalization_of_social_democracy_party = yes
+illegalization_of_liberal_democracy_party = yes
+illegalization_of_conservative_democracy_party = yes
+illegalization_of_authoritative_democracy_party = yes
+set_party_name = {	#朝鮮総督府
+	ideology = national_authoritarianism
+	name = PARTY_choson_government-general
+	long_name = PARTY_choson_government-general_long
 }
-set_popularities = {
-	total_socialism = 1
-	radical_socialism = 3
-	social_democracy = 6
-	social_liberalism = 4
-	classical_liberalism = 7
-	liberal_conservatism = 4
-	social_conservatism = 2
-	authoritative_democracy = 5
-	reactionary_authoritarianism = 8
-	national_populism = 60
+set_party_name = {	#国民総力朝鮮連盟
+	ideology = national_populism
+	name = PARTY_national_mobilization_choson_league
+	long_name = PARTY_national_mobilization_choson_league_long
 }
 
-create_country_leader = {
-	name = "阿部信行"
-	desc = ""
-	picture = "GFX_Nobuyuki_Abe"
-	expire = "1953.9.7"
-	ideology = national_populism_ideology
-}
+recruit_character = CHARACTER_nobuyuki_abe

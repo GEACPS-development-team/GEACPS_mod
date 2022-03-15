@@ -1,0 +1,31 @@
+focus_tree = {
+	id = geacps_EGY_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = JOR
+		}
+	}
+	continuous_focus_position = {
+		x = 30 y = 2000
+	}
+	default = no
+	shared_focus = JOR_signing_london_treaty
+}
+
+shared_focus = {
+	id = JOR_signing_london_treaty
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 2
+	y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus JOR_signing_london_treaty"
+		hidden_effect = {
+			news_event = JOR.0
+			JOR = {	country_event = {	id = JOR.1	days = 64	}	}
+			JOR = {	country_event = {	id = JOR.2	days = 86	}	}
+		}
+	}
+}

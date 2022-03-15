@@ -11,12 +11,15 @@ state = {
 	history = {
 		owner = DON
 		add_core_of = DON
+		add_core_of = DAG
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
+		set_variable = {	DAG_state_variable = 1	}
 	}
 	
 	provinces = {
-		700	712	728	1450	3668	3682	3711	4463	6689	6701	6730	6748	7554	7624	9645
+		700	712	728	1450	1455	3668	3682	3711	4463	6689	6701	6730	6748	7554	7624	9645
 	}
+	local_supplies = 0.0
 }

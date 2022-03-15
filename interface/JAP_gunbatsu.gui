@@ -1,0 +1,237 @@
+@FACTION_TEXT_X = 90
+@LOYALTY_TEXT_X = 250
+@POPULARITY_TEXT_X = 390
+@FACTION_ICONS_X = 10
+@FACTION_NAMES_X = 
+
+@ZVENO_Y = 30
+@ZVENO_TEXT_Y = 50
+@BS_Y = 100
+@BS_TEXT_Y = 120
+@BZNS_Y = 170
+@BZNS_TEXT_Y = 190
+@NSM_Y = 240
+@NSM_TEXT_Y = 260
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "jap_gunbatsu_decision_ui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		fade_time = 100
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		#background = {
+		#	name = "Background"		
+		#	quadTextureSprite ="GFX_scripted_gui_window_background"
+		#}
+
+		#統制派
+		iconType ={
+			name ="toseiha_header_bg"
+			spriteType = "GFX_decision_faction_jap_toseiha"
+			position = { x = @FACTION_ICONS_X y = @ZVENO_Y }
+			Orientation = "UPPER_LEFT"
+		}	
+		
+		instantTextBoxType = {
+			name ="toseiha_name_text"
+			position = { x = @FACTION_TEXT_X y = @ZVENO_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "JAP_toseiha_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="toseiha_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_TOSEIHA_TOOLTIP
+		}
+		
+		#皇道派
+		iconType = {
+			name ="kodoha_icon"
+			spriteType = "GFX_decision_faction_jap_kodoha"
+			position = { x = @FACTION_ICONS_X y = @BS_Y }
+		}
+		
+		instantTextBoxType = {
+			name ="kodoha_name_text"
+			position = { x = @FACTION_TEXT_X y = @BS_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "JAP_kodoha_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="kodoha_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_KODOHA_TOOLTIP
+		}
+		
+		#艦隊派
+		iconType = {
+			name ="fleet_faction_icon"
+			spriteType = "GFX_decision_faction_jap_fleet_faction"
+			position = { x = @FACTION_ICONS_X y = @BZNS_Y }
+		}
+		
+		instantTextBoxType = {
+			name ="fleet_faction_name_text"
+			position = { x = @FACTION_TEXT_X y = @BZNS_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "JAP_fleet_faction_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="fleet_faction_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_FLEET_FACTION_TOOLTIP
+		}
+		
+		#条約派
+		iconType = {
+			name ="treaty_faction_icon"
+			spriteType = "GFX_decision_faction_jap_treaty_faction"
+			position = { x = @FACTION_ICONS_X y = @NSM_Y }
+		}
+		
+		instantTextBoxType = {
+			name ="treaty_faction_name_text"
+			position = { x = @FACTION_TEXT_X y = @NSM_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "JAP_treaty_faction_name_text"
+			format = left
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="treaty_faction_tooltip_fake"
+			position = { x = @FACTION_ICONS_X y = 30 }
+			maxwidth = 230
+			maxHeight = 38
+			pdx_tooltip = JAP_TREATY_FACTION_TOOLTIP
+		}
+		
+		#忠誠
+		instantTextBoxType = {
+			name ="loyalty_header"
+			position = { x = @LOYALTY_TEXT_X y = 0 }
+			font = "hoi_18mbs"
+			text = "BUL_ui_loyalty_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_zveno_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = @ZVENO_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "BUL_zveno_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_bs_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = @BS_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "BUL_bs_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_bzns_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = @BZNS_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "BUL_bzns_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		instantTextBoxType = {
+			name ="BUL_nsm_loyalty_status"
+			position = { x = @LOYALTY_TEXT_X y = @NSM_TEXT_Y  }
+			font = "hoi_18mbs"
+			text = "BUL_nsm_loyalty_status"
+			format = center
+			maxwidth = 110
+		}
+		
+		#支持率
+		instantTextBoxType = {
+			name ="popularity_header"
+			position = { x = @POPULARITY_TEXT_X y = 0 }
+			font = "hoi_18mbs"
+			text = "BUL_ui_popularity_header"
+			format = center
+			maxHeight = 24
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_zveno_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = @ZVENO_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "BUL_zveno_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_bs_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = @BS_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "BUL_bs_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_bzns_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = @BZNS_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "BUL_bzns_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		instantTextBoxType = {
+			name ="BUL_nsm_popularity_status"
+			position = { x = @POPULARITY_TEXT_X y = @NSM_TEXT_Y }
+			font = "hoi_18mbs"
+			text = "BUL_nsm_popularity_status"
+			format = center
+			maxwidth = 120
+		}
+
+		#instantTextboxType = {
+		#	name = "political_title"
+		#	position = { x = 45 y = 8 }
+		#	font = "hoi_36header"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "POLITICAL_POLITICAL"
+		#	maxWidth = 400
+		#	maxHeight = 20
+		#	fixedsize = yes
+		#}
+	}
+}

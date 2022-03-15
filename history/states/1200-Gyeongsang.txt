@@ -1,21 +1,24 @@
 state = {
 	id = 1200
 	name = "STATE_1200"
-	manpower = 4668000
-	state_category = town
+	manpower = 4668681
+	state_category = rural
 	
 	history = {
 		owner = KOR
 		add_core_of = KOR
 		buildings = {
-			infrastructure = 4
-			4056 = {	naval_base = 3	}
+			infrastructure = 1
+			air_base = 1
+			12060 = {	naval_base = 3	}
 		}
-		victory_points = {	4056	1	}
+		victory_points = {	4086	10	}
+		victory_points = {	12060	10	}
 		set_variable = {	KOR_state_variable = 1	}
 	}
 	
 	provinces = {
 		1054	1081	4056	4086	4103	7121	10115	12060	12089
 	}
+	local_supplies = 0.0
 }

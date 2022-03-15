@@ -1,0 +1,52 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = annex_colonial_states
+						option = OPTION_ANNEX_COLONIAL_STATES
+					}
+				}
+				every_country = {
+					limit = {
+						OR = {
+							has_autonomy_state = overseas_territory
+							has_autonomy_state = colony
+							has_autonomy_state = colony_and_protectorate
+							has_autonomy_state = federation_of_colonies
+							has_autonomy_state = protected_territory
+							has_autonomy_state = junior_partner_colony
+							has_autonomy_state = leased_territory
+							has_autonomy_state = occupied_territory
+							has_autonomy_state = mandate
+							has_autonomy_state = imperial_overseas_territory
+							has_autonomy_state = us_territory
+							has_autonomy_state = us_commonwealth
+							has_autonomy_state = soviet_member_federal_republic
+							has_autonomy_state = soviet_member_republic
+							has_autonomy_state = soviet_member_federal_republic
+						}
+					}
+					OVERLORD = {
+						annex_country ={
+							target = PREV
+							transfer_troops = yes
+						}
+					}
+					every_owned_state = {
+						OVERLORD = {	add_state_claim = PREV	}
+					}
+				}
+				SUD = {
+					every_owned_state = {
+						EGY = {
+							transfer_state = PREV
+							add_state_claim = PREV
+						}
+					}
+				}
+			}
+		}
+	}
+}

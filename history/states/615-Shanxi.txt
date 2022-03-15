@@ -2,6 +2,7 @@ state = {
 	id = 615
 	name = "STATE_615"
 	manpower = 11601000
+	buildings_max_level_factor = 1
 	state_category = town
 	
 	history = {
@@ -10,15 +11,17 @@ state = {
 		add_core_of = SHX
 		add_core_of = ZHI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 2
 		}
 		victory_points = {	1519	3	}
+		victory_points = {	1575	1	}
 		set_variable = {	SHX_state_variable = 1	}
 	}
 	
 	provinces = {
-		1027	1180	1203	1438	1519	4469	4538	4634	10421	10480	12078	12344	4074	10507	12300	12432
+		1027	1034	1180	1203	1438	1519	1531	1575	4074	4174	4469	4538	4634	7571	10367	10421	12078	12300	12344
 	}
+	local_supplies = 0.0
 }

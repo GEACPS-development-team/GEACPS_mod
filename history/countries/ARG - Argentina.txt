@@ -1,32 +1,8 @@
 ﻿capital = 278
 oob = ARG_1946
+
 set_cosmetic_tag = ARG_republic
-
 set_convoys = 5
+set_dictatorship = yes
 
-set_politics = {
-	ruling_party = reactionary_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 0
-	reactionary_authoritarianism = 100
-	national_populism = 0
-}
-
-create_country_leader = {	#エデルミロ・フリアン・ファレル・パウル
-	name = "エデルミロ・ファレル"
-	desc = ""
-	picture = "GFX_Edelmiro_Farrell"
-	expire = "	1980.10.21"
-	ideology = reactionary_authoritarianism_ideology
-}
+recruit_character = CHARACTER_edelmiro_julian_farrell_plaul

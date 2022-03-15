@@ -1,7 +1,7 @@
 state = {
 	id = 585
 	name = "STATE_585"
-	manpower = 1033721
+	manpower = 465174
 	buildings_max_level_factor = 1
 	state_category = rural
 	
@@ -10,12 +10,14 @@ state = {
 		add_core_of = WTR
 		add_core_of = UZB
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
+		victory_points = {	1554	1	}
 		set_variable = {	UZB_state_variable = 1	}
 	}
 	
 	provinces = {
-		1479	1532	1554	1576	1614	4488	4499	4618	7501	7507	7541	10348	10395	10420	10435	12233	12324	12454	12465	12471	12474	13207
+		1532	1554	4499	7501	7507	10420
 	}
+	local_supplies = 0.0
 }

@@ -3,11 +3,9 @@ state = {
 	name = "STATE_606"
 	manpower = 18265400
 	buildings_max_level_factor = 1
-	
-	resources = {
-		steel = 11
-	}
 	state_category = town
+	
+	resources = {	steel = 11	}
 	
 	history = {
 		owner = CHI
@@ -15,14 +13,16 @@ state = {
 		add_core_of = NAN
 		add_core_of = ANH
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	7222	1	}
+		victory_points = {	12019	1	}
 		set_variable = {	ANH_state_variable = 1	}
 	}
 	
 	provinces = {
-		1083	4203	7035	7222	10017	10064	11994	12036	12061	1153	1171	4105	4173	10044	11937
+		1083	1099	1125	1146	1153	1171	4079	4105	4158	4173	4203	7007	7035	7094	7104	7222	9937	10008	10017	10040	10044	10064	10079	11916	11937	11994	12019	12036	12061
 	}
+	local_supplies = 0.0
 }

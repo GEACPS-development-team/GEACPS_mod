@@ -1,0 +1,44 @@
+add_namespace = JOR
+news_event = {
+	id = JOR.0
+	title = JOR.0.t
+	desc = JOR.0.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {	name = JOR.0.0	}
+}
+country_event = {
+	id = JOR.1
+	title = JOR.1.t
+	desc = JOR.1.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {	
+		name = JOR.1.0
+		JOR = {	set_cosmetic_tag = TRANSJORDAN_kingdom	}
+	}
+	option = {	
+		name = JOR.1.1
+		JOR = {	set_cosmetic_tag = TRANSJORDAN_hashemite_kingdom	}
+	}
+}
+country_event = {
+	id = JOR.2
+	title = JOR.2.t
+	desc = JOR.2.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			GBR = {	set_autonomy = {	target = JOR	autonomy_state = autonomy_free	}	}
+		}
+	}
+	
+	option = {	name = JOR.2.0	}
+}

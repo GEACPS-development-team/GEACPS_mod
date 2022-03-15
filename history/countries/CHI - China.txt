@@ -1,8 +1,13 @@
-﻿capital = 620
+﻿capital = 1162
 oob = CHI_1946
-set_cosmetic_tag = CHI_minguo_wuhan_government
 
-set_convoys = 5
+set_cosmetic_tag = CHI_minguo_wuhan_government
+set_dictatorship = yes
+set_chines_nationalist_party = yes
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+
+recruit_character = CHARACTER_chiang_kaishek
 
 set_technology = {
 	infantry_weapons = 1
@@ -16,37 +21,4 @@ set_technology = {
 	early_bomber = 1
 	CAS1 = 1
 	basic_machine_tools = 1
-}
-
-set_province_controller = 4091
-set_province_controller = 11928
-
-create_faction = ANTI-JAPANESE_NATIONAL_UNITED_FRONT
-add_to_faction = CHI
-
-set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1923.10.5"
-	election_frequency = 72
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 8
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 92
-	reactionary_authoritarianism = 0
-	national_populism = 0
-}
-
-create_country_leader = {
-	name = "蒋介石"
-	desc = ""
-	picture = "GFX_Chiang_Kaishek"
-	expire = "1975.4.5"
-	ideology = authoritative_democracy_ideology
 }

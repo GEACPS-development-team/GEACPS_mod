@@ -3,14 +3,13 @@ state = {
 	name = "STATE_1126"
 	manpower = 39500
 	state_category = town
-	set_demilitarized_zone = yes
 	
 	history = {
 		owner = SIA
 		add_core_of = SIA
 		add_core_of = BRM
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
 		set_variable = {	BRM_state_variable = 1	}
 		set_variable = {	SIA_state_variable = 2	}
@@ -19,4 +18,5 @@ state = {
 	provinces = {
 		4175	7400	7647	7909	7974
 	}
+	local_supplies = 0.0
 }

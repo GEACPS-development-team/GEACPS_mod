@@ -1,11 +1,11 @@
 ﻿capital = 113
 oob = IRE_1946
-set_cosmetic_tag = IRE_republic
 
+set_cosmetic_tag = IRE_republic
 set_convoys = 5
 
 set_politics = {
-	ruling_party = liberal_conservatism
+	ruling_party = conservative_democracy
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
@@ -14,19 +14,11 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 100
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 100
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {
-	name = "ショーン・トマス・オケリー"
-	desc = ""
-	picture = "GFX_Sean_T_O_Kelly"
-	expire = " 1966.11.23"
-	ideology = liberal_conservatism_ideology
-}
+recruit_character = CHARACTER_sean_thomas_okelly

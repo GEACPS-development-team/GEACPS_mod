@@ -1,20 +1,11 @@
 ﻿capital = 159
 oob = ITA_1946
-set_cosmetic_tag = ITA_republic
 
+set_cosmetic_tag = ITA_republic
 set_convoys = 10
 
-add_ideas = {
-	ITA_torino_agreement
-	ITA_national_liberation_committee
-}
-
-set_technology = {
-	tech_support = 1
-}
-
 set_politics = {
-	ruling_party = liberal_conservatism
+	ruling_party = conservative_democracy
 	last_election = "1934.3.26"
 	election_frequency = 60
 	elections_allowed = no
@@ -23,19 +14,20 @@ set_popularities = {
 	total_socialism = 18
 	radical_socialism = 6
 	social_democracy = 10
-	social_liberalism = 7
-	classical_liberalism = 6
-	liberal_conservatism = 35
-	social_conservatism = 7
+	liberal_democracy = 13
+	conservative_democracy = 42
 	authoritative_democracy = 6
-	reactionary_authoritarianism = 5
+	national_authoritarianism = 5
 	national_populism = 0
 }
 
-create_country_leader = {	#アルチーデ・アメデオ・フランチェスコ・デ・ガスペリ
-	name = "アルチーデ・デ・ガスペリ"
-	desc = ""
-	picture = "GFX_Alcide_De_Gasperi"
-	expire = "1954.8.19"
-	ideology = liberal_conservatism_ideology
+recruit_character = CHARACTER_alcide_amedeo_francesco_de_gasperi
+
+add_ideas = {	#国民精神
+	ITA_torino_agreement
+	ITA_national_liberation_committee
+}
+
+set_technology = {
+	tech_support = 1
 }

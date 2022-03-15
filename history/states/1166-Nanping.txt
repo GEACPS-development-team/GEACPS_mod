@@ -2,20 +2,21 @@ state = {
 	id = 1166
 	name = "STATE_1166"
 	manpower = 11755600
+	buildings_max_level_factor = 1
 	state_category = city
 	
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = FUJ
+		owner = PRU
+		add_core_of = PRU
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 		}
-		set_variable = {	FUJ_state_variable = 1	}
+		set_variable = {	PRU_state_variable = 1	}
 	}
 	
 	provinces = {
-		4070	4113	10012	10042
+		10942	12969
 	}
+	local_supplies = 0.0
 }

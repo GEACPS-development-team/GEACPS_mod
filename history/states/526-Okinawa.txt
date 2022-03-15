@@ -1,7 +1,7 @@
 state = {
 	id = 526
 	name = "STATE_526"
-	manpower = 744000
+	manpower = 1285003
 	state_category = small_island
 	
 	history = {
@@ -9,17 +9,18 @@ state = {
 		add_core_of = JAP
 		add_core_of = RYU
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
 			11932 = {	naval_base = 4	}
 		}
-		victory_points = {	11932	1	}
+		victory_points = {	11932	3	}
 		set_variable = {	JAP_state_variable = 1	}
 		set_variable = {	RYU_state_variable = 1	}
 	}
 	
 	provinces = {
-		1123	7115	10124	11932
+		10124	11932
 	}
+	local_supplies = 0.0
 }

@@ -6,17 +6,18 @@ state = {
 	state_category = town
 	
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = JIA
+		owner = PHI
+		add_core_of = PHI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 			industrial_complex = 2
 		}
-		set_variable = {	JIA_state_variable = 1	}
+		set_variable = {	PHI_state_variable = 1	}	
+		set_variable = {	EIN_state_variable = 1	}
 	}
 	
 	provinces = {
-		1066	4038
+		1368	7423	10302
 	}
+	local_supplies = 0.0
 }

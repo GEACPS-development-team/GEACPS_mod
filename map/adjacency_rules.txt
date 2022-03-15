@@ -1,4 +1,4 @@
-adjacency_rule{	#スエズ運河
+adjacency_rule = {	#スエズ運河
 	name = "SUEZ_CANAL"
 	contested = {
 		army = no
@@ -39,7 +39,7 @@ adjacency_rule{	#スエズ運河
 	offset = {	0	0	0	}
 }
 
-adjacency_rule{	#パナマ運河
+adjacency_rule = {	#パナマ運河
 	name = "PANAMA_CANAL"
 	contested = {
 		army = no
@@ -80,7 +80,7 @@ adjacency_rule{	#パナマ運河
 	offset = {	0	0	0	}
 }
 
-adjacency_rule{	#北海バルト海運河
+adjacency_rule = {	#北海バルト海運河
 	name = "NORTH-TO-EAST_BALTIC_SEA_CANAL"
 	contested = {
 		army = no
@@ -113,7 +113,7 @@ adjacency_rule{	#北海バルト海運河
 	offset = {	5	0	-6	}
 }
 
-adjacency_rule{	#北海バルト海運河
+adjacency_rule = {	#北海バルト海運河
 	name = "CORINTH_CANAL"
 	contested = {
 		army = no
@@ -146,7 +146,7 @@ adjacency_rule{	#北海バルト海運河
 	offset = {	-10	0	0	}
 }
 
-adjacency_rule{	#日本横断運河
+adjacency_rule = {	#日本横断運河
 	name = "TRANSJAPAN_CANAL"
 	contested = {
 		army = no
@@ -184,7 +184,7 @@ adjacency_rule{	#日本横断運河
 	offset = {	0	0	0	}
 }
 
-adjacency_rule{	#ジブラルタル海峡
+adjacency_rule = {	#ジブラルタル海峡
 	name = "GIBRALTAR_STRAIT"
 	contested = {
 		army = no
@@ -217,7 +217,7 @@ adjacency_rule{	#ジブラルタル海峡
 	offset = {	-31	0	-2	}
 }
 
-adjacency_rule{	#デンマーク＝ベルト海峡
+adjacency_rule = {	#デンマーク＝ベルト海峡
 	name = "DANISH_BELTS_STRAIT"
 	contested = {
 		army = no
@@ -250,7 +250,7 @@ adjacency_rule{	#デンマーク＝ベルト海峡
 	offset = {	-26	0	-13	}
 }
 
-adjacency_rule{	#ボスポラス海峡
+adjacency_rule = {	#ボスポラス海峡
 	name = "BOSPHORUS_STRAIT"
 	contested = {
 		army = no
@@ -288,7 +288,7 @@ adjacency_rule{	#ボスポラス海峡
 	offset = {	-2	0	-9	}
 }
 
-adjacency_rule{	#ダーダネルス海峡
+adjacency_rule = {	#ダーダネルス海峡
 	name = "DARDANELLES_STRAIT"
 	contested = {
 		army = no
@@ -326,7 +326,7 @@ adjacency_rule{	#ダーダネルス海峡
 	offset = {	3	0	-5	}
 }
 
-adjacency_rule{	#ホルムズ海峡
+adjacency_rule = {	#ホルムズ海峡
 	name = "HORMUZ_STRAIT"
 	contested = {
 		army = no
@@ -359,10 +359,20 @@ adjacency_rule{	#ホルムズ海峡
 	offset = {	2	0	12	}
 }
 
-adjacency_rule{	#対馬海峡隧道
+adjacency_rule = {	#対馬海峡隧道
 	name = "TSUSHIMA-PUSAN"
 	
 	required_provinces = {	4056	10011	}
+	
+	is_disabled = {
+		always = yes
+	}
+}
+
+adjacency_rule = {	#対馬海峡隧道
+	name = "BERING_STRAIT"
+	
+	required_provinces = {	7855	13204	}
 	
 	is_disabled = {
 		always = yes

@@ -1,31 +1,25 @@
 ﻿capital = 895
 oob = DLI_1946
 
-set_convoys = 5
+JAP = {	set_leased_territory = yes	}
 
-set_politics = {
-	ruling_party = national_populism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+set_cosmetic_tag = COUNTRY_JAP
+set_dictatorship = yes
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+illegalization_of_social_democracy_party = yes
+illegalization_of_liberal_democracy_party = yes
+illegalization_of_conservative_democracy_party = yes
+illegalization_of_authoritative_democracy_party = yes
+set_party_name = {	#関東局
+	ideology = national_authoritarianism
+	name = PARTY_kwantung_bureau
+	long_name = PARTY_kwantung_bureau_long
 }
-set_popularities = {
-	total_socialism = 1
-	radical_socialism = 3
-	social_democracy = 6
-	social_liberalism = 4
-	classical_liberalism = 4
-	liberal_conservatism = 3
-	social_conservatism = 2
-	authoritative_democracy = 10
-	reactionary_authoritarianism = 8
-	national_populism = 59
+set_party_name = {	#興亜奉公連盟
+	ideology = national_populism
+	name = PARTY_kwantung_asian_development_service_league
+	long_name = PARTY_kwantung_asian_development_service_league_long
 }
 
-create_country_leader = {
-	name = "山田乙三"
-	desc = ""
-	picture = "GFX_Otozo_Yamada"
-	expire = "	1965.7.18"
-	ideology = national_populism_ideology
-}
+recruit_character = CHARACTER_otozo_yamada

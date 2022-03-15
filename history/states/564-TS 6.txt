@@ -14,10 +14,12 @@ state = {
 	history = {
 		owner = AMR
 		add_core_of = AMR
+		add_core_of = BYA
 		add_core_of = RUS
 		buildings = {
-			infrastructure = 4
+			infrastructure = 2
 		}
+		set_variable = {	BYA_state_variable = 1	}
 		set_variable = {	SIB_state_variable = 1	}
 		set_variable = {	AMR_state_variable = 2	}
 	}
@@ -25,4 +27,5 @@ state = {
 	provinces = {
 		4766	4837	7751	7816	7835	10528	10658	12644	1762	1810	10543	12575	12506	1761	4716	4835	7736	7854
 	}
+	local_supplies = 0.0
 }

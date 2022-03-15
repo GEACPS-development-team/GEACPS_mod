@@ -1,6 +1,6 @@
-ideas = {#既存国民精神
+ideas = {	#既存国民精神
 	country = {
-		CZE_People's_Democracy_Manifesto = {#人民民主主義宣言
+		CZE_state_security = {	#StB
 			allowed = {
 				always = no
 			}
@@ -8,19 +8,32 @@ ideas = {#既存国民精神
 				always = yes
 			}
 			removal_cost = -1
-			picture = hol_haven_of_tolerance
+			picture = state_security
+			modifier = {
+				agency_upgrade_time = -0.1
+			}
+		}
+		CZE_People's_Democracy_Manifesto = {	#人民民主主義宣言
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = socialist_science_focus
 			modifier = {
 				total_socialism_drift = 0.01
 				radical_socialism_drift = 0.01
 				social_democracy_drift = 0.01
-				social_liberalism_drift = 0.01
-				social_conservatism_drift = 0.01
+				liberal_democracy_drift = 0.01
+				conservative_democracy_drift = 0.01
 			}
 		}
 	}
 }
 
-ideas = {#新規国民精神
+ideas = {	#新規国民精神
 	country = {
 	}
 }

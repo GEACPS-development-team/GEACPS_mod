@@ -1,8 +1,8 @@
 ﻿capital = 112
 oob = POR_1946
-set_cosmetic_tag = POR_republic
 
-set_convoys = 5
+set_cosmetic_tag = POR_republic
+set_convoys = 100
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -14,19 +14,11 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
 	authoritative_democracy = 100
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 0
 }
 
-create_country_leader = {	#アントニオ・オスカル・フラゴソ・カルモナ
-	name = "オスカル・カルモナ"
-	desc = ""
-	picture = "GFX_Oscar_Carmona"
-	expire = "1951.4.18"
-	ideology = authoritative_democracy_ideology
-}
+recruit_character = CHARACTER_antonio_oscar_fragoso_carmona

@@ -5,18 +5,22 @@ state = {
 	state_category = megalopolis
 	
 	history = {
-		owner = WGR
-		add_core_of = WGR
+		owner = BRL
+		add_core_of = BRL
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			6521 = {	bunker = 1	}
 		}
-		victory_points = {	6521	50	}
+		#victory_points = {	6521	50	}
+		set_variable = {	BRL_state_variable = 1	}
 		set_variable = {	EGR_state_variable = 1	}
 		set_variable = {	GER_state_variable = 1	}
+	
+		set_demilitarized_zone = yes
 	}
 	
 	provinces = {
 		6521
 	}
+	local_supplies = 0.0
 }

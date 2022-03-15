@@ -1,0 +1,17 @@
+﻿create_dynamic_country = {	#フランス統治下オーストリア占領地
+	original_tag = AUS
+	
+	FRA = {	set_occupied_territory = yes	}
+	
+	set_capital = {	state = 153	}
+	set_country_flag = AUS_FRA_countryflag
+	set_cosmetic_tag = COUNTRY_FRA
+	set_dictatorship = yes
+	
+	recruit_character = CHARACTER_marie_emile_antoine_bethouart
+	
+	every_core_state = {	remove_core_of = PREV	}
+	39 = {	set_owner_and_core_of = yes	}
+	153 = {	set_owner_and_core_of = yes	}
+	1002 = {	set_owner_and_core_of = yes	}
+}

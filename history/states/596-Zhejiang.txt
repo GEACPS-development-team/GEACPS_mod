@@ -2,6 +2,7 @@ state = {
 	id = 596
 	name = "STATE_596"
 	manpower = 21230700
+	buildings_max_level_factor = 1
 	state_category = city
 	
 	history = {
@@ -10,19 +11,13 @@ state = {
 		add_core_of = ZHE
 		add_core_of = NAN
 		buildings = {
-			infrastructure = 4
-			1055 = {	bunker = 1	}
-			9974 = {	bunker = 1	}
-			1055 = {	naval_base = 3	}
-			9974 = {	naval_base = 3	}
-			1055 = {	coastal_bunker = 1	}
-			9974 = {	coastal_bunker = 1	}
+			infrastructure = 2
 		}
-		victory_points = {	9974	1	}
 		set_variable = {	ZHE_state_variable = 1	}
 	}
 	
 	provinces = {
-		1055	1096	1168	1195	4013	4099	7058	7086	7146	7174	9944	9972	9974	10058	11920	11947	12059
+		1096	1168	1195	4013	4099	7058	7086	7146	7174	9944	9972	10058	11920	11947	12059
 	}
+	local_supplies = 0.0
 }

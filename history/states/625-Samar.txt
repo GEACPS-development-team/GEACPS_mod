@@ -2,19 +2,21 @@ state = {
 	id = 625
 	name = "STATE_625"
 	manpower = 1138724
+	buildings_max_level_factor = 1
 	state_category = rural
 	
 	history = {
 		owner = PHI
 		add_core_of = PHI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
 		}
-		set_variable = {	PHI_state_variable = 1	}
+		set_variable = {	PHI_state_variable = 1	}	
 		set_variable = {	EIN_state_variable = 1	}
 	}
 	
 	provinces = {
-		1224	1311	1340	4269	4373
+		1311	1340	4373
 	}
+	local_supplies = 0.0
 }

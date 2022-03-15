@@ -7,18 +7,22 @@ state = {
 	resources = {	steel = 11	}
 	
 	history = {
-		owner = ENG
+		owner = GBR
+		add_core_of = GBR
 		add_core_of = ENG
 		buildings = {
-			infrastructure = 8
+			infrastructure = 4
 			arms_factory = 3
 			industrial_complex = 2
 			air_base = 5
 		}
+		victory_points = {	6237	5	}
+		victory_points = {	11279	5	}
 		set_variable = {	ENG_state_variable = 1	}
 	}
 	
 	provinces = {
 		364	3353	6237	9250	9268	9322	11279
 	}
+	local_supplies = 0.0
 }

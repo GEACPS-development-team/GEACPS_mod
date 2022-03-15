@@ -1,0 +1,28 @@
+state = {
+	id = 831
+	name = "STATE_831"
+	manpower = 258430
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
+		owner = WTR
+		add_core_of = WTR
+		add_core_of = KHI
+		add_core_of = KKP
+		add_core_of = UZB
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	KHI_state_variable = 1	}
+		set_variable = {	KKP_state_variable = 1	}
+		set_variable = {	UZB_state_variable = 1	}
+		victory_points = {	12465	1	}
+	}
+	
+	provinces = {
+		10395	10435	12324	12454	12465
+	}
+	
+	local_supplies = 0.0
+}

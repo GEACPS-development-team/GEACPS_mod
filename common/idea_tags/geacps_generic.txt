@@ -1,14 +1,22 @@
 idea_categories = {
 	government_forms = {	#­•{Œ`‘Ô
-		slot = power_structure	#Œ —Í\‘¢
-		slot = power_source	#
-		slot = power_ideology	#Œ —ÍƒCƒfƒIƒƒM[
+		slot = power_structure	#‘‰Æ‘Ì§
+		slot = power_source	#Ğ‰ï‘Ì§
+		slot = power_ideology	#“¡‘Ì§
 	}
 	cabinet = {	#“àŠt
-		slot = head_of_government
-		slot = political_advisor
-		slot = political_advisor
-		slot = political_advisor
+		character_slot = head_of_government
+		character_slot = foreign_minister
+		character_slot = home_minister
+		character_slot = commerce_minister
+		character_slot = military_minister
+		character_slot = army_minister
+		character_slot = navy_minister
+		character_slot = air_force_minister
+		character_slot = political_advisor
+		
+		cost = 0
+		removal_cost = -1
 	}
 	law_category = {	#–@—¥
 		slot = economy
@@ -26,7 +34,7 @@ idea_categories = {
 		slot = tank_manufacturer
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
-		slot = theorist
+		character_slot = theorist
 		
 		ledger = civilian
 		
@@ -34,12 +42,12 @@ idea_categories = {
 		removal_cost = 0
 	}
 	military_category = {	#ŒR•”
-		slot = army_chief 
-		slot = navy_chief 
-		slot = air_chief
-		slot = high_command
-		slot = high_command
-		slot = high_command
+		character_slot = army_chief 
+		character_slot = navy_chief 
+		character_slot = air_chief
+		character_slot = high_command
+		character_slot = high_command
+		character_slot = high_command
 		
 		ledger = invalid
 		

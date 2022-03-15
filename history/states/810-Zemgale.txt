@@ -1,0 +1,26 @@
+state = {
+	id = 810
+	name = "STATE_810"
+	manpower = 600250
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
+		owner = LAT
+		add_core_of = LAT
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 3
+			310 = {	bunker = 2	}
+		}
+		victory_points = {	310	1	}
+		set_variable = {	LAT_state_variable = 1	}
+	}
+	
+	provinces = {
+		222	310	319	341	3298	6459	7482	9275	11222	13240
+	}
+	local_supplies = 0.0
+}

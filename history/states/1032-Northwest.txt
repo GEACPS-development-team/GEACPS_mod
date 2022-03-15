@@ -1,15 +1,19 @@
 state = {
 	id = 1032
 	name = "STATE_1032"
-	manpower = 11528000
-	state_category = town
-	set_demilitarized_zone = yes
+	manpower = 4720270
+	state_category = pastoral
+	
+	resources = {
+		chromium = 7
+		tungsten = 9
+	}
 	
 	history = {
 		owner = VIN
 		add_core_of = VIN
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 		}
 		set_variable = {	VIN_state_variable = 1	}
 	}
@@ -17,4 +21,5 @@ state = {
 	provinces = {
 		4529	10103	10129	12319
 	}
+	local_supplies = 0.0
 }

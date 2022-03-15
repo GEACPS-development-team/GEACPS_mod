@@ -6,16 +6,18 @@ state = {
 	state_category = town
 	
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = JIA
+		owner = PHI
+		add_core_of = PHI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			10265 = {	naval_base = 5	}
 		}
-		set_variable = {	JIA_state_variable = 1	}
+		victory_points = {	10265	15	}
+		set_variable = {	PHI_state_variable = 1	}
 	}
 	
 	provinces = {
-		7653	12495	4083
+		7275	7323	7351	10165	10265
 	}
+	local_supplies = 0.0
 }

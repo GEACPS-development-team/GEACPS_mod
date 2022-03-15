@@ -8,19 +8,20 @@ state = {
 	resources = {	tungsten = 6	}
 	
 	history = {
-		owner = CHI
-		add_core_of = CHI
-		add_core_of = HNN
-		add_core_of = NAN
+		owner = CHL
+		add_core_of = CHL
 		buildings = {
-			infrastructure = 5
+			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
+			12994 = {	naval_base = 1	}
 		}
-		set_variable = {	HNN_state_variable = 1	}
+		victory_points = {	12994	1	}
+		set_variable = {	CHL_state_variable = 1	}
 	}
 	
 	provinces = {
-		12483
+		5146	8231	12994
 	}
+	local_supplies = 0.0
 }

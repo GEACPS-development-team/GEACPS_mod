@@ -1,0 +1,25 @@
+state = {
+	id = 1287
+	name = "STATE_1287"
+	manpower = 4683827
+	buildings_max_level_factor = 1
+	state_category = "small_island"
+	
+	history = {
+		owner = INS
+		add_core_of = INS
+		buildings = {
+			infrastructure = 1
+			1355 = {	naval_base = 1	}
+			10175 = {	naval_base = 1	}
+			12234 = {	naval_base = 1	}
+		}
+		set_variable = {	INS_state_variable = 1	}
+		set_variable = {	EIN_state_variable = 1	}
+	}
+	
+	provinces = {
+		1298	1339	1355	4301	4358	7321	10175	10219	12151	12219	12234
+	}
+	local_supplies = 0.0
+}

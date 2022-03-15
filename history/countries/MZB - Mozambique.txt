@@ -1,31 +1,9 @@
 ﻿capital = 544
-#oob = MZB_1946
+oob = MZB_1946
 
-set_convoys = 5
+POR = {	set_colony = yes	}
 
-set_politics = {
-	ruling_party = reactionary_authoritarianism
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 0
-	radical_socialism = 0
-	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
-	authoritative_democracy = 0
-	reactionary_authoritarianism = 100
-	national_populism = 0
-}
+set_cosmetic_tag = COUNTRY_POR
+set_dictatorship = yes
 
-create_country_leader = {
-	name = "ジョゼ・トリスタン・デ・ベッテンコート"
-	desc = ""
-	picture = "GFX_Governor_of_Mozambique"
-	expire = "1954.11.25"
-	ideology = reactionary_authoritarianism_ideology
-}
+recruit_character = CHARACTER_jose_tristao_de_bettencourt

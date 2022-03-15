@@ -1,42 +1,86 @@
 ﻿capital = 987
 oob = "FRA_1946"
-set_cosmetic_tag = FRA_republic
 
+set_cosmetic_tag = FRA_republic_provisional_government
 set_convoys = 500
 
-add_ideas = {
+set_politics = {
+	ruling_party = national_authoritarianism
+	last_election = "1945.10.21"
+	election_frequency = 60
+	elections_allowed = no
+}
+set_popularities = {
+	total_socialism = 26
+	radical_socialism = 0
+	social_democracy = 24
+	liberal_democracy = 11
+	conservative_democracy = 16
+	authoritative_democracy = 23
+	national_authoritarianism = 0
+	national_populism = 0
+}
+set_party_name = {	#フランス共産党
+	ideology = total_socialism
+	name = PARTY_french_communist_party
+	long_name = PARTY_french_communist_party_long
+}
+set_party_name = {	#労働インターナショナル・フランス支部
+	ideology = radical_socialism
+	name = PARTY_workers_international_french_section
+	long_name = PARTY_workers_international_french_section_long
+}
+set_party_name = {	#労働インターナショナル・フランス支部
+	ideology = social_democracy
+	name = PARTY_workers_international_french_section
+	long_name = PARTY_workers_international_french_section_long
+}
+set_party_name = {	#急進社会主義及び急進共和主義党
+	ideology = liberal_democracy
+	name = PARTY_radical-socialist_and_radical_republican_party
+	long_name = PARTY_radical-socialist_and_radical_republican_party_long
+}
+set_party_name = {	#自由共和党
+	ideology = conservative_democracy
+	name = PARTY_liberty_republican_party
+	long_name = PARTY_liberty_republican_party_long
+}
+set_party_name = {	#大衆共和運動
+	ideology = authoritative_democracy
+	name = PARTY_popular_republican_movement
+	long_name = PARTY_popular_republican_movement_long
+}
+set_party_name = {	#臨時政府
+	ideology = national_authoritarianism
+	name = PARTY_provisional_government
+	long_name = PARTY_provisional_government_long
+}
+set_party_name = {	#臨時政府
+	ideology = national_authoritarianism
+	name = PARTY_provisional_government
+	long_name = PARTY_provisional_government_long
+}
+illegalization_of_national_populism_party = yes
+
+recruit_character = CHARACTER_charles_andre_joseph_marie_de_gaulle
+
+add_ideas = {	#内閣
+	FRA_charles_andre_joseph_marie_de_gaulle_hg
+}
+
+add_ideas = {	#国民精神
 	FRA_de_gaulle_regime
 	FRA_fighting_france
 	FRA_monet_plan
 	FRA_purge_against_the_collaboraturs
 	FRA_our_dearest_enemy
-	
-	FRA_Charles_de_Gaulle
 }
 
-set_politics = {
-	ruling_party = national_populism
-	last_election = "1936.4.26"
-	election_frequency = 48
-	elections_allowed = no
-}
-set_popularities = {
-	total_socialism = 16
-	radical_socialism = 11
-	social_democracy = 8
-	social_liberalism = 8
-	classical_liberalism = 6
-	liberal_conservatism = 6
-	social_conservatism = 8
-	authoritative_democracy = 14
-	reactionary_authoritarianism = 0
-	national_populism = 23
-}
+#陣営
+create_faction = WESTERN_EUROPEAN_ALLIANCE
+add_to_faction = FRA
+add_to_faction = SGR
+add_to_faction = ITA
 
-create_country_leader = {	#シャルル・アンドレ・ジョゼフ・ピエール＝マリ・ド・ゴール
-	name = "シャルル・ド・ゴール"
-	desc = ""
-	picture = "GFX_Charles_de_Gaulle"
-	expire = "1970.11.9"
-	ideology = national_populism_ideology
-}
+give_guarantee = SIB
+give_military_access = USA

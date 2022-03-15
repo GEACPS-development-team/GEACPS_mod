@@ -1,12 +1,9 @@
 ﻿capital = 328
 oob = MAN_1946
-set_cosmetic_tag = MAN_great_empire
 
-set_technology = {
-	gw_artillery = 1
-	interwar_antiair = 1
-}
+JAP = {	set_imperial_protected_state = yes	}
 
+set_cosmetic_tag = GREATMANCHURIA_empire
 set_convoys = 10
 
 set_politics = {
@@ -19,112 +16,28 @@ set_popularities = {
 	total_socialism = 0
 	radical_socialism = 0
 	social_democracy = 0
-	social_liberalism = 0
-	classical_liberalism = 0
-	liberal_conservatism = 0
-	social_conservatism = 0
+	liberal_democracy = 0
+	conservative_democracy = 0
 	authoritative_democracy = 0
-	reactionary_authoritarianism = 0
+	national_authoritarianism = 0
 	national_populism = 100
 }
 
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = total_socialism_ideology
-	traits = {
-		MAN_emperor
-	}
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+illegalization_of_social_democracy_party = yes
+illegalization_of_liberal_democracy_party = yes
+illegalization_of_conservative_democracy_party = yes
+illegalization_of_authoritative_democracy_party = yes
+set_party_name = {	#満州国協和会
+	ideology = national_populism
+	name = PARTY_manchukuo_concordia_association
+	long_name = PARTY_manchukuo_concordia_association_long
 }
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = radical_socialism_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = social_democracy_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = classical_liberalism_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = liberal_conservatism_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = liberal_conservatism_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = social_conservatism_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = authoritative_democracy_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = reactionary_authoritarianism_ideology
-	traits = {
-		MAN_emperor
-	}
-}
-create_country_leader = {
-	name = "康徳帝"
-	desc = ""
-	picture = "GFX_Kangde_Emperor"
-	expire = "1967.10.17"
-	ideology = national_populism_ideology
-	traits = {
-		MAN_emperor
-	}
+
+recruit_character = CHARACTER_aisin-gioro_puyi
+
+set_technology = {
+	gw_artillery = 1
+	interwar_antiair = 1
 }
