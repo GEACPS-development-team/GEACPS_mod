@@ -2,6 +2,10 @@ formation_decisions = {
 	form_Africa_Union = {
 		visible = {
 			always = no
+			any_state = {
+				state = ROOT.capital
+				is_on_continent = africa
+			}
 		}
 		complete_effect = {
 			set_cosmetic_tag = AFRICA_union
@@ -12,33 +16,43 @@ formation_decisions = {
 		}
 	}
 	form_EUROPE_union = {
-		available = {
-			HOL = {	is_subject_of = ROOT	}
-			BEL = {	is_subject_of = ROOT	}
-			LUX = {	is_subject_of = ROOT	}
-			ITA = {	is_subject_of = ROOT	}
-			FRA = {	is_subject_of = ROOT	}
-			GER = {	is_subject_of = ROOT	}
-		}
 		visible = {
-			original_tag = HOL
-			original_tag = BEL
-			original_tag = LUX
-			original_tag = ITA
-			original_tag = FRA
-			original_tag = GER
+			NOT = {	original_tag = EUR	}
+			ROOT = {
+				capital_scope = {	is_on_continent = europe	}
+				all_of_scopes = {
+					array = Global.eu_founder_state_array
+					is_owned_by = ROOT
+				}
+			}
+		}
+		available = {
+			NOT = {	original_tag = EUR	}
+			ROOT = {
+				capital_scope = {	is_on_continent = europe	}
+				all_of_scopes = {
+					array = Global.eu_founder_state_array
+					is_owned_by = ROOT
+				}
+			}
 		}
 		complete_effect = {
-			set_cosmetic_tag = EUROPE_union
-			annex_country = {	target = HOL	transfer_troops = yes	}
-			annex_country = {	target = BEL	transfer_troops = yes	}
-			annex_country = {	target = LUX	transfer_troops = yes	}
-			annex_country = {	target = ITA	transfer_troops = yes	}
-			annex_country = {	target = FRA	transfer_troops = yes	}
-			annex_country = {	target = GER	transfer_troops = yes	}
 			every_state = {
 				limit = {	is_on_continent = europe	}
-				add_core_of = ROOT
+				add_core_of = EUR
+			}
+			every_country = {
+				limit = {	is_subject_of = ROOT	}
+				if = {
+					limit = {	capital_scope = {	is_on_continent = europe	}	}
+					EUR = {	annex_country = {	target = PREV	transfer_troops = yes	}	}
+				}
+				else = {	EUR = {	puppet = PREV	}	}
+			}
+			EUR = {
+				annex_country = {	target = ROOT	transfer_troops = yes	}
+				change_tag_from = ROOT
+				set_cosmetic_tag = EUR_union
 			}
 		}
 	}
