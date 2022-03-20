@@ -17,3 +17,16 @@ soviet_member_trigger = {
 		has_autonomy_state = soviet_autonomous_republic
 	}
 }
+
+release_country_decision_trigger = {
+	ROOT = {
+		any_owned_state = {
+			meta_trigger = {
+				text = {	check_variable = {	[country_state_variable] = 1	}	}
+				country_state_variable = "[PREV.PREV.GetTag]_state_variable"
+			}
+			NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+		}
+	}
+	NOT = {	ROOT = {	original_tag = PREV	}	}
+}

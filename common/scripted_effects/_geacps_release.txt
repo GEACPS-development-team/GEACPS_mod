@@ -1,0 +1,277 @@
+release_country_setting = {
+	clear_autonomous_states_variable = yes
+	release_country_state = yes
+	retire_all_ideology_leader = yes
+	drop_cosmetic_tag = yes
+	release_country_cosmetic = yes
+	release_country_autonomy = yes
+	release_country_clr_flag = yes
+}
+
+release_country_state = {
+	if = {	#ABK
+		limit = {	original_tag = ABK	}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				if = {
+					limit = {	ROOT = {	has_country_flag = ABK_kingdom_region_flag	}	}
+					OR = {
+						check_variable = {	ABK_state_variable = 1	}
+						check_variable = {	GEO_state_variable = 1	}
+					}
+				}
+				else = {	check_variable = {	ABK_state_variable = 1	}	}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+	}
+	else_if = {	#ADU
+		limit = {	original_tag = ADU	}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				if = {
+					limit = {	ROOT = {	has_country_flag = GRANADA_region_flag	}	}
+					check_variable = {	ADU_state_variable = 1	}
+				}
+				else = {
+					OR = {
+						check_variable = {	ADU_state_variable = 1	}
+						check_variable = {	ADU_state_variable = 2	}
+					}
+				}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+	}
+	else_if = {	#AFG
+		limit = {	original_tag = AFG	}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				if = {
+					limit = {	ROOT = {	has_country_flag = AFG_STR_region_flag	}	}
+					check_variable = {	STR_state_variable = 1	}
+				}
+				else = {	always = no	}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				if = {
+					limit = {	ROOT = {	has_country_flag = AFG_western_BAL_region_flag	}	}
+					check_variable = {	BAL_state_variable = 1	}
+					check_variable = {	PAK_state_variable = 1	}
+				}
+				else_if = {
+					limit = {	ROOT = {	has_country_flag = AFG_all_BAL_region_flag	}	}
+					check_variable = {	BAL_state_variable = 1	}
+				}
+				else = {	always = no	}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				if = {
+					limit = {	ROOT = {	has_country_flag = AFG_PASHTUNISTAN_region_flag	}	}
+					check_variable = {	AFG_state_variable = 2	}
+					check_variable = {	PAK_state_variable = 1	}
+					check_variable = {	BAL_state_variable = 0	}
+				}
+				else_if = {
+					limit = {	ROOT = {	has_country_flag = AFG_not_KAS_region_flag	}	}
+					check_variable = {	PAK_state_variable = 1	}
+					check_variable = {	BAL_state_variable = 0	}
+					check_variable = {	KAS_state_variable = 0	}
+				}
+				else_if = {
+					limit = {	ROOT = {	has_country_flag = AFG_all_PAK_region_flag	}	}
+					OR = {
+						AND = {
+							check_variable = {	PAK_state_variable = 1	}
+							check_variable = {	BAL_state_variable = 0	}
+						}
+						check_variable = {	KAS_state_variable = 1	}
+					}
+				}
+				else = {	always = no	}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				check_variable = {	AFG_state_variable = 1	}
+				if = {
+					limit = {	ROOT = {	has_country_flag = AFG_not_STR_region_flag	}	}
+					check_variable = {	STR_state_variable = 0	}
+				}
+				if = {
+					limit = {	ROOT = {	has_country_flag = AFG_not_BAL_region_flag	}	}
+					check_variable = {	BAL_state_variable = 0	}
+				}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+	}
+	else = {
+		every_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				meta_trigger = {
+					text = {	check_variable = {	[country_state_variable] = 1	}	}
+					country_state_variable = "[PREV.GetTag]_state_variable"
+				}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+	}
+}
+
+release_country_cosmetic = {
+	if = {	#ABA
+		limit = {	original_tag = ABA	}
+		if = {	#アラバマ共和国
+			limit = {	ROOT = {	has_country_flag = ABA_republic_flag	}	}
+			set_cosmetic_tag = ABA_republic
+		}
+		else_if = {	#アメリカ連合国
+			limit = {	ROOT = {	has_country_flag = AMERICA_confederate_states_flag	}	}
+			set_cosmetic_tag = AMERICA_confederate_states_0
+		}
+		else_if = {	#アメリカ合衆国
+			limit = {	ROOT = {	has_country_flag = AMERICA_united_states_flag	}	}
+			set_cosmetic_tag = AMERICA_united_states_0
+		}
+	}
+	else_if = {	#ABK
+		limit = {	original_tag = ABK	}
+		if = {	#アブハジア王国
+			limit = {	ROOT = {	has_country_flag = ABK_kingdom_flag	}	}
+			set_cosmetic_tag = ABK_kingdom
+		}
+		else_if = {	#アブハジア公国
+			limit = {	ROOT = {	has_country_flag = ABK_principality_flag	}	}
+			set_cosmetic_tag = ABK_principality
+		}
+		else_if = {	#アブハジア共和国
+			limit = {	ROOT = {	has_country_flag = ABK_republic_flag	}	}
+			set_cosmetic_tag = ABK_republic
+		}
+	}
+	else_if = {	#ADR
+		limit = {	original_tag = ADR	}
+		if = {	#アンドラ王国
+			limit = {	ROOT = {	has_country_flag = ADR_kingdom_flag	}	}
+			set_cosmetic_tag = ADR_kingdom
+		}
+		else_if = {	#アンドラ公国
+			limit = {	ROOT = {	has_country_flag = ADR_principality_flag	}	}
+			set_cosmetic_tag = ADR_principality
+		}
+		else_if = {	#アンドラ共和国
+			limit = {	ROOT = {	has_country_flag = ADR_republic_flag	}	}
+			set_cosmetic_tag = ADR_republic
+		}
+	}
+	else_if = {	#AFG
+		limit = {	original_tag = AFG	}
+		if = {	#アフガニスタン王国
+			limit = {	ROOT = {	has_country_flag = AFG_kingdom_flag	}	}
+			set_cosmetic_tag = AFG_kingdom
+		}
+		else_if = {	#アフガニスタン首長国
+			limit = {	ROOT = {	has_country_flag = AFG_emirate_flag	}	}
+			set_cosmetic_tag = AFG_emirate
+		}
+		else_if = {	#アフガニスタン共和国
+			limit = {	ROOT = {	has_country_flag = AFG_republic_flag	}	}
+			set_cosmetic_tag = AFG_republic
+		}
+		else_if = {	#アフガニスタン・イスラム共和国
+			limit = {	ROOT = {	has_country_flag = AFG_islamic_republic_flag	}	}
+			set_cosmetic_tag = AFG_islamic_republic
+		}
+	}
+}
+
+release_country_autonomy = {
+	if = {	#ABK
+		limit = {	original_tag = ABK	}
+		if = {
+			limit = {	ROOT = {	has_country_flag = ABK_soviet_flag	}	}
+			SOV = {	set_autonomy = {	target = PREV	autonomous_state = soviet_member_republic	}	}
+			set_cosmetic_tag = ABK_SOV
+		}
+		else = {	ROOT = {	puppet = PREV	}	}
+	}
+	else_if = {	#AFG
+		limit = {	original_tag = AFG	}
+		if = {
+			limit = {	ROOT = {	has_country_flag = AFG_soviet_flag	}	}
+			SOV = {	set_autonomy = {	target = PREV	autonomous_state = soviet_member_republic	}	}
+			set_cosmetic_tag = AFG_SOV
+		}
+		else = {	ROOT = {	puppet = PREV	}	}
+	}
+	else = {	ROOT = {	puppet = PREV	}	}
+}
+
+release_country_clr_flag = {
+	ROOT = {
+		if = {	#ABA
+			limit = {	PREV = {	original_tag = ABA	}	}
+			clr_country_flag = ABA_republic_flag
+			clr_country_flag = AMERICA_confederate_states_flag
+			clr_country_flag = AMERICA_united_states_flag
+		}
+		else_if = {	#ABK
+			limit = {	PREV = {	original_tag = ABK	}	}
+			clr_country_flag = ABK_kingdom_flag
+			clr_country_flag = ABK_principality_flag
+			clr_country_flag = ABK_republic_flag
+			clr_country_flag = ABK_soviet_flag
+			clr_country_flag = ABK_kingdom_region_flag
+		}
+		else_if = {	#ADR
+			limit = {	PREV = {	original_tag = ADR	}	}
+			clr_country_flag = ADR_kingdom_flag
+			clr_country_flag = ADR_principality_flag
+			clr_country_flag = ADR_republic_flag
+		}
+		else_if = {	#ADU
+			limit = {	PREV = {	original_tag = ADU	}	}
+			clr_country_flag = ADU_republic_flag
+			clr_country_flag = GRANADA_emirate_flag
+			clr_country_flag = GRANADA_region_flag
+		}
+		else_if = {	#AFG
+			limit = {	PREV = {	original_tag = AFG	}	}
+			clr_country_flag = AFG_kingdom_flag
+			clr_country_flag = AFG_emirate_flag
+			clr_country_flag = AFG_republic_flag
+			clr_country_flag = AFG_islamic_republic_flag
+			clr_country_flag = AFG_soviet_flag
+			clr_country_flag = AFG_STR_region_flag
+			clr_country_flag = AFG_western_BAL_region_flag
+			clr_country_flag = AFG_all_BAL_region_flag
+			clr_country_flag = AFG_PASHTUNISTAN_region_flag
+			clr_country_flag = AFG_not_KAS_region_flag
+			clr_country_flag = AFG_all_PAK_region_flag
+			clr_country_flag = AFG_not_STR_region_flag
+			clr_country_flag = AFG_not_BAL_region_flag
+		}
+	}
+}
