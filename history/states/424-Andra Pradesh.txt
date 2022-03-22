@@ -1,24 +1,42 @@
-state = {
-	id = 424
-	name = "STATE_424"
-	manpower = 15791700
-	state_category = rural
-	
-	history = {
+
+state={
+	id=424
+	name="STATE_424"
+
+	history={
 		owner = IND
 		add_core_of = IND
 		add_core_of = BNG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
+
 		}
-		victory_points = {	4414	10	}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	BNG_state_variable = 1	}
+		victory_points = {
+			1228 1 
+		}
+		victory_points = {
+			4414 10 
+		}
+		victory_points = {
+			10255 10 
+		}
+		set_variable = {
+			IND_state_variable = 1
+
+		}
+		set_variable = {
+			BNG_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1344	1430	4321	4365	4414	7310	10152	10296	10756	10897	12180	12779
+
+	provinces={
+		1228 1344 1430 4237 4321 4365 4414 7297 7310 7340 10001 10152 10255 10296 10756 10897 12180 12779 
 	}
-	local_supplies = 0.0
+	manpower=15791700
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

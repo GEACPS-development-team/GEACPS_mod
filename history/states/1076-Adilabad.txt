@@ -1,22 +1,29 @@
-state = {
-	id = 1076
-	name = "STATE_1076"
-	manpower = 14013400
-	state_category = rural
-	
-	history = {
+
+state={
+	id=1076
+	name="STATE_1076"
+
+	history={
 		owner = IND
 		add_core_of = IND
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
+
 		}
-		set_variable = {	IND_state_variable = 1	}
+		set_variable = {
+			IND_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		10511
+
+	provinces={
+		1581 
 	}
-	local_supplies = 0.0
+	manpower=14013400
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

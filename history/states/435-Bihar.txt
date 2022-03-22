@@ -1,22 +1,27 @@
-state = {
-	id = 435
-	name = "STATE_435"
-	manpower = 36574500
-	buildings_max_level_factor = 1
-	state_category = town
-	
-	history = {
-		owner = IND
-		add_core_of = IND
+
+state={
+	id=435
+	name="STATE_435"
+
+	history={
+		owner = NEP
+		add_core_of = NEP
 		buildings = {
 			infrastructure = 3
+
 		}
-		victory_points = {	4516	1	}
-		set_variable = {	IND_state_variable = 1	}
+		set_variable = {
+			NEP_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		4516	4544	4571	7537
+
+	provinces={
+		4386 7374 10825 10910 
 	}
-	local_supplies = 0.0
+	manpower=36574500
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }

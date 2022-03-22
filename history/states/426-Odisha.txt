@@ -1,28 +1,36 @@
-state = {
-	id = 426
-	name = "STATE_426"
-	manpower = 14520100
-	state_category = rural
-	
-	resources = {
-		steel = 25
-		chromium = 20
-		aluminium = 1
+
+state={
+	id=426
+	name="STATE_426"
+	resources={
+		steel=25.000
+		chromium=20.000
+		aluminium=1.000
 	}
-	
-	history = {
+
+	history={
 		owner = IND
 		add_core_of = IND
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
+
 		}
-		victory_points = {	10116	10	}
-		set_variable = {	IND_state_variable = 1	}
+		victory_points = {
+			10116 10 
+		}
+		set_variable = {
+			IND_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1579	4513	7090	7372	9946	10060	10088	10116	10428	10469	11924	11978	12241	12462
+
+	provinces={
+		1101 1538 1579 4104 4513 7090 7372 9946 10060 10088 10116 10428 10469 11924 11978 12063 12241 12462 
 	}
-	local_supplies = 0.0
+	manpower=14520100
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }
