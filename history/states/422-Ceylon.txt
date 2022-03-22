@@ -1,43 +1,28 @@
-
-state={
-	id=422
-	name="STATE_422"
-	resources={
-		rubber=60.000
-	}
-
-	history={
+state = {
+	id = 422
+	name = "STATE_422"
+	manpower = 5500000
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	resources = {	rubber = 60	}
+	
+	history = {
 		owner = SRL
 		add_core_of = SRL
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
-			7260 = {
-				naval_base = 3
-
-			}
-			7260 = {
-				coastal_bunker = 3
-
-			}
-
+			7260 = {	naval_base = 3	}
+			7260 = {	coastal_bunker = 3	}
 		}
-		victory_points = {
-			7260 10
-		}
-		set_variable = {
-			SRL_state_variable = 1
-
-		}
-
+		victory_points = {	7260	10	}
+		set_variable = {	SRL_state_variable = 1	}
 	}
-
-	provinces={
-		7260 
+	
+	provinces = {
+		7260
 	}
-	manpower=5500000
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }

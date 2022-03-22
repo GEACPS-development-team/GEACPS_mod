@@ -1,27 +1,21 @@
-
-state={
-	id=866
-	name="STATE_866"
-
-	history={
+state = {
+	id = 866
+	name = "STATE_866"
+	manpower = 140000
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
 		owner = IND
 		add_core_of = IND
 		buildings = {
 			infrastructure = 2
-
 		}
-		set_variable = {
-			IND_state_variable = 1
-
-		}
-
+		set_variable = {	IND_state_variable = 1	}
 	}
-
-	provinces={
-		1525 1553 
+	
+	provinces = {
+		1525	1553
 	}
-	manpower=140000
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }

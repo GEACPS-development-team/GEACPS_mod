@@ -1,27 +1,21 @@
-
-state={
-	id=1077
-	name="STATE_1077"
-
-	history={
+state = {
+	id = 1077
+	name = "STATE_1077"
+	manpower = 14123100
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
 		owner = SRL
 		add_core_of = SRL
 		buildings = {
 			infrastructure = 2
-
 		}
-		set_variable = {
-			SRL_state_variable = 1
-
-		}
-
+		set_variable = {	SRL_state_variable = 1	}
 	}
-
-	provinces={
-		4219 
+	
+	provinces = {
+		4219
 	}
-	manpower=14123100
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }

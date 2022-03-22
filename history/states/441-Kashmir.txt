@@ -1,32 +1,24 @@
-
-state={
-	id=441
-	name="STATE_441"
-
-	history={
+state = {
+	id = 441
+	name = "STATE_441"
+	manpower = 2123700
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
 		owner = IND
 		add_core_of = IND
 		add_core_of = PAK
 		add_core_of = KAS
 		buildings = {
 			infrastructure = 1
-
 		}
-		victory_points = {
-			12754 10 
-		}
-		set_variable = {
-			KAS_state_variable = 1
-
-		}
-
+		victory_points = {	12754	10	}
+		set_variable = {	KAS_state_variable = 1	}
 	}
-
-	provinces={
-		10905 12754 
+	
+	provinces = {
+		10905	12754
 	}
-	manpower=2123700
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }

@@ -1,12 +1,13 @@
-
-state={
-	id=427
-	name="STATE_427"
-	resources={
-		chromium=6.000
-	}
-
-	history={
+state = {
+	id = 427
+	name = "STATE_427"
+	manpower = 14013400
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	resources = {	chromium = 6	}
+	
+	history = {
 		owner = IND
 		add_core_of = IND
 		add_core_of = HYD
@@ -14,27 +15,14 @@ state={
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 3
-
 		}
-		victory_points = {
-			8087 1 
-		}
-		set_variable = {
-			IND_state_variable = 1
-
-		}
-		set_variable = {
-			HYD_state_variable = 1
-
-		}
-
+		victory_points = {	8087	1	}
+		set_variable = {	IND_state_variable = 1	}
+		set_variable = {	HYD_state_variable = 1	}
 	}
-
-	provinces={
-		1275 1317 4280 4472 5104 8087 10511 11950 12114 
+	
+	provinces = {
+		1275	1317	4280	4472	5104	8087	10511	11950	12114
 	}
-	manpower=14013400
-	buildings_max_level_factor=1.000
-	state_category=rural
-	local_supplies=0.000
+	local_supplies = 0.0
 }
