@@ -1,0 +1,707 @@
+focus_tree = {
+	id = geacps_ARG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARG
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 100 y = 1200
+	}
+	shared_focus = ARG_army_realignment
+	shared_focus = ARG_air_force_realignment
+	shared_focus = ARG_february_election
+}
+#軍事NF
+shared_focus = {
+	id = ARG_army_realignment
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_army_realignment"
+	}
+}
+
+shared_focus = {
+	id = ARG_army_organization
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_army_organization"
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_guidance_on_the_development_of_cas
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_guidance_on_the_development_of_cas"
+	}
+	relative_position_id = ARG_army_organization
+	prerequisite = { focus = ARG_army_organization }
+	prerequisite = { focus = ARG_rudel_to_our_country }
+}
+
+shared_focus = {
+	id = ARG_armoured_vehicles_to_protect_us
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_armoured_vehicles_to_protect_us"
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_goddess_of_war
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_goddess_of_war"
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_crush_the_sky
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_crush_the_sky"
+	}
+	relative_position_id = ARG_goddess_of_war
+	prerequisite = { focus = ARG_goddess_of_war }
+}
+
+shared_focus = {
+	id = ARG_modern_infantry_rifles
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_modern_infantry_rifles"
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_improved_support_equipment
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_improved_support_equipment"
+	}
+	relative_position_id = ARG_modern_infantry_rifles
+	prerequisite = { focus = ARG_modern_infantry_rifles }
+}
+
+shared_focus = {
+	id = ARG_antiarmour_equipment
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_antiarmour_equipment"
+	}
+	relative_position_id = ARG_crush_the_sky
+	prerequisite = { focus = ARG_crush_the_sky }
+	prerequisite = { focus = ARG_improved_support_equipment }
+}
+
+shared_focus = {
+	id = ARG_air_force_realignment
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_air_force_realignment"
+	}
+}
+
+shared_focus = {
+	id = ARG_rudel_to_our_country
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_rudel_to_our_country"
+	}
+	relative_position_id = ARG_air_force_realignment
+	prerequisite = { focus = ARG_air_force_realignment }
+}
+
+shared_focus = {
+	id = ARG_pilot_training
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_pilot_training"
+	}
+	relative_position_id = ARG_rudel_to_our_country
+	prerequisite = { focus = ARG_rudel_to_our_country }
+}
+#政治NF
+shared_focus = {
+	id = ARG_february_election
+	icon = GFX_generic_suspend_constitution
+	cost = 0
+	x = 15
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_february_election"
+	}
+}
+
+shared_focus = {
+	id = ARG_labour_party
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_labour_party"
+	}
+	relative_position_id = ARG_february_election
+	prerequisite = { focus = ARG_february_election }
+}
+
+shared_focus = {
+	id = ARG_enacted_the_evita_act
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_enacted_the_evita_act"
+	}
+	relative_position_id = ARG_labour_party
+	prerequisite = { focus = ARG_labour_party }
+}
+
+shared_focus = {
+	id = ARG_oppression_of_dissenters
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_oppression_of_dissenters"
+	}
+	relative_position_id = ARG_enacted_the_evita_act
+	prerequisite = { focus = ARG_enacted_the_evita_act }
+}
+
+shared_focus = {
+	id = ARG_establishment_of_the_eva_peron_foundation
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_eva_peron_foundation"
+	}
+	relative_position_id = ARG_oppression_of_dissenters
+	prerequisite = { focus = ARG_oppression_of_dissenters }
+}
+
+shared_focus = {
+	id = ARG_launch_of_the_five_year_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_launch_of_the_five_year_plan"
+	}
+	relative_position_id = ARG_establishment_of_the_eva_peron_foundation
+	prerequisite = { focus = ARG_establishment_of_the_eva_peron_foundation }
+}
+
+shared_focus = {
+	id = ARG_railway_construction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_railway_construction"
+	}
+	relative_position_id = ARG_launch_of_the_five_year_plan
+	prerequisite = { focus = ARG_launch_of_the_five_year_plan }
+}
+
+shared_focus = {
+	id = ARG_suburban_industrial_park_developments_ii
+	icon = GFX_generic_suspend_constitution
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_suburban_industrial_park_developments_ii"
+	}
+	relative_position_id = ARG_railway_construction
+	prerequisite = { focus = ARG_railway_construction }
+}
+
+shared_focus = {
+	id = ARG_declaration_of_economic_independence
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_declaration_of_economic_independence"
+	}
+	relative_position_id = ARG_suburban_industrial_park_developments_ii
+	prerequisite = { focus = ARG_suburban_industrial_park_developments_ii }
+}
+
+shared_focus = {
+	id = ARG_nationalisation_of_private_banks
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_nationalisation_of_private_banks"
+	}
+	relative_position_id = ARG_launch_of_the_five_year_plan
+	prerequisite = { focus = ARG_launch_of_the_five_year_plan }
+}
+
+shared_focus = {
+	id = ARG_contributions_to_housing_construction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_contributions_to_housing_construction"
+	}
+	relative_position_id = ARG_nationalisation_of_private_banks
+	prerequisite = { focus = ARG_nationalisation_of_private_banks }
+}
+
+shared_focus = {
+	id = ARG_establishment_of_the_national_atomic_energy_commission
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_national_atomic_energy_commission"
+	}
+	relative_position_id = ARG_contributions_to_housing_construction
+	prerequisite = { focus = ARG_contributions_to_housing_construction }
+	prerequisite = { focus = ARG_free_university }
+}
+
+shared_focus = {
+	id = ARG_trade_unipolarisation
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_trade_unipolarisation"
+	}
+	relative_position_id = ARG_establishment_of_the_eva_peron_foundation
+	prerequisite = { focus = ARG_establishment_of_the_eva_peron_foundation }
+}
+
+shared_focus = {
+	id = ARG_improved_public_health
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_improved_public_health"
+	}
+	relative_position_id = ARG_trade_unipolarisation
+	prerequisite = { focus = ARG_trade_unipolarisation }
+}
+
+shared_focus = {
+	id = ARG_free_university
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_free_university"
+	}
+	relative_position_id = ARG_improved_public_health
+	prerequisite = { focus = ARG_improved_public_health }
+}
+
+shared_focus = {
+	id = ARG_emergency_citizens_alliance
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_emergency_citizens_alliance"
+	}
+	relative_position_id = ARG_february_election
+	prerequisite = { focus = ARG_february_election }
+}
+
+shared_focus = {
+	id = ARG_transition_to_a_fairer_society
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_transition_to_a_fairer_society"
+	}
+	relative_position_id = ARG_emergency_citizens_alliance
+	prerequisite = { focus = ARG_emergency_citizens_alliance }
+}
+
+shared_focus = {
+	id = ARG_cooperation_with_the_commonwealth
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_cooperation_with_the_commonwealth"
+	}
+	relative_position_id = ARG_transition_to_a_fairer_society
+	prerequisite = { focus = ARG_transition_to_a_fairer_society }
+}
+
+shared_focus = {
+	id = ARG_approached_to_join_the_commonwealth
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	mutually_exclusive = {	focus = ARG_protecting_south_america	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_approached_to_join_the_commonwealth"
+	}
+	relative_position_id = ARG_cooperation_with_the_commonwealth
+	prerequisite = { focus = ARG_cooperation_with_the_commonwealth }
+}
+
+shared_focus = {
+	id = ARG_suburban_industrial_park_developments
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_suburban_industrial_park_developments"
+	}
+	relative_position_id = ARG_somisa_established
+	prerequisite = { focus = ARG_somisa_established }
+}
+
+shared_focus = {
+	id = ARG_further_development_of_heavy_industry
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_further_development_of_heavy_industry"
+	}
+	relative_position_id = ARG_suburban_industrial_park_developments
+	prerequisite = { focus = ARG_suburban_industrial_park_developments }
+}
+
+shared_focus = {
+	id = ARG_somisa_established
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_somisa_established"
+	}
+	relative_position_id = ARG_approached_to_join_the_commonwealth
+	prerequisite = {
+		focus = ARG_approached_to_join_the_commonwealth
+		focus = ARG_neighbouring_state
+	}
+}
+
+shared_focus = {
+	id = ARG_ime_established
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_established"
+	}
+	relative_position_id = ARG_somisa_established
+	prerequisite = { focus = ARG_somisa_established }
+}
+
+shared_focus = {
+	id = ARG_ime_factory_construction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_factory_construction"
+	}
+	relative_position_id = ARG_ime_established
+	prerequisite = { focus = ARG_ime_established }
+}
+
+shared_focus = {
+	id = ARG_protecting_south_america
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	mutually_exclusive = {	focus = ARG_approached_to_join_the_commonwealth	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_protecting_south_america"
+	}
+	relative_position_id = ARG_cooperation_with_the_commonwealth
+	prerequisite = { focus = ARG_cooperation_with_the_commonwealth }
+}
+
+shared_focus = {
+	id = ARG_neighbouring_state
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_neighbouring_state"
+	}
+	relative_position_id = ARG_protecting_south_america
+	prerequisite = { focus = ARG_protecting_south_america }
+}
+
+shared_focus = {
+	id = ARG_strong_alliances
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_strong_alliances"
+	}
+	relative_position_id = ARG_neighbouring_state
+	prerequisite = { focus = ARG_neighbouring_state }
+}
+
+shared_focus = {
+	id = ARG_to_the_north
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_to_the_north"
+	}
+	relative_position_id = ARG_strong_alliances
+	prerequisite = { focus = ARG_strong_alliances }
+}
+
+shared_focus = {
+	id = ARG_alliance_unity
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_alliance_unity"
+	}
+	relative_position_id = ARG_to_the_north
+	prerequisite = { focus = ARG_to_the_north }
+}
+
+shared_focus = {
+	id = ARG_establishment_of_the_institute
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_institute"
+	}
+	relative_position_id = ARG_cooperation_with_the_commonwealth
+	prerequisite = { focus = ARG_cooperation_with_the_commonwealth }
+}
+
+shared_focus = {
+	id = ARG_new_railway_network
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_new_railway_network"
+	}
+	relative_position_id = ARG_establishment_of_the_institute
+	prerequisite = { focus = ARG_establishment_of_the_institute }
+}
