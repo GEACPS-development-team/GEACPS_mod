@@ -1,0 +1,16 @@
+GBR_delegation_of_sovereignty = {	#統治権の委譲
+	Delegation_of_sovereignty_in_Somalia = {	#ソマリアにおける統治権の委譲
+		priority = 100
+		icon = 
+		available = {}
+		visible = {}
+		allowed = {	original_tag = GBR	}
+		fire_only_once = yes
+		cost = 10
+		complete_effect = {
+			SOM = {
+				ITA = {	set_mandate = yes	}
+			}
+		}
+	}
+}
