@@ -1,3 +1,5 @@
+#!gfx:interface\geacps_ARG.gfx
+
 focus_tree = {
 	id = geacps_ARG_focus
 	country = {
@@ -215,6 +217,7 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_february_election"
 	}
@@ -229,8 +232,10 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {	has_country_flag = ARG_labour_party_win_1946	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_labour_party"
+		add_political_power = 150
 	}
 	relative_position_id = ARG_february_election
 	prerequisite = { focus = ARG_february_election }
@@ -247,6 +252,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_enacted_the_evita_act"
+		add_stability = 0.1
 	}
 	relative_position_id = ARG_labour_party
 	prerequisite = { focus = ARG_labour_party }
@@ -263,6 +269,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_oppression_of_dissenters"
+		add_popularity = {
+			ideology = national_populism
+			popularity = 0.08
+		}
+		add_ideas = ARG_oppression_of_dissenters
 	}
 	relative_position_id = ARG_enacted_the_evita_act
 	prerequisite = { focus = ARG_enacted_the_evita_act }
@@ -279,6 +290,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_eva_peron_foundation"
+		country_event = ARG.3
 	}
 	relative_position_id = ARG_oppression_of_dissenters
 	prerequisite = { focus = ARG_oppression_of_dissenters }
@@ -295,6 +307,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_launch_of_the_five_year_plan"
+		country_event = ARG.4
 	}
 	relative_position_id = ARG_establishment_of_the_eva_peron_foundation
 	prerequisite = { focus = ARG_establishment_of_the_eva_peron_foundation }
@@ -311,6 +324,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_railway_construction"
+		add_timed_idea = {	idea = ARG_development_of_new_railway_network	days = 365	}
 	}
 	relative_position_id = ARG_launch_of_the_five_year_plan
 	prerequisite = { focus = ARG_launch_of_the_five_year_plan }
@@ -327,6 +341,14 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_suburban_industrial_park_developments_ii"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = ARG_railway_construction
 	prerequisite = { focus = ARG_railway_construction }
@@ -343,6 +365,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_declaration_of_economic_independence"
+		country_event = ARG.5
 	}
 	relative_position_id = ARG_suburban_industrial_park_developments_ii
 	prerequisite = { focus = ARG_suburban_industrial_park_developments_ii }
@@ -359,6 +382,14 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_nationalisation_of_private_banks"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = ARG_launch_of_the_five_year_plan
 	prerequisite = { focus = ARG_launch_of_the_five_year_plan }
@@ -375,6 +406,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_contributions_to_housing_construction"
+		country_event = ARG.6
 	}
 	relative_position_id = ARG_nationalisation_of_private_banks
 	prerequisite = { focus = ARG_nationalisation_of_private_banks }
@@ -391,6 +423,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_national_atomic_energy_commission"
+		add_research_slot = 1
 	}
 	relative_position_id = ARG_contributions_to_housing_construction
 	prerequisite = { focus = ARG_contributions_to_housing_construction }
@@ -408,6 +441,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_trade_unipolarisation"
+		add_ideas = protectionism
 	}
 	relative_position_id = ARG_establishment_of_the_eva_peron_foundation
 	prerequisite = { focus = ARG_establishment_of_the_eva_peron_foundation }
@@ -424,6 +458,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_improved_public_health"
+		country_event = ARG.7
 	}
 	relative_position_id = ARG_trade_unipolarisation
 	prerequisite = { focus = ARG_trade_unipolarisation }
@@ -440,6 +475,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_free_university"
+		add_ideas = ARG_free_university
 	}
 	relative_position_id = ARG_improved_public_health
 	prerequisite = { focus = ARG_improved_public_health }
@@ -454,8 +490,10 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {	has_country_flag = ARG_emergency_citizens_alliance_win_1946	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_emergency_citizens_alliance"
+		add_political_power = 150
 	}
 	relative_position_id = ARG_february_election
 	prerequisite = { focus = ARG_february_election }
@@ -472,6 +510,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_transition_to_a_fairer_society"
+		add_stability = 0.1
 	}
 	relative_position_id = ARG_emergency_citizens_alliance
 	prerequisite = { focus = ARG_emergency_citizens_alliance }
