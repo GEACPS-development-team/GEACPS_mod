@@ -31,7 +31,7 @@ ideas = {#既存国民精神
 			removal_cost = -1
 			#picture = graveyard_of_empires
 			modifier = {
-				production_speed_supply_node_factor = 3.0
+				production_speed_supply_node_factor = 5.0
 				production_speed_rail_way_factor = 3.0
 			}
 		}
@@ -58,6 +58,45 @@ ideas = {#既存国民精神
 				industrial_capacity_factory = -0.03
 				research_speed_factor = 0.05
 			}
+		}
+		ARG_defense_bloc_0 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		ARG_defense_bloc_1 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		ARG_industrias_mecanicas_del_estado = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			
+			equipment_bonus = {
+				fighter_equipment = {	instant = yes	build_cost_ic = -0.10	}
+				CAS_equipment = {	instant = yes	build_cost_ic = -0.08	}
+				jet_fighter_equipment = {	instant = yes	build_cost_ic = -0.06	}
+			}
+			research_bonus = {	air_equipment = 0.08	}
 		}
 	}
 }

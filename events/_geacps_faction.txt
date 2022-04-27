@@ -1,0 +1,51 @@
+add_namespace = faction
+
+country_event = {
+	id = faction.0
+	title = faction.0.t
+	desc = faction.0.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.0.0
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 90
+				FROM = {	has_opinion = {	target = ROOT	value > 10	}	}
+			}
+		}
+		FROM = {	add_to_faction = ROOT	}
+	}
+	option = {
+		name = faction.0.1
+		ai_chance = {	factor = 10	}
+	}
+}
+
+country_event = {
+	id = faction.1
+	title = faction.1.t
+	desc = faction.1.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.1.0
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 90
+				has_opinion = {	target = FROM	value > 10	}
+			}
+		}
+		add_to_faction = FROM
+	}
+	option = {
+		name = faction.1.1
+		ai_chance = {	factor = 10	}
+	}
+}

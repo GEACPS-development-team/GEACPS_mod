@@ -517,7 +517,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = ARG_cooperation_with_the_commonwealth
+	id = ARG_cooperation_with_GBR
 	icon = GFX_generic_suspend_constitution
 	cost = 6
 	x = 0
@@ -526,110 +526,11 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_cooperation_with_the_commonwealth"
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_cooperation_with_GBR"
+		remove_state_claim = 299
 	}
 	relative_position_id = ARG_transition_to_a_fairer_society
 	prerequisite = { focus = ARG_transition_to_a_fairer_society }
-}
-
-shared_focus = {
-	id = ARG_approached_to_join_the_commonwealth
-	icon = GFX_generic_suspend_constitution
-	cost = 6
-	x = -2
-	y = 1
-	mutually_exclusive = {	focus = ARG_protecting_south_america	}
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_approached_to_join_the_commonwealth"
-	}
-	relative_position_id = ARG_cooperation_with_the_commonwealth
-	prerequisite = { focus = ARG_cooperation_with_the_commonwealth }
-}
-
-shared_focus = {
-	id = ARG_suburban_industrial_park_developments
-	icon = GFX_generic_suspend_constitution
-	cost = 6
-	x = -2
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_suburban_industrial_park_developments"
-	}
-	relative_position_id = ARG_somisa_established
-	prerequisite = { focus = ARG_somisa_established }
-}
-
-shared_focus = {
-	id = ARG_further_development_of_heavy_industry
-	icon = GFX_generic_suspend_constitution
-	cost = 6
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_further_development_of_heavy_industry"
-	}
-	relative_position_id = ARG_suburban_industrial_park_developments
-	prerequisite = { focus = ARG_suburban_industrial_park_developments }
-}
-
-shared_focus = {
-	id = ARG_somisa_established
-	icon = GFX_generic_suspend_constitution
-	cost = 6
-	x = 0
-	y = 2
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_somisa_established"
-	}
-	relative_position_id = ARG_approached_to_join_the_commonwealth
-	prerequisite = {
-		focus = ARG_approached_to_join_the_commonwealth
-		focus = ARG_neighbouring_state
-	}
-}
-
-shared_focus = {
-	id = ARG_ime_established
-	icon = GFX_generic_suspend_constitution
-	cost = 6
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_established"
-	}
-	relative_position_id = ARG_somisa_established
-	prerequisite = { focus = ARG_somisa_established }
-}
-
-shared_focus = {
-	id = ARG_ime_factory_construction
-	icon = GFX_generic_suspend_constitution
-	cost = 6
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_factory_construction"
-	}
-	relative_position_id = ARG_ime_established
-	prerequisite = { focus = ARG_ime_established }
 }
 
 shared_focus = {
@@ -638,15 +539,16 @@ shared_focus = {
 	cost = 6
 	x = 0
 	y = 1
-	mutually_exclusive = {	focus = ARG_approached_to_join_the_commonwealth	}
+	mutually_exclusive = {	focus = ARG_approached_to_join_GBR_faction	}
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_protecting_south_america"
+		create_faction = MONROE_LEAGUE
 	}
-	relative_position_id = ARG_cooperation_with_the_commonwealth
-	prerequisite = { focus = ARG_cooperation_with_the_commonwealth }
+	relative_position_id = ARG_cooperation_with_GBR
+	prerequisite = { focus = ARG_cooperation_with_GBR }
 }
 
 shared_focus = {
@@ -660,6 +562,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_neighbouring_state"
+		every_neighbor_country = {	country_event = faction.0	}
 	}
 	relative_position_id = ARG_protecting_south_america
 	prerequisite = { focus = ARG_protecting_south_america }
@@ -676,6 +579,10 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_strong_alliances"
+		every_country = {
+			limit = {	THIS = {	is_in_faction_with = ROOT	}	}
+			add_ideas = ARG_defense_bloc_0
+		}
 	}
 	relative_position_id = ARG_neighbouring_state
 	prerequisite = { focus = ARG_neighbouring_state }
@@ -692,6 +599,20 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_to_the_north"
+		every_country = {
+			limit = {	
+				NOT = {
+					THIS = {
+						OR = {
+							is_in_faction_with = ROOT
+							is_subject = yes
+						}
+					}
+				}
+				capital_scope = {	is_on_continent = south_america	}
+			}
+			country_event = faction.0
+		}
 	}
 	relative_position_id = ARG_strong_alliances
 	prerequisite = { focus = ARG_strong_alliances }
@@ -708,9 +629,158 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_alliance_unity"
+		every_country = {
+			limit = {	
+				ROOT = {	is_in_faction_with = THIS	}
+				has_idea = ARG_defense_bloc_0
+			}
+			swap_ideas = {
+				remove_idea = ARG_defense_bloc_0
+				add_idea = ARG_defense_bloc_1
+			}
+		}
 	}
 	relative_position_id = ARG_to_the_north
 	prerequisite = { focus = ARG_to_the_north }
+}
+
+shared_focus = {
+	id = ARG_approached_to_join_GBR_faction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	mutually_exclusive = {	focus = ARG_protecting_south_america	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_approached_to_join_GBR_faction"
+		GBR = {	country_event = faction.1	}
+	}
+	relative_position_id = ARG_cooperation_with_GBR
+	prerequisite = { focus = ARG_cooperation_with_GBR }
+}
+
+shared_focus = {
+	id = ARG_somisa_established
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_somisa_established"
+		every_owned_state = {
+			limit = {
+				has_resources_amount = {
+					resource = steel
+					amount > 0
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 20
+				state = THIS
+			}
+		}
+	}
+	relative_position_id = ARG_approached_to_join_GBR_faction
+	prerequisite = {
+		focus = ARG_approached_to_join_GBR_faction
+		focus = ARG_neighbouring_state
+	}
+}
+
+shared_focus = {
+	id = ARG_suburban_industrial_park_developments
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_suburban_industrial_park_developments"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_somisa_established
+	prerequisite = { focus = ARG_somisa_established }
+}
+
+shared_focus = {
+	id = ARG_further_development_of_heavy_industry
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_further_development_of_heavy_industry"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_suburban_industrial_park_developments
+	prerequisite = { focus = ARG_suburban_industrial_park_developments }
+}
+
+shared_focus = {
+	id = ARG_ime_established
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_established"
+		add_ideas = ARG_industrias_mecanicas_del_estado
+	}
+	relative_position_id = ARG_somisa_established
+	prerequisite = { focus = ARG_somisa_established }
+}
+
+shared_focus = {
+	id = ARG_ime_factory_construction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_factory_construction"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_ime_established
+	prerequisite = { focus = ARG_ime_established }
 }
 
 shared_focus = {
@@ -724,9 +794,10 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_institute"
+		add_research_slot = 1
 	}
-	relative_position_id = ARG_cooperation_with_the_commonwealth
-	prerequisite = { focus = ARG_cooperation_with_the_commonwealth }
+	relative_position_id = ARG_cooperation_with_GBR
+	prerequisite = { focus = ARG_cooperation_with_GBR }
 }
 
 shared_focus = {
@@ -740,6 +811,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_new_railway_network"
+		add_timed_idea = {	idea = ARG_development_of_new_railway_network	days = 365	}
 	}
 	relative_position_id = ARG_establishment_of_the_institute
 	prerequisite = { focus = ARG_establishment_of_the_institute }
