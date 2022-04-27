@@ -1,13 +1,28 @@
 ﻿l_english:
- ANTI-JAPANESE_NATIONAL_UNITED_FRONT:0 "抗日民族統一戦線"
+#初期陣営
  GREATER_EAST_ASIA_CO-PROSPERITY_SPHERE:0 "大東亜共栄圏"
  CHINESE_PEOPLE'S_FRONT:0 "中華人民戦線"
  COMINFORM:0 "コミンフォルム"
  WESTERN_EUROPEAN_ALLIANCE:0 "西ヨーロッパ同盟"
  WESTMINSTER_TREATY_ORGANIZATION:0 "ウェストミンスター条約機構"
  
+#追加陣営
+ ANTI-JAPANESE_NATIONAL_UNITED_FRONT:0 "抗日民族統一戦線"
+ MONROE_LEAGUE:0 "モンロー連盟"
+ 
  #COMMONWEALTH_OF_INDEPENDENT_STATES:0 "独立国家共同体"
  #EURASIAN_ECONOMIC_UNION:0 "ユーラシア連合"
  #NEW_HANSEATIC_LEAGUE:0 "新ハンザ同盟"
  #NORTH_ATLANTIC_TREATY_ORGANIZATION:0 "北大西洋条約機構"
  #UNION_STATE_OF_RUSSIA_AND_BELARUS:0 "ロシア・ベラルーシ連盟"
+ 
+#陣営イベント
+ faction.0.t:0 "陣営招待の打診"
+ faction.0.d:0 "[FROM.GetAdjective]が我が国に対して[FROM.GetFactionName]へ招待する旨を打診をしてきた。"
+ faction.0.0:0 "加盟することを打診せよ！"
+ faction.0.1:0 "お断りしよう…"
+ faction.1.t:0 "陣営加盟の打診"
+ faction.1.d:0 "[FROM.GetAdjective]が[ROOT.GetFactionName]に加盟の打診をしてきた。"
+ faction.1.0:0 "仲間は多い方が良いからな"
+ faction.1.1:0 "それは我々の利益となるのかね？"
+ 
