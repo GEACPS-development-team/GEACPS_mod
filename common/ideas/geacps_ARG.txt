@@ -98,5 +98,17 @@ ideas = {#既存国民精神
 			}
 			research_bonus = {	air_equipment = 0.08	}
 		}
+		ARG_rudels_guidance = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				air_cas_present_factor = 0.15
+				air_agility_factor = 0.1
+				air_cas_efficiency = 0.1
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
 	}
 }

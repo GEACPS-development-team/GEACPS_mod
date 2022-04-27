@@ -29,6 +29,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_army_realignment"
+		army_experience = 50
 	}
 }
 
@@ -43,6 +44,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_army_organization"
+		army_experience = 50
 	}
 	relative_position_id = ARG_army_realignment
 	prerequisite = { focus = ARG_army_realignment }
@@ -59,6 +61,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_guidance_on_the_development_of_cas"
+		add_tech_bonus = {
+			ahead_reduction = 1
+			uses = 1
+			category = cas_bomber
+		}
 	}
 	relative_position_id = ARG_army_organization
 	prerequisite = { focus = ARG_army_organization }
@@ -76,6 +83,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_armoured_vehicles_to_protect_us"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
 	}
 	relative_position_id = ARG_army_realignment
 	prerequisite = { focus = ARG_army_realignment }
@@ -92,6 +104,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_goddess_of_war"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = artillery
+		}
 	}
 	relative_position_id = ARG_army_realignment
 	prerequisite = { focus = ARG_army_realignment }
@@ -108,6 +125,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_crush_the_sky"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cat_anti_air
+		}
 	}
 	relative_position_id = ARG_goddess_of_war
 	prerequisite = { focus = ARG_goddess_of_war }
@@ -124,6 +146,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_modern_infantry_rifles"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
 	}
 	relative_position_id = ARG_army_realignment
 	prerequisite = { focus = ARG_army_realignment }
@@ -140,6 +167,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_improved_support_equipment"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = support_tech
+		}
 	}
 	relative_position_id = ARG_modern_infantry_rifles
 	prerequisite = { focus = ARG_modern_infantry_rifles }
@@ -156,6 +188,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_antiarmour_equipment"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = cat_anti_tank
+		}
 	}
 	relative_position_id = ARG_crush_the_sky
 	prerequisite = { focus = ARG_crush_the_sky }
@@ -173,6 +210,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_air_force_realignment"
+		air_experience = 50
 	}
 }
 
@@ -185,6 +223,7 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_rudel_to_our_country"
 	}
@@ -203,6 +242,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_pilot_training"
+		add_ideas = ARG_rudels_guidance
 	}
 	relative_position_id = ARG_rudel_to_our_country
 	prerequisite = { focus = ARG_rudel_to_our_country }
@@ -217,7 +257,10 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	available = {	hidden_trigger = {	always = no	}	}
+	available = {
+		has_government = total_socialism
+		has_government = radical_socialism
+	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_february_election"
 	}
