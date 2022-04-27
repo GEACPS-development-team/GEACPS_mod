@@ -43,20 +43,28 @@ country_event = {	#
 		ai_chance = {	factor = 100	}
 		complete_national_focus = ARG_february_election
 		random_list = {
-			50 = {	set_country_flag = ARG_labour_party_win_1946	}
-			50 = {	set_country_flag = ARG_emergency_citizens_alliance_win_1946	}
+			50 = {
+				custom_effect_tooltip = ARG_labour_party_win
+				set_country_flag = ARG_labour_party_win_1946
+			}
+			50 = {
+				custom_effect_tooltip = ARG_emergency_citizens_alliance_win
+				set_country_flag = ARG_emergency_citizens_alliance_win_1946
+			}
 		}
 	}
 	option = {
 		name = ARG.2.1
 		ai_chance = {	factor = 0	}
 		complete_national_focus = ARG_february_election
+		custom_effect_tooltip = ARG_labour_party_win
 		set_country_flag = ARG_labour_party_win_1946
 	}
 	option = {
 		name = ARG.2.2
 		ai_chance = {	factor = 0	}
 		complete_national_focus = ARG_february_election
+		custom_effect_tooltip = ARG_emergency_citizens_alliance_win
 		set_country_flag = ARG_emergency_citizens_alliance_win_1946
 	}
 }
@@ -151,5 +159,25 @@ country_event = {	#
 		ai_chance = {	factor = 100	}
 		add_stability = 0.05
 		add_war_support = 0.09
+	}
+}
+country_event = {	#
+	id = ARG.8
+	title = ARG.8.t
+	desc = ARG.8.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.8.0
+		ai_chance = {	factor = 100	}
+		random_list = {
+			40 = {
+				custom_effect_tooltip = ARG_german_military_officer_in_exile
+				set_country_flag = ARG_rudel_in_exile_flag
+			}
+			60 = {}
+		}
 	}
 }

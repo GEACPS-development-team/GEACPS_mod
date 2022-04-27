@@ -69,7 +69,7 @@ shared_focus = {
 	}
 	relative_position_id = ARG_army_organization
 	prerequisite = { focus = ARG_army_organization }
-	prerequisite = { focus = ARG_rudel_to_our_country }
+	prerequisite = { focus = ARG_german_military_officer_in_exile_to_our_country }
 }
 
 shared_focus = {
@@ -215,7 +215,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = ARG_rudel_to_our_country
+	id = ARG_german_military_officer_in_exile_to_our_country
 	icon = GFX_generic_suspend_constitution
 	cost = 6
 	x = 0
@@ -223,9 +223,16 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
-	available = {	hidden_trigger = {	always = no	}	}
+	available = {
+		OR = {
+			NOT = {	has_government = total_socialism	}
+			NOT = {	has_government = radical_socialism	}
+			has_country_flag = ARG_labour_party_win_1946
+		}
+	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus ARG_rudel_to_our_country"
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_german_military_officer_in_exile_to_our_country"
+		country_event = ARG.8
 	}
 	relative_position_id = ARG_air_force_realignment
 	prerequisite = { focus = ARG_air_force_realignment }
@@ -240,12 +247,15 @@ shared_focus = {
 	ai_will_do = {
 		factor = 1
 	}
+	available = {
+		has_country_flag = ARG_rudel_in_exile_flag
+	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_pilot_training"
 		add_ideas = ARG_rudels_guidance
 	}
-	relative_position_id = ARG_rudel_to_our_country
-	prerequisite = { focus = ARG_rudel_to_our_country }
+	relative_position_id = ARG_german_military_officer_in_exile_to_our_country
+	prerequisite = { focus = ARG_german_military_officer_in_exile_to_our_country }
 }
 #政治NF
 shared_focus = {
@@ -258,8 +268,10 @@ shared_focus = {
 		factor = 1
 	}
 	available = {
-		has_government = total_socialism
-		has_government = radical_socialism
+		custom_trigger_tooltip = {
+			tooltip = ARG_general_election_1946
+			always = no
+		}
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_february_election"
