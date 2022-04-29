@@ -3,6 +3,7 @@ ideas = {	#既存国民精神
 		INS_gunsei_sekou_ni_kan_suru_ken = {	#「軍政施行ニ関スル件」
 			allowed = 
 				original_tag = INS
+				is_subject_of = JAP
 			}
 			allowed_civil_war = {
 				always = yes
@@ -13,7 +14,7 @@ ideas = {	#既存国民精神
 				}
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_idea_INS_gunsei_sekou_ni_kan_suru_ken
 			modifier = {
 				#要件等
 			}
@@ -26,7 +27,7 @@ ideas = {	#既存国民精神
 				always = yes
 			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_idea_INS_indonesia_raya
 			modifier = {
 				#要件等
 			}
@@ -34,12 +35,18 @@ ideas = {	#既存国民精神
 		INS_four_leaf_clover = {	#四葉のクローバー
 			allowed = 
 				original_tag = INS
+				is_subject_of = JAP
 			}
 			allowed_civil_war = {
 				always = yes
 			}
+			cancel = {
+				NOT = {
+					is_subject_of = JAP
+				}
+			}
 			removal_cost = -1
-			picture = 
+			picture = GFX_idea_INS_four_leaf_clover
 			modifier = {
 				#要件等
 			}
