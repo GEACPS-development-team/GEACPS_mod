@@ -388,9 +388,9 @@ focus_tree = {
 		id = JAP_The_Southern_Approach
 		icon = GFX_focus_JAP_The_Southern_Approach
 		cost = 4.28
-		x = -2
-		y = -1
-		relative_position_id = JAP_No_more_Anglo-American_and_Soviet-oriented_imperialism
+		x = 0
+		y = 2
+		relative_position_id = JAP_Education_for_the_Borneo_Volunteer_Army
 		prerequisite = {
 			focus = JAP_Support_for_the_Malayan_Peoples_Anti-British_Army
 		}
@@ -950,7 +950,6 @@ focus_tree = {
         x = 20
         y = 0
 		relative_position_id = JAP_1-22_Incident
-		mutually_exclusive = {	focus = GEACPS_NF_JAP_navy_big_ships	}
         cost = 4.28
         completion_reward = {
 
@@ -963,7 +962,6 @@ focus_tree = {
         x = -7
         y = 7
 		relative_position_id = GEACPS_NF_JAP_army_00
-        cost = 4.28
         completion_reward = {
             navy_experience = 75
         }
