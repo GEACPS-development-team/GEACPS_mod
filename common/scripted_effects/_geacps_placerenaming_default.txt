@@ -17,7 +17,7 @@ disable_placerenaming = {
 }
 
 enable_placerenaming ={
-	if = {	#“ú–{Œê
+	if = {	#æ—¥æœ¬èª
 		limit = {	controller = {	country_ja_tag = yes	}	placerenaming_ja = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ja	}	}
@@ -28,7 +28,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#‰pŒê
+	else_if = {	#è‹±èª
 		limit = {	controller = {	country_en_tag = yes	}	placerenaming_en = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_en	}	}
@@ -39,7 +39,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒhƒCƒcŒê
+	else_if = {	#ãƒ‰ã‚¤ãƒ„èª
 		limit = {	controller = {	country_de_tag = yes	}	placerenaming_de = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_de	}	}
@@ -50,7 +50,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒtƒ‰ƒ“ƒXŒê
+	else_if = {	#ãƒ•ãƒ©ãƒ³ã‚¹èª
 		limit = {	controller = {	country_fr_tag = yes	}	placerenaming_fr = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_fr	}	}
@@ -61,7 +61,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒCƒ^ƒŠƒAŒê
+	else_if = {	#ã‚¤ã‚¿ãƒªã‚¢èª
 		limit = {	controller = {	country_it_tag = yes	}	placerenaming_it = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_it	}	}
@@ -72,7 +72,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒƒVƒAŒê
+	else_if = {	#ãƒ­ã‚·ã‚¢èª
 		limit = {	controller = {	country_ru_tag = yes	}	placerenaming_ru = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ru	}	}
@@ -83,7 +83,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒ‹ƒNƒZƒ“ƒuƒ‹ƒNŒê
+	else_if = {	#ãƒ«ã‚¯ã‚»ãƒ³ãƒ–ãƒ«ã‚¯èª
 		limit = {	controller = {	tag = LUX	}	placerenaming_lb = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_lb	}	}
@@ -94,7 +94,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒ`ƒFƒRŒê
+	else_if = {	#ãƒã‚§ã‚³èª
 		limit = {	controller = {	tag = CZE	}	placerenaming_cs = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_cs	}	}
@@ -105,7 +105,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒ|[ƒ‰ƒ“ƒhŒê
+	else_if = {	#ãƒãƒ¼ãƒ©ãƒ³ãƒ‰èª
 		limit = {	controller = {	tag = POL	}	placerenaming_pl = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_pl	}	}
@@ -116,7 +116,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒfƒ“ƒ}[ƒNŒê
+	else_if = {	#ãƒ‡ãƒ³ãƒãƒ¼ã‚¯èª
 		limit = {	controller = {	tag = DEN	}	placerenaming_da = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_da	}	}
@@ -127,7 +127,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒXƒEƒF[ƒfƒ“Œê
+	else_if = {	#ã‚¹ã‚¦ã‚§ãƒ¼ãƒ‡ãƒ³èª
 		limit = {	controller = {	tag = SWE	}	placerenaming_sv = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_sv	}	}
@@ -138,7 +138,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒgƒ‹ƒRŒê
+	else_if = {	#ãƒˆãƒ«ã‚³èª
 		limit = {	controller = {	tag = TUR	}	placerenaming_tr = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_tr	}	}
@@ -149,7 +149,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒMƒŠƒVƒƒŒê
+	else_if = {	#ã‚®ãƒªã‚·ãƒ£èª
 		limit = {	controller = {	tag = GRE	}	placerenaming_el = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_el	}	}
@@ -160,7 +160,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒXƒyƒCƒ“Œê
+	else_if = {	#ã‚¹ãƒšã‚¤ãƒ³èª
 		limit = {	controller = {	country_es_tag = yes	}	placerenaming_es = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_es	}	}
@@ -171,7 +171,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#ƒ‰ƒeƒ“Œê
+	else_if = {	#ãƒ©ãƒ†ãƒ³èª
 		limit = {	controller = {	country_la_tag = yes	}	placerenaming_la = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_la	}	}
@@ -179,6 +179,17 @@ enable_placerenaming ={
 			meta_effect = {	
 				text = {	set_state_name = [la_state_flag]	}
 				la_state_flag = "STATE_[THIS.GetId]_la"
+			}
+		}
+	}
+	else_if = {	#ä¸­å›½èª
+		limit = {	controller = {	country_ch_tag = yes	}	placerenaming_ch = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ch	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ch	}
+			meta_effect = {	
+				text = {	set_state_name = [ch_state_flag]	}
+				la_state_flag = "STATE_[THIS.GetId]_ch"
 			}
 		}
 	}

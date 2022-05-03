@@ -85,12 +85,19 @@ country_la_tag = {
 		tag = VAT
 	}
 }
-
+country_ch_tag = {
+	OR = {
+		original_tag = CHI
+	}
+}
 placerenaming_ja = {
 	OR = {
 		state = 463
+		state = 887
 		state = 989
-		
+		state = 1082
+		state = 1087
+		state = 1088
 	}
 }
 
@@ -132,6 +139,8 @@ placerenaming_en = {
 		state = 648
 		state = 650
 		state = 863
+		state = 1222
+		state = 1233
 	}
 }
 placerenaming_de = {
@@ -150,7 +159,13 @@ placerenaming_de = {
 		state = 63
 		state = 66
 		state = 67
+		state = 69
+		state = 74
+		state = 85
 		state = 648
+		state = 1121
+		state = 1122
+		state = 1123
 	}
 }
 placerenaming_fr = {
@@ -252,5 +267,16 @@ placerenaming_la = {
 		state = 12
 		state = 19
 		state = 115
+	}
+}
+placerenaming_ch = {
+	OR = {
+		state = 537
+		state = 655
+		state = 657
+		state = 1177
+		state = 1178
+		state = 1179
+		state = 1185
 	}
 }
