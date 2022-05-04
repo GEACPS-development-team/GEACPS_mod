@@ -1,0 +1,35 @@
+add_namespace = SAR
+country_event = {	#1955年ザール独立住民投票
+	id = SAR.0
+	title = SAR.0.t
+	desc = SAR.0.d
+	picture = GFX_news_event_SAR_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	mean_time_to_happen = {
+		days = 3
+	}
+	
+	trigger = {
+		tag = SAR
+		is_subject_of = FRA
+	}
+	
+	option = {
+		name = SAR.0.a
+	}
+	option = {
+		name = SAR.0.b
+		ai_chance = {	factor = 100	}
+		end_puppet = FRA
+		set_cosmetic_tag = SAR_state_government
+		SGR = {
+			set_autonomy = {
+				target = SAR
+				autonomy_state = integrated_puppet
+			}
+		}
+	}
+}

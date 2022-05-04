@@ -1,0 +1,30 @@
+focus_tree = {
+	id = geacps_SAR_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SAR
+		}
+	}
+	default = no
+	
+	focus = {	#1955年ザール独立住民投票
+		id = SAR_1955_statute_referendum
+		icon = 
+		cost = 1
+		x = 1
+		y = 1
+		available = {
+			date > 1955.10.23
+			SAR = {
+				is_subject_of = FRA
+			}
+		}
+		completion_reward = {
+			country_event = {
+				id = SAR.0
+			}
+		}
+	}
+}
