@@ -10,18 +10,20 @@ country_event = {
 	
 	option = {
 		name = faction.0.0
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 90
-				FROM = {	has_opinion = {	target = ROOT	value > 10	}	}
-			}
-		}
+		ai_chance = {	factor = 10	}
 		FROM = {	add_to_faction = ROOT	}
+		hidden_effect = {	FROM = {	country_event = faction.2	}	}
 	}
 	option = {
 		name = faction.0.1
-		ai_chance = {	factor = 10	}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				FROM = {	has_opinion = {	target = ROOT	value > 0	}	}
+			}
+		}
+		hidden_effect = {	FROM = {	country_event = faction.3	}	}
 	}
 }
 
@@ -35,17 +37,46 @@ country_event = {
 	
 	option = {
 		name = faction.1.0
-		ai_chance = {
-			factor = 10
-			modifier = {
-				factor = 90
-				has_opinion = {	target = FROM	value > 10	}
-			}
-		}
+		ai_chance = {	factor = 10	}
 		add_to_faction = FROM
+		hidden_effect = {	FROM = {	country_event = faction.2	}	}
 	}
 	option = {
 		name = faction.1.1
-		ai_chance = {	factor = 10	}
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				FROM = {	has_opinion = {	target = ROOT	value > 0	}	}
+			}
+		}
+		hidden_effect = {	FROM = {	country_event = faction.3	}	}
+	}
+}
+
+country_event = {
+	id = faction.2
+	title = faction.2.t
+	desc = faction.2.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.2.0
+		ai_chance = {	factor = 100	}
+	}
+}
+country_event = {
+	id = faction.3
+	title = faction.3.t
+	desc = faction.3.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.3.0
+		ai_chance = {	factor = 100	}
 	}
 }
