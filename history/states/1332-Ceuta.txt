@@ -1,0 +1,25 @@
+state = {
+	id = 1332
+	name = "STATE_1332"
+	manpower = 59100
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
+		owner = SPR
+		add_core_of = MOR
+		add_claim_by = SPR
+		buildings = {
+			infrastructure = 3
+			9945 = {	naval_base = 3	}
+		}
+		victory_points = {	9945	3	}
+		set_variable = {	MOR_state_variable = 1	}
+		set_variable = {	RIF_state_variable = 1	}
+	}
+	
+	provinces = {
+		9945
+	}
+	local_supplies = 0.0
+}

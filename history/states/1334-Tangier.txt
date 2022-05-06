@@ -1,0 +1,26 @@
+state = {
+	id = 1334
+	name = "STATE_1334"
+	manpower = 100000
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
+		owner = TGE
+		add_core_of = TGE
+		add_core_of = MOR
+		buildings = {
+			infrastructure = 3
+			13362 = {	naval_base = 3	}
+		}
+		victory_points = {	13362	3	}
+		set_variable = {	TGE_state_variable = 1	}
+		set_variable = {	MOR_state_variable = 1	}
+		set_variable = {	RIF_state_variable = 1	}
+	}
+	
+	provinces = {
+		13362
+	}
+	local_supplies = 0.0
+}
