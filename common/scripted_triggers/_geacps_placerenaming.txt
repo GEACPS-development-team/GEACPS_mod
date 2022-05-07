@@ -31,15 +31,7 @@ country_fr_tag = {
 		tag = MCO
 		AND = {
 			is_subject_of = FRA
-			OR = {
-				has_autonomy_state = colony
-				has_autonomy_state = federation_of_colonies
-				has_autonomy_state = overseas_territory
-				has_autonomy_state = colony_and_protectorate
-				has_autonomy_state = protected_territory
-				has_autonomy_state = leased_territory
-				has_autonomy_state = mandate
-			}
+			is_dependent_territory = yes
 		}
 	}
 }

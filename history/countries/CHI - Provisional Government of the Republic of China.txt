@@ -28,6 +28,11 @@ create_dynamic_country = {	#中華民国臨時政府
 	
 	recruit_character = CHARACTER_wang_yintai
 	
+	add_ideas = {	#政治タブ
+		republic_unitary_state
+		provisional_government
+	}
+	
 	every_core_state = {	
 		limit = {	is_core_of_not_CHI_JAP = yes	}
 		remove_core_of = PREV

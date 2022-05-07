@@ -1,0 +1,33 @@
+autonomy_state = {
+	id = mandated_territory_A
+	is_puppet = yes
+	min_freedom_level = 0.6
+	use_overlord_color = yes
+	
+	min_freedom_level = 0
+	manpower_influence = 0
+	
+	allowed = {	has_variable = mandated_territory_trigger_variable	}
+}
+autonomy_state = {
+	id = mandated_territory_B
+	is_puppet = yes
+	min_freedom_level = 0.3
+	use_overlord_color = yes
+	
+	min_freedom_level = 0
+	manpower_influence = 0
+	
+	allowed = {	has_variable = mandated_territory_trigger_variable	}
+}
+autonomy_state = {
+	id = mandated_territory_C
+	is_puppet = yes
+	min_freedom_level = 0.0
+	use_overlord_color = yes
+	
+	min_freedom_level = 0
+	manpower_influence = 0
+	
+	allowed = {	has_variable = mandated_territory_trigger_variable	}
+}

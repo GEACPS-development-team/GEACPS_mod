@@ -44,9 +44,17 @@ set_leased_territory = {	#‘dØ’n‚ğİ’è
 	PREV = {	set_variable = {	leased_territory_trigger_variable = 1	}	}
 	set_autonomy = {	target = PREV	autonomous_state = leased_territory	}
 }
-set_mandate = {	#ˆÏ”C“¡—Ì‚ğİ’è
-	PREV = {	set_variable = {	mandate_trigger_variable = 1	}	}
-	set_autonomy = {	target = PREV	autonomous_state = mandate	}
+set_mandated_territory_A = {	#A®ˆÏ”C“¡—Ì‚ğİ’è
+	PREV = {	set_variable = {	mandated_territory_trigger_variable = 1	}	}
+	set_autonomy = {	target = PREV	autonomous_state = mandated_territory_A	}
+}
+set_mandated_territory_B = {	#B®ˆÏ”C“¡—Ì‚ğİ’è
+	PREV = {	set_variable = {	mandated_territory_trigger_variable = 1	}	}
+	set_autonomy = {	target = PREV	autonomous_state = mandated_territory_B	}
+}
+set_mandated_territory_C = {	#C®ˆÏ”C“¡—Ì‚ğİ’è
+	PREV = {	set_variable = {	mandated_territory_trigger_variable = 1	}	}
+	set_autonomy = {	target = PREV	autonomous_state = mandated_territory_C	}
 }
 set_junior_partner_state = {	#“¯ŒN˜A‡‰ºˆÊ‘‚ğİ’è
 	PREV = {
@@ -110,7 +118,7 @@ set_lt_variable = {
 	set_variable = {	leased_territory_trigger_variable = 1	}
 }
 set_mandate_variable = {
-	set_variable = {	mandate_trigger_variable = 1	}
+	set_variable = {	mandated_territory_trigger_variable = 1	}
 }
 set_jpc_variable = {
 	set_variable = {	colony_trigger_variable = 1	}
@@ -130,7 +138,7 @@ clear_autonomous_states_variable = {
 	clear_variable = protectorate_trigger_variable
 	clear_variable = condominium_trigger_variable
 	clear_variable = leased_territory_trigger_variable
-	clear_variable = mandate_trigger_variable
+	clear_variable = mandated_territory_trigger_variable
 	clear_variable = personal_union_trigger_variable
 	clear_variable = princely_state_trigger_variable
 	clear_variable = occupied_territory_trigger_variable

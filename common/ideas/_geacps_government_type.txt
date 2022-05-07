@@ -1,28 +1,120 @@
 ideas = {
-	power_structure = {
-		anarchy = {
+	national_system = {
+		monarchy_unitary_state = {	#ŒNå§’Pˆê‘‰Æ
+			picture = monarchy_unitary_state
 			available = {	always = no	}
-			visible = {	always = yes	}
+			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
 		}
-		confederation_state = {
+		monarchy_federal_state = {	#ŒNå§˜A–M‘‰Æ
+			picture = monarchy_federal_state
 			available = {	always = no	}
-			visible = {	always = yes	}
+			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
 		}
-		unitary_state = {
+		republic_unitary_state = {	#‹¤˜a§’Pˆê‘‰Æ
+			picture = republic_unitary_state
 			available = {	always = no	}
-			visible = {	always = yes	}
+			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
 		}
-		federation_state = {
+		republic_federal_state = {	#‹¤˜a§˜A–M‘‰Æ
+			picture = republic_federal_state
 			available = {	always = no	}
-			visible = {	always = yes	}
+			visible = {	is_dependent_territory = no	}
+			cancel_if_invalid = no
+		}
+		unitary_dependent_territory = {	#’Pˆê‘®—Ì
+			picture = unitary_dependent_territory
+			available = {	always = no	}
+			visible = {	is_dependent_territory = yes	}
+			cancel_if_invalid = no
+		}
+		federal_dependent_territory = {	#˜A–M‘®—Ì
+			picture = federal_dependent_territory
+			available = {	always = no	}
+			visible = {	is_dependent_territory = yes	}
 			cancel_if_invalid = no
 		}
 	}
-	power_source = {
-	}
-	power_ideology = {
+	political_system = {
+		parliamentary_cabinet_system = {	#‹c‰@“àŠt‘Ì§
+			picture = parliamentary_cabinet_system
+			available = {	always = no	}
+			visible = {
+				OR = {	is_dependent_territory = no	}
+			}
+			cancel_if_invalid = no
+		}
+		presidential_system = {	#‘å“—Ì§
+			picture = presidential_system
+			available = {	always = no	}
+			visible = {
+				OR = {	is_dependent_territory = no	}
+			}
+			cancel_if_invalid = no
+		}
+		semi_presidential_system = {	#”¼‘å“—Ì§
+			picture = semi_presidential_system
+			available = {	always = no	}
+			visible = {
+				OR = {	is_dependent_territory = no	}
+			}
+			cancel_if_invalid = no
+		}
+		monarch_dictatorial_system = {	#ŒNå“ÆÙ‘Ì§
+			picture = monarch_dictatorial_system
+			available = {	always = no	}
+			visible = {
+				OR = {
+					is_dependent_territory = no
+					has_idea = monarchy_unitary_state
+					has_idea = monarchy_federal_state
+				}
+			}
+			cancel_if_invalid = no
+		}
+		civilian_dictatorial_system = {	#•¶–¯“ÆÙ‘Ì§
+			available = {	always = no	}
+			visible = {	is_dependent_territory = no	}
+			cancel_if_invalid = no
+		}
+		military_dictatorial_system = {	#ŒR•”“ÆÙ‘Ì§
+			available = {	always = no	}
+			visible = {	is_dependent_territory = no	}
+			cancel_if_invalid = no
+		}
+		committee_system = {	#ˆÏˆõ‰ï‘Ì§
+			available = {	always = no	}
+			visible = {	is_dependent_territory = no	}
+			cancel_if_invalid = no
+		}
+		imperial_rule_assistance_system = {	#—ƒ^‘Ì§
+			picture = imperial_rule_assistance_system
+			available = {	always = no	}
+			visible = {	
+				is_dependent_territory = no
+				OR = {
+					original_tag = JAP
+					has_autonomy_state = imperial_member
+				}
+			}
+			cancel_if_invalid = no
+		}
+		dependent_territory_direct_rule_system = {	#‘®—Ì’¼Ú“¡‘Ì§
+			available = {	always = no	}
+			visible = {	is_dependent_territory = yes	}
+			cancel_if_invalid = no
+		}
+		dependent_territory_indirect_rule_system = {	#‘®—ÌŠÔÚ“¡‘Ì§
+			available = {	always = no	}
+			visible = {	is_dependent_territory = yes	}
+			cancel_if_invalid = no
+		}
+		provisional_government = {	#—Õ‘Ì§
+			available = {	always = no	}
+			visible = {	always = yes	}
+			cancel_if_invalid = no
+		}
 	}
 }

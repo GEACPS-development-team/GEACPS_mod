@@ -60,7 +60,6 @@ set_party_name = {	#ニュージーランド軍団
 recruit_character = CHARACTER_cyril_louis_norton_newall
 
 SAM = {
-	set_variable = {	mandate_trigger_variable = 1	}
-	PREV = {	set_autonomy = {	target = PREV	autonomous_state = mandate	}	}
+	NZL = {	set_mandated_territory_C = yes	}
 	set_dictatorship = yes
 }
