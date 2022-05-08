@@ -9,7 +9,7 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = {
-		x = 100 y = 300
+		x = 100 y = 500
 	}
 	shared_focus = SAR_1955_statute_referendum
 }
@@ -28,5 +28,21 @@ shared_focus = {	#1955年ザール独立住民投票
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus SAR_1955_statute_referendum"
 		country_event = SAR.0
+		news_event = {	id = news.6 days = 1	}
+	}
+}
+shared_focus = {	#盆地地域と再統一	#"SGR"へ以降予定
+	id = SAR_reunification_with_the_basin_area
+	icon = GFX_goal_unknown
+	cost = 1
+	relative_position_id = SAR_1955_statute_referendum
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = SAR_1955_statute_referendum
+	}
+	available = {
+	}
+	completion_reward = {
 	}
 }

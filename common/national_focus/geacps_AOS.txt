@@ -9,12 +9,12 @@ focus_tree = {
 	}
 	default = no
 	continuous_focus_position = {
-		x = 100 y = 300
+		x = 100 y = 500
 	}
 	shared_focus = AOS_1955_statute_referendum
 }
 
-shared_focus = {	#1955年ザール独立住民投票
+shared_focus = {	#1955年アオスタ独立住民投票
 	id = AOS_1955_statute_referendum
 	icon = GFX_goal_unknown
 	cost = 1
@@ -28,5 +28,21 @@ shared_focus = {	#1955年ザール独立住民投票
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AOS_1955_statute_referendum"
 		country_event = AOS.0
+		news_event = {	id = news.0 days = 1	}
+	}
+}
+shared_focus = {	#リソルジメント	#"ITA"へ以降予定
+	id = AOS_risorgimento
+	icon = GFX_goal_unknown
+	cost = 1
+	relative_position_id = AOS_1955_statute_referendum
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = AOS_1955_statute_referendum
+	}
+	available = {
+	}
+	completion_reward = {
 	}
 }

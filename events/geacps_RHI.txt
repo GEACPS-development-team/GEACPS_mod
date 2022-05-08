@@ -12,12 +12,9 @@ country_event = {	#1955年ラインラント独立住民投票
 		is_subject_of = FRA
 	}
 	
-	immediate = {
-		news_event = {	id = RHI.1 days = 1	}
-	}
-	
 	option = {
 		name = RHI.0.a
+		news_event = {	id = news.4 days = 1	}
 	}
 	option = {
 		name = RHI.0.b
@@ -30,62 +27,6 @@ country_event = {	#1955年ラインラント独立住民投票
 				autonomy_state = integrated_puppet
 			}
 		}
-	}
-}
-
-news_event = {	#1955年ラインラント独立住民投票
-	id = RHI.1
-	title = RHI.1.t
-	desc = RHI.1.d
-	picture = 
-	
-	is_triggered_only = yes
-	major = yes
-	
-	trigger = {
-		tag = RHI
-		is_subject_of = FRA
-	}
-	
-	option = {
-		name = RHI.1.a
-	}
-}
-
-news_event = {	#1955年ラインラント独立
-	id = RHI.2
-	title = RHI.2.t
-	desc = RHI.2.d
-	picture = 
-	
-	is_triggered_only = yes
-	major = yes
-	
-	trigger = {
-		tag = RHI
-		is_subject_of = FRA
-	}
-	
-	option = {
-		name = RHI.2.a
-	}
-}
-
-news_event = {	#1955年ラインラント独立
-	id = RHI.3
-	title = RHI.3.t
-	desc = RHI.3.d
-	picture = 
-	
-	is_triggered_only = yes
-	major = yes
-	
-	trigger = {
-		tag = RHI
-		is_subject_of = FRA
-	}
-	
-	option = {
-		name = RHI.3.a
+		news_event = {	id = news.5 days = 1	}
 	}
 }
