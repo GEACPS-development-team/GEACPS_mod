@@ -6,15 +6,14 @@ country_event = {	#1955年ザール独立住民投票
 	picture = GFX_news_event_SAR_statute_referendum
 	
 	is_triggered_only = yes
-	major = yes
-	
-	mean_time_to_happen = {
-		days = 3
-	}
 	
 	trigger = {
 		tag = SAR
 		is_subject_of = FRA
+	}
+	
+	immediate = {
+		news_event = {	id = SAR.1 days = 1	}
 	}
 	
 	option = {
@@ -31,5 +30,62 @@ country_event = {	#1955年ザール独立住民投票
 				autonomy_state = integrated_puppet
 			}
 		}
+	}
+}
+
+news_event = {	#1955年ザール独立住民投票
+	id = SAR.1
+	title = SAR.1.t
+	desc = SAR.1.d
+	picture = 
+	
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = SAR
+		is_subject_of = FRA
+	}
+	
+	option = {
+		name = SAR.1.a
+	}
+}
+
+news_event = {	#1955年ザール独立
+	id = SAR.2
+	title = SAR.2.t
+	desc = SAR.2.d
+	picture = 
+	
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = SAR
+		is_subject_of = FRA
+	}
+	
+	option = {
+		name = SAR.2.a
+	}
+}
+
+news_event = {	#1955年ザール独立
+	id = SAR.3
+	title = SAR.3.t
+	desc = SAR.3.d
+	picture = 
+	
+	is_triggered_only = yes
+	major = yes
+	
+	trigger = {
+		tag = SAR
+		is_subject_of = FRA
+	}
+	
+	option = {
+		name = SAR.3.a
 	}
 }

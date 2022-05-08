@@ -1,21 +1,21 @@
 focus_tree = {
-	id = geacps_SAR_focus
+	id = geacps_AOS_focus
 	country = {
 		factor = 0
 		modifier = {
 			add = 10
-			tag = SAR
+			tag = AOS
 		}
 	}
 	default = no
 	continuous_focus_position = {
 		x = 100 y = 300
 	}
-	shared_focus = SAR_1955_statute_referendum
+	shared_focus = AOS_1955_statute_referendum
 }
 
 shared_focus = {	#1955年ザール独立住民投票
-	id = SAR_1955_statute_referendum
+	id = AOS_1955_statute_referendum
 	icon = GFX_goal_unknown
 	cost = 1
 	x = 1
@@ -23,10 +23,10 @@ shared_focus = {	#1955年ザール独立住民投票
 	available = {
 		date > 1955.10.23
 		date < 1956.1.1
-		SAR = {	is_subject_of = FRA	}
+		AOS = {	is_subject_of = FRA	}
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus SAR_1955_statute_referendum"
-		country_event = SAR.0
+		log = "[GetDateText]: [Root.GetName]: Focus AOS_1955_statute_referendum"
+		country_event = AOS.0
 	}
 }
