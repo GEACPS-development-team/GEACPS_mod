@@ -13,20 +13,15 @@ country_event = {	#1955年ラインラント独立住民投票
 	}
 	
 	option = {
-		name = RHI.0.a
+		name = RHI.0.0
 		news_event = {	id = news.4 days = 1	}
+		set_cosmetic_tag = RHI_republic
 	}
 	option = {
-		name = RHI.0.b
+		name = RHI.0.1
 		ai_chance = {	factor = 100	}
 		end_puppet = FRA
-		set_cosmetic_tag = RHI_state_government
-		SGR = {
-			set_autonomy = {
-				target = RHI
-				autonomy_state = integrated_puppet
-			}
-		}
+		SGR = {	merger_country = yes	}
 		news_event = {	id = news.5 days = 1	}
 	}
 }

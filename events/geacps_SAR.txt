@@ -13,20 +13,15 @@ country_event = {	#1955年ザール独立住民投票
 	}
 	
 	option = {
-		name = SAR.0.a
+		name = SAR.0.0
 		news_event = {	id = news.7 days = 1	}
+		set_cosmetic_tag = SAR_republic
 	}
 	option = {
-		name = SAR.0.b
+		name = SAR.0.1
 		ai_chance = {	factor = 100	}
 		end_puppet = FRA
-		set_cosmetic_tag = SAR_state_government
-		SGR = {
-			set_autonomy = {
-				target = SAR
-				autonomy_state = integrated_puppet
-			}
-		}
+		SGR = {	merger_country = yes	}
 		news_event = {	id = news.8 days = 1	}
 	}
 }
