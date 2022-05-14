@@ -1,23 +1,24 @@
-
-state={
-	id=1335
-	name="STATE_1335"
+state = {
+	id = 1335
+	name = "STATE_1335"
+	manpower = 13100
+	state_category = rural
+	buildings_max_level_factor = 1
 	
 	history = {
-		owner = BLR
-		add_core_of = BLR
+		owner = RUS
+		add_core_of = RUS
+		add_claim_by = BLR
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {	415	1	}
-		set_variable = {	BLR_state_variable = 1	}
+		set_variable = {	RUS_state_variable = 1	}
+		set_variable = {	BLR_state_variable = 2	}
 	}
 	
-	provinces={
-		415 3310 
+	provinces = {
+		415	3310
 	}
-	manpower=13056
-	state_category = rural
-	buildings_max_level_factor=1.000
-	local_supplies=0.000
+	local_supplies=0.0
 }

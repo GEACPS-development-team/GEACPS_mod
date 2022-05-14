@@ -1,0 +1,24 @@
+state = {
+	id = 1339
+	name = "STATE_1339"
+	manpower = 100
+	state_category = rural
+	buildings_max_level_factor = 1
+	
+	history = {
+		owner = SOA
+		add_core_of = SOA
+		add_core_of = GEO
+		add_core_of = CCS
+		buildings = {
+			infrastructure = 2
+		}
+		set_variable = {	GEO_state_variable = 1	}
+		set_variable = {	SOA_state_variable = 1	}
+	}
+	
+	provinces = {
+		1530	13367	13368	13369
+	}
+	local_supplies=0.0
+}
