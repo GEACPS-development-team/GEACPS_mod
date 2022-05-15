@@ -1,0 +1,23 @@
+state = {
+	id = 1350
+	name = "STATE_1350"
+	manpower = 100
+	state_category = small_island
+	buildings_max_level_factor = 1
+	
+	history = {
+		owner = HAW
+		add_core_of = HAW
+		add_core_of = TKL
+		buildings = {
+			infrastructure = 1
+			13378 = {	naval_base = 1	}
+		}
+		set_variable = {	TKL_state_variable = 1	}
+	}
+	
+	provinces = {
+		13378
+	}
+	local_supplies=0.0
+}

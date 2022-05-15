@@ -147,7 +147,8 @@ is_available_to_collaboration_government = {
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV
-			has_autonomy_state = autonomy_collaboration_government
+			#has_autonomy_state = autonomy_collaboration_government
+			always = no
 		}
 	}
 }
