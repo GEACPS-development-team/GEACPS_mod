@@ -1,21 +1,30 @@
-state = {
-	id = 456
-	name = "STATE_456"
-	manpower = 4224516
-	state_category = rural
-	
-	history = {
+
+state={
+	id=456
+	name="STATE_456"
+
+	history={
 		owner = EGY
 		add_core_of = EGY
 		buildings = {
 			infrastructure = 2
+
 		}
-		victory_points = {	11999	1	}
-		set_variable = {	EGY_state_variable = 1	}
+		victory_points = {
+			11999 1 
+		}
+		set_variable = {
+			EGY_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1028	1064	1151	1206	7030	7073	7144	10028	10097	10844	11974	11999	12044	12071	12771
+
+	provinces={
+		1028 1064 1206 10097 10844 11999 12071 12771 
 	}
-	local_supplies = 0.0
+	manpower=4224516
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

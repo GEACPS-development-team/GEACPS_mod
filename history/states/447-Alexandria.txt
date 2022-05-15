@@ -1,27 +1,42 @@
-state = {
-	id = 447
-	name = "STATE_447"
-	manpower = 3859239
-	state_category = town
-	
-	resources = {	oil = 1	}
-	
-	history = {
+
+state={
+	id=447
+	name="STATE_447"
+	resources={
+		oil=1.000
+	}
+
+	history={
 		owner = EGY
 		add_core_of = EGY
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 6
-			4076 = {	naval_base = 8	}
+			4076 = {
+				naval_base = 8
+
+			}
+
 		}
-		victory_points = {	1071	1	}
-		victory_points = {	4076	10	}
-		set_variable = {	EGY_state_variable = 1	}
+		victory_points = {
+			1071 1 
+		}
+		victory_points = {
+			4076 10 
+		}
+		set_variable = {
+			EGY_state_variable = 1
+
+		}
+
 	}
-	
-	provinces = {
-		1071	4076	4145	7091	7164	10073	11964
+
+	provinces={
+		4076 7091 
 	}
-	local_supplies = 0.0
+	manpower=3859239
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
 }
