@@ -33,6 +33,12 @@ is_dependent_territory = {
 		has_autonomy_state = imperial_overseas_territory
 	}
 }
+is_national_system_monarchy = {
+	OR = {
+		has_idea = monarchy_federal_state
+		has_idea = monarchy_unitary_state
+	}
+}
 release_country_decision_trigger = {
 	ROOT = {
 		any_owned_state = {
