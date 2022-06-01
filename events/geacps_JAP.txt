@@ -87,6 +87,7 @@ country_event = {	#重臣会議
 	fire_only_once = yes
 	
 	immediate = {
+		complete_national_focus = JAP_taimeikoka
 		hidden_effect = {
 			set_country_flag = JAP_senior_statesmen's_conference_held
 		}
@@ -97,6 +98,7 @@ country_event = {	#重臣会議
  		ai_chance = {
 			factor = 75
 		}
+		complete_national_focus = JAP_selection_from_army_candidates
 		hidden_effect = {
 			set_country_flag = JAP_army_candidates_selected
 		}
@@ -107,6 +109,7 @@ country_event = {	#重臣会議
  		ai_chance = {
 			factor = 15
 		}
+		complete_national_focus = JAP_selection_from_navy_candidates
 		hidden_effect = {
 			set_country_flag = JAP_navy_candidates_selected
 		}
@@ -117,6 +120,7 @@ country_event = {	#重臣会議
  		ai_chance = {
 			factor = 10
 		}
+		complete_national_focus = JAP_no_selection_from_anywhere
 		hidden_effect = {
 			set_country_flag = JAP_military_opinion_ignored
 		}
