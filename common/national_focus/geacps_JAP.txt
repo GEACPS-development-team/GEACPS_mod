@@ -22,15 +22,15 @@ focus_tree = {
 	
 	focus = {	#一・二二事件
 		id = JAP_1-22_Incident
-		icon = GFX_focus_JAP_Losange
+		icon = GFX_focus_JAP_losange
 		cost = 0
 		x = 2
 		y = 0
 		available = {
-			hidden_trigger = { always = no }
+			has_country_flag = JAP_1-22_Incident_occurred
 		}
 		completion_reward = {
-			custom_effect_tooltip = JAP_occurrence_of_1-22_Incident
+			custom_effect_tooltip = JAP_omen_of_1-22_Incident
 		}
 	}
 	focus = {	#重臣会議を開催する
@@ -66,8 +66,8 @@ focus_tree = {
 		}
 	}
 	focus = {	#戒厳の宣告
-		id = JAP_Declaration_of_martial_law
-		icon = GFX_focus_JAP_Constitution
+		id = JAP_declaration_of_martial_law
+		icon = GFX_focus_JAP_constitution
 		cost = 1
 		x = 0
 		y = 2
@@ -84,14 +84,14 @@ focus_tree = {
 		}
 	}
 	focus = {	#海軍士官の裁判
-		id = JAP_Trial_of_naval_officers
-		icon = GFX_focus_JAP_Trial_of_naval_officers
+		id = JAP_judgment_of_naval_officers
+		icon = GFX_focus_JAP_purge_of_the_navy
 		cost = 4.28
 		x = -2
 		y = 1
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
+			focus = JAP_declaration_of_martial_law
 		}
 		completion_reward = {
 			add_stability = -0.1
@@ -101,14 +101,14 @@ focus_tree = {
 		}
 	}
 	focus = {	#農本主義者を逮捕
-		id = JAP_Arrest_of_agronomists
-		icon = GFX_focus_JAP_Arrest_of_agronomists
+		id = JAP_arrest_of_agrarianists
+		icon = GFX_focus_JAP_green_scare
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
+			focus = JAP_declaration_of_martial_law
 		}
 		completion_reward = {
 			add_stability = -0.1
@@ -118,14 +118,14 @@ focus_tree = {
 		}
 	}
 	focus = {	#皇道派将校の裁判
-		id = JAP_Trial_of_Imperialist_officers
-		icon = GFX_focus_JAP_Trial_of_Imperialist_officers
+		id = JAP_judgment_of_kodoha_officers
+		icon = GFX_focus_JAP_purge_of_the_kodoha
 		cost = 4.28
 		x = 2
 		y = 1
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
+			focus = JAP_declaration_of_martial_law
 		}
 		completion_reward = {
 			add_stability = -0.1
@@ -135,20 +135,20 @@ focus_tree = {
 		}
 	}
 	focus = {	#事態の安定
-		id = JAP_Stability_of_the_situation
-		icon = GFX_focus_JAP_Stability_of_the_situation
+		id = JAP_stability_of_the_situation
+		icon = GFX_focus_JAP_declaration
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Trial_of_naval_officers
+			focus = JAP_judgment_of_naval_officers
 		}
 		prerequisite = {
-			focus = JAP_Arrest_of_agronomists
+			focus = JAP_arrest_of_agrarianists
 		}
 		prerequisite = {
-			focus = JAP_Trial_of_Imperialist_officers
+			focus = JAP_judgment_of_kodoha_officers
 		}
 		completion_reward = {
 			remove_ideas = JAP_Martial_law
@@ -233,6 +233,72 @@ focus_tree = {
 		relative_position_id = JAP_Capture_of_Chongqing
 		prerequisite = {
 			focus = JAP_Capture_of_Chongqing
+		}
+		completion_reward = {
+		}
+	}
+
+	#############
+	#	大命降下	#
+	#############
+	
+	focus = {	#大命降下
+		id = JAP_taimeikoka
+		icon = GFX_focus_JAP_Losange
+		cost = 0
+		x = 0
+		y = 6
+		available = {
+			has_country_flag = JAP_senior_statesmen's_conference_held
+		}
+		relative_position_id = JAP_1-22_Incident
+		completion_reward = {
+		}
+	}
+	focus = {	#海軍から奏薦する
+		id = JAP_selection_from_navy_candidates
+		icon = GFX_focus_JAP_Losange
+		cost = 0
+		x = -2
+		y = 1
+		available = {
+			has_country_flag = JAP_navy_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#軍部との関わりを絶つ...？
+		id = JAP_no_selection_from_anywhere
+		icon = GFX_focus_JAP_Losange
+		cost = 0
+		x = 0
+		y = 1
+		available = {
+			has_country_flag = JAP_military_opinion_ignored
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#陸軍から奏薦する
+		id = JAP_selection_from_army_candidates
+		icon = GFX_focus_JAP_Losange
+		cost = 0
+		x = 2
+		y = 1
+		available = {
+			has_country_flag = JAP_army_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
 		}
 		completion_reward = {
 		}

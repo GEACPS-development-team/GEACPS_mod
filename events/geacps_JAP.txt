@@ -32,11 +32,16 @@ country_event = {	#一・二二事件の発生
 	option = {	#叛乱軍を捕らえよ！
 		name = JAP.2.0
 		complete_national_focus = JAP_1-22_Incident
-		remove_ideas_with_trait = head_of_government
-		#kill_head_of_government = yes	#効果不明
-		add_manpower = -1000
+		remove_ideas = JAP_hideki_tojo_hg
+		remove_ideas = JAP_hideki_tojo_am
+		remove_ideas = JAP_hideki_tojo_cm
+		#kill_head_of_government = yes
+		add_manpower = -100
 		country_event = {
 			id = JAP.3
+		}
+		hidden_effect = {
+			set_country_flag = JAP_1-22_Incident_occurred
 		}
 	}
 }
@@ -56,15 +61,18 @@ country_event = {	#臨時代理
 	option = {	#東條の腹心の安藤紀三郎に
 		name = JAP.3.0
  		ai_chance = {
-			factor = 100
+			factor = 90
 		}
-		add_ideas = JAP_Kisaburo_Ando
+		add_ideas = JAP_kisaburo_ando_hg
 		add_war_support = 0.1
 	}
 	
 	option = {	#"欠点がない"重光葵に
 		name = JAP.3.1
-		add_ideas = JAP_Mamoru_Shigemitsu
+ 		ai_chance = {
+			factor = 10
+		}
+		add_ideas = JAP_mamoru_shigemitsu_hg
 		add_stability = 0.1
 	}
 }
@@ -79,24 +87,39 @@ country_event = {	#重臣会議
 	fire_only_once = yes
 	
 	immediate = {
+		hidden_effect = {
+			set_country_flag = JAP_senior_statesmen's_conference_held
+		}
 	}
 	
-	option = {	#奏薦されたのは陸軍将校だ！
+	option = {	#奏薦されたのは陸軍の出した候補だ！
 		name = JAP.4.0
  		ai_chance = {
 			factor = 75
 		}
-	}
-	
-	option = {	#いいや、海軍士官が奏薦された！
-		name = JAP.4.1
- 		ai_chance = {
-			factor = 25
+		hidden_effect = {
+			set_country_flag = JAP_army_candidates_selected
 		}
 	}
 	
-	option = {	#軍部の意見なんぞ無視してしまえ...
+	option = {	#いいや、海軍の出した候補が奏薦された！
+		name = JAP.4.1
+ 		ai_chance = {
+			factor = 15
+		}
+		hidden_effect = {
+			set_country_flag = JAP_navy_candidates_selected
+		}
+	}
+	
+	option = {	#軍部の意見なんぞ無視してしまえばよい...
 		name = JAP.4.2
+ 		ai_chance = {
+			factor = 10
+		}
+		hidden_effect = {
+			set_country_flag = JAP_military_opinion_ignored
+		}
 	}
 }
 country_event = {	#閣議
