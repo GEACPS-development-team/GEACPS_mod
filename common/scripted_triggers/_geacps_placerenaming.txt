@@ -2,27 +2,32 @@ country_ja_tag = {
 	OR = {
 		tag = JAP
 		has_cosmetic_tag = COUNTRY_JAP
+		AND = {
+			is_subject_of = JAP
+			is_dependent_territory = yes
+		}
 	}
 }
 country_en_tag = {
 	OR = {
 		tag = ENG
+		tag = GBR
 		tag = USA
 		tag = CAN
 		tag = AST
 		tag = NZL
 		tag = NFL
+		AND = {
+			OR = {
+				is_subject_of = ENG
+				is_subject_of = USA
+				is_subject_of = GBR
+			}
+			is_dependent_territory = yes
+		}
 		has_cosmetic_tag = GBRbyENG_united_kingdom
 		has_cosmetic_tag = GBRandIREbyENG_united_kingdom
 		has_cosmetic_tag = GBRandNIRbyENG_united_kingdom
-	}
-}
-country_de_tag = {
-	OR = {
-		tag = GER
-		tag = WGR
-		tag = EGR
-		tag = SGR
 	}
 }
 country_fr_tag = {
@@ -35,6 +40,21 @@ country_fr_tag = {
 		}
 	}
 }
+country_ru_tag = {
+	OR = {
+		tag = RUS
+		tag = SIB
+		tag = FEA
+	}
+}
+country_de_tag = {
+	OR = {
+		tag = GER
+		tag = WGR
+		tag = EGR
+		tag = SGR
+	}
+}
 country_it_tag = {
 	OR = {
 		tag = ITA
@@ -42,12 +62,9 @@ country_it_tag = {
 		tag = SRD
 	}
 }
-
-country_ru_tag = {
+country_la_tag = {
 	OR = {
-		tag = RUS
-		tag = SIB
-		tag = FEA
+		tag = VAT
 	}
 }
 country_es_tag = {
@@ -72,28 +89,49 @@ country_es_tag = {
 		tag = URG
 	}
 }
-country_la_tag = {
+country_pt_tag = {
 	OR = {
-		tag = VAT
+		tag = POR
+	}
+}
+country_nl_tag = {
+	OR = {
+		tag = HOL
 	}
 }
 country_ch_tag = {
 	OR = {
 		original_tag = CHI
+		original_tag = MAN
+		original_tag = MEN
 	}
 }
-placerenaming_ja = {
+
+#主要国公用語
+placerenaming_ja = {	#日本語
 	OR = {
+		state = 91
+		state = 195
 		state = 463
+		state = 630
+		state = 636
+		state = 637
+		state = 641
+		state = 642
+		state = 643
+		state = 649
+		state = 657
+		state = 863
 		state = 887
+		state = 895
 		state = 989
 		state = 1082
 		state = 1087
 		state = 1088
+		state = 1348
 	}
 }
-
-placerenaming_en = {
+placerenaming_en = {	#英語
 	OR = {
 		state = 3
 		state = 4
@@ -105,9 +143,12 @@ placerenaming_en = {
 		state = 27
 		state = 29
 		state = 34
+		state = 36
+		state = 37
 		state = 42
 		state = 51
 		state = 52
+		state = 53
 		state = 54
 		state = 55
 		state = 57
@@ -121,55 +162,41 @@ placerenaming_en = {
 		state = 66
 		state = 67
 		state = 115
+		state = 120
+		state = 189
 		state = 267
+		state = 455
+		state = 629
+		state = 630
 		state = 631
 		state = 632
 		state = 635
 		state = 638
+		state = 645
 		state = 646
 		state = 647
 		state = 648
 		state = 650
 		state = 863
+		state = 895
+		state = 943
+		state = 1105
 		state = 1222
 		state = 1233
 	}
 }
-placerenaming_de = {
-	OR = {
-		state = 5
-		state = 6
-		state = 9
-		state = 10
-		state = 12
-		state = 13
-		state = 17
-		state = 27
-		state = 28
-		state = 34
-		state = 39
-		state = 63
-		state = 66
-		state = 67
-		state = 69
-		state = 74
-		state = 85
-		state = 648
-		state = 1121
-		state = 1122
-		state = 1123
-	}
-}
-placerenaming_fr = {
+placerenaming_fr = {	#仏語
 	OR = {
 		state = 1
 		state = 3
 		state = 6
 		state = 8
+		state = 15
 		state = 39
 		state = 42
 		state = 51
 		state = 52
+		state = 53
 		state = 54
 		state = 55
 		state = 57
@@ -180,95 +207,501 @@ placerenaming_fr = {
 		state = 65
 		state = 66
 		state = 67
+		state = 458
+		state = 514
+		state = 515
 		state = 635
+		state = 701
+		state = 708
+		state = 730
+		state = 772
+		state = 776
+		state = 778
+		state = 779
 		state = 880
+		state = 1058
+		state = 1105
+		state = 1257
+		state = 1360
 	}
 }
-placerenaming_it = {
-	OR = {
-		state = 3
-		state = 52
-	}
-}
-placerenaming_ru = {
+placerenaming_ru = {	#露語
 	OR = {
 		state = 5
 		state = 10
+		state = 11
 		state = 13
+		state = 73
+		state = 78
+		state = 89
+		state = 91
+		state = 91
+		state = 95
+		state = 137
+		state = 188
+		state = 189
+		state = 190
+		state = 193
+		state = 195
+		state = 197
+		state = 198
+		state = 199
+		state = 200
+		state = 201
+		state = 203
+		state = 207
+		state = 221
+		state = 226
+		state = 227
+		state = 228
+		state = 402
+		state = 407
+		state = 408
 		state = 463
 		state = 537
+		state = 586
 		state = 655
 		state = 657
+		state = 763
+		state = 809
+		state = 810
+		state = 811
+		state = 812
+		state = 813
+		state = 814
+		state = 815
+		state = 826
+		state = 828
+		state = 854
+		state = 855
+		state = 943
+		state = 1048
+		state = 1145
+		state = 1239
 	}
 }
-placerenaming_lb = {
+placerenaming_de = {	#独語
 	OR = {
-		state = 8
+		state = 4
+		state = 5
+		state = 6
+		state = 9
+		state = 10
+		state = 11
+		state = 12
+		state = 13
+		state = 17
+		state = 27
+		state = 28
+		state = 29
+		state = 34
+		state = 37
+		state = 39
+		state = 63
+		state = 66
+		state = 67
+		state = 69
+		state = 72
+		state = 74
+		state = 75
+		state = 76
+		state = 85
+		state = 86
+		state = 87
+		state = 88
+		state = 89
+		state = 90
+		state = 91
+		state = 93
+		state = 95
+		state = 97
+		state = 98
+		state = 102
+		state = 137
+		state = 152
+		state = 153
+		state = 188
+		state = 189
+		state = 190
+		state = 191
+		state = 193
+		state = 195
+		state = 196
+		state = 197
+		state = 199
+		state = 200
+		state = 201
+		state = 202
+		state = 203
+		state = 207
+		state = 209
+		state = 214
+		state = 219
+		state = 221
+		state = 222
+		state = 226
+		state = 228
+		state = 231
+		state = 234
+		state = 235
+		state = 237
+		state = 238
+		state = 242
+		state = 245
+		state = 246
+		state = 247
+		state = 248
+		state = 252
+		state = 255
+		state = 259
+		state = 260
+		state = 263
+		state = 264
+		state = 265
+		state = 648
+		state = 762
+		state = 763
+		state = 807
+		state = 809
+		state = 810
+		state = 811
+		state = 812
+		state = 813
+		state = 814
+		state = 815
+		state = 821
+		state = 826
+		state = 827
+		state = 828
+		state = 839
+		state = 904
+		state = 990
+		state = 1039
+		state = 1048
+		state = 1050
+		state = 1105
+		state = 1121
+		state = 1122
+		state = 1123
+		state = 1135
+		state = 1145
+		state = 1331
 	}
 }
-placerenaming_cs = {
+placerenaming_it = {	#伊語
+	OR = {
+		state = 3
+		state = 39
+		state = 52
+		state = 53
+		state = 103
+		state = 106
+		state = 118
+		state = 163
+		state = 183
+		state = 187
+		state = 446
+		state = 447
+		state = 550
+		state = 551
+		state = 552
+		state = 662
+		state = 663
+		state = 731
+		state = 767
+		state = 805
+		state = 878
+		state = 1109
+	}
+}
+placerenaming_la = {	#ラテン語
+	OR = {
+		state = 12
+		state = 19
+		state = 20
+		state = 86
+		state = 115
+		state = 797
+	}
+}
+#大陸間公用語
+placerenaming_es = {	#スペイン語
+	OR = {
+		state = 115
+		state = 277
+		state = 311
+		state = 376
+	}
+}
+placerenaming_pt = {	#ポルトガル語
+	OR = {
+		state = 7
+	}
+}
+placerenaming_nl = {	#ネーデルラント語
+	OR = {
+		state = 6
+		state = 195
+	}
+}
+#亜州主要言語
+placerenaming_ch = {	#中国語
+	OR = {
+		state = 287
+		state = 322
+		state = 329
+		state = 330
+		state = 408
+		state = 409
+		state = 434
+		state = 537
+		state = 560
+		state = 561
+		state = 563
+		state = 564
+		state = 601
+		state = 611
+		state = 612
+		state = 617
+		state = 618
+		state = 619
+		state = 655
+		state = 657
+		state = 746
+		state = 752
+		state = 754
+		state = 757
+		state = 758
+		state = 759
+		state = 760
+		state = 817
+		state = 818
+		state = 819
+		state = 820
+		state = 863
+		state = 873
+		state = 875
+		state = 889
+		state = 911
+		state = 964
+		state = 965
+		state = 966
+		state = 967
+		state = 968
+		state = 970
+		state = 971
+		state = 1177
+		state = 1178
+		state = 1179
+		state = 1185
+		state = 1239
+		state = 1318
+		state = 1322
+	}
+}
+placerenaming_tr = {	#トルコ語
+	OR = {
+		state = 46
+		state = 48
+		state = 76
+		state = 227
+		state = 1360
+	}
+}
+#欧州主要言語
+placerenaming_bg = {	#ブルガリア語
+	OR = {
+		state = 77
+	}
+}
+placerenaming_cs = {	#チェコ語
 	OR = {
 		state = 9
 		state = 66
 		state = 67
+		state = 201
 	}
 }
-placerenaming_pl = {
-	OR = {
-		state = 10
-		state = 12
-		state = 62
-	}
-}
-placerenaming_da = {
+placerenaming_da = {	#デンマーク語
 	OR = {
 		state = 36
 		state = 58
 	}
 }
-placerenaming_sv = {
-	OR = {
-		state = 37
-	}
-}
-placerenaming_tr = {
-	OR = {
-		state = 46
-		state = 48
-	}
-}
-placerenaming_es = {
-	OR = {
-		state = 115
-	}
-}
-placerenaming_el = {
+placerenaming_el = {	#ギリシャ語
 	OR = {
 		state = 47
+		state = 797
 	}
 }
-placerenaming_hu = {
+placerenaming_fi = {	#フィンランド語
+	OR = {
+		state = 722
+	}
+}
+placerenaming_hu = {	#ハンガリー語
 	OR = {
 		state = 45
 		state = 66
 		state = 67
+		state = 76
 	}
 }
-placerenaming_la = {
+placerenaming_lb = {	#ルクセンブルク語
 	OR = {
+		state = 8
+		state = 1105
+	}
+}
+placerenaming_lt = {	#リトアニア語
+	OR = {
+		state = 189
+		state = 815
+	}
+}
+placerenaming_pl = {	#ポーランド語
+	OR = {
+		state = 10
+		state = 11
 		state = 12
-		state = 19
-		state = 115
+		state = 62
+		state = 66
+		state = 67
+		state = 76
+		state = 86
+		state = 89
+		state = 91
+		state = 91
+		state = 93
+		state = 95
+		state = 97
+		state = 188
+		state = 189
+		state = 190
+		state = 191
+		state = 193
+		state = 198
+		state = 199
+		state = 201
+		state = 202
+		state = 203
+		state = 204
+		state = 206
+		state = 207
+		state = 224
+		state = 226
+		state = 242
+		state = 243
+		state = 259
+		state = 763
+		state = 808
+		state = 809
+		state = 810
+		state = 814
+		state = 815
+		state = 1331
 	}
 }
-placerenaming_ch = {
+placerenaming_ro = {	#ルーマニア語
 	OR = {
-		state = 537
-		state = 655
-		state = 657
-		state = 1177
-		state = 1178
-		state = 1179
-		state = 1185
+		state = 77
+	}
+}
+placerenaming_sv = {	#スウェーデン語
+	OR = {
+		state = 37
+	}
+}
+#亜州非主要言語
+placerenaming_ug = {	#ウイグル語
+	OR = {
+		state = 619
+		state = 970
+	}
+}
+#欧州非主要言語
+placerenaming_br = {	#ブルトン語
+	OR = {
+		state = 14
+	}
+}
+placerenaming_co = {	#コルシカ語
+	OR = {
+		state = 1
+	}
+}
+placerenaming_sk = {	#スロバキア語
+	OR = {
+		state = 76
+	}
+}
+#大洋州非主要言語
+placerenaming_haw = {	#ハワイ語
+	OR = {
+		state = 629
+		state = 630
+		state = 631
+	}
+}
+#歴史的言語
+placerenaming_ota = {	#オスマン語
+	OR = {
+		state = 797
+	}
+}
+#特殊地名用
+placerenaming_de_nazi = {
+	OR = {
+		state = 4
+		state = 87
+		state = 98
+		state = 137
+		state = 152
+		state = 195
+		state = 1048
+	}
+}
+placerenaming_ru_monarchy = {
+	OR = {
+		state = 213
+		state = 227
+		state = 234
+		state = 586
+		state = 1048
+	}
+}
+placerenaming_ru_soviet = {
+	OR = {
+		state = 195
+		state = 252
+		state = 763
+	}
+}
+placerenaming_ru_stalinism = {
+	OR = {
+		state = 227
+		state = 742
+		state = 1048
+	}
+}
+placerenaming_ru_trotskyism = {
+	OR = {
+		state = 227
+		state = 742
+		state = 1048
+	}
+}
+placerenaming_ru_bukharinism = {
+	OR = {
+		state = 247
+		state = 1048
+	}
+}
+placerenaming_ja_empire = {
+	OR = {
+		state = 116
+		state = 195
+		state = 863
+		state = 1048
 	}
 }
