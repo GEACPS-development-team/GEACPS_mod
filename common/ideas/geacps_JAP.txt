@@ -1,6 +1,6 @@
-ideas = {#既存国民精神
+ideas = {	#既存国民精神
 	country = {
-		JAP_high_defence_state_system = {#高度国防国家体制
+		JAP_high_defence_state_system = {	#高度国防国家体制
 			allowed = {
 				always = no
 			}
@@ -15,7 +15,7 @@ ideas = {#既存国民精神
 			}
 		}
 		
-		JAP_privy_council = {#枢密院
+		JAP_privy_council = {	#枢密院
 			allowed = {
 				always = no
 			}
@@ -29,7 +29,7 @@ ideas = {#既存国民精神
 			}
 		}
 		
-		JAP_planning_institute = {#企画院
+		JAP_planning_institute = {	#企画院
 			allowed = {
 				always = no
 			}
@@ -44,7 +44,7 @@ ideas = {#既存国民精神
 			}
 		}
 		
-		JAP_active_military_service_for_ministers_of_war = {#軍部大臣現役武官制
+		JAP_active_military_service_for_ministers_of_war = {	#軍部大臣現役武官制
 			allowed = {
 				always = no
 			}
@@ -59,7 +59,7 @@ ideas = {#既存国民精神
 			}
 		}
 		
-		JAP_suppression_of_ideas_by_the_security_law = {#治安維持法による思想弾圧
+		JAP_suppression_of_ideas_by_the_security_law = {	#治安維持法による思想弾圧
 			allowed = {
 				always = no
 			}
@@ -76,7 +76,7 @@ ideas = {#既存国民精神
 			}
 		}
 		
-		JAP_victory_in_the_greater_east_asia_war = {#大東亜戦争に勝利
+		JAP_victory_in_the_greater_east_asia_war = {	#大東亜戦争に勝利
 			allowed = {
 				always = no
 			}
@@ -91,7 +91,7 @@ ideas = {#既存国民精神
 			}
 		}
 		
-		JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration = {#大東亜会議と大東亜共同宣言
+		JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration = {	#大東亜会議と大東亜共同宣言
 			allowed = {
 				always = no
 			}
@@ -106,9 +106,9 @@ ideas = {#既存国民精神
 	}
 }
 
-ideas = {#新規国民精神
+ideas = {	#新規国民精神
 	country = {
-		JAP_Martial_law = {#戒嚴令
+		JAP_Martial_law = {	#戒嚴令
 			allowed = {
 				always = no
 			}
@@ -116,14 +116,14 @@ ideas = {#新規国民精神
 				always = yes
 			}
 			removal_cost = -1
-			picture = eng_imperial_conscription
+			picture = JAP_constitution
 			modifier = {
 				stability_factor = -0.1
 				stability_weekly = -0.01
 				mobilization_speed = 0.01
 			}
 		}
-		JAP_A_great_raccoon_who_cares_for_his_country = {#国を想う大狸
+		JAP_A_great_raccoon_who_cares_for_his_country = {	#国を想う大狸
 			allowed = {
 				always = no
 			}
@@ -135,7 +135,7 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
-		JAP_Sake_is_Yonai_or_Yonai_is_sake = {#酒が米内か、米内が酒か
+		JAP_Sake_is_Yonai_or_Yonai_is_sake = {	#酒が米内か、米内が酒か
 			allowed = {
 				always = no
 			}
@@ -147,7 +147,7 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
-		JAP_Oni_no_Kantaro = {#鬼の貫太郎
+		JAP_Oni_no_Kantaro = {	#鬼の貫太郎
 			allowed = {
 				always = no
 			}
@@ -159,7 +159,7 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
-		JAP_Lord_Duke = {#公爵閣下
+		JAP_Lord_Duke = {	#公爵閣下
 			allowed = {
 				always = no
 			}
@@ -171,7 +171,7 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
-		JAP_Innovation_bureaucrats = {#革新官僚
+		JAP_Innovation_bureaucrats = {	#革新官僚
 			allowed = {
 				always = no
 			}
@@ -186,7 +186,7 @@ ideas = {#新規国民精神
 				production_speed_industrial_complex_factor = 0.1
 			}
 		}
-		JAP_Korean_Tiger = {#朝鮮の虎
+		JAP_Korean_Tiger = {	#朝鮮の虎
 			allowed = {
 				always = no
 			}
@@ -198,7 +198,7 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
-		JAP_Commander-in-Chief_of_the_Southern_Army = {#南方軍総司令官
+		JAP_Commander-in-Chief_of_the_Southern_Army = {	#南方軍総司令官
 			allowed = {
 				always = no
 			}
@@ -210,7 +210,7 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
-		JAP_The_commander_of_Operation_Ichi-Go = {#一号作戦の指揮官
+		JAP_The_commander_of_Operation_Ichi-Go = {	#一号作戦の指揮官
 			allowed = {
 				always = no
 			}
@@ -222,7 +222,12 @@ ideas = {#新規国民精神
 			modifier = {
 			}
 		}
+	}
+}
 		
+
+ideas = {	#新規国民精神
+	country = {
 		JAP_air_people = {
 			removal_cost = -1
 
