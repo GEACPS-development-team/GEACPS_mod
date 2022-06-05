@@ -9,9 +9,6 @@ country_event = {	#大日本帝國
 	hidden = no
 	fire_only_once = yes
 	
-	immediate = {
-	}
-	
 	option = {	#天皇陛下万歳！大日本帝国万歳！
 		name = JAP.0.0
 	}
@@ -26,9 +23,6 @@ country_event = {	#一・二二事件の発生
 	hidden = no
 	fire_only_once = yes
 	
-	immediate = {
-	}
-	
 	option = {	#叛乱軍を捕らえよ！
 		name = JAP.2.0
 		complete_national_focus = JAP_1-22_Incident
@@ -36,6 +30,7 @@ country_event = {	#一・二二事件の発生
 		remove_ideas = JAP_hideki_tojo_am
 		remove_ideas = JAP_hideki_tojo_cm
 		#kill_head_of_government = yes
+		add_stability = -0.1
 		add_manpower = -100
 		country_event = {
 			id = JAP.3
@@ -135,9 +130,6 @@ country_event = {	#閣議
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
-	immediate = {
-	}
 	
 	option = {	#決まりだな！
 		name = JAP.5.0
@@ -257,6 +249,8 @@ country_event = {	#武漢作戦
 		name = JAP.100.0
 	}
 }
+
+
 
 add_namespace = JAP_military
 country_event = {

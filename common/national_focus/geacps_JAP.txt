@@ -160,6 +160,90 @@ focus_tree = {
 	}
 
 	#############
+	#	大命降下	#
+	#############
+	
+	focus = {	#大命降下
+		id = JAP_taimeikoka
+		icon = GFX_focus_JAP_Hirohito
+		cost = 0
+		x = 8
+		y = 4
+		available = {
+			has_country_flag = JAP_senior_statesmen's_conference_held
+		}
+		relative_position_id = JAP_1-22_Incident
+		completion_reward = {
+		}
+	}
+
+	#########
+	#	海軍	#
+	#########
+	
+	
+	focus = {	#海軍から奏薦する
+		id = JAP_selection_from_navy_candidates
+		icon = GFX_focus_JAP_question
+		cost = 0
+		x = -2
+		y = 1
+		available = {
+			has_country_flag = JAP_navy_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+
+	#########
+	#	文民	#
+	#########
+	
+	
+	focus = {	#軍部との関わりを絶つ...？
+		id = JAP_no_selection_from_anywhere
+		icon = GFX_focus_JAP_question
+		cost = 0
+		x = 0
+		y = 1
+		available = {
+			has_country_flag = JAP_military_opinion_ignored
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+
+	#########
+	#	陸軍	#
+	#########
+	
+	
+	focus = {	#陸軍から奏薦する
+		id = JAP_selection_from_army_candidates
+		icon = GFX_focus_JAP_question
+		cost = 0
+		x = 2
+		y = 1
+		available = {
+			has_country_flag = JAP_army_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+
+	#############
 	#	支那事変	#
 	#############
 	
@@ -236,72 +320,6 @@ focus_tree = {
 		relative_position_id = JAP_Capture_of_Chongqing
 		prerequisite = {
 			focus = JAP_Capture_of_Chongqing
-		}
-		completion_reward = {
-		}
-	}
-
-	#############
-	#	大命降下	#
-	#############
-	
-	focus = {	#大命降下
-		id = JAP_taimeikoka
-		icon = GFX_focus_JAP_Hirohito
-		cost = 0
-		x = 8
-		y = 4
-		available = {
-			has_country_flag = JAP_senior_statesmen's_conference_held
-		}
-		relative_position_id = JAP_1-22_Incident
-		completion_reward = {
-		}
-	}
-	focus = {	#海軍から奏薦する
-		id = JAP_selection_from_navy_candidates
-		icon = GFX_focus_JAP_question
-		cost = 0
-		x = -2
-		y = 1
-		available = {
-			has_country_flag = JAP_navy_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
-	focus = {	#軍部との関わりを絶つ...？
-		id = JAP_no_selection_from_anywhere
-		icon = GFX_focus_JAP_question
-		cost = 0
-		x = 0
-		y = 1
-		available = {
-			has_country_flag = JAP_military_opinion_ignored
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
-	focus = {	#陸軍から奏薦する
-		id = JAP_selection_from_army_candidates
-		icon = GFX_focus_JAP_question
-		cost = 0
-		x = 2
-		y = 1
-		available = {
-			has_country_flag = JAP_army_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
 		}
 		completion_reward = {
 		}
