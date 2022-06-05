@@ -154,16 +154,22 @@ country_event = {	#海軍士官の裁判
 	option = {	#公正な判決を下す
 		name = JAP.6.0
  		ai_chance = {
-			factor = 50
+			factor = 75
 		}
 		custom_effect_tooltip = JAP_menokataki_against_navy
 		retire_character = CHARACTER_sokichi_takagi
+		hidden_effect = {
+			set_country_flag = JAP_heavy_judgment_against_navy
+		}
 	}
 	
 	option = {	#臣民が助命嘆願運動を行っている...
 		name = JAP.6.1
  		ai_chance = {
-			factor = 50
+			factor = 25
+		}
+		hidden_effect = {
+			set_country_flag = JAP_light_judgment_against_navy
 		}
 	}
 }
@@ -207,18 +213,24 @@ country_event = {	#皇道派将校の裁判
 	immediate = {
 	}
 	
-	option = {	#公正な判決なんてもんはない
+	option = {	#どのくらい獄中に送れば気が済むのだろうか...
 		name = JAP.8.0
  		ai_chance = {
 			factor = 95
 		}
 		retire_character = CHARACTER_tomoshige_tsunoda
+		hidden_effect = {
+			set_country_flag = JAP_heavy_judgment_against_kodoha
+		}
 	}
 	
-	option = {	#もしかしたら...
+	option = {	#妥協点を探る
 		name = JAP.8.1
  		ai_chance = {
 			factor = 5
+		}
+		hidden_effect = {
+			set_country_flag = JAP_light_judgment_against_kodoha
 		}
 	}
 }
