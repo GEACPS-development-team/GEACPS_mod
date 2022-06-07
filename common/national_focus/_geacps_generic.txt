@@ -10,1201 +10,1270 @@ focus_tree = {
 	continuous_focus_position = {
 		x = 100 y = 1300
 	}
-	focus = {	#自国資本の強化
-		id = Strengthening_domestic_capital
-		icon = GFX_focus_generic_the_giant_wakes
-		cost = 10.00
-		x = 4
-		y = 1
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 1.0
-				uses = 1
-				category = electronics
-			}
+	shared_focus = strengthening_domestic_capital
+	shared_focus = strengthening_military_power
+}
+shared_focus = {	#自国資本の強化
+	id = strengthening_domestic_capital
+	icon = GFX_focus_generic_the_giant_wakes
+	cost = 10.00
+	x = 3
+	y = 0
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+		add_tech_bonus = {
+			name = electronics_bonus
+			bonus = 1.0
+			uses = 1
+			category = electronics
 		}
 	}
-	focus = {	#軍事力の強化
-		id = Strengthening_military_power
-		icon = GFX_goal_generic_political_pressure
-		cost = 10.00
-		x = 14
-		y = 1
-		completion_reward = {
-			add_stability = 0.1
-			add_war_support = 0.1
-		}
+}
+shared_focus = {	#初期工業化
+	id = initial_industrialization
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10.00
+	relative_position_id = strengthening_domestic_capital
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = strengthening_domestic_capital
 	}
-	focus = {	#初期工業化
-		id = Initial_industrialization
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthening_domestic_capital
-		}
-		x = 2
-		y = 2
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+					include_locked = yes
 				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#軍事への注力 I
-		id = Focus_on_the_military_one
-		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
-		prerequisite = {
-			focus = Initial_industrialization
-		}
-		x = 1
-		y = 3
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#軍事への注力 II
-		id = Focus_on_the_military_two
-		icon = GFX_focus_generic_army_tanks2
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_the_military_one
-		}
-		x = 1
-		y = 4
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#軍事への注力 III
-		id = Focus_on_the_military_three
-		icon = GFX_focus_generic_tank_production
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_the_military_two
-		}
-		x = 1
-		y = 5
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = arms_factory
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#民間への注力 I
-		id = Focus_on_the_private_sector_one
-		icon = GFX_focus_generic_industry_1
-		cost = 10.00
-		prerequisite = {
-			focus = Initial_industrialization
-		}
-		x = 3
-		y = 3
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#民間への注力 II
-		id = Focus_on_the_private_sector_two
-		icon = GFX_focus_generic_industry_2
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_the_private_sector_one
-		}
-		x = 3
-		y = 4
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = industrial_complex
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#民間への注力 III
-		id = Focus_on_the_private_sector_three
-		icon = GFX_focus_generic_industry_3
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_the_private_sector_two
-		}
-		x = 3
-		y = 5
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#国土防衛への注力
-		id = Focus_on_national_defense
-		icon = GFX_goal_generic_defence
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_the_private_sector_three
-			focus = Focus_on_the_military_three
-		}
-		x = 2
-		y = 6
-
-	}
-	focus = {	#本土の要塞化
-		id = Mainland_fortification
-		icon = GFX_goal_generic_fortify_city
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_national_defense
-		}
-		x = 2
-		y = 8
-	}
-	focus = {	#核兵器の開発
-		id = Development_of_nuclear_weapons
-		icon = GFX_focus_wonderweapons
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_national_defense
-		}
-		x = 3
-		y = 7
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = nuclear
-			}
-		}
-	}
-	focus = {	#技術への投資
-		id = Investing_in_technology
-		icon = GFX_goal_generic_scientific_exchange
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthening_domestic_capital
-		}
-		x = 6
-		y = 2
-		completion_reward = {
-			add_research_slot = 1
-		}
-	}
-	focus = {	#基礎電子工学への注力
-		id = Focus_on_basic_electronics
-		icon = GFX_goal_generic_production2
-		cost = 10.00
-		prerequisite = {
-			focus = Investing_in_technology
-		}
-		x = 6
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				name = electronics_bonus
-				bonus = 1.0
-				uses = 3
-				category = electronics
-			}
-		}
-	}
-	focus = {	#建設速度の向上
-		id = Increased_construction_speed
-		icon = GFX_goal_generic_construct_civilian
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_basic_electronics
-		}
-		x = 5
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = construction_tech
-			}
-		}
-	}
-	focus = {	#産業への注力
-		id = Focus_on_industry
-		icon = GFX_goal_generic_production
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_basic_electronics
-			focus = Increased_production_capacity
-			focus = Increased_construction_speed
-		}
-		x = 6
-		y = 5
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 3
-				category = industry
-			}
-		}
-	}
-	focus = {	#生産能力の向上
-		id = Increased_production_capacity
-		icon = GFX_goal_generic_positive_trade_relations
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_basic_electronics
-		}
-		x = 7
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-	}
-	focus = {	#インフラへの投資 I
-		id = Investing_in_infrastructure_I
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_industry
-		}
-		x = 6
-		y = 6
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 3
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#インフラへの投資 II
-		id = Investing_in_infrastructure_II
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = Investing_in_infrastructure_I
-		}
-		x = 6
-		y = 7
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#インフラへの投資 III
-		id = Investing_in_infrastructure_III
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = Investing_in_infrastructure_II
-		}
-		x = 6
-		y = 8
-		completion_reward = {
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 7
-					instant_build = yes
-				}
-			}
-		}
-	}
-	focus = {	#空軍
-		id = Air_Force
-		icon = GFX_goal_generic_build_airforce
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthening_military_power
-		}
-		x = 10
-		y = 2
-		completion_reward = {
-			air_experience = 10
-		}
-	}
-	focus = {	#他国からのレンドリース
-		id = Lend-Lease_from_other_countries
-		icon = GFX_focus_generic_concessions
-		cost = 10.00
-		prerequisite = {
-			focus = Air_Force
-		}
-		mutually_exclusive = {
-			focus = Original_research
-		}
-		x = 9
-		y = 3
-
-	}
-	focus = {	#独自の研究
-		id = Original_research
-		icon = GFX_goal_generic_air_fighter2
-		cost = 10.00
-		prerequisite = {
-			focus = Air_Force
-		}
-		mutually_exclusive = {
-			focus = Lend-Lease_from_other_countries
-		}
-		x = 11
-		y = 3
-		completion_reward = {
-				add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = light_air
-			}
-		}
-	}
-	focus = {	#海軍との連携
-		id = Cooperation_with_the_Navy
-		icon = GFX_goal_generic_major_alliance
-		cost = 10.00
-		prerequisite = {
-			focus = Original_research
-			focus = Original_research
-		}
-		mutually_exclusive = {
-			focus = Cooperation_with_the_Army
-		}
-		x = 9
-		y = 4
-		completion_reward = {
-				add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = naval_air
-			}
-		}
-	}
-	focus = {	#陸軍との連携
-		id = Cooperation_with_the_Army
-		icon = GFX_goal_tripartite_pact
-		cost = 10.00
-		prerequisite = {
-			focus = Lend-Lease_from_other_countries
-			focus = Lend-Lease_from_other_countries
-		}
-		mutually_exclusive = {
-			focus = Cooperation_with_the_Navy
-		}
-		x = 11
-		y = 4
-		completion_reward = {
-				add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = medium_air
-				category = heavy_air
-			}
-		}
-	}
-	focus = {	#戦略航空機の特化
-		id = Strategic_aircraft_specialization
-		icon = GFX_goal_generic_air_bomber
-		cost = 10.00
-		prerequisite = {
-			focus = Cooperation_with_the_Navy
-			focus = Cooperation_with_the_Army
-		}
-		mutually_exclusive = {
-			focus = Tactical_aircraft_specialization
-		}
-		x = 9
-		y = 5
-		completion_reward = {
-				add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_strategic_bomber
-			}
-		}
-	}
-	focus = {	#戦術航空機の特化
-		id = Tactical_aircraft_specialization
-		icon = GFX_goal_generic_air_fighter
-		cost = 10.00
-		prerequisite = {
-			focus = Cooperation_with_the_Navy
-			focus = Cooperation_with_the_Army
-		}
-		mutually_exclusive = {
-			focus = Strategic_aircraft_specialization
-		}
-		x = 11
-		y = 5
-		completion_reward = {
-				add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = tactical_bomber
-			}
-		}
-	}
-	focus = {	#空軍基地の増設
-		id = Expansion_of_air_force_base
-		icon = GFX_goal_generic_air_production
-		cost = 10.00
-		prerequisite = {
-			focus = Tactical_aircraft_specialization
-			focus = Strategic_aircraft_specialization
-		}
-		x = 10
-		y = 6
-		completion_reward = {
-			if = {
-				limit = {
+				OR = {
+					is_in_home_area = yes
 					NOT = {
-						any_owned_state = {
-							air_base > 1
-							air_base < 9
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
 						}
 					}
 				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 5
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#軍事への注力 I
+	id = focus_on_the_military_1
+	icon = GFX_goal_generic_construct_mil_factory
+	cost = 10.00
+	relative_position_id = initial_industrialization
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = initial_industrialization
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
 						}
 					}
-					add_building_construction = {
-						type = air_base
-						level = 1
-						instant_build = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#軍事への注力 II
+	id = focus_on_the_military_2
+	icon = GFX_focus_generic_army_tanks2
+	cost = 10.00
+	relative_position_id = focus_on_the_military_1
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_the_military_1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
 					}
-				}				
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#軍事への注力 III
+	id = focus_on_the_military_3
+	icon = GFX_focus_generic_tank_production
+	cost = 10.00
+	relative_position_id = focus_on_the_military_2
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_the_military_2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = arms_factory
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = arms_factory
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#民間への注力 I
+	id = focus_on_the_private_sector_1
+	icon = GFX_focus_generic_industry_1
+	cost = 10.00
+	relative_position_id = initial_industrialization
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = initial_industrialization
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#民間への注力 II
+	id = focus_on_the_private_sector_2
+	icon = GFX_focus_generic_industry_2
+	cost = 10.00
+	relative_position_id = focus_on_the_private_sector_1
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_the_private_sector_1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#民間への注力 III
+	id = focus_on_the_private_sector_3
+	icon = GFX_focus_generic_industry_3
+	cost = 10.00
+	relative_position_id = focus_on_the_private_sector_2
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_the_private_sector_2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = industrial_complex
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_extra_state_shared_building_slots = 5
+			add_building_construction = {
+				type = industrial_complex
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#国土防衛への注力
+	id = focus_on_national_defense
+	icon = GFX_goal_generic_defence
+	cost = 10.00
+	relative_position_id = focus_on_the_military_3
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = focus_on_the_private_sector_3
+		focus = focus_on_the_military_3
+	}
+}
+shared_focus = {	#本土の要塞化
+	id = mainland_fortification
+	icon = GFX_goal_generic_fortify_city
+	cost = 10.00
+	relative_position_id = focus_on_national_defense
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = focus_on_national_defense
+	}
+}
+shared_focus = {	#核兵器の開発
+	id = development_of_nuclear_weapons
+	icon = GFX_focus_wonderweapons
+	cost = 10.00
+	relative_position_id = focus_on_national_defense
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = focus_on_national_defense
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = nuclear
+		}
+	}
+}
+shared_focus = {	#技術への投資
+	id = investing_in_technology
+	icon = GFX_goal_generic_scientific_exchange
+	cost = 10.00
+	relative_position_id = strengthening_domestic_capital
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = strengthening_domestic_capital
+	}
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+shared_focus = {	#基礎電子工学への注力
+	id = focus_on_basic_electronics
+	icon = GFX_goal_generic_production2
+	cost = 10.00
+	relative_position_id = investing_in_technology
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = investing_in_technology
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = electronics_bonus
+			bonus = 1.0
+			uses = 3
+			category = electronics
+		}
+	}
+}
+shared_focus = {	#建設速度の向上
+	id = increased_construction_speed
+	icon = GFX_goal_generic_construct_civilian
+	cost = 10.00
+	relative_position_id = focus_on_basic_electronics
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = focus_on_basic_electronics
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = construction_tech
+		}
+	}
+}
+shared_focus = {	#生産能力の向上
+	id = increased_production_capacity
+	icon = GFX_goal_generic_positive_trade_relations
+	cost = 10.00
+	relative_position_id = focus_on_basic_electronics
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = focus_on_basic_electronics
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 1
+			category = industry
+		}
+	}
+}
+shared_focus = {	#産業への注力
+	id = focus_on_industry
+	icon = GFX_goal_generic_production
+	cost = 10.00
+	relative_position_id = focus_on_basic_electronics
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = focus_on_basic_electronics
+		focus = increased_construction_speed
+		focus = increased_production_capacity
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = industrial_bonus
+			bonus = 1.0
+			uses = 3
+			category = industry
+		}
+	}
+}
+shared_focus = {	#インフラへの投資 I
+	id = investing_in_infrastructure_1
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10.00
+	relative_position_id = focus_on_industry
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_industry
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#インフラへの投資 II
+	id = investing_in_infrastructure_2
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10.00
+	relative_position_id = investing_in_infrastructure_1
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = investing_in_infrastructure_1
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 5
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#インフラへの投資 III
+	id = investing_in_infrastructure_3
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 10.00
+	relative_position_id = investing_in_infrastructure_2
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = investing_in_infrastructure_2
+	}
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+					include_locked = yes
+				}
+				OR = {
+					is_in_home_area = yes
+					NOT = {
+						owner = {
+							any_owned_state = {
+								free_building_slots = {
+									building = infrastructure
+									size > 0
+									include_locked = yes
+								}
+								is_in_home_area = yes
+							}
+						}
+					}
+				}
+			}
+			add_building_construction = {
+				type = infrastructure
+				level = 7
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {	#軍事力の強化
+	id = strengthening_military_power
+	icon = GFX_goal_generic_political_pressure
+	cost = 10.00
+	x = 15
+	y = 0
+	completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+}
+shared_focus = {	#空軍
+	id = focus_on_air_force
+	icon = GFX_goal_generic_build_airforce
+	cost = 10.00
+	relative_position_id = strengthening_military_power
+	x = 5
+	y = 1
+	prerequisite = {
+		focus = strengthening_military_power
+	}
+	completion_reward = {
+		air_experience = 10
+	}
+}
+shared_focus = {	#他国からのレンドリース
+	id = lend-lease_from_other_countries
+	icon = GFX_focus_generic_concessions
+	cost = 10.00
+	relative_position_id = focus_on_air_force
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = focus_on_air_force
+	}
+	mutually_exclusive = {
+		focus = original_research
+	}
+
+}
+shared_focus = {	#独自の研究
+	id = original_research
+	icon = GFX_goal_generic_air_fighter2
+	cost = 10.00
+	relative_position_id = focus_on_air_force
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = focus_on_air_force
+	}
+	mutually_exclusive = {
+		focus = lend-lease_from_other_countries
+	}
+	completion_reward = {
+			add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = light_air
+		}
+	}
+}
+shared_focus = {	#陸軍との連携
+	id = cooperation_with_the_army
+	icon = GFX_goal_tripartite_pact
+	cost = 10.00
+	relative_position_id = original_research
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = original_research
+		focus = lend-lease_from_other_countries
+	}
+	mutually_exclusive = {
+		focus = cooperation_with_the_navy
+		focus = cooperation_with_the_civil
+	}
+	completion_reward = {
+			add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = medium_air
+			category = heavy_air
+		}
+	}
+}
+shared_focus = {	#海軍との連携
+	id = cooperation_with_the_navy
+	icon = GFX_goal_generic_major_alliance
+	cost = 10.00
+	relative_position_id = original_research
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = original_research
+		focus = lend-lease_from_other_countries
+	}
+	mutually_exclusive = {
+		focus = cooperation_with_the_army
+		focus = cooperation_with_the_navy
+	}
+	completion_reward = {
+			add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = naval_air
+		}
+	}
+}
+shared_focus = {	#民間との連携
+	id = cooperation_with_the_civil
+	icon = GFX_goal_generic_major_alliance
+	cost = 10.00
+	relative_position_id = lend-lease_from_other_countries
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = original_research
+		focus = lend-lease_from_other_countries
+	}
+	mutually_exclusive = {
+		focus = cooperation_with_the_army
+		focus = cooperation_with_the_navy
+	}
+}
+shared_focus = {	#戦略航空機の特化
+	id = strategic_aircraft_specialization
+	icon = GFX_goal_generic_air_bomber
+	cost = 10.00
+	relative_position_id = cooperation_with_the_navy
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = cooperation_with_the_army
+		focus = cooperation_with_the_navy
+		focus = cooperation_with_the_civil
+	}
+	mutually_exclusive = {
+		focus = tactical_aircraft_specialization
+	}
+	completion_reward = {
+			add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = cat_strategic_bomber
+		}
+	}
+}
+shared_focus = {	#戦術航空機の特化
+	id = tactical_aircraft_specialization
+	icon = GFX_goal_generic_air_fighter
+	cost = 10.00
+	relative_position_id = cooperation_with_the_navy
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = cooperation_with_the_army
+		focus = cooperation_with_the_navy
+		focus = cooperation_with_the_civil
+	}
+	mutually_exclusive = {
+		focus = strategic_aircraft_specialization
+	}
+	completion_reward = {
+			add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = tactical_bomber
+		}
+	}
+}
+shared_focus = {	#空軍基地の増設
+	id = expansion_of_air_force_base
+	icon = GFX_goal_generic_air_production
+	cost = 10.00
+	relative_position_id = tactical_aircraft_specialization
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = tactical_aircraft_specialization
+		focus = strategic_aircraft_specialization
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					any_owned_state = {
+						air_base > 1
+						air_base < 9
+					}
+				}
 			}
 			random_owned_controlled_state = {
 				limit = {
-					air_base > 1
-					air_base < 9
+					free_building_slots = {
+						building = air_base
+						size > 5
+					}
 				}
 				add_building_construction = {
 					type = air_base
 					level = 1
 					instant_build = yes
 				}
+			}				
+		}
+		random_owned_controlled_state = {
+			limit = {
+				air_base > 1
+				air_base < 9
+			}
+			add_building_construction = {
+				type = air_base
+				level = 1
+				instant_build = yes
 			}
 		}
 	}
-	focus = {	#ロケットの開発
-		id = Rocket_development
-		icon = GFX_focus_rocketry
-		cost = 10.00
-		prerequisite = {
-			focus = Expansion_of_air_force_base
-		}
-		x = 9
-		y = 7
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = rocketry
-			}
+}
+shared_focus = {	#ロケットの開発
+	id = rocket_development
+	icon = GFX_focus_rocketry
+	cost = 10.00
+	relative_position_id = expansion_of_air_force_base
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = expansion_of_air_force_base
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = rocketry
 		}
 	}
-	focus = {	#ジェット機の開発
-		id = Jet_aircraft_development
-		icon = GFX_goal_generic_air_doctrine
-		cost = 10.00
-		prerequisite = {
-			focus = Expansion_of_air_force_base
-		}
-		x = 10
-		y = 8
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = jet_technology
-			}
+}
+shared_focus = {	#ジェット機の開発
+	id = jet_aircraft_development
+	icon = GFX_goal_generic_air_doctrine
+	cost = 10.00
+	relative_position_id = expansion_of_air_force_base
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = expansion_of_air_force_base
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = jet_technology
 		}
 	}
-	focus = {	#海軍
-		id = Navy
-		icon = GFX_goal_generic_build_navy
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthening_military_power
-		}
-		x = 14
-		y = 2
-		completion_reward = {
-			navy_experience = 10
+}
+shared_focus = {	#海軍
+	id = focus_on_navy
+	icon = GFX_goal_generic_build_navy
+	cost = 10.00
+	relative_position_id = strengthening_military_power
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = strengthening_military_power
+	}
+	available = {
+		any_owned_state = {
+			is_coastal = yes
 		}
 	}
-	focus = {	#柔軟な海軍
-		id = Flexible_navy
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10.00
-		prerequisite = {
-			focus = Navy
-		}
-		mutually_exclusive = {
-			focus = Large_navy
-		}
-		x = 15
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = trade_interdiction_tree
-			}
+	completion_reward = {
+		navy_experience = 10
+	}
+}
+shared_focus = {	#柔軟な海軍
+	id = flexible_navy
+	icon = GFX_goal_generic_navy_cruiser
+	cost = 10.00
+	relative_position_id = focus_on_navy
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = focus_on_navy
+	}
+	mutually_exclusive = {
+		focus = large_navy
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = trade_interdiction_tree
 		}
 	}
-	focus = {	#潜水艦への注力
-		id = Focus_on_submarines
-		icon = GFX_goal_generic_navy_anti_submarine
-		cost = 10.00
-		prerequisite = {
-			focus = Flexible_navy
-		}
-		x = 15
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = ss_tech
-			}
+}
+shared_focus = {	#潜水艦への注力
+	id = focus_on_submarines
+	icon = GFX_goal_generic_navy_anti_submarine
+	cost = 10.00
+	relative_position_id = flexible_navy
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = flexible_navy
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = ss_tech
 		}
 	}
-	focus = {	#駆逐艦への注力
-		id = Focus_on_destroyers
-		icon = GFX_focus_generic_destroyer
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_submarines
-		}
-		x = 15
-		y = 5
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = dd_tech
-			}
+}
+shared_focus = {	#駆逐艦への注力
+	id = focus_on_destroyers
+	icon = GFX_focus_generic_destroyer
+	cost = 10.00
+	relative_position_id = focus_on_submarines
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_submarines
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = dd_tech
 		}
 	}
-	focus = {	#大規模海軍
-		id = Large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10.00
-		prerequisite = {
-			focus = Navy
-		}
-		mutually_exclusive = {
-			focus = Flexible_navy
-		}
-		x = 13
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = fleet_in_being_tree
-			}
+}
+shared_focus = {	#大規模海軍
+	id = large_navy
+	icon = GFX_goal_generic_navy_doctrines_tactics
+	cost = 10.00
+	relative_position_id = focus_on_navy
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = focus_on_navy
+	}
+	mutually_exclusive = {
+		focus = flexible_navy
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = fleet_in_being_tree
 		}
 	}
-	focus = {	#主力艦への注力
-		id = Focus_on_capital_ships
-		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
-		prerequisite = {
-			focus = Large_navy
-		}
-		x = 13
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = bb_tech
-			}
+}
+shared_focus = {	#主力艦への注力
+	id = focus_on_capital_ships
+	icon = GFX_goal_generic_navy_battleship
+	cost = 10.00
+	relative_position_id = large_navy
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = large_navy
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = bb_tech
 		}
 	}
-	focus = {	#航空母艦への注力
-		id = Focus_on_aircraft_carriers
-		icon = GFX_goal_generic_navy_carrier
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_capital_ships
-		}
-		x = 13
-		y = 5
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = cv_tech
-			}
+}
+shared_focus = {	#航空母艦への注力
+	id = focus_on_aircraft_carriers
+	icon = GFX_goal_generic_navy_carrier
+	cost = 10.00
+	relative_position_id = focus_on_capital_ships
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_capital_ships
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = cv_tech
 		}
 	}
-	focus = {	#海軍基地の増設
-		id = Expansion_of_naval_base
-		icon = GFX_focus_generic_cruiser2
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_aircraft_carriers
-			focus = Focus_on_destroyers
-		}
-		x = 14
-		y = 6
-		available = {
-			any_owned_state = {
-				is_coastal = yes
-			}
-		}
-		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							naval_base > 1
-							naval_base < 9
-						}
+}
+shared_focus = {	#海軍基地の増設
+	id = expansion_of_naval_base
+	icon = GFX_focus_generic_cruiser2
+	cost = 10.00
+	relative_position_id = focus_on_aircraft_carriers
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = focus_on_aircraft_carriers
+		focus = focus_on_destroyers
+	}
+	completion_reward = {
+		if = {
+			limit = {
+				NOT = {
+					any_owned_state = {
+						naval_base > 1
+						naval_base < 9
 					}
 				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = naval_base
-							size > 5
-						}
-					}
-					add_building_construction = {
-						type = naval_base
-						level = 1
-						instant_build = yes
-					}
-				}				
 			}
 			random_owned_controlled_state = {
 				limit = {
-					naval_base > 1
-					naval_base < 9
+					free_building_slots = {
+						building = naval_base
+						size > 5
+					}
 				}
 				add_building_construction = {
 					type = naval_base
 					level = 1
 					instant_build = yes
 				}
+			}				
+		}
+		random_owned_controlled_state = {
+			limit = {
+				naval_base > 1
+				naval_base < 9
+			}
+			add_building_construction = {
+				type = naval_base
+				level = 1
+				instant_build = yes
 			}
 		}
 	}
-	focus = {	#陸軍
-		id = Army
-		icon = GFX_goal_generic_axis_build_infantry
-		cost = 10.00
-		prerequisite = {
-			focus = Strengthening_military_power
-		}
-		x = 19
-		y = 2
-		completion_reward = {
-			army_experience = 10
+}
+shared_focus = {	#陸軍
+	id = focus_on_army
+	icon = GFX_goal_generic_axis_build_infantry
+	cost = 10.00
+	relative_position_id = strengthening_military_power
+	x = -5
+	y = 1
+	prerequisite = {
+		focus = strengthening_military_power
+	}
+	completion_reward = {
+		army_experience = 10
+	}
+}
+shared_focus = {	#軽戦車への注力
+	id = focus_on_light_tanks
+	icon = GFX_goal_generic_army_tanks
+	cost = 10.00
+	relative_position_id = focus_on_army
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = focus_on_army
+	}
+	mutually_exclusive = {
+		focus = focus_on_artillery_equipment_1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = cat_light_armor
 		}
 	}
-	focus = {	#軽戦車への注力
-		id = Focus_on_light_tanks
-		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
-		prerequisite = {
-			focus = Army
-		}
-		mutually_exclusive = {
-			focus = Focus_on_artillery_equipment_I
-		}
-		x = 17
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_light_armor
-			}
+}
+shared_focus = {	#中戦車への注力
+	id = focus_on_medium_tanks
+	icon = GFX_goal_generic_army_tanks
+	cost = 10.00
+	relative_position_id = focus_on_light_tanks
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_light_tanks
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = cat_medium_armor
 		}
 	}
-	focus = {	#中戦車への注力
-		id = Focus_on_medium_tanks
-		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_light_tanks
-		}
-		x = 17
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_medium_armor
-			}
+}
+shared_focus = {	#重戦車への注力
+	id = focus_on_heavy_tanks
+	icon = GFX_goal_generic_army_tanks
+	cost = 10.00
+	relative_position_id = focus_on_medium_tanks
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_medium_tanks
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = cat_heavy_armor
 		}
 	}
-	focus = {	#重戦車への注力
-		id = Focus_on_heavy_tanks
-		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_medium_tanks
-		}
-		x = 17
-		y = 5
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_armor
-			}
+}
+shared_focus = {	#歩兵装備への注力 I
+	id = focus_on_infantry_equipment_1
+	icon = GFX_goal_generic_small_arms
+	cost = 10.00
+	relative_position_id = focus_on_army
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = focus_on_army
+	}
+	mutually_exclusive = {
+		focus = focus_on_artillery_equipment_1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = infantry_weapons
 		}
 	}
-	focus = {	#砲兵装備への注力 I
-		id = Focus_on_artillery_equipment_I
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
-		prerequisite = {
-			focus = Army
-		}
-		mutually_exclusive = {	focus = Focus_on_light_tanks	}
-		mutually_exclusive = {	focus = Focus_on_infantry_equipment_I	}
-		x = 19
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
+}
+shared_focus = {	#歩兵装備への注力 II
+	id = focus_on_infantry_equipment_2
+	icon = GFX_goal_generic_small_arms
+	cost = 10.00
+	relative_position_id = focus_on_infantry_equipment_1
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_infantry_equipment_1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 3
+			category = infantry_weapons
 		}
 	}
-	focus = {	#砲兵装備への注力 II
-		id = Focus_on_artillery_equipment_II
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_artillery_equipment_I
-		}
-		x = 19
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 3
-				category = artillery
-			}
+}
+shared_focus = {	#歩兵装備への注力 III
+	id = focus_on_infantry_equipment_3
+	icon = GFX_goal_generic_small_arms
+	cost = 10.00
+	relative_position_id = focus_on_infantry_equipment_2
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_infantry_equipment_2
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 5
+			category = infantry_weapons
 		}
 	}
-	focus = {	#砲兵装備への注力 III
-		id = Focus_on_artillery_equipment_III
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_artillery_equipment_II
-		}
-		x = 19
-		y = 5
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 5
-				category = artillery
-			}
+}
+shared_focus = {	#砲兵装備への注力 I
+	id = focus_on_artillery_equipment_1
+	icon = GFX_goal_generic_army_artillery2
+	cost = 10.00
+	relative_position_id = focus_on_army
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_army
+	}
+	mutually_exclusive = {	focus = focus_on_infantry_equipment_1	}
+	mutually_exclusive = {	focus = focus_on_light_tanks	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = artillery
 		}
 	}
-	focus = {	#歩兵装備への注力 I
-		id = Focus_on_infantry_equipment_I
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = Army
-		}
-		mutually_exclusive = {
-			focus = Focus_on_artillery_equipment_I
-		}
-		x = 21
-		y = 3
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-			}
+}
+shared_focus = {	#砲兵装備への注力 II
+	id = focus_on_artillery_equipment_2
+	icon = GFX_goal_generic_army_artillery2
+	cost = 10.00
+	relative_position_id = focus_on_artillery_equipment_1
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_artillery_equipment_1
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 3
+			category = artillery
 		}
 	}
-	focus = {	#歩兵装備への注力 II
-		id = Focus_on_infantry_equipment_II
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_infantry_equipment_I
-		}
-		x = 21
-		y = 4
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 3
-				category = infantry_weapons
-			}
+}
+shared_focus = {	#砲兵装備への注力 III
+	id = focus_on_artillery_equipment_3
+	icon = GFX_goal_generic_army_artillery2
+	cost = 10.00
+	relative_position_id = focus_on_artillery_equipment_2
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_artillery_equipment_2
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 5
+			category = artillery
 		}
 	}
-	focus = {	#歩兵装備への注力 III
-		id = Focus_on_infantry_equipment_III
-		icon = GFX_goal_generic_small_arms
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_infantry_equipment_II
-		}
-		x = 21
-		y = 5
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 5
-				category = infantry_weapons
-			}
+}
+shared_focus = {	#特殊部隊への注力
+	id = focus_on_special_forces
+	icon = GFX_goal_generic_special_forces
+	cost = 10.00
+	relative_position_id = focus_on_artillery_equipment_3
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_infantry_equipment_3
+		focus = focus_on_artillery_equipment_3
+		focus = focus_on_heavy_tanks
+	}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = marine_tech
+			category = para_tech
+			category = mountaineers_tech
 		}
 	}
-	focus = {	#特殊部隊への注力
-		id = Focus_on_special_forces
-		icon = GFX_goal_generic_special_forces
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_infantry_equipment_III
-			focus = Focus_on_artillery_equipment_III
-			focus = Focus_on_heavy_tanks
-		}
-		x = 19
-		y = 6
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = marine_tech
-				category = para_tech
-				category = mountaineers_tech
-			}
-		}
+}
+shared_focus = {	#ドクトリンへの注力
+	id = focus_on_doctrine
+	icon = GFX_goal_generic_army_doctrines
+	cost = 10.00
+	relative_position_id = focus_on_special_forces
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = focus_on_special_forces
 	}
-	focus = {	#ドクトリンへの注力
-		id = Focus_on_doctrine
-		icon = GFX_goal_generic_army_doctrines
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_special_forces
-		}
-		x = 19
-		y = 7
-		completion_reward = {
-			add_tech_bonus = {
-				name = construction_tech_bonus
-				bonus = 1.0
-				uses = 1
-				category = land_doctrine
-			}
+	completion_reward = {
+		add_tech_bonus = {
+			name = construction_tech_bonus
+			bonus = 1.0
+			uses = 1
+			category = land_doctrine
 		}
 	}
 }

@@ -1,5 +1,5 @@
 focus_tree = {
-	id = geacps_CZE_focus
+	id = CZE_focus_tree
 	country = {
 		factor = 0
 		modifier = {
@@ -16,1475 +16,1475 @@ focus_tree = {
 	continuous_focus_position = {	x = 2800	y = 1000	}
 }
 shared_focus = {
-    id = CZE_resurrection
-    icon = GFX_goal_unknown
-    cost = 5.00
+	id = CZE_resurrection
+	icon = GFX_goal_unknown
+	cost = 5.00
 	x = 4
 	y = 0
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_joint_with_exiles
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_resurrection
+	id = CZE_joint_with_exiles
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_resurrection
 	x = -1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_resurrection
-    }
-    mutually_exclusive = {
+	}
+	mutually_exclusive = {
 		focus = CZE_fate_of_masaryk
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_fate_of_masaryk
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_resurrection
+	id = CZE_fate_of_masaryk
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_resurrection
 	x = 1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_resurrection
 	}
-    mutually_exclusive = {
+	mutually_exclusive = {
 		focus = CZE_joint_with_exiles
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_establish_constitution
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_joint_with_exiles
+	id = CZE_establish_constitution
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_joint_with_exiles
 	x = 0
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_joint_with_exiles
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_purge_tisso_faction
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_establish_constitution
+	id = CZE_purge_tisso_faction
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_establish_constitution
 	x = -1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_establish_constitution
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_remember_herba
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_purge_tisso_faction
+	id = CZE_remember_herba
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_purge_tisso_faction
 	x = -1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_purge_tisso_faction
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_cheer_up_slovak
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_purge_tisso_faction
+	id = CZE_cheer_up_slovak
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_purge_tisso_faction
 	x = 1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_purge_tisso_faction
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_beness_relaxtion
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_purge_tisso_faction
+	id = CZE_beness_relaxtion
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_purge_tisso_faction
 	x = 0
-    y = 2
-    prerequisite = {
+	y = 2
+	prerequisite = {
 		focus = CZE_purge_tisso_faction
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_democratic_election
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_cheer_up_slovak
+	id = CZE_democratic_election
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_cheer_up_slovak
 	x = 0
-    y = 2
-    prerequisite = {
+	y = 2
+	prerequisite = {
 		focus = CZE_republic_procalm
 	}
-    prerequisite = {
+	prerequisite = {
 		focus = CZE_beness_relaxtion
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_another_to_west
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_democratic_election
+	id = CZE_another_to_west
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_democratic_election
 	x = -1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_democratic_election
 	}
-    mutually_exclusive = {
+	mutually_exclusive = {
 		focus = CZE_befriend_west
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_befriend_east
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_another_to_west
+	id = CZE_befriend_east
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_another_to_west
 	x = -1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_another_to_west
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_east_europe_democratic_union
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_another_to_west
+	id = CZE_east_europe_democratic_union
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_another_to_west
 	x = 0
-    y = 2
-    prerequisite = {
+	y = 2
+	prerequisite = {
 		focus = CZE_another_to_west
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_select_dobchek
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_fate_of_masaryk
+	id = CZE_select_dobchek
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_fate_of_masaryk
 	x = 1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_fate_of_masaryk
 	}
-    mutually_exclusive = {
-        focus = CZE_select_zapotokki
-        focus = CZE_select_gottwald
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_select_gottwald
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_fate_of_masaryk
-	x = 3
-    y = 1
-    prerequisite = {
-		focus = CZE_fate_of_masaryk
-	}
-    mutually_exclusive = {
-        focus = CZE_select_dobchek
-        focus = CZE_select_zapotokki
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_systematic_coup
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_select_gottwald
-	x = 0
-    y = 1
-    prerequisite = {
+	mutually_exclusive = {
+		focus = CZE_select_zapotokki
 		focus = CZE_select_gottwald
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_czech_superiority
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_systematic_coup
-	x = -1
-    y = 1
-    prerequisite = {
-		focus = CZE_systematic_coup
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_for_stalinism
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_systematic_coup
-	x = 1
-    y = 1
-    prerequisite = {
-		focus = CZE_systematic_coup
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_start_nationalizaion
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_systematic_coup
-	x = 0
-    y = 2
-    prerequisite = {
-		focus = CZE_czech_superiority
-	}
-    prerequisite = {
-		focus = CZE_for_stalinism
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_peoples_democracy
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_start_nationalizaion
-	x = 0
-    y = 1
-    prerequisite = {
-		focus = CZE_start_nationalizaion
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_independent_diplo
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_peoples_democracy
-	x = -2
-    y = 1
-    prerequisite = {
-        focus = CZE_peoples_democracy
-        focus = CZE_support_slovak_democracy
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_befriend_with_friends
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_independent_diplo
-	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_independent_diplo
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_third_way
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_befriend_with_friends
-	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_befriend_with_friends
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_select_zapotokki
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_fate_of_masaryk
-	x = 5
-    y = 1
-    prerequisite = {
+	id = CZE_select_gottwald
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_fate_of_masaryk
+	x = 3
+	y = 1
+	prerequisite = {
 		focus = CZE_fate_of_masaryk
 	}
-    mutually_exclusive = {
-        focus = CZE_select_dobchek
-        focus = CZE_select_gottwald
-	}
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_independent_route
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_select_zapotokki
-	x = 1
-    y = 1
-    prerequisite = {
+	mutually_exclusive = {
+		focus = CZE_select_dobchek
 		focus = CZE_select_zapotokki
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_rivival_soc_dem
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_independent_route
+	id = CZE_systematic_coup
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_select_gottwald
 	x = 0
-    y = 1
-    prerequisite = {
-		focus = CZE_independent_route
+	y = 1
+	prerequisite = {
+		focus = CZE_select_gottwald
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_reconciliation 
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_independent_route
-	x = 2
-    y = 1
-    prerequisite = {
-		focus = CZE_independent_route
+	id = CZE_czech_superiority
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_systematic_coup
+	x = -1
+	y = 1
+	prerequisite = {
+		focus = CZE_systematic_coup
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_ban_communism
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_independent_route
+	id = CZE_for_stalinism
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_systematic_coup
 	x = 1
-    y = 2
-    prerequisite = {
+	y = 1
+	prerequisite = {
+		focus = CZE_systematic_coup
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_start_nationalizaion
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_systematic_coup
+	x = 0
+	y = 2
+	prerequisite = {
+		focus = CZE_czech_superiority
+	}
+	prerequisite = {
+		focus = CZE_for_stalinism
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_peoples_democracy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_start_nationalizaion
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = CZE_start_nationalizaion
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_independent_diplo
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_peoples_democracy
+	x = -2
+	y = 1
+	prerequisite = {
+		focus = CZE_peoples_democracy
+		focus = CZE_support_slovak_democracy
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_befriend_with_friends
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_independent_diplo
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = CZE_independent_diplo
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_third_way
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_befriend_with_friends
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = CZE_befriend_with_friends
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_select_zapotokki
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_fate_of_masaryk
+	x = 5
+	y = 1
+	prerequisite = {
+		focus = CZE_fate_of_masaryk
+	}
+	mutually_exclusive = {
+		focus = CZE_select_dobchek
+		focus = CZE_select_gottwald
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_independent_route
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_select_zapotokki
+	x = 1
+	y = 1
+	prerequisite = {
+		focus = CZE_select_zapotokki
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_rivival_soc_dem
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_independent_route
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = CZE_independent_route
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_reconciliation 
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_independent_route
+	x = 2
+	y = 1
+	prerequisite = {
+		focus = CZE_independent_route
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_ban_communism
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_independent_route
+	x = 1
+	y = 2
+	prerequisite = {
 		focus = CZE_reconciliation
 	}
-    prerequisite = {
+	prerequisite = {
 		focus = CZE_rivival_soc_dem
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_friendship_with_powers
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_ban_communism
+	id = CZE_friendship_with_powers
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_ban_communism
 	x = 0
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_ban_communism
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_neutralization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_friendship_with_powers
+	id = CZE_neutralization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_friendship_with_powers
 	x = 1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_friendship_with_powers
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_remove_politcs_in_comintern
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_neutralization
+	id = CZE_remove_politcs_in_comintern
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_neutralization
 	x = 0
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_neutralization
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_joint_military_organization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_remove_politcs_in_comintern
+	id = CZE_joint_military_organization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_remove_politcs_in_comintern
 	x = 0
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_remove_politcs_in_comintern
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_following_comintern
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_friendship_with_powers
+	id = CZE_following_comintern
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_friendship_with_powers
 	x = -2
-    y = 1
-    prerequisite = {
-        focus = CZE_peoples_democracy
-        focus = CZE_friendship_with_powers
+	y = 1
+	prerequisite = {
+		focus = CZE_peoples_democracy
+		focus = CZE_friendship_with_powers
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_mutual_id_Economy
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_following_comintern
+	id = CZE_mutual_id_Economy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_following_comintern
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_following_comintern
+	y = 1
+	prerequisite = {
+		focus = CZE_following_comintern
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_joint_tank_research
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_following_comintern
+	id = CZE_joint_tank_research
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_following_comintern
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_following_comintern
+	y = 1
+	prerequisite = {
+		focus = CZE_following_comintern
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_rostov_agreement
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_following_comintern
+	id = CZE_rostov_agreement
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_following_comintern
 	x = 0
-    y = 2
-    prerequisite = {
-        focus = CZE_mutual_id_Economy
+	y = 2
+	prerequisite = {
+		focus = CZE_mutual_id_Economy
 	}
-    prerequisite = {
-        focus = CZE_joint_tank_research
+	prerequisite = {
+		focus = CZE_joint_tank_research
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_peoples_socialism
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_select_dobchek
+	id = CZE_peoples_socialism
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_select_dobchek
 	x = 0
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_select_dobchek
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_start_liberalization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_peoples_socialism
+	id = CZE_start_liberalization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_peoples_socialism
 	x = -1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_peoples_socialism
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_republic_procalm
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_start_liberalization
+	id = CZE_republic_procalm
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_start_liberalization
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_start_liberalization
-        focus = CZE_cheer_up_slovak
+	y = 1
+	prerequisite = {
+		focus = CZE_start_liberalization
+		focus = CZE_cheer_up_slovak
 	}
-    mutually_exclusive = {
+	mutually_exclusive = {
 		focus = CZE_with_other_partys
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_with_other_partys
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_peoples_socialism
+	id = CZE_with_other_partys
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_peoples_socialism
 	x = 0
-    y = 2
-    prerequisite = {
+	y = 2
+	prerequisite = {
 		focus = CZE_peoples_socialism
 	}
-    mutually_exclusive = {
+	mutually_exclusive = {
 		focus = CZE_republic_procalm
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_support_slovak_democracy
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_with_other_partys
+	id = CZE_support_slovak_democracy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_with_other_partys
 	x = -1
-    y = 1
-    prerequisite = {
+	y = 1
+	prerequisite = {
 		focus = CZE_with_other_partys
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_befriend_west
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_republic_procalm
+	id = CZE_befriend_west
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_republic_procalm
 	x = 0
-    y = 2
-    prerequisite = {
-        focus = CZE_support_slovak_democracy
-        focus = CZE_democratic_election
+	y = 2
+	prerequisite = {
+		focus = CZE_support_slovak_democracy
+		focus = CZE_democratic_election
 	}
-    mutually_exclusive = {
+	mutually_exclusive = {
 		focus = CZE_another_to_west
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_weapon_export_west
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_befriend_west
+	id = CZE_weapon_export_west
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_befriend_west
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_befriend_west
+	y = 1
+	prerequisite = {
+		focus = CZE_befriend_west
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_middle_of_europe
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_befriend_west
+	id = CZE_middle_of_europe
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_befriend_west
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_befriend_west
-        focus = CZE_independent_diplo
+	y = 1
+	prerequisite = {
+		focus = CZE_befriend_west
+		focus = CZE_independent_diplo
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_to_the_allys
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_befriend_west
+	id = CZE_to_the_allys
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_befriend_west
 	x = 0
-    y = 2
-    prerequisite = {
-        focus = CZE_weapon_export_west
+	y = 2
+	prerequisite = {
+		focus = CZE_weapon_export_west
 	}
-    prerequisite = {
-        focus = CZE_middle_of_europe
+	prerequisite = {
+		focus = CZE_middle_of_europe
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_rearmament
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_third_way
+	id = CZE_rearmament
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_third_way
 	x = 0
-    y = 1
-    completion_reward = {
-    }
+	y = 1
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_re_fortify
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rearmament
+	id = CZE_re_fortify
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rearmament
 	x = 6
-    y = 0
-    completion_reward = {
-    }
-}
-shared_focus = {
-    id = CZE_basic_fortress
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_re_fortify
-	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_re_fortify
+	y = 0
+	completion_reward = {
 	}
-    completion_reward = {
-    }
 }
 shared_focus = {
-    id = CZE_re_fortify_in_sudeten
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_basic_fortress
+	id = CZE_basic_fortress
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_re_fortify
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_basic_fortress
+	y = 1
+	prerequisite = {
+		focus = CZE_re_fortify
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_slovak_line
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_basic_fortress
+	id = CZE_re_fortify_in_sudeten
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_basic_fortress
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = CZE_basic_fortress
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_slovak_line
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_basic_fortress
 	x = 1
-    y = 2
-    prerequisite = {
-        focus = CZE_basic_fortress
+	y = 2
+	prerequisite = {
+		focus = CZE_basic_fortress
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_withdrawal_line
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_re_fortify_in_sudeten
+	id = CZE_withdrawal_line
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_re_fortify_in_sudeten
 	x = 0
-    y = 2
-    prerequisite = {
-        focus = CZE_re_fortify_in_sudeten
+	y = 2
+	prerequisite = {
+		focus = CZE_re_fortify_in_sudeten
 	}
-    prerequisite = {
-        focus = CZE_slovak_line
+	prerequisite = {
+		focus = CZE_slovak_line
 	}
-    prerequisite = {
-        focus = CZE_flying_fortress
+	prerequisite = {
+		focus = CZE_flying_fortress
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_rearmament_air_force
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rearmament
+	id = CZE_rearmament_air_force
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rearmament
 	x = 3
-    y = 1
-    prerequisite = {
-        focus = CZE_rearmament
+	y = 1
+	prerequisite = {
+		focus = CZE_rearmament
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_anti_air
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rearmament_air_force
+	id = CZE_focus_on_anti_air
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rearmament_air_force
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_rearmament_air_force
+	y = 1
+	prerequisite = {
+		focus = CZE_rearmament_air_force
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_flying_fortress
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rearmament_air_force
+	id = CZE_flying_fortress
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rearmament_air_force
 	x = 2
-    y = 2
-    prerequisite = {
-        focus = CZE_rearmament_air_force
+	y = 2
+	prerequisite = {
+		focus = CZE_rearmament_air_force
 	}
-    prerequisite = {
-        focus = CZE_basic_fortress
+	prerequisite = {
+		focus = CZE_basic_fortress
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_air_superiority
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_focus_on_anti_air
+	id = CZE_focus_on_air_superiority
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_focus_on_anti_air
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_focus_on_anti_air
+	y = 1
+	prerequisite = {
+		focus = CZE_focus_on_anti_air
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_bombing
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_focus_on_air_superiority
+	id = CZE_focus_on_bombing
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_focus_on_air_superiority
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_focus_on_air_superiority
+	y = 1
+	prerequisite = {
+		focus = CZE_focus_on_air_superiority
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_CSA
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_focus_on_air_superiority
+	id = CZE_focus_on_CSA
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_focus_on_air_superiority
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_focus_on_air_superiority
+	y = 1
+	prerequisite = {
+		focus = CZE_focus_on_air_superiority
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_cooperation_with_companies
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rearmament_air_force
+	id = CZE_cooperation_with_companies
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rearmament_air_force
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_rearmament_air_force
+	y = 1
+	prerequisite = {
+		focus = CZE_rearmament_air_force
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_lesson_of_sudeten
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rearmament
+	id = CZE_lesson_of_sudeten
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rearmament
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_rearmament
+	y = 1
+	prerequisite = {
+		focus = CZE_rearmament
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_intel
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_lesson_of_sudeten
+	id = CZE_focus_on_intel
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_lesson_of_sudeten
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_lesson_of_sudeten
+	y = 1
+	prerequisite = {
+		focus = CZE_lesson_of_sudeten
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_cze_defence_force
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rearmament
+	id = CZE_cze_defence_force
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rearmament
 	x = -3
-    y = 1
-    prerequisite = {
-        focus = CZE_rearmament
+	y = 1
+	prerequisite = {
+		focus = CZE_rearmament
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_absorption_slovak_army
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_cze_defence_force
+	id = CZE_absorption_slovak_army
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_cze_defence_force
 	x = -3
-    y = 1
-    prerequisite = {
-        focus = CZE_cze_defence_force
+	y = 1
+	prerequisite = {
+		focus = CZE_cze_defence_force
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_solution_racial_problem
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_absorption_slovak_army
+	id = CZE_solution_racial_problem
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_absorption_slovak_army
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_absorption_slovak_army
+	y = 1
+	prerequisite = {
+		focus = CZE_absorption_slovak_army
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_with_firepower
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_cze_defence_force
+	id = CZE_with_firepower
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_cze_defence_force
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_cze_defence_force
+	y = 1
+	prerequisite = {
+		focus = CZE_cze_defence_force
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_enhanced_artillery
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_with_firepower
+	id = CZE_enhanced_artillery
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_with_firepower
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_with_firepower
+	y = 1
+	prerequisite = {
+		focus = CZE_with_firepower
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_automobileization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_cze_defence_force
+	id = CZE_automobileization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_cze_defence_force
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_cze_defence_force
+	y = 1
+	prerequisite = {
+		focus = CZE_cze_defence_force
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_anti_tank_development
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_automobileization
+	id = CZE_anti_tank_development
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_automobileization
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_automobileization
+	y = 1
+	prerequisite = {
+		focus = CZE_automobileization
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_soviet_tank
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_automobileization
+	id = CZE_soviet_tank
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_automobileization
 	x = 2
-    y = 1
-    prerequisite = {
-        focus = CZE_automobileization
+	y = 1
+	prerequisite = {
+		focus = CZE_automobileization
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_anti_tank_warfare
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_automobileization
+	id = CZE_anti_tank_warfare
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_automobileization
 	x = 1
-    y = 2
-    prerequisite = {
-        focus = CZE_soviet_tank
-        focus = CZE_anti_tank_development
+	y = 2
+	prerequisite = {
+		focus = CZE_soviet_tank
+		focus = CZE_anti_tank_development
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_socialist_industrialization
-    icon = GFX_goal_unknown
-    cost = 5.00
+	id = CZE_socialist_industrialization
+	icon = GFX_goal_unknown
+	cost = 5.00
 	x = 18
 	y = 0
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_for_middle_class
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_socialist_industrialization
+	id = CZE_for_middle_class
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_socialist_industrialization
 	x = 5
-    y = 1
-    prerequisite = {
-        focus = CZE_socialist_industrialization
+	y = 1
+	prerequisite = {
+		focus = CZE_socialist_industrialization
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_for_lower_class
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_for_middle_class
+	id = CZE_for_lower_class
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_for_middle_class
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_for_middle_class
+	y = 1
+	prerequisite = {
+		focus = CZE_for_middle_class
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_overcoming 
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_for_lower_class
+	id = CZE_overcoming 
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_for_lower_class
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_for_lower_class
+	y = 1
+	prerequisite = {
+		focus = CZE_for_lower_class
 	}
-    prerequisite = {
-        focus = CZE_high_industrialization
+	prerequisite = {
+		focus = CZE_high_industrialization
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_rural_industry_protection
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_overcoming
+	id = CZE_rural_industry_protection
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_overcoming
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_overcoming
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_overcoming
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_glass_production
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_rural_industry_protection
+	id = CZE_glass_production
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_rural_industry_protection
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_rural_industry_protection
-    }
-    prerequisite = {
-        focus = CZE_slow_industrization
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_rural_industry_protection
+	}
+	prerequisite = {
+		focus = CZE_slow_industrization
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_oil_independence
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_glass_production
+	id = CZE_oil_independence
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_glass_production
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_glass_production
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_glass_production
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_invest_to_slovak
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_socialist_industrialization
+	id = CZE_invest_to_slovak
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_socialist_industrialization
 	x = 7
-    y = 1
-    prerequisite = {
-        focus = CZE_socialist_industrialization
+	y = 1
+	prerequisite = {
+		focus = CZE_socialist_industrialization
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_high_industrialization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_invest_to_slovak
+	id = CZE_high_industrialization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_invest_to_slovak
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_invest_to_slovak
+	y = 1
+	prerequisite = {
+		focus = CZE_invest_to_slovak
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_weapon_export
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_socialist_industrialization
+	id = CZE_weapon_export
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_socialist_industrialization
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_socialist_industrialization
-    }
-    mutually_exclusive = {
-        focus = CZE_power_to_war_industry
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_socialist_industrialization
+	}
+	mutually_exclusive = {
+		focus = CZE_power_to_war_industry
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_standardization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_weapon_export
+	id = CZE_standardization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_weapon_export
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_weapon_export
+	y = 1
+	prerequisite = {
+		focus = CZE_weapon_export
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_increase_weapon_production
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_standardization
+	id = CZE_increase_weapon_production
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_standardization
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_standardization
+	y = 1
+	prerequisite = {
+		focus = CZE_standardization
 	}
-    prerequisite = {
-        focus = CZE_skoda
+	prerequisite = {
+		focus = CZE_skoda
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_fast_industrization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_increase_weapon_production
+	id = CZE_fast_industrization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_increase_weapon_production
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_increase_weapon_production
-    }
-    prerequisite = {
-        focus = CZE_organization_union
+	y = 1
+	prerequisite = {
+		focus = CZE_increase_weapon_production
 	}
-    mutually_exclusive = {
-        focus = CZE_slow_industrization
-    }
-    completion_reward = {
-    }
+	prerequisite = {
+		focus = CZE_organization_union
+	}
+	mutually_exclusive = {
+		focus = CZE_slow_industrization
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_factory_of_slovak
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_fast_industrization
+	id = CZE_factory_of_slovak
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_fast_industrization
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_fast_industrization
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_fast_industrization
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_expansion
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_factory_of_slovak
+	id = CZE_expansion
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_factory_of_slovak
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_factory_of_slovak
-        focus = CZE_glass_production
-    }
-    prerequisite = {
-        focus = CZE_mine_activation
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_factory_of_slovak
+		focus = CZE_glass_production
+	}
+	prerequisite = {
+		focus = CZE_mine_activation
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_heart_of_europe
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_expansion
+	id = CZE_heart_of_europe
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_expansion
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_expansion
-    }
-    prerequisite = {
-        focus = CZE_oil_independence
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_expansion
+	}
+	prerequisite = {
+		focus = CZE_oil_independence
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_desire_of_us
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_heart_of_europe
+	id = CZE_desire_of_us
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_heart_of_europe
 	x = 0
-    y = 1
-    completion_reward = {
-    }
+	y = 1
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_sea_lion
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_desire_of_us
+	id = CZE_sea_lion
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_desire_of_us
 	x = -2
-    y = 1
-    prerequisite = {
-        focus = CZE_desire_of_us
-    }
-    mutually_exclusive = {
-        focus = CZE_sea_wolf
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_desire_of_us
+	}
+	mutually_exclusive = {
+		focus = CZE_sea_wolf
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_sea_wolf
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_desire_of_us
+	id = CZE_sea_wolf
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_desire_of_us
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_desire_of_us
-    }
-    mutually_exclusive = {
-        focus = CZE_sea_lion
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_desire_of_us
+	}
+	mutually_exclusive = {
+		focus = CZE_sea_lion
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_mass_production
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_sea_wolf
+	id = CZE_focus_on_mass_production
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_sea_wolf
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_sea_wolf
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_sea_wolf
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_doctrin
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_focus_on_mass_production
+	id = CZE_focus_on_doctrin
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_focus_on_mass_production
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_focus_on_mass_production
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_focus_on_mass_production
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_focus_on_cannon
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_sea_lion
+	id = CZE_focus_on_cannon
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_sea_lion
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_sea_lion
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_sea_lion
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_advanced_hull
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_focus_on_cannon
+	id = CZE_advanced_hull
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_focus_on_cannon
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_focus_on_cannon
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_focus_on_cannon
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_czechslovakia_navy
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_focus_on_cannon
+	id = CZE_czechslovakia_navy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_focus_on_cannon
 	x = 1
-    y = 2
-    prerequisite = {
-        focus = CZE_advanced_hull
-    }
-    prerequisite = {
-        focus = CZE_focus_on_doctrin
-    }
-    completion_reward = {
-    }
+	y = 2
+	prerequisite = {
+		focus = CZE_advanced_hull
+	}
+	prerequisite = {
+		focus = CZE_focus_on_doctrin
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_build_shipyard
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_desire_of_us
+	id = CZE_build_shipyard
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_desire_of_us
 	x = 2
-    y = 1
-    prerequisite = {
-        focus = CZE_desire_of_us
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_desire_of_us
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_officer_education
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_build_shipyard
+	id = CZE_officer_education
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_build_shipyard
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_build_shipyard
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_build_shipyard
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_technican_education
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_build_shipyard
+	id = CZE_technican_education
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_build_shipyard
 	x = 2
-    y = 1
-    prerequisite = {
-        focus = CZE_build_shipyard
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_build_shipyard
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_naval_academy
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_build_shipyard
+	id = CZE_naval_academy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_build_shipyard
 	x = 1
-    y = 2
-    prerequisite = {
-        focus = CZE_technican_education
-    }
-    prerequisite = {
-        focus = CZE_officer_education
-    }
-    completion_reward = {
-    }
+	y = 2
+	prerequisite = {
+		focus = CZE_technican_education
+	}
+	prerequisite = {
+		focus = CZE_officer_education
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_slow_industrization
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_increase_weapon_production
+	id = CZE_slow_industrization
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_increase_weapon_production
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_increase_weapon_production
-    }
-    prerequisite = {
-        focus = CZE_overcoming
-    }
-    mutually_exclusive = {
-        focus = CZE_fast_industrization
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_increase_weapon_production
+	}
+	prerequisite = {
+		focus = CZE_overcoming
+	}
+	mutually_exclusive = {
+		focus = CZE_fast_industrization
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_power_to_war_industry
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_socialist_industrialization
+	id = CZE_power_to_war_industry
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_socialist_industrialization
 	x = 3
-    y = 1
-    prerequisite = {
-        focus = CZE_socialist_industrialization
+	y = 1
+	prerequisite = {
+		focus = CZE_socialist_industrialization
 	}
-    mutually_exclusive = {
-        focus = CZE_weapon_export
-    }
-    completion_reward = {
-    }
+	mutually_exclusive = {
+		focus = CZE_weapon_export
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_skoda
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_power_to_war_industry
+	id = CZE_skoda
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_power_to_war_industry
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_power_to_war_industry
+	y = 1
+	prerequisite = {
+		focus = CZE_power_to_war_industry
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_up_minimum_wage
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_socialist_industrialization
+	id = CZE_up_minimum_wage
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_socialist_industrialization
 	x = -2
-    y = 1
-    prerequisite = {
-        focus = CZE_socialist_industrialization
+	y = 1
+	prerequisite = {
+		focus = CZE_socialist_industrialization
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_power_to_state_enterprise
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_up_minimum_wage
+	id = CZE_power_to_state_enterprise
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_up_minimum_wage
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_up_minimum_wage
+	y = 1
+	prerequisite = {
+		focus = CZE_up_minimum_wage
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_new_economy_policy
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_up_minimum_wage
+	id = CZE_new_economy_policy
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_up_minimum_wage
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_up_minimum_wage
+	y = 1
+	prerequisite = {
+		focus = CZE_up_minimum_wage
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_organization_union
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_up_minimum_wage
+	id = CZE_organization_union
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_up_minimum_wage
 	x = 0
-    y = 2
-    prerequisite = {
-        focus = CZE_power_to_state_enterprise
+	y = 2
+	prerequisite = {
+		focus = CZE_power_to_state_enterprise
 	}
-    prerequisite = {
-        focus = CZE_new_economy_policy
+	prerequisite = {
+		focus = CZE_new_economy_policy
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_redevelopment_Prague
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_organization_union
+	id = CZE_redevelopment_Prague
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_organization_union
 	x = 1
-    y = 1
-    prerequisite = {
-        focus = CZE_organization_union
+	y = 1
+	prerequisite = {
+		focus = CZE_organization_union
 	}
-    prerequisite = {
-        focus = CZE_increase_weapon_production
-    }
-    completion_reward = {
-    }
+	prerequisite = {
+		focus = CZE_increase_weapon_production
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_mine_activation
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_redevelopment_Prague
+	id = CZE_mine_activation
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_redevelopment_Prague
 	x = 0
-    y = 1
-    prerequisite = {
-        focus = CZE_redevelopment_Prague
-    }
-    completion_reward = {
-    }
+	y = 1
+	prerequisite = {
+		focus = CZE_redevelopment_Prague
+	}
+	completion_reward = {
+	}
 }
 shared_focus = {
-    id = CZE_build_infra
-    icon = GFX_goal_unknown
-    cost = 5.00
-    relative_position_id = CZE_organization_union
+	id = CZE_build_infra
+	icon = GFX_goal_unknown
+	cost = 5.00
+	relative_position_id = CZE_organization_union
 	x = -1
-    y = 1
-    prerequisite = {
-        focus = CZE_organization_union
+	y = 1
+	prerequisite = {
+		focus = CZE_organization_union
 	}
-    completion_reward = {
-    }
+	completion_reward = {
+	}
 }
