@@ -9857,28 +9857,28 @@ country_event = {
 	}
 }
 	
-add_namespace = fate_of_NGR
+add_namespace = fate_of_NGE
 country_event = {
-	id = fate_of_NGR.0
-	title = fate_of_NGR.0.t
-	desc = fate_of_NGR.0.d
+	id = fate_of_NGE.0
+	title = fate_of_NGE.0.t
+	desc = fate_of_NGE.0.d
 	is_triggered_only = yes
 	hidden = yes
 	option = {
-		name = fate_of_NGR.0.0
+		name = fate_of_NGE.0.0
 		ai_chance = {	base = 10	}
 		hidden_effect = {
 			if = {
-				limit = {	country_exists = NGR	}
+				limit = {	country_exists = NGE	}
 				create_dynamic_country = {
-					original_tag = NGR
+					original_tag = NGE
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	NGR_state_variable = 1	}
+							check_variable = {	NGE_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -9888,14 +9888,14 @@ country_event = {
 				}
 			}
 			else = {
-				NGR = {
+				NGE = {
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	NGR_state_variable = 1	}
+							check_variable = {	NGE_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -9908,15 +9908,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = fate_of_NGR.1
-	title = fate_of_NGR.1.t
-	desc = fate_of_NGR.1.d
+	id = fate_of_NGE.1
+	title = fate_of_NGE.1.t
+	desc = fate_of_NGE.1.d
 	is_triggered_only = yes
 	
 	option = {
-		name = fate_of_NGR.1.0
+		name = fate_of_NGE.1.0
 		ai_chance = {	base = 10	}
-		country_event = fate_of_NGR.0
+		country_event = fate_of_NGE.0
 	}
 }
 	
