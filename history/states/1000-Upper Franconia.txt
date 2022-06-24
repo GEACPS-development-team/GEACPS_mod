@@ -7,15 +7,17 @@ state = {
 	history = {
 		owner = SGR
 		add_core_of = SGR
-		add_core_of = BAY
+		add_core_of = GER
+		BAY = {	debug_core = yes	}
+		WGR = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {	9416	1	}
 		set_variable = {	BAY_state_variable = 1	}
 		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
 		set_variable = {	SGR_state_variable = 1	}
+		set_variable = {	WGR_state_variable = 1	}
 	}
 	
 	provinces = {

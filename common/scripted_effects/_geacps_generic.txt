@@ -2,3 +2,10 @@ merger_country = {
 	annex_country = {	target = PREV	transfer_troops = yes	}
 	change_tag_from = PREV
 }
+
+debug_core = {
+	if = {
+		limit = {	is_debug = yes	}
+		PREV = {	add_core_of = PREV	}
+	}
+}

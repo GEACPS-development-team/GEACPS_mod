@@ -1,0 +1,23 @@
+state = {
+	id = 1361
+	name = "STATE_1361"
+	manpower = 321000
+	state_category = rural
+	
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		DON = {	debug_core = yes	}
+		ING = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	DON_state_variable = 1	}
+		set_variable = {	ING_state_variable = 1	}
+	}
+	
+	provinces = {
+		670
+	}
+	local_supplies = 0.0
+}

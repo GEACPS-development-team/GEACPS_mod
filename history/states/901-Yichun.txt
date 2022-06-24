@@ -8,11 +8,13 @@ state = {
 	history = {
 		owner = PHI
 		add_core_of = PHI
+		EIN = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			10265 = {	naval_base = 5	}
 		}
 		victory_points = {	10265	15	}
+		set_variable = {	EIN_state_variable = 1	}
 		set_variable = {	PHI_state_variable = 1	}
 	}
 	
