@@ -1,0 +1,23 @@
+state = {
+	id = 1365
+	name = "STATE_1365"
+	manpower = 394000
+	buildings_max_level_factor = 1
+	state_category = large_town
+	
+	history = {
+		owner = SPR
+		add_core_of = SPR
+		LRJ = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+		}
+		set_variable = {	LRJ_state_variable = 1	}
+		set_variable = {	SPR_state_variable = 1	}
+	}
+	
+	provinces = {
+		884	3902	6903
+	}
+	local_supplies = 0.0
+}

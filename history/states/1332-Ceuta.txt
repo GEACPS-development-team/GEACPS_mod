@@ -8,6 +8,7 @@ state = {
 	history = {
 		owner = SPR
 		add_claim_by = SPR
+		CEU = {	debug_core = yes	}
 		MOR = {	debug_core = yes	}
 		RIF = {	debug_core = yes	}
 		buildings = {
@@ -15,6 +16,7 @@ state = {
 			9945 = {	naval_base = 3	}
 		}
 		victory_points = {	9945	3	}
+		set_variable = {	CEU_state_variable = 1	}
 		set_variable = {	MOR_state_variable = 1	}
 		set_variable = {	RIF_state_variable = 1	}
 	}
