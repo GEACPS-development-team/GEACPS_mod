@@ -25,6 +25,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_launch_of_the_aslte_programme"
+		country_event = BRA.1
 	}
 }
 
@@ -39,6 +40,10 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_outlawing_of_the_communist_party"
+		add_popularity = {
+			ideology = total_socialism
+			popularity = -1.0
+		}
 	}
 	relative_position_id = BRA_launch_of_the_aslte_programme
 	prerequisite = { focus = BRA_launch_of_the_aslte_programme }
@@ -55,57 +60,34 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_army_reform"
+		army_experience = 50
 	}
 	relative_position_id = BRA_outlawing_of_the_communist_party
 	prerequisite = { focus = BRA_outlawing_of_the_communist_party }
 }
 
 shared_focus = {
-	id = BRA_improved_infantry_firepower
+	id = BRA_development_of_the_so_paulo_industrial_zone
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 4
+	x = 0
 	y = 1
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus BRA_improved_infantry_firepower"
+		log = "[GetDateText]: [Root.GetName]: Focus BRA_development_of_the_so_paulo_industrial_zone"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = BRA_army_reform
 	prerequisite = { focus = BRA_army_reform }
-}
-
-shared_focus = {
-	id = BRA_improved_logistical_support
-	icon = GFX_generic_suspend_constitution
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus BRA_improved_logistical_support"
-	}
-	relative_position_id = BRA_improved_infantry_firepower
-	prerequisite = { focus = BRA_improved_infantry_firepower }
-}
-
-shared_focus = {
-	id = BRA_antitank_force_studies
-	icon = GFX_generic_suspend_constitution
-	cost = 2
-	x = 0
-	y = 1
-	ai_will_do = {
-		factor = 1
-	}
-	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus BRA_antitank_force_studies"
-	}
-	relative_position_id = BRA_improved_logistical_support
-	prerequisite = { focus = BRA_improved_logistical_support }
 }
 
 shared_focus = {
@@ -119,6 +101,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_reorganisation_of_artillery_units"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = artillery
+		}
 	}
 	relative_position_id = BRA_army_reform
 	prerequisite = { focus = BRA_army_reform }
@@ -135,13 +122,39 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_formation_of_antiaircraft_units"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_anti_air
+		}
 	}
 	relative_position_id = BRA_reorganisation_of_artillery_units
 	prerequisite = { focus = BRA_reorganisation_of_artillery_units }
 }
 
 shared_focus = {
-	id = BRA_development_of_the_so_paulo_industrial_zone
+	id = BRA_improved_infantry_firepower
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRA_improved_infantry_firepower"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+	relative_position_id = BRA_army_reform
+	prerequisite = { focus = BRA_army_reform }
+}
+
+shared_focus = {
+	id = BRA_improved_logistical_support
 	icon = GFX_generic_suspend_constitution
 	cost = 2
 	x = 0
@@ -150,10 +163,36 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus BRA_development_of_the_so_paulo_industrial_zone"
+		log = "[GetDateText]: [Root.GetName]: Focus BRA_improved_logistical_support"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = support_tech
+		}
 	}
-	relative_position_id = BRA_army_reform
-	prerequisite = { focus = BRA_army_reform }
+	relative_position_id = BRA_improved_infantry_firepower
+	prerequisite = { focus = BRA_improved_infantry_firepower }
+}
+
+shared_focus = {
+	id = BRA_antitank_force_studies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus BRA_antitank_force_studies"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_anti_tank
+		}
+	}
+	relative_position_id = BRA_improved_logistical_support
+	prerequisite = { focus = BRA_improved_logistical_support }
 }
 
 shared_focus = {
@@ -183,6 +222,12 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_construction_of_the_rpbc"
+		501 = {
+			add_resource = {
+				type = oil
+				amount = 10
+			}
+		}
 	}
 	relative_position_id = BRA_establishment_of_petrobras
 	prerequisite = { focus = BRA_establishment_of_petrobras }
@@ -199,6 +244,12 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_oil_exploration"
+		499 = {
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+		}
 	}
 	relative_position_id = BRA_establishment_of_petrobras
 	prerequisite = { focus = BRA_establishment_of_petrobras }
@@ -215,6 +266,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_economic_liberalisation"
+		add_stability = 0.08
 	}
 	relative_position_id = BRA_outlawing_of_the_communist_party
 	prerequisite = { focus = BRA_outlawing_of_the_communist_party }
@@ -231,6 +283,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_permission_to_form_trade_unions"
+		add_stability = 0.08
 	}
 	relative_position_id = BRA_economic_liberalisation
 	prerequisite = { focus = BRA_economic_liberalisation }
@@ -247,6 +300,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_decriminalisation_of_gambling"
+		add_ideas = BRA_gambling_decriminalisation
 	}
 	relative_position_id = BRA_economic_liberalisation
 	prerequisite = { focus = BRA_economic_liberalisation }
@@ -263,6 +317,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_final_planning_stage"
+		country_event = BRA.2
 	}
 	relative_position_id = BRA_construction_of_the_rpbc
 	prerequisite = { focus = BRA_construction_of_the_rpbc }
@@ -282,6 +337,15 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_aslte_programs_sea"
+		navy_experience = 50
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = BRA_final_planning_stage
 	prerequisite = { focus = BRA_final_planning_stage }
@@ -298,6 +362,14 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_refurbishment_of_older_vessels"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = naval_base
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = BRA_aslte_programs_sea
 	prerequisite = { focus = BRA_aslte_programs_sea }
@@ -314,6 +386,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_maritime_air_base"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cv_tech
+		}
 	}
 	relative_position_id = BRA_refurbishment_of_older_vessels
 	prerequisite = { focus = BRA_refurbishment_of_older_vessels }
@@ -331,6 +408,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_cannons_of_the_great_ocean"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = bb_tech
+		}
 	}
 	relative_position_id = BRA_refurbishment_of_older_vessels
 	prerequisite = { focus = BRA_refurbishment_of_older_vessels }
@@ -348,6 +430,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_dew_sweeper_ship"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = dd_tech
+		}
 	}
 	relative_position_id = BRA_aslte_programs_sea
 	prerequisite = { focus = BRA_aslte_programs_sea }
@@ -364,6 +451,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_main_shield"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cl_tech
+		}
 	}
 	relative_position_id = BRA_refurbishment_of_older_vessels
 	prerequisite = { focus = BRA_refurbishment_of_older_vessels }
@@ -381,6 +473,14 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_aslte_sky_programme"
+		air_experience = 50
+		random_owned_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
 	}
 	relative_position_id = BRA_final_planning_stage
 	prerequisite = { focus = BRA_final_planning_stage }
@@ -397,6 +497,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_key_to_air_combat"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = light_fighter
+		}
 	}
 	relative_position_id = BRA_aslte_sky_programme
 	prerequisite = { focus = BRA_aslte_sky_programme }
@@ -413,6 +518,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_faster_fighter"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = jet_technology
+		}
 	}
 	relative_position_id = BRA_key_to_air_combat
 	prerequisite = { focus = BRA_key_to_air_combat }
@@ -429,6 +539,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_modern_air_force_research"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = light_fighter
+		}
 	}
 	relative_position_id = BRA_key_to_air_combat
 	prerequisite = { focus = BRA_key_to_air_combat }
@@ -445,6 +560,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_air_support_aircraft_research"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cas_bomber
+		}
 	}
 	relative_position_id = BRA_aslte_sky_programme
 	prerequisite = { focus = BRA_aslte_sky_programme }
@@ -461,6 +581,11 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus BRA_air_assault"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = naval_bomber
+		}
 	}
 	relative_position_id = BRA_air_support_aircraft_research
 	prerequisite = { focus = BRA_air_support_aircraft_research }
