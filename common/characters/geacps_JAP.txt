@@ -109,6 +109,28 @@ characters = {	#文民
 			allowed = {	original_tag = JAP	}
 		}
 	}
+	CHARACTER_ishiwata_sotaro = {	#石渡荘太郎
+		name = CHARACTER_ishiwata_sotaro
+		
+		portraits = {
+			civilian = {
+				small = GFX_ishiwata_sotaro_small
+				large = GFX_ishiwata_sotaro_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_ishiwata_sotaro_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		advisor = {
+			slot = home_minister
+			idea_token = JAP_ishiwata_sotaro_hm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+	}
 	CHARACTER_mamoru_shigemitsu = {	#重光葵
 		name = CHARACTER_mamoru_shigemitsu
 		
@@ -153,28 +175,6 @@ characters = {	#文民
 			allowed = {	original_tag = JAP	}
 		}
 	}
-	CHARACTER_ishiwata_sotaro = {	#石渡荘太郎
-		name = CHARACTER_ishiwata_sotaro
-		
-		portraits = {
-			civilian = {
-				small = GFX_ishiwata_sotaro_small
-				large = GFX_ishiwata_sotaro_large
-			}
-		}
-		advisor = {
-			slot = head_of_government
-			idea_token = JAP_ishiwata_sotaro_hg
-			removal_cost = -1
-			allowed = {	original_tag = JAP	}
-		}
-		advisor = {
-			slot = military_minister
-			idea_token = JAP_ishiwata_sotaro_mm
-			removal_cost = -1
-			allowed = {	original_tag = JAP	}
-		}
-	}
 	CHARACTER_sanzo_nosaka = {	#野坂参三
 		name = CHARACTER_sanzo_nosaka
 		
@@ -189,13 +189,17 @@ characters = {	#文民
 			idea_token = JAP_sanzo_nosaka_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			available = {
+				has_government = total_socialism
+				has_government = radical_socialism
+			}
 		}
 		advisor = {
 			slot = home_minister
 			idea_token = JAP_sanzo_nosaka_hm
 			removal_cost = -1
-			allowed = {
-				original_tag = JAP
+			allowed = {	original_tag = JAP	}
+			available = {
 				has_government = total_socialism
 				has_government = radical_socialism
 			}
@@ -259,6 +263,12 @@ characters = {	#陸軍
 		advisor = {
 			slot = commerce_minister
 			idea_token = JAP_hideki_tojo_cm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+		}
+		advisor = {
+			slot = military_minister
+			idea_token = JAP_hideki_tojo_mm
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
 		}
