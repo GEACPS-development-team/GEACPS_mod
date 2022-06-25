@@ -1,7 +1,10 @@
 state = {
 	id = 429
 	name = "STATE_429"
-
+	manpower = 17355600
+	buildings_max_level_factor = 1
+	state_category = rural
+	
 	history = {
 		owner = IND
 		add_core_of = IND
@@ -9,25 +12,17 @@ state = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 2
-			1349 = {
-				naval_base = 6
-
-			}
-
+			1349 = {	naval_base = 6	}
 		}
 		victory_points = {	1349	10	}
 		victory_points = {	4883	10	}
 		victory_points = {	7013	5	}
 		victory_points = {	7060	1	}
 		set_variable = {	IND_state_variable = 1	}
-
 	}
-
+	
 	provinces = {
 		1349	1405	4072	4353	4395	4557	4883	5019	5063	7013	7060	7119	7177	7232	7430	7619	10019	10030	10171	10210	10270	10311	12142	12182	12226	12269	12295	12781
 	}
-	manpower = 17355600
-	buildings_max_level_factor = 1
-	state_category = rural
 	local_supplies = 0.0
 }

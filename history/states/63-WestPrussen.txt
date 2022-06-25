@@ -13,6 +13,8 @@ state = {
 		owner = POL
 		add_core_of = GER
 		add_claim_by = POL
+		EGR = {	debug_core = yes	}
+		NGR = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -25,6 +27,7 @@ state = {
 		set_variable = {	POL_state_variable = 1	}
 		set_variable = {	EGR_state_variable = 2	}
 		set_variable = {	GER_state_variable = 2	}
+		set_variable = {	NGR_state_variable = 2	}
 	}
 	
 	provinces = {

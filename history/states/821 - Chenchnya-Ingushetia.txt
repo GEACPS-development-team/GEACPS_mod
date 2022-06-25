@@ -9,18 +9,18 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		add_core_of = CIN
-		add_core_of = DON
+		CHE = {	debug_core = yes	}
+		DON = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	3672	5	}
-		set_variable = {	CIN_state_variable = 1	}
 		set_variable = {	DON_state_variable = 1	}
+		set_variable = {	CHE_state_variable = 1	}
 	}
 	
 	provinces = {
-		666	670	683	3667	3672	11632
+		666	683	3667	3672	11632
 	}
 	local_supplies = 0.0
 }
