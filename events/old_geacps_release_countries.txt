@@ -20439,28 +20439,28 @@ country_event = {
 	}
 }
 	
-add_namespace = fate_of_ARB
+add_namespace = fate_of_ARU
 country_event = {
-	id = fate_of_ARB.0
-	title = fate_of_ARB.0.t
-	desc = fate_of_ARB.0.d
+	id = fate_of_ARU.0
+	title = fate_of_ARU.0.t
+	desc = fate_of_ARU.0.d
 	is_triggered_only = yes
 	hidden = yes
 	option = {
-		name = fate_of_ARB.0.0
+		name = fate_of_ARU.0.0
 		ai_chance = {	base = 10	}
 		hidden_effect = {
 			if = {
-				limit = {	country_exists = ARB	}
+				limit = {	country_exists = ARU	}
 				create_dynamic_country = {
-					original_tag = ARB
+					original_tag = ARU
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	ARB_state_variable = 1	}
+							check_variable = {	ARU_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -20470,14 +20470,14 @@ country_event = {
 				}
 			}
 			else = {
-				ARB = {
+				ARU = {
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	ARB_state_variable = 1	}
+							check_variable = {	ARU_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -20490,15 +20490,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = fate_of_ARB.1
-	title = fate_of_ARB.1.t
-	desc = fate_of_ARB.1.d
+	id = fate_of_ARU.1
+	title = fate_of_ARU.1.t
+	desc = fate_of_ARU.1.d
 	is_triggered_only = yes
 	
 	option = {
-		name = fate_of_ARB.1.0
+		name = fate_of_ARU.1.0
 		ai_chance = {	base = 10	}
-		country_event = fate_of_ARB.0
+		country_event = fate_of_ARU.0
 	}
 }
 	
