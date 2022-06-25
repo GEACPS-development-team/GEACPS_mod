@@ -7,424 +7,451 @@ focus_tree = {
 			tag = USA
 		}
 	}
-	#Focus for 古の栄光 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_rZfqVDun
-		icon = GFX_goal_continuous_boost_freedom
-		x = 28
-		y = 2
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_1947 }
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	shared_focus = USA_the_1947_special_presidential_election
+}
 
-	#Focus for 国家安定法 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_FMkZhVSN
-		icon = GFX_focus_hol_the_foundations_of_defense
-		x = 26
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_rZfqVDun }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 1947年臨時大統領選挙
+shared_focus = {
+	id = USA_the_1947_special_presidential_election
+	icon = GFX_focus_usa_recruit_the_free_corps
+	x = 5
+	y = 0
+	cost = 10
+	available_if_capitulated = yes
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 国家治安維持法 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_ysSgGApJ
-		icon = GFX_focus_usa_honor_the_confederacy
-		x = 26
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_FMkZhVSN }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 古の栄光 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_our_past_glory
+	icon = GFX_goal_continuous_boost_freedom
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_the_1947_special_presidential_election
+	prerequisite = { focus = USA_the_1947_special_presidential_election }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 徹底抗戦 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_NFthJBqV
-		icon = GFX_goal_generic_small_arms
-		x = 30
-		y = 4
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_YTNWeUmo }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 国家安定法 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_national_stability_law
+	icon = GFX_focus_hol_the_foundations_of_defense
+	x = -2
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_our_past_glory
+	prerequisite = { focus = USA_our_past_glory }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 連邦政府の復古 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_NRCtnZud
-		icon = GFX_goal_support_democracy
-		x = 28
-		y = 5
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_rZfqVDun }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 国家治安維持法 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_national_security_law
+	icon = GFX_focus_usa_honor_the_confederacy
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_national_stability_law
+	prerequisite = { focus = USA_national_stability_law }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 1947年臨時大統領選挙
-	focus = {
-		id = USA_1947
-		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 28
-		y = 0
-		cost = 10
-		available_if_capitulated = yes
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for シカゴ会議 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_the_chicago_convention
+	icon = GFX_focus_generic_self_management
+	x = 2
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_our_past_glory
+	prerequisite = { focus = USA_our_past_glory }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for シカゴ会議 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_YTNWeUmo
-		icon = GFX_focus_generic_self_management
-		x = 30
-		y = 3
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_rZfqVDun }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 徹底抗戦 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_all_out_resistance
+	icon = GFX_goal_generic_small_arms
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_the_chicago_convention
+	prerequisite = { focus = USA_the_chicago_convention }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 民間経済の復興 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_LGmRryNu
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 26
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_NRCtnZud }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 連邦政府の復古 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_restore_the_federal_government
+	icon = GFX_goal_support_democracy
+	x = 0
+	y = 2
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_our_past_glory
+	prerequisite = { focus = USA_our_past_glory }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 第三次インディアン移住法 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_GVtuUHzL
-		icon = GFX_goal_generic_demand_territory
-		x = 31
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_NRCtnZud }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 復興庁を設立 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_establish_the_reconstruction_agency
+	icon = GFX_goal_generic_positive_trade_relations
+	x = -4
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_restore_the_federal_government
+	prerequisite = { focus = USA_restore_the_federal_government }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 株式市場の２４時間運用 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_BPtVqWUN
-		icon = GFX_focus_mex_privatisation
-		x = 26
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_LGmRryNu }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for ワシントンを復興 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_rebuild_washington_d_c
+	icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_establish_the_reconstruction_agency
+	prerequisite = { focus = USA_establish_the_reconstruction_agency }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for ワシントンを復興 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_KUYDTjwM
-		icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
-		x = 23
-		y = 7
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_cjyeUuBT }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 世界の工場 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_factory_of_the_world
+	icon = GFX_goal_continuous_non_factory_construct
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_rebuild_washington_d_c
+	prerequisite = { focus = USA_rebuild_washington_d_c }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 投資家を歓迎 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_ZisxIvRb
-		icon = GFX_focus_spa_the_spanish_miracle
-		x = 26
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_BPtVqWUN }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 第三次インディアン移住法 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_the_3rd_indian_removal_act
+	icon = GFX_goal_generic_demand_territory
+	x = -1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_restore_the_federal_government
+	prerequisite = { focus = USA_restore_the_federal_government }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 復興庁を設立 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_cjyeUuBT
-		icon = GFX_goal_generic_positive_trade_relations
-		x = 23
-		y = 6
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_NRCtnZud }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 民間経済の復興 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_rebuild_our_civilian_economy
+	icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
+	x = 1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_restore_the_federal_government
+	prerequisite = { focus = USA_restore_the_federal_government }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 世界の工場 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_bBLarGUk
-		icon = GFX_goal_continuous_non_factory_construct
-		x = 23
-		y = 8
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_KUYDTjwM }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 株式市場の２４時間運用 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_24_hour_stock_market_activity
+	icon = GFX_focus_mex_privatisation
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_rebuild_our_civilian_economy
+	prerequisite = { focus = USA_rebuild_our_civilian_economy }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 奨学金制度の拡充 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_uMAqBOFS
-		icon = GFX_goal_tfv_generic_tech_sharing
-		x = 26
-		y = 9
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_ZisxIvRb }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 投資家を歓迎 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_welcome_the_investors
+	icon = GFX_focus_spa_the_spanish_miracle
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_24_hour_stock_market_activity
+	prerequisite = { focus = USA_24_hour_stock_market_activity }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 日米不干渉条約 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_mqkEHUue
-		icon = GFX_focus_jap_pacific_guardian
-		x = 26
-		y = 16
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_lGuKYiMp }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 奨学金制度の拡充 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_expand_the_scholarship_system
+	icon = GFX_goal_tfv_generic_tech_sharing
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_welcome_the_investors
+	prerequisite = { focus = USA_welcome_the_investors }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for アイルランドを保護 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_AvYGCQjJ
-		icon = GFX_goal_generic_attack_allies
-		x = 30
-		y = 12
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = USA_eUKChxfE 
-			focus = USA_pYXAQPKB 
-		}
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 全体主義を禁止 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_ban_totalitarianism
+	icon = GFX_goal_generic_position_armies
+	x = 4
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_restore_the_federal_government
+	prerequisite = { focus = USA_restore_the_federal_government }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 大陸会議 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_TUGNPdYW
-		icon = GFX_goal_continuous_increase_nu
-		x = 26
-		y = 12
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = USA_eUKChxfE 
-			focus = USA_pYXAQPKB 
-		}
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 外交的解決 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_diplomatic_solution
+	icon = GFX_goal_molotov_ribbentrop_pact
+	x = -1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_ban_totalitarianism
+	prerequisite = { focus = USA_ban_totalitarianism }
+	mutually_exclusive = { focus = USA_military_invasion }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 独立心を煽る - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_dkqRVcNA
-		icon = GFX_goal_generic_trade
-		x = 26
-		y = 13
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = USA_TUGNPdYW 
-			focus = USA_AvYGCQjJ 
-		}
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 軍事侵攻 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_military_invasion
+	icon = GFX_goal_generic_special_forces
+	x = 1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_ban_totalitarianism
+	prerequisite = { focus = USA_ban_totalitarianism }
+	mutually_exclusive = { focus = USA_diplomatic_solution }
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for パリ会談 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_kthqLbyc
-		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 30
-		y = 13
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = USA_TUGNPdYW 
-			focus = USA_AvYGCQjJ 
-		}
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 大陸会議 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_the_continental_congress
+	icon = GFX_goal_continuous_increase_nu
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_diplomatic_solution
+	prerequisite = { 
+		focus = USA_diplomatic_solution 
+		focus = USA_military_invasion 
 	}
-
-	#Focus for 我は不滅なり - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_NrYmEwLg
-		icon = GFX_focus_usa_recruit_the_free_corps
-		x = 28
-		y = 17
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = USA_mqkEHUue 
-			focus = USA_KVkxutMl 
-		}
-		ai_will_do = {
-			factor = 1
-		}
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 日本を粉砕 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_TAjqDcBm
-		icon = GFX_focus_attack_japan
-		x = 30
-		y = 15
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_EpikVWRw }
-		mutually_exclusive = { 
-			focus = USA_lGuKYiMp 
-		}
-		mutually_exclusive = { 
-			focus = USA_KVkxutMl 
-		}
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for アイルランドを保護 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_protect_IRE
+	icon = GFX_goal_generic_attack_allies
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_military_invasion
+	prerequisite = { 
+		focus = USA_diplomatic_solution 
+		focus = USA_military_invasion 
 	}
-
-	#Focus for ダウンフォール作戦 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_KVkxutMl
-		icon = GFX_goal_poland_goal
-		x = 30
-		y = 16
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_TAjqDcBm }
-		mutually_exclusive = {	focus = USA_TAjqDcBm	}
-		ai_will_do = {
-			factor = 1
-		}
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 全体主義を禁止 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_ArxNbIiK
-		icon = GFX_goal_generic_position_armies
-		x = 28
-		y = 10
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_NRCtnZud }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 独立心を煽る - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_spread_the_ideal_of_independence
+	icon = GFX_goal_generic_trade
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_the_continental_congress
+	prerequisite = { 
+		focus = USA_the_continental_congress 
+		focus = USA_protect_IRE 
 	}
-
-	#Focus for 外交的解決 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_eUKChxfE
-		icon = GFX_goal_molotov_ribbentrop_pact
-		x = 26
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_ArxNbIiK }
-		mutually_exclusive = { focus = USA_pYXAQPKB }
-		ai_will_do = {
-			factor = 1
-		}
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 軍事侵攻 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_pYXAQPKB
-		icon = GFX_goal_generic_special_forces
-		x = 30
-		y = 11
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_ArxNbIiK }
-		mutually_exclusive = { focus = USA_eUKChxfE }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for パリ会談 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_the_paris_conference
+	icon = GFX_goal_molotov_ribbentrop_pact
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_protect_IRE
+	prerequisite = { 
+		focus = USA_the_continental_congress 
+		focus = USA_protect_IRE 
 	}
-
-	#Focus for 旧宗主国の打倒 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_EpikVWRw
-		icon = GFX_focus_eng_unite_the_anglosphere
-		x = 28
-		y = 14
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { 
-			focus = USA_dkqRVcNA 
-			focus = USA_kthqLbyc 
-		}
-		ai_will_do = {
-			factor = 1
-		}
+	ai_will_do = {
+		factor = 1
 	}
+}
 
-	#Focus for 歴史的和解 - focus ID randomly generated due to title being in non-latin characters
-	focus = {
-		id = USA_lGuKYiMp
-		icon = GFX_focus_chi_collaboration_with_the_japanese
-		x = 26
-		y = 15
-		cost = 10
-		available_if_capitulated = yes
-		prerequisite = { focus = USA_EpikVWRw }
-		mutually_exclusive = { focus = USA_TAjqDcBm }
-		ai_will_do = {
-			factor = 1
-		}
+#Focus for 旧宗主国の打倒 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_overthrow_our_former_master
+	icon = GFX_focus_eng_unite_the_anglosphere
+	x = 1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_spread_the_ideal_of_independence
+	prerequisite = { 
+		focus = USA_spread_the_ideal_of_independence 
+		focus = USA_the_paris_conference 
 	}
+	ai_will_do = {
+		factor = 1
+	}
+}
 
-#End of focuses 
- }
+#Focus for 歴史的和解 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_historical_compromise
+	icon = GFX_focus_chi_collaboration_with_the_japanese
+	x = -1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_overthrow_our_former_master
+	prerequisite = { focus = USA_overthrow_our_former_master }
+	mutually_exclusive = { focus = USA_crush_JAP }
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Focus for 日米不干渉条約 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_JAP_non_intervention_treaty
+	icon = GFX_focus_jap_pacific_guardian
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_historical_compromise
+	prerequisite = { focus = USA_historical_compromise }
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Focus for 日本を粉砕 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_crush_JAP
+	icon = GFX_focus_attack_japan
+	x = 1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_overthrow_our_former_master
+	prerequisite = { focus = USA_overthrow_our_former_master }
+	mutually_exclusive = { 
+		focus = USA_historical_compromise 
+	}
+	mutually_exclusive = { 
+		focus = USA_operation_downfall 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Focus for ダウンフォール作戦 - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_operation_downfall
+	icon = GFX_goal_poland_goal
+	x = 0
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_crush_JAP
+	prerequisite = { focus = USA_crush_JAP }
+	mutually_exclusive = {	focus = USA_crush_JAP	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+#Focus for 我は不滅なり - focus ID randomly generated due to title being in non-latin characters
+shared_focus = {
+	id = USA_we_are_invincible
+	icon = GFX_focus_usa_recruit_the_free_corps
+	x = 1
+	y = 1
+	cost = 10
+	available_if_capitulated = yes
+	relative_position_id = USA_JAP_non_intervention_treaty
+	prerequisite = { 
+		focus = USA_JAP_non_intervention_treaty 
+		focus = USA_operation_downfall 
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
