@@ -182,9 +182,41 @@ focus_tree = {
 	#########
 	
 	
-	focus = {	#海軍から奏薦する
-		id = JAP_selection_from_navy_candidates
-		icon = GFX_focus_JAP_question
+	focus = {	#岡田啓介
+		id = JAP_Keisuke_Okada
+		icon = GFX_focus_JAP_Keisuke_Okada
+		cost = 0
+		x = -6
+		y = 1
+		available = {
+			has_country_flag = JAP_navy_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#米内光政
+		id = JAP_Mitsumasa_Yonai
+		icon = GFX_focus_JAP_Mitsumasa_Yonai
+		cost = 0
+		x = -4
+		y = 1
+		available = {
+			has_country_flag = JAP_navy_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#鈴木貫太郎
+		id = JAP_Kantaro_Suzuki
+		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 0
 		x = -2
 		y = 1
@@ -204,9 +236,9 @@ focus_tree = {
 	#########
 	
 	
-	focus = {	#軍部との関わりを絶つ...？
-		id = JAP_no_selection_from_anywhere
-		icon = GFX_focus_JAP_question
+	focus = {	#近衛文麿
+		id = JAP_Fumimaro_Konoe
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 0
 		x = 0
 		y = 1
@@ -226,11 +258,43 @@ focus_tree = {
 	#########
 	
 	
-	focus = {	#陸軍から奏薦する
-		id = JAP_selection_from_army_candidates
-		icon = GFX_focus_JAP_question
+	focus = {	#小磯國昭
+		id = JAP_Kuniaki_Koiso
+		icon = GFX_focus_JAP_Kuniaki_Koiso
 		cost = 0
 		x = 2
+		y = 1
+		available = {
+			has_country_flag = JAP_army_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#寺内寿一
+		id = JAP_Hisaichi_Terauchi
+		icon = GFX_focus_JAP_Hisaichi_Terauchi
+		cost = 0
+		x = 4
+		y = 1
+		available = {
+			has_country_flag = JAP_army_candidates_selected
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#畑俊六
+		id = JAP_Shunroku_Hata
+		icon = GFX_focus_JAP_Shunroku_Hata
+		cost = 0
+		x = 6
 		y = 1
 		available = {
 			has_country_flag = JAP_army_candidates_selected
