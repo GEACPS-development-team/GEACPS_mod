@@ -1,0 +1,385 @@
+focus_tree = {
+	id = geacps_CHL_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHL
+		}
+	}
+	continuous_focus_position = {
+		x = 50 y = 1100
+	}
+	default = no
+	shared_focus = CHL_september_election
+	shared_focus = strengthening_military_power
+}
+
+shared_focus = {
+	id = CHL_september_election
+	icon = GFX_generic_suspend_constitution
+	cost = 0
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = CHL_presidential_election_1946
+			always = no
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_september_election"
+	}
+}
+
+shared_focus = {
+	id = CHL_socialist_party
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {	has_country_flag = CHL_socialist_party_win_1946	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_socialist_party"
+		add_political_power = 150
+	}
+	relative_position_id = CHL_september_election
+	prerequisite = { focus = CHL_september_election }
+}
+
+shared_focus = {
+	id = CHL_nationalisation_of_the_mining_industry
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_nationalisation_of_the_mining_industry"
+		add_ideas = CHL_nationalisation_of_the_gmc
+	}
+	relative_position_id = CHL_socialist_party
+	prerequisite = { focus = CHL_socialist_party }
+}
+
+shared_focus = {
+	id = CHL_use_of_corfo
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_use_of_corfo"
+		custom_effect_tooltip = CHL_corfo_can_be_utilised
+	}
+	relative_position_id = CHL_nationalisation_of_the_mining_industry
+	prerequisite = { focus = CHL_nationalisation_of_the_mining_industry }
+}
+
+shared_focus = {
+	id = CHL_agricultural_reform
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_agricultural_reform"
+		country_event = CHL.5
+	}
+	relative_position_id = CHL_use_of_corfo
+	prerequisite = { focus = CHL_use_of_corfo }
+}
+
+shared_focus = {
+	id = CHL_minimum_wage_development
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_minimum_wage_development"
+		add_stability = 0.1
+	}
+	relative_position_id = CHL_agricultural_reform
+	prerequisite = { focus = CHL_agricultural_reform }
+}
+
+shared_focus = {
+	id = CHL_agricultural_mechanisation
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_agricultural_mechanisation"
+		add_ideas = CHL_mechanisation_of_agriculture
+	}
+	relative_position_id = CHL_minimum_wage_development
+	prerequisite = { focus = CHL_minimum_wage_development }
+}
+
+shared_focus = {
+	id = CHL_highway_construction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_highway_construction"
+		every_owned_state = {
+			limit = {
+				OR = {
+					state = 279
+					state = 506
+					state = 507
+					state = 1083
+					state = 1086
+					state = 1154
+					state = 1155
+				}
+			}
+			set_building_level = {
+				type = infrastructure
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = CHL_agricultural_reform
+	prerequisite = { focus = CHL_agricultural_reform }
+}
+
+shared_focus = {
+	id = CHL_urban_development_and_redevelopment
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_urban_development_and_redevelopment"
+		country_event = CHL.6
+	}
+	relative_position_id = CHL_highway_construction
+	prerequisite = { focus = CHL_highway_construction }
+}
+
+shared_focus = {
+	id = CHL_oil_well_exploration
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_oil_well_exploration"
+		add_resource = {
+			type = oil
+			amount = 20
+			state = 507
+		}
+	}
+	relative_position_id = CHL_agricultural_mechanisation
+	prerequisite = { focus = CHL_agricultural_mechanisation }
+	prerequisite = { focus = CHL_urban_development_and_redevelopment }
+}
+
+shared_focus = {
+	id = CHL_radical_party
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {	has_country_flag = CHL_radical_party_win_1946	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_radical_party"
+		add_political_power = 150
+	}
+	relative_position_id = CHL_september_election
+	prerequisite = { focus = CHL_september_election }
+}
+
+shared_focus = {
+	id = CHL_expansion_of_womens_suffrage
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_expansion_of_womens_suffrage"
+		country_event = CHL.2
+	}
+	relative_position_id = CHL_radical_party
+	prerequisite = { focus = CHL_radical_party }
+}
+
+shared_focus = {
+	id = CHL_law_for_the_permanent_defence_of_democracy
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_law_for_the_permanent_defence_of_democracy"
+		country_event = CHL.3
+	}
+	relative_position_id = CHL_expansion_of_womens_suffrage
+	prerequisite = { focus = CHL_expansion_of_womens_suffrage }
+}
+
+shared_focus = {
+	id = CHL_construction_of_hydropower_plants
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_construction_of_hydropower_plants"
+		add_ideas = CHL_energy_independence_orientation
+	}
+	relative_position_id = CHL_law_for_the_permanent_defence_of_democracy
+	prerequisite = { focus = CHL_law_for_the_permanent_defence_of_democracy }
+}
+
+shared_focus = {
+	id = CHL_construction_of_steel_mills
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_construction_of_steel_mills"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = CHL_construction_of_hydropower_plants
+	prerequisite = { focus = CHL_construction_of_hydropower_plants }
+}
+
+shared_focus = {
+	id = CHL_opening_of_iron_mines
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_opening_of_iron_mines"
+		add_resource = {
+			type = steel
+			amount = 20
+			state = 506
+		}
+	}
+	relative_position_id = CHL_construction_of_steel_mills
+	prerequisite = { focus = CHL_construction_of_steel_mills }
+}
+
+shared_focus = {
+	id = CHL_construction_of_a_sugar_processing_plant
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_construction_of_a_sugar_processing_plant"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = CHL_construction_of_hydropower_plants
+	prerequisite = { focus = CHL_construction_of_hydropower_plants }
+}
+
+shared_focus = {
+	id = CHL_launch_of_the_serena_project
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_launch_of_the_serena_project"
+		country_event = CHL.4
+	}
+	relative_position_id = CHL_construction_of_a_sugar_processing_plant
+	prerequisite = { focus = CHL_construction_of_a_sugar_processing_plant }
+}
+
+shared_focus = {
+	id = CHL_establishment_of_enap
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_establishment_of_enap"
+		custom_effect_tooltip = CHL_establish_enap
+	}
+	relative_position_id = CHL_opening_of_iron_mines
+	prerequisite = { focus = CHL_opening_of_iron_mines }
+	prerequisite = { focus = CHL_launch_of_the_serena_project }
+}
