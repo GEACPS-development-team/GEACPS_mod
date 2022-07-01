@@ -1,0 +1,73 @@
+add_namespace = COL
+country_event = {
+	id = COL.1
+	title = COL.1.t
+	desc = COL.1.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = COL
+		date < 1946.5.6
+	}
+	
+	option = {
+		name = COL.1.0
+		ai_chance = {	factor = 100	}
+		complete_national_focus = COL_may_election
+		random_list = {
+			50 = {
+				custom_effect_tooltip = COL_conservative_party_win
+				set_country_flag = COL_conservative_party_win_1946
+			}
+			50 = {
+				custom_effect_tooltip = COL_the_leopards_win
+				set_country_flag = COL_the_leopards_win_1946
+			}
+		}
+	}
+	option = {
+		name = COL.1.1
+		ai_chance = {	factor = 0	}
+		complete_national_focus = COL_may_election
+		custom_effect_tooltip = COL_conservative_party_win
+		set_country_flag = COL_conservative_party_win_1946
+	}
+	option = {
+		name = COL.1.2
+		ai_chance = {	factor = 0	}
+		complete_national_focus = COL_may_election
+		custom_effect_tooltip = COL_the_leopards_win
+		set_country_flag = COL_the_leopards_win_1946
+	}
+}
+country_event = {
+	id = COL.2
+	title = COL.2.t
+	desc = COL.2.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = COL.2.0
+		ai_chance = {	factor = 100	}
+		add_ideas = COL_merchant_fleet_of_the_grand_colombian
+	}
+}
+country_event = {
+	id = COL.3
+	title = COL.3.t
+	desc = COL.3.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = COL.3.0
+		ai_chance = {	factor = 100	}
+		create_faction = NUEVA_ANDALUCA
+		add_ideas = COL_golden_glow
+	}
+}
