@@ -417,7 +417,7 @@ focus_tree = {
 	}
 	
 	focus = {	#東ティモール返還
-		id = JAP_Handover_of_East_Timor
+		id = JAP_handover_of_East_Timor
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -1
@@ -524,8 +524,8 @@ focus_tree = {
 		}
 	}
 	
-	focus = {	#バイカル・アムール鉄道
-		id = JAP_Baikal–Amur_Mainline
+	focus = {	#バム鉄道
+		id = JAP_Baikal-Amur_Mainline
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
@@ -549,7 +549,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = JAP_relationship_with_fallen_Red_star
 		prerequisite = {
-			focus = JAP_Baikal–Amur_Mainline
+			focus = JAP_Baikal-Amur_Mainline
 		}
 		completion_reward = {
 		}
@@ -577,8 +577,8 @@ focus_tree = {
 	
 	#
 	
-	focus = {	#革新官僚の任命
-		id = JAP_Appointment_of_innovative_bureaucrats
+	focus = {	#革新官僚を任命
+		id = JAP_appointment_reform_bureaucrats
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
@@ -592,21 +592,21 @@ focus_tree = {
 		}
 	}
 	
-	focus = {	#皇道派の協力
-		id = JAP_Cooperation_of_the_Imperialists
+	focus = {	#皇道派と協力
+		id = JAP_cooperation_with_Kodoha
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		relative_position_id = JAP_appointment_reform_bureaucrats
 		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
+			focus = JAP_appointment_reform_bureaucrats
 		}
 		mutually_exclusive = {
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_Greater_Japan_Party
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_control_groups
+			focus = JAP_cooperation_with_Toseiha
 		}
 		cost = 4.28
 		completion_reward = {
@@ -614,29 +614,29 @@ focus_tree = {
 	}
 	
 	focus = {	#國家に対する打撃
-		id = JAP_A_blow_to_the_nation
+		id = JAP_coup
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Cooperation_of_the_Imperialists
+		relative_position_id = JAP_cooperation_with_Kodoha
 		prerequisite = {
-			focus = JAP_Cooperation_of_the_Imperialists
+			focus = JAP_cooperation_with_Kodoha
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#憲法の停止
-		id = JAP_Suspension_of_the_Constitution
+	focus = {	#憲法を停止
+		id = JAP_stop_Meiji_Constitution
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -1
 		y = 1
-		relative_position_id = JAP_A_blow_to_the_nation
+		relative_position_id = JAP_coup
 		prerequisite = {
-			focus = JAP_A_blow_to_the_nation
+			focus = JAP_coup
 		}
 		cost = 4.28
 		completion_reward = {
@@ -644,29 +644,29 @@ focus_tree = {
 	}
 	
 	focus = {	#両院を解散
-		id = JAP_Dissolution_of_both_Houses
+		id = JAP_dissolution_of_both_parliament
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Suspension_of_the_Constitution
+		relative_position_id = JAP_stop_Meiji_Constitution
 		prerequisite = {
-			focus = JAP_Suspension_of_the_Constitution
+			focus = JAP_stop_Meiji_Constitution
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#全國での戒嚴令
-		id = JAP_Martial_law_throughout_the_country
+	focus = {	#全國に戒厳令を！
+		id = JAP_martial_law_of_all_prefectures
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Dissolution_of_both_Houses
+		relative_position_id = JAP_dissolution_of_both_parliament
 		prerequisite = {
-			focus = JAP_Dissolution_of_both_Houses
+			focus = JAP_dissolution_of_both_parliament
 		}
 		cost = 4.28
 		completion_reward = {
@@ -674,70 +674,70 @@ focus_tree = {
 	}
 	
 	focus = {	#昭和維新を開始
-		id = JAP_Start_of_the_Showa_Restoration
+		id = JAP_start_of_Showa_Ishin
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Martial_law_throughout_the_country
+		relative_position_id = JAP_martial_law_of_all_prefectures
 		prerequisite = {
-			focus = JAP_Martial_law_throughout_the_country
+			focus = JAP_martial_law_of_all_prefectures
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#特権階級の排除
-		id = JAP_Elimination_of_the_privileged_class
+	focus = {	#特権階級を排除
+		id = JAP_removal_of_upper_class
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_A_blow_to_the_nation
+		relative_position_id = JAP_coup
 		prerequisite = {
-			focus = JAP_A_blow_to_the_nation
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_coup
+			focus = JAP_Greater_Japan_Party
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#近衛新党を結成#大日本党
-		id = JAP_Formation_of_Konoe_New_Party
+	focus = {	#大日本党
+		id = JAP_Greater_Japan_Party
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 3
 		y = 1
-		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		relative_position_id = JAP_appointment_reform_bureaucrats
 		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
+			focus = JAP_appointment_reform_bureaucrats
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_the_Imperialists
+			focus = JAP_cooperation_with_Kodoha
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_control_groups
+			focus = JAP_cooperation_with_Toseiha
 		}
 		cost = 4.28
 		completion_reward = {
 			set_party_name = {
 				ideology = national_populism
-				name = JAP_national_populism_party_Greater_Japan_Party
+				name = PARTY_greater_japan_party_long
 			}
 		}
 	}
 	
-	focus = {	#新体制運動を再加速
-		id = JAP_Re-acceleration_of_the_new_regime_movement
+	focus = {	#新体制運動を加速
+		id = JAP_acceleration_of_Shintaisei
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Formation_of_Konoe_New_Party
+		relative_position_id = JAP_Greater_Japan_Party
 		prerequisite = {
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_Greater_Japan_Party
 		}
 		cost = 4.28
 		completion_reward = {
@@ -745,59 +745,59 @@ focus_tree = {
 	}
 	
 	focus = {	#外地の新体制運動を加速
-		id = JAP_New_regime_movement_in_the_outer_regions
+		id = JAP_acceleration_of_Shintaisei_in_territories_acquired
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		relative_position_id = JAP_acceleration_of_Shintaisei
 		prerequisite = {
-			focus = JAP_Re-acceleration_of_the_new_regime_movement
+			focus = JAP_acceleration_of_Shintaisei
 		}
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#太平洋経済ブロックの構築
-		id = JAP_Building_the_Pacific_Economic_Bloc
+	focus = {	#東亜経済ブロック
+		id = JAP_East_Asia_bloc_economies
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_New_regime_movement_in_the_outer_regions
+		relative_position_id = JAP_acceleration_of_Shintaisei_in_territories_acquired
 		prerequisite = {
-			focus = JAP_New_regime_movement_in_the_outer_regions
+			focus = JAP_acceleration_of_Shintaisei_in_territories_acquired
 		}
 		prerequisite = {
-			focus = JAP_Competition_with_the_imperialist_powers
+			focus = JAP_competition_with_imperialism_great_powers
 		}
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#バスに乗り遅れるな
-		id = JAP_Do_not_miss_the_bus
+	focus = {	#バスに乗り遅れるな！
+		id = JAP_basu_ni_nori_okureru_na
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Building_the_Pacific_Economic_Bloc
+		relative_position_id = JAP_East_Asia_bloc_economies
 		prerequisite = {
-			focus = JAP_Building_the_Pacific_Economic_Bloc
+			focus = JAP_East_Asia_bloc_economies
 		}
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#私有財産制の廃止
-		id = JAP_Abolition_of_the_private_property_system
+	focus = {	#私有財産制の廃止...？
+		id = JAP_abolition_of_private_property
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		relative_position_id = JAP_acceleration_of_Shintaisei
 		prerequisite = {
-			focus = JAP_Re-acceleration_of_the_new_regime_movement
+			focus = JAP_acceleration_of_Shintaisei
 		}
 		cost = 4.28
 		completion_reward = {
@@ -805,15 +805,15 @@ focus_tree = {
 	}
 	
 	focus = {	#帝國主義列強との競争
-		id = JAP_Competition_with_the_imperialist_powers
+		id = JAP_competition_with_imperialism_great_powers
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 2
 		y = 2
-		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		relative_position_id = JAP_acceleration_of_Shintaisei
 		prerequisite = {
-			focus = JAP_Re-acceleration_of_the_new_regime_movement
-			focus = JAP_Re-exclusion_of_imperialists
+			focus = JAP_acceleration_of_Shintaisei
+			focus = JAP_destiny_of_Kodoha
 		}
 		cost = 4.28
 		completion_reward = {
@@ -821,80 +821,80 @@ focus_tree = {
 	}
 	
 	focus = {	#統制派の協力
-		id = JAP_Cooperation_of_control_groups
+		id = JAP_cooperation_with_Toseiha
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 5
 		y = 1
-		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		relative_position_id = JAP_appointment_reform_bureaucrats
 		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
+			focus = JAP_appointment_reform_bureaucrats
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_the_Imperialists
+			focus = JAP_cooperation_with_Kodoha
 		}
 		mutually_exclusive = {
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_Greater_Japan_Party
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#大東亜共同経済圏を確立
-		id = JAP_Establishment_of_Greater_East_Asia_Common_Economic_Area
+	focus = {	#A
+		id = JAP_A
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 2
-		relative_position_id = JAP_Cooperation_of_control_groups
+		relative_position_id = JAP_cooperation_with_Toseiha
 		prerequisite = {
-			focus = JAP_Cooperation_of_control_groups
+			focus = JAP_cooperation_with_Toseiha
 		}
 		cost = 4.28
 		completion_reward = {
 		}
 	}
 	
-	focus = {	#皇道派を再排除
-		id = JAP_Re-exclusion_of_imperialists
+	focus = {	#皇道派の命運
+		id = JAP_destiny_of_Kodoha
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Cooperation_of_control_groups
+		relative_position_id = JAP_cooperation_with_Toseiha
 		prerequisite = {
-			focus = JAP_Cooperation_of_control_groups
-		}
-		completion_reward = {
-			add_stability = -0.1
-		}
-	}
-	
-	focus = {	#総力戦への対応
-		id = JAP_Response_to_total_war
-		icon = GFX_focus_JAP_Fumimaro_Konoe
-		cost = 4.28
-		x = 0
-		y = 1
-		relative_position_id = JAP_Competition_with_the_imperialist_powers
-		prerequisite = {
-			focus = JAP_Competition_with_the_imperialist_powers
+			focus = JAP_cooperation_with_Toseiha
 		}
 		completion_reward = {
 			add_stability = -0.1
 		}
 	}
 	
-	focus = {	#大陸を支配せよ!
-		id = JAP_Dominate_the_continent
+	focus = {	#B
+		id = JAP_B
 		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Response_to_total_war
+		relative_position_id = JAP_competition_with_imperialism_great_powers
 		prerequisite = {
-			focus = JAP_Response_to_total_war
+			focus = JAP_competition_with_imperialism_great_powers
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	
+	focus = {	#高度国防国家
+		id = JAP_high_defence_state
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_B
+		prerequisite = {
+			focus = JAP_B
 		}
 		completion_reward = {
 			add_stability = -0.1
