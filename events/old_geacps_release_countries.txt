@@ -8219,28 +8219,28 @@ country_event = {
 	}
 }
 
-add_namespace = fate_of_CGB
+add_namespace = fate_of_MCG
 country_event = {
-	id = fate_of_CGB.0
-	title = fate_of_CGB.0.t
-	desc = fate_of_CGB.0.d
+	id = fate_of_MCG.0
+	title = fate_of_MCG.0.t
+	desc = fate_of_MCG.0.d
 	is_triggered_only = yes
 	hidden = yes
 	option = {
-		name = fate_of_CGB.0.0
+		name = fate_of_MCG.0.0
 		ai_chance = {	base = 10	}
 		hidden_effect = {
 			if = {
-				limit = {	country_exists = CGB	}
+				limit = {	country_exists = MCG	}
 				create_dynamic_country = {
-					original_tag = CGB
+					original_tag = MCG
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	CGB_state_variable = 1	}
+							check_variable = {	MCG_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -8250,14 +8250,14 @@ country_event = {
 				}
 			}
 			else = {
-				CGB = {
+				MCG = {
 					clear_autonomous_states_variable = yes
 					every_state = {
 						limit = {
 							is_fully_controlled_by = ROOT
 							NOT = {	is_core_of = ROOT	}
 							NOT = {	is_claimed_by = ROOT	}
-							check_variable = {	CGB_state_variable = 1	}
+							check_variable = {	MCG_state_variable = 1	}
 						}
 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 					}
@@ -8270,15 +8270,15 @@ country_event = {
 	}
 }
 country_event = {
-	id = fate_of_CGB.1
-	title = fate_of_CGB.1.t
-	desc = fate_of_CGB.1.d
+	id = fate_of_MCG.1
+	title = fate_of_MCG.1.t
+	desc = fate_of_MCG.1.d
 	is_triggered_only = yes
 	
 	option = {
-		name = fate_of_CGB.1.0
+		name = fate_of_MCG.1.0
 		ai_chance = {	base = 10	}
-		country_event = fate_of_CGB.0
+		country_event = fate_of_MCG.0
 	}
 }
 
