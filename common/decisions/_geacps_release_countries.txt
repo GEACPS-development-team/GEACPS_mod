@@ -25,12 +25,12 @@ release_decisions = {	#ヨーロッパ
 		complete_effect = {	country_event = fate_of_ADR.1	}
 		ai_will_do = {	base = 100	}
 	}
-	release_ADU = {	#ADU
+	release_SPR = {	#SPR
 		icon = generic_prepare_civil_war
 		cost = 0
-		available = {	ADU = {	release_country_decision_trigger = yes	}	}
-		visible = {	ADU = {	release_country_decision_trigger = yes	}	}
-		complete_effect = {	country_event = fate_of_ADU.1	}
+		available = {	SPR = {	release_country_decision_trigger = yes	}	}
+		visible = {	SPR = {	release_country_decision_trigger = yes	}	}
+		complete_effect = {	country_event = fate_of_SPR.1	}
 		ai_will_do = {	base = 100	}
 	}
 }
