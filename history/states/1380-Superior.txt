@@ -1,0 +1,27 @@
+state = {
+	id = 1380
+	name = "STATE_1380"
+	manpower = 2421323
+	buildings_max_level_factor = 1
+	state_category = metropolis
+	
+	resources = {
+		steel = 60
+		oil = 6
+	}
+	
+	history = {
+		owner = USA
+		add_core_of = USA
+		MCH = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+		}
+		set_variable = {	MCH_state_variable = 1	}
+	}
+	
+	provinces = {
+		709	751	4854	5205	10599
+	}
+	local_supplies = 0.0
+}
