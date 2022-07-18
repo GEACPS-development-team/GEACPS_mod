@@ -11,13 +11,23 @@ technologies = {
 	@1943 = 10
 	@1944 = 11
 	@1945 = 12
-	@1948 = 14
-	@1949 = 15
-	@1951 = 16
-	@1953 = 17
-	@1956 = 18
-	@1958 = 19
-	@1960 = 20
+	@1946 = 13
+	@1947 = 14
+	@1948 = 15
+	@1949 = 16
+	@1950 = 17
+	@1951 = 18
+	@1953 = 19
+	@1954 = 20
+	@1956 = 21
+	@1958 = 22
+	@1960 = 23
+	@1962 = 24
+
+	@truck = 23
+	@armored_personnel_carrier = 20
+	@amphibious_vehicle = 17
+	@armored_car = 26
 
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank_chassis = { #Leichttraktor
@@ -2367,4 +2377,941 @@ technologies = {
 			armor
 		}
 	}
+	motorised_infantry = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_subunits = {
+			motorized
+		}
+
+		enable_equipments = {
+			motorized_equipment_1
+		}
+
+		on_research_complete_limit = {
+			NOT = {
+				has_template_containing_unit = motorized
+			}
+		}
+		on_research_complete = {
+			hidden_effect = {
+				load_oob = "unlock_motorized"
+			}			
+			custom_effect_tooltip = UNLOCK_DIVISION_TEMPLATE
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = motorised_infantry1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armored_car1
+			research_cost_coeff = 1
+		}
+		
+
+		research_cost = 2
+		start_year = 1936
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1936 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1936 }
+		}
+		folder = {
+			name = support_folder
+			position = { x = 8 y = 3 }
+		}
+		
+		sub_technologies = {
+			motorized_rocket_unit
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	motorised_infantry1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		SUPPLY_CONSUMPTION_FACTOR = -0.03
+		motorized = {
+			max_strength = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1938
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1938 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1938 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	motorised_infantry2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		SUPPLY_CONSUMPTION_FACTOR = -0.03
+		motorized = {
+			reliability = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1942 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1942 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	motorised_infantry3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		SUPPLY_CONSUMPTION_FACTOR = -0.03
+		motorized = {
+			max_strength = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1946
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1946 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1946 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	motorised_infantry4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		SUPPLY_CONSUMPTION_FACTOR = -0.03
+		motorized = {
+			reliability = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1950
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1950 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1950 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	motorised_infantry5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		SUPPLY_CONSUMPTION_FACTOR = -0.03
+		motorized = {
+			max_strength = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1954
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1954 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1954 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	motorised_infantry6 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		SUPPLY_CONSUMPTION_FACTOR = -0.03
+		motorized = {
+			reliability = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1958
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1958 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1958 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	motorised_infantry7 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+		SUPPLY_CONSUMPTION_FACTOR = -0.03
+		motorized = {
+			max_strength = 0.05
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1962
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1962 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @truck y = @1962 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	motorized_rocket_unit = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_subunits = {
+			motorized_rocket_brigade
+		}
+		enable_equipments = {
+			motorized_rocket_equipment_1
+		}
+	
+		research_cost = 1.5
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			mot_rockets
+		}
+	}
+	
+	armored_car1 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_subunits = {
+			armored_car
+		}
+
+		enable_equipments = {
+			gw_armored_car_equipment
+		}
+		allow_branch = { has_dlc = "La Resistance" }
+		path = {
+			leads_to_tech = armored_car2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1914
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_car y = @1936 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_car y = @1936 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			armored_car_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = armored_car3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_car y = @1940 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_car y = @1940 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			armored_car_equipment_2
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_car y = @1942 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_car y = @1942 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+		
+		sub_technologies = {
+			armored_car_at_upgrade
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+
+	armored_car_at_upgrade = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			armored_car_at_equipment
+		}
+
+		research_cost = 1
+		start_year = 1942
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			armor
+		}
+
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+			
+			modifier = {
+				factor = 2
+				date > "1939.1.1"
+			}
+			modifier = {
+				is_major = no
+				factor = 0.5
+			}
+		}
+	}
+	
+	mechanised_infantry = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			mechanized_equipment_1
+		}
+		motorized = {
+			hardness = 1.0
+		}
+		mot_artillery_brigade = {
+			hardness = 1.0
+		}
+		mot_anti_tank_brigade = {
+			hardness = 1.0
+		}
+		mot_anti_air_brigade = {
+			hardness = 1.0
+		}
+		mot_rocket_artillery_brigade = {
+			hardness = 1.0
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = amphibious_mechanized_infantry
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		start_year = 1940
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1940 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1940 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				tag = USA
+				factor = 2
+			}
+		}
+	}
+	amphibious_mechanized_infantry = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			amphibious_mechanized_equipment_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		enable_subunits = {
+			amphibious_mechanized
+		}
+
+		path = {
+			leads_to_tech = amphibious_mechanized_infantry_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1941
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @amphibious_vehicle y = @1941 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @amphibious_vehicle y = @1941 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				tag = USA
+				factor = 2
+			}
+		}
+	}
+
+	amphibious_mechanized_infantry_2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			amphibious_mechanized_equipment_2
+		}
+
+		
+
+		research_cost = 2
+		start_year = 1943
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @amphibious_vehicle y = @1943 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @amphibious_vehicle y = @1943 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+			tp_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mechanised_infantry2 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			mechanized_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = mechanised_infantry3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1942
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1942 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1942 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mechanised_infantry3 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			mechanized_equipment_3
+		}
+
+		mechanized = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		path = {
+			leads_to_tech = mechanised_infantry4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1944
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1944 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1944 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mechanised_infantry4 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			mechanized_equipment_4
+		}
+
+		path = {
+			leads_to_tech = mechanised_infantry5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1947
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1947 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1947 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mechanised_infantry5 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			mechanized_equipment_5
+		}
+
+		path = {
+			leads_to_tech = mechanised_infantry6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1951
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1951 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1951 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mechanised_infantry6 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			mechanized_equipment_6
+		}
+
+		mechanized = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		path = {
+			leads_to_tech = mechanised_infantry7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1956
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1956 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1956 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	mechanised_infantry7 = {
+		xp_research_type = army
+		xp_boost_cost = 50
+		xp_research_bonus = 0.50
+
+		enable_equipments = {
+			mechanized_equipment_7
+		}
+
+#		path = {
+#			leads_to_tech = mechanised_infantry8
+#			research_cost_coeff = 1
+#		}
+
+		research_cost = 2
+		start_year = 1962
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1962 }
+		}
+		folder = {
+			name = nsb_armour_folder
+			position = { x = @armored_personnel_carrier y = @1962 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+			cat_mechanized_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 }
