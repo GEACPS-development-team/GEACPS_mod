@@ -256,6 +256,19 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {	#A
+		id = JAP_Kantaro_Suzuki_A
+		icon = GFX_focus_JAP_Kantaro_Suzuki
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Koh-i-Noor
+		prerequisite = {
+			focus = JAP_Koh-i-Noor
+		}
+		completion_reward = {
+		}
+	}
 	focus = {	#英印軍
 		id = JAP_British_Indian_Army
 		icon = GFX_focus_JAP_Kantaro_Suzuki
@@ -265,6 +278,7 @@ focus_tree = {
 		relative_position_id = JAP_Koh-i-Noor
 		prerequisite = {
 			focus = JAP_Koh-i-Noor
+			focus = JAP_the_empire_on_which_the_sun_never_sets_in_the_western_world
 		}
 		completion_reward = {
 		}
@@ -282,8 +296,21 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {	#自由で開かれたインド太平洋戦略
-		id = JAP_Free_and_Open_Indo-Pacific
+	focus = {	#B
+		id = JAP_Kantaro_Suzuki_B
+		icon = GFX_focus_JAP_Kantaro_Suzuki
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_third_India-Japan_agreement
+		prerequisite = {
+			focus = JAP_third_India-Japan_agreement
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#自由で開かれたインド洋戦略
+		id = JAP_Free_and_Open_Indian_Ocean
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 0
@@ -338,11 +365,8 @@ focus_tree = {
 			}
 		}
 	}
-	
-	#
-	
-	focus = {#英領マラヤの錫
-		id = JAP_British_Malaya_Tin
+	focus = {	#英領マレーの錫鉱床
+		id = JAP_tin_of_British_Malaya
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 1
@@ -350,13 +374,13 @@ focus_tree = {
 		relative_position_id = JAP_the_empire_on_which_the_sun_never_sets_in_the_western_world
 		prerequisite = {
 			focus = JAP_the_empire_on_which_the_sun_never_sets_in_the_western_world
-			focus = JAP_The_Pacific_Ocean_is_as_the_name_suggests_an_ocean_of_peace
+			focus = JAP_Pacific_Ocean
 		}
 		completion_reward = {
 		}
 	}
-	focus = {#日英合同海軍技術研究所の設立
-		id = JAP_Establishment_of_the_Japanese-English_Contract_Naval_Technology_Institute
+	focus = {	#C
+		id = JAP_Kantaro_Suzuki_C
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = -1
@@ -368,8 +392,8 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {#日英合同海軍委員会の設置
-		id = JAP_Establishment_of_Japanese-British_Contract_Naval_Committee
+	focus = {	#日英合同海軍委員会
+		id = JAP_Anglo-Japanese_Joint_Naval_Commission
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 0
@@ -381,8 +405,8 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {#英國海軍との合同演習
-		id = JAP_Joint_exercises_with_the_Royal_Navy
+	focus = {	#環太平洋合同演習
+		id = JAP_Rim_of_the_Pacific_Exercise
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 1
@@ -390,13 +414,13 @@ focus_tree = {
 		relative_position_id = JAP_Togo-Bevin_Agreement
 		prerequisite = {
 			focus = JAP_Togo-Bevin_Agreement
-			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+			focus = JAP_Australia_Japan_New_Zealand_Security_Treaty
 		}
 		completion_reward = {
 		}
 	}
-	focus = {#太平洋は名の如く平和の洋
-		id = JAP_The_Pacific_Ocean_is_as_the_name_suggests_an_ocean_of_peace
+	focus = {	#太平洋は名の如く平和の洋
+		id = JAP_Pacific_Ocean
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = -1
@@ -408,76 +432,76 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
-	focus = {#オーストララシアとの関係
-		id = JAP_Relationship_with_Australasia
+	focus = {	#オーストララシアの鉄鉱床
+		id = JAP_Iron_of_Australasia
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_The_Pacific_Ocean_is_as_the_name_suggests_an_ocean_of_peace
+		relative_position_id = JAP_Pacific_Ocean
 		prerequisite = {
-			focus = JAP_The_Pacific_Ocean_is_as_the_name_suggests_an_ocean_of_peace
+			focus = JAP_Pacific_Ocean
 		}
 		completion_reward = {
 		}
 	}
-	focus = {#太平洋安全保障条約の締結
-		id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+	focus = {	#太平洋安全保障条約
+		id = JAP_Australia_Japan_New_Zealand_Security_Treaty
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_The_Pacific_Ocean_is_as_the_name_suggests_an_ocean_of_peace
+		relative_position_id = JAP_Pacific_Ocean
 		prerequisite = {
-			focus = JAP_British_Malaya_Tin
+			focus = JAP_tin_of_British_Malaya
 		}
 		prerequisite = {
-			focus = JAP_Relationship_with_Australasia
+			focus = JAP_Iron_of_Australasia
 		}
 		completion_reward = {
 		}
 	}
-	focus = {#自由で開かれた太平洋
-		id = JAP_A_free_and_open_Pacific
+	focus = {	#自由で開かれた太平洋戦略
+		id = JAP_Free_and_Open_Pacific_Ocean
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		relative_position_id = JAP_Australia_Japan_New_Zealand_Security_Treaty
 		prerequisite = {
-			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+			focus = JAP_Australia_Japan_New_Zealand_Security_Treaty
 		}
 		completion_reward = {
 		}
 	}
-	focus = {#加奈陀太平洋鉄道へ投資
-		id = JAP_Investment_in_Kanada_Pacific_Railway
+	focus = {	#CP鉄道
+		id = JAP_Canadian_Pacific
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Conclusion_of_the_Pacific_Security_Treaty
+		relative_position_id = JAP_Australia_Japan_New_Zealand_Security_Treaty
 		prerequisite = {
-			focus = JAP_Conclusion_of_the_Pacific_Security_Treaty
+			focus = JAP_Australia_Japan_New_Zealand_Security_Treaty
 		}
 		completion_reward = {
 		}
 	}
-	focus = {#第四次日英同盟
-		id = JAP_The_Fourth_Japanese-British_Alliance
+	focus = {	#第四次日英同盟
+		id = JAP_fourth_Anglo-Japanese_Alliance
 		icon = GFX_focus_JAP_Kantaro_Suzuki
 		cost = 4.28
 		x = 0
 		y = 5
 		relative_position_id = JAP_the_empire_on_which_the_sun_never_sets_in_the_western_world
 		prerequisite = {
-			focus = JAP_A_free_and_open_Indian_Ocean
+			focus = JAP_Free_and_Open_Indian_Ocean
 		}
 		prerequisite = {
-			focus = JAP_Establishment_of_Japanese-British_Contract_Naval_Committee
+			focus = JAP_Anglo-Japanese_Joint_Naval_Commission
 		}
 		prerequisite = {
-			focus = JAP_A_free_and_open_Pacific
+			focus = JAP_Free_and_Open_Pacific_Ocean
 		}
 		completion_reward = {
 			diplomatic_relation = {
