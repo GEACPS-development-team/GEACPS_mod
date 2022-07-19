@@ -1,4 +1,44 @@
 technologies = {
+	@1918 = 0
+	@1934
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 8
+	@1941 = 10
+	@1942 = 12
+	@1943 = 14
+	@1944 = 16
+	@1945 = 18
+	@1946 = 20
+	@1947 = 22
+	@1948 = 24
+	@1949 = 26
+	@1950 = 28
+	@1951 = 30
+	@1952 = 32
+	@1953 = 34
+	@1954 = 36
+	@1955 = 38
+	@1956 = 40
+	@1957 = 42
+	@1958 = 44
+	@1959 = 46
+	@1960 = 48
+	@1961 = 50
+	@1962 = 52
+	@1963 = 54
+	@1964 = 56
+	@1965 = 58
+	@1966 = 60
+	@1967 = 62
+	@1968 = 64
+	@1969 = 66
+	@1970 = 68
+
+	@light_tank = -4
+	@heavy_tank = 6
+
 	### GERMAN TANK NAMES IN COMMENTS SO YOU CAN FIND STUFF MORE EASILY
 	gwtank = { #Leichttraktor
 		xp_research_type = army
@@ -132,7 +172,7 @@ technologies = {
 		start_year = 1934
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 2 }
+			position = { x = @light_tank  y = 2 }
 		}
 		
 		sub_technologies = {
@@ -330,7 +370,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 4 }
+			position = { x = @light_tank  y = 4 }
 		}
 		
 		sub_technologies = {
@@ -623,7 +663,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 8 }
+			position = { x = @light_tank  y = 8 }
 		}
 		
 		sub_technologies = {
@@ -758,7 +798,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 12 }
+			position = { x = @light_tank  y = 12 }
 		}
 		
 		sub_technologies = {
@@ -862,7 +902,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 16 }
+			position = { x = @light_tank  y = 16 }
 		}
 		
 		sub_technologies = {
@@ -965,7 +1005,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 20 }
+			position = { x = @light_tank  y = 20 }
 		}
 		
 		sub_technologies = {
@@ -1063,7 +1103,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = -4 y = 24 }
+			position = { x = @light_tank  y = 24 }
 		}
 		
 		sub_technologies = {
@@ -2411,7 +2451,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 2 }
+			position = { x = @heavy_tank y = 2 }
 		}
 		
 		sub_technologies = {
@@ -2589,7 +2629,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 8 }
+			position = { x = @heavy_tank y = 8 }
 		}
 		
 		sub_technologies = {
@@ -2752,7 +2792,7 @@ technologies = {
 		
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 10 }
+			position = { x = @heavy_tank y = 10 }
 		}
 		
 		sub_technologies = {
@@ -2893,7 +2933,7 @@ technologies = {
 		start_year = 1948
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 14 }
+			position = { x = @heavy_tank y = 14 }
 		}
 		
 		sub_technologies = {
@@ -2987,7 +3027,7 @@ technologies = {
 		start_year = 1956
 		folder = {
 			name = armour_folder
-			position = { x = 6 y = 22 }
+			position = { x = @heavy_tank y = 22 }
 		}
 		
 		sub_technologies = {
@@ -3174,5 +3214,4 @@ technologies = {
 			armor
 		}
 	}
-	
 }
