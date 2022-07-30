@@ -25,3 +25,44 @@ country_event = {	#1955年ザール独立住民投票
 		news_event = {	id = news.8 days = 1	}
 	}
 }
+
+add_namespace = SAR_news
+news_event = {	#1955年ザール独立住民投票
+	id = SAR_news.0
+	title = SAR_news.0.t
+	desc = SAR_news.0.d
+	picture = GFX_news_event_SAR_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#フランスの影響力はどの位だ...？
+		name = SAR_news.0.0
+	}
+}
+news_event = {	#ザールはフランスの庇護下に留まる
+	id = SAR_news.1
+	title = SAR_news.1.t
+	desc = SAR_news.1.d
+	picture = GFX_news_event_SAR_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = SAR_news.1.0
+	}
+}
+news_event = {	#1955年ザール独立
+	id = SAR_news.2
+	title = SAR_news.2.t
+	desc = SAR_news.2.d
+	picture = GFX_news_event_SAR_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = SAR_news.2.0
+	}
+}
