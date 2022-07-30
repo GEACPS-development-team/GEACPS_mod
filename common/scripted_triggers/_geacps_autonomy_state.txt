@@ -50,4 +50,6 @@ release_country_decision_trigger = {
 		}
 	}
 	NOT = {	ROOT = {	original_tag = PREV	}	}
+	NOT = {	THIS = {	is_subject_of = ROOT	}	}
+	NOT = {	THIS = {	is_in_faction_with = ROOT	}	}
 }

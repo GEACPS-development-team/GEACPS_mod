@@ -49,7 +49,7 @@ release_country_state = {
 	}
 	else_if = {	#AFG
 		limit = {	original_tag = AFG	}
-		every_state = {
+		every_state = {	#南トルキスタン問題
 			limit = {
 				is_fully_controlled_by = ROOT
 				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
@@ -61,7 +61,7 @@ release_country_state = {
 			}
 			PREV = {	transfer_state = PREV	add_state_core = PREV	}
 		}
-		every_state = {
+		every_state = {	#バルチスタン問題
 			limit = {
 				is_fully_controlled_by = ROOT
 				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
@@ -78,7 +78,7 @@ release_country_state = {
 			}
 			PREV = {	transfer_state = PREV	add_state_core = PREV	}
 		}
-		every_state = {
+		every_state = {	#パキスタン問題
 			limit = {
 				is_fully_controlled_by = ROOT
 				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
@@ -89,20 +89,27 @@ release_country_state = {
 					check_variable = {	BAL_state_variable = 0	}
 				}
 				else_if = {
-					limit = {	ROOT = {	has_country_flag = AFG_not_KAS_region_flag	}	}
+					limit = {	ROOT = {	has_country_flag = AFG_all_PAK_region_flag	}	}
 					check_variable = {	PAK_state_variable = 1	}
 					check_variable = {	BAL_state_variable = 0	}
 					check_variable = {	KAS_state_variable = 0	}
 				}
+				else = {	always = no	}
+			}
+			PREV = {	transfer_state = PREV	add_state_core = PREV	}
+		}
+		every_state = {	#カシミール問題
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
+				if = {
+					limit = {	ROOT = {	has_country_flag = AFG_all_KAS_region_flag	}	}
+					check_variable = {	KAS_state_variable = 1	}
+				}
 				else_if = {
-					limit = {	ROOT = {	has_country_flag = AFG_all_PAK_region_flag	}	}
-					OR = {
-						AND = {
-							check_variable = {	PAK_state_variable = 1	}
-							check_variable = {	BAL_state_variable = 0	}
-						}
-						check_variable = {	KAS_state_variable = 1	}
-					}
+					limit = {	ROOT = {	has_country_flag = AFG_west_KAS_region_flag	}	}
+					check_variable = {	PAK_state_variable = 1	}
+					check_variable = {	KAS_state_variable = 1	}
 				}
 				else = {	always = no	}
 			}
@@ -197,7 +204,7 @@ release_country_cosmetic = {
 	}
 	else_if = {	#ADU
 		limit = {	original_tag = ADU	}
-		if = {	#アンダルシア
+		if = {	#アンダルシア共和国
 			limit = {	ROOT = {	has_country_flag = ADU_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = ADU_republic
@@ -205,7 +212,7 @@ release_country_cosmetic = {
 		else_if = {	#アンダルシア連合王国
 			limit = {	ROOT = {	has_country_flag = ADU_united_kingdom_flag	}	}
 			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = ADR_united_kingdom
+			set_cosmetic_tag = ADU_united_kingdom
 		}
 	}
 	else_if = {	#AFG
@@ -260,6 +267,11 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = AJA_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = AJA_republic
+		}
+		else_if = {	#バトゥミ共和国
+			limit = {	ROOT = {	has_country_flag = BATUMI_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = BATUMI_republic
 		}
 	}
 	else_if = {	#ALA
@@ -598,6 +610,11 @@ release_country_cosmetic = {
 			add_ideas = republic_federal_state
 			set_cosmetic_tag = AUS_federal_state
 		}
+		else_if = {	#オーストリア諸邦ならびに神聖なるハンガリーのイシュトヴァーン王冠の諸邦
+			limit = {	ROOT = {	has_country_flag = AUS-HUN_monarchy_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = AUS-HUN_monarchy
+		}
 	}
 	else_if = {	#AZR
 		limit = {	original_tag = AZR	}
@@ -809,6 +826,11 @@ release_country_cosmetic = {
 			#add_ideas = 
 			set_cosmetic_tag = BOS_condominium
 		}
+		else_if = {	#ボスニア及びヘルツェゴヴィナ
+			limit = {	ROOT = {	has_country_flag = BOSandHRZ_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = BOSandHRZ
+		}
 	}
 	else_if = {	#BOT
 		limit = {	original_tag = BOT	}
@@ -919,6 +941,16 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = BRM_union_socialist_republic_flag	is_socialist_government = yes	}	}
 			add_ideas = republic_federal_state
 			set_cosmetic_tag = BRM_union_socialist_republic
+		}
+		else_if = {	#ミャンマー連邦
+			limit = {	ROOT = {	has_country_flag = MYANMAR_union_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = MYANMAR_union
+		}
+		else_if = {	#ミャンマー連邦共和国
+			limit = {	ROOT = {	has_country_flag = MYANMAR_union_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = MYANMAR_union_republic
 		}
 	}
 	else_if = {	#BRN
@@ -1088,6 +1120,26 @@ release_country_cosmetic = {
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = CAM_peoples_republic
 		}
+		else_if = {	#カンプチア共和国
+			limit = {	ROOT = {	has_country_flag = KAMPUCHEA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = KAMPUCHEA_republic
+		}
+		else_if = {	#カンプチア人民共和国
+			limit = {	ROOT = {	has_country_flag = KAMPUCHEA_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = KAMPUCHEA_peoples_republic
+		}
+		else_if = {	#民主カンプチア
+			limit = {	ROOT = {	has_country_flag = KAMPUCHEA_democratic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = KAMPUCHEA_democratic
+		}
+		else_if = {	#クメール共和国
+			limit = {	ROOT = {	has_country_flag = KHMER_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = KHMER_republic
+		}
 	}
 	else_if = {	#CAR
 		limit = {	original_tag = CAR	}
@@ -1167,6 +1219,11 @@ release_country_cosmetic = {
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = CHE_republic
 		}
+		else_if = {	#チェチェン・イチケリア共和国
+			limit = {	ROOT = {	has_country_flag = CHECHENICHKERIA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CHECHENICHKERIA_republic
+		}
 	}
 	else_if = {	#CHI
 		limit = {	original_tag = CHI	}
@@ -1199,6 +1256,11 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = CHI_soviet_democratic_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = CHI_soviet_democratic_republic
+		}
+		else_if = {	#大清国
+			limit = {	ROOT = {	has_country_flag = GREATQING_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = GREATQING_state
 		}
 	}
 	else_if = {	#CHL
@@ -1459,6 +1521,11 @@ release_country_cosmetic = {
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = CRL_republic
 		}
+		else_if = {	#クールラント及びゼムガレン公国
+			limit = {	ROOT = {	has_country_flag = COURLANDandSEMIGALLIA_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = COURLANDandSEMIGALLIA_duchy
+		}
 	}
 	else_if = {	#CRO
 		limit = {	original_tag = CRO	}
@@ -1491,6 +1558,26 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = CRO_federal_state_flag	}	}
 			add_ideas = republic_federal_state
 			set_cosmetic_tag = CRO_federal_state
+		}
+		else_if = {	#クロアチア、スラボニア及びダルマチア王国
+			limit = {	ROOT = {	has_country_flag = CROandSLAandDAL_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = CROandSLAandDAL_kingdom
+		}
+		else_if = {	#クロアチア、スラボニア及びダルマチア共和国
+			limit = {	ROOT = {	has_country_flag = CROandSLAandDAL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CROandSLAandDAL_republic
+		}
+		else_if = {	#クロアチア及びスラボニア王国
+			limit = {	ROOT = {	has_country_flag = CROandSLA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = CROandSLA_kingdom
+		}
+		else_if = {	#クロアチア及びスラボニア共和国
+			limit = {	ROOT = {	has_country_flag = CROandSLA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CROandSLA_republic
 		}
 	}
 	else_if = {	#CSC
@@ -1580,6 +1667,71 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = CZE_socialist_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = CZE_socialist_republic
+		}
+		else_if = {	#ボヘミア王国
+			limit = {	ROOT = {	has_country_flag = BOHEMIA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = BOHEMIA_kingdom
+		}
+		else_if = {	#ボヘミア共和国
+			limit = {	ROOT = {	has_country_flag = BOHEMIA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = BOHEMIA_republic
+		}
+		else_if = {	#ボヘミア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = BOHEMIA_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = BOHEMIA_socialist_republic
+		}
+		else_if = {	#ボヘミア及びモラヴィア王国
+			limit = {	ROOT = {	has_country_flag = BOHEMIAandMORAVIA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = BOHEMIAandMORAVIA_kingdom
+		}
+		else_if = {	#ボヘミア及びモラヴィア連合王国
+			limit = {	ROOT = {	has_country_flag = BOHEMIAandMORAVIA_united_kingdom_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = BOHEMIAandMORAVIA_united_kingdom
+		}
+		else_if = {	#ボヘミア及びモラヴィア共和国
+			limit = {	ROOT = {	has_country_flag = BOHEMIAandMORAVIA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = BOHEMIAandMORAVIA_republic
+		}
+		else_if = {	#ボヘミア及びモラヴィア
+			limit = {	ROOT = {	has_country_flag = BOHEMIAandMORAVIA_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = BOHEMIAandMORAVIA
+		}
+		else_if = {	#チェコスロバキア共和国
+			limit = {	ROOT = {	has_country_flag = CZECHSLOVAKIA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CZECHSLOVAKIA_republic
+		}
+		else_if = {	#チェコスロバキア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = CZECHSLOVAKIA_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CZECHSLOVAKIA_socialist_republic
+		}
+		else_if = {	#チェコ＝スロバキア共和国
+			limit = {	ROOT = {	has_country_flag = CZE-SLO_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CZE-SLO_republic
+		}
+		else_if = {	#チェコ＝スロバキア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = CZE-SLO_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CZE-SLO_socialist_republic
+		}
+		else_if = {	#チェコ及びスロバキア連邦共和国
+			limit = {	ROOT = {	has_country_flag = CZEandSLO_federative_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = CZEandSLO_federative_republic
+		}
+		else_if = {	#チェコ及びスロバキア社会主義連邦共和国
+			limit = {	ROOT = {	has_country_flag = CZEandSLO_socialist_federative_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = CZEandSLO_socialist_federative_republic
 		}
 	}
 	else_if = {	#DAG
@@ -1913,6 +2065,11 @@ release_country_cosmetic = {
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = EZO_republic
 		}
+		else_if = {	#アイヌモシリ共和国
+			limit = {	ROOT = {	has_country_flag = AINUMOSIR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = AINUMOSIR_republic
+		}
 	}
 	else_if = {	#FEA
 		limit = {	original_tag = FEA	}
@@ -1920,6 +2077,21 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = FEA_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = FEA_republic
+		}
+		else_if = {	#緑ウクライナ共和国
+			limit = {	ROOT = {	has_country_flag = GREENUKRAINE_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = GREENUKRAINE_republic
+		}
+		else_if = {	#トランスバイカル共和国
+			limit = {	ROOT = {	has_country_flag = TRANSBAIKAL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TRANSBAIKAL_republic
+		}
+		else_if = {	#トランスバイカル・コサック共和国
+			limit = {	ROOT = {	has_country_flag = TRANSBAIKAL_cossack_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TRANSBAIKAL_cossack_republic
 		}
 	}
 	else_if = {	#FEZ
@@ -1977,6 +2149,11 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = FIU_free_state_flag	}	}
 			add_ideas = republic_city_state
 			set_cosmetic_tag = FIU_free_state
+		}
+		else_if = {	#カルナーロ・イタリア執政府
+			limit = {	ROOT = {	has_country_flag = CARNARO_ITA_regency_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CARNARO_ITA_regency
 		}
 	}
 	else_if = {	#FKL
@@ -2157,6 +2334,11 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = GEO_democratic_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = GEO_democratic_republic
+		}
+		else_if = {	#ジョージア
+			limit = {	ROOT = {	has_country_flag = GEORGIA_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = GEORGIA
 		}
 	}
 	else_if = {	#GER
@@ -2446,6 +2628,11 @@ release_country_cosmetic = {
 			add_ideas = monarchy_unitary_state
 			set_cosmetic_tag = HAS_kingdom
 		}
+		else_if = {	#ハシミテアラビア王国
+			limit = {	ROOT = {	has_country_flag = HASHEMITEARABIA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = HASHEMITEARABIA_kingdom
+		}
 	}
 	else_if = {	#HAT
 		limit = {	original_tag = HAT	}
@@ -2626,6 +2813,11 @@ release_country_cosmetic = {
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = HOL_republic
 		}
+		else_if = {	#バタビア共和国
+			limit = {	ROOT = {	has_country_flag = BATAVIA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = BATAVIA_republic
+		}
 	}
 	else_if = {	#HON
 		limit = {	original_tag = HON	}
@@ -2794,6 +2986,11 @@ release_country_cosmetic = {
 			add_ideas = republic_federal_state
 			set_cosmetic_tag = IND_union
 		}
+		else_if = {	#ムガル帝国
+			limit = {	ROOT = {	has_country_flag = MUGHAL_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MUGHAL_empire
+		}
 	}
 	else_if = {	#ING
 		limit = {	original_tag = ING	}
@@ -2814,6 +3011,11 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = INS_united_states_flag	}	}
 			add_ideas = republic_federal_state
 			set_cosmetic_tag = INS_united_states
+		}
+		else_if = {	#マジャパヒト帝国
+			limit = {	ROOT = {	has_country_flag = MAJAPAHIT_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MAJAPAHIT_empire
 		}
 	}
 	else_if = {	#IOW
@@ -2948,6 +3150,11 @@ release_country_cosmetic = {
 			add_ideas = monarchy_unitary_state
 			set_cosmetic_tag = JAP_state
 		}
+		else_if = {	#大日本帝国
+			limit = {	ROOT = {	has_country_flag = GREATJAPAN_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = GREATJAPAN_empire
+		}
 	}
 	else_if = {	#JER
 		limit = {	original_tag = JER	}
@@ -3034,6 +3241,16 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = JOR_hashemite_kingdom_flag	}	}
 			add_ideas = monarchy_unitary_state
 			set_cosmetic_tag = JOR_hashemite_kingdom
+		}
+		else_if = {	#トランスヨルダン・ハシミテ王国
+			limit = {	ROOT = {	has_country_flag = TRANSJORDAN_hashemite_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TRANSJORDAN_hashemite_kingdom
+		}
+		else_if = {	#トランスヨルダン首長国
+			limit = {	ROOT = {	has_country_flag = TRANSJORDAN_emirate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TRANSJORDAN_emirate
 		}
 	}
 	else_if = {	#KAC
@@ -3195,6 +3412,36 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = KOR_minguo_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = KOR_minguo
+		}
+		else_if = {	#朝鮮王国
+			limit = {	ROOT = {	has_country_flag = CHOSON_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = CHOSON_kingdom
+		}
+		else_if = {	#朝鮮共和国
+			limit = {	ROOT = {	has_country_flag = CHOSON_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CHOSON_republic
+		}
+		else_if = {	#朝鮮人民共和国
+			limit = {	ROOT = {	has_country_flag = CHOSON_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CHOSON_peoples_republic
+		}
+		else_if = {	#朝鮮民主主義人民共和国
+			limit = {	ROOT = {	has_country_flag = CHOSON_democratic_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CHOSON_democratic_peoples_republic
+		}
+		else_if = {	#大韓帝国
+			limit = {	ROOT = {	has_country_flag = GREATKOREA_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = GREATKOREA_empire
+		}
+		else_if = {	#大韓民国
+			limit = {	ROOT = {	has_country_flag = GREATKOREA_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = GREATKOREA_minguo
 		}
 	}
 	else_if = {	#KOS
@@ -3382,6 +3629,3253 @@ release_country_cosmetic = {
 			set_cosmetic_tag = LEB_republic
 		}
 	}
+	else_if = {	#LEW
+		limit = {	original_tag = LEW	}
+		if = {	#リーワード連邦
+			limit = {	ROOT = {	has_country_flag = LEW_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = LEW_federation
+		}
+	}
+	else_if = {	#LIB
+		limit = {	original_tag = LIB	}
+		if = {	#リベリア共和国
+			limit = {	ROOT = {	has_country_flag = LIB_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LIB_republic
+		}
+	}
+	else_if = {	#LIE
+		limit = {	original_tag = LIE	}
+		if = {	#リヒテンシュタイン侯国
+			limit = {	ROOT = {	has_country_flag = LIE_principality_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LIE_principality
+		}
+	}
+	else_if = {	#LIT
+		limit = {	original_tag = LIT	}
+		if = {	#リトアニア王国
+			limit = {	ROOT = {	has_country_flag = LIT_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LIT_kingdom
+		}
+		else_if = {	#リトアニア大公国
+			limit = {	ROOT = {	has_country_flag = LIT_grand_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LIT_grand_duchy
+		}
+		else_if = {	#リトアニア共和国
+			limit = {	ROOT = {	has_country_flag = LIT_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LIT_republic
+		}
+	}
+	else_if = {	#LIV
+		limit = {	original_tag = LIV	}
+		if = {	#リヴォニア王国
+			limit = {	ROOT = {	has_country_flag = LIV_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LIV_kingdom
+		}
+		else_if = {	#リヴォニア共和国
+			limit = {	ROOT = {	has_country_flag = LIV_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LIV_republic
+		}
+	}
+	else_if = {	#LMK
+		limit = {	original_tag = LMK	}
+		if = {	#レムコ共和国
+			limit = {	ROOT = {	has_country_flag = LMK_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LMK_republic
+		}
+	}
+	else_if = {	#LMN
+		limit = {	original_tag = LMN	}
+		if = {	#ラ・マンチャ共和国
+			limit = {	ROOT = {	has_country_flag = LMN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LMN_republic
+		}
+	}
+	else_if = {	#LOD
+		limit = {	original_tag = LOD	}
+		if = {	#ロドメリア王国
+			limit = {	ROOT = {	has_country_flag = LOD_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LOD_kingdom
+		}
+	}
+	else_if = {	#LON
+		limit = {	original_tag = LON	}
+		if = {	#レオン共和国
+			limit = {	ROOT = {	has_country_flag = LON_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LON_republic
+		}
+	}
+	else_if = {	#LRJ
+		limit = {	original_tag = LRJ	}
+		if = {	#ラ・リオハ共和国
+			limit = {	ROOT = {	has_country_flag = LRJ_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LRJ_republic
+		}
+	}
+	else_if = {	#LSO
+		limit = {	original_tag = LSO	}
+		if = {	#レソト王国
+			limit = {	ROOT = {	has_country_flag = LSO_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LSO_kingdom
+		}
+	}
+	else_if = {	#LUI
+		limit = {	original_tag = LUI	}
+		if = {	#ルイジアナ共和国
+			limit = {	ROOT = {	has_country_flag = LUI_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = LUI_republic
+		}
+	}
+	else_if = {	#LUX
+		limit = {	original_tag = LUX	}
+		if = {	#ルクセンブルク大公国
+			limit = {	ROOT = {	has_country_flag = LUX_grand_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LUX_grand_duchy
+		}
+		else_if = {	#ルクセンブルク公国
+			limit = {	ROOT = {	has_country_flag = LUX_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = LUX_duchy
+		}
+	}
+	else_if = {	#MAC
+		limit = {	original_tag = MAC	}
+		if = {	#マケドニア共和国
+			limit = {	ROOT = {	has_country_flag = MAC_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MAC_republic
+		}
+		else_if = {	#マケドニア人民共和国
+			limit = {	ROOT = {	has_country_flag = MAC_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MAC_peoples_republic
+		}
+		else_if = {	#マケドニア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = MAC_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MAC_socialist_republic
+		}
+		else_if = {	#マケドニア民主連邦
+			limit = {	ROOT = {	has_country_flag = MAC_democratic_federal_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = MAC_democratic_federal
+		}
+	}
+	else_if = {	#MAD
+		limit = {	original_tag = MAD	}
+		if = {	#マダガスカル王国
+			limit = {	ROOT = {	has_country_flag = MAD_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MAD_kingdom
+		}
+		else_if = {	#マダガスカル共和国
+			limit = {	ROOT = {	has_country_flag = MAD_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MAD_republic
+		}
+	}
+	else_if = {	#MAL
+		limit = {	original_tag = MAL	}
+		if = {	#マレー連邦
+			limit = {	ROOT = {	has_country_flag = MAL_federation_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = MAL_federation
+		}
+		else_if = {	#マレー連邦
+			limit = {	ROOT = {	has_country_flag = MAL_federated_states_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = MAL_federated_states
+		}
+		else_if = {	#マレー連合
+			limit = {	ROOT = {	has_country_flag = MAL_union_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = MAL_union
+		}
+		else_if = {	#マレーシア
+			limit = {	ROOT = {	has_country_flag = MALAYSIA_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = MALAYSIA
+		}
+	}
+	else_if = {	#MAN
+		limit = {	original_tag = MAN	}
+		if = {	#満州帝国
+			limit = {	ROOT = {	has_country_flag = MAN_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MAN_empire
+		}
+		else_if = {	#満州国
+			limit = {	ROOT = {	has_country_flag = MAN_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MAN_state
+		}
+		else_if = {	#満洲軍閥
+			limit = {	ROOT = {	has_country_flag = MAN_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = MAN_warlord
+		}
+		else_if = {	#満州ソビエト政府
+			limit = {	ROOT = {	has_country_flag = MAN_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MAN_soviet_government
+		}
+		else_if = {	#大満州帝国
+			limit = {	ROOT = {	has_country_flag = GREATMANCHURIA_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = GREATMANCHURIA_empire
+		}
+		else_if = {	#黄ロシア共和国
+			limit = {	ROOT = {	has_country_flag = YELLOWRUSSIA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = YELLOWRUSSIA_republic
+		}
+	}
+	else_if = {	#MAS
+		limit = {	original_tag = MAS	}
+		if = {	#マサチューセッツ共和国
+			limit = {	ROOT = {	has_country_flag = MAS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MAS_republic
+		}
+	}
+	else_if = {	#MCA
+		limit = {	original_tag = MCA	}
+		if = {	#澳門軍閥
+			limit = {	ROOT = {	has_country_flag = MCA_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = MCA_warlord
+		}
+		else_if = {	#自由都市澳門
+			limit = {	ROOT = {	has_country_flag = MCA_free_city_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = MCA_free_city
+		}
+		else_if = {	#澳門ソビエト政府
+			limit = {	ROOT = {	has_country_flag = MCA_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MCA_soviet_government
+		}
+	}
+	else_if = {	#MCG
+		limit = {	original_tag = MCG	}
+		if = {	#中部コンゴ共和国
+			limit = {	ROOT = {	has_country_flag = MCG_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MCG_republic
+		}
+		else_if = {	#中部コンゴ人民共和国
+			limit = {	ROOT = {	has_country_flag = MCG_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MCG_peoples_republic
+		}
+	}
+	else_if = {	#MCH
+		limit = {	original_tag = MCH	}
+		if = {	#ミシガン共和国
+			limit = {	ROOT = {	has_country_flag = MCH_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MCH_republic
+		}
+	}
+	else_if = {	#MCO
+		limit = {	original_tag = MCO	}
+		if = {	#モナコ公国
+			limit = {	ROOT = {	has_country_flag = MCO_principality_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MCO_principality
+		}
+	}
+	else_if = {	#MDR
+		limit = {	original_tag = MDR	}
+		if = {	#マドリード共和国
+			limit = {	ROOT = {	has_country_flag = MDR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MDR_republic
+		}
+	}
+	else_if = {	#MEK
+		limit = {	original_tag = MEK	}
+		if = {	#メクレンブルク大公国
+			limit = {	ROOT = {	has_country_flag = MEK_grand_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MEK_grand_duchy
+		}
+		else_if = {	#メクレンブルク共和国
+			limit = {	ROOT = {	has_country_flag = MEK_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MEK_republic
+		}
+	}
+	else_if = {	#MEL
+		limit = {	original_tag = MEL	}
+		if = {	#マリ・エル共和国
+			limit = {	ROOT = {	has_country_flag = MEL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MEL_republic
+		}
+	}
+	else_if = {	#MEN
+		limit = {	original_tag = MEN	}
+		if = {	#蒙古自治邦
+			limit = {	ROOT = {	has_country_flag = MEN_autonomous_federation_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MEN_autonomous_federation
+		}
+		else_if = {	#蒙古聯盟自治政府
+			limit = {	ROOT = {	has_country_flag = MEN_united_autonomous_government_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MEN_united_autonomous_government
+		}
+		else_if = {	#蒙古軍政府
+			limit = {	ROOT = {	has_country_flag = MEN_military_government_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = MEN_military_government
+		}
+		else_if = {	#蒙古軍閥
+			limit = {	ROOT = {	has_country_flag = MEN_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = MEN_warlord
+		}
+		else_if = {	#蒙古ソビエト政府
+			limit = {	ROOT = {	has_country_flag = MEN_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MEN_soviet_government
+		}
+	}
+	else_if = {	#MEX
+		limit = {	original_tag = MEX	}
+		if = {	#メキシコ帝国
+			limit = {	ROOT = {	has_country_flag = MEX_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MEX_empire
+		}
+		else_if = {	#メキシコ帝国
+			limit = {	ROOT = {	has_country_flag = MEX_empire_habsburg_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MEX_empire_habsburg
+		}
+		else_if = {	#メキシコ共和国
+			limit = {	ROOT = {	has_country_flag = MEX_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = MEX_republic
+		}
+		else_if = {	#メキシコ合衆国
+			limit = {	ROOT = {	has_country_flag = MEX_united_states_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = MEX_united_states
+		}
+	}
+	else_if = {	#MHL
+		limit = {	original_tag = MHL	}
+		if = {	#マーシャル共和国
+			limit = {	ROOT = {	has_country_flag = MHL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MHL_republic
+		}
+	}
+	else_if = {	#MIS
+		limit = {	original_tag = MIS	}
+		if = {	#ミシシッピ共和国
+			limit = {	ROOT = {	has_country_flag = MIS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MIS_republic
+		}
+	}
+	else_if = {	#MLD
+		limit = {	original_tag = MLD	}
+		if = {	#モルディブ・スルタン国
+			limit = {	ROOT = {	has_country_flag = MLD_sultanate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MLD_sultanate
+		}
+		else_if = {	#モルディブ共和国
+			limit = {	ROOT = {	has_country_flag = MLD_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MLD_republic
+		}
+	}
+	else_if = {	#MLI
+		limit = {	original_tag = MLI	}
+		if = {	#マリ共和国
+			limit = {	ROOT = {	has_country_flag = MLI_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MLI_republic
+		}
+		else_if = {	#マリ連邦
+			limit = {	ROOT = {	has_country_flag = MLI_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = MLI_federation
+		}
+	}
+	else_if = {	#MLL
+		limit = {	original_tag = MLL	}
+		if = {	#メリリヤ共和国
+			limit = {	ROOT = {	has_country_flag = MLL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MLL_republic
+		}
+	}
+	else_if = {	#MLT
+		limit = {	original_tag = MLT	}
+		if = {	#マルタ共和国
+			limit = {	ROOT = {	has_country_flag = MLT_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MLT_republic
+		}
+		else_if = {	#マルタ国
+			limit = {	ROOT = {	has_country_flag = MLT_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MLT_state
+		}
+	}
+	else_if = {	#MLW
+		limit = {	original_tag = MLW	}
+		if = {	#マラウィ共和国
+			limit = {	ROOT = {	has_country_flag = MLW_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MLW_republic
+		}
+	}
+	else_if = {	#MNE
+		limit = {	original_tag = MNE	}
+		if = {	#メイン共和国
+			limit = {	ROOT = {	has_country_flag = MNE_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MNE_republic
+		}
+	}
+	else_if = {	#MNN
+		limit = {	original_tag = MNN	}
+		if = {	#マン共和国
+			limit = {	ROOT = {	has_country_flag = MNN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MNN_republic
+		}
+	}
+	else_if = {	#MNS
+		limit = {	original_tag = MNS	}
+		if = {	#ミネソタ共和国
+			limit = {	ROOT = {	has_country_flag = MNS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MNS_republic
+		}
+	}
+	else_if = {	#MNT
+		limit = {	original_tag = MNT	}
+		if = {	#モンテネグロ王国
+			limit = {	ROOT = {	has_country_flag = MNT_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MNT_kingdom
+		}
+		else_if = {	#モンテネグロ公国
+			limit = {	ROOT = {	has_country_flag = MNT_principality_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MNT_principality
+		}
+		else_if = {	#モンテネグロ独立国
+			limit = {	ROOT = {	has_country_flag = MNT_independent_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MNT_independent_state
+		}
+		else_if = {	#モンテネグロ共和国
+			limit = {	ROOT = {	has_country_flag = MNT_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MNT_republic
+		}
+		else_if = {	#モンテネグロ人民共和国
+			limit = {	ROOT = {	has_country_flag = MNT_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MNT_peoples_republic
+		}
+		else_if = {	#モンテネグロ社会主義共和国
+			limit = {	ROOT = {	has_country_flag = MNT_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MNT_socialist_republic
+		}
+	}
+	else_if = {	#MOL
+		limit = {	original_tag = MOL	}
+		if = {	#モルダヴィア公国
+			limit = {	ROOT = {	has_country_flag = MOL_principality_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MOL_principality
+		}
+		else_if = {	#モルダヴィア共和国
+			limit = {	ROOT = {	has_country_flag = MOL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MOL_republic
+		}
+		else_if = {	#モルダヴィア民主共和国
+			limit = {	ROOT = {	has_country_flag = MOL_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MOL_democratic_republic
+		}
+	}
+	else_if = {	#MON
+		limit = {	original_tag = MON	}
+		if = {	#モンゴル国
+			limit = {	ROOT = {	has_country_flag = MON_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MON_state
+		}
+		else_if = {	#モンゴル共和国
+			limit = {	ROOT = {	has_country_flag = MON_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MON_republic
+		}
+		else_if = {	#モンゴル人民共和国
+			limit = {	ROOT = {	has_country_flag = MON_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MON_peoples_republic
+		}
+		else_if = {	#大モンゴル国
+			limit = {	ROOT = {	has_country_flag = GREATMONGOL_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = GREATMONGOL_state
+		}
+	}
+	else_if = {	#MOR
+		limit = {	original_tag = MOR	}
+		if = {	#モロッコ王国
+			limit = {	ROOT = {	has_country_flag = MOR_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MOR_kingdom
+		}
+		else_if = {	#モロッコ共和国
+			limit = {	ROOT = {	has_country_flag = MOR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MOR_republic
+		}
+	}
+	else_if = {	#MRL
+		limit = {	original_tag = MRL	}
+		if = {	#メリーランド共和国
+			limit = {	ROOT = {	has_country_flag = MRL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MRL_republic
+		}
+	}
+	else_if = {	#MRT
+		limit = {	original_tag = MRT	}
+		if = {	#モーリタニア共和国
+			limit = {	ROOT = {	has_country_flag = MRT_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MRT_republic
+		}
+		else_if = {	#モーリタニア・イスラム共和国
+			limit = {	ROOT = {	has_country_flag = MRT_islamic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MRT_islamic_republic
+		}
+	}
+	else_if = {	#MRV
+		limit = {	original_tag = MRV	}
+		if = {	#モラヴィア王国
+			limit = {	ROOT = {	has_country_flag = MRV_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MRV_kingdom
+		}
+		else_if = {	#モラヴィア共和国
+			limit = {	ROOT = {	has_country_flag = MRV_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MRV_republic
+		}
+	}
+	else_if = {	#MSR
+		limit = {	original_tag = MSR	}
+		if = {	#モントセラト共和国
+			limit = {	ROOT = {	has_country_flag = MSR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MSR_republic
+		}
+	}
+	else_if = {	#MSS
+		limit = {	original_tag = MSS	}
+		if = {	#ミズーリ共和国
+			limit = {	ROOT = {	has_country_flag = MSS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MSS_republic
+		}
+	}
+	else_if = {	#MTA
+		limit = {	original_tag = MTA	}
+		if = {	#モンタナ共和国
+			limit = {	ROOT = {	has_country_flag = MTA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MTA_republic
+		}
+	}
+	else_if = {	#MTQ
+		limit = {	original_tag = MTQ	}
+		if = {	#マルティニーク共和国
+			limit = {	ROOT = {	has_country_flag = MTQ_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MTQ_republic
+		}
+	}
+	else_if = {	#MUR
+		limit = {	original_tag = MUR	}
+		if = {	#ムルシア王国
+			limit = {	ROOT = {	has_country_flag = MUR_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MUR_kingdom
+		}
+		else_if = {	#ムルシア共和国
+			limit = {	ROOT = {	has_country_flag = MUR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MUR_republic
+		}
+	}
+	else_if = {	#MUS
+		limit = {	original_tag = MUS	}
+		if = {	#モーリシャス共和国
+			limit = {	ROOT = {	has_country_flag = MUS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MUS_republic
+		}
+	}
+	else_if = {	#MWN
+		limit = {	original_tag = MWN	}
+		if = {	#モン共和国
+			limit = {	ROOT = {	has_country_flag = MWN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MWN_republic
+		}
+	}
+	else_if = {	#MYS
+		limit = {	original_tag = MYS	}
+		if = {	#マイソール王国
+			limit = {	ROOT = {	has_country_flag = MYS_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MYS_kingdom
+		}
+		else_if = {	#マイソール共和国
+			limit = {	ROOT = {	has_country_flag = MYS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MYS_republic
+		}
+	}
+	else_if = {	#MYT
+		limit = {	original_tag = MYT	}
+		if = {	#マヨット共和国
+			limit = {	ROOT = {	has_country_flag = MYT_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MYT_republic
+		}
+	}
+	else_if = {	#MZB
+		limit = {	original_tag = MZB	}
+		if = {	#モザンビーク共和国
+			limit = {	ROOT = {	has_country_flag = MZB_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MZB_republic
+		}
+		else_if = {	#モザンビーク人民共和国
+			limit = {	ROOT = {	has_country_flag = MZB_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MZB_peoples_republic
+		}
+	}
+	else_if = {	#NAC
+		limit = {	original_tag = NAC	}
+		if = {	#北アメリカ連合
+			limit = {	ROOT = {	has_country_flag = NAC_republic_flag	}	}
+			#add_ideas = 
+			set_cosmetic_tag = NAC_union
+		}
+	}
+	else_if = {	#NAG
+		limit = {	original_tag = NAG	}
+		if = {	#ナガ共和国
+			limit = {	ROOT = {	has_country_flag = NAG_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NAG_republic
+		}
+	}
+	else_if = {	#NAN
+		limit = {	original_tag = NAN	}
+		if = {	#南京軍閥
+			limit = {	ROOT = {	has_country_flag = NAN_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = NAN_warlord
+		}
+		else_if = {	#自由都市南京
+			limit = {	ROOT = {	has_country_flag = NAN_free_city_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = NAN_free_city
+		}
+		else_if = {	#南京ソビエト政府
+			limit = {	ROOT = {	has_country_flag = NAN_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NAN_soviet_government
+		}
+	}
+	else_if = {	#NAV
+		limit = {	original_tag = NAV	}
+		if = {	#ナバラ王国
+			limit = {	ROOT = {	has_country_flag = NAV_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = NAV_kingdom
+		}
+	}
+	else_if = {	#NCC
+		limit = {	original_tag = NCC	}
+		if = {	#北コーカサス首長国
+			limit = {	ROOT = {	has_country_flag = NCC_emirate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = NCC_emirate
+		}
+		else_if = {	#北コーカサス共和国
+			limit = {	ROOT = {	has_country_flag = NCC_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NCC_republic
+		}
+		else_if = {	#山岳共和国
+			limit = {	ROOT = {	has_country_flag = MOUNTAIN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = MOUNTAIN_republic
+		}
+		else_if = {	#チェチェン＝イングーシ共和国
+			limit = {	ROOT = {	has_country_flag = CHE-ING_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = CHE-ING_republic
+		}
+	}
+	else_if = {	#NCL
+		limit = {	original_tag = NCL	}
+		if = {	#ニューカレドニア共和国
+			limit = {	ROOT = {	has_country_flag = NCL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NCL_republic
+		}
+	}
+	else_if = {	#NCR
+		limit = {	original_tag = NCR	}
+		if = {	#ノースカロライナ共和国
+			limit = {	ROOT = {	has_country_flag = NCR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NCR_republic
+		}
+	}
+	else_if = {	#NDA
+		limit = {	original_tag = NDA	}
+		if = {	#ノースダコタ共和国
+			limit = {	ROOT = {	has_country_flag = NDA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NDA_republic
+		}
+	}
+	else_if = {	#NEB
+		limit = {	original_tag = NEB	}
+		if = {	#ネブラスカ共和国
+			limit = {	ROOT = {	has_country_flag = NEB_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NEB_republic
+		}
+	}
+	else_if = {	#NEL
+		limit = {	original_tag = NEL	}
+		if = {	#ニューイングランド共和国
+			limit = {	ROOT = {	has_country_flag = NEL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NEL_republic
+		}
+	}
+	else_if = {	#NEN
+		limit = {	original_tag = NEN	}
+		if = {	#ネネツ共和国
+			limit = {	ROOT = {	has_country_flag = NEN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NEN_republic
+		}
+	}
+	else_if = {	#NEP
+		limit = {	original_tag = NEP	}
+		if = {	#ネパール王国
+			limit = {	ROOT = {	has_country_flag = NEP_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = NEP_kingdom
+		}
+		else_if = {	#ネパール連邦民主共和国
+			limit = {	ROOT = {	has_country_flag = NEP_federal_democratic_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = NEP_federal_democratic_republic
+		}
+	}
+	else_if = {	#NEV
+		limit = {	original_tag = NEV	}
+		if = {	#ネバダ共和国
+			limit = {	ROOT = {	has_country_flag = NEV_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NEV_republic
+		}
+	}
+	else_if = {	#NFK
+		limit = {	original_tag = NFK	}
+		if = {	#ノーフォーク共和国
+			limit = {	ROOT = {	has_country_flag = NFK_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NFK_republic
+		}
+	}
+	else_if = {	#NFL
+		limit = {	original_tag = NFL	}
+		if = {	#ニューファンドランド共和国
+			limit = {	ROOT = {	has_country_flag = NFL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NFL_republic
+		}
+	}
+	else_if = {	#NGA
+		limit = {	original_tag = NGA	}
+		if = {	#ナイジェリア共和国
+			limit = {	ROOT = {	has_country_flag = NGA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NGA_republic
+		}
+		else_if = {	#ナイジェリア連邦共和国
+			limit = {	ROOT = {	has_country_flag = NGA_federation_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = NGA_federation_republic
+		}
+		else_if = {	#ナイジェリア連邦
+			limit = {	ROOT = {	has_country_flag = NGA_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = NGA_federation
+		}
+	}
+	else_if = {	#NGE
+		limit = {	original_tag = NGE	}
+		if = {	#ニジェール共和国
+			limit = {	ROOT = {	has_country_flag = NGE_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NGE_republic
+		}
+	}
+	else_if = {	#NGR
+		limit = {	original_tag = NGR	}
+		if = {	#北ドイツ連邦
+			limit = {	ROOT = {	has_country_flag = NGR_confederation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = NGR_confederation
+		}
+	}
+	else_if = {	#NGU
+		limit = {	original_tag = NGU	}
+		if = {	#ニューギニア共和国
+			limit = {	ROOT = {	has_country_flag = NGU_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NGU_republic
+		}
+	}
+	else_if = {	#NHN
+		limit = {	original_tag = NHN	}
+		if = {	#ニューハンプシャー共和国
+			limit = {	ROOT = {	has_country_flag = NHN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NHN_republic
+		}
+	}
+	else_if = {	#NIC
+		limit = {	original_tag = NIC	}
+		if = {	#ニカラグア共和国
+			limit = {	ROOT = {	has_country_flag = NIC_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NIC_republic
+		}
+	}
+	else_if = {	#NIG
+		limit = {	original_tag = NIG	}
+		if = {	#寧夏軍閥
+			limit = {	ROOT = {	has_country_flag = NIG_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = NIG_warlord
+		}
+		else_if = {	#寧夏馬家軍閥
+			limit = {	ROOT = {	has_country_flag = NIG_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = NIG_warlord
+		}
+		else_if = {	#寧夏民国
+			limit = {	ROOT = {	has_country_flag = NIG_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NIG_minguo
+		}
+		else_if = {	#寧夏共和国
+			limit = {	ROOT = {	has_country_flag = NIG_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NIG_republic
+		}
+		else_if = {	#寧夏ソビエト政府
+			limit = {	ROOT = {	has_country_flag = NIG_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NIG_soviet_government
+		}
+	}
+	else_if = {	#NIR
+		limit = {	original_tag = NIR	}
+		if = {	#北アイルランド公国
+			limit = {	ROOT = {	has_country_flag = NIR_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = NIR_duchy
+		}
+	}
+	else_if = {	#NIU
+		limit = {	original_tag = NIU	}
+		if = {	#ニウエ共和国
+			limit = {	ROOT = {	has_country_flag = NIU_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NIU_republic
+		}
+	}
+	else_if = {	#NJE
+		limit = {	original_tag = NJE	}
+		if = {	#ニュージャージー共和国
+			limit = {	ROOT = {	has_country_flag = NJE_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NJE_republic
+		}
+	}
+	else_if = {	#NMB
+		limit = {	original_tag = NMB	}
+		if = {	#ナミビア共和国
+			limit = {	ROOT = {	has_country_flag = NMB_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NMB_republic
+		}
+	}
+	else_if = {	#NMR
+		limit = {	original_tag = NMR	}
+		if = {	#ナウル共和国
+			limit = {	ROOT = {	has_country_flag = NMR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NMR_republic
+		}
+	}
+	else_if = {	#NMX
+		limit = {	original_tag = NMX	}
+		if = {	#ニューメキシコ共和国
+			limit = {	ROOT = {	has_country_flag = NMX_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NMX_republic
+		}
+	}
+	else_if = {	#NOA
+		limit = {	original_tag = NOA	}
+		if = {	#北オセチア共和国
+			limit = {	ROOT = {	has_country_flag = NOA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = NOA_republic
+		}
+	}
+	else_if = {	#NOR
+		limit = {	original_tag = NOR	}
+		if = {	#ノルウェー王国
+			limit = {	ROOT = {	has_country_flag = NOR_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = NOR_kingdom
+		}
+		else_if = {	#ノルウェー共和国
+			limit = {	ROOT = {	has_country_flag = NOR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NOR_republic
+		}
+	}
+	else_if = {	#NYR
+		limit = {	original_tag = NYR	}
+		if = {	#ニューヨーク共和国
+			limit = {	ROOT = {	has_country_flag = NYR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = NYR_republic
+		}
+	}
+	else_if = {	#NZL
+		limit = {	original_tag = NZL	}
+		if = {	#ニュージーランド王国
+			limit = {	ROOT = {	has_country_flag = NZL_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = NZL_kingdom
+		}
+		else_if = {	#ニュージーランド部族連合
+			limit = {	ROOT = {	has_country_flag = NZL_united_tribes_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = NZL_united_tribes
+		}
+	}
+	else_if = {	#OCC
+		limit = {	original_tag = OCC	}
+		if = {	#オクシタニア国
+			limit = {	ROOT = {	has_country_flag = OCC_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = OCC_state
+		}
+	}
+	else_if = {	#OHO
+		limit = {	original_tag = OHO	}
+		if = {	#オハイオ共和国
+			limit = {	ROOT = {	has_country_flag = OHO_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = OHO_republic
+		}
+	}
+	else_if = {	#OKL
+		limit = {	original_tag = OKL	}
+		if = {	#オクラホマ共和国
+			limit = {	ROOT = {	has_country_flag = OKL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = OKL_republic
+		}
+	}
+	else_if = {	#OMA
+		limit = {	original_tag = OMA	}
+		if = {	#オマーン帝国
+			limit = {	ROOT = {	has_country_flag = OMA_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = OMA_empire
+		}
+		else_if = {	#オマーン・スルタン国
+			limit = {	ROOT = {	has_country_flag = OMA_sultanate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = OMA_sultanate
+		}
+		else_if = {	#オマーン・イマーム国
+			limit = {	ROOT = {	has_country_flag = OMA_imamate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = OMA_imamate
+		}
+		else_if = {	#マスカット及びオマーン・スルタン国
+			limit = {	ROOT = {	has_country_flag = MUSCATandOMAN_sultanate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = MUSCATandOMAN_sultanate
+		}
+	}
+	else_if = {	#ORE
+		limit = {	original_tag = ORE	}
+		if = {	#オレゴン共和国
+			limit = {	ROOT = {	has_country_flag = ORE_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = ORE_republic
+		}
+	}
+	else_if = {	#OTT
+		limit = {	original_tag = OTT	}
+		if = {	#崇高なるオスマン国
+			limit = {	ROOT = {	has_country_flag = OTT_sublime_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = OTT_sublime_state
+		}
+	}
+	else_if = {	#PAK
+		limit = {	original_tag = PAK	}
+		if = {	#パキスタン・イスラム共和国
+			limit = {	ROOT = {	has_country_flag = PAK_islamic_republic_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = PAK_islamic_republic
+		}
+		else_if = {	#パキスタン共和国
+			limit = {	ROOT = {	has_country_flag = PAK_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = PAK_republic
+		}
+	}
+	else_if = {	#PAL
+		limit = {	original_tag = PAL	}
+		if = {	#パレスチナ国
+			limit = {	ROOT = {	has_country_flag = PAL_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = PAL_state
+		}
+	}
+	else_if = {	#PAN
+		limit = {	original_tag = PAN	}
+		if = {	#パナマ共和国
+			limit = {	ROOT = {	has_country_flag = PAN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PAN_republic
+		}
+	}
+	else_if = {	#PAO
+		limit = {	original_tag = PAO	}
+		if = {	#パオ共和国
+			limit = {	ROOT = {	has_country_flag = PAO_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PAO_republic
+		}
+	}
+	else_if = {	#PAP
+		limit = {	original_tag = PAP	}
+		if = {	#パプア共和国
+			limit = {	ROOT = {	has_country_flag = PAP_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PAP_republic
+		}
+	}
+	else_if = {	#PAR
+		limit = {	original_tag = PAR	}
+		if = {	#パラグアイ共和国
+			limit = {	ROOT = {	has_country_flag = PAR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PAR_republic
+		}
+	}
+	else_if = {	#PCN
+		limit = {	original_tag = PCN	}
+		if = {	#ピトケアン共和国
+			limit = {	ROOT = {	has_country_flag = PCN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PCN_republic
+		}
+	}
+	else_if = {	#PEN
+		limit = {	original_tag = PEN	}
+		if = {	#ペンシルベニア共和国
+			limit = {	ROOT = {	has_country_flag = PEN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PEN_republic
+		}
+	}
+	else_if = {	#PER
+		limit = {	original_tag = PER	}
+		if = {	#ペルシャ帝国
+			limit = {	ROOT = {	has_country_flag = PER_imperial_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = PER_imperial_state
+		}
+		else_if = {	#イラン帝国
+			limit = {	ROOT = {	has_country_flag = IRAN_imperial_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = IRAN_imperial_state
+		}
+		else_if = {	#イラン共和国
+			limit = {	ROOT = {	has_country_flag = IRAN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = IRAN_republic
+		}
+		else_if = {	#イラン・イスラム共和国
+			limit = {	ROOT = {	has_country_flag = IRAN_islamic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = IRAN_islamic_republic
+		}
+	}
+	else_if = {	#PHI
+		limit = {	original_tag = PHI	}
+		if = {	#フィリピン共和国
+			limit = {	ROOT = {	has_country_flag = PHI_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PHI_republic
+		}
+	}
+	else_if = {	#PLA
+		limit = {	original_tag = PLA	}
+		if = {	#パラウン共和国
+			limit = {	ROOT = {	has_country_flag = PLA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PLA_republic
+		}
+	}
+	else_if = {	#PLW
+		limit = {	original_tag = PLW	}
+		if = {	#パラオ共和国
+			limit = {	ROOT = {	has_country_flag = PLW_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PLW_republic
+		}
+	}
+	else_if = {	#PNG
+		limit = {	original_tag = PNG	}
+		if = {	#パプアニューギニア独立国
+			limit = {	ROOT = {	has_country_flag = PNG_independent_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = PNG_independent_state
+		}
+	}
+	else_if = {	#POL
+		limit = {	original_tag = POL	}
+		if = {	#ポーランド王国
+			limit = {	ROOT = {	has_country_flag = POL_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = POL_kingdom
+		}
+		else_if = {	#晴朗極まる共和国ポーランド
+			limit = {	ROOT = {	has_country_flag = POL_most_serene_commonwealth_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = POL_most_serene_commonwealth
+		}
+		else_if = {	#ポーランド共和国
+			limit = {	ROOT = {	has_country_flag = POL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = POL_republic
+		}
+		else_if = {	#ポーランド人民共和国
+			limit = {	ROOT = {	has_country_flag = POL_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = POL_peoples_republic
+		}
+	}
+	else_if = {	#POR
+		limit = {	original_tag = POR	}
+		if = {	#ポルトガル王国
+			limit = {	ROOT = {	has_country_flag = POR_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = POR_kingdom
+		}
+		else_if = {	#ポルトガル共和国
+			limit = {	ROOT = {	has_country_flag = POR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = POR_republic
+		}
+	}
+	else_if = {	#PRE
+		limit = {	original_tag = PRE	}
+		if = {	#プロイセン王国
+			limit = {	ROOT = {	has_country_flag = PRE_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = PRE_kingdom
+		}
+		else_if = {	#プロイセン公国
+			limit = {	ROOT = {	has_country_flag = PRE_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = PRE_duchy
+		}
+		else_if = {	#プロイセン共和国
+			limit = {	ROOT = {	has_country_flag = PRE_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = PRE_republic
+		}
+	}
+	else_if = {	#PRL
+		limit = {	original_tag = PRL	}
+		if = {	#プルリス・スルタン国
+			limit = {	ROOT = {	has_country_flag = PRL_sultanate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = PRL_sultanate
+		}
+		else_if = {	#プルリス共和国
+			limit = {	ROOT = {	has_country_flag = PRL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = PRL_republic
+		}
+	}
+	else_if = {	#PRU
+		limit = {	original_tag = PRU	}
+		if = {	#ペルー共和国
+			limit = {	ROOT = {	has_country_flag = PRU_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PRU_republic
+		}
+	}
+	else_if = {	#PUD
+		limit = {	original_tag = PUD	}
+		if = {	#プドゥコーッタイ王国
+			limit = {	ROOT = {	has_country_flag = PUD_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = PUD_kingdom
+		}
+	}
+	else_if = {	#PUE
+		limit = {	original_tag = PUE	}
+		if = {	#プエルトリコ共和国
+			limit = {	ROOT = {	has_country_flag = PUE_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = PUE_republic
+		}
+	}
+	else_if = {	#QAH
+		limit = {	original_tag = QAH	}
+		if = {	#察哈爾軍閥
+			limit = {	ROOT = {	has_country_flag = QAH_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = QAH_warlord
+		}
+		else_if = {	#察哈爾民国
+			limit = {	ROOT = {	has_country_flag = QAH_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = QAH_minguo
+		}
+		else_if = {	#察哈爾共和国
+			limit = {	ROOT = {	has_country_flag = QAH_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = QAH_republic
+		}
+		else_if = {	#察哈爾ソビエト政府
+			limit = {	ROOT = {	has_country_flag = QAH_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = QAH_soviet_government
+		}
+	}
+	else_if = {	#QAT
+		limit = {	original_tag = QAT	}
+		if = {	#カタール国
+			limit = {	ROOT = {	has_country_flag = QAT_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = QAT_state
+		}
+	}
+	else_if = {	#QEB
+		limit = {	original_tag = QEB	}
+		if = {	#ケベック共和国
+			limit = {	ROOT = {	has_country_flag = QEB_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = QEB_republic
+		}
+	}
+	else_if = {	#QIG
+		limit = {	original_tag = QIG	}
+		if = {	#青海軍閥
+			limit = {	ROOT = {	has_country_flag = QIG_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = QIG_warlord
+		}
+		else_if = {	#青海馬家軍閥
+			limit = {	ROOT = {	has_country_flag = QIG_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = QIG_warlord
+		}
+		else_if = {	#青海民国
+			limit = {	ROOT = {	has_country_flag = QIG_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = QIG_minguo
+		}
+		else_if = {	#青海共和国
+			limit = {	ROOT = {	has_country_flag = QIG_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = QIG_republic
+		}
+		else_if = {	#青海ソビエト政府
+			limit = {	ROOT = {	has_country_flag = QIG_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = QIG_soviet_government
+		}
+	}
+	else_if = {	#QIN
+		limit = {	original_tag = QIN	}
+		if = {	#青島軍閥
+			limit = {	ROOT = {	has_country_flag = QIN_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = QIN_warlord
+		}
+		else_if = {	#自由都市青島
+			limit = {	ROOT = {	has_country_flag = QIN_free_city_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = QIN_free_city
+		}
+		else_if = {	#青島ソビエト政府
+			limit = {	ROOT = {	has_country_flag = QIN_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = QIN_soviet_government
+		}
+	}
+	else_if = {	#R-U
+		limit = {	original_tag = R-U	}
+		if = {	#ルアンダ＝ウルンディ共和国
+			limit = {	ROOT = {	has_country_flag = R-U_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = R-U_republic
+		}
+		else_if = {	#ルアンダ＝ウルンディ連合王国
+			limit = {	ROOT = {	has_country_flag = R-U_united_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = R-U_united_kingdom
+		}
+	}
+	else_if = {	#REU
+		limit = {	original_tag = REU	}
+		if = {	#レユニオン共和国
+			limit = {	ROOT = {	has_country_flag = REU_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = REU_republic
+		}
+	}
+	else_if = {	#RHI
+		limit = {	original_tag = RHI	}
+		if = {	#ライン連邦
+			limit = {	ROOT = {	has_country_flag = RHI_confederation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = RHI_confederation
+		}
+		else_if = {	#ライン共和国
+			limit = {	ROOT = {	has_country_flag = RHI_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = RHI_republic
+		}
+	}
+	else_if = {	#RIF
+		limit = {	original_tag = RIF	}
+		if = {	#リーフ共和国
+			limit = {	ROOT = {	has_country_flag = RIF_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = RIF_republic
+		}
+		else_if = {	#リーフ部族連合共和国
+			limit = {	ROOT = {	has_country_flag = RIF_tribes_confederal_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = RIF_tribes_confederal_republic
+		}
+	}
+	else_if = {	#RIL
+		limit = {	original_tag = RIL	}
+		if = {	#ロードアイランド共和国
+			limit = {	ROOT = {	has_country_flag = RIL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = RIL_republic
+		}
+	}
+	else_if = {	#RKH
+		limit = {	original_tag = RKH	}
+		if = {	#ラカイン共和国
+			limit = {	ROOT = {	has_country_flag = RKH_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = RKH_republic
+		}
+	}
+	else_if = {	#RME
+		limit = {	original_tag = RME	}
+		if = {	#ローマ帝国
+			limit = {	ROOT = {	has_country_flag = RME_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = RME_empire
+		}
+		else_if = {	#ローマ共和国
+			limit = {	ROOT = {	has_country_flag = RME_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = RME_republic
+		}
+		else_if = {	#ローマ市国
+			limit = {	ROOT = {	has_country_flag = RME_city_state_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = RME_city_state
+		}
+		else_if = {	#自由都市ローマ
+			limit = {	ROOT = {	has_country_flag = RME_free_city_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = RME_free_city
+		}
+	}
+	else_if = {	#ROM
+		limit = {	original_tag = ROM	}
+		if = {	#ルーマニア王国
+			limit = {	ROOT = {	has_country_flag = ROM_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = ROM_kingdom
+		}
+		else_if = {	#ルーマニア共和国
+			limit = {	ROOT = {	has_country_flag = ROM_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ROM_republic
+		}
+		else_if = {	#ルーマニア人民共和国
+			limit = {	ROOT = {	has_country_flag = ROM_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ROM_peoples_republic
+		}
+		else_if = {	#ルーマニア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = ROM_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ROM_socialist_republic
+		}
+	}
+	else_if = {	#RUS
+		limit = {	original_tag = RUS	}
+		if = {	#ロシア帝国
+			limit = {	ROOT = {	has_country_flag = RUS_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = RUS_empire
+		}
+		else_if = {	#ロシア・ツァーリ国
+			limit = {	ROOT = {	has_country_flag = RUS_tsardom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = RUS_tsardom
+		}
+		else_if = {	#ロシア共和国
+			limit = {	ROOT = {	has_country_flag = RUS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = RUS_republic
+		}
+		else_if = {	#ロシア国
+			limit = {	ROOT = {	has_country_flag = RUS_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = RUS_state
+		}
+		else_if = {	#ロシア連邦
+			limit = {	ROOT = {	has_country_flag = RUS_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = RUS_federation
+		}
+		else_if = {	#ロシア民主連邦共和国
+			limit = {	ROOT = {	has_country_flag = RUS_democratic_federative_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = RUS_democratic_federative_republic
+		}
+	}
+	else_if = {	#RWA
+		limit = {	original_tag = RWA	}
+		if = {	#ルワンダ王国
+			limit = {	ROOT = {	has_country_flag = RWA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = RWA_kingdom
+		}
+		else_if = {	#ルワンダ共和国
+			limit = {	ROOT = {	has_country_flag = RWA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = RWA_republic
+		}
+	}
+	else_if = {	#RYU
+		limit = {	original_tag = RYU	}
+		if = {	#琉球王国
+			limit = {	ROOT = {	has_country_flag = RYU_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = RYU_kingdom
+		}
+		else_if = {	#琉球国
+			limit = {	ROOT = {	has_country_flag = RYU_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = RYU_state
+		}
+		else_if = {	#琉球共和国
+			limit = {	ROOT = {	has_country_flag = RYU_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = RYU_republic
+		}
+		else_if = {	#琉球民国
+			limit = {	ROOT = {	has_country_flag = RYU_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = RYU_minguo
+		}
+	}
+	else_if = {	#SAB
+		limit = {	original_tag = SAB	}
+		if = {	#サバ共和国
+			limit = {	ROOT = {	has_country_flag = SAB_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SAB_republic
+		}
+	}
+	else_if = {	#SAF
+		limit = {	original_tag = SAF	}
+		if = {	#南アフリカ共和国
+			limit = {	ROOT = {	has_country_flag = SAF_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SAF_republic
+		}
+		else_if = {	#南アフリカ連邦
+			limit = {	ROOT = {	has_country_flag = SAF_union_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SAF_union
+		}
+	}
+	else_if = {	#SAM
+		limit = {	original_tag = SAM	}
+		if = {	#サモア独立国
+			limit = {	ROOT = {	has_country_flag = SAM_independent_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SAM_independent_state
+		}
+		else_if = {	#サモア共和国
+			limit = {	ROOT = {	has_country_flag = SAM_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SAM_republic
+		}
+	}
+	else_if = {	#SAR
+		limit = {	original_tag = SAR	}
+		if = {	#ザール共和国
+			limit = {	ROOT = {	has_country_flag = SAR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SAR_republic
+		}
+	}
+	else_if = {	#SAU
+		limit = {	original_tag = SAU	}
+		if = {	#サウード王国
+			limit = {	ROOT = {	has_country_flag = SAU_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SAU_kingdom
+		}
+		else_if = {	#サウジアラビア王国
+			limit = {	ROOT = {	has_country_flag = SAUDIARABIA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SAUDIARABIA_kingdom
+		}
+	}
+	else_if = {	#SAX
+		limit = {	original_tag = SAX	}
+		if = {	#ザクセン王国
+			limit = {	ROOT = {	has_country_flag = SAX_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SAX_kingdom
+		}
+		else_if = {	#ザクセン共和国
+			limit = {	ROOT = {	has_country_flag = SAX_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SAX_republic
+		}
+	}
+	else_if = {	#SBL
+		limit = {	original_tag = SBL	}
+		if = {	#サン・バルテルミー共和国
+			limit = {	ROOT = {	has_country_flag = SBL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SBL_republic
+		}
+	}
+	else_if = {	#SCA
+		limit = {	original_tag = SCA	}
+		if = {	#スカンディナヴィア連合王国
+			limit = {	ROOT = {	has_country_flag = SCA_united_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SCA_united_kingdom
+		}
+	}
+	else_if = {	#SCC
+		limit = {	original_tag = SCC	}
+		if = {	#南コーカサス共和国
+			limit = {	ROOT = {	has_country_flag = SCC_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SCC_republic
+		}
+		else_if = {	#トランスコーカサス民主連邦共和国
+			limit = {	ROOT = {	has_country_flag = TRANSCAUCASIAN_democratic_federative_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = TRANSCAUCASIAN_democratic_federative_republic
+		}
+	}
+	else_if = {	#SCH
+		limit = {	original_tag = SCH	}
+		if = {	#四川軍閥
+			limit = {	ROOT = {	has_country_flag = SCH_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SCH_warlord
+		}
+		else_if = {	#四川民国
+			limit = {	ROOT = {	has_country_flag = SCH_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SCH_minguo
+		}
+		else_if = {	#四川共和国
+			limit = {	ROOT = {	has_country_flag = SCH_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SCH_republic
+		}
+		else_if = {	#四川ソビエト政府
+			limit = {	ROOT = {	has_country_flag = SCH_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SCH_soviet_government
+		}
+	}
+	else_if = {	#SCO
+		limit = {	original_tag = SCO	}
+		if = {	#スコットランド王国
+			limit = {	ROOT = {	has_country_flag = SCO_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SCO_kingdom
+		}
+		else_if = {	#スコットランド共和国
+			limit = {	ROOT = {	has_country_flag = SCO_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SCO_republic
+		}
+	}
+	else_if = {	#SCR
+		limit = {	original_tag = SCR	}
+		if = {	#サウスカロライナ共和国
+			limit = {	ROOT = {	has_country_flag = SCR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SCR_republic
+		}
+	}
+	else_if = {	#SDA
+		limit = {	original_tag = SDA	}
+		if = {	#サウスダコタ共和国
+			limit = {	ROOT = {	has_country_flag = SDA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SDA_republic
+		}
+	}
+	else_if = {	#SEM
+		limit = {	original_tag = SEM	}
+		if = {	#サーミランド連合
+			limit = {	ROOT = {	has_country_flag = SEM_union_flag	}	}
+			# add_ideas = 
+			set_cosmetic_tag = SEM_union
+		}
+	}
+	else_if = {	#SEN
+		limit = {	original_tag = SEN	}
+		if = {	#セネガル共和国
+			limit = {	ROOT = {	has_country_flag = SEN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SEN_republic
+		}
+	}
+	else_if = {	#SER
+		limit = {	original_tag = SER	}
+		if = {	#セルビア王国
+			limit = {	ROOT = {	has_country_flag = SER_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SER_kingdom
+		}
+		else_if = {	#セルビア公国
+			limit = {	ROOT = {	has_country_flag = SER_principality_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SER_principality
+		}
+		else_if = {	#セルビア共和国
+			limit = {	ROOT = {	has_country_flag = SER_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SER_republic
+		}
+		else_if = {	#セルビア人民共和国
+			limit = {	ROOT = {	has_country_flag = SER_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SER_peoples_republic
+		}
+		else_if = {	#セルビア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = SER_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SER_socialist_republic
+		}
+	}
+	else_if = {	#SGH
+		limit = {	original_tag = SGH	}
+		if = {	#上海市大道政府
+			limit = {	ROOT = {	has_country_flag = SGH_great_way_municipal_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SGH_great_way_municipal_government
+		}
+		else_if = {	#上海共同租界
+			limit = {	ROOT = {	has_country_flag = SGH_international_settlement_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SGH_international_settlement
+		}
+		else_if = {	#上海軍閥
+			limit = {	ROOT = {	has_country_flag = SGH_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SGH_warlord
+		}
+		else_if = {	#自由都市上海
+			limit = {	ROOT = {	has_country_flag = SGH_free_city_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = SGH_free_city
+		}
+		else_if = {	#上海ソビエト政府
+			limit = {	ROOT = {	has_country_flag = SGH_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SGH_soviet_government
+		}
+	}
+	else_if = {	#SGR
+		limit = {	original_tag = SGR	}
+		if = {	#南ドイツ連邦
+			limit = {	ROOT = {	has_country_flag = SGR_confederation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SGR_confederation
+		}
+		else_if = {	#南ドイツ連合共和国
+			limit = {	ROOT = {	has_country_flag = SGR_united_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SGR_united_republic
+		}
+	}
+	else_if = {	#SHA
+		limit = {	original_tag = SHA	}
+		if = {	#陝西軍閥
+			limit = {	ROOT = {	has_country_flag = SHA_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SHA_warlord
+		}
+		else_if = {	#陝西民国
+			limit = {	ROOT = {	has_country_flag = SHA_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHA_minguo
+		}
+		else_if = {	#陝西共和国
+			limit = {	ROOT = {	has_country_flag = SHA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHA_republic
+		}
+		else_if = {	#陝西ソビエト政府
+			limit = {	ROOT = {	has_country_flag = SHA_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHA_soviet_government
+		}
+	}
+	else_if = {	#SHD
+		limit = {	original_tag = SHD	}
+		if = {	#山東軍閥
+			limit = {	ROOT = {	has_country_flag = SHD_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SHD_warlord
+		}
+		else_if = {	#山東民国
+			limit = {	ROOT = {	has_country_flag = SHD_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHD_minguo
+		}
+		else_if = {	#山東共和国
+			limit = {	ROOT = {	has_country_flag = SHD_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHD_republic
+		}
+		else_if = {	#山東ソビエト政府
+			limit = {	ROOT = {	has_country_flag = SHD_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHD_soviet_government
+		}
+	}
+	else_if = {	#SHL
+		limit = {	original_tag = SHL	}
+		if = {	#シュレースヴィヒ公国
+			limit = {	ROOT = {	has_country_flag = SHL_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SHL_duchy
+		}
+		else_if = {	#シュレースヴィヒ共和国
+			limit = {	ROOT = {	has_country_flag = SHL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHL_republic
+		}
+	}
+	else_if = {	#SHN
+		limit = {	original_tag = SHN	}
+		if = {	#シャン共和国
+			limit = {	ROOT = {	has_country_flag = SHN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SHN_republic
+		}
+	}
+	else_if = {	#SHX
+		limit = {	original_tag = SHX	}
+		if = {	#山西軍閥
+			limit = {	ROOT = {	has_country_flag = SHX_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SHX_warlord
+		}
+		else_if = {	#山西民国
+			limit = {	ROOT = {	has_country_flag = SHX_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHX_minguo
+		}
+		else_if = {	#山西共和国
+			limit = {	ROOT = {	has_country_flag = SHX_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHX_republic
+		}
+		else_if = {	#山西ソビエト政府
+			limit = {	ROOT = {	has_country_flag = SHX_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SHX_soviet_government
+		}
+	}
+	else_if = {	#SIA
+		limit = {	original_tag = SIA	}
+		if = {	#シャム王国
+			limit = {	ROOT = {	has_country_flag = SIA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SIA_kingdom
+		}
+		else_if = {	#タイ王国
+			limit = {	ROOT = {	has_country_flag = THAILAND_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = THAILAND_kingdom
+		}
+	}
+	else_if = {	#SIB
+		limit = {	original_tag = SIB	}
+		if = {	#シベリア共和国
+			limit = {	ROOT = {	has_country_flag = SIB_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SIB_republic
+		}
+		else_if = {	#シベリア・コサック共和国
+			limit = {	ROOT = {	has_country_flag = SIB_cossack_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SIB_cossack_republic
+		}
+		else_if = {	#緑ロシア帝国
+			limit = {	ROOT = {	has_country_flag = GREENRUSSIA_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = GREENRUSSIA_empire
+		}
+	}
+	else_if = {	#SIC
+		limit = {	original_tag = SIC	}
+		if = {	#シチリア王国
+			limit = {	ROOT = {	has_country_flag = SIC_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SIC_kingdom
+		}
+		else_if = {	#シチリア共和国
+			limit = {	ROOT = {	has_country_flag = SIC_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SIC_republic
+		}
+	}
+	else_if = {	#SIE
+		limit = {	original_tag = SIE	}
+		if = {	#シエラレオネ共和国
+			limit = {	ROOT = {	has_country_flag = SIE_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SIE_republic
+		}
+	}
+	else_if = {	#SIK
+		limit = {	original_tag = SIK	}
+		if = {	#新疆軍閥
+			limit = {	ROOT = {	has_country_flag = SIK_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SIK_warlord
+		}
+		else_if = {	#新疆馬家軍閥
+			limit = {	ROOT = {	has_country_flag = SIK_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SIK_warlord
+		}
+		else_if = {	#新疆民国
+			limit = {	ROOT = {	has_country_flag = SIK_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SIK_minguo
+		}
+		else_if = {	#新疆共和国
+			limit = {	ROOT = {	has_country_flag = SIK_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SIK_republic
+		}
+		else_if = {	#新疆ソビエト政府
+			limit = {	ROOT = {	has_country_flag = SIK_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SIK_soviet_government
+		}
+	}
+	else_if = {	#SIL
+		limit = {	original_tag = SIL	}
+		if = {	#シレジア公国
+			limit = {	ROOT = {	has_country_flag = SIL_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SIL_duchy
+		}
+		else_if = {	#シレジア公国郡
+			limit = {	ROOT = {	has_country_flag = SIL_duchies_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SIL_duchies
+		}
+		else_if = {	#シレジア共和国
+			limit = {	ROOT = {	has_country_flag = SIL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SIL_republic
+		}
+	}
+	else_if = {	#SKM
+		limit = {	original_tag = SKM	}
+		if = {	#シッキム王国
+			limit = {	ROOT = {	has_country_flag = SKM_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SKM_kingdom
+		}
+	}
+	else_if = {	#SKN
+		limit = {	original_tag = SKN	}
+		if = {	#セントクリストファー・ネイビス連邦
+			limit = {	ROOT = {	has_country_flag = SKN_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SKN_federation
+		}
+	}
+	else_if = {	#SIN
+		limit = {	original_tag = SIN	}
+		if = {	#シンガポール共和国
+			limit = {	ROOT = {	has_country_flag = SIN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SIN_republic
+		}
+	}
+	else_if = {	#SKH
+		limit = {	original_tag = SKH	}
+		if = {	#サハ共和国
+			limit = {	ROOT = {	has_country_flag = SKH_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SKH_republic
+		}
+	}
+	else_if = {	#SLA
+		limit = {	original_tag = SLA	}
+		if = {	#スラボニア王国
+			limit = {	ROOT = {	has_country_flag = SLA_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SLA_kingdom
+		}
+	}
+	else_if = {	#SLC
+		limit = {	original_tag = SLC	}
+		if = {	#セントルシア共和国
+			limit = {	ROOT = {	has_country_flag = SLC_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SLC_republic
+		}
+	}
+	else_if = {	#SLO
+		limit = {	original_tag = SLO	}
+		if = {	#スロバキア共和国
+			limit = {	ROOT = {	has_country_flag = SLO_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SLO_republic
+		}
+		else_if = {	#スロバキア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = SLO_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SLO_socialist_republic
+		}
+	}
+	else_if = {	#SLV
+		limit = {	original_tag = SLV	}
+		if = {	#スロベニア共和国
+			limit = {	ROOT = {	has_country_flag = SLV_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SLV_republic
+		}
+		else_if = {	#スロベニア人民共和国
+			limit = {	ROOT = {	has_country_flag = SLV_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SLV_peoples_republic
+		}
+		else_if = {	#スロベニア社会主義共和国
+			limit = {	ROOT = {	has_country_flag = SLV_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SLV_socialist_republic
+		}
+	}
+	else_if = {	#SML
+		limit = {	original_tag = SML	}
+		if = {	#ソマリランド共和国
+			limit = {	ROOT = {	has_country_flag = SML_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SML_republic
+		}
+		else_if = {	#ソマリランド国
+			limit = {	ROOT = {	has_country_flag = SML_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SML_state
+		}
+	}
+	else_if = {	#SMR
+		limit = {	original_tag = SMR	}
+		if = {	#晴朗極まる共和国サンマリノ
+			limit = {	ROOT = {	has_country_flag = SMR_most_serene_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SMR_most_serene_republic
+		}
+	}
+	else_if = {	#SOA
+		limit = {	original_tag = SOA	}
+		if = {	#南オセチア共和国
+			limit = {	ROOT = {	has_country_flag = SOA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SOA_republic
+		}
+	}
+	else_if = {	#SOL
+		limit = {	original_tag = SOL	}
+		if = {	#ソロモン共和国
+			limit = {	ROOT = {	has_country_flag = SOL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SOL_republic
+		}
+	}
+	else_if = {	#SOM
+		limit = {	original_tag = SOM	}
+		if = {	#ソマリア共和国
+			limit = {	ROOT = {	has_country_flag = SOM_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SOM_republic
+		}
+		else_if = {	#ソマリア民主共和国
+			limit = {	ROOT = {	has_country_flag = SOM_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SOM_democratic_republic
+		}
+		else_if = {	#ソマリア連邦共和国
+			limit = {	ROOT = {	has_country_flag = SOM_federal_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SOM_federal_republic
+		}
+	}
+	else_if = {	#SOV
+		limit = {	original_tag = SOV	}
+		if = {	#ソビエト共和国連邦
+			limit = {	ROOT = {	has_country_flag = SOV_republics_union_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SOV_republics_union
+		}
+		else_if = {	#ソビエト社会主義共和国連邦
+			limit = {	ROOT = {	has_country_flag = SOV_socialist_republics_union_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SOV_socialist_republics_union
+		}
+	}
+	else_if = {	#SPM
+		limit = {	original_tag = SPM	}
+		if = {	#サンピエール及びミクロン共和国
+			limit = {	ROOT = {	has_country_flag = SPM_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SPM_republic
+		}
+	}
+	else_if = {	#SPR
+		limit = {	original_tag = SPR	}
+		if = {	#スペイン王国
+			limit = {	ROOT = {	has_country_flag = SPR_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SPR_kingdom
+		}
+		else_if = {	#スペイン国
+			limit = {	ROOT = {	has_country_flag = SPR_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SPR_state
+		}
+		else_if = {	#スペイン共和国
+			limit = {	ROOT = {	has_country_flag = SPR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SPR_republic
+		}
+	}
+	else_if = {	#SRD
+		limit = {	original_tag = SRD	}
+		if = {	#サルディーニャ王国
+			limit = {	ROOT = {	has_country_flag = SRD_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SRD_kingdom
+		}
+	}
+	else_if = {	#SRL
+		limit = {	original_tag = SRL	}
+		if = {	#スリランカ共和国
+			limit = {	ROOT = {	has_country_flag = SRL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SRL_republic
+		}
+		else_if = {	#スリランカ民主社会主義共和国
+			limit = {	ROOT = {	has_country_flag = SRL_democratic_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SRL_democratic_socialist_republic
+		}
+		else_if = {	#自由で主権のある独立共和国スリランカ
+			limit = {	ROOT = {	has_country_flag = SRL_free-sovereign_and_independent_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SRL_free-sovereign_and_independent_republic
+		}
+	}
+	else_if = {	#SRW
+		limit = {	original_tag = SRW	}
+		if = {	#サラワク王国
+			limit = {	ROOT = {	has_country_flag = SRW_raj_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SRW_raj
+		}
+		else_if = {	#サラワク共和国
+			limit = {	ROOT = {	has_country_flag = SRW_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SRW_republic
+		}
+	}
+	else_if = {	#SSD
+		limit = {	original_tag = SSD	}
+		if = {	#南スーダン共和国
+			limit = {	ROOT = {	has_country_flag = SSD_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SSD_republic
+		}
+	}
+	else_if = {	#STH
+		limit = {	original_tag = STH	}
+		if = {	#セントヘレナ共和国
+			limit = {	ROOT = {	has_country_flag = STH_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = STH_republic
+		}
+	}
+	else_if = {	#STP
+		limit = {	original_tag = STP	}
+		if = {	#サントメ・プリンシペ民主共和国
+			limit = {	ROOT = {	has_country_flag = STP_democratic_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = STP_democratic_republic
+		}
+	}
+	else_if = {	#STR
+		limit = {	original_tag = STR	}
+		if = {	#南トルキスタン共和国
+			limit = {	ROOT = {	has_country_flag = STR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = STR_republic
+		}
+	}
+	else_if = {	#SUD
+		limit = {	original_tag = SUD	}
+		if = {	#スーダン共和国
+			limit = {	ROOT = {	has_country_flag = SUD_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SUD_republic
+		}
+		else_if = {	#スーダン民主共和国
+			limit = {	ROOT = {	has_country_flag = SUD_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SUD_democratic_republic
+		}
+	}
+	else_if = {	#SUR
+		limit = {	original_tag = SUR	}
+		if = {	#スリナム共和国
+			limit = {	ROOT = {	has_country_flag = SUR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SUR_republic
+		}
+	}
+	else_if = {	#SUY
+		limit = {	original_tag = SUY	}
+		if = {	#綏遠軍閥
+			limit = {	ROOT = {	has_country_flag = SUY_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = SUY_warlord
+		}
+		else_if = {	#綏遠民国
+			limit = {	ROOT = {	has_country_flag = SUY_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SUY_minguo
+		}
+		else_if = {	#綏遠共和国
+			limit = {	ROOT = {	has_country_flag = SUY_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SUY_republic
+		}
+		else_if = {	#綏遠ソビエト政府
+			limit = {	ROOT = {	has_country_flag = SUY_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SUY_soviet_government
+		}
+	}
+	else_if = {	#SVG
+		limit = {	original_tag = SVG	}
+		if = {	#セントビンセント及びグレナディーン共和国
+			limit = {	ROOT = {	has_country_flag = SVG_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SVG_republic
+		}
+	}
+	else_if = {	#SYC
+		limit = {	original_tag = SYC	}
+		if = {	#セーシェル共和国
+			limit = {	ROOT = {	has_country_flag = SYC_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = SYC_republic
+		}
+	}
+	else_if = {	#SYE
+		limit = {	original_tag = SYE	}
+		if = {	#南イエメン共和国
+			limit = {	ROOT = {	has_country_flag = SYE_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SYE_republic
+		}
+		else_if = {	#南イエメン民主共和国
+			limit = {	ROOT = {	has_country_flag = SYE_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SYE_democratic_republic
+		}
+		else_if = {	#南イエメン人民民主共和国
+			limit = {	ROOT = {	has_country_flag = SYE_peoples_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SYE_peoples_democratic_republic
+		}
+		else_if = {	#南アラビア連邦
+			limit = {	ROOT = {	has_country_flag = SOUTHARABIA_federation_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = SOUTHARABIA_federation
+		}
+	}
+	else_if = {	#SYR
+		limit = {	original_tag = SYR	}
+		if = {	#シリア・アラブ王国
+			limit = {	ROOT = {	has_country_flag = SYR_arab_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SYR_arab_kingdom
+		}
+		else_if = {	#シリア共和国
+			limit = {	ROOT = {	has_country_flag = SYR_principality_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SYR_republic
+		}
+		else_if = {	#シリア・アラブ共和国
+			limit = {	ROOT = {	has_country_flag = SYR_principality_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = SYR_arab_republic
+		}
+	}
+	else_if = {	#SWE
+		limit = {	original_tag = SWE	}
+		if = {	#スウェーデン王国
+			limit = {	ROOT = {	has_country_flag = SWE_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SWE_kingdom
+		}
+	}
+	else_if = {	#SWI
+		limit = {	original_tag = SWI	}
+		if = {	#スイス連邦
+			limit = {	ROOT = {	has_country_flag = SWI_confederation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = SWI_confederation
+		}
+	}
+	else_if = {	#SWL
+		limit = {	original_tag = SWL	}
+		if = {	#スワジランド王国
+			limit = {	ROOT = {	has_country_flag = SWL_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = SWL_kingdom
+		}
+	}
+	else_if = {	#TAH
+		limit = {	original_tag = TAH	}
+		if = {	#タヒチ王国
+			limit = {	ROOT = {	has_country_flag = TAH_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TAH_kingdom
+		}
+		else_if = {	#タヒチ共和国
+			limit = {	ROOT = {	has_country_flag = TAH_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TAH_republic
+		}
+	}
+	else_if = {	#TAJ
+		limit = {	original_tag = TAJ	}
+		if = {	#タジキスタン共和国
+			limit = {	ROOT = {	has_country_flag = TAJ_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TAJ_republic
+		}
+	}
+	else_if = {	#TAN
+		limit = {	original_tag = TAN	}
+		if = {	#タンガニーカ共和国
+			limit = {	ROOT = {	has_country_flag = TAN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TAN_republic
+		}
+	}
+	else_if = {	#TAT
+		limit = {	original_tag = TAT	}
+		if = {	#タタールスタン共和国
+			limit = {	ROOT = {	has_country_flag = TAT_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TAT_republic
+		}
+	}
+	else_if = {	#TAY
+		limit = {	original_tag = TAY	}
+		if = {	#タイミル共和国
+			limit = {	ROOT = {	has_country_flag = TAY_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TAY_republic
+		}
+	}
+	else_if = {	#TCA
+		limit = {	original_tag = TCA	}
+		if = {	#タークス・カイコス共和国
+			limit = {	ROOT = {	has_country_flag = TCA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TCA_republic
+		}
+	}
+	else_if = {	#TEN
+		limit = {	original_tag = TEN	}
+		if = {	#テネシー共和国
+			limit = {	ROOT = {	has_country_flag = TEN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TEN_republic
+		}
+	}
+	else_if = {	#TER
+		limit = {	original_tag = TER	}
+		if = {	#トレンガヌ・スルタン国
+			limit = {	ROOT = {	has_country_flag = TER_sultanate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TER_sultanate
+		}
+		else_if = {	#トレンガヌ共和国
+			limit = {	ROOT = {	has_country_flag = TER_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TER_republic
+		}
+	}
+	else_if = {	#TEX
+		limit = {	original_tag = TEX	}
+		if = {	#テキサス共和国
+			limit = {	ROOT = {	has_country_flag = TEX_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TEX_republic
+		}
+	}
+	else_if = {	#TGE
+		limit = {	original_tag = TGE	}
+		if = {	#タンジェ国際地域
+			limit = {	ROOT = {	has_country_flag = TGE_international_zone_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = TGE_international_zone
+		}
+	}
+	else_if = {	#TIB
+		limit = {	original_tag = TIB	}
+		if = {	#チベット王国
+			limit = {	ROOT = {	has_country_flag = TIB_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TIB_kingdom
+		}
+		else_if = {	#チベット国
+			limit = {	ROOT = {	has_country_flag = TIB_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TIB_state
+		}
+		else_if = {	#チベット神聖国
+			limit = {	ROOT = {	has_country_flag = TIB_holy_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TIB_holy_state
+		}
+	}
+	else_if = {	#TKL
+		limit = {	original_tag = TKL	}
+		if = {	#トケラウ共和国
+			limit = {	ROOT = {	has_country_flag = TKL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TKL_republic
+		}
+	}
+	else_if = {	#TLS
+		limit = {	original_tag = TLS	}
+		if = {	#東ティモール民主共和国
+			limit = {	ROOT = {	has_country_flag = TLS_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TLS_democratic_republic
+		}
+	}
+	else_if = {	#TMS
+		limit = {	original_tag = TMS	}
+		if = {	#トルクメニスタン共和国
+			limit = {	ROOT = {	has_country_flag = TMS_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TMS_republic
+		}
+	}
+	else_if = {	#TNG
+		limit = {	original_tag = TNG	}
+		if = {	#タンガニスタン共和国
+			limit = {	ROOT = {	has_country_flag = TNG_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TNG_republic
+		}
+	}
+	else_if = {	#TOG
+		limit = {	original_tag = TOG	}
+		if = {	#トーゴ共和国
+			limit = {	ROOT = {	has_country_flag = TOG_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TOG_republic
+		}
+	}
+	else_if = {	#TOK
+		limit = {	original_tag = TOK	}
+		if = {	#トンキン共和国
+			limit = {	ROOT = {	has_country_flag = TOK_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TOK_republic
+		}
+	}
+	else_if = {	#TON
+		limit = {	original_tag = TON	}
+		if = {	#トンガ王国
+			limit = {	ROOT = {	has_country_flag = TON_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TON_kingdom
+		}
+	}
+	else_if = {	#TRA
+		limit = {	original_tag = TRA	}
+		if = {	#トランシルヴァニア公国
+			limit = {	ROOT = {	has_country_flag = TRA_principality_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TRA_principality
+		}
+		else_if = {	#トランシルヴァニア共和国
+			limit = {	ROOT = {	has_country_flag = TRA_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TRA_republic
+		}
+	}
+	else_if = {	#TRC
+		limit = {	original_tag = TRC	}
+		if = {	#トルーシャル・オマーン首長国
+			limit = {	ROOT = {	has_country_flag = TRC_sheikhdoms_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = TRC_sheikhdoms
+		}
+		else_if = {	#アラブ首長国連邦
+			limit = {	ROOT = {	has_country_flag = ARB_united_emirates_flag	}	}
+			add_ideas = monarchy_federal_state
+			set_cosmetic_tag = ARB_united_emirates
+		}
+	}
+	else_if = {	#TRI
+		limit = {	original_tag = TRI	}
+		if = {	#トリニダード共和国
+			limit = {	ROOT = {	has_country_flag = TRI_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TRI_republic
+		}
+	}
+	else_if = {	#TRN
+		limit = {	original_tag = TRN	}
+		if = {	#トランスニストリア共和国
+			limit = {	ROOT = {	has_country_flag = TRN_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TRN_republic
+		}
+	}
+	else_if = {	#TRP
+		limit = {	original_tag = TRP	}
+		if = {	#トリポリタニア王国
+			limit = {	ROOT = {	has_country_flag = TRP_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TRP_kingdom
+		}
+		else_if = {	#トリポリタニア共和国
+			limit = {	ROOT = {	has_country_flag = TRP_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TRP_republic
+		}
+	}
+	else_if = {	#TRV
+		limit = {	original_tag = TRV	}
+		if = {	#トラヴァンコール王国
+			limit = {	ROOT = {	has_country_flag = TRV_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TRV_kingdom
+		}
+	}
+	else_if = {	#TUN
+		limit = {	original_tag = TUN	}
+		if = {	#チュニジア王国
+			limit = {	ROOT = {	has_country_flag = TUN_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = TUN_kingdom
+		}
+		else_if = {	#チュニジア共和国
+			limit = {	ROOT = {	has_country_flag = TUN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TUN_republic
+		}
+	}
+	else_if = {	#TUR
+		limit = {	original_tag = TUR	}
+		if = {	#トルコ共和国
+			limit = {	ROOT = {	has_country_flag = TUR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TUR_republic
+		}
+	}
+	else_if = {	#TUV
+		limit = {	original_tag = TUV	}
+		if = {	#トゥヴァ共和国
+			limit = {	ROOT = {	has_country_flag = TUV_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TUV_republic
+		}
+		else_if = {	#トゥヴァ人民共和国
+			limit = {	ROOT = {	has_country_flag = TUV_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TUV_peoples_republic
+		}
+	}
+	else_if = {	#TVL
+		limit = {	original_tag = TVL	}
+		if = {	#ツバル共和国
+			limit = {	ROOT = {	has_country_flag = TVL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = TVL_republic
+		}
+	}
+	else_if = {	#TWN
+		limit = {	original_tag = TWN	}
+		if = {	#台湾国
+			limit = {	ROOT = {	has_country_flag = TWN_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TWN_state
+		}
+		else_if = {	#台湾民国
+			limit = {	ROOT = {	has_country_flag = TWN_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TWN_minguo
+		}
+		else_if = {	#台湾共和国
+			limit = {	ROOT = {	has_country_flag = TWN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TWN_republic
+		}
+		else_if = {	#台湾軍閥
+			limit = {	ROOT = {	has_country_flag = TWN_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = TWN_warlord
+		}
+		else_if = {	#台湾ソビエト政府
+			limit = {	ROOT = {	has_country_flag = TWN_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = TWN_soviet_government
+		}
+	}
+	else_if = {	#TZN
+		limit = {	original_tag = TZN	}
+		if = {	#タンザニア連合共和国
+			limit = {	ROOT = {	has_country_flag = TZN_united_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = TZN_united_republic
+		}
+	}
+	else_if = {	#UDM
+		limit = {	original_tag = UDM	}
+		if = {	#ウドムルト共和国
+			limit = {	ROOT = {	has_country_flag = UDM_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = UDM_republic
+		}
+	}
+	else_if = {	#UGA
+		limit = {	original_tag = UGA	}
+		if = {	#ウガンダ共和国
+			limit = {	ROOT = {	has_country_flag = UGA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = UGA_republic
+		}
+	}
+	else_if = {	#URG
+		limit = {	original_tag = URG	}
+		if = {	#ウルグアイ東方共和国
+			limit = {	ROOT = {	has_country_flag = URG_oriental_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = URG_oriental_republic
+		}
+	}
+	else_if = {	#UTA
+		limit = {	original_tag = UTA	}
+		if = {	#ユタ共和国
+			limit = {	ROOT = {	has_country_flag = UTA_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = UTA_republic
+		}
+	}
+	else_if = {	#UKR
+		limit = {	original_tag = UKR	}
+		if = {	#ウクライナ共和国
+			limit = {	ROOT = {	has_country_flag = UKR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = UKR_republic
+		}
+		else_if = {	#ウクライナ・コサック共和国
+			limit = {	ROOT = {	has_country_flag = UKR_cossack_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = UKR_cossack_republic
+		}
+		else_if = {	#ウクライナ人民共和国
+			limit = {	ROOT = {	has_country_flag = UKR_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = UKR_peoples_republic
+		}
+		else_if = {	#ウクライナ国
+			limit = {	ROOT = {	has_country_flag = UKR_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = UKR_state
+		}
+	}
+	else_if = {	#UVF
+		limit = {	original_tag = UVF	}
+		if = {	#ウベア・フツナ王国
+			limit = {	ROOT = {	has_country_flag = UVF_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = UVF_kingdom
+		}
+		else_if = {	#ウベア・フツナ共和国
+			limit = {	ROOT = {	has_country_flag = UVF_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = UVF_republic
+		}
+	}
+	else_if = {	#UZB
+		limit = {	original_tag = UZB	}
+		if = {	#ウズベキスタン共和国
+			limit = {	ROOT = {	has_country_flag = UZB_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = UZB_republic
+		}
+	}
+	else_if = {	#VAT
+		limit = {	original_tag = VAT	}
+		if = {	#バチカン市国
+			limit = {	ROOT = {	has_country_flag = VAT_city_state_flag	}	}
+			add_ideas = monarchy_city_state
+			set_cosmetic_tag = VAT_city_state
+		}
+		else_if = {	#教会国
+			limit = {	ROOT = {	has_country_flag = CHURCH_state_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = CHURCH_state
+		}
+	}
+	else_if = {	#VAL
+		limit = {	original_tag = VAL	}
+		if = {	#バレンシア共和国
+			limit = {	ROOT = {	has_country_flag = VAL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VAL_republic
+		}
+	}
+	else_if = {	#VAX
+		limit = {	original_tag = VAX	}
+		if = {	#ワ共和国
+			limit = {	ROOT = {	has_country_flag = VAX_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VAX_republic
+		}
+	}
+	else_if = {	#VEN
+		limit = {	original_tag = VEN	}
+		if = {	#ベネズエラ共和国
+			limit = {	ROOT = {	has_country_flag = VEN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VEN_republic
+		}
+		else_if = {	#ベネズエラ・ボリバル共和国
+			limit = {	ROOT = {	has_country_flag = VEN_bolivarian_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VEN_bolivarian_republic
+		}
+		else_if = {	#ベネズエラ国
+			limit = {	ROOT = {	has_country_flag = VEN_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VEN_state
+		}
+		else_if = {	#ベネズエラ合衆国
+			limit = {	ROOT = {	has_country_flag = VEN_united_states_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = VEN_united_states
+		}
+	}
+	else_if = {	#VIE
+		limit = {	original_tag = VIE	}
+		if = {	#自由都市ウィーン
+			limit = {	ROOT = {	has_country_flag = VIE_free_city_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = VIE_free_city
+		}
+	}
+	else_if = {	#VIN
+		limit = {	original_tag = VIN	}
+		if = {	#ベトナム帝国
+			limit = {	ROOT = {	has_country_flag = VIN_empire_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = VIN_empire
+		}
+		else_if = {	#ベトナム共和国
+			limit = {	ROOT = {	has_country_flag = VIN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VIN_republic
+		}
+		else_if = {	#ベトナム民主共和国
+			limit = {	ROOT = {	has_country_flag = VIN_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VIN_democratic_republic
+		}
+		else_if = {	#ベトナム社会主義共和国
+			limit = {	ROOT = {	has_country_flag = VIN_socialist_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VIN_socialist_republic
+		}
+		else_if = {	#ベトナム国
+			limit = {	ROOT = {	has_country_flag = VIN_state_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VIN_state
+		}
+	}
+	else_if = {	#VIR
+		limit = {	original_tag = VIR	}
+		if = {	#ヴァージン連邦
+			limit = {	ROOT = {	has_country_flag = VIR_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = VIR_federation
+		}
+	}
+	else_if = {	#VLA
+		limit = {	original_tag = VLA	}
+		if = {	#自由都市ウラジオストク
+			limit = {	ROOT = {	has_country_flag = VLA_free_city_flag	}	}
+			add_ideas = republic_city_state
+			set_cosmetic_tag = VLA_free_city
+		}
+	}
+	else_if = {	#VLG
+		limit = {	original_tag = VLG	}
+		if = {	#ヴォルガ共和国
+			limit = {	ROOT = {	has_country_flag = VLG_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VLG_republic
+		}
+	}
+	else_if = {	#VNC
+		limit = {	original_tag = VNC	}
+		if = {	#晴朗極まる共和国ヴェネツィア
+			limit = {	ROOT = {	has_country_flag = VNC_most_serene_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = VNC_most_serene_republic
+		}
+	}
+	else_if = {	#VOJ
+		limit = {	original_tag = VOJ	}
+		if = {	#ヴォイヴォディナ共和国
+			limit = {	ROOT = {	has_country_flag = VOJ_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VOJ_republic
+		}
+	}
+	else_if = {	#VOL
+		limit = {	original_tag = VOL	}
+		if = {	#オートボルタ共和国
+			limit = {	ROOT = {	has_country_flag = VOL_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VOL_republic
+		}
+	}
+	else_if = {	#VRG
+		limit = {	original_tag = VRG	}
+		if = {	#バージニア共和国
+			limit = {	ROOT = {	has_country_flag = VRG_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VRG_republic
+		}
+	}
+	else_if = {	#VRM
+		limit = {	original_tag = VRM	}
+		if = {	#バーモント共和国
+			limit = {	ROOT = {	has_country_flag = VRM_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VRM_republic
+		}
+	}
+	else_if = {	#VUT
+		limit = {	original_tag = VUT	}
+		if = {	#バヌアツ共和国
+			limit = {	ROOT = {	has_country_flag = VUT_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = VUT_republic
+		}
+	}
+	else_if = {	#WAF
+		limit = {	original_tag = WAF	}
+		if = {	#西アフリカ連邦
+			limit = {	ROOT = {	has_country_flag = WAF_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = WAF_federation
+		}
+	}
+	else_if = {	#WAS
+		limit = {	original_tag = WAS	}
+		if = {	#ワシントン共和国
+			limit = {	ROOT = {	has_country_flag = WAS_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WAS_republic
+		}
+	}
+	else_if = {	#WES
+		limit = {	original_tag = WES	}
+		if = {	#西サハラ共和国
+			limit = {	ROOT = {	has_country_flag = WES_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WES_republic
+		}
+	}
+	else_if = {	#WGR
+		limit = {	original_tag = WGR	}
+		if = {	#西ドイツ共和国
+			limit = {	ROOT = {	has_country_flag = WGR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WGR_republic
+		}
+	}
+	else_if = {	#WIN
+		limit = {	original_tag = WIN	}
+		if = {	#西インド連邦
+			limit = {	ROOT = {	has_country_flag = WIN_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = WIN_federation
+		}
+	}
+	else_if = {	#WIW
+		limit = {	original_tag = WIW	}
+		if = {	#ウィンドワード連邦
+			limit = {	ROOT = {	has_country_flag = WIW_federation_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = WIW_federation
+		}
+	}
+	else_if = {	#WLC
+		limit = {	original_tag = WLC	}
+		if = {	#ワラキア公国
+			limit = {	ROOT = {	has_country_flag = WLC_principality_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = WLC_principality
+		}
+	}
+	else_if = {	#WLL
+		limit = {	original_tag = WLL	}
+		if = {	#ワロン王国
+			limit = {	ROOT = {	has_country_flag = WLL_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = WLL_kingdom
+		}
+		else_if = {	#ワロン共和国
+			limit = {	ROOT = {	has_country_flag = WLL_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = WLL_republic
+		}
+	}
+	else_if = {	#WLS
+		limit = {	original_tag = WLS	}
+		if = {	#ウェールズ王国
+			limit = {	ROOT = {	has_country_flag = WLS_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = WLS_kingdom
+		}
+		else_if = {	#ウェールズ公国
+			limit = {	ROOT = {	has_country_flag = WLS_duchy_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = WLS_duchy
+		}
+		else_if = {	#ウェールズ共和国
+			limit = {	ROOT = {	has_country_flag = WLS_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = WLS_republic
+		}
+	}
+	else_if = {	#WSC
+		limit = {	original_tag = WSC	}
+		if = {	#ウィスコンシン共和国
+			limit = {	ROOT = {	has_country_flag = WSC_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WSC_republic
+		}
+	}
+	else_if = {	#WTG
+		limit = {	original_tag = WTG	}
+		if = {	#西トーゴ共和国
+			limit = {	ROOT = {	has_country_flag = WTG_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WTG_republic
+		}
+	}
+	else_if = {	#WTR
+		limit = {	original_tag = WTR	}
+		if = {	#西トルキスタン共和国
+			limit = {	ROOT = {	has_country_flag = WTR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WTR_republic
+		}
+	}
+	else_if = {	#WUR
+		limit = {	original_tag = WUR	}
+		if = {	#ヴュルテンベルク王国
+			limit = {	ROOT = {	has_country_flag = WUR_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = WUR_kingdom
+		}
+		else_if = {	#ヴュルテンベルク共和国
+			limit = {	ROOT = {	has_country_flag = WUR_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = WUR_republic
+		}
+	}
+	else_if = {	#WVI
+		limit = {	original_tag = WVI	}
+		if = {	#ウェストバージニア共和国
+			limit = {	ROOT = {	has_country_flag = WVI_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WVI_republic
+		}
+	}
+	else_if = {	#WYO
+		limit = {	original_tag = WYO	}
+		if = {	#ワイオミング共和国
+			limit = {	ROOT = {	has_country_flag = WYO_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = WYO_republic
+		}
+	}
+	else_if = {	#XIK
+		limit = {	original_tag = XIK	}
+		if = {	#西康軍閥
+			limit = {	ROOT = {	has_country_flag = XIK_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = XIK_warlord
+		}
+		else_if = {	#西康民国
+			limit = {	ROOT = {	has_country_flag = XIK_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = XIK_minguo
+		}
+		else_if = {	#西康共和国
+			limit = {	ROOT = {	has_country_flag = XIK_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = XIK_republic
+		}
+		else_if = {	#西康ソビエト政府
+			limit = {	ROOT = {	has_country_flag = XIK_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = XIK_soviet_government
+		}
+	}
+	else_if = {	#XIZ
+		limit = {	original_tag = XIZ	}
+		if = {	#西藏軍閥
+			limit = {	ROOT = {	has_country_flag = XIZ_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = XIZ_warlord
+		}
+		else_if = {	#西藏民国
+			limit = {	ROOT = {	has_country_flag = XIZ_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = XIZ_minguo
+		}
+		else_if = {	#西藏共和国
+			limit = {	ROOT = {	has_country_flag = XIZ_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = XIZ_republic
+		}
+		else_if = {	#西藏ソビエト政府
+			limit = {	ROOT = {	has_country_flag = XIZ_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = XIZ_soviet_government
+		}
+	}
+	else_if = {	#YAM
+		limit = {	original_tag = YAM	}
+		if = {	#ヤマリア共和国
+			limit = {	ROOT = {	has_country_flag = YAM_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = YAM_republic
+		}
+	}
+	else_if = {	#YEM
+		limit = {	original_tag = YEM	}
+		if = {	#イエメン・ムタワッキリテ王国
+			limit = {	ROOT = {	has_country_flag = YEM_mutawakkilite_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = YEM_mutawakkilite_kingdom
+		}
+		else_if = {	#イエメン共和国
+			limit = {	ROOT = {	has_country_flag = YEM_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = YEM_republic
+		}
+		else_if = {	#イエメン・アラブ共和国
+			limit = {	ROOT = {	has_country_flag = YEM_principality_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = YEM_arab_republic
+		}
+		else_if = {	#イエメン人民民主共和国
+			limit = {	ROOT = {	has_country_flag = YEM_peoples_democratic_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = YEM_peoples_democratic_republic
+		}
+	}
+	else_if = {	#YGR
+		limit = {	original_tag = YGR	}
+		if = {	#ユグラ共和国
+			limit = {	ROOT = {	has_country_flag = YGR_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = YGR_republic
+		}
+	}
+	else_if = {	#YUG
+		limit = {	original_tag = YUG	}
+		if = {	#ユーゴスラビア王国
+			limit = {	ROOT = {	has_country_flag = YUG_kingdom_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = YUG_kingdom
+		}
+		else_if = {	#ユーゴスラビア連邦共和国
+			limit = {	ROOT = {	has_country_flag = YUG_federal_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = YUG_federal_republic
+		}
+		else_if = {	#ユーゴスラビア連邦人民共和国
+			limit = {	ROOT = {	has_country_flag = YUG_federal_peoples_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = YUG_federal_peoples_republic
+		}
+		else_if = {	#ユーゴスラビア社会主義連邦共和国
+			limit = {	ROOT = {	has_country_flag = YUG_socialist_federal_republic_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = YUG_socialist_federal_republic
+		}
+		else_if = {	#ユーゴスラビア民主連邦
+			limit = {	ROOT = {	has_country_flag = YUG_democratic_federal_flag	}	}
+			add_ideas = republic_federal_state
+			set_cosmetic_tag = YUG_democratic_federal
+		}
+	}
+	else_if = {	#YUN
+		limit = {	original_tag = YUN	}
+		if = {	#雲南軍閥
+			limit = {	ROOT = {	has_country_flag = YUN_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = YUN_warlord
+		}
+		else_if = {	#雲南民国
+			limit = {	ROOT = {	has_country_flag = YUN_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = YUN_minguo
+		}
+		else_if = {	#雲南共和国
+			limit = {	ROOT = {	has_country_flag = YUN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = YUN_republic
+		}
+		else_if = {	#雲南ソビエト政府
+			limit = {	ROOT = {	has_country_flag = YUN_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = YUN_soviet_government
+		}
+	}
+	else_if = {	#ZAN
+		limit = {	original_tag = ZAN	}
+		if = {	#ザンジバル・スルタン国
+			limit = {	ROOT = {	has_country_flag = ZAN_sultanate_flag	}	}
+			add_ideas = monarchy_unitary_state
+			set_cosmetic_tag = ZAN_sultanate
+		}
+		else_if = {	#ザンジバル共和国
+			limit = {	ROOT = {	has_country_flag = ZAN_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZAN_republic
+		}
+		else_if = {	#ザンジバル人民共和国
+			limit = {	ROOT = {	has_country_flag = ZAN_peoples_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZAN_peoples_republic
+		}
+	}
+	else_if = {	#ZAP
+		limit = {	original_tag = ZAP	}
+		if = {	#ザポロージャ共和国
+			limit = {	ROOT = {	has_country_flag = ZAP_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZAP_republic
+		}
+		else_if = {	#ザポロージャ・コサック共和国
+			limit = {	ROOT = {	has_country_flag = ZAP_cossack_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZAP_cossack_republic
+		}
+	}
+	else_if = {	#ZHE
+		limit = {	original_tag = ZHE	}
+		if = {	#浙江軍閥
+			limit = {	ROOT = {	has_country_flag = ZHE_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = ZHE_warlord
+		}
+		else_if = {	#浙江民国
+			limit = {	ROOT = {	has_country_flag = ZHE_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZHE_minguo
+		}
+		else_if = {	#浙江共和国
+			limit = {	ROOT = {	has_country_flag = ZHE_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZHE_republic
+		}
+		else_if = {	#浙江ソビエト政府
+			limit = {	ROOT = {	has_country_flag = ZHE_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZHE_soviet_government
+		}
+	}
+	else_if = {	#ZHI
+		limit = {	original_tag = ZHI	}
+		if = {	#直隷軍閥
+			limit = {	ROOT = {	has_country_flag = ZHI_warlord_flag	}	}
+			add_ideas = republic_unitary_state
+			add_ideas = military_dictatorial_system
+			set_cosmetic_tag = ZHI_warlord
+		}
+		else_if = {	#直隷民国
+			limit = {	ROOT = {	has_country_flag = ZHI_minguo_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZHI_minguo
+		}
+		else_if = {	#直隷共和国
+			limit = {	ROOT = {	has_country_flag = ZHI_republic_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZHI_republic
+		}
+		else_if = {	#直隷ソビエト政府
+			limit = {	ROOT = {	has_country_flag = ZHI_soviet_government_flag	}	}
+			add_ideas = republic_unitary_state
+			set_cosmetic_tag = ZHI_soviet_government
+		}
+	}
+	else_if = {	#ZIM
+		limit = {	original_tag = ZIM	}
+		if = {	#ジンバブエ共和国
+			limit = {	ROOT = {	has_country_flag = ZIM_republic_flag	}	}
+			add_ideas = republic_unity_state
+			set_cosmetic_tag = ZIM_republic
+		}
+	}
 }
 
 release_country_autonomy = {
@@ -3445,10 +6939,11 @@ release_country_clr_flag = {
 			clr_country_flag = AFG_western_BAL_region_flag
 			clr_country_flag = AFG_all_BAL_region_flag
 			clr_country_flag = AFG_PASHTUNISTAN_region_flag
-			clr_country_flag = AFG_not_KAS_region_flag
 			clr_country_flag = AFG_all_PAK_region_flag
 			clr_country_flag = AFG_not_STR_region_flag
 			clr_country_flag = AFG_not_BAL_region_flag
+			clr_country_flag = AFG_all_KAS_region_flag
+			clr_country_flag = AFG_west_KAS_region_flag
 		}
 	}
 }

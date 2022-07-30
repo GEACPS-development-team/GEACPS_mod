@@ -3,7 +3,10 @@ release_decisions = {	#アジア
 		icon = generic_prepare_civil_war
 		cost = 0
 		available = {	ABK = {	release_country_decision_trigger = yes	}	}
-		visible = {	ABK = {	release_country_decision_trigger = yes	}	}
+		visible = {	
+			ABK = {	release_country_decision_trigger = yes	}
+			NOT = {	has_decision = release_GEO	}
+		}
 		complete_effect = {	country_event = fate_of_ABK.1	}
 		ai_will_do = {	base = 100	}
 	}
@@ -13,6 +16,14 @@ release_decisions = {	#アジア
 		available = {	AFG = {	release_country_decision_trigger = yes	}	}
 		visible = {	AFG = {	release_country_decision_trigger = yes	}	}
 		complete_effect = {	country_event = fate_of_AFG.1	}
+		ai_will_do = {	base = 100	}
+	}
+	release_CCS = {	#CCS
+		icon = generic_prepare_civil_war
+		cost = 0
+		available = {	CCS = {	release_country_decision_trigger = yes	}	}
+		visible = {	CCS = {	release_country_decision_trigger = yes	}	}
+		complete_effect = {	country_event = fate_of_CCS.1	}
 		ai_will_do = {	base = 100	}
 	}
 }
