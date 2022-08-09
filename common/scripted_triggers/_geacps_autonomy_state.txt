@@ -39,17 +39,3 @@ is_national_system_monarchy = {
 		has_idea = monarchy_unitary_state
 	}
 }
-release_country_decision_trigger = {
-	ROOT = {
-		any_owned_state = {
-			meta_trigger = {
-				text = {	check_variable = {	[country_state_variable] = 1	}	}
-				country_state_variable = "[PREV.PREV.GetTag]_state_variable"
-			}
-			NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-		}
-	}
-	NOT = {	ROOT = {	original_tag = PREV	}	}
-	NOT = {	THIS = {	is_subject_of = ROOT	}	}
-	NOT = {	THIS = {	is_in_faction_with = ROOT	}	}
-}

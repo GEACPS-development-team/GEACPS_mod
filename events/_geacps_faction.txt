@@ -25,6 +25,7 @@ country_event = {
 		}
 		hidden_effect = {	FROM = {	country_event = faction.3	}	}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.0"	}
 }
 
 country_event = {
@@ -52,6 +53,7 @@ country_event = {
 		}
 		hidden_effect = {	FROM = {	country_event = faction.3	}	}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.1"	}
 }
 
 country_event = {
@@ -66,6 +68,7 @@ country_event = {
 		name = faction.2.0
 		ai_chance = {	factor = 100	}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.2"	}
 }
 country_event = {
 	id = faction.3
@@ -79,4 +82,5 @@ country_event = {
 		name = faction.3.0
 		ai_chance = {	factor = 100	}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.3"	}
 }
