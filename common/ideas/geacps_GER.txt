@@ -1,6 +1,6 @@
-ideas = {#æ—¢å­˜å›½æ°‘ç²¾ç¥
+ideas = {	#Šù‘¶‘–¯¸_
 	country = {
-		SGR_the_berlin_declaration = {#ãƒ™ãƒ«ãƒªãƒ³å®£è¨€
+		GER_the_berlin_declaration = {	#ƒxƒ‹ƒŠƒ“éŒ¾
 			allowed = {
 				always = no
 			}
@@ -8,13 +8,13 @@ ideas = {#æ—¢å­˜å›½æ°‘ç²¾ç¥
 				always = yes
 			}
 			removal_cost = -1
-			picture = hol_the_foundations_of_defense
+			picture = generic_constitutional_guarantee
 			modifier = {
 				political_power_factor = -0.1
 				political_power_cost = 0.01
 			}
 		}
-		SGR_potsdam_agreement = {#ãƒãƒ„ãƒ€ãƒ å”å®š
+		GER_potsdam_agreement = {	#ƒ|ƒcƒ_ƒ€‹¦’è
 			allowed = {
 				always = no
 			}
@@ -23,11 +23,8 @@ ideas = {#æ—¢å­˜å›½æ°‘ç²¾ç¥
 			}
 			removal_cost = -1
 			picture = generic_constitutional_guarantee
-			modifier = {
-				#è¦ä»¶ç­‰
-			}
 		}
-		SGR_denazification = {#éãƒŠãƒåŒ–
+		GER_denazification = {#”ñƒiƒ`‰»
 			allowed = {
 				always = no
 			}
@@ -36,6 +33,20 @@ ideas = {#æ—¢å­˜å›½æ°‘ç²¾ç¥
 			}
 			removal_cost = -1
 			picture = generic_constitutional_guarantee
+		}
+		GER_the_east-west_german_wall = {#h“Œ¼ƒhƒCƒch‚Ì•Ç
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = generic_wall_line
+			modifier = {
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+			}
 		}
 	}
 }

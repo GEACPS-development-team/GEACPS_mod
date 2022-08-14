@@ -1,0 +1,42 @@
+ideas = {	#既存国民精神
+	country = {
+		SPR_recovery_from_civil_war = {	#内戦からの復興
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_factor = 0.10
+				consumer_goods_factor = 0.10
+			}
+		}
+		SPR_aftermath_of_the_franco_dictatorship = {	#フランコ独裁の余波
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_factor = 0.20
+				political_power_gain = -0.10
+			}
+		}
+		SPR_destroyed_industrial_infrastructure = {	#破壊された産業基盤
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				production_factory_start_efficiency_factor = -0.10
+				production_speed_buildings_factor = -0.10
+				local_resources_factor = -0.10
+				political_power_gain = -0.10
+				consumer_goods_factor = 0.05
+			}
+		}
+	}
+}
+
+ideas = {	#新規国民精神
+	country = {
+	}
+}
