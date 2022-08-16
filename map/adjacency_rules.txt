@@ -361,10 +361,36 @@ adjacency_rule = {	#ホルムズ海峡
 
 adjacency_rule = {	#対馬海峡隧道
 	name = "TSUSHIMA-PUSAN"
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
 	
 	required_provinces = {	4056	10011	}
 	
 	is_disabled = {
 		always = yes
 	}
+	icon = 10011
+	offset = {	0	0	0	}
 }

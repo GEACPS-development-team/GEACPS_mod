@@ -10,7 +10,12 @@ country_event = {	#
 	option = {
 		name = SOV.1.0
 		ai_chance = {	base = 100	}
-		every_ow
+		every_owned_state = {
+			meta_effect = {
+				text = {	set_variable = [COUNTRYTAG]_SOV_owned_state	}
+				COUNTRYTAG = "[ROOT.GetTag]"
+			}
+		}
 		every_core_state = {	add_core_of = SOV	}
 		SOV = {	
 			annex_country = {	target = PREV	transfer_troops = yes	}
