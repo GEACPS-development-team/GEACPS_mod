@@ -360,7 +360,7 @@ adjacency_rule = {	#ホルムズ海峡
 }
 
 adjacency_rule = {	#対馬海峡隧道
-	name = "TSUSHIMA-PUSAN"
+	name = "TSUSHIMA-PUSAN_TUNNEL"
 	contested = {
 		army = no
 		navy = no
@@ -390,6 +390,7 @@ adjacency_rule = {	#対馬海峡隧道
 	
 	is_disabled = {
 		always = yes
+		tooltip = built_tushima-pusan_tunnel_tt
 	}
 	icon = 10011
 	offset = {	0	0	0	}
