@@ -10,5 +10,6 @@ jobs:
       - uses: cwtools/cwtools-action@v1.0.0
         with:
           game: hoi4
+          rules: "https://github.com/GEACPS-development-team/cwtools-hoi4-config.git"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # required, secret is automatically set by github
