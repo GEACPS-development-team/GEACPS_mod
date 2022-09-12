@@ -1,5 +1,4 @@
 capital = 64
-oob = EGR_1946
 
 SOV = {	set_soviet_satellite = yes	}
 
@@ -23,16 +22,34 @@ set_popularities = {
 	national_populism = 0
 }
 
+set_party_name = {	#ドイツ共産党
+	ideology = total_socialism
+	name = PARTY_communist_party_of_german
+	long_name = PARTY_communist_party_of_german_long
+}
+
+set_party_name = {	#ドイツ社会主義統一党
+	ideology = radical_socialism
+	name = PARTY_socialist_unity_party_of_germany
+	long_name = PARTY_socialist_unity_party_of_germany_long
+}
+set_party_name = {	#ドイツ民主主義統一党
+	ideology = social_democracy
+	name = PARTY_democratic_unity_party_of_germany
+	long_name = PARTY_democratic_unity_party_of_germany_long
+}
 recruit_character = CHARACTER_friedrich_wilhelm_reinhold_pieck
 
 add_ideas = {	#国民精神
-	EGR_ministry_for_state_security
-	EGR_the_berlin_declaration
-	EGR_potsdam_agreement
-	EGR_denazification
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_denazification
+	GER_the_east-west_german_wall
 	EGR_hegemonic_party_system
-	EGR_the_east-west_german_wall
+	EGR_ministry_for_state_security
 }
+
+create_intelligence_agency = {	name = "国家保安省"	icon = GFX_agency_EGR_logo	}
 
 set_rule = {
 	can_boost_other_ideologies = no

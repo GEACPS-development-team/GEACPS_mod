@@ -4,21 +4,18 @@ state = {
 	manpower = 1658292
 	state_category = rural
 	
-	resources = {
-		oil = 19
-	}
+	resources = {	oil = 19	}
 	
 	history = {
 		owner = RUS
 		add_core_of = RUS
+		CCS = {	debug_core = yes	}
 		DAG = {	debug_core = yes	}
-		DON = {	debug_core = yes	}
 		NCC = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		set_variable = {	DAG_state_variable = 1	}
-		set_variable = {	DON_state_variable = 1	}
 	}
 	
 	provinces = {

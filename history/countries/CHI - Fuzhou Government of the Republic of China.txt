@@ -1,4 +1,6 @@
-﻿create_dynamic_country = {	#中華民国福州政府
+﻿capital = 595
+
+create_dynamic_country = {	#中華民国福州政府
 	original_tag = CHI
 	
 	set_capital = {	state = 595	}
@@ -7,6 +9,13 @@
 	set_dictatorship = yes
 	
 	recruit_character = CHARACTER_miao_bin
+	add_country_leader_role = {
+		character = CHARACTER_miao_bin
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_miao_bin_desc"
+		}
+	}
 	
 	add_ideas = {	#政治タブ
 		republic_unitary_state

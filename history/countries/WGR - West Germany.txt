@@ -1,5 +1,4 @@
 ﻿capital = 57
-oob = WGR_1946
 
 set_cosmetic_tag = GER_empire
 
@@ -20,6 +19,17 @@ set_popularities = {
 	national_populism = 3
 }
 
+set_party_name = {	#ドイツ・キリスト教民主同盟
+	ideology = conservative_democracy
+	name = PARTY_christian_democratic_union_of_germany
+	long_name = PARTY_christian_democratic_union_of_germany_long
+}
+set_party_name = {	#ドイツ党
+	ideology = authoritative_democracy
+	name = PARTY_german_party
+	long_name = PARTY_german_party_long
+}
+
 recruit_character = CHARACTER_friedrich_wilhelm_victor_august_ernst_von_preusen
 
 add_ideas = {	#政治タブ
@@ -28,11 +38,11 @@ add_ideas = {	#政治タブ
 }
 
 add_ideas = {	#国民精神
-	WGR_the_berlin_declaration
-	WGR_potsdam_agreement
-	WGR_denazification
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_denazification
+	GER_the_east-west_german_wall
 	WGR_republic_of_Bonn
-	WGR_the_east-west_german_wall
 }
 
 set_rule = {

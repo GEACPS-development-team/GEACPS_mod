@@ -1,4 +1,4 @@
-﻿capital = 282
+capital = 282
 oob = JAP_1946
 
 set_cosmetic_tag = GREATJAPAN_empire
@@ -70,7 +70,6 @@ add_ideas = {	#政治タブ
 }
 
 add_ideas = {	#国民精神
-	JAP_high_defence_state_system
 	JAP_privy_council
 	JAP_planning_institute
 	JAP_active_military_service_for_ministers_of_war
@@ -84,6 +83,8 @@ complete_national_focus = JAP_Battle_of_Nanking
 
 country_event = {	id = JAP.0	days = 1	}
 country_event = {	id = JAP.2	days = 22	}
+
+create_intelligence_agency = {	name = "特別高等警察"	icon = GFX_agency_JAP_logo	}
 
 #陣営
 create_faction = GREATER_EAST_ASIA_CO-PROSPERITY_SPHERE

@@ -1,21 +1,78 @@
 autonomy_state = {
 	id = us_commonwealth
-	min_freedom_level = 0.45
+	
+	min_freedom_level = 0.375
+	manpower_influence = 0.2
 	use_overlord_color = yes
 	
-	allowed = {
-		has_variable = colony_trigger_variable
-		OVERLORD = {	original_tag = USA	}
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
 	}
+	
+	modifier = {
+		autonomy_manpower_share = 0.625
+		extra_trade_to_overlord_factor = 0.625
+		overlord_trade_cost_factor = -0.625
+		license_subject_master_purchase_cost = -0.625
+		cic_to_overlord_factor = 0.625
+		mic_to_overlord_factor = 0.625
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		dominion
+		us_commonwealth
+		colony
+		colony_and_protectorate
+		colonies_federation
+		overseas_territory
+		us_territory
+	}
+	allowed = {	OVERLORD = {	original_tag = USA	}	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = us_territory
-	is_puppet = yes
-	min_freedom_level = 0.15
+	
+	min_freedom_level = 0.125
+	manpower_influence = 0.2
 	use_overlord_color = yes
 	
-	allowed = {
-		has_variable = colony_trigger_variable
-		OVERLORD = {	original_tag = USA	}
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
 	}
+	
+	modifier = {
+		autonomy_manpower_share = 1.0
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -1.0
+		license_subject_master_purchase_cost = -1.0
+		cic_to_overlord_factor = 1.0
+		mic_to_overlord_factor = 1.0
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		dominion
+		us_commonwealth
+		colony
+		colony_and_protectorate
+		colonies_federation
+		overseas_territory
+		us_territory
+	}
+	allowed = {	OVERLORD = {	original_tag = USA	}	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }

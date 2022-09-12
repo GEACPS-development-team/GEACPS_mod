@@ -11,6 +11,7 @@ country_event = {	#
 		name = ARG.0.0
 		ai_chance = {	factor = 100	}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.0"	}
 }
 country_event = {	#
 	id = ARG.1
@@ -24,6 +25,7 @@ country_event = {	#
 		name = ARG.1.0
 		ai_chance = {	factor = 100	}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.1"	}
 }
 country_event = {	#
 	id = ARG.2
@@ -67,6 +69,7 @@ country_event = {	#
 		custom_effect_tooltip = ARG_emergency_citizens_alliance_win
 		set_country_flag = ARG_emergency_citizens_alliance_win_1946
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.2"	}
 }
 country_event = {	#
 	id = ARG.3
@@ -81,6 +84,7 @@ country_event = {	#
 		ai_chance = {	factor = 100	}
 		add_ideas = ARG_eva_peron_foundation
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.3"	}
 }
 country_event = {	#
 	id = ARG.4
@@ -110,6 +114,7 @@ country_event = {	#
 			}
 		}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.4"	}
 }
 country_event = {	#
 	id = ARG.5
@@ -124,6 +129,7 @@ country_event = {	#
 		ai_chance = {	factor = 100	}
 		add_ideas = ARG_economic_independence
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.5"	}
 }
 country_event = {	#
 	id = ARG.6
@@ -145,6 +151,7 @@ country_event = {	#
 			}
 		}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.6"	}
 }
 country_event = {	#
 	id = ARG.7
@@ -160,6 +167,7 @@ country_event = {	#
 		add_stability = 0.05
 		add_war_support = 0.09
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.7"	}
 }
 country_event = {	#
 	id = ARG.8
@@ -180,4 +188,5 @@ country_event = {	#
 			60 = {}
 		}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.8"	}
 }

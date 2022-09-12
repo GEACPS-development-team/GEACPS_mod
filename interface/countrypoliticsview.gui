@@ -50,25 +50,24 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 			frame = 1
 		}
-
-		containerWindowType = {
+		containerWindowType = {#政党のリスト
 			name = "chart_explanation"
 			position = { x = 334 y = 297 }
-			size = { width = 216 height = 80 }
+			size = { width = 217 height = 164 }
 			clipping = yes
 			verticalScrollbar = "right_vertical_slider"
 			margin = { top = 6 left = 0 bottom = 5 right = 0}
 			
 			background = {
-			name = "Background"
-			quadTextureSprite ="GFX_tiled_bg_1_scrollbar"
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
 			}
 		
 			gridBoxType = {
 				name = "parties_grid"
-				position = { x = -47 y = 5 }
+				position = { x = -47 y = 6 }
 				size = { width = 100%% height = 100%% }
-				slotsize = { width = 230 height = 16 }
+				slotsize = { width = 230 height = 15 }
 				format = "UPPER_LEFT"
 			}
 		}
@@ -144,23 +143,23 @@ guiTypes = {
 			size = { width = 255 height = 60 }
 			clipping = no
 					
-#			instantTextboxType = {
-#				name = "party"
-#				position = { x = 9 y = 2 }
-#				font = "hoi_18mbs"
-#				text = "party"
-#				maxWidth = 155
-#				maxHeight = 20
-#			}
+			#			instantTextboxType = {
+			#				name = "party"
+			#				position = { x = 9 y = 2 }
+			#				font = "hoi_18mbs"
+			#				text = "party"
+			#				maxWidth = 155
+			#				maxHeight = 20
+			#			}
 			
-			instantTextboxType = {
-				name = "ideology"
-				position = { x = 9 y = 8 }
-				font = "hoi_18mbs"
-				text = "ideology"
-				maxWidth = 155
-				maxHeight = 20
-			}
+			# instantTextboxType = {
+			# 	name = "ideology"
+			# 	position = { x = 9 y = 8 }
+			# 	font = "hoi_18mbs"
+			# 	text = "ideology"
+			# 	maxWidth = 155
+			# 	maxHeight = 20
+			# }
 			
 			instantTextboxType = {
 				name = "elections"
@@ -456,32 +455,6 @@ guiTypes = {
 			vertical_alignment = center
 		}
 		
-		containerWindowType = {
-			name = "ideas"
-			position = { x = 0 y = 425 }
-			size = { width=100%% height=100%% }
-			verticalScrollbar = "right_vertical_slider"
-			horizontalScrollbar = "bottom_horizontal_slider"
-			margin = { top = 14 bottom = 13}
-		
-			background = {
-				name = "Background"
-				#quadTextureSprite ="GFX_tiled_window_2b_border"
-				#quadTextureSprite ="GFX_tiled_window_1b_border"
-				quadTextureSprite ="GFX_tiled_window_1b_border"
-			}
-			
-			gridBoxType = {
-				name = "idea_categories_grid"
-				position = { x = 17 y = 0 }
-				size = { width = 100%% height = 100%% }
-				slotsize = { width = 64 height = 106 }
-				max_slots_horizontal = 1
-				format = "UPPER_LEFT"
-			}
-
-
-		}
 
 		iconType ={
 			name ="tutorial_glow"
@@ -505,104 +478,138 @@ guiTypes = {
 
 		iconType ={
 			name ="politics_bottom"
-			spriteType = "GFX_main_screens_bottom"
-			position = { x = -2 y = 383 }
+			spriteType = "GFX_subview_header_bg_375x101"
+			position = { x = 4.5 y = 371 }
 			Orientation = "UPPER_LEFT"
-			scale = 1.02
+			scale = 0.895
 		}
 
 		iconType = {
 			name = "rules"
 			spriteType = "GFX_rules_sum_icon"
 			position = { x = 460 y = 7 }
+			alwaystransparent = yes
 		}
 
 		buttonType = {
 			name = "manage_occupied_button"
-			position = { x = 10 y = 390 }
-			quadTextureSprite = "GFX_government_button"
+			position = { x = 10 y = 417 }
+			quadTextureSprite = "GFX_exercise_btn"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
 		}
-
-		instantTextboxType = {
-			name = "manage_occupied_button_text"
-			position = { x = 48 y = 398 }
-			font = "hoi_16mbs"
-			text = "MANAGE_OCCUPIED_TERRITORIES"
-			maxWidth = 122
+		iconType = {
+			name = "icon_occupied_territories"
+			spriteType = "GFX_icon_occupied_territories"
+			position = { x = 12 y = 421 }
 			alwaystransparent = yes
 		}
+		# instantTextboxType = {
+		# 	name = "manage_occupied_button_text"
+		# 	position = { x = 48 y = 398 }
+		# 	font = "hoi_16mbs"
+		# 	text = "MANAGE_OCCUPIED_TERRITORIES"
+		# 	maxWidth = 122
+		# 	alwaystransparent = yes
+		# }
 		
 		containerWindowType = {
 			name = "subjects_button_container"
-			position = { x = 367 y = 390 }
+			position = { x = 90 y = 417 }
 
 			buttonType = {
 				name = "show_subjects_button"
 				position = { x = 0 y = 0 }
-				quadTextureSprite = "GFX_government_button"
+				quadTextureSprite = "GFX_exercise_btn"
 				buttonFont = "hoi_16mbs"
 				Orientation = "UPPER_RIGHT"
 			}
 
-			instantTextboxType = {
-				name = "show_subjects_button_text"
-				position = { x = 32 y = 8 }
-				font = "hoi_16mbs"
-				text = "MANAGE_SUBJECTS"
-				Orientation = "UPPER_LEFT"
-				maxWidth = 130
-				alwaystransparent = yes
-				format = center
-			}
+			# instantTextboxType = {
+			# 	name = "show_subjects_button_text"
+			# 	position = { x = 32 y = 8 }
+			# 	font = "hoi_16mbs"
+			# 	text = "MANAGE_SUBJECTS"
+			# 	Orientation = "UPPER_LEFT"
+			# 	maxWidth = 130
+			# 	alwaystransparent = yes
+			# 	format = center
+			# }
 
 			iconType = {
 				name = "icon_manage_subjects"
 				spriteType = "GFX_icon_manage_subjects"
-				position = { x = 2 y = 1 }
+				position = { x = 2 y = 3 }
 				alwaystransparent = yes
 			}
+
+	
+
 		}
 		
 		buttonType = {
 			name = "show_exiles_collaborations_button"
-			position = { x = 190 y = 390 }
-			quadTextureSprite = "GFX_government_button"
+			position = { x = 50 y = 417 }
+			quadTextureSprite = "GFX_exercise_btn"
 			buttonFont = "hoi_16mbs"
 			Orientation = "UPPER_LEFT"
 			format = right
 		}
 
-		instantTextboxType = {
-			name = "manage_exiled_collaborations_governments"
-			position = { x = 223 y = 398 }
-			font = "hoi_16mbs"
-			maxWidth = 130
-			maxHeight = 20
-			fixedsize = yes
-			text = "MANAGE_EXILED_GOVERNMENTS"
-			alwaystransparent = yes
-			format = center
-		}
+		# instantTextboxType = {
+		# 	name = "manage_exiled_collaborations_governments"
+		# 	position = { x = 123 y = 398 }
+		# 	font = "hoi_16mbs"
+		# 	maxWidth = 130
+		# 	maxHeight = 20
+		# 	fixedsize = yes
+		# 	text = "MANAGE_EXILED_GOVERNMENTS"
+		# 	alwaystransparent = yes
+		# 	format = center
+		# }
 				
 		iconType = {
 			name = "icon_exiled_collaborations_governments"
 			spriteType = "GFX_icon_exiled_governments"
-			position = { x = 192 y = 391 }
+			position = { x = 52 y = 419 }
+			alwaystransparent = yes
+			
+		}
+		containerWindowType = {
+			name = "ideas"
+			position = { x = 0 y = 453 }
+			size = { width=100%% height=100%% }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+			margin = { top = 14 bottom = 13}
+		
+			background = {
+				name = "Background"
+				#quadTextureSprite ="GFX_tiled_window_2b_border"
+				#quadTextureSprite ="GFX_tiled_window_1b_border"
+				quadTextureSprite ="GFX_tiled_window_1b_border"
+			}
+			
+			gridBoxType = {
+				name = "idea_categories_grid"
+				position = { x = 17 y = 0 }
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 64 height = 103 }
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+
+
 		}
 
-		iconType = {
-			name = "icon_occupied_territories"
-			spriteType = "GFX_icon_occupied_territories"
-			position = { x = 12 y = 391 }
-		}
+
+
 	}
 	
 	containerWindowType = {
 		name = "country_politics_idea_category_entry"
 		position = { x = 0 y = 0 }
-		size = { width=550 height= 100 }
+		size = { width=250 height= 100 }
 		clipping = no
 		
 		iconType ={
@@ -630,9 +637,9 @@ guiTypes = {
 		
 		gridboxtype = {
 			name = "ideas_grid"
-			position = { x = 17 y = 46 }
+			position = { x = 15 y = 46 }
 			size = { width = 100%% height = 100%% }
-			slotsize = { width = 80 height = 64 }
+			slotsize = { width = 70 height = 64 }
 			max_slots = { x = 7 y = 1 }
 			format = "UPPER_LEFT"
 		}

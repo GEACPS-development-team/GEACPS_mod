@@ -1,33 +1,102 @@
 autonomy_state = {
 	id = mandated_territory_A
-	is_puppet = yes
-	min_freedom_level = 0.6
+	
+	min_freedom_level = 0.5
+	manpower_influence = 0.2
 	use_overlord_color = yes
 	
-	min_freedom_level = 0
-	manpower_influence = 0
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = no
+	}
 	
-	allowed = {	has_variable = mandated_territory_trigger_variable	}
+	modifier = {
+		autonomy_manpower_share = 0
+		extra_trade_to_overlord_factor = 0.25
+		overlord_trade_cost_factor = -0.25
+		license_subject_master_purchase_cost = -0.25
+		cic_to_overlord_factor = 0.25
+		mic_to_overlord_factor = 0.25
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		mandated_territory_A
+		mandated_territory_B
+		mandated_territory_C
+	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = mandated_territory_B
-	is_puppet = yes
-	min_freedom_level = 0.3
+	
+	min_freedom_level = 0.25
+	manpower_influence = 0.2
 	use_overlord_color = yes
 	
-	min_freedom_level = 0
-	manpower_influence = 0
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
+	}
 	
-	allowed = {	has_variable = mandated_territory_trigger_variable	}
+	modifier = {
+		autonomy_manpower_share = 0.75
+		extra_trade_to_overlord_factor = 0.75
+		overlord_trade_cost_factor = -0.75
+		license_subject_master_purchase_cost = -0.75
+		cic_to_overlord_factor = 0.75
+		mic_to_overlord_factor = 0.75
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		mandated_territory_A
+		mandated_territory_B
+		mandated_territory_C
+	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = mandated_territory_C
-	is_puppet = yes
-	min_freedom_level = 0.0
+	
+	min_freedom_level = 0.125
+	manpower_influence = 0.2
 	use_overlord_color = yes
 	
-	min_freedom_level = 0
-	manpower_influence = 0
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
+	}
 	
-	allowed = {	has_variable = mandated_territory_trigger_variable	}
+	modifier = {
+		autonomy_manpower_share = 0.875
+		extra_trade_to_overlord_factor = 0.875
+		overlord_trade_cost_factor = -0.875
+		license_subject_master_purchase_cost = -0.875
+		cic_to_overlord_factor = 0.875
+		mic_to_overlord_factor = 0.875
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		mandated_territory_A
+		mandated_territory_B
+		mandated_territory_C
+	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }

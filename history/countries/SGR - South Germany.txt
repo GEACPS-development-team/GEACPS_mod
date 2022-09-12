@@ -1,5 +1,4 @@
 ﻿capital = 52
-oob = SGR_1946
 
 set_cosmetic_tag = GER_federal_republic
 
@@ -20,12 +19,23 @@ set_popularities = {
 	national_populism = 4
 }
 
+set_party_name = {	#ドイツ社会民主党
+	ideology = social_democracy
+	name = PARTY_social_democratic_party_of_germany
+	long_name = PARTY_social_democratic_party_of_germany_long
+}
+set_party_name = {	#自由民主党
+	ideology = conservative_democracy
+	name = PARTY_free_democratic_party
+	long_name = PARTY_free_democratic_party_long
+}
+
 recruit_character = CHARACTER_karl_borromaus_arnold
 
 add_ideas = {	#国民精神
-	SGR_the_berlin_declaration
-	SGR_potsdam_agreement
-	SGR_denazification
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_denazification
 }
 
 give_military_access = USA
