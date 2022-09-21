@@ -1,0 +1,175 @@
+defined_text = {
+	name = GetEraIcon
+	text = {
+		trigger = {	has_country_flag = CALENDAR_JAP_imperial_year_flag	}
+		localization_key = "GFX_JAP_imperial_year"
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_buddhist_calendar_flag	}
+		localization_key = "GFX_buddhist_calendar"
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_PER_year_flag	}
+		localization_key = "GFX_PER_year"
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_minguo_calendar_flag	}
+		localization_key = "GFX_minguo_calendar"
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_JAP_era_flag	}
+		localization_key = "GFX_JAP_era"
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_MAN_era_flag	}
+		localization_key = "GFX_MAN_era"
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_VIN_era_flag	}
+		localization_key = "GFX_VIN_era"
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_stems_and_branches_flag	}
+		localization_key = "GFX_stems_and_branches"
+	}
+	text = {	localization_key = "GFX_christian_era"	}
+}
+defined_text = {
+	name = GetEraNameValue
+	text = {
+		trigger = {
+			has_country_flag = CALENDAR_JAP_imperial_year_flag
+		}
+		localization_key = CALENDAR_JAP_imperial_year_value
+	}
+	text = {
+		trigger = {
+			has_country_flag = CALENDAR_buddhist_calendar_flag
+		}
+		localization_key = CALENDAR_buddhist_calendar_value
+	}
+	text = {
+		trigger = {
+			has_country_flag = CALENDAR_PER_year_flag
+		}
+		localization_key = CALENDAR_PER_year_value
+	}
+	text = {
+		trigger = {
+			has_country_flag = CALENDAR_minguo_calendar_flag
+		}
+		localization_key = CALENDAR_minguo_calendar_value
+	}
+	text = {
+		trigger = {
+			has_country_flag = CALENDAR_JAP_era_flag
+			has_country_flag = CALENDAR_JAP_era_showa_flag
+		}
+		localization_key = CALENDAR_JAP_era_showa_value
+	}
+	text = {
+		trigger = {
+			has_country_flag = CALENDAR_MAN_era_flag
+			has_country_flag = CALENDAR_MAN_era_kangde_flag
+		}
+		localization_key = CALENDAR_MAN_era_kangde_value
+	}
+	text = {
+		trigger = {
+			has_country_flag = CALENDAR_VIN_era_flag
+			has_country_flag = CALENDAR_VIN_era_baodai_flag
+		}
+		localization_key = CALENDAR_VIN_era_baodai_value
+	}
+	text = {
+		trigger = {	has_country_flag = CALENDAR_stems_and_branches_flag	}
+		localization_key = CALENDAR_stems_and_branches_value
+	}
+	text = {	localization_key = CALENDAR_christian_era_value	}
+}
+defined_text = {
+	name = GetHeavenlyStems
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 1	}	}
+		localization_key = CALENDAR_heavenly_stems_1
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 2	}	}
+		localization_key = CALENDAR_heavenly_stems_2
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 3	}	}
+		localization_key = CALENDAR_heavenly_stems_3
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 5	}	}
+		localization_key = CALENDAR_heavenly_stems_4
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 6	}	}
+		localization_key = CALENDAR_heavenly_stems_6
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 7	}	}
+		localization_key = CALENDAR_heavenly_stems_7
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 8	}	}
+		localization_key = CALENDAR_heavenly_stems_8
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 9	}	}
+		localization_key = CALENDAR_heavenly_stems_9
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_heavenly_stems = 10	}	}
+		localization_key = CALENDAR_heavenly_stems_10
+	}
+}
+defined_text = {
+	name = GetEarthlyBranches
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 1	}	}
+		localization_key = CALENDAR_earthly_branches_1
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 2	}	}
+		localization_key = CALENDAR_earthly_branches_2
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 3	}	}
+		localization_key = CALENDAR_earthly_branches_3
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 5	}	}
+		localization_key = CALENDAR_earthly_branches_4
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 6	}	}
+		localization_key = CALENDAR_earthly_branches_6
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 7	}	}
+		localization_key = CALENDAR_earthly_branches_7
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 8	}	}
+		localization_key = CALENDAR_earthly_branches_8
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 9	}	}
+		localization_key = CALENDAR_earthly_branches_9
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 10	}	}
+		localization_key = CALENDAR_earthly_branches_10
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 11	}	}
+		localization_key = CALENDAR_earthly_branches_11
+	}
+	text = {
+		trigger = {	check_variable = {	global.CALENDAR_earthly_branches = 12	}	}
+		localization_key = CALENDAR_earthly_branches_12
+	}
+}

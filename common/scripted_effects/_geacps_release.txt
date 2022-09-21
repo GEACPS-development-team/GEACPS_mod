@@ -1064,11 +1064,6 @@ release_country_cosmetic = {
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = BOS_islamic_republic
 		}
-		else_if = {	#共同統治領ボスニア
-			limit = {	ROOT = {	has_country_flag = BOS_condominium_flag	}	}
-			#add_ideas = 
-			set_cosmetic_tag = BOS_condominium
-		}
 		else_if = {	#ボスニア及びヘルツェゴヴィナ
 			limit = {	ROOT = {	has_country_flag = BOSandHRZ_flag	}	}
 			add_ideas = republic_unitary_state
@@ -1499,11 +1494,6 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = CHI_soviet_democratic_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = CHI_soviet_democratic_republic
-		}
-		else_if = {	#大清国
-			limit = {	ROOT = {	has_country_flag = GREATQING_state_flag	}	}
-			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = GREATQING_state
 		}
 	}
 	else_if = {	#CHL
@@ -2018,12 +2008,12 @@ release_country_cosmetic = {
 	}
 	else_if = {	#DAM
 		limit = {	tag = DAM	}
-		if = {	#アレッポ共和国
+		if = {	#ダマスカス共和国
 			limit = {	ROOT = {	has_country_flag = DAM_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = DAM_republic
 		}
-		else_if = {	#アレッポ国
+		else_if = {	#ダマスカス国
 			limit = {	ROOT = {	has_country_flag = DAM_state_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = DAM_state
@@ -2507,9 +2497,9 @@ release_country_cosmetic = {
 	else_if = {	#GAL
 		limit = {	tag = GAL	}
 		if = {	#ガリツィア王国
-			limit = {	ROOT = {	has_country_flag = GAL_republic_flag	}	}
+			limit = {	ROOT = {	has_country_flag = GAL_kingdom_flag	}	}
 			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = GAL_republic
+			set_cosmetic_tag = GAL_kingdom
 		}
 	}
 	else_if = {	#GAM
@@ -3606,7 +3596,7 @@ release_country_cosmetic = {
 			add_ideas = monarchy_unitary_state
 			set_cosmetic_tag = KHI_khanate
 		}
-		else_if = {	#クランタン共和国
+		else_if = {	#ヒヴァ共和国
 			limit = {	ROOT = {	has_country_flag = KHI_republic_flag	}	}
 			add_ideas = republic_unitary_state
 			set_cosmetic_tag = KHI_republic
@@ -4176,23 +4166,7 @@ release_country_cosmetic = {
 	}
 	else_if = {	#MEN
 		limit = {	tag = MEN	}
-		if = {	#蒙古自治邦
-			limit = {	ROOT = {	has_country_flag = MEN_autonomous_federation_flag	}	}
-			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = MEN_autonomous_federation
-		}
-		else_if = {	#蒙古聯盟自治政府
-			limit = {	ROOT = {	has_country_flag = MEN_united_autonomous_government_flag	}	}
-			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = MEN_united_autonomous_government
-		}
-		else_if = {	#蒙古軍政府
-			limit = {	ROOT = {	has_country_flag = MEN_military_government_flag	}	}
-			add_ideas = republic_unitary_state
-			add_ideas = military_dictatorial_system
-			set_cosmetic_tag = MEN_military_government
-		}
-		else_if = {	#蒙古軍閥
+		if = {	#蒙古軍閥
 			limit = {	ROOT = {	has_country_flag = MEN_warlord_flag	}	}
 			add_ideas = republic_unitary_state
 			add_ideas = military_dictatorial_system
@@ -4210,11 +4184,6 @@ release_country_cosmetic = {
 			limit = {	ROOT = {	has_country_flag = MEX_empire_flag	}	}
 			add_ideas = monarchy_unitary_state
 			set_cosmetic_tag = MEX_empire
-		}
-		else_if = {	#メキシコ帝国
-			limit = {	ROOT = {	has_country_flag = MEX_empire_habsburg_flag	}	}
-			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = MEX_empire_habsburg
 		}
 		else_if = {	#メキシコ共和国
 			limit = {	ROOT = {	has_country_flag = MEX_republic_flag	}	}
