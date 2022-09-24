@@ -57,19 +57,17 @@ recruit_character = CHARACTER_osami_nagano
 recruit_character = CHARACTER_shigetaro_shimada
 recruit_character = CHARACTER_sokichi_takagi
 
-add_ideas = {	#政治タブ
+activate_advisor = JAP_hideki_tojo_hg
+activate_advisor = JAP_mamoru_shigemitsu_fm
+activate_advisor = JAP_kisaburo_ando_hm
+activate_advisor = JAP_hideki_tojo_cm
+activate_advisor = JAP_hideki_tojo_mm
+activate_advisor = JAP_hideki_tojo_am
+activate_advisor = JAP_shigetaro_shimada_nm
+
+add_ideas = {
 	monarchy_unitary_state
 	imperial_rule_assistance_system
-	JAP_hideki_tojo_hg
-	JAP_mamoru_shigemitsu_fm
-	JAP_kisaburo_ando_hm
-	JAP_hideki_tojo_cm
-	JAP_hideki_tojo_mm
-	JAP_hideki_tojo_am
-	JAP_shigetaro_shimada_nm
-}
-
-add_ideas = {	#国民精神
 	JAP_privy_council
 	JAP_planning_institute
 	JAP_active_military_service_for_ministers_of_war
@@ -84,7 +82,7 @@ complete_national_focus = JAP_Battle_of_Nanking
 country_event = {	id = JAP.0	days = 1	}
 country_event = {	id = JAP.2	days = 22	}
 
-create_intelligence_agency = {	name = "特別高等警察"	icon = GFX_agency_JAP_logo	}
+create_intelligence_agency = {	name = "特別高等警察"	icon = GFX_secret_military_agency	}
 
 #陣営
 create_faction = GREATER_EAST_ASIA_CO-PROSPERITY_SPHERE

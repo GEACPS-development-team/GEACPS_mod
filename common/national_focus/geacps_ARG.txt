@@ -20,7 +20,7 @@ focus_tree = {
 #åRéñNF
 shared_focus = {
 	id = ARG_army_realignment
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 3
 	y = 0
@@ -35,7 +35,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_army_organization
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 3
 	y = 1
@@ -52,7 +52,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_guidance_on_the_development_of_cas
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 1
 	y = 1
@@ -62,6 +62,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_guidance_on_the_development_of_cas"
 		add_tech_bonus = {
+			name = ARG_guidance_on_the_development_of_cas
 			ahead_reduction = 1
 			uses = 1
 			category = cas_bomber
@@ -74,7 +75,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_armoured_vehicles_to_protect_us
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -3
 	y = 1
@@ -84,6 +85,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_armoured_vehicles_to_protect_us"
 		add_tech_bonus = {
+			name = ARG_armoured_vehicles_to_protect_us
 			bonus = 0.5
 			uses = 1
 			category = armor
@@ -95,7 +97,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_goddess_of_war
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -1
 	y = 1
@@ -105,6 +107,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_goddess_of_war"
 		add_tech_bonus = {
+			name = ARG_goddess_of_war
 			bonus = 0.5
 			uses = 1
 			category = artillery
@@ -116,7 +119,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_crush_the_sky
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -126,6 +129,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_crush_the_sky"
 		add_tech_bonus = {
+			name = ARG_crush_the_sky
 			bonus = 0.5
 			uses = 1
 			category = cat_anti_air
@@ -137,7 +141,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_modern_infantry_rifles
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 1
 	y = 1
@@ -147,6 +151,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_modern_infantry_rifles"
 		add_tech_bonus = {
+			name = ARG_modern_infantry_rifles
 			bonus = 0.5
 			uses = 1
 			category = infantry_weapons
@@ -158,7 +163,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_improved_support_equipment
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -168,6 +173,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_improved_support_equipment"
 		add_tech_bonus = {
+			name = ARG_improved_support_equipment
 			bonus = 0.5
 			uses = 1
 			category = support_tech
@@ -179,7 +185,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_antiarmour_equipment
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 1
 	y = 1
@@ -189,6 +195,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus ARG_antiarmour_equipment"
 		add_tech_bonus = {
+			name = ARG_antiarmour_equipment
 			bonus = 0.5
 			uses = 1
 			category = cat_anti_tank
@@ -201,7 +208,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_air_force_realignment
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 8
 	y = 0
@@ -223,7 +230,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_german_military_officer_in_exile_to_our_country
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -247,7 +254,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_pilot_training
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 1
 	y = 1
@@ -267,7 +274,7 @@ shared_focus = {
 #ê≠é°NF
 shared_focus = {
 	id = ARG_february_election
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 0
 	x = 15
 	y = 0
@@ -287,7 +294,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_labour_party
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 3
 	y = 1
@@ -305,7 +312,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_enacted_the_evita_act
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -322,7 +329,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_oppression_of_dissenters
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -343,7 +350,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_establishment_of_the_eva_peron_foundation
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -360,7 +367,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_launch_of_the_five_year_plan
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 1
 	y = 1
@@ -377,7 +384,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_railway_construction
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 2
 	y = 1
@@ -394,7 +401,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_suburban_industrial_park_developments_ii
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 10
 	x = 0
 	y = 1
@@ -418,7 +425,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_declaration_of_economic_independence
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -435,7 +442,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_nationalisation_of_private_banks
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -459,7 +466,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_contributions_to_housing_construction
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -476,7 +483,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_establishment_of_the_national_atomic_energy_commission
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -1
 	y = 1
@@ -494,7 +501,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_trade_unipolarisation
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -1
 	y = 1
@@ -511,7 +518,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_improved_public_health
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -528,7 +535,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_free_university
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -545,7 +552,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_emergency_citizens_alliance
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -3
 	y = 1
@@ -563,7 +570,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_transition_to_a_fairer_society
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -580,7 +587,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_cooperation_with_GBR
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -597,7 +604,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_protecting_south_america
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -615,7 +622,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_neighbouring_state
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -632,7 +639,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_strong_alliances
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -652,7 +659,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_to_the_north
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -682,7 +689,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_alliance_unity
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -708,7 +715,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_approached_to_join_GBR_faction
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -2
 	y = 1
@@ -726,7 +733,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_somisa_established
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 2
@@ -745,7 +752,6 @@ shared_focus = {
 			add_resource = {
 				type = steel
 				amount = 20
-				state = THIS
 			}
 		}
 	}
@@ -758,7 +764,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_suburban_industrial_park_developments
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -2
 	y = 1
@@ -782,7 +788,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_further_development_of_heavy_industry
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -806,7 +812,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_ime_established
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -823,7 +829,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_ime_factory_construction
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -847,7 +853,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_establishment_of_the_institute
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 2
 	y = 1
@@ -864,7 +870,7 @@ shared_focus = {
 
 shared_focus = {
 	id = ARG_new_railway_network
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1

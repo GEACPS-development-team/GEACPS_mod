@@ -37,7 +37,7 @@ defined_text = {
 defined_text = {#全体的社会主義
 	name = GetIdeologyType_total_socialism
 	text = {
-		trigger = { has_country_leader_ideology = stalinism_ideology }
+		trigger = {	has_country_leader_ideology = stalinism_ideology }
 		localization_key = stalinism_ideology
 	}
 	text = {
@@ -48,10 +48,7 @@ defined_text = {#全体的社会主義
 		trigger = { has_country_leader_ideology = bukharinism_ideology }
 		localization_key = bukharinism_ideology
 	}
-	text = {
-		trigger = { always = yes }
-		localization_key = total_socialism_ideology
-	}
+	text = {	localization_key = total_socialism_ideology	}
 
 }
 defined_text = {#急進的社会主義

@@ -26,10 +26,6 @@ country_event = {	#一・二二事件の発生
 	option = {	#叛乱軍を捕らえよ！
 		name = JAP.2.0
 		complete_national_focus = JAP_1-22_Incident
-		remove_ideas = JAP_hideki_tojo_hg
-		remove_ideas = JAP_hideki_tojo_cm
-		remove_ideas = JAP_hideki_tojo_mm
-		remove_ideas = JAP_hideki_tojo_am
 		#kill_head_of_government = yes
 		add_stability = -0.1
 		add_manpower = -100
@@ -38,6 +34,10 @@ country_event = {	#一・二二事件の発生
 		}
 		hidden_effect = {
 			set_country_flag = JAP_1-22_Incident_occurred
+			deactivate_advisor = JAP_hideki_tojo_hg
+			deactivate_advisor = JAP_hideki_tojo_cm
+			deactivate_advisor = JAP_hideki_tojo_mm
+			deactivate_advisor = JAP_hideki_tojo_am
 		}
 	}
 }
@@ -56,19 +56,19 @@ country_event = {	#臨時代理
 	
 	option = {	#東條の腹心の安藤紀三郎に
 		name = JAP.3.0
- 		ai_chance = {
+		ai_chance = {
 			factor = 90
 		}
-		add_ideas = JAP_kisaburo_ando_hg
+		activate_advisor = JAP_kisaburo_ando_hg
 		add_war_support = 0.1
 	}
 	
 	option = {	#"欠点がない"重光葵に
 		name = JAP.3.1
- 		ai_chance = {
+		ai_chance = {
 			factor = 10
 		}
-		add_ideas = JAP_mamoru_shigemitsu_hg
+		activate_advisor = JAP_mamoru_shigemitsu_hg
 		add_stability = 0.1
 	}
 }
@@ -85,16 +85,16 @@ country_event = {	#重臣会議
 	immediate = {
 		complete_national_focus = JAP_taimeikoka
 		hidden_effect = {
-			set_country_flag = JAP_senior_statesmen's_conference_held
+			set_country_flag = JAP_senior_statesmens_conference_held
 		}
 	}
 	
 	option = {	#奏薦されたのは陸軍の出した候補だ！
 		name = JAP.4.0
- 		ai_chance = {
+		ai_chance = {
 			factor = 75
 		}
-		complete_national_focus = JAP_selection_from_army_candidates
+		# complete_national_focus = JAP_selection_from_army_candidates
 		hidden_effect = {
 			set_country_flag = JAP_army_candidates_selected
 		}
@@ -102,10 +102,10 @@ country_event = {	#重臣会議
 	
 	option = {	#いいや、海軍の出した候補が奏薦された！
 		name = JAP.4.1
- 		ai_chance = {
+		ai_chance = {
 			factor = 15
 		}
-		complete_national_focus = JAP_selection_from_navy_candidates
+		# complete_national_focus = JAP_selection_from_navy_candidates
 		hidden_effect = {
 			set_country_flag = JAP_navy_candidates_selected
 		}
@@ -113,10 +113,10 @@ country_event = {	#重臣会議
 	
 	option = {	#軍部の意見なんぞ無視してしまえばよい...
 		name = JAP.4.2
- 		ai_chance = {
+		ai_chance = {
 			factor = 10
 		}
-		complete_national_focus = JAP_no_selection_from_anywhere
+		# complete_national_focus = JAP_no_selection_from_anywhere
 		hidden_effect = {
 			set_country_flag = JAP_military_opinion_ignored
 		}
@@ -154,7 +154,7 @@ country_event = {	#海軍士官の裁判
 	
 	option = {	#公正な判決を下す
 		name = JAP.6.0
- 		ai_chance = {
+		ai_chance = {
 			factor = 75
 		}
 		custom_effect_tooltip = JAP_menokataki_against_navy
@@ -166,7 +166,7 @@ country_event = {	#海軍士官の裁判
 	
 	option = {	#臣民が助命嘆願運動を行っている...
 		name = JAP.6.1
- 		ai_chance = {
+		ai_chance = {
 			factor = 25
 		}
 		hidden_effect = {
@@ -189,14 +189,14 @@ country_event = {	#農本主義者を逮捕
 	
 	option = {	#全国の農本主義者達の思想を"保護観察"しよう
 		name = JAP.7.0
- 		ai_chance = {
+		ai_chance = {
 			factor = 50
 		}
 	}
 	
 	option = {	#投獄でもしておけ
 		name = JAP.7.1
- 		ai_chance = {
+		ai_chance = {
 			factor = 50
 		}
 	}
@@ -216,7 +216,7 @@ country_event = {	#皇道派将校の裁判
 	
 	option = {	#どのくらい獄中に送れば気が済むのだろうか...
 		name = JAP.8.0
- 		ai_chance = {
+		ai_chance = {
 			factor = 95
 		}
 		retire_character = CHARACTER_tomoshige_tsunoda
@@ -227,7 +227,7 @@ country_event = {	#皇道派将校の裁判
 	
 	option = {	#妥協点を探る
 		name = JAP.8.1
- 		ai_chance = {
+		ai_chance = {
 			factor = 5
 		}
 		hidden_effect = {
@@ -270,7 +270,7 @@ country_event = {
 	id = JAP_military.001
 	title = JAP_military.001.t
 	desc = JAP_military.001.d
-	picture = GFX_
+	picture = GFX_event_test
 	
 	is_triggered_only = yes
 
@@ -297,7 +297,7 @@ country_event = {
 	id = JAP_military.002
 	title = JAP_military.002.t
 	desc = JAP_military.002.d
-	picture = GFX_
+	picture = GFX_event_test
 	
 	is_triggered_only = yes
 
@@ -313,24 +313,19 @@ country_event = {
 		name = JAP_military.002.1
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.2
-				uses = 3
-				category = electronics
+			name = JAP_military.002.1
+			bonus = 0.2
+			uses = 3
+			category = electronics
+			category = industry
 		}
-		add_tech_bonus = {
-				bonus = 0.2
-				uses = 3
-				category = industry
-		}
-
 	}
-
 }
 country_event = {
 	id = JAP_military.003
 	title = JAP_military.003.t
 	desc = JAP_military.003.d
-	picture = GFX_
+	picture = GFX_event_test
 	
 	is_triggered_only = yes
 
@@ -338,81 +333,39 @@ country_event = {
 		name = JAP_military.003.0
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = armor
-			}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = artillery
-			}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = infantry_weapons
+			name = JAP_military.003.0
+			bonus = 0.15
+			uses = 6
+			category = armor
+			category = artillery
+			category = infantry_weapons
+			category = motorized_equipment
 		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = motorized_equipment
-		}
-
 	}
 	option = {
 		name = JAP_military.003.1
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = dd_tech
+			name = JAP_military.003.1
+			bonus = 0.15
+			uses = 7
+			category = dd_tech
+			category = bb_tech
+			category = cv_tech
+			category = ss_tech
+			category = ca_tech
 		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = bb_tech
-		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = cv_tech
-		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = ss_tech
-		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = ca_tech
-		}
-
-
 	}
 	option = {
 		name = JAP_military.003.2
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.2
-				uses = 5
-				category = light_air
-
+			name = JAP_military.003.2
+			bonus = 0.2
+			uses = 7
+			category = light_air
+			category = medium_air
+			category = heavy_air
 		}
-		add_tech_bonus = {
-				bonus = 0.2
-				uses = 5
-				category = medium_air
-
-		}
-		add_tech_bonus = {
-				bonus = 0.2
-				uses = 5
-				category = heavy_air
-
-		}
-
-
 	}
-
 }

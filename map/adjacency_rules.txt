@@ -30,7 +30,7 @@ adjacency_rule = {	#スエズ運河
 	is_disabled = {
 		OR = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
-			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
+			# has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
 		}
 		tooltip = disable_canal_tt
 	}
@@ -71,7 +71,7 @@ adjacency_rule = {	#パナマ運河
 	is_disabled = {
 		OR = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
-			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
+			# has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
 		}
 		tooltip = disable_canal_tt
 	}
@@ -176,7 +176,7 @@ adjacency_rule = {	#日本横断運河
 	required_provinces = {	7102	1067	12097	}
 	
 	is_disabled = {
-		NOT = {	has_country_flag = built_the_trans-japan_canal	}
+		always = yes
 		tooltip = built_the_trans-japan_canal_tt
 	}
 	
@@ -318,7 +318,7 @@ adjacency_rule = {	#ダーダネルス海峡
 	required_provinces = {	849	6864	}
 	
 	is_disabled = {
-		has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
+		# has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
 		tooltip = dardanelles_strait_blocked_tt
 	}
 	

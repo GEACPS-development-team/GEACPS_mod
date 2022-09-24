@@ -22,6 +22,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_armed_uprising"
+	}
 }
 
 #Focus for 合衆国は懲り懲りだ - focus ID randomly generated due to title being in non-latin characters
@@ -36,6 +39,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_armed_uprising }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_done_with_USA"
 	}
 }
 
@@ -52,6 +58,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_revive_the_slave_law"
+	}
 }
 
 #Focus for 強制労働所の建設 - focus ID randomly generated due to title being in non-latin characters
@@ -66,6 +75,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_revive_the_slave_law }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_construct_forced_labor_camps"
 	}
 }
 
@@ -82,6 +94,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_resume_plantation"
+	}
 }
 
 #Focus for 外国企業の資産を押収 - focus ID randomly generated due to title being in non-latin characters
@@ -96,6 +111,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_done_with_USA }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_cease_assets_of_foreign_companies"
 	}
 }
 
@@ -112,6 +130,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_destroy_the_stock_exchange"
+	}
 }
 
 #Focus for 企業の国有化 - focus ID randomly generated due to title being in non-latin characters
@@ -126,6 +147,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_destroy_the_stock_exchange }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_nationalize_the_industry"
 	}
 }
 
@@ -142,6 +166,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_military_economy"
+	}
 }
 
 #Focus for アメリカ統一に向けて - focus ID randomly generated due to title being in non-latin characters
@@ -157,6 +184,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_for_a_united_america"
+	}
 }
 
 #Focus for テキサス併合 - focus ID randomly generated due to title being in non-latin characters
@@ -169,6 +199,9 @@ shared_focus= {
 	available_if_capitulated = yes
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_annex_TEX"
 	}
 }
 
@@ -185,6 +218,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_operation_blue"
+	}
 }
 
 #Focus for レッド作戦 - focus ID randomly generated due to title being in non-latin characters
@@ -199,6 +235,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_annex_TEX }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_operation_red"
 	}
 }
 
@@ -216,6 +255,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_cooperate_with_the_new_empire"
+	}
 }
 
 #Focus for 旧領を割譲 - focus ID randomly generated due to title being in non-latin characters
@@ -230,6 +272,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_cooperate_with_the_new_empire }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_annex_former_territory"
 	}
 }
 
@@ -247,6 +292,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_american_supremacy"
+	}
 }
 
 #Focus for 強制移住 - focus ID randomly generated due to title being in non-latin characters
@@ -261,6 +309,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_american_supremacy }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_forced_emigration"
 	}
 }
 
@@ -277,6 +328,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_secure_the_west_coast"
+	}
 }
 
 #Focus for 地方自治政府を攻撃 - focus ID randomly generated due to title being in non-latin characters
@@ -292,6 +346,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_attack_local_governments"
+	}
 }
 
 #Focus for 共産主義者を処刑 - focus ID randomly generated due to title being in non-latin characters
@@ -306,6 +363,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_operation_red }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_hang_the_communists"
 	}
 }
 
@@ -327,6 +387,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_second_times_the_charm"
+	}
 }
 
 #Focus for アメリカ至上主義 - focus ID randomly generated due to title being in non-latin characters
@@ -343,6 +406,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_american_supremacy_2"
+	}
 }
 
 #Focus for 雪辱を晴らす - focus ID randomly generated due to title being in non-latin characters
@@ -357,6 +423,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_american_supremacy_2 }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_make_up_for_lost_cause"
 	}
 }
 
@@ -374,6 +443,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_protect_the_empire_from_collapse"
+	}
 }
 
 #Focus for 最古の王朝を断絶 - focus ID randomly generated due to title being in non-latin characters
@@ -389,6 +461,9 @@ shared_focus= {
 	mutually_exclusive = { focus = CSA_protect_the_empire_from_collapse }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_abolish_the_oldest_empire"
 	}
 }
 
@@ -410,6 +485,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_yellow_peril_theory"
+	}
 }
 
 #Focus for 支援の見返りを要求 - focus ID randomly generated due to title being in non-latin characters
@@ -424,6 +502,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_yellow_peril_theory }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_demand_a_return_for_support"
 	}
 }
 
@@ -440,6 +521,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_there_is_no_such_thing_as_basic_human_rights"
+	}
 }
 
 #Focus for 南方生存権 - focus ID randomly generated due to title being in non-latin characters
@@ -455,6 +539,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_southern_lebensraum"
+	}
 }
 
 #Focus for 奴隷法の強化 - focus ID randomly generated due to title being in non-latin characters
@@ -469,6 +556,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_southern_lebensraum }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_strengthen_the_slave_law"
 	}
 }
 
@@ -491,6 +581,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_todays_enemy_is_tomorrows_friend"
+	}
 }
 
 #Focus for アラスカを超えて - focus ID randomly generated due to title being in non-latin characters
@@ -506,6 +599,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_beyond_ALS"
+	}
 }
 
 #Focus for 強大なリーダーを確保 - focus ID randomly generated due to title being in non-latin characters
@@ -520,6 +616,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_beyond_ALS }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_secure_a_strong_leader"
 	}
 }
 
@@ -537,6 +636,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_join_the_western_european_alliance"
+	}
 }
 
 #Focus for 戦争ビジネス - focus ID randomly generated due to title being in non-latin characters
@@ -551,6 +653,9 @@ shared_focus= {
 	prerequisite = { focus = CSA_join_the_western_european_alliance }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_the_business_of_war"
 	}
 }
 
@@ -567,6 +672,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_the_second_paris_conference"
+	}
 }
 
 #Focus for アカを撃滅 - focus ID randomly generated due to title being in non-latin characters
@@ -582,6 +690,9 @@ shared_focus= {
 	ai_will_do = {
 		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_eliminate_the_reds"
+	}
 }
 
 #Focus for 強大なロシアを再び - focus ID randomly generated due to title being in non-latin characters
@@ -596,5 +707,8 @@ shared_focus= {
 	prerequisite = { focus = CSA_eliminate_the_reds }
 	ai_will_do = {
 		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus CSA_make_russia_great_again"
 	}
 }
