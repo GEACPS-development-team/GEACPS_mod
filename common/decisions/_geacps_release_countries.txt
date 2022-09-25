@@ -4377,30 +4377,6 @@ release_decisions = {	#仮
 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_CRL"	}
 	}
 	
-	release_CSA = {	#CSA
-		icon = generic_prepare_civil_war
-		cost = 0
-		available = {	hidden_trigger = {	always = yes	}	}
-		visible = {
-			if = {
-				limit = {	CSA = {	release_decision_trigger_1 = no	}	}
-				if = {
-					limit = {	any_owned_core_claimed_state_ROOT = no	}
-					any_owned_state = {
-						is_not_core_and_claimed_state = yes
-						check_variable = {	CSA_state_variable = 1	}
-					}
-					else = {	always = no	}
-				}
-				else = {	always = no	}
-			}
-			else = {	always = no	}
-		}
-		complete_effect = {	country_event = fate_of_CSA.1	}
-		ai_will_do = {	base = 100	}
-		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_CSA"	}
-	}
-	
 	release_CSC = {	#CSC
 		icon = generic_prepare_civil_war
 		cost = 0
@@ -4783,6 +4759,30 @@ release_decisions = {	#仮
 		complete_effect = {	country_event = fate_of_DON.1	}
 		ai_will_do = {	base = 100	}
 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_DON"	}
+	}
+	
+	release_DXL = {	#DXL
+		icon = generic_prepare_civil_war
+		cost = 0
+		available = {	hidden_trigger = {	always = yes	}	}
+		visible = {
+			if = {
+				limit = {	DXL = {	release_decision_trigger_1 = no	}	}
+				if = {
+					limit = {	any_owned_core_claimed_state_ROOT = no	}
+					any_owned_state = {
+						is_not_core_and_claimed_state = yes
+						check_variable = {	DXL_state_variable = 1	}
+					}
+					else = {	always = no	}
+				}
+				else = {	always = no	}
+			}
+			else = {	always = no	}
+		}
+		complete_effect = {	country_event = fate_of_DXL.1	}
+		ai_will_do = {	base = 100	}
+		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_DXL"	}
 	}
 	
 	release_EAF = {	#EAF

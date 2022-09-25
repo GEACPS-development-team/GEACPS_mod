@@ -1,19 +1,19 @@
 ﻿focus_tree = {
-	id = CSA_focus_tree
+	id = DXL_focus_tree
 	country = {
 		factor = 0
 		modifier = {
 			add = 20
-			tag = CSA
+			tag = DXL
 		}
 	}
-	shared_focus = CSA_armed_uprising
-	shared_focus = CSA_annex_TEX
+	shared_focus = DXL_armed_uprising
+	shared_focus = DXL_annex_TEX
 }
 
 #Focus for 武装蜂起 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_armed_uprising
+	id = DXL_armed_uprising
 	icon = GFX_goal_generic_political_pressure
 	x = 3
 	y = 0
@@ -23,175 +23,175 @@ shared_focus= {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_armed_uprising"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_armed_uprising"
 	}
 }
 
 #Focus for 合衆国は懲り懲りだ - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_done_with_USA
+	id = DXL_done_with_USA
 	icon = GFX_goal_tfv_saf_anti_colonialist_crusade
 	x = 0
 	y = 1
 	cost = 15
 	available_if_capitulated = yes
-	relative_position_id = CSA_armed_uprising
-	prerequisite = { focus = CSA_armed_uprising }
+	relative_position_id = DXL_armed_uprising
+	prerequisite = { focus = DXL_armed_uprising }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_done_with_USA"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_done_with_USA"
 	}
 }
 
 #Focus for 奴隷法の再興 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_revive_the_slave_law
+	id = DXL_revive_the_slave_law
 	icon = GFX_focus_smiling_buddha
 	x = -2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_done_with_USA
-	prerequisite = { focus = CSA_done_with_USA }
+	relative_position_id = DXL_done_with_USA
+	prerequisite = { focus = DXL_done_with_USA }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_revive_the_slave_law"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_revive_the_slave_law"
 	}
 }
 
 #Focus for 強制労働所の建設 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_construct_forced_labor_camps
+	id = DXL_construct_forced_labor_camps
 	icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_revive_the_slave_law
-	prerequisite = { focus = CSA_revive_the_slave_law }
+	relative_position_id = DXL_revive_the_slave_law
+	prerequisite = { focus = DXL_revive_the_slave_law }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_construct_forced_labor_camps"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_construct_forced_labor_camps"
 	}
 }
 
 #Focus for プランテーションを再開 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_resume_plantation
+	id = DXL_resume_plantation
 	icon = GFX_goal_generic_construction2
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_construct_forced_labor_camps
-	prerequisite = { focus = CSA_construct_forced_labor_camps }
+	relative_position_id = DXL_construct_forced_labor_camps
+	prerequisite = { focus = DXL_construct_forced_labor_camps }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_resume_plantation"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_resume_plantation"
 	}
 }
 
 #Focus for 外国企業の資産を押収 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_cease_assets_of_foreign_companies
+	id = DXL_cease_assets_of_foreign_companies
 	icon = GFX_focus_eng_move_to_secure_the_dominions
 	x = 2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_done_with_USA
-	prerequisite = { focus = CSA_done_with_USA }
+	relative_position_id = DXL_done_with_USA
+	prerequisite = { focus = DXL_done_with_USA }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_cease_assets_of_foreign_companies"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_cease_assets_of_foreign_companies"
 	}
 }
 
 #Focus for 証券取引所を破壊 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_destroy_the_stock_exchange
+	id = DXL_destroy_the_stock_exchange
 	icon = GFX_goal_generic_major_war
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_cease_assets_of_foreign_companies
-	prerequisite = { focus = CSA_cease_assets_of_foreign_companies }
+	relative_position_id = DXL_cease_assets_of_foreign_companies
+	prerequisite = { focus = DXL_cease_assets_of_foreign_companies }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_destroy_the_stock_exchange"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_destroy_the_stock_exchange"
 	}
 }
 
 #Focus for 企業の国有化 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_nationalize_the_industry
+	id = DXL_nationalize_the_industry
 	icon = GFX_goal_generic_positive_trade_relations
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_destroy_the_stock_exchange
-	prerequisite = { focus = CSA_destroy_the_stock_exchange }
+	relative_position_id = DXL_destroy_the_stock_exchange
+	prerequisite = { focus = DXL_destroy_the_stock_exchange }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_nationalize_the_industry"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_nationalize_the_industry"
 	}
 }
 
 #Focus for 軍事経済 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_military_economy
+	id = DXL_military_economy
 	icon = GFX_goal_generic_construct_mil_factory
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_nationalize_the_industry
-	prerequisite = { focus = CSA_nationalize_the_industry }
+	relative_position_id = DXL_nationalize_the_industry
+	prerequisite = { focus = DXL_nationalize_the_industry }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_military_economy"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_military_economy"
 	}
 }
 
 #Focus for アメリカ統一に向けて - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_for_a_united_america
+	id = DXL_for_a_united_america
 	icon = GFX_goal_rhineland
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_done_with_USA
-	prerequisite = { focus = CSA_done_with_USA }
+	relative_position_id = DXL_done_with_USA
+	prerequisite = { focus = DXL_done_with_USA }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_for_a_united_america"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_for_a_united_america"
 	}
 }
 
 #Focus for テキサス併合 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_annex_TEX
+	id = DXL_annex_TEX
 	icon = GFX_goal_generic_forceful_treaty
 	x = 13
 	y = 0
@@ -201,514 +201,514 @@ shared_focus= {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_annex_TEX"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_annex_TEX"
 	}
 }
 
 #Focus for ブルー作戦 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_operation_blue
+	id = DXL_operation_blue
 	icon = GFX_goal_generic_occupy_states_ongoing_war
 	x = -2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_annex_TEX
-	prerequisite = { focus = CSA_annex_TEX }
+	relative_position_id = DXL_annex_TEX
+	prerequisite = { focus = DXL_annex_TEX }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_operation_blue"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_operation_blue"
 	}
 }
 
 #Focus for レッド作戦 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_operation_red
+	id = DXL_operation_red
 	icon = GFX_goal_generic_territory_or_war
 	x = 2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_annex_TEX
-	prerequisite = { focus = CSA_annex_TEX }
+	relative_position_id = DXL_annex_TEX
+	prerequisite = { focus = DXL_annex_TEX }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_operation_red"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_operation_red"
 	}
 }
 
 #Focus for 新帝国との協力 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_cooperate_with_the_new_empire
+	id = DXL_cooperate_with_the_new_empire
 	icon = GFX_goal_tripartite_pact
 	x = -2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_operation_blue
-	prerequisite = { focus = CSA_operation_blue }
-	mutually_exclusive = { focus = CSA_american_supremacy }
+	relative_position_id = DXL_operation_blue
+	prerequisite = { focus = DXL_operation_blue }
+	mutually_exclusive = { focus = DXL_american_supremacy }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_cooperate_with_the_new_empire"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_cooperate_with_the_new_empire"
 	}
 }
 
 #Focus for 旧領を割譲 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_annex_former_territory
+	id = DXL_annex_former_territory
 	icon = GFX_goal_molotov_ribbentrop_pact
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_cooperate_with_the_new_empire
-	prerequisite = { focus = CSA_cooperate_with_the_new_empire }
+	relative_position_id = DXL_cooperate_with_the_new_empire
+	prerequisite = { focus = DXL_cooperate_with_the_new_empire }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_annex_former_territory"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_annex_former_territory"
 	}
 }
 
 #Focus for アメリカ至上主義 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_american_supremacy
+	id = DXL_american_supremacy
 	icon = GFX_goal_generic_demand_territory
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_operation_blue
-	prerequisite = { focus = CSA_operation_blue }
-	mutually_exclusive = { focus = CSA_cooperate_with_the_new_empire }
+	relative_position_id = DXL_operation_blue
+	prerequisite = { focus = DXL_operation_blue }
+	mutually_exclusive = { focus = DXL_cooperate_with_the_new_empire }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_american_supremacy"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_american_supremacy"
 	}
 }
 
 #Focus for 強制移住 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_forced_emigration
+	id = DXL_forced_emigration
 	icon = GFX_goal_generic_dangerous_deal
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_american_supremacy
-	prerequisite = { focus = CSA_american_supremacy }
+	relative_position_id = DXL_american_supremacy
+	prerequisite = { focus = DXL_american_supremacy }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_forced_emigration"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_forced_emigration"
 	}
 }
 
 #Focus for 西海岸を確保 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_secure_the_west_coast
+	id = DXL_secure_the_west_coast
 	icon = GFX_goal_generic_wolf_pack
 	x = 2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_operation_blue
-	prerequisite = { focus = CSA_operation_blue }
+	relative_position_id = DXL_operation_blue
+	prerequisite = { focus = DXL_operation_blue }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_secure_the_west_coast"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_secure_the_west_coast"
 	}
 }
 
 #Focus for 地方自治政府を攻撃 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_attack_local_governments
+	id = DXL_attack_local_governments
 	icon = GFX_goal_generic_position_armies
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_secure_the_west_coast
-	prerequisite = { focus = CSA_secure_the_west_coast }
+	relative_position_id = DXL_secure_the_west_coast
+	prerequisite = { focus = DXL_secure_the_west_coast }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_attack_local_governments"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_attack_local_governments"
 	}
 }
 
 #Focus for 共産主義者を処刑 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_hang_the_communists
+	id = DXL_hang_the_communists
 	icon = GFX_goal_generic_political_pressure
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_operation_red
-	prerequisite = { focus = CSA_operation_red }
+	relative_position_id = DXL_operation_red
+	prerequisite = { focus = DXL_operation_red }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_hang_the_communists"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_hang_the_communists"
 	}
 }
 
 #Focus for 二回目の正直 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_second_times_the_charm
+	id = DXL_second_times_the_charm
 	icon = GFX_goal_continuous_boost_freedom
 	x = 1
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_attack_local_governments
+	relative_position_id = DXL_attack_local_governments
 	prerequisite = { 
-		focus = CSA_hang_the_communists 
+		focus = DXL_hang_the_communists 
 	}
 	prerequisite = { 
-		focus = CSA_attack_local_governments 
+		focus = DXL_attack_local_governments 
 	}
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_second_times_the_charm"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_second_times_the_charm"
 	}
 }
 
 #Focus for アメリカ至上主義 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_american_supremacy_2
+	id = DXL_american_supremacy_2
 	icon = GFX_goal_rhineland
 	x = -2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_second_times_the_charm
-	prerequisite = { focus = CSA_second_times_the_charm }
-	mutually_exclusive = { focus = CSA_todays_enemy_is_tomorrows_friend }
+	relative_position_id = DXL_second_times_the_charm
+	prerequisite = { focus = DXL_second_times_the_charm }
+	mutually_exclusive = { focus = DXL_todays_enemy_is_tomorrows_friend }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_american_supremacy_2"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_american_supremacy_2"
 	}
 }
 
 #Focus for 雪辱を晴らす - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_make_up_for_lost_cause
+	id = DXL_make_up_for_lost_cause
 	icon = GFX_focus_attack_japan
 	x = -2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_american_supremacy_2
-	prerequisite = { focus = CSA_american_supremacy_2 }
+	relative_position_id = DXL_american_supremacy_2
+	prerequisite = { focus = DXL_american_supremacy_2 }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_make_up_for_lost_cause"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_make_up_for_lost_cause"
 	}
 }
 
 #Focus for 皇國の崩壊を防ぐ - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_protect_the_empire_from_collapse
+	id = DXL_protect_the_empire_from_collapse
 	icon = GFX_focus_jap_spiritual_mobilization
 	x = -2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_make_up_for_lost_cause
-	prerequisite = { focus = CSA_make_up_for_lost_cause }
-	mutually_exclusive = { focus = CSA_abolish_the_oldest_empire }
+	relative_position_id = DXL_make_up_for_lost_cause
+	prerequisite = { focus = DXL_make_up_for_lost_cause }
+	mutually_exclusive = { focus = DXL_abolish_the_oldest_empire }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_protect_the_empire_from_collapse"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_protect_the_empire_from_collapse"
 	}
 }
 
 #Focus for 最古の王朝を断絶 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_abolish_the_oldest_empire
+	id = DXL_abolish_the_oldest_empire
 	icon = GFX_focus_jap_showa_restoration
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_make_up_for_lost_cause
-	prerequisite = { focus = CSA_make_up_for_lost_cause }
-	mutually_exclusive = { focus = CSA_protect_the_empire_from_collapse }
+	relative_position_id = DXL_make_up_for_lost_cause
+	prerequisite = { focus = DXL_make_up_for_lost_cause }
+	mutually_exclusive = { focus = DXL_protect_the_empire_from_collapse }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_abolish_the_oldest_empire"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_abolish_the_oldest_empire"
 	}
 }
 
 #Focus for 黄禍論 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_yellow_peril_theory
+	id = DXL_yellow_peril_theory
 	icon = GFX_goal_generic_demand_territory
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_abolish_the_oldest_empire
+	relative_position_id = DXL_abolish_the_oldest_empire
 	prerequisite = { 
-		focus = CSA_abolish_the_oldest_empire 
+		focus = DXL_abolish_the_oldest_empire 
 	}
 	prerequisite = { 
-		focus = CSA_protect_the_empire_from_collapse 
+		focus = DXL_protect_the_empire_from_collapse 
 	}
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_yellow_peril_theory"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_yellow_peril_theory"
 	}
 }
 
 #Focus for 支援の見返りを要求 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_demand_a_return_for_support
+	id = DXL_demand_a_return_for_support
 	icon = GFX_goal_generic_major_war
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_yellow_peril_theory
-	prerequisite = { focus = CSA_yellow_peril_theory }
+	relative_position_id = DXL_yellow_peril_theory
+	prerequisite = { focus = DXL_yellow_peril_theory }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_demand_a_return_for_support"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_demand_a_return_for_support"
 	}
 }
 
 #Focus for 基本的人権は存在せず - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_there_is_no_such_thing_as_basic_human_rights
+	id = DXL_there_is_no_such_thing_as_basic_human_rights
 	icon = GFX_goal_generic_attack_allies
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_american_supremacy_2
-	prerequisite = { focus = CSA_american_supremacy_2 }
+	relative_position_id = DXL_american_supremacy_2
+	prerequisite = { focus = DXL_american_supremacy_2 }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_there_is_no_such_thing_as_basic_human_rights"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_there_is_no_such_thing_as_basic_human_rights"
 	}
 }
 
 #Focus for 南方生存権 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_southern_lebensraum
+	id = DXL_southern_lebensraum
 	icon = GFX_focus_por_recover_latin_america
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_there_is_no_such_thing_as_basic_human_rights
-	prerequisite = { focus = CSA_there_is_no_such_thing_as_basic_human_rights }
+	relative_position_id = DXL_there_is_no_such_thing_as_basic_human_rights
+	prerequisite = { focus = DXL_there_is_no_such_thing_as_basic_human_rights }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_southern_lebensraum"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_southern_lebensraum"
 	}
 }
 
 #Focus for 奴隷法の強化 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_strengthen_the_slave_law
+	id = DXL_strengthen_the_slave_law
 	icon = GFX_goal_tfv_can_forced_quebec_conscription
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_southern_lebensraum
-	prerequisite = { focus = CSA_southern_lebensraum }
+	relative_position_id = DXL_southern_lebensraum
+	prerequisite = { focus = DXL_southern_lebensraum }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_strengthen_the_slave_law"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_strengthen_the_slave_law"
 	}
 }
 
 #Focus for 今日の敵は明日の味方 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_todays_enemy_is_tomorrows_friend
+	id = DXL_todays_enemy_is_tomorrows_friend
 	icon = GFX_focus_jap_pacific_guardian
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_second_times_the_charm
-	prerequisite = { focus = CSA_second_times_the_charm }
+	relative_position_id = DXL_second_times_the_charm
+	prerequisite = { focus = DXL_second_times_the_charm }
 	mutually_exclusive = { 
-		focus = CSA_american_supremacy_2 
+		focus = DXL_american_supremacy_2 
 	}
 	mutually_exclusive = { 
-		focus = CSA_join_the_western_european_alliance 
+		focus = DXL_join_the_western_european_alliance 
 	}
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_todays_enemy_is_tomorrows_friend"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_todays_enemy_is_tomorrows_friend"
 	}
 }
 
 #Focus for アラスカを超えて - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_beyond_ALS
+	id = DXL_beyond_ALS
 	icon = GFX_goal_generic_small_arms
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_todays_enemy_is_tomorrows_friend
-	prerequisite = { focus = CSA_todays_enemy_is_tomorrows_friend }
+	relative_position_id = DXL_todays_enemy_is_tomorrows_friend
+	prerequisite = { focus = DXL_todays_enemy_is_tomorrows_friend }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_beyond_ALS"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_beyond_ALS"
 	}
 }
 
 #Focus for 強大なリーダーを確保 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_secure_a_strong_leader
+	id = DXL_secure_a_strong_leader
 	icon = GFX_focus_chi_collaboration_with_the_japanese
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_beyond_ALS
-	prerequisite = { focus = CSA_beyond_ALS }
+	relative_position_id = DXL_beyond_ALS
+	prerequisite = { focus = DXL_beyond_ALS }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_secure_a_strong_leader"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_secure_a_strong_leader"
 	}
 }
 
 #Focus for 西欧同盟への加入 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_join_the_western_european_alliance
+	id = DXL_join_the_western_european_alliance
 	icon = GFX_goal_tripartite_pact
 	x = 2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_second_times_the_charm
-	prerequisite = { focus = CSA_second_times_the_charm }
-	mutually_exclusive = { focus = CSA_todays_enemy_is_tomorrows_friend }
+	relative_position_id = DXL_second_times_the_charm
+	prerequisite = { focus = DXL_second_times_the_charm }
+	mutually_exclusive = { focus = DXL_todays_enemy_is_tomorrows_friend }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_join_the_western_european_alliance"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_join_the_western_european_alliance"
 	}
 }
 
 #Focus for 戦争ビジネス - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_the_business_of_war
+	id = DXL_the_business_of_war
 	icon = GFX_goal_generic_small_arms
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_join_the_western_european_alliance
-	prerequisite = { focus = CSA_join_the_western_european_alliance }
+	relative_position_id = DXL_join_the_western_european_alliance
+	prerequisite = { focus = DXL_join_the_western_european_alliance }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_the_business_of_war"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_the_business_of_war"
 	}
 }
 
 #Focus for 二度目のパリ会議を - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_the_second_paris_conference
+	id = DXL_the_second_paris_conference
 	icon = GFX_goal_generic_intelligence_exchange
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_the_business_of_war
-	prerequisite = { focus = CSA_the_business_of_war }
+	relative_position_id = DXL_the_business_of_war
+	prerequisite = { focus = DXL_the_business_of_war }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_the_second_paris_conference"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_the_second_paris_conference"
 	}
 }
 
 #Focus for アカを撃滅 - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_eliminate_the_reds
+	id = DXL_eliminate_the_reds
 	icon = GFX_goal_generic_soviet_construction
 	x = 2
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_join_the_western_european_alliance
-	prerequisite = { focus = CSA_join_the_western_european_alliance }
+	relative_position_id = DXL_join_the_western_european_alliance
+	prerequisite = { focus = DXL_join_the_western_european_alliance }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_eliminate_the_reds"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_eliminate_the_reds"
 	}
 }
 
 #Focus for 強大なロシアを再び - focus ID randomly generated due to title being in non-latin characters
 shared_focus= {
-	id = CSA_make_russia_great_again
+	id = DXL_make_russia_great_again
 	icon = GFX_goal_unknown ##Unfortunately, the tool could not find your icon in the game's files
 	x = 0
 	y = 1
 	cost = 10
 	available_if_capitulated = yes
-	relative_position_id = CSA_eliminate_the_reds
-	prerequisite = { focus = CSA_eliminate_the_reds }
+	relative_position_id = DXL_eliminate_the_reds
+	prerequisite = { focus = DXL_eliminate_the_reds }
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CSA_make_russia_great_again"
+		log = "[GetDateText]: [Root.GetName]: Focus DXL_make_russia_great_again"
 	}
 }

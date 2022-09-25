@@ -11558,28 +11558,28 @@
 # 	}
 # }
 	
-# add_namespace = old_fate_of_CSA
+# add_namespace = old_fate_of_DXL
 # country_event = {
-# 	id = old_fate_of_CSA.0
-# 	title = old_fate_of_CSA.0.t
-# 	desc = old_fate_of_CSA.0.d
+# 	id = old_fate_of_DXL.0
+# 	title = old_fate_of_DXL.0.t
+# 	desc = old_fate_of_DXL.0.d
 # 	is_triggered_only = yes
 # 	hidden = yes
 # 	option = {
-# 		name = old_fate_of_CSA.0.0
+# 		name = old_fate_of_DXL.0.0
 # 		ai_chance = {	base = 10	}
 # 		hidden_effect = {
 # 			if = {
-# 				limit = {	country_exists = CSA	}
+# 				limit = {	country_exists = DXL	}
 # 				create_dynamic_country = {
-# 					original_tag = CSA
+# 					original_tag = DXL
 # 					clear_autonomous_states_variable = yes
 # 					every_state = {
 # 						limit = {
 # 							is_fully_controlled_by = ROOT
 # 							NOT = {	is_core_of = ROOT	}
 # 							NOT = {	is_claimed_by = ROOT	}
-# 							check_variable = {	CSA_state_variable = 1	}
+# 							check_variable = {	DXL_state_variable = 1	}
 # 						}
 # 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 # 					}
@@ -11589,14 +11589,14 @@
 # 				}
 # 			}
 # 			else = {
-# 				CSA = {
+# 				DXL = {
 # 					clear_autonomous_states_variable = yes
 # 					every_state = {
 # 						limit = {
 # 							is_fully_controlled_by = ROOT
 # 							NOT = {	is_core_of = ROOT	}
 # 							NOT = {	is_claimed_by = ROOT	}
-# 							check_variable = {	CSA_state_variable = 1	}
+# 							check_variable = {	DXL_state_variable = 1	}
 # 						}
 # 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 # 					}
@@ -11609,15 +11609,15 @@
 # 	}
 # }
 # country_event = {
-# 	id = old_fate_of_CSA.1
-# 	title = old_fate_of_CSA.1.t
-# 	desc = old_fate_of_CSA.1.d
+# 	id = old_fate_of_DXL.1
+# 	title = old_fate_of_DXL.1.t
+# 	desc = old_fate_of_DXL.1.d
 # 	is_triggered_only = yes
 	
 # 	option = {
-# 		name = old_fate_of_CSA.1.0
+# 		name = old_fate_of_DXL.1.0
 # 		ai_chance = {	base = 10	}
-# 		country_event = old_fate_of_CSA.0
+# 		country_event = old_fate_of_DXL.0
 # 	}
 # }
 	
