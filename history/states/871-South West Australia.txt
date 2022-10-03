@@ -1,0 +1,24 @@
+state = {
+	id = 871
+	name = "STATE_871"
+	manpower = 50000
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
+		owner = AST
+		add_core_of = AST
+		buildings = {
+			infrastructure = 1
+			1652 = {	naval_base = 1	}
+			1652 = {	coastal_bunker = 1	}
+		}
+		victory_points = {	1652	3	}
+		set_variable = {	AST_state_variable = 1	}
+	}
+	
+	provinces = {
+		1526	1652	2157	4630	5175	7453	8130	8228	8243	10983	10997	11011	12976	12990
+	}
+	local_supplies = 0.0
+}
