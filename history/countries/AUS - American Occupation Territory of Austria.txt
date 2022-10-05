@@ -10,7 +10,13 @@ create_dynamic_country = {	#アメリカ統治下オーストリア占領地域
 	set_cosmetic_tag = COUNTRY_AMERICA_united_states_48
 	set_dictatorship = yes
 	
-	recruit_character = CHARACTER_mark_wayne_clark
+	create_country_leader = {
+		name = CHARACTER_mark_wayne_clark
+		desc = "CHARACTER_mark_wayne_clark_desc"
+		picture = GFX_mark_wayne_clark_large
+		expire = "1984.4.17"
+		ideology = national_authoritarianism_ideology
+	}
 	
 	add_ideas = {	#政治タブ
 		unitary_dependent_territory
