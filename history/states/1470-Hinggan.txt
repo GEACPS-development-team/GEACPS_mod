@@ -1,0 +1,24 @@
+state = {
+	id = 1470
+	name = "STATE_1470"
+	manpower = 1610000
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
+		owner = MAN
+		add_core_of = MAN
+		add_core_of = CHI
+		SMO = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	MAN_state_variable = 1	}
+		set_variable = {	SMO_state_variable = 1	}
+	}
+	
+	provinces = {
+		1508	1558	3978	7812	10429	12469
+	}
+	local_supplies = 0.0
+}
