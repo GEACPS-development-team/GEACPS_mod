@@ -2777,12 +2777,10 @@ naval_carrier = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
 				front_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
 				}
 				mid_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
 				}
 			}
 
@@ -2827,12 +2825,11 @@ naval_carrier = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
 				front_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
 				}
 				mid_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
+
 				}
 			}
 
@@ -2874,12 +2871,10 @@ naval_carrier = {
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
 				front_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
 				}
 				mid_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
 				}
 			}
 		}
@@ -2918,8 +2913,12 @@ naval_carrier = {
 				fixed_ship_engine_slot = carrier_ship_engine
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_deck_space
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -2958,8 +2957,12 @@ naval_carrier = {
 				fixed_ship_engine_slot = carrier_ship_engine
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_deck_space
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -2998,8 +3001,12 @@ naval_carrier = {
 				fixed_ship_engine_slot = carrier_ship_engine
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_deck_space
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -3039,8 +3046,12 @@ naval_carrier = {
 				fixed_ship_engine_slot = carrier_ship_engine
 				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_deck_space
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
