@@ -3,7 +3,7 @@
 set_cosmetic_tag = GER_federal_republic
 
 set_politics = {
-	ruling_party = conservative_democracy
+	ruling_party = social_democracy
 	last_election = "1938.4.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -11,9 +11,9 @@ set_politics = {
 set_popularities = {
 	total_socialism = 5
 	radical_socialism = 5
-	social_democracy = 33
+	social_democracy = 37
 	liberal_democracy = 16
-	conservative_democracy = 37
+	conservative_democracy = 33
 	authoritative_democracy = 0
 	national_authoritarianism = 0
 	national_populism = 4
@@ -30,7 +30,10 @@ set_party_name = {	#自由民主党
 	long_name = PARTY_free_democratic_party_long
 }
 
-recruit_character = CHARACTER_karl_borromaus_arnold
+recruit_character = CHARACTER_curt_ernst_carl_schumacher
+recruit_character = CHARACTER_theodor_heuss
+
+activate_advisor = GER_theodor_heuss_hg
 
 add_ideas = {	#国民精神
 	GER_the_berlin_declaration
