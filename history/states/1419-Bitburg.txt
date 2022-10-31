@@ -1,0 +1,28 @@
+state = {
+	id = 1419
+	name = "STATE_1419"
+	manpower = 30300
+	state_category = metropolis
+	
+	history = {
+		owner = RHI
+		add_core_of = RHI
+		add_core_of = GER
+		NGR = {	debug_core = yes	}
+		WGR = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {	11435	1	}
+		set_variable = {	RHI_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
+		set_variable = {	NGR_state_variable = 1	}
+		set_variable = {	WGR_state_variable = 1	}
+		set_variable = {	LUX_state_variable = 2	}
+	}
+	
+	provinces = {
+		11435
+	}
+	local_supplies = 0.0
+}

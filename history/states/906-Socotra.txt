@@ -1,0 +1,23 @@
+state = {
+	id = 906
+	name = "STATE_906"
+	manpower = 42842
+	state_category = small_island
+	
+	history = {
+		owner = SYE
+		add_core_of = SYE
+		YEM = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+			8000 = {	naval_base = 1	}
+		}
+		set_variable = {	YEM_state_variable = 1	}
+		set_variable = {	SYE_state_variable = 1	}
+	}
+	
+	provinces = {
+		8000
+	}
+	local_supplies = 0.0
+}

@@ -1,15 +1,3 @@
-puppet_trigger = {
-	NOT = {	has_variable = colony_trigger_variable	}
-	NOT = {	has_variable = condominium_trigger_variable	}
-	NOT = {	has_variable = leased_territory_trigger_variable	}
-	NOT = {	has_variable = mandated_territory_trigger_variable	}
-	NOT = {	has_variable = personal_union_trigger_variable	}
-	NOT = {	has_variable = princely_state_trigger_variable	}
-	NOT = {	has_variable = protectorate_trigger_variable	}
-	NOT = {	OVERLORD = {	tag = CHI	}	}
-	NOT = {	OVERLORD = {	tag = JAP	}	}
-	NOT = {	OVERLORD = {	tag = SOV	}	}
-}
 soviet_member_trigger = {
 	OR = {
 		has_autonomy_state = soviet_member_federal_republic
@@ -22,7 +10,7 @@ is_dependent_territory = {
 		has_autonomy_state = overseas_territory
 		has_autonomy_state = colony
 		has_autonomy_state = colony_and_protectorate
-		has_autonomy_state = federation_of_colonies
+		has_autonomy_state = colonies_federation
 		has_autonomy_state = protected_territory
 		has_autonomy_state = condominium
 		has_autonomy_state = junior_partner_colony
@@ -39,15 +27,10 @@ is_national_system_monarchy = {
 		has_idea = monarchy_unitary_state
 	}
 }
-release_country_decision_trigger = {
-	ROOT = {
-		any_owned_state = {
-			meta_trigger = {
-				text = {	check_variable = {	[country_state_variable] = 1	}	}
-				country_state_variable = "[PREV.PREV.GetTag]_state_variable"
-			}
-			NOT = {	is_core_of = ROOT	is_claimed_by = ROOT	}
-		}
+is_federal_state = {
+	OR = {
+		has_idea = monarchy_federal_state
+		has_idea = republic_federal_state
+		has_idea = federal_dependent_territory
 	}
-	NOT = {	ROOT = {	original_tag = PREV	}	}
 }

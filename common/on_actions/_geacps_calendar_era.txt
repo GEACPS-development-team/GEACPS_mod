@@ -1,0 +1,59 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			JAP = {
+				set_variable = {	global.month = 1	}
+				set_variable = {	global.CALENDAR_JAP_imperial_year = 2606	}
+				set_variable = {	global.CALENDAR_buddhist_calendar = 2487	}
+				set_variable = {	global.CALENDAR_PER_year = 1324	}
+				set_variable = {	global.CALENDAR_minguo_calendar = 34	}
+				set_variable = {	global.CALENDAR_JAP_era = 21	}
+				set_variable = {	global.CALENDAR_VIN_era = 19	}
+				set_variable = {	global.CALENDAR_MAN_era = 12	}
+				set_variable = {	global.CALENDAR_heavenly_stems = 3	}
+				set_variable = {	global.CALENDAR_earthly_branches = 11	}
+			}
+			JAP = {	set_country_flag = CALENDAR_JAP_era_flag	}
+			JAP = {	set_country_flag = CALENDAR_JAP_era_showa_flag	}
+			MAN = {	set_country_flag = CALENDAR_MAN_era_flag	}
+			MAN = {	set_country_flag = CALENDAR_MAN_era_kangde_flag	}
+			VIN = {	set_country_flag = CALENDAR_VIN_era_flag	}
+			VIN = {	set_country_flag = CALENDAR_VIN_era_baodai_flag	}
+			AFG = {	set_country_flag = CALENDAR_PER_year_flag	}
+			PER = {	set_country_flag = CALENDAR_PER_year_flag	}
+			
+			CHI = {	set_country_flag = CALENDAR_minguo_calendar_flag	}
+			BRM = {	set_country_flag = CALENDAR_buddhist_calendar_flag	}
+			CAM = {	set_country_flag = CALENDAR_buddhist_calendar_flag	}
+			SIA = {	set_country_flag = CALENDAR_buddhist_calendar_flag	}
+			LAO = {	set_country_flag = CALENDAR_buddhist_calendar_flag	}
+		}
+	}
+	on_monthly_JAP = {
+		effect = {
+			if = {
+				limit = {	check_variable = {	global.month = 12	}	}
+				set_variable = {	global.month = 1	}
+				if = {
+					limit = {	check_variable = {	global.CALENDAR_heavenly_stems = 10	}	}
+					set_variable = {	global.CALENDAR_heavenly_stems = 1	}
+				}
+				else = {	add_to_variable = {	global.CALENDAR_heavenly_stems = 1	}	}
+				if = {
+					limit = {	check_variable = {	global.CALENDAR_earthly_branches = 12	}	}
+					set_variable = {	global.CALENDAR_earthly_branches = 1	}
+				}
+				else = {	add_to_variable = {	global.CALENDAR_earthly_branches = 1	}	}
+				add_to_variable = {	global.CALENDAR_JAP_imperial_year = 1	}
+				add_to_variable = {	global.CALENDAR_buddhist_calendar = 1	}
+				add_to_variable = {	global.CALENDAR_PER_year = 1	}
+				add_to_variable = {	global.CALENDAR_minguo_calendar = 1	}
+				add_to_variable = {	global.CALENDAR_JAP_era = 1	}
+				add_to_variable = {	global.CALENDAR_VIN_era = 1	}
+				add_to_variable = {	global.CALENDAR_MAN_era = 1	}
+				
+			}
+			else = {	add_to_variable = {	global.month = 1	}	}
+		}
+	}
+}

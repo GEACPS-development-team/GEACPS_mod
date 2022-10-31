@@ -12,8 +12,8 @@ destroyers = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_screen
@@ -687,9 +687,9 @@ generic_escorts = {
 	# 	ITA
 	# }
 	
-	available_for = {
+	# available_for = {
 		
-	}
+	# }
 	
 	roles = {
 		naval_escort
@@ -798,8 +798,8 @@ naval_light_cruiser = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_cruiser_light
@@ -1290,8 +1290,8 @@ naval_cruiser_heavy = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_cruiser_heavy
@@ -1844,8 +1844,8 @@ naval_capital_bc = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_capital_bc
@@ -1883,7 +1883,6 @@ naval_capital_bc = {
 				front_1_custom_slot = ship_heavy_battery
 				mid_1_custom_slot = {
 					module = ship_anti_air
-					module = ship_anti_air_cannon
 					module = ship_secondaries
 					module = ship_airplane_launcher
 				}
@@ -2130,8 +2129,8 @@ naval_capital_battleship = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_capital_bb
@@ -2736,8 +2735,8 @@ naval_carrier = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_carrier
@@ -2773,18 +2772,18 @@ naval_carrier = {
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
 				front_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
 				}
 				mid_1_custom_slot = {
-					module = ship_deck_space
-					module = empty
+					any_of = { ship_anti_air ship_deck_space }
 				}
 			}
+
 		}
 		
 		allowed_modules = {
@@ -2821,12 +2820,19 @@ naval_carrier = {
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_deck_space
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+
+				}
 			}
+
 		}
 		
 		allowed_modules = {
@@ -2861,12 +2867,16 @@ naval_carrier = {
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_deck_space
-				mid_2_custom_slot = ship_anti_air
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -2900,13 +2910,16 @@ naval_carrier = {
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_deck_space
-				mid_2_custom_slot = ship_anti_air
-				rear_1_custom_slot = ship_armor_carrier_deck
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -2941,14 +2954,16 @@ naval_carrier = {
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_anti_air_cannon
-				mid_2_custom_slot = ship_anti_air
-				rear_1_custom_slot = ship_armor_carrier_deck
-				rear_2_custom_slot = ship_deck_space
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -2983,14 +2998,16 @@ naval_carrier = {
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = ship_anti_air_cannon
-				mid_2_custom_slot = ship_anti_air
-				rear_1_custom_slot = ship_armor_carrier_deck
-				rear_2_custom_slot = ship_deck_space
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -3022,20 +3039,20 @@ naval_carrier = {
 			match_value = 1750.0
 			
 			type = ship_hull_carrier_6
+
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
-				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = {
-					module = ship_anti_air_cannon
-					module = sam
+				front_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
 				}
-				mid_2_custom_slot = ship_anti_air
-				rear_1_custom_slot = ship_armor_carrier_deck
-				rear_2_custom_slot = ship_deck_space
+				mid_1_custom_slot = {
+					any_of = { ship_anti_air ship_deck_space }
+				}
 			}
 		}
 		
@@ -3068,17 +3085,12 @@ naval_carrier = {
 			modules = {
 				fixed_ship_deck_slot_1 = ship_deck_space
 				fixed_ship_deck_slot_2 = ship_deck_space
-				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = ship_radar
 				fixed_ship_engine_slot = carrier_ship_engine
+				fixed_ship_anti_air_slot = ship_anti_air
 				fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon
 				front_1_custom_slot = ship_deck_space
-				mid_1_custom_slot = {
-					module = ship_anti_air_cannon
-					module = sam
-				}
-				mid_2_custom_slot = ship_anti_air
-				rear_1_custom_slot = ship_armor_carrier_deck
-				rear_2_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
 			}
 		}
 		
@@ -3190,8 +3202,8 @@ naval_submarine = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_submarine
@@ -3643,8 +3655,8 @@ naval_mine_sweeper = {
 	# 	ITA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_mine_sweeper
@@ -3752,8 +3764,8 @@ naval_mine_layer = {
 	# 	USA
 	# }
 	
-	available_for = {
-	}
+	# available_for = {
+	# }
 	
 	roles = {
 		naval_mine_layer

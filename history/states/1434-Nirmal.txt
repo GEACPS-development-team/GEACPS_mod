@@ -1,0 +1,23 @@
+state = {
+	id = 1434
+	name = "STATE_1434"
+	manpower = 140000
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
+		owner = IND
+		add_core_of = IND
+		NAG = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+		}
+		set_variable = {	IND_state_variable = 1	}
+		set_variable = {	NAG_state_variable = 1	}
+	}
+	
+	provinces = {
+		1525	1553
+	}
+	local_supplies = 0.0
+}

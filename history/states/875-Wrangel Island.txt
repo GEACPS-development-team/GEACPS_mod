@@ -1,0 +1,23 @@
+state = {
+	id = 875
+	name = "STATE_875"
+	manpower = 2
+	state_category = wasteland
+	
+	history = {
+		owner = FEA
+		add_core_of = FEA
+		add_core_of = RUS
+		SIB = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	FEA_state_variable = 1	}
+		set_variable = {	SIB_state_variable = 2	}
+	}
+	
+	provinces = {
+		13451	13452
+	}
+	local_supplies = 0.0
+}

@@ -1,43 +1,45 @@
 ﻿capital = 42
-oob = RHI_1946
 
 FRA = {	set_protected_territory = yes	}
 
 set_cosmetic_tag = RHI_FRA
 set_dictatorship = yes
-set_party_name = {	#ラインラント共産党
-	ideology = total_socialism
-	name = PARTY_saarland_communist_party
-	long_name = PARTY_saarland_communist_party_long
-}
-set_party_name = {	#ラインラント共産党
-	ideology = radical_socialism
-	name = PARTY_saarland_communist_party
-	long_name = PARTY_saarland_communist_party_long
-}
-set_party_name = {	#ラインラント社会民主党
-	ideology = social_democracy
-	name = PARTY_saarland_social_democratic_party
-	long_name = PARTY_saarland_social_democratic_party_long
-}
-set_party_name = {	#ラインラント民主党
-	ideology = liberal_democracy
-	name = PARTY_saarland_democratic_party
-	long_name = PARTY_saarland_democratic_party_long
-}
-set_party_name = {	#ラインラント・キリスト教人民党
-	ideology = authoritative_democracy
-	name = PARTY_imperial_rule_assistance_association
-	long_name = PARTY_imperial_rule_assistance_association_long
-}
-set_party_name = {	#高等弁務官事務所
-	ideology = national_authoritarianism
-	name = PARTY_high_commissioner_office
-	long_name = PARTY_high_commissioner_office_long
-}
+# set_party_name = {	#ラインラント共産党
+# 	ideology = total_socialism
+# 	name = PARTY_saarland_communist_party
+# 	long_name = PARTY_saarland_communist_party_long
+# }
+# set_party_name = {	#ラインラント共産党
+# 	ideology = radical_socialism
+# 	name = PARTY_saarland_communist_party
+# 	long_name = PARTY_saarland_communist_party_long
+# }
+# set_party_name = {	#ラインラント社会民主党
+# 	ideology = social_democracy
+# 	name = PARTY_saarland_social_democratic_party
+# 	long_name = PARTY_saarland_social_democratic_party_long
+# }
+# set_party_name = {	#ラインラント民主党
+# 	ideology = liberal_democracy
+# 	name = PARTY_saarland_democratic_party
+# 	long_name = PARTY_saarland_democratic_party_long
+# }
+# set_party_name = {	#ラインラント・キリスト教人民党
+# 	ideology = authoritative_democracy
+# 	name = PARTY_imperial_rule_assistance_association
+# 	long_name = PARTY_imperial_rule_assistance_association_long
+# }
+# set_party_name = {	#高等弁務官事務所
+# 	ideology = national_authoritarianism
+# 	name = PARTY_high_commissioner_office
+# 	long_name = PARTY_high_commissioner_office_long
+# }
 illegalization_of_authoritative_democracy_party = yes
 illegalization_of_national_populism_party = yes
 
-#recruit_character = CHARACTER_charles_andre_joseph_marie_de_gaulle
+promote_character = {
+	character = CHARACTER_charles_andre_joseph_marie_de_gaulle
+	ideology = national_authoritarianism_ideology
+}
 
 give_military_access = USA

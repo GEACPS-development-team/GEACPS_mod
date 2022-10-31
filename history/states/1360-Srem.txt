@@ -1,0 +1,24 @@
+state = {
+	id = 1360
+	name = "STATE_1360"
+	manpower = 22200
+	state_category = large_town
+	
+	history = {
+		owner = VOJ
+		add_core_of = VOJ
+		add_core_of = SER
+		BLK = {	debug_core = yes	}
+		YUG = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+		}
+		set_variable = {	VOJ_state_variable = 1	}
+		set_variable = {	SER_state_variable = 1	}
+	}
+	
+	provinces = {
+		11580
+	}
+	local_supplies = 0.0
+}

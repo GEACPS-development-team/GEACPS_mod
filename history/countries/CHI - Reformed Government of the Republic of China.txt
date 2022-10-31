@@ -1,9 +1,12 @@
+capital = 613
+
 create_dynamic_country = {	#中華民国維新政府
 	original_tag = CHI
 	
 	JAP = {	set_imperial_protected_state = yes	}
 	
 	set_capital = {	state = 613	}
+	set_oob = CHI_minguo_reformed_government_1946
 	set_country_flag = CHI_reformed_countryflag
 	set_cosmetic_tag = CHI_minguo_reformed_government
 	
@@ -26,7 +29,13 @@ create_dynamic_country = {	#中華民国維新政府
 		long_name = PARTY_reformed_government_executive_court_long
 	}
 	
-	recruit_character = CHARACTER_liang_hongzhi
+	create_country_leader = {
+		name = CHARACTER_liang_hongzhi
+		desc = "CHARACTER_liang_hongzhi_desc"
+		picture = GFX_liang_hongzhi_large
+		#expire = "1965.1.1"
+		ideology = national_populism_ideology
+	}
 	
 	add_ideas = {	#政治タブ
 		republic_unitary_state

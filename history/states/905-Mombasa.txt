@@ -1,0 +1,24 @@
+state = {
+	id = 905
+	name = "STATE_905"
+	manpower = 1017600
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
+		owner = KEN
+		add_core_of = KEN
+		EAF = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+			5210 = {	naval_base = 2	}
+		}
+		victory_points = {	5210	1	}
+		set_variable = {	KEN_state_variable = 1	}
+	}
+	
+	provinces = {
+		5210	6020	10976	 
+	}
+	local_supplies = 0.0
+}
