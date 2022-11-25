@@ -71,3 +71,73 @@ country_event = {
 		add_ideas = COL_golden_glow
 	}
 }
+country_event = {
+	id = COL.4
+	title = COL.4.t
+	desc = COL.4.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = COL.4.0
+		ai_chance = {	factor = 100	}
+		ECU = {	country_event = {	id  = ultimatum.0	days = 1	}	}
+	}
+	option = {
+		name = COL.4.1
+		ai_chance = {	factor = 0	}
+		set_country_flag = COL_mobilisation_ECU_flag
+	}
+}
+country_event = {
+	id = COL.5
+	title = COL.5.t
+	desc = COL.5.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = COL.5.0
+		ai_chance = {	factor = 100	}
+		PAN = {	country_event = {	id  = ultimatum.0	days = 1	}	}
+	}
+	option = {
+		name = COL.5.1
+		ai_chance = {	factor = 0	}
+		set_country_flag = COL_mobilisation_PAN_flag
+	}
+}
+country_event = {
+	id = COL.6
+	title = COL.6.t
+	desc = COL.6.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = COL.6.0
+		ai_chance = {	factor = 100	}
+		VEN = {	country_event = {	id  = ultimatum.0	days = 1	}	}
+	}
+	option = {
+		name = COL.6.1
+		ai_chance = {	factor = 0	}
+		set_country_flag = COL_mobilisation_VEN_flag
+	}
+}
+country_event = {
+	id = COL.7
+	title = COL.7.t
+	desc = COL.7.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = COL.7.0
+		ai_chance = {	factor = 100	}
+	}
+}

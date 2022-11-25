@@ -223,7 +223,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = COL_penetration_into_VEN
+	id = COL_VEN_recovery
 	icon = GFX_generic_suspend_constitution
 	cost = 6
 	x = 4
@@ -232,14 +232,19 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus COL_penetration_into_VEN"
+		log = "[GetDateText]: [Root.GetName]: Focus COL_VEN_recovery"
+		country_event = COL.6
+		every_state = {
+			limit = {	check_variable = {	VEN_state_variable = 1	}	}
+			add_claim_by = COL
+		}
 	}
 	relative_position_id = COL_recovery_of_old_territories
 	prerequisite = { focus = COL_recovery_of_old_territories }
 }
 
 shared_focus = {
-	id = COL_southern_region_collections
+	id = COL_ECU_recovery
 	icon = GFX_generic_suspend_constitution
 	cost = 6
 	x = 2
@@ -248,14 +253,19 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus COL_southern_region_collections"
+		log = "[GetDateText]: [Root.GetName]: Focus COL_ECU_recovery"
+		country_event = COL.4
+		every_state = {
+			limit = {	check_variable = {	ECU_state_variable = 1	}	}
+			add_claim_by = COL
+		}
 	}
 	relative_position_id = COL_recovery_of_old_territories
 	prerequisite = { focus = COL_recovery_of_old_territories }
 }
 
 shared_focus = {
-	id = COL_integration_of_PAN
+	id = COL_PAN_recovery
 	icon = GFX_generic_suspend_constitution
 	cost = 6
 	x = 0
@@ -264,7 +274,12 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus COL_integration_of_PAN"
+		log = "[GetDateText]: [Root.GetName]: Focus COL_PAN_recovery"
+		country_event = COL.5
+		every_state = {
+			limit = {	check_variable = {	PAN_state_variable = 1	}	}
+			add_claim_by = COL
+		}
 	}
 	relative_position_id = COL_recovery_of_old_territories
 	prerequisite = { focus = COL_recovery_of_old_territories }
@@ -281,12 +296,15 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus COL_transition_to_a_federal_system"
-		
+		if = {
+			limit ={	has_idea = republic_unitary_state	}
+			add_ideas = republic_federal_state
+		}
 	}
-	relative_position_id = COL_integration_of_PAN
-	prerequisite = { focus = COL_integration_of_PAN }
-	prerequisite = { focus = COL_southern_region_collections }
-	prerequisite = { focus = COL_penetration_into_VEN }
+	relative_position_id = COL_PAN_recovery
+	prerequisite = { focus = COL_PAN_recovery }
+	prerequisite = { focus = COL_ECU_recovery }
+	prerequisite = { focus = COL_VEN_recovery }
 }
 
 shared_focus = {
@@ -300,6 +318,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus COL_revival_of_the_gran_colombia"
+		country_event = COL.7
 	}
 	relative_position_id = COL_transition_to_a_federal_system
 	prerequisite = { focus = COL_transition_to_a_federal_system }
