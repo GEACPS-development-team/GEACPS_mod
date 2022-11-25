@@ -1,0 +1,26 @@
+state = {
+	id = 466
+	name = "STATE_466"
+	manpower = 1370000
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	resources = {	aluminium = 4	}
+	
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = QEB
+		NAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	CAN_state_variable = 1	}
+		set_variable = {	QEB_state_variable = 1	}
+	}
+	
+	provinces = {
+		490	1657	3208	4666	6740	7364	10176	12147	13196
+	}
+	local_supplies = 0.0
+}

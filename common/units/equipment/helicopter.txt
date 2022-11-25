@@ -10,7 +10,10 @@ equipments = {
 		group_by = archetype
 		sprite = heavy_plane
 		air_map_icon_frame = 11
-		
+		allow_mission_type = {
+			recon
+			naval_patrol
+		}
 		interface_category = interface_category_air
 		
 		interface_overview_category_index = 5
@@ -20,7 +23,7 @@ equipments = {
 		
 		build_cost_ic = 60
 		resources = {
-#			oil = 1
+			# oil = 1
 			aluminium = 3
 			rubber = 2
 		}
@@ -63,8 +66,7 @@ equipments = {
 		air_defence = 5
 
 		resources = {
-#			oil = 1
-			aluminium = 3
+			# aluminium = 3
 			rubber = 2
 		}
 
@@ -85,7 +87,7 @@ equipments = {
 		air_defence = 5
 
 		resources = {
-#			oil = 1
+			# oil = 1
 			aluminium = 3
 			rubber = 2
 		}
@@ -107,7 +109,7 @@ equipments = {
 		air_defence = 5
 
 		resources = {
-#			oil = 1
+			# oil = 1
 			aluminium = 3
 			rubber = 2
 		}
@@ -129,7 +131,7 @@ equipments = {
 		air_defence = 5
 
 		resources = {
-#			oil = 1
+			# oil = 1
 			aluminium = 3
 			rubber = 2
 		}
@@ -151,7 +153,7 @@ equipments = {
 		air_defence = 8
 
 		resources = {
-#			oil = 1
+			# oil = 1
 			aluminium = 3
 			rubber = 2
 		}
@@ -168,7 +170,10 @@ equipments = {
 		group_by = archetype
 		sprite = heavy_plane
 		air_map_icon_frame = 11
-		
+		allow_mission_type = {
+			paradrop
+			air_supply
+		}
 		interface_category = interface_category_air
 		
 		interface_overview_category_index = 5
@@ -178,7 +183,7 @@ equipments = {
 		
 		build_cost_ic = 60
 		resources = {
-#			oil = 1
+			# oil = 1
 			aluminium = 3
 			rubber = 2
 		}
@@ -320,7 +325,9 @@ equipments = {
 		group_by = archetype
 		sprite = heavy_plane
 		air_map_icon_frame = 11
-		
+		allowed_types = {
+			naval_bomber
+		}
 		interface_category = interface_category_air
 		
 		interface_overview_category_index = 5
@@ -466,7 +473,10 @@ equipments = {
 		group_by = archetype
 		sprite = heavy_plane
 		air_map_icon_frame = 11
-		
+		allowed_types = {
+			cas
+			naval_bomber
+		}
 		interface_category = interface_category_air
 		
 		interface_overview_category_index = 5

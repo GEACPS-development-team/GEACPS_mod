@@ -1,6 +1,6 @@
 intelligence_agency = {	#日本
 	names = {	"特務機関"	}
-	picture = GFX_agency_JAP_logo
+	picture = GFX_secret_military_agency
 	
 	default = {	tag = JAP	}
 	available = {	tag = JAP	}
@@ -8,7 +8,7 @@ intelligence_agency = {	#日本
 
 intelligence_agency = {	#満州国
 	names = {	"保安局"	}
-	picture = GFX_agency_MAN_logo
+	picture = GFX_security_bureau
 	
 	default = {	tag = MAN	}
 	available = {	tag = MAN	}
@@ -16,7 +16,7 @@ intelligence_agency = {	#満州国
 
 intelligence_agency = {	#イギリス
 	names = {	"秘密情報部 [SIS]"	}
-	picture = GFX_agency_GBR_logo
+	picture = GFX_secret_intelligence_service
 	
 	default = {	tag = GBR	}
 	available = {	tag = GBR	}
@@ -24,16 +24,30 @@ intelligence_agency = {	#イギリス
 
 intelligence_agency = {	#ロシア
 	names = {	"国家保安人民委員部 [NKVD]"	}
-	picture = GFX_agency_RUS_logo
+	picture = GFX_peoples_commissariat_for_internal_affairs
 	
 	default = {	tag = RUS	}
 	available = {	tag = RUS	}
 }
 
-intelligence_agency = {	#デフォルト
-	names = {	"国家情報局"	}
-	picture = GFX_agency_default_logo
+intelligence_agency = {	#ドイツ
+	names = {	"国家保安省 [MfS]"	}
+	picture = GFX_ministry_for_state_security
 	
-	default = {	always = yes	}
-	available = {	always = yes	}
+	default = {
+		tag = GER
+		has_cosmetic_tag = GER_democratic_republic
+	}
+	available = {
+		tag = GER
+		has_cosmetic_tag = GER_democratic_republic
+	}
 }
+
+# intelligence_agency = {	#デフォルト
+# 	names = {	"国家情報局"	}
+# 	picture = GFX_agency_default_logo
+	
+# 	default = {	always = yes	}
+# 	available = {	always = yes	}
+# }

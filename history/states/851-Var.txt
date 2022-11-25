@@ -1,0 +1,26 @@
+state = {
+	id = 851
+	name = "STATE_851"
+	manpower = 485000
+	state_category = large_town
+	
+	history = {
+		owner = FRA
+		add_core_of = FRA
+		OCC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+			dockyard = 4
+			911 = {	naval_base = 10	}
+			911 = {	coastal_bunker = 1	}
+		}
+		victory_points = {	911	1	}
+		set_variable = {	FRA_state_variable = 1	}
+		set_variable = {	OCC_state_variable = 1	}
+	}
+	
+	provinces = {
+		911	3928
+	}
+	local_supplies = 0.0
+}

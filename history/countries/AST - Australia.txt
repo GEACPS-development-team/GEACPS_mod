@@ -1,9 +1,8 @@
 ﻿capital = 285
-oob = AST_1946
 
 GBR = {	set_dominion = yes	}
 
-set_cosmetic_tag = AST_ENG-GBR
+set_cosmetic_tag = AST_GBRbyENG
 set_convoys = 100
 
 set_politics = {
@@ -64,6 +63,11 @@ set_party_name = {	#中央党
 }
 
 recruit_character = CHARACTER_henry_william_frederick_albert
+
+add_ideas = {	#政治タブ
+	monarchy_federal_state
+	parliamentary_cabinet_system
+}
 
 NFK = {
 	AST = {	set_overseas_territory = yes	}

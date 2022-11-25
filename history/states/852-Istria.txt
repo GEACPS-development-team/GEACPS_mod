@@ -1,0 +1,26 @@
+state = {
+	id = 852
+	name = "STATE_852"
+	manpower = 125850
+	state_category = town
+	
+	history = {
+		owner = IST
+		add_core_of = IST
+		add_core_of = CRO
+		BLK = {	debug_core = yes	}
+		YUG = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+		}
+		set_variable = {	IST_state_variable = 1	}
+		set_variable = {	CRO_state_variable = 1	}
+		set_variable = {	ITA_state_variable = 2	}
+	}
+	
+	provinces = {
+		11735
+	}
+	local_supplies = 0.0
+}

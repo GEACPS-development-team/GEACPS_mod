@@ -1,0 +1,26 @@
+state = {
+	id = 863
+	name = "STATE_863"
+	manpower = 70000
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = QEB
+		NAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+			12149 = {	naval_base = 6	}
+		}
+		victory_points = {	4345	20	}
+		victory_points = {	12149	3	}
+		set_variable = {	CAN_state_variable = 1	}
+		set_variable = {	QEB_state_variable = 1	}
+	}
+	provinces = {
+		1356	4345	4419	7291	9601	12149
+	}
+	local_supplies = 0.0
+}

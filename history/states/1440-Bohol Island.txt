@@ -1,0 +1,23 @@
+state = {
+	id = 1440
+	name = "STATE_1440"
+	manpower = 43500
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
+		owner = PHI
+		add_core_of = PHI
+		EIN = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	PHI_state_variable = 1	}	
+		set_variable = {	EIN_state_variable = 1	}
+	}
+	
+	provinces = {
+		7385
+	}
+	local_supplies = 0.0
+}

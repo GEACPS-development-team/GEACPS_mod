@@ -1,10 +1,9 @@
 ﻿capital = 52
-oob = SGR_1946
 
 set_cosmetic_tag = GER_federal_republic
 
 set_politics = {
-	ruling_party = conservative_democracy
+	ruling_party = social_democracy
 	last_election = "1938.4.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -12,20 +11,34 @@ set_politics = {
 set_popularities = {
 	total_socialism = 5
 	radical_socialism = 5
-	social_democracy = 33
+	social_democracy = 37
 	liberal_democracy = 16
-	conservative_democracy = 37
+	conservative_democracy = 33
 	authoritative_democracy = 0
 	national_authoritarianism = 0
 	national_populism = 4
 }
 
-recruit_character = CHARACTER_karl_borromaus_arnold
+set_party_name = {	#ドイツ社会民主党
+	ideology = social_democracy
+	name = PARTY_social_democratic_party_of_germany
+	long_name = PARTY_social_democratic_party_of_germany_long
+}
+set_party_name = {	#自由民主党
+	ideology = conservative_democracy
+	name = PARTY_free_democratic_party
+	long_name = PARTY_free_democratic_party_long
+}
+
+recruit_character = CHARACTER_curt_ernst_carl_schumacher
+recruit_character = CHARACTER_theodor_heuss
+
+activate_advisor = GER_theodor_heuss_hg
 
 add_ideas = {	#国民精神
-	SGR_the_berlin_declaration
-	SGR_potsdam_agreement
-	SGR_denazification
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_denazification
 }
 
 give_military_access = USA

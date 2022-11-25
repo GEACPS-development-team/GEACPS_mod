@@ -1,0 +1,23 @@
+state = {
+	id = 878
+	name = "STATE_878"
+	manpower = 15974
+	state_category = pastoral
+	
+	history = {
+		owner = SIB
+		add_core_of = SIB
+		add_core_of = RUS
+		TAY = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	SIB_state_variable = 1	}
+		set_variable = {	TAY_state_variable = 1	}
+	}
+	
+	provinces = {
+		11122	11261
+	}
+	local_supplies = 0.0 
+}

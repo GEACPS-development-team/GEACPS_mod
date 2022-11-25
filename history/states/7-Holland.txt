@@ -8,8 +8,9 @@ state = {
 	resources = {	steel = 4	}
 	
 	history = {
-		owner = HOL
-		add_core_of = HOL
+		owner = NTL
+		add_core_of = NTL
+		HOL = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
@@ -17,14 +18,17 @@ state = {
 			dockyard = 3
 			air_base = 5
 			3314 = {	naval_base = 5	}
+			9498 = {	naval_base = 10	}
 		}
 		victory_points = {	391	40	}
 		victory_points = {	3211	10	}
+		victory_points = {	9498	20	}
 		set_variable = {	HOL_state_variable = 1	}
+		set_variable = {	NTL_state_variable = 1	}
 	}
 	
 	provinces = {
-		68	391	3211	3314
+		68	391	3211	3314	9498
 	}
 	local_supplies = 0.0
 }

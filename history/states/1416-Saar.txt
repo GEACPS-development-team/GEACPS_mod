@@ -1,0 +1,29 @@
+state = {
+	id = 1416
+	name = "STATE_1416"
+	manpower = 30300
+	state_category = metropolis
+	
+	history = {
+		owner = SAR
+		add_core_of = SAR
+		add_core_of = GER
+		RHI = {	debug_core = yes	}
+		NGR = {	debug_core = yes	}
+		WGR = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 4
+		}
+		victory_points = {	11531	10	}
+		set_variable = {	SAR_state_variable = 1	}
+		set_variable = {	RHI_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
+		set_variable = {	NGR_state_variable = 1	}
+		set_variable = {	WGR_state_variable = 1	}
+	}
+	
+	provinces = {
+		11531
+	}
+	local_supplies = 0.0
+}

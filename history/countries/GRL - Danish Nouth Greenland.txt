@@ -1,4 +1,5 @@
-﻿create_dynamic_country = {
+﻿capital = 1209
+create_dynamic_country = {
 	original_tag = GRL
 	
 	DEN = {	set_colony = yes	}
@@ -8,7 +9,13 @@
 	set_cosmetic_tag = NORTHGREENLAND_DEN
 	set_dictatorship = yes
 	
-	# recruit_character = CHARACTER_carl_frederik_bistrup_simony
+	create_country_leader = {
+		name = CHARACTER_carl_frederik_bistrup_simony
+		desc = "CHARACTER_carl_frederik_bistrup_simony_desc"
+		picture = GFX_carl_frederik_bistrup_simony_large
+		expire = "1983.12.4"
+		ideology = national_authoritarianism_ideology
+	}
 	
 	every_core_state = {	remove_core_of = PREV	}
 	1209 = {	set_owner_and_core_of = yes	}

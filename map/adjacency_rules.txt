@@ -30,7 +30,7 @@ adjacency_rule = {	#スエズ運河
 	is_disabled = {
 		OR = {
 			has_global_flag = SUEZ_CANAL_BLOCKED
-			has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
+			# has_country_flag = SUEZ_CANAL_BLOCKED_FOR_COUNTRY
 		}
 		tooltip = disable_canal_tt
 	}
@@ -71,7 +71,7 @@ adjacency_rule = {	#パナマ運河
 	is_disabled = {
 		OR = {
 			has_global_flag = PANAMA_CANAL_BLOCKED
-			has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
+			# has_country_flag = PANAMA_CANAL_BLOCKED_FOR_COUNTRY
 		}
 		tooltip = disable_canal_tt
 	}
@@ -107,13 +107,13 @@ adjacency_rule = {	#北海バルト海運河
 		trade = yes
 	}
 	
-	required_provinces = {	3231	3368	6389	}
+	required_provinces = {	3368	6257	6389	}
 		
 	icon = 6389
 	offset = {	5	0	-6	}
 }
 
-adjacency_rule = {	#北海バルト海運河
+adjacency_rule = {	#コリントス運河
 	name = "CORINTH_CANAL"
 	contested = {
 		army = no
@@ -176,7 +176,7 @@ adjacency_rule = {	#日本横断運河
 	required_provinces = {	7102	1067	12097	}
 	
 	is_disabled = {
-		NOT = {	has_country_flag = built_the_trans-japan_canal	}
+		always = yes
 		tooltip = built_the_trans-japan_canal_tt
 	}
 	
@@ -318,7 +318,7 @@ adjacency_rule = {	#ダーダネルス海峡
 	required_provinces = {	849	6864	}
 	
 	is_disabled = {
-		has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
+		# has_country_flag = DARDANELLES_STRAIT_BLOCKED_FOR_COUNTRY
 		tooltip = dardanelles_strait_blocked_tt
 	}
 	
@@ -360,21 +360,38 @@ adjacency_rule = {	#ホルムズ海峡
 }
 
 adjacency_rule = {	#対馬海峡隧道
-	name = "TSUSHIMA-PUSAN"
+	name = "TSUSHIMA-PUSAN_TUNNEL"
+	contested = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	enemy = {
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral = {
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
 	
 	required_provinces = {	4056	10011	}
 	
 	is_disabled = {
 		always = yes
+		tooltip = built_tushima-pusan_tunnel_tt
 	}
-}
-
-adjacency_rule = {	#対馬海峡隧道
-	name = "BERING_STRAIT"
-	
-	required_provinces = {	7855	13204	}
-	
-	is_disabled = {
-		always = yes
-	}
+	icon = 10011
+	offset = {	0	0	0	}
 }

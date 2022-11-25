@@ -1,4 +1,19 @@
 characters = {	#文民
+	CHARACTER_curt_ernst_carl_schumacher = {	#クルト・エルンスト・カール・シューマッハー
+		name = CHARACTER_curt_ernst_carl_schumacher
+		
+		portraits = {
+			civilian = {
+				small = GFX_curt_ernst_carl_schumacher_small
+				large = GFX_curt_ernst_carl_schumacher_large
+			}
+		}
+		country_leader = {
+			ideology = social_democracy_ideology
+			desc = "CHARACTER_curt_ernst_carl_schumacher_desc"
+			expire = "1952.8.20"
+		}
+	}
 	CHARACTER_friedrich_wilhelm_reinhold_pieck = {	#フリードリヒ・ヴィルヘルム・ラインホルト・ピーク
 		name = CHARACTER_friedrich_wilhelm_reinhold_pieck
 		
@@ -9,7 +24,7 @@ characters = {	#文民
 			}
 		}
 		country_leader = {
-			ideology = total_socialism_ideology
+			ideology = marxism-leninism_ideology
 			desc = "CHARACTER_friedrich_wilhelm_reinhold_pieck_desc"
 			expire = "1960.9.7"
 		}
@@ -27,6 +42,23 @@ characters = {	#文民
 			ideology = conservative_democracy_ideology
 			desc = "CHARACTER_karl_borromaus_arnold_desc"
 			expire = "1958.6.29"
+		}
+	}
+	CHARACTER_theodor_heuss = {	#テオドール・ホイス
+		name = CHARACTER_theodor_heuss
+		
+		portraits = {
+			civilian = {
+				small = GFX_theodor_heuss_small
+				large = GFX_theodor_heuss_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = GER_theodor_heuss_hg
+			removal_cost = -1
+			allowed = {	original_tag = SGR	}
+			traits = {}
 		}
 	}
 }

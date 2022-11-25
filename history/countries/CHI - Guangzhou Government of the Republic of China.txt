@@ -1,4 +1,6 @@
-﻿create_dynamic_country = {	#中華民国広州政府
+﻿capital = 621
+
+create_dynamic_country = {	#中華民国広州政府
 	original_tag = CHI
 	
 	set_capital = {	state = 621	}
@@ -6,7 +8,13 @@
 	set_cosmetic_tag = CHI_minguo_guangzhou_government
 	set_dictatorship = yes
 	
-	recruit_character = CHARACTER_chen_gongbo
+	create_country_leader = {
+		name = CHARACTER_chen_gongbo
+		desc = "CHARACTER_chen_gongbo_desc"
+		picture = GFX_chen_gongbo_large
+		#expire = "1976.9.9"
+		ideology = national_authoritarianism_ideology
+	}
 	
 	add_ideas = {	#政治タブ
 		republic_unitary_state
