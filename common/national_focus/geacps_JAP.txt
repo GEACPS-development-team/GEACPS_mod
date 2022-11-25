@@ -170,7 +170,7 @@ focus_tree = {
 		x = 8
 		y = 4
 		available = {
-			has_country_flag = JAP_senior_statesmen's_conference_held
+			has_country_flag = JAP_senior_statesmens_conference_held
 		}
 		relative_position_id = JAP_1-22_Incident
 		completion_reward = {
@@ -180,61 +180,10 @@ focus_tree = {
 	#########
 	#	海軍	#
 	#########
-	
-	
-	focus = {	#岡田啓介
-		id = JAP_Keisuke_Okada
-		icon = GFX_focus_JAP_Keisuke_Okada
-		cost = 0
-		x = -6
-		y = 1
-		available = {
-			has_country_flag = JAP_navy_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
-	focus = {	#米内光政
-		id = JAP_Mitsumasa_Yonai
-		icon = GFX_focus_JAP_Mitsumasa_Yonai
-		cost = 0
-		x = -4
-		y = 1
-		available = {
-			has_country_flag = JAP_navy_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
-	focus = {	#鈴木貫太郎
-		id = JAP_Kantaro_Suzuki
-		icon = GFX_focus_JAP_Kantaro_Suzuki
-		cost = 0
-		x = -2
-		y = 1
-		available = {
-			has_country_flag = JAP_navy_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
 
 	#########
 	#	文民	#
 	#########
-	
 	
 	focus = {	#近衛文麿
 		id = JAP_Fumimaro_Konoe
@@ -252,77 +201,622 @@ focus_tree = {
 		completion_reward = {
 		}
 	}
+	focus = {	#近衛ドクトリン
+		id = JAP_Konoe_Doctrine
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Fumimaro_Konoe
+		prerequisite = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+	}
+	focus = {	#ヨーロッパの病人との関係
+		id = JAP_relationship_with_Sick_man_of_Europe
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -5
+		y = 1
+		relative_position_id = JAP_Konoe_Doctrine
+		prerequisite = {
+			focus = JAP_Konoe_Doctrine
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = ENG
+				modifier = the_sick_in_europe
+			}
+			ENG = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = small_countries_of_coloured_people
+				}
+			}
+		}
+	}
+	focus = {	#フォークランド紛争でアルゼンチンを支持
+		id = JAP_support_in_Falklands_War
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -4
+		y = 2
+		relative_position_id = JAP_Konoe_Doctrine
+		prerequisite = {
+			focus = JAP_relationship_with_Sick_man_of_Europe
+			focus = JAP_relationship_with_Sick_Free_State
+		}
+		completion_reward = {
+			ARG = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = support_our_country_on_the_falkland_Islands_dispute
+				}
+			}
+		}
+	}
+	focus = {	#マラヤ危機
+		id = JAP_Malayan_Emergency
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_relationship_with_Sick_man_of_Europe
+		prerequisite = {
+			focus = JAP_relationship_with_Sick_man_of_Europe
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#マラヤ人民抗英軍を支援
+		id = JAP_support_for_Malayan_National_Liberation_Army
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_Malayan_Emergency
+		prerequisite = {
+			focus = JAP_Malayan_Emergency
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#郷土防衛義勇軍を訓練
+		id = JAP_training_for_Defenders_of_the_Homeland
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Malayan_Emergency
+		prerequisite = {
+			focus = JAP_Malayan_Emergency
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#南進論
+		id = JAP_Nanshin-ron
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 4
+		relative_position_id = JAP_relationship_with_Sick_man_of_Europe
+		prerequisite = {
+			focus = JAP_support_for_Malayan_National_Liberation_Army
+		}
+		prerequisite = {
+			focus = JAP_training_for_Defenders_of_the_Homeland
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#瀕死の自由の国との関係
+		id = JAP_relationship_with_Sick_Free_State
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -3
+		y = 1
+		relative_position_id = JAP_Konoe_Doctrine
+		prerequisite = {
+			focus = JAP_Konoe_Doctrine
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = devils_american_imperialism
+			}
+			USA = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = A_Japs_a_Jap_and_thats_all_there_is_to_it
+				}
+			}
+		}
+	}
+	focus = {	#かつての太陽の沈まない国との関係
+		id = JAP_relationship_with_The_empire_on_which_the_sun_never_sets
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_relationship_with_Sick_Free_State
+		prerequisite = {
+			focus = JAP_relationship_with_Sick_Free_State
+		}
+		completion_reward = {
+			SPR = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = konoe_cabinet_makes_concessions
+				}
+			}
+		}
+	}
+	focus = {	#東ティモール返還
+		id = JAP_handover_of_East_Timor
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_relationship_with_The_empire_on_which_the_sun_never_sets
+		prerequisite = {
+			focus = JAP_relationship_with_The_empire_on_which_the_sun_never_sets
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#アラスカへの影響
+		id = JAP_impact_on_alaska
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_relationship_with_Sick_Free_State
+		prerequisite = {
+			focus = JAP_relationship_with_Sick_Free_State
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#カリフォルニアへの影響
+		id = JAP_impact_on_california
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_impact_on_alaska
+		prerequisite = {
+			focus = JAP_impact_on_alaska
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#東進論
+		id = JAP_Toshin-ron
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 4
+		relative_position_id = JAP_relationship_with_Sick_Free_State
+		prerequisite = {
+			focus = JAP_impact_on_california
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#堕ちた赤い星との関係
+		id = JAP_relationship_with_fallen_Red_star
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_Konoe_Doctrine
+		prerequisite = {
+			focus = JAP_Konoe_Doctrine
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = RUS
+				modifier = social_imperialism
+			}
+			RUS = {
+				add_opinion_modifier = {
+					target = JAP
+					modifier = Anti-Japanese_Imperialism
+				}
+			}
+		}
+	}
+	focus = {	#シベリアの脅威を排除
+		id = JAP_eliminating_threat_of_Siberia
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_relationship_with_fallen_Red_star
+		prerequisite = {
+			focus = JAP_relationship_with_fallen_Red_star
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#極東のコサックを支援
+		id = JAP_support_for_cossacks_in_far_east
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_relationship_with_fallen_Red_star
+		prerequisite = {
+			focus = JAP_relationship_with_fallen_Red_star
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#バム鉄道
+		id = JAP_Baikal-Amur_Mainline
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 3
+		relative_position_id = JAP_relationship_with_fallen_Red_star
+		prerequisite = {
+			focus = JAP_eliminating_threat_of_Siberia
+		}
+		prerequisite = {
+			focus = JAP_support_for_cossacks_in_far_east
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#北進論
+		id = JAP_Hokushin-ron
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 4
+		relative_position_id = JAP_relationship_with_fallen_Red_star
+		prerequisite = {
+			focus = JAP_Baikal-Amur_Mainline
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#英米ソ本位の平和主義を排す
+		id = JAP_reject_the_Anglo-American_and_Russian_centered_peace
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -3
+		y = 6
+		relative_position_id = JAP_Konoe_Doctrine
+		prerequisite = {
+			focus = JAP_Nanshin-ron
+		}
+		prerequisite = {
+			focus = JAP_Toshin-ron
+		}
+		prerequisite = {
+			focus = JAP_Hokushin-ron
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#革新官僚を任命
+		id = JAP_appointment_reform_bureaucrats
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_Fumimaro_Konoe
+		prerequisite = {
+			focus = JAP_Fumimaro_Konoe
+		}
+		completion_reward = {
+			add_ideas = JAP_Innovation_bureaucrats
+		}
+	}
+	focus = {	#皇道派と協力
+		id = JAP_cooperation_with_Kodoha
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_appointment_reform_bureaucrats
+		prerequisite = {
+			focus = JAP_appointment_reform_bureaucrats
+		}
+		mutually_exclusive = {
+			focus = JAP_Greater_Japan_Party
+		}
+		mutually_exclusive = {
+			focus = JAP_cooperation_with_Toseiha
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#國家に対する打撃
+		id = JAP_coup
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_cooperation_with_Kodoha
+		prerequisite = {
+			focus = JAP_cooperation_with_Kodoha
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#憲法を停止
+		id = JAP_stop_Meiji_Constitution
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = -1
+		y = 1
+		relative_position_id = JAP_coup
+		prerequisite = {
+			focus = JAP_coup
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#両院を解散
+		id = JAP_dissolution_of_both_parliament
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_stop_Meiji_Constitution
+		prerequisite = {
+			focus = JAP_stop_Meiji_Constitution
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#全國に戒厳令を！
+		id = JAP_martial_law_of_all_prefectures
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_dissolution_of_both_parliament
+		prerequisite = {
+			focus = JAP_dissolution_of_both_parliament
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#昭和維新を開始
+		id = JAP_start_of_Showa_Ishin
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_martial_law_of_all_prefectures
+		prerequisite = {
+			focus = JAP_martial_law_of_all_prefectures
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#特権階級を排除
+		id = JAP_removal_of_upper_class
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_coup
+		prerequisite = {
+			focus = JAP_coup
+			focus = JAP_Greater_Japan_Party
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#大日本党
+		id = JAP_Greater_Japan_Party
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 3
+		y = 1
+		relative_position_id = JAP_appointment_reform_bureaucrats
+		prerequisite = {
+			focus = JAP_appointment_reform_bureaucrats
+		}
+		mutually_exclusive = {
+			focus = JAP_cooperation_with_Kodoha
+		}
+		mutually_exclusive = {
+			focus = JAP_cooperation_with_Toseiha
+		}
+		completion_reward = {
+			set_party_name = {
+				ideology = national_populism
+				name = PARTY_greater_japan_party_long
+				long_name = PARTY_greater_japan_party_long
+			}
+		}
+	}
+	focus = {	#新体制運動を加速
+		id = JAP_acceleration_of_Shintaisei
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Greater_Japan_Party
+		prerequisite = {
+			focus = JAP_Greater_Japan_Party
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#外地の新体制運動を加速
+		id = JAP_acceleration_of_Shintaisei_in_territories_acquired
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 2
+		relative_position_id = JAP_acceleration_of_Shintaisei
+		prerequisite = {
+			focus = JAP_acceleration_of_Shintaisei
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#東亜経済ブロック
+		id = JAP_East_Asia_bloc_economies
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_acceleration_of_Shintaisei_in_territories_acquired
+		prerequisite = {
+			focus = JAP_acceleration_of_Shintaisei_in_territories_acquired
+		}
+		prerequisite = {
+			focus = JAP_competition_with_imperialism_great_powers
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#バスに乗り遅れるな！
+		id = JAP_basu_ni_nori_okureru_na
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_East_Asia_bloc_economies
+		prerequisite = {
+			focus = JAP_East_Asia_bloc_economies
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#私有財産制の廃止...？
+		id = JAP_abolition_of_private_property
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 1
+		relative_position_id = JAP_acceleration_of_Shintaisei
+		prerequisite = {
+			focus = JAP_acceleration_of_Shintaisei
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#帝國主義列強との競争
+		id = JAP_competition_with_imperialism_great_powers
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 2
+		y = 2
+		relative_position_id = JAP_acceleration_of_Shintaisei
+		prerequisite = {
+			focus = JAP_acceleration_of_Shintaisei
+			focus = JAP_destiny_of_Kodoha
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#統制派の協力
+		id = JAP_cooperation_with_Toseiha
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 5
+		y = 1
+		relative_position_id = JAP_appointment_reform_bureaucrats
+		prerequisite = {
+			focus = JAP_appointment_reform_bureaucrats
+		}
+		mutually_exclusive = {
+			focus = JAP_cooperation_with_Kodoha
+		}
+		mutually_exclusive = {
+			focus = JAP_Greater_Japan_Party
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#A
+		id = JAP_Fumimaro_Konoe_A
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 1
+		y = 2
+		relative_position_id = JAP_cooperation_with_Toseiha
+		prerequisite = {
+			focus = JAP_cooperation_with_Toseiha
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#皇道派の命運
+		id = JAP_destiny_of_Kodoha
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_cooperation_with_Toseiha
+		prerequisite = {
+			focus = JAP_cooperation_with_Toseiha
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	focus = {	#B
+		id = JAP_Fumimaro_Konoe_B
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_competition_with_imperialism_great_powers
+		prerequisite = {
+			focus = JAP_competition_with_imperialism_great_powers
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
+	focus = {	#高度国防国家
+		id = JAP_high_defence_state
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 1
+		relative_position_id = JAP_Fumimaro_Konoe_B
+		prerequisite = {
+			focus = JAP_Fumimaro_Konoe_B
+		}
+		completion_reward = {
+			add_stability = -0.1
+		}
+	}
 
 	#########
 	#	陸軍	#
 	#########
 	
-	
-	focus = {	#小磯國昭
-		id = JAP_Kuniaki_Koiso
-		icon = GFX_focus_JAP_Kuniaki_Koiso
-		cost = 0
-		x = 2
-		y = 1
-		available = {
-			has_country_flag = JAP_army_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
-	focus = {	#寺内寿一
-		id = JAP_Hisaichi_Terauchi
-		icon = GFX_focus_JAP_Hisaichi_Terauchi
-		cost = 0
-		x = 4
-		y = 1
-		available = {
-			has_country_flag = JAP_army_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
-	focus = {	#畑俊六
-		id = JAP_Shunroku_Hata
-		icon = GFX_focus_JAP_Shunroku_Hata
-		cost = 0
-		x = 6
-		y = 1
-		available = {
-			has_country_flag = JAP_army_candidates_selected
-		}
-		relative_position_id = JAP_taimeikoka
-		prerequisite = {
-			focus = JAP_taimeikoka
-		}
-		completion_reward = {
-		}
-	}
-
 	#############
 	#	日本革命	#
 	#############
 	
-	#focus = {	#日本革命
-	#	id = JAP_Japanese_Revolution
-	#	icon = GFX_focus_JAP_Hirohito
-	#	cost = 0
-	#	x = 1
-	#	y = 1
-	#	available = {
-	#	}
-	#	relative_position_id = JAP_1-22_Incident
-	#	completion_reward = {
-	#	}
-	#}
+	focus = {	#日本革命
+		id = JAP_Japanese_Revolution
+		icon = GFX_focus_JAP_Japanese_Revolution
+		cost = 0
+		x = 100
+		y = 100
+		available = {
+		}
+		relative_position_id = JAP_1-22_Incident
+		completion_reward = {
+		}
+	}
 
 	#############
 	#	支那事変	#

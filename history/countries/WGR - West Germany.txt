@@ -1,10 +1,9 @@
 ﻿capital = 57
-oob = WGR_1946
 
 set_cosmetic_tag = GER_empire
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = conservative_democracy
 	last_election = "1938.4.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -13,11 +12,22 @@ set_popularities = {
 	total_socialism = 4
 	radical_socialism = 4
 	social_democracy = 22
-	liberal_democracy = 34
-	conservative_democracy = 24
+	liberal_democracy = 24
+	conservative_democracy = 34
 	authoritative_democracy = 5
 	national_authoritarianism = 4
 	national_populism = 3
+}
+
+set_party_name = {	#ドイツ・キリスト教民主同盟
+	ideology = conservative_democracy
+	name = PARTY_christian_democratic_union_of_germany
+	long_name = PARTY_christian_democratic_union_of_germany_long
+}
+set_party_name = {	#ドイツ党
+	ideology = authoritative_democracy
+	name = PARTY_german_party
+	long_name = PARTY_german_party_long
 }
 
 recruit_character = CHARACTER_friedrich_wilhelm_victor_august_ernst_von_preusen
@@ -28,11 +38,11 @@ add_ideas = {	#政治タブ
 }
 
 add_ideas = {	#国民精神
-	WGR_the_berlin_declaration
-	WGR_potsdam_agreement
-	WGR_denazification
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_denazification
+	GER_the_east-west_german_wall
 	WGR_republic_of_Bonn
-	WGR_the_east-west_german_wall
 }
 
 set_rule = {

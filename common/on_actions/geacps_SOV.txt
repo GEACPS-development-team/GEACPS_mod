@@ -1,0 +1,13 @@
+on_actions = {
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = {	FROM = {	OR = {	tag = SOV	soviet_member_trigger = yes	}	}	}
+				every_country = {
+					limit = {	soviet_member_trigger = yes	}
+					country_event = SOV.1
+				}
+			}
+		}
+	}
+}

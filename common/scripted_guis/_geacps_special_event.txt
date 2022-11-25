@@ -11,22 +11,22 @@ scripted_gui = {
 				clear_variable = special_event_ID
 			}
 		}
-	       	properties = {
-	            special_event_picture = {#写真
-	                image = "[se_picture]"
-	            }
-	            special_event_world_map = {#地図
-	                image = "[se_back_map]"
-	            }
-	            special_event_clock_hour = {#時針
-	                image = GFX_clock_hour
-	                frame = "[clock_time_hour]"
-	            }
-	            special_event_clock_minutes = {#分針
-	                image = GFX_clock_minutes
-	                frame = "[clock_time_minutes]"
-	            }
-	        }
+		   	properties = {
+				special_event_picture = {#写真
+					image = "[se_picture]"
+				}
+				special_event_world_map = {#地図
+					image = "[se_back_map]"
+				}
+				special_event_clock_hour = {#時針
+					image = GFX_clock_hour
+					frame = "[clock_time_hour]"
+				}
+				special_event_clock_minutes = {#分針
+					image = GFX_clock_minutes
+					frame = "[clock_time_minutes]"
+				}
+			}
 		triggers = {	#ボタンを実行できる条件?
 		}
 	}

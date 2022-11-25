@@ -1,0 +1,40 @@
+guiTypes = {
+	containerWindowType = {
+		name = "geacps_calendar_era"
+		position = { x = 1279 y = 4 }
+		size = { width = 100%% height = 100%% }
+		iconType = {
+			name ="geacps_calendar_era_bg"
+			spriteType = "GFX_generic_box_125"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name ="geacps_calendar_era_icon"
+			spriteType = ""
+			position = { x = 3 y = 0 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "geacps_calendar_era_t"
+			pdx_tooltip_delayed = "geacps_calendar_era_d"
+		}
+		instantTextBoxType = {
+			name = "geacps_calendar_era_tt"
+			position = { x = 23 y = 4 }
+			font = "hoi_18mbs"
+			text = "geacps_calendar_era_tt"
+			format = center
+			maxWidth = 96
+			maxHeight = 24
+			fixedsize = yes
+			pdx_tooltip = "geacps_calendar_era_t"
+			pdx_tooltip_delayed = "geacps_calendar_era_delayed"
+		}
+		buttonType = {
+			name = "geacps_calendar_era_change_bt"
+			spriteType = "GFX_placerenaming_button"
+			position = { x = 125 y = 0 }
+			pdx_tooltip = "geacps_calendar_era_change_bt_t"
+			pdx_tooltip_delayed = "geacps_calendar_era_change_bt_d"
+		}
+	}
+}

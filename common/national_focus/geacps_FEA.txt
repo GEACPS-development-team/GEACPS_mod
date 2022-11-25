@@ -510,7 +510,7 @@ focus_tree = {
 	}
 	
 	focus = {				#極東の共和国
-		id = FEA_republic
+		id = FEA_republic_in_far_east
 		icon = GFX_focus_fra_devalue_the_franc
 		prerequisite = { focus = FEA_research_slot_unlock_citizens }
 		x = 1
@@ -620,9 +620,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_japan
 				bonus = 1
-    			uses = 2
-    			category = industry
+				uses = 2
+				category = industry
 			}
 			563 = {
 				add_extra_state_shared_building_slots = 4
@@ -918,9 +919,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_japan_tech
 				bonus = 1
-    			uses = 2
-    			category = industry
+				uses = 2
+				category = industry
 			}
 			657 = {
 				add_building_construction = {
@@ -1092,9 +1094,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_GER_air
 				bonus = 1
-    			uses = 4
-    			category = air_equipment
+				uses = 4
+				category = air_equipment
 			}
 		}
 	}
@@ -1222,9 +1225,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_equipment
 				bonus = 1
-    			uses = 4
-    			category = infantry_weapons
+				uses = 4
+				category = infantry_weapons
 			}
 		}
 	}
@@ -1282,9 +1286,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_firepower
 				bonus = 1
-    			uses = 4
-    			category = cat_superior_firepower
+				uses = 4
+				category = cat_superior_firepower
 			}
 		}
 	}
@@ -1313,9 +1318,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_firepower_2
 				bonus = 1
-    			uses = 4
-    			category = cat_superior_firepower
+				uses = 4
+				category = cat_superior_firepower
 			}
 		}
 	}
@@ -1345,9 +1351,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_warfare
 				bonus = 1
-    			uses = 4
-    			category = cat_mobile_warfare
+				uses = 4
+				category = cat_mobile_warfare
 			}
 		}
 	}
@@ -1376,9 +1383,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_warfare_2
 				bonus = 1
-    			uses = 4
-    			category = cat_mobile_warfare
+				uses = 4
+				category = cat_mobile_warfare
 			}
 		}
 	}
@@ -1407,9 +1415,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_logistics
 				bonus = 1
-    			uses = 2
-    			category = logistics_tech
+				uses = 2
+				category = logistics_tech
 			}
 		}
 	}
@@ -1438,9 +1447,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_Armor
 				bonus = 1
-    			uses = 2
-    			category = armor
+				uses = 2
+				category = armor
 			}
 		}
 	}
@@ -1469,9 +1479,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_Artillery
 				bonus = 1
-    			uses = 2
-    			category = artillery
+				uses = 2
+				category = artillery
 			}
 		}
 	}
@@ -1653,9 +1664,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_Submarine
 				bonus = 1
-    			uses = 2
-    			category = ss_tech
+				uses = 2
+				category = ss_tech
 			}
 		}
 	}
@@ -1684,9 +1696,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_Navy_Military_Advisor
 				bonus = 1
-    			uses = 4
-    			category = naval_doctrine
+				uses = 4
+				category = naval_doctrine
 			}
 		}
 	}
@@ -1716,9 +1729,10 @@ focus_tree = {
 		
 		completion_reward = {
 			add_tech_bonus = {
+				name = FEA_Navy_marines
 				bonus = 1
-    			uses = 2
-    			category = marine_tech
+				uses = 2
+				category = marine_tech
 			}
 		}
 	}

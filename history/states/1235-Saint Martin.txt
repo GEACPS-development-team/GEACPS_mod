@@ -7,11 +7,12 @@ state = {
 	history = {
 		owner = GDL
 		add_core_of = GDL
-		#add_core_of =
+		STM = {	debug_core = yes	}
+		WIN = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	_state_variable = 1	}
+		set_variable = {	STM_state_variable = 1	}
 	}
 	
 	provinces = {

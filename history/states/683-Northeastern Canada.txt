@@ -1,7 +1,7 @@
 state = {
 	id = 683
 	name = "STATE_683"
-	manpower = 46135
+	manpower = 6630
 	buildings_max_level_factor = 1
 	state_category = wasteland
 	
@@ -10,14 +10,16 @@ state = {
 	history = {
 		owner = CAN
 		add_core_of = CAN
+		NAC = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
+			3691 = {	naval_base = 1	}
 		}
 		set_variable = {	CAN_state_variable = 1	}
 	}
 	
 	provinces = {
-		2947	10527	10721
+		1712	2947	3691	7813	10527	10721
 	}
 	local_supplies = 0.0
 }

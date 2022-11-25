@@ -13,7 +13,9 @@ equipments = {
 		interface_category = interface_category_air
 				
 		reliability = 0.8
-
+		allow_mission_type = {
+			strategic_bomber
+		}
 		# Air vs Navy - high damage / low hit chance / hard to hurt
 		naval_strike_attack = 1.5
 		naval_strike_targetting = 0.6

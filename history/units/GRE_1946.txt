@@ -1,5 +1,6 @@
 ﻿division_template = {
 	name = "3単位制師団"
+	division_names_group = GRE_infantry_division_00
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -14,6 +15,7 @@
 }
 division_template = {
 	name = "4単位制師団"
+	division_names_group = GRE_infantry_division_00
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -42,57 +44,56 @@ division_template = {
 
 units = {
 	division = {
-		division_name = "第5歩兵師団"
-		location = 4078
-		division_template = "3単位制師団" 
-		start_experience_factor = 0.2
-		start_equipment_factor = 0.5
-	}
-	division = { # "VIII Merarchía Pezikoú"
-		division_name = "第8歩兵師団"
-		location = 3914
+		division_name = {	is_name_ordered = yes	name_order = 1	}
+		location = 3973
 		division_template = "4単位制師団" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 	}
 	division = {
-		division_name = "第2歩兵師団"
+		division_name = {	is_name_ordered = yes	name_order = 2	}
 		location = 4109
 		division_template = "4単位制師団" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
 	}
 	division = {
-		division_name = "第3歩兵師団"
+		division_name = {	is_name_ordered = yes	name_order = 3	}
 		location = 4193
 		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
-		division_name = "第4歩兵師団"
+		division_name = {	is_name_ordered = yes	name_order = 4	}
 		location = 7096
 		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
-		division_name = "第1歩兵師団"
-		location = 3973
+		division_name = {	is_name_ordered = yes	name_order = 5	}
+		location = 4078
+		division_template = "3単位制師団" 
+		start_experience_factor = 0.2
+		start_equipment_factor = 0.5
+	}
+	division = {
+		division_name = {	is_name_ordered = yes	name_order = 8	}
+		location = 3914
 		division_template = "4単位制師団" 
 		start_experience_factor = 0.3
 		start_equipment_factor = 0.7
-
 	}
 	division = {
-		division_name = "第9歩兵師団"
+		division_name = {	is_name_ordered = yes	name_order = 9	}
 		location = 966
 		division_template = "3単位制師団" 
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.5
 	}
 	division = {
-		division_name = "第13師団"
+		division_name = {	is_name_ordered = yes	name_order = 13	}
 		location = 11905
 		division_template = "3単位制師団" 
 		start_experience_factor = 0.2

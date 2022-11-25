@@ -1,3 +1,17 @@
+is_socialist_government = {
+	OR = {
+		has_government = total_socialism
+		has_government = radical_socialism
+	}
+}
+is_democratic_government = {
+	OR = {
+		has_government = social_democracy
+		has_government = liberal_democracy
+		has_government = conservative_democracy
+		has_government = authoritative_democracy
+	}
+}
 has_AMERICA_united_states_n_cosmetic_tag = {
 	OR = {
 		has_cosmetic_tag = AMERICA_united_states_0

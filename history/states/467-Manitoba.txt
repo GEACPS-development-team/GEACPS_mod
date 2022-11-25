@@ -1,13 +1,14 @@
 state = {
 	id = 467
 	name = "STATE_467"
-	manpower = 651071
+	manpower = 753000
 	buildings_max_level_factor = 1
 	state_category = rural
 	
 	history = {
 		owner = CAN
 		add_core_of = CAN
+		NAC = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -17,7 +18,7 @@ state = {
 	}
 	
 	provinces = {
-		1848	1873	3721	4218	4426	4790	4872	5119	5239	6728	7185	7782	9615	10585	10605	12145	12636	12688
+		1848	1873	3721	4218	4426	4790	4872	5119	12145	12688
 	}
 	local_supplies = 0.0
 }
