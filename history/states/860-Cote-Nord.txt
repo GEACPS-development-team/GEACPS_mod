@@ -1,0 +1,21 @@
+state = {
+	id = 860
+	name = "STATE_860"
+	manpower = 110000
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
+		owner = CAN
+		add_core_of = CAN
+		add_core_of = QEB
+		NAC = {	debug_core = yes	}
+		set_variable = {	CAN_state_variable = 1	}
+		set_variable = {	QEB_state_variable = 1	}
+	}
+	
+	provinces = {
+		4769	7683	7807	7810	10534	10715	12600
+	}
+	local_supplies = 0.0
+}

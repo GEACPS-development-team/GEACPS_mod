@@ -1,11 +1,6 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 ##陸
-
 #山岳地帯
-
-
-
-
 4318;5102;impassable;-1;-1;-1;-1;-1;;ヒマラヤ山脈
 1898;8029;impassable;-1;-1;-1;-1;-1;;ヒマラヤ山脈
 1898;1961;impassable;-1;-1;-1;-1;-1;;ヒマラヤ山脈
@@ -61,7 +56,27 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 9738;3764;impassable;-1;-1;-1;-1;-1;;アルプス山脈西部
 9738;9745;impassable;-1;-1;-1;-1;-1;;アルプス山脈西部
 6780;9745;impassable;-1;-1;-1;-1;-1;;アルプス山脈西部
-
+611;3612;impassable;-1;-1;-1;-1;-1;;western alps
+11570;3612;impassable;-1;-1;-1;-1;-1;;western alps
+11570;9587;impassable;-1;-1;-1;-1;-1;;western alps
+6635;9587;impassable;-1;-1;-1;-1;-1;;western alps
+3641;11601;impassable;-1;-1;-1;-1;-1;;central alps
+3641;658;impassable;-1;-1;-1;-1;-1;;central alps
+6661;3662;impassable;-1;-1;-1;-1;-1;;eastern alps
+3662;11587;impassable;-1;-1;-1;-1;-1;;eastern alps
+11587;3660;impassable;-1;-1;-1;-1;-1;;eastern alps
+3660;6675;impassable;-1;-1;-1;-1;-1;;eastern alps
+6675;9633;impassable;-1;-1;-1;-1;-1;;eastern alps
+9633;9630;impassable;-1;-1;-1;-1;-1;;eastern alps
+9630;11618;impassable;-1;-1;-1;-1;-1;;eastern alps
+671;11634;impassable;-1;-1;-1;-1;-1;;austrian alps
+671;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
+3675;668;impassable;-1;-1;-1;-1;-1;;austrian alps
+3674;3675;impassable;-1;-1;-1;-1;-1;;austrian alps
+3674;6691;impassable;-1;-1;-1;-1;-1;;austrian alps
+6691;6687;impassable;-1;-1;-1;-1;-1;;austrian alps
+6691;9650;impassable;-1;-1;-1;-1;-1;;austrian alps
+9650;3684;impassable;-1;-1;-1;-1;-1;;austrian alps
 #海峡
 83;185;sea;1885;-1;-1;-1;-1;;シュール海峡	Suur Strait
 83;6201;sea;1660;-1;-1;-1;-1;;ハリ・クルク海峡	Hari Kurk Strait
@@ -111,7 +126,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 7123;9377;sea;5533;-1;-1;-1;-1;;ドミニカ海峡	Dominica Passage
 7293;10191;sea;2239;-1;-1;-1;-1;;アラス海峡	Alas Strait
 7385;12153;sea;8751;-1;-1;-1;-1;;セブ海峡	Cebu Strait
-7855;13204;sea;2556;-1;-1;-1;-1;;ベーリング海峡	Bering Strait
+7855;13254;sea;2556;-1;-1;-1;-1;;ベーリング海峡	Bering Strait
+13204;13254;sea;2556;-1;-1;-1;-1;;ベーリング海峡	Bering Strait
 9377;13319;sea;2887;-1;-1;-1;-1;;グアドループ海峡	Guadeloupe Passage
 9805;10203;sea;5864;-1;-1;-1;-1;;コルフ海峡	Corfu Channel
 9833;11829;sea;5412;-1;-1;-1;-1;;ボスポラス海峡	Bosporus
@@ -120,41 +136,37 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 12031;13306;sea;8791;-1;-1;-1;-1;;明石海峡	Akashi Strait
 12113;12299;sea;5539;-1;-1;-1;-1;;シンガポール海峡	Singapore Strait
 13037;13327;sea;5922;-1;-1;-1;-1;;南千島海峡	South Chishima Strait
-
 4198;13329;sea;8318;-1;-1;-1;-1;;
 7115;13329;sea;8318;-1;-1;-1;-1;;
 7157;13328;sea;5664;-1;-1;-1;-1;;
-
-
 1123;7186;sea;2829;-1;-1;-1;-1;;
-
-
 9793;9845;sea;8871;-1;-1;-1;-1;;バレアレス諸島	Balearic Islands
-
 12251;10321;sea;8313;-1;-1;-1;-1;;アンダマン諸島
 7413;1419;sea;5294;-1;-1;-1;-1;;モルッカ諸島
 10141;1419;sea;5267;-1;-1;-1;-1;;モルッカ諸島
 480;9431;sea;8621;-1;-1;-1;-1;;低地地方沿岸
+13319;13456;sea;2887;-1;-1;-1;-1;;
+13456;13440;sea;2887;-1;-1;-1;-1;;
 #海峡隧道
-12060;10011;sea;2708;-1;-1;-1;-1;;TSUSHIMA-PUSAN
-
+12060;10011;sea;2708;-1;-1;-1;-1;TSUSHIMA-PUSAN_TUNNEL;
 ##海
 #川
 1434;2332;sea;149;-1;-1;-1;-1;;ネバ川
 2332;2356;sea;3084;-1;-1;-1;-1;;スヴィリ川
 #運河
 209;13194;sea;6090;-1;-1;-1;-1;;北海バルト海運河(WHITE_SEA-BALTIC_SEA_CANAL)
-2684;13305;sea;1067;7102;-1;-1;-1;TRANSJAPAN_CANAL;日本横断運河
 803;5388;sea;1155;-1;-1;-1;-1;SUEZ_CANAL;スエズ運河
+2684;13305;sea;1067;7102;-1;-1;-1;TRANSJAPAN_CANAL;日本横断運河
 5664;13305;sea;1067;12097;-1;-1;-1;TRANSJAPAN_CANAL;日本横断運河
 5913;6801;sea;4109;-1;-1;-1;-1;CORINTH_CANAL;コリントス運河
 8857;2284;sea;7617;1560;1009;1556;1016;PANAMA_CANAL;パナマ運河
 #海峡
-2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;ダーダネルス海峡
-5407;2400;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;ジブラルタル海峡南部
-5407;5382;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;ジブラルタル海峡北部
+2400;5407;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;ジブラルタル海峡南部
+2455;2506;;-1;-1;-1;-1;-1;DANISH_BELTS_STRAIT;デンマーク＝ベルト海峡
+2919;2943;;-1;-1;-1;-1;-1;HORMUZ_STRAIT;ホルムズ海峡
+5382;5407;;-1;-1;-1;-1;-1;GIBRALTAR_STRAIT;ジブラルタル海峡北部
 5412;7678;;-1;-1;-1;-1;-1;BOSPHORUS_STRAIT;ボスポラス海峡
-
+7452;7678;;-1;-1;-1;-1;-1;DARDANELLES_STRAIT;ボスポラス海峡
 #
 12126;1428;sea;812;-1;-1;-1;-1;;Tanahbala-Siberut
 12162;1298;sea;2124;-1;-1;-1;-1;;West Nusa Tenggara-East Nusa Tenggara
@@ -215,7 +227,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 177;7123;sea;5533;-1;-1;-1;-1;;Martinique-Dominica
 4450;13319;sea;2887;-1;-1;-1;-1;;Guadeloupe-Montserrat
 4450;13323;sea;2887;-1;-1;-1;-1;;Montserrat-Anguillaat
-
 13322;13324;sea;2887;-1;-1;-1;-1;;Montserrat-Anguilla
 3401;7127;sea;6801;-1;-1;-1;-1;;Cyclades-Greece
 8435;6864;sea;7452;-1;-1;-1;-1;;Lesbos-Turke
@@ -225,15 +236,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1091;12068;sea;5322;-1;-1;-1;-1;;Hoko#Added
 153;13320;sea;2571;-1;-1;-1;-1;;
 153;13321;sea;2571;-1;-1;-1;-1;;
-
 1440;4155;sea;5507;-1;-1;-1;-1;;
 4155;13313;sea;5507;-1;-1;-1;-1;;
 13313;13314;sea;5507;-1;-1;-1;-1;;
 13314;13315;sea;5507;-1;-1;-1;-1;;
 13312;13317;sea;5507;-1;-1;-1;-1;;
-
 8051;13325;sea;2691;-1;-1;-1;;
-
 3422;13310;sea;2871;-1;-1;-1;-1;;
-
 -1;-1;;-1;-1;-1;-1;-1;-1

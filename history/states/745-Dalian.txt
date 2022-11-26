@@ -1,22 +1,26 @@
 state = {
 	id = 745
 	name = "STATE_745"
-	manpower = 600000
+	manpower = 1134074
 	buildings_max_level_factor = 1
-	state_category = town
+	state_category = large_town
 	
 	history = {
-		owner = MAN
+		owner = DLI
+		add_core_of = DLI
 		add_core_of = MAN
 		add_core_of = CHI
 		buildings = {
-			infrastructure = 3
+			infrastructure = 2
+			1150 = {	naval_base = 1	}
+			1150 = {	coastal_bunker = 1	}
 		}
-		set_variable = {	MAN_state_variable = 1	}
+		victory_points = {	1150	1	}
+		set_variable = {	DLI_state_variable = 1	}
 	}
 	
 	provinces = {
-		3783	6851	6918	9854
+		1150
 	}
 	local_supplies = 0.0
 }

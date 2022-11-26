@@ -1,3 +1,5 @@
+capital = 1150
+
 create_dynamic_country = {	#中華民国臨時政府
 	original_tag = CHI
 	
@@ -26,7 +28,13 @@ create_dynamic_country = {	#中華民国臨時政府
 		long_name = PARTY_provisional_government_administrative_commission_long
 	}
 	
-	recruit_character = CHARACTER_wang_yintai
+	create_country_leader = {
+		name = CHARACTER_wang_yintai
+		desc = "CHARACTER_wang_yintai_desc"
+		picture = GFX_wang_yintai_large
+		#expire = "1965.1.1"
+		ideology = national_populism_ideology
+	}
 	
 	add_ideas = {	#政治タブ
 		republic_unitary_state
@@ -42,13 +50,13 @@ create_dynamic_country = {	#中華民国臨時政府
 	transfer_state = 614
 	transfer_state = 615
 	transfer_state = 743
-	transfer_state = 898
-	transfer_state = 899
 	transfer_state = 1081
 	transfer_state = 1150
 	transfer_state = 1152
 	transfer_state = 1160
 	transfer_state = 1261
+	transfer_state = 1459
+	transfer_state = 1460
 	
 	declare_war_on = {	target = CHI	type = civil_war	}
 }

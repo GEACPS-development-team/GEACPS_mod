@@ -1,26 +1,23 @@
 state = {
 	id = 35
 	name = "STATE_35"
-	manpower = 1449000
+	manpower = 161000
 	buildings_max_level_factor = 1
-	state_category = city
+	state_category = metropolis
 	
 	history = {
-		owner = HOL
-		add_core_of = HOL
+		owner = NTL
+		add_core_of = NTL
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 5
 		}
-		victory_points = {	3262	5	}
 		victory_points = {	6496	3	}
-		victory_points = {	11562	1	}
-		set_variable = {	HOL_state_variable = 1	}
-		set_variable = {	BEL_state_variable = 2	}
+		victory_points = {	9363	1	}
+		set_variable = {	NTL_state_variable = 1	}
 	}
 	
 	provinces = {
-		3262	6496	6500	11562
+		6496	9363	11456
 	}
 	local_supplies = 0.0
 }

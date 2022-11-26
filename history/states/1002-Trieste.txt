@@ -1,0 +1,28 @@
+state = {
+	id = 1002
+	name = "STATE_1002"
+	manpower = 10600
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
+		owner = VNC
+		add_core_of = VNC
+		add_core_of = ITA
+		PAD = {	debug_core = yes	}
+		victory_points = {	6626	1	}
+		buildings = {
+			infrastructure = 1
+			6626 = {	naval_base = 5	}
+		}
+		set_variable = {	VNC_state_variable = 1	}
+		set_variable = {	ITA_state_variable = 1	}
+	
+		set_demilitarized_zone = yes
+	}
+	
+	provinces = {
+		6626
+	}
+	local_supplies = 0.0
+}

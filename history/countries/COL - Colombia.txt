@@ -1,13 +1,12 @@
 ﻿capital = 306
-oob = COL_1946
 
 set_cosmetic_tag = COL_republic
 set_convoys = 5
 
 set_politics = {
 	ruling_party = liberal_democracy
-	last_election = "1945.3.18"
-	election_frequency = 24
+	last_election = "1942.5.5"
+	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
@@ -35,5 +34,18 @@ set_party_name = {	#コロンビア保守党
 	name = PARTY_colombian_conservative_party
 	long_name = PARTY_colombian_conservative_party_long
 }
+set_party_name = {	#ロス・レオパレード
+	ideology = national_populism
+	name = PARTY_los_leoparades
+	long_name = PARTY_los_leoparades_long
+}
 
 recruit_character = CHARACTER_alfonso_lopez_pumarejo
+
+add_ideas = {
+	republic_unitary_state
+	presidential_system
+	market_economy
+	free_trade
+	all_volunteer_military_system
+}

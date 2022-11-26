@@ -6,12 +6,27 @@ focus_tree = {
 	initial_show_position = {
 		x = 0 y = 0
 	}
-	default = no
+	default = yes
 	continuous_focus_position = {
 		x = 100 y = 1300
 	}
 	shared_focus = strengthening_domestic_capital
 	shared_focus = strengthening_military_power
+}focus_tree = {
+	id = _geacps_generic_forcus
+	country = {
+		factor = 1
+		modifier = {
+			add = 10
+			is_dependent_territory = yes
+		}
+	}
+	initial_show_position = {
+		x = 0 y = 0
+	}
+	continuous_focus_position = {
+		x = 100 y = 1300
+	}
 }
 shared_focus = {	#自国資本の強化
 	id = strengthening_domestic_capital

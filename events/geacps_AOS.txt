@@ -3,7 +3,7 @@ country_event = {	#1955年アオスタ独立住民投票
 	id = AOS.0
 	title = AOS.0.t
 	desc = AOS.0.d
-	picture = GFX_news_event_AOS_statute_referendum
+	picture = GFX_EUR_FRA_statute_referendum
 	
 	is_triggered_only = yes
 	
@@ -14,7 +14,7 @@ country_event = {	#1955年アオスタ独立住民投票
 	
 	option = {
 		name = AOS.0.0
-		news_event = {	id = news.1 days = 1	}
+		news_event = {	id = AOS_news.1 days = 1	}
 		set_cosmetic_tag = AOS_republic
 	}
 	option = {
@@ -22,6 +22,51 @@ country_event = {	#1955年アオスタ独立住民投票
 		ai_chance = {	factor = 100	}
 		end_puppet = FRA
 		ITA = {	merger_country = yes	}
-		news_event = {	id = news.2 days = 1	}
+		news_event = {	id = AOS_news.2 days = 1	}
 	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event AOS.0"	}
+}
+
+add_namespace = AOS_news
+news_event = {	#1955年アオスタ独立住民投票
+	id = AOS_news.0
+	title = AOS_news.0.t
+	desc = AOS_news.0.d
+	picture = GFX_EUR_FRA_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#フランスの影響力はどの位だ...？
+		name = AOS_news.0.0
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event AOS_news.0"	}
+}
+news_event = {	#アオスタはフランスの庇護下に留まる
+	id = AOS_news.1
+	title = AOS_news.1.t
+	desc = AOS_news.1.d
+	picture = GFX_EUR_FRA_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = AOS_news.1.0
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event AOS_news.1"	}
+}
+news_event = {	#1955年アオスタ独立
+	id = AOS_news.2
+	title = AOS_news.2.t
+	desc = AOS_news.2.d
+	picture = GFX_EUR_FRA_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = AOS_news.2.0
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event AOS_news.2"	}
 }

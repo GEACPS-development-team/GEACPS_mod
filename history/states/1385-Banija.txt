@@ -1,0 +1,24 @@
+state = {
+	id = 1385
+	name = "STATE_1385"
+	manpower = 4400
+	state_category = large_town
+	
+	history = {
+		owner = CRO
+		add_core_of = CRO
+		BLK = {	debug_core = yes	}
+		YUG = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+		}
+		set_variable = {	CRO_state_variable = 1	}
+		set_variable = {	SLA_state_variable = 1	}
+	}
+	
+	provinces = {
+		3596	13393	13394	13395
+	}
+	local_supplies = 0.0
+}

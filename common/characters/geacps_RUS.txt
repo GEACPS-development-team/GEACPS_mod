@@ -14,6 +14,36 @@ characters = {	#文民
 			expire = "1974.6.26"
 		}
 	}
+	CHARACTER_lev_davidovich_bronstein = {	#レフ・トロツキー
+		name = CHARACTER_lev_trotsky
+		
+		portraits = {
+			civilian = {
+				small = GFX_lev_davidovich_bronstein_small
+				large = GFX_lev_davidovich_bronstein_large
+			}
+		}
+		country_leader = {
+			ideology = trotskyism_ideology
+			desc = "CHARACTER_lev_davidovich_bronstein_desc"
+			# expire = ""
+		}
+	}
+	CHARACTER_nikolai_ivanovich_bukharin = {	#ニコライ・イヴァノヴィチ・ブハーリン
+		name = CHARACTER_nikolai_ivanovich_bukharin
+		
+		portraits = {
+			civilian = {
+				small = GFX_nikolai_ivanovich_bukharin_small
+				large = GFX_nikolai_ivanovich_bukharin_large
+			}
+		}
+		country_leader = {
+			ideology = bukharinism_ideology
+			desc = "CHARACTER_nikolai_ivanovich_bukharin_desc"
+			# expire = ""
+		}
+	}
 	CHARACTER_nikolai_mikhailovich_shvernik = {	#ニコライ・ミハイロヴィチ・シュヴェルニク
 		name = CHARACTER_nikolai_mikhailovich_shvernik
 		

@@ -1,19 +1,20 @@
 state = {
 	id = 156
 	name = "STATE_156"
-	manpower = 2966315
-	state_category = city
+	manpower = 1772000
+	state_category = town
 	
 	history = {
 		owner = SIC
 		add_core_of = SIC
 		add_core_of = ITA
 		buildings = {
-			infrastructure = 3
-			dockyard = 4
+			infrastructure = 2
+			dockyard = 1
 			fuel_silo = 1
-			air_base = 5
+			9990 = {	naval_base = 2	}
 		}
+		victory_points = {	9990	1	}
 		set_variable = {	ITA_state_variable = 1	}
 	}
 	

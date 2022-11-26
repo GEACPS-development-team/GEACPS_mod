@@ -1,5 +1,5 @@
-JAP_Coup_detat_in_the_offing = {#クーデターの予感
-	Outbreak_of_the_1-22_Incident = {#一・二二事件の発生
+JAP_Coup_detat_in_the_offing = {	#クーデターの予感
+	Outbreak_of_the_1-22_Incident = {	#一・二二事件の発生
 		icon = jap_pacific_guardian
 		
 		allowed = {	original_tag = JAP	}
@@ -32,7 +32,7 @@ JAP_national_policy_research_outline = {
 		days_remove = 365
 		days_re_enable = 1095
 		cost = 50
-		complete_effect  = {	country_event = {	id = GEACPS_japan.002	}	}
+		complete_effect  = {	country_event = {	id = JAP_military.002	}	}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -43,8 +43,8 @@ JAP_national_policy_research_outline = {
 	}
 }
 
-JAP_gunbatsu = {#軍閥
-	JAP_a_royal_visit  = {#天皇陛下の行幸
+JAP_gunbatsu = {	#軍閥
+	JAP_a_royal_visit  = {	#天皇陛下の行幸
 		icon = jap_pacific_guardian
 		
 		priority = 100
