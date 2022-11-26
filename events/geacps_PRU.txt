@@ -1,0 +1,218 @@
+add_namespace = PRU
+country_event = {
+	id = PRU.1
+	title = PRU.1.t
+	desc = PRU.1.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.1.0
+		set_politics = {	ruling_party = national_populism	}
+		add_country_leader_role = {
+			character = CHARACTER_manuel_arturo_odria_amoretti
+			promote_leader = yes
+			country_leader = {
+				ideology = national_populism_ideology
+				desc = "CHARACTER_manuel_arturo_odria_amoretti_desc"
+				expire = "1974.2.18"
+			}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.1"	}
+}
+country_event = {
+	id = PRU.2
+	title = PRU.2.t
+	desc = PRU.2.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.2.0
+		ai_chance = {	factor = 100	}
+		BOL = {	country_event = {	id = PRU.3	days = 1	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.2"	}
+}
+country_event = {
+	id = PRU.3
+	title = PRU.3.t
+	desc = PRU.3.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.3.0
+		ai_chance = {	factor = 100	}
+		country_event = {	id = PRU.4	days = 1	}
+	}
+	option = {
+		name = PRU.3.1
+		ai_chance = {	factor = 100	}
+		PRU = {	country_event = {	id = PRU.7	days = 1	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.3"	}
+}
+country_event = {
+	id = PRU.4
+	title = PRU.4.t
+	desc = PRU.4.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.4.0
+		ai_chance = {	factor = 100	}
+		country_event = {	id  = PRU.5	days = 1	}
+		PRU = {	country_event = {	id  = PRU.5	days = 2	}	}
+	}
+	option = {
+		name = PRU.4.1
+		ai_chance = {	factor = 0	}
+		country_event = {	id  = PRU.6	days = 1	}
+		PRU = {	country_event = {	id  = PRU.6	days = 2	}	}
+	}
+	option = {
+		name = PRU.4.2
+		ai_chance = {	factor = 0	}
+		random_list = {
+			50 = {
+				country_event = {	id  = PRU.5	days = 1	}
+				PRU = {	country_event = {	id  = PRU.5	days = 2	}	}
+			}
+			50 = {
+				country_event = {	id  = PRU.6	days = 1	}
+				PRU = {	country_event = {	id  = PRU.6	days = 2	}	}
+			}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.4"	}
+}
+country_event = {
+	id = PRU.5
+	title = PRU.5.t
+	desc = {	text = PRU.5.d.0	trigger = {	tag = PRU	}	}
+	desc = {	text = PRU.5.d.1	trigger = {	tag = BOL	}	}
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.5.0
+		trigger = {	tag = PRU	}
+		ai_chance = {	factor = 100	}
+		annex_country = {	target = BOL	transfer_troops = yes	}
+		every_owned_state = {
+			limit = {	check_variable = {	BOL_state_variable = 1	}	}
+			add_core_of = PRU
+		}
+		hidden_effect = {
+			set_cosmetic_tag = PRU-BOL_confederation
+			change_tag_from = BOL
+		}
+	}
+	option = {
+		name = PRU.5.1
+		trigger = {	tag = BOL	}
+		ai_chance = {	factor = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.5"	}
+}
+country_event = {
+	id = PRU.6
+	title = PRU.6.t
+	desc = {	text = PRU.6.d.0	trigger = {	tag = PRU	}	}
+	desc = {	text = PRU.6.d.1	trigger = {	tag = BOL	}	}
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.6.0
+		trigger = {	tag = PRU	}
+		ai_chance = {	factor = 100	}
+		set_country_flag = PRU_mobilisation_BOL_flag
+	}
+	option = {
+		name = PRU.6.1
+		trigger = {	tag = BOL	}
+		ai_chance = {	factor = 100	}
+	}
+	option = {
+		name = PRU.6.2
+		ai_chance = {	factor = 0	}
+	}
+	option = {
+		name = PRU.6.3
+		ai_chance = {	factor = 0	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.6"	}
+}
+country_event = {
+	id = PRU.7
+	title = PRU.7.t
+	desc = PRU.7.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.7.0
+		ai_chance = {	factor = 100	}
+		set_country_flag = PRU_mobilisation_BOL_flag
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.7"	}
+}
+country_event = {
+	id = PRU.8
+	title = PRU.8.t
+	desc = PRU.8.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.8.0
+		ai_chance = {	factor = 100	}
+		hidden_effect = {
+			change_tag_from = BOL
+			set_cosmetic_tag = PRU-BOL_confederation
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.8"	}
+}
+country_event = {
+	id = PRU.9
+	title = PRU.9.t
+	desc = PRU.9.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.9.0
+		ai_chance = {	factor = 100	}
+		add_ideas = PRU_basic_army_law
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.9"	}
+}
+country_event = {
+	id = PRU.10
+	title = PRU.10.t
+	desc = PRU.10.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = PRU.10.0
+		ai_chance = {	factor = 100	}
+		add_stability = 0.15
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event PRU.9"	}
+}

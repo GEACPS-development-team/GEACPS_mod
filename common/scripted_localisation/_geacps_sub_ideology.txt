@@ -85,10 +85,10 @@ defined_text = {#社会民主主義
 }
 defined_text = {#自由民主主義
 	name = GetIdeologyType_liberal_democracy
-	# text = {
-	# 	trigger = { has_country_leader_ideology = sub_ideology }
-	# 	localization_key = sub_ideology
-	# }
+	text = {	#保守自由主義
+		trigger = { has_country_leader_ideology = conservative_liberalism_ideology }
+		localization_key = conservative_liberalism_ideology
+	}
 	text = {
 		trigger = { always = yes }
 		localization_key = liberal_democracy_ideology

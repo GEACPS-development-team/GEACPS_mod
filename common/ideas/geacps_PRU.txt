@@ -1,0 +1,97 @@
+ideas = {	#
+	country = {
+		PRU_mining_act = {	#鉱業法
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		PRU_practice_of_modernisation = {	#近代化のすゝめ
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				industrial_capacity_factory = 0.03
+			}
+		}
+		PRU_basic_army_law = {	#陸軍基本法
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				army_org_factor = 0.08
+				army_morale_factor = 0.05
+			}
+		}
+		PRU_civil_military_medical_care_0 = {	#民軍医療
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				attrition = -0.05
+				experience_loss_factor = -0.08
+			}
+		}
+		PRU_civil_military_medical_care_1 = {	#民軍医療
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				attrition = -0.05
+				experience_loss_factor = -0.08
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				monthly_population = 0.03
+			}
+		}
+		PRU_energy_independence_orientation = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				surrender_limit = 0.1
+				war_support_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		PRU_andean_honour = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		PRU_improved_education_and_social_security_0 = {	#教育と社会保障の充実化
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				research_speed_factor = 0.03
+				attrition = -0.05
+			}
+		}
+		PRU_improved_education_and_social_security_1 = {	#教育と社会保障の充実化
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				research_speed_factor = 0.03
+				attrition = -0.05
+				stability_factor = 0.1
+				consumer_goods_factor = 0.02
+			}
+		}
+	}
+}
