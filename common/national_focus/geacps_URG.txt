@@ -1,0 +1,736 @@
+focus_tree = {
+	id = URG_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = URG
+		}
+	}
+	continuous_focus_position = {
+		x = 30 y = 2000
+	}
+	default = no
+	shared_focus = URG_inaugural
+	shared_focus = URG_military_confirmation
+}
+
+shared_focus = {
+	id = URG_inaugural
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		date > 1946.11.1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_inaugural"
+		country_event = URG.1
+	}
+}
+
+shared_focus = {
+	id = URG_construction_of_jose_artigas_military_academy
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_construction_of_jose_artigas_military_academy"
+		add_ideas = URG_military_academy
+	}
+	relative_position_id = URG_inaugural
+	prerequisite = { focus = URG_inaugural }
+}
+
+shared_focus = {
+	id = URG_increased_agricultural_production
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_increased_agricultural_production"
+		add_ideas = URG_improvement_of_agricultural_production
+	}
+	relative_position_id = URG_inaugural
+	prerequisite = { focus = URG_inaugural }
+}
+
+shared_focus = {
+	id = URG_national_economic_revitalization
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_national_economic_revitalization"
+		country_event = URG.2
+	}
+	relative_position_id = URG_construction_of_jose_artigas_military_academy
+	prerequisite = { focus = URG_construction_of_jose_artigas_military_academy }
+	prerequisite = { focus = URG_increased_agricultural_production }
+}
+
+shared_focus = {
+	id = URG_industrial_reform
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_industrial_reform"
+		country_event = URG.3
+	}
+	relative_position_id = URG_national_economic_revitalization
+	prerequisite = { focus = URG_national_economic_revitalization }
+}
+
+shared_focus = {
+	id = URG_energy_independence
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_energy_independence"
+		country_event = URG.4
+	}
+	relative_position_id = URG_industrial_reform
+	prerequisite = { focus = URG_industrial_reform }
+}
+
+shared_focus = {
+	id = URG_push_toward_heavy_industrialization
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_push_toward_heavy_industrialization"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_energy_independence
+	prerequisite = { focus = URG_energy_independence }
+}
+
+shared_focus = {
+	id = URG_expansion_of_light_industry
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_expansion_of_light_industry"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_national_economic_revitalization
+	prerequisite = { focus = URG_national_economic_revitalization }
+}
+
+shared_focus = {
+	id = URG_construction_of_local_industrial_parks
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_construction_of_local_industrial_parks"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_expansion_of_light_industry
+	prerequisite = { focus = URG_expansion_of_light_industry }
+}
+
+shared_focus = {
+	id = URG_immigration
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_immigration"
+		add_ideas = URG_immigrants_from_europe_0
+	}
+	relative_position_id = URG_national_economic_revitalization
+	prerequisite = { focus = URG_national_economic_revitalization }
+}
+
+shared_focus = {
+	id = URG_higher_education_for_immigrants
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_higher_education_for_immigrants"
+		swap_ideas = {
+			remove_idea = URG_immigrants_from_europe_0
+			add_idea = URG_immigrants_from_europe_1
+		}
+	}
+	relative_position_id = URG_immigration
+	prerequisite = { focus = URG_immigration }
+}
+
+shared_focus = {
+	id = URG_efficient_plant_operation
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_efficient_plant_operation"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_higher_education_for_immigrants
+	prerequisite = { focus = URG_higher_education_for_immigrants }
+}
+
+shared_focus = {
+	id = URG_development_of_local_heavy_and_chemical_industries
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_development_of_local_heavy_and_chemical_industries"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_efficient_plant_operation
+	prerequisite = { focus = URG_efficient_plant_operation }
+	prerequisite = { focus = URG_army_realignment }
+}
+
+shared_focus = {
+	id = URG_the_end_of_monoculture
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_the_end_of_monoculture"
+		remove_ideas = URG_failed_industrialisation_1
+	}
+	relative_position_id = URG_push_toward_heavy_industrialization
+	prerequisite = { focus = URG_push_toward_heavy_industrialization }
+	prerequisite = { focus = URG_efficient_plant_operation }
+}
+
+shared_focus = {
+	id = URG_military_confirmation
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 16
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_military_confirmation"
+	}
+}
+
+shared_focus = {
+	id = URG_produced_foreign
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_produced_foreign"
+		add_ideas = URG_buy_foreign_power
+	}
+	relative_position_id = URG_military_confirmation
+	prerequisite = { focus = URG_military_confirmation }
+}
+
+shared_focus = {
+	id = URG_naval_construction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_naval_construction"
+		navy_experience = 50
+		random_owned_state = {
+			limit = {	is_coastal = yes	}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_military_confirmation
+	prerequisite = { focus = URG_military_confirmation }
+}
+shared_focus = {
+	id = URG_leading_port_city
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_leading_port_city"
+		random_owned_state = {
+			limit = {	is_coastal = yes	}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = dockyard
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_naval_construction
+	prerequisite = { focus = URG_naval_construction }
+}
+
+shared_focus = {
+	id = URG_what_we_can_do
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_what_we_can_do"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = dd_tech
+		}
+	}
+	relative_position_id = URG_naval_construction
+	prerequisite = { focus = URG_naval_construction }
+}
+
+shared_focus = {
+	id = URG_the_big_ship_for_us
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_the_big_ship_for_us"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cl_tech
+		}
+	}
+	relative_position_id = URG_what_we_can_do
+	prerequisite = { focus = URG_what_we_can_do }
+}
+
+shared_focus = {
+	id = URG_establishment_of_air_force
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_establishment_of_air_force"
+		air_experience = 50
+		random_owned_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = URG_military_confirmation
+	prerequisite = { focus = URG_military_confirmation }
+}
+
+shared_focus = {
+	id = URG_get_your_compositions_together
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_get_your_compositions_together"
+		air_experience = 100
+	}
+	relative_position_id = URG_establishment_of_air_force
+	prerequisite = { focus = URG_establishment_of_air_force }
+}
+
+shared_focus = {
+	id = URG_dont_mess_up_the_shape
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_dont_mess_up_the_shape"
+		air_experience = 100
+	}
+	relative_position_id = URG_get_your_compositions_together
+	prerequisite = { focus = URG_get_your_compositions_together }
+}
+
+shared_focus = {
+	id = URG_advanced_fleet
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_advanced_fleet"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cv_tech
+		}
+	}
+	relative_position_id = URG_the_big_ship_for_us
+	prerequisite = { focus = URG_the_big_ship_for_us }
+	prerequisite = { focus = URG_dont_mess_up_the_shape }
+}
+
+shared_focus = {
+	id = URG_control_the_air
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_control_the_air"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = light_fighter
+		}
+	}
+	relative_position_id = URG_establishment_of_air_force
+	prerequisite = { focus = URG_establishment_of_air_force }
+}
+
+shared_focus = {
+	id = URG_faster_objects
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_faster_objects"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = jet_technology
+		}
+	}
+	relative_position_id = URG_control_the_air
+	prerequisite = { focus = URG_control_the_air }
+}
+
+shared_focus = {
+	id = URG_guidance_for_development_of_close_air_support_aircraft
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_guidance_for_development_of_close_air_support_aircraft"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cas_bomber
+		}
+	}
+	relative_position_id = URG_control_the_air
+	prerequisite = { focus = URG_control_the_air }
+	prerequisite = { focus = URG_control_the_air }
+}
+
+shared_focus = {
+	id = URG_army_realignment
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_army_realignment"
+		army_experience = 50
+	}
+	relative_position_id = URG_military_confirmation
+	prerequisite = { focus = URG_military_confirmation }
+}
+
+shared_focus = {
+	id = URG_goddess_of_war
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_goddess_of_war"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = artillery
+		}
+	}
+	relative_position_id = URG_army_realignment
+	prerequisite = { focus = URG_army_realignment }
+}
+
+shared_focus = {
+	id = URG_threats_from_the_ground
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_threats_from_the_ground"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_anti_air
+		}
+	}
+	relative_position_id = URG_goddess_of_war
+	prerequisite = { focus = URG_goddess_of_war }
+}
+
+shared_focus = {
+	id = URG_newer_infantry_rifle
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_newer_infantry_rifle"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+	}
+	relative_position_id = URG_army_realignment
+	prerequisite = { focus = URG_army_realignment }
+}
+
+shared_focus = {
+	id = URG_frontline_support
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_frontline_support"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 3
+			category = support_tech
+		}
+	}
+	relative_position_id = URG_newer_infantry_rifle
+	prerequisite = { focus = URG_newer_infantry_rifle }
+}
+
+shared_focus = {
+	id = URG_antiarmor_weapon
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_antiarmor_weapon"
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = cat_anti_tank
+		}
+	}
+	relative_position_id = URG_frontline_support
+	prerequisite = { focus = URG_frontline_support }
+}
+
+shared_focus = {
+	id = URG_army_formation
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_army_formation"
+		army_experience = 50
+	}
+	relative_position_id = URG_army_realignment
+	prerequisite = { focus = URG_army_realignment }
+}
+
+shared_focus = {
+	id = URG_behold_the_tactics
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_behold_the_tactics"
+		army_experience = 100
+	}
+	relative_position_id = URG_army_formation
+	prerequisite = { focus = URG_army_formation }
+}
+
+shared_focus = {
+	id = URG_hold_the_line
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus URG_hold_the_line"
+		army_experience = 100
+	}
+	relative_position_id = URG_behold_the_tactics
+	prerequisite = { focus = URG_behold_the_tactics }
+}
