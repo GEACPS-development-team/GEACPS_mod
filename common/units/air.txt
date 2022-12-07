@@ -197,6 +197,7 @@ sub_units = {
 		sprite = heavy_plane
 		priority = 1
 		active = yes
+		land_air_wing_size = 100
 		type = { air_transport }
 		need = { transport_helicopter_equipment = 1 }
 	}
@@ -204,12 +205,14 @@ sub_units = {
 		sprite = heavy_plane
 		priority = 1
 		active = yes
+		land_air_wing_size = 100
 		type = { scout_plane }
 		need = { recon_helicopter_equipment = 1 }
 	}
 	attack_helicopter = {
 		sprite = heavy_plane
 		priority = 1
+		land_air_wing_size = 100
 		active = yes
 		type = { cas }
 		need = { attack_helicopter_equipment = 1 }
@@ -217,6 +220,7 @@ sub_units = {
 	patrol_helicopter = {
 		sprite = heavy_plane
 		priority = 1
+		land_air_wing_size = 100
 		active = yes
 		type = { naval_bomber }
 		need = { patrol_helicopter_equipment = 1 }
