@@ -8,4 +8,516 @@ focus_tree = {
 		}
 	}
 	default = no
+	shared_focus = GRE_civil_war
+}
+
+shared_focus = {
+	id = GRE_civil_war
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_civil_war"
+	}
+}
+
+shared_focus = {
+	id = GRE_kingdom_of_greece
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_kingdom_of_greece"
+	}
+	relative_position_id = GRE_civil_war
+	prerequisite = { focus = GRE_civil_war }
+	mutually_exclusive = {	focus = GRE_provisional_democratic_government_of_greece	}
+}
+
+shared_focus = {
+	id = GRE_provisional_democratic_government_of_greece
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_provisional_democratic_government_of_greece"
+	}
+	relative_position_id = GRE_civil_war
+	prerequisite = { focus = GRE_civil_war }
+	mutually_exclusive = {	focus = GRE_kingdom_of_greece	}
+}
+
+#ギリシャ内戦(王国)
+focus_tree = {
+	id = GRE_kingdom_civil_war_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	shared_focus = GRE_papandreous_resignation
+}
+
+shared_focus = {
+	id = GRE_papandreous_resignation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_papandreous_resignation"
+	}
+}
+
+shared_focus = {
+	id = GRE_yugoslav_border_blockade
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_yugoslav_border_blockade"
+	}
+	relative_position_id = GRE_papandreous_resignation
+	prerequisite = { focus = GRE_papandreous_resignation }
+}
+
+shared_focus = {
+	id = GRE_promises_elections
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promises_elections"
+	}
+	relative_position_id = GRE_yugoslav_border_blockade
+	prerequisite = { focus = GRE_yugoslav_border_blockade }
+	prerequisite = { focus = GRE_request_to_the_united_kingdom }
+	prerequisite = { focus = GRE_fascist_amnesty }
+	mutually_exclusive = {	focus = GRE_use_of_kings_rights	}
+}
+
+shared_focus = {
+	id = GRE_last_offensive
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_last_offensive"
+	}
+	relative_position_id = GRE_promises_elections
+	prerequisite = {
+		focus = GRE_promises_elections
+		focus = GRE_use_of_kings_rights
+	}
+}
+
+shared_focus = {
+	id = GRE_request_to_the_united_kingdom
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_request_to_the_united_kingdom"
+	}
+	relative_position_id = GRE_papandreous_resignation
+	prerequisite = { focus = GRE_papandreous_resignation }
+}
+
+shared_focus = {
+	id = GRE_fascist_amnesty
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_fascist_amnesty"
+	}
+	relative_position_id = GRE_papandreous_resignation
+	prerequisite = { focus = GRE_papandreous_resignation }
+}
+
+shared_focus = {
+	id = GRE_use_of_kings_rights
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_use_of_kings_rights"
+	}
+	relative_position_id = GRE_yugoslav_border_blockade
+	prerequisite = { focus = GRE_yugoslav_border_blockade }
+	prerequisite = { focus = GRE_request_to_the_united_kingdom }
+	prerequisite = { focus = GRE_fascist_amnesty }
+	mutually_exclusive = {	focus = GRE_promises_elections	}
+}
+
+shared_focus = {
+	id = GRE_calls_for_the_resigning_of_the_varkiza_accords
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_calls_for_the_resigning_of_the_varkiza_accords"
+	}
+	relative_position_id = GRE_promises_elections
+	prerequisite = {
+		focus = GRE_promises_elections
+		focus = GRE_use_of_kings_rights
+	}
+}
+
+#ギリシャ内戦(臨時民主政府)
+focus_tree = {
+	id = GRE_provisional_democratic_government_civil_war_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	shared_focus = GRE_led_by_the_communist_party
+	shared_focus = GRE_led_by_the_national_liberation_front
+}
+
+shared_focus = {
+	id = GRE_led_by_the_communist_party
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_led_by_the_communist_party"
+	}
+	mutually_exclusive = {	focus = GRE_led_by_the_national_liberation_front	}
+}
+
+shared_focus = {
+	id = GRE_velouchiotis_faction
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_velouchiotis_faction"
+	}
+	relative_position_id = GRE_led_by_the_communist_party
+	prerequisite = { focus = GRE_led_by_the_communist_party }
+	mutually_exclusive = {	focus = GRE_zachariadis_faction	}
+}
+
+shared_focus = {
+	id = GRE_strengthening_of_the_peoples_liberation_army
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_strengthening_of_the_peoples_liberation_army"
+	}
+	relative_position_id = GRE_velouchiotis_faction
+	prerequisite = { focus = GRE_velouchiotis_faction }
+}
+
+shared_focus = {
+	id = GRE_request_for_soviet_assistance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_request_for_soviet_assistance"
+	}
+	relative_position_id = GRE_strengthening_of_the_peoples_liberation_army
+	prerequisite = { focus = GRE_strengthening_of_the_peoples_liberation_army }
+	prerequisite = { focus = GRE_compromise_with_democrats }
+}
+
+shared_focus = {
+	id = GRE_mountain_warfare
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_mountain_warfare"
+	}
+	relative_position_id = GRE_request_for_soviet_assistance
+	prerequisite = { focus = GRE_request_for_soviet_assistance }
+	mutually_exclusive = {	focus = GRE_urban_warfare	}
+}
+
+shared_focus = {
+	id = GRE_urban_warfare
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_urban_warfare"
+	}
+	relative_position_id = GRE_request_for_soviet_assistance
+	prerequisite = { focus = GRE_request_for_soviet_assistance }
+	mutually_exclusive = {	focus = GRE_mountain_warfare	}
+}
+
+shared_focus = {
+	id = GRE_zachariadis_faction
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_zachariadis_faction"
+	}
+	relative_position_id = GRE_led_by_the_communist_party
+	prerequisite = { focus = GRE_led_by_the_communist_party }
+	mutually_exclusive = {	focus = GRE_velouchiotis_faction	}
+}
+
+shared_focus = {
+	id = GRE_compromise_with_democrats
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_compromise_with_democrats"
+	}
+	relative_position_id = GRE_zachariadis_faction
+	prerequisite = { focus = GRE_zachariadis_faction }
+}
+
+shared_focus = {
+	id = GRE_led_by_the_national_liberation_front
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 6
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_led_by_the_national_liberation_front"
+	}
+	mutually_exclusive = {	focus = GRE_led_by_the_communist_party	}
+}
+
+shared_focus = {
+	id = GRE_reduce_the_influence_of_the_communist_party
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_reduce_the_influence_of_the_communist_party"
+	}
+	relative_position_id = GRE_led_by_the_national_liberation_front
+	prerequisite = { focus = GRE_led_by_the_national_liberation_front }
+}
+
+shared_focus = {
+	id = GRE_cooperation_with_anticommunists
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_cooperation_with_anticommunists"
+	}
+	relative_position_id = GRE_reduce_the_influence_of_the_communist_party
+	prerequisite = { focus = GRE_reduce_the_influence_of_the_communist_party }
+}
+
+shared_focus = {
+	id = GRE_transactions_with_snof
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_transactions_with_snof"
+	}
+	relative_position_id = GRE_reduce_the_influence_of_the_communist_party
+	prerequisite = { focus = GRE_reduce_the_influence_of_the_communist_party }
+}
+
+shared_focus = {
+	id = GRE_peea_reunion
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_peea_reunion"
+	}
+	relative_position_id = GRE_cooperation_with_anticommunists
+	prerequisite = { focus = GRE_cooperation_with_anticommunists }
+	prerequisite = { focus = GRE_transactions_with_snof }
+}
+
+shared_focus = {
+	id = GRE_contact_with_some_royalist_factions
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_contact_with_some_royalist_factions"
+	}
+	relative_position_id = GRE_peea_reunion
+	prerequisite = { focus = GRE_peea_reunion }
+}
+
+shared_focus = {
+	id = GRE_militia_training
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_militia_training"
+	}
+	relative_position_id = GRE_led_by_the_communist_party
+	prerequisite = {
+		focus = GRE_led_by_the_communist_party
+		focus = GRE_led_by_the_national_liberation_front
+	}
+}
+
+shared_focus = {
+	id = GRE_get_them_out
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_get_them_out"
+	}
+	relative_position_id = GRE_mountain_warfare
+	prerequisite = { focus = GRE_militia_training }
+	prerequisite = {
+		focus = GRE_mountain_warfare
+		focus = GRE_urban_warfare
+		focus = GRE_contact_with_some_royalist_factions
+	}
+}
+
+#ギリシャ王国
+focus_tree = {
+	id = GRE_kingdom_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+}
+
+#ギリシャ共和国
+focus_tree = {
+	id = GRE_republic_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = GRE
+		}
+	}
+	default = no
+	shared_focus = GRE_led_by_the_communist_party
+	shared_focus = GRE_led_by_the_national_liberation_front
 }
