@@ -1,0 +1,23 @@
+guiTypes = {
+	containerWindowType = {
+		name = "geacps_scss_gui"
+		size = { width = 500 height = 80 }
+		position = { x = 0 y = 0 }
+		# background = {
+		# 	name = "Background"
+		# 	quadTextureSprite ="GFX_tiled_plain_bg2"
+		# }
+
+		instantTextboxType = {
+			name = "support_returnees_desc"
+			position = { x = 20 y = 10 }
+			font = "hoi_18mbs"
+			text = "srg_level_desc"
+			maxWidth = 460
+			maxHeight = 50
+			format = centre
+			fixedsize = yes
+		}
+
+	}
+}

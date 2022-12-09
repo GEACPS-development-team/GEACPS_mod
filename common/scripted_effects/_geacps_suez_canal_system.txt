@@ -1,0 +1,121 @@
+#suez canal stock system effects
+#scss = suez canal stock system
+#########array#############
+#global.scss_country_list = [TAG1,TAG2,TAG3,TAG4,TAG5,TAG6,TAG7,TAG8,TAG9,TAG10 ...] 
+#global.scss_value_list = [value1,value2,value3,value4,value5,value6,value7,value8,value9,value10...]
+#global.scss_ratio_list = [value1_ratio,value2_ratio,value3_ratio,value4_ratio,...]
+scss_first_setting = {
+	#reset variables
+	#1st variable
+	clear_variable = global.scss_stock_issue_total
+	clear_array = global.scss_country_list
+	clear_array = global.scss_value_list
+	#2nd variable
+	clear_variable = global.scss_total_stocks
+	clear_variable = global.scss_stock_holders
+	clear_array = global.scss_ratio_list
+	clear_array = global.scss_ratio_list_graph
+
+	#first stockholders
+	set_temp_variable = { add_country = ENG }
+	set_temp_variable = { add_value = 40 }
+	scss_set_stock = yes
+	set_temp_variable = { add_country = FRA }
+	set_temp_variable = { add_value = 40 }
+	scss_set_stock = yes
+	set_temp_variable = { add_country = ITA }
+	set_temp_variable = { add_value = 10 }
+	scss_set_stock = yes
+	set_temp_variable = { add_country = EGY }
+	set_temp_variable = { add_value = 10 }
+	scss_set_stock = yes
+}
+scss_set_stock = {#essential temp variables add_country and add_value
+	if = {
+		limit = {
+			has_variable = add_country
+			has_variable = add_value	
+			check_variable = { global.scss_total_stocks < scss_stock_issue_total }
+		}
+		if = {
+			limit = { is_in_array = { global.scss_country_list = add_country } }
+			for_each_loop = {
+				array = scss_country_list
+				value = v_tag
+				index = i_value
+				if = { 
+					limit = { check_variable = { v_tag = add_country } }
+					add_to_variable = { scss_value_list^i_value = add_value }
+					if = {
+						limit = { check_variable = { scss_value_list^i_value < 0 } }
+						var:global.scss_country_list^i_value = {
+							remove_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+							SCZ = { give_military_access = PREV }
+						}
+						add_to_variable = { global.scss_stock_holders = -1 }
+						remove_from_array = {
+							array = global.scss_country_list
+							index = i_value
+						}
+						remove_from_array = {
+							array = global.scss_value_list
+							index = i_value
+						}
+
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = { check_variable = { add_value > 0 } }
+			add_to_array = { global.scss_country_list = add_country }
+			add_to_array = { global.scss_value_list = add_value }	
+			add_to_array = { global.scss_ratio_list = 0 }	
+			add_to_variable = { global.scss_stock_holders = -1 }
+			add_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+			SCZ = { give_military_access = var:add_country }
+		}
+		scss_calculate_stock_ratio = yes
+	}
+}
+scss_calculate_stock_ratio = { #
+	#reset
+	clear_array = global.scss_ratio_list
+	clear_array = global.scss_ratio_list_graph
+	#calculate total amount
+	set_variable = { global.scss_total_stocks = 0 }
+	for_each_loop = {
+		array = global.scss_value_list
+		index = i_index #
+		value = v_value #
+		add_to_temp_variable = { global.scss_total_stocks = scss_value_list^i_value }
+	}
+	#devide and get ratio
+	for_each_loop = {
+		array = global.scss_value_list
+		index = i_index #
+		value = v_value #
+		set_variable = { global.scss_ratio_list^i_value = v_value }
+		divide_variable = { global.scss_ratio_list^i_value = global.scss_total_stocks }
+
+		add_to_array = { global.scss_ratio_list_graph = global.scss_ratio_list^i_index }
+		multiply_variable = { global.scss_ratio_list_graph^i_index = 100 }
+		round_variable = global.scss_ratio_list_graph^i_value
+		var:global.scss_country_list^i_index = {
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+					}
+				}
+				add_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+			}
+			set_variable = { scss_modifier_industrial_capacity_factory = v_value }
+			multiply_variable = { scss_modifier_industrial_capacity_factory = 2.5 }
+			add_to_variable = { scss_modifier_industrial_capacity_factory = 2.5 }
+			set_variable = { scss_modifier_consumer_goods_factor = v_value }
+			multiply_variable = { scss_modifier_consumer_goods_factor = -2.5 }
+			add_to_variable = { scss_modifier_consumer_goods_factor = -2.5 }
+		}
+	}
+}

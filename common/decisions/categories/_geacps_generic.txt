@@ -14,6 +14,15 @@ formation_decisions = {
 	#picture = GFX_decision_cat_picture_annexation
 	priority = 100
 }
+suez_canal_system = {
+	allowed = {
+		always = yes
+	}
+	visible_when_empty = yes
+	scripted_gui = geacps_scss_gui
+	priority = 10
+}
+
 
 ICBM_AI_categories = {
 	allowed = {
