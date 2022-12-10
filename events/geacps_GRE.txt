@@ -1,0 +1,77 @@
+add_namespace = GRE
+country_event = {
+	id = GRE.0
+	title = GRE.0.t
+	desc = GRE.0.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE.0.0
+		start_civil_war = {
+			ruling_party = ROOT
+			ideology = total_socialism
+			size = 0.5
+			capital = 1441
+			states = {	185	731	1441	}
+			
+			set_country_flag = GRE_civil_war_enemy_faction_flag
+			set_cosmetic_tag = GRE_provisional_democratic_government
+			complete_national_focus = GRE_provisional_democratic_government_of_greece
+		}
+		set_cosmetic_tag = GRE_kingdom_government
+		complete_national_focus = GRE_kingdom_of_greece
+		set_global_flag = GRE_civil_war_start_flag
+		news_event = {	id = GRE_news.0	hours = 6	}
+	}
+	option = {
+		name = GRE.0.1
+		start_civil_war = {
+			ruling_party = total_socialism
+			ideology = ROOT
+			size = 0.5
+			capital = 998
+			states = {	47	164	182	184	186	187	914	996	997	998	1109	}
+			
+			set_country_flag = GRE_civil_war_enemy_faction_flag
+			set_cosmetic_tag = GRE_kingdom_government
+			complete_national_focus = GRE_kingdom_of_greece
+		}
+		set_cosmetic_tag = GRE_provisional_democratic_government
+		complete_national_focus = GRE_provisional_democratic_government_of_greece
+		set_global_flag = GRE_civil_war_start_flag
+		news_event = {	id = GRE_news.0	hours = 6	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE.0"	}
+}
+
+add_namespace = GRE_news
+news_event = {
+	id = GRE_news.0
+	title = GRE_news.0.t
+	desc = GRE_news.0.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = GRE_news.0.0
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_news.0"	}
+}
+news_event = {
+	id = GRE_news.1
+	title = GRE_news.1.t
+	desc = GRE_news.1.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = GRE_news.1.0
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_news.1"	}
+}
