@@ -1,0 +1,70 @@
+defined_text = {
+	name = GetGREAirForce
+	text = {
+		trigger = {
+			original_tag = GRE
+			is_national_system_monarchy = yes
+		}
+		localization_key = GRE_royal_air_force_name
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			OR = {
+				has_government = total_socialism
+				has_government = radical_socialism
+			}
+		}
+		localization_key = GRE_red_air_force_name
+	}
+	text = {	localization_key = GRE_air_force_name	}
+}
+
+defined_text = {
+	name = GetGREIntegrationIntoForeignAircraft
+	text = {
+		trigger = {
+			original_tag = GRE
+			is_national_system_monarchy = yes
+			country_exists = GBR
+		}
+		localization_key = GRE_integration_into_GBR_aircraft_name
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			OR = {
+				has_government = total_socialism
+				has_government = radical_socialism
+			}
+			OR = {
+				any_country = {	soviet_member_trigger = yes	}
+				country_exists = SOV
+			}
+		}
+		localization_key = GRE_integration_into_SOV_aircraft_name
+	}
+	text = {	localization_key = GRE_integration_into_foreign_aircraft_name	}
+}
+
+defined_text = {
+	name = GetGREDistinctiveForces
+	text = {
+		trigger = {
+			original_tag = GRE
+			is_national_system_monarchy = yes
+		}
+		localization_key = GRE_loyalist_forces_name
+	}
+	text = {
+		trigger = {
+			original_tag = GRE
+			OR = {
+				has_government = total_socialism
+				has_government = radical_socialism
+			}
+		}
+		localization_key = GRE_workers_forces_name
+	}
+	text = {	localization_key = GRE_distinctive_forces_name	}
+}

@@ -9,17 +9,20 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = GRE_civil_war
+	shared_focus = GRE_end_of_civil_war
+	initial_show_position = {	focus = GRE_civil_war	}
 }
 
 shared_focus = {
 	id = GRE_civil_war
 	icon = GFX_generic_suspend_constitution
 	cost = 20
-	x = 1
+	x = 17
 	y = 0
 	ai_will_do = {
 		factor = 1
 	}
+	cancelable = no
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRE_civil_war"
 		country_event = GRE.0
@@ -76,13 +79,15 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = GRE_papandreous_resignation
+	shared_focus = GRE_end_of_civil_war
+	initial_show_position = {	focus = GRE_papandreous_resignation	}
 }
 
 shared_focus = {
 	id = GRE_papandreous_resignation
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 2
+	x = 18
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -225,19 +230,32 @@ focus_tree = {
 	default = no
 	shared_focus = GRE_led_by_the_communist_party
 	shared_focus = GRE_led_by_the_national_liberation_front
+	shared_focus = GRE_end_of_civil_war
+	initial_show_position = {	focus = GRE_led_by_the_communist_party	}
 }
 
 shared_focus = {
 	id = GRE_led_by_the_communist_party
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 2
+	x = 22
 	y = 0
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRE_led_by_the_communist_party"
+		set_politics = {	#ギリシャ共産党
+			ruling_party = total_socialism
+			elections_allowed = no
+			name = PARTY_communist_party_of_greece
+			long_name = PARTY_communist_party_of_greece_long
+		}
+		set_party_name = {	#民族解放戦線
+			ideology = radical_socialism
+			name = PARTY_national_liberation_front
+			long_name = PARTY_national_liberation_front_long
+		}
 	}
 	mutually_exclusive = {	focus = GRE_led_by_the_national_liberation_front	}
 }
@@ -365,13 +383,24 @@ shared_focus = {
 	id = GRE_led_by_the_national_liberation_front
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 6
+	x = 26
 	y = 0
 	ai_will_do = {
 		factor = 1
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRE_led_by_the_national_liberation_front"
+		set_politics = {	#民族解放戦線
+			ruling_party = radical_socialism
+			elections_allowed = no
+			name = PARTY_national_liberation_front
+			long_name = PARTY_national_liberation_front_long
+		}
+		set_party_name = {	#ギリシャ共産党
+			ideology = total_socialism
+			name = PARTY_communist_party_of_greece
+			long_name = PARTY_communist_party_of_greece_long
+		}
 	}
 	mutually_exclusive = {	focus = GRE_led_by_the_communist_party	}
 }
@@ -509,12 +538,14 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = GRE_declaration_of_rebuilding_the_nation
+	shared_focus = GRE_end_of_civil_war
+	initial_show_position = {	focus = GRE_declaration_of_rebuilding_the_nation	}
 }
 shared_focus = {
 	id = GRE_declaration_of_rebuilding_the_nation
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 2
+	x = 21
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -720,13 +751,15 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = GRE_republican_declaration
+	shared_focus = GRE_end_of_civil_war
+	initial_show_position = {	focus = GRE_republican_declaration	}
 }
 
 shared_focus = {
 	id = GRE_republican_declaration
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 1
+	x = 21
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -1002,3 +1035,632 @@ shared_focus = {
 }
 
 #内戦後
+shared_focus = {
+	id = GRE_end_of_civil_war
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 9
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {	has_global_flag = GRE_civil_war_end_flag	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_end_of_civil_war"
+	}
+}
+
+shared_focus = {
+	id = GRE_air_force
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 5
+	y = 1
+	dynamic = yes
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_air_force"
+	}
+	relative_position_id = GRE_end_of_civil_war
+	prerequisite = { focus = GRE_end_of_civil_war }
+}
+
+shared_focus = {
+	id = GRE_integration_into_foreign_aircraft
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	dynamic = yes
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_integration_into_foreign_aircraft"
+	}
+	relative_position_id = GRE_air_force
+	prerequisite = { focus = GRE_air_force }
+}
+
+shared_focus = {
+	id = GRE_air_force_reform
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_air_force_reform"
+	}
+	relative_position_id = GRE_integration_into_foreign_aircraft
+	prerequisite = { focus = GRE_integration_into_foreign_aircraft }
+}
+
+shared_focus = {
+	id = GRE_focus_on_doctrine
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_doctrine"
+	}
+	relative_position_id = GRE_air_force_reform
+	prerequisite = { focus = GRE_air_force_reform }
+}
+
+shared_focus = {
+	id = GRE_focus_on_aircraft_production
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_aircraft_production"
+	}
+	relative_position_id = GRE_air_force_reform
+	prerequisite = { focus = GRE_air_force_reform }
+}
+
+shared_focus = {
+	id = GRE_air_base_expansion
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_air_base_expansion"
+	}
+	relative_position_id = GRE_air_force_reform
+	prerequisite = { focus = GRE_air_force_reform }
+}
+
+shared_focus = {
+	id = GRE_labour_military_service
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_labour_military_service"
+	}
+	relative_position_id = GRE_air_base_expansion
+	prerequisite = { focus = GRE_air_base_expansion }
+	prerequisite = { focus = GRE_distinctive_forces }
+}
+
+shared_focus = {
+	id = GRE_army_realignment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_army_realignment"
+	}
+	relative_position_id = GRE_end_of_civil_war
+	prerequisite = { focus = GRE_end_of_civil_war }
+}
+
+shared_focus = {
+	id = GRE_defense_of_the_islands
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_defense_of_the_islands"
+	}
+	relative_position_id = GRE_army_realignment
+	prerequisite = { focus = GRE_army_realignment }
+}
+
+shared_focus = {
+	id = GRE_promotion_of_modernization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_promotion_of_modernization"
+	}
+	relative_position_id = GRE_defense_of_the_islands
+	prerequisite = { focus = GRE_defense_of_the_islands }
+	prerequisite = { focus = GRE_near_shore_defense_doctrine }
+}
+
+shared_focus = {
+	id = GRE_distinctive_forces
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	dynamic = yes
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_distinctive_forces"
+	}
+	relative_position_id = GRE_promotion_of_modernization
+	prerequisite = { focus = GRE_promotion_of_modernization }
+}
+
+shared_focus = {
+	id = GRE_spartan_spirit
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_spartan_spirit"
+	}
+	relative_position_id = GRE_air_base_expansion
+	prerequisite = { focus = GRE_air_base_expansion }
+	prerequisite = { focus = GRE_distinctive_forces }
+}
+
+shared_focus = {
+	id = GRE_special_forces_section
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_special_forces_section"
+	}
+	relative_position_id = GRE_spartan_spirit
+	prerequisite = { focus = GRE_spartan_spirit }
+	prerequisite = { focus = GRE_focus_on_transportation }
+}
+
+shared_focus = {
+	id = GRE_industrial_revival
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_industrial_revival"
+	}
+	relative_position_id = GRE_end_of_civil_war
+	prerequisite = { focus = GRE_end_of_civil_war }
+}
+
+shared_focus = {
+	id = GRE_inflow_of_foreign_capital
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_inflow_of_foreign_capital"
+	}
+	relative_position_id = GRE_industrial_revival
+	prerequisite = { focus = GRE_industrial_revival }
+	mutually_exclusive = {	focus = GRE_imitation_of_the_fiveyear_plan	}
+}
+
+shared_focus = {
+	id = GRE_supported_by_the_united_kingdom
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_supported_by_the_united_kingdom"
+	}
+	relative_position_id = GRE_inflow_of_foreign_capital
+	prerequisite = { focus = GRE_inflow_of_foreign_capital }
+}
+
+shared_focus = {
+	id = GRE_protection_of_homegrown_companies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_protection_of_homegrown_companies"
+	}
+	relative_position_id = GRE_supported_by_the_united_kingdom
+	prerequisite = { focus = GRE_supported_by_the_united_kingdom }
+}
+
+shared_focus = {
+	id = GRE_nationalization_of_mines
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_nationalization_of_mines"
+	}
+	relative_position_id = GRE_supported_by_the_united_kingdom
+	prerequisite = { focus = GRE_supported_by_the_united_kingdom }
+}
+
+shared_focus = {
+	id = GRE_aggressive_hiring
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_aggressive_hiring"
+	}
+	relative_position_id = GRE_nationalization_of_mines
+	prerequisite = {
+		focus = GRE_nationalization_of_mines
+		focus = GRE_corporate_democratization
+	}
+}
+
+shared_focus = {
+	id = GRE_imitation_of_the_fiveyear_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_imitation_of_the_fiveyear_plan"
+	}
+	relative_position_id = GRE_industrial_revival
+	prerequisite = { focus = GRE_industrial_revival }
+	mutually_exclusive = {	focus = GRE_inflow_of_foreign_capital	}
+}
+
+shared_focus = {
+	id = GRE_trade_union_liberalization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_trade_union_liberalization"
+	}
+	relative_position_id = GRE_imitation_of_the_fiveyear_plan
+	prerequisite = { focus = GRE_imitation_of_the_fiveyear_plan }
+}
+
+shared_focus = {
+	id = GRE_corporate_democratization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_corporate_democratization"
+	}
+	relative_position_id = GRE_trade_union_liberalization
+	prerequisite = { focus = GRE_trade_union_liberalization }
+}
+
+shared_focus = {
+	id = GRE_focus_on_selfsufficiency
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_selfsufficiency"
+	}
+	relative_position_id = GRE_corporate_democratization
+	prerequisite = { focus = GRE_corporate_democratization }
+	prerequisite = { focus = GRE_settlement_with_labor_unions }
+}
+
+shared_focus = {
+	id = GRE_breaking_away_from_a_system_of_dependence
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_breaking_away_from_a_system_of_dependence"
+	}
+	relative_position_id = GRE_aggressive_hiring
+	prerequisite = { focus = GRE_aggressive_hiring }
+	prerequisite = {
+		focus = GRE_focus_on_selfsufficiency
+		focus = GRE_focus_on_exports
+	}
+}
+
+shared_focus = {
+	id = GRE_improved_working_environment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_improved_working_environment"
+	}
+	relative_position_id = GRE_imitation_of_the_fiveyear_plan
+	prerequisite = { focus = GRE_imitation_of_the_fiveyear_plan }
+}
+
+shared_focus = {
+	id = GRE_settlement_with_labor_unions
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_settlement_with_labor_unions"
+	}
+	relative_position_id = GRE_improved_working_environment
+	prerequisite = { focus = GRE_improved_working_environment }
+}
+
+shared_focus = {
+	id = GRE_naval_reorganization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_naval_reorganization"
+	}
+	relative_position_id = GRE_end_of_civil_war
+	prerequisite = { focus = GRE_end_of_civil_war }
+}
+
+shared_focus = {
+	id = GRE_near_shore_defense_doctrine
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_near_shore_defense_doctrine"
+	}
+	relative_position_id = GRE_naval_reorganization
+	prerequisite = { focus = GRE_naval_reorganization }
+}
+
+shared_focus = {
+	id = GRE_themistokles_lesson
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_themistokles_lesson"
+	}
+	relative_position_id = GRE_defense_of_the_islands
+	prerequisite = { focus = GRE_defense_of_the_islands }
+	prerequisite = { focus = GRE_near_shore_defense_doctrine }
+}
+
+shared_focus = {
+	id = GRE_focus_on_smaller_vessels
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_smaller_vessels"
+	}
+	relative_position_id = GRE_themistokles_lesson
+	prerequisite = { focus = GRE_themistokles_lesson }
+}
+
+shared_focus = {
+	id = GRE_seek_the_flagship
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_seek_the_flagship"
+	}
+	relative_position_id = GRE_naval_reorganization
+	prerequisite = { focus = GRE_naval_reorganization }
+}
+
+shared_focus = {
+	id = GRE_battleships_are_champions
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_battleships_are_champions"
+	}
+	relative_position_id = GRE_seek_the_flagship
+	prerequisite = { focus = GRE_seek_the_flagship }
+	mutually_exclusive = {	focus = GRE_the_challenge_of_an_aircraft_carrier	}
+}
+
+shared_focus = {
+	id = GRE_shipbuilding_export
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_shipbuilding_export"
+	}
+	relative_position_id = GRE_supported_by_the_united_kingdom
+	prerequisite = { focus = GRE_supported_by_the_united_kingdom }
+}
+
+shared_focus = {
+	id = GRE_focus_on_transportation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_transportation"
+	}
+	relative_position_id = GRE_focus_on_smaller_vessels
+	prerequisite = { focus = GRE_focus_on_smaller_vessels }
+	prerequisite = { focus = GRE_shipbuilding_export }
+}
+
+shared_focus = {
+	id = GRE_aegean_sea_exercise
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_aegean_sea_exercise"
+	}
+	relative_position_id = GRE_spartan_spirit
+	prerequisite = { focus = GRE_spartan_spirit }
+	prerequisite = { focus = GRE_focus_on_transportation }
+}
+
+shared_focus = {
+	id = GRE_the_challenge_of_an_aircraft_carrier
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_the_challenge_of_an_aircraft_carrier"
+	}
+	relative_position_id = GRE_seek_the_flagship
+	prerequisite = { focus = GRE_seek_the_flagship }
+	mutually_exclusive = {	focus = GRE_battleships_are_champions	}
+}
+
+shared_focus = {
+	id = GRE_focus_on_exports
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_focus_on_exports"
+	}
+	relative_position_id = GRE_protection_of_homegrown_companies
+	prerequisite = { focus = GRE_protection_of_homegrown_companies }
+	prerequisite = { focus = GRE_nationalization_of_mines }
+}
