@@ -5,6 +5,7 @@
 #global.scss_value_list = [value1,value2,value3,value4,value5,value6,value7,value8,value9,value10...]
 #global.scss_ratio_list = [value1_ratio,value2_ratio,value3_ratio,value4_ratio,...]
 scss_first_setting = {
+	log = "scss first setup started"
 	#reset variables
 	#1st variable
 	clear_variable = global.scss_stock_issue_total
@@ -15,6 +16,8 @@ scss_first_setting = {
 	clear_variable = global.scss_stock_holders
 	clear_array = global.scss_ratio_list
 	clear_array = global.scss_ratio_list_graph
+	#default value
+	set_variable =  { global.scss_stock_issue_total = 200 }
 
 	#first stockholders
 	set_temp_variable = { add_country = ENG }
@@ -23,19 +26,28 @@ scss_first_setting = {
 	set_temp_variable = { add_country = FRA }
 	set_temp_variable = { add_value = 40 }
 	scss_set_stock = yes
-	set_temp_variable = { add_country = ITA }
+	set_temp_variable = { add_country = SOV }
+	set_temp_variable = { add_value = 20 }
+	scss_set_stock = yes
+	set_temp_variable = { add_country = JAP }
 	set_temp_variable = { add_value = 10 }
 	scss_set_stock = yes
-	set_temp_variable = { add_country = EGY }
-	set_temp_variable = { add_value = 10 }
-	scss_set_stock = yes
+
+	for_each_loop = {
+		array = global.scss_country_list
+		value = stock_value
+		index = color_index
+		log = "[?global.scss_country_list^color_index.GetName]:[?global.scss_value_list^color_index]"
+	}
+	log = "scss first setup finished"
+
 }
 scss_set_stock = {#essential temp variables add_country and add_value
 	if = {
 		limit = {
 			has_variable = add_country
 			has_variable = add_value	
-			check_variable = { global.scss_total_stocks < scss_stock_issue_total }
+			check_variable = { global.scss_total_stocks < global.scss_stock_issue_total }
 		}
 		if = {
 			limit = { is_in_array = { global.scss_country_list = add_country } }
@@ -71,7 +83,7 @@ scss_set_stock = {#essential temp variables add_country and add_value
 			add_to_array = { global.scss_country_list = add_country }
 			add_to_array = { global.scss_value_list = add_value }	
 			add_to_array = { global.scss_ratio_list = 0 }	
-			add_to_variable = { global.scss_stock_holders = -1 }
+			add_to_variable = { global.scss_stock_holders = 1 }
 			add_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
 			SCZ = { give_military_access = var:add_country }
 		}
@@ -81,26 +93,24 @@ scss_set_stock = {#essential temp variables add_country and add_value
 scss_calculate_stock_ratio = { #
 	#reset
 	clear_array = global.scss_ratio_list
-	clear_array = global.scss_ratio_list_graph
 	#calculate total amount
 	set_variable = { global.scss_total_stocks = 0 }
 	for_each_loop = {
 		array = global.scss_value_list
 		index = i_index #
 		value = v_value #
-		add_to_temp_variable = { global.scss_total_stocks = scss_value_list^i_value }
+		add_to_variable = { global.scss_total_stocks = global.scss_value_list^i_index }
 	}
+	log = "[?global.scss_total_stocks]"
 	#devide and get ratio
 	for_each_loop = {
 		array = global.scss_value_list
 		index = i_index #
 		value = v_value #
-		set_variable = { global.scss_ratio_list^i_value = v_value }
-		divide_variable = { global.scss_ratio_list^i_value = global.scss_total_stocks }
-
-		add_to_array = { global.scss_ratio_list_graph = global.scss_ratio_list^i_index }
-		multiply_variable = { global.scss_ratio_list_graph^i_index = 100 }
-		round_variable = global.scss_ratio_list_graph^i_value
+		add_to_array = { global.scss_ratio_list = v_value }
+		divide_variable = { global.scss_ratio_list^i_index = global.scss_total_stocks }
+		multiply_variable = { global.scss_ratio_list^i_index = 100 }
+		round_variable = global.scss_ratio_list^i_index
 		var:global.scss_country_list^i_index = {
 			if = {
 				limit = {
@@ -111,11 +121,44 @@ scss_calculate_stock_ratio = { #
 				add_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
 			}
 			set_variable = { scss_modifier_industrial_capacity_factory = v_value }
-			multiply_variable = { scss_modifier_industrial_capacity_factory = 2.5 }
-			add_to_variable = { scss_modifier_industrial_capacity_factory = 2.5 }
+			multiply_variable = { scss_modifier_industrial_capacity_factory = 0.0025 }
+			add_to_variable = { scss_modifier_industrial_capacity_factory = 0.0025 }
 			set_variable = { scss_modifier_consumer_goods_factor = v_value }
-			multiply_variable = { scss_modifier_consumer_goods_factor = -2.5 }
-			add_to_variable = { scss_modifier_consumer_goods_factor = -2.5 }
+			multiply_variable = { scss_modifier_consumer_goods_factor = -0.0025 }
+			add_to_variable = { scss_modifier_consumer_goods_factor = -0.0025 }
 		}
 	}
+	log = "before final calculate"
+	scss_set_pie_chart = yes
+	log = "all finish"
+
+}
+scss_set_pie_chart = {
+	#reset
+	log = "scss_set_pie_chart start [?global.scss_ratio_list^1]"
+
+	clear_array = global.scss_pie_chart_array
+	#create array
+	set_temp_variable = { global.ratio_total = 0 }
+
+	for_each_loop = {
+		array = global.scss_ratio_list
+		value = stock_value
+		index = color_index
+		set_variable = { global.frame_temp = color_index }
+		add_to_variable = { global.frame_temp = 1 }
+		add_temp_variable = { global.ratio_total = stock_value }
+		log = "合計[?ratio_total]"
+		for_loop_effect = {
+			start = 0
+			end = stock_value
+			add_to_array = { global.scss_pie_chart_array = global.frame_temp }
+		}
+	}
+	resize_array = {
+		array = global.scss_pie_chart_array
+		value = global.frame_temp
+		size = 100
+	}
+
 }

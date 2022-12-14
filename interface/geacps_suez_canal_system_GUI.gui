@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "geacps_scss_gui"
-		size = { width = 500 height = 80 }
+		size = { width = 500 height = 350 }
 		position = { x = 0 y = 0 }
 		# background = {
 		# 	name = "Background"
@@ -9,15 +9,101 @@ guiTypes = {
 		# }
 
 		instantTextboxType = {
-			name = "support_returnees_desc"
+			name = "scss_title"
 			position = { x = 20 y = 10 }
 			font = "hoi_18mbs"
-			text = "srg_level_desc"
+			text = "現在[?global.scss_total_stocks]/[?global.scss_stock_issue_total] [?global.scss_stock_holders]ヶ国"
 			maxWidth = 460
 			maxHeight = 50
 			format = centre
 			fixedsize = yes
 		}
+		containerWindowType = {#円グラフ
+			name = "scss_pie_chart"
+			size = { width = 150 height = 150 }
+			position = { x = 10 y = 50 }
 
+			# iconType = {
+			# 	name ="Background_pie_chart"
+			# 	spriteType = "GFX_area_chart_bg"
+			# 	position = { x= 0 y = 0 }
+			# 	alwaystransparent = yes
+
+			# }
+			containerWindowType = {#円グラフ
+				name = "piechart_window"
+				position = { x = 70 y = 70 }
+				size = { width = 100%% height = 100%% }
+				scale = 0.25
+
+				gridboxtype = {
+					name = "scss_pie_chart_gridbox"
+					position = { x = 0 y = 0 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 0 height = 0 }
+					add_horizontal = no
+					max_slots_horizontal = 1
+					format = "UPPER_LEFT"
+				}
+
+			}
+			iconType = {
+				name ="scss_pie_chart_cover"
+				spriteType = "GFX_iss_circle_cover"
+				position = { x= -5 y = -5 }
+				scale = 0.25
+				frame = 1
+				pdx_tooltip = ges_largest_faction
+
+			}
+		}
+		containerWindowType = {#可動範囲
+			name = "scss_stockholder_list"
+			size = { width = 340 height = 200 }
+			position = { x = 160 y = 50 }
+			background = {
+				name = "Background_rules"
+				quadTextureSprite = "GFX_tiled_decisions_bg_small"
+			}
+
+			verticalScrollbar = "right_vertical_slider"
+			margin = {top=0 left=0 bottom=0 right=0}
+
+			gridBoxType = {
+				name = "scss_stockholder_list_gridbox"
+				position = { x= 2 y= 0 }
+				size = {width=100%% height=100%%}
+				slotsize = { width = 270 height = 26 }
+				add_horizontal = no
+				format = "UPPER_LEFT"
+				max_slots_horizontal = 1
+			}
+		}
 	}
+	containerWindowType = {#リスト
+		name = "scss_stockholder_list_entry"
+		size = { width = 280 height = 24 }
+		position = { x = 0 y = 0 }
+		instantTextboxType = {
+			name = "scss_stock_holder_country_name"
+			position = { x = 0 y = 10 }
+			font = "hoi_18mbs"
+			text = "[?global.scss_country_list^i.GetName]"
+			maxWidth = 200
+			maxHeight = 24
+			format = centre
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "scss_stock_holder_country_stock_value"
+			position = { x = 200 y = 10 }
+			font = "hoi_18mbs"
+			text = "[?global.scss_ratio_list^i|1]"
+			maxWidth = 100
+			maxHeight = 24
+			format = centre
+			fixedsize = yes
+		}
+	}
+
 }

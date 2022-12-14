@@ -8,8 +8,22 @@ scripted_gui = {
 		effects = {
 		}
 		properties = {
+			iss_piechart_item = {
+				frame = v
+			}
 		}
 		triggers = {	#ボタンを実行できる条件?
+		}
+		dynamic_lists = {
+			scss_pie_chart_gridbox = {
+				array = global.scss_pie_chart_array
+				entry_container = "iss_piechart_entry_[?i]"
+			}
+			scss_stockholder_list_gridbox = {
+				array = global.scss_country_list
+				entry_container = "scss_stockholder_list_entry"
+				change_scope = yes
+			}
 		}
 	}
 }
