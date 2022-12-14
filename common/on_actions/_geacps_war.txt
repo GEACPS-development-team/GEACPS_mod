@@ -1,0 +1,34 @@
+on_actions = {
+	on_capitulation_immediate = {
+		effect = {
+			log = "[GetDateText]: _geacps_war on_capitulation_immediate"
+			if = {
+				limit = {
+					has_global_flag = GRE_civil_war_start_flag
+					ROOT = {	original_tag = GRE	has_cosmetic_tag = GRE_provisional_democratic_government	}
+				}
+				FROM = {
+					load_focus_tree = GRE_kingdom_focus_tree
+					mark_focus_tree_layout_dirty = yes
+					set_cosmetic_tag = GRE_kingdom
+				}
+				clr_global_flag = GRE_civil_war_start_flag
+				set_global_flag = GRE_civil_war_end_flag
+				news_event = {	id = GRE_news.1	hours = 6	}
+			}
+			else_if = {
+				limit = {
+					has_global_flag = GRE_civil_war_start_flag
+					ROOT = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				}
+				FROM = {
+					load_focus_tree = GRE_republic_focus_tree
+					mark_focus_tree_layout_dirty = yes
+				}
+				clr_global_flag = GRE_civil_war_start_flag
+				set_global_flag = GRE_civil_war_start_flag
+				news_event = {	id = GRE_news.1	hours = 6	}
+			}
+		}
+	}
+}

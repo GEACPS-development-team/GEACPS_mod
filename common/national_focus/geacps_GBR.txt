@@ -18,1905 +18,2411 @@ focus_tree = {
 	continuous_focus_position = {
 		x = 2800 y = 1000
 	}
+	shared_focus = GBR_third_relief_bill
+	shared_focus = GBR_focus_on_inflation_control
+	shared_focus = GBR_dover_exercise
+	shared_focus = GBR_a_fresh_start_for_the_military
+}
+
+shared_focus = {
+	id = GBR_third_relief_bill
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 6
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_third_relief_bill"
+	}
+}
+
+shared_focus = {
+	id = GBR_general_election_of_the_lower_house
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_general_election_of_the_lower_house"
+	}
+	relative_position_id = GBR_third_relief_bill
+	prerequisite = { focus = GBR_third_relief_bill }
+	mutually_exclusive = { focus = GBR_hope_is_not_lost }
+}
+
+shared_focus = {
+	id = GBR_kings_party
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 12
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_kings_party"
+	}
+	relative_position_id = GBR_general_election_of_the_lower_house
+	prerequisite = { focus = GBR_general_election_of_the_lower_house }
+	mutually_exclusive = { focus = GBR_conservative_party }
+}
+
+shared_focus = {
+	id = GBR_maneuvering_to_the_house_of_lords
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_maneuvering_to_the_house_of_lords"
+	}
+	relative_position_id = GBR_kings_party
+	prerequisite = { focus = GBR_kings_party }
+}
+
+shared_focus = {
+	id = GBR_reinterpretation_of_the_great_charter
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_reinterpretation_of_the_great_charter"
+	}
+	relative_position_id = GBR_maneuvering_to_the_house_of_lords
+	prerequisite = { focus = GBR_maneuvering_to_the_house_of_lords }
+}
+
+shared_focus = {
+	id = GBR_expel_the_disloyal
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_expel_the_disloyal"
+	}
+	relative_position_id = GBR_kings_party
+	prerequisite = { focus = GBR_kings_party }
+}
+
+shared_focus = {
+	id = GBR_hyperpartisan_cabinet
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_hyperpartisan_cabinet"
+	}
+	relative_position_id = GBR_kings_party
+	prerequisite = { focus = GBR_kings_party }
+}
+
+shared_focus = {
+	id = GBR_god_protect_the_king
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_god_protect_the_king"
+	}
+	relative_position_id = GBR_maneuvering_to_the_house_of_lords
+	prerequisite = { focus = GBR_maneuvering_to_the_house_of_lords }
+	prerequisite = { focus = GBR_hyperpartisan_cabinet }
+	prerequisite = { focus = GBR_wang_lijun }
+}
+
+shared_focus = {
+	id = GBR_restoration_of_imperialism
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_restoration_of_imperialism"
+	}
+	relative_position_id = GBR_god_protect_the_king
+	prerequisite = { focus = GBR_god_protect_the_king }
+}
+
+shared_focus = {
+	id = GBR_reign_of_empire
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_reign_of_empire"
+	}
+	relative_position_id = GBR_restoration_of_imperialism
+	prerequisite = { focus = GBR_restoration_of_imperialism }
+}
+
+shared_focus = {
+	id = GBR_crushing_malaccas_nationalism
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_crushing_malaccas_nationalism"
+	}
+	relative_position_id = GBR_reign_of_empire
+	prerequisite = { focus = GBR_reign_of_empire }
+}
+
+shared_focus = {
+	id = GBR_hong_kong_free_government
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_hong_kong_free_government"
+	}
+	relative_position_id = GBR_reign_of_empire
+	prerequisite = { focus = GBR_reign_of_empire }
+}
+
+shared_focus = {
+	id = GBR_support_for_china
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_support_for_china"
+	}
+	relative_position_id = GBR_crushing_malaccas_nationalism
+	prerequisite = { focus = GBR_crushing_malaccas_nationalism }
+	prerequisite = { focus = GBR_hong_kong_free_government }
+}
+
+shared_focus = {
+	id = GBR_lion_who_drinks_the_sun
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_lion_who_drinks_the_sun"
+	}
+	relative_position_id = GBR_support_for_china
+	prerequisite = { focus = GBR_support_for_china }
+}
+
+shared_focus = {
+	id = GBR_preservation_of_gibraltar
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_preservation_of_gibraltar"
+	}
+	relative_position_id = GBR_reign_of_empire
+	prerequisite = { focus = GBR_reign_of_empire }
+}
+
+shared_focus = {
+	id = GBR_suez_conservation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_suez_conservation"
+	}
+	relative_position_id = GBR_reign_of_empire
+	prerequisite = { focus = GBR_reign_of_empire }
+}
+
+shared_focus = {
+	id = GBR_support_the_savoia_family
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_support_the_savoia_family"
+	}
+	relative_position_id = GBR_preservation_of_gibraltar
+	prerequisite = { focus = GBR_preservation_of_gibraltar }
+	prerequisite = { focus = GBR_suez_conservation }
+}
+
+shared_focus = {
+	id = GBR_raise_the_flag_on_the_pacific_ocean
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_raise_the_flag_on_the_pacific_ocean"
+	}
+	relative_position_id = GBR_support_for_china
+	prerequisite = { focus = GBR_support_for_china }
+	prerequisite = { focus = GBR_support_the_savoia_family }
+}
+
+shared_focus = {
+	id = GBR_monopoly_of_african_domination
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_monopoly_of_african_domination"
+	}
+	relative_position_id = GBR_support_the_savoia_family
+	prerequisite = { focus = GBR_support_the_savoia_family }
+}
+
+shared_focus = {
+	id = GBR_unification_of_ireland
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_unification_of_ireland"
+	}
+	relative_position_id = GBR_restoration_of_imperialism
+	prerequisite = { focus = GBR_restoration_of_imperialism }
+}
+
+shared_focus = {
+	id = GBR_development_of_conquest_bases
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_development_of_conquest_bases"
+	}
+	relative_position_id = GBR_restoration_of_imperialism
+	prerequisite = { focus = GBR_restoration_of_imperialism }
+}
+
+shared_focus = {
+	id = GBR_strengthening_power_in_the_indian_ocean
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_strengthening_power_in_the_indian_ocean"
+	}
+	relative_position_id = GBR_unification_of_ireland
+	prerequisite = { focus = GBR_unification_of_ireland }
+	prerequisite = { focus = GBR_development_of_conquest_bases }
+}
+
+shared_focus = {
+	id = GBR_treasures_of_the_empire
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_treasures_of_the_empire"
+	}
+	relative_position_id = GBR_strengthening_power_in_the_indian_ocean
+	prerequisite = { focus = GBR_strengthening_power_in_the_indian_ocean }
+}
+
+shared_focus = {
+	id = GBR_close_guard
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_close_guard"
+	}
+	relative_position_id = GBR_kings_party
+	prerequisite = { focus = GBR_kings_party }
+}
+
+shared_focus = {
+	id = GBR_wang_lijun
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_wang_lijun"
+	}
+	relative_position_id = GBR_close_guard
+	prerequisite = { focus = GBR_close_guard }
+}
+
+shared_focus = {
+	id = GBR_united_ireland_act
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_united_ireland_act"
+	}
+	relative_position_id = GBR_wang_lijun
+	prerequisite = { focus = GBR_wang_lijun }
+}
+
+shared_focus = {
+	id = GBR_conservative_party
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_conservative_party"
+	}
+	relative_position_id = GBR_general_election_of_the_lower_house
+	prerequisite = { focus = GBR_general_election_of_the_lower_house }
+	mutually_exclusive = { focus = GBR_kings_party }
+}
+
+shared_focus = {
+	id = GBR_economic_policy_shift
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_economic_policy_shift"
+	}
+	relative_position_id = GBR_conservative_party
+	prerequisite = { focus = GBR_conservative_party }
+}
+
+shared_focus = {
+	id = GBR_guarantees_for_retired_soldiers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_guarantees_for_retired_soldiers"
+	}
+	relative_position_id = GBR_economic_policy_shift
+	prerequisite = { focus = GBR_economic_policy_shift }
+}
+
+shared_focus = {
+	id = GBR_land_of_the_lonely
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_land_of_the_lonely"
+	}
+	relative_position_id = GBR_guarantees_for_retired_soldiers
+	prerequisite = { focus = GBR_guarantees_for_retired_soldiers }
+	prerequisite = { focus = GBR_toward_a_stronger_nation }
+	mutually_exclusive = { focus = GBR_unabated_empire }
+}
+
+shared_focus = {
+	id = GBR_world_isolation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_world_isolation"
+	}
+	relative_position_id = GBR_land_of_the_lonely
+	prerequisite = { focus = GBR_land_of_the_lonely }
+}
+
+shared_focus = {
+	id = GBR_reinforced_sterling_pound_block
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_reinforced_sterling_pound_block"
+	}
+	relative_position_id = GBR_world_isolation
+	prerequisite = { focus = GBR_world_isolation }
+}
+
+shared_focus = {
+	id = GBR_concentration_of_empire
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_concentration_of_empire"
+	}
+	relative_position_id = GBR_reinforced_sterling_pound_block
+	prerequisite = { focus = GBR_reinforced_sterling_pound_block }
+}
+
+shared_focus = {
+	id = GBR_for_the_sake_of_world_order
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_for_the_sake_of_world_order"
+	}
+	relative_position_id = GBR_concentration_of_empire
+	prerequisite = { focus = GBR_concentration_of_empire }
+}
+
+shared_focus = {
+	id = GBR_watch_to_the_east
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_watch_to_the_east"
+	}
+	relative_position_id = GBR_economic_policy_shift
+	prerequisite = { focus = GBR_economic_policy_shift }
+}
+
+shared_focus = {
+	id = GBR_prime_minister_eden
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_prime_minister_eden"
+	}
+	relative_position_id = GBR_conservative_party
+	prerequisite = { focus = GBR_conservative_party }
+	mutually_exclusive = { focus = GBR_prime_minister_churchill }
+}
+
+shared_focus = {
+	id = GBR_diplomatic_attack
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_diplomatic_attack"
+	}
+	relative_position_id = GBR_prime_minister_eden
+	prerequisite = { focus = GBR_prime_minister_eden }
+}
+
+shared_focus = {
+	id = GBR_prime_minister_churchill
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_prime_minister_churchill"
+	}
+	relative_position_id = GBR_conservative_party
+	prerequisite = { focus = GBR_conservative_party }
+	mutually_exclusive = { focus = GBR_prime_minister_eden }
+}
+
+shared_focus = {
+	id = GBR_second_national_disaster
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_second_national_disaster"
+	}
+	relative_position_id = GBR_prime_minister_churchill
+	prerequisite = { focus = GBR_prime_minister_churchill }
+}
+
+shared_focus = {
+	id = GBR_federal_conclusion
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_federal_conclusion"
+	}
+	relative_position_id = GBR_diplomatic_attack
+	prerequisite = {
+		focus = GBR_diplomatic_attack
+		focus = GBR_second_national_disaster
+	}
+}
+
+shared_focus = {
+	id = GBR_toward_a_stronger_nation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_toward_a_stronger_nation"
+	}
+	relative_position_id = GBR_watch_to_the_east
+	prerequisite = { focus = GBR_watch_to_the_east }
+	prerequisite = { focus = GBR_federal_conclusion }
+}
+
+shared_focus = {
+	id = GBR_hope_is_not_lost
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_hope_is_not_lost"
+	}
+	relative_position_id = GBR_third_relief_bill
+	prerequisite = { focus = GBR_third_relief_bill }
+	mutually_exclusive = { focus = GBR_general_election_of_the_lower_house }
+}
+
+shared_focus = {
+	id = GBR_disarmament_and_refinement
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_disarmament_and_refinement"
+	}
+	relative_position_id = GBR_hope_is_not_lost
+	prerequisite = { focus = GBR_hope_is_not_lost }
+}
+
+shared_focus = {
+	id = GBR_plantation_maintenance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_plantation_maintenance"
+	}
+	relative_position_id = GBR_disarmament_and_refinement
+	prerequisite = { focus = GBR_disarmament_and_refinement }
+	mutually_exclusive = { focus = GBR_plantation_retreat }
+}
+
+shared_focus = {
+	id = GBR_facilitating_immigration
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_facilitating_immigration"
+	}
+	relative_position_id = GBR_plantation_maintenance
+	prerequisite = { focus = GBR_plantation_maintenance }
+}
+
+shared_focus = {
+	id = GBR_revision_of_the_nationality_law
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_revision_of_the_nationality_law"
+	}
+	relative_position_id = GBR_facilitating_immigration
+	prerequisite = { focus = GBR_facilitating_immigration }
+}
+
+shared_focus = {
+	id = GBR_an_empire_where_the_sun_never_sets
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_an_empire_where_the_sun_never_sets"
+	}
+	relative_position_id = GBR_revision_of_the_nationality_law
+	prerequisite = { focus = GBR_revision_of_the_nationality_law }
+}
+
+shared_focus = {
+	id = GBR_unabated_empire
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_unabated_empire"
+	}
+	relative_position_id = GBR_toward_a_stronger_nation
+	prerequisite = { focus = GBR_toward_a_stronger_nation }
+	prerequisite = { focus = GBR_an_empire_where_the_sun_never_sets }
+	mutually_exclusive = { focus = GBR_land_of_the_lonely }
+}
+
+shared_focus = {
+	id = GBR_maintaining_world_order
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_maintaining_world_order"
+	}
+	relative_position_id = GBR_unabated_empire
+	prerequisite = { focus = GBR_unabated_empire }
+}
+
+shared_focus = {
+	id = GBR_accommodation_for_germany
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_accommodation_for_germany"
+	}
+	relative_position_id = GBR_maintaining_world_order
+	prerequisite = { focus = GBR_maintaining_world_order }
+}
+
+shared_focus = {
+	id = GBR_support_for_italian_unity
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_support_for_italian_unity"
+	}
+	relative_position_id = GBR_accommodation_for_germany
+	prerequisite = { focus = GBR_accommodation_for_germany }
+}
+
+shared_focus = {
+	id = GBR_mutual_agreement_with_france
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_mutual_agreement_with_france"
+	}
+	relative_position_id = GBR_accommodation_for_germany
+	prerequisite = { focus = GBR_accommodation_for_germany }
+}
+
+shared_focus = {
+	id = GBR_united_nations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_united_nations"
+	}
+	relative_position_id = GBR_support_for_italian_unity
+	prerequisite = { focus = GBR_support_for_italian_unity }
+	prerequisite = { focus = GBR_mutual_agreement_with_france }
+}
+
+shared_focus = {
+	id = GBR_federal_transformation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_federal_transformation"
+	}
+	relative_position_id = GBR_unabated_empire
+	prerequisite = { focus = GBR_unabated_empire }
+}
+
+shared_focus = {
+	id = GBR_south_africas_expulsion
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_south_africas_expulsion"
+	}
+	relative_position_id = GBR_federal_transformation
+	prerequisite = { focus = GBR_federal_transformation }
+}
+
+shared_focus = {
+	id = GBR_deal_with_enkruma
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_deal_with_enkruma"
+	}
+	relative_position_id = GBR_south_africas_expulsion
+	prerequisite = { focus = GBR_south_africas_expulsion }
+}
+
+shared_focus = {
+	id = GBR_imperial_council
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_imperial_council"
+	}
+	relative_position_id = GBR_deal_with_enkruma
+	prerequisite = { focus = GBR_deal_with_enkruma }
+	prerequisite = { focus = GBR_bring_back_the_jewels }
+	prerequisite = { focus = GBR_maintenance_of_isolated_islands }
+	mutually_exclusive = { focus = GBR_from_empire_to_federation }
+}
+
+shared_focus = {
+	id = GBR_to_the_land_of_our_fathers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_to_the_land_of_our_fathers"
+	}
+	relative_position_id = GBR_treasures_of_the_empire
+	prerequisite = { focus = GBR_treasures_of_the_empire }
+	prerequisite = { focus = GBR_strengthening_the_power_of_oceania }
+}
+
+shared_focus = {
+	id = GBR_big_bear_hunting
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_big_bear_hunting"
+	}
+	relative_position_id = GBR_treasures_of_the_empire
+	prerequisite = { focus = GBR_treasures_of_the_empire }
+}
+
+shared_focus = {
+	id = GBR_the_great_work_of_mountbatten
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_the_great_work_of_mountbatten"
+	}
+	relative_position_id = GBR_federal_transformation
+	prerequisite = { focus = GBR_federal_transformation }
+}
+
+shared_focus = {
+	id = GBR_bring_back_the_jewels
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_bring_back_the_jewels"
+	}
+	relative_position_id = GBR_the_great_work_of_mountbatten
+	prerequisite = { focus = GBR_the_great_work_of_mountbatten }
+}
+
+shared_focus = {
+	id = GBR_eldest_daughters_independence
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_eldest_daughters_independence"
+	}
+	relative_position_id = GBR_federal_transformation
+	prerequisite = { focus = GBR_federal_transformation }
+}
+
+shared_focus = {
+	id = GBR_maintenance_of_isolated_islands
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_maintenance_of_isolated_islands"
+	}
+	relative_position_id = GBR_eldest_daughters_independence
+	prerequisite = { focus = GBR_eldest_daughters_independence }
+}
+
+shared_focus = {
+	id = GBR_from_empire_to_federation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_from_empire_to_federation"
+	}
+	relative_position_id = GBR_deal_with_enkruma
+	prerequisite = { focus = GBR_deal_with_enkruma }
+	prerequisite = { focus = GBR_bring_back_the_jewels }
+	prerequisite = { focus = GBR_maintenance_of_isolated_islands }
+	mutually_exclusive = { focus = GBR_imperial_council }
+}
+
+shared_focus = {
+	id = GBR_strengthening_the_power_of_the_new_continent
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_strengthening_the_power_of_the_new_continent"
+	}
+	relative_position_id = GBR_unification_of_ireland
+	prerequisite = { focus = GBR_unification_of_ireland }
+}
+
+shared_focus = {
+	id = GBR_strengthening_the_power_of_oceania
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_strengthening_the_power_of_oceania"
+	}
+	relative_position_id = GBR_strengthening_the_power_of_the_new_continent
+	prerequisite = { focus = GBR_strengthening_the_power_of_the_new_continent }
+}
+
+shared_focus = {
+	id = GBR_an_end_to_the_bloodsoaked_revolution
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_an_end_to_the_bloodsoaked_revolution"
+	}
+	relative_position_id = GBR_strengthening_the_power_of_oceania
+	prerequisite = { focus = GBR_strengthening_the_power_of_oceania }
+}
+
+shared_focus = {
+	id = GBR_plantation_retreat
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_plantation_retreat"
+	}
+	relative_position_id = GBR_disarmament_and_refinement
+	prerequisite = { focus = GBR_disarmament_and_refinement }
+	prerequisite = { focus = GBR_privatization_of_some_companies }
+	mutually_exclusive = { focus = GBR_plantation_maintenance }
+}
+
+shared_focus = {
+	id = GBR_organizing_the_islands
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_organizing_the_islands"
+	}
+	relative_position_id = GBR_plantation_retreat
+	prerequisite = { focus = GBR_plantation_retreat }
+}
+
+shared_focus = {
+	id = GBR_depopulation_localization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_depopulation_localization"
+	}
+	relative_position_id = GBR_organizing_the_islands
+	prerequisite = { focus = GBR_organizing_the_islands }
+}
+
+shared_focus = {
+	id = GBR_end_of_revision
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_end_of_revision"
+	}
+	relative_position_id = GBR_revision_of_the_nationality_law
+	prerequisite = {
+		focus = GBR_revision_of_the_nationality_law
+		focus = GBR_depopulation_localization
+	}
+}
+
+shared_focus = {
+	id = GBR_the_new_england
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_the_new_england"
+	}
+	relative_position_id = GBR_depopulation_localization
+	prerequisite = { focus = GBR_depopulation_localization }
+	prerequisite = { focus = GBR_end_of_revision }
+}
+
+shared_focus = {
+	id = GBR_privatization_of_some_companies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_privatization_of_some_companies"
+	}
+	relative_position_id = GBR_hope_is_not_lost
+	prerequisite = { focus = GBR_hope_is_not_lost }
+}
+
+shared_focus = {
+	id = GBR_budgetary_allocation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_budgetary_allocation"
+	}
+	relative_position_id = GBR_privatization_of_some_companies
+	prerequisite = { focus = GBR_privatization_of_some_companies }
+}
+
+shared_focus = {
+	id = GBR_encouraging_british_patriotism
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_encouraging_british_patriotism"
+	}
+	relative_position_id = GBR_budgetary_allocation
+	prerequisite = { focus = GBR_budgetary_allocation }
+}
+
+shared_focus = {
+	id = GBR_focus_on_inflation_control
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 30
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_inflation_control"
+	}
+}
+
+shared_focus = {
+	id = GBR_maintain_arms_production
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_maintain_arms_production"
+	}
+	relative_position_id = GBR_focus_on_inflation_control
+	prerequisite = { focus = GBR_focus_on_inflation_control }
+}
+
+shared_focus = {
+	id = GBR_business_combinations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_business_combinations"
+	}
+	relative_position_id = GBR_maintain_arms_production
+	prerequisite = { focus = GBR_maintain_arms_production }
+}
+
+shared_focus = {
+	id = GBR_selfproduced
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_selfproduced"
+	}
+	relative_position_id = GBR_business_combinations
+	prerequisite = { focus = GBR_business_combinations }
+	mutually_exclusive = { focus = GBR_free_competition }
+}
+
+shared_focus = {
+	id = GBR_free_competition
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_free_competition"
+	}
+	relative_position_id = GBR_business_combinations
+	prerequisite = { focus = GBR_business_combinations }
+	mutually_exclusive = { focus = GBR_selfproduced }
+}
+
+shared_focus = {
+	id = GBR_standards_unification
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_standards_unification"
+	}
+	relative_position_id = GBR_selfproduced
+	prerequisite = { focus = GBR_selfproduced }
+	prerequisite = { focus = GBR_free_competition }
+}
+
+shared_focus = {
+	id = GBR_decentralized_military_industry
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_decentralized_military_industry"
+	}
+	relative_position_id = GBR_standards_unification
+	prerequisite = { focus = GBR_standards_unification }
+}
+
+shared_focus = {
+	id = GBR_greater_britain
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_greater_britain"
+	}
+	relative_position_id = GBR_decentralized_military_industry
+	prerequisite = { focus = GBR_decentralized_military_industry }
+	prerequisite = { focus = GBR_revitalization_of_shipbuilding_industry }
+	mutually_exclusive = { focus = GBR_greater_london }
+}
+
+shared_focus = {
+	id = GBR_restructuring_of_domestic_industry
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_restructuring_of_domestic_industry"
+	}
+	relative_position_id = GBR_focus_on_inflation_control
+	prerequisite = { focus = GBR_focus_on_inflation_control }
+}
+
+shared_focus = {
+	id = GBR_reconstruction_of_great_war_damage
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_reconstruction_of_great_war_damage"
+	}
+	relative_position_id = GBR_restructuring_of_domestic_industry
+	prerequisite = { focus = GBR_restructuring_of_domestic_industry }
+}
+
+shared_focus = {
+	id = GBR_redevelopment_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_redevelopment_plan"
+	}
+	relative_position_id = GBR_reconstruction_of_great_war_damage
+	prerequisite = { focus = GBR_reconstruction_of_great_war_damage }
+}
+
+shared_focus = {
+	id = GBR_dover_to_edinburgh
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_dover_to_edinburgh"
+	}
+	relative_position_id = GBR_redevelopment_plan
+	prerequisite = { focus = GBR_redevelopment_plan }
+}
+
+shared_focus = {
+	id = GBR_revitalization_of_shipbuilding_industry
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_revitalization_of_shipbuilding_industry"
+	}
+	relative_position_id = GBR_dover_to_edinburgh
+	prerequisite = { focus = GBR_dover_to_edinburgh }
+}
+
+shared_focus = {
+	id = GBR_greater_london
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_greater_london"
+	}
+	relative_position_id = GBR_revitalization_of_shipbuilding_industry
+	prerequisite = { focus = GBR_decentralized_military_industry }
+	prerequisite = { focus = GBR_revitalization_of_shipbuilding_industry }
+	mutually_exclusive = { focus = GBR_greater_britain }
+}
+
+shared_focus = {
+	id = GBR_civil_regeneration
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_civil_regeneration"
+	}
+	relative_position_id = GBR_restructuring_of_domestic_industry
+	prerequisite = { focus = GBR_restructuring_of_domestic_industry }
+	mutually_exclusive = { focus = GBR_military_industry_act }
+}
+
+shared_focus = {
+	id = GBR_military_industry_act
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_military_industry_act"
+	}
+	relative_position_id = GBR_restructuring_of_domestic_industry
+	prerequisite = { focus = GBR_restructuring_of_domestic_industry }
+	mutually_exclusive = { focus = GBR_civil_regeneration }
+}
+
+shared_focus = {
+	id = GBR_complete_industrial_mobilization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 3
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_complete_industrial_mobilization"
+	}
+	relative_position_id = GBR_military_industry_act
+	prerequisite = { focus = GBR_military_industry_act }
+	prerequisite = { focus = GBR_turing_institute }
+}
+
+shared_focus = {
+	id = GBR_expansion_of_research_facilities
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_expansion_of_research_facilities"
+	}
+	relative_position_id = GBR_civil_regeneration
+	prerequisite = {
+		focus = GBR_civil_regeneration
+		focus = GBR_military_industry_act
+	}
+}
+
+shared_focus = {
+	id = GBR_turing_institute
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_turing_institute"
+	}
+	relative_position_id = GBR_expansion_of_research_facilities
+	prerequisite = { focus = GBR_expansion_of_research_facilities }
+}
+
+shared_focus = {
+	id = GBR_end_of_distribution_system
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_end_of_distribution_system"
+	}
+	relative_position_id = GBR_redevelopment_plan
+	prerequisite = { focus = GBR_redevelopment_plan }
+	prerequisite = { focus = GBR_civil_regeneration }
+}
+
+shared_focus = {
+	id = GBR_a_fresh_start_for_the_military
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 42
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_a_fresh_start_for_the_military"
+	}
+}
+
+shared_focus = {
+	id = GBR_reorganization_of_the_army
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_reorganization_of_the_army"
+	}
+	relative_position_id = GBR_a_fresh_start_for_the_military
+	prerequisite = { focus = GBR_a_fresh_start_for_the_military }
+}
+
+shared_focus = {
+	id = GBR_largescale_operation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 9
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_largescale_operation"
+	}
+	relative_position_id = GBR_reorganization_of_the_army
+	prerequisite = { focus = GBR_reorganization_of_the_army }
+	mutually_exclusive = {
+		focus = GBR_priority_firepower
+		focus = GBR_mobile_warfare
+	}
+}
+
+shared_focus = {
+	id = GBR_mobile_warfare
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_mobile_warfare"
+	}
+	relative_position_id = GBR_reorganization_of_the_army
+	prerequisite = { focus = GBR_reorganization_of_the_army }
+	mutually_exclusive = {
+		focus = GBR_priority_firepower
+		focus = GBR_largescale_operation
+	}
+}
+
+shared_focus = {
+	id = GBR_meticulous_coordination
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_meticulous_coordination"
+	}
+	relative_position_id = GBR_largescale_operation
+	prerequisite = { focus = GBR_largescale_operation }
+}
+
+shared_focus = {
+	id = GBR_advanced_support_squadron
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_advanced_support_squadron"
+	}
+	relative_position_id = GBR_meticulous_coordination
+	prerequisite = { focus = GBR_meticulous_coordination }
+}
+
+shared_focus = {
+	id = GBR_focus_on_opposing_vehicles
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_opposing_vehicles"
+	}
+	relative_position_id = GBR_advanced_support_squadron
+	prerequisite = {
+		focus = GBR_advanced_support_squadron
+		focus = GBR_cooperation_with_the_air_force
+		focus = GBR_the_allpurpose_tank_concept
+	}
+}
+
+shared_focus = {
+	id = GBR_priority_firepower
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 7
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_priority_firepower"
+	}
+	relative_position_id = GBR_reorganization_of_the_army
+	prerequisite = { focus = GBR_reorganization_of_the_army }
+	mutually_exclusive = {
+		focus = GBR_largescale_operation
+		focus = GBR_mobile_warfare
+	}
+}
+
+shared_focus = {
+	id = GBR_enhanced_troop_firepower
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_enhanced_troop_firepower"
+	}
+	relative_position_id = GBR_priority_firepower
+	prerequisite = { focus = GBR_priority_firepower }
+}
+
+shared_focus = {
+	id = GBR_cooperation_with_the_air_force
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_cooperation_with_the_air_force"
+	}
+	relative_position_id = GBR_enhanced_troop_firepower
+	prerequisite = { focus = GBR_enhanced_troop_firepower }
+}
+
+shared_focus = {
+	id = GBR_principle_of_gravity
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_principle_of_gravity"
+	}
+	relative_position_id = GBR_mobile_warfare
+	prerequisite = { focus = GBR_mobile_warfare }
+}
+
+shared_focus = {
+	id = GBR_the_allpurpose_tank_concept
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_the_allpurpose_tank_concept"
+	}
+	relative_position_id = GBR_principle_of_gravity
+	prerequisite = { focus = GBR_principle_of_gravity }
+}
+
+shared_focus = {
+	id = GBR_focus_on_mechanization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_mechanization"
+	}
+	relative_position_id = GBR_advanced_support_squadron
+	prerequisite = {
+		focus = GBR_advanced_support_squadron
+		focus = GBR_cooperation_with_the_air_force
+		focus = GBR_the_allpurpose_tank_concept
+	}
+}
+
+shared_focus = {
+	id = GBR_national_armed_forces
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_national_armed_forces"
+	}
+	relative_position_id = GBR_focus_on_opposing_vehicles
+	prerequisite = { focus = GBR_focus_on_opposing_vehicles }
+	prerequisite = { focus = GBR_focus_on_mechanization }
+}
+
+shared_focus = {
+	id = GBR_combined_airland_and_ground_war
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_combined_airland_and_ground_war"
+	}
+	relative_position_id = GBR_reorganization_of_the_army
+	prerequisite = { focus = GBR_reorganization_of_the_army }
+}
+
+shared_focus = {
+	id = GBR_restructuring_of_the_air_force
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_restructuring_of_the_air_force"
+	}
+	relative_position_id = GBR_combined_airland_and_ground_war
+	prerequisite = { focus = GBR_combined_airland_and_ground_war }
+}
+
+shared_focus = {
+	id = GBR_focus_on_aircraft_production
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_aircraft_production"
+	}
+	relative_position_id = GBR_restructuring_of_the_air_force
+	prerequisite = { focus = GBR_restructuring_of_the_air_force }
+}
+
+shared_focus = {
+	id = GBR_real_heart
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_real_heart"
+	}
+	relative_position_id = GBR_focus_on_aircraft_production
+	prerequisite = { focus = GBR_focus_on_aircraft_production }
+}
+
+shared_focus = {
+	id = GBR_broadside_firebombing
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_broadside_firebombing"
+	}
+	relative_position_id = GBR_real_heart
+	prerequisite = { focus = GBR_real_heart }
+}
+
+shared_focus = {
+	id = GBR_remember_the_bob
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_remember_the_bob"
+	}
+	relative_position_id = GBR_focus_on_aircraft_production
+	prerequisite = { focus = GBR_focus_on_aircraft_production }
+}
+
+shared_focus = {
+	id = GBR_focus_on_air_control
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_air_control"
+	}
+	relative_position_id = GBR_remember_the_bob
+	prerequisite = { focus = GBR_remember_the_bob }
+}
+
+shared_focus = {
+	id = GBR_focus_on_aircraft_renewal
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_aircraft_renewal"
+	}
+	relative_position_id = GBR_restructuring_of_the_air_force
+	prerequisite = { focus = GBR_restructuring_of_the_air_force }
+}
+
+shared_focus = {
+	id = GBR_focus_on_air_defense
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_air_defense"
+	}
+	relative_position_id = GBR_focus_on_aircraft_renewal
+	prerequisite = { focus = GBR_focus_on_aircraft_renewal }
+}
+
+shared_focus = {
+	id = GBR_radar_enhancements
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_radar_enhancements"
+	}
+	relative_position_id = GBR_focus_on_air_defense
+	prerequisite = { focus = GBR_focus_on_air_defense }
+	prerequisite = { focus = GBR_improvement_of_internal_combustion_engines }
+}
+
+shared_focus = {
+	id = GBR_intelligence_agency
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_intelligence_agency"
+	}
+	relative_position_id = GBR_reorganization_of_the_army
+	prerequisite = { focus = GBR_reorganization_of_the_army }
+}
+
+shared_focus = {
+	id = GBR_sunset_battle
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_sunset_battle"
+	}
+	relative_position_id = GBR_intelligence_agency
+	prerequisite = { focus = GBR_intelligence_agency }
+}
+
+shared_focus = {
+	id = GBR_reorganization_of_the_navy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_reorganization_of_the_navy"
+	}
+	relative_position_id = GBR_a_fresh_start_for_the_military
+	prerequisite = { focus = GBR_a_fresh_start_for_the_military }
+}
+
+shared_focus = {
+	id = GBR_small_ship_use
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_small_ship_use"
+	}
+	relative_position_id = GBR_reorganization_of_the_navy
+	prerequisite = { focus = GBR_reorganization_of_the_navy }
+	prerequisite = { focus = GBR_retirement_and_appointment }
+	prerequisite = { focus = GBR_doctrine_development }
+}
+
+shared_focus = {
+	id = GBR_reconstructing_the_noncontact_committee
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_reconstructing_the_noncontact_committee"
+	}
+	relative_position_id = GBR_small_ship_use
+	prerequisite = { focus = GBR_small_ship_use }
+}
+
+shared_focus = {
+	id = GBR_lessons_from_the_dynamo
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_lessons_from_the_dynamo"
+	}
+	relative_position_id = GBR_reconstructing_the_noncontact_committee
+	prerequisite = { focus = GBR_reconstructing_the_noncontact_committee }
+}
+
+shared_focus = {
+	id = GBR_improvement_of_internal_combustion_engines
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_improvement_of_internal_combustion_engines"
+	}
+	relative_position_id = GBR_lessons_from_the_dynamo
+	prerequisite = { focus = GBR_lessons_from_the_dynamo }
+}
+
+shared_focus = {
+	id = GBR_focus_on_antiaircraft
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_focus_on_antiaircraft"
+	}
+	relative_position_id = GBR_focus_on_air_defense
+	prerequisite = { focus = GBR_focus_on_air_defense }
+	prerequisite = { focus = GBR_improvement_of_internal_combustion_engines }
+}
+
+shared_focus = {
+	id = GBR_dealing_with_the_devil
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_dealing_with_the_devil"
+	}
+	relative_position_id = GBR_broadside_firebombing
+	prerequisite = { focus = GBR_broadside_firebombing }
+	prerequisite = { focus = GBR_focus_on_air_control }
+	prerequisite = { focus = GBR_radar_enhancements }
+	prerequisite = { focus = GBR_focus_on_antiaircraft }
+}
+
+shared_focus = {
+	id = GBR_destroyer_update
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_destroyer_update"
+	}
+	relative_position_id = GBR_small_ship_use
+	prerequisite = { focus = GBR_small_ship_use }
+}
+
+shared_focus = {
+	id = GBR_sea_escort_by_light_cruisers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_sea_escort_by_light_cruisers"
+	}
+	relative_position_id = GBR_destroyer_update
+	prerequisite = { focus = GBR_destroyer_update }
+}
+
+shared_focus = {
+	id = GBR_effective_shipbuilding
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_effective_shipbuilding"
+	}
+	relative_position_id = GBR_lessons_from_the_dynamo
+	prerequisite = { focus = GBR_lessons_from_the_dynamo }
+	prerequisite = { focus = GBR_sea_escort_by_light_cruisers }
+}
+
+shared_focus = {
+	id = GBR_painting_of_shipbuilding
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_painting_of_shipbuilding"
+	}
+	relative_position_id = GBR_effective_shipbuilding
+	prerequisite = { focus = GBR_effective_shipbuilding }
+	mutually_exclusive = { focus = GBR_wartime_mass_production }
+}
+
+shared_focus = {
+	id = GBR_the_best_battleships
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_the_best_battleships"
+	}
+	relative_position_id = GBR_painting_of_shipbuilding
+	prerequisite = {
+		focus = GBR_painting_of_shipbuilding
+		focus = GBR_wartime_mass_production
+	}
+	prerequisite = { focus = GBR_britannia_rule_the_oceans }
+}
+
+shared_focus = {
+	id = GBR_wartime_mass_production
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_wartime_mass_production"
+	}
+	relative_position_id = GBR_effective_shipbuilding
+	prerequisite = { focus = GBR_effective_shipbuilding }
+	mutually_exclusive = { focus = GBR_painting_of_shipbuilding }
+}
+
+shared_focus = {
+	id = GBR_dover_exercise
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 37
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_dover_exercise"
+	}
+}
+
+shared_focus = {
+	id = GBR_retirement_and_appointment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_retirement_and_appointment"
+	}
+	relative_position_id = GBR_dover_exercise
+	prerequisite = { focus = GBR_dover_exercise }
+}
+
+shared_focus = {
+	id = GBR_redesign_of_large_vessels
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_redesign_of_large_vessels"
+	}
+	relative_position_id = GBR_retirement_and_appointment
+	prerequisite = { focus = GBR_retirement_and_appointment }
+	prerequisite = { focus = GBR_doctrine_development }
+}
+
+shared_focus = {
+	id = GBR_aircraft_carrier_reinforcement
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_aircraft_carrier_reinforcement"
+	}
+	relative_position_id = GBR_redesign_of_large_vessels
+	prerequisite = { focus = GBR_redesign_of_large_vessels }
+	mutually_exclusive = { focus = GBR_maintaining_vanguard }
 	
-	focus = {
-		id = geacps_GBR_0
-		icon = GFX_goal_unknown
-		cost = 5.00
-		x = 7
-		y = 0
-
-	}
-	focus = {
-		id = geacps_GBR_8
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 3
-		y = 4
-
-	}
-	focus = {
-		id = geacps_GBR_25
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 1
-		y = 7
-
-	}
-	focus = {
-		id = geacps_GBR_26
-		icon = GFX_goal_unknown
-		cost = 10.00
-		mutually_exclusive = {
-			focus = geacps_GBR_41
-		}
-		x = 7
-		y = 7
-
-	}
-	focus = {
-		id = geacps_GBR_41
-		icon = GFX_goal_unknown
-		cost = 10.00
-		mutually_exclusive = {
-			focus = geacps_GBR_26
-		}
-		x = 13
-		y = 7
-
-	}
-	focus = {
-		id = geacps_GBR_75
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 28
-		y = 0
-
-	}
-	focus = {
-		id = geacps_GBR_76
-		icon = GFX_goal_unknown
-		cost = 10.00
-		x = 26
-		y = 1
-		prerequisite = { focus = geacps_GBR_75 }
-
-	}
-	focus = {
-		id = geacps_GBR_1
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = geacps_GBR_0
-		}
-		x = 4
-		y = 1
-
-	}
-	focus = {
-		id = geacps_GBR_2
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = geacps_GBR_1
-		}
-		x = 3
-		y = 2
-
-	}
-	focus = {
-		id = geacps_GBR_9
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_8
-		}
-		x = 3
-		y = 5
-
-	}
-	focus = {
-		id = geacps_GBR_27
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_26
-		}
-		x = 5
-		y = 8
-
-	}
-	focus = {
-		id = geacps_GBR_28
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_27
-		}
-		x = 3
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_29
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_28
-		}
-		x = 3
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_3
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = geacps_GBR_1
-		}
-		x = 5
-		y = 2
-
-	}
-	focus = {
-		id = geacps_GBR_5
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_3
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_6
-		}
-		x = 4
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_4
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_2
-		}
-		prerequisite = {
-			focus = geacps_GBR_3
-		}
-		x = 2
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_7
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_4
-		}
-		prerequisite = {
-			focus = geacps_GBR_5
-		}
-		x = 1
-		y = 4
-
-	}
-	focus = {
-		id = geacps_GBR_6
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_3
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_5
-		}
-		x = 6
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_11
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_6
-		}
-		x = 6
-		y = 4
-
-	}
-	focus = {
-		id = geacps_GBR_12
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_11
-		}
-		x = 5
-		y = 5
-
-	}
-	focus = {
-		id = geacps_GBR_10
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_9
-			focus = geacps_GBR_12
-		}
-		x = 4
-		y = 6
-
-	}
-	focus = {
-		id = geacps_GBR_13
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_11
-		}
-		x = 6
-		y = 6
-
-	}
-	focus = {
-		id = geacps_GBR_32
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_27
-		}
-		x = 7
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_33
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_32
-		}
-		x = 7
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_14
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_0
-		}
-		x = 10
-		y = 1
-
-	}
-	focus = {
-		id = geacps_GBR_15
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_14
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_46
-		}
-		x = 10
-		y = 2
-
-	}
-	focus = {
-		id = geacps_GBR_16
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_15
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_18
-		}
-		x = 8
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_18
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_15
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_16
-		}
-		x = 10
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_19
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_18
-		}
-		x = 10
-		y = 4
-
-	}
-	focus = {
-		id = geacps_GBR_21
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_15
-		}
-		x = 12
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_22
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_21
-		}
-		x = 11
-		y = 5
-
-	}
-	focus = {
-		id = geacps_GBR_24
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_21
-		}
-		x = 12
-		y = 6
-
-	}
-	focus = {
-		id = geacps_GBR_42
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_41
-		}
-		x = 13
-		y = 8
-
-	}
-	focus = {
-		id = geacps_GBR_43
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_42
-		}
-		x = 13
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_44
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_43
-		}
-		x = 13
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_46
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_14
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_15
-		}
-		x = 18
-		y = 2
-
-	}
-	focus = {
-		id = geacps_GBR_47
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_46
-		}
-		x = 16
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_48
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_47
-		}
-		x = 16
-		y = 4
-
-	}
-	focus = {
-		id = geacps_GBR_49
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_46
-		}
-		x = 18
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_52
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_48
-		}
-		prerequisite = {
-			focus = geacps_GBR_49
-		}
-		x = 17
-		y = 5
-
-	}
-	focus = {
-		id = geacps_GBR_54
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_49
-		}
-		x = 18
-		y = 6
-
-	}
-	focus = {
-		id = geacps_GBR_55
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_54
-		}
-		x = 18
-		y = 7
-
-	}
-	focus = {
-		id = geacps_GBR_56
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_55
-		}
-		x = 16
-		y = 8
-
-	}
-	focus = {
-		id = geacps_GBR_57
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_55
-		}
-		x = 18
-		y = 8
-
-	}
-	focus = {
-		id = geacps_GBR_60
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_57
-		}
-		x = 18
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_61
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_60
-		}
-		x = 18
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_50
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_46
-		}
-		x = 19
-		y = 4
-
-	}
-	focus = {
-		id = geacps_GBR_51
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_46
-		}
-		x = 20
-		y = 3
-
-	}
-	focus = {
-		id = geacps_GBR_53
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_51
-		}
-		prerequisite = {
-			focus = geacps_GBR_49
-		}
-		x = 19
-		y = 5
-
-	}
-	focus = {
-		id = geacps_GBR_65
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_55
-		}
-		x = 23
-		y = 8
-
-	}
-	focus = {
-		id = geacps_GBR_66
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_65
-		}
-		x = 20
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_67
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_65
-		}
-		x = 22
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_68
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_66
-		}
-		prerequisite = {
-			focus = geacps_GBR_67
-		}
-		x = 21
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_69
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_65
-		}
-		x = 24
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_70
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_65
-		}
-		x = 26
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_71
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_69
-		}
-		prerequisite = {
-			focus = geacps_GBR_70
-		}
-		x = 25
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_17
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_16
-		}
-		x = 8
-		y = 4
-
-	}
-	focus = {
-		id = geacps_GBR_20
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_17
-			focus = geacps_GBR_19
-		}
-		x = 9
-		y = 5
-
-	}
-	focus = {
-		id = geacps_GBR_23
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_20
-		}
-		prerequisite = {
-			focus = geacps_GBR_22
-		}
-		x = 10
-		y = 6
-
-	}
-	focus = {
-		id = geacps_GBR_30
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_27
-		}
-		x = 5
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_31
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_30
-		}
-		x = 5
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_34
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_29
-		}
-		prerequisite = {
-			focus = geacps_GBR_31
-		}
-		prerequisite = {
-			focus = geacps_GBR_33
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_35
-		}
-		x = 4
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_35
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_33
-		}
-		prerequisite = {
-			focus = geacps_GBR_31
-		}
-		prerequisite = {
-			focus = geacps_GBR_29
-		}
-		mutually_exclusive = {
-			focus = geacps_GBR_34
-		}
-		x = 6
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_36
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_26
-		}
-		x = 10
-		y = 8
-
-	}
-	focus = {
-		id = geacps_GBR_37
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_36
-		}
-		x = 10
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_38
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_37
-		}
-		x = 9
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_39
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_37
-		}
-		x = 11
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_40
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_39
-		}
-		prerequisite = {
-			focus = geacps_GBR_38
-		}
-		x = 10
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_45
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_44
-		}
-		x = 13
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_58
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_57
-		}
-		prerequisite = {
-			focus = geacps_GBR_56
-		}
-		x = 16
-		y = 9
-
-	}
-	focus = {
-		id = geacps_GBR_59
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_58
-		}
-		x = 16
-		y = 10
-
-	}
-	focus = {
-		id = geacps_GBR_62
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_59
-		}
-		prerequisite = {
-			focus = geacps_GBR_61
-		}
-		x = 15
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_63
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_61
-		}
-		prerequisite = {
-			focus = geacps_GBR_59
-		}
-		x = 17
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_64
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_59
-		}
-		prerequisite = {
-			focus = geacps_GBR_61
-		}
-		x = 19
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_72
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_68
-		}
-		x = 21
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_73
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_71
-		}
-		prerequisite = {
-			focus = geacps_GBR_68
-		}
-		x = 23
-		y = 11
-
-	}
-	focus = {
-		id = geacps_GBR_74
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = geacps_GBR_71
-		}
-		x = 25
-		y = 11
-
-	}
-
-	focus = {
-		id = GEACPS_GBR_77
-		icon = GFX_goal_unknown
-		x = -2
-		y = 1
-		relative_position_id = geacps_GBR_76
-		prerequisite = { focus = geacps_GBR_76 }
-		mutually_exclusive = { focus = GEACPS_GBR_82 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = { 
-		id = GEACPS_GBR_78
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_77
-		prerequisite = { focus = GEACPS_GBR_77 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_79
-		icon = GFX_goal_unknown
-		x = 0
-		y = 3
-		relative_position_id = GEACPS_GBR_78
-		prerequisite = { focus = GEACPS_GBR_78 }
-		prerequisite = { focus = GEACPS_GBR_81 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_80
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		prerequisite = {
-			focus = GEACPS_GBR_78
-			focus = GEACPS_GBR_83
-		}
-		relative_position_id = GEACPS_GBR_78
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_81
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_80
-		prerequisite = { focus = GEACPS_GBR_80 }
-
-		completion_reward ={
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_82
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = geacps_GBR_76
-		prerequisite = { focus = geacps_GBR_76 }
-		mutually_exclusive = { focus =GEACPS_GBR_77 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_83
-		icon = GFX_goal_unknown 
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_82
-		prerequisite = { focus = GEACPS_GBR_82 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_84
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_83
-		prerequisite = { focus = GEACPS_GBR_83 }
-		prerequisite = { focus = GEACPS_GBR_86 }
-
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_85
-		icon = GFX_goal_unknown
-		x = 2
-		y = 1
-		relative_position_id = geacps_GBR_76
-		prerequisite = { focus = geacps_GBR_76 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_86
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_85
-		prerequisite = { focus = GEACPS_GBR_85 }
-	}
-
-	focus = {
-		id = GEACPS_GBR_87
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_86
-		prerequisite = { focus = GEACPS_GBR_86 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_88
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_87
-		prerequisite = { focus = GEACPS_GBR_87 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_89
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_88
-		prerequisite = {
-			focus = GEACPS_GBR_88
-			focus = GEACPS_GBR_95
-		}
-		mutually_exclusive = { focus = GEACPS_GBR_96 }
-
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GEACPS_GBR_90
-		icon = GFX_goal_unknown
-		x = 3
-		y = 1
-		relative_position_id = geacps_GBR_75
-		prerequisite = { focus = geacps_GBR_75 }
-		
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_91
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_GBR_90
-		prerequisite = { focus = GEACPS_GBR_90 }
-		mutually_exclusive = { focus = GEACPS_GBR_92 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_92
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_90
-		prerequisite = { focus = GEACPS_GBR_90 }
-		mutually_exclusive = { focus = GEACPS_GBR_91 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_93
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_91
-		prerequisite = {
-			focus = GEACPS_GBR_91
-			focus = GEACPS_GBR_92
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_94
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_93
-		prerequisite = { focus = GEACPS_GBR_93 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_95
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_94
-		prerequisite =  { focus = GEACPS_GBR_94 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_96
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_95
-		prerequisite = {
-			focus = GEACPS_GBR_88
-			focus = GEACPS_GBR_95
-		}
-		mutually_exclusive = { focus = GEACPS_GBR_89 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_97
-		icon = GFX_goal_unknown
-		x = 7
-		y = 13
-		
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_98
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_GBR_97
-		prerequisite = { focus = GEACPS_GBR_97 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_99
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_97
-		prerequisite = { focus = GEACPS_GBR_97 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_100
-		icon = GFX_goal_unknown
-		x = 6
-		y = 0
-		relative_position_id = GEACPS_GBR_97
-		
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_101
-		icon = GFX_goal_unknown
-		x = -3
-		y = 1
-		relative_position_id = GEACPS_GBR_100
-		prerequisite = { focus = GEACPS_GBR_100 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_102
-		icon = GFX_goal_unknown
-		x = -3
-		y = 1
-		relative_position_id = GEACPS_GBR_101
-		prerequisite = { focus = GEACPS_GBR_98 }
-		prerequisite = { focus = GEACPS_GBR_99 }
-		prerequisite = { focus = GEACPS_GBR_101 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_103
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_GBR_101
-		prerequisite = { focus = GEACPS_GBR_98 }
-		prerequisite = { focus = GEACPS_GBR_99 }
-		prerequisite = { focus = GEACPS_GBR_101 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_104
-		icon = GFX_goal_unknown
-		x = -3
-		y = 1
-		relative_position_id = GEACPS_GBR_102
-		prerequisite = { focus = GEACPS_GBR_102 }
-		mutually_exclusive = { focus = GEACPS_GBR_108 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_105
-		icon = GFX_goal_unknown
-		x = 0
-		y = 2
-		relative_position_id = GEACPS_GBR_104
-		prerequisite = { focus = GEACPS_GBR_104 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_106
-		icon = GFX_goal_unknown
-		x = 0
-		y = 2
-		relative_position_id = GEACPS_GBR_105
-		prerequisite = { focus = GEACPS_GBR_105 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_107
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_106
-		prerequisite = { focus = GEACPS_GBR_106 }
-		prerequisite = { focus = GEACPS_GBR_110}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_108
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_GBR_102
-		prerequisite = { focus = GEACPS_GBR_102 }
-		mutually_exclusive = { focus = GEACPS_GBR_104 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_109
-		icon = GFX_goal_unknown
-		x = 0
-		y = 2
-		relative_position_id = GEACPS_GBR_108
-		prerequisite = { focus = GEACPS_GBR_108 }
-
-		completion_reward ={
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_110
-		icon = GFX_goal_unknown
-		x = 0
-		y = 2
-		relative_position_id = GEACPS_GBR_109
-		prerequisite = { focus = GEACPS_GBR_109 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_111
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_GBR_103
-		prerequisite = { focus = GEACPS_GBR_103 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_112
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_111
-		prerequisite = { focus = GEACPS_GBR_111 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_113
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_103
-		prerequisite = { focus = GEACPS_GBR_103 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_114
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_113
-		prerequisite = { focus = GEACPS_GBR_113 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_115
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_112
-		prerequisite = { focus = GEACPS_GBR_112 }
-		prerequisite = { focus = GEACPS_GBR_114 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_116
-		icon = GFX_goal_unknown
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_GBR_115
-		prerequisite = { focus = GEACPS_GBR_115 }
-		mutually_exclusive = { focus = GEACPS_GBR_117 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_117
-		icon = GFX_goal_unknown 
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_115
-		prerequisite = { focus = GEACPS_GBR_115 }
-		mutually_exclusive = { focus = GEACPS_GBR_116 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_118
-		icon = GFX_goal_unknown
-		x = 3
-		y = 1
-		relative_position_id = GEACPS_GBR_106
-		prerequisite = {
-			focus = GEACPS_GBR_106
-			focus = GEACPS_GBR_110
-		}
-		prerequisite = {
-			focus = GEACPS_GBR_116
-			focus = GEACPS_GBR_117
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_119
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_114
-		prerequisite = { focus = GEACPS_GBR_114 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_120
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_119
-		prerequisite = { focus = GEACPS_GBR_119 }
-		prerequisite = { focus = GEACPS_GBR_127 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_121
-		icon = GFX_goal_unknown
-		x = 3
-		y = 1
-		relative_position_id = GEACPS_GBR_100
-		prerequisite = { focus = GEACPS_GBR_100 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_122
-		icon = GFX_goal_unknown
-		x = -4
-		y = 1
-		relative_position_id = GEACPS_GBR_121
-		prerequisite = { focus = GEACPS_GBR_121 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_123
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_122
-		prerequisite = { focus = GEACPS_GBR_122 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_124
-		icon = GFX_goal_unknown
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_GBR_121
-		prerequisite = { focus = GEACPS_GBR_121 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_125
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_124
-		prerequisite = { focus = GEACPS_GBR_124 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_126
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_GBR_125
-		prerequisite = { focus = GEACPS_GBR_125 }
-
-		completion_reward = {
-
-		}
-	}
-	
-	focus = {
-		id = GEACPS_GBR_127
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_126
-		prerequisite = { focus = GEACPS_GBR_125 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_128
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_127
-		prerequisite = { focus = GEACPS_GBR_126 }
-		prerequisite = { focus = GEACPS_GBR_119 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_129
-		icon = GFX_goal_unknown
-		x = 3
-		y = 1
-		relative_position_id = GEACPS_GBR_120
-		prerequisite = { focus = GEACPS_GBR_120 }
-		prerequisite = { focus = GEACPS_GBR_128 }
-
-		completion_reward ={
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_130
-		icon = GFX_goal_unknown
-		x = 2
-		y = 1
-		relative_position_id = GEACPS_GBR_125
-		prerequisite = { focus = GEACPS_GBR_125 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_131
-		icon = GFX_goal_unknown
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_GBR_130
-		prerequisite = { focus = GEACPS_GBR_130 }
-		mutually_exclusive = { focus = GEACPS_GBR_133 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_132
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_131
-		prerequisite = { focus = GEACPS_GBR_131 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_133
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_130
-		prerequisite = { focus = GEACPS_GBR_130 }
-		mutually_exclusive = { focus = GEACPS_GBR_131 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_134
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_133
-		prerequisite = { focus = GEACPS_GBR_133 }
-
-		completion_reward ={
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_135
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_121
-		prerequisite = { focus = GEACPS_GBR_121 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_136
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_135
-		prerequisite = { focus = GEACPS_GBR_135 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_137
-		icon = GFX_goal_unknown
-		x = 2
-		y = 1
-		relative_position_id = GEACPS_GBR_121
-		prerequisite = { focus = GEACPS_GBR_121 }
-		mutually_exclusive = {
-			focus = GEACPS_GBR_142
-			focus = GEACPS_GBR_146
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_138
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_137
-		prerequisite = { focus = GEACPS_GBR_137 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_139
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_138
-		prerequisite = { focus = GEACPS_GBR_138 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_140
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_139
-		prerequisite = {
-			focus = GEACPS_GBR_139
-			focus = GEACPS_GBR_144
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_141
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_140
-		prerequisite = { focus = GEACPS_GBR_140 }
-		prerequisite = { focus = GEACPS_GBR_145 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_142
-		icon = GFX_goal_unknown
-		x = 4
-		y = 1
-		relative_position_id = GEACPS_GBR_121
-		prerequisite = { focus = GEACPS_GBR_121 }
-		mutually_exclusive = {
-			focus = GEACPS_GBR_137
-			focus = GEACPS_GBR_146
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_143
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_142
-		prerequisite = { focus = GEACPS_GBR_142 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_144
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_143
-		prerequisite = { focus = GEACPS_GBR_143 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_145
-		icon = GFX_goal_unknown
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_GBR_144
-		prerequisite = {
-			focus = GEACPS_GBR_144
-			focus = GEACPS_GBR_148
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_146
-		icon = GFX_goal_unknown
-		x = 6
-		y = 1
-		relative_position_id = GEACPS_GBR_121
-		prerequisite = { focus = GEACPS_GBR_121 }
-		mutually_exclusive = {
-			focus = GEACPS_GBR_137
-			focus = GEACPS_GBR_142
-		}
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_147
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_146
-		prerequisite = { focus = GEACPS_GBR_146 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_GBR_148
-		icon = GFX_goal_unknown
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_GBR_147
-		prerequisite = { focus = GEACPS_GBR_147 }
-
-		completion_reward = {
-
-		}
-	}
+}
+
+shared_focus = {
+	id = GBR_introduction_of_modern_catapults
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_introduction_of_modern_catapults"
+	}
+	relative_position_id = GBR_aircraft_carrier_reinforcement
+	prerequisite = { focus = GBR_aircraft_carrier_reinforcement }
+}
+
+shared_focus = {
+	id = GBR_search_for_ideal_navigation_configuration
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_search_for_ideal_navigation_configuration"
+	}
+	relative_position_id = GBR_introduction_of_modern_catapults
+	prerequisite = { focus = GBR_introduction_of_modern_catapults }
+}
+
+shared_focus = {
+	id = GBR_britannia_rule_the_oceans
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_britannia_rule_the_oceans"
+	}
+	relative_position_id = GBR_search_for_ideal_navigation_configuration
+	prerequisite = {
+		focus = GBR_search_for_ideal_navigation_configuration
+		focus = GBR_specialization_in_maritime_hegemony
+	}
+}
+
+shared_focus = {
+	id = GBR_maintaining_vanguard
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_maintaining_vanguard"
+	}
+	relative_position_id = GBR_redesign_of_large_vessels
+	prerequisite = { focus = GBR_redesign_of_large_vessels }
+	mutually_exclusive = { focus = GBR_aircraft_carrier_reinforcement }
+}
+
+shared_focus = {
+	id = GBR_battleships_have_not_yet_decayed
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_battleships_have_not_yet_decayed"
+	}
+	relative_position_id = GBR_maintaining_vanguard
+	prerequisite = { focus = GBR_maintaining_vanguard }
+}
+
+shared_focus = {
+	id = GBR_specialization_in_maritime_hegemony
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_specialization_in_maritime_hegemony"
+	}
+	relative_position_id = GBR_battleships_have_not_yet_decayed
+	prerequisite = { focus = GBR_battleships_have_not_yet_decayed }
+}
+
+shared_focus = {
+	id = GBR_doctrine_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus GBR_doctrine_development"
+	}
+	relative_position_id = GBR_dover_exercise
+	prerequisite = { focus = GBR_dover_exercise }
 }
