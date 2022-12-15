@@ -49,6 +49,13 @@ scss_set_stock = {#essential temp variables add_country and add_value
 			has_variable = add_value	
 			check_variable = { global.scss_total_stocks < global.scss_stock_issue_total }
 		}
+		set_temp_variable = { temp_add_amount = global.scss_stock_issue_total }
+		substract_from_temp_variable = { temp_add_amount = global.scss_total_stocks }
+		if = {
+			limit = { check_variable = { temp_add_amount < 0 } }
+			multiply_variable = { temp_add_amount = -1 }
+			set_temp_variable = { add_country = temp_add_amount }
+		}
 		if = {
 			limit = { is_in_array = { global.scss_country_list = add_country } }
 			for_each_loop = {
@@ -139,16 +146,12 @@ scss_set_pie_chart = {
 
 	clear_array = global.scss_pie_chart_array
 	#create array
-	set_temp_variable = { global.ratio_total = 0 }
-
 	for_each_loop = {
 		array = global.scss_ratio_list
 		value = stock_value
 		index = color_index
 		set_variable = { global.frame_temp = color_index }
 		add_to_variable = { global.frame_temp = 1 }
-		add_temp_variable = { global.ratio_total = stock_value }
-		log = "合計[?ratio_total]"
 		for_loop_effect = {
 			start = 0
 			end = stock_value
