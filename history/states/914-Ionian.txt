@@ -1,22 +1,22 @@
 state = {
 	id = 914
 	name = "STATE_914"
-	manpower = 7600
+	manpower = 6930
 	state_category = small_island
 	
 	history = {
 		owner = GRE
 		add_core_of = GRE
 		BLK = {	debug_core = yes	}
+		ION = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		victory_points = {	10203	1	}
-		set_variable = {	GRE_state_variable = 1	}
+		set_variable = {	ION_state_variable = 1	}
 	}
 	
 	provinces = {
-		1106	10203
+		1106
 	}
 	local_supplies = 0.0
 }
