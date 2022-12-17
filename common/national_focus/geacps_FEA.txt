@@ -155,6 +155,7 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FEA_to_lifetime_presidency"
 		add_ideas = FEA_president_system
+		remove_ideas = FEA_reactionary_politics
 	}
 	relative_position_id = FEA_promulgation_of_our_own_constitution
 	prerequisite = { focus = FEA_promulgation_of_our_own_constitution }
@@ -245,6 +246,7 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus FEA_free_behavior"
+		remove_ideas = FEA_reactionary_politics
 	}
 	relative_position_id = FEA_democratic_coup_dtat
 	prerequisite = { focus = FEA_democratic_coup_dtat }

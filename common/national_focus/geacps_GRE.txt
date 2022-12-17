@@ -8,13 +8,13 @@ focus_tree = {
 		}
 	}
 	default = no
-	shared_focus = GRE_civil_war
+	shared_focus = GRE_civil_war_start
 	shared_focus = GRE_end_of_civil_war
-	initial_show_position = {	focus = GRE_civil_war	}
+	initial_show_position = {	focus = GRE_civil_war_start	}
 }
 
 shared_focus = {
-	id = GRE_civil_war
+	id = GRE_civil_war_start
 	icon = GFX_generic_suspend_constitution
 	cost = 20
 	x = 17
@@ -24,8 +24,8 @@ shared_focus = {
 	}
 	cancelable = no
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus GRE_civil_war"
-		country_event = GRE.0
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_civil_war_start"
+		country_event = GRE_civil_war.0
 	}
 }
 
@@ -43,8 +43,8 @@ shared_focus = {
 		load_focus_tree = GRE_kingdom_civil_war_focus_tree
 		mark_focus_tree_layout_dirty = yes
 	}
-	relative_position_id = GRE_civil_war
-	prerequisite = { focus = GRE_civil_war }
+	relative_position_id = GRE_civil_war_start
+	prerequisite = { focus = GRE_civil_war_start }
 	mutually_exclusive = {	focus = GRE_provisional_democratic_government_of_greece	}
 }
 
@@ -62,8 +62,8 @@ shared_focus = {
 		load_focus_tree = GRE_provisional_democratic_government_civil_war_focus_tree
 		mark_focus_tree_layout_dirty = yes
 	}
-	relative_position_id = GRE_civil_war
-	prerequisite = { focus = GRE_civil_war }
+	relative_position_id = GRE_civil_war_start
+	prerequisite = { focus = GRE_civil_war_start }
 	mutually_exclusive = {	focus = GRE_kingdom_of_greece	}
 }
 
