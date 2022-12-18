@@ -20,19 +20,18 @@ scss_first_setting = {
 	set_variable =  { global.scss_stock_issue_total = 200 }
 
 	#first stockholders
-	set_temp_variable = { add_country = ENG }
-	set_temp_variable = { add_value = 40 }
+	set_temp_variable = { add_country = GBR }
+	set_temp_variable = { add_value = 80 }
 	scss_set_stock = yes
 	set_temp_variable = { add_country = FRA }
-	set_temp_variable = { add_value = 40 }
+	set_temp_variable = { add_value = 80 }
 	scss_set_stock = yes
-	set_temp_variable = { add_country = SOV }
+	set_temp_variable = { add_country = EGY }
 	set_temp_variable = { add_value = 20 }
 	scss_set_stock = yes
-	set_temp_variable = { add_country = JAP }
-	set_temp_variable = { add_value = 10 }
+	set_temp_variable = { add_country = ITA }
+	set_temp_variable = { add_value = 20 }
 	scss_set_stock = yes
-
 	for_each_loop = {
 		array = global.scss_country_list
 		value = stock_value
@@ -47,52 +46,61 @@ scss_set_stock = {#essential temp variables add_country and add_value
 		limit = {
 			has_variable = add_country
 			has_variable = add_value	
-			check_variable = { global.scss_total_stocks < global.scss_stock_issue_total }
 		}
-		set_temp_variable = { temp_add_amount = global.scss_stock_issue_total }
-		substract_from_temp_variable = { temp_add_amount = global.scss_total_stocks }
-		if = {
-			limit = { check_variable = { temp_add_amount < 0 } }
-			multiply_variable = { temp_add_amount = -1 }
-			set_temp_variable = { add_country = temp_add_amount }
+		set_temp_variable = { temp_surplus = global.scss_stock_issue_total }
+		subtract_from_temp_variable = { temp_surplus = global.scss_total_stocks }
+		if = {#増加かつ余剰がない
+			limit = {
+				check_variable = { add_value > 0 }
+				NOT = { check_variable = { temp_surplus = 0 }}		
+			}
+			log = "余りなんてないよ"
 		}
-		if = {
-			limit = { is_in_array = { global.scss_country_list = add_country } }
-			for_each_loop = {
-				array = scss_country_list
-				value = v_tag
-				index = i_value
-				if = { 
-					limit = { check_variable = { v_tag = add_country } }
-					add_to_variable = { scss_value_list^i_value = add_value }
-					if = {
-						limit = { check_variable = { scss_value_list^i_value < 0 } }
-						var:global.scss_country_list^i_value = {
-							remove_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
-							SCZ = { give_military_access = PREV }
-						}
-						add_to_variable = { global.scss_stock_holders = -1 }
-						remove_from_array = {
-							array = global.scss_country_list
-							index = i_value
-						}
-						remove_from_array = {
-							array = global.scss_value_list
-							index = i_value
-						}
+		else = {
+			if = {#増加量<=余剰
+				limit = { check_variable = { add_value > temp_surplus } }
+				set_temp_variable = { add_value = temp_surplus }
+			}
+			if = {#既にある国家
+				limit = { is_in_array = { global.scss_country_list = add_country } }
+				custom_effect_tooltip = tt_scss_scss_change_stock
+				for_each_loop = {#国家リストからif文で探し出す
+					array = scss_country_list
+					value = v_tag
+					index = i_value
+					if = { 
+						limit = { check_variable = { v_tag = add_country } }
+						add_to_variable = { scss_value_list^i_value = add_value }
+						if = {
+							limit = { check_variable = { scss_value_list^i_value < 0 } }
+							var:global.scss_country_list^i_value = {
+								remove_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+								SCZ = { give_military_access = PREV }
+							}
+							add_to_variable = { global.scss_stock_holders = -1 }
+							remove_from_array = {
+								array = global.scss_country_list
+								index = i_value
+							}
+							remove_from_array = {
+								array = global.scss_value_list
+								index = i_value
+							}
 
+						}
 					}
 				}
 			}
-		}
-		else_if = {
-			limit = { check_variable = { add_value > 0 } }
-			add_to_array = { global.scss_country_list = add_country }
-			add_to_array = { global.scss_value_list = add_value }	
-			add_to_array = { global.scss_ratio_list = 0 }	
-			add_to_variable = { global.scss_stock_holders = 1 }
-			add_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
-			SCZ = { give_military_access = var:add_country }
+			else_if = {#新規追加
+				limit = { check_variable = { add_value > 0 } }
+				custom_effect_tooltip = tt_scss_scss_set_stock
+				add_to_array = { global.scss_country_list = add_country }
+				add_to_array = { global.scss_value_list = add_value }	
+				add_to_array = { global.scss_ratio_list = 0 }	
+				add_to_variable = { global.scss_stock_holders = 1 }
+				add_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+				SCZ = { give_military_access = var:add_country }
+			}
 		}
 		scss_calculate_stock_ratio = yes
 	}

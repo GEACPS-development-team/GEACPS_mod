@@ -1,7 +1,7 @@
 guiTypes = {
 	containerWindowType = {
 		name = "geacps_scss_gui"
-		size = { width = 500 height = 350 }
+		size = { width = 500 height = 210 }
 		position = { x = 0 y = 0 }
 		# background = {
 		# 	name = "Background"
@@ -9,18 +9,48 @@ guiTypes = {
 		# }
 
 		instantTextboxType = {
-			name = "scss_title"
-			position = { x = 20 y = 10 }
+			name = "scss_stock_amount"
+			position = { x = 20 y = -5 }
 			font = "hoi_18mbs"
-			text = "現在[?global.scss_total_stocks]/[?global.scss_stock_issue_total] [?global.scss_stock_holders]ヶ国"
-			maxWidth = 460
+			text = "scss_stock_amount"
+			maxWidth = 300
+			maxHeight = 50
+			format = centre
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "scss_country_amount"
+			position = { x = 320 y = -5 }
+			font = "hoi_18mbs"
+			text = "scss_country_amount"
+			maxWidth = 200
+			maxHeight = 50
+			format = centre
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "scss_title_country_name"
+			position = { x = 170 y = 17 }
+			font = "hoi_18mbs"
+			text = "scss_title_country_name"
+			maxWidth = 200
+			maxHeight = 50
+			format = centre
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "scss_title_stock_ratio"
+			position = { x = 370 y = 17 }
+			font = "hoi_18mbs"
+			text = "scss_title_stock_ratio"
+			maxWidth = 100
 			maxHeight = 50
 			format = centre
 			fixedsize = yes
 		}
 		containerWindowType = {#円グラフ
 			name = "scss_pie_chart"
-			size = { width = 150 height = 150 }
+			size = { width = 150 height = 125 }
 			position = { x = 10 y = 50 }
 
 			# iconType = {
@@ -59,15 +89,15 @@ guiTypes = {
 		}
 		containerWindowType = {#可動範囲
 			name = "scss_stockholder_list"
-			size = { width = 340 height = 200 }
-			position = { x = 160 y = 50 }
+			size = { width = 340 height = 170 }
+			position = { x = 160 y = 35 }
 			background = {
 				name = "Background_rules"
 				quadTextureSprite = "GFX_tiled_decisions_bg_small"
 			}
 
 			verticalScrollbar = "right_vertical_slider"
-			margin = {top=0 left=0 bottom=0 right=0}
+			margin = {top=6 left=0 bottom=6 right=0}
 
 			gridBoxType = {
 				name = "scss_stockholder_list_gridbox"
@@ -98,7 +128,7 @@ guiTypes = {
 			name = "scss_stock_holder_country_stock_value"
 			position = { x = 200 y = 10 }
 			font = "hoi_18mbs"
-			text = "[?global.scss_ratio_list^i|1]"
+			text = "[?global.scss_ratio_list^i|1]%"
 			maxWidth = 100
 			maxHeight = 24
 			format = centre

@@ -1,5 +1,5 @@
 suez_canal_system = {
-    debug_suez_canal_system_first_setting = {	#ソマリアにおける統治権の委譲
+    debug_suez_canal_system_first_setting = {	#debug
         priority = 100
         icon = generic_decision
         available = {
@@ -9,5 +9,115 @@ suez_canal_system = {
             scss_first_setting = yes
         }
     }
+    ##株を買う
+    scss_buy_stock = {	#株を購入
+        priority = 100
+        icon = generic_decision
+        available = {
+            is_in_array = { global.scss_country_list = ROOT }
+        }
+        visible = { 
+            check_variable = { global.scss_total_stocks < global.scss_stock_issue_total }
+        }
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_all"
+            set_temp_variable = { add_country = ROOT }
+            set_temp_variable = { add_value = 10 }
+            scss_set_stock = yes
+        }
+    }
+	scss_buy_stock_from_stockholder = { #保有国から株を購入
+		icon = ignite_civil_war
+		available = {
+		}
+		visible = {
+		}
+		target_array = global.scss_country_list
+		target_trigger = {
+            FROM = {
+                NOT = { tag = ROOT }
+                has_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+            }
+		}
+        days_re_enable = 30
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+		}
+		complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_for_stockholder [FROM.GetName]"
+            set_temp_variable = { add_country = FROM }
+            set_temp_variable = { add_value = -10 }
+            scss_set_stock = yes
+            set_temp_variable = { add_country = ROOT }
+            set_temp_variable = { add_value = 10 }
+            scss_set_stock = yes
+
+		}
+	}
+
+    ##保有国
+    scss_sell_stock_all = {	#すべて売却
+        priority = 100
+        icon = generic_decision
+        available = {
+            is_in_array = { global.scss_country_list = ROOT }
+        }
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_all"
+            set_temp_variable = { add_country = ROOT }
+            set_temp_variable = { add_value = global.scss_total_stocks }
+            scss_set_stock = yes
+        }
+    }
+    scss_sell_stock_10 = {	#一部を売却
+        priority = 100
+        icon = generic_decision
+        available = {
+        }
+        visible = {
+            is_in_array = { global.scss_country_list = ROOT }
+		}
+        complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_10"
+
+            set_temp_variable = { add_country = ROOT }
+            set_temp_variable = { add_value = -10 }
+            scss_set_stock = yes
+        }
+    }
+	scss_sell_stock_for_stockholder = { #株の売却(保有国へ)
+		icon = ignite_civil_war
+		available = {
+		}
+		visible = {
+            is_in_array = { global.scss_country_list = ROOT }
+            has_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+		}
+		target_array = global.scss_country_list
+		target_trigger = {
+            FROM = {
+                NOT = { tag = ROOT }
+                has_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+            }
+		}
+        days_re_enable = 30
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+		}
+		complete_effect = {
+            log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_for_stockholder [FROM.GetName]"
+            set_temp_variable = { add_country = FROM }
+            set_temp_variable = { add_value = 10 }
+            scss_set_stock = yes
+            set_temp_variable = { add_country = ROOT }
+            set_temp_variable = { add_value = -10 }
+            scss_set_stock = yes
+
+		}
+	}
 
 }
