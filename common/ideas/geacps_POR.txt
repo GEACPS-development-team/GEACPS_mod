@@ -1,0 +1,39 @@
+ideas = {	#既存国民精神
+	country = {
+		POR_estado_novo = {	#エスタド・ノヴォ
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			picture = GFX_idea_POR_estado_novo
+			modifier = {
+				political_advisor_cost_factor = 0.5
+				authoritative_democracy_drift = 0.04
+				total_socialism_drift = -0.01
+				radical_socialism_drift = -0.01
+				social_democracy_drift = -0.01
+				liberal_democracy_drift = -0.01
+				war_support_weekly = 0.01
+			}
+		}
+		POR_portuguese_youth = {	#ポルトガル青年団
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			picture = GFX_idea_POR_portuguese_youth
+			modifier = {}
+		}
+		POR_movement_of_democratic_unity = {	#民主主義統一運動
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			picture = GFX_idea_POR_movement_of_democratic_unity
+			modifier = {
+				stability_factor = -0.05
+				total_socialism_drift = 0.01
+				radical_socialism_drift = 0.01
+				social_democracy_drift = 0.01
+				liberal_democracy_drift = 0.01
+			}
+		}
+	}
+}

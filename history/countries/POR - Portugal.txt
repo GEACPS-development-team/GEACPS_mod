@@ -19,10 +19,37 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 0
 }
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+illegalization_of_social_democracy_party = yes
+illegalization_of_liberal_democracy_party = yes
+set_party_name = {	#国家連合党
+	ideology = conservative_democracy
+	name = PARTY_national_union
+	long_name = PARTY_national_union_long
+}
+set_party_name = {	#国家連合党
+	ideology = authoritative_democracy
+	name = PARTY_national_union
+	long_name = PARTY_national_union_long
+}
+set_party_name = {	#国家連合党
+	ideology = national_authoritarianism
+	name = PARTY_national_union
+	long_name = PARTY_national_union_long
+}
+set_party_name = {	#国家連合党
+	ideology = national_populism
+	name = PARTY_national_union
+	long_name = PARTY_national_union_long
+}
 
 recruit_character = CHARACTER_antonio_oscar_fragoso_carmona
 
-add_ideas = {	#政治タブ
+add_ideas = {
 	republic_unitary_state
 	civilian_dictatorial_system
+	POR_estado_novo
+	POR_portuguese_youth
+	POR_movement_of_democratic_unity
 }
