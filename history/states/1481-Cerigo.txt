@@ -1,0 +1,23 @@
+state = {
+	id = 1481
+	name = "STATE_1481"
+	manpower = 234
+	buildings_max_level_factor = 1
+	state_category = small_island
+	
+	history = {
+		owner = GRE
+		add_core_of = GRE
+		BLK = {	debug_core = yes	}
+		ION = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+		}
+		set_variable = {	ION_state_variable = 1	}
+	}
+	
+	provinces = {
+		13462
+	}
+	local_supplies = 0.0
+}

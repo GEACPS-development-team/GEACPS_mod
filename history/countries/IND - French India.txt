@@ -17,6 +17,11 @@ create_dynamic_country = {
 		ideology = national_authoritarianism_ideology
 	}
 	
+	add_ideas = {	#政治タブ
+		unitary_dependent_territory
+		dependent_territory_direct_rule_system
+	}
+	
 	every_core_state = {	remove_core_of = PREV	}
 	320 = {	set_owner_and_core_of = yes	}
 	1172 = {	set_owner_and_core_of = yes	}

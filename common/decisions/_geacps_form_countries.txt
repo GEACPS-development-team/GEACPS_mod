@@ -56,4 +56,41 @@ formation_decisions = {
 			}
 		}
 	}
+	form_GRE_GBR = {
+		visible = {
+			original_tag = GBR
+			has_global_flag = GRE_civil_war_start_flag
+			any_subject_country = {
+				tag = AEG
+				has_autonomy_state = protected_territory
+			}
+			any_subject_country = {
+				tag = CRE
+				has_autonomy_state = protected_territory
+			}
+			any_subject_country = {
+				tag = ION
+				has_autonomy_state = protected_territory
+			}
+		}
+		available = {
+			original_tag = GBR
+			has_global_flag = GRE_civil_war_start_flag
+			any_subject_country = {
+				tag = AEG
+				has_autonomy_state = protected_territory
+			}
+			any_subject_country = {
+				tag = CRE
+				has_autonomy_state = protected_territory
+			}
+			any_subject_country = {
+				tag = ION
+				has_autonomy_state = protected_territory
+			}
+		}
+		complete_effect = {
+			country_event = GRE_civil_war.22
+		}
+	}
 }
