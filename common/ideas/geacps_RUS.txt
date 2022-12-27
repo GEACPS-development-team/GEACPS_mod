@@ -80,5 +80,19 @@ ideas = {	#既存国民精神
 				war_support_factor = -0.1
 			}
 		}
+		RUS_czars_family_in_exile = {	#亡命中の皇帝一家
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
 	}
 }
