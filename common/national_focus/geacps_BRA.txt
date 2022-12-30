@@ -11,11 +11,11 @@ focus_tree = {
 		x = 30 y = 1100
 	}
 	default = no
-	shared_focus = BRA_launch_of_the_aslte_programme
+	shared_focus = BRA_launch_of_the_salte_programme
 }
 
 shared_focus = {
-	id = BRA_launch_of_the_aslte_programme
+	id = BRA_launch_of_the_salte_programme
 	icon = GFX_goal_unknown
 	cost = 6
 	x = 5
@@ -24,7 +24,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus BRA_launch_of_the_aslte_programme"
+		log = "[GetDateText]: [Root.GetName]: Focus BRA_launch_of_the_salte_programme"
 		country_event = BRA.1
 	}
 }
@@ -46,8 +46,8 @@ shared_focus = {
 		}
 		illegalization_of_total_socialism_party = yes
 	}
-	relative_position_id = BRA_launch_of_the_aslte_programme
-	prerequisite = { focus = BRA_launch_of_the_aslte_programme }
+	relative_position_id = BRA_launch_of_the_salte_programme
+	prerequisite = { focus = BRA_launch_of_the_salte_programme }
 }
 
 shared_focus = {
@@ -334,7 +334,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BRA_aslte_programs_sea
+	id = BRA_salte_programs_sea
 	icon = GFX_goal_unknown
 	cost = 6
 	x = 1
@@ -343,7 +343,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus BRA_aslte_programs_sea"
+		log = "[GetDateText]: [Root.GetName]: Focus BRA_salte_programs_sea"
 		navy_experience = 50
 		random_owned_state = {
 			add_extra_state_shared_building_slots = 2
@@ -378,8 +378,8 @@ shared_focus = {
 			}
 		}
 	}
-	relative_position_id = BRA_aslte_programs_sea
-	prerequisite = { focus = BRA_aslte_programs_sea }
+	relative_position_id = BRA_salte_programs_sea
+	prerequisite = { focus = BRA_salte_programs_sea }
 }
 
 shared_focus = {
@@ -446,8 +446,8 @@ shared_focus = {
 			category = dd_tech
 		}
 	}
-	relative_position_id = BRA_aslte_programs_sea
-	prerequisite = { focus = BRA_aslte_programs_sea }
+	relative_position_id = BRA_salte_programs_sea
+	prerequisite = { focus = BRA_salte_programs_sea }
 }
 
 shared_focus = {
@@ -474,7 +474,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = BRA_aslte_sky_programme
+	id = BRA_salte_sky_programme
 	icon = GFX_goal_unknown
 	cost = 6
 	x = -1
@@ -483,7 +483,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus BRA_aslte_sky_programme"
+		log = "[GetDateText]: [Root.GetName]: Focus BRA_salte_sky_programme"
 		air_experience = 50
 		random_owned_state = {
 			add_building_construction = {
@@ -515,8 +515,8 @@ shared_focus = {
 			category = light_fighter
 		}
 	}
-	relative_position_id = BRA_aslte_sky_programme
-	prerequisite = { focus = BRA_aslte_sky_programme }
+	relative_position_id = BRA_salte_sky_programme
+	prerequisite = { focus = BRA_salte_sky_programme }
 }
 
 shared_focus = {
@@ -581,8 +581,8 @@ shared_focus = {
 			category = cas_bomber
 		}
 	}
-	relative_position_id = BRA_aslte_sky_programme
-	prerequisite = { focus = BRA_aslte_sky_programme }
+	relative_position_id = BRA_salte_sky_programme
+	prerequisite = { focus = BRA_salte_sky_programme }
 }
 
 shared_focus = {
