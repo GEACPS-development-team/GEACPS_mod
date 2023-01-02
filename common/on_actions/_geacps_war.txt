@@ -1,13 +1,13 @@
 on_actions = {
-	on_capitulation_immediate = {
+	on_civil_war_end = {
 		effect = {
-			log = "[GetDateText]: _geacps_war on_capitulation_immediate"
+			log = "[GetDateText]: _geacps_war on_civil_war_end"
 			if = {
 				limit = {
 					has_global_flag = GRE_civil_war_start_flag
-					ROOT = {	original_tag = GRE	has_cosmetic_tag = GRE_provisional_democratic_government	}
+					FROM = {	original_tag = GRE	has_cosmetic_tag = GRE_provisional_democratic_government	}
 				}
-				FROM = {
+				ROOT = {
 					load_focus_tree = GRE_kingdom_focus_tree
 					mark_focus_tree_layout_dirty = yes
 					set_cosmetic_tag = GRE_kingdom
@@ -19,9 +19,9 @@ on_actions = {
 			else_if = {
 				limit = {
 					has_global_flag = GRE_civil_war_start_flag
-					ROOT = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+					FROM = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
 				}
-				FROM = {
+				ROOT = {
 					load_focus_tree = GRE_republic_focus_tree
 					mark_focus_tree_layout_dirty = yes
 				}
