@@ -1793,24 +1793,24 @@ release_country_cosmetic = {
 			set_cosmetic_tag = CRO_federal_state
 		}
 		else_if = {	#クロアチア、スラボニア及びダルマチア王国
-			limit = {	ROOT = {	has_country_flag = CROandSLAandDAL_kingdom_flag	}	}
+			limit = {	ROOT = {	has_country_flag = CROandSLNandDAL_kingdom_flag	}	}
 			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = CROandSLAandDAL_kingdom
+			set_cosmetic_tag = CROandSLNandDAL_kingdom
 		}
 		else_if = {	#クロアチア、スラボニア及びダルマチア共和国
-			limit = {	ROOT = {	has_country_flag = CROandSLAandDAL_republic_flag	}	}
+			limit = {	ROOT = {	has_country_flag = CROandSLNandDAL_republic_flag	}	}
 			add_ideas = republic_unitary_state
-			set_cosmetic_tag = CROandSLAandDAL_republic
+			set_cosmetic_tag = CROandSLNandDAL_republic
 		}
 		else_if = {	#クロアチア及びスラボニア王国
-			limit = {	ROOT = {	has_country_flag = CROandSLA_kingdom_flag	}	}
+			limit = {	ROOT = {	has_country_flag = CROandSLN_kingdom_flag	}	}
 			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = CROandSLA_kingdom
+			set_cosmetic_tag = CROandSLN_kingdom
 		}
 		else_if = {	#クロアチア及びスラボニア共和国
-			limit = {	ROOT = {	has_country_flag = CROandSLA_republic_flag	}	}
+			limit = {	ROOT = {	has_country_flag = CROandSLN_republic_flag	}	}
 			add_ideas = republic_unitary_state
-			set_cosmetic_tag = CROandSLA_republic
+			set_cosmetic_tag = CROandSLN_republic
 		}
 	}
 	else_if = {	#CSC
@@ -5842,12 +5842,12 @@ release_country_cosmetic = {
 			set_cosmetic_tag = SKH_republic
 		}
 	}
-	else_if = {	#SLA
-		limit = {	tag = SLA	}
+	else_if = {	#SLN
+		limit = {	tag = SLN	}
 		if = {	#スラボニア王国
-			limit = {	ROOT = {	has_country_flag = SLA_kingdom_flag	}	}
+			limit = {	ROOT = {	has_country_flag = SLN_kingdom_flag	}	}
 			add_ideas = monarchy_unitary_state
-			set_cosmetic_tag = SLA_kingdom
+			set_cosmetic_tag = SLN_kingdom
 		}
 	}
 	else_if = {	#SLC
@@ -7019,17 +7019,17 @@ release_country_cosmetic = {
 			set_cosmetic_tag = ZAN_peoples_republic
 		}
 	}
-	else_if = {	#ZAP
-		limit = {	tag = ZAP	}
+	else_if = {	#ZPR
+		limit = {	tag = ZPR	}
 		if = {	#ザポロージャ共和国
-			limit = {	ROOT = {	has_country_flag = ZAP_republic_flag	}	}
+			limit = {	ROOT = {	has_country_flag = ZPR_republic_flag	}	}
 			add_ideas = republic_unitary_state
-			set_cosmetic_tag = ZAP_republic
+			set_cosmetic_tag = ZPR_republic
 		}
 		else_if = {	#ザポロージャ・コサック共和国
-			limit = {	ROOT = {	has_country_flag = ZAP_cossack_republic_flag	}	}
+			limit = {	ROOT = {	has_country_flag = ZPR_cossack_republic_flag	}	}
 			add_ideas = republic_unitary_state
-			set_cosmetic_tag = ZAP_cossack_republic
+			set_cosmetic_tag = ZPR_cossack_republic
 		}
 	}
 	else_if = {	#ZHE

@@ -350,7 +350,7 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = CHL_launch_of_the_serena_project
+	id = CHL_launch_of_the_plan_serena
 	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
@@ -359,7 +359,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus CHL_launch_of_the_serena_project"
+		log = "[GetDateText]: [Root.GetName]: Focus CHL_launch_of_the_plan_serena"
 		country_event = CHL.4
 	}
 	relative_position_id = CHL_construction_of_a_sugar_processing_plant
@@ -381,5 +381,5 @@ shared_focus = {
 	}
 	relative_position_id = CHL_opening_of_iron_mines
 	prerequisite = { focus = CHL_opening_of_iron_mines }
-	prerequisite = { focus = CHL_launch_of_the_serena_project }
+	prerequisite = { focus = CHL_launch_of_the_plan_serena }
 }

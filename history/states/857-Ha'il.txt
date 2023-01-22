@@ -8,10 +8,12 @@ state = {
 	history = {
 		owner = SAU
 		add_core_of = SAU
+		HIL = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		set_variable = {	SAU_state_variable = 1	}
+		set_variable = {	HIL_state_variable = 1	}
 	}
 	
 	provinces = {

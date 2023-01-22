@@ -2,16 +2,17 @@ state = {
 	id = 1050
 	name = "STATE_1050"
 	manpower = 2342937
-	
 	state_category = wasteland
 	
 	history = {
 		owner = RUS
 		add_core_of = RUS
+		MRD = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		set_variable = {	RUS_state_variable = 1	}
+		set_variable = {	MRD_state_variable = 1	}
 	}
 	
 	provinces = {

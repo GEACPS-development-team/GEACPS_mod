@@ -1849,18 +1849,18 @@
 # 		ai_will_do = {	base = 100	}
 # 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_SER"	}
 # 	}
-# 	release_SLA = {	#SLA
+# 	release_SLN = {	#SLN
 # 		icon = generic_prepare_civil_war
 # 		cost = 0
 # 		available = {	hidden_trigger = {	always = yes	}	}
 # 		visible = {
 # 			if = {
-# 				limit = {	SLA = {	release_decision_trigger_1 = no	}	}
+# 				limit = {	SLN = {	release_decision_trigger_1 = no	}	}
 # 				if = {
 # 					limit = {	any_owned_core_claimed_state_ROOT = no	}
 # 					any_owned_state = {
 # 						is_not_core_and_claimed_state = yes
-# 						check_variable = {	SLA_state_variable = 1	}
+# 						check_variable = {	SLN_state_variable = 1	}
 # 					}
 # 					release_decision_trigger_BLK = no
 # 					release_decision_trigger_YUG = no
@@ -1870,9 +1870,9 @@
 # 			}
 # 			else = {	always = no	}
 # 		}
-# 		complete_effect = {	country_event = fate_of_SLA.1	}
+# 		complete_effect = {	country_event = fate_of_SLN.1	}
 # 		ai_will_do = {	base = 100	}
-# 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_SLA"	}
+# 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_SLN"	}
 # 	}
 # 	release_SLV = {	#SLV
 # 		icon = generic_prepare_civil_war
@@ -12561,18 +12561,18 @@
 # 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_ZAN"	}
 # 	}
 	
-# 	release_ZAP = {	#ZAP
+# 	release_ZPR = {	#ZPR
 # 		icon = generic_prepare_civil_war
 # 		cost = 0
 # 		available = {	hidden_trigger = {	always = yes	}	}
 # 		visible = {
 # 			if = {
-# 				limit = {	ZAP = {	release_decision_trigger_1 = no	}	}
+# 				limit = {	ZPR = {	release_decision_trigger_1 = no	}	}
 # 				if = {
 # 					limit = {	any_owned_core_claimed_state_ROOT = no	}
 # 					any_owned_state = {
 # 						is_not_core_and_claimed_state = yes
-# 						check_variable = {	ZAP_state_variable = 1	}
+# 						check_variable = {	ZPR_state_variable = 1	}
 # 					}
 # 					else = {	always = no	}
 # 				}
@@ -12580,9 +12580,9 @@
 # 			}
 # 			else = {	always = no	}
 # 		}
-# 		complete_effect = {	country_event = fate_of_ZAP.1	}
+# 		complete_effect = {	country_event = fate_of_ZPR.1	}
 # 		ai_will_do = {	base = 100	}
-# 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_ZAP"	}
+# 		remove_effect = {	log = "[GetDateText]: [Root.GetName]: decision release_ZPR"	}
 # 	}
 	
 # 	release_ZHI = {	#ZHI

@@ -3,7 +3,7 @@ country_event = {
 	id = CHL.1
 	title = CHL.1.t
 	desc = CHL.1.d
-	picture = GFX_event_test
+	picture = GFX_generic_election_country_event
 	
 	is_triggered_only = yes
 	
@@ -46,7 +46,7 @@ country_event = {
 	id = CHL.2
 	title = CHL.2.t
 	desc = CHL.2.d
-	picture = GFX_event_test
+	picture = GFX_generic_election_country_event
 	
 	is_triggered_only = yes
 	
@@ -60,7 +60,7 @@ country_event = {
 	id = CHL.3
 	title = CHL.3.t
 	desc = CHL.3.d
-	picture = GFX_event_test
+	picture = GFX_generic_ultimatum_country_event
 	
 	is_triggered_only = yes
 	
@@ -82,14 +82,14 @@ country_event = {
 	id = CHL.4
 	title = CHL.4.t
 	desc = CHL.4.d
-	picture = GFX_event_test
+	picture = GFX_CHL_plan_serena_country_event
 	
 	is_triggered_only = yes
 	
 	option = {
 		name = CHL.4.0
 		ai_chance = {	factor = 100	}
-		add_ideas = CHL_serena_project
+		add_ideas = CHL_plan_serena
 		random_owned_state = {
 			add_extra_state_shared_building_slots = 2
 			add_building_construction = {
@@ -104,7 +104,7 @@ country_event = {
 	id = CHL.5
 	title = CHL.5.t
 	desc = CHL.5.d
-	picture = GFX_event_test
+	picture = GFX_CHL_agrarian_reform_country_event
 	
 	is_triggered_only = yes
 	
@@ -117,7 +117,7 @@ country_event = {
 	id = CHL.6
 	title = CHL.6.t
 	desc = CHL.6.d
-	picture = GFX_event_test
+	picture = GFX_CHL_provincial_city_development_country_event
 	
 	is_triggered_only = yes
 	

@@ -7,10 +7,12 @@ state = {
 	history = {
 		owner = IRQ
 		add_core_of = IRQ
+		HIL = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		set_variable = {	IRQ_state_variable = 1	}
+		set_variable = {	HIL_state_variable = 1	}
 	}
 	
 	provinces = {

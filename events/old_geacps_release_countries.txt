@@ -18738,28 +18738,28 @@
 # 	}
 # }
 	
-# add_namespace = old_fate_of_SLA
+# add_namespace = old_fate_of_SLN
 # country_event = {
-# 	id = old_fate_of_SLA.0
-# 	title = old_fate_of_SLA.0.t
-# 	desc = old_fate_of_SLA.0.d
+# 	id = old_fate_of_SLN.0
+# 	title = old_fate_of_SLN.0.t
+# 	desc = old_fate_of_SLN.0.d
 # 	is_triggered_only = yes
 # 	hidden = yes
 # 	option = {
-# 		name = old_fate_of_SLA.0.0
+# 		name = old_fate_of_SLN.0.0
 # 		ai_chance = {	base = 10	}
 # 		hidden_effect = {
 # 			if = {
-# 				limit = {	country_exists = SLA	}
+# 				limit = {	country_exists = SLN	}
 # 				create_dynamic_country = {
-# 					original_tag = SLA
+# 					original_tag = SLN
 # 					clear_autonomous_states_variable = yes
 # 					every_state = {
 # 						limit = {
 # 							is_fully_controlled_by = ROOT
 # 							NOT = {	is_core_of = ROOT	}
 # 							NOT = {	is_claimed_by = ROOT	}
-# 							check_variable = {	SLA_state_variable = 1	}
+# 							check_variable = {	SLN_state_variable = 1	}
 # 						}
 # 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 # 					}
@@ -18769,14 +18769,14 @@
 # 				}
 # 			}
 # 			else = {
-# 				SLA = {
+# 				SLN = {
 # 					clear_autonomous_states_variable = yes
 # 					every_state = {
 # 						limit = {
 # 							is_fully_controlled_by = ROOT
 # 							NOT = {	is_core_of = ROOT	}
 # 							NOT = {	is_claimed_by = ROOT	}
-# 							check_variable = {	SLA_state_variable = 1	}
+# 							check_variable = {	SLN_state_variable = 1	}
 # 						}
 # 						PREV = {	transfer_state = PREV	add_state_core = PREV	}
 # 					}
@@ -18789,15 +18789,15 @@
 # 	}
 # }
 # country_event = {
-# 	id = old_fate_of_SLA.1
-# 	title = old_fate_of_SLA.1.t
-# 	desc = old_fate_of_SLA.1.d
+# 	id = old_fate_of_SLN.1
+# 	title = old_fate_of_SLN.1.t
+# 	desc = old_fate_of_SLN.1.d
 # 	is_triggered_only = yes
 	
 # 	option = {
-# 		name = old_fate_of_SLA.1.0
+# 		name = old_fate_of_SLN.1.0
 # 		ai_chance = {	base = 10	}
-# 		country_event = old_fate_of_SLA.0
+# 		country_event = old_fate_of_SLN.0
 # 	}
 # }
 	
