@@ -52,7 +52,7 @@ scss_set_stock = {#essential temp variables add_country and add_value
 		if = {#増加かつ余剰がない
 			limit = {
 				check_variable = { add_value > 0 }
-				NOT = { check_variable = { temp_surplus = 0 }}		
+				NOT = { check_variable = { temp_surplus > 0 }}		
 			}
 			log = "余りなんてないよ"
 		}
@@ -62,17 +62,18 @@ scss_set_stock = {#essential temp variables add_country and add_value
 				set_temp_variable = { add_value = temp_surplus }
 			}
 			if = {#既にある国家
-				limit = { is_in_array = { global.scss_country_list = add_country } }
+				limit = { is_in_array = { array = global.scss_country_list value = add_country } }
 				custom_effect_tooltip = tt_scss_scss_change_stock
 				for_each_loop = {#国家リストからif文で探し出す
-					array = scss_country_list
+					array = global.scss_country_list
 					value = v_tag
 					index = i_value
 					if = { 
 						limit = { check_variable = { v_tag = add_country } }
-						add_to_variable = { scss_value_list^i_value = add_value }
+						log = "該当"
+						add_to_variable = { global.scss_value_list^i_value = add_value }
 						if = {
-							limit = { check_variable = { scss_value_list^i_value < 0 } }
+							limit = { check_variable = { global.scss_value_list^i_value < 0 } }
 							var:global.scss_country_list^i_value = {
 								remove_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
 								SCZ = { give_military_access = PREV }
@@ -80,11 +81,13 @@ scss_set_stock = {#essential temp variables add_country and add_value
 							add_to_variable = { global.scss_stock_holders = -1 }
 							remove_from_array = {
 								array = global.scss_country_list
-								index = i_value
+								# index = i_value
+								value = v_tag
 							}
 							remove_from_array = {
 								array = global.scss_value_list
-								index = i_value
+								# index = i_value
+								value = v_tag
 							}
 
 						}
@@ -103,6 +106,34 @@ scss_set_stock = {#essential temp variables add_country and add_value
 			}
 		}
 		scss_calculate_stock_ratio = yes
+	}
+}
+scss_move_stock = {#essential temp variables add_country remove_country and add_value
+	if = {
+		limit = {
+			has_variable = add_country
+			has_variable = remove_country
+			has_variable = add_value
+			is_in_array = { array = global.scss_country_list value = add_country }
+			is_in_array = { array = global.scss_country_list value = remove_country }	
+		}
+		custom_effect_tooltip = tt_scss_scss_move_stock 	
+
+		for_each_loop = {#国家リストからif文で探し出す
+			array = global.scss_country_list
+			value = v_tag
+			index = i_value
+			if = { 
+				limit = { check_variable = { v_tag = remove_country } }
+				subtract_from_variable = { global.scss_value_list^i_value = add_value }
+			}
+			if = { 
+				limit = { check_variable = { v_tag = add_country } }
+				add_to_variable = { global.scss_value_list^i_value = add_value }
+			}
+
+		}
+		scss_calculate_stock_ratio = yes		
 	}
 }
 scss_calculate_stock_ratio = { #

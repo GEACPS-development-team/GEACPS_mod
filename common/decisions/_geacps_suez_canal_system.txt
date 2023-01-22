@@ -47,13 +47,10 @@ suez_canal_system = {
 		}
 		complete_effect = {
             log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_for_stockholder [FROM.GetName]"
-            set_temp_variable = { add_country = FROM }
-            set_temp_variable = { add_value = -10 }
-            scss_set_stock = yes
+            set_temp_variable = { remove_country = FROM }
             set_temp_variable = { add_country = ROOT }
             set_temp_variable = { add_value = 10 }
-            scss_set_stock = yes
-
+            scss_move_stock = yes
 		}
 	}
 
@@ -110,12 +107,10 @@ suez_canal_system = {
 		}
 		complete_effect = {
             log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_for_stockholder [FROM.GetName]"
+            set_temp_variable = { remove_country = ROOT }
             set_temp_variable = { add_country = FROM }
             set_temp_variable = { add_value = 10 }
-            scss_set_stock = yes
-            set_temp_variable = { add_country = ROOT }
-            set_temp_variable = { add_value = -10 }
-            scss_set_stock = yes
+            scss_move_stock = yes
 
 		}
 	}
