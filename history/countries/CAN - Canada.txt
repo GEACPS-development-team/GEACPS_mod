@@ -1,9 +1,8 @@
 ﻿capital = 276
-oob = CAN_1946
 
 GBR = {	set_dominion = yes	}
 
-set_cosmetic_tag = CAN_ENG-GBR
+set_cosmetic_tag = CAN_GBRbyENG
 set_convoys = 100
 
 set_politics = {
@@ -63,3 +62,8 @@ set_party_name = {	#カナダ社会信用党
 	long_name = PARTY_canada_social_credit_party_long
 }
 recruit_character = CHARACTER_alexander_augustus_frederick_william_alfred_george_cambridge
+
+add_ideas = {	#政治タブ
+	monarchy_federal_state
+	parliamentary_cabinet_system
+}

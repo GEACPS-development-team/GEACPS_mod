@@ -1,8 +1,12 @@
 ﻿capital = 725
-oob = NMR_1946
 
-AST = {	set_mandate = yes	}
+AST = {	set_mandated_territory_C = yes	}
 
-set_cosmetic_tag = NMR_ENG-GBR
+set_cosmetic_tag = NMR_GBRbyENG
 set_convoys = 5
 set_dictatorship = yes
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

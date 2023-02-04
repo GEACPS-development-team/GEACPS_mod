@@ -1,0 +1,23 @@
+state = {
+	id = 854
+	name = "STATE_854"
+	manpower = 5000
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		HIL = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	SAU_state_variable = 1	}
+		set_variable = {	HIL_state_variable = 1	}
+	}
+	
+	provinces = {
+		2057	4974	7970	8101	10815	10901	13409
+	}
+	local_supplies = 0.0
+}

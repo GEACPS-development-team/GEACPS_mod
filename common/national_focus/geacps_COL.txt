@@ -1,0 +1,617 @@
+focus_tree = {
+	id = COL_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = COL
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 100 y = 1400
+	}
+	shared_focus = COL_may_election
+}
+
+shared_focus = {
+	id = COL_may_election
+	icon = GFX_generic_suspend_constitution
+	cost = 0
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = COL_president_election_1946
+			always = no
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_may_election"
+	}
+}
+
+shared_focus = {
+	id = COL_the_leopards
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {	has_country_flag = COL_the_leopards_win_1946	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_the_leopards"
+		add_political_power = 150
+	}
+	relative_position_id = COL_may_election
+	prerequisite = { focus = COL_may_election }
+}
+
+shared_focus = {
+	id = COL_monopoly_exploitation_of_oil
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_monopoly_exploitation_of_oil"
+		add_resource = {
+			type = oil
+			amount = 13
+			state = 486
+		}
+		add_resource = {
+			type = oil
+			amount = 15
+			state = 593
+		}
+		add_resource = {
+			type = oil
+			amount = 25
+			state = 1168
+		}
+	}
+	relative_position_id = COL_the_leopards
+	prerequisite = { focus = COL_the_leopards }
+}
+
+shared_focus = {
+	id = COL_promotion_of_heavy_chemical_plants
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_promotion_of_heavy_chemical_plants"
+		add_ideas = COL_promotion_of_heavy_industrialisation_1
+	}
+	relative_position_id = COL_monopoly_exploitation_of_oil
+	prerequisite = {
+		focus = COL_monopoly_exploitation_of_oil
+		focus = COL_promotion_of_oil_exploration
+	}
+	mutually_exclusive = {	focus = COL_agricultural_importance	}
+}
+
+shared_focus = {
+	id = COL_construction_of_chemical_plants
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_construction_of_chemical_plants"
+		swap_ideas = {
+			remove_idea = COL_promotion_of_heavy_industrialisation_1
+			add_idea = COL_promotion_of_heavy_industrialisation_2
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = COL_promotion_of_heavy_chemical_plants
+	prerequisite = { focus = COL_promotion_of_heavy_chemical_plants }
+}
+
+shared_focus = {
+	id = COL_largescale_steel_processing_plant
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_largescale_steel_processing_plant"
+		swap_ideas = {
+			remove_idea = COL_promotion_of_heavy_industrialisation_2
+			add_idea = COL_promotion_of_heavy_industrialisation_3
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = COL_construction_of_chemical_plants
+	prerequisite = { focus = COL_construction_of_chemical_plants }
+}
+
+shared_focus = {
+	id = COL_development_of_petroleum_refining_plants
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_development_of_petroleum_refining_plants"
+		swap_ideas = {
+			remove_idea = COL_promotion_of_heavy_industrialisation_3
+			add_idea = COL_promotion_of_heavy_industrialisation_4
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = COL_largescale_steel_processing_plant
+	prerequisite = { focus = COL_largescale_steel_processing_plant }
+}
+
+shared_focus = {
+	id = COL_establishment_of_the_new_nueva_andaluca
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_establishment_of_the_new_nueva_andaluca"
+		country_event = COL.3
+	}
+	relative_position_id = COL_monopoly_exploitation_of_oil
+	prerequisite = { focus = COL_monopoly_exploitation_of_oil }
+}
+
+shared_focus = {
+	id = COL_recovery_of_old_territories
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_recovery_of_old_territories"
+		add_ideas = COL_reactionism
+	}
+	relative_position_id = COL_establishment_of_the_new_nueva_andaluca
+	prerequisite = { focus = COL_establishment_of_the_new_nueva_andaluca }
+}
+
+shared_focus = {
+	id = COL_VEN_recovery
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_VEN_recovery"
+		country_event = COL.6
+		every_state = {
+			limit = {	check_variable = {	VEN_state_variable = 1	}	}
+			add_claim_by = COL
+		}
+	}
+	relative_position_id = COL_recovery_of_old_territories
+	prerequisite = { focus = COL_recovery_of_old_territories }
+}
+
+shared_focus = {
+	id = COL_ECU_recovery
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_ECU_recovery"
+		country_event = COL.4
+		every_state = {
+			limit = {	check_variable = {	ECU_state_variable = 1	}	}
+			add_claim_by = COL
+		}
+	}
+	relative_position_id = COL_recovery_of_old_territories
+	prerequisite = { focus = COL_recovery_of_old_territories }
+}
+
+shared_focus = {
+	id = COL_PAN_recovery
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_PAN_recovery"
+		country_event = COL.5
+		every_state = {
+			limit = {	check_variable = {	PAN_state_variable = 1	}	}
+			add_claim_by = COL
+		}
+	}
+	relative_position_id = COL_recovery_of_old_territories
+	prerequisite = { focus = COL_recovery_of_old_territories }
+}
+
+shared_focus = {
+	id = COL_transition_to_a_federal_system
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_transition_to_a_federal_system"
+		if = {
+			limit ={	has_idea = republic_unitary_state	}
+			add_ideas = republic_federal_state
+		}
+	}
+	relative_position_id = COL_PAN_recovery
+	prerequisite = { focus = COL_PAN_recovery }
+	prerequisite = { focus = COL_ECU_recovery }
+	prerequisite = { focus = COL_VEN_recovery }
+}
+
+shared_focus = {
+	id = COL_revival_of_the_gran_colombia
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_revival_of_the_gran_colombia"
+		country_event = COL.7
+	}
+	relative_position_id = COL_transition_to_a_federal_system
+	prerequisite = { focus = COL_transition_to_a_federal_system }
+}
+
+shared_focus = {
+	id = COL_avenge_oneself
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_avenge_oneself"
+	}
+	relative_position_id = COL_revival_of_the_gran_colombia
+	prerequisite = { focus = COL_revival_of_the_gran_colombia }
+}
+
+shared_focus = {
+	id = COL_conservative_party
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {	has_country_flag = COL_conservative_party_win_1946	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_conservative_party"
+		add_political_power = 150
+	}
+	relative_position_id = COL_may_election
+	prerequisite = { focus = COL_may_election }
+}
+
+shared_focus = {
+	id = COL_promotion_of_oil_exploration
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_promotion_of_oil_exploration"
+		add_resource = {
+			type = oil
+			amount = 13
+			state = 486
+		}
+		add_resource = {
+			type = oil
+			amount = 15
+			state = 593
+		}
+		add_resource = {
+			type = oil
+			amount = 25
+			state = 1168
+		}
+	}
+	relative_position_id = COL_conservative_party
+	prerequisite = { focus = COL_conservative_party }
+}
+
+shared_focus = {
+	id = COL_agricultural_importance
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_agricultural_importance"
+		add_ideas = COL_agricultural_and_light_industrial_development_1
+	}
+	relative_position_id = COL_promotion_of_oil_exploration
+	prerequisite = { focus = COL_promotion_of_oil_exploration }
+	mutually_exclusive = {	focus = COL_promotion_of_heavy_chemical_plants	}
+}
+
+shared_focus = {
+	id = COL_mechanisation_of_agriculture
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_mechanisation_of_agriculture"
+		swap_ideas = {
+			remove_idea = COL_agricultural_and_light_industrial_development_1
+			add_idea = COL_agricultural_and_light_industrial_development_2
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = COL_agricultural_importance
+	prerequisite = { focus = COL_agricultural_importance }
+}
+
+shared_focus = {
+	id = COL_fertilisers_and_farm_shortening
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_fertilisers_and_farm_shortening"
+		swap_ideas = {
+			remove_idea = COL_agricultural_and_light_industrial_development_2
+			add_idea = COL_agricultural_and_light_industrial_development_3
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+		}
+	}
+	relative_position_id = COL_mechanisation_of_agriculture
+	prerequisite = { focus = COL_mechanisation_of_agriculture }
+}
+
+shared_focus = {
+	id = COL_silk_processing_plant_construction
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_silk_processing_plant_construction"
+		swap_ideas = {
+			remove_idea = COL_agricultural_and_light_industrial_development_3
+			add_idea = COL_agricultural_and_light_industrial_development_4
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = COL_fertilisers_and_farm_shortening
+	prerequisite = { focus = COL_fertilisers_and_farm_shortening }
+}
+
+shared_focus = {
+	id = COL_promotion_of_resource_development
+	icon = GFX_generic_suspend_constitution
+	cost = 0
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_promotion_of_resource_development"
+	}
+	relative_position_id = COL_development_of_petroleum_refining_plants
+	prerequisite = {
+		focus = COL_development_of_petroleum_refining_plants
+		focus = COL_silk_processing_plant_construction
+	}
+}
+
+shared_focus = {
+	id = COL_oil_well_development
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_oil_well_development"
+		add_resource = {
+			type = oil
+			amount = 10
+			state = 1168
+		}
+	}
+	relative_position_id = COL_promotion_of_resource_development
+	prerequisite = { focus = COL_promotion_of_resource_development }
+}
+
+shared_focus = {
+	id = COL_opening_of_iron_mines
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_opening_of_iron_mines"
+		add_resource = {
+			type = steel
+			amount = 10
+			state = 593
+		}
+	}
+	relative_position_id = COL_promotion_of_resource_development
+	prerequisite = { focus = COL_promotion_of_resource_development }
+}
+
+shared_focus = {
+	id = COL_resource_extraction_experience
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_resource_extraction_experience"
+		add_ideas = COL_skilled_resource_mining
+	}
+	relative_position_id = COL_oil_well_development
+	prerequisite = { focus = COL_oil_well_development }
+	prerequisite = { focus = COL_opening_of_iron_mines }
+}
+
+shared_focus = {
+	id = COL_establishment_of_international_trading_companies
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_establishment_of_international_trading_companies"
+		country_event = COL.2
+	}
+	relative_position_id = COL_promotion_of_oil_exploration
+	prerequisite = { focus = COL_promotion_of_oil_exploration }
+}
+
+shared_focus = {
+	id = COL_the_question_of_national_defence
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_the_question_of_national_defence"
+		add_war_support = 0.1
+	}
+	relative_position_id = COL_establishment_of_international_trading_companies
+	prerequisite = { focus = COL_establishment_of_international_trading_companies }
+}
+
+shared_focus = {
+	id = COL_increased_defence_spending
+	icon = GFX_generic_suspend_constitution
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus COL_increased_defence_spending"
+		add_ideas = COL_significant_defence_expenditure
+	}
+	relative_position_id = COL_the_question_of_national_defence
+	prerequisite = { focus = COL_the_question_of_national_defence }
+}

@@ -5,10 +5,13 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = pastoral
 	
+	resources = {	tungsten = 3	}
+	
 	history = {
 		owner = R-U
 		add_core_of = R-U
-		add_core_of = RWA
+		EAF = {	debug_core = yes	}
+		RWA = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}

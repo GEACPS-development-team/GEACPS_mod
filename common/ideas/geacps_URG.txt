@@ -1,0 +1,85 @@
+ideas = {	#
+	country = {
+		URG_improvement_of_agricultural_production = {	#農業生産の向上
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				consumer_goods_factor = -0.25
+				monthly_population = 0.05
+			}
+		}
+		URG_military_academy = {	#陸軍士官学校
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				special_forces_cap = 0.08
+				experience_gain_army = 0.1
+				max_planning = 0.1
+			}
+		}
+		URG_economic_revitalisation = {	#経済再生
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		URG_failed_industrialisation_0 = {	#失敗した工業化
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory = -0.15
+				consumer_goods_factor = 0.1
+			}
+		}
+		URG_failed_industrialisation_1 = {	#失敗した工業化
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				production_speed_buildings_factor = -0.05
+				industrial_capacity_factory = -0.05
+				consumer_goods_factor = 0.05
+			}
+		}
+		URG_immigrants_from_europe_0 = {	#ヨーロッパからの移民
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				monthly_population = 0.03
+			}
+		}
+		URG_immigrants_from_europe_1 = {	#ヨーロッパからの移民
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				monthly_population = 0.03
+				research_speed_factor = 0.02
+			}
+		}
+		URG_buy_foreign_power = {	#外国の力を買う
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				license_purchase_cost = -0.5
+			}
+		}
+	}
+}

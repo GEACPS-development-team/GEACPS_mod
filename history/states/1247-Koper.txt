@@ -1,7 +1,7 @@
 state = {
 	id = 1247
 	name = "STATE_1247"
-	manpower = 10600
+	manpower = 20900
 	buildings_max_level_factor = 1
 	state_category = city
 	
@@ -10,12 +10,17 @@ state = {
 		add_core_of = VNC
 		add_core_of = IST
 		add_core_of = SLV
+		BLK = {	debug_core = yes	}
+		PAD = {	debug_core = yes	}
+		YUG = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		set_variable = {	VNC_state_variable = 1	}
 		set_variable = {	SLV_state_variable = 1	}
 		set_variable = {	ITA_state_variable = 1	}
+	
+		set_demilitarized_zone = yes
 	}
 	
 	provinces = {

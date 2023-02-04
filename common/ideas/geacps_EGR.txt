@@ -13,46 +13,6 @@ ideas = {	#既存国民精神
 				agency_upgrade_time = -0.1
 			}
 		}
-		EGR_the_berlin_declaration = {	#ベルリン宣言
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = hol_the_foundations_of_defense
-			modifier = {
-				political_power_factor = -0.1
-				political_power_cost = 0.01
-			}
-		}
-		EGR_potsdam_agreement = {	#ポツダム協定
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = gre_schachtplan
-			modifier = {
-				#要件等
-			}
-		}
-		EGR_denazification = {	#非ナチ化
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_fascism_banned
-			modifier = {
-				national_populism_drift = -0.01
-			}
-		}
 		EGR_hegemonic_party_system = {	#ヘゲモニー政党制
 			allowed = {
 				always = no
@@ -68,20 +28,6 @@ ideas = {	#既存国民精神
 				social_democracy_drift = 0.01
 				liberal_democracy_drift = 0.01
 				conservative_democracy_drift = 0.01
-			}
-		}
-		EGR_the_east-west_german_wall = {	#東西ドイツの壁
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
-			removal_cost = -1
-			picture = generic_wall_line
-			modifier = {
-				production_speed_bunker_factor = 0.1
-				production_speed_coastal_bunker_factor = 0.1
 			}
 		}
 	}

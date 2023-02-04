@@ -1,0 +1,28 @@
+state = {
+	id = 842
+	name = "STATE_842"
+	manpower = 1000000
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	
+	history = {
+		owner = ETH
+		add_core_of = ETH
+		EAF = {	debug_core = yes	}
+		TIG = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 0
+		}
+		victory_points = {	2072	2	}
+		victory_points = {	13237	1	}
+		victory_points = {	13238	1	}
+		set_variable = {	ETH_state_variable = 1	}
+		set_variable = {	TIG_state_variable = 1	}
+		set_variable = {	ERI_state_variable = 2	}
+	}
+	
+	provinces = {
+		2072	13237	13238
+	}
+	local_supplies = 0.0
+}

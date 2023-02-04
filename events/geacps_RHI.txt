@@ -1,0 +1,68 @@
+add_namespace = RHI
+country_event = {	#1955年ラインラント独立住民投票
+	id = RHI.0
+	title = RHI.0.t
+	desc = RHI.0.d
+	picture = GFX_RHI_referendum_country_event
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = RHI
+		is_subject_of = FRA
+	}
+	
+	option = {
+		name = RHI.0.0
+		news_event = {	id = RHI_news.1	days = 1	}
+		set_cosmetic_tag = RHI_republic
+	}
+	option = {
+		name = RHI.0.1
+		ai_chance = {	factor = 100	}
+		end_puppet = FRA
+		SGR = {	merger_country = yes	}
+		news_event = {	id = RHI_news.2	days = 1	}
+	}
+}
+
+add_namespace = RHI_news
+news_event = {	#1955年ラインラント独立住民投票
+	id = RHI_news.0
+	title = RHI_news.0.t
+	desc = RHI_news.0.d
+	picture = GFX_EUR_FRA_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {	#フランスの影響力はどの位だ...？
+		name = RHI_news.0.0
+	}
+}
+news_event = {	#ラインラントはフランスの庇護下に留まる
+	id = RHI_news.1
+	title = RHI_news.1.t
+	desc = RHI_news.1.d
+	picture = GFX_EUR_FRA_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = RHI_news.1.0
+	}
+}
+news_event = {	#1955年ラインラント独立
+	id = RHI_news.2
+	title = RHI_news.2.t
+	desc = RHI_news.2.d
+	picture = GFX_EUR_FRA_statute_referendum
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = RHI_news.2.0
+	}
+}

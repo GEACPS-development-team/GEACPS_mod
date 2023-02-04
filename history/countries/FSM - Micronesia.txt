@@ -1,7 +1,6 @@
 ﻿capital = 647
-oob = FSM_1946
 
-JAP = {	set_mandate = yes	}
+JAP = {	set_mandated_territory_C = yes	}
 
 set_cosmetic_tag = FSM_JAP
 set_convoys = 10
@@ -25,3 +24,8 @@ set_party_name = {	#大政翼賛会
 }
 
 recruit_character = CHARACTER_boshiro_hosogaya
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

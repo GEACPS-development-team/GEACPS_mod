@@ -7,22 +7,18 @@ state = {
 	history = {
 		owner = GBR
 		add_core_of = GBR
-		add_core_of = ENG
+		ENG = {	debug_core = yes	}
+		COW = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 1
-			anti_air_building = 2
-			radar_station = 7
-			air_base = 6
-			540 = {	naval_base = 8	}
 		}
-		victory_points = {	540	1	}
 		victory_points = {	6526	1	}
 		set_variable = {	ENG_state_variable = 1	}
+		set_variable = {	COW_state_variable = 1	}
 	}
 	
 	provinces = {
-		540	3463	6526	9562	11406	6351	9484	11471
+		6526
 	}
 	local_supplies = 0.0
 }

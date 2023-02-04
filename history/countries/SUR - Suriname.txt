@@ -1,10 +1,14 @@
 ﻿capital = 309
-oob = SUR_1946
 
-HOL = {	set_colony = yes	}
+NTL = {	set_colony = yes	}
 
-set_cosmetic_tag = COUNTRY_HOL
+set_cosmetic_tag = COUNTRY_NTL
 set_convoys = 5
 set_dictatorship = yes
 
 recruit_character = CHARACTER_johannes_cornelis_brons
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

@@ -1,0 +1,40 @@
+characters = {	#文民
+	CHARACTER_jose_luis_bustamante_y_rivero = {	#ホセ・ルイス・ブスタマンテ・イ・リベロ
+		name = CHARACTER_jose_luis_bustamante_y_rivero
+		
+		portraits = {
+			civilian = {
+				small = GFX_jose_luis_bustamante_y_rivero_small
+				large = GFX_jose_luis_bustamante_y_rivero_large
+			}
+		}
+		country_leader = {
+			ideology = conservative_liberalism_ideology
+			desc = "CHARACTER_jose_luis_bustamante_y_rivero_desc"
+			expire = "1989.1.11"
+		}
+	}
+}
+characters = {	#陸軍
+	CHARACTER_manuel_arturo_odria_amoretti = {	#マヌエル・A・オドリア
+		name = CHARACTER_manuel_a_odria
+		
+		portraits = {
+			civilian = {
+				small = GFX_manuel_arturo_odria_amoretti_small
+				large = GFX_manuel_arturo_odria_amoretti_large
+			}
+			army = {
+				small = GFX_manuel_arturo_odria_amoretti_small
+				large = GFX_manuel_arturo_odria_amoretti_large
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
+		}
+	}
+}

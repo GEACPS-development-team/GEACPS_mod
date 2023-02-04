@@ -12,9 +12,14 @@ state = {
 	history = {
 		owner = VIN
 		add_core_of = VIN
+		INC = {	debug_core = yes	}
+		TAI = {	debug_core = yes	}
+		TOK = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
+		set_variable = {	TAI_state_variable = 1	}
+		set_variable = {	TOK_state_variable = 1	}
 		set_variable = {	VIN_state_variable = 1	}
 	}
 	

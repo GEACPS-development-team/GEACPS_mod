@@ -7,9 +7,11 @@ state = {
 	history = {
 		owner = PER
 		add_core_of = PER
+		BAL = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
+		set_variable = {	BAL_state_variable = 1	}
 		set_variable = {	PER_state_variable = 1	}
 	}
 	

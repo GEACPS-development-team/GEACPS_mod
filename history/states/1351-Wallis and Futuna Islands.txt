@@ -1,0 +1,24 @@
+state = {
+	id = 1351
+	name = "STATE_1351"
+	manpower = 1000
+	state_category = small_island
+	buildings_max_level_factor = 1
+	
+	history = {
+		owner = TON
+		add_core_of = TON
+		PLY = {	debug_core = yes	}
+		UVF = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+			13379 = {	naval_base = 1	}
+		}
+		set_variable = {	UVF_state_variable = 1	}
+	}
+	
+	provinces = {
+		13379
+	}
+	local_supplies=0.0
+}

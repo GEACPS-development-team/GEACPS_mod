@@ -1,0 +1,714 @@
+add_namespace = GRE_civil_war
+country_event = {
+	id = GRE_civil_war.0
+	title = GRE_civil_war.0.t
+	desc = GRE_civil_war.0.d
+	picture = GFX_GRE_civil_war_start_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.0.0
+		ai_chance = {	base  = 100	}
+		start_civil_war = {
+			ruling_party = ROOT
+			ideology = radical_socialism
+			size = 0.5
+			capital = 1441
+			states = {	185	731	1441	}
+			
+			illegalization_of_liberal_democracy_party = yes
+			illegalization_of_conservative_democracy_party = yes
+			set_country_flag = GRE_civil_war_enemy_faction_flag
+			set_cosmetic_tag = GRE_provisional_democratic_government
+			complete_national_focus = GRE_provisional_democratic_government_of_greece
+			add_ideas = republic_unitary_state
+		}
+		illegalization_of_total_socialism_party = yes
+		illegalization_of_radical_socialism_party = yes
+		set_cosmetic_tag = GRE_kingdom_government
+		complete_national_focus = GRE_government_kingdom_of_greece
+		set_global_flag = GRE_civil_war_start_flag
+		news_event = {	id = GRE_news.0	hours = 6	}
+		country_event = {	id = GRE_civil_war.1	hours = 10	}
+	}
+	option = {
+		name = GRE_civil_war.0.1
+		ai_chance = {	base  = 0	}
+		start_civil_war = {
+			ruling_party = radical_socialism
+			ideology = ROOT
+			size = 0.5
+			capital = 998
+			states = {	47	164	182	184	186	187	914	996	997	998	1109	}
+			
+			illegalization_of_total_socialism_party = yes
+			illegalization_of_radical_socialism_party = yes
+			set_country_flag = GRE_civil_war_enemy_faction_flag
+			set_cosmetic_tag = GRE_kingdom_government
+			complete_national_focus = GRE_government_kingdom_of_greece
+			country_event = {	id = GRE_civil_war.1	hours = 10	}
+		}
+		illegalization_of_liberal_democracy_party = yes
+		illegalization_of_conservative_democracy_party = yes
+		set_cosmetic_tag = GRE_provisional_democratic_government
+		complete_national_focus = GRE_provisional_democratic_government_of_greece
+		add_ideas = republic_unitary_state
+		set_global_flag = GRE_civil_war_start_flag
+		news_event = {	id = GRE_news.0	hours = 6	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.0"	}
+}
+country_event = {
+	id = GRE_civil_war.1
+	title = GRE_civil_war.1.t
+	desc = GRE_civil_war.1.d
+	picture = GFX_GRE_defence_of_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.1.0
+		ai_chance = {	base  = 49	}
+	}
+	option = {
+		name = GRE_civil_war.1.1
+		ai_chance = {	base  = 49	}
+		ALB = {	country_event = {	id = GRE_civil_war.2	hours = 6	}	}
+		GBR = {	country_event = {	id = GRE_civil_war.2	hours = 6	}	}
+		TUR = {	country_event = {	id = GRE_civil_war.2	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.1.2
+		ai_chance = {	base  = 2	}
+		GBR = {	country_event = {	id = GRE_civil_war.3	hours = 6	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.1"	}
+}
+country_event = {
+	id = GRE_civil_war.2
+	title = GRE_civil_war.2.t
+	desc = GRE_civil_war.2.d
+	picture = GFX_GRE_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.2.0
+		ai_chance = {	base  = 100	}
+		trigger = {
+			tag = GBR
+			NOT = {	has_country_flag = no_AGEandION_GBR_flag	}
+		}
+		hidden_effect = {
+			182 = {	set_owner_and_claim_by = yes	}
+			country_event = GRE_civil_war.7
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				country_event = {	id = GRE_civil_war.6	hours = 6	}
+			}
+		}
+	}
+	option = {
+		name = GRE_civil_war.2.1
+		ai_chance = {	base = 10	}
+		trigger = {	tag = TUR	}
+		hidden_effect = {
+			164 = {	set_owner_and_claim_by = yes	}
+			187 = {	set_owner_and_claim_by = yes	}
+			GBR = {	country_event = {	id = GRE_civil_war.8	hours = 6	}	}
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				country_event = {	id = GRE_civil_war.6	hours = 6	}
+			}
+		}
+	}
+	option = {
+		name = GRE_civil_war.2.2
+		ai_chance = {	base  = 10	}
+		trigger = {	tag = ALB	}
+		hidden_effect = {
+			1480 = {	set_owner_and_claim_by = yes	}
+			GBR = {	country_event = {	id = GRE_civil_war.17	hours = 6	}	}
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				country_event = {	id = GRE_civil_war.6	hours = 6	}
+			}
+		}
+	}
+	option = {
+		name = GRE_civil_war.2.3
+		ai_chance = {
+			base  = 90
+			modifier = {
+				tag = GBR
+				NOT = {	has_country_flag = no_AGEandION_GBR_flag	}
+				factor = 0
+			}
+		}
+		clr_country_flag = no_AGEandION_GBR_flag
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.2"	}
+}
+country_event = {
+	id = GRE_civil_war.3
+	title = GRE_civil_war.3.t
+	desc = GRE_civil_war.3.d
+	picture = GFX_GRE_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.3.0
+		ai_chance = {	base  = 100	}
+		AEG = {
+			hidden_effect = {
+				164 = {	set_owner_and_core_of = yes	}
+				182 = {	set_owner_and_core_of = yes	}
+				187 = {	set_owner_and_core_of = yes	}
+				914 = {	set_owner_and_core_of = yes	}
+				1480 = {	set_owner_and_core_of = yes	}
+				1481 = {	set_owner_and_core_of = yes	}
+				set_cosmetic_tag = AEGandION_GBRbyENG
+			}
+			GBR = {	set_protected_territory = yes	}
+		}
+		hidden_effect = {
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				country_event = {	id = GRE_civil_war.4	hours = 6	}
+			}
+		}
+	}
+	option = {
+		name = GRE_civil_war.3.1
+		ai_chance = {	base  = 0	}
+		hidden_effect = {
+			set_country_flag = no_AGEandION_GBR_flag
+			ALB = {	country_event = {	id = GRE_civil_war.2	hours = 6	}	}
+			TUR = {	country_event = {	id = GRE_civil_war.2	hours = 6	}	}
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				country_event = {	id = GRE_civil_war.5	hours = 6	}
+			}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.3"	}
+}
+country_event = {
+	id = GRE_civil_war.4
+	title = GRE_civil_war.4.t
+	desc = GRE_civil_war.4.d
+	picture = GFX_GRE_GBR_army_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.4.0
+		ai_chance = {	base  = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.4"	}
+}
+country_event = {
+	id = GRE_civil_war.5
+	title = GRE_civil_war.5.t
+	desc = GRE_civil_war.5.d
+	picture = GFX_GRE_defence_of_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.5.0
+		ai_chance = {	base  = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.5"	}
+}
+country_event = {
+	id = GRE_civil_war.6
+	title = GRE_civil_war.6.t
+	desc = GRE_civil_war.6.d
+	picture = GFX_GRE_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.6.0
+		ai_chance = {	base  = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.6"	}
+}
+country_event = {
+	id = GRE_civil_war.7
+	title = GRE_civil_war.7.t
+	desc = GRE_civil_war.7.d
+	picture = GFX_GRE_CRT_island_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.7.0
+		ai_chance = {	base  = 50	}
+		CRE = {
+			hidden_effect = {
+				182 = {	set_owner_and_core_of = yes	}
+				remove_state_claim = 182
+				set_cosmetic_tag = CRE_republic
+			}
+			GBR = {	set_protected_state = yes	}
+		}
+	}
+	option = {
+		name = GRE_civil_war.7.1
+		ai_chance = {	base  = 50	}
+		CRE = {
+			hidden_effect = {
+				182 = {	set_owner_and_core_of = yes	}
+				remove_state_claim = 182
+				set_cosmetic_tag = CRE_GBRbyENG
+			}
+			GBR = {	set_protected_territory = yes	}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.7"	}
+}
+country_event = {
+	id = GRE_civil_war.8
+	title = GRE_civil_war.8.t
+	desc = GRE_civil_war.8.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.8.0
+		ai_chance = {	base  = 10	}
+		TUR = {	country_event = {	id = GRE_civil_war.9	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.8.1
+		ai_chance = {	base  = 90	}
+		TUR = {	country_event = {	id = GRE_civil_war.15	hours = 6	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.8"	}
+}
+country_event = {
+	id = GRE_civil_war.9
+	title = GRE_civil_war.9.t
+	desc = GRE_civil_war.9.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.9.0
+		ai_chance = {	base  = 10	}
+		GBR = {	country_event = {	id = GRE_civil_war.10	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.9.1
+		ai_chance = {	base  = 50	}
+		GBR = {	country_event = {	id = GRE_civil_war.11	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.9.2
+		ai_chance = {	base  = 40	}
+		GBR = {	country_event = {	id = GRE_civil_war.14	hours = 6	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.9"	}
+}
+country_event = {
+	id = GRE_civil_war.10
+	title = GRE_civil_war.10.t
+	desc = GRE_civil_war.10.d
+	picture = GFX_GRE_GBR_army_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.10.0
+		ai_chance = {	base  = 100	}
+		declare_war_on = {	target = TUR	type = annex_everything	}
+	}
+	option = {
+		name = GRE_civil_war.10.1
+		ai_chance = {	base  = 0	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.10"	}
+}
+country_event = {
+	id = GRE_civil_war.11
+	title = GRE_civil_war.11.t
+	desc = GRE_civil_war.11.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.11.0
+		ai_chance = {	base  = 60	}
+		TUR = {	country_event = {	id = GRE_civil_war.12	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.11.1
+		ai_chance = {	base  = 40	}
+		TUR = {	country_event = {	id = GRE_civil_war.13	hours = 6	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.11"	}
+}
+country_event = {
+	id = GRE_civil_war.12
+	title = GRE_civil_war.12.t
+	desc = GRE_civil_war.12.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.12.0
+		ai_chance = {	base  = 100	}
+		AEG = {
+			hidden_effect = {
+				164 = {	set_owner_and_core_of = yes	}
+				187 = {	set_owner_and_core_of = yes	}
+			}
+			TUR = {	set_condominium = yes	}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.12"	}
+}
+country_event = {
+	id = GRE_civil_war.13
+	title = GRE_civil_war.13.t
+	desc = GRE_civil_war.13.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.13.0
+		ai_chance = {	base  = 40	}
+		GBR = {	country_event = {	id = GRE_civil_war.10	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.13.1
+		ai_chance = {	base  = 60	}
+		GBR = {	country_event = {	id = GRE_civil_war.14	hours = 6	}	}
+		hidden_effect = {
+			TUR = {
+				remove_state_claim = 164
+				remove_state_claim = 187
+			}
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				transfer_state = 164
+				transfer_state = 187
+			}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.13"	}
+}
+country_event = {
+	id = GRE_civil_war.14
+	title = GRE_civil_war.14.t
+	desc = GRE_civil_war.14.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.14.0
+		ai_chance = {	base  = 40	}
+		hidden_effect = {
+			164 = {	set_owner_and_claim_by = yes	}
+			187 = {	set_owner_and_claim_by = yes	}
+			country_event = {	id = GRE_civil_war.15	hours = 6	}
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				country_event = {	id = GRE_civil_war.6	hours = 6	}
+			}
+		}
+	}
+	option = {
+		name = GRE_civil_war.14.1
+		ai_chance = {	base  = 60	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.14"	}
+}
+country_event = {
+	id = GRE_civil_war.15
+	title = GRE_civil_war.15.t
+	desc = GRE_civil_war.15.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.15.0
+		ai_chance = {	base  = 50	}
+		AEG = {
+			hidden_effect = {
+				164 = {	set_owner_and_core_of = yes	}
+				187 = {	set_owner_and_core_of = yes	}
+				remove_state_claim = 164
+				remove_state_claim = 187
+				set_cosmetic_tag = AEG_federation
+			}
+			GBR = {	set_protected_state = yes	}
+		}
+	}
+	option = {
+		name = GRE_civil_war.15.1
+		ai_chance = {	base  = 50	}
+		AEG = {
+			hidden_effect = {
+				164 = {	set_owner_and_core_of = yes	}
+				187 = {	set_owner_and_core_of = yes	}
+				remove_state_claim = 164
+				remove_state_claim = 187
+				set_cosmetic_tag = AEG_GBRbyENG
+			}
+			GBR = {	set_protected_territory = yes	}
+		}
+	}
+	option = {
+		name = GRE_civil_war.15.2
+		trigger = {	tag = TUR	}
+		ai_chance = {	base  = 100	}
+		GBR = {	country_event = {	id = GRE_civil_war.16	hours = 6	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.15"	}
+}
+country_event = {
+	id = GRE_civil_war.16
+	title = GRE_civil_war.16.t
+	desc = GRE_civil_war.16.d
+	picture = GFX_GRE_AEG_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.16.0
+		ai_chance = {	base  = 50	}
+		TUR = {	country_event = {	id = GRE_civil_war.9	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.16.1
+		ai_chance = {	base  = 50	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.16"	}
+}
+country_event = {
+	id = GRE_civil_war.17
+	title = GRE_civil_war.17.t
+	desc = GRE_civil_war.17.d
+	picture = GFX_GRE_corfu_island_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.17.0
+		ai_chance = {	base  = 10	}
+		ALB = {	country_event = {	id = GRE_civil_war.18	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.17.1
+		ai_chance = {	base  = 90	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.17"	}
+}
+country_event = {
+	id = GRE_civil_war.18
+	title = GRE_civil_war.18.t
+	desc = GRE_civil_war.18.d
+	picture = GFX_GRE_corfu_island_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.18.0
+		ai_chance = {	base  = 20	}
+		GBR = {	country_event = {	id = GRE_civil_war.19	hours = 6	}	}
+	}
+	option = {
+		name = GRE_civil_war.18.1
+		ai_chance = {	base  = 80	}
+		hidden_effect = {
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				transfer_state = 164
+				transfer_state = 187
+			}
+		}
+		GBR = {	country_event = {	id = GRE_civil_war.20	hours = 6	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.18"	}
+}
+country_event = {
+	id = GRE_civil_war.19
+	title = GRE_civil_war.19.t
+	desc = GRE_civil_war.19.d
+	picture = GFX_GRE_GBR_army_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.19.0
+		ai_chance = {	base  = 10	}
+		declare_war_on = {	target = ALB	type = annex_everything	}
+	}
+	option = {
+		name = GRE_civil_war.19.1
+		ai_chance = {	base  = 90	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.19"	}
+}
+country_event = {
+	id = GRE_civil_war.20
+	title = GRE_civil_war.20.t
+	desc = GRE_civil_war.20.d
+	picture = GFX_GRE_corfu_island_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.20.0
+		ai_chance = {	base  = 40	}
+		hidden_effect = {
+			914 = {	set_owner_and_claim_by = yes	}
+			1480 = {	set_owner_and_claim_by = yes	}
+			1481 = {	set_owner_and_claim_by = yes	}
+			country_event = {	id = GRE_civil_war.21	hours = 6	}
+			random_other_country = {
+				limit  = {	original_tag = GRE	has_cosmetic_tag = GRE_kingdom_government	}
+				country_event = {	id = GRE_civil_war.6	hours = 6	}
+			}
+		}
+	}
+	option = {
+		name = GRE_civil_war.20.1
+		ai_chance = {	base  = 60	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.20"	}
+}
+country_event = {
+	id = GRE_civil_war.21
+	title = GRE_civil_war.21.t
+	desc = GRE_civil_war.21.d
+	picture = GFX_GRE_corfu_island_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.21.0
+		ai_chance = {	base  = 50	}
+		ION = {
+			hidden_effect = {
+				914 = {	set_owner_and_core_of = yes	}
+				1480 = {	set_owner_and_core_of = yes	}
+				1481 = {	set_owner_and_core_of = yes	}
+				remove_state_claim = 914
+				remove_state_claim = 1480
+				remove_state_claim = 1481
+				set_cosmetic_tag = ION_republic
+			}
+			GBR = {	set_protected_state = yes	}
+		}
+	}
+	option = {
+		name = GRE_civil_war.21.1
+		ai_chance = {	base  = 50	}
+		ION = {
+			hidden_effect = {
+				914 = {	set_owner_and_core_of = yes	}
+				1480 = {	set_owner_and_core_of = yes	}
+				1481 = {	set_owner_and_core_of = yes	}
+				remove_state_claim = 914
+				remove_state_claim = 1480
+				remove_state_claim = 1481
+				set_cosmetic_tag = ION_GBRbyENG
+			}
+			GBR = {	set_protected_territory = yes	}
+		}
+	}
+	option = {
+		name = GRE_civil_war.21.2
+		ai_chance = {	base  = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.21"	}
+}
+country_event = {
+	id = GRE_civil_war.22
+	title = GRE_civil_war.22.t
+	desc = GRE_civil_war.22.d
+	picture = GFX_GRE_islands_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = GRE_civil_war.22.0
+		ai_chance = {	base  = 10	}
+		create_dynamic_country = {
+			original_tag = GRE
+			
+			GBR = {	set_junior_partner_protected_territory = yes	}
+			
+			set_cosmetic_tag = GRE_GBRbyENG
+			set_country_flag = GRE_civil_war_GBR_faction_flag
+			
+			annex_country = {	target = AEG	transfer_troops = yes	}
+			annex_country = {	target = CRE	transfer_troops = yes	}
+			annex_country = {	target = ION	transfer_troops = yes	}
+		}
+	}
+	option = {
+		name = GRE_civil_war.22.1
+		ai_chance = {	base  = 10	}
+		create_dynamic_country = {
+			original_tag = GRE
+			
+			GBR = {	set_protected_territory = yes	}
+			
+			set_cosmetic_tag = GRE_GBRbyENG
+			set_country_flag = GRE_civil_war_GBR_faction_flag
+			
+			annex_country = {	target = AEG	transfer_troops = yes	}
+			annex_country = {	target = CRE	transfer_troops = yes	}
+			annex_country = {	target = ION	transfer_troops = yes	}
+		}
+	}
+	option = {
+		name = GRE_civil_war.22.2
+		ai_chance = {	base  = 80	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_civil_war.22"	}
+}
+
+add_namespace = GRE_news
+news_event = {
+	id = GRE_news.0
+	title = GRE_news.0.t
+	desc = GRE_news.0.d
+	picture = GFX_GRE_civil_war_start_news_event
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = GRE_news.0.0
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_news.0"	}
+}
+news_event = {
+	id = GRE_news.1
+	title = GRE_news.1.t
+	desc = GRE_news.1.d
+	picture = GFX_GRE_civil_war_end_news_event
+	
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = GRE_news.1.0
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event GRE_news.1"	}
+}

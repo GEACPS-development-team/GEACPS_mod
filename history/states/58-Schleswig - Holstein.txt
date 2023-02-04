@@ -7,6 +7,10 @@ state = {
 	history = {
 		owner = SHL
 		add_core_of = SHL
+		add_core_of = GER
+		HLS = {	debug_core = yes	}
+		NGR = {	debug_core = yes	}
+		WGR = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
@@ -15,8 +19,9 @@ state = {
 			6389 ={	naval_base = 8	}
 		}
 		victory_points = {	6389	10	}
-		set_variable = {	HLS_state_variable = 1	}
 		set_variable = {	GER_state_variable = 1	}
+		set_variable = {	HLS_state_variable = 1	}
+		set_variable = {	NGR_state_variable = 1	}
 		set_variable = {	WGR_state_variable = 1	}
 	}
 	

@@ -1,0 +1,28 @@
+state = {
+	id = 1363
+	name = "STATE_1363"
+	manpower = 20200
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
+		owner = SCC
+		add_core_of = SCC
+		add_core_of = GEO
+		AJA = {	debug_core = yes	}
+		CCS = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+			3653 = {	naval_base = 2	}
+			3653 = {	coastal_bunker = 1	}
+		}
+		victory_points = {	3653	3	}
+		set_variable = {	AJA_state_variable = 1	}
+		set_variable = {	GEO_state_variable = 1	}
+	}
+	
+	provinces = {
+		3653
+	}
+	local_supplies = 0.0
+}

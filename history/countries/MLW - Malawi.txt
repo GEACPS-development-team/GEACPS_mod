@@ -1,9 +1,13 @@
 ﻿capital = 770
-oob = MLW_1946
 
 GBR = {	set_protected_territory = yes	}
 
-set_cosmetic_tag = MLW_ENG-GBR
+set_cosmetic_tag = MLW_GBRbyENG
 set_dictatorship = yes
 
 recruit_character = CHARACTER_edmund_charles_smith_richards
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_indirect_rule_system
+}

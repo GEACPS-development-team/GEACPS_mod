@@ -1,0 +1,26 @@
+state = {
+	id = 1329
+	name = "STATE_1329"
+	manpower = 50000
+	buildings_max_level_factor = 1
+	state_category = small_island
+	
+	history = {
+		owner = NGU
+		add_core_of = NGU
+		PNG = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+			4226 = {	naval_base = 1	}
+			10234 = {	naval_base = 1	}
+		}
+		victory_points = {	4226	1	}
+		set_variable = {	PNG_state_variable = 1	}
+		set_variable = {	SOL_state_variable = 2	}
+	}
+	
+	provinces = {
+		1358	4226	4378	10234
+	}
+	local_supplies = 0.0
+}

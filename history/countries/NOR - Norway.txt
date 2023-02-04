@@ -1,8 +1,7 @@
 ﻿capital = 110
-oob = NOR_1946
-set_cosmetic_tag = NOR_kingdom
 
-set_convoys = 5
+set_cosmetic_tag = NOR_kingdom
+set_convoys = 100
 
 set_politics = {
 	ruling_party = social_democracy
@@ -22,3 +21,8 @@ set_popularities = {
 }
 
 recruit_character = CHARACTER_haakon_ne_christian_frederik_carl_georg_valdemar_axel
+
+add_ideas = {	#政治タブ
+	monarchy_unitary_state
+	parliamentary_cabinet_system
+}

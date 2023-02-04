@@ -1,8 +1,8 @@
 ideas = {
 	country = {
 		#伝統的な産業
-		SIC_idea_1 = {
-			#picture = 
+		SIC_idea_Traditional_Industry = {
+			picture = SOV_third_five_year_plan_civilian
 			allowed = {	always = no	}
 			allowed_civil_war = {	always = no	}
 			removal_cost = -1
@@ -14,12 +14,51 @@ ideas = {
 				industrial_capacity_dockyard = 0.10
 			}
 		}
-		ITA_idea_2 = {
-			#picture = 
+		#大量の失業者
+		SIC_idea_Mass_unemployment = {
+			picture = raj_risk_of_famine
 			allowed = {	always = no	}
 			allowed_civil_war = {	always = no	}
 			removal_cost = -1
 			modifier = {
+				production_speed_buildings_factor = -0.15
+				industrial_capacity_factory	= -0.15
+				local_resources_factor = -0.15
+			}
+		}
+		#失業者の救済
+		SIC_idea_Mass_unemployment_2 = {
+			picture = EST_exploit_the_banks
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			modifier = {
+				production_speed_buildings_factor = -0.075
+				industrial_capacity_factory	= -0.075
+				local_resources_factor = -0.075
+			}
+		}
+		#取り締まりの強化
+		SIC_idea_Tightening_Crackdowns = {
+			picture = generic_spy_intel
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			modifier = {
+				political_power_factor = 0.15
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		#学生への支援
+		SIC_idea_Student_Support = {
+			picture = generic_research_bonus
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = 0.05
+				research_speed_factor = 0.75
 			}
 		}
 	}

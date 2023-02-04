@@ -1,0 +1,23 @@
+state = {
+	id = 1352
+	name = "STATE_1352"
+	manpower = 10000
+	state_category = small_island
+	buildings_max_level_factor = 1
+	
+	history = {
+		owner = NIU
+		add_core_of = NIU
+		PLY = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+			13380 = {	naval_base = 1	}
+		}
+		set_variable = {	NIU_state_variable = 1	}
+	}
+	
+	provinces = {
+		13380
+	}
+	local_supplies=0.0
+}

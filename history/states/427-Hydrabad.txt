@@ -2,6 +2,7 @@ state = {
 	id = 427
 	name = "STATE_427"
 	manpower = 14013400
+	buildings_max_level_factor = 1
 	state_category = rural
 	
 	resources = {	chromium = 6	}
@@ -9,7 +10,8 @@ state = {
 	history = {
 		owner = IND
 		add_core_of = IND
-		add_core_of = HYD
+		DVN = {	debug_core = yes	}
+		HYD = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -17,11 +19,12 @@ state = {
 		}
 		victory_points = {	8087	1	}
 		set_variable = {	IND_state_variable = 1	}
+		set_variable = {	DVN_state_variable = 1	}
 		set_variable = {	HYD_state_variable = 1	}
 	}
 	
 	provinces = {
-		1275	1317	4280	4472	5104	8087	11950	12114
+		1275	1317	4280	4472	5104	8087	10511	11950	12114
 	}
 	local_supplies = 0.0
 }

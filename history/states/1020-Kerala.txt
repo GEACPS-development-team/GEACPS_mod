@@ -9,12 +9,14 @@ state = {
 	history = {
 		owner = IND
 		add_core_of = IND
-		add_core_of = TRV
+		DVN = {	debug_core = yes	}
+		TRV = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {	1321	10	}
 		set_variable = {	IND_state_variable = 1	}
+		set_variable = {	DVN_state_variable = 1	}
 		set_variable = {	TRV_state_variable = 1	}
 	}
 	

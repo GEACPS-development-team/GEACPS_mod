@@ -1,24 +1,23 @@
 ﻿capital = 279
-oob = CHL_1946
 
 set_cosmetic_tag = CHL_republic
 set_convoys = 5
 
 set_politics = {
-	ruling_party = liberal_democracy
-	last_election = "1946.3.4"
+	ruling_party = social_democracy
+	last_election = "1942.9.4"
 	election_frequency = 48
 	elections_allowed = yes
 }
 set_popularities = {
-	total_socialism = 10
-	radical_socialism = 5
-	social_democracy = 0
-	liberal_democracy = 55
-	conservative_democracy = 26
-	authoritative_democracy = 2
+	total_socialism = 1
+	radical_socialism = 3
+	social_democracy = 40
+	liberal_democracy = 27
+	conservative_democracy = 29
+	authoritative_democracy = 0
 	national_authoritarianism = 0
-	national_populism = 2
+	national_populism = 0
 }
 set_party_name = {	#チリ共産党
 	ideology = total_socialism
@@ -31,9 +30,14 @@ set_party_name = {	#チリ社会党
 	long_name = PARTY_chile_socialist_party_long
 }
 set_party_name = {	#チリ急進党
-	ideology = liberal_democracy
+	ideology = social_democracy
 	name = PARTY_chile_radical_party
 	long_name = PARTY_chile_radical_party_long
+}
+set_party_name = {	#チリ自由党
+	ideology = liberal_democracy
+	name = PARTY_liberal_party
+	long_name = PARTY_liberal_party_long
 }
 set_party_name = {	#保守党
 	ideology = conservative_democracy
@@ -46,9 +50,21 @@ set_party_name = {	#無所属
 	long_name = PARTY_independent_politician_long
 }
 set_party_name = {	#農業労働党
+	ideology = national_authoritarianism
+	name = PARTY_agrarian_labor_party
+	long_name = PARTY_agrarian_labor_party_long
+}
+set_party_name = {	#農業労働党
 	ideology = national_populism
 	name = PARTY_agrarian_labor_party
 	long_name = PARTY_agrarian_labor_party_long
 }
 
 recruit_character = CHARACTER_juan_antonio_rios_morales
+
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	presidential_system
+	market_intervention_economy
+	free_trade
+}

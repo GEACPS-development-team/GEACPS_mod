@@ -8,12 +8,16 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
-		add_core_of = YUN
 		add_core_of = CHI
+		KOK = {	debug_core = yes	}
+		SHN = {	debug_core = yes	}
+		YUN = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		set_variable = {	BRM_state_variable = 1	}
+		set_variable = {	SHN_state_variable = 1	}
+		set_variable = {	KOK_state_variable = 1	}
 		set_variable = {	YUN_state_variable = 2	}
 	}
 	

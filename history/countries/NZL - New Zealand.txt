@@ -1,9 +1,8 @@
 ﻿capital = 284
-oob = NZL_1946
 
 GBR = {	set_dominion = yes	}
 
-set_cosmetic_tag = NZL_ENG-GBR
+set_cosmetic_tag = NZL_GBRbyENG
 set_convoys = 5
 set_politics = {
 	ruling_party = social_democracy
@@ -59,8 +58,20 @@ set_party_name = {	#ニュージーランド軍団
 
 recruit_character = CHARACTER_cyril_louis_norton_newall
 
+add_ideas = {	#政治タブ
+	monarchy_unitary_state
+	parliamentary_cabinet_system
+}
+
+COK = {
+	NZL = {	set_overseas_territory = yes	}
+	set_dictatorship = yes
+}
+NIU = {
+	NZL = {	set_overseas_territory = yes	}
+	set_dictatorship = yes
+}
 SAM = {
-	set_variable = {	mandate_trigger_variable = 1	}
-	PREV = {	set_autonomy = {	target = PREV	autonomous_state = mandate	}	}
+	NZL = {	set_mandated_territory_C = yes	}
 	set_dictatorship = yes
 }

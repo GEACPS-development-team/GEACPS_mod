@@ -2,6 +2,7 @@ state = {
 	id = 422
 	name = "STATE_422"
 	manpower = 5500000
+	buildings_max_level_factor = 1
 	state_category = rural
 	
 	resources = {	rubber = 60	}
@@ -14,15 +15,14 @@ state = {
 			industrial_complex = 1
 			air_base = 3
 			7260 = {	naval_base = 3	}
-			10201 = {	naval_base = 5	}
 			7260 = {	coastal_bunker = 3	}
 		}
-		victory_points = {	10201	3	}
+		victory_points = {	7260	10	}
 		set_variable = {	SRL_state_variable = 1	}
 	}
 	
 	provinces = {
-		1213	4219	7260	7344	10201	10229	10287	12258
+		7260
 	}
 	local_supplies = 0.0
 }

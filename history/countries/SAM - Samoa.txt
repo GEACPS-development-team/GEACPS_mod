@@ -1,7 +1,11 @@
 ﻿capital = 726
-oob = SAM_1946
 
-NZL = {	set_mandate = yes	}
+NZL = {	set_mandated_territory_C = yes	}
 
-set_cosmetic_tag = SAM_ENG-GBR
+set_cosmetic_tag = SAM_GBRbyENG
 set_dictatorship = yes
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

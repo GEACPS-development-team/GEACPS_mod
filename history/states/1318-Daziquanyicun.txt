@@ -1,0 +1,24 @@
+state = {
+	id = 1318
+	name = "STATE_1318"
+	manpower = 1400
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	history = {
+		owner = MON
+		add_core_of = MON
+		add_core_of = CHI
+		add_core_of = ETR
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	MON_state_variable = 1	}
+		set_variable = {	ETR_state_variable = 1	}
+	}
+	
+	provinces = {
+		13349	13350	13351	13352
+	}
+	local_supplies = 0.0
+}

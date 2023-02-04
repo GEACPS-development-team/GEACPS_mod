@@ -1,10 +1,13 @@
 ﻿capital = 269
-oob = SML_1946
 
 GBR = {	set_protected_territory = yes	}
 
-set_cosmetic_tag = SML_ENG-GBR
-set_convoys = 5
+set_cosmetic_tag = SML_GBRbyENG
 set_dictatorship = yes
 
 recruit_character = CHARACTER_gerald_thomas_fisher
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

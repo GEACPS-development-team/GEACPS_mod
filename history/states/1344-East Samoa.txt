@@ -1,0 +1,24 @@
+state = {
+	id = 1344
+	name = "STATE_1344"
+	manpower = 10000
+	state_category = small_island
+	buildings_max_level_factor = 1
+	
+	history = {
+		owner = HAW
+		add_core_of = HAW
+		PLY = {	debug_core = yes	}
+		SAM = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+			13080 = {	naval_base = 1	}
+		}
+		set_variable = {	SAM_state_variable = 1	}
+	}
+	
+	provinces = {
+		13080
+	}
+	local_supplies=0.0
+}

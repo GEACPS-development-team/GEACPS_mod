@@ -1,0 +1,114 @@
+ideas = {#既存国民精神
+	country = {
+		ARG_oppression_of_dissenters = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				drift_defence_factor = 0.5
+				stability_weekly = 0.02
+				war_support_factor = -0.08
+				resistance_target_on_our_occupied_states = -0.05
+			}
+		}
+		ARG_eva_peron_foundation = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			picture = GFX_ARG_eva_peron_foundation
+			modifier = {
+				stability_factor = 0.06
+				army_org_factor = 0.03
+				army_core_defence_factor = 0.05
+				conscription = 0.02
+				consumer_goods_factor = 0.025
+			}
+		}
+		ARG_development_of_new_railway_network = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				production_speed_supply_node_factor = 5.0
+				production_speed_rail_way_factor = 3.0
+			}
+		}
+		ARG_economic_independence = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				min_export = -0.1
+				industrial_capacity_factory = 0.08
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				surrender_limit = 0.1
+			}
+		}
+		ARG_free_university = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = -0.03
+				research_speed_factor = 0.05
+			}
+		}
+		ARG_defense_bloc_0 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+		ARG_defense_bloc_1 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+				production_factory_start_efficiency_factor = 0.1
+				army_attack_factor = 0.05
+				army_core_defence_factor = 0.1
+			}
+		}
+		ARG_industrias_mecanicas_del_estado = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			
+			equipment_bonus = {
+				fighter_equipment = {	instant = yes	build_cost_ic = -0.10	}
+				CAS_equipment = {	instant = yes	build_cost_ic = -0.08	}
+				jet_fighter_equipment = {	instant = yes	build_cost_ic = -0.06	}
+			}
+			research_bonus = {	air_equipment = 0.08	}
+		}
+		ARG_rudels_guidance = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				air_cas_present_factor = 0.15
+				air_agility_factor = 0.1
+				air_cas_efficiency = 0.1
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
+	}
+}

@@ -1,0 +1,320 @@
+focus_tree = {
+	id = geacps_PRU_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRU
+		}
+	}
+	continuous_focus_position = {
+		x = 50 y = 1100
+	}
+	default = no
+	shared_focus = PRU_restoring_the_revolution
+	shared_focus = PRU_military_purges
+	shared_focus = strengthening_military_power
+}
+
+shared_focus = {
+	id = PRU_restoring_the_revolution
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_restoring_the_revolution"
+		country_event = PRU.1
+	}
+	mutually_exclusive = {	focus = PRU_military_purges	}
+}
+
+shared_focus = {
+	id = PRU_referendum_in_BOL
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_referendum_in_BOL"
+		country_event = PRU.2
+	}
+	relative_position_id = PRU_restoring_the_revolution
+	prerequisite = { focus = PRU_restoring_the_revolution }
+}
+
+shared_focus = {
+	id = PRU_enactment_of_the_mining_act
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_enactment_of_the_mining_act"
+		add_ideas = PRU_mining_act
+	}
+	relative_position_id = PRU_referendum_in_BOL
+	prerequisite = { focus = PRU_referendum_in_BOL }
+}
+
+shared_focus = {
+	id = PRU_promotion_of_electrification
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_promotion_of_electrification"
+		add_ideas = PRU_practice_of_modernisation
+	}
+	relative_position_id = PRU_enactment_of_the_mining_act
+	prerequisite = { focus = PRU_enactment_of_the_mining_act }
+}
+
+shared_focus = {
+	id = PRU_enactment_of_the_basic_army_law
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_enactment_of_the_basic_army_law"
+		country_event = PRU.9
+	}
+	relative_position_id = PRU_promotion_of_electrification
+	prerequisite = { focus = PRU_promotion_of_electrification }
+}
+
+shared_focus = {
+	id = PRU_recovery_of_former_bolivian_territories
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_recovery_of_former_bolivian_territories"
+		declare_war_on = {	target = PAR	type = annex_everything	}
+	}
+	relative_position_id = PRU_enactment_of_the_basic_army_law
+	prerequisite = { focus = PRU_enactment_of_the_basic_army_law }
+}
+
+shared_focus = {
+	id = PRU_revenge_of_the_pacific_war
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_revenge_of_the_pacific_war"
+		declare_war_on = {	target = CHL	type = annex_everything	}
+	}
+	relative_position_id = PRU_recovery_of_former_bolivian_territories
+	prerequisite = { focus = PRU_recovery_of_former_bolivian_territories }
+}
+
+shared_focus = {
+	id = PRU_construction_of_the_central_military_hospital
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_construction_of_the_central_military_hospital"
+		add_ideas = PRU_civil_military_medical_care_0
+	}
+	relative_position_id = PRU_referendum_in_BOL
+	prerequisite = { focus = PRU_referendum_in_BOL }
+}
+
+shared_focus = {
+	id = PRU_construction_of_the_central_hospital_for_employees_social_security
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_construction_of_the_central_hospital_for_employees_social_security"
+		swap_ideas = {
+			remove_idea = PRU_civil_military_medical_care_0
+			add_idea = PRU_civil_military_medical_care_1
+		}
+	}
+	relative_position_id = PRU_construction_of_the_central_military_hospital
+	prerequisite = { focus = PRU_construction_of_the_central_military_hospital }
+}
+
+shared_focus = {
+	id = PRU_military_purges
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_military_purges"
+		country_event = PRU.10
+	}
+	mutually_exclusive = {	focus = PRU_restoring_the_revolution	}
+}
+
+shared_focus = {
+	id = PRU_establishment_of_the_national_housing_corporation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_establishment_of_the_national_housing_corporation"
+		add_stability = 0.1
+	}
+	relative_position_id = PRU_military_purges
+	prerequisite = { focus = PRU_military_purges }
+}
+
+shared_focus = {
+	id = PRU_removal_of_export_restrictions
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_removal_of_export_restrictions"
+		add_ideas = free_trade
+	}
+	relative_position_id = PRU_establishment_of_the_national_housing_corporation
+	prerequisite = { focus = PRU_establishment_of_the_national_housing_corporation }
+}
+
+shared_focus = {
+	id = PRU_construction_of_the_pacocha_dam
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_construction_of_the_pacocha_dam"
+		add_ideas = PRU_energy_independence_orientation
+	}
+	relative_position_id = PRU_removal_of_export_restrictions
+	prerequisite = { focus = PRU_removal_of_export_restrictions }
+}
+
+shared_focus = {
+	id = PRU_outlawing_the_peoples_party
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_outlawing_the_peoples_party"
+		add_popularity = {
+			ideology = total_socialism
+			popularity = -1.0
+		}
+		add_popularity = {
+			ideology = radical_socialism
+			popularity = -1.0
+		}
+		illegalization_of_total_socialism_party = yes
+		illegalization_of_radical_socialism_party = yes
+	}
+	relative_position_id = PRU_construction_of_the_pacocha_dam
+	prerequisite = { focus = PRU_construction_of_the_pacocha_dam }
+}
+
+shared_focus = {
+	id = PRU_establishment_of_the_andean_community
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_establishment_of_the_andean_community"
+		add_ideas = PRU_andean_honour
+		create_faction = ANDEAN_COMMUNITY
+	}
+	relative_position_id = PRU_outlawing_the_peoples_party
+	prerequisite = { focus = PRU_outlawing_the_peoples_party }
+}
+
+shared_focus = {
+	id = PRU_improving_local_education
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_improving_local_education"
+		add_ideas = PRU_improved_education_and_social_security_0
+	}
+	relative_position_id = PRU_establishment_of_the_national_housing_corporation
+	prerequisite = { focus = PRU_establishment_of_the_national_housing_corporation }
+}
+
+shared_focus = {
+	id = PRU_establishment_of_workers_support_centres
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus PRU_establishment_of_workers_support_centres"
+		swap_ideas = {
+			remove_idea = PRU_improved_education_and_social_security_0
+			add_idea = PRU_improved_education_and_social_security_1
+		}
+	}
+	relative_position_id = PRU_improving_local_education
+	prerequisite = { focus = PRU_improving_local_education }
+}

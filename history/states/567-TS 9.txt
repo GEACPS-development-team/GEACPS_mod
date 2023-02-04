@@ -2,20 +2,20 @@ state = {
 	id = 567
 	name = "STATE_567"
 	manpower = 410183
+	state_category = wasteland
 	
-	resources = {
-		aluminium = 26
-	}
-	state_category = "wasteland"
+	resources = {	aluminium = 26	}
 	
 	history = {
 		owner = SIB
 		add_core_of = SIB
 		add_core_of = RUS
+		SKH = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		set_variable = {	SIB_state_variable = 1	}
+		set_variable = {	SKH_state_variable = 1	}
 	}
 	
 	provinces = {

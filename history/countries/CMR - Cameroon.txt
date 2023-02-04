@@ -1,9 +1,15 @@
 ﻿capital = 773
-oob = CMR_1946
 
-FRA = {	set_mandate = yes	}
+FRA = {	set_mandated_territory_B = yes	}
 
 set_cosmetic_tag = COUNTRY_FRA
 set_dictatorship = yes
 
 recruit_character = CHARACTER_henri_pierre_nicolas
+
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	presidential_system
+	market_intervention_economy
+	free_trade
+}

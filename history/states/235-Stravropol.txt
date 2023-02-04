@@ -8,17 +8,20 @@ state = {
 	}
 	
 	history = {
-		owner = DON
-		add_core_of = DON
+		owner = RUS
+		add_core_of = RUS
+		CCS = {	debug_core = yes	}
+		NCC = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			air_base = 2
 		}
 		victory_points = {	11696	3	}
+		set_variable = {	DON_state_variable = 1	}
 	}
 	
 	provinces = {
-		731	748	3748	6702	6718	6733	6750	6753	9688	9705	9707	9722	9742	11633	11661	11690	11693	11694	11727	11678	11696	9726
+		731	748	3748	6702	6718	6733	6750	6753	9688	9705	9707	9722	9726	9742	11633	11661	11690	11693	11694	11727	11678	11696
 	}
 	local_supplies = 0.0
 }

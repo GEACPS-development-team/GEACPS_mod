@@ -1,50 +1,51 @@
-add_namespace = geacps_JAP
+add_namespace = JAP
 country_event = {	#大日本帝國
-	id = geacps_JAP.1
-	title = geacps_JAP.1.t
-	desc = geacps_JAP.1.d
-	picture = GFX_event_test
+	id = JAP.0
+	title = JAP.0.t
+	desc = JAP.0.d
+	picture = GFX_JAP_start_up_country_event
 	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
 	
-	immediate = {
-	}
-	
 	option = {	#天皇陛下万歳！大日本帝国万歳！
-		name = geacps_JAP.1.a
+		name = JAP.0.0
 	}
 }
 country_event = {	#一・二二事件の発生
-	id = geacps_JAP.2
-	title = geacps_JAP.2.t
-	desc = geacps_JAP.2.d
-	picture = GFX_event_test
+	id = JAP.2
+	title = JAP.2.t
+	desc = JAP.2.d
+	picture = GFX_JAP_january_22_incident_country_event
 	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
 	
-	immediate = {
-	}
-	
 	option = {	#叛乱軍を捕らえよ！
-		name = geacps_JAP.2.a
+		name = JAP.2.0
 		complete_national_focus = JAP_1-22_Incident
-		remove_ideas_with_trait = head_of_government
-		#kill_head_of_government = yes	#効果不明
-		add_manpower = -1000
+		#kill_head_of_government = yes
+		add_stability = -0.1
+		add_manpower = -100
 		country_event = {
-			id = geacps_JAP.3
+			id = JAP.3
+		}
+		hidden_effect = {
+			set_country_flag = JAP_1-22_Incident_occurred
+			deactivate_advisor = JAP_hideki_tojo_hg
+			deactivate_advisor = JAP_hideki_tojo_cm
+			deactivate_advisor = JAP_hideki_tojo_mm
+			deactivate_advisor = JAP_hideki_tojo_am
 		}
 	}
 }
 country_event = {	#臨時代理
-	id = geacps_JAP.3
-	title = geacps_JAP.3.t
-	desc = geacps_JAP.3.d
-	picture = GFX_event_test
+	id = JAP.3
+	title = JAP.3.t
+	desc = JAP.3.d
+	picture = GFX_JAP_prime_minister_agent_country_event
 	
 	is_triggered_only = yes
 	hidden = no
@@ -54,73 +55,95 @@ country_event = {	#臨時代理
 	}
 	
 	option = {	#東條の腹心の安藤紀三郎に
-		name = geacps_JAP.3.a
- 		ai_chance = {
-			factor = 100
+		name = JAP.3.0
+		ai_chance = {
+			factor = 90
 		}
-		add_ideas = JAP_Kisaburo_Ando
+		activate_advisor = JAP_kisaburo_ando_hg
 		add_war_support = 0.1
 	}
 	
 	option = {	#"欠点がない"重光葵に
-		name = geacps_JAP.3.b
-		add_ideas = JAP_Mamoru_Shigemitsu
+		name = JAP.3.1
+		ai_chance = {
+			factor = 10
+		}
+		activate_advisor = JAP_mamoru_shigemitsu_hg
 		add_stability = 0.1
 	}
 }
 country_event = {	#重臣会議
-	id = geacps_JAP.4
-	title = geacps_JAP.4.t
-	desc = geacps_JAP.4.d
-	picture = GFX_event_test
+	id = JAP.4
+	title = JAP.4.t
+	desc = JAP.4.d
+	picture = GFX_JAP_senior_statesmens_conference_country_event
 	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
 	
 	immediate = {
+		complete_national_focus = JAP_taimeikoka
+		hidden_effect = {
+			set_country_flag = JAP_senior_statesmens_conference_held
+		}
 	}
 	
-	option = {	#奏薦されたのは陸軍将校だ！
-		name = geacps_JAP.4.a
- 		ai_chance = {
+	option = {	#奏薦されたのは陸軍の出した候補だ！
+		name = JAP.4.0
+		ai_chance = {
 			factor = 75
 		}
-	}
-	
-	option = {	#いいや、海軍士官が奏薦された！
-		name = geacps_JAP.4.b
- 		ai_chance = {
-			factor = 25
+		# complete_national_focus = JAP_selection_from_army_candidates
+		hidden_effect = {
+			set_country_flag = JAP_army_candidates_selected
 		}
 	}
 	
-	option = {	#軍部の意見なんぞ無視してしまえ...
-		name = geacps_JAP.4.c
+	option = {	#いいや、海軍の出した候補が奏薦された！
+		name = JAP.4.1
+		ai_chance = {
+			factor = 15
+		}
+		# complete_national_focus = JAP_selection_from_navy_candidates
+		hidden_effect = {
+			set_country_flag = JAP_navy_candidates_selected
+		}
+	}
+	
+	option = {	#軍部の意見なんぞ無視してしまえばよい...
+		name = JAP.4.2
+		ai_chance = {
+			factor = 10
+		}
+		# complete_national_focus = JAP_no_selection_from_anywhere
+		hidden_effect = {
+			set_country_flag = JAP_military_opinion_ignored
+		}
 	}
 }
 country_event = {	#閣議
-	id = geacps_JAP.5
-	title = geacps_JAP.5.t
-	desc = geacps_JAP.5.d
-	picture = GFX_event_test
+	id = JAP.5
+	title = JAP.5.t
+	desc = JAP.5.d
+	picture = GFX_JAP_cabinet_meeting_country_event
 	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
 	
-	immediate = {
-	}
-	
-	option = {	#決まりだな
-		name = geacps_JAP.5.a
+	option = {	#決まりだな！
+		name = JAP.5.0
+		hidden_effect = {
+			set_country_flag = JAP_decision_of_declaration
+		}
 	}
 }
 country_event = {	#海軍士官の裁判
-	id = geacps_JAP.6
-	title = geacps_JAP.6.t
-	desc = geacps_JAP.6.d
-	picture = GFX_event_test
+	id = JAP.6
+	title = JAP.6.t
+	desc = JAP.6.d
+	picture = GFX_JAP_judgement_country_event
 	
 	is_triggered_only = yes
 	hidden = no
@@ -130,24 +153,32 @@ country_event = {	#海軍士官の裁判
 	}
 	
 	option = {	#公正な判決を下す
-		name = geacps_JAP.6.a
- 		ai_chance = {
-			factor = 50
+		name = JAP.6.0
+		ai_chance = {
+			factor = 75
+		}
+		custom_effect_tooltip = JAP_menokataki_against_navy
+		retire_character = CHARACTER_sokichi_takagi
+		hidden_effect = {
+			set_country_flag = JAP_heavy_judgment_against_navy
 		}
 	}
 	
 	option = {	#臣民が助命嘆願運動を行っている...
-		name = geacps_JAP.6.b
- 		ai_chance = {
-			factor = 50
+		name = JAP.6.1
+		ai_chance = {
+			factor = 25
+		}
+		hidden_effect = {
+			set_country_flag = JAP_light_judgment_against_navy
 		}
 	}
 }
 country_event = {	#農本主義者を逮捕
-	id = geacps_JAP.7
-	title = geacps_JAP.7.t
-	desc = geacps_JAP.7.d
-	picture = GFX_event_test
+	id = JAP.7
+	title = JAP.7.t
+	desc = JAP.7.d
+	picture = GFX_JAP_judgement_country_event
 	
 	is_triggered_only = yes
 	hidden = no
@@ -157,24 +188,24 @@ country_event = {	#農本主義者を逮捕
 	}
 	
 	option = {	#全国の農本主義者達の思想を"保護観察"しよう
-		name = geacps_JAP.7.a
- 		ai_chance = {
+		name = JAP.7.0
+		ai_chance = {
 			factor = 50
 		}
 	}
 	
 	option = {	#投獄でもしておけ
-		name = geacps_JAP.7.b
- 		ai_chance = {
+		name = JAP.7.1
+		ai_chance = {
 			factor = 50
 		}
 	}
 }
 country_event = {	#皇道派将校の裁判
-	id = geacps_JAP.8
-	title = geacps_JAP.8.t
-	desc = geacps_JAP.8.d
-	picture = GFX_event_test
+	id = JAP.8
+	title = JAP.8.t
+	desc = JAP.8.d
+	picture = GFX_JAP_judgement_country_event
 	
 	is_triggered_only = yes
 	hidden = no
@@ -183,26 +214,33 @@ country_event = {	#皇道派将校の裁判
 	immediate = {
 	}
 	
-	option = {	#公正な判決なんてもんはない
-		name = geacps_JAP.8.a
- 		ai_chance = {
+	option = {	#どのくらい獄中に送れば気が済むのだろうか...
+		name = JAP.8.0
+		ai_chance = {
 			factor = 95
+		}
+		retire_character = CHARACTER_tomoshige_tsunoda
+		hidden_effect = {
+			set_country_flag = JAP_heavy_judgment_against_kodoha
 		}
 	}
 	
-	option = {	#もしかしたら...
-		name = geacps_JAP.8.b
- 		ai_chance = {
+	option = {	#妥協点を探る
+		name = JAP.8.1
+		ai_chance = {
 			factor = 5
+		}
+		hidden_effect = {
+			set_country_flag = JAP_light_judgment_against_kodoha
 		}
 	}
 }
 
 country_event = {	#武漢作戦
-	id = geacps_JAP.100
-	title = geacps_JAP.100.t
-	desc = geacps_JAP.100.d
-	picture = GFX_event_test
+	id = JAP.100
+	title = JAP.100.t
+	desc = JAP.100.d
+	picture = GFX_JAP_capture_of_wuhan_country_event
 	
 	major = yes
 	
@@ -221,32 +259,34 @@ country_event = {	#武漢作戦
 	}
 	
 	option = {	#祝武漢入城
-		name = geacps_JAP.100.a
+		name = JAP.100.0
 	}
 }
 
-add_namespace = geacps_JAP_military
+
+
+add_namespace = JAP_military
 country_event = {
-	id = geacps_JAP_military.001
-	title = geacps_JAP_military.001.title
-	desc = geacps_JAP_military.001.desc
-	picture = GFX_
+	id = JAP_military.001
+	title = JAP_military.001.t
+	desc = JAP_military.001.d
+	picture = GFX_JAP_navy_country_event
 	
 	is_triggered_only = yes
 
 	option = {
-		name = geacps_JAP_military.001.a
+		name = JAP_military.001.0
 		ai_chance = { factor = 10 }
 		add_ideas = JAP_air_people
 	}
 	option = {
-		name = geacps_JAP_military.001.b
+		name = JAP_military.001.1
 		ai_chance = { factor = 10 }
 		add_ideas = JAP_big_battery_people
 
 	}
 	option = {
-		name = geacps_JAP_military.001.c
+		name = JAP_military.001.2
 		ai_chance = { factor = 10 }
 		add_ideas = JAP_torpedo_people
 
@@ -254,125 +294,78 @@ country_event = {
 
 }
 country_event = {
-	id = geacps_JAP_military.002
-	title = geacps_JAP_military.002.title
-	desc = geacps_JAP_military.002.desc
-	picture = GFX_
+	id = JAP_military.002
+	title = JAP_military.002.t
+	desc = JAP_military.002.d
+	picture = GFX_JAP_research_institute_country_event
 	
 	is_triggered_only = yes
 
 	option = {
-		name = geacps_JAP_military.002.a
+		name = JAP_military.002.0
 		ai_chance = { factor = 10 }
 		country_event = {
-			id = geacps_JAP_military.003
+			id = JAP_military.003
 		}
 
 	}
 	option = {
-		name = geacps_JAP_military.002.b
+		name = JAP_military.002.1
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.2
-				uses = 3
-				category = electronics
+			name = JAP_military.002.1
+			bonus = 0.2
+			uses = 3
+			category = electronics
+			category = industry
 		}
-		add_tech_bonus = {
-				bonus = 0.2
-				uses = 3
-				category = industry
-		}
-
 	}
-
 }
 country_event = {
-	id = geacps_JAP_military.003
-	title = geacps_JAP_military.003.title
-	desc = geacps_JAP_military.003.desc
-	picture = GFX_
+	id = JAP_military.003
+	title = JAP_military.003.t
+	desc = JAP_military.003.d
+	picture = GFX_JAP_research_institute_country_event
 	
 	is_triggered_only = yes
 
 	option = {
-		name = geacps_JAP_military.003.a
+		name = JAP_military.003.0
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = armor
-			}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = artillery
-			}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = infantry_weapons
+			name = JAP_military.003.0
+			bonus = 0.15
+			uses = 6
+			category = armor
+			category = artillery
+			category = infantry_weapons
+			category = motorized_equipment
 		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = motorized_equipment
-		}
-
 	}
 	option = {
-		name = geacps_JAP_military.003.b
+		name = JAP_military.003.1
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = dd_tech
+			name = JAP_military.003.1
+			bonus = 0.15
+			uses = 7
+			category = dd_tech
+			category = bb_tech
+			category = cv_tech
+			category = ss_tech
+			category = ca_tech
 		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = bb_tech
-		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = cv_tech
-		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = ss_tech
-		}
-		add_tech_bonus = {
-				bonus = 0.15
-				uses = 3
-				category = ca_tech
-		}
-
-
 	}
 	option = {
-		name = geacps_JAP_military.003.c
+		name = JAP_military.003.2
 		ai_chance = { factor = 10 }
 		add_tech_bonus = {
-				bonus = 0.2
-				uses = 5
-				category = light_air
-
+			name = JAP_military.003.2
+			bonus = 0.2
+			uses = 7
+			category = light_air
+			category = medium_air
+			category = heavy_air
 		}
-		add_tech_bonus = {
-				bonus = 0.2
-				uses = 5
-				category = medium_air
-
-		}
-		add_tech_bonus = {
-				bonus = 0.2
-				uses = 5
-				category = heavy_air
-
-		}
-
-
 	}
-
 }

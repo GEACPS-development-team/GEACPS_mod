@@ -1,4 +1,6 @@
-﻿create_dynamic_country = {	#中華民国福州政府
+﻿capital = 595
+
+create_dynamic_country = {	#中華民国福州政府
 	original_tag = CHI
 	
 	set_capital = {	state = 595	}
@@ -6,13 +8,25 @@
 	set_cosmetic_tag = CHI_minguo_fuzhou_government
 	set_dictatorship = yes
 	
-	recruit_character = CHARACTER_miao_bin
+	create_country_leader = {
+		name = CHARACTER_miao_bin
+		desc = "CHARACTER_miao_bin_desc"
+		picture = GFX_miao_bin_large
+		expire = "1965.1.1"
+		ideology = national_authoritarianism_ideology
+	}
+	
+	add_ideas = {	#政治タブ
+		republic_unitary_state
+		provisional_government
+	}
 	
 	every_core_state = {	
 		limit = {	is_core_of_not_CHI_JAP = yes	}
 		remove_core_of = PREV
 	}
 	transfer_state = 595
+	transfer_state = 1263
 	
 	JAP = {	add_to_faction = PREV	}
 	declare_war_on = {	target = CHI	type = civil_war	}

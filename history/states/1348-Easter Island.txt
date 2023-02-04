@@ -1,0 +1,23 @@
+state = {
+	id = 1348
+	name = "STATE_1348"
+	manpower = 100
+	state_category = enclave
+	buildings_max_level_factor = 1
+	
+	history = {
+		owner = CHL
+		add_core_of = CHL
+		PLY = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+			13371 = {	naval_base = 1	}
+		}
+		set_variable = {	CHL_state_variable = 1	}
+	}
+	
+	provinces = {
+		13371
+	}
+	local_supplies=0.0
+}

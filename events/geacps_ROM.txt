@@ -1,17 +1,17 @@
-add_namespace = geacps_ROM
+add_namespace = ROM
 
 country_event = {#12月革命
-	id = geacps_ROM.1
-	title = geacps_ROM.1.t
-	desc = geacps_ROM.1.d
+	id = ROM.1
+	title = ROM.1.t
+	desc = ROM.1.d
 	picture = GFX_event_test
 	
 	fire_only_once = yes
 	is_triggered_only = yes
 	
 	option = {#全ての権力を共産党に...
-		name = geacps_ROM.1.a
- 		ai_chance = {
+		name = ROM.1.0
+		ai_chance = {
 			factor = 50
 			modifier = {
 				is_historical_focus_on = yes
@@ -28,8 +28,8 @@ country_event = {#12月革命
 	}
 	
 	option = {#王に力を
-		name = geacps_ROM.1.b
- 		ai_chance = {
+		name = ROM.1.1
+		ai_chance = {
 			factor = 50
 			modifier = {
 				is_historical_focus_on = yes

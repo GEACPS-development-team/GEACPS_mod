@@ -1,0 +1,194 @@
+ideas = {
+	country = {
+		FEA_limited_recognition = {	#限定された認知
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.1
+			}
+		}
+		FEA_reactionary_politics = {	#反動的政治
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				political_power_gain = -0.3
+				political_advisor_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				mobilization_laws_cost_factor = 0.25
+				economy_cost_factor = 0.25
+			}
+		}
+		FEA_export_dependent_economy = {	#輸出前提の経済
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			#picture = 
+			modifier = {
+				min_export = 0.2
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		FEA_president_system = {				#総統制
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = ast_abandon_the_westminster_system_fascism
+			
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
+		
+		FEA_work_poor = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = spr_collectivized_society
+			
+			modifier = {
+				stability_factor = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		
+		FEA_oligarch_i = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_jap_zaibatsu_ally
+			
+			modifier = {
+				political_power_gain = -0.20
+				Industrial_capacity_factory = 0.1
+			}
+		}
+		
+		FEA_fighter = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_generic_fighter_production_diverted
+			
+			equipment_bonus = {
+				fighter = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				medium_plane_fighter_airframe = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		FEA_bomber = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_generic_bomber_production_diverted
+			
+			equipment_bonus = {
+				cas = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				tactical_bomber = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		FEA_Standardization_idea = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_generic_bomber_production_diverted
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+				armor = {
+					build_cost_ic = -0.1
+					instant = yes
+				}
+			}
+		}
+		
+		FEA_staff_idea = {
+		
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = idea_generic_bomber_production_diverted
+			
+			modifier = {
+				command_power_gain = 0.4
+			}
+		}
+	}
+}

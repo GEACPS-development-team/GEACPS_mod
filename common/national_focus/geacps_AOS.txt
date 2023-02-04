@@ -1,0 +1,54 @@
+focus_tree = {
+	id = AOS_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = AOS
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 100 y = 500
+	}
+	shared_focus = AOS_1955_statute_referendum
+}
+
+shared_focus = {	#1955年アオスタ独立住民投票
+	id = AOS_1955_statute_referendum
+	icon = GFX_goal_unknown
+	cost = 1
+	x = 1
+	y = 1
+	available = {
+		date > 1955.10.23
+		date < 1956.1.1
+		AOS = {	is_subject_of = FRA	}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus AOS_1955_statute_referendum"
+		country_event = AOS.0
+		news_event = AOS_news.0
+	}
+}
+shared_focus = {	#リソルジメント	#"ITA"へ以降予定
+	id = AOS_risorgimento
+	icon = GFX_goal_unknown
+	cost = 1
+	relative_position_id = AOS_1955_statute_referendum
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = AOS_1955_statute_referendum
+	}
+	available = {
+	}
+	completion_reward = {
+		ITA = {
+			annex_country = {
+				target = AOS
+				transfer_troops = yes
+			}
+		}
+	}
+}

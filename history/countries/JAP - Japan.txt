@@ -1,8 +1,8 @@
-﻿capital = 282
+capital = 282
 oob = JAP_1946
 
 set_cosmetic_tag = GREATJAPAN_empire
-set_stability = 0.5
+set_stability = 1.0
 set_war_support = 0.5
 set_fuel_ratio = 0.1
 set_convoys = 1000
@@ -30,28 +30,44 @@ illegalization_of_radical_socialism_party = yes
 
 recruit_character = CHARACTER_hirohito
 recruit_character = CHARACTER_morimasa_nashimoto
+recruit_character = CHARACTER_hiroyasu_fushimi
+
 recruit_character = CHARACTER_fumimaro_konoe
 recruit_character = CHARACTER_mamoru_shigemitsu
+recruit_character = CHARACTER_nobusuke_kishi
+recruit_character = CHARACTER_sanzo_nosaka
+recruit_character = CHARACTER_sotaro_ishiwata
+
+recruit_character = CHARACTER_hajime_sugiyama
 recruit_character = CHARACTER_hideki_tojo
 recruit_character = CHARACTER_hisaichi_terauchi
 recruit_character = CHARACTER_kisaburo_ando
 recruit_character = CHARACTER_kuniaki_koiso
 recruit_character = CHARACTER_nobuyoshi_muto
 recruit_character = CHARACTER_shunroku_hata
+recruit_character = CHARACTER_tomoshige_tsunoda
+
+recruit_character = CHARACTER_isoroku_yamamoto
 recruit_character = CHARACTER_kantaro_suzuki
 recruit_character = CHARACTER_keisuke_okada
+recruit_character = CHARACTER_mineichi_koga
 recruit_character = CHARACTER_mitsumasa_yonai
+recruit_character = CHARACTER_naokuni_nomura
+recruit_character = CHARACTER_osami_nagano
+recruit_character = CHARACTER_shigetaro_shimada
+recruit_character = CHARACTER_sokichi_takagi
 
-add_ideas = {	#内閣
-	JAP_hideki_tojo_hg
-	JAP_hideki_tojo_am
-	JAP_hideki_tojo_cm
-	JAP_mamoru_shigemitsu_fm
-	JAP_kisaburo_ando_hm
-}
+activate_advisor = JAP_hideki_tojo_hg
+activate_advisor = JAP_mamoru_shigemitsu_fm
+activate_advisor = JAP_kisaburo_ando_hm
+activate_advisor = JAP_hideki_tojo_cm
+activate_advisor = JAP_hideki_tojo_mm
+activate_advisor = JAP_hideki_tojo_am
+activate_advisor = JAP_shigetaro_shimada_nm
 
-add_ideas = {	#国民精神
-	JAP_high_defence_state_system
+add_ideas = {
+	monarchy_unitary_state
+	imperial_rule_assistance_system
 	JAP_privy_council
 	JAP_planning_institute
 	JAP_active_military_service_for_ministers_of_war
@@ -60,11 +76,13 @@ add_ideas = {	#国民精神
 	JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration
 }
 
-complete_national_focus = JAP_Lugou_Bridge_Incident
-complete_national_focus = JAP_Nanjing_Tips
+complete_national_focus = JAP_Marco_Polo_Bridge_Incident
+complete_national_focus = JAP_Battle_of_Nanking
 
-country_event = {	id = geacps_JAP.1	days = 1	}
-country_event = {	id = geacps_JAP.2	days = 22	}
+country_event = {	id = JAP.0	days = 1	}
+country_event = {	id = JAP.2	days = 22	}
+
+create_intelligence_agency = {	name = "特別高等警察"	icon = GFX_secret_military_agency	}
 
 #陣営
 create_faction = GREATER_EAST_ASIA_CO-PROSPERITY_SPHERE
@@ -74,12 +92,12 @@ add_to_faction = CH3
 add_to_faction = CH4
 
 give_guarantee = BRM
-give_guarantee = AMR
+give_guarantee = FEA
 give_guarantee = MON
 
 diplomatic_relation = { country = GBR	relation = non_aggression_pact }
 declare_war_on = {	target = CHI	type = annex_everything	}
-add_opinion_modifier = {	target = USA	modifier = American_Empire	}
+add_opinion_modifier = {	target = USA	modifier = america_imperialism	}
 
 set_variable = { JAP_toseiha_loyalty = 15 }
 set_variable = { JAP_toseiha_popularity = 50 }

@@ -1,105 +1,185 @@
 autonomy_state = {
 	id = nominal_puppet
-	is_puppet = yes
-
-	min_freedom_level = 0.8
 	
-	allowed = {
-		NOT = {	has_variable = colony_trigger_variable	}
-		NOT = {	has_variable = condominium_trigger_variable	}
-		NOT = {	has_variable = leased_territory_trigger_variable	}
-		NOT = {	has_variable = mandate_trigger_variable	}
-		NOT = {	has_variable = personal_union_trigger_variable	}
-		NOT = {	has_variable = princely_state_trigger_variable	}
-		NOT = {	has_variable = protectorate_trigger_variable	}
-		NOT = {	has_variable = occupied_territory_trigger_variable	}
-		NOT = {	OVERLORD = {	tag = CHI	}	}
-		NOT = {	OVERLORD = {	tag = JAP	}	}
-		NOT = {	OVERLORD = {	tag = SOV	}	}
+	is_puppet = yes
+	min_freedom_level = 0.8
+	manpower_influence = 0.2
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = no
 	}
+	
+	modifier = {
+		autonomy_manpower_share = 0
+		extra_trade_to_overlord_factor = 0.10
+		overlord_trade_cost_factor = -0.10
+		license_subject_master_purchase_cost = -0.10
+		cic_to_overlord_factor = 0.10
+		mic_to_overlord_factor = 0.10
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		nominal_puppet
+		autonomous_puppet
+		puppet
+		occupied_puppet
+		integrated_puppet
+	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = autonomous_puppet
+	
 	is_puppet = yes
-
 	min_freedom_level = 0.6
+	manpower_influence = 0.2
 	
 	rule = {
-		can_decline_call_to_war = no
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = no
 	}
 	
-	allowed = {
-		NOT = {	has_variable = colony_trigger_variable	}
-		NOT = {	has_variable = condominium_trigger_variable	}
-		NOT = {	has_variable = leased_territory_trigger_variable	}
-		NOT = {	has_variable = mandate_trigger_variable	}
-		NOT = {	has_variable = personal_union_trigger_variable	}
-		NOT = {	has_variable = princely_state_trigger_variable	}
-		NOT = {	has_variable = protectorate_trigger_variable	}
-		NOT = {	has_variable = occupied_territory_trigger_variable	}
-		NOT = {	OVERLORD = {	tag = CHI	}	}
-		NOT = {	OVERLORD = {	tag = JAP	}	}
-		NOT = {	OVERLORD = {	tag = SOV	}	}
+	modifier = {
+		autonomy_manpower_share = 0
+		extra_trade_to_overlord_factor = 0.20
+		overlord_trade_cost_factor = -0.20
+		license_subject_master_purchase_cost = -0.20
+		cic_to_overlord_factor = 0.20
+		mic_to_overlord_factor = 0.20
 	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		nominal_puppet
+		autonomous_puppet
+		puppet
+		occupied_puppet
+		integrated_puppet
+	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = puppet
-	is_puppet = yes
-
-	min_freedom_level = 0.4
-
-	default = yes
 	
+	default = yes
+	is_puppet = yes
+	min_freedom_level = 0.4
+	manpower_influence = 0.2
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
+	}
+	
+	modifier = {
+		autonomy_manpower_share = 0.6
+		extra_trade_to_overlord_factor = 0.6
+		overlord_trade_cost_factor = -0.6
+		license_subject_master_purchase_cost = -0.6
+		cic_to_overlord_factor = 0.6
+		mic_to_overlord_factor = 0.6
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		nominal_puppet
+		autonomous_puppet
+		puppet
+		occupied_puppet
+		integrated_puppet
+	}
 	allowed = {
-		NOT = {	has_variable = colony_trigger_variable	}
-		NOT = {	has_variable = condominium_trigger_variable	}
-		NOT = {	has_variable = leased_territory_trigger_variable	}
-		NOT = {	has_variable = mandate_trigger_variable	}
-		NOT = {	has_variable = personal_union_trigger_variable	}
-		NOT = {	has_variable = princely_state_trigger_variable	}
-		NOT = {	has_variable = protectorate_trigger_variable	}
-		NOT = {	has_variable = occupied_territory_trigger_variable	}
-		NOT = {	OVERLORD = {	tag = CHI	}	}
 		NOT = {	OVERLORD = {	tag = JAP	}	}
 		NOT = {	OVERLORD = {	tag = SOV	}	}
 	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = occupied_puppet
+	
 	is_puppet = yes
-	
 	min_freedom_level = 0.2
+	manpower_influence = 0.2
 	
-	allowed = {
-		NOT = {	has_variable = colony_trigger_variable	}
-		NOT = {	has_variable = condominium_trigger_variable	}
-		NOT = {	has_variable = leased_territory_trigger_variable	}
-		NOT = {	has_variable = mandate_trigger_variable	}
-		NOT = {	has_variable = personal_union_trigger_variable	}
-		NOT = {	has_variable = princely_state_trigger_variable	}
-		NOT = {	has_variable = protectorate_trigger_variable	}
-		NOT = {	has_variable = occupied_territory_trigger_variable	}
-		NOT = {	OVERLORD = {	tag = CHI	}	}
-		NOT = {	OVERLORD = {	tag = JAP	}	}
-		NOT = {	OVERLORD = {	tag = SOV	}	}
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
 	}
+	
+	modifier = {
+		autonomy_manpower_share = 0.8
+		extra_trade_to_overlord_factor = 0.75
+		overlord_trade_cost_factor = -0.75
+		license_subject_master_purchase_cost = -0.75
+		cic_to_overlord_factor = 0.75
+		mic_to_overlord_factor = 0.75
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		nominal_puppet
+		autonomous_puppet
+		puppet
+		occupied_puppet
+		integrated_puppet
+	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = integrated_puppet
 	is_puppet = yes
-	min_freedom_level = 0.0
 	
-	allowed = {
-		NOT = {	has_variable = colony_trigger_variable	}
-		NOT = {	has_variable = condominium_trigger_variable	}
-		NOT = {	has_variable = leased_territory_trigger_variable	}
-		NOT = {	has_variable = mandate_trigger_variable	}
-		NOT = {	has_variable = personal_union_trigger_variable	}
-		NOT = {	has_variable = princely_state_trigger_variable	}
-		NOT = {	has_variable = protectorate_trigger_variable	}
-		NOT = {	has_variable = occupied_territory_trigger_variable	}
-		NOT = {	OVERLORD = {	tag = CHI	}	}
-		NOT = {	OVERLORD = {	tag = JAP	}	}
-		NOT = {	OVERLORD = {	tag = SOV	}	}
+	min_freedom_level = 0.0
+	manpower_influence = 0.2
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = yes
 	}
+	
+	modifier = {
+		autonomy_manpower_share = 1.0
+		extra_trade_to_overlord_factor = 1.0
+		overlord_trade_cost_factor = -1.0
+		license_subject_master_purchase_cost = -1.0
+		cic_to_overlord_factor = 1.0
+		mic_to_overlord_factor = 1.0
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		nominal_puppet
+		autonomous_puppet
+		puppet
+		occupied_puppet
+		integrated_puppet
+	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }

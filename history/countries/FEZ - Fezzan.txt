@@ -1,5 +1,4 @@
 ﻿capital = 273
-oob = FEZ_1946
 
 FRA = {	set_occupied_territory = yes	}
 
@@ -7,3 +6,8 @@ set_cosmetic_tag = COUNTRY_FRA
 set_dictatorship = yes
 
 recruit_character = CHARACTER_pierre_florimond
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

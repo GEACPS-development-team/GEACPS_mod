@@ -1,5 +1,4 @@
 ﻿capital = 266
-oob = PER_1946
 set_cosmetic_tag = IRAN_imperial_state
 
 set_convoys = 5
@@ -20,45 +19,50 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 0
 }
-set_party_name = {	#イラン・トゥーデ党
-	ideology = total_socialism
-	name = PARTY_iran_tudeh_party
-	long_name = PARTY_iran_tudeh_party_long
-}
-set_party_name = {	#イラン・トゥーデ党
-	ideology = radical_socialism
-	name = PARTY_iran_tudeh_party
-	long_name = PARTY_iran_tudeh_party_long
-}
-set_party_name = {	#国民戦線
-	ideology = social_democracy
-	name = PARTY_national_front
-	long_name = PARTY_national_front_long
-}
-set_party_name = {	#復興党
-	ideology = liberal_democracy
-	name = PARTY_revival_party
-	long_name = PARTY_revival_party_long
-}
-set_party_name = {	#国民党
-	ideology = conservative_democracy
-	name = PARTY_nationalists_party
-	long_name = PARTY_nationalists_party_long
-}
-set_party_name = {	#イラン民主党
-	ideology = authoritative_democracy
-	name = PARTY_iran_democrat_party
-	long_name = PARTY_iran_democrat_party_long
-}
-set_party_name = {	#新イラン党
-	ideology = national_authoritarianism
-	name = PARTY_iran_novin_party
-	long_name = PARTY_iran_novin_party_long
-}
-set_party_name = {	#イラン人民復活党
-	ideology = national_populism
-	name = PARTY_iran_people_rastakhiz_party
-	long_name = PARTY_iran_people_rastakhiz_party_long
-}
+# set_party_name = {	#イラン・トゥーデ党
+# 	ideology = total_socialism
+# 	name = PARTY_iran_tudeh_party
+# 	long_name = PARTY_iran_tudeh_party_long
+# }
+# set_party_name = {	#イラン・トゥーデ党
+# 	ideology = radical_socialism
+# 	name = PARTY_iran_tudeh_party
+# 	long_name = PARTY_iran_tudeh_party_long
+# }
+# set_party_name = {	#国民戦線
+# 	ideology = social_democracy
+# 	name = PARTY_national_front
+# 	long_name = PARTY_national_front_long
+# }
+# set_party_name = {	#復興党
+# 	ideology = liberal_democracy
+# 	name = PARTY_revival_party
+# 	long_name = PARTY_revival_party_long
+# }
+# set_party_name = {	#国民党
+# 	ideology = conservative_democracy
+# 	name = PARTY_nationalists_party
+# 	long_name = PARTY_nationalists_party_long
+# }
+# set_party_name = {	#イラン民主党
+# 	ideology = authoritative_democracy
+# 	name = PARTY_iran_democrat_party
+# 	long_name = PARTY_iran_democrat_party_long
+# }
+# set_party_name = {	#新イラン党
+# 	ideology = national_authoritarianism
+# 	name = PARTY_iran_novin_party
+# 	long_name = PARTY_iran_novin_party_long
+# }
+# set_party_name = {	#イラン人民復活党
+# 	ideology = national_populism
+# 	name = PARTY_iran_people_rastakhiz_party
+# 	long_name = PARTY_iran_people_rastakhiz_party_long
+# }
 
 recruit_character = CHARACTER_mohammad_reza_shah_pahlavi
+
+add_ideas = {	#政治タブ
+	monarchy_unitary_state
+	parliamentary_cabinet_system
+}

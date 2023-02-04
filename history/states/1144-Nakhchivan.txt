@@ -6,12 +6,15 @@ state = {
 	state_category = rural
 	
 	history = {
-		owner = CCS
-		add_core_of = CCS
+		owner = SCC
+		add_core_of = SCC
 		add_core_of = AZR
+		ARS = {	debug_core = yes	}
+		CCS = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}
+		set_variable = {	ARS_state_variable = 1	}
 		set_variable = {	AZR_state_variable = 1	}
 		set_variable = {	ARM_state_variable = 2	}
 	}

@@ -1,5 +1,4 @@
 ﻿capital = 327
-oob = PHI_1946
 
 JAP = {	set_imperial_protected_state = yes	}
 
@@ -23,4 +22,42 @@ set_popularities = {
 	national_populism = 100
 }
 
+illegalization_of_total_socialism_party = yes
+illegalization_of_radical_socialism_party = yes
+set_party_name = {	#新生フィリピン奉仕団
+	ideology = social_democracy
+	name = PARTY_association_for_service_to_the_new_philippines
+	long_name = PARTY_association_for_service_to_the_new_philippines_long
+}
+set_party_name = {	#新生フィリピン奉仕団
+	ideology = liberal_democracy
+	name = PARTY_association_for_service_to_the_new_philippines
+	long_name = PARTY_association_for_service_to_the_new_philippines_long
+}
+set_party_name = {	#新生フィリピン奉仕団
+	ideology = conservative_democracy
+	name = PARTY_association_for_service_to_the_new_philippines
+	long_name = PARTY_association_for_service_to_the_new_philippines_long
+}
+set_party_name = {	#新生フィリピン奉仕団
+	ideology = authoritative_democracy
+	name = PARTY_association_for_service_to_the_new_philippines
+	long_name = PARTY_association_for_service_to_the_new_philippines_long
+}
+set_party_name = {	#新生フィリピン奉仕団
+	ideology = national_authoritarianism
+	name = PARTY_association_for_service_to_the_new_philippines
+	long_name = PARTY_association_for_service_to_the_new_philippines_long
+}
+set_party_name = {	#新生フィリピン奉仕団
+	ideology = national_populism
+	name = PARTY_association_for_service_to_the_new_philippines
+	long_name = PARTY_association_for_service_to_the_new_philippines_long
+}
+
 recruit_character = CHARACTER_jose_paciano_laurel_y_garcia
+
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	military_dictatorial_system
+}

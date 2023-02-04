@@ -1,10 +1,9 @@
 ﻿capital = 57
-oob = WGR_1946
 
 set_cosmetic_tag = GER_empire
 
 set_politics = {
-	ruling_party = authoritative_democracy
+	ruling_party = conservative_democracy
 	last_election = "1938.4.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -13,19 +12,56 @@ set_popularities = {
 	total_socialism = 4
 	radical_socialism = 4
 	social_democracy = 22
-	liberal_democracy = 34
-	conservative_democracy = 24
+	liberal_democracy = 24
+	conservative_democracy = 34
 	authoritative_democracy = 5
 	national_authoritarianism = 4
 	national_populism = 3
 }
 
+set_party_name = {	#ドイツ・キリスト教民主同盟
+	ideology = conservative_democracy
+	name = PARTY_christian_democratic_union_of_germany
+	long_name = PARTY_christian_democratic_union_of_germany_long
+}
+set_party_name = {	#ドイツ党
+	ideology = authoritative_democracy
+	name = PARTY_german_party
+	long_name = PARTY_german_party_long
+}
+
 recruit_character = CHARACTER_friedrich_wilhelm_victor_august_ernst_von_preusen
 
-add_ideas = {
-	WGR_the_berlin_declaration
-	WGR_potsdam_agreement
-	WGR_denazification
+add_ideas = {	#政治タブ
+	monarchy_federal_state
+	parliamentary_cabinet_system
+}
+
+add_ideas = {	#国民精神
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_halfway_denazification
+	GER_the_east-west_german_wall
 	WGR_republic_of_Bonn
-	WGR_the_east-west_german_wall
+}
+
+set_rule = {
+	can_boost_other_ideologies = no
+	can_create_factions = no
+	can_declare_war_on_same_ideology = no
+	can_declare_war_without_wargoal_when_in_war = no
+	can_decline_call_to_war = no
+	can_force_government = no
+	can_generate_female_aces = no
+	can_guarantee_other_ideologies = no
+	can_join_factions = no
+	can_join_opposite_factions = no
+	can_lower_tension = no
+	can_not_declare_war = no
+	can_occupy_non_war = no
+	can_only_justify_war_on_threat_country = no
+	can_puppet = no
+	can_send_volunteers = no
+	can_use_kamikaze_pilots = no
+	units_deployed_to_overlord = no
 }

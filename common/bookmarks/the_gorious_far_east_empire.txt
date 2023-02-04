@@ -4,75 +4,86 @@ bookmarks = {
 		desc = "THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
 		date = 1946.1.1.1
 		picture = "GFX_select_date_1939"
-		default = yes
+		default = no
 		default_country = "JAP"
 		
-		"CHI"={
-			history = "CHI_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
-			ideology = authoritative_democracy
+		"POL"={
+			history = "POL_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = total_socialism
 			available = {}
-			ideas = {}
+			# ideas = {}
 			focuses = {}
 		}
-		"TIB"={
-			history = "TIB_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
-			ideology = authoritative_democracy
-			minor = no
-			available = {}
-			ideas = {}
-			focuses = {}
-		}
-		"MON"={
-			history = "MON_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+		"ITA"={
+			history = "ITA_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
 			ideology = authoritative_democracy
 			available = {}
-			ideas = {}
+			# ideas = {}
 			focuses = {}
 		}
-		"MEN"={
-			history = "MEN_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+		"RUS"={
+			history = "RUS_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = total_socialism
+			available = {}
+			# ideas = {}
+			focuses = {}
+		}
+		"FRA"={
+			history = "FRA_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
 			ideology = national_populism
 			available = {}
-			ideas = {}
-			focuses = {}
-		}
-		"MAN"={
-			history = "MAN_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
-			ideology = national_populism
-			available = {}
-			ideas = {}
+			# ideas = {}
 			focuses = {}
 		}
 		"JAP"={
 			history = "JAP_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
 			ideology = national_populism
 			available = {}
-			ideas = {
-				JAP_high_defence_state_system
-				JAP_victory_in_the_greater_east_asia_war
-				JAP_the_greater_east_asia_conference_and_the_greater_east_asia_joint_declaration
-			}
+			# ideas = {}
 			focuses = {}
 		}
-		"AST"={
-			history = "AST_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+		"GBR"={
+			history = "GBR_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
 			ideology = social_democracy
 			available = {}
-			ideas = {}
+			# ideas = {}
 			focuses = {}
 		}
-		
-		"SIA"={
-			history = "SIA_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+		"USA"={
+			history = "USA_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
 			ideology = authoritative_democracy
-			minor = yes
 			available = {}
-			ideas = {}
+			# ideas = {}
+			focuses = {}
+		}
+		"WGR"={
+			history = "WGR_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = authoritative_democracy
+			available = {}
+			# ideas = {}
 			focuses = {}
 		}
 		
 		"---"={
 			history = "OTHER_BLITZKRIEG_DESC"
+		}
+		
+		"CHI"={
+			minor = yes
+			history = "CHI_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = authoritative_democracy
+			available = {}
+			# ideas = {}
+			focuses = {}
+		}
+		
+		"FEA"={
+			minor = yes
+			history = "FEA_THE_GORIOUS_FAR_EAST_EMPIRE_DESC"
+			ideology = authoritative_democracy
+			available = {}
+			# ideas = {}
+			focuses = {}
 		}
 		
 		effect = {

@@ -1,5 +1,4 @@
 capital = 10
-oob = POL_1946
 
 set_cosmetic_tag = POL_republic_national_unity_provisional_government
 set_convoys = 10
@@ -23,7 +22,12 @@ set_popularities = {
 
 recruit_character = CHARACTER_boleslaw_bierut
 
-add_ideas = {
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	provisional_government
+}
+
+add_ideas = {	#国民精神
 	POL_ministry_of_public_security
 	POL_legacy_of_world_war
 	POL_reconstruction_economy

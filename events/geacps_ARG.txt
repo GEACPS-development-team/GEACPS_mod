@@ -1,0 +1,192 @@
+add_namespace = ARG
+country_event = {	#
+	id = ARG.0
+	title = ARG.0.t
+	desc = ARG.0.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.0.0
+		ai_chance = {	factor = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.0"	}
+}
+country_event = {	#
+	id = ARG.1
+	title = ARG.1.t
+	desc = ARG.1.d
+	picture = GFX_event_test
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.1.0
+		ai_chance = {	factor = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.1"	}
+}
+country_event = {	#
+	id = ARG.2
+	title = ARG.2.t
+	desc = ARG.2.d
+	picture = GFX_generic_election_country_event
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		original_tag = ARG
+		date < 1946.2.25
+	}
+	
+	option = {
+		name = ARG.2.0
+		ai_chance = {	factor = 100	}
+		complete_national_focus = ARG_february_election
+		random_list = {
+			50 = {
+				custom_effect_tooltip = ARG_labour_party_win
+				set_country_flag = ARG_labour_party_win_1946
+			}
+			50 = {
+				custom_effect_tooltip = ARG_emergency_citizens_alliance_win
+				set_country_flag = ARG_emergency_citizens_alliance_win_1946
+			}
+		}
+	}
+	option = {
+		name = ARG.2.1
+		ai_chance = {	factor = 0	}
+		complete_national_focus = ARG_february_election
+		custom_effect_tooltip = ARG_labour_party_win
+		set_country_flag = ARG_labour_party_win_1946
+	}
+	option = {
+		name = ARG.2.2
+		ai_chance = {	factor = 0	}
+		complete_national_focus = ARG_february_election
+		custom_effect_tooltip = ARG_emergency_citizens_alliance_win
+		set_country_flag = ARG_emergency_citizens_alliance_win_1946
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.2"	}
+}
+country_event = {	#
+	id = ARG.3
+	title = ARG.3.t
+	desc = ARG.3.d
+	picture = GFX_ARG_eva_peron_foundation_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.3.0
+		ai_chance = {	factor = 100	}
+		add_ideas = ARG_eva_peron_foundation
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.3"	}
+}
+country_event = {	#
+	id = ARG.4
+	title = ARG.4.t
+	desc = ARG.4.d
+	picture = GFX_ARG_five_year_plans_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.4.0
+		ai_chance = {	factor = 100	}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.4"	}
+}
+country_event = {	#
+	id = ARG.5
+	title = ARG.5.t
+	desc = ARG.5.d
+	picture = GFX_ARG_economic_independence_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.5.0
+		ai_chance = {	factor = 100	}
+		add_ideas = ARG_economic_independence
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.5"	}
+}
+country_event = {	#
+	id = ARG.6
+	title = ARG.6.t
+	desc = ARG.6.d
+	picture = GFX_ARG_housing_construction_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.6.0
+		ai_chance = {	factor = 100	}
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.6"	}
+}
+country_event = {	#
+	id = ARG.7
+	title = ARG.7.t
+	desc = ARG.7.d
+	picture = GFX_ARG_hygiene_problem_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.7.0
+		ai_chance = {	factor = 100	}
+		add_stability = 0.05
+		add_war_support = 0.09
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.7"	}
+}
+country_event = {	#
+	id = ARG.8
+	title = ARG.8.t
+	desc = ARG.8.d
+	picture = GFX_ARG_german_military_officer_in_exile_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ARG.8.0
+		ai_chance = {	factor = 100	}
+		random_list = {
+			40 = {
+				custom_effect_tooltip = ARG_german_military_officer_in_exile
+				set_country_flag = ARG_rudel_in_exile_flag
+			}
+			60 = {}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ARG.8"	}
+}

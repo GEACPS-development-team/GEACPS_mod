@@ -1,7 +1,11 @@
 ﻿capital = 454
-oob = PAL_1946
 
-GBR = {	set_mandate = yes	}
+GBR = {	set_mandated_territory_A = yes	}
 
-set_cosmetic_tag = PAL_ENG-GBR
+set_cosmetic_tag = PAL_GBRbyENG
 set_dictatorship = yes
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

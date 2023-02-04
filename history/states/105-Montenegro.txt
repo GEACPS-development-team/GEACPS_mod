@@ -13,13 +13,16 @@ state = {
 	history = {
 		owner = MNT
 		add_core_of = MNT
-		add_core_of = YUG
+		BLK = {	debug_core = yes	}
+		YUG = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			9809 = {	naval_base = 1	}
+			9821 = {	naval_base = 1	}
 		}
 		victory_points = {	9809	3	}
+		victory_points = {	9821	1	}
 		set_variable = {	MNT_state_variable = 1	}
 	}
 	

@@ -7,11 +7,12 @@ state = {
 	history = {
 		owner = CRC
 		add_core_of = CRC
-		add_core_of = ARB
+		ARU = {	debug_core = yes	}
+		WIN = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	ARB_state_variable = 1	}
+		set_variable = {	ARU_state_variable = 1	}
 		set_variable = {	CRC_state_variable = 2	}
 	}
 	

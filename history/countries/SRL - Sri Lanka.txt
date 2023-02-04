@@ -1,9 +1,13 @@
 ﻿capital = 422
-oob = SRL_1946
 
 GBR = {	set_colony = yes	}
 
-set_cosmetic_tag = SRL_ENG-GBR
+set_cosmetic_tag = SRL_GBRbyENG
 set_dictatorship = yes
 
 recruit_character = CHARACTER_henry_monck-mason_moore
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

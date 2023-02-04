@@ -1,0 +1,70 @@
+is_diplomatic_action_valid_boost_party_popularity = { always = no }
+
+is_diplomatic_action_valid_create_faction = { always = no }
+DIPLOMACY_CREATE_FACTION_ENABLE_TRIGGER = {	#陣営創設禁止
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+
+is_diplomatic_action_valid_offer_join_faction = { always = no }
+DIPLOMACY_OFFER_JOIN_FACTION_ENABLE_TRIGGER = {	#陣営招待禁止
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+
+is_diplomatic_action_valid_join_faction = {	always = no	}
+DIPLOMACY_JOIN_FACTION_ENABLE_TRIGGER = {	#陣営参加禁止
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+
+is_diplomatic_action_valid_leave_faction = { always = no }
+DIPLOMACY_LEAVE_FACTION_ENABLE_TRIGGER = {	#陣営離脱禁止
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+
+is_diplomatic_action_valid_assume_faction_leadership = { always = no }
+DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ENABLE_TRIGGER = {	#陣営乗取り禁止
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+
+is_diplomatic_action_valid_kick_from_faction = { always = no }
+DIPLOMACY_KICK_FROM_FACTION_ENABLE_TRIGGER = {	#陣営蹴り出し禁止
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+
+DIPLOMACY_DISMANTLE_FACTION_ENABLE_TRIGGER = {	#陣営解体禁止
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = {	limit = {	tag = SOV	}	}
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}
+DIPLOMACY_JOIN_ALLY_ENABLE_TRIGGER = {
+	if = {	limit = {	FROM = {	tag = SOV	}	}	}
+	custom_trigger_tooltip = {
+		tooltip = RULE_CANNOT_USE_THIS_TT
+		always = no
+	}
+}

@@ -2,22 +2,44 @@ disable_placerenaming = {
 	reset_state_name = yes
 	clr_state_flag = placerenamed_state_ja
 	clr_state_flag = placerenamed_state_en
-	clr_state_flag = placerenamed_state_de
 	clr_state_flag = placerenamed_state_fr
-	clr_state_flag = placerenamed_state_it
 	clr_state_flag = placerenamed_state_ru
-	clr_state_flag = placerenamed_state_nl
-	clr_state_flag = placerenamed_state_lb
-	clr_state_flag = placerenamed_state_cs
-	clr_state_flag = placerenamed_state_pl
-	clr_state_flag = placerenamed_state_da
-	clr_state_flag = placerenamed_state_es
+	clr_state_flag = placerenamed_state_de
+	clr_state_flag = placerenamed_state_it
 	clr_state_flag = placerenamed_state_la
+	clr_state_flag = placerenamed_state_es
+	clr_state_flag = placerenamed_state_pt
+	clr_state_flag = placerenamed_state_nl
 	clr_state_flag = placerenamed_state_ch
+	clr_state_flag = placerenamed_state_tr
+	clr_state_flag = placerenamed_state_bg
+	clr_state_flag = placerenamed_state_cs
+	clr_state_flag = placerenamed_state_da
+	clr_state_flag = placerenamed_state_el
+	clr_state_flag = placerenamed_state_fi
+	clr_state_flag = placerenamed_state_hu
+	clr_state_flag = placerenamed_state_lb
+	clr_state_flag = placerenamed_state_lt
+	clr_state_flag = placerenamed_state_pl
+	clr_state_flag = placerenamed_state_ro
+	clr_state_flag = placerenamed_state_sv
+	clr_state_flag = placerenamed_state_ug
+	clr_state_flag = placerenamed_state_co
+	clr_state_flag = placerenamed_state_sk
+	clr_state_flag = placerenamed_state_haw
+	clr_state_flag = placerenamed_state_ota
+	clr_state_flag = placerenamed_state_de_nazi
+	clr_state_flag = placerenamed_state_ru_monarchy
+	clr_state_flag = placerenamed_state_ru_soviet
+	clr_state_flag = placerenamed_state_ru_stalinism
+	clr_state_flag = placerenamed_state_ru_trotskyism
+	clr_state_flag = placerenamed_state_ru_bukharinism
+	clr_state_flag = placerenamed_state_ja_empire
 }
 
 enable_placerenaming ={
-	if = {	#���{��
+	#主要国公用語
+	if = {	#ja日本語
 		limit = {	controller = {	country_ja_tag = yes	}	placerenaming_ja = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ja	}	}
@@ -28,7 +50,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#�p��
+	else_if = {	#en英語
 		limit = {	controller = {	country_en_tag = yes	}	placerenaming_en = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_en	}	}
@@ -39,18 +61,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#�h�C�c��
-		limit = {	controller = {	country_de_tag = yes	}	placerenaming_de = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_de	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_de	}
-			meta_effect = {	
-				text = {	set_state_name = [de_state_flag]	}
-				de_state_flag = "STATE_[THIS.GetId]_de"
-			}
-		}
-	}
-	else_if = {	#�t�����X��
+	else_if = {	#frフランス語
 		limit = {	controller = {	country_fr_tag = yes	}	placerenaming_fr = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_fr	}	}
@@ -61,18 +72,7 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#�C�^���A��
-		limit = {	controller = {	country_it_tag = yes	}	placerenaming_it = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_it	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_it	}
-			meta_effect = {	
-				text = {	set_state_name = [it_state_flag]	}
-				it_state_flag = "STATE_[THIS.GetId]_it"
-			}
-		}
-	}
-	else_if = {	#���V�A��
+	else_if = {	#ruロシア語
 		limit = {	controller = {	country_ru_tag = yes	}	placerenaming_ru = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ru	}	}
@@ -83,95 +83,29 @@ enable_placerenaming ={
 			}
 		}
 	}
-	else_if = {	#���N�Z���u���N��
-		limit = {	controller = {	tag = LUX	}	placerenaming_lb = yes	}
+	else_if = {	#deドイツ語
+		limit = {	controller = {	country_de_tag = yes	}	placerenaming_de = yes	}
 		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_lb	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_lb	}
+			limit = {	NOT = {	has_state_flag = placerenamed_state_de	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_de	}
 			meta_effect = {	
-				text = {	set_state_name = [lb_state_flag]	}
-				lb_state_flag = "STATE_[THIS.GetId]_lb"
+				text = {	set_state_name = [de_state_flag]	}
+				de_state_flag = "STATE_[THIS.GetId]_de"
 			}
 		}
 	}
-	else_if = {	#�`�F�R��
-		limit = {	controller = {	tag = CZE	}	placerenaming_cs = yes	}
+	else_if = {	#itイタリア語
+		limit = {	controller = {	country_it_tag = yes	}	placerenaming_it = yes	}
 		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_cs	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_cs	}
+			limit = {	NOT = {	has_state_flag = placerenamed_state_it	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_it	}
 			meta_effect = {	
-				text = {	set_state_name = [cs_state_flag]	}
-				cs_state_flag = "STATE_[THIS.GetId]_cs"
+				text = {	set_state_name = [it_state_flag]	}
+				it_state_flag = "STATE_[THIS.GetId]_it"
 			}
 		}
 	}
-	else_if = {	#�|�[�����h��
-		limit = {	controller = {	tag = POL	}	placerenaming_pl = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_pl	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_pl	}
-			meta_effect = {	
-				text = {	set_state_name = [pl_state_flag]	}
-				pl_state_flag = "STATE_[THIS.GetId]_pl"
-			}
-		}
-	}
-	else_if = {	#�f���}�[�N��
-		limit = {	controller = {	tag = DEN	}	placerenaming_da = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_da	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_da	}
-			meta_effect = {	
-				text = {	set_state_name = [da_state_flag]	}
-				da_state_flag = "STATE_[THIS.GetId]_da"
-			}
-		}
-	}
-	else_if = {	#�X�E�F�[�f����
-		limit = {	controller = {	tag = SWE	}	placerenaming_sv = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_sv	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_sv	}
-			meta_effect = {	
-				text = {	set_state_name = [sv_state_flag]	}
-				sv_state_flag = "STATE_[THIS.GetId]_sv"
-			}
-		}
-	}
-	else_if = {	#�g���R��
-		limit = {	controller = {	tag = TUR	}	placerenaming_tr = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_tr	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_tr	}
-			meta_effect = {	
-				text = {	set_state_name = [tr_state_flag]	}
-				tr_state_flag = "STATE_[THIS.GetId]_tr"
-			}
-		}
-	}
-	else_if = {	#�M���V����
-		limit = {	controller = {	tag = GRE	}	placerenaming_el = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_el	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_el	}
-			meta_effect = {	
-				text = {	set_state_name = [el_state_flag]	}
-				el_state_flag = "STATE_[THIS.GetId]_el"
-			}
-		}
-	}
-	else_if = {	#�X�y�C����
-		limit = {	controller = {	country_es_tag = yes	}	placerenaming_es = yes	}
-		if = {
-			limit = {	NOT = {	has_state_flag = placerenamed_state_es	}	}
-			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_es	}
-			meta_effect = {	
-				text = {	set_state_name = [es_state_flag]	}
-				el_state_flag = "STATE_[THIS.GetId]_es"
-			}
-		}
-	}
-	else_if = {	#���e����
+	else_if = {	#laラテン語
 		limit = {	controller = {	country_la_tag = yes	}	placerenaming_la = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_la	}	}
@@ -182,5 +116,332 @@ enable_placerenaming ={
 			}
 		}
 	}
+	#大陸間主要言語
+	else_if = {	#esスペイン語
+		limit = {	controller = {	country_es_tag = yes	}	placerenaming_es = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_es	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_es	}
+			meta_effect = {	
+				text = {	set_state_name = [es_state_flag]	}
+				es_state_flag = "STATE_[THIS.GetId]_es"
+			}
+		}
+	}
+	else_if = {	#ptポルトガル語
+		limit = {	controller = {	country_pt_tag = yes	}	placerenaming_pt = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_pt	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_pt	}
+			meta_effect = {	
+				text = {	set_state_name = [pt_state_flag]	}
+				pt_state_flag = "STATE_[THIS.GetId]_pt"
+			}
+		}
+	}
+	else_if = {	#nlオランダ語
+		limit = {	controller = {	country_nl_tag = yes	}	placerenaming_nl = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_nl	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_nl	}
+			meta_effect = {	
+				text = {	set_state_name = [nl_state_flag]	}
+				nl_state_flag = "STATE_[THIS.GetId]_nl"
+			}
+		}
+	}
+	#亜州主要言語
+	else_if = {	#ch中国語
+		limit = {	controller = {	country_ch_tag = yes	}	placerenaming_ch = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ch	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ch	}
+			meta_effect = {	
+				text = {	set_state_name = [ch_state_flag]	}
+				ch_state_flag = "STATE_[THIS.GetId]_ch"
+			}
+		}
+	}
+	else_if = {	#trトルコ語
+		limit = {	controller = {	tag = TUR	}	placerenaming_tr = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_tr	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_tr	}
+			meta_effect = {	
+				text = {	set_state_name = [tr_state_flag]	}
+				tr_state_flag = "STATE_[THIS.GetId]_tr"
+			}
+		}
+	}
+	#欧州主要言語
+	else_if = {	#bgブルガリア語
+		limit = {	controller = {	tag = BUL	}	placerenaming_bg = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_bg	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_bg	}
+			meta_effect = {	
+				text = {	set_state_name = [bg_state_flag]	}
+				bg_state_flag = "STATE_[THIS.GetId]_bg"
+			}
+		}
+	}
+	else_if = {	#csチェコ語
+		limit = {	controller = {	tag = CZE	}	placerenaming_cs = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_cs	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_cs	}
+			meta_effect = {	
+				text = {	set_state_name = [cs_state_flag]	}
+				cs_state_flag = "STATE_[THIS.GetId]_cs"
+			}
+		}
+	}
+	else_if = {	#daデンマーク語
+		limit = {	controller = {	tag = DEN	}	placerenaming_da = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_da	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_da	}
+			meta_effect = {	
+				text = {	set_state_name = [da_state_flag]	}
+				da_state_flag = "STATE_[THIS.GetId]_da"
+			}
+		}
+	}
+	else_if = {	#elギリシャ語
+		limit = {	controller = {	tag = GRE	}	placerenaming_el = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_el	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_el	}
+			meta_effect = {	
+				text = {	set_state_name = [el_state_flag]	}
+				el_state_flag = "STATE_[THIS.GetId]_el"
+			}
+		}
+	}
+	else_if = {	#fiフィンランド語
+		limit = {	controller = {	tag = FIN	}	placerenaming_fi = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_fi	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_fi	}
+			meta_effect = {	
+				text = {	set_state_name = [fi_state_flag]	}
+				fi_state_flag = "STATE_[THIS.GetId]_fi"
+			}
+		}
+	}
+	else_if = {	#huハンガリー語
+		limit = {	controller = {	tag = HUN	}	placerenaming_hu = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_hu	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_hu	}
+			meta_effect = {	
+				text = {	set_state_name = [hu_state_flag]	}
+				hu_state_flag = "STATE_[THIS.GetId]_hu"
+			}
+		}
+	}
+	else_if = {	#lbルクセンブルク語
+		limit = {	controller = {	tag = LUX	}	placerenaming_lb = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_lb	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_lb	}
+			meta_effect = {	
+				text = {	set_state_name = [lb_state_flag]	}
+				lb_state_flag = "STATE_[THIS.GetId]_lb"
+			}
+		}
+	}
+	else_if = {	#ltリトアニア語
+		limit = {	controller = {	tag = LIT	}	placerenaming_lt = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_lt	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_lt	}
+			meta_effect = {	
+				text = {	set_state_name = [lt_state_flag]	}
+				lt_state_flag = "STATE_[THIS.GetId]_lt"
+			}
+		}
+	}
+	else_if = {	#plポーランド語
+		limit = {	controller = {	tag = POL	}	placerenaming_pl = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_pl	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_pl	}
+			meta_effect = {	
+				text = {	set_state_name = [pl_state_flag]	}
+				pl_state_flag = "STATE_[THIS.GetId]_pl"
+			}
+		}
+	}
+	else_if = {	#roルーマニア語
+		limit = {	controller = {	tag = ROM	}	placerenaming_ro = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ro	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ro	}
+			meta_effect = {	
+				text = {	set_state_name = [ro_state_flag]	}
+				ro_state_flag = "STATE_[THIS.GetId]_ro"
+			}
+		}
+	}
+	else_if = {	#svスウェーデン語
+		limit = {	controller = {	tag = SWE	}	placerenaming_sv = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_sv	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_sv	}
+			meta_effect = {	
+				text = {	set_state_name = [sv_state_flag]	}
+				sv_state_flag = "STATE_[THIS.GetId]_sv"
+			}
+		}
+	}
+	#亜州非主要言語
+	else_if = {	#ugウイグル語
+		limit = {	controller = {	tag = ETR	}	placerenaming_ug = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ug	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ug	}
+			meta_effect = {	
+				text = {	set_state_name = [ug_state_flag]	}
+				ug_state_flag = "STATE_[THIS.GetId]_ug"
+			}
+		}
+	}
+	#欧州非主要言語
+	else_if = {	#brブリトン語
+		limit = {	controller = {	tag = BRI	}	placerenaming_br = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_br	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_br	}
+			meta_effect = {	
+				text = {	set_state_name = [br_state_flag]	}
+				br_state_flag = "STATE_[THIS.GetId]_br"
+			}
+		}
+	}
+	else_if = {	#coコルシカ語
+		limit = {	controller = {	tag = COR	}	placerenaming_co = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_co	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_co	}
+			meta_effect = {	
+				text = {	set_state_name = [co_state_flag]	}
+				co_state_flag = "STATE_[THIS.GetId]_co"
+			}
+		}
+	}
+	else_if = {	#skスロバキア語
+		limit = {	controller = {	tag = SLO	}	placerenaming_sk = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_sk	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_sk	}
+			meta_effect = {	
+				text = {	set_state_name = [sk_state_flag]	}
+				sk_state_flag = "STATE_[THIS.GetId]_sk"
+			}
+		}
+	}
+	#大洋州非主要言語
+	else_if = {	#hawハワイ語
+		limit = {	controller = {	tag = HAW	}	placerenaming_haw = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_haw	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_haw	}
+			meta_effect = {	
+				text = {	set_state_name = [haw_state_flag]	}
+				haw_state_flag = "STATE_[THIS.GetId]_haw"
+			}
+		}
+	}
+	#歴史的言語
+	else_if = {	#otaオスマン語
+		limit = {	controller = {	tag = OTT	}	placerenaming_ota = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ota	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ota	}
+			meta_effect = {	
+				text = {	set_state_name = [ota_state_flag]	}
+				ota_state_flag = "STATE_[THIS.GetId]_ota"
+			}
+		}
+	}
 	else = {	disable_placerenaming = yes	}
+	#特殊地名
+	if = {	#ドイツ語
+		limit = {	controller = {	country_de_tag = yes	has_country_leader_ideology = national_socialism_ideology	}	placerenaming_de_nazi = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_de_nazi	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_de	}
+			meta_effect = {	
+				text = {	set_state_name = [de_nazi_state_flag]	}
+				de_nazi_state_flag = "STATE_[THIS.GetId]_de_nazi"
+			}
+		}
+	}
+	else_if = {	#君主制ロシア
+		limit = {	controller = {	original_tag = RUS	is_national_system_monarchy = yes	}	placerenaming_ru_monarchy = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_monarchy	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru_monarchy	}
+			meta_effect = {
+				text = {	set_state_name = [ru_monarchy_state_flag]	}
+				ru_monarchy_state_flag = "STATE_[THIS.GetId]_ru_monarchy"
+			}
+		}
+	}
+	else_if = {	#ソビエト(汎用)
+		limit = {	controller = {	soviet_member_trigger = yes	}	placerenaming_ru_soviet = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_soviet	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru	}
+			meta_effect = {	
+				text = {	set_state_name = [ru_soviet_state_flag]	}
+				ru_soviet_state_flag = "STATE_[THIS.GetId]_ru_soviet"
+			}
+		}
+	}
+	else_if = {	#ソビエト(スターリン主義)
+		limit = {	controller = {	soviet_member_trigger = yes	has_country_leader_ideology = stalinism_ideology	}	placerenaming_ru_stalinism = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_stalinism	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru_stalinism	}
+			meta_effect = {	
+				text = {	set_state_name = [ru_stalinism_state_flag]	}
+				ru_stalinism_state_flag = "STATE_[THIS.GetId]_ru_stalinism"
+			}
+		}
+	}
+	else_if = {	#ソビエト(トロツキー主義)
+		limit = {	controller = {	soviet_member_trigger = yes	has_country_leader_ideology = trotskyism_ideology	}	placerenaming_ru_trotskyism = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_trotskyism	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru_trotskyism	}
+			meta_effect = {
+				text = {	set_state_name = [ru_trotskyism_state_flag]	}
+				ru_trotskyism_state_flag = "STATE_[THIS.GetId]_ru_trotskyism"
+			}
+		}
+	}
+	else_if = {	#ソビエト(ブハーリン主義)
+		limit = {	controller = {	soviet_member_trigger = yes	has_country_leader_ideology = bukharinism_ideology	}	placerenaming_ru_bukharinism = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_bukharinism	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru_bukharinism	}
+			meta_effect = {
+				text = {	set_state_name = [ru_bukharinism_state_flag]	}
+				ru_bukharinism_state_flag = "STATE_[THIS.GetId]_ru_bukharinism"
+			}
+		}
+	}
+	else_if = {	#
+		limit = {	controller = {	has_cosmetic_tag = GREATJAPAN_empire	}	placerenaming_ja_empire = yes	}
+		if = {
+			limit = {	NOT = {	has_state_flag = placerenamed_state_ja_empire	}	}
+			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ja_empire	}
+			meta_effect = {
+				text = {	set_state_name = [ja_empire_state_flag]	}
+				ja_empire_state_flag = "STATE_[THIS.GetId]_ja_empire"
+			}
+		}
+	}
 }

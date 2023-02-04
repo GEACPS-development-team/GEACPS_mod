@@ -9,7 +9,9 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		add_core_of = MTA
+		MTA = {	debug_core = yes	}
+		NAC = {	debug_core = yes	}
+		RMT = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 		}

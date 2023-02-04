@@ -1,0 +1,40 @@
+add_namespace = SOV
+country_event = {	#
+	id = SOV.1
+	title = SOV.1.t
+	desc = SOV.1.d
+	picture = GFX_generic_faction_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = SOV.1.0
+		ai_chance = {	base = 100	}
+		every_owned_state = {
+			meta_effect = {
+				text = {	set_variable = [COUNTRYTAG]_SOV_owned_state	}
+				COUNTRYTAG = "[ROOT.GetTag]"
+			}
+		}
+		every_core_state = {	add_core_of = SOV	}
+		SOV = {	
+			annex_country = {	target = PREV	transfer_troops = yes	}
+			change_tag_from = ROOT
+		}
+	}
+	option = {
+		name = SOV.1.1
+		custom_effect_tooltip = SOV.1.1.tt
+		hidden_effect = {
+			end_puppet = SOV
+			leave_faction = yes
+			drop_cosmetic_tag = yes
+			meta_effect = {
+				text = {	set_cosmetic_tag = [COUNTRYTAG]_republic	}
+				COUNTRYTAG = "[ROOT.GetTag]"
+			}
+			declare_war_on = {	target = SOV	type = independence_war	}
+		}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event SOV.1"	}
+}

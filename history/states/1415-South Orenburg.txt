@@ -1,0 +1,25 @@
+state = {
+	id = 1415
+	name = "STATE_1415"
+	manpower = 12300
+	buildings_max_level_factor = 1
+	state_category = rural
+	
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		add_claim_by = KAZ
+		URA = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+		}
+		set_variable = {	RUS_state_variable = 1	}
+		set_variable = {	URA_state_variable = 1	}
+		set_variable = {	KAZ_state_variable = 2	}
+	}
+	
+	provinces = {
+		1254	3563	4322
+	}
+	local_supplies = 0.0
+}

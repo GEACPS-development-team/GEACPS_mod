@@ -1,12 +1,25 @@
-﻿create_dynamic_country = {	#中華民国広州政府
+﻿capital = 621
+
+create_dynamic_country = {	#中華民国広州政府
 	original_tag = CHI
 	
-	set_capital = {	state = 593	}
+	set_capital = {	state = 621	}
 	set_country_flag = CHI_republic_guangzhou_government_countryflag
 	set_cosmetic_tag = CHI_minguo_guangzhou_government
 	set_dictatorship = yes
 	
-	recruit_character = CHARACTER_chen_gongbo
+	create_country_leader = {
+		name = CHARACTER_chen_gongbo
+		desc = "CHARACTER_chen_gongbo_desc"
+		picture = GFX_chen_gongbo_large
+		#expire = "1976.9.9"
+		ideology = national_authoritarianism_ideology
+	}
+	
+	add_ideas = {	#政治タブ
+		republic_unitary_state
+		provisional_government
+	}
 	
 	every_core_state = {	
 		limit = {	is_core_of_not_CHI_JAP = yes	}
@@ -16,6 +29,31 @@
 	transfer_state = 592
 	transfer_state = 621
 	transfer_state = 728
+	
+	set_province_controller = 1023
+	set_province_controller = 1597
+	set_province_controller = 4023
+	set_province_controller = 4028
+	set_province_controller = 4121
+	set_province_controller = 4152
+	set_province_controller = 4177
+	set_province_controller = 7044
+	set_province_controller = 7095
+	set_province_controller = 7128
+	set_province_controller = 7137
+	set_province_controller = 7168
+	set_province_controller = 7192
+	set_province_controller = 7210
+	set_province_controller = 7650
+	set_province_controller = 10004
+	set_province_controller = 10050
+	set_province_controller = 10105
+	set_province_controller = 10121
+	set_province_controller = 10404
+	set_province_controller = 11926
+	set_province_controller = 11983
+	set_province_controller = 12023
+	set_province_controller = 12407
 	
 	JAP = { add_to_faction = PREV   }
 	declare_war_on = {	target = CHI	type = civil_war	}

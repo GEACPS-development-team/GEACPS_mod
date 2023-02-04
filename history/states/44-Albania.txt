@@ -1,31 +1,36 @@
 state = {
 	id = 44
 	name = "STATE_44"
-	manpower = 1003000
+	manpower = 740800
 	state_category = town
 	
 	resources = {
 		aluminium = 2
-		chromium = 2
+		chromium = 3
 	}
 	
 	history = {
 		owner = ALB
 		add_core_of = ALB
+		BLK = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
 			industrial_complex = 2
 			air_base = 3
 			11767 = {	naval_base = 4	}
+			13255 = {	naval_base = 2	}
 		}
+		victory_points = {	6900	2	}
+		victory_points = {	9780	3	}
 		victory_points = {	9914	5	}
 		victory_points = {	11767	1	}
+		victory_points = {	13255	2	}
 		set_variable = {	ALB_state_variable = 1	}
 	}
 	
 	provinces = {
-		3448	3884	3896	6900	9780	9875	9914	11762	11767
+		3448	3884	3896	6900	9780	9875	9914	11762	11767	13255
 	}
-	local_supplies = 0.0
+	local_supplies = 5.0
 }

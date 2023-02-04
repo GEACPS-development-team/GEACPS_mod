@@ -7,12 +7,13 @@ state = {
 	history = {
 		owner = IND
 		add_core_of = IND
-		add_core_of = PAK
-		add_core_of = KAS
+		KAS = {	debug_core = yes	}
+		PAK = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		set_variable = {	KAS_state_variable = 1	}
+		set_variable = {	PAK_state_variable = 1	}
 	}
 	
 	provinces = {

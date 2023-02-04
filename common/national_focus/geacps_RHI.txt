@@ -1,0 +1,54 @@
+focus_tree = {
+	id = RHI_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RHI
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 100 y = 500
+	}
+	shared_focus = RHI_1955_statute_referendum
+}
+
+shared_focus = {	#1955年ラインラント独立住民投票
+	id = RHI_1955_statute_referendum
+	icon = GFX_goal_unknown
+	cost = 1
+	x = 1
+	y = 1
+	available = {
+		date > 1955.10.23
+		date < 1956.1.1
+		RHI = {	is_subject_of = FRA	}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RHI_1955_statute_referendum"
+		country_event = RHI.0
+		news_event = {	id = RHI_news.1 days = 1	}
+	}
+}
+shared_focus = {	#工業地帯と再統一	#"SGR"へ以降予定
+	id = RHI_reunification_with_industrial_zone
+	icon = GFX_goal_unknown
+	cost = 1
+	relative_position_id = RHI_1955_statute_referendum
+	x = 0
+	y = 1
+	prerequisite = {
+		focus = RHI_1955_statute_referendum
+	}
+	available = {
+	}
+	completion_reward = {
+		SGR = {
+			annex_country = {
+				target = RHI
+				transfer_troops = yes
+			}
+		}
+	}
+}

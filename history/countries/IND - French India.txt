@@ -1,4 +1,5 @@
-﻿create_dynamic_country = {
+﻿capital = 439
+create_dynamic_country = {
 	original_tag = IND
 	
 	FRA = {	set_colony = yes	}
@@ -8,7 +9,18 @@
 	set_cosmetic_tag = COUNTRY_FRA
 	set_dictatorship = yes
 	
-	recruit_character = CHARACTER_nicolas_ernest_marie_maurice_jeandin
+	create_country_leader = {
+		name = CHARACTER_nicolas_ernest_marie_maurice_jeandin
+		desc = "CHARACTER_nicolas_ernest_marie_maurice_jeandin_desc"
+		picture = GFX_nicolas_ernest_marie_maurice_jeandin_large
+		#expire = ""
+		ideology = national_authoritarianism_ideology
+	}
+	
+	add_ideas = {	#政治タブ
+		unitary_dependent_territory
+		dependent_territory_direct_rule_system
+	}
 	
 	every_core_state = {	remove_core_of = PREV	}
 	320 = {	set_owner_and_core_of = yes	}

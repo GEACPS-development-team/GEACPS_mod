@@ -1,0 +1,93 @@
+ideas = {#既存国民精神
+	country = {
+		CHL_energy_independence_orientation = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				surrender_limit = 0.1
+				war_support_factor = 0.05
+				local_resources_factor = 0.05
+			}
+		}
+		CHL_plan_serena = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				MONTHLY_POPULATION = 0.1
+				production_speed_buildings_factor = 0.08
+			}
+		}
+		CHL_nationalisation_of_the_gmc = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				local_resources_factor = 0.1
+				min_export = 0.1
+			}
+		}
+		CHL_provincial_city_development = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.02
+				drift_defence_factor = 0.25
+				army_core_defence_factor = 0.1
+			}
+		}
+		CHL_mechanisation_of_agriculture = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.02
+				MONTHLY_POPULATION = 0.08
+				conscription_factor = 0.05
+			}
+		}
+	}
+}
+ideas = {#企業
+	industrial_concern = {
+		CHL_empresa_nacional_del_petroleo = {
+		#	picture = 
+			
+			allowed = {	tag = CHL	}
+			available = {	has_completed_focus = CHL_establishment_of_enap	}
+			
+			cost = 150
+			removal_cost = 10
+			
+			modifier = {
+				local_resources_factor = 0.05
+			}
+			research_bonus = {
+				synth_resources = 0.1
+			}
+		}
+		CHL_corfo = {
+		#	picture = 
+			
+			allowed = {	tag = CHL	}
+			available = {	has_completed_focus = CHL_use_of_corfo	}
+			
+			cost = 150
+			removal_cost = 10
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			research_bonus = {
+				industry = 0.1
+			}
+		}
+	}
+}

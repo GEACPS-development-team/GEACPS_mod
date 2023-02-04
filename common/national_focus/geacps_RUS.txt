@@ -1,5 +1,23 @@
 focus_tree = {
-	id = geacps_RUS_forcus
+	id = RUS_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 15
+			tag = RUS
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 100 y = 1500
+	}
+	shared_focus = RUS_socialist_propaganda
+	shared_focus = RUS_anti_communist_unity
+	shared_focus = RUS_new_5_year_plan
+	shared_focus = RUS_remobilize_the_military
+}
+focus_tree = {
+	id = RUS_socialism_focus_tree
 	country = {
 		factor = 0
 		modifier = {
@@ -7,708 +25,2349 @@ focus_tree = {
 			tag = RUS
 		}
 	}
-	
+	shared_focus = RUS_martial_law
+	shared_focus = RUS_stalins_speech
+	shared_focus = RUS_new_5_year_plan
+	shared_focus = RUS_remobilize_the_military
 	default = no
-	
-	continuous_focus_position = {
-		x = 100 y = 1500
+}
+focus_tree = {
+	id = RUS_anti_socialism_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = RUS
+		}
 	}
-	
-	focus = {
-		id = SOV_New_five_years_plan
-		icon = GFX_focus_generic_treaty
-		cost = 10.00
-		x = 7
-		y = 1
+	shared_focus = RUS_the_white_army_is_indestructible
+	shared_focus = RUS_new_5_year_plan
+	shared_focus = RUS_remobilize_the_military
+	default = no
+}
+shared_focus = {
+	id = RUS_new_5_year_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 5
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_new_5_year_plan"
+	}
+}
 
+shared_focus = {
+	id = RUS_increased_military_production_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Martial_law
-		icon = GFX_focus_generic_manpower
-		cost = 10.00
-		x = 5
-		y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_increased_military_production_plan"
+	}
+	relative_position_id = RUS_new_5_year_plan
+	prerequisite = { focus = RUS_new_5_year_plan }
+}
 
+shared_focus = {
+	id = RUS_unification_of_production_standards
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Stalin's_speech
-		icon = GFX_focus_fra_loyalty_stalin
-		cost = 10.00
-		x = 7
-		y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_unification_of_production_standards"
+	}
+	relative_position_id = RUS_increased_military_production_plan
+	prerequisite = { focus = RUS_increased_military_production_plan }
+	prerequisite = { focus = RUS_draft_reform }
+}
 
+shared_focus = {
+	id = RUS_begin_local_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Socialist_propaganda
-		icon = GFX_goal_generic_propaganda
-		cost = 10.00
-		x = 9
-		y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_begin_local_development"
+	}
+	relative_position_id = RUS_new_5_year_plan
+	prerequisite = { focus = RUS_new_5_year_plan }
+}
 
+shared_focus = {
+	id = RUS_develop_moscow
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Restarting_the_military
-		icon = GFX_focus_BUL_support_macedonian_organizations
-		cost = 10.00
-		x = 16
-		y = 1
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_develop_moscow"
+	}
+	relative_position_id = RUS_begin_local_development
+	prerequisite = { focus = RUS_begin_local_development }
+}
 
+shared_focus = {
+	id = RUS_develop_the_volga_river_basin
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_New_industrial_plan
-		icon = GFX_goal_generic_production2
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_New_five_years_plan
-		}
-		x = 4
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_develop_the_volga_river_basin"
+	}
+	relative_position_id = RUS_develop_moscow
+	prerequisite = { focus = RUS_develop_moscow }
+}
 
+shared_focus = {
+	id = RUS_prepare_to_scorch_the_earth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 2
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Expand_urban_functions
-		icon = GFX_focus_spa_the_spanish_miracle
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_New_industrial_plan
-		}
-		mutually_exclusive = {
-			focus = SOV_Follow_Weber
-		}
-		x = 3
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_prepare_to_scorch_the_earth"
+	}
+	relative_position_id = RUS_develop_the_volga_river_basin
+	prerequisite = { focus = RUS_develop_the_volga_river_basin }
+	prerequisite = { focus = RUS_a_new_goddess_on_the_battlefield }
+}
 
+shared_focus = {
+	id = RUS_invest_in_research_institutes
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Encourage_movement_by_river
-		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Expand_urban_functions
-		}
-		x = 3
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_invest_in_research_institutes"
+	}
+	relative_position_id = RUS_develop_the_volga_river_basin
+	prerequisite = { focus = RUS_develop_the_volga_river_basin }
+	prerequisite = { focus = RUS_develop_the_urals }
+}
 
+shared_focus = {
+	id = RUS_develop_kola
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Closed_city_concept
-		icon = GFX_goal_generic_fortify_city
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Encourage_movement_by_river
-		}
-		x = 3
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_develop_kola"
+	}
+	relative_position_id = RUS_begin_local_development
+	prerequisite = { focus = RUS_begin_local_development }
+}
 
+shared_focus = {
+	id = RUS_develop_the_urals
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Follow_Weber
-		icon = GFX_goal_continuous_increase_nu
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_New_industrial_plan
-		}
-		mutually_exclusive = {
-			focus = SOV_Expand_urban_functions
-		}
-		x = 5
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_develop_the_urals"
+	}
+	relative_position_id = RUS_develop_kola
+	prerequisite = { focus = RUS_develop_kola }
+}
 
+shared_focus = {
+	id = RUS_develop_the_west
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Appropriate_infrastructure_investment
-		icon = GFX_goal_generic_construct_infrastructure
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Follow_Weber
-		}
-		x = 5
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_develop_the_west"
+	}
+	relative_position_id = RUS_develop_the_urals
+	prerequisite = { focus = RUS_develop_the_urals }
+}
 
+shared_focus = {
+	id = RUS_new_industrial_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Comprehensive_research_facility_concept
-		icon = GFX_focus_research2
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Appropriate_infrastructure_investment
-		}
-		x = 5
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_new_industrial_plan"
+	}
+	relative_position_id = RUS_new_5_year_plan
+	prerequisite = { focus = RUS_new_5_year_plan }
+}
 
+shared_focus = {
+	id = RUS_copy_weber
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_End_plan
-		icon = GFX_goal_generic_production
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Closed_city_concept
-		}
-		prerequisite = {
-			focus = SOV_Comprehensive_research_facility_concept
-		}
-		x = 4
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_copy_weber"
+	}
+	relative_position_id = RUS_new_industrial_plan
+	prerequisite = { focus = RUS_new_industrial_plan }
+	mutually_exclusive = {	focus = RUS_expand_urban_facilities	}
+}
 
+shared_focus = {
+	id = RUS_adequate_infrastructure_investment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Start_of_local_development
-		icon = GFX_goal_generic_production2
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_New_five_years_plan
-		}
-		x = 7
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_adequate_infrastructure_investment"
+	}
+	relative_position_id = RUS_copy_weber
+	prerequisite = { 
+		focus = RUS_expand_urban_facilities
+		focus = RUS_copy_weber
+	}
+}
 
+shared_focus = {
+	id = RUS_integrated_research_centers_concept
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Development_of_the_Kola
-		icon = GFX_goal_continuous_non_factory_construct
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Start_of_local_development
-		}
-		x = 7
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_integrated_research_centers_concept"
+	}
+	relative_position_id = RUS_adequate_infrastructure_investment
+	prerequisite = { focus = RUS_adequate_infrastructure_investment }
+	prerequisite = { focus = RUS_encourage_river_transportation }
+}
 
+shared_focus = {
+	id = RUS_expand_urban_facilities
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Ural_development
-		icon = GFX_goal_generic_construction2
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Development_of_the_Kola
-		}
-		x = 7
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_expand_urban_facilities"
+	}
+	relative_position_id = RUS_new_industrial_plan
+	prerequisite = { focus = RUS_new_industrial_plan }
+	mutually_exclusive = {	focus = RUS_copy_weber	}
+}
 
+shared_focus = {
+	id = RUS_encourage_river_transportation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Western_redevelopment
-		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Ural_development
-		}
-		x = 6
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_encourage_river_transportation"
+	}
+	relative_position_id = RUS_expand_urban_facilities
+	prerequisite = { 
+		focus = RUS_expand_urban_facilities
+		focus = RUS_copy_weber
+	}
+}
 
+shared_focus = {
+	id = RUS_the_closed_city_concept
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_stability_for_the_time_being
-		icon = GFX_goal_generic_neutrality_focus
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Martial_law
-		}
-		prerequisite = {
-			focus = SOV_Socialist_propaganda
-		}
-		prerequisite = {
-			focus = SOV_Stalin's_speech
-		}
-		x = 7
-		y = 8
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_closed_city_concept"
+	}
+	relative_position_id = RUS_encourage_river_transportation
+	prerequisite = { focus = RUS_encourage_river_transportation }
+}
 
+shared_focus = {
+	id = RUS_end_of_the_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Military_production_increase_plan
-		icon = GFX_focus_generic_tank_production
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_New_five_years_plan
-		}
-		x = 8
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_end_of_the_plan"
+	}
+	relative_position_id = RUS_integrated_research_centers_concept
+	prerequisite = {
+		focus = RUS_the_closed_city_concept
+		focus = RUS_integrated_research_centers_concept
+	}
+}
 
+shared_focus = {
+	id = RUS_remobilize_the_military
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 15
+	y = 0
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Conscription_reform
-		icon = GFX_focus_generic_little_entente
-		cost = 10.00
-		prerequisite = {
-			focus = Restarting_the_military
-		}
-		x = 11
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_remobilize_the_military"
+	}
+}
 
+shared_focus = {
+	id = RUS_rebuild_our_dockyards
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 6
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Unification_of_communist_ideals
-		icon = GFX_goal_support_communism
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Military_production_increase_plan
-		}
-		prerequisite = {
-			focus = SOV_Conscription_reform
-		}
-		x = 9
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_rebuild_our_dockyards"
+	}
+	relative_position_id = RUS_remobilize_the_military
+	prerequisite = { focus = RUS_remobilize_the_military }
+}
 
+shared_focus = {
+	id = RUS_modernize_our_submarine_fleet
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Development_of_the_moscow
-		icon = GFX_focus_ger_strike_at_the_source
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Start_of_local_development
-		}
-		x = 9
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_modernize_our_submarine_fleet"
+	}
+	relative_position_id = RUS_rebuild_our_dockyards
+	prerequisite = { focus = RUS_rebuild_our_dockyards }
+}
 
+shared_focus = {
+	id = RUS_torpedo_focus
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Development_of_the_Volga_basin
-		icon = GFX_goal_continuous_naval_production
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Development_of_the_moscow
-		}
-		x = 9
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_torpedo_focus"
+	}
+	relative_position_id = RUS_modernize_our_submarine_fleet
+	prerequisite = { focus = RUS_modernize_our_submarine_fleet }
+}
 
+shared_focus = {
+	id = RUS_reorganize_the_main_fleet
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Investing_in_research_institutes
-		icon = GFX_focus_research
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Development_of_the_Volga_basin
-		}
-		x = 8
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_reorganize_the_main_fleet"
+	}
+	relative_position_id = RUS_modernize_our_submarine_fleet
+	prerequisite = { focus = RUS_modernize_our_submarine_fleet }
+	prerequisite = { focus = RUS_develop_the_main_cannons }
+}
 
+shared_focus = {
+	id = RUS_battleships
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Cavalry_Modernization
-		icon = GFX_focus_cze_military_research_institute
-		cost = 10.00
-		prerequisite = {
-			focus = Restarting_the_military
-		}
-		x = 13
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_battleships"
+	}
+	relative_position_id = RUS_reorganize_the_main_fleet
+	prerequisite = { focus = RUS_reorganize_the_main_fleet }
+	mutually_exclusive = {	focus = RUS_aircraft_carriers	}
+}
 
+shared_focus = {
+	id = RUS_completed_large_hulls
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Specialized_support_squadrons
-		icon = GFX_focus_secret_rearmament
-		cost = 10.00
-		prerequisite = {
-			focus = Cavalry_Modernization
-		}
-		prerequisite = {
-			focus = SOV_Conscription_reform
-		}
-		x = 12
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_completed_large_hulls"
+	}
+	relative_position_id = RUS_battleships
+	prerequisite = { focus = RUS_battleships }
+}
 
+shared_focus = {
+	id = RUS_aircraft_carriers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Update_personal_firearms
-		icon = GFX_goal_generic_air_production
-		cost = 10.00
-		prerequisite = {
-			focus = Specialized_support_squadrons
-		}
-		x = 12
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_aircraft_carriers"
+	}
+	relative_position_id = RUS_reorganize_the_main_fleet
+	prerequisite = { focus = RUS_reorganize_the_main_fleet }
+	mutually_exclusive = {	focus = RUS_battleships	}
+}
 
+shared_focus = {
+	id = RUS_carrierbased_aircrafts
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_A_new_goddess_on_the_battlefield
-		icon = GFX_focus_hol_the_only_man_in_the_dutch_government
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Update_personal_firearms
-		}
-		x = 12
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_carrierbased_aircrafts"
+	}
+	relative_position_id = RUS_aircraft_carriers
+	prerequisite = { focus = RUS_aircraft_carriers }
+}
 
+shared_focus = {
+	id = RUS_instructor_training
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Preparing_for_scorched_earth
-		icon = GFX_goal_continuous_suppression
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_A_new_goddess_on_the_battlefield
-		}
-		prerequisite = {
-			focus = SOV_Development_of_the_Volga_basin
-		}
-		x = 11
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_instructor_training"
+	}
+	relative_position_id = RUS_remobilize_the_military
+	prerequisite = { focus = RUS_remobilize_the_military }
+}
 
+shared_focus = {
+	id = RUS_develop_the_main_cannons
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Training_new_officers
-		icon = GFX_focus_mex_support_general_cedillo
-		cost = 10.00
-		prerequisite = {
-			focus = Restarting_the_military
-		}
-		x = 15
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_develop_the_main_cannons"
+	}
+	relative_position_id = RUS_rebuild_our_dockyards
+	prerequisite = { focus = RUS_rebuild_our_dockyards }
+	prerequisite = { focus = RUS_instructor_training }
+}
 
+shared_focus = {
+	id = RUS_cruiser_development
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Konev_Plan
-		icon = GFX_goal_generic_army_tanks
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Training_new_officers
-		}
-		prerequisite = {
-			focus = Cavalry_Modernization
-		}
-		prerequisite = {
-			focus = SOV_Conscription_reform
-		}
-		x = 14
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_cruiser_development"
+	}
+	relative_position_id = RUS_develop_the_main_cannons
+	prerequisite = { focus = RUS_develop_the_main_cannons }
+}
 
+shared_focus = {
+	id = RUS_reorganize_the_airforce
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Focus_on_mechanization
-		icon = GFX_focus_generic_tank_production
-		cost = 10.00
-		prerequisite = {
-			focus = Konev_Plan
-		}
-		x = 14
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_reorganize_the_airforce"
+	}
+	relative_position_id = RUS_remobilize_the_military
+	prerequisite = { focus = RUS_remobilize_the_military }
+}
 
+shared_focus = {
+	id = RUS_focus_on_tactical_bombing
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = decentralization_of_command
-		icon = GFX_goal_generic_special_forces
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_mechanization
-		}
-		x = 14
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_focus_on_tactical_bombing"
+	}
+	relative_position_id = RUS_reorganize_the_airforce
+	prerequisite = { focus = RUS_reorganize_the_airforce }
+	mutually_exclusive = {	focus = RUS_focus_on_longrange_bombing	}
+}
 
+shared_focus = {
+	id = RUS_focus_on_longrange_bombing
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Comprehensive_tank_operations
-		icon = GFX_focus_generic_tank_production
-		cost = 10.00
-		prerequisite = {
-			focus = decentralization_of_command
-		}
-		x = 14
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_focus_on_longrange_bombing"
+	}
+	relative_position_id = RUS_reorganize_the_airforce
+	prerequisite = { focus = RUS_reorganize_the_airforce }
+	mutually_exclusive = {	focus = RUS_focus_on_tactical_bombing	}
+}
 
+shared_focus = {
+	id = RUS_aircraft_production_focus
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = The_All-Purpose_Tank_Initiative
-		icon = GFX_focus_generic_license_production
-		cost = 10.00
-		prerequisite = {
-			focus = Comprehensive_tank_operations
-		}
-		x = 14
-		y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_aircraft_production_focus"
+	}
+	relative_position_id = RUS_focus_on_tactical_bombing
+	prerequisite = {
+		focus = RUS_focus_on_tactical_bombing
+		focus = RUS_focus_on_longrange_bombing
+	}
+}
 
+shared_focus = {
+	id = RUS_air_superiority_focus
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Zhukov_Plan
-		icon = GFX_focus_generic_combined_arms
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Training_new_officers
-		}
-		prerequisite = {
-			focus = Cavalry_Modernization
-		}
-		prerequisite = {
-			focus = SOV_Conscription_reform
-		}
-		x = 16
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_air_superiority_focus"
+	}
+	relative_position_id = RUS_aircraft_production_focus
+	prerequisite = { focus = RUS_aircraft_production_focus }
+}
 
+shared_focus = {
+	id = RUS_night_bombing_squads
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Principle_of_Center_of_Gravity
-		icon = GFX_goal_continuous_armor_production
-		cost = 10.00
-		prerequisite = {
-			focus = Zhukov_Plan
-		}
-		x = 16
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_night_bombing_squads"
+	}
+	relative_position_id = RUS_air_superiority_focus
+	prerequisite = { focus = RUS_air_superiority_focus }
+	prerequisite = { focus = RUS_focus_on_close_air_support }
+}
 
+shared_focus = {
+	id = RUS_focus_on_close_air_support
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Overwhelm_by_firepower
-		icon = GFX_goal_generic_army_artillery2
-		cost = 10.00
-		prerequisite = {
-			focus = Principle_of_Center_of_Gravity
-		}
-		x = 16
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_focus_on_close_air_support"
+	}
+	relative_position_id = RUS_aircraft_production_focus
+	prerequisite = { focus = RUS_aircraft_production_focus }
+}
 
+shared_focus = {
+	id = RUS_train_new_officers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Reorganization_of_the_Air_Force
-		icon = GFX_goal_generic_air_fighter
-		cost = 10.00
-		prerequisite = {
-			focus = Restarting_the_military
-		}
-		x = 19
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_train_new_officers"
+	}
+	relative_position_id = RUS_remobilize_the_military
+	prerequisite = { focus = RUS_remobilize_the_military }
+}
 
+shared_focus = {
+	id = RUS_the_zhukov_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Focus_on_long-range_bombing
-		icon = GFX_focus_yug_rogozarski
-		cost = 10.00
-		prerequisite = {
-			focus = Reorganization_of_the_Air_Force
-		}
-		x = 18
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_zhukov_plan"
+	}
+	relative_position_id = RUS_train_new_officers
+	prerequisite = { focus = RUS_train_new_officers }
+	mutually_exclusive = {	focus = RUS_the_konev_plan	}
+}
 
+shared_focus = {
+	id = RUS_the_center_of_gravity_principle
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Focus_on_tactical_bombing
-		icon = GFX_goal_poland_goal
-		cost = 10.00
-		prerequisite = {
-			focus = Reorganization_of_the_Air_Force
-		}
-		x = 20
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_center_of_gravity_principle"
+	}
+	relative_position_id = RUS_the_zhukov_plan
+	prerequisite = { focus = RUS_the_zhukov_plan }
+}
 
+shared_focus = {
+	id = RUS_overrun_with_firepower
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Focus_on_aircraft_production
-		icon = GFX_goal_continuous_air_production
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_long-range_bombing
-		}
-		prerequisite = {
-			focus = Focus_on_tactical_bombing
-		}
-		x = 19
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_overrun_with_firepower"
+	}
+	relative_position_id = RUS_the_center_of_gravity_principle
+	prerequisite = { focus = RUS_the_center_of_gravity_principle }
+}
 
+shared_focus = {
+	id = RUS_landair_cooperation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Specialization_in_proximity_support
-		icon = GFX_goal_generic_air_naval_bomber
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_aircraft_production
-		}
-		x = 18
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_landair_cooperation"
+	}
+	relative_position_id = RUS_focus_on_close_air_support
+	prerequisite = { focus = RUS_focus_on_close_air_support }
+	prerequisite = { focus = RUS_overrun_with_firepower }
+}
 
+shared_focus = {
+	id = RUS_the_konev_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = alliance_between_land_an_air_forces
-		icon = GFX_focus_generic_license_production
-		cost = 10.00
-		prerequisite = {
-			focus = Overwhelm_by_firepower
-		}
-		prerequisite = {
-			focus = Specialization_in_proximity_support
-		}
-		x = 17
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_konev_plan"
+	}
+	relative_position_id = RUS_train_new_officers
+	prerequisite = { focus = RUS_train_new_officers }
+	prerequisite = { focus = RUS_modernize_the_cavalry }
+	mutually_exclusive = {	focus = RUS_the_zhukov_plan	}
+}
 
+shared_focus = {
+	id = RUS_mechanization_focus
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Focus_on_air_superiority
-		icon = GFX_focus_yug_rogozarski
-		cost = 10.00
-		prerequisite = {
-			focus = Focus_on_aircraft_production
-		}
-		x = 20
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_mechanization_focus"
+	}
+	relative_position_id = RUS_the_konev_plan
+	prerequisite = { focus = RUS_the_konev_plan }
+}
 
+shared_focus = {
+	id = RUS_decentralize_command
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = night-bombing_regiment
-		icon = GFX_goal_continuous_air_production
-		cost = 10.00
-		prerequisite = {
-			focus = alliance_between_land_an_air_forces
-		}
-		prerequisite = {
-			focus = Focus_on_air_superiority
-		}
-		x = 20
-		y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_decentralize_command"
+	}
+	relative_position_id = RUS_mechanization_focus
+	prerequisite = { focus = RUS_mechanization_focus }
+}
 
+shared_focus = {
+	id = RUS_integrated_tank_operations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = teacher_training
-		icon = GFX_goal_generic_intelligence_exchange
-		cost = 10.00
-		prerequisite = {
-			focus = Restarting_the_military
-		}
-		x = 22
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_integrated_tank_operations"
+	}
+	relative_position_id = RUS_decentralize_command
+	prerequisite = { focus = RUS_decentralize_command }
+}
 
+shared_focus = {
+	id = RUS_allpurpose_tanks_concept
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Rebuild_the_shipyard
-		icon = GFX_goal_continuous_naval_production
-		cost = 10.00
-		prerequisite = {
-			focus = Restarting_the_military
-		}
-		x = 24
-		y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_allpurpose_tanks_concept"
+	}
+	relative_position_id = RUS_integrated_tank_operations
+	prerequisite = { focus = RUS_integrated_tank_operations }
+}
 
+shared_focus = {
+	id = RUS_modernize_the_cavalry
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Development_of_main_armament
-		icon = GFX_focus_generic_cryptologic_bomb
-		cost = 10.00
-		prerequisite = {
-			focus = Rebuild_the_shipyard
-		}
-		prerequisite = {
-			focus = teacher_training
-		}
-		x = 23
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_modernize_the_cavalry"
+	}
+	relative_position_id = RUS_remobilize_the_military
+	prerequisite = { focus = RUS_remobilize_the_military }
+}
 
+shared_focus = {
+	id = RUS_draft_reform
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -6
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Cruiser_Development
-		icon = GFX_goal_generic_occupy_states_coastal
-		cost = 10.00
-		prerequisite = {
-			focus = Development_of_main_armament
-		}
-		x = 22
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_draft_reform"
+	}
+	relative_position_id = RUS_remobilize_the_military
+	prerequisite = { focus = RUS_remobilize_the_military }
+}
 
+shared_focus = {
+	id = RUS_specialized_support_companies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Modernization_of_the_submarine_fleet
-		icon = GFX_goal_generic_navy_submarine
-		cost = 10.00
-		prerequisite = {
-			focus = Rebuild_the_shipyard
-		}
-		x = 25
-		y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_specialized_support_companies"
+	}
+	relative_position_id = RUS_modernize_the_cavalry
+	prerequisite = { focus = RUS_modernize_the_cavalry }
+	prerequisite = { focus = RUS_draft_reform }
+}
 
+shared_focus = {
+	id = RUS_update_the_infantry_equipment
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Reorganize_the_main_fleet
-		icon = GFX_goal_generic_navy_battleship
-		cost = 10.00
-		prerequisite = {
-			focus = Development_of_main_armament
-		}
-		prerequisite = {
-			focus = Modernization_of_the_submarine_fleet
-		}
-		x = 24
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_update_the_infantry_equipment"
+	}
+	relative_position_id = RUS_specialized_support_companies
+	prerequisite = { focus = RUS_specialized_support_companies }
+}
 
+shared_focus = {
+	id = RUS_a_new_goddess_on_the_battlefield
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = aircraft_carrier
-		icon = GFX_goal_generic_navy_carrier
-		cost = 10.00
-		prerequisite = {
-			focus = Reorganize_the_main_fleet
-		}
-		mutually_exclusive = {
-			focus = battleship
-		}
-		x = 23
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_a_new_goddess_on_the_battlefield"
+	}
+	relative_position_id = RUS_update_the_infantry_equipment
+	prerequisite = { focus = RUS_update_the_infantry_equipment }
+}
 
+shared_focus = {
+	id = RUS_socialist_propaganda
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 25
+	y = 0
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = battleship
-		icon = GFX_goal_generic_navy_cruiser
-		cost = 10.00
-		prerequisite = {
-			focus = Reorganize_the_main_fleet
-		}
-		mutually_exclusive = {
-			focus = aircraft_carrier
-		}
-		x = 25
-		y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_socialist_propaganda"
+		load_focus_tree = {	tree = RUS_socialism_focus_tree	keep_completed = yes	}
+		mark_focus_tree_layout_dirty = yes
+	}
+	mutually_exclusive = {	focus = RUS_anti_communist_unity	}
+}
 
+shared_focus = {
+	id = RUS_martial_law
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 29
+	y = 0
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Completed_large_ship
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		cost = 10.00
-		prerequisite = {
-			focus = battleship
-		}
-		x = 25
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_martial_law"
+	}
+}
 
+shared_focus = {
+	id = RUS_temporary_stability
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = SOV_Our_general_secretary
-		icon = GFX_goal_support_communism
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_stability_for_the_time_being
-		}
-		mutually_exclusive = {
-			focus = Successor
-		}
-		x = 8
-		y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_temporary_stability"
+	}
+	relative_position_id = RUS_martial_law
+	prerequisite = { focus = RUS_martial_law }
+	prerequisite = { focus = RUS_stalins_speech }
+}
 
+shared_focus = {
+	id = RUS_our_comrade_general_secretary
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Successor
-		icon = GFX_focus_spr_torchbearers_of_tomorrow
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_stability_for_the_time_being
-		}
-		mutually_exclusive = {
-			focus = SOV_Our_general_secretary
-		}
-		x = 6
-		y = 9
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_our_comrade_general_secretary"
+	}
+	relative_position_id = RUS_temporary_stability
+	prerequisite = { focus = RUS_temporary_stability }
+	mutually_exclusive = {	focus = RUS_successor	}
+}
 
+shared_focus = {
+	id = RUS_antisocialist_manipulation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = Focus_on_torpedoes
-		icon = GFX_goal_poland_goal
-		cost = 10.00
-		prerequisite = {
-			focus = Modernization_of_the_submarine_fleet
-		}
-		x = 26
-		y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_antisocialist_manipulation"
+	}
+	relative_position_id = RUS_our_comrade_general_secretary
+	prerequisite = { focus = RUS_our_comrade_general_secretary }
+}
 
+shared_focus = {
+	id = RUS_reconstruction_of_the_nkvd
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
-	focus = {
-		id = ship-borne_plane
-		icon = GFX_goal_generic_air_fighter2
-		cost = 10.00
-		prerequisite = {
-			focus = aircraft_carrier
-		}
-		x = 23
-		y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_reconstruction_of_the_nkvd"
+	}
+	relative_position_id = RUS_our_comrade_general_secretary
+	prerequisite = { focus = RUS_our_comrade_general_secretary }
+}
 
+shared_focus = {
+	id = RUS_purge
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
 	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_purge"
+	}
+	relative_position_id = RUS_antisocialist_manipulation
+	prerequisite = { focus = RUS_antisocialist_manipulation }
+	prerequisite = { focus = RUS_reconstruction_of_the_nkvd }
+}
+
+shared_focus = {
+	id = RUS_defence_against_external_enemies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_defence_against_external_enemies"
+	}
+	relative_position_id = RUS_our_comrade_general_secretary
+	prerequisite = { focus = RUS_our_comrade_general_secretary }
+}
+
+shared_focus = {
+	id = RUS_the_development_of_stalinism
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_development_of_stalinism"
+	}
+	relative_position_id = RUS_defence_against_external_enemies
+	prerequisite = { focus = RUS_defence_against_external_enemies }
+}
+
+shared_focus = {
+	id = RUS_determination_of_the_comintern_thesis
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_determination_of_the_comintern_thesis"
+	}
+	relative_position_id = RUS_the_development_of_stalinism
+	prerequisite = {
+		focus = RUS_the_development_of_stalinism
+		focus = RUS_route_to_change
+		focus = RUS_the_road_to_terror_rule
+		focus = RUS_army_by_party
+	}
+}
+
+shared_focus = {
+	id = RUS_support_for_socialists_in_various_countries
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_support_for_socialists_in_various_countries"
+	}
+	relative_position_id = RUS_determination_of_the_comintern_thesis
+	prerequisite = { focus = RUS_determination_of_the_comintern_thesis }
+}
+
+shared_focus = {
+	id = RUS_comrades_of_europe
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_comrades_of_europe"
+	}
+	relative_position_id = RUS_support_for_socialists_in_various_countries
+	prerequisite = { focus = RUS_support_for_socialists_in_various_countries }
+}
+
+shared_focus = {
+	id = RUS_comrades_of_china
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_comrades_of_china"
+	}
+	relative_position_id = RUS_support_for_socialists_in_various_countries
+	prerequisite = { focus = RUS_support_for_socialists_in_various_countries }
+}
+
+shared_focus = {
+	id = RUS_set_the_sun_down
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_set_the_sun_down"
+	}
+	relative_position_id = RUS_comrades_of_china
+	prerequisite = { focus = RUS_comrades_of_china }
+}
+
+shared_focus = {
+	id = RUS_comrades_of_america
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_comrades_of_america"
+	}
+	relative_position_id = RUS_support_for_socialists_in_various_countries
+	prerequisite = { focus = RUS_support_for_socialists_in_various_countries }
+}
+
+shared_focus = {
+	id = RUS_to_the_new_world
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_to_the_new_world"
+	}
+	relative_position_id = RUS_set_the_sun_down
+	prerequisite = { focus = RUS_set_the_sun_down }
+	prerequisite = { focus = RUS_comrades_of_america }
+	prerequisite = { focus = RUS_antiimperialist_revolution }
+}
+
+shared_focus = {
+	id = RUS_antiimperialist_revolution
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_antiimperialist_revolution"
+	}
+	relative_position_id = RUS_comrades_of_europe
+	prerequisite = { focus = RUS_comrades_of_europe }
+}
+
+shared_focus = {
+	id = RUS_manoeuvres_on_the_transsiberian_railway
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_manoeuvres_on_the_transsiberian_railway"
+	}
+	relative_position_id = RUS_determination_of_the_comintern_thesis
+	prerequisite = { focus = RUS_determination_of_the_comintern_thesis }
+}
+
+shared_focus = {
+	id = RUS_marching_east
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_marching_east"
+	}
+	relative_position_id = RUS_manoeuvres_on_the_transsiberian_railway
+	prerequisite = { focus = RUS_manoeuvres_on_the_transsiberian_railway }
+}
+
+shared_focus = {
+	id = RUS_march_into_central_asia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_march_into_central_asia"
+	}
+	relative_position_id = RUS_determination_of_the_comintern_thesis
+	prerequisite = { focus = RUS_determination_of_the_comintern_thesis }
+}
+
+shared_focus = {
+	id = RUS_infiltration_into_asia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_infiltration_into_asia"
+	}
+	relative_position_id = RUS_march_into_central_asia
+	prerequisite = { focus = RUS_march_into_central_asia }
+}
+
+shared_focus = {
+	id = RUS_to_full_federation
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_to_full_federation"
+	}
+	relative_position_id = RUS_marching_east
+	prerequisite = { focus = RUS_marching_east }
+	prerequisite = { focus = RUS_infiltration_into_asia }
+	prerequisite = { focus = RUS_defeat_the_anticommunists }
+}
+
+shared_focus = {
+	id = RUS_extension
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_extension"
+	}
+	relative_position_id = RUS_to_full_federation
+	prerequisite = { focus = RUS_to_full_federation }
+}
+
+shared_focus = {
+	id = RUS_defence_to_the_west
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_defence_to_the_west"
+	}
+	relative_position_id = RUS_determination_of_the_comintern_thesis
+	prerequisite = { focus = RUS_determination_of_the_comintern_thesis }
+}
+
+shared_focus = {
+	id = RUS_defeat_the_anticommunists
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_defeat_the_anticommunists"
+	}
+	relative_position_id = RUS_defence_to_the_west
+	prerequisite = { focus = RUS_defence_to_the_west }
+}
+
+shared_focus = {
+	id = RUS_successor
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_successor"
+	}
+	relative_position_id = RUS_temporary_stability
+	prerequisite = { focus = RUS_temporary_stability }
+	mutually_exclusive = {	focus = RUS_our_comrade_general_secretary	}
+}
+
+shared_focus = {
+	id = RUS_comrade_khrushchev
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_comrade_khrushchev"
+	}
+	relative_position_id = RUS_successor
+	prerequisite = { focus = RUS_successor }
+	mutually_exclusive = {	focus = RUS_comrade_konev	}
+	mutually_exclusive = {	focus = RUS_comrade_ejov	}
+}
+
+shared_focus = {
+	id = RUS_route_to_change
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_route_to_change"
+	}
+	relative_position_id = RUS_comrade_khrushchev
+	prerequisite = { focus = RUS_comrade_khrushchev }
+}
+
+shared_focus = {
+	id = RUS_comrade_ejov
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_comrade_ejov"
+	}
+	relative_position_id = RUS_successor
+	prerequisite = { focus = RUS_successor }
+	mutually_exclusive = {	focus = RUS_comrade_konev	}
+	mutually_exclusive = {	focus = RUS_comrade_khrushchev	}
+}
+
+shared_focus = {
+	id = RUS_the_road_to_terror_rule
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_road_to_terror_rule"
+	}
+	relative_position_id = RUS_comrade_ejov
+	prerequisite = { focus = RUS_comrade_ejov }
+}
+
+shared_focus = {
+	id = RUS_comrade_konev
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_comrade_konev"
+	}
+	relative_position_id = RUS_successor
+	prerequisite = { focus = RUS_successor }
+	mutually_exclusive = {	focus = RUS_comrade_ejov	}
+	mutually_exclusive = {	focus = RUS_comrade_khrushchev	}
+}
+
+shared_focus = {
+	id = RUS_army_by_party
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_army_by_party"
+	}
+	relative_position_id = RUS_comrade_konev
+	prerequisite = { focus = RUS_comrade_konev }
+}
+
+shared_focus = {
+	id = RUS_stalins_speech
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 31
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_stalins_speech"
+	}
+}
+
+shared_focus = {
+	id = RUS_anti_communist_unity
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 27
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_anti_communist_unity"
+		load_focus_tree = {	tree = RUS_anti_socialism_focus_tree	keep_completed = yes	}
+		mark_focus_tree_layout_dirty = yes
+	}
+	mutually_exclusive = {	focus = RUS_socialist_propaganda	}
+}
+
+shared_focus = {
+	id = RUS_the_white_army_is_indestructible
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 30
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_white_army_is_indestructible"
+	}
+}
+
+shared_focus = {
+	id = RUS_beg_for_support_from_JAP
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_beg_for_support_from_JAP"
+	}
+	relative_position_id = RUS_the_white_army_is_indestructible
+	prerequisite = { focus = RUS_the_white_army_is_indestructible }
+}
+
+shared_focus = {
+	id = RUS_stimulate_nationalism
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_stimulate_nationalism"
+	}
+	relative_position_id = RUS_the_white_army_is_indestructible
+	prerequisite = { focus = RUS_the_white_army_is_indestructible }
+}
+
+shared_focus = {
+	id = RUS_military_insiders
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_military_insiders"
+	}
+	relative_position_id = RUS_the_white_army_is_indestructible
+	prerequisite = { focus = RUS_the_white_army_is_indestructible }
+}
+
+shared_focus = {
+	id = RUS_entry_of_dissidents
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_entry_of_dissidents"
+	}
+	relative_position_id = RUS_the_white_army_is_indestructible
+	prerequisite = { focus = RUS_the_white_army_is_indestructible }
+}
+
+shared_focus = {
+	id = RUS_proceed_to_the_kremlin
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_proceed_to_the_kremlin"
+	}
+	relative_position_id = RUS_beg_for_support_from_JAP
+	prerequisite = { focus = RUS_beg_for_support_from_JAP }
+	prerequisite = { focus = RUS_stimulate_nationalism }
+	prerequisite = { focus = RUS_military_insiders }
+	prerequisite = { focus = RUS_entry_of_dissidents }
+}
+
+shared_focus = {
+	id = RUS_establishment_of_the_extraordinary_parliament
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_establishment_of_the_extraordinary_parliament"
+	}
+	relative_position_id = RUS_proceed_to_the_kremlin
+	prerequisite = { focus = RUS_proceed_to_the_kremlin }
+}
+
+shared_focus = {
+	id = RUS_long_live_the_tsar
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_long_live_the_tsar"
+		set_cosmetic_tag = RUS_empire
+	}
+	relative_position_id = RUS_establishment_of_the_extraordinary_parliament
+	prerequisite = { focus = RUS_establishment_of_the_extraordinary_parliament }
+	mutually_exclusive = {	focus = RUS_declaration_of_the_republic	}
+}
+
+shared_focus = {
+	id = RUS_return_of_successors
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_return_of_successors"
+	}
+	relative_position_id = RUS_long_live_the_tsar
+	prerequisite = { focus = RUS_long_live_the_tsar }
+}
+
+shared_focus = {
+	id = RUS_introduction_of_oprichnik
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_introduction_of_oprichnik"
+	}
+	relative_position_id = RUS_return_of_successors
+	prerequisite = { focus = RUS_return_of_successors }
+}
+
+shared_focus = {
+	id = RUS_new_constitution
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_new_constitution"
+	}
+	relative_position_id = RUS_return_of_successors
+	prerequisite = { focus = RUS_return_of_successors }
+}
+
+shared_focus = {
+	id = RUS_it_reigns_but_it_does_not_rule
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_it_reigns_but_it_does_not_rule"
+	}
+	relative_position_id = RUS_new_constitution
+	prerequisite = { focus = RUS_new_constitution }
+	mutually_exclusive = {	focus =	RUS_all_power_to_the_tsar	}
+}
+
+shared_focus = {
+	id = RUS_introduction_of_new_nobility
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_introduction_of_new_nobility"
+	}
+	relative_position_id = RUS_it_reigns_but_it_does_not_rule
+	prerequisite = {
+		focus = RUS_it_reigns_but_it_does_not_rule
+		focus = RUS_all_power_to_the_tsar
+	}
+}
+
+shared_focus = {
+	id = RUS_all_power_to_the_tsar
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_all_power_to_the_tsar"
+	}
+	relative_position_id = RUS_new_constitution
+	prerequisite = { focus = RUS_new_constitution }
+	mutually_exclusive = {	focus =	RUS_it_reigns_but_it_does_not_rule	}
+}
+
+shared_focus = {
+	id = RUS_victory_for_the_white_army
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_victory_for_the_white_army"
+	}
+	relative_position_id = RUS_proceed_to_the_kremlin
+	prerequisite = { focus = RUS_proceed_to_the_kremlin }
+}
+
+shared_focus = {
+	id = RUS_release_of_political_prisoners
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_release_of_political_prisoners"
+	}
+	relative_position_id = RUS_proceed_to_the_kremlin
+	prerequisite = { focus = RUS_proceed_to_the_kremlin }
+}
+
+shared_focus = {
+	id = RUS_declaration_of_the_republic
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_declaration_of_the_republic"
+		set_cosmetic_tag = RUS_republic
+	}
+	relative_position_id = RUS_establishment_of_the_extraordinary_parliament
+	prerequisite = { focus = RUS_establishment_of_the_extraordinary_parliament }
+	prerequisite = { focus = RUS_victory_for_the_white_army }
+	prerequisite = { focus = RUS_release_of_political_prisoners }
+	mutually_exclusive = {	focus = RUS_long_live_the_tsar	}
+}
+
+shared_focus = {
+	id = RUS_reconstruction_law
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_reconstruction_law"
+	}
+	relative_position_id = RUS_long_live_the_tsar
+	prerequisite = {
+		focus = RUS_long_live_the_tsar
+		focus = RUS_declaration_of_the_republic
+	}
+}
+
+shared_focus = {
+	id = RUS_responding_to_nationalism
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_responding_to_nationalism"
+	}
+	relative_position_id = RUS_reconstruction_law
+	prerequisite = { focus = RUS_reconstruction_law }
+}
+
+shared_focus = {
+	id = RUS_free_market
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_free_market"
+	}
+	relative_position_id = RUS_reconstruction_law
+	prerequisite = { focus = RUS_reconstruction_law }
+}
+
+shared_focus = {
+	id = RUS_emerging_conglomerate
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_emerging_conglomerate"
+	}
+	relative_position_id = RUS_responding_to_nationalism
+	prerequisite = { focus = RUS_responding_to_nationalism }
+	prerequisite = { focus = RUS_free_market }
+}
+
+shared_focus = {
+	id = RUS_complete_growth
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_complete_growth"
+	}
+	relative_position_id = RUS_emerging_conglomerate
+	prerequisite = { focus = RUS_emerging_conglomerate }
+}
+
+shared_focus = {
+	id = RUS_the_new_russian_diplomacy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_new_russian_diplomacy"
+	}
+	relative_position_id = RUS_introduction_of_new_nobility
+	prerequisite = {
+		focus = RUS_introduction_of_new_nobility
+		focus = RUS_rebuilding_the_intelligence_services
+		focus = RUS_revival_of_the_senate
+	}
+	prerequisite = { focus = RUS_complete_growth }
+}
+
+shared_focus = {
+	id = RUS_restore_the_western_lost_land
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_restore_the_western_lost_land"
+	}
+	relative_position_id = RUS_the_new_russian_diplomacy
+	prerequisite = { focus = RUS_the_new_russian_diplomacy }
+	mutually_exclusive = {	focus =	RUS_anticommunist_alliance	}
+}
+
+shared_focus = {
+	id = RUS_reestablishment_of_the_francorussian_consultative_agreement
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_reestablishment_of_the_francorussian_consultative_agreement"
+	}
+	relative_position_id = RUS_restore_the_western_lost_land
+	prerequisite = { focus = RUS_restore_the_western_lost_land }
+}
+
+shared_focus = {
+	id = RUS_interference_in_the_balkans
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_interference_in_the_balkans"
+	}
+	relative_position_id = RUS_reestablishment_of_the_francorussian_consultative_agreement
+	prerequisite = { focus = RUS_reestablishment_of_the_francorussian_consultative_agreement }
+}
+
+shared_focus = {
+	id = RUS_anticommunist_alliance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_anticommunist_alliance"
+	}
+	relative_position_id = RUS_the_new_russian_diplomacy
+	prerequisite = { focus = RUS_the_new_russian_diplomacy }
+	mutually_exclusive = {	focus =	RUS_restore_the_western_lost_land	}
+}
+
+shared_focus = {
+	id = RUS_improved_relations_with_the_nordic_countries
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_improved_relations_with_the_nordic_countries"
+	}
+	relative_position_id = RUS_anticommunist_alliance
+	prerequisite = { focus = RUS_anticommunist_alliance }
+}
+
+shared_focus = {
+	id = RUS_defeat_the_remnants
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_defeat_the_remnants"
+	}
+	relative_position_id = RUS_improved_relations_with_the_nordic_countries
+	prerequisite = { focus = RUS_improved_relations_with_the_nordic_countries }
+}
+
+shared_focus = {
+	id = RUS_the_european_order_for_us
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_the_european_order_for_us"
+	}
+	relative_position_id = RUS_interference_in_the_balkans
+	prerequisite = {
+		focus = RUS_interference_in_the_balkans
+		focus = RUS_defeat_the_remnants
+	}
+}
+
+shared_focus = {
+	id = RUS_manipulation_to_SCC
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_manipulation_to_SCC"
+	}
+	relative_position_id = RUS_the_new_russian_diplomacy
+	prerequisite = { focus = RUS_the_new_russian_diplomacy }
+}
+
+shared_focus = {
+	id = RUS_restarting_the_southward_policy
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_restarting_the_southward_policy"
+	}
+	relative_position_id = RUS_manipulation_to_SCC
+	prerequisite = { focus = RUS_manipulation_to_SCC }
+}
+
+shared_focus = {
+	id = RUS_interests_in_the_middle_east
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_interests_in_the_middle_east"
+	}
+	relative_position_id = RUS_restarting_the_southward_policy
+	prerequisite = { focus = RUS_restarting_the_southward_policy }
+}
+
+shared_focus = {
+	id = RUS_renegotiations_with_GBR_and_FRA
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_renegotiations_with_GBR_and_FRA"
+	}
+	relative_position_id = RUS_interests_in_the_middle_east
+	prerequisite = { focus = RUS_interests_in_the_middle_east }
+}
+
+shared_focus = {
+	id = RUS_response_to_central_asia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_response_to_central_asia"
+	}
+	relative_position_id = RUS_the_new_russian_diplomacy
+	prerequisite = { focus = RUS_the_new_russian_diplomacy }
+}
+
+shared_focus = {
+	id = RUS_manipulation_to_MON
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_manipulation_to_MON"
+	}
+	relative_position_id = RUS_response_to_central_asia
+	prerequisite = { focus = RUS_response_to_central_asia }
+}
+
+shared_focus = {
+	id = RUS_demands_on_JAP
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_demands_on_JAP"
+	}
+	relative_position_id = RUS_manipulation_to_MON
+	prerequisite = { focus = RUS_manipulation_to_MON }
+	prerequisite = { focus = RUS_invasion_of_FEA }
+	mutually_exclusive = {	focus =	RUS_resumption_of_the_russojapanese_agreement	}
+}
+
+shared_focus = {
+	id = RUS_rule_CHI
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_rule_CHI"
+	}
+	relative_position_id = RUS_demands_on_JAP
+	prerequisite = { focus = RUS_demands_on_JAP }
+}
+
+shared_focus = {
+	id = RUS_resumption_of_the_russojapanese_agreement
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_resumption_of_the_russojapanese_agreement"
+	}
+	relative_position_id = RUS_manipulation_to_MON
+	prerequisite = { focus = RUS_manipulation_to_MON }
+	prerequisite = { focus = RUS_invasion_of_FEA }
+	mutually_exclusive = {	focus =	RUS_demands_on_JAP	}
+}
+
+shared_focus = {
+	id = RUS_asiaeurasia_mutual_alliance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_asiaeurasia_mutual_alliance"
+	}
+	relative_position_id = RUS_resumption_of_the_russojapanese_agreement
+	prerequisite = { focus = RUS_resumption_of_the_russojapanese_agreement }
+}
+
+shared_focus = {
+	id = RUS_guaranteed_minimum_wage
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_guaranteed_minimum_wage"
+	}
+	relative_position_id = RUS_free_market
+	prerequisite = { focus = RUS_free_market }
+	prerequisite = { focus = RUS_workers_charter }
+}
+
+shared_focus = {
+	id = RUS_compromise_with_rightwing_bolsheviks
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_compromise_with_rightwing_bolsheviks"
+	}
+	relative_position_id = RUS_declaration_of_the_republic
+	prerequisite = { focus = RUS_declaration_of_the_republic }
+	mutually_exclusive = {	focus = RUS_return_of_kerensky	}
+}
+
+shared_focus = {
+	id = RUS_workers_charter
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_workers_charter"
+	}
+	relative_position_id = RUS_compromise_with_rightwing_bolsheviks
+	prerequisite = { focus = RUS_compromise_with_rightwing_bolsheviks }
+}
+
+shared_focus = {
+	id = RUS_fair_election
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_fair_election"
+	}
+	relative_position_id = RUS_workers_charter
+	prerequisite = { focus = RUS_workers_charter }
+}
+
+shared_focus = {
+	id = RUS_revival_of_the_senate
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_revival_of_the_senate"
+	}
+	relative_position_id = RUS_fair_election
+	prerequisite = {
+		focus = RUS_fair_election
+		focus = RUS_president_for_life
+	}
+}
+
+shared_focus = {
+	id = RUS_allrussian_unity_committee
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_allrussian_unity_committee"
+	}
+	relative_position_id = RUS_the_new_russian_diplomacy
+	prerequisite = { focus = RUS_the_new_russian_diplomacy }
+	mutually_exclusive = {	focus = RUS_invasion_of_SIB	}
+}
+
+shared_focus = {
+	id = RUS_return_of_kerensky
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_return_of_kerensky"
+	}
+	relative_position_id = RUS_declaration_of_the_republic
+	prerequisite = { focus = RUS_declaration_of_the_republic }
+	mutually_exclusive = {	focus = RUS_compromise_with_rightwing_bolsheviks	}
+}
+
+shared_focus = {
+	id = RUS_control_of_the_douma
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_control_of_the_douma"
+	}
+	relative_position_id = RUS_return_of_kerensky
+	prerequisite = { focus = RUS_return_of_kerensky }
+}
+
+shared_focus = {
+	id = RUS_president_for_life
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_president_for_life"
+	}
+	relative_position_id = RUS_control_of_the_douma
+	prerequisite = { focus = RUS_control_of_the_douma }
+}
+
+shared_focus = {
+	id = RUS_rebuilding_the_intelligence_services
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_rebuilding_the_intelligence_services"
+	}
+	relative_position_id = RUS_fair_election
+	prerequisite = {
+		focus = RUS_fair_election
+		focus = RUS_president_for_life
+	}
+}
+
+shared_focus = {
+	id = RUS_invasion_of_SIB
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -5
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_invasion_of_SIB"
+	}
+	relative_position_id = RUS_the_new_russian_diplomacy
+	prerequisite = { focus = RUS_the_new_russian_diplomacy }
+	mutually_exclusive = {	focus = RUS_allrussian_unity_committee	}
+}
+
+shared_focus = {
+	id = RUS_invasion_of_FEA
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_invasion_of_FEA"
+	}
+	relative_position_id = RUS_allrussian_unity_committee
+	prerequisite = {
+		focus = RUS_allrussian_unity_committee
+		focus = RUS_invasion_of_SIB
+	}
+}
+
+shared_focus = {
+	id = RUS_development_of_siberia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus RUS_development_of_siberia"
+	}
+	relative_position_id = RUS_invasion_of_FEA
+	prerequisite = { focus = RUS_invasion_of_FEA }
 }

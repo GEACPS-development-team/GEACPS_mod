@@ -31,13 +31,6 @@ spriteTypes = {	#ALB
 		texturefile = "gfx/characters/large/ALB/CHARACTER_omer_nishani.png"
 	}
 }
-spriteTypes = {	#AMR
-	#文民
-	spriteType = {	#グリゴリー・ミハイロヴィチ・セミョーノフ
-		name = "GFX_grigory_mikhaylovich_semyonov_large"
-		texturefile = "gfx/characters/large/AMR/CHARACTER_grigory_mikhaylovich_semyonov.png"
-	}
-}
 spriteTypes = {	#ARG
 	#陸軍
 	spriteType = {	#エデルミロ・フリアン・ファレル・パウル
@@ -111,6 +104,11 @@ spriteTypes = {	#BRN
 }
 spriteTypes = {	#BUL
 	#王室
+	
+	spriteType = {	#ボリス3世
+		name = "GFX_boris_klemens_robert_maria_pius_ludwig_stanislaus_xaver_sakskoburggotski_large"
+		texturefile = "gfx/characters/large/BUL/CHARACTER_boris_klemens_robert_maria_pius_ludwig_stanislaus_xaver_sakskoburggotski.png"
+	}
 	spriteType = {	#シメオン2世
 		name = "GFX_simeon_borisov_sakskoburggotski_large"
 		texturefile = "gfx/characters/large/BUL/CHARACTER_simeon_borisov_sakskoburggotski.png"
@@ -365,7 +363,7 @@ spriteTypes = {	#GBR
 		texturefile = "gfx/characters/large/GBR/CHARACTER_albert_frederick_arthur_george.png"
 	}
 	spriteType = {	#グロスター公爵ヘンリー王子
-		name = "CHARACTER_henry_william_frederick_albert_large"
+		name = "GFX_henry_william_frederick_albert_large"
 		texturefile = "gfx/characters/large/GBR/CHARACTER_henry_william_frederick_albert.png"
 	}
 	#文民
@@ -511,6 +509,10 @@ spriteTypes = {	#GBR
 }
 spriteTypes = {	#GER
 	#文民
+	spriteType = {	#クルト・エルンスト・カール・シューマッハー
+		name = "GFX_curt_ernst_carl_schumacher_large"
+		texturefile = "gfx/characters/large/GER/CHARACTER_curt_ernst_carl_schumacher.png"
+	}
 	spriteType = {	#フリードリヒ・ヴィルヘルム・ラインホルト・ピーク
 		name = "GFX_friedrich_wilhelm_reinhold_pieck_large"
 		texturefile = "gfx/characters/large/GER/CHARACTER_friedrich_wilhelm_reinhold_pieck.png"
@@ -541,22 +543,6 @@ spriteTypes = {	#HAI
 		texturefile = "gfx/characters/large/HAI/CHARACTER_antoine_louis_leocardie_elie_lescot.png"
 	}
 }
-spriteTypes = {	#HOL
-	#王室
-	spriteType = {	#ウィルヘルミナ
-		name = "GFX_wilhelmina_helena_pauline_maria_van_oranje-nassau_large"
-		texturefile = "gfx/characters/large/HOL/CHARACTER_wilhelmina_helena_pauline_maria_van_oranje-nassau.png"
-	}
-	#文民
-	spriteType = {	#ヨハネス・コルネリス・ブロンス
-		name = "GFX_johannes_cornelis_brons_large"
-		texturefile = "gfx/characters/large/HOL/CHARACTER_johannes_cornelis_brons.png"
-	}
-	spriteType = {	#ペトリュス・アルバートゥス・カステール
-		name = "GFX_petrus_albertus_kasteel_large"
-		texturefile = "gfx/characters/large/HOL/CHARACTER_petrus_albertus_kasteel.png"
-	}
-}
 spriteTypes = {	#HON
 	#文民
 	spriteType = {	#ティブルシオ・カリアス・アンディーノ
@@ -566,6 +552,10 @@ spriteTypes = {	#HON
 }
 spriteTypes = {	#HUN
 	#文民
+	spriteType = {	#高等国民評議会
+		name = "GFX_HUN_high_national_council_large"
+		texturefile = "gfx/characters/large/HUN/CHARACTER_HUN_high_national_council.png"
+	}
 	spriteType = {	#サカシチ・アールパード
 		name = "GFX_arpad_szakasits_large"
 		texturefile = "gfx/characters/large/HUN/CHARACTER_arpad_szakasits.png"
@@ -631,6 +621,18 @@ spriteTypes = {	#JAP
 		name = "GFX_morimasa_nashimoto_large"
 		texturefile = "gfx/characters/large/JAP/CHARACTER_morimasa_nashimoto.png"
 	}
+	spriteType = {	#朝香宮鳩彦王
+		name = "GFX_yasuhiko_asaka_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_yasuhiko_asaka.png"
+	}
+	spriteType = {	#東久邇宮稔彦王
+		name = "GFX_naruhiko_higashikuni_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_naruhiko_higashikuni.png"
+	}
+	spriteType = {	#伏見宮博恭王
+		name = "GFX_hiroyasu_fushimi_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_hiroyasu_fushimi.png"
+	}
 	#文民
 	spriteType = {	#近衛文麿
 		name = "GFX_fumimaro_konoe_large"
@@ -685,6 +687,10 @@ spriteTypes = {	#JAP
 		name = "GFX_shunroku_hata_large"
 		texturefile = "gfx/characters/large/JAP/CHARACTER_shunroku_hata.png"
 	}
+	spriteType = {	#津野田知重
+		name = "GFX_tomoshige_tsunoda_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_tomoshige_tsunoda.png"
+	}
 	#海軍
 	spriteType = {	#細萱戊子郎
 		name = "GFX_boshiro_hosogaya_large"
@@ -697,6 +703,22 @@ spriteTypes = {	#JAP
 	spriteType = {	#岡田啓介
 		name = "GFX_keisuke_okada_large"
 		texturefile = "gfx/characters/large/JAP/CHARACTER_keisuke_okada.png"
+	}
+	spriteType = {	#古賀峯一
+		name = "GFX_mineichi_koga_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_mineichi_koga.png"
+	}
+	spriteType = {	#米内光政
+		name = "GFX_mitsumasa_yonai_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_mitsumasa_yonai.png"
+	}
+	spriteType = {	#永野修身
+		name = "GFX_osami_nagano_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_osami_nagano.png"
+	}
+	spriteType = {	#高木惣吉
+		name = "GFX_sokichi_takagi_large"
+		texturefile = "gfx/characters/large/JAP/CHARACTER_sokichi_takagi.png"
 	}
 }
 spriteTypes = {	#JOR
@@ -844,6 +866,22 @@ spriteTypes = {	#NOR
 		texturefile = "gfx/characters/large/NOR/CHARACTER_haakon_ne_christian_frederik_carl_georg_valdemar_axel.png"
 	}
 }
+spriteTypes = {	#NTL
+	#王室
+	spriteType = {	#ウィルヘルミナ
+		name = "GFX_wilhelmina_helena_pauline_maria_van_oranje-nassau_large"
+		texturefile = "gfx/characters/large/NTL/CHARACTER_wilhelmina_helena_pauline_maria_van_oranje-nassau.png"
+	}
+	#文民
+	spriteType = {	#ヨハネス・コルネリス・ブロンス
+		name = "GFX_johannes_cornelis_brons_large"
+		texturefile = "gfx/characters/large/NTL/CHARACTER_johannes_cornelis_brons.png"
+	}
+	spriteType = {	#ペトリュス・アルバートゥス・カステール
+		name = "GFX_petrus_albertus_kasteel_large"
+		texturefile = "gfx/characters/large/NTL/CHARACTER_petrus_albertus_kasteel.png"
+	}
+}
 spriteTypes = {	#PAN
 	#文民
 	spriteType = {	#エンリケ・アドルフォ・ヒメネス・ブリン
@@ -920,8 +958,20 @@ spriteTypes = {	#PRE
 		texturefile = "gfx/characters/large/PRE/CHARACTER_friedrich_wilhelm_victor_august_ernst_von_preusen.png"
 	}
 	spriteType = {	#ルイ・フェルディナント1世
-		name = "GFX_louis_ferdinand_victor_eduard_adalbert_michael_hubertus_prinz_von_preusen_large"
-		texturefile = "gfx/characters/large/PRE/CHARACTER_louis_ferdinand_victor_eduard_adalbert_michael_hubertus_prinz_von_preusen.png"
+		name = "GFX_louis_ferdinand_victor_eduard_adalbert_michael_hubertus_von_preusen_large"
+		texturefile = "gfx/characters/large/PRE/CHARACTER_louis_ferdinand_victor_eduard_adalbert_michael_hubertus_von_preusen.png"
+	}
+}
+spriteTypes = {	#PRU
+	#文民
+	spriteType = {	#ホセ・ルイス・ブスタマンテ・イ・リベロ
+		name = "GFX_jose_luis_bustamante_y_rivero_large"
+		texturefile = "gfx/characters/large/PRU/CHARACTER_jose_luis_bustamante_y_rivero.png"
+	}
+	#陸軍
+	spriteType = {	#マヌエル・A・オドリア
+		name = "GFX_manuel_arturo_odria_amoretti_large"
+		texturefile = "gfx/characters/large/PRU/CHARACTER_manuel_arturo_odria_amoretti.png"
 	}
 }
 spriteTypes = {	#QAT
@@ -945,11 +995,23 @@ spriteTypes = {	#ROM
 }
 spriteTypes = {	#RUS
 	#文民
+	spriteType = {	#レフ・トロツキー
+		name = "GFX_lev_davidovich_bronstein_large"
+		texturefile = "gfx/characters/large/RUS/CHARACTER_nikolai_ivanovich_bukharin.png"
+	}
+	spriteType = {	#ニコライ・イヴァノヴィチ・ブハーリン
+		name = "GFX_nikolai_ivanovich_bukharin_large"
+		texturefile = "gfx/characters/large/RUS/CHARACTER_lev_davidovich_bronstein.png"
+	}
 	spriteType = {	#ニコライ・ミハイロヴィチ・シュヴェルニク
 		name = "GFX_nikolai_mikhailovich_shvernik_large"
 		texturefile = "gfx/characters/large/RUS/CHARACTER_nikolai_mikhailovich_shvernik.png"
 	}
 	#陸軍
+	spriteType = {	#グリゴリー・ミハイロヴィチ・セミョーノフ
+		name = "GFX_grigory_mikhaylovich_semyonov_large"
+		texturefile = "gfx/characters/large/RUS/CHARACTER_grigory_mikhaylovich_semyonov.png"
+	}
 	spriteType = {	#イワン・ステパノヴィチ・コーネフ
 		name = "GFX_ivan_stepanovich_konev_large"
 		texturefile = "gfx/characters/large/RUS/CHARACTER_ivan_stepanovich_konev.png"
@@ -1082,6 +1144,13 @@ spriteTypes = {	#UKR
 	spriteType = {	#ミハイロ・セルヒヨビッチ・フレチュカ
 		name = "GFX_mykhailo_serhiyovych_hrechukha_large"
 		texturefile = "gfx/characters/large/UKR/CHARACTER_mykhailo_serhiyovych_hrechukha.png"
+	}
+}
+spriteTypes = {	#UKR
+	#文民
+	spriteType = {	#ミハイロ・セルヒヨビッチ・フレチュカ
+		name = "GFX_tomas_berreta_gandolfo_large"
+		texturefile = "gfx/characters/large/URG/CHARACTER_tomas_berreta_gandolfo.png"
 	}
 }
 spriteTypes = {	#USA

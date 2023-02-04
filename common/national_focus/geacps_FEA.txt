@@ -1,0 +1,1818 @@
+focus_tree = {
+	id = FEA_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FEA
+		}
+	}
+	
+	default = no
+	shared_focus = FEA_the_future_of_transbaikal
+	shared_focus = FEA_restructuring_of_industry_in_chita
+	shared_focus = FEA_transbaikal_army
+	shared_focus = FEA_participation_in_multilateral_organizations
+	
+	continuous_focus_position = {
+		x = 100 y = 1000
+	}
+}
+
+shared_focus = {
+	id = FEA_the_future_of_transbaikal
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 25
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_the_future_of_transbaikal"
+		add_political_power = 100
+	}
+}
+
+shared_focus = {
+	id = FEA_march_to_glory
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_march_to_glory"
+		load_focus_tree = FEA_cossack_focus_tree
+		mark_focus_tree_layout_dirty = yes
+	}
+	relative_position_id = FEA_the_future_of_transbaikal
+	prerequisite = { focus = FEA_the_future_of_transbaikal }
+	mutually_exclusive = {	focus = FEA_march_to_freedom	}
+}
+
+shared_focus = {
+	id = FEA_march_to_freedom
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_march_to_freedom"
+		load_focus_tree = FEA_democracy_focus_tree
+		mark_focus_tree_layout_dirty = yes
+	}
+	relative_position_id = FEA_the_future_of_transbaikal
+	prerequisite = { focus = FEA_the_future_of_transbaikal }
+	mutually_exclusive = {	focus = FEA_march_to_glory	}
+}
+
+#コサック共和国
+focus_tree = {
+	id = FEA_cossack_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FEA
+		}
+	}
+	
+	default = no
+	shared_focus = FEA_semyonovs_maintenance_of_power
+	shared_focus = FEA_restructuring_of_industry_in_chita
+	shared_focus = FEA_transbaikal_army
+	shared_focus = FEA_participation_in_multilateral_organizations
+	
+	continuous_focus_position = {
+		x = 100 y = 1000
+	}
+}
+
+shared_focus = {
+	id = FEA_semyonovs_maintenance_of_power
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 28
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_semyonovs_maintenance_of_power"
+		add_political_power = 50
+	}
+}
+
+shared_focus = {
+	id = FEA_promulgation_of_our_own_constitution
+	icon = GFX_focus_hol_the_foundations_of_defense
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_promulgation_of_our_own_constitution"
+		add_war_support = 0.1
+	}
+	relative_position_id = FEA_semyonovs_maintenance_of_power
+	prerequisite = { focus = FEA_semyonovs_maintenance_of_power }
+}
+
+shared_focus = {
+	id = FEA_strengthening_the_gendarmerie
+	icon = GFX_goal_generic_political_pressure
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_strengthening_the_gendarmerie"
+		add_stability = 0.1
+	}
+	relative_position_id = FEA_semyonovs_maintenance_of_power
+	prerequisite = { focus = FEA_semyonovs_maintenance_of_power }
+}
+
+shared_focus = {
+	id = FEA_to_lifetime_presidency
+	icon = GFX_focus_generic_strike_at_democracy1
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_to_lifetime_presidency"
+		add_ideas = FEA_president_system
+		remove_ideas = FEA_reactionary_politics
+	}
+	relative_position_id = FEA_promulgation_of_our_own_constitution
+	prerequisite = { focus = FEA_promulgation_of_our_own_constitution }
+	prerequisite = { focus = FEA_strengthening_the_gendarmerie }
+}
+
+shared_focus = {
+	id = FEA_establishment_of_research_foundation
+	icon = GFX_focus_research
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_establishment_of_research_foundation"
+		add_research_slot = 1
+	}
+	relative_position_id = FEA_to_lifetime_presidency
+	prerequisite = { focus = FEA_to_lifetime_presidency }
+}
+
+shared_focus = {
+	id = FEA_establishment_of_a_dictatorship
+	icon = FEA_research_slot_unlock
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_establishment_of_a_dictatorship"
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 100
+		set_cosmetic_tag = TRANSBAIKAL_cossack_republic
+	}
+	relative_position_id = FEA_establishment_of_research_foundation
+	prerequisite = { focus = FEA_establishment_of_research_foundation }
+}
+
+#民主化
+focus_tree = {
+	id = FEA_democracy_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FEA
+		}
+	}
+	
+	default = no
+	shared_focus = FEA_democratic_coup_dtat
+	shared_focus = FEA_restructuring_of_industry_in_chita
+	shared_focus = FEA_transbaikal_army
+	shared_focus = FEA_participation_in_multilateral_organizations
+	
+	continuous_focus_position = {
+		x = 100 y = 1000
+	}
+}
+
+shared_focus = {
+	id = FEA_democratic_coup_dtat
+	icon = GFX_goal_continuous_suppression
+	cost = 2
+	x = 31
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_democratic_coup_dtat"
+	}
+}
+
+shared_focus = {
+	id = FEA_free_behavior
+	icon = GFX_goal_generic_forceful_treaty
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_free_behavior"
+		remove_ideas = FEA_reactionary_politics
+	}
+	relative_position_id = FEA_democratic_coup_dtat
+	prerequisite = { focus = FEA_democratic_coup_dtat }
+}
+
+shared_focus = {
+	id = FEA_citizen_party
+	icon = GFX_goal_generic_national_unity
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_citizen_party"
+	}
+	relative_position_id = FEA_free_behavior
+	prerequisite = { focus = FEA_free_behavior }
+	mutually_exclusive = {	focus = FEA_cadet	}
+}
+
+shared_focus = {
+	id = FEA_education_for_the_common_man
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_education_for_the_common_man"
+		add_research_slot = 1
+	}
+	relative_position_id = FEA_citizen_party
+	prerequisite = { focus = FEA_citizen_party }
+}
+
+shared_focus = {
+	id = FEA_far_eastern_republics
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_far_eastern_republics"
+		set_cosmetic_tag = FEA_republic
+	}
+	relative_position_id = FEA_education_for_the_common_man
+	prerequisite = { focus = FEA_education_for_the_common_man }
+}
+
+shared_focus = {
+	id = FEA_cadet
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_cadet"
+	}
+	relative_position_id = FEA_free_behavior
+	prerequisite = { focus = FEA_free_behavior }
+	mutually_exclusive = {	focus = FEA_citizen_party	}
+}
+
+shared_focus = {
+	id = FEA_adoption_of_a_constitution
+	icon = GFX_focus_hol_the_foundations_of_defense
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_adoption_of_a_constitution"
+	}
+	relative_position_id = FEA_citizen_party
+	prerequisite = {
+		focus = FEA_citizen_party
+		focus = FEA_cadet
+	}
+}
+
+shared_focus = {
+	id = FEA_elect_a_president
+	icon = GFX_focus_generic_the_giant_wakes
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_elect_a_president"
+	}
+	relative_position_id = FEA_education_for_the_common_man
+	prerequisite = { focus = FEA_education_for_the_common_man }
+	prerequisite = { focus = FEA_adoption_of_a_constitution }
+	mutually_exclusive = {	focus = FEA_crown_a_monarch	}
+}
+
+shared_focus = {
+	id = FEA_crown_a_monarch
+	icon = GFX_focus_rom_royal_dictatorship
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_crown_a_monarch"
+		set_cosmetic_tag = GREENRUSSIA_empire
+	}
+	relative_position_id = FEA_adoption_of_a_constitution
+	prerequisite = { focus = FEA_adoption_of_a_constitution }
+	prerequisite = { focus = FEA_russian_successor }
+	mutually_exclusive = {	focus = FEA_elect_a_president	}
+}
+
+shared_focus = {
+	id = FEA_russian_successor
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_russian_successor"
+	}
+	relative_position_id = FEA_cadet
+	prerequisite = { focus = FEA_cadet }
+}
+
+shared_focus = {
+	id = FEA_national_institute
+	icon = GFX_focus_research
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_national_institute"
+	}
+	relative_position_id = FEA_russian_successor
+	prerequisite = { focus = FEA_russian_successor }
+}
+
+#日本
+focus_tree = {
+	id = FEA_JAP_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = FEA
+		}
+	}
+	
+	default = no
+	shared_focus = FEA_harbin_agency_intervention
+	shared_focus = FEA_restructuring_of_industry_in_chita
+	shared_focus = FEA_transbaikal_army
+	shared_focus = FEA_participation_in_multilateral_organizations
+	
+	continuous_focus_position = {
+		x = 100 y = 1000
+	}
+}
+
+shared_focus = {
+	id = FEA_harbin_agency_intervention
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 31
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_harbin_agency_intervention"
+	}
+}
+
+shared_focus = {
+	id = FEA_semyonov_eliminated
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_semyonov_eliminated"
+	}
+	relative_position_id = FEA_harbin_agency_intervention
+	prerequisite = { focus = FEA_harbin_agency_intervention }
+}
+
+shared_focus = {
+	id = FEA_garrison_of_the_kwantung_army
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_garrison_of_the_kwantung_army"
+	}
+	relative_position_id = FEA_semyonov_eliminated
+	prerequisite = { focus = FEA_semyonov_eliminated }
+}
+
+shared_focus = {
+	id = FEA_military_reform_by_seo
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_military_reform_by_seo"
+	}
+	relative_position_id = FEA_garrison_of_the_kwantung_army
+	prerequisite = { focus = FEA_garrison_of_the_kwantung_army }
+}
+
+shared_focus = {
+	id = FEA_founding_of_the_intelligence_department
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_founding_of_the_intelligence_department"
+	}
+	relative_position_id = FEA_military_reform_by_seo
+	prerequisite = { focus = FEA_military_reform_by_seo }
+}
+
+shared_focus = {
+	id = FEA_founding_of_ataman
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_founding_of_ataman"
+	}
+	relative_position_id = FEA_founding_of_the_intelligence_department
+	prerequisite = { focus = FEA_founding_of_the_intelligence_department }
+}
+
+shared_focus = {
+	id = FEA_yoshino_plan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_yoshino_plan"
+	}
+	relative_position_id = FEA_garrison_of_the_kwantung_army
+	prerequisite = { focus = FEA_garrison_of_the_kwantung_army }
+}
+
+shared_focus = {
+	id = FEA_control_of_the_russian_fascist_party
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_control_of_the_russian_fascist_party"
+	}
+	relative_position_id = FEA_harbin_agency_intervention
+	prerequisite = { focus = FEA_harbin_agency_intervention }
+}
+
+shared_focus = {
+	id = FEA_beginning_of_imperialization
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_beginning_of_imperialization"
+	}
+	relative_position_id = FEA_control_of_the_russian_fascist_party
+	prerequisite = { focus = FEA_control_of_the_russian_fascist_party }
+}
+
+shared_focus = {
+	id = FEA_officialization_of_the_japanese_language
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_officialization_of_the_japanese_language"
+	}
+	relative_position_id = FEA_beginning_of_imperialization
+	prerequisite = { focus = FEA_beginning_of_imperialization }
+}
+
+shared_focus = {
+	id = FEA_controlling_the_media_in_far_eastern_russia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_controlling_the_media_in_far_eastern_russia"
+	}
+	relative_position_id = FEA_beginning_of_imperialization
+	prerequisite = { focus = FEA_beginning_of_imperialization }
+}
+
+shared_focus = {
+	id = FEA_japan_russia_treaty
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_russian_successor"
+	}
+	relative_position_id = FEA_controlling_the_media_in_far_eastern_russia
+	prerequisite = { focus = FEA_controlling_the_media_in_far_eastern_russia }
+	prerequisite = { focus = FEA_transsiberian_railway_connections }
+}
+
+shared_focus = {
+	id = FEA_reopening_of_the_coal_mines
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_reopening_of_the_coal_mines"
+	}
+	relative_position_id = FEA_beginning_of_imperialization
+	prerequisite = { focus = FEA_beginning_of_imperialization }
+}
+
+shared_focus = {
+	id = FEA_transsiberian_railway_connections
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_transsiberian_railway_connections"
+	}
+	relative_position_id = FEA_yoshino_plan
+	prerequisite = { focus = FEA_yoshino_plan }
+	prerequisite = { focus = FEA_reopening_of_the_coal_mines }
+}
+
+
+shared_focus = {
+	id = FEA_restructuring_of_industry_in_chita
+	icon = GFX_goal_generic_construct_civ_factory
+	cost = 2
+	x = 1
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_restructuring_of_industry_in_chita"
+		563 = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = FEA_resource_selfsufficiency
+	icon = GFX_goal_generic_oil_refinery
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_resource_selfsufficiency"
+		940 = {	add_resource = {	type = oil	amount = 50	}	}
+		939 = {	add_resource = {	type = oil	amount = 25	}	}
+	}
+	relative_position_id = FEA_restructuring_of_industry_in_chita
+	prerequisite = { focus = FEA_restructuring_of_industry_in_chita }
+}
+
+shared_focus = {
+	id = FEA_focus_on_aircraft_production
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_focus_on_aircraft_production"
+	}
+	relative_position_id = FEA_resource_selfsufficiency
+	prerequisite = { focus = FEA_resource_selfsufficiency }
+	prerequisite = { focus = FEA_transbaikal_volunteer_air_force }
+}
+
+shared_focus = {
+	id = FEA_became_official_air_force
+	icon = GFX_goal_generic_build_airforce
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_became_official_air_force"
+		air_experience = 100
+	}
+	relative_position_id = FEA_focus_on_aircraft_production
+	prerequisite = { focus = FEA_focus_on_aircraft_production }
+	prerequisite = { focus = FEA_pilot_training }
+}
+
+shared_focus = {
+	id = FEA_airfield_expansion
+	icon = GFX_goal_generic_air_doctrine
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_airfield_expansion"
+		564 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		937 = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = FEA_became_official_air_force
+	prerequisite = { focus = FEA_became_official_air_force }
+}
+
+shared_focus = {
+	id = FEA_purchase_of_japanese_aircraft
+	icon = GFX_focus_jap_zero
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_purchase_of_japanese_aircraft"
+	}
+	relative_position_id = FEA_became_official_air_force
+	prerequisite = { focus = FEA_became_official_air_force }
+	mutually_exclusive = {	focus = FEA_purchase_of_german_aircraft	}
+}
+
+shared_focus = {
+	id = FEA_purchase_of_german_aircraft
+	icon = GFX_focus_ger_oppose_hitler
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_purchase_of_german_aircraft"
+		
+	}
+	relative_position_id = FEA_became_official_air_force
+	prerequisite = { focus = FEA_became_official_air_force }
+	mutually_exclusive = {	focus = FEA_purchase_of_japanese_aircraft	}
+}
+
+shared_focus = {
+	id = FEA_mining_expansion
+	icon = GFX_goal_generic_construction2
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_mining_expansion"
+		564 = {
+			add_resource = {	type = steel	amount = 20	}
+			add_resource = {	type = chromium	amount = 34	}
+			add_resource = {	type = tungsten	amount = 28	}
+			add_resource = {	type = aluminium	amount = 8	}
+		}
+	}
+	relative_position_id = FEA_resource_selfsufficiency
+	prerequisite = { focus = FEA_resource_selfsufficiency }
+}
+
+shared_focus = {
+	id = FEA_work_for_the_poor
+	icon = GFX_focus_generic_concessions
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_work_for_the_poor"
+		add_ideas = FEA_work_poor
+	}
+	relative_position_id = FEA_restructuring_of_industry_in_chita
+	prerequisite = { focus = FEA_restructuring_of_industry_in_chita }
+}
+
+shared_focus = {
+	id = FEA_follow_the_example_of_japan
+	icon = GFX_focus_jap_pacific_guardian
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_follow_the_example_of_japan"
+		add_tech_bonus = {	
+			name = FEA_follow_the_example_of_japan
+			bonus = 1
+			uses = 2
+			category = industry
+		}
+		563 = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = industrial_complex
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = FEA_work_for_the_poor
+	prerequisite = { focus = FEA_work_for_the_poor }
+}
+
+shared_focus = {
+	id = FEA_the_birth_of_oligarchs
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_the_birth_of_oligarchs"
+		add_ideas = FEA_oligarch_i
+	}
+	relative_position_id = FEA_follow_the_example_of_japan
+	prerequisite = { focus = FEA_follow_the_example_of_japan }
+}
+
+shared_focus = {
+	id = FEA_refurbishment_of_the_transsiberian_railway
+	icon = GFX_goal_generic_construct_infrastructure
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_refurbishment_of_the_transsiberian_railway"
+		
+	}
+	relative_position_id = FEA_mining_expansion
+	prerequisite = {
+		focus = FEA_mining_expansion
+		focus = FEA_the_birth_of_oligarchs
+	}
+}
+
+shared_focus = {
+	id = FEA_maintenance_of_branch_lines
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_maintenance_of_branch_lines"
+	}
+	relative_position_id = FEA_refurbishment_of_the_transsiberian_railway
+	prerequisite = { focus = FEA_refurbishment_of_the_transsiberian_railway }
+}
+
+shared_focus = {
+	id = FEA_negotiations_with_countries
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_negotiations_with_countries"
+	}
+	relative_position_id = FEA_refurbishment_of_the_transsiberian_railway
+	prerequisite = { focus = FEA_refurbishment_of_the_transsiberian_railway }
+}
+
+shared_focus = {
+	id = FEA_transbaikal_army
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_transbaikal_army"
+		army_experience = 30
+		navy_experience = 30
+		navy_experience = 30
+	}
+}
+
+shared_focus = {
+	id = FEA_chumican_secret_military_port
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_chumican_secret_military_port"
+	}
+	relative_position_id = FEA_transbaikal_army
+	prerequisite = { focus = FEA_transbaikal_army }
+}
+
+shared_focus = {
+	id = FEA_shadow_officer_education
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_shadow_officer_education"
+	}
+	relative_position_id = FEA_chumican_secret_military_port
+	prerequisite = { focus = FEA_chumican_secret_military_port }
+}
+
+shared_focus = {
+	id = FEA_ship_pickup
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_ship_pickup"
+	}
+	relative_position_id = FEA_chumican_secret_military_port
+	prerequisite = { focus = FEA_chumican_secret_military_port }
+}
+
+shared_focus = {
+	id = FEA_naval_reconstruction
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_naval_reconstruction"
+	}
+	relative_position_id = FEA_shadow_officer_education
+	prerequisite = { focus = FEA_shadow_officer_education }
+	prerequisite = { focus = FEA_ship_pickup }
+}
+
+shared_focus = {
+	id = FEA_deprive_soviet_knowhow
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_deprive_soviet_knowhow"
+	}
+	relative_position_id = FEA_naval_reconstruction
+	prerequisite = { focus = FEA_naval_reconstruction }
+}
+
+shared_focus = {
+	id = FEA_focus_on_submarines
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_focus_on_submarines"
+	}
+	relative_position_id = FEA_deprive_soviet_knowhow
+	prerequisite = { focus = FEA_deprive_soviet_knowhow }
+}
+
+shared_focus = {
+	id = FEA_focus_on_watershed_landings
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_focus_on_watershed_landings"
+	}
+	relative_position_id = FEA_deprive_soviet_knowhow
+	prerequisite = { focus = FEA_deprive_soviet_knowhow }
+	prerequisite = { focus = FEA_focus_on_material_supplies }
+}
+
+shared_focus = {
+	id = FEA_updated_equipment_from_japan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_updated_equipment_from_japan"
+	}
+	relative_position_id = FEA_transbaikal_army
+	prerequisite = { focus = FEA_transbaikal_army }
+}
+
+shared_focus = {
+	id = FEA_formalization_of_cossack_cavalry
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_formalization_of_cossack_cavalry"
+	}
+	relative_position_id = FEA_transbaikal_army
+	prerequisite = { focus = FEA_transbaikal_army }
+}
+
+shared_focus = {
+	id = FEA_establishment_of_army_standards
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_establishment_of_army_standards"
+	}
+	relative_position_id = FEA_updated_equipment_from_japan
+	prerequisite = { focus = FEA_updated_equipment_from_japan }
+	prerequisite = { focus = FEA_formalization_of_cossack_cavalry }
+}
+
+shared_focus = {
+	id = FEA_mobile_warfare
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_mobile_warfare"
+	}
+	relative_position_id = FEA_establishment_of_army_standards
+	prerequisite = { focus = FEA_establishment_of_army_standards }
+	mutually_exclusive = {	focus = FEA_firepower_warfare	}
+}
+
+shared_focus = {
+	id = FEA_focus_on_breakthrough
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_focus_on_breakthrough"
+	}
+	relative_position_id = FEA_mobile_warfare
+	prerequisite = { focus = FEA_mobile_warfare }
+}
+
+shared_focus = {
+	id = FEA_transbaikal_tanks
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_transbaikal_tanks"
+	}
+	relative_position_id = FEA_focus_on_breakthrough
+	prerequisite = { focus = FEA_focus_on_breakthrough }
+}
+
+shared_focus = {
+	id = FEA_focus_on_material_supplies
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_focus_on_material_supplies"
+	}
+	relative_position_id = FEA_focus_on_breakthrough
+	prerequisite = {
+		focus = FEA_focus_on_breakthrough
+		focus = FEA_careful_doctrine
+	}
+}
+
+shared_focus = {
+	id = FEA_firepower_warfare
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_firepower_warfare"
+	}
+	relative_position_id = FEA_establishment_of_army_standards
+	prerequisite = { focus = FEA_establishment_of_army_standards }
+	mutually_exclusive = {	focus = FEA_mobile_warfare	}
+}
+
+shared_focus = {
+	id = FEA_careful_doctrine
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_careful_doctrine"
+	}
+	relative_position_id = FEA_firepower_warfare
+	prerequisite = { focus = FEA_firepower_warfare }
+}
+
+shared_focus = {
+	id = FEA_artillery_focus
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_artillery_focus"
+	}
+	relative_position_id = FEA_careful_doctrine
+	prerequisite = { focus = FEA_careful_doctrine }
+}
+
+shared_focus = {
+	id = FEA_general_staff_headquarters
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_general_staff_headquarters"
+	}
+	relative_position_id = FEA_transbaikal_tanks
+	prerequisite = {
+		focus = FEA_transbaikal_tanks
+		focus = FEA_artillery_focus
+	}
+	prerequisite = { focus = FEA_focus_on_material_supplies }
+}
+
+shared_focus = {
+	id = FEA_transbaikal_volunteer_air_force
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_transbaikal_volunteer_air_force"
+		air_experience = 30
+	}
+	relative_position_id = FEA_transbaikal_army
+	prerequisite = { focus = FEA_transbaikal_army }
+}
+
+shared_focus = {
+	id = FEA_pilot_training
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_pilot_training"
+	}
+	relative_position_id = FEA_transbaikal_volunteer_air_force
+	prerequisite = { focus = FEA_transbaikal_volunteer_air_force }
+}
+
+shared_focus = {
+	id = FEA_participation_in_multilateral_organizations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 19
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_participation_in_multilateral_organizations"
+	}
+}
+
+shared_focus = {
+	id = FEA_the_survival_of_the_nation_is_our_only_hope
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_the_survival_of_the_nation_is_our_only_hope"
+	}
+	relative_position_id = FEA_participation_in_multilateral_organizations
+	prerequisite = { focus = FEA_participation_in_multilateral_organizations }
+	mutually_exclusive = {	focus = FEA_we_are_the_true_russia	}
+}
+
+shared_focus = {
+	id = FEA_our_protector
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_our_protector"
+	}
+	relative_position_id = FEA_the_survival_of_the_nation_is_our_only_hope
+	prerequisite = { focus = FEA_the_survival_of_the_nation_is_our_only_hope }
+}
+
+shared_focus = {
+	id = FEA_giant_of_the_new_continent
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 4
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_giant_of_the_new_continent"
+	}
+	relative_position_id = FEA_our_protector
+	prerequisite = { focus = FEA_our_protector }
+	mutually_exclusive = {	focus = FEA_giant_of_the_far_east	}
+	mutually_exclusive = {	focus = FEA_giant_of_europe	}
+}
+
+shared_focus = {
+	id = FEA_assistance_from_alaska
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_assistance_from_alaska"
+	}
+	relative_position_id = FEA_giant_of_the_new_continent
+	prerequisite = { focus = FEA_giant_of_the_new_continent }
+}
+
+shared_focus = {
+	id = FEA_giant_of_europe
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_giant_of_europe"
+	}
+	relative_position_id = FEA_our_protector
+	prerequisite = { focus = FEA_our_protector }
+	mutually_exclusive = {	focus = FEA_giant_of_the_far_east	}
+	mutually_exclusive = {	focus = FEA_giant_of_the_new_continent	}
+}
+
+shared_focus = {
+	id = FEA_british_military_advisers
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_british_military_advisers"
+	}
+	relative_position_id = FEA_giant_of_europe
+	prerequisite = { focus = FEA_giant_of_europe }
+}
+
+shared_focus = {
+	id = FEA_siberian_market
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_siberian_market"
+	}
+	relative_position_id = FEA_assistance_from_alaska
+	prerequisite = {
+		focus = FEA_assistance_from_alaska
+		focus = FEA_british_military_advisers
+	}
+}
+
+shared_focus = {
+	id = FEA_economic_cooperation_with_siberia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_economic_cooperation_with_siberia"
+	}
+	relative_position_id = FEA_siberian_market
+	prerequisite = { focus = FEA_siberian_market }
+}
+
+shared_focus = {
+	id = FEA_impact_on_central_asia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_impact_on_central_asia"
+	}
+	relative_position_id = FEA_economic_cooperation_with_siberia
+	prerequisite = { focus = FEA_economic_cooperation_with_siberia }
+}
+
+shared_focus = {
+	id = FEA_giant_of_the_far_east
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_giant_of_the_far_east"
+	}
+	relative_position_id = FEA_our_protector
+	prerequisite = { focus = FEA_our_protector }
+	mutually_exclusive = {	focus = FEA_giant_of_europe	}
+	mutually_exclusive = {	focus = FEA_giant_of_the_new_continent	}
+}
+
+shared_focus = {
+	id = FEA_exercises_with_the_japanese_army
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_exercises_with_the_japanese_army"
+	}
+	relative_position_id = FEA_giant_of_the_far_east
+	prerequisite = { focus = FEA_giant_of_the_far_east }
+}
+
+shared_focus = {
+	id = FEA_zaibatsu_advance
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_zaibatsu_advance"
+	}
+	relative_position_id = FEA_exercises_with_the_japanese_army
+	prerequisite = { focus = FEA_exercises_with_the_japanese_army }
+	prerequisite = { focus = FEA_border_formulation_conference }
+}
+
+shared_focus = {
+	id = FEA_trust_in_coprosperity
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_trust_in_coprosperity"
+	}
+	relative_position_id = FEA_the_survival_of_the_nation_is_our_only_hope
+	prerequisite = {
+		focus = FEA_the_survival_of_the_nation_is_our_only_hope
+		focus = FEA_we_are_the_true_russia
+	}
+	mutually_exclusive = {	focus = FEA_distrust_of_coprosperity	}
+}
+
+shared_focus = {
+	id = FEA_stabilization_of_the_far_east
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_stabilization_of_the_far_east"
+	}
+	relative_position_id = FEA_giant_of_the_far_east
+	prerequisite = { focus = FEA_giant_of_the_far_east }
+	prerequisite = { focus = FEA_trust_in_coprosperity }
+}
+
+shared_focus = {
+	id = FEA_border_formulation_conference
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_border_formulation_conference"
+	}
+	relative_position_id = FEA_stabilization_of_the_far_east
+	prerequisite = { focus = FEA_stabilization_of_the_far_east }
+}
+
+shared_focus = {
+	id = FEA_technical_agreement
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_technical_agreement"
+	}
+	relative_position_id = FEA_exercises_with_the_japanese_army
+	prerequisite = { focus = FEA_exercises_with_the_japanese_army }
+	prerequisite = { focus = FEA_border_formulation_conference }
+}
+
+shared_focus = {
+	id = FEA_as_the_only_russian
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_as_the_only_russian"
+	}
+	relative_position_id = FEA_zaibatsu_advance
+	prerequisite = { focus = FEA_zaibatsu_advance }
+	prerequisite = { focus = FEA_technical_agreement }
+}
+
+shared_focus = {
+	id = FEA_we_are_the_true_russia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_we_are_the_true_russia"
+	}
+	relative_position_id = FEA_participation_in_multilateral_organizations
+	prerequisite = { focus = FEA_participation_in_multilateral_organizations }
+	mutually_exclusive = {	focus = FEA_the_survival_of_the_nation_is_our_only_hope	}
+}
+
+shared_focus = {
+	id = FEA_fate_of_the_siberian_republic
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_fate_of_the_siberian_republic"
+	}
+	relative_position_id = FEA_we_are_the_true_russia
+	prerequisite = { focus = FEA_we_are_the_true_russia }
+}
+
+shared_focus = {
+	id = FEA_agreement_with_kazakhstan
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_agreement_with_kazakhstan"
+	}
+	relative_position_id = FEA_fate_of_the_siberian_republic
+	prerequisite = { focus = FEA_fate_of_the_siberian_republic }
+}
+
+shared_focus = {
+	id = FEA_ural_separation_operations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_ural_separation_operations"
+	}
+	relative_position_id = FEA_agreement_with_kazakhstan
+	prerequisite = { focus = FEA_agreement_with_kazakhstan }
+}
+
+shared_focus = {
+	id = FEA_now_to_moscow
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_now_to_moscow"
+	}
+	relative_position_id = FEA_ural_separation_operations
+	prerequisite = { focus = FEA_ural_separation_operations }
+}
+
+shared_focus = {
+	id = FEA_pacification_of_central_asia
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_pacification_of_central_asia"
+	}
+	relative_position_id = FEA_now_to_moscow
+	prerequisite = { focus = FEA_now_to_moscow }
+}
+
+shared_focus = {
+	id = FEA_russian_restoration
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_russian_restoration"
+	}
+	relative_position_id = FEA_now_to_moscow
+	prerequisite = { focus = FEA_now_to_moscow }
+	prerequisite = { focus = FEA_go_south }
+}
+
+shared_focus = {
+	id = FEA_relations_with_the_anticomintern_league
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_relations_with_the_anticomintern_league"
+	}
+	relative_position_id = FEA_russian_restoration
+	prerequisite = { focus = FEA_russian_restoration }
+}
+
+shared_focus = {
+	id = FEA_eastern_orthodox_patronage
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_eastern_orthodox_patronage"
+	}
+	relative_position_id = FEA_russian_restoration
+	prerequisite = { focus = FEA_russian_restoration }
+}
+
+shared_focus = {
+	id = FEA_distrust_of_coprosperity
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_distrust_of_coprosperity"
+	}
+	relative_position_id = FEA_the_survival_of_the_nation_is_our_only_hope
+	prerequisite = {
+		focus = FEA_the_survival_of_the_nation_is_our_only_hope
+		focus = FEA_we_are_the_true_russia
+	}
+	mutually_exclusive = {	focus = FEA_trust_in_coprosperity	}
+}
+
+shared_focus = {
+	id = FEA_tuvas_separation_operations
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_tuvas_separation_operations"
+	}
+	relative_position_id = FEA_distrust_of_coprosperity
+	prerequisite = { focus = FEA_distrust_of_coprosperity }
+}
+
+shared_focus = {
+	id = FEA_infiltration_into_manchuria
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_infiltration_into_manchuria"
+	}
+	relative_position_id = FEA_tuvas_separation_operations
+	prerequisite = { focus = FEA_tuvas_separation_operations }
+}
+
+shared_focus = {
+	id = FEA_go_south
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_go_south"
+	}
+	relative_position_id = FEA_infiltration_into_manchuria
+	prerequisite = { focus = FEA_infiltration_into_manchuria }
+}
+
+shared_focus = {
+	id = FEA_conquer_the_east
+	icon = GFX_generic_suspend_constitution
+	cost = 2
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus FEA_conquer_the_east"
+	}
+	relative_position_id = FEA_go_south
+	prerequisite = { focus = FEA_go_south }
+}

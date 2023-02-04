@@ -1,6 +1,5 @@
 focus_tree = {
-	id = geacps_JAP_focus
-	
+	id = JAP_focus_tree
 	country = {
 		factor = 0
 		modifier = {
@@ -8,13 +7,11 @@ focus_tree = {
 			tag = JAP
 		}
 	}
-	
 	default = no
-	
+	reset_on_civilwar = yes
 	continuous_focus_position = {
-		x = 100 y = 600
+		x = 700 y = 100
 	}
-
 	initial_show_position = {
 		focus = JAP_1-22_Incident
 	}
@@ -23,22 +20,22 @@ focus_tree = {
 	#	一・二二事件	#
 	#################
 	
-	focus = {#一・二二事件
+	focus = {	#一・二二事件
 		id = JAP_1-22_Incident
-		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 9
+		icon = GFX_focus_JAP_losange
+		cost = 1
+		x = 2
 		y = 0
 		available = {
-			hidden_trigger = { always = no }
+			has_country_flag = JAP_1-22_Incident_occurred
 		}
 		completion_reward = {
+			custom_effect_tooltip = JAP_omen_of_1-22_Incident
 		}
 	}
-
-	focus = {#重臣会議を開催する
-		id = JAP_Organise_a_meeting_of_the_chief_ministers
-		icon = GFX_focus_JAP_Meeting_of_the_chief_ministers
+	focus = {	#重臣会議を開催する
+		id = JAP_senior_statesmen's_conference
+		icon = GFX_focus_JAP_senior_statesmen's_conference
 		cost = 1
 		x = -1
 		y = 1
@@ -48,14 +45,13 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = geacps_JAP.4
+				id = JAP.4
 			}
 		}
 	}
-
-	focus = {#閣議を開く
-		id = JAP_Cabinet_meeting
-		icon = GFX_focus_JAP_Cabinet_meeting
+	focus = {	#閣議を開く
+		id = JAP_cabinet_meeting
+		icon = GFX_focus_JAP_cabinet_meeting
 		cost = 1
 		x = 1
 		y = 1
@@ -65,226 +61,149 @@ focus_tree = {
 		}
 		completion_reward = {
 			country_event = {
-				id = geacps_JAP.5
+				id = JAP.5
 			}
 		}
 	}
-	
-	focus = {#戒厳の宣告
-		id = JAP_Declaration_of_martial_law
-		icon = GFX_focus_JAP_Constitution
+	focus = {	#戒厳の宣告
+		id = JAP_declaration_of_martial_law
+		icon = GFX_focus_JAP_constitution
 		cost = 1
 		x = 0
 		y = 2
 		relative_position_id = JAP_1-22_Incident
-		prerequisite = {
-			focus = JAP_Organise_a_meeting_of_the_chief_ministers
+		available = {
+			has_country_flag = JAP_decision_of_declaration
 		}
 		prerequisite = {
-			focus = JAP_Cabinet_meeting
+			focus = JAP_senior_statesmen's_conference
+		}
+		prerequisite = {
+			focus = JAP_cabinet_meeting
 		}
 		completion_reward = {
 			add_ideas = JAP_Martial_law
 			282 = {	set_demilitarized_zone = yes	}
 		}
 	}
-	
-	focus = {#海軍士官の裁判
-		id = JAP_Trial_of_naval_officers
-		icon = GFX_focus_JAP_Trial_of_naval_officers
+	focus = {	#海軍士官の裁判
+		id = JAP_judgment_of_naval_officers
+		icon = GFX_focus_JAP_purge_of_the_navy
 		cost = 4.28
 		x = -2
 		y = 1
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
+			focus = JAP_declaration_of_martial_law
 		}
 		completion_reward = {
 			add_stability = -0.1
 			country_event = {
-				id = geacps_JAP.6
+				id = JAP.6
 			}
 		}
 	}
-	
-	focus = {#農本主義者を逮捕
-		id = JAP_Arrest_of_agronomists
-		icon = GFX_focus_JAP_Arrest_of_agronomists
+	focus = {	#農本主義者を逮捕
+		id = JAP_arrest_of_agrarianists
+		icon = GFX_focus_JAP_green_scare
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
+			focus = JAP_declaration_of_martial_law
 		}
 		completion_reward = {
 			add_stability = -0.1
 			country_event = {
-				id = geacps_JAP.7
+				id = JAP.7
 			}
 		}
 	}
-	
-	focus = {#皇道派将校の裁判
-		id = JAP_Trial_of_Imperialist_officers
-		icon = GFX_focus_JAP_Trial_of_Imperialist_officers
+	focus = {	#皇道派将校の裁判
+		id = JAP_judgment_of_kodoha_officers
+		icon = GFX_focus_JAP_purge_of_the_kodoha
 		cost = 4.28
 		x = 2
 		y = 1
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Declaration_of_martial_law
+			focus = JAP_declaration_of_martial_law
 		}
 		completion_reward = {
 			add_stability = -0.1
 			country_event = {
-				id = geacps_JAP.8
+				id = JAP.8
 			}
 		}
 	}
-	
-	focus = {#事態の安定
-		id = JAP_Stability_of_the_situation
-		icon = GFX_focus_JAP_Stability_of_the_situation
-		cost = 4.28
+	focus = {	#事態の安定
+		id = JAP_stability_of_the_situation
+		icon = GFX_focus_JAP_declaration
+		cost = 1
 		x = 0
 		y = 2
-		relative_position_id = JAP_Declaration_of_martial_law
+		relative_position_id = JAP_declaration_of_martial_law
 		prerequisite = {
-			focus = JAP_Trial_of_naval_officers
+			focus = JAP_judgment_of_naval_officers
 		}
 		prerequisite = {
-			focus = JAP_Arrest_of_agronomists
+			focus = JAP_arrest_of_agrarianists
 		}
 		prerequisite = {
-			focus = JAP_Trial_of_Imperialist_officers
+			focus = JAP_judgment_of_kodoha_officers
 		}
 		completion_reward = {
 			remove_ideas = JAP_Martial_law
 			282 = {	set_demilitarized_zone = no	}
 		}
 	}
-	
+
 	#############
-	#	支那事変	#
+	#	大命降下	#
 	#############
 	
-	focus = {#盧溝橋事件
-		id = JAP_Lugou_Bridge_Incident
-		icon = GFX_focus_JAP_Losange
+	focus = {	#大命降下
+		id = JAP_taimeikoka
+		icon = GFX_focus_JAP_Hirohito
 		cost = 0
-		x = 6
-		y = 0
+		x = 8
+		y = 4
 		available = {
-			hidden_trigger = { always = no }
+			has_country_flag = JAP_senior_statesmens_conference_held
 		}
 		relative_position_id = JAP_1-22_Incident
 		completion_reward = {
 		}
 	}
+
+	#########
+	#	海軍	#
+	#########
+
+	#########
+	#	文民	#
+	#########
 	
-	focus = {#南京攻略戦
-		id = JAP_Nanjing_Tips
-		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 0
-		y = 1
-		available = {
-			hidden_trigger = { always = no }
-		}
-		relative_position_id = JAP_Lugou_Bridge_Incident
-		prerequisite = {
-			focus = JAP_Lugou_Bridge_Incident
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#武漢作戦
-		id = JAP_Wuhan_Battle
-		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 0
-		y = 1
-		available = {
-			hidden_trigger = { always = no }
-		}
-		relative_position_id = JAP_Nanjing_Tips
-		prerequisite = {
-			focus = JAP_Nanjing_Tips
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#重慶作戦
-		id = JAP_Chongqing_Battle
-		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 0
-		y = 1
-		available = {
-			hidden_trigger = { always = no }
-		}
-		relative_position_id = JAP_Wuhan_Battle
-		prerequisite = {
-			focus = JAP_Wuhan_Battle
-		}
-		completion_reward = {
-		}
-	}
-	
-	focus = {#凱旋だ！
-		id = JAP_Triumphant
-		icon = GFX_focus_JAP_Losange
-		cost = 0
-		x = 0
-		y = 1
-		available = {
-			hidden_trigger = { always = no }
-		}
-		relative_position_id = JAP_Chongqing_Battle
-		prerequisite = {
-			focus = JAP_Chongqing_Battle
-		}
-		completion_reward = {
-		}
-	}
-	
-	#############
-	#	岡田啓介	#
-	#############
-	
-	#############
-	#	米内光政	#
-	#############
-	
-	#################
-	#	鈴木貫太郎	#
-	#################
-	
-	#############
-	#	近衛文麿	#
-	#############
-	
-	focus = {#近衛文麿
+	focus = {	#近衛文麿
 		id = JAP_Fumimaro_Konoe
 		icon = GFX_focus_JAP_Fumimaro_Konoe
-		cost = 4.28
+		cost = 0
 		x = 0
-		y = 3
-		allow_branch = {	has_political_power > 100	} #<>
-		relative_position_id = JAP_Stability_of_the_situation
+		y = 1
+		available = {
+			has_country_flag = JAP_military_opinion_ignored
+		}
+		relative_position_id = JAP_taimeikoka
+		prerequisite = {
+			focus = JAP_taimeikoka
+		}
 		completion_reward = {
-			remove_ideas_with_trait = head_of_government
-			add_ideas = JAP_Fumimaro_Konoe
-			add_ideas = JAP_Lord_Duke
 		}
 	}
-	
-	focus = {#近衛外交
-		id = JAP_Konoe_Diplomacy
-		icon = GFX_focus_JAP_Losange
+	focus = {	#近衛ドクトリン
+		id = JAP_Konoe_Doctrine
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -1
 		y = 1
@@ -296,125 +215,118 @@ focus_tree = {
 			add_political_power = 100
 		}
 	}
-	
-	focus = {#ヨーロッパの病人との関係
-		id = JAP_Our_relationship_with_the_sick_in_Europe
-		icon = GFX_focus_JAP_Our_relationship_with_the_sick_in_Europe
+	focus = {	#ヨーロッパの病人との関係
+		id = JAP_relationship_with_Sick_man_of_Europe
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -5
 		y = 1
-		relative_position_id = JAP_Konoe_Diplomacy
+		relative_position_id = JAP_Konoe_Doctrine
 		prerequisite = {
-			focus = JAP_Konoe_Diplomacy
+			focus = JAP_Konoe_Doctrine
 		}
 		completion_reward = {
 			add_opinion_modifier = {
 				target = ENG
-				modifier = The_sick_in_Europe
+				modifier = the_sick_in_europe
 			}
 			ENG = {
 				add_opinion_modifier = {
 					target = JAP
-					modifier = A_small_country_of_coloured_people
+					modifier = small_countries_of_coloured_people
 				}
 			}
 		}
 	}
-	
-	focus = {#フォークランド諸島問題におけるアルゼンチンの支持
-		id = JAP_Argentina_support_in_the_Falkland_Islands_dispute
-		icon = GFX_focus_JAP_Losange
+	focus = {	#フォークランド紛争でアルゼンチンを支持
+		id = JAP_support_in_Falklands_War
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -4
 		y = 2
-		relative_position_id = JAP_Konoe_Diplomacy
+		relative_position_id = JAP_Konoe_Doctrine
 		prerequisite = {
-			focus = JAP_Our_relationship_with_the_sick_in_Europe
-			focus = JAP_Our_relationship_with_the_collapsed_free_world
+			focus = JAP_relationship_with_Sick_man_of_Europe
+			focus = JAP_relationship_with_Sick_Free_State
 		}
 		completion_reward = {
 			ARG = {
 				add_opinion_modifier = {
 					target = JAP
-					modifier = Support_our_country_on_the_Falkland_Islands_dispute
+					modifier = support_our_country_on_the_falkland_Islands_dispute
 				}
 			}
 		}
 	}
-	
-	focus = {#マラヤ問題
-		id = JAP_The_Malayan_problem
-		icon = GFX_focus_JAP_The_Malayan_problem
+	focus = {	#マラヤ危機
+		id = JAP_Malayan_Emergency
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -1
 		y = 1
-		relative_position_id = JAP_Our_relationship_with_the_sick_in_Europe
+		relative_position_id = JAP_relationship_with_Sick_man_of_Europe
 		prerequisite = {
-			focus = JAP_Our_relationship_with_the_sick_in_Europe
+			focus = JAP_relationship_with_Sick_man_of_Europe
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#マラヤ人民抗英軍の支援
-		id = JAP_Support_for_the_Malayan_Peoples_Anti-British_Army
-		icon = GFX_focus_JAP_Losange
+	focus = {	#マラヤ人民抗英軍を支援
+		id = JAP_support_for_Malayan_National_Liberation_Army
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_The_Malayan_problem
+		relative_position_id = JAP_Malayan_Emergency
 		prerequisite = {
-			focus = JAP_The_Malayan_problem
+			focus = JAP_Malayan_Emergency
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#ボルネオ義勇軍の教育
-		id = JAP_Education_for_the_Borneo_Volunteer_Army
-		icon = GFX_focus_JAP_Losange
+	focus = {	#郷土防衛義勇軍を訓練
+		id = JAP_training_for_Defenders_of_the_Homeland
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_The_Malayan_problem
+		relative_position_id = JAP_Malayan_Emergency
 		prerequisite = {
-			focus = JAP_The_Malayan_problem
+			focus = JAP_Malayan_Emergency
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#南進論
-		id = JAP_The_Southern_Approach
-		icon = GFX_focus_JAP_The_Southern_Approach
+	focus = {	#南進論
+		id = JAP_Nanshin-ron
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
-		x = -2
-		y = -1
-		relative_position_id = JAP_No_more_Anglo-American_and_Soviet-oriented_imperialism
+		x = 0
+		y = 4
+		relative_position_id = JAP_relationship_with_Sick_man_of_Europe
 		prerequisite = {
-			focus = JAP_Support_for_the_Malayan_Peoples_Anti-British_Army
+			focus = JAP_support_for_Malayan_National_Liberation_Army
 		}
 		prerequisite = {
-			focus = JAP_Education_for_the_Borneo_Volunteer_Army
+			focus = JAP_training_for_Defenders_of_the_Homeland
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#崩壊した自由の國との関係
-		id = JAP_Our_relationship_with_the_collapsed_free_world
-		icon = GFX_focus_JAP_Our_relationship_with_the_collapsed_free_world
+	focus = {	#瀕死の自由の国との関係
+		id = JAP_relationship_with_Sick_Free_State
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -3
 		y = 1
-		relative_position_id = JAP_Konoe_Diplomacy
+		relative_position_id = JAP_Konoe_Doctrine
 		prerequisite = {
-			focus = JAP_Konoe_Diplomacy
+			focus = JAP_Konoe_Doctrine
 		}
 		completion_reward = {
 			add_opinion_modifier = {
 				target = USA
-				modifier = Ghostly_Middy
+				modifier = devils_american_imperialism
 			}
 			USA = {
 				add_opinion_modifier = {
@@ -424,97 +336,91 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {#比島でのスペイン語の使用の禁止を撤回
-		id = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
-		icon = GFX_focus_JAP_Losange
+	focus = {	#かつての太陽の沈まない国との関係
+		id = JAP_relationship_with_The_empire_on_which_the_sun_never_sets
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Our_relationship_with_the_collapsed_free_world
+		relative_position_id = JAP_relationship_with_Sick_Free_State
 		prerequisite = {
-			focus = JAP_Our_relationship_with_the_collapsed_free_world
+			focus = JAP_relationship_with_Sick_Free_State
 		}
 		completion_reward = {
 			SPR = {
 				add_opinion_modifier = {
 					target = JAP
-					modifier = Konoe_cabinet_makes_concessions
+					modifier = konoe_cabinet_makes_concessions
 				}
 			}
 		}
 	}
-	
-	focus = {#ティモール返還
-		id = JAP_Timor_return
-		icon = GFX_focus_JAP_Losange
+	focus = {	#東ティモール返還
+		id = JAP_handover_of_East_Timor
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -1
 		y = 1
-		relative_position_id = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
+		relative_position_id = JAP_relationship_with_The_empire_on_which_the_sun_never_sets
 		prerequisite = {
-			focus = JAP_Ban_on_the_use_of_Spanish_in_the_Philippines_revoked
+			focus = JAP_relationship_with_The_empire_on_which_the_sun_never_sets
 		}
-		completion_reward = {#いつか追加するかも...？
+		completion_reward = {
 		}
 	}
-	
-	focus = {#アラスカへ影響力拡大
-		id = JAP_Alaska_heights_expand
-		icon = GFX_focus_JAP_Losange
+	focus = {	#アラスカへの影響
+		id = JAP_impact_on_alaska
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Our_relationship_with_the_collapsed_free_world
+		relative_position_id = JAP_relationship_with_Sick_Free_State
 		prerequisite = {
-			focus = JAP_Our_relationship_with_the_collapsed_free_world
+			focus = JAP_relationship_with_Sick_Free_State
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#加利福尼亜へ影響力拡大
-		id = JAP_Extension_of_influence_in_Californian
-		icon = GFX_focus_JAP_Losange
+	focus = {	#カリフォルニアへの影響
+		id = JAP_impact_on_california
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Alaska_heights_expand
+		relative_position_id = JAP_impact_on_alaska
 		prerequisite = {
-			focus = JAP_Alaska_heights_expand
+			focus = JAP_impact_on_alaska
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#東進論
-		id = JAP_Eastern_Progressive_Theory
-		icon = GFX_focus_JAP_Eastern_Progressive_Theory
+	focus = {	#東進論
+		id = JAP_Toshin-ron
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 4
-		relative_position_id = JAP_Our_relationship_with_the_collapsed_free_world
+		relative_position_id = JAP_relationship_with_Sick_Free_State
 		prerequisite = {
-			focus = JAP_Extension_of_influence_in_Californian
+			focus = JAP_impact_on_california
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#欠けた赤い星との関係
-		id = JAP_The_relationship_with_the_missing_red_star
-		icon = GFX_focus_JAP_The_relationship_with_the_missing_red_star
+	focus = {	#堕ちた赤い星との関係
+		id = JAP_relationship_with_fallen_Red_star
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -1
 		y = 1
-		relative_position_id = JAP_Konoe_Diplomacy
+		relative_position_id = JAP_Konoe_Doctrine
 		prerequisite = {
-			focus = JAP_Konoe_Diplomacy
+			focus = JAP_Konoe_Doctrine
 		}
 		completion_reward = {
 			add_opinion_modifier = {
 				target = RUS
-				modifier = Social_Imperialism
+				modifier = social_imperialism
 			}
 			RUS = {
 				add_opinion_modifier = {
@@ -524,89 +430,83 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {#シベリアの脅威を排除
-		id = JAP_Eliminating_the_threat_of_Siberia
-		icon = GFX_focus_JAP_Losange
+	focus = {	#シベリアの脅威を排除
+		id = JAP_eliminating_threat_of_Siberia
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_The_relationship_with_the_missing_red_star
+		relative_position_id = JAP_relationship_with_fallen_Red_star
 		prerequisite = {
-			focus = JAP_The_relationship_with_the_missing_red_star
+			focus = JAP_relationship_with_fallen_Red_star
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#極東のコサックを支援
-		id = JAP_Supporting_Cossacks_in_the_Far_East
-		icon = GFX_focus_JAP_Losange
+	focus = {	#極東のコサックを支援
+		id = JAP_support_for_cossacks_in_far_east
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_The_relationship_with_the_missing_red_star
+		relative_position_id = JAP_relationship_with_fallen_Red_star
 		prerequisite = {
-			focus = JAP_The_relationship_with_the_missing_red_star
+			focus = JAP_relationship_with_fallen_Red_star
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#貝加爾・黒龍江鉄道株式会社の設立
-		id = JAP_Management_of_the_Baikal-Amur_Railway
-		icon = GFX_focus_JAP_Losange
+	focus = {	#バム鉄道
+		id = JAP_Baikal-Amur_Mainline
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 3
-		relative_position_id = JAP_The_relationship_with_the_missing_red_star
+		relative_position_id = JAP_relationship_with_fallen_Red_star
 		prerequisite = {
-			focus = JAP_Eliminating_the_threat_of_Siberia
+			focus = JAP_eliminating_threat_of_Siberia
 		}
 		prerequisite = {
-			focus = JAP_Supporting_Cossacks_in_the_Far_East
+			focus = JAP_support_for_cossacks_in_far_east
 		}
 		completion_reward = {
 		}
 	}
-	
-	
-	focus = {#英米ソ本位の帝國主義を排す
-		id = JAP_No_more_Anglo-American_and_Soviet-oriented_imperialism
-		icon = GFX_focus_JAP_Losange
+	focus = {	#北進論
+		id = JAP_Hokushin-ron
+		icon = GFX_focus_JAP_Fumimaro_Konoe
+		cost = 4.28
+		x = 0
+		y = 4
+		relative_position_id = JAP_relationship_with_fallen_Red_star
+		prerequisite = {
+			focus = JAP_Baikal-Amur_Mainline
+		}
+		completion_reward = {
+		}
+	}
+	focus = {	#英米ソ本位の平和主義を排す
+		id = JAP_reject_the_Anglo-American_and_Russian_centered_peace
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -3
 		y = 6
-		relative_position_id = JAP_Konoe_Diplomacy
+		relative_position_id = JAP_Konoe_Doctrine
 		prerequisite = {
-			focus = JAP_The_Southern_Approach
+			focus = JAP_Nanshin-ron
 		}
 		prerequisite = {
-			focus = JAP_Eastern_Progressive_Theory
+			focus = JAP_Toshin-ron
 		}
 		prerequisite = {
-			focus = JAP_The_North_Advancement_Theory
+			focus = JAP_Hokushin-ron
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#北進論
-		id = JAP_The_North_Advancement_Theory
-		icon = GFX_focus_JAP_The_North_Advancement_Theory
-		cost = 4.28
-		x = 2
-		y = -1
-		relative_position_id = JAP_No_more_Anglo-American_and_Soviet-oriented_imperialism
-		prerequisite = {
-			focus = JAP_Management_of_the_Baikal-Amur_Railway
-		}
-		completion_reward = {
-		}
-	}
-	focus = {#革新官僚の任命
-		id = JAP_Appointment_of_innovative_bureaucrats
-		icon = GFX_focus_JAP_Losange
+	focus = {	#革新官僚を任命
+		id = JAP_appointment_reform_bureaucrats
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
@@ -618,1291 +518,385 @@ focus_tree = {
 			add_ideas = JAP_Innovation_bureaucrats
 		}
 	}
-	
-	focus = {#皇道派の協力
-		id = JAP_Cooperation_of_the_Imperialists
-		icon = GFX_focus_JAP_Losange
+	focus = {	#皇道派と協力
+		id = JAP_cooperation_with_Kodoha
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		relative_position_id = JAP_appointment_reform_bureaucrats
 		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
+			focus = JAP_appointment_reform_bureaucrats
 		}
 		mutually_exclusive = {
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_Greater_Japan_Party
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_control_groups
+			focus = JAP_cooperation_with_Toseiha
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#國家に対する打撃
-		id = JAP_A_blow_to_the_nation
-		icon = GFX_focus_JAP_Losange
+	focus = {	#國家に対する打撃
+		id = JAP_coup
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Cooperation_of_the_Imperialists
+		relative_position_id = JAP_cooperation_with_Kodoha
 		prerequisite = {
-			focus = JAP_Cooperation_of_the_Imperialists
+			focus = JAP_cooperation_with_Kodoha
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#憲法の停止
-		id = JAP_Suspension_of_the_Constitution
-		icon = GFX_focus_JAP_Suspension_of_the_Constitution
+	focus = {	#憲法を停止
+		id = JAP_stop_Meiji_Constitution
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = -1
 		y = 1
-		relative_position_id = JAP_A_blow_to_the_nation
+		relative_position_id = JAP_coup
 		prerequisite = {
-			focus = JAP_A_blow_to_the_nation
+			focus = JAP_coup
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#両院を解散
-		id = JAP_Dissolution_of_both_Houses
-		icon = GFX_focus_JAP_Losange
+	focus = {	#両院を解散
+		id = JAP_dissolution_of_both_parliament
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Suspension_of_the_Constitution
+		relative_position_id = JAP_stop_Meiji_Constitution
 		prerequisite = {
-			focus = JAP_Suspension_of_the_Constitution
+			focus = JAP_stop_Meiji_Constitution
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#全國での戒嚴令
-		id = JAP_Martial_law_throughout_the_country
-		icon = GFX_focus_JAP_Losange
+	focus = {	#全國に戒厳令を！
+		id = JAP_martial_law_of_all_prefectures
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Dissolution_of_both_Houses
+		relative_position_id = JAP_dissolution_of_both_parliament
 		prerequisite = {
-			focus = JAP_Dissolution_of_both_Houses
+			focus = JAP_dissolution_of_both_parliament
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#昭和維新を開始
-		id = JAP_Start_of_the_Showa_Restoration
-		icon = GFX_focus_JAP_Losange
+	focus = {	#昭和維新を開始
+		id = JAP_start_of_Showa_Ishin
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Martial_law_throughout_the_country
+		relative_position_id = JAP_martial_law_of_all_prefectures
 		prerequisite = {
-			focus = JAP_Martial_law_throughout_the_country
+			focus = JAP_martial_law_of_all_prefectures
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#特権階級の排除
-		id = JAP_Elimination_of_the_privileged_class
-		icon = GFX_focus_JAP_Losange
+	focus = {	#特権階級を排除
+		id = JAP_removal_of_upper_class
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_A_blow_to_the_nation
+		relative_position_id = JAP_coup
 		prerequisite = {
-			focus = JAP_A_blow_to_the_nation
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_coup
+			focus = JAP_Greater_Japan_Party
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#近衛新党を結成#大日本党
-		id = JAP_Formation_of_Konoe_New_Party
-		icon = GFX_focus_JAP_Losange
+	focus = {	#大日本党
+		id = JAP_Greater_Japan_Party
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 3
 		y = 1
-		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		relative_position_id = JAP_appointment_reform_bureaucrats
 		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
+			focus = JAP_appointment_reform_bureaucrats
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_the_Imperialists
+			focus = JAP_cooperation_with_Kodoha
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_control_groups
+			focus = JAP_cooperation_with_Toseiha
 		}
-		cost = 4.28
 		completion_reward = {
 			set_party_name = {
 				ideology = national_populism
-				name = JAP_national_populism_party_Greater_Japan_Party
+				name = PARTY_greater_japan_party_long
+				long_name = PARTY_greater_japan_party_long
 			}
 		}
 	}
-	
-	focus = {#新体制運動を再加速
-		id = JAP_Re-acceleration_of_the_new_regime_movement
-		icon = GFX_focus_JAP_Losange
+	focus = {	#新体制運動を加速
+		id = JAP_acceleration_of_Shintaisei
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Formation_of_Konoe_New_Party
+		relative_position_id = JAP_Greater_Japan_Party
 		prerequisite = {
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_Greater_Japan_Party
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#外地の新体制運動を加速
-		id = JAP_New_regime_movement_in_the_outer_regions
-		icon = GFX_focus_JAP_Losange
+	focus = {	#外地の新体制運動を加速
+		id = JAP_acceleration_of_Shintaisei_in_territories_acquired
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 2
-		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		relative_position_id = JAP_acceleration_of_Shintaisei
 		prerequisite = {
-			focus = JAP_Re-acceleration_of_the_new_regime_movement
+			focus = JAP_acceleration_of_Shintaisei
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#太平洋経済ブロックの構築
-		id = JAP_Building_the_Pacific_Economic_Bloc
-		icon = GFX_focus_JAP_Losange
+	focus = {	#東亜経済ブロック
+		id = JAP_East_Asia_bloc_economies
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_New_regime_movement_in_the_outer_regions
+		relative_position_id = JAP_acceleration_of_Shintaisei_in_territories_acquired
 		prerequisite = {
-			focus = JAP_New_regime_movement_in_the_outer_regions
+			focus = JAP_acceleration_of_Shintaisei_in_territories_acquired
 		}
 		prerequisite = {
-			focus = JAP_Competition_with_the_imperialist_powers
+			focus = JAP_competition_with_imperialism_great_powers
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#バスに乗り遅れるな
-		id = JAP_Do_not_miss_the_bus
-		icon = GFX_focus_JAP_Losange
+	focus = {	#バスに乗り遅れるな！
+		id = JAP_basu_ni_nori_okureru_na
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Building_the_Pacific_Economic_Bloc
+		relative_position_id = JAP_East_Asia_bloc_economies
 		prerequisite = {
-			focus = JAP_Building_the_Pacific_Economic_Bloc
+			focus = JAP_East_Asia_bloc_economies
 		}
 		completion_reward = {
 		}
 	}
-	
-	focus = {#私有財産制の廃止
-		id = JAP_Abolition_of_the_private_property_system
-		icon = GFX_focus_JAP_Losange
+	focus = {	#私有財産制の廃止...？
+		id = JAP_abolition_of_private_property
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 1
-		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		relative_position_id = JAP_acceleration_of_Shintaisei
 		prerequisite = {
-			focus = JAP_Re-acceleration_of_the_new_regime_movement
+			focus = JAP_acceleration_of_Shintaisei
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#帝國主義列強との競争
-		id = JAP_Competition_with_the_imperialist_powers
-		icon = GFX_focus_JAP_Losange
+	focus = {	#帝國主義列強との競争
+		id = JAP_competition_with_imperialism_great_powers
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 2
 		y = 2
-		relative_position_id = JAP_Re-acceleration_of_the_new_regime_movement
+		relative_position_id = JAP_acceleration_of_Shintaisei
 		prerequisite = {
-			focus = JAP_Re-acceleration_of_the_new_regime_movement
-			focus = JAP_Re-exclusion_of_imperialists
+			focus = JAP_acceleration_of_Shintaisei
+			focus = JAP_destiny_of_Kodoha
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#統制派の協力
-		id = JAP_Cooperation_of_control_groups
-		icon = GFX_focus_JAP_Losange
+	focus = {	#統制派の協力
+		id = JAP_cooperation_with_Toseiha
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 5
 		y = 1
-		relative_position_id = JAP_Appointment_of_innovative_bureaucrats
+		relative_position_id = JAP_appointment_reform_bureaucrats
 		prerequisite = {
-			focus = JAP_Appointment_of_innovative_bureaucrats
+			focus = JAP_appointment_reform_bureaucrats
 		}
 		mutually_exclusive = {
-			focus = JAP_Cooperation_of_the_Imperialists
+			focus = JAP_cooperation_with_Kodoha
 		}
 		mutually_exclusive = {
-			focus = JAP_Formation_of_Konoe_New_Party
+			focus = JAP_Greater_Japan_Party
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#大東亜共同経済圏を確立
-		id = JAP_Establishment_of_Greater_East_Asia_Common_Economic_Area
-		icon = GFX_focus_JAP_Losange
+	focus = {	#A
+		id = JAP_Fumimaro_Konoe_A
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 1
 		y = 2
-		relative_position_id = JAP_Cooperation_of_control_groups
+		relative_position_id = JAP_cooperation_with_Toseiha
 		prerequisite = {
-			focus = JAP_Cooperation_of_control_groups
+			focus = JAP_cooperation_with_Toseiha
 		}
-		cost = 4.28
 		completion_reward = {
 		}
 	}
-	
-	focus = {#皇道派を再排除
-		id = JAP_Re-exclusion_of_imperialists
-		icon = GFX_focus_JAP_Losange
+	focus = {	#皇道派の命運
+		id = JAP_destiny_of_Kodoha
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Cooperation_of_control_groups
+		relative_position_id = JAP_cooperation_with_Toseiha
 		prerequisite = {
-			focus = JAP_Cooperation_of_control_groups
+			focus = JAP_cooperation_with_Toseiha
 		}
 		completion_reward = {
 			add_stability = -0.1
 		}
 	}
-	
-	focus = {#総力戦への対応
-		id = JAP_Response_to_total_war
-		icon = GFX_focus_JAP_Losange
+	focus = {	#B
+		id = JAP_Fumimaro_Konoe_B
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Competition_with_the_imperialist_powers
+		relative_position_id = JAP_competition_with_imperialism_great_powers
 		prerequisite = {
-			focus = JAP_Competition_with_the_imperialist_powers
+			focus = JAP_competition_with_imperialism_great_powers
 		}
 		completion_reward = {
 			add_stability = -0.1
 		}
 	}
-	
-	focus = {#大陸を支配せよ!
-		id = JAP_Dominate_the_continent
-		icon = GFX_focus_JAP_Losange
+	focus = {	#高度国防国家
+		id = JAP_high_defence_state
+		icon = GFX_focus_JAP_Fumimaro_Konoe
 		cost = 4.28
 		x = 0
 		y = 1
-		relative_position_id = JAP_Response_to_total_war
+		relative_position_id = JAP_Fumimaro_Konoe_B
 		prerequisite = {
-			focus = JAP_Response_to_total_war
+			focus = JAP_Fumimaro_Konoe_B
 		}
 		completion_reward = {
 			add_stability = -0.1
 		}
 	}
-	
-	#############
-	#	小磯國昭	#
-	#############
-	
-	#############
-	#	寺内寿一	#
-	#############
-	
-	#############
-	#	畑俊六	#
-	#############
-	
+
 	#########
-	#	軍事	#
+	#	陸軍	#
 	#########
 	
-	focus = {
-        id = GEACPS_NF_JAP_army_00
-        icon = GFX_focus_jap_pacific_guardian
-        x = 20
-        y = 0
+	#############
+	#	日本革命	#
+	#############
+	
+	focus = {	#日本革命
+		id = JAP_Japanese_Revolution
+		icon = GFX_focus_JAP_Japanese_Revolution
+		cost = 0
+		x = 100
+		y = 100
+		available = {
+		}
 		relative_position_id = JAP_1-22_Incident
-		mutually_exclusive = {	focus = GEACPS_NF_JAP_navy_big_ships	}
-        cost = 4.28
-        completion_reward = {
-
-        }
-    }
-
-    focus = {
-        id = GEACPS_NF_JAP_navy_big_ships
-        icon = GFX_focus_jap_pacific_guardian
-        x = -7
-        y = 7
-		relative_position_id = GEACPS_NF_JAP_army_00
-        cost = 4.28
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_BB_01
-        icon = GFX_goal_generic_navy_battleship
-        x = -2
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_big_ships
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_big_ships }
-		mutually_exclusive = { 
-			focus = GEACPS_NF_JAP_navy_Official_CV_01
-			focus = GEACPS_NF_JAP_navy_Medium_CV_01
-		}
-
-        completion_reward = {
-            add_ideas = JAP_battleships_retry
-        }
-    }
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Super_CA
-		icon = GFX_goal_generic_navy_battleship
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_BB_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_BB_01 }
-
 		completion_reward = {
-#			transfer_ship = {
-#				prefer_name = "金剛"
-#				type = battleship
-#				target = NZL
-#			}
-			create_equipment_variant = {
-					name = "新高型"
-					type = ship_hull_heavy_5
-					name_group = JAP_BC_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_heavy_battery_5
-						fixed_ship_anti_air_slot = ship_anti_air_cannon_5
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_5
-						fixed_ship_radar_slot = empty
-						fixed_ship_engine_slot = super_heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_5
-						fixed_ship_armor_slot = ship_armor_bb_5
-						front_1_custom_slot = ship_heavy_battery_5
-						front_2_custom_slot = ship_anti_air_cannon_5
-						mid_1_custom_slot = ship_anti_air_cannon_5
-						mid_2_custom_slot = ship_airplane_launcher_2
-						mid_3_custom_slot = ship_secondaries_5
-						rear_1_custom_slot = ship_heavy_battery_5
-						rear_2_custom_slot = ship_heavy_battery_5
-					}
-				}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "新高" 
-						requested_factories = 1
-						progress = 0.3
-						amount = 1
-					}
-                    add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "富士" 
-						requested_factories = 1
-						progress = 0.25
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "天城" 
-						requested_factories = 1
-						progress = 0.2
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_heavy_5
-							creator = "JAP" 
-							version_name = "新高型"
-						}
-						name = "愛鷹" 
-						requested_factories = 1
-						progress = 0.15
-						amount = 1
-					}
-    	}
+		}
 	}
 
-    focus = {
-        id = GEACPS_NF_JAP_navy_Super_Yamato_Class
-        icon = GFX_goal_generic_navy_battleship
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_Super_CA
-        cost = 4.28
-        prerequisite = { focus = GEACPS_NF_JAP_navy_Super_CA }
-
-        completion_reward = {
-            create_equipment_variant = {
-					name = "超大和型"
-					type = ship_hull_super_heavy_2
-					name_group = JAP_BB_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_battery_slot = ship_super_heavy_battery_2
-						fixed_ship_anti_air_slot = ship_anti_air_cannon_4
-						fixed_ship_fire_control_system_slot = ship_fire_control_system_4
-						fixed_ship_radar_slot = ship_radar_3
-						fixed_ship_engine_slot = super_heavy_ship_engine_2
-						fixed_ship_secondaries_slot = ship_secondaries_2
-						fixed_ship_armor_slot = ship_armor_shbb_2
-						front_1_custom_slot = ship_super_heavy_battery_2
-						front_2_custom_slot = ship_anti_air_cannon_4
-						mid_1_custom_slot = ship_anti_air_cannon_4
-						mid_2_custom_slot = ship_secondaries_2
-						mid_3_custom_slot = ship_secondaries_2
-						rear_1_custom_slot = ship_super_heavy_battery_2
-						rear_2_custom_slot = ship_airplane_launcher_1
-					}
-				}	
-				add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_2
-						creator = "JAP" 
-						version_name = "超大和型"
-					}
-					name = "駿河" 
-					requested_factories = 1
-					progress = 0.5
-					amount = 1
-					}
-                add_equipment_production = {
-					equipment = {
-						type = ship_hull_super_heavy_2
-						creator = "JAP" 
-						version_name = "超大和型"
-					}
-					name = "近江" 
-					requested_factories = 1
-					progress = 0.5
-					amount = 1
-				}
-				#hidden_effect = {
-					#add_equipment_production = {
-						#equipment = {
-							#type = ship_hull_super_heavy_2
-							#creator = "JAP" 
-							#version_name = "Super Yamato Class"
-						#}
-						#name = "Suruga" 
-						#requested_factories = 1
-						#progress = 0.5
-						#amount = 1
-					#}
-                    #add_equipment_production = {
-						#equipment = {
-							#type = ship_hull_super_heavy_2
-							#creator = "JAP" 
-							#version_name = "Super Yamato Class"
-						#}
-						#name = "Oumi" 
-						#requested_factories = 1
-						#progress = 0.5
-						#amount = 1
-					#}
-				#}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-					not = {
-						OR = {
-							state = 646
-							state = 645
-							state = 555
-						}
-					}
-					free_building_slots = {
-						building = dockyard
-						size > 1
-						include_locked = yes
-					}
-				}
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = dockyard
-					level = 2
-					instant_build = yes
-				}
-				set_state_flag = JAP_new_naval_estimates_DY1
-			}
-        }
-    }
-
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Medium_CV_01
-		icon = GFX_goal_generic_navy_carrier
-		x = 0
-		y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_big_ships
-		prerequisite = { focus = GEACPS_NF_JAP_navy_big_ships }
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_navy_BB_01
-			focus = GEACPS_NF_JAP_navy_Official_CV_01
-		}
-
-		completion_reward = {
-			add_ideas = JAP_medium_carrier_product
-		}
-
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Medium_CV_02
-		icon = GFX_goal_generic_navy_carrier
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Medium_CV_01
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Medium_CV_01 }
-
-		completion_reward = {
-#			add_ideas = JAP_
-		}
-
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Medium_CV_03
-		icon = GFX_goal_generic_navy_carrier
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Medium_CV_02
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Medium_CV_02 }
-
-		completion_reward = {
-			create_equipment_variant = {
-					name = "笠置型"
-					type = ship_hull_carrier_4
-					name_group = JAP_CV_HISTORICAL
-					parent_version = 0
-					modules = {
-						fixed_ship_deck_slot_1 = ship_deck_space
-						fixed_ship_deck_slot_2 = ship_deck_space
-						fixed_ship_anti_air_slot = ship_anti_air_4
-						fixed_ship_radar_slot = ship_radar_3
-						fixed_ship_engine_slot = carrier_ship_engine_4
-						fixed_ship_anti_air_cannon_slot = ship_anti_air_cannon_4
-						front_1_custom_slot = ship_deck_space
-						mid_1_custom_slot = ship_deck_space
-						mid_2_custom_slot = ship_armor_carrier_deck
-						rear_1_custom_slot = ship_armor_carrier_deck
-						rear_2_custom_slot = ship_anti_air_cannon_4
-					}
-				}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_4
-							creator = "JAP" 
-							version_name = "笠置型"
-						}
-						name = "笠置" 
-						requested_factories = 1
-						progress = 0.3
-						amount = 1
-					}
-                    add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_4
-							creator = "JAP" 
-							version_name = "笠置型"
-						}
-						name = "乗鞍" 
-						requested_factories = 1
-						progress = 0.25
-						amount = 1
-					}
-					add_equipment_production = {
-						equipment = {
-							type = ship_hull_carrier_4
-							creator = "JAP" 
-							version_name = "笠置型"
-						}
-						name = "阿蘇" 
-						requested_factories = 1
-						progress = 0.2
-						amount = 1
-			}
-        }
-	}
-
+	#############
+	#	支那事変	#
+	#############
 	
-	focus = {
-		id = GEACPS_NF_JAP_navy_Official_CV_01
-		icon = GFX_goal_generic_navy_carrier
-		x = 2
-		y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_big_ships
-		prerequisite = { focus = GEACPS_NF_JAP_navy_big_ships }
-		mutually_exclusive = {
-			focus = GEACPS_NF_JAP_navy_BB_01
-			focus = GEACPS_NF_JAP_navy_Medium_CV_01
-		}
-
-		completion_reward = {
-
-		}
-
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Official_CV_02
-		icon = GFX_goal_generic_navy_carrier
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Official_CV_01
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Official_CV_01 }
-
-		completion_reward = {
-			add_ideas = JAP_LCV_making
-		}
-
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Official_CV_03
-		icon = GFX_goal_generic_navy_carrier
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Official_CV_02
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Official_CV_02 }
-
-		completion_reward = {
-			
-		}
-
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_small_ships
-		icon = GFX_focus_jap_pacific_guardian
-		x = 7
+	focus = {	#盧溝橋事件
+		id = JAP_Marco_Polo_Bridge_Incident
+		icon = GFX_focus_JAP_second_sino-japanese_war
+		cost = 0
+		x = 14
 		y = 0
-		relative_position_id = GEACPS_NF_JAP_navy_big_ships
-
-		completion_reward = {
-			navy_experience = 75
+		available = {
+			hidden_trigger = { always = no }
 		}
-
+		relative_position_id = JAP_1-22_Incident
+		completion_reward = {
+		}
 	}
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_torpedo_CL_01
-        icon = GFX_focus_jap_pacific_guardian
-        x = -3
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_small_ships
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_Anti_air_CL_01 }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_torpedo_CL_02
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_torpedo_CL_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_torpedo_CL_01 }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_torpedo_CL_03
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_torpedo_CL_02
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_torpedo_CL_02 }
-        completion_reward = {
-            add_equipment_production = {
-				equipment = {
-					type = ship_hull_cruiser_4
-					creator = "JAP" 
-					version_name = "改阿賀野型"
-				}
-				name = "石狩" 
-				requested_factories = 1
-				progress = 0.3
-				amount = 1
-			}
-            add_equipment_production = {
-				equipment = {
-					type = ship_hull_cruiser_4
-					creator = "JAP" 
-					version_name = "改阿賀野型"
-				}
-				name = "十勝" 
-				requested_factories = 1
-				progress = 0.25
-				amount = 1
-			}
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_Anti_air_CL_01
-        icon = GFX_focus_jap_pacific_guardian
-        x = -1
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_small_ships
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_torpedo_CL_01 }
-
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_Anti_air_CL_02
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_Anti_air_CL_01
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_air_CL_01 }
-        completion_reward = {
-            add_tech_bonus = {
-				name = JAP_cruiser_modernization
-				bonus = 1.0
-				uses = 1	
-				category = cl_tech
-			}
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_Anti_air_CL_03
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_Anti_air_CL_02
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_air_CL_02 }
-        completion_reward = {
-            add_ideas = JAP_Protecter_of_Fleets
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_quality_of_Destoryers
-        icon = GFX_focus_jap_pacific_guardian
-        x = 1
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_small_ships
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
-		mutually_exclusive = { focus = GEACPS_NF_JAP_navy_a_lot_of_Destoryers }
-
-        completion_reward = {
-            add_ideas = JAP_quality_of_Destoryers
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_New_Oxygen_torpedo
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_quality_of_Destoryers
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_quality_of_Destoryers }
-        completion_reward = {
-            add_ideas = JAP_New_Oxygen_torpedo
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_General_purpose_destroyer
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_New_Oxygen_torpedo
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_New_Oxygen_torpedo }
-        completion_reward = {
-            add_ideas = JAP_General_purpose_destroyer_plans
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_a_lot_of_Destoryers
-        icon = GFX_focus_jap_pacific_guardian
-        x = 3
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_small_ships
-        cost = 4.28
-		mutually_exclusive = {focus = GEACPS_NF_JAP_navy_quality_of_Destoryers }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_small_ships }
-		
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_Anti_Submarine_Destoryer
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_a_lot_of_Destoryers
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_a_lot_of_Destoryers }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_the_way_of_Smallships_making
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_Anti_Submarine_Destoryer
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Anti_Submarine_Destoryer }
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_Submarine_R_E
-        icon = GFX_focus_jap_pacific_guardian
-        x = 5
-        y = 0
-        relative_position_id = GEACPS_NF_JAP_navy_small_ships
-        cost = 4.28
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-        id = GEACPS_NF_JAP_navy_Submarine_likely_UBoats
-        icon = GFX_focus_jap_pacific_guardian
-        x = 0
-        y = 1
-        relative_position_id = GEACPS_NF_JAP_navy_Submarine_R_E
-        cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Submarine_R_E }
-		
-		
-        completion_reward = {
-            navy_experience = 75
-        }
-    }
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_faster_submarines
+	focus = {	#南京攻略戦
+		id = JAP_Battle_of_Nanking
+		icon = GFX_focus_JAP_second_sino-japanese_war
+		cost = 0
 		x = 0
-		y = 2
-		relative_position_id = GEACPS_NF_JAP_navy_Submarine_likely_UBoats
-		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Submarine_likely_UBoats }
-
-		completion_reward = {
-			navy_experience = 75
+		y = 1
+		available = {
+			hidden_trigger = { always = no }
 		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_the_sub_carrier
-		x = 2
-		y = 2
-		relative_position_id = GEACPS_NF_JAP_navy_Submarine_likely_UBoats
-		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Submarine_likely_UBoats }
-
-		completion_reward = {
-			navy_experience = 75
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_VS_American_Navy
-		x = 0
-		y = 2
-		relative_position_id = GEACPS_NF_JAP_navy_Anti_air_CL_03
-		icon = GFX_focus_jap_pacific_guardian
+		relative_position_id = JAP_Marco_Polo_Bridge_Incident
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_modern_fleets
+			focus = JAP_Marco_Polo_Bridge_Incident
 		}
-
 		completion_reward = {
-			navy_experience = 75
 		}
 	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_500_ships
+	focus = {	#武漢作戦
+		id = JAP_Capture_of_Wuhan
+		icon = GFX_focus_JAP_operation_Ichi-Go
+		cost = 0
 		x = 0
 		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_VS_American_Navy
-		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = GEACPS_NF_JAP_navy_VS_American_Navy }
-
-		completion_reward = {
-			
+		available = {
+			hidden_trigger = { always = no }
 		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_modern_fleets
-		icon = GFX_focus_jap_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Official_CV_03
-		icon = GFX_focus_jap_pacific_guardian
+		relative_position_id = JAP_Battle_of_Nanking
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_Super_Yamato_Class
-			focus = GEACPS_NF_JAP_navy_Medium_CV_03
-			focus = GEACPS_NF_JAP_navy_Official_CV_03
+			focus = JAP_Battle_of_Nanking
 		}
+		completion_reward = {
+		}
+	}
+	focus = {	#重慶作戦
+		id = JAP_Capture_of_Chongqing
+		icon = GFX_focus_JAP_operation_Ichi-Go
+		cost = 0
+		x = 0
+		y = 1
+		available = {
+			hidden_trigger = { always = no }
+		}
+		relative_position_id = JAP_Capture_of_Wuhan
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_Anti_air_CL_03
-			focus = GEACPS_NF_JAP_navy_torpedo_CL_03
+			focus = JAP_Capture_of_Wuhan
 		}
+		completion_reward = {
+		}
+	}
+	focus = {	#凱旋だ！
+		id = JAP_triumphant
+		icon = GFX_focus_JAP_triumph_of_Battle_of_Nanjing
+		cost = 0
+		x = 0
+		y = 1
+		available = {
+			hidden_trigger = { always = no }
+		}
+		relative_position_id = JAP_Capture_of_Chongqing
 		prerequisite = {
-			focus = GEACPS_NF_JAP_navy_General_purpose_destroyer
-			focus = GEACPS_NF_JAP_navy_the_way_of_Smallships_making
+			focus = JAP_Capture_of_Chongqing
 		}
-		prerequisite = { focus = GEACPS_NF_JAP_navy_faster_submarines }
-		prerequisite = { focus = GEACPS_NF_JAP_navy_the_sub_carrier }
-
 		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter
-		x = -1
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
-
-		completion_reward = {
-			navy_experience = 75
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_technologies_of_Missle
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter }
-
-		completion_reward = {
-			
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_New_system
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_Destoryers_with_Helicopter }
-
-		completion_reward = {
-			navy_experience = 75
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_Modern_YamatoClass
-		icon = GFX_focus_jap_pacific_guardian
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_New_system
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_New_system }
-
-		completion_reward = {
-		}
-	}
-
-
-	focus = {
-		id = GEACPS_NF_JAP_navy_pacific_guardian
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_New_system
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_New_system }
-
-		completion_reward = {
-			add_ideas = JAP_Pacific_Guardians
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_quite_submarine
-		x = 1
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_navy_modern_fleets
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_navy_modern_fleets }
-
-		completion_reward = {
-			navy_experience = 75
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_missle_submarine
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_quite_submarine
-		icon = GFX_focus_jap_pacific_guardian
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_quite_submarine }
-		
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_big_Subcarrier
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_missle_submarine
-		cost = 4.28
-		icon = GFX_focus_jap_pacific_guardian
-		prerequisite = { focus = GEACPS_NF_JAP_missle_submarine }
-		
-		completion_reward = {
-			
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_01
-		icon = GFX_goal_generic_air_fighter
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_army_00
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_army_00 }
-
-		completion_reward = {
-#			remove_ideas = JAP_duplicate_research_efforts
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_02
-		x = -2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_01 }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_Me262
-				bonus = 2
-				uses = 1
-				category = jet_technology
-			}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_03
-		icon = GFX_focus_jap_zero
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_01 }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_Zero
-				bonus = 2
-				uses = 1
-				category = light_fighter
-			}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_04
-		x = 2
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_01
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_01 }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_Ryusei
-				bonus = 1
-				uses = 2
-				category = naval_bomber
-
-			}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_05
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_02
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_02 }
-
-		completion_reward = {
-			custom_effect_tooltip = JAP_strengthen_the_divine_wind_effect
-			hidden_effect = { set_technology = { suicide_craft = 1 } }
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_06
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_03
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_03 }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_Helicopters
-				bonus = 1
-				uses = 2
-				category = helicopter
-				}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_07
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_04
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_04 }
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = JAP_tacticalbombers
-				bonus = 1
-				uses = 2
-				category = tactical_bomber
-			}
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_08
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_06
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_05 }
-		prerequisite = { focus = GEACPS_NF_JAP_air_06 }
-		prerequisite = { focus = GEACPS_NF_JAP_air_07 }
-
-		completion_reward = {
-
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_09
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_08
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_08 }
-
-		completion_reward = {
-			add_ideas = JAP_jet_planes
-		}
-	}
-
-	focus = {
-		id = GEACPS_NF_JAP_air_10
-		x = 0
-		y = 1
-		relative_position_id = GEACPS_NF_JAP_air_09
-		cost = 4.28
-		prerequisite = { focus = GEACPS_NF_JAP_air_09 }
-
-		completion_reward = {
-			add_ideas = JAP_Empire_sky_guardians
 		}
 	}
 }

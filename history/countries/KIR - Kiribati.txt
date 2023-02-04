@@ -1,7 +1,11 @@
 ﻿capital = 639
-oob = KIR_1946
 
 GBR = {	set_colony = yes	}
 
-set_cosmetic_tag = KIR_ENG-GBR
+set_cosmetic_tag = KIR_GBRbyENG
 set_dictatorship = yes
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

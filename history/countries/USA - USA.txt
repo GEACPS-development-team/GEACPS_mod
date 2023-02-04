@@ -1,5 +1,4 @@
 ﻿capital = 989
-oob = USA_1946
 
 set_cosmetic_tag = AMERICA_united_states_48
 set_convoys = 1000
@@ -23,6 +22,10 @@ set_popularities = {
 
 recruit_character = CHARACTER_harry_s_truman
 
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	presidential_system
+}
 add_ideas = {	#国民精神
 	USA_sour_loser
 	USA_failed_new_deal
@@ -31,54 +34,56 @@ add_ideas = {	#国民精神
 	USA_spread_dissatisfaction
 }
 
+give_guarantee = AT1
+give_guarantee = FRA
 give_guarantee = IRE
 give_guarantee = RHI
+give_guarantee = SAR
 give_guarantee = SGR
 
-add_opinion_modifier = {	target = JAP	modifier = Yellow_Monkey	}
+add_opinion_modifier = {	target = JAP	modifier = yellow_monkey	}
 
-set_naval_oob = USA_1946_naval
-create_equipment_variant = {
-	name = "アイオワ級"
-	type = ship_hull_heavy_3
-	name_group = USA_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_3
-		fixed_ship_anti_air_slot = ship_anti_air_4
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_engine_slot = heavy_ship_engine_3
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_2
-		front_1_custom_slot = ship_heavy_battery_3
-#		front_2_custom_slot = ship_heavy_battery_2
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_anti_air_4
-		mid_3_custom_slot = ship_anti_air_cannon_3
-		rear_1_custom_slot = ship_heavy_battery_3
-		rear_2_custom_slot = ship_airplane_launcher_2
-	}
-}
-create_equipment_variant = {
-	name = "モンタナ級"
-	type = ship_hull_heavy_3
-	name_group = USA_BB_HISTORICAL
-	parent_version = 0
-	modules = {
-		fixed_ship_battery_slot = ship_heavy_battery_3
-		fixed_ship_anti_air_slot = ship_anti_air_4
-		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
-		fixed_ship_radar_slot = ship_radar_3
-		fixed_ship_engine_slot = heavy_ship_engine_3
-		fixed_ship_secondaries_slot = ship_secondaries_1
-		fixed_ship_armor_slot = ship_armor_bb_2
-		front_1_custom_slot = ship_heavy_battery_3
-#		front_2_custom_slot = ship_heavy_battery_2
-		mid_1_custom_slot = ship_anti_air_cannon_3
-		mid_2_custom_slot = ship_airplane_launcher_2
-		mid_3_custom_slot = ship_anti_air_cannon_3
-		rear_1_custom_slot = ship_heavy_battery_3
-		rear_2_custom_slot = ship_heavy_battery_3
-	}
-}
+# create_equipment_variant = {
+# 	name = "アイオワ級"
+# 	type = ship_hull_heavy_3
+# 	name_group = USA_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_heavy_battery_3
+# 		fixed_ship_anti_air_slot = ship_anti_air_4
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_engine_slot = heavy_ship_engine_3
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 		fixed_ship_armor_slot = ship_armor_bb_2
+# 		front_1_custom_slot = ship_heavy_battery_3
+# #		front_2_custom_slot = ship_heavy_battery_2
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_anti_air_4
+# 		mid_3_custom_slot = ship_anti_air_cannon_3
+# 		rear_1_custom_slot = ship_heavy_battery_3
+# 		rear_2_custom_slot = ship_airplane_launcher_2
+# 	}
+# }
+# create_equipment_variant = {
+# 	name = "モンタナ級"
+# 	type = ship_hull_heavy_3
+# 	name_group = USA_BB_HISTORICAL
+# 	parent_version = 0
+# 	modules = {
+# 		fixed_ship_battery_slot = ship_heavy_battery_3
+# 		fixed_ship_anti_air_slot = ship_anti_air_4
+# 		fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+# 		fixed_ship_radar_slot = ship_radar_3
+# 		fixed_ship_engine_slot = heavy_ship_engine_3
+# 		fixed_ship_secondaries_slot = ship_secondaries_1
+# 		fixed_ship_armor_slot = ship_armor_bb_2
+# 		front_1_custom_slot = ship_heavy_battery_3
+# #		front_2_custom_slot = ship_heavy_battery_2
+# 		mid_1_custom_slot = ship_anti_air_cannon_3
+# 		mid_2_custom_slot = ship_airplane_launcher_2
+# 		mid_3_custom_slot = ship_anti_air_cannon_3
+# 		rear_1_custom_slot = ship_heavy_battery_3
+# 		rear_2_custom_slot = ship_heavy_battery_3
+# 	}
+# }

@@ -1,0 +1,886 @@
+#!gfx:interface\geacps_ARG.gfx
+
+focus_tree = {
+	id = ARG_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ARG
+		}
+	}
+	default = no
+	continuous_focus_position = {
+		x = 100 y = 550
+	}
+	shared_focus = ARG_army_realignment
+	shared_focus = ARG_air_force_realignment
+	shared_focus = ARG_february_election
+}
+#ŒRŽ–NF
+shared_focus = {
+	id = ARG_army_realignment
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 3
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_army_realignment"
+		army_experience = 50
+	}
+}
+
+shared_focus = {
+	id = ARG_army_organization
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_army_organization"
+		army_experience = 50
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_guidance_on_the_development_of_cas
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_guidance_on_the_development_of_cas"
+		add_tech_bonus = {
+			name = ARG_guidance_on_the_development_of_cas
+			ahead_reduction = 1
+			uses = 1
+			category = cas_bomber
+		}
+	}
+	relative_position_id = ARG_army_organization
+	prerequisite = { focus = ARG_army_organization }
+	prerequisite = { focus = ARG_german_military_officer_in_exile_to_our_country }
+}
+
+shared_focus = {
+	id = ARG_armoured_vehicles_to_protect_us
+	icon = GFX_goal_unknown
+	cost = 6
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_armoured_vehicles_to_protect_us"
+		add_tech_bonus = {
+			name = ARG_armoured_vehicles_to_protect_us
+			bonus = 0.5
+			uses = 1
+			category = armor
+		}
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_goddess_of_war
+	icon = GFX_goal_unknown
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_goddess_of_war"
+		add_tech_bonus = {
+			name = ARG_goddess_of_war
+			bonus = 0.5
+			uses = 1
+			category = artillery
+		}
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_crush_the_sky
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_crush_the_sky"
+		add_tech_bonus = {
+			name = ARG_crush_the_sky
+			bonus = 0.5
+			uses = 1
+			category = cat_anti_air
+		}
+	}
+	relative_position_id = ARG_goddess_of_war
+	prerequisite = { focus = ARG_goddess_of_war }
+}
+
+shared_focus = {
+	id = ARG_modern_infantry_rifles
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_modern_infantry_rifles"
+		add_tech_bonus = {
+			name = ARG_modern_infantry_rifles
+			bonus = 0.5
+			uses = 1
+			category = infantry_weapons
+		}
+	}
+	relative_position_id = ARG_army_realignment
+	prerequisite = { focus = ARG_army_realignment }
+}
+
+shared_focus = {
+	id = ARG_improved_support_equipment
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_improved_support_equipment"
+		add_tech_bonus = {
+			name = ARG_improved_support_equipment
+			bonus = 0.5
+			uses = 1
+			category = support_tech
+		}
+	}
+	relative_position_id = ARG_modern_infantry_rifles
+	prerequisite = { focus = ARG_modern_infantry_rifles }
+}
+
+shared_focus = {
+	id = ARG_antiarmour_equipment
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_antiarmour_equipment"
+		add_tech_bonus = {
+			name = ARG_antiarmour_equipment
+			bonus = 0.5
+			uses = 1
+			category = cat_anti_tank
+		}
+	}
+	relative_position_id = ARG_crush_the_sky
+	prerequisite = { focus = ARG_crush_the_sky }
+	prerequisite = { focus = ARG_improved_support_equipment }
+}
+
+shared_focus = {
+	id = ARG_air_force_realignment
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 8
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_air_force_realignment"
+		air_experience = 50
+		random_owned_state = {
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+}
+
+shared_focus = {
+	id = ARG_german_military_officer_in_exile_to_our_country
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		OR = {
+			NOT = {	has_government = total_socialism	}
+			NOT = {	has_government = radical_socialism	}
+			has_country_flag = ARG_labour_party_win_1946
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_german_military_officer_in_exile_to_our_country"
+		country_event = ARG.8
+	}
+	relative_position_id = ARG_air_force_realignment
+	prerequisite = { focus = ARG_air_force_realignment }
+}
+
+shared_focus = {
+	id = ARG_pilot_training
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		has_country_flag = ARG_rudel_in_exile_flag
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_pilot_training"
+		add_ideas = ARG_rudels_guidance
+	}
+	relative_position_id = ARG_german_military_officer_in_exile_to_our_country
+	prerequisite = { focus = ARG_german_military_officer_in_exile_to_our_country }
+}
+#­Ž¡NF
+shared_focus = {
+	id = ARG_february_election
+	icon = GFX_goal_unknown
+	cost = 0
+	x = 15
+	y = 0
+	ai_will_do = {
+		factor = 1
+	}
+	available = {
+		custom_trigger_tooltip = {
+			tooltip = ARG_general_election_1946
+			always = no
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_february_election"
+	}
+}
+
+shared_focus = {
+	id = ARG_labour_party
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {	has_country_flag = ARG_labour_party_win_1946	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_labour_party"
+		add_political_power = 150
+	}
+	relative_position_id = ARG_february_election
+	prerequisite = { focus = ARG_february_election }
+}
+
+shared_focus = {
+	id = ARG_enacted_the_evita_act
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_enacted_the_evita_act"
+		add_stability = 0.1
+	}
+	relative_position_id = ARG_labour_party
+	prerequisite = { focus = ARG_labour_party }
+}
+
+shared_focus = {
+	id = ARG_oppression_of_dissenters
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_oppression_of_dissenters"
+		add_popularity = {
+			ideology = national_populism
+			popularity = 0.08
+		}
+		add_ideas = ARG_oppression_of_dissenters
+	}
+	relative_position_id = ARG_enacted_the_evita_act
+	prerequisite = { focus = ARG_enacted_the_evita_act }
+}
+
+shared_focus = {
+	id = ARG_establishment_of_the_eva_peron_foundation
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_eva_peron_foundation"
+		country_event = ARG.3
+	}
+	relative_position_id = ARG_oppression_of_dissenters
+	prerequisite = { focus = ARG_oppression_of_dissenters }
+}
+
+shared_focus = {
+	id = ARG_launch_of_the_five_year_plan
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_launch_of_the_five_year_plan"
+		country_event = ARG.4
+	}
+	relative_position_id = ARG_establishment_of_the_eva_peron_foundation
+	prerequisite = { focus = ARG_establishment_of_the_eva_peron_foundation }
+}
+
+shared_focus = {
+	id = ARG_railway_construction
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_railway_construction"
+		add_timed_idea = {	idea = ARG_development_of_new_railway_network	days = 365	}
+	}
+	relative_position_id = ARG_launch_of_the_five_year_plan
+	prerequisite = { focus = ARG_launch_of_the_five_year_plan }
+}
+
+shared_focus = {
+	id = ARG_suburban_industrial_park_developments_ii
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_suburban_industrial_park_developments_ii"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_railway_construction
+	prerequisite = { focus = ARG_railway_construction }
+}
+
+shared_focus = {
+	id = ARG_declaration_of_economic_independence
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_declaration_of_economic_independence"
+		country_event = ARG.5
+	}
+	relative_position_id = ARG_suburban_industrial_park_developments_ii
+	prerequisite = { focus = ARG_suburban_industrial_park_developments_ii }
+}
+
+shared_focus = {
+	id = ARG_nationalisation_of_private_banks
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_nationalisation_of_private_banks"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_launch_of_the_five_year_plan
+	prerequisite = { focus = ARG_launch_of_the_five_year_plan }
+}
+
+shared_focus = {
+	id = ARG_contributions_to_housing_construction
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_contributions_to_housing_construction"
+		country_event = ARG.6
+	}
+	relative_position_id = ARG_nationalisation_of_private_banks
+	prerequisite = { focus = ARG_nationalisation_of_private_banks }
+}
+
+shared_focus = {
+	id = ARG_establishment_of_the_national_atomic_energy_commission
+	icon = GFX_goal_unknown
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_national_atomic_energy_commission"
+		add_research_slot = 1
+	}
+	relative_position_id = ARG_contributions_to_housing_construction
+	prerequisite = { focus = ARG_contributions_to_housing_construction }
+	prerequisite = { focus = ARG_free_university }
+}
+
+shared_focus = {
+	id = ARG_trade_unipolarisation
+	icon = GFX_goal_unknown
+	cost = 6
+	x = -1
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_trade_unipolarisation"
+		add_ideas = protectionism
+	}
+	relative_position_id = ARG_establishment_of_the_eva_peron_foundation
+	prerequisite = { focus = ARG_establishment_of_the_eva_peron_foundation }
+}
+
+shared_focus = {
+	id = ARG_improved_public_health
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_improved_public_health"
+		country_event = ARG.7
+	}
+	relative_position_id = ARG_trade_unipolarisation
+	prerequisite = { focus = ARG_trade_unipolarisation }
+}
+
+shared_focus = {
+	id = ARG_free_university
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_free_university"
+		add_ideas = ARG_free_university
+	}
+	relative_position_id = ARG_improved_public_health
+	prerequisite = { focus = ARG_improved_public_health }
+}
+
+shared_focus = {
+	id = ARG_emergency_citizens_alliance
+	icon = GFX_goal_unknown
+	cost = 6
+	x = -3
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	available = {	has_country_flag = ARG_emergency_citizens_alliance_win_1946	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_emergency_citizens_alliance"
+		add_political_power = 150
+	}
+	relative_position_id = ARG_february_election
+	prerequisite = { focus = ARG_february_election }
+}
+
+shared_focus = {
+	id = ARG_transition_to_a_fairer_society
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_transition_to_a_fairer_society"
+		add_stability = 0.1
+	}
+	relative_position_id = ARG_emergency_citizens_alliance
+	prerequisite = { focus = ARG_emergency_citizens_alliance }
+}
+
+shared_focus = {
+	id = ARG_cooperation_with_GBR
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_cooperation_with_GBR"
+		remove_state_claim = 299
+	}
+	relative_position_id = ARG_transition_to_a_fairer_society
+	prerequisite = { focus = ARG_transition_to_a_fairer_society }
+}
+
+shared_focus = {
+	id = ARG_protecting_south_america
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	mutually_exclusive = {	focus = ARG_approached_to_join_GBR_faction	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_protecting_south_america"
+		create_faction = MONROE_LEAGUE
+	}
+	relative_position_id = ARG_cooperation_with_GBR
+	prerequisite = { focus = ARG_cooperation_with_GBR }
+}
+
+shared_focus = {
+	id = ARG_neighbouring_state
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_neighbouring_state"
+		every_neighbor_country = {	country_event = faction.0	}
+	}
+	relative_position_id = ARG_protecting_south_america
+	prerequisite = { focus = ARG_protecting_south_america }
+}
+
+shared_focus = {
+	id = ARG_strong_alliances
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_strong_alliances"
+		every_country = {
+			limit = {	THIS = {	is_in_faction_with = ROOT	}	}
+			add_ideas = ARG_defense_bloc_0
+		}
+	}
+	relative_position_id = ARG_neighbouring_state
+	prerequisite = { focus = ARG_neighbouring_state }
+}
+
+shared_focus = {
+	id = ARG_to_the_north
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_to_the_north"
+		every_country = {
+			limit = {	
+				NOT = {
+					THIS = {
+						OR = {
+							is_in_faction_with = ROOT
+							is_subject = yes
+						}
+					}
+				}
+				capital_scope = {	is_on_continent = south_america	}
+			}
+			country_event = faction.0
+		}
+	}
+	relative_position_id = ARG_strong_alliances
+	prerequisite = { focus = ARG_strong_alliances }
+}
+
+shared_focus = {
+	id = ARG_alliance_unity
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_alliance_unity"
+		every_country = {
+			limit = {	
+				ROOT = {	is_in_faction_with = THIS	}
+				has_idea = ARG_defense_bloc_0
+			}
+			swap_ideas = {
+				remove_idea = ARG_defense_bloc_0
+				add_idea = ARG_defense_bloc_1
+			}
+		}
+	}
+	relative_position_id = ARG_to_the_north
+	prerequisite = { focus = ARG_to_the_north }
+}
+
+shared_focus = {
+	id = ARG_approached_to_join_GBR_faction
+	icon = GFX_goal_unknown
+	cost = 6
+	x = -2
+	y = 1
+	mutually_exclusive = {	focus = ARG_protecting_south_america	}
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_approached_to_join_GBR_faction"
+		GBR = {	country_event = faction.1	}
+	}
+	relative_position_id = ARG_cooperation_with_GBR
+	prerequisite = { focus = ARG_cooperation_with_GBR }
+}
+
+shared_focus = {
+	id = ARG_somisa_established
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 2
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_somisa_established"
+		every_owned_state = {
+			limit = {
+				has_resources_amount = {
+					resource = steel
+					amount > 0
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 20
+			}
+		}
+	}
+	relative_position_id = ARG_approached_to_join_GBR_faction
+	prerequisite = {
+		focus = ARG_approached_to_join_GBR_faction
+		focus = ARG_neighbouring_state
+	}
+}
+
+shared_focus = {
+	id = ARG_suburban_industrial_park_developments
+	icon = GFX_goal_unknown
+	cost = 6
+	x = -2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_suburban_industrial_park_developments"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_somisa_established
+	prerequisite = { focus = ARG_somisa_established }
+}
+
+shared_focus = {
+	id = ARG_further_development_of_heavy_industry
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_further_development_of_heavy_industry"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 4
+			add_building_construction = {
+				type = arms_factory
+				level = 4
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_suburban_industrial_park_developments
+	prerequisite = { focus = ARG_suburban_industrial_park_developments }
+}
+
+shared_focus = {
+	id = ARG_ime_established
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_established"
+		add_ideas = ARG_industrias_mecanicas_del_estado
+	}
+	relative_position_id = ARG_somisa_established
+	prerequisite = { focus = ARG_somisa_established }
+}
+
+shared_focus = {
+	id = ARG_ime_factory_construction
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_ime_factory_construction"
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+		}
+	}
+	relative_position_id = ARG_ime_established
+	prerequisite = { focus = ARG_ime_established }
+}
+
+shared_focus = {
+	id = ARG_establishment_of_the_institute
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 2
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_establishment_of_the_institute"
+		add_research_slot = 1
+	}
+	relative_position_id = ARG_cooperation_with_GBR
+	prerequisite = { focus = ARG_cooperation_with_GBR }
+}
+
+shared_focus = {
+	id = ARG_new_railway_network
+	icon = GFX_goal_unknown
+	cost = 6
+	x = 0
+	y = 1
+	ai_will_do = {
+		factor = 1
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus ARG_new_railway_network"
+		add_timed_idea = {	idea = ARG_development_of_new_railway_network	days = 365	}
+	}
+	relative_position_id = ARG_establishment_of_the_institute
+	prerequisite = { focus = ARG_establishment_of_the_institute }
+}

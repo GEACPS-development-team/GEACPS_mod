@@ -1,6 +1,6 @@
 ﻿capital = 219
 
-set_cosmetic_tag = SOV_union_republics
+set_cosmetic_tag = SOV_socialist_republics_union
 
 set_politics = {
 	ruling_party = total_socialism
@@ -19,6 +19,12 @@ set_popularities = {
 	national_populism = 0
 }
 
+add_ideas = {	#政治タブ
+	republic_federal_state
+	civilian_dictatorial_system
+	nationally_planned_economy
+}
+
 #陣営
 create_faction = COMINFORM
 add_to_faction = SOV
@@ -30,9 +36,7 @@ add_to_faction = LAT
 add_to_faction = LIT
 add_to_faction = MOL
 add_to_faction = KAR
-add_to_faction = DON
 add_to_faction = ABK
-add_to_faction = YAM
 add_to_faction = POL
 add_to_faction = EGR
 

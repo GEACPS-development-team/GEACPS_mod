@@ -1,0 +1,25 @@
+state = {
+	id = 1331
+	name = "STATE_1331"
+	manpower = 11000
+	buildings_max_level_factor = 1
+	state_category = city
+	
+	history = {
+		owner = POL
+		add_core_of = POL
+		GAL = {	debug_core = yes	}
+		LMK = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+		}
+		set_variable = {	POL_state_variable = 1	}
+		set_variable = {	GAL_state_variable = 1	}
+		set_variable = {	LMK_state_variable = 1	}
+	}
+	
+	provinces = {
+		417	3410
+	}
+	local_supplies = 0.0
+}

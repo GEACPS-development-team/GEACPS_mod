@@ -1,10 +1,9 @@
 ﻿capital = 52
-oob = SGR_1946
 
 set_cosmetic_tag = GER_federal_republic
 
 set_politics = {
-	ruling_party = conservative_democracy
+	ruling_party = social_democracy
 	last_election = "1938.4.10"
 	election_frequency = 48
 	elections_allowed = yes
@@ -12,20 +11,59 @@ set_politics = {
 set_popularities = {
 	total_socialism = 5
 	radical_socialism = 5
-	social_democracy = 33
+	social_democracy = 37
 	liberal_democracy = 16
-	conservative_democracy = 37
+	conservative_democracy = 33
 	authoritative_democracy = 0
 	national_authoritarianism = 0
 	national_populism = 4
 }
 
-recruit_character = CHARACTER_karl_borromaus_arnold
+set_party_name = {	#ドイツ社会民主党
+	ideology = social_democracy
+	name = PARTY_social_democratic_party_of_germany
+	long_name = PARTY_social_democratic_party_of_germany_long
+}
+set_party_name = {	#自由民主党
+	ideology = conservative_democracy
+	name = PARTY_free_democratic_party
+	long_name = PARTY_free_democratic_party_long
+}
 
+recruit_character = CHARACTER_curt_ernst_carl_schumacher
+recruit_character = CHARACTER_theodor_heuss
+
+activate_advisor = GER_theodor_heuss_hg
+
+add_ideas = {	#政治タブ
+	republic_federal_state
+	semi_presidential_system
+}
 add_ideas = {	#国民精神
-	SGR_the_berlin_declaration
-	SGR_potsdam_agreement
-	SGR_denazification
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_halfway_denazification
 }
 
 give_military_access = USA
+
+set_rule = {
+	can_boost_other_ideologies = no
+	can_create_factions = no
+	can_declare_war_on_same_ideology = no
+	can_declare_war_without_wargoal_when_in_war = no
+	can_decline_call_to_war = no
+	can_force_government = no
+	can_generate_female_aces = no
+	can_guarantee_other_ideologies = no
+	can_join_factions = no
+	can_join_opposite_factions = no
+	can_lower_tension = no
+	can_not_declare_war = no
+	can_occupy_non_war = no
+	can_only_justify_war_on_threat_country = no
+	can_puppet = no
+	can_send_volunteers = no
+	can_use_kamikaze_pilots = no
+	units_deployed_to_overlord = no
+}

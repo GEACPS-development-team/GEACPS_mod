@@ -1,9 +1,13 @@
 ﻿capital = 777
-oob = TOG_1946
 
-FRA = {	set_mandate = yes	}
+FRA = {	set_mandated_territory_B = yes	}
 
 set_cosmetic_tag = TOG_FRA
 set_dictatorship = yes
 
 recruit_character = CHARACTER_jean_noutary
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

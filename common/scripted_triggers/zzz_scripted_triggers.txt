@@ -147,7 +147,8 @@ is_available_to_collaboration_government = {
 		any_country_with_original_tag = {
 			original_tag_to_check = FROM
 			is_puppet_of = PREV
-			has_autonomy_state = autonomy_collaboration_government
+			#has_autonomy_state = autonomy_collaboration_government
+			always = no
 		}
 	}
 }
@@ -156,7 +157,7 @@ should_initiate_resistance = {
 	OR = {
 		check_variable = {	core_countries^num > 0	}
 		AND = {
-			has_state_flag = SPR_original_core
+			always = no
 			FROM = {	original_tag = SPR	}
 			has_global_flag = scw_over
 		}
@@ -165,12 +166,3 @@ should_initiate_resistance = {
 }
 should_activate_active_crypto_bonuses = {	always = no	}
 should_not_activate_active_crypto_bonuses = {	always = no	}
-
-#Other Mod
-has_reached_maximum_divisions = {
-	if = {
-		limit = {	has_variable = num_actual_divisions	}
-		check_variable = {	num_actual_divisions > max_divisions	}
-	}
-	else = {	check_variable = {	num_divisions > max_divisions	}	}
-}

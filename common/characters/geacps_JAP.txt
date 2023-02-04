@@ -7,14 +7,6 @@ characters = {	#皇室
 				small = "GFX_hirohito_small"
 				large = "GFX_hirohito_large"
 			}
-			army = {
-				small = "GFX_hirohito_small"
-				large = "GFX_hirohito_large"
-			}
-			navy = {
-				small = "GFX_hirohito_small"
-				large = "GFX_hirohito_large"
-			}
 		}
 		country_leader = {
 			ideology = national_populism_ideology
@@ -32,11 +24,62 @@ characters = {	#皇室
 			}
 		}
 		field_marshal = {
-			skill = 5
+			skill = 4
 			attack_skill = 4
 			defense_skill = 4
 			planning_skill = 3
 			logistics_skill = 3
+		}
+	}
+	CHARACTER_yasuhiko_asaka = {	#朝香宮鳩彦王
+		name = CHARACTER_prince_yasuhiko_asaka
+		
+		portraits = {
+			army = {
+				small = "GFX_yasuhiko_asaka_small"
+				large = "GFX_yasuhiko_asaka_large"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	CHARACTER_naruhiko_higashikuni = {	#東久邇宮稔彦王
+		name = CHARACTER_prince_naruhiko_higashikuni
+		
+		portraits = {
+			army = {
+				small = "GFX_naruhiko_higashikuni_small"
+				large = "GFX_naruhiko_higashikuni_large"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 4
+			planning_skill = 3
+			logistics_skill = 3
+		}
+	}
+	CHARACTER_hiroyasu_fushimi = {	#伏見宮博恭王
+		name = CHARACTER_prince_hiroyasu_fushimi
+		
+		portraits = {
+			navy = {
+				small = GFX_hiroyasu_fushimi_small
+				large = GFX_hiroyasu_fushimi_large
+			}
+		}
+		navy_leader = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 3
+			maneuvering_skill = 4
+			coordination_skill = 5
 		}
 	}
 }
@@ -56,6 +99,7 @@ characters = {	#文民
 			idea_token = JAP_fumimaro_konoe_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 	}
 	CHARACTER_mamoru_shigemitsu = {	#重光葵
@@ -72,12 +116,94 @@ characters = {	#文民
 			idea_token = JAP_mamoru_shigemitsu_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 		advisor = {
 			slot = foreign_minister
 			idea_token = JAP_mamoru_shigemitsu_fm
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+	}
+	CHARACTER_nobusuke_kishi = {	#岸信介
+		name = CHARACTER_nobusuke_kishi
+		
+		portraits = {
+			civilian = {
+				small = GFX_nobusuke_kishi_small
+				large = GFX_nobusuke_kishi_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_nobusuke_kishi_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = commerce_minister
+			idea_token = JAP_nobusuke_kishi_cm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+	}
+	CHARACTER_sanzo_nosaka = {	#野坂参三
+		name = CHARACTER_sanzo_nosaka
+		
+		portraits = {
+			civilian = {
+				small = GFX_sanzo_nosaka_small
+				large = GFX_sanzo_nosaka_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_sanzo_nosaka_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			available = {
+				has_government = total_socialism
+				has_government = radical_socialism
+			}
+			traits = {}
+		}
+		advisor = {
+			slot = home_minister
+			idea_token = JAP_sanzo_nosaka_hm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			available = {
+				has_government = total_socialism
+				has_government = radical_socialism
+			}
+			traits = {}
+		}
+	}
+	CHARACTER_sotaro_ishiwata = {	#石渡荘太郎
+		name = CHARACTER_sotaro_ishiwata
+		
+		portraits = {
+			civilian = {
+				small = GFX_sotaro_ishiwata_small
+				large = GFX_sotaro_ishiwata_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_sotaro_ishiwata_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = home_minister
+			idea_token = JAP_sotaro_ishiwata_hm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 	}
 }
@@ -87,17 +213,35 @@ characters = {	#陸軍
 		name = CHARACTER_hajime_sugiyama
 		
 		portraits = {
+			civilian = {
+				small = GFX_hajime_sugiyama_small
+				large = GFX_hajime_sugiyama_large
+			}
 			army = {
 				small = GFX_hajime_sugiyama_small
 				large = GFX_hajime_sugiyama_large
 			}
 		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_hajime_sugiyama_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = army_minister
+			idea_token = JAP_hajime_sugiyama_am
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
 		field_marshal = {
 			skill = 5
-			attack_skill = 3
+			attack_skill = 5
 			defense_skill = 5
 			planning_skill = 4
-			logistics_skill = 3
+			logistics_skill = 5
 		}
 	}
 	CHARACTER_hideki_tojo = {	#東條英機
@@ -118,18 +262,28 @@ characters = {	#陸軍
 			idea_token = JAP_hideki_tojo_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 		advisor = {
 			slot = commerce_minister
 			idea_token = JAP_hideki_tojo_cm
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = military_minister
+			idea_token = JAP_hideki_tojo_mm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 		advisor = {
 			slot = army_minister
 			idea_token = JAP_hideki_tojo_am
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 	}
 	CHARACTER_hisaichi_terauchi = {	#寺内寿一
@@ -150,13 +304,21 @@ characters = {	#陸軍
 			idea_token = JAP_hisaichi_terauchi_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = army_minister
+			idea_token = JAP_hisaichi_terauchi_am
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 		field_marshal = {
 			skill = 5
 			attack_skill = 5
 			defense_skill = 5
-			planning_skill = 4
-			logistics_skill = 3
+			planning_skill = 5
+			logistics_skill = 4
 		}
 	}
 	CHARACTER_hitoshi_imamura = {	#今村均
@@ -178,7 +340,7 @@ characters = {	#陸軍
 			expire = "1968.10.4"
 		}
 	}
-	CHARACTER_kisaburo_ando = {	#安藤喜三郎
+	CHARACTER_kisaburo_ando = {	#安藤紀三郎
 		name = CHARACTER_kisaburo_ando
 		
 		portraits = {
@@ -196,12 +358,14 @@ characters = {	#陸軍
 			idea_token = JAP_kisaburo_ando_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 		advisor = {
 			slot = home_minister
 			idea_token = JAP_kisaburo_ando_hm
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 	}
 	CHARACTER_kuniaki_koiso = {	#小磯国昭
@@ -222,6 +386,7 @@ characters = {	#陸軍
 			idea_token = JAP_kuniaki_koiso_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 	}
 	CHARACTER_nobuyoshi_muto = {	#武藤信義
@@ -233,12 +398,12 @@ characters = {	#陸軍
 				large = GFX_nobuyoshi_muto_large
 			}
 		}
-		field_marshal = {
-			skill = 5
-			attack_skill = 5
-			defense_skill = 4
-			planning_skill = 4
-			logistics_skill = 3
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 4
 		}
 	}
 	CHARACTER_nobuyuki_abe = {	#阿部信行
@@ -314,6 +479,14 @@ characters = {	#陸軍
 			idea_token = JAP_shunroku_hata_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = army_minister
+			idea_token = JAP_shunroku_hata_am
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 		field_marshal = {
 			skill = 5
@@ -321,6 +494,23 @@ characters = {	#陸軍
 			defense_skill = 5
 			planning_skill = 5
 			logistics_skill = 4
+		}
+	}
+	CHARACTER_tomoshige_tsunoda = {	#津野田知重
+		name = CHARACTER_tomoshige_tsunoda
+		
+		portraits = {
+			army = {
+				small = GFX_tomoshige_tsunoda_small
+				large = GFX_tomoshige_tsunoda_large
+			}
+		}
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
 		}
 	}
 }
@@ -344,6 +534,23 @@ characters = {	#海軍
 			expire = "1964.2.8"
 		}
 	}
+	CHARACTER_isoroku_yamamoto = {	#山本五十六
+		name = CHARACTER_isoroku_yamamoto
+		
+		portraits = {
+			navy = {
+				small = GFX_isoroku_yamamoto_small
+				large = GFX_isoroku_yamamoto_large
+			}
+		}
+		navy_leader = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 4
+			maneuvering_skill = 5
+			coordination_skill = 5
+		}
+	}
 	CHARACTER_kantaro_suzuki = {	#鈴木貫太郎
 		name = CHARACTER_kantaro_suzuki
 		
@@ -362,6 +569,7 @@ characters = {	#海軍
 			idea_token = JAP_kantaro_suzuki_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
 		}
 	}
 	CHARACTER_keisuke_okada = {	#岡田啓介
@@ -382,6 +590,24 @@ characters = {	#海軍
 			idea_token = JAP_keisuke_okada_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+	}
+	CHARACTER_mineichi_koga = {	#古賀峯一
+		name = CHARACTER_mineichi_koga
+		
+		portraits = {
+			navy = {
+				small = GFX_mineichi_koga_small
+				large = GFX_mineichi_koga_large
+			}
+		}
+		navy_leader = {
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			maneuvering_skill = 4
+			coordination_skill = 5
 		}
 	}
 	CHARACTER_mitsumasa_yonai = {	#米内光政
@@ -402,6 +628,107 @@ characters = {	#海軍
 			idea_token = JAP_mitsumasa_yonai_hg
 			removal_cost = -1
 			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+	}
+	CHARACTER_naokuni_nomura = {	#野村直邦
+		name = CHARACTER_naokuni_nomura
+		
+		portraits = {
+			civilian = {
+				small = GFX_naokuni_nomura_small
+				large = GFX_naokuni_nomura_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_naokuni_nomura_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = navy_minister
+			idea_token = JAP_naokuni_nomura_nm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+	}
+	CHARACTER_osami_nagano = {	#永野修身
+		name = CHARACTER_osami_nagano
+		
+		portraits = {
+			civilian = {
+				small = GFX_osami_nagano_small
+				large = GFX_osami_nagano_large
+			}
+			navy = {
+				small = GFX_osami_nagano_small
+				large = GFX_osami_nagano_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_osami_nagano_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = navy_minister
+			idea_token = JAP_osami_nagano_nm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		navy_leader = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 5
+			maneuvering_skill = 3
+			coordination_skill = 4
+		}
+	}
+	CHARACTER_shigetaro_shimada = {	#嶋田繁太郎
+		name = CHARACTER_shigetaro_shimada
+		
+		portraits = {
+			civilian = {
+				small = GFX_shigetaro_shimada_small
+				large = GFX_shigetaro_shimada_large
+			}
+		}
+		advisor = {
+			slot = head_of_government
+			idea_token = JAP_shigetaro_shimada_hg
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+		advisor = {
+			slot = navy_minister
+			idea_token = JAP_shigetaro_shimada_nm
+			removal_cost = -1
+			allowed = {	original_tag = JAP	}
+			traits = {}
+		}
+	}
+	CHARACTER_sokichi_takagi = {	#高木惣吉
+		name = CHARACTER_sokichi_takagi
+		
+		portraits = {
+			navy = {
+				small = GFX_sokichi_takagi_small
+				large = GFX_sokichi_takagi_large
+			}
+		}
+		navy_leader = {
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			maneuvering_skill = 2
+			coordination_skill = 3
 		}
 	}
 }

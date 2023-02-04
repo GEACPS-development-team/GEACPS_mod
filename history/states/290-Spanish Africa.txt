@@ -7,21 +7,21 @@ state = {
 	resources = {	steel = 23	}
 	
 	history = {
-		owner = SPR
-		add_core_of = SPR
+		owner = RIF
+		add_core_of = RIF
+		MOR = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			air_base = 3
-			9945 = {	naval_base = 3	}
-			12100 = {	naval_base = 3	}
 		}
-		victory_points = {	9945	3	}
-		victory_points = {	12100	3	}
+		victory_points = {	10113	1	}
+		victory_points = {	12087	1	}
 		set_variable = {	MOR_state_variable = 1	}
+		set_variable = {	RIF_state_variable = 1	}
 	}
 	
 	provinces = {
-		4199	7215	9945	10113	12087	12100
+		4199	7215	10113	12087
 	}
 	local_supplies = 0.0
 }

@@ -1,7 +1,11 @@
-﻿capital = 903
-oob = SCZ_1946
+﻿capital = 446
 
 GBR = {	set_leased_territory = yes	}
 
-set_cosmetic_tag = COUNTRY_ENG-GBR
+set_cosmetic_tag = COUNTRY_GBRbyENG
 set_dictatorship = yes
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

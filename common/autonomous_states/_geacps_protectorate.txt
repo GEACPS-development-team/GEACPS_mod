@@ -1,81 +1,65 @@
 autonomy_state = {
 	id = protected_state
 	
-	min_freedom_level = 0.75
+	min_freedom_level = 0.5
 	manpower_influence = 0.2
 	
-	is_puppet = yes
-	use_overlord_color = no
-	
 	rule = {
-		can_not_declare_war = yes
-		can_decline_call_to_war = no
-		units_deployed_to_overlord = no
-		can_be_spymaster = no
-		contributes_operatives = no
-		can_create_collaboration_government = no
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
+		can_not_declare_war = no
 	}
 	
 	modifier = {
-		autonomy_manpower_share = 0.5
-		can_master_build_for_us = 1
-		cic_to_overlord_factor = 0.5
-		mic_to_overlord_factor = 0.5
-		extra_trade_to_overlord_factor = 0.5
-		overlord_trade_cost_factor = -0.5
-		ai_desired_divisions_factor = 0
+		autonomy_manpower_share = 0
+		extra_trade_to_overlord_factor = 0.25
+		overlord_trade_cost_factor = -0.25
+		license_subject_master_purchase_cost = -0.25
+		cic_to_overlord_factor = 0.25
+		mic_to_overlord_factor = 0.25
 	}
 	
-	allowed = {
-		has_variable = protectorate_trigger_variable
-		NOT = {	has_variable = colony_trigger_variable	}
-		NOT = {	has_variable = condominium_trigger_variable	}
-		NOT = {	has_variable = leased_territory_trigger_variable	}
-		NOT = {	has_variable = mandate_trigger_variable	}
-		NOT = {	has_variable = personal_union_trigger_variable	}
-		NOT = {	has_variable = princely_state_trigger_variable	}
-		NOT = {	OVERLORD = {	tag = CHI	}	}
-		NOT = {	OVERLORD = {	tag = JAP	}	}
-		NOT = {	OVERLORD = {	tag = SOV	}	}
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		protected_state
+		protected_territory
 	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
 autonomy_state = {
 	id = protected_territory
 	
-	min_freedom_level = 0.5
-	manpower_influence = 0.7
-	
+	min_freedom_level = 0.25
+	manpower_influence = 0.2
 	use_overlord_color = yes
 	
 	rule = {
+		can_boost_other_ideologies = no
+		can_decline_call_to_war = yes
+		can_force_government = no
 		can_not_declare_war = yes
-		can_decline_call_to_war = no
-		units_deployed_to_overlord = yes
-		can_be_spymaster = no
-		contributes_operatives = no
-		can_create_collaboration_government = no
 	}
 	
 	modifier = {
-		autonomy_manpower_share = 0.7
-		can_master_build_for_us = 1
-		cic_to_overlord_factor = 0.7
-		mic_to_overlord_factor = 0.7
-		extra_trade_to_overlord_factor = 0.7
-		overlord_trade_cost_factor = -0.7
-		ai_desired_divisions_factor = 0
+		autonomy_manpower_share = 0.75
+		extra_trade_to_overlord_factor = 0.75
+		overlord_trade_cost_factor = -0.75
+		license_subject_master_purchase_cost = -0.75
+		cic_to_overlord_factor = 0.75
+		mic_to_overlord_factor = 0.75
 	}
 	
-	allowed = {
-		has_variable = protectorate_trigger_variable
-		NOT = {	has_variable = colony_trigger_variable	}
-		NOT = {	has_variable = condominium_trigger_variable	}
-		NOT = {	has_variable = leased_territory_trigger_variable	}
-		NOT = {	has_variable = mandate_trigger_variable	}
-		NOT = {	has_variable = personal_union_trigger_variable	}
-		NOT = {	has_variable = princely_state_trigger_variable	}
-		NOT = {	OVERLORD = {	tag = CHI	}	}
-		NOT = {	OVERLORD = {	tag = JAP	}	}
-		NOT = {	OVERLORD = {	tag = SOV	}	}
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	
+	allowed_levels_filter = {
+		protected_state
+		protected_territory
 	}
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }

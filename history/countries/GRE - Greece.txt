@@ -20,5 +20,25 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 0
 }
+set_party_name = {	#臨時民主政府
+	ideology = total_socialism
+	name = PARTY_provisional_democratic_government
+	long_name = PARTY_provisional_democratic_government_long
+}
+set_party_name = {	#臨時民主政府
+	ideology = radical_socialism
+	name = PARTY_provisional_democratic_government
+	long_name = PARTY_provisional_democratic_government_long
+}
+set_party_name = {	#自由党
+	ideology = liberal_democracy
+	name = PARTY_liberal_party
+	long_name = PARTY_liberal_party_long
+}
 
 recruit_character = CHARACTER_georgios_tes_ellhadas
+
+add_ideas = {
+	monarchy_unitary_state
+	parliamentary_cabinet_system
+}

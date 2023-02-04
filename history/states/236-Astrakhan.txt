@@ -5,14 +5,15 @@ state = {
 	state_category = rural
 	
 	history = {
-		owner = DON
-		add_core_of = DON
+		owner = RUS
+		add_core_of = RUS
+		DON = {	debug_core = yes	}
 		victory_points = {	9753	3	}
 		buildings = {
 			infrastructure = 2
 			air_base = 1
 		}
-		set_variable = {	_state_variable = 1	}
+		set_variable = {	DON_state_variable = 1	}
 	}
 	
 	provinces = {

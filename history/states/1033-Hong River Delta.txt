@@ -8,6 +8,8 @@ state = {
 	history = {
 		owner = VIN
 		add_core_of = VIN
+		INC = {	debug_core = yes	}
+		TOK = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			1185 = {	naval_base = 2	}
@@ -15,6 +17,7 @@ state = {
 		victory_points = {	1185	1	}
 		victory_points = {	4075	3	}
 		victory_points = {	4119	1	}
+		set_variable = {	TOK_state_variable = 1	}
 		set_variable = {	VIN_state_variable = 1	}
 	}
 	

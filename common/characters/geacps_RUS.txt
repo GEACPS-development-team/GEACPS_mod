@@ -1,4 +1,49 @@
 characters = {	#文民
+	CHARACTER_grigory_mikhaylovich_semyonov = {	#グリゴリー・ミハイロヴィチ・セミョーノフ
+		name = CHARACTER_grigory_mikhaylovich_semyonov
+		
+		portraits = {
+			civilian = {
+				small = GFX_grigory_mikhaylovich_semyonov_small
+				large = GFX_grigory_mikhaylovich_semyonov_large
+			}
+		}
+		country_leader = {
+			ideology = national_authoritarianism_ideology
+			desc = "CHARACTER_grigory_mikhaylovich_semyonov_desc"
+			expire = "1974.6.26"
+		}
+	}
+	CHARACTER_lev_davidovich_bronstein = {	#レフ・トロツキー
+		name = CHARACTER_lev_trotsky
+		
+		portraits = {
+			civilian = {
+				small = GFX_lev_davidovich_bronstein_small
+				large = GFX_lev_davidovich_bronstein_large
+			}
+		}
+		country_leader = {
+			ideology = trotskyism_ideology
+			desc = "CHARACTER_lev_davidovich_bronstein_desc"
+			# expire = ""
+		}
+	}
+	CHARACTER_nikolai_ivanovich_bukharin = {	#ニコライ・イヴァノヴィチ・ブハーリン
+		name = CHARACTER_nikolai_ivanovich_bukharin
+		
+		portraits = {
+			civilian = {
+				small = GFX_nikolai_ivanovich_bukharin_small
+				large = GFX_nikolai_ivanovich_bukharin_large
+			}
+		}
+		country_leader = {
+			ideology = bukharinism_ideology
+			desc = "CHARACTER_nikolai_ivanovich_bukharin_desc"
+			# expire = ""
+		}
+	}
 	CHARACTER_nikolai_mikhailovich_shvernik = {	#ニコライ・ミハイロヴィチ・シュヴェルニク
 		name = CHARACTER_nikolai_mikhailovich_shvernik
 		
@@ -9,7 +54,7 @@ characters = {	#文民
 			}
 		}
 		country_leader = {
-			ideology = total_socialism_ideology
+			ideology = stalinism_ideology
 			desc = "CHARACTER_nikolai_mikhailovich_shvernik_desc"
 			expire = "1970.12.24"
 		}

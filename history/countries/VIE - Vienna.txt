@@ -1,5 +1,4 @@
 ﻿capital = 1298
-#oob = VIE_1946
 set_cosmetic_tag = VIE_free_city
 
 set_politics = {
@@ -25,4 +24,9 @@ create_country_leader = {
 	picture = "GFX_National_Council"
 	expire = "1955.5.15"
 	ideology = authoritative_democracy_ideology
+}
+
+add_ideas = {	#政治タブ
+	republic_city_state
+	presidential_system
 }

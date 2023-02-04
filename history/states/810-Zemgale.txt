@@ -8,6 +8,9 @@ state = {
 	history = {
 		owner = LAT
 		add_core_of = LAT
+		add_claim_by = BLR
+		BLT = {	debug_core = yes	}
+		LIV = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
@@ -17,10 +20,12 @@ state = {
 		}
 		victory_points = {	310	1	}
 		set_variable = {	LAT_state_variable = 1	}
+		set_variable = {	LIV_state_variable = 1	}
+		set_variable = {	BLR_state_variable = 2	}
 	}
 	
 	provinces = {
-		222	310	319	341	3298	6459	7482	9275	11222	13240
+		222	310	319	341	3298	6459	7482	9275	11222	13445
 	}
 	local_supplies = 0.0
 }

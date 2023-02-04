@@ -1,0 +1,138 @@
+add_namespace = faction
+
+country_event = {
+	id = faction.0
+	title = faction.0.t
+	desc = faction.0.d
+	picture = GFX_generic_faction_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.0.0
+		ai_chance = {	factor = 10	}
+		FROM = {	add_to_faction = ROOT	}
+		hidden_effect = {	FROM = {	country_event = faction.2	}	}
+	}
+	option = {
+		name = faction.0.1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				FROM = {	has_opinion = {	target = ROOT	value > 0	}	}
+			}
+		}
+		hidden_effect = {	FROM = {	country_event = faction.3	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.0"	}
+}
+
+country_event = {
+	id = faction.1
+	title = faction.1.t
+	desc = faction.1.d
+	picture = GFX_generic_faction_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.1.0
+		ai_chance = {	factor = 10	}
+		add_to_faction = FROM
+		hidden_effect = {	FROM = {	country_event = faction.2	}	}
+	}
+	option = {
+		name = faction.1.1
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 0
+				FROM = {	has_opinion = {	target = ROOT	value > 0	}	}
+			}
+		}
+		hidden_effect = {	FROM = {	country_event = faction.3	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.1"	}
+}
+
+country_event = {
+	id = faction.2
+	title = faction.2.t
+	desc = faction.2.d
+	picture = GFX_generic_faction_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.2.0
+		ai_chance = {	factor = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.2"	}
+}
+country_event = {
+	id = faction.3
+	title = faction.3.t
+	desc = faction.3.d
+	picture = GFX_generic_faction_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = faction.3.0
+		ai_chance = {	factor = 100	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event faction.3"	}
+}
+
+add_namespace = ultimatum
+country_event = {
+	id = ultimatum.0
+	title = ultimatum.0.t
+	desc = ultimatum.0.d
+	picture = GFX_generic_ultimatum_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ultimatum.0.0
+		ai_chance = {	factor = 100	}
+		hidden_effect = {	FROM = {	country_event = {	id = ultimatum.1	days = 1	}	}	}
+	}
+	option = {
+		name = ultimatum.0.1
+		ai_chance = {	factor = 0	}
+		hidden_effect = {	FROM = {	country_event = {	id  = ultimatum.2	days = 1	}	}	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ultimatum.0"	}
+}
+country_event = {
+	id = ultimatum.1
+	title = ultimatum.1.t
+	desc = ultimatum.1.d
+	picture = GFX_generic_ultimatum_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ultimatum.1.0
+		ai_chance = {	factor = 100	}
+		annex_country = {	target = FROM	transfer_troops = yes	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ultimatum.1"	}
+}
+country_event = {
+	id = ultimatum.2
+	title = ultimatum.2.t
+	desc = ultimatum.2.d
+	picture = GFX_generic_ultimatum_country_event
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = ultimatum.2.0
+		ai_chance = {	factor = 100	}
+		declare_war_on = {	target = FROM	type = annex_everything	}
+	}
+	immediate = {	log = "[GetDateText]: [Root.GetName]: event ultimatum.2"	}
+}

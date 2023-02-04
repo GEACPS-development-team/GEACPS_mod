@@ -1,19 +1,36 @@
-puppet_trigger = {
-	NOT = {	has_variable = colony_trigger_variable	}
-	NOT = {	has_variable = condominium_trigger_variable	}
-	NOT = {	has_variable = leased_territory_trigger_variable	}
-	NOT = {	has_variable = mandate_trigger_variable	}
-	NOT = {	has_variable = personal_union_trigger_variable	}
-	NOT = {	has_variable = princely_state_trigger_variable	}
-	NOT = {	has_variable = protectorate_trigger_variable	}
-	NOT = {	OVERLORD = {	tag = CHI	}	}
-	NOT = {	OVERLORD = {	tag = JAP	}	}
-	NOT = {	OVERLORD = {	tag = SOV	}	}
-}
 soviet_member_trigger = {
 	OR = {
 		has_autonomy_state = soviet_member_federal_republic
 		has_autonomy_state = soviet_member_republic
 		has_autonomy_state = soviet_autonomous_republic
+	}
+}
+is_dependent_territory = {
+	OR = {
+		has_autonomy_state = overseas_territory
+		has_autonomy_state = colony
+		has_autonomy_state = colony_and_protectorate
+		has_autonomy_state = colonies_federation
+		has_autonomy_state = protected_territory
+		has_autonomy_state = condominium
+		has_autonomy_state = junior_partner_colony
+		has_autonomy_state = leased_territory
+		has_autonomy_state = mandated_territory_B
+		has_autonomy_state = mandated_territory_C
+		has_autonomy_state = occupied_territory
+		has_autonomy_state = imperial_overseas_territory
+	}
+}
+is_national_system_monarchy = {
+	OR = {
+		has_idea = monarchy_federal_state
+		has_idea = monarchy_unitary_state
+	}
+}
+is_federal_state = {
+	OR = {
+		has_idea = monarchy_federal_state
+		has_idea = republic_federal_state
+		has_idea = federal_dependent_territory
 	}
 }

@@ -1,0 +1,32 @@
+scripted_gui = {
+	geacps_calendar_era = {
+		context_type = player_context
+		window_name = "geacps_calendar_era"
+		
+		properties = {	geacps_calendar_era_icon = {	image = "[GetEraIcon]" }	}
+		triggers = {
+			geacps_calendar_era_change_bt_visible = {	is_ai = no	}
+		}
+		effects = {
+			geacps_calendar_era_change_bt_click = {
+				ROOT = {
+					if = {
+						limit = {	has_country_flag = CALENDAR_JAP_era_flag	}
+						clr_country_flag = CALENDAR_JAP_era_flag
+						set_country_flag = CALENDAR_JAP_imperial_year_flag
+					}
+					else_if = {
+						limit = {	has_country_flag = CALENDAR_JAP_imperial_year_flag	}
+						clr_country_flag = CALENDAR_JAP_imperial_year_flag
+						set_country_flag = CALENDAR_stems_and_branches_flag
+					}
+					else_if = {
+						limit = {	has_country_flag = CALENDAR_stems_and_branches_flag	}
+						clr_country_flag = CALENDAR_stems_and_branches_flag
+						set_country_flag = CALENDAR_JAP_era_flag
+					}
+				}
+			}
+		}
+	}
+}

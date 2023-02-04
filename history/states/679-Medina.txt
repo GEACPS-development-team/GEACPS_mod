@@ -1,0 +1,25 @@
+state = {
+	id = 679
+	name = "STATE_679"
+	manpower = 711000
+	state_category = pastoral
+	
+	history = {
+		owner = SAU
+		add_core_of = SAU
+		HEZ = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+			12883 = {	naval_base = 5	}
+		}
+		victory_points = {	12758	1	}
+		victory_points = {	12883	1	}
+		set_variable = {	SAU_state_variable = 1	}
+		set_variable = {	HEZ_state_variable = 1	}
+	}
+	
+	provinces = {
+		2033	4981	5037	7934	10835	12758	12883
+	}
+	local_supplies = 0.0
+}

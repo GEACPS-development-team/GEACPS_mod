@@ -1,9 +1,13 @@
 ﻿capital = 769
-oob = R-U_1946
 
-BEL = {	set_mandate = yes	}
+BEL = {	set_mandated_territory_B = yes	}
 
 set_cosmetic_tag = COUNTRY_BEL
 set_dictatorship = yes
 
 recruit_character = CHARACTER_eugene_jacques_pierre_louis_jungers
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

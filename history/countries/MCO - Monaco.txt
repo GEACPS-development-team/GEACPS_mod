@@ -1,6 +1,7 @@
 ﻿capital = 1094
-oob = MCO_1946
 set_cosmetic_tag = MCO_principality
+
+FRA = {	set_protected_state = yes	}
 
 set_convoys = 5
 
@@ -22,3 +23,8 @@ set_popularities = {
 }
 
 recruit_character = CHARACTER_louis_honore_charles_antoine_grimaldi
+
+add_ideas = {	#政治タブ
+	monarchy_city_state
+	parliamentary_cabinet_system
+}

@@ -10,7 +10,8 @@ state = {
 	history = {
 		owner = VIN
 		add_core_of = VIN
-		add_core_of = CCH
+		CCH = {	debug_core = yes	}
+		INC = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -19,7 +20,7 @@ state = {
 		victory_points = {	4401	3	}
 		victory_points = {	10261	1	}
 		set_variable = {	VIN_state_variable = 1	}
-		set_variable = {	NAM_state_variable = 1	}
+		set_variable = {	CCH_state_variable = 1	}
 	}
 	
 	provinces = {

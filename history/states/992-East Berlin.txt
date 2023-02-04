@@ -7,11 +7,13 @@ state = {
 	history = {
 		owner = BRL
 		add_core_of = BRL
+		add_core_of = GER
+		EGR = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 4
-			13238 = {	bunker = 1	}
+			13443 = {	bunker = 1	}
 		}
-		victory_points = {	13238	10	}
+		victory_points = {	13443	10	}
 		set_variable = {	BRL_state_variable = 1	}
 		set_variable = {	EGR_state_variable = 1	}
 		set_variable = {	GER_state_variable = 1	}
@@ -20,7 +22,7 @@ state = {
 	}
 	
 	provinces = {
-		13238
+		13443
 	}
 	local_supplies = 0.0
 }

@@ -8,11 +8,14 @@ state = {
 	history = {
 		owner = SPR
 		add_core_of = SPR
+		IBE = {	debug_core = yes	}
+		LMN = {	debug_core = yes	}
 		buildings = {
 			industrial_complex = 1
 			infrastructure = 3
 		}
 		victory_points = {	6832	1	}
+		set_variable = {	LMN_state_variable = 1	}
 		set_variable = {	SPR_state_variable = 1	}
 	}
 	

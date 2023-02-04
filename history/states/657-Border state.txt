@@ -7,20 +7,21 @@ state = {
 	resources = {	steel = 18	}
 	
 	history = {
-		owner = AMR
-		add_core_of = AMR
-		add_core_of = VLA
+		owner = FEA
+		add_core_of = FEA
 		add_core_of = RUS
+		SIB = {	debug_core = yes	}
+		VLA = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			957 = {	naval_base = 8	}
 			957 = {	coastal_bunker = 3	}
 		}
 		victory_points = {	957	15	}
+		set_variable = {	FEA_state_variable = 1	}
 		set_variable = {	VLA_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 1	}
-		set_variable = {	AMR_state_variable = 2	}
 		set_variable = {	MAN_state_variable = 2	}
+		set_variable = {	SIB_state_variable = 2	}
 	}
 	
 	provinces = {

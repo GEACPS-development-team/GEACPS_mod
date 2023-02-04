@@ -1,5 +1,4 @@
 capital = 64
-oob = EGR_1946
 
 SOV = {	set_soviet_satellite = yes	}
 
@@ -23,13 +22,56 @@ set_popularities = {
 	national_populism = 0
 }
 
+set_party_name = {	#ドイツ共産党
+	ideology = total_socialism
+	name = PARTY_communist_party_of_german
+	long_name = PARTY_communist_party_of_german_long
+}
+
+set_party_name = {	#ドイツ社会主義統一党
+	ideology = radical_socialism
+	name = PARTY_socialist_unity_party_of_germany
+	long_name = PARTY_socialist_unity_party_of_germany_long
+}
+set_party_name = {	#ドイツ民主主義統一党
+	ideology = social_democracy
+	name = PARTY_democratic_unity_party_of_germany
+	long_name = PARTY_democratic_unity_party_of_germany_long
+}
 recruit_character = CHARACTER_friedrich_wilhelm_reinhold_pieck
 
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	civilian_dictatorial_system
+}
 add_ideas = {	#国民精神
-	EGR_ministry_for_state_security
-	EGR_the_berlin_declaration
-	EGR_potsdam_agreement
-	EGR_denazification
+	GER_the_berlin_declaration
+	GER_potsdam_agreement
+	GER_halfway_denazification
+	GER_the_east-west_german_wall
 	EGR_hegemonic_party_system
-	EGR_the_east-west_german_wall
+	EGR_ministry_for_state_security
+}
+
+create_intelligence_agency = {	name = "国家保安省 [MfS]"	icon = GFX_ministry_for_state_security	}
+
+set_rule = {
+	can_boost_other_ideologies = no
+	can_create_factions = no
+	can_declare_war_on_same_ideology = no
+	can_declare_war_without_wargoal_when_in_war = no
+	can_decline_call_to_war = no
+	can_force_government = no
+	can_generate_female_aces = no
+	can_guarantee_other_ideologies = no
+	can_join_factions = no
+	can_join_opposite_factions = no
+	can_lower_tension = no
+	can_not_declare_war = no
+	can_occupy_non_war = no
+	can_only_justify_war_on_threat_country = no
+	can_puppet = no
+	can_send_volunteers = no
+	can_use_kamikaze_pilots = no
+	units_deployed_to_overlord = no
 }

@@ -5,14 +5,18 @@ state = {
 	state_category = enclave
 	
 	history = {
-		owner = FRA
+		owner = POD
+		add_core_of = POD
 		add_core_of = IND
+		DVN = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 3
 			10149 = {	naval_base = 1	}
 		}
 		victory_points = {	10149	10	}
+		set_variable = {	POD_state_variable = 1	}
 		set_variable = {	IND_state_variable = 1	}
+		set_variable = {	DVN_state_variable = 1	}
 	}
 	
 	provinces = {

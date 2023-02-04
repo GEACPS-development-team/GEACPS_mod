@@ -1,8 +1,7 @@
 capital = 46
-oob = ROM_1946
 
 set_cosmetic_tag = ROM_kingdom
-set_convoys = 5
+set_convoys = 10
 
 set_politics = {
 	ruling_party = authoritative_democracy
@@ -23,8 +22,12 @@ set_popularities = {
 
 recruit_character = CHARACTER_mihai_de_hohenzollern-sigmaringen
 
-add_ideas = {
+add_ideas = {	#政治タブ
+	monarchy_unitary_state
+	parliamentary_cabinet_system
+}
+add_ideas = {	#国民精神
 	ROM_department_of_state_security
 }
 
-country_event = {	id = geacps_ROM.1	days = 110	}
+country_event = {	id = ROM.1	days = 110	}

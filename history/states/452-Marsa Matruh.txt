@@ -2,6 +2,7 @@ state = {
 	id = 452
 	name = "STATE_452"
 	manpower = 52556
+	buildings_max_level_factor = 1
 	state_category = wasteland
 	
 	history = {
@@ -10,11 +11,15 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
+		victory_points = {	1071	1	}
+		victory_points = {	9989	1	}
+		victory_points = {	10061	2	}
+
 		set_variable = {	EGY_state_variable = 1	}
 	}
 	
 	provinces = {
-		5078	7079	7148	9989	10061	11910	11967	12033	12091
+		1071	4145	7079	9989	10061	11910	11967
 	}
-	local_supplies = 0.0
+	local_supplies=0.0
 }

@@ -1,0 +1,138 @@
+ideas = {#既存国民精神
+	country = {
+		COL_grand_colombian_merchant_fleet = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				min_export = 0.15
+				consumer_goods_factor = -0.075
+				trade_opinion_factor = 0.1
+			}
+		}
+		COL_significant_defence_expenditure = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				army_defence_factor = 0.1
+				army_core_attack_factor = 0.1
+			}
+		}
+		COL_golden_glow = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			rule = {
+				can_create_factions = yes
+			}
+		}
+		COL_reactionism = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				justify_war_goal_time = -0.25
+				war_support_factor = 0.1
+				mobilization_speed = 0.1
+				research_speed_factor = -0.05
+				army_core_attack_factor = 0.1
+			}
+		}
+		COL_agricultural_and_light_industrial_development_1 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = -0.01
+			}
+		}
+		COL_agricultural_and_light_industrial_development_2 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = -0.02
+				conscription_factor = 0.01
+			}
+		}
+		COL_agricultural_and_light_industrial_development_3 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.03
+				conscription_factor = 0.01
+				local_resources_factor = 0.1
+			}
+		}
+		COL_agricultural_and_light_industrial_development_4 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.04
+				conscription_factor = 0.01
+				local_resources_factor = 0.1
+			}
+		}
+		COL_promotion_of_heavy_industrialisation_1 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.01
+			}
+		}
+		COL_promotion_of_heavy_industrialisation_2 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		COL_promotion_of_heavy_industrialisation_3 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.04
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.05
+			}
+		}
+		COL_promotion_of_heavy_industrialisation_4 = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				consumer_goods_factor = 0.06
+				production_speed_buildings_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+		COL_skilled_resource_mining = {
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = no	}
+			removal_cost = -1
+			#picture = graveyard_of_empires
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+	}
+}

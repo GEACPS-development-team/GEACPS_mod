@@ -1,0 +1,24 @@
+state = {
+	id = 1328
+	name = "STATE_1328"
+	manpower = 5000
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	impassable = yes
+	
+	history = {
+		owner = INS
+		add_core_of = INS
+		PNG = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	PNG_state_variable = 1	}
+		set_variable = {	INS_state_variable = 2	}
+	}
+	
+	provinces = {
+		1602	1617	8235	8250	10436
+	}
+	local_supplies = 0.0
+}

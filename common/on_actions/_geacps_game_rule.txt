@@ -1,6 +1,26 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			every_state = {
+				limit = {
+					OR = {
+						check_variable = {	FRA_state_variable = 1	}
+						check_variable = {	GER_state_variable = 1	}
+						check_variable = {	ITA_state_variable = 1	}
+						check_variable = {	NTL_state_variable = 1	}
+						check_variable = {	BEL_state_variable = 1	}
+						check_variable = {	LUX_state_variable = 1	}
+					}
+				}
+				add_to_array = {
+					array = Global.eu_founder_state_array
+					value = THIS
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
 			if = {
 				limit = {
 					has_game_rule = {
@@ -14,12 +34,13 @@ on_actions = {
 							has_autonomy_state = overseas_territory
 							has_autonomy_state = colony
 							has_autonomy_state = colony_and_protectorate
-							has_autonomy_state = federation_of_colonies
+							has_autonomy_state = colonies_federation
 							has_autonomy_state = protected_territory
 							has_autonomy_state = junior_partner_colony
 							has_autonomy_state = leased_territory
 							has_autonomy_state = occupied_territory
-							has_autonomy_state = mandate
+							has_autonomy_state = mandated_territory_B
+							has_autonomy_state = mandated_territory_C
 							has_autonomy_state = imperial_overseas_territory
 							has_autonomy_state = us_territory
 							has_autonomy_state = us_commonwealth

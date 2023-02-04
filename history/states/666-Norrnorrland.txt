@@ -13,6 +13,8 @@ state = {
 	history = {
 		owner = SWE
 		add_core_of = SWE
+		SCA = {	debug_core = yes	}
+		SME = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -20,6 +22,7 @@ state = {
 		}
 		victory_points = {	9108	1	}
 		set_variable = {	SWE_state_variable = 1	}
+		set_variable = {	SME_state_variable = 1	}
 	}
 	
 	provinces = {

@@ -1,14 +1,27 @@
-﻿create_dynamic_country = {	#イギリス統治下オーストリア占領地
+﻿capital = 4
+
+create_dynamic_country = {	#イギリス統治下オーストリア占領地域
 	original_tag = AUS
 	
 	GBR = {	set_occupied_territory = yes	}
 	
 	set_capital = {	state = 1007	}
 	set_country_flag = AUS_GBR_countryflag
-	set_cosmetic_tag = COUNTRY_ENG-GBR
+	set_cosmetic_tag = COUNTRY_GBRbyENG
 	set_dictatorship = yes
 	
-	recruit_character = CHARACTER_richard_loudon_mccreery
+	create_country_leader = {
+		name = CHARACTER_richard_loudon_mccreery
+		desc = "CHARACTER_richard_loudon_mccreery_desc"
+		picture = GFX_richard_loudon_mccreery_large
+		expire = "1967.10.18"
+		ideology = national_authoritarianism_ideology
+	}
+	
+	add_ideas = {	#政治タブ
+		unitary_dependent_territory
+		dependent_territory_direct_rule_system
+	}
 	
 	every_core_state = {	remove_core_of = PREV	}
 	1003 = {	set_owner_and_core_of = yes	}
