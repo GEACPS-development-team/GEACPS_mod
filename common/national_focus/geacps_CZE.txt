@@ -1,3 +1,6 @@
+#!gfx:interface/icon_of_focus/_geacps_generic.gfx
+#!gfx:interface/icon_of_focus/geacps_CZE.gfx
+
 focus_tree = {
 	id = CZE_focus_tree
 	country = {
@@ -17,7 +20,7 @@ focus_tree = {
 }
 shared_focus = {
 	id = CZE_resurrection
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_resurrection
 	cost = 5.00
 	x = 4
 	y = 0
@@ -26,7 +29,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_joint_with_exiles
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_joint_with_exiles
 	cost = 5.00
 	relative_position_id = CZE_resurrection
 	x = -1
@@ -42,7 +45,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_fate_of_masaryk
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_fate_of_masaryk
 	cost = 5.00
 	relative_position_id = CZE_resurrection
 	x = 1
@@ -58,7 +61,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_establish_constitution
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_establish_constitution
 	cost = 5.00
 	relative_position_id = CZE_joint_with_exiles
 	x = 0
@@ -71,7 +74,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_purge_tisso_faction
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_purge_tisso_faction
 	cost = 5.00
 	relative_position_id = CZE_establish_constitution
 	x = -1
@@ -83,8 +86,8 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = CZE_remember_herba
-	icon = GFX_goal_unknown
+	id = CZE_remember_hacha
+	icon = GFX_CZE_remember_hacha
 	cost = 5.00
 	relative_position_id = CZE_purge_tisso_faction
 	x = -1
@@ -97,7 +100,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_cheer_up_slovak
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_cheer_up_slovak
 	cost = 5.00
 	relative_position_id = CZE_purge_tisso_faction
 	x = 1
@@ -109,8 +112,8 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = CZE_beness_relaxtion
-	icon = GFX_goal_unknown
+	id = CZE_benes_relaxtion
+	icon = GFX_CZE_benes_relaxtion
 	cost = 5.00
 	relative_position_id = CZE_purge_tisso_faction
 	x = 0
@@ -123,7 +126,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_democratic_election
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_democratic_election
 	cost = 5.00
 	relative_position_id = CZE_cheer_up_slovak
 	x = 0
@@ -132,14 +135,14 @@ shared_focus = {
 		focus = CZE_republic_procalm
 	}
 	prerequisite = {
-		focus = CZE_beness_relaxtion
+		focus = CZE_benes_relaxtion
 	}
 	completion_reward = {
 	}
 }
 shared_focus = {
 	id = CZE_another_to_west
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_another_to_west
 	cost = 5.00
 	relative_position_id = CZE_democratic_election
 	x = -1
@@ -155,10 +158,10 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_befriend_east
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_befriend_east
 	cost = 5.00
 	relative_position_id = CZE_another_to_west
-	x = -1
+	x = -2
 	y = 1
 	prerequisite = {
 		focus = CZE_another_to_west
@@ -168,10 +171,10 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_east_europe_democratic_union
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_east_europe_democratic_union
 	cost = 5.00
 	relative_position_id = CZE_another_to_west
-	x = 0
+	x = -1
 	y = 2
 	prerequisite = {
 		focus = CZE_another_to_west
@@ -181,7 +184,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_select_dobchek
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_select_dobchek
 	cost = 5.00
 	relative_position_id = CZE_fate_of_masaryk
 	x = 1
@@ -198,7 +201,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_select_gottwald
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_select_gottwald
 	cost = 5.00
 	relative_position_id = CZE_fate_of_masaryk
 	x = 3
@@ -215,7 +218,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_systematic_coup
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_systematic_coup
 	cost = 5.00
 	relative_position_id = CZE_select_gottwald
 	x = 0
@@ -228,7 +231,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_czech_superiority
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_czech_superiority
 	cost = 5.00
 	relative_position_id = CZE_systematic_coup
 	x = -1
@@ -241,7 +244,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_for_stalinism
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_for_stalinism
 	cost = 5.00
 	relative_position_id = CZE_systematic_coup
 	x = 1
@@ -254,7 +257,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_start_nationalizaion
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_start_nationalizaion
 	cost = 5.00
 	relative_position_id = CZE_systematic_coup
 	x = 0
@@ -270,7 +273,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_peoples_democracy
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_peoples_democracy
 	cost = 5.00
 	relative_position_id = CZE_start_nationalizaion
 	x = 0
@@ -284,7 +287,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_independent_diplo
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_independent_diplo
 	cost = 5.00
 	relative_position_id = CZE_peoples_democracy
 	x = -2
@@ -298,7 +301,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_befriend_with_friends
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_befriend_with_friends
 	cost = 5.00
 	relative_position_id = CZE_independent_diplo
 	x = 1
@@ -311,7 +314,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_third_way
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_third_way
 	cost = 5.00
 	relative_position_id = CZE_befriend_with_friends
 	x = 0
@@ -324,7 +327,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_select_zapotokki
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_select_zapotokki
 	cost = 5.00
 	relative_position_id = CZE_fate_of_masaryk
 	x = 5
@@ -341,7 +344,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_independent_route
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_independent_route
 	cost = 5.00
 	relative_position_id = CZE_select_zapotokki
 	x = 1
@@ -354,7 +357,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_rivival_soc_dem
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_rivival_soc_dem
 	cost = 5.00
 	relative_position_id = CZE_independent_route
 	x = 0
@@ -367,7 +370,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_reconciliation 
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_reconciliation
 	cost = 5.00
 	relative_position_id = CZE_independent_route
 	x = 2
@@ -380,7 +383,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_ban_communism
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_ban_communism
 	cost = 5.00
 	relative_position_id = CZE_independent_route
 	x = 1
@@ -396,7 +399,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_friendship_with_powers
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_friendship_with_powers
 	cost = 5.00
 	relative_position_id = CZE_ban_communism
 	x = 0
@@ -409,7 +412,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_neutralization
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_neutralization
 	cost = 5.00
 	relative_position_id = CZE_friendship_with_powers
 	x = 1
@@ -422,7 +425,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_remove_politcs_in_comintern
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_remove_politcs_in_comintern
 	cost = 5.00
 	relative_position_id = CZE_neutralization
 	x = 0
@@ -435,7 +438,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_joint_military_organization
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_joint_military_organization
 	cost = 5.00
 	relative_position_id = CZE_remove_politcs_in_comintern
 	x = 0
@@ -448,7 +451,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_following_comintern
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_following_comintern
 	cost = 5.00
 	relative_position_id = CZE_friendship_with_powers
 	x = -2
@@ -461,8 +464,8 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = CZE_mutual_id_Economy
-	icon = GFX_goal_unknown
+	id = CZE_mutual_aid_economy
+	icon = GFX_CZE_mutual_aid_economy
 	cost = 5.00
 	relative_position_id = CZE_following_comintern
 	x = -1
@@ -475,7 +478,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_joint_tank_research
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_joint_tank_research
 	cost = 5.00
 	relative_position_id = CZE_following_comintern
 	x = 1
@@ -488,13 +491,13 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_rostov_agreement
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_rostov_agreement
 	cost = 5.00
 	relative_position_id = CZE_following_comintern
 	x = 0
 	y = 2
 	prerequisite = {
-		focus = CZE_mutual_id_Economy
+		focus = CZE_mutual_aid_economy
 	}
 	prerequisite = {
 		focus = CZE_joint_tank_research
@@ -504,7 +507,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_peoples_socialism
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_peoples_socialism
 	cost = 5.00
 	relative_position_id = CZE_select_dobchek
 	x = 0
@@ -517,7 +520,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_start_liberalization
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_start_liberalization
 	cost = 5.00
 	relative_position_id = CZE_peoples_socialism
 	x = -1
@@ -530,7 +533,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_republic_procalm
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_republic_procalm
 	cost = 5.00
 	relative_position_id = CZE_start_liberalization
 	x = -1
@@ -547,7 +550,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_with_other_partys
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_with_other_partys
 	cost = 5.00
 	relative_position_id = CZE_peoples_socialism
 	x = 0
@@ -563,7 +566,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_support_slovak_democracy
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_support_slovak_democracy
 	cost = 5.00
 	relative_position_id = CZE_with_other_partys
 	x = -1
@@ -576,7 +579,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_befriend_west
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_befriend_west
 	cost = 5.00
 	relative_position_id = CZE_republic_procalm
 	x = 0
@@ -593,7 +596,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_weapon_export_west
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_weapon_export_west
 	cost = 5.00
 	relative_position_id = CZE_befriend_west
 	x = -1
@@ -606,7 +609,7 @@ shared_focus = {
 }
 shared_focus = {
 	id = CZE_middle_of_europe
-	icon = GFX_goal_unknown
+	icon = GFX_CZE_middle_of_europe
 	cost = 5.00
 	relative_position_id = CZE_befriend_west
 	x = 1
@@ -619,17 +622,39 @@ shared_focus = {
 	}
 }
 shared_focus = {
-	id = CZE_to_the_allys
-	icon = GFX_goal_unknown
+	id = CZE_to_the_western_european_union
+	icon = GFX_generic_frendship_with_FRA
 	cost = 5.00
 	relative_position_id = CZE_befriend_west
-	x = 0
+	x = -1
 	y = 2
 	prerequisite = {
 		focus = CZE_weapon_export_west
 	}
 	prerequisite = {
 		focus = CZE_middle_of_europe
+	}
+	mutually_exclusive = {
+		focus = CZE_to_the_westminster_treaty_organisation
+	}
+	completion_reward = {
+	}
+}
+shared_focus = {
+	id = CZE_to_the_westminster_treaty_organisation
+	icon = GFX_generic_frendship_with_GBRbyENG_united_kingdom
+	cost = 5.00
+	relative_position_id = CZE_befriend_west
+	x = 1
+	y = 2
+	prerequisite = {
+		focus = CZE_weapon_export_west
+	}
+	prerequisite = {
+		focus = CZE_middle_of_europe
+	}
+	mutually_exclusive = {
+		focus = CZE_to_the_western_european_union
 	}
 	completion_reward = {
 	}

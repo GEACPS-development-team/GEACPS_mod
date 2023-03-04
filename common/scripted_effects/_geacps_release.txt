@@ -2587,9 +2587,9 @@ release_country_cosmetic = {
 			set_cosmetic_tag = GER_confederation
 		}
 		else_if = {	#ドイツ帝国
-			limit = {	ROOT = {	has_country_flag = GER_empire_flag	}	}
+			limit = {	ROOT = {	has_country_flag = GERbyPRE_empire_flag	}	}
 			add_ideas = monarchy_federal_state
-			set_cosmetic_tag = GER_empire
+			set_cosmetic_tag = GERbyPRE_empire
 		}
 		else_if = {	#ドイツ共和国
 			limit = {	ROOT = {	has_country_flag = GER_republic_flag	}	}
