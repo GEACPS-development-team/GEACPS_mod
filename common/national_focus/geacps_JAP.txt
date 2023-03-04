@@ -1,3 +1,6 @@
+#!gfx:interface\icon_of_focus\_geacps_generic.gfx
+#!gfx:interface\icon_of_focus\geacps_JAP.gfx
+
 focus_tree = {
 	id = JAP_focus_tree
 	country = {
@@ -34,8 +37,8 @@ focus_tree = {
 		}
 	}
 	focus = {	#重臣会議を開催する
-		id = JAP_senior_statesmen's_conference
-		icon = GFX_focus_JAP_senior_statesmen's_conference
+		id = JAP_senior_statesmens_conference
+		icon = GFX_focus_JAP_senior_statesmens_conference
 		cost = 1
 		x = -1
 		y = 1
@@ -76,7 +79,7 @@ focus_tree = {
 			has_country_flag = JAP_decision_of_declaration
 		}
 		prerequisite = {
-			focus = JAP_senior_statesmen's_conference
+			focus = JAP_senior_statesmens_conference
 		}
 		prerequisite = {
 			focus = JAP_cabinet_meeting
