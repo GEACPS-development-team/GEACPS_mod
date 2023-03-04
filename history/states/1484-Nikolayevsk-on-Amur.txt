@@ -1,6 +1,6 @@
 state = {
-	id = 1239
-	name = "STATE_1239"
+	id = 1484
+	name = "STATE_1484"
 	manpower = 28492
 	state_category = rural
 	
@@ -13,7 +13,9 @@ state = {
 		SIB = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 2
+			12559 = {	naval_base = 1	}
 		}
+		victory_points = {	12559	1	}
 		set_variable = {	FEA_state_variable = 1	}
 		set_variable = {	KHB_state_variable = 1	}
 		set_variable = {	MAN_state_variable = 2	}
@@ -22,7 +24,7 @@ state = {
 	}
 	
 	provinces = {
-		7868
+		12559
 	}
 	local_supplies = 0.0
 }
