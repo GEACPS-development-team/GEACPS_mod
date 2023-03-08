@@ -73,7 +73,7 @@ scss_set_stock = {#essential temp variables add_country and add_value
 						log = "該当"
 						add_to_variable = { global.scss_value_list^i_value = add_value }
 						if = {
-							limit = { check_variable = { global.scss_value_list^i_value < 0 } }
+							limit = { check_variable = { NOT = { global.scss_value_list^i_value < 0 } }}
 							var:global.scss_country_list^i_value = {
 								remove_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
 								SCZ = { 
