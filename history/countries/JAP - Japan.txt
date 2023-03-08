@@ -104,8 +104,21 @@ add_to_faction = CH4
 give_guarantee = BRM
 give_guarantee = FEA
 give_guarantee = MON
-
-diplomatic_relation = { country = GBR	relation = non_aggression_pact }
+CH3 = {
+	diplomatic_relation = {	country = CH1	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = CH2	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = CH4	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = SGH	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = MEN	relation = non_aggression_pact	}
+}
+CH4 = {
+	diplomatic_relation = {	country = CH1	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = CH2	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = CH3	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = SGH	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = MEN	relation = non_aggression_pact	}
+}
+diplomatic_relation = {	country = GBR	relation = non_aggression_pact	}
 declare_war_on = {	target = CHI	type = annex_everything	}
 add_opinion_modifier = {	target = USA	modifier = america_imperialism	}
 

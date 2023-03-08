@@ -843,6 +843,7 @@ shared_focus = {	#中華民国臨時政府の樹立
 	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_operation_chahar"
+		release_autonomy = {	target = CH1	autonomy_state = imperial_protected_state	}
 	}
 	prerequisite = {	focus = JAP_peiking_tientsin_operation	}
 	relative_position_id = JAP_peiking_tientsin_operation
@@ -869,6 +870,7 @@ shared_focus = {	#蒙古自治邦の樹立
 	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_establishment_of_SGH_great_way_municipal_government"
+		release_autonomy = {	target = MEN	autonomy_state = imperial_protected_state	}
 	}
 	prerequisite = {	focus = JAP_operation_chahar	}
 	relative_position_id = JAP_operation_chahar
@@ -895,6 +897,7 @@ shared_focus = {	#上海大同政府樹立
 	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_establishment_of_SGH_great_way_municipal_government"
+		release_autonomy = {	target = SGH	autonomy_state = imperial_protected_state	}
 	}
 	prerequisite = {	focus = JAP_2nd_shanghai_incident	}
 	relative_position_id = JAP_2nd_shanghai_incident
@@ -921,6 +924,7 @@ shared_focus = {	#中華民国維新政府の樹立
 	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_operation_chahar"
+		release_autonomy = {	target = CH2	autonomy_state = imperial_protected_state	}
 	}
 	prerequisite = {	focus = JAP_battle_of_nanking	}
 	relative_position_id = JAP_battle_of_nanking
@@ -934,6 +938,8 @@ shared_focus = {	#南支諸政府の承認
 	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_approval_of_the_southern_china_governments"
+		give_guarantee = CH3
+		give_guarantee = CH4
 	}
 	prerequisite = {	focus = JAP_establishment_of_CHI_minguo_reformed_government	}
 	prerequisite = {	focus = JAP_establishment_of_CHI_minguo_provisional_government	}
@@ -948,6 +954,15 @@ shared_focus = {	#汪兆銘統一政府の形成
 	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_formation_of_the_wang_jingwei_ming_unity_government"
+		set_autonomy = {	target = CH4	autonomy_state = imperial_protected_state	}
+		CH4 = {
+			set_capital = {	state = 613	}
+			set_cosmetic_tag = CHI_minguo_reorganized_national_government
+			annex_country = {	target = CH1	transfer_troops = yes	}
+			annex_country = {	target = CH2	transfer_troops = yes	}
+			annex_country = {	target = CH3	transfer_troops = yes	}
+			annex_country = {	target = SGH	transfer_troops = yes	}
+		}
 	}
 	prerequisite = {	focus = JAP_approval_of_the_southern_china_governments	}
 	relative_position_id = JAP_establishment_of_CHI_minguo_reformed_government
@@ -962,6 +977,20 @@ shared_focus = {	#反蒋合作
 	available = {	hidden_trigger = {	always = no	}	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_anti_chiang_united_front"
+		CH3 = {
+			diplomatic_relation = {	country = CH1	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = CH2	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = CH4	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = SGH	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = MEN	relation = non_aggression_pact	}
+		}
+		CH4 = {
+			diplomatic_relation = {	country = CH1	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = CH2	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = CH3	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = SGH	relation = non_aggression_pact	}
+			diplomatic_relation = {	country = MEN	relation = non_aggression_pact	}
+		}
 	}
 	prerequisite = {	focus = JAP_approval_of_the_southern_china_governments	}
 	relative_position_id = JAP_establishment_of_CHI_minguo_provisional_government
