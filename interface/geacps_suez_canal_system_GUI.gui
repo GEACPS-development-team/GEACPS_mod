@@ -114,6 +114,15 @@ guiTypes = {
 		name = "scss_stockholder_list_entry"
 		size = { width = 280 height = 24 }
 		position = { x = 0 y = 0 }
+		iconType = {
+			name ="scss_stock_holder_color"
+			spriteType = "GFX_iss_ISS_circle_list"
+			position = { x= 10 y =  10 }
+			frame = 1
+			pdx_tooltip = ges_largest_faction
+
+		}
+
 		instantTextboxType = {
 			name = "scss_stock_holder_country_name"
 			position = { x = 0 y = 10 }

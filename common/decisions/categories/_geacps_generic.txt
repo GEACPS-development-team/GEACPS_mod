@@ -27,13 +27,15 @@ suez_canal_system = {
 				array = global.scss_country_list
 				value = ROOT
 			}
-			count_triggers = {
-				amount = 2
+			AND = {
 				is_major = yes	
-				num_of_factories > 60
-				has_stability > 0.49
-				NOT = { has_government = total_socialism  }
-				NOT = { has_government = radical_socialism  }
+				count_triggers = {
+					amount = 2
+					num_of_factories > 60
+					has_stability > 0.49
+					NOT = { has_government = total_socialism  }
+					NOT = { has_government = radical_socialism  }
+				}	
 			}
 		}
 
