@@ -1,3 +1,6 @@
+#!gfx:interface\picture_of_country_event\_geacps_generic.gfx
+#!gfx:interface\picture_of_country_event\geacps_GRE.gfx
+
 add_namespace = GRE_civil_war
 country_event = {
 	id = GRE_civil_war.0
@@ -27,7 +30,7 @@ country_event = {
 		illegalization_of_total_socialism_party = yes
 		illegalization_of_radical_socialism_party = yes
 		set_cosmetic_tag = GRE_kingdom_government
-		complete_national_focus = GRE_kingdom_of_greece
+		complete_national_focus = GRE_government_kingdom_of_greece
 		set_global_flag = GRE_civil_war_start_flag
 		news_event = {	id = GRE_news.0	hours = 6	}
 		country_event = {	id = GRE_civil_war.1	hours = 10	}
@@ -46,7 +49,7 @@ country_event = {
 			illegalization_of_radical_socialism_party = yes
 			set_country_flag = GRE_civil_war_enemy_faction_flag
 			set_cosmetic_tag = GRE_kingdom_government
-			complete_national_focus = GRE_kingdom_of_greece
+			complete_national_focus = GRE_government_kingdom_of_greece
 			country_event = {	id = GRE_civil_war.1	hours = 10	}
 		}
 		illegalization_of_liberal_democracy_party = yes

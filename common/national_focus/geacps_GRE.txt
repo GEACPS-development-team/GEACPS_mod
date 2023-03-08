@@ -1,3 +1,6 @@
+#!gfx:interface/icon_of_focus/_geacps_generic.gfx
+#!gfx:interface/icon_of_focus/geacps_GRE.gfx
+
 focus_tree = {
 	id = GRE_focus_tree
 	country = {
@@ -9,15 +12,14 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = GRE_civil_war_start
-	shared_focus = GRE_end_of_civil_war
 	initial_show_position = {	focus = GRE_civil_war_start	}
 }
 
 shared_focus = {
 	id = GRE_civil_war_start
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_civil_war_start
 	cost = 20
-	x = 17
+	x = 6
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -30,8 +32,8 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = GRE_kingdom_of_greece
-	icon = GFX_generic_suspend_constitution
+	id = GRE_government_kingdom_of_greece
+	icon = GFX_GRE_government_kingdom_of_greece
 	cost = 2
 	x = -1
 	y = 1
@@ -39,7 +41,7 @@ shared_focus = {
 		factor = 1
 	}
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus GRE_kingdom_of_greece"
+		log = "[GetDateText]: [Root.GetName]: Focus GRE_government_kingdom_of_greece"
 		load_focus_tree = GRE_kingdom_civil_war_focus_tree
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -50,7 +52,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_provisional_democratic_government_of_greece
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_provisional_democratic_government_of_greece
 	cost = 2
 	x = 1
 	y = 1
@@ -64,7 +66,7 @@ shared_focus = {
 	}
 	relative_position_id = GRE_civil_war_start
 	prerequisite = { focus = GRE_civil_war_start }
-	mutually_exclusive = {	focus = GRE_kingdom_of_greece	}
+	mutually_exclusive = {	focus = GRE_government_kingdom_of_greece	}
 }
 
 #ギリシャ内戦(王国)
@@ -79,15 +81,14 @@ focus_tree = {
 	}
 	default = no
 	shared_focus = GRE_papandreous_resignation
-	shared_focus = GRE_end_of_civil_war
 	initial_show_position = {	focus = GRE_papandreous_resignation	}
 }
 
 shared_focus = {
 	id = GRE_papandreous_resignation
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_papandreous_resignation
 	cost = 2
-	x = 18
+	x = 6
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -99,7 +100,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_yugoslav_border_blockade
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_yugoslav_border_blockade
 	cost = 2
 	x = 2
 	y = 1
@@ -115,7 +116,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_promises_elections
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_promises_elections
 	cost = 2
 	x = -1
 	y = 1
@@ -133,7 +134,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_last_offensive
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_last_offensive
 	cost = 2
 	x = 0
 	y = 1
@@ -151,7 +152,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_request_to_the_united_kingdom
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_generic_frendship_with_GBRbyENG_united_kingdom
 	cost = 2
 	x = 0
 	y = 1
@@ -167,7 +168,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_fascist_amnesty
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_fascist_amnesty
 	cost = 2
 	x = -2
 	y = 1
@@ -183,7 +184,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_use_of_kings_rights
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_use_of_kings_rights
 	cost = 2
 	x = -3
 	y = 1
@@ -201,7 +202,7 @@ shared_focus = {
 
 shared_focus = {
 	id = GRE_calls_for_the_resigning_of_the_varkiza_accords
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_GRE_calls_for_the_resigning_of_the_varkiza_accords
 	cost = 2
 	x = -2
 	y = 1
@@ -230,7 +231,6 @@ focus_tree = {
 	default = no
 	shared_focus = GRE_led_by_the_communist_party
 	shared_focus = GRE_led_by_the_national_liberation_front
-	shared_focus = GRE_end_of_civil_war
 	initial_show_position = {	focus = GRE_led_by_the_communist_party	}
 }
 
@@ -238,7 +238,7 @@ shared_focus = {
 	id = GRE_led_by_the_communist_party
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 22
+	x = 4
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -383,7 +383,7 @@ shared_focus = {
 	id = GRE_led_by_the_national_liberation_front
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 26
+	x = 8
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -545,7 +545,7 @@ shared_focus = {
 	id = GRE_declaration_of_rebuilding_the_nation
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 21
+	x = 2
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -759,7 +759,7 @@ shared_focus = {
 	id = GRE_republican_declaration
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 21
+	x = 2
 	y = 0
 	ai_will_do = {
 		factor = 1
@@ -1040,7 +1040,7 @@ shared_focus = {
 	id = GRE_end_of_civil_war
 	icon = GFX_generic_suspend_constitution
 	cost = 2
-	x = 9
+	x = 19
 	y = 0
 	ai_will_do = {
 		factor = 1
