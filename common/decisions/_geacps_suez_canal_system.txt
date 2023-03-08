@@ -63,9 +63,8 @@ suez_canal_system = {
         }
         complete_effect = {
             log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_all"
-            set_temp_variable = { add_country = ROOT }
-            set_temp_variable = { add_value = global.scss_total_stocks }
-            scss_set_stock = yes
+            set_temp_variable = { remove_country = ROOT }
+            scss_sell_all_stock = yes
         }
     }
     scss_sell_stock_10 = {	#一部を売却
