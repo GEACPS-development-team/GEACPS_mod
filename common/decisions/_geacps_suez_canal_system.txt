@@ -14,7 +14,7 @@ suez_canal_system = {
         priority = 100
         icon = generic_decision
         available = {
-            is_in_array = { global.scss_country_list = ROOT }
+            # is_in_array = { global.scss_country_list = ROOT }
         }
         visible = { 
             check_variable = { global.scss_total_stocks < global.scss_stock_issue_total }
