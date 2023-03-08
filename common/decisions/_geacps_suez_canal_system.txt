@@ -59,7 +59,11 @@ suez_canal_system = {
         priority = 100
         icon = generic_decision
         available = {
-            is_in_array = { global.scss_country_list = ROOT }
+            custom_trigger_tooltip = {
+                tooltip = tt_scss_not_in_stokers
+                is_in_array = { global.scss_country_list = ROOT }
+            }
+
         }
         complete_effect = {
             log = "[GetDateText]: [Root.GetName]: dec scss_sell_stock_all"
