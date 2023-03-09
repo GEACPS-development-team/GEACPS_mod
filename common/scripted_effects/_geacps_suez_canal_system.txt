@@ -41,7 +41,7 @@ scss_first_setting = {
 	log = "scss first setup finished"
 
 }
-scss_set_stock = {#essential temp variables add_country and add_value
+scss_set_stock_2 = {#essential temp variables add_country and add_value
 	if = {
 		limit = {
 			has_variable = add_country
@@ -117,6 +117,114 @@ scss_set_stock = {#essential temp variables add_country and add_value
 		scss_calculate_stock_ratio = yes
 	}
 }
+scss_set_stock = {
+	if = {#必要な変数の確認
+		limit = {
+			has_variable = add_country
+			has_variable = add_value
+			# NOT = {
+			# 	check_variable = { add_value > 0 } 
+			# 	check_variable = { global.scss_stock_issue_total > global.scss_total_stocks } #発行量 > 流通量
+			# }	
+
+		}
+		set_temp_variable = { temp_surplus = global.scss_stock_issue_total } 
+		subtract_from_temp_variable = { temp_surplus = global.scss_total_stocks }# 発行済みの未流通量
+		log = "発行済みの未流通量:[?temp_surplus]"
+
+		if = { #新規追加？
+			limit = { NOT = { is_in_array = {  array = global.scss_country_list value = add_country  } } }
+			log = "新規追加"
+
+			#新規追加処理
+			add_to_array = { global.scss_country_list = add_country }
+			add_to_array = { global.scss_value_list = 0 }#追加処理は後でやるので	
+			add_to_array = { global.scss_ratio_list = 0 }	
+			add_to_variable = { global.scss_stock_holders = 1 }
+			var:add_country = {
+				add_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+				give_guarantee = SCZ
+			}
+			SCZ = { give_military_access = var:add_country }
+			scss_add_value = yes #本追加
+		}
+		else = {#新規追加以外（通常、数値調整が必要、削除）
+			log = "新規追加以外"
+
+			for_each_loop = {#国家リストからif文で探し出す
+				array = global.scss_country_list
+				value = v_tag
+				index = i_value
+				if = { 
+					limit = { check_variable = { v_tag = add_country } }
+					set_temp_variable = { temp_result = global.scss_value_list^i_value }
+					add_to_temp_variable = { temp_result = add_value }#temp_resultに変更後の値をお試しで代入する
+				}
+			}
+			log = "お試し代入:[?temp_result]"
+
+			if = {#0以下なら削除だよね
+				limit = { NOT = { check_variable = { temp_result > 0 } } }
+				add_to_variable = { global.scss_stock_holders = -1 }
+				for_each_scope_loop = {#国家リストからif文で探し出す
+					array = global.scss_country_list
+					if = { 
+						limit = { check_variable = { v_tag = add_country } }
+						remove_dynamic_modifier = { modifier = scss_benefits_of_suez_canal }
+						SCZ = { 
+							diplomatic_relation = {#軍事通行権削除
+								country = PREV
+								relation = military_access
+								active = no
+							}
+						}
+						diplomatic_relation = {#独立保障を削除
+							country = SCZ
+							relation = guarantee
+							active = no
+						}
+						remove_from_array = {
+							array = global.scss_country_list
+							index = i_value
+							# value = v_tag
+						}
+						remove_from_array = {
+							array = global.scss_value_list
+							index = i_value
+							# value = v_tag
+						}
+		
+					}
+				}
+			}
+			else_if = {#発効可能量より大きかったら数値の調整必要だよね
+				limit = { check_variable = { temp_surplus < add_value } }
+				set_temp_variable = { add_value = temp_surplus }
+				scss_add_value = yes #本追加
+				log = "数値調整の後追加"
+
+			}
+			else = {
+				scss_add_value = yes #本追加
+				log = "通常の追加"
+			}
+		}
+		scss_calculate_stock_ratio = yes
+	}
+}
+scss_add_value = {#scss_set_stock用増加コード
+	for_each_loop = {#国家リストからif文で探し出す
+		array = global.scss_country_list
+		value = v_tag
+		index = i_value
+		if = { 
+			limit = { check_variable = { v_tag = add_country } }
+			add_to_variable = { global.scss_value_list^i_value = add_value }
+		}
+	}
+
+
+}
 scss_move_stock = {#essential temp variables add_country remove_country and add_value
 	if = {
 		limit = {
@@ -132,11 +240,14 @@ scss_move_stock = {#essential temp variables add_country remove_country and add_
 		set_temp_variable = { temp_add_value = add_value }
 		set_temp_variable = { temp_remove_value = add_value }
 		multiply_temp_variable = { temp_remove_value = -1 }
-
+		log = "[?remove_country.GetName]から[?add_country.GetName]へ[?add_value]の送金"
+		log = "[?remove_country.GetName]は[?temp_remove_value]を失う"
+		log = "[?add_country.GetName]は[?temp_add_value]を得る"
+		#引く
 		set_temp_variable = { add_country = temp_remove_country }
 		set_temp_variable = { add_value = temp_remove_value }
 		scss_set_stock = yes	
-
+		#足す
 		set_temp_variable = { add_country = temp_add_country }
 		set_temp_variable = { add_value = temp_add_value }
 		scss_set_stock = yes	
