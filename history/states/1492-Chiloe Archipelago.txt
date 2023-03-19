@@ -1,7 +1,7 @@
 state = {
-	id = 507
-	name = "STATE_507"
-	manpower = 48800
+	id = 1492
+	name = "STATE_1492"
+	manpower = 102000
 	state_category = pastoral
 	
 	history = {
@@ -10,12 +10,13 @@ state = {
 		SAC = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 1
+			13472 = {	naval_base = 1	}
 		}
 		set_variable = {	CHL_state_variable = 1	}
 	}
 	
 	provinces = {
-		5201	5209	5215	8218	8913
+		13472
 	}
 	local_supplies = 0.0
 }

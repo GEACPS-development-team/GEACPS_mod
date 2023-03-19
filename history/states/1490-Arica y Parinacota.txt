@@ -1,11 +1,11 @@
 state = {
-	id = 279
-	name = "STATE_279"
-	manpower = 1840000
+	id = 1490
+	name = "STATE_1490"
+	manpower = 29100
 	buildings_max_level_factor = 1
-	state_category = large_city
+	state_category = town
 	
-	resources = {	steel = 16	}
+	resources = {	tungsten = 6	}
 	
 	history = {
 		owner = CHL
@@ -13,18 +13,15 @@ state = {
 		SAC = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 3
+			industrial_complex = 1
 			arms_factory = 1
-			industrial_complex = 7
-			air_base = 3
-			8222 = {	naval_base = 5	}
-			650 = {	bunker = 1	}
 		}
-		victory_points = {	650	10	}
 		set_variable = {	CHL_state_variable = 1	}
+		set_variable = {	BOL_state_variable = 2	}
 	}
 	
 	provinces = {
-		650	8222	8229
+		5131
 	}
 	local_supplies = 0.0
 }
