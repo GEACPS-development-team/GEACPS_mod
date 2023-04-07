@@ -1,0 +1,22 @@
+state = {
+	id = 1502
+	name = "STATE_1502"
+	manpower = 567000
+	state_category = pastoral
+	
+	history = {
+		owner = VEN
+		add_core_of = VEN
+		SAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 2
+			10912 = {	naval_base = 2	}
+		}
+		set_variable = {	VEN_state_variable = 1	}
+	}
+	
+	provinces = {
+		8080	10823	10912
+	}
+	local_supplies = 0.0
+}

@@ -1,0 +1,24 @@
+state = {
+	id = 1495
+	name = "STATE_1495"
+	manpower = 500
+	state_category = city
+	impassable = yes
+	
+	history = {
+		owner = GYA
+		add_core_of = GYA
+		add_core_of = SUR
+		SAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	GYA_state_variable = 1	}
+		set_variable = {	SUR_state_variable = 1	}
+	}
+	
+	provinces = {
+		13531
+	}
+	local_supplies = 0.0
+}
