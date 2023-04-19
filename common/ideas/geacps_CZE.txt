@@ -1,16 +1,27 @@
 ideas = {	#既存国民精神
 	country = {
-		CZE_state_security = {	#StB
-			allowed = {
-				always = no
-			}
-			allowed_civil_war = {
-				always = yes
-			}
+		CZE_spreading_flames_of_revolution = {	#燃え広がる革命の炎
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
 			removal_cost = -1
-			picture = state_security
+			# picture = 
 			modifier = {
-				agency_upgrade_time = -0.1
+				stability_factor = -0.1
+				total_socialism_drift = 0.01
+				radical_socialism_drift = 0.01
+			}
+		}
+		CZE_honor_state_in_eastern_europe = {	#東欧の優等生
+			allowed = {	always = no	}
+			allowed_civil_war = {	always = yes	}
+			removal_cost = -1
+			# picture = 
+			modifier = {
+				political_power_gain = 0.05
+				economy_cost_factor = -0.15
+				trade_laws_cost_factor = -0.15
+				mobilization_laws_cost_factor = -0.15
+				political_advisor = -0.15
 			}
 		}
 		CZE_peoples_democracy_manifesto = {	#人民民主主義宣言
