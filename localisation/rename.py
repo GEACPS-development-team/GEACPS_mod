@@ -10,7 +10,7 @@ for before_file in files:
 	#テキスト内編集
 	with open(before_file, encoding="utf_8_sig") as f:
 		text_lines = f.read()
-	text_lines = text_lines.replace(before_word, after_word)
+	text_lines = text_lines.replace(before_word + ":\n", after_word + ":\n")
 	with open(before_file, mode = "w", encoding = "utf_8_sig") as f:
 		f.write(text_lines)
 	
