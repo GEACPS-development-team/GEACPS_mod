@@ -1,3 +1,8 @@
+has_endonym_lang_flag = {
+	OR = {
+		always = no
+	}
+}
 tag_or_subject_of = {
 	PREV = {
 		OR = {
@@ -700,7 +705,7 @@ endonym_eu_trigger = {	#バスク語
 			has_country_flag = endonym_eu_flag
 			AND = {
 				has_endonym_lang_flag = no
-				BAS = {	tag_or_subject_of = yes	}
+				BSQ = {	tag_or_subject_of = yes	}
 			}
 		}
 	}
