@@ -1,0 +1,12 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_state = {	rename_to_local_lang_state = yes	}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			FROM.FROM ={	rename_to_local_lang_state = yes	}
+		}
+	}
+}

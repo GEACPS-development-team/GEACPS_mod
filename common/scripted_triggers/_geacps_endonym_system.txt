@@ -1,0 +1,850 @@
+tag_or_subject_of = {
+	PREV = {
+		OR = {
+			AND = {
+				tag = PREV
+				is_dependent_territory = no
+			}
+			AND = {
+				is_subject_of = PREV
+				is_dependent_territory = yes
+			}
+		}
+	}
+}
+endonym_de_nazi_trigger = {	#ナチス・ドイツ
+	controller = {
+		OR = {
+			has_country_flag = endonym_de_nazi_flag
+			AND = {
+				has_endonym_lang_flag = no
+				GER = {	tag_or_subject_of = yes	}
+				has_country_leader_ideology = national_socialism_ideology
+			}
+		}
+	}
+}
+endonym_en_american_trigger = {	#アメリカ
+	controller = {
+		OR = {
+			has_country_flag = endonym_en_american_flag
+			AND = {
+				has_endonym_lang_flag = no
+				USA = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ru_bukharinism_trigger = {	#ブハーリン主義ロシア
+	controller = {
+		OR = {
+			has_country_flag = endonym_ru_bukharinism_flag
+			AND = {
+				has_endonym_lang_flag = no
+				soviet_member_trigger = yes
+				has_country_leader_ideology = bukharinism_ideology
+			}
+		}
+	}
+}
+endonym_ru_monarchy_trigger = {	#君主制ロシア
+	controller = {
+		OR = {
+			has_country_flag = endonym_ru_monarchy_flag
+			AND = {
+				has_endonym_lang_flag = no
+				RUS = {	tag_or_subject_of = yes	}
+				is_national_system_monarchy = yes
+			}
+		}
+	}
+}
+endonym_ru_stalinism_trigger = {	#スターリン主義ロシア
+	controller = {
+		OR = {
+			has_country_flag = endonym_ru_stalinism_flag
+			AND = {
+				has_endonym_lang_flag = no
+				soviet_member_trigger = yes
+				has_country_leader_ideology = stalinism_ideology
+			}
+		}
+	}
+}
+endonym_ru_trotskyism_trigger = {	#トロツキー主義ロシア
+	controller = {
+		OR = {
+			has_country_flag = endonym_ru_trotskyism_flag
+			AND = {
+				has_endonym_lang_flag = no
+				soviet_member_trigger = yes
+				has_country_leader_ideology = trotskyism_ideology
+			}
+		}
+	}
+}
+endonym_de_trigger = {	#ドイツ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_de_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					AUS = {	tag_or_subject_of = yes	}
+					EGR = {	tag_or_subject_of = yes	}
+					GER = {	tag_or_subject_of = yes	}
+					SGR = {	tag_or_subject_of = yes	}
+					WGR = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_en_trigger = {	#英語
+	controller = {
+		OR = {
+			has_country_flag = endonym_en_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					AST = {	tag_or_subject_of = yes	}
+					CAN = {	tag_or_subject_of = yes	}
+					ENG = {	tag_or_subject_of = yes	}
+					GBR = {	tag_or_subject_of = yes	}
+					NFL = {	tag_or_subject_of = yes	}
+					NZL = {	tag_or_subject_of = yes	}
+					USA = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_fr_trigger = {	#フランス語
+	controller = {
+		OR = {
+			has_country_flag = endonym_fr_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					FRA = {	tag_or_subject_of = yes	}
+					MCO = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_it_trigger = {	#イタリア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_it_flag
+			AND = {
+				has_endonym_lang_flag = no
+				ITA = {	tag_or_subject_of = yes	}
+				SRD = {	tag_or_subject_of = yes	}
+				VNC = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ja_trigger = {	#日本語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ja_flag
+			AND = {
+				has_endonym_lang_flag = no
+				JAP = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_la_trigger = {	#ラテン語
+	controller = {
+		OR = {
+			has_country_flag = endonym_la_flag
+			AND = {
+				has_endonym_lang_flag = no
+				VAT = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ru_trigger = {	#ロシア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ru_flag
+			AND = {
+				has_endonym_lang_flag = no
+				RUS = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ar_trigger = {	#アラビア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ar_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					ALG = {	tag_or_subject_of = yes	}
+					BHR = {	tag_or_subject_of = yes	}
+					CHA = {	tag_or_subject_of = yes	}
+					COM = {	tag_or_subject_of = yes	}
+					DJI = {	tag_or_subject_of = yes	}
+					EGY = {	tag_or_subject_of = yes	}
+					ERI = {	tag_or_subject_of = yes	}
+					IRQ = {	tag_or_subject_of = yes	}
+					JOR = {	tag_or_subject_of = yes	}
+					KUW = {	tag_or_subject_of = yes	}
+					LBA = {	tag_or_subject_of = yes	}
+					LEB = {	tag_or_subject_of = yes	}
+					MOR = {	tag_or_subject_of = yes	}
+					MRT = {	tag_or_subject_of = yes	}
+					MSC = {	tag_or_subject_of = yes	}
+					OMA = {	tag_or_subject_of = yes	}
+					PAL = {	tag_or_subject_of = yes	}
+					QAT = {	tag_or_subject_of = yes	}
+					SAU = {	tag_or_subject_of = yes	}
+					SUD = {	tag_or_subject_of = yes	}
+					SYR = {	tag_or_subject_of = yes	}
+					TRC = {	tag_or_subject_of = yes	}
+					TUN = {	tag_or_subject_of = yes	}
+					WES = {	tag_or_subject_of = yes	}
+					YEM = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_es_trigger = {	#スペイン語
+	controller = {
+		OR = {
+			has_country_flag = endonym_es_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					ARG = {	tag_or_subject_of = yes	}
+					BOL = {	tag_or_subject_of = yes	}
+					CHL = {	tag_or_subject_of = yes	}
+					COL = {	tag_or_subject_of = yes	}
+					COS = {	tag_or_subject_of = yes	}
+					CUB = {	tag_or_subject_of = yes	}
+					DOM = {	tag_or_subject_of = yes	}
+					ECU = {	tag_or_subject_of = yes	}
+					ELS = {	tag_or_subject_of = yes	}
+					EQG = {	tag_or_subject_of = yes	}
+					GUA = {	tag_or_subject_of = yes	}
+					HON = {	tag_or_subject_of = yes	}
+					MEX = {	tag_or_subject_of = yes	}
+					NIC = {	tag_or_subject_of = yes	}
+					PAN = {	tag_or_subject_of = yes	}
+					PAR = {	tag_or_subject_of = yes	}
+					PRU = {	tag_or_subject_of = yes	}
+					PUE = {	tag_or_subject_of = yes	}
+					SPR = {	tag_or_subject_of = yes	}
+					URG = {	tag_or_subject_of = yes	}
+					VEN = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_nl_trigger = {	#ネーデルラント語
+	controller = {
+		OR = {
+			has_country_flag = endonym_nl_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					NTL = {	tag_or_subject_of = yes	}
+					SUR = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_pt_trigger = {	#ポルトガル語
+	controller = {
+		OR = {
+			has_country_flag = endonym_pt_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					ANG = {	tag_or_subject_of = yes	}
+					BRA = {	tag_or_subject_of = yes	}
+					CPV = {	tag_or_subject_of = yes	}
+					GNB = {	tag_or_subject_of = yes	}
+					MZB = {	tag_or_subject_of = yes	}
+					POR = {	tag_or_subject_of = yes	}
+					STP = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_ota_trigger = {	#オスマン語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ota_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OTT = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_az_trigger = {	#アゼルバイジャン語
+	controller = {
+		OR = {
+			has_country_flag = endonym_az_flag
+			AND = {
+				has_endonym_lang_flag = no
+				AZR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_fa_trigger = {	#ペルシャ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_fa_flag
+			AND = {
+				has_endonym_lang_flag = no
+				PER = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_hy_trigger = {	#アルメニア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_hy_flag
+			AND = {
+				has_endonym_lang_flag = no
+				ARM = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_kk_trigger = {	#カザフ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_kk_flag
+			AND = {
+				has_endonym_lang_flag = no
+				KAZ = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_mn_trigger = {	#モンゴル語
+	controller = {
+		OR = {
+			has_country_flag = endonym_mn_flag
+			AND = {
+				has_endonym_lang_flag = no
+				MON = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ms_trigger = {	#マレー語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ms_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					MAL = {	tag_or_subject_of = yes	}
+					SIN = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_tr_trigger = {	#トルコ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_tr_flag
+			AND = {
+				has_endonym_lang_flag = no
+				TUR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_vi_trigger = {	#ベトナム語
+	controller = {
+		OR = {
+			has_country_flag = endonym_vi_flag
+			AND = {
+				has_endonym_lang_flag = no
+				VIN = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_zh_trigger = {	#中国語
+	controller = {
+		OR = {
+			has_country_flag = endonym_zh_flag
+			AND = {
+				has_endonym_lang_flag = no
+				CHI = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_br_trigger = {	#ブリトン語
+	controller = {
+		OR = {
+			has_country_flag = endonym_br_flag
+			AND = {
+				has_endonym_lang_flag = no
+				BRI = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ko_trigger = {	#朝鮮語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ko_flag
+			AND = {
+				has_endonym_lang_flag = no
+				KOR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_mnc_trigger = {	#満州語
+	controller = {
+		OR = {
+			has_country_flag = endonym_mnc_flag
+			AND = {
+				has_endonym_lang_flag = no
+				MAN = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ps_trigger = {	#パシュート語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ps_flag
+			AND = {
+				has_endonym_lang_flag = no
+				AFG = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ta_trigger = {	#タミル語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ta_flag
+			AND = {
+				has_endonym_lang_flag = no
+				DVN = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ug_trigger = {	#ウイグル語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ug_flag
+			AND = {
+				has_endonym_lang_flag = no
+				ETR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_HUN_JAP_trigger = {	#日本領洪牙利
+	controller = {
+		OR = {
+			has_country_flag = endonym_HUN_JAP_flag
+			AND = {
+				has_endonym_lang_flag = no
+			}
+		}
+	}
+}
+endonym_be_trigger = {	#ベラルーシ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_be_flag
+			AND = {
+				has_endonym_lang_flag = no
+				BLR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_bg_trigger = {	#ブルガリア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_bg_flag
+			AND = {
+				has_endonym_lang_flag = no
+				BUL = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_cs_trigger = {	#チェコ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_cs_flag
+			AND = {
+				has_endonym_lang_flag = no
+				CZE = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_da_trigger = {	#デンマーク語
+	controller = {
+		OR = {
+			has_country_flag = endonym_da_flag
+			AND = {
+				has_endonym_lang_flag = no
+				DEN = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_el_trigger = {	#ギリシャ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_el_flag
+			AND = {
+				has_endonym_lang_flag = no
+				GRE = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_fi_trigger = {	#フィンランド語
+	controller = {
+		OR = {
+			has_country_flag = endonym_fi_flag
+			AND = {
+				has_endonym_lang_flag = no
+				FIN = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_hu_trigger = {	#ハンガリー語
+	controller = {
+		OR = {
+			has_country_flag = endonym_hu_flag
+			AND = {
+				has_endonym_lang_flag = no
+				HUN = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_is_trigger = {	#アイスランド語
+	controller = {
+		OR = {
+			has_country_flag = endonym_is_flag
+			AND = {
+				has_endonym_lang_flag = no
+				ICE = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_lb_trigger = {	#ルクセンブルク語
+	controller = {
+		OR = {
+			has_country_flag = endonym_lb_flag
+			AND = {
+				has_endonym_lang_flag = no
+				LUX = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_lt_trigger = {	#リトアニア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_lt_flag
+			AND = {
+				has_endonym_lang_flag = no
+				LIT = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_lv_trigger = {	#ラトビア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_lv_flag
+			AND = {
+				has_endonym_lang_flag = no
+				LAT = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_pl_trigger = {	#ポーランド語
+	controller = {
+		OR = {
+			has_country_flag = endonym_pl_flag
+			AND = {
+				has_endonym_lang_flag = no
+				POL = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ro_trigger = {	#ルーマニア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ro_flag
+			AND = {
+				has_endonym_lang_flag = no
+				ROM = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_sq_trigger = {	#アルバニア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_sq_flag
+			AND = {
+				has_endonym_lang_flag = no
+				ALB = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_sr_trigger = {	#セルビア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_sr_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OR = {
+					SER = {	tag_or_subject_of = yes	}
+					MNT = {	tag_or_subject_of = yes	}
+				}
+			}
+		}
+	}
+}
+endonym_sv_trigger = {	#スウェーデン語
+	controller = {
+		OR = {
+			has_country_flag = endonym_sv_flag
+			AND = {
+				has_endonym_lang_flag = no
+				SWE = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_uk_trigger = {	#ウクライナ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_uk_flag
+			AND = {
+				has_endonym_lang_flag = no
+				UKR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_co_trigger = {	#コルシカ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_co_flag
+			AND = {
+				has_endonym_lang_flag = no
+				COR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_crh_trigger = {	#クリミア・タタール語
+	controller = {
+		OR = {
+			has_country_flag = endonym_crh_flag
+			AND = {
+				has_endonym_lang_flag = no
+				CRI = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_csb_trigger = {	#カシューブ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_csb_flag
+			AND = {
+				has_endonym_lang_flag = no
+				KSH = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_eu_trigger = {	#バスク語
+	controller = {
+		OR = {
+			has_country_flag = endonym_eu_flag
+			AND = {
+				has_endonym_lang_flag = no
+				BAS = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_hr_trigger = {	#クロアチア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_hr_flag
+			AND = {
+				has_endonym_lang_flag = no
+				CRO = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_mk_trigger = {	#マケドニア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_mk_flag
+			AND = {
+				has_endonym_lang_flag = no
+				MAC = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_oc_trigger = {	#オック語
+	controller = {
+		OR = {
+			has_country_flag = endonym_oc_flag
+			AND = {
+				has_endonym_lang_flag = no
+				OCC = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_scn_trigger = {	#シチリア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_scn_flag
+			AND = {
+				has_endonym_lang_flag = no
+				SIC = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_sco_trigger = {	#スコットランド語
+	controller = {
+		OR = {
+			has_country_flag = endonym_sco_flag
+			AND = {
+				has_endonym_lang_flag = no
+				SCO = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_sk_trigger = {	#スロバキア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_sk_flag
+			AND = {
+				has_endonym_lang_flag = no
+				SLO = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_sl_trigger = {	#スロベニア語
+	controller = {
+		OR = {
+			has_country_flag = endonym_sl_flag
+			AND = {
+				has_endonym_lang_flag = no
+				SLV = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ch_trigger = {	#チャモロ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ch_flag
+			AND = {
+				has_endonym_lang_flag = no
+				GUA = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_fj_trigger = {	#フィジー語
+	controller = {
+		OR = {
+			has_country_flag = endonym_fj_flag
+			AND = {
+				has_endonym_lang_flag = no
+				FIJ = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_gil_trigger = {	#キリバス語
+	controller = {
+		OR = {
+			has_country_flag = endonym_gil_flag
+			AND = {
+				has_endonym_lang_flag = no
+				KIR = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_haw_trigger = {	#ハワイ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_haw_flag
+			AND = {
+				has_endonym_lang_flag = no
+				HAW = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_pau_trigger = {	#パラオ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_pau_flag
+			AND = {
+				has_endonym_lang_flag = no
+				PLW = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}
+endonym_ty_trigger = {	#タヒチ語
+	controller = {
+		OR = {
+			has_country_flag = endonym_ty_flag
+			AND = {
+				has_endonym_lang_flag = no
+				TAH = {	tag_or_subject_of = yes	}
+			}
+		}
+	}
+}

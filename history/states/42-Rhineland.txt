@@ -1,33 +1,28 @@
 state = {
 	id = 42
 	name = "STATE_42"
-	manpower = 3027739
+	manpower = 61500
 	state_category = metropolis
-	
-	resources = {
-		steel = 59
-		aluminium = 14
-	}
 	
 	history = {
 		owner = RHI
 		add_core_of = RHI
 		add_core_of = GER
-		SGR = {	debug_core = yes	}
+		NGR = {	debug_core = yes	}
 		WGR = {	debug_core = yes	}
 		buildings = {
 			infrastructure = 4
-			industrial_complex = 3
 		}
-		victory_points = {	11560	10	}
-		set_variable = {	GER_state_variable = 1	}
+		victory_points = {	587	30	}
+		victory_points = {	13442	30	}
 		set_variable = {	RHI_state_variable = 1	}
-		set_variable = {	SGR_state_variable = 1	}
+		set_variable = {	GER_state_variable = 1	}
+		set_variable = {	NGR_state_variable = 1	}
 		set_variable = {	WGR_state_variable = 1	}
 	}
 	
 	provinces = {
-		563	3423	3558	9575	11547	11560
+		587	3444	9522	3547	11470	11494	13442
 	}
 	local_supplies = 0.0
 }

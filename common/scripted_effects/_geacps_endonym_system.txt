@@ -1,0 +1,30 @@
+rename_to_local_lang_state = {
+	ATC = {
+		CHARACTER_mikado_penguin = {
+			meta_effect = {
+				text = {	set_character_name = [STATE_NAME]	}
+				STATE_NAME = "STATE_[PREV.PREV.GetId]"
+			}
+		}
+	}
+	meta_effect = {
+		text = {	set_state_name = "[STATE_NAME]"	}
+		STATE_NAME = "[ATC.CHARACTER_mikado_penguin.GetName]"
+	}
+	for_each_loop = {
+		array = state_victory_points
+		ATC = {
+			CHARACTER_mikado_penguin = {
+				meta_effect = {
+					text = {	set_character_name = "[VP_NAME]"	}
+					VP_NAME = "VICTORY_POINTS_[?v]"
+				}
+			}
+		}
+		meta_effect = {
+			text = {	set_province_name = {	id = [VP_ID]	name = "[VP_NAME]"	}	}
+			VP_ID = "[?v]"
+			VP_NAME = "[ATC.CHARACTER_mikado_penguin.GetName]"
+		}
+	}
+}
