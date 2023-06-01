@@ -1,30 +1,43 @@
 ﻿capital = 1298
 set_cosmetic_tag = VIE_free_city
 
+set_independent_politicians_in_all = yes
 set_politics = {
-	ruling_party = authoritative_democracy
-	last_election = "1946.1.1"
-	election_frequency = 48
-	elections_allowed = no
+	ruling_party = social_democracy
+	last_election = "1945.11.25"
+	election_frequency = 60
+	elections_allowed = yes
+	name = PARTY_socialist_party_of_austria
+	long_name = PARTY_socialist_party_of_austria_long
 }
 set_popularities = {
-	total_socialism = 0
+	total_socialism = 6
 	radical_socialism = 0
-	social_democracy = 0
+	social_democracy = 58
 	liberal_democracy = 0
-	conservative_democracy = 0
-	authoritative_democracy = 100
+	conservative_democracy = 36
+	authoritative_democracy = 0
 	national_authoritarianism = 0
 	national_populism = 0
 }
-
-create_country_leader = {
-	name = "ウィーン暫定政府"
-	desc = ""
-	picture = "GFX_National_Council"
-	expire = "1955.5.15"
-	ideology = authoritative_democracy_ideology
+set_party_name = {	#オーストリア共産党
+	ideology = total_socialism
+	name = PARTY_communist_party_of_austria
+	long_name = PARTY_communist_party_of_austria_long
 }
+set_party_name = {	#オーストリア共産党
+	ideology = radical_socialism
+	name = PARTY_communist_party_of_austria
+	long_name = PARTY_communist_party_of_austria_long
+}
+set_party_name = {	#オーストリア人民党
+	ideology = conservative_democracy
+	name = PARTY_austria_peoples_party
+	long_name = PARTY_austria_peoples_party_long
+}
+illegalization_of_national_populism = yes
+
+recruit_character = CHARACTER_theodor_korner_edler_von_siegringen
 
 add_ideas = {	#政治タブ
 	republic_city_state

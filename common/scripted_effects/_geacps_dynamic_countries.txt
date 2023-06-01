@@ -1,0 +1,151 @@
+set_CHI_minguo_provisional_government_at_start = {
+	create_dynamic_country = {	#中華民国臨時政府
+		original_tag = CHI
+		
+		JAP = {	set_imperial_protected_state = yes	}
+		
+		set_capital = {	state = 1150	}
+		set_country_flag = CHI_provisional_countryflag
+		set_cosmetic_tag = CHI_minguo_provisional_government
+		
+		set_politics = {
+			ruling_party = national_populism
+			elections_allowed = no
+			name = PARTY_provisional_government_administrative_commission
+			long_name = PARTY_provisional_government_administrative_commission_long
+		}
+		set_popularities = {	national_populism = 100	}
+		illegalization_of_total_socialism = yes
+		illegalization_of_radical_socialism = yes
+		illegalization_of_social_democracy = yes
+		illegalization_of_liberal_democracy = yes
+		illegalization_of_conservative_democracy = yes
+		illegalization_of_authoritative_democracy = yes
+		set_party_name = {	#臨時政府行政委員会
+			ideology = national_authoritarianism
+			name = PARTY_provisional_government_administrative_commission
+			long_name = PARTY_provisional_government_administrative_commission_long
+		}
+		
+		add_ideas = {	#政治タブ
+			republic_unitary_state
+			provisional_government
+		}
+		
+		every_core_state = {	
+			limit = {	is_core_of_not_CHI_JAP = yes	}
+			remove_core_of = PREV
+		}
+		transfer_state = 609
+		transfer_state = 597
+		transfer_state = 614
+		transfer_state = 615
+		transfer_state = 743
+		transfer_state = 1081
+		transfer_state = 1150
+		transfer_state = 1152
+		transfer_state = 1160
+		transfer_state = 1261
+		transfer_state = 1459
+		transfer_state = 1460
+		
+		declare_war_on = {	target = CHI	type = civil_war	}
+	}
+	CHI = {
+		CHARACTER_wang_yintai = {
+			set_nationality = CH2
+			promote_character = yes
+		}
+	}
+}
+set_CHI_minguo_reformed_government_at_start = {
+	create_dynamic_country = {	#中華民国維新政府
+		original_tag = CHI
+		
+		JAP = {	set_imperial_protected_state = yes	}
+		
+		set_capital = {	state = 613	}
+		set_oob = CHI_minguo_reformed_government_1946
+		set_country_flag = CHI_reformed_countryflag
+		set_cosmetic_tag = CHI_minguo_reformed_government
+		
+		set_politics = {
+			ruling_party = national_populism
+			elections_allowed = no
+			name = PARTY_reformed_government_executive_court
+			long_name = PARTY_reformed_government_executive_court_long
+		}
+		set_popularities = {	national_populism = 100	}
+		illegalization_of_total_socialism = yes
+		illegalization_of_radical_socialism = yes
+		illegalization_of_social_democracy = yes
+		illegalization_of_liberal_democracy = yes
+		illegalization_of_conservative_democracy = yes
+		illegalization_of_authoritative_democracy = yes
+		set_party_name = {	#維新政府行政委員会
+			ideology = national_authoritarianism
+			name = PARTY_reformed_government_executive_court
+			long_name = PARTY_reformed_government_executive_court_long
+		}
+		
+		add_ideas = {	#政治タブ
+			republic_unitary_state
+			provisional_government
+		}
+		
+		every_core_state = {	
+			limit = {	is_core_of_not_CHI_JAP = yes	}
+			remove_core_of = PREV
+		}
+		transfer_state = 596
+		transfer_state = 598
+		transfer_state = 600
+		transfer_state = 606
+		transfer_state = 607
+		transfer_state = 613
+		transfer_state = 1064
+		transfer_state = 1148
+		transfer_state = 1149
+		transfer_state = 1151
+		
+		set_province_controller = 4091
+		
+		set_province_controller = 1036
+		set_province_controller = 4009
+		set_province_controller = 4631
+		set_province_controller = 7580
+		set_province_controller = 7625
+		set_province_controller = 7637
+		set_province_controller = 9959
+		set_province_controller = 10462
+		set_province_controller = 12467
+		
+		set_province_controller = 1448
+		set_province_controller = 1640
+		set_province_controller = 4091
+		set_province_controller = 4125
+		set_province_controller = 7097
+		set_province_controller = 7159
+		set_province_controller = 7502
+		set_province_controller = 9982
+		set_province_controller = 9999
+		set_province_controller = 10335
+		set_province_controller = 10377
+		set_province_controller = 10757
+		set_province_controller = 11918
+		set_province_controller = 12053
+		set_province_controller = 12350
+		set_province_controller = 12378
+		set_province_controller = 12483
+		set_province_controller = 12414
+		set_province_controller = 13143
+		
+		declare_war_on = {	target = CHI	type = civil_war	}
+	}
+	CHI = {
+		CHARACTER_liang_hongzhi = {
+			set_nationality = CH3
+			promote_character = yes
+		}
+	}
+}

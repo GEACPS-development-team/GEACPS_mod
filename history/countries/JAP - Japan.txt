@@ -25,8 +25,8 @@ set_popularities = {
 	national_populism = 3
 }
 set_imperial_rule_assistance_political_society = yes
-illegalization_of_total_socialism_party = yes
-illegalization_of_radical_socialism_party = yes
+illegalization_of_total_socialism = yes
+illegalization_of_radical_socialism = yes
 
 recruit_character = CHARACTER_hirohito
 recruit_character = CHARACTER_morimasa_nashimoto
@@ -94,27 +94,32 @@ country_event = {	id = JAP.2	days = 22	}
 
 create_intelligence_agency = {	name = "特別高等警察"	icon = GFX_secret_military_agency	}
 
+#
+SGH = {	JAP = {	set_imperial_protected_state = yes	}	}
+set_CHI_minguo_provisional_government_at_start = yes
+set_CHI_minguo_reformed_government_at_start = yes
+
 #陣営
 create_faction = GREATER_EAST_ASIA_CO-PROSPERITY_SPHERE
 add_to_faction = JAP
 add_to_faction = SIA
-add_to_faction = CH3
 add_to_faction = CH4
+add_to_faction = CH5
 
 give_guarantee = BRM
 give_guarantee = FEA
 give_guarantee = MON
-CH3 = {
-	diplomatic_relation = {	country = CH1	relation = non_aggression_pact	}
+CH4 = {
 	diplomatic_relation = {	country = CH2	relation = non_aggression_pact	}
-	diplomatic_relation = {	country = CH4	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = CH3	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = CH5	relation = non_aggression_pact	}
 	diplomatic_relation = {	country = SGH	relation = non_aggression_pact	}
 	diplomatic_relation = {	country = MEN	relation = non_aggression_pact	}
 }
-CH4 = {
-	diplomatic_relation = {	country = CH1	relation = non_aggression_pact	}
+CH5 = {
 	diplomatic_relation = {	country = CH2	relation = non_aggression_pact	}
 	diplomatic_relation = {	country = CH3	relation = non_aggression_pact	}
+	diplomatic_relation = {	country = CH4	relation = non_aggression_pact	}
 	diplomatic_relation = {	country = SGH	relation = non_aggression_pact	}
 	diplomatic_relation = {	country = MEN	relation = non_aggression_pact	}
 }
