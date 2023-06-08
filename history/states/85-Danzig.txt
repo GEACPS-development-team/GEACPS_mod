@@ -19,12 +19,12 @@ state = {
 			362 = {	naval_base = 5	}
 		}
 		victory_points = {	362	10	}
-		set_variable = {	POL_state_variable = 1	}
-		set_variable = {	DZN_state_variable = 1	}
-		set_variable = {	KSH_state_variable = 1	}
-		set_variable = {	PRE_state_variable = 1	}
-		set_variable = {	EGR_state_variable = 4	}
-		set_variable = {	GER_state_variable = 4	}
+		add_to_array = {	POL.pfk_state_array_1 = THIS	}
+		add_to_array = {	DZN.pfk_state_array_1 = THIS	}
+		add_to_array = {	KSH.pfk_state_array_1 = THIS	}
+		add_to_array = {	PRE.pfk_state_array_1 = THIS	}
+		add_to_array = {	EGR.pfk_state_array_4 = THIS	}
+		add_to_array = {	GER.pfk_state_array_4 = THIS	}
 	}
 	
 	provinces = {

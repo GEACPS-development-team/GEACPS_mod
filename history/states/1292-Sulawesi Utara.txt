@@ -13,8 +13,8 @@ state = {
 			1351 = {	naval_base = 1	}
 			10153 = {	naval_base = 3	}
 		}
-		set_variable = {	INS_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		add_to_array = {	INS.pfk_state_array_1 = THIS	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

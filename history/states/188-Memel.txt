@@ -15,10 +15,10 @@ state = {
 			industrial_complex = 1
 			3288 = {	naval_base = 1	}
 		}
-		set_variable = {	LIT_state_variable = 1	}
-		set_variable = {	PRE_state_variable = 1	}
-		set_variable = {	EGR_state_variable = 4	}
-		set_variable = {	GER_state_variable = 4	}
+		add_to_array = {	LIT.pfk_state_array_1 = THIS	}
+		add_to_array = {	PRE.pfk_state_array_1 = THIS	}
+		add_to_array = {	EGR.pfk_state_array_4 = THIS	}
+		add_to_array = {	GER.pfk_state_array_4 = THIS	}
 	}
 	
 	provinces = {

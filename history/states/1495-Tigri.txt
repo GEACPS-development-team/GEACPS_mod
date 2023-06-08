@@ -13,8 +13,8 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	GYA_state_variable = 1	}
-		set_variable = {	SUR_state_variable = 1	}
+		add_to_array = {	GYA.pfk_state_array_1 = THIS	}
+		add_to_array = {	SUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

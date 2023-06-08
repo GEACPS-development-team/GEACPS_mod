@@ -24,10 +24,10 @@ state = {
 		}
 		victory_points = {	6282	5	}
 		victory_points = {	11372	3	}
-		set_variable = {	POL_state_variable = 1	}
-		set_variable = {	EGR_state_variable = 2	}
-		set_variable = {	GER_state_variable = 2	}
-		set_variable = {	NGR_state_variable = 2	}
+		add_to_array = {	POL.pfk_state_array_1 = THIS	}
+		add_to_array = {	EGR.pfk_state_array_2 = THIS	}
+		add_to_array = {	GER.pfk_state_array_2 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -16,8 +16,8 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	FIN_state_variable = 1	}
-		set_variable = {	SME_state_variable = 1	}
+		add_to_array = {	FIN.pfk_state_array_1 = THIS	}
+		add_to_array = {	SME.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

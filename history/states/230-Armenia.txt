@@ -16,8 +16,8 @@ state = {
 			air_base = 2
 		}
 		victory_points = {	12320	1	}
-		set_variable = {	ARM_state_variable = 1	}
-		set_variable = {	AZR_state_variable = 2	}
+		add_to_array = {	ARM.pfk_state_array_1 = THIS	}
+		add_to_array = {	AZR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

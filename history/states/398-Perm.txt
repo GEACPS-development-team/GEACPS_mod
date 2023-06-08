@@ -15,9 +15,9 @@ state = {
 			infrastructure = 3
 			arms_factory = 1
 		}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	PRM_state_variable = 1	}
-		set_variable = {	URA_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	PRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	URA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

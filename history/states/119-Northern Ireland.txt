@@ -22,8 +22,8 @@ state = {
 		}
 		victory_points = {	385	1	}
 		victory_points = {	3379	5	}
-		set_variable = {	IRE_state_variable = 1	}
-		set_variable = {	NIR_state_variable = 1	}
+		add_to_array = {	IRE.pfk_state_array_1 = THIS	}
+		add_to_array = {	NIR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -11,9 +11,9 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	BEL_state_variable = 1	}
-		set_variable = {	WLL_state_variable = 1	}
-		set_variable = {	LUX_state_variable = 2	}
+		add_to_array = {	BEL.pfk_state_array_1 = THIS	}
+		add_to_array = {	WLL.pfk_state_array_1 = THIS	}
+		add_to_array = {	LUX.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

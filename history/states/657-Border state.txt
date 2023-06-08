@@ -18,10 +18,10 @@ state = {
 			957 = {	coastal_bunker = 3	}
 		}
 		victory_points = {	957	15	}
-		set_variable = {	FEA_state_variable = 1	}
-		set_variable = {	VLA_state_variable = 1	}
-		set_variable = {	MAN_state_variable = 2	}
-		set_variable = {	SIB_state_variable = 2	}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	VLA.pfk_state_array_1 = THIS	}
+		add_to_array = {	MAN.pfk_state_array_2 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

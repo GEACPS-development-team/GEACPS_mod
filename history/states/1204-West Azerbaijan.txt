@@ -11,9 +11,9 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	PER_state_variable = 1	}
-		set_variable = {	KUR_state_variable = 1	}
-		set_variable = {	AZR_state_variable = 2	}
+		add_to_array = {	PER.pfk_state_array_1 = THIS	}
+		add_to_array = {	KUR.pfk_state_array_1 = THIS	}
+		add_to_array = {	AZR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -14,8 +14,8 @@ state = {
 			infrastructure = 1
 		}
 		victory_points = {	7294	1	}
-		set_variable = {	SCH_state_variable = 1	}
-		set_variable = {	XIK_state_variable = 1	}
+		add_to_array = {	SCH.pfk_state_array_1 = THIS	}
+		add_to_array = {	XIK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -18,8 +18,8 @@ state = {
 			6889 = {	naval_base = 1	}
 		}
 		victory_points = {	3924	3	}
-		set_variable = {	CRO_state_variable = 1	}
-		set_variable = {	DAL_state_variable = 1	}
+		add_to_array = {	CRO.pfk_state_array_1 = THIS	}
+		add_to_array = {	DAL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

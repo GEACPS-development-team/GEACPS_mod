@@ -13,8 +13,8 @@ state = {
 			industrial_complex = 2
 		}
 		victory_points = {	6652	1	}
-		set_variable = {	ROM_state_variable = 1	}
-		set_variable = {	WLC_state_variable = 1	}
+		add_to_array = {	ROM.pfk_state_array_1 = THIS	}
+		add_to_array = {	WLC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

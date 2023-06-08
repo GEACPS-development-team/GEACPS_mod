@@ -16,8 +16,8 @@ state = {
 			10512 = {	naval_base = 2	}
 		}
 		victory_points = {	10444	10	}
-		set_variable = {	JAP_state_variable = 1	}
-		set_variable = {	EZO_state_variable = 1	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
+		add_to_array = {	EZO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

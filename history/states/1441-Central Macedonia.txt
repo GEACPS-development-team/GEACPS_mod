@@ -13,8 +13,8 @@ state = {
 			11818 = {	naval_base = 3	}
 		}
 		victory_points = {	11818	5	}
-		set_variable = {	GRE_state_variable = 1	}
-		set_variable = {	MAC_state_variable = 2	}
+		add_to_array = {	GRE.pfk_state_array_1 = THIS	}
+		add_to_array = {	MAC.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

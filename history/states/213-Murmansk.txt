@@ -20,8 +20,8 @@ state = {
 			3134 = {	coastal_bunker = 1	}
 		}
 		victory_points = {	3134	5	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	SME_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	SME.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

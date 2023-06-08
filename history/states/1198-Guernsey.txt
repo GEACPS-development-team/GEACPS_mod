@@ -13,8 +13,8 @@ state = {
 			3422 = {	naval_base = 1	}
 		}
 		victory_points = {	3422	1	}
-		set_variable = {	GUE_state_variable = 1	}
-		set_variable = {	NRM_state_variable = 1	}
+		add_to_array = {	GUE.pfk_state_array_1 = THIS	}
+		add_to_array = {	NRM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

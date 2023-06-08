@@ -13,9 +13,9 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	BRM_state_variable = 1	}
-		set_variable = {	NAG_state_variable = 1	}
-		set_variable = {	YUN_state_variable = 2	}
+		add_to_array = {	BRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	NAG.pfk_state_array_1 = THIS	}
+		add_to_array = {	YUN.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

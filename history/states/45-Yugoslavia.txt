@@ -15,8 +15,8 @@ state = {
 			infrastructure = 3
 		}
 		victory_points = {	619	3	}
-		set_variable = {	SER_state_variable = 1	}
-		set_variable = {	VOJ_state_variable = 1	}
+		add_to_array = {	SER.pfk_state_array_1 = THIS	}
+		add_to_array = {	VOJ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

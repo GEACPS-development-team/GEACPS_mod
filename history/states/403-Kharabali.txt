@@ -13,8 +13,8 @@ state = {
 			infrastructure = 2
 		}
 		victory_points = {	4824	1	}
-		set_variable = {	SIB_state_variable = 1	}
-		set_variable = {	TYU_state_variable = 1	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	TYU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

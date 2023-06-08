@@ -19,8 +19,8 @@ state = {
 		}
 		victory_points = {	732	10	}
 		victory_points = {	9665	3	}
-		set_variable = {	AUS_state_variable = 1	}
-		set_variable = {	UAS_state_variable = 1	}
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	UAS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -18,8 +18,8 @@ state = {
 			air_base = 1
 		}
 		victory_points = {	5010	5	}
-		set_variable = {	ETH_state_variable = 1	}
-		set_variable = {	ORO_state_variable = 1	}
+		add_to_array = {	ETH.pfk_state_array_1 = THIS	}
+		add_to_array = {	ORO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

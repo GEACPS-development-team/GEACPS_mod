@@ -11,8 +11,8 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	KUW_state_variable = 1	}
-		set_variable = {	HIL_state_variable = 1	}
+		add_to_array = {	KUW.pfk_state_array_1 = THIS	}
+		add_to_array = {	HIL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

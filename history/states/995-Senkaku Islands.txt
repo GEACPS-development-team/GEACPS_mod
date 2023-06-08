@@ -11,9 +11,9 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	JAP_state_variable = 1	}
-		set_variable = {	RYU_state_variable = 1	}
-		set_variable = {	TWN_state_variable = 2	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
+		add_to_array = {	RYU.pfk_state_array_1 = THIS	}
+		add_to_array = {	TWN.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

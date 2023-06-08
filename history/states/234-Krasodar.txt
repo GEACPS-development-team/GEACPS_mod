@@ -25,9 +25,9 @@ state = {
 		victory_points = {	719	3	}
 		victory_points = {	3734	5	}
 		victory_points = {	9663	1	}
-		set_variable = {	KUB_state_variable = 1	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	UKR_state_variable = 2	}
+		add_to_array = {	KUB.pfk_state_array_1 = THIS	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	UKR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

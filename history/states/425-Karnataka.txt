@@ -21,9 +21,9 @@ state = {
 		victory_points = {	8011	1	}
 		victory_points = {	10259	3	}
 		victory_points = {	12146	1	}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	DVN_state_variable = 1	}
-		set_variable = {	MYS_state_variable = 1	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
+		add_to_array = {	DVN.pfk_state_array_1 = THIS	}
+		add_to_array = {	MYS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

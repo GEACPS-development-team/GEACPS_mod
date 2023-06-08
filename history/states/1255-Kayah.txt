@@ -11,8 +11,8 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	BRM_state_variable = 1	}
-		set_variable = {	KAY_state_variable = 1	}
+		add_to_array = {	BRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	KAY.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

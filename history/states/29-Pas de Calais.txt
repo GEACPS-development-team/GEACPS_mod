@@ -18,8 +18,8 @@ state = {
 			air_base = 10
 		}
 		victory_points = {	11548	15	}
-		set_variable = {	FRA_state_variable = 1	}
-		set_variable = {	BEL_state_variable = 2	}
+		add_to_array = {	FRA.pfk_state_array_1 = THIS	}
+		add_to_array = {	BEL.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -18,9 +18,9 @@ state = {
 			air_base = 6
 		}
 		victory_points = {	9496	3	}
-		set_variable = {	EGR_state_variable = 1	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	NGR_state_variable = 1	}
+		add_to_array = {	EGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

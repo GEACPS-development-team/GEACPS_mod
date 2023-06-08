@@ -16,9 +16,9 @@ state = {
 			12100 = {	naval_base = 3	}
 		}
 		victory_points = {	12100	3	}
-		set_variable = {	MLL_state_variable = 1	}
-		set_variable = {	MOR_state_variable = 1	}
-		set_variable = {	RIF_state_variable = 1	}
+		add_to_array = {	MLL.pfk_state_array_1 = THIS	}
+		add_to_array = {	MOR.pfk_state_array_1 = THIS	}
+		add_to_array = {	RIF.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

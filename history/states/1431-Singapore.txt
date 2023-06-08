@@ -15,8 +15,8 @@ state = {
 			12299 = {	coastal_bunker = 3	}
 		}
 		victory_points = {	12299	10	}
-		set_variable = {	SIN_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		add_to_array = {	SIN.pfk_state_array_1 = THIS	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -14,11 +14,11 @@ state = {
 			arms_factory = 1
 		}
 		victory_points = {	3583	5	}
-		set_variable = {	CZE_state_variable = 1	}
-		set_variable = {	MRV_state_variable = 1	}
-		set_variable = {	SDT_state_variable = 1	}
-		set_variable = {	AUS_state_variable = 3	}
-		set_variable = {	GER_state_variable = 3	}
+		add_to_array = {	CZE.pfk_state_array_1 = THIS	}
+		add_to_array = {	MRV.pfk_state_array_1 = THIS	}
+		add_to_array = {	SDT.pfk_state_array_1 = THIS	}
+		add_to_array = {	AUS.pfk_state_array_3 = THIS	}
+		add_to_array = {	GER.pfk_state_array_3 = THIS	}
 	}
 	
 	provinces = {

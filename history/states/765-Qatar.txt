@@ -12,9 +12,9 @@ state = {
 			8051 = {	naval_base = 2	}
 		}
 		victory_points = {	8051	1	}
-		set_variable = {	QAT_state_variable = 1	}
-		set_variable = {	TRC_state_variable = 2	}
-		set_variable = {	OMA_state_variable = 2	}
+		add_to_array = {	QAT.pfk_state_array_1 = THIS	}
+		add_to_array = {	TRC.pfk_state_array_2 = THIS	}
+		add_to_array = {	OMA.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

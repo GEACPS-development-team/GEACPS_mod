@@ -16,8 +16,8 @@ state = {
 		}
 		victory_points = {	7376	1	}
 		victory_points = {	12191	1	}
-		set_variable = {	CAM_state_variable = 1	}
-		set_variable = {	SIA_state_variable = 2	}
+		add_to_array = {	CAM.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIA.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

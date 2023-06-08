@@ -12,8 +12,8 @@ state = {
 			arms_factory = 2
 			industrial_complex = 2
 		}
-		set_variable = {	SWI_state_variable = 1	}
-		set_variable = {	GER_state_variable = 3	}
+		add_to_array = {	SWI.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_3 = THIS	}
 	}
 	
 	provinces = {

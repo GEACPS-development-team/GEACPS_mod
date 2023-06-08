@@ -14,9 +14,9 @@ state = {
 			6521 = {	bunker = 1	}
 		}
 		#victory_points = {	6521	50	}
-		set_variable = {	BRL_state_variable = 1	}
-		set_variable = {	EGR_state_variable = 1	}
-		set_variable = {	GER_state_variable = 1	}
+		add_to_array = {	BRL.pfk_state_array_1 = THIS	}
+		add_to_array = {	EGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
 	
 		set_demilitarized_zone = yes
 	}

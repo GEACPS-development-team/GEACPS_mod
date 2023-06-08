@@ -12,8 +12,8 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	PRU_state_variable = 1	}
-		set_variable = {	ECU_state_variable = 2	}
+		add_to_array = {	PRU.pfk_state_array_1 = THIS	}
+		add_to_array = {	ECU.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

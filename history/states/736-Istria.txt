@@ -14,9 +14,9 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	IST_state_variable = 1	}
-		set_variable = {	SLV_state_variable = 1	}
-		set_variable = {	ITA_state_variable = 2	}
+		add_to_array = {	IST.pfk_state_array_1 = THIS	}
+		add_to_array = {	SLV.pfk_state_array_1 = THIS	}
+		add_to_array = {	ITA.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

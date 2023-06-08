@@ -16,9 +16,9 @@ state = {
 			12207 = {	naval_base = 1	}
 		}
 		victory_points = {	12207	1	}
-		set_variable = {	JAP_state_variable = 1	}
-		set_variable = {	FEA_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 2	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

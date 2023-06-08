@@ -13,9 +13,9 @@ state = {
 			infrastructure = 2
 			12190 ={	naval_base = 1	}
 		}
-		set_variable = {	TLS_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
-		set_variable = {	INS_state_variable = 2	}
+		add_to_array = {	TLS.pfk_state_array_1 = THIS	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
+		add_to_array = {	INS.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

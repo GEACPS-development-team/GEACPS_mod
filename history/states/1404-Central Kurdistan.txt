@@ -11,8 +11,8 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	IRQ_state_variable = 1	}
-		set_variable = {	KUR_state_variable = 1	}
+		add_to_array = {	IRQ.pfk_state_array_1 = THIS	}
+		add_to_array = {	KUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

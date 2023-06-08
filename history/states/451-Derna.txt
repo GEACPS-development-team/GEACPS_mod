@@ -15,8 +15,8 @@ state = {
 			1130 = {	naval_base = 6	}
 		}
 		victory_points = {	1130	5	}
-		set_variable = {	CYR_state_variable = 1	}
-		set_variable = {	LBA_state_variable = 1	}
+		add_to_array = {	CYR.pfk_state_array_1 = THIS	}
+		add_to_array = {	LBA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

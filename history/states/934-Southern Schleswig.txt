@@ -13,9 +13,9 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	DEN_state_variable = 1	}
-		set_variable = {	SHL_state_variable = 1	}
-		set_variable = {	GER_state_variable = 2	}
+		add_to_array = {	DEN.pfk_state_array_1 = THIS	}
+		add_to_array = {	SHL.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -15,8 +15,8 @@ state = {
 			industrial_complex = 1
 		}
 		victory_points = {	392	1	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	ULY_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	ULY.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

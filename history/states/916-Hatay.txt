@@ -12,9 +12,9 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	TUR_state_variable = 1	}
-		set_variable = {	HAT_state_variable = 1	}
-		set_variable = {	SYR_state_variable = 2	}
+		add_to_array = {	TUR.pfk_state_array_1 = THIS	}
+		add_to_array = {	HAT.pfk_state_array_1 = THIS	}
+		add_to_array = {	SYR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

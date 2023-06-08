@@ -14,8 +14,8 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	SPR_state_variable = 1	}
-		set_variable = {	NAV_state_variable = 1	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
+		add_to_array = {	NAV.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

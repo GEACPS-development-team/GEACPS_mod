@@ -19,10 +19,10 @@ state = {
 			6389 ={	naval_base = 8	}
 		}
 		victory_points = {	6389	10	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	HLS_state_variable = 1	}
-		set_variable = {	NGR_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	HLS.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

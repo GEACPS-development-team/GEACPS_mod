@@ -14,9 +14,9 @@ state = {
 			13275 = {	naval_base = 1	}
 		}
 		victory_points = {	13275	1	}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	DVN_state_variable = 1	}
-		set_variable = {	POD_state_variable = 2	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
+		add_to_array = {	DVN.pfk_state_array_1 = THIS	}
+		add_to_array = {	POD.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

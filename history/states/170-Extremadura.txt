@@ -17,8 +17,8 @@ state = {
 			industrial_complex = 1
 		}
 		victory_points = {	6902	1	}
-		set_variable = {	EXT_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	EXT.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

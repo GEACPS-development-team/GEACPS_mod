@@ -11,8 +11,8 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	AFG_state_variable = 1	}
-		set_variable = {	BAL_state_variable = 1	}
+		add_to_array = {	AFG.pfk_state_array_1 = THIS	}
+		add_to_array = {	BAL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

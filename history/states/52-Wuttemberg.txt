@@ -20,10 +20,10 @@ state = {
 		}
 		victory_points = {	692	50	}
 		victory_points = {	708	3	}
-		set_variable = {	BAY_state_variable = 1	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	SGR_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
+		add_to_array = {	BAY.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	SGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

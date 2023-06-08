@@ -19,8 +19,8 @@ state = {
 		victory_points = {	6927	1	}
 		victory_points = {	6966	1	}
 		victory_points = {	9764	30	}
-		set_variable = {	CAT_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	CAT.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

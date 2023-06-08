@@ -21,8 +21,8 @@ state = {
 			9108 = {	naval_base = 2	}
 		}
 		victory_points = {	9108	1	}
-		set_variable = {	SWE_state_variable = 1	}
-		set_variable = {	SME_state_variable = 1	}
+		add_to_array = {	SWE.pfk_state_array_1 = THIS	}
+		add_to_array = {	SME.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

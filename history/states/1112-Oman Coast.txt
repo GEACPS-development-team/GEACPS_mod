@@ -16,8 +16,8 @@ state = {
 			10760 = {	naval_base = 3	}
 		}
 		victory_points = {	10760	3	}
-		set_variable = {	MSC_state_variable = 1	}
-		set_variable = {	OMA_state_variable = 1	}
+		add_to_array = {	MSC.pfk_state_array_1 = THIS	}
+		add_to_array = {	OMA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

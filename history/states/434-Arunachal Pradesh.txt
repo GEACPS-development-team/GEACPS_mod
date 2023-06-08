@@ -12,9 +12,9 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	TIB_state_variable = 1	}
-		set_variable = {	BAN_state_variable = 2	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
+		add_to_array = {	TIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	BAN.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

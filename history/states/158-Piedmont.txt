@@ -23,8 +23,8 @@ state = {
 			air_base = 8
 		}
 		victory_points = {	6780	50	}
-		set_variable = {	ITA_state_variable = 1	}
-		set_variable = {	PIE_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
+		add_to_array = {	PIE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

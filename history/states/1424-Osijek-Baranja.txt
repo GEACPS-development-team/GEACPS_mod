@@ -14,8 +14,8 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	CRO_state_variable = 1	}
-		set_variable = {	VOJ_state_variable = 1	}
+		add_to_array = {	CRO.pfk_state_array_1 = THIS	}
+		add_to_array = {	VOJ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
