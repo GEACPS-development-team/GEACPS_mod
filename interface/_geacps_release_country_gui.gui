@@ -1,5 +1,5 @@
 guiTypes = {
-	containerWindowType = {#制作タブを開くbutton
+	containerWindowType = {#
 		name = "project_F_kikan_btn"
 		position = { x = 0 y = 0 }
 		size = { width = 10 height = 10 }
@@ -26,7 +26,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_bg"
 			# alwaystransparent = yes
 		}
-		containerWindowType = {#円グラフ
+		containerWindowType = {
 			name = "pfk_country_list_window"
 			position = { x = 10 y = 10 }
 			size = { width = 320 height = 575 }
@@ -34,7 +34,6 @@ guiTypes = {
 			background = {
 				name = "Background"
 				quadTextureSprite ="GFX_tiled_bg"
-				# alwaystransparent = yes
 			}
 			verticalScrollbar = "right_vertical_slider"
 			margin = {top=0 left=0 bottom=0 right=0}
@@ -49,13 +48,13 @@ guiTypes = {
 				format = "UPPER_LEFT"
 			}
 		}
-		instantTextBoxType = { #世界的事件
+		instantTextBoxType = {
 			name = "pfk_selected_name"
 			position = { x = 330 y = 20 }
 			font = "hoi_24header"
 			format = left
 			borderSize = {x = 0 y = 0}
-			text = "現在選択中:[?pfk_current_country.GetNonIdeologyNameDef]"
+			text = "現在選択中:[pfk_current_name]"
 			maxWidth = 300
 			maxHeight = 24
 			format = centre
@@ -68,6 +67,14 @@ guiTypes = {
 			add_horizontal = no
 			max_slots_horizontal = 1
 			format = "UPPER_LEFT"
+		}
+		buttonType = { #提出button
+			name = "pfk_set_btn"
+			position = { x = 330 y = 350 }
+			spriteType = "GFX_big_button_232"
+			clicksound = Martial_Law_Interface_Forced_Labor_Occupation
+			buttonFont = "hoi_18mbs"
+			text = "pfk_set_btn"
 		}
 		buttonType = {
 			name = "pfk_open_btn_0"
@@ -120,7 +127,7 @@ guiTypes = {
 			position = { x = 38 y = 2 }
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0 }
-			text = "[THIS.GetNonIdeologyNameDef]"
+			text = "[pfk_list_name]"
 			maxWidth = 205
 			maxHeight = 25
 			fixedsize = yes

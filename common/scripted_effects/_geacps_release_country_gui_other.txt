@@ -1,0 +1,21 @@
+pfk_first_setting = {#基本情報の入力
+	clear_array = pfk_autonomy_list
+	clear_array = pfk_setting_list #決まったことリスト(TAG,method,name,range,)
+	set_variable = { fk_setting_progress = 0 } 
+	add_to_array = { pfk_autonomy_list = token:pfk_method_puppet }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_protected_state }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony_JAP }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony_GER }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony_SOV }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_return }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_incorporation }
+
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+}
+pfk_set_political_entity = {
+	
+}

@@ -39,6 +39,7 @@ scripted_gui = {
 		effects = {
 			#デバック
 			pfk_open_btn_0_click = {#リセット
+				pfk_first_setting = yes
 				for_each_scope_loop = {#陣営ごとに
 					array = global.countries
 					clear_array = pfk_country_array
@@ -48,6 +49,7 @@ scripted_gui = {
 				clear_array = ROOT.pfk_current_country_list
 				clear_variable = ROOT.pfk_current_country
 				set_pfk_country_arraies = yes
+				
 				for_each_loop = {#陣営ごとに
 					array = global.pfk_country_array
 					value = country_tag
@@ -56,16 +58,7 @@ scripted_gui = {
 				}
 			}
 			pfk_open_btn_1_click = {#一つ戻る
-
 				clear_array = ROOT.pfk_array
-
-				if = {
-					limit = { NOT = { var:ROOT.pfk_current_country_list^0 = { has_variable = THIS.pfk_country_array^0 } } }
-					remove_from_array = {
-						array = ROOT.pfk_current_country_list
-						index = 0
-					}
-				}
 				remove_from_array = {
 					array = ROOT.pfk_current_country_list
 					index = 0
@@ -73,24 +66,26 @@ scripted_gui = {
 				set_temp_variable = { current_scope = ROOT.pfk_current_country_list^0 }
 				if = {
 					limit = { has_variable = ROOT.pfk_current_country_list^0 }
-
 					var:current_scope = {
-						for_each_loop = {#陣営ごとに
+						for_each_loop = {
 							array = pfk_country_array
 							value = country_tag
 							index = index_num
 							add_to_array = { ROOT.pfk_array = country_tag }
 						}
 					}
+					set_variable = { ROOT.pfk_current_country = current_scope }
 				}
 				else = {
-					for_each_loop = {#陣営ごとに
+					for_each_loop = {
 						array = global.pfk_country_array
 						value = country_tag
 						index = index_num
 						add_to_array = { ROOT.pfk_array = country_tag }
 					}
+					set_variable = { ROOT.pfk_current_country = ROOT }
 				}
+				
 			}
 			pfk_open_btn_2_click = {
 				
@@ -104,43 +99,89 @@ scripted_gui = {
 			pfk_selected_btn_click = {
 				log = "現在:[?THIS.GetName]"
 
-				# if = {
-				# 	limit = {#今選択した国とさっき選択した国は同じ 
-				# 		OR = {
-				# 			check_variable = { ROOT.pfk_current_country_list^0 = THIS }
-				# 			AND = {
-				# 				var:ROOT.pfk_current_country_list^0 = { NOT = { has_variable = pfk_country_array^0 } }
-				# 				NOT = {  has_variable = ROOT.pfk_current_country_list^0 }
-				# 			}
-				# 		}
-				# 	}
-				# 	set_variable = { ROOT.pfk_current_country_list^0 = v }
-				# }
+				if = {#国家選択
+					limit = { check_variable = { ROOT.fk_setting_progress = 0 } }
+					if = {
+						limit = {
+							has_variable = pfk_country_array^0
+							NOT = { check_variable = { ROOT.pfk_current_country_list^0 = THIS } }
+						}
+						clear_array = ROOT.pfk_array
+						add_to_array = {
+							array = ROOT.pfk_current_country_list
+							value = v
+							index = 0
+						}
+						for_each_loop = {#陣営ごとに
+							array = pfk_country_array
+							value = country_tag
+							index = index_num
+							add_to_array = { ROOT.pfk_array = country_tag }
+						}				
+					}
+					set_variable = { ROOT.pfk_current_country = v }
+				}
+				else_if = {#自治度選択
+					limit = { check_variable = { ROOT.fk_setting_progress = 1 } }
+					set_variable = { ROOT.pfk_current_country = v }
+				}
+			}
+			pfk_set_btn_click = {
 				if = {
 					limit = {
-						has_variable = pfk_country_array^0
-						NOT = { check_variable = { ROOT.pfk_current_country_list^0 = THIS } }
+						check_variable = { ROOT.fk_setting_progress = 0 }
+						has_variable = ROOT.pfk_current_country
 					}
+					set_variable = { ROOT.fk_setting_progress = 1 }
+					set_variable = { ROOT.pfk_setting_list^0 = ROOT.pfk_current_country }
 					clear_array = ROOT.pfk_array
-					add_to_array = {
-						array = ROOT.pfk_current_country_list
-						value = v
-						index = 0
-					}
+					clear_variable = ROOT.pfk_current_country
 					for_each_loop = {#陣営ごとに
-						array = pfk_country_array
-						value = country_tag
+						array = pfk_autonomy_list
+						value = value_id
 						index = index_num
-						add_to_array = { ROOT.pfk_array = country_tag }
-					}				
+						add_to_array = { ROOT.pfk_array = value_id }
+					}	
 				}
-				set_variable = { ROOT.pfk_current_country = v }
+				else_if = {
+					limit = {
+						check_variable = { ROOT.fk_setting_progress = 1 }
+						has_variable = ROOT.pfk_current_country
+					}
+					if = {#政体名設定へ
+						limit = { 
+							OR = {
+								check_variable = { ROOT.pfk_current_country = token:pfk_method_puppet }
+								check_variable = { ROOT.pfk_current_country = token:pfk_method_protected_state }
+							}
+						}
+						clear_array = ROOT.pfk_array
+						pfk_set_political_entity = yes
+						
+					}
+					else_if = {#自治度設定へ
+						limit = {  }
+						clear_array = ROOT.pfk_array
+					}
+					clear_variable = ROOT.pfk_current_country
+					set_variable = { ROOT.fk_setting_progress = 2 }
+				}
 			}
-
 		}
 		triggers = {
 			pfk_selected_btn_click_enabled = {
 				# has_variable = pfk_country_array^0
+				# NOT = {
+				# 	any_of_scopes = {
+				# 		array = pfk_state_array_1
+				# 		value = v
+				# 		index = i
+				# 		OR = {
+				# 			is_core_of = ROOT
+				# 			is_claimed_by = ROOT
+				# 		}
+				# 	}
+				# }
 			}
 			pfk_open_btn_1_click_enabled = {
 				has_variable = ROOT.pfk_current_country_list^0
