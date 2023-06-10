@@ -1,0 +1,181 @@
+scripted_gui = {
+
+	project_F_kikan_btn = {#表示ボタン
+		window_name = "project_F_kikan_btn" 
+		context_type = player_context 
+		visible = { 
+		}
+		effects = {
+			pfk_open_btn_click = {
+
+				if = {
+					limit = { has_country_flag = pfk_on }
+					clr_country_flag = pfk_on
+				}
+				else = {
+					set_country_flag = pfk_on
+					clear_array = ROOT.pfk_array
+					for_each_loop = {#陣営ごとに
+						array = global.pfk_country_array
+						value = country_tag
+						index = index_num
+						add_to_array = { ROOT.pfk_array = country_tag }
+					}
+				}
+			}
+		}
+		properties = {
+		}
+		triggers = {	#ボタンを実行できる条件?
+		}
+	}
+	project_F_kikan_GUI = {#
+		window_name = "project_F_kikan_GUI" 
+		context_type = player_context 
+		visible = { 
+			is_ai = no
+			has_country_flag = pfk_on
+		}
+		effects = {
+			#デバック
+			pfk_open_btn_0_click = {#リセット
+				for_each_scope_loop = {#陣営ごとに
+					array = global.countries
+					clear_array = pfk_country_array
+				}
+				clear_array = global.pfk_country_array
+				clear_array = ROOT.pfk_array
+				clear_array = ROOT.pfk_current_country
+				set_pfk_country_arraies = yes
+				for_each_loop = {#陣営ごとに
+					array = global.pfk_country_array
+					value = country_tag
+					index = index_num
+					add_to_array = { ROOT.pfk_array = country_tag }
+				}
+			}
+			pfk_open_btn_1_click = {#一つ戻る
+
+				clear_array = ROOT.pfk_array
+				remove_from_array = {
+					array = ROOT.pfk_current_country
+					index = 0
+				}
+				set_temp_variable = { current_scope = ROOT.pfk_current_country^0 }
+
+				if = {
+					limit = { has_variable = ROOT.pfk_current_country^0 }
+
+					var:current_scope = {
+						for_each_loop = {#陣営ごとに
+							array = pfk_country_array
+							value = country_tag
+							index = index_num
+							add_to_array = { ROOT.pfk_array = country_tag }
+						}
+					}
+				}
+				else = {
+					for_each_loop = {#陣営ごとに
+						array = global.pfk_country_array
+						value = country_tag
+						index = index_num
+						add_to_array = { ROOT.pfk_array = country_tag }
+					}
+				}
+			}
+			pfk_open_btn_2_click = {
+				
+			}
+			pfk_open_btn_3_click = {
+				
+			}
+			pfk_open_btn_4_click = {
+				
+			}
+			pfk_selected_btn_click = {
+				log = "現在:[?THIS.GetName]"
+				if = {
+					limit = {#今選択した国とさっき選択した国は同じ
+						OR = {
+							check_variable = { ROOT.pfk_current_country^0 = THIS }
+							AND = {
+								var:ROOT.pfk_current_country^0 = { NOT = { has_variable = pfk_country_array^0 } }
+								NOT = { check_variable = { has_variable = ROOT.pfk_current_country^0 } }
+							}
+						}
+					}
+					set_variable = { ROOT.pfk_current_country^0 = v }
+				}
+				else_if = {
+					limit = {
+						has_variable = pfk_country_array^0
+						NOT = { check_variable = { ROOT.pfk_current_country^0 = THIS } }
+					}
+					clear_array = ROOT.pfk_array
+					add_to_array = {
+						array = ROOT.pfk_current_country
+						value = v
+						index = 0
+					}
+					for_each_loop = {#陣営ごとに
+						array = pfk_country_array
+						value = country_tag
+						index = index_num
+						add_to_array = { ROOT.pfk_array = country_tag }
+
+						# if = {
+						# 	limit = {
+						# 		ROOT = {
+						# 			any_owned_state = {
+						# 				is_in_array = { country_tag.pfk_state_array_1 = THIS }
+						# 			}
+						# 		}
+
+						# 	}
+						# }
+					}				
+				}
+				else = {
+					add_to_array = {
+						array = ROOT.pfk_current_country
+						value = v
+						index = 0
+					}
+				}
+			}
+
+		}
+		triggers = {
+			pfk_selected_btn_click_enabled = {
+				# has_variable = pfk_country_array^0
+
+			}
+			pfk_star_icon_visible = {
+				# has_variable = pfk_country_array^0
+				any_of_scopes = {
+					array = pfk_state_array_1
+					value = v
+					index = i
+					is_owned_by = ROOT
+				}
+			}
+		}
+		properties = {
+
+		}
+		dynamic_lists = {
+			pfk_country_list_gridbox = {
+				array = ROOT.pfk_array
+				change_scope = yes
+				entry_container = pfk_target_country_container
+			}
+			pfk_current_country_list_gridbox = {
+				array = ROOT.pfk_current_country
+				change_scope = yes
+				entry_container = pfk_current_country_list_container	
+			}			
+		}
+	}
+
+}

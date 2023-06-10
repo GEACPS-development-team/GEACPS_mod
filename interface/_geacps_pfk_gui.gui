@@ -1,0 +1,158 @@
+guiTypes = {
+	containerWindowType = {#制作タブを開くbutton
+		name = "project_F_kikan_btn"
+		position = { x = 0 y = 0 }
+		size = { width = 10 height = 10 }
+		orientation = upper_left
+		buttonType = { #ボタンを作る
+			name = "pfk_open_btn" #ボタンの名前 scripted_guiで使う
+			position = { x = 1160 y = 0 } #ボタンの位置 ゲーム画面見て微調整だ
+			quadTextureSprite ="GFX_button_148x34" #ボタンの画像 これはバニラで既にあるやつ
+			buttonFont = "hoi_16mbs" #ボタンにテキストを入れる場合のフォント これはバニラのフォントを使っている
+			buttonText = "pFk" #ボタンに入れるテキスト Localisationが効かなかった
+			shortcut = "p" #ショートカットキー
+		}
+	}
+	containerWindowType = {#マップ
+		name = "project_F_kikan_GUI"
+		size = { width = 900 height = 600 }
+		position = { x = -200 y = -200 }
+		Orientation = center
+		moveable = yes
+		# fade_time = 300
+		# fade_type = linear
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+			# alwaystransparent = yes
+		}
+		containerWindowType = {#円グラフ
+			name = "pfk_country_list_window"
+			position = { x = 10 y = 10 }
+			size = { width = 320 height = 575 }
+			# scale = 0.20
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+				# alwaystransparent = yes
+			}
+			verticalScrollbar = "right_vertical_slider"
+			margin = {top=0 left=0 bottom=0 right=0}
+
+			gridboxtype = {
+				name = "pfk_country_list_gridbox"
+				position = { x = 10 y = 10 }
+				size = { width = 100%% height = 560 }
+				slotsize = { width = 293 height = 30 }
+				add_horizontal = no
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+		}
+		instantTextBoxType = { #世界的事件
+			name = "pfk_selected_name"
+			position = { x = 330 y = 20 }
+			font = "hoi_24header"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "現在選択中:[?pfk_current_country^0.GetNonIdeologyNameDef]"
+			maxWidth = 300
+			maxHeight = 24
+			format = centre
+		}
+		gridboxtype = {
+			name = "pfk_current_country_list_gridbox"
+			position = { x = 330 y = 50 }
+			size = { width = 300 height = 300 }
+			slotsize = { width = 300 height = 20 }
+			add_horizontal = no
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+		buttonType = {
+			name = "pfk_open_btn_0"
+			position = { x = 600 y = 20 }
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "配列の初期化" 
+			buttonFont = "hoi_16mbs"
+		}
+		buttonType = { #
+			name = "pfk_open_btn_1"
+			position = { x = 600 y = 60 }
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "戻る" 
+			buttonFont = "hoi_16mbs"
+		}
+		buttonType = {
+			name = "pfk_open_btn_2"
+			position = { x = 600 y = 100 } #
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "debug2" 
+			buttonFont = "hoi_16mbs"
+		}
+		buttonType = { #
+			name = "pfk_open_btn_3"
+			position = { x = 600 y = 140 }
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "debug3" 
+			buttonFont = "hoi_16mbs"
+		}
+		buttonType = { #
+			name = "pfk_open_btn_4" #
+			position = { x = 600 y = 180 } #
+			quadTextureSprite ="GFX_button_148x34" #
+			buttonText = "debug4" 
+			buttonFont = "hoi_16mbs"
+		}
+	}
+	#####gridboxtype
+	containerWindowType = {#国家
+		name = "pfk_target_country_container"
+		position = { x= 0 y= 0 }
+		size = { width = 283 height = 30 }
+		buttonType = {
+			name = "pfk_selected_btn"
+			quadTextureSprite = "GFX_naval_losses_battle_bg3"
+			position = { x = 2 y = 0 }
+		}
+		instantTextboxType = {#
+			name = "pfk_state_name"
+			position = { x = 38 y = 2 }
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0 }
+			text = "[THIS.GetNonIdeologyNameDef]"
+			maxWidth = 205
+			maxHeight = 25
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="pfk_star_icon"
+			spriteType = "GFX_naval_increase_amount"
+			position = { x= 0 y = 0 }
+			scale = 1
+			frame = 1
+			pdx_tooltip = jes_largest_faction
+
+		}
+	}
+	containerWindowType = {#国家
+		name = "pfk_current_country_list_container"
+		position = { x= 0 y= 0 }
+		size = { width = 300 height = 30 }
+		instantTextboxType = {#
+			name = "pfk_country_name"
+			position = { x = 0 y = 0 }
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0 }
+			text = "[THIS.GetNonIdeologyNameDef]"
+			maxWidth = 300
+			maxHeight = 25
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+
+}
