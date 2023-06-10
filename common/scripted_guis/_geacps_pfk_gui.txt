@@ -141,7 +141,9 @@ scripted_gui = {
 		triggers = {
 			pfk_selected_btn_click_enabled = {
 				# has_variable = pfk_country_array^0
-
+			}
+			pfk_open_btn_1_click_enabled = {
+				has_variable = ROOT.pfk_current_country_list^0
 			}
 			pfk_star_icon_visible = {
 				# has_variable = pfk_country_array^0
