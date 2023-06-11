@@ -1,16 +1,54 @@
 ideas = {
 	hidden_ideas = {
-		#傀儡レベル
-		pfk_method_puppet = { }
-		pfk_method_protected_state = { }
-		pfk_method_colony = { }
-		pfk_method_colony_JAP = { }
-		pfk_method_colony_GER = { }
-		pfk_method_colony_SOV = { }
-
-		pfk_method_return = { }
-		pfk_method_incorporation = { }
-
+		#メゾット
+		pfk_method_puppet = { 
+			on_add = {
+				set_variable = { ROOT.fk_setting_progress = 2 }#政体名選択
+			}
+		}
+		pfk_method_protected_state = { 
+			on_add = {
+				set_variable = { ROOT.fk_setting_progress = 2 }#政体名選択
+			} 
+		}
+		pfk_method_colony = { 
+			on_add = {
+			} 
+		}
+		pfk_method_colony_JAP = {
+			on_add = {}
+		}
+		pfk_method_colony_GER = {
+			on_add = {}
+		}
+		pfk_method_colony_SOV = {
+			on_add = {#ここにソ連構成国　を選択した後に表示される自治度を表示
+				log = "あほ"
+				add_to_array = { ROOT.pfk_array = token:soviet_satellite }
+				add_to_array = { ROOT.pfk_array = token:soviet_member_federal_republic }
+				add_to_array = { ROOT.pfk_array = token:soviet_member_republic }
+				add_to_array = { ROOT.pfk_array = token:soviet_autonomous_republic }
+			}
+		}
+		pfk_method_return = {
+			on_add = {}
+		}
+		pfk_method_incorporation = {
+			on_add = {}
+		}
+		#自治度今はソ連のみ
+		soviet_satellite = {
+			on_add = {}
+		}
+		soviet_member_federal_republic = {
+			on_add = {}
+		}
+		soviet_member_republic = {
+			on_add = {}
+		}
+		soviet_autonomous_republic = {
+			on_add = {}
+		}
 		#政体名
 		republic = {#共和国
 			on_add = {}

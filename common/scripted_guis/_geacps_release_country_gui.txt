@@ -143,28 +143,28 @@ scripted_gui = {
 						add_to_array = { ROOT.pfk_array = value_id }
 					}	
 				}
-				else_if = {
+				else_if = {#メゾットを設定
 					limit = {
 						check_variable = { ROOT.fk_setting_progress = 1 }
 						has_variable = ROOT.pfk_current_target
 					}
-					if = {#政体名設定へ
-						limit = { 
-							OR = {
-								check_variable = { ROOT.pfk_current_target = token:pfk_method_puppet }
-								check_variable = { ROOT.pfk_current_target = token:pfk_method_protected_state }
-							}
-						}
-						clear_array = ROOT.pfk_array
-						pfk_set_political_entity = yes
-						
-					}
-					else_if = {#自治度設定へ
-						limit = {  }
-						clear_array = ROOT.pfk_array
-					}
+					set_variable = { ROOT.pfk_setting_list^1 = ROOT.pfk_current_target }#傀儡レベルを固定
+					clear_array = ROOT.pfk_array
+					add_ideas = var:pfk_current_target
+					remove_ideas =  var:pfk_current_target
 					clear_variable = ROOT.pfk_current_target
-					set_variable = { ROOT.fk_setting_progress = 2 }
+					
+				}
+				else_if = {#国名を設定
+					limit = {
+						check_variable = { ROOT.fk_setting_progress = 2 }
+						has_variable = ROOT.pfk_current_target
+					}
+					clear_array = ROOT.pfk_array
+					add_ideas = var:pfk_current_target
+					remove_ideas =  var:pfk_current_target
+					clear_variable = ROOT.pfk_current_target
+					set_variable = { ROOT.fk_setting_progress = 3 }
 				}
 			}
 		}
@@ -190,8 +190,6 @@ scripted_gui = {
 				# has_variable = pfk_country_array^0
 				any_of_scopes = {
 					array = pfk_state_array_1
-					value = v
-					index = i
 					is_owned_by = ROOT
 				}
 			}
