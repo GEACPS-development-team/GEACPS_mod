@@ -59,9 +59,30 @@ guiTypes = {
 			maxHeight = 24
 			format = centre
 		}
+
 		gridboxtype = {
 			name = "pfk_current_country_list_gridbox"
 			position = { x = 330 y = 50 }
+			size = { width = 300 height = 300 }
+			slotsize = { width = 300 height = 20 }
+			add_horizontal = no
+			max_slots_horizontal = 1
+			format = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name = "pfk_setting_progress_level"
+			position = { x = 550 y = 20 }
+			font = "hoi_24header"
+			format = left
+			borderSize = {x = 0 y = 0}
+			text = "pfk_setting_progress_level"
+			maxWidth = 300
+			maxHeight = 24
+			format = centre
+		}
+		gridboxtype = {
+			name = "pfk_setting_list_gridbox"
+			position = { x = 550 y = 100 }
 			size = { width = 300 height = 300 }
 			slotsize = { width = 300 height = 20 }
 			add_horizontal = no
@@ -78,35 +99,35 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "pfk_open_btn_0"
-			position = { x = 600 y = 20 }
+			position = { x = 600 y = 220 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "配列の初期化" 
 			buttonFont = "hoi_16mbs"
 		}
 		buttonType = { #
 			name = "pfk_open_btn_1"
-			position = { x = 600 y = 60 }
+			position = { x = 600 y = 260 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "戻る" 
 			buttonFont = "hoi_16mbs"
 		}
 		buttonType = {
 			name = "pfk_open_btn_2"
-			position = { x = 600 y = 100 } #
+			position = { x = 600 y = 300 } #
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "debug2" 
 			buttonFont = "hoi_16mbs"
 		}
 		buttonType = { #
 			name = "pfk_open_btn_3"
-			position = { x = 600 y = 140 }
+			position = { x = 600 y = 340 }
 			quadTextureSprite ="GFX_button_148x34"
 			buttonText = "debug3" 
 			buttonFont = "hoi_16mbs"
 		}
 		buttonType = { #
 			name = "pfk_open_btn_4" #
-			position = { x = 600 y = 180 } #
+			position = { x = 600 y = 380 } #
 			quadTextureSprite ="GFX_button_148x34" #
 			buttonText = "debug4" 
 			buttonFont = "hoi_16mbs"
@@ -144,7 +165,7 @@ guiTypes = {
 
 		}
 	}
-	containerWindowType = {#国家
+	containerWindowType = {#デバック用ネスト表示
 		name = "pfk_current_country_list_container"
 		position = { x= 0 y= 0 }
 		size = { width = 300 height = 30 }
@@ -154,6 +175,23 @@ guiTypes = {
 			font = "hoi_18b"
 			borderSize = {x = 0 y = 0 }
 			text = "[THIS.GetNonIdeologyNameDef]"
+			maxWidth = 300
+			maxHeight = 25
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {#決まったことリストを表示
+		name = "pfk_setting_list_container"
+		position = { x= 0 y= 0 }
+		size = { width = 300 height = 30 }
+		instantTextboxType = {#
+			name = "pfk_country_name"
+			position = { x = 0 y = 0 }
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0 }
+			text = "[pfk_setting_list]"
 			maxWidth = 300
 			maxHeight = 25
 			fixedsize = yes

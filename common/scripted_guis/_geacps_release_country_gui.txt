@@ -100,7 +100,7 @@ scripted_gui = {
 				log = "現在:[?THIS.GetName]"
 
 				if = {#国家選択
-					limit = { check_variable = { ROOT.fk_setting_progress = 0 } }
+					limit = { check_variable = { ROOT.pfk_setting_progress = 0 } }
 					if = {
 						limit = {
 							has_variable = pfk_country_array^0
@@ -122,18 +122,18 @@ scripted_gui = {
 					set_variable = { ROOT.pfk_current_target = v }
 				}
 				else_if = {#自治度選択
-					limit = { check_variable = { ROOT.fk_setting_progress = 1 } }
+					limit = { check_variable = { ROOT.pfk_setting_progress = 1 } }
 					set_variable = { ROOT.pfk_current_target = v }
 				}
 			}
 			pfk_set_btn_click = {
-				if = {
+				if = {#国家の選択
 					limit = {
-						check_variable = { ROOT.fk_setting_progress = 0 }
+						check_variable = { ROOT.pfk_setting_progress = 0 }
 						has_variable = ROOT.pfk_current_target
 					}
-					set_variable = { ROOT.fk_setting_progress = 1 }
-					set_variable = { ROOT.pfk_setting_list^0 = ROOT.pfk_current_target }
+					set_variable = { ROOT.pfk_setting_progress = 1 }
+					set_variable = { ROOT.pfk_setting_list^0 = ROOT.pfk_current_target } #決まったことリスト0番目:対象の国
 					clear_array = ROOT.pfk_array
 					clear_variable = ROOT.pfk_current_target
 					for_each_loop = {#陣営ごとに
@@ -145,7 +145,7 @@ scripted_gui = {
 				}
 				else_if = {#メゾットを設定
 					limit = {
-						check_variable = { ROOT.fk_setting_progress = 1 }
+						check_variable = { ROOT.pfk_setting_progress = 1 }
 						has_variable = ROOT.pfk_current_target
 					}
 					set_variable = { ROOT.pfk_setting_list^1 = ROOT.pfk_current_target }#傀儡レベルを固定
@@ -157,14 +157,14 @@ scripted_gui = {
 				}
 				else_if = {#国名を設定
 					limit = {
-						check_variable = { ROOT.fk_setting_progress = 2 }
+						check_variable = { ROOT.pfk_setting_progress = 2 }
 						has_variable = ROOT.pfk_current_target
 					}
 					clear_array = ROOT.pfk_array
 					add_ideas = var:pfk_current_target
 					remove_ideas =  var:pfk_current_target
 					clear_variable = ROOT.pfk_current_target
-					set_variable = { ROOT.fk_setting_progress = 3 }
+					set_variable = { ROOT.pfk_setting_progress = 3 }
 				}
 			}
 		}
@@ -207,6 +207,11 @@ scripted_gui = {
 				array = ROOT.pfk_current_country_list
 				change_scope = yes
 				entry_container = pfk_current_country_list_container	
+			}
+			pfk_setting_list_gridbox = {
+				array = ROOT.pfk_setting_list
+				change_scope = no
+				entry_container = pfk_setting_list_container
 			}			
 		}
 	}

@@ -1,7 +1,7 @@
 pfk_first_setting = {#基本情報の入力
 	clear_array = pfk_autonomy_list
 	clear_array = pfk_setting_list #決まったことリスト(TAG,method,name,range,)
-	set_variable = { fk_setting_progress = 0 } 
+	set_variable = { pfk_setting_progress = 0 } 
 	add_to_array = { pfk_autonomy_list = token:pfk_method_puppet }
 	add_to_array = { pfk_autonomy_list = token:pfk_method_protected_state }
 	add_to_array = { pfk_autonomy_list = token:pfk_method_colony }
@@ -17,5 +17,5 @@ pfk_first_setting = {#基本情報の入力
 	add_to_array = { pfk_setting_list = 0 }
 }
 pfk_set_political_entity = {
-	
+
 }

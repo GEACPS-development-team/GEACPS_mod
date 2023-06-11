@@ -1,12 +1,12 @@
 defined_text = {
 	name = pfk_list_name
 	text = {
-		trigger = {	check_variable = { ROOT.fk_setting_progress = 0 }	}
+		trigger = {	check_variable = { ROOT.pfk_setting_progress = 0 }	}
 		localization_key = "[?THIS.GetNonIdeologyNameDef]"
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.fk_setting_progress = 1 }
+			check_variable = { ROOT.pfk_setting_progress = 1 }
 			check_variable = { v = token:pfk_method_puppet }
 		}
 		localization_key = "[pfk_puppet_name]"
@@ -19,12 +19,12 @@ defined_text = {
 defined_text = {
 	name = pfk_current_name
 	text = {
-		trigger = {	check_variable = { ROOT.fk_setting_progress = 0 }	}
+		trigger = {	check_variable = { ROOT.pfk_setting_progress = 0 }	}
 		localization_key = "[?ROOT.pfk_current_target.GetNonIdeologyNameDef]"
 	}
 	text = {
 		trigger = {
-			check_variable = { ROOT.fk_setting_progress = 1 }
+			check_variable = { ROOT.pfk_setting_progress = 1 }
 			check_variable = { ROOT.pfk_current_target = token:pfk_method_puppet }
 		}
 		localization_key = "[pfk_puppet_name]"
@@ -34,6 +34,26 @@ defined_text = {
 		localization_key = "[?ROOT.pfk_current_target.GetTokenLocalizedKey]"
 	}
 }
+defined_text = {
+	name = pfk_setting_list
+
+
+	text = {
+		trigger = {	check_variable = { v = 0 }	}
+		localization_key = "NO SETTING"
+	}
+	text = {
+		trigger = {
+			check_variable = { i = 0 }
+		}
+		localization_key = "[?v.GetNonIdeologyNameDef]"
+	}
+	text = {
+		trigger = {	always = yes }
+		localization_key = "[?v.GetTokenLocalizedKey]"
+	}
+}
+
 defined_text = {
 	name = pfk_puppet_name
 	text = {

@@ -3,12 +3,12 @@ ideas = {
 		#メゾット
 		pfk_method_puppet = { 
 			on_add = {
-				set_variable = { ROOT.fk_setting_progress = 2 }#政体名選択
+				set_variable = { ROOT.pfk_setting_progress = 2 }#政体名選択
 			}
 		}
 		pfk_method_protected_state = { 
 			on_add = {
-				set_variable = { ROOT.fk_setting_progress = 2 }#政体名選択
+				set_variable = { ROOT.pfk_setting_progress = 2 }#政体名選択
 			} 
 		}
 		pfk_method_colony = { 
@@ -29,8 +29,8 @@ ideas = {
 			on_add = {}
 		}
 		pfk_method_colony_SOV = {
-			on_add = {#ここにソ連構成国 を選択した後に表示される自治度を表示
-				log = "あほ"
+			on_add = {#ここにソ連構成国　を選択した後に表示される自治度を表示
+				add_to_array = { ROOT.pfk_array = token:soviet_satellite }
 				add_to_array = { ROOT.pfk_array = token:soviet_member_federal_republic }
 				add_to_array = { ROOT.pfk_array = token:soviet_member_republic }
 				add_to_array = { ROOT.pfk_array = token:soviet_autonomous_republic }
