@@ -13,18 +13,24 @@ ideas = {
 		}
 		pfk_method_colony = { 
 			on_add = {
+				add_to_array = {	ROOT.pfk_array = token:colony	}
+				add_to_array = {	ROOT.pfk_array = token:colonies_federation	}
+				add_to_array = {	ROOT.pfk_array = token:colony_and_protectorate	}
+				add_to_array = {	ROOT.pfk_array = token:protected_territory	}
 			} 
 		}
 		pfk_method_colony_JAP = {
-			on_add = {}
+			on_add = {
+				add_to_array = {	ROOT.pfk_array = token:imperial_overseas_territory	}
+				add_to_array = {	ROOT.pfk_array = token:imperial_member	}
+			}
 		}
 		pfk_method_colony_GER = {
 			on_add = {}
 		}
 		pfk_method_colony_SOV = {
-			on_add = {#ここにソ連構成国　を選択した後に表示される自治度を表示
+			on_add = {#ここにソ連構成国 を選択した後に表示される自治度を表示
 				log = "あほ"
-				add_to_array = { ROOT.pfk_array = token:soviet_satellite }
 				add_to_array = { ROOT.pfk_array = token:soviet_member_federal_republic }
 				add_to_array = { ROOT.pfk_array = token:soviet_member_republic }
 				add_to_array = { ROOT.pfk_array = token:soviet_autonomous_republic }
@@ -37,16 +43,34 @@ ideas = {
 			on_add = {}
 		}
 		#自治度今はソ連のみ
+		colony = {	#植民地
+			on_add = {}
+		}
+		colonies_federation = {	#植民地連邦
+			on_add = {}
+		}
+		colony_and_protectorate = {	#植民地及び保護領
+			on_add = {}
+		}
+		protected_territory = {	#保護領
+			on_add = {}
+		}
+		imperial_overseas_territory = {	#外地
+			on_add = {}
+		}
+		imperial_member = {	#帝国構成国
+			on_add = {}
+		}
 		soviet_satellite = {
 			on_add = {}
 		}
-		soviet_member_federal_republic = {
+		soviet_member_federal_republic = {	#構成連邦共和国
 			on_add = {}
 		}
-		soviet_member_republic = {
+		soviet_member_republic = {	#構成共和国
 			on_add = {}
 		}
-		soviet_autonomous_republic = {
+		soviet_autonomous_republic = {	#自治共和国
 			on_add = {}
 		}
 		#政体名
