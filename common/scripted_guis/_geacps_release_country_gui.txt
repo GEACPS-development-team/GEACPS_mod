@@ -47,7 +47,7 @@ scripted_gui = {
 				clear_array = global.pfk_country_array
 				clear_array = ROOT.pfk_array
 				clear_array = ROOT.pfk_current_country_list
-				clear_variable = ROOT.pfk_current_country
+				clear_variable = ROOT.pfk_current_target
 				set_pfk_country_arraies = yes
 				
 				for_each_loop = {#陣営ごとに
@@ -74,7 +74,7 @@ scripted_gui = {
 							add_to_array = { ROOT.pfk_array = country_tag }
 						}
 					}
-					set_variable = { ROOT.pfk_current_country = current_scope }
+					set_variable = { ROOT.pfk_current_target = current_scope }
 				}
 				else = {
 					for_each_loop = {
@@ -83,7 +83,7 @@ scripted_gui = {
 						index = index_num
 						add_to_array = { ROOT.pfk_array = country_tag }
 					}
-					set_variable = { ROOT.pfk_current_country = ROOT }
+					set_variable = { ROOT.pfk_current_target = ROOT }
 				}
 				
 			}
@@ -119,23 +119,23 @@ scripted_gui = {
 							add_to_array = { ROOT.pfk_array = country_tag }
 						}				
 					}
-					set_variable = { ROOT.pfk_current_country = v }
+					set_variable = { ROOT.pfk_current_target = v }
 				}
 				else_if = {#自治度選択
 					limit = { check_variable = { ROOT.fk_setting_progress = 1 } }
-					set_variable = { ROOT.pfk_current_country = v }
+					set_variable = { ROOT.pfk_current_target = v }
 				}
 			}
 			pfk_set_btn_click = {
 				if = {
 					limit = {
 						check_variable = { ROOT.fk_setting_progress = 0 }
-						has_variable = ROOT.pfk_current_country
+						has_variable = ROOT.pfk_current_target
 					}
 					set_variable = { ROOT.fk_setting_progress = 1 }
-					set_variable = { ROOT.pfk_setting_list^0 = ROOT.pfk_current_country }
+					set_variable = { ROOT.pfk_setting_list^0 = ROOT.pfk_current_target }
 					clear_array = ROOT.pfk_array
-					clear_variable = ROOT.pfk_current_country
+					clear_variable = ROOT.pfk_current_target
 					for_each_loop = {#陣営ごとに
 						array = pfk_autonomy_list
 						value = value_id
@@ -146,13 +146,13 @@ scripted_gui = {
 				else_if = {
 					limit = {
 						check_variable = { ROOT.fk_setting_progress = 1 }
-						has_variable = ROOT.pfk_current_country
+						has_variable = ROOT.pfk_current_target
 					}
 					if = {#政体名設定へ
 						limit = { 
 							OR = {
-								check_variable = { ROOT.pfk_current_country = token:pfk_method_puppet }
-								check_variable = { ROOT.pfk_current_country = token:pfk_method_protected_state }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_puppet }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_protected_state }
 							}
 						}
 						clear_array = ROOT.pfk_array
@@ -163,7 +163,7 @@ scripted_gui = {
 						limit = {  }
 						clear_array = ROOT.pfk_array
 					}
-					clear_variable = ROOT.pfk_current_country
+					clear_variable = ROOT.pfk_current_target
 					set_variable = { ROOT.fk_setting_progress = 2 }
 				}
 			}

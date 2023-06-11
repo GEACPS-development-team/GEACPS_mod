@@ -20,18 +20,18 @@ defined_text = {
 	name = pfk_current_name
 	text = {
 		trigger = {	check_variable = { ROOT.fk_setting_progress = 0 }	}
-		localization_key = "[?ROOT.pfk_current_country.GetNonIdeologyNameDef]"
+		localization_key = "[?ROOT.pfk_current_target.GetNonIdeologyNameDef]"
 	}
 	text = {
 		trigger = {
 			check_variable = { ROOT.fk_setting_progress = 1 }
-			check_variable = { ROOT.pfk_current_country = token:pfk_method_puppet }
+			check_variable = { ROOT.pfk_current_target = token:pfk_method_puppet }
 		}
 		localization_key = "[pfk_puppet_name]"
 	}
 	text = {
 		trigger = {	always = yes }
-		localization_key = "[?ROOT.pfk_current_country.GetTokenLocalizedKey]"
+		localization_key = "[?ROOT.pfk_current_target.GetTokenLocalizedKey]"
 	}
 }
 defined_text = {
