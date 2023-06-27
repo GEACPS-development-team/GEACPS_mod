@@ -1,105 +1,225 @@
-autonomy_state = {
+autonomy_state = {	#帝国保護国
 	id = imperial_protected_state
 	
 	default = yes
-	min_freedom_level = 0.5
-	manpower_influence = 0.2
+	use_overlord_color = no
+	min_freedom_level = 0.8
+	manpower_influence = 0.0
 	
 	rule = {
 		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
 		can_decline_call_to_war = yes
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = no
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = yes
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0
-		extra_trade_to_overlord_factor = 0.25
-		overlord_trade_cost_factor = -0.25
-		license_subject_master_purchase_cost = -0.25
-		cic_to_overlord_factor = 0.25
-		mic_to_overlord_factor = 0.25
+		autonomy_manpower_share = 0.1
+		extra_trade_to_overlord_factor = 0.1
+		overlord_trade_cost_factor = -0.1
+		cic_to_overlord_factor = 0.1
+		mic_to_overlord_factor = 0.1
+		license_subject_master_purchase_cost = -0.1
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = no	}
 	
-	allowed_levels_filter = {
-		imperial_protected_state
-		imperial_member
-		imperial_overseas_territory
-	}
-	allowed = {	OVERLORD = { original_tag = JAP }	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
-}
-autonomy_state = {
-	id = imperial_member
 	
-	min_freedom_level = 0.25
-	manpower_influence = 0.2
-	use_overlord_color = yes
+	allowed = {
+		OVERLORD = {
+			original_tag = JAP
+			is_national_system_monarchy = yes
+		}
+	}
+	allowed_levels_filter = {
+		imperial_protected_state
+		#下位
+		imperial_associated_state
+	}
+}
+autonomy_state = {	#帝国提携国
+	id = imperial_associated_state
+	
+	use_overlord_color = no
+	min_freedom_level = 0.6
+	manpower_influence = 0.0
 	
 	rule = {
 		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
 		can_decline_call_to_war = yes
 		can_force_government = no
-		can_not_declare_war = yes
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
+		can_not_declare_war = no
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = yes
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0.75
-		extra_trade_to_overlord_factor = 0.75
-		overlord_trade_cost_factor = -0.75
-		license_subject_master_purchase_cost = -0.75
-		cic_to_overlord_factor = 0.75
-		mic_to_overlord_factor = 0.75
+		autonomy_manpower_share = 0.2
+		extra_trade_to_overlord_factor = 0.2
+		overlord_trade_cost_factor = -0.2
+		cic_to_overlord_factor = 0.2
+		mic_to_overlord_factor = 0.2
+		license_subject_master_purchase_cost = -0.2
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = no	}
 	
-	allowed_levels_filter = {
-		imperial_protected_state
-		imperial_member
-		imperial_overseas_territory
-	}
-	allowed = {	OVERLORD = { original_tag = JAP }	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		OVERLORD = {
+			original_tag = JAP
+			is_national_system_monarchy = yes
+		}
+	}
+	allowed_levels_filter = {
+		imperial_associated_state
+		#上位
+		imperial_protected_state
+		#下位
+		imperial_constituent_state
+	}
 }
-autonomy_state = {
+autonomy_state = {	#帝国構成国
+	id = imperial_constituent_state
+	
+	use_overlord_color = yes
+	min_freedom_level = 0.3
+	manpower_influence = 1.0
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
+		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
+		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
+	}
+	modifier = {
+		autonomy_manpower_share = 0.7
+		extra_trade_to_overlord_factor = 0.7
+		overlord_trade_cost_factor = -0.7
+		cic_to_overlord_factor = 0.7
+		mic_to_overlord_factor = 0.7
+		license_subject_master_purchase_cost = -0.7
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		OVERLORD = {
+			original_tag = JAP
+			is_national_system_monarchy = yes
+		}
+	}
+	allowed_levels_filter = {
+		imperial_constituent_state
+		#上位
+		imperial_associated_state
+		#下位
+		imperial_overseas_territory
+	}
+}
+autonomy_state = {	#外地
 	id = imperial_overseas_territory
 	
-	min_freedom_level = 0.125
-	manpower_influence = 0.2
 	use_overlord_color = yes
+	min_freedom_level = 0.1
+	manpower_influence = 1.0
 	
 	rule = {
 		can_boost_other_ideologies = no
-		can_decline_call_to_war = yes
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0.875
-		extra_trade_to_overlord_factor = 0.875
-		overlord_trade_cost_factor = -0.875
-		license_subject_master_purchase_cost = -0.875
-		cic_to_overlord_factor = 0.875
-		mic_to_overlord_factor = 0.875
+		autonomy_manpower_share = 0.8
+		extra_trade_to_overlord_factor = 0.8
+		overlord_trade_cost_factor = -0.8
+		cic_to_overlord_factor = 0.8
+		mic_to_overlord_factor = 0.8
+		license_subject_master_purchase_cost = -0.8
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
 	
-	allowed_levels_filter = {
-		imperial_protected_state
-		imperial_member
-		imperial_overseas_territory
-	}
-	allowed = {	OVERLORD = { original_tag = JAP }	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		OVERLORD = {
+			original_tag = JAP
+			is_national_system_monarchy = yes
+		}
+	}
+	allowed_levels_filter = {
+		imperial_overseas_territory
+		#上位
+		imperial_constituent_state
+	}
 }
