@@ -30,4 +30,4 @@ jobs:
         webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
         color: "#48f442"
         username: "GitHub Bot"
-        args: "${{ github.event_name }} by @${{ github.actor }}" 
+        args: "${{ github.event_name }} by @${{ github.actor }}\n${{ github.event.repository.url }}/actions/runs/${{ github.run_id }}" 
