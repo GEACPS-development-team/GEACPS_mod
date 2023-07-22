@@ -1,185 +1,252 @@
-autonomy_state = {
-	id = nominal_puppet
+autonomy_state = {	#名目的傀儡国
+	id = nominal_puppet_state
 	
-	is_puppet = yes
+	use_overlord_color = no
 	min_freedom_level = 0.8
-	manpower_influence = 0.2
+	manpower_influence = 0.0
 	
 	rule = {
 		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
 		can_decline_call_to_war = yes
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = no
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = yes
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0
-		extra_trade_to_overlord_factor = 0.10
-		overlord_trade_cost_factor = -0.10
-		license_subject_master_purchase_cost = -0.10
-		cic_to_overlord_factor = 0.10
-		mic_to_overlord_factor = 0.10
+		autonomy_manpower_share = 0.1
+		extra_trade_to_overlord_factor = 0.1
+		overlord_trade_cost_factor = -0.1
+		cic_to_overlord_factor = 0.1
+		mic_to_overlord_factor = 0.1
+		license_subject_master_purchase_cost = -0.1
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = no	}
 	
-	allowed_levels_filter = {
-		nominal_puppet
-		autonomous_puppet
-		puppet
-		occupied_puppet
-		integrated_puppet
-	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
-}
-autonomy_state = {
-	id = autonomous_puppet
 	
-	is_puppet = yes
+	allowed = {
+		NOT = {
+			OVERLORD = {
+				OR = {
+					AND = {
+						original_tag = GER
+						has_government = national_populism
+					}
+					AND = {
+						original_tag = JAP
+						is_national_system_monarchy = yes
+					}
+					original_tag = SOV
+				}
+			}
+		}
+	}
+	allowed_levels_filter = {
+		nominal_puppet_state
+		#上位
+		autonomous_puppet_state
+	}
+}
+autonomy_state = {	#自治的傀儡国
+	id = autonomous_puppet_state
+	
+	use_overlord_color = no
 	min_freedom_level = 0.6
-	manpower_influence = 0.2
+	manpower_influence = 0.0
 	
 	rule = {
 		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
 		can_decline_call_to_war = yes
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = no
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = yes
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0
-		extra_trade_to_overlord_factor = 0.20
-		overlord_trade_cost_factor = -0.20
-		license_subject_master_purchase_cost = -0.20
-		cic_to_overlord_factor = 0.20
-		mic_to_overlord_factor = 0.20
+		autonomy_manpower_share = 0.2
+		extra_trade_to_overlord_factor = 0.2
+		overlord_trade_cost_factor = -0.2
+		cic_to_overlord_factor = 0.2
+		mic_to_overlord_factor = 0.2
+		license_subject_master_purchase_cost = -0.2
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = no	}
 	
-	allowed_levels_filter = {
-		nominal_puppet
-		autonomous_puppet
-		puppet
-		occupied_puppet
-		integrated_puppet
-	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		NOT = {
+			OVERLORD = {
+				OR = {
+					AND = {
+						original_tag = GER
+						has_government = national_populism
+					}
+					AND = {
+						original_tag = JAP
+						is_national_system_monarchy = yes
+					}
+					original_tag = SOV
+				}
+			}
+		}
+	}
+	allowed_levels_filter = {
+		autonomous_puppet_state
+		#上位
+		nominal_puppet_state
+		#下位
+		occupied_puppet_government
+	}
 }
-autonomy_state = {
-	id = puppet
+autonomy_state = {	#占領傀儡政府
+	id = occupied_puppet_government
 	
 	default = yes
-	is_puppet = yes
-	min_freedom_level = 0.4
-	manpower_influence = 0.2
+	use_overlord_color = no
+	min_freedom_level = 0.3
+	manpower_influence = 1.0
 	
 	rule = {
 		can_boost_other_ideologies = no
-		can_decline_call_to_war = yes
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0.6
-		extra_trade_to_overlord_factor = 0.6
-		overlord_trade_cost_factor = -0.6
-		license_subject_master_purchase_cost = -0.6
-		cic_to_overlord_factor = 0.6
-		mic_to_overlord_factor = 0.6
+		autonomy_manpower_share = 0.7
+		extra_trade_to_overlord_factor = 0.7
+		overlord_trade_cost_factor = -0.7
+		cic_to_overlord_factor = 0.7
+		mic_to_overlord_factor = 0.7
+		license_subject_master_purchase_cost = -0.7
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
 	
-	allowed_levels_filter = {
-		nominal_puppet
-		autonomous_puppet
-		puppet
-		occupied_puppet
-		integrated_puppet
-	}
-	allowed = {
-		NOT = {	OVERLORD = {	tag = JAP	}	}
-		NOT = {	OVERLORD = {	tag = SOV	}	}
-	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
-}
-autonomy_state = {
-	id = occupied_puppet
 	
-	is_puppet = yes
-	min_freedom_level = 0.2
-	manpower_influence = 0.2
+	allowed_levels_filter = {
+		occupied_puppet_government
+		#上位
+		autonomous_puppet_state
+		#下位
+		integrated_puppet_government
+	}
+}
+autonomy_state = {	#統合傀儡政府
+	id = integrated_puppet_government
+	
+	use_overlord_color = no
+	min_freedom_level = 0.3
+	manpower_influence = 1.0
 	
 	rule = {
 		can_boost_other_ideologies = no
-		can_decline_call_to_war = yes
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
 		autonomy_manpower_share = 0.8
-		extra_trade_to_overlord_factor = 0.75
-		overlord_trade_cost_factor = -0.75
-		license_subject_master_purchase_cost = -0.75
-		cic_to_overlord_factor = 0.75
-		mic_to_overlord_factor = 0.75
+		extra_trade_to_overlord_factor = 0.8
+		overlord_trade_cost_factor = -0.8
+		cic_to_overlord_factor = 0.8
+		mic_to_overlord_factor = 0.8
+		license_subject_master_purchase_cost = -0.8
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
 	
-	allowed_levels_filter = {
-		nominal_puppet
-		autonomous_puppet
-		puppet
-		occupied_puppet
-		integrated_puppet
-	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
-}
-autonomy_state = {
-	id = integrated_puppet
-	is_puppet = yes
 	
-	min_freedom_level = 0.0
-	manpower_influence = 0.2
-	
-	rule = {
-		can_boost_other_ideologies = no
-		can_decline_call_to_war = yes
-		can_force_government = no
-		can_not_declare_war = yes
+	allowed = {
+		NOT = {
+			OVERLORD = {
+				OR = {
+					AND = {
+						original_tag = GER
+						has_government = national_populism
+					}
+					AND = {
+						original_tag = JAP
+						is_national_system_monarchy = yes
+					}
+					original_tag = SOV
+				}
+			}
+		}
 	}
-	
-	modifier = {
-		autonomy_manpower_share = 1.0
-		extra_trade_to_overlord_factor = 1.0
-		overlord_trade_cost_factor = -1.0
-		license_subject_master_purchase_cost = -1.0
-		cic_to_overlord_factor = 1.0
-		mic_to_overlord_factor = 1.0
-	}
-	
-	ai_subject_wants_higher = {	factor = 0.0	}
-	ai_overlord_wants_lower = {	factor = 0.0	}
-	
 	allowed_levels_filter = {
-		nominal_puppet
-		autonomous_puppet
-		puppet
-		occupied_puppet
-		integrated_puppet
+		integrated_puppet_government
+		#下位
+		occupied_puppet_government
 	}
-	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
-	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }

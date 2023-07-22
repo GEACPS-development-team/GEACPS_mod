@@ -4,7 +4,7 @@ import glob
 before_word = "l_japanese"
 after_word = "l_english"
 
-files = glob.glob("english/*/*" + before_word + "*")
+files = glob.glob("localisation/english/*/*{}.yml".format(before_word))
 
 for before_file in files:
 	#テキスト内編集

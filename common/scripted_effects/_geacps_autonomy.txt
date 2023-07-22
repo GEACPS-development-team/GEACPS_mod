@@ -1,64 +1,87 @@
+#puppet
+
 #colony
-set_dominion = {	set_autonomy = {	target = PREV	autonomous_state = dominion	}	}
+set_colony = {	set_autonomy = {	target = PREV	autonomous_state = autonomous_state	}	}
 set_colony = {	set_autonomy = {	target = PREV	autonomous_state = colony	}	}
 set_colonies_federation = {
 	PREV = {	add_ideas = federal_dependent_territory	}
 	set_autonomy = {	target = PREV	autonomous_state = colonies_federation	}
 }
-set_colony_and_protectorate = {	
-	PREV = {	set_variable = {	protectorate_trigger_variable = 1	}	}
-	set_autonomy = {	target = PREV	autonomous_state = colony_and_protectorate	}
+set_colony_and_protected_territory = {
+	PREV = {	add_ideas = dependent_territory_indirect_rule_system	}
+	set_autonomy = {	target = PREV	autonomous_state = colony_and_protected_territory	}
 }
+set_condominium = {	set_autonomy = {	target = PREV	autonomous_state = condominium	}	}
 set_overseas_territory = {	set_autonomy = {	target = PREV	autonomous_state = overseas_territory	}	}
+set_viceroyalty = {	set_autonomy = {	target = PREV	autonomous_state = viceroyalty	}	}
+set_captaincy_general = {	set_autonomy = {	target = PREV	autonomous_state = captaincy_general	}	}
 
 #protectorate
 set_protected_state = {	set_autonomy = {	target = PREV	autonomous_state = protected_state	}	}
 set_protected_territory = {	set_autonomy = {	target = PREV	autonomous_state = protected_territory	}	}
 
-#mandate
+#autonomous_area
+set_constituent_autonomous_province = {	set_autonomy = {	target = PREV	autonomous_state = constituent_autonomous_province	}	}
+
+#mandate_territory
+set_associated_state = {	set_autonomy = {	target = PREV	autonomous_state = associated_state	}	}
+set_trust_territory = {	set_autonomy = {	target = PREV	autonomous_state = trust_territory	}	}
 set_mandated_territory_A = {	set_autonomy = {	target = PREV	autonomous_state = mandated_territory_A	}	}
 set_mandated_territory_B = {	set_autonomy = {	target = PREV	autonomous_state = mandated_territory_B	}	}
 set_mandated_territory_C = {	set_autonomy = {	target = PREV	autonomous_state = mandated_territory_C	}	}
 
 #personal union
-set_junior_partner_state = {	set_autonomy = {	target = PREV	autonomous_state = junior_partner_state	}	}
-set_junior_partner_protected_territory = {
+set_personal_union = {	set_autonomy = {	target = PREV	autonomous_state = personal_union	}	}
+set_real_union = {	set_autonomy = {	target = PREV	autonomous_state = real_union	}	}
+set_personal_union_protected_territory = {
 	PREV = {	add_ideas = dependent_territory_indirect_rule_system	}
-	set_autonomy = {	target = PREV	autonomous_state = junior_partner_protected_territory	}
+	set_autonomy = {	target = PREV	autonomous_state = personal_union_protected_territory	}
 }
-set_junior_partner_colony = {	#
+set_personal_union_colony = {	#
 	PREV = {	add_ideas = dependent_territory_direct_rule_system	}
-	set_autonomy = {	target = PREV	autonomous_state = junior_partner_colony	}
+	set_autonomy = {	target = PREV	autonomous_state = personal_union_colony	}
 }
-set_crown_land = {	set_autonomy = {	target = PREV	autonomous_state = crown_land	}	}
+set_crown_dependency = {	set_autonomy = {	target = PREV	autonomous_state = crown_dependency	}	}
 
-#other autonomous state
-set_condominium = {	set_autonomy = {	target = PREV	autonomous_state = condominium	}	}
+#occupied_territory
+set_preindependence_government = {	set_autonomy = {	target = PREV	autonomous_state = preindependence_government	}	}
 set_occupied_territory = {	set_autonomy = {	target = PREV	autonomous_state = occupied_territory	}	}
+
+#leased_territory
 set_leased_territory = {	set_autonomy = {	target = PREV	autonomous_state = leased_territory	}	}
+
+#CHI
+set_CHI_autonomous_military_clique = {	set_autonomy = {	target = PREV	autonomous_state = CHI_autonomous_military_clique	}	}
+set_CHI_autonomous_province = {	set_autonomy = {	target = PREV	autonomous_state = CHI_autonomous_province	}	}
+
+#GBR
+set_commonwealth_realm = {	set_autonomy = {	target = PREV	autonomous_state = commonwealth_realm	}	}
+set_dominion = {	set_autonomy = {	target = PREV	autonomous_state = dominion	}	}
+
+#GER
 
 #JAP
 set_imperial_protected_state = {	set_autonomy = {	target = PREV	autonomous_state = imperial_protected_state	}	}
-set_imperial_member = {	set_autonomy = {	target = PREV	autonomous_state = imperial_member	}	}
+set_imperial_associated_state = {	set_autonomy = {	target = PREV	autonomous_state = imperial_associated_state	}	}
+set_imperial_constituent_state = {	set_autonomy = {	target = PREV	autonomous_state = imperial_constituent_state	}	}
 set_imperial_overseas_territory = {	set_autonomy = {	target = PREV	autonomous_state = imperial_overseas_territory	}	}
 
 #USA
-set_us_commonwealth = {	set_autonomy = {	target = PREV	autonomous_state = us_commonwealth	}	}
-set_us_territory = {	set_autonomy = {	target = PREV	autonomous_state = us_territory	}	}
+set_USA_commonwealth = {	set_autonomy = {	target = PREV	autonomous_state = USA_commonwealth	}	}
+set_USA_territory = {	set_autonomy = {	target = PREV	autonomous_state = USA_territory	}	}
 
 #SOV
-set_soviet_satellite = {	set_autonomy = {	target = PREV	autonomous_state = soviet_satellite	}	}
-set_soviet_member_republic = {	set_autonomy = {	target = PREV	autonomous_state = soviet_member_republic	}	}
-set_soviet_member_federal_republic = {
+set_SOV_satellite_state = {	set_autonomy = {	target = PREV	autonomous_state = SOV_satellite_state	}	}
+set_SOV_constituent_republic = {
+	PREV = {	add_ideas = republic_unitary_state	}
+	set_autonomy = {	target = PREV	autonomous_state = SOV_constituent_republic	}
+}
+set_SOV_constituent_federative_republic = {
 	PREV = {	add_ideas = republic_federal_state	}	
-	set_autonomy = {	target = PREV	autonomous_state = soviet_member_federal_republic	}
+	set_autonomy = {	target = PREV	autonomous_state = SOV_constituent_federative_republic	}
 }
 
-clear_autonomous_states_variable = {
-	clear_variable = colony_trigger_variable
-	clear_variable = protectorate_trigger_variable
-}
-
+#
 retire_all_ideology_leader = {
 	retire_ideology_leader = total_socialism
 	retire_ideology_leader = radical_socialism

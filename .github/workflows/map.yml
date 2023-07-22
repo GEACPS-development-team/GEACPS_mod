@@ -1,0 +1,33 @@
+name: map
+on:
+  push:
+    paths:
+      - "common/countries/**"
+      - "common/country_tags/**"
+      - "common/country_tag_alianses/**"
+      - "common/ideologies/**"
+      - "gfx/flags/**"
+      - "history/countries/**"
+      - "history/states/**"
+      - "map/**"
+      - "localisation/japanese/map/**"
+jobs:
+  notify_discord_of_push:
+    name: Get Commit Message
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo's head branch
+      uses: actions/checkout@v2.4.0
+      with:
+          ref: ${{ github.head_ref }} #For pull_request events, GITHUB_REF contains the merge branch (refs/pull/:prNumber/merge).
+    - name: Get commit message
+      run: |
+        echo "Commit_Message=$(git log --pretty=oneline --all --abbrev-commit)" >> $GITHUB_ENV
+    - name: Notify discord
+      uses: appleboy/discord-action@0.0.3
+      with:
+        webhook_id: ${{ secrets.WEBHOOK_ID }}
+        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        color: "#48f442"
+        username: "GitHub Bot"
+        args: "${{ github.event_name }} by @${{ github.actor }}\n${{ github.event.repository.url }}/actions/runs/${{ github.run_id }}" 
