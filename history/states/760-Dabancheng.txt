@@ -3,7 +3,7 @@ state = {
 	name = "STATE_760"
 	manpower = 700000
 	buildings_max_level_factor = 1
-	state_category = "wasteland"
+	state_category = wasteland
 	
 	history = {
 		owner = CHI
@@ -14,13 +14,13 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		add_to_array = {	KUM.pfk_state_array_1 = THIS	}
 		add_to_array = {	ETR.pfk_state_array_1 = THIS	}
+		add_to_array = {	KUM.pfk_state_array_1 = THIS	}
 		add_to_array = {	SIK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1838	4704	4843	7732	12524	12598	10614	12656
+		1838	4704	4843	7732	10614	12524	12598	12656
 	}
 	local_supplies = 0.0
 }
