@@ -87,20 +87,17 @@ scripted_gui = {
 				
 			}
 			pfk_open_btn_2_click = {
-				log = "[?pfk_state_array_1^1.GetName]"
 				var:pfk_current_target = {
-					for_each_scope_loop = {
-						array = ROOT.owned_states
-						if = {
+					ROOT = {
+						every_owned_state = {
 							limit = {
 								is_in_array = {
-									array = PREV.pfk_state_array_1
+									array = PREV.PREV.pfk_state_array_1
 									value = THIS
 								}
-								is_owned_by = ROOT
 							}
-							transfer_state_to = PREV
-						}
+							transfer_state_to = PREV.PREV
+						}	
 					}
 				}
 			}
