@@ -10,10 +10,13 @@ state = {
 		add_core_of = MON
 		add_core_of = CHI
 		add_core_of = ETR
+		KUM = {	add_debug_core_PREV = yes	}
+		SIK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		add_to_array = {	ETR.pfk_state_array_1 = THIS	}
+		add_to_array = {	KUM.pfk_state_array_1 = THIS	}
 		add_to_array = {	MON.pfk_state_array_1 = THIS	}
 	}
 	
