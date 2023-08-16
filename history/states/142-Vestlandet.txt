@@ -17,12 +17,18 @@ state = {
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 1
-			53 = {	naval_base = 1	}
-			122 = {	naval_base = 3	}
-			9296 = {	naval_base = 3	}
-			53 = {	coastal_bunker = 1	}
-			122 = {	coastal_bunker = 2	}
-			9296 = {	coastal_bunker = 1	}
+			53 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
+			122 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
+			9296 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	53	1	}
 		victory_points = {	122	3	}
