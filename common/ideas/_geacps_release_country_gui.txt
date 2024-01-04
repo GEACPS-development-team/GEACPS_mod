@@ -1,35 +1,82 @@
 ideas = {
 	hidden_ideas = {
-		#メゾット
+	##########自治度を選択した時の効果#########
 		pfk_method_puppet = { 
 			on_add = {
-				set_variable = { ROOT.pfk_setting_progress = 2 }#政体名選択
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = {	ROOT.pfk_array = token:nominal_puppet_state	}
+				add_to_array = {	ROOT.pfk_array = token:autonomous_puppet_state	}
+				add_to_array = {	ROOT.pfk_array = token:occupied_puppet_government	}
+				add_to_array = {	ROOT.pfk_array = token:integrated_puppet_government	}
 			}
 		}
 		pfk_method_protected_state = { 
 			on_add = {
-				set_variable = { ROOT.pfk_setting_progress = 2 }#政体名選択
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = {	ROOT.pfk_array = token:protected_territory	}
+				add_to_array = {	ROOT.pfk_array = token:protected_state	}
 			} 
 		}
+		#固有
 		pfk_method_colony = { 
 			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
 				add_to_array = {	ROOT.pfk_array = token:colony	}
 				add_to_array = {	ROOT.pfk_array = token:colonies_federation	}
 				add_to_array = {	ROOT.pfk_array = token:colony_and_protectorate	}
-				add_to_array = {	ROOT.pfk_array = token:protected_territory	}
 			} 
 		}
 		pfk_method_colony_JAP = {
 			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
 				add_to_array = {	ROOT.pfk_array = token:imperial_overseas_territory	}
 				add_to_array = {	ROOT.pfk_array = token:imperial_member	}
 			}
 		}
 		pfk_method_colony_GER = {
-			on_add = {}
+			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = { ROOT.pfk_array = token:reichssatellitestate }
+				add_to_array = { ROOT.pfk_array = token:reichsprotectorate }
+				add_to_array = { ROOT.pfk_array = token:reichsgeneralgovernorate }
+				add_to_array = { ROOT.pfk_array = token:reichskommissariat }
+				add_to_array = { ROOT.pfk_array = token:reichskolonie }
+				add_to_array = { ROOT.pfk_array = token:reichsland }
+			}
 		}
 		pfk_method_colony_SOV = {
 			on_add = {#ここにソ連構成国　を選択した後に表示される自治度を表示
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
 				add_to_array = { ROOT.pfk_array = token:soviet_satellite }
 				add_to_array = { ROOT.pfk_array = token:soviet_member_federal_republic }
 				add_to_array = { ROOT.pfk_array = token:soviet_member_republic }
@@ -37,12 +84,38 @@ ideas = {
 			}
 		}
 		pfk_method_return = {
-			on_add = {}
+			on_add = {
+			}
 		}
 		pfk_method_incorporation = {
+			on_add = {
+			}
+		}
+	##########政体名を選択した時の効果#########
+		
+
+	#########自治度#########
+		#傀儡国
+		nominal_puppet_state = { #名目的傀儡国
 			on_add = {}
 		}
-		#自治度今はソ連のみ
+		autonomous_puppet_state = { #自治的傀儡国
+			on_add = {}
+		}
+		occupied_puppet_government = { #占領傀儡政府
+			on_add = {}
+		}
+		integrated_puppet_government = { #統合傀儡政府
+			on_add = {}
+		}
+		#保護国
+		protected_state = { #保護国
+			on_add = {}
+		}
+		protected_territory = {	#保護領
+			on_add = {}
+		}
+		#植民地
 		colony = {	#植民地
 			on_add = {}
 		}
@@ -52,15 +125,14 @@ ideas = {
 		colony_and_protectorate = {	#植民地及び保護領
 			on_add = {}
 		}
-		protected_territory = {	#保護領
-			on_add = {}
-		}
+		#日本固有
 		imperial_overseas_territory = {	#外地
 			on_add = {}
 		}
 		imperial_member = {	#帝国構成国
 			on_add = {}
 		}
+		#ソ連固有
 		soviet_satellite = {
 			on_add = {}
 		}
@@ -73,7 +145,26 @@ ideas = {
 		soviet_autonomous_republic = {	#自治共和国
 			on_add = {}
 		}
-		#政体名
+		#ドイツ固有
+		reichssatellitestate = {	#衛星国
+			on_add = {}
+		}
+		reichsprotectorate = {	#国家保護領
+			on_add = {}
+		}
+		reichsgeneralgovernorate = {	#国家総督領
+			on_add = {}
+		}
+		reichskommissariat = {	#国家弁務官区
+			on_add = {}
+		}
+		reichskolonie = {	#国家植民地
+			on_add = {}
+		}
+		reichsland = {	#国家直轄地
+			on_add = {}
+		}
+	##########政体名#########
 		republic = {#共和国
 			on_add = {}
 		}

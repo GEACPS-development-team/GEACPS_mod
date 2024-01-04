@@ -58,33 +58,66 @@ scripted_gui = {
 			}
 			pfk_open_btn_1_click = {#一つ戻る
 				clear_array = ROOT.pfk_array
-				remove_from_array = {
-					array = ROOT.pfk_current_country_list
-					index = 0
-				}
-				set_temp_variable = { current_scope = ROOT.pfk_current_country_list^0 }
-				if = {
-					limit = { has_variable = ROOT.pfk_current_country_list^0 }
-					var:current_scope = {
+				if = {	#国家選択中
+					limit = { check_variable = { ROOT.pfk_setting_progress = 0 } }
+					remove_from_array = {
+						array = ROOT.pfk_current_country_list
+						index = 0
+					}
+					set_temp_variable = { current_scope = ROOT.pfk_current_country_list^0 }
+					if = {#一つ前のネストに戻る
+						limit = { has_variable = ROOT.pfk_current_country_list^0 }
+						var:current_scope = {
+							for_each_loop = {
+								array = pfk_country_array
+								value = country_tag
+								index = index_num
+								add_to_array = { ROOT.pfk_array = country_tag }
+							}
+						}
+						set_variable = { ROOT.pfk_current_target = current_scope }
+					}
+					else = {#ネストが最も浅い
 						for_each_loop = {
-							array = pfk_country_array
+							array = global.pfk_country_array
 							value = country_tag
 							index = index_num
 							add_to_array = { ROOT.pfk_array = country_tag }
 						}
-					}
-					set_variable = { ROOT.pfk_current_target = current_scope }
+						set_variable = { ROOT.pfk_current_target = ROOT }
+					}	
 				}
-				else = {
-					for_each_loop = {
-						array = global.pfk_country_array
-						value = country_tag
-						index = index_num
-						add_to_array = { ROOT.pfk_array = country_tag }
+				else_if = { #自治度設定
+					limit = { check_variable = { ROOT.pfk_setting_progress = 1 } }
+					if = {#一つ前のネストに戻る
+						limit = {
+							OR = {
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_puppet }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_protected_state }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_colony }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_colony_JAP }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_colony_GER }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_colony_SOV }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_return }
+								check_variable = { ROOT.pfk_current_target = token:pfk_method_incorporation }
+							}
+						}
+						pfk_set_autonomy = yes
 					}
-					set_variable = { ROOT.pfk_current_target = ROOT }
+					esle = {#国家選択画面へ戻る
+						set_temp_variable = { current_scope = ROOT.pfk_current_country_list^0 }
+						var:current_scope = {
+							for_each_loop = {
+								array = pfk_country_array
+								value = country_tag
+								index = index_num
+								add_to_array = { ROOT.pfk_array = country_tag }
+							}
+						}
+						set_variable = { ROOT.pfk_current_target = current_scope }
+						set_variable = { ROOT.pfk_setting_progress = 0 }
+					}
 				}
-				
 			}
 			pfk_open_btn_2_click = {
 				var:pfk_current_target = {
@@ -101,41 +134,41 @@ scripted_gui = {
 					}
 				}
 			}
-			pfk_open_btn_3_click = {
-				
+			pfk_open_btn_3_click = {	
 			}
 			pfk_open_btn_4_click = {
-				
 			}
 			pfk_selected_btn_click = {
 				log = "現在:[?THIS.GetName]"
-
-				if = {#国家選択
-					limit = { check_variable = { ROOT.pfk_setting_progress = 0 } }
-					if = {
-						limit = {
-							has_variable = pfk_country_array^0
-							NOT = { check_variable = { ROOT.pfk_current_country_list^0 = THIS } }
+				if = {
+					limit = { NOT = { check_variable = { ROOT.pfk_current_country_list^0 = THIS } }  }#現在選択中の対象が選択した国家と一致
+					if = {#国家選択中
+						limit = { check_variable = { ROOT.pfk_setting_progress = 0 } }
+						if = {#
+							limit = { has_variable = pfk_country_array^0 }#選択した国家に下位国家のリストがあるか
+							clear_array = ROOT.pfk_array
+							add_to_array = {
+								array = ROOT.pfk_current_country_list
+								value = v
+								index = 0
+							}
+							for_each_loop = {#
+								array = pfk_country_array
+								value = country_tag
+								index = index_num
+								add_to_array = { ROOT.pfk_array = country_tag }
+							}				
 						}
-						clear_array = ROOT.pfk_array
-						add_to_array = {
-							array = ROOT.pfk_current_country_list
-							value = v
-							index = 0
-						}
-						for_each_loop = {#陣営ごとに
-							array = pfk_country_array
-							value = country_tag
-							index = index_num
-							add_to_array = { ROOT.pfk_array = country_tag }
-						}				
+						set_variable = { ROOT.pfk_current_target = v }
 					}
-					set_variable = { ROOT.pfk_current_target = v }
+					else_if = {#自治度選択した
+						limit = { check_variable = { ROOT.pfk_setting_progress = 1 } }
+						add_ideas = var:v
+						remove_ideas =  var:v
+						set_variable = { ROOT.pfk_current_target = v }
+					}
 				}
-				else_if = {#自治度選択
-					limit = { check_variable = { ROOT.pfk_setting_progress = 1 } }
-					set_variable = { ROOT.pfk_current_target = v }
-				}
+
 			}
 			pfk_set_btn_click = {
 				if = {#国家の選択
@@ -143,18 +176,14 @@ scripted_gui = {
 						check_variable = { ROOT.pfk_setting_progress = 0 }
 						has_variable = ROOT.pfk_current_target
 					}
-					set_variable = { ROOT.pfk_setting_progress = 1 }
 					set_variable = { ROOT.pfk_setting_list^0 = ROOT.pfk_current_target } #決まったことリスト0番目:対象の国
-					clear_array = ROOT.pfk_array
 					clear_variable = ROOT.pfk_current_target
-					for_each_loop = {#陣営ごとに
-						array = pfk_autonomy_list
-						value = value_id
-						index = index_num
-						add_to_array = { ROOT.pfk_array = value_id }
-					}	
+					#進行度を自治度へ
+					set_variable = { ROOT.pfk_setting_progress = 1 }
+					#表示する候補をセット
+					pfk_set_autonomy = yes
 				}
-				else_if = {#メゾットを設定
+				else_if = {#自治度を設定
 					limit = {
 						check_variable = { ROOT.pfk_setting_progress = 1 }
 						has_variable = ROOT.pfk_current_target
