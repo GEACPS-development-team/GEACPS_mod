@@ -40,3 +40,132 @@ pfk_set_autonomy = { #自治度の表示
 		add_to_array = { ROOT.pfk_array = token:pfk_method_return }
 	}
 }
+
+
+#####rework#####
+pfk_initialize_setting = {
+	set_variable = { pfk_setting_progress = 0 }
+	clear_array = pfk_setting_list #決まったことリスト(TAG,method,name,range,)
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	clear_variable = ROOT.pfk_current_target
+
+	for_each_loop = {#陣営ごとに
+		array = global.pfk_country_array
+		value = country_tag
+		index = index_num
+		add_to_array = { ROOT.pfk_array_0 = country_tag }
+	}
+}
+
+pfk_set_country_list = { #解放できる国家のリストを表示する(最もネストの浅いとき)
+	clear_array = ROOT.pfk_selected_country_list #国家ネストのリスト
+	clear_array = ROOT.pfk_array_0 #国家のリストをクリア
+	for_each_loop = {#最もネストの大きな選択国家のリストを表示する
+		array = global.pfk_country_array
+		value = country_tag
+		index = index_num
+		add_to_array = { ROOT.pfk_array_0 = country_tag }
+	}
+}
+pfk_set_autonomy_list = { #利用可能な自治度のリストを表示する(最もネストの浅いとき)
+
+	clear_array = ROOT.pfk_array_1 #自治度のリストをクリア
+	add_to_array = { ROOT.pfk_array_1 = token:pfk_method_puppet }
+	add_to_array = { ROOT.pfk_array_1 = token:pfk_method_protected_state }
+	add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony }
+	add_to_array = { ROOT.pfk_array_1 = token:pfk_method_incorporation }
+	#固有の自治度
+	if = {
+		limit = { tag = JAP }
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony_JAP }
+	}
+	else_if = {
+		limit = { tag = GER }
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony_GER }
+	}
+	else_if = {
+		limit = { tag = SOV }
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony_SOV }
+	}
+	if = {
+		limit = {
+			var:ROOT.pfk_setting_list^0 = {
+				exists = yes
+				# OR = {
+				# 	is_in_faction_with = ROOT
+				# 	is_subject_of = ROOT
+				# }
+			}
+		}
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_return }
+	}
+}
+pfk_set_political_form_list = { #利用可能な政体のリストを表示する
+	clear_array = ROOT.pfk_array_2 #政体のリストをクリア
+	if = {#領土返還の時
+		limit = { check_variable = { ROOT.pfk_setting_list^1 = token:pfk_method_return } }
+		add_to_variable = { pfk_setting_progress = 1 } #進度をスキップ
+		set_variable = { ROOT.pfk_setting_list^2 = token:pfk_method_return }
+		add_to_array = { ROOT.pfk_array_3 = token:pfk_return_all }
+		add_to_array = { ROOT.pfk_array_3 = token:pfk_return_other_than_marked }
+
+	}
+	else = {
+		#テストとして全部入れた(^▽^)/
+		add_to_array = { ROOT.pfk_array_2 = token:republic }
+		add_to_array = { ROOT.pfk_array_2 = token:peoples_republic } #人民共和国
+		add_to_array = { ROOT.pfk_array_2 = token:democratic_republic } #民主共和国
+		add_to_array = { ROOT.pfk_array_2 = token:peoples_democratic_republic } #人民民主共和国
+		add_to_array = { ROOT.pfk_array_2 = token:radical_socialism_soviet_member_republic } #社会主義共和国
+		add_to_array = { ROOT.pfk_array_2 = token:socialist_workers_republic } #社会主義労働者共和国
+		add_to_array = { ROOT.pfk_array_2 = token:independent_state } #独立国
+		add_to_array = { ROOT.pfk_array_2 = token:state } #国
+		add_to_array = { ROOT.pfk_array_2 = token:empire } #帝国
+		add_to_array = { ROOT.pfk_array_2 = token:kingdom } #王国
+		add_to_array = { ROOT.pfk_array_2 = token:archduchy } #大公国
+		add_to_array = { ROOT.pfk_array_2 = token:duchy } #公国
+		add_to_array = { ROOT.pfk_array_2 = token:principality } #公国
+		add_to_array = { ROOT.pfk_array_2 = token:tsardom } #ツァール国
+		add_to_array = { ROOT.pfk_array_2 = token:sultanate } #スルタン国
+		add_to_array = { ROOT.pfk_array_2 = token:emirat } #首長国
+		add_to_array = { ROOT.pfk_array_2 = token:khanate } #ハン国
+		add_to_array = { ROOT.pfk_array_2 = token:hashemite_kingdom } #ハシミテ王国
+		add_to_array = { ROOT.pfk_array_2 = token:arab_republic } #アラブ共和国
+		add_to_array = { ROOT.pfk_array_2 = token:islamic_republic } #イスラム共和国
+		add_to_array = { ROOT.pfk_array_2 = token:commonwealth } #共和国
+		add_to_array = { ROOT.pfk_array_2 = token:confederation } #連邦
+		add_to_array = { ROOT.pfk_array_2 = token:union } #連合
+		add_to_array = { ROOT.pfk_array_2 = token:united_republic } #連合共和国
+		add_to_array = { ROOT.pfk_array_2 = token:united_states } #合衆国
+		add_to_array = { ROOT.pfk_array_2 = token:united_kingdom } #連合王国
+		add_to_array = { ROOT.pfk_array_2 = token:federation } #連邦
+		add_to_array = { ROOT.pfk_array_2 = token:federal_republic } #連邦共和国
+		add_to_array = { ROOT.pfk_array_2 = token:federal_democratic_republic } #連邦民主共和国
+		add_to_array = { ROOT.pfk_array_2 = token:federated_states } #連邦
+		add_to_array = { ROOT.pfk_array_2 = token:federal_state } #連邦国
+		add_to_array = { ROOT.pfk_array_2 = token:democratic_federal } #民主連邦
+		add_to_array = { ROOT.pfk_array_2 = token:free_state } #自由国
+		add_to_array = { ROOT.pfk_array_2 = token:free_city } #自由都市
+		add_to_array = { ROOT.pfk_array_2 = token:city_state } #市国
+		add_to_array = { ROOT.pfk_array_2 = token:minguo } #民国
+		add_to_array = { ROOT.pfk_array_2 = token:military_clique } #軍閥
+		add_to_array = { ROOT.pfk_array_2 = token:ma_military_clique } #馬軍閥
+		add_to_array = { ROOT.pfk_array_2 = token:soviet_government } #ソビエト
+		add_to_array = { ROOT.pfk_array_2 = token:cossack_republic } #コサック共和国
+		add_to_array = { ROOT.pfk_array_2 = token:most_serene_commonwealth } #晴朗極まる共和国
+		add_to_array = { ROOT.pfk_array_2 = token:anarchist_federation } #アナーキスト連盟"
+
+	}
+}
+pfk_set_release_range_list = { #利用可能な解放範囲のリストを表示する
+	clear_array = ROOT.pfk_array_3 #解放範囲のリストをクリア
+	add_to_array = { ROOT.pfk_array_3 = token:pfk_state_array_1 } 
+	if = {
+		limit = { var:pfk_setting_list^0 = { exists = yes } }
+		add_to_array = { ROOT.pfk_array_3 = token:pfk_state_array_2 } 
+	}
+}
+

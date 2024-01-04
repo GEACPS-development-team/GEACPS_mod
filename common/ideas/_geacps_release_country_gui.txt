@@ -92,8 +92,16 @@ ideas = {
 			}
 		}
 	##########政体名を選択した時の効果#########
-		
+	
 
+	##########解放範囲(返還範囲)#########
+	pfk_state_array_1 = {  } #最も基本的な範囲のステートリスト
+	pfk_state_array_2 = {  } #狭義的な範囲のステートリスト
+	pfk_state_array_3 = {  } #広義的な範囲のステートリスト
+	pfk_state_array_4 = {  } #最も狭義的な範囲のステートリスト
+	pfk_return_all = { } #全て返す
+	pfk_return_other_than_marked = { } #指定したステート以外を返す
+	
 	#########自治度#########
 		#傀儡国
 		nominal_puppet_state = { #名目的傀儡国
@@ -228,12 +236,12 @@ ideas = {
 		commonwealth = {#共和国
 			on_add = {}
 		}
-		commonwealth = {#国
-			on_add = {}
-		}
-		commonwealth = {#連邦
-			on_add = {}
-		}
+		# commonwealth = {#国
+		# 	on_add = {}
+		# }
+		# commonwealth = {#連邦
+		# 	on_add = {}
+		# }
 		confederation = {#連邦
 			on_add = {}
 		}

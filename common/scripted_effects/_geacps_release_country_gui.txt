@@ -1,4 +1,10 @@
 set_pfk_country_arraies = {
+	#リセット
+	for_each_scope_loop = {#全ての存在する国家
+		array = global.countries
+		clear_array = pfk_country_array
+	}
+	clear_array = global.pfk_country_array
 	#グローバル
 	add_to_array = {	global.pfk_country_array = AFR	}
 	add_to_array = {	global.pfk_country_array = ARB	}
@@ -195,6 +201,7 @@ set_pfk_country_arraies = {
 	add_to_array = {	SYE.pfk_country_array = ADN	}
 	
 	##オーストラリア
+	add_to_array = {	AST.pfk_country_array = AST	}
 	add_to_array = {	AST.pfk_country_array = COK	}
 	add_to_array = {	AST.pfk_country_array = FIJ	}
 	add_to_array = {	AST.pfk_country_array = NCL	}
