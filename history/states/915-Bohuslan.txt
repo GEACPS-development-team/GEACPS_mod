@@ -1,0 +1,23 @@
+state = {
+	id = 915
+	name = "STATE_915"
+	manpower = 96200
+	state_category = rural
+
+	history = {
+		owner = SWE
+		add_core_of = SWE
+		SCA = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {	6310	1	}
+		add_to_array = {	SWE.pfk_state_array_1 = THIS	}
+		add_to_array = {	NOR.pfk_state_array_2 = THIS	}
+	}
+	
+	provinces = {
+		171	6310
+	}
+	local_supplies = 0.0
+}

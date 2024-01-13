@@ -1,0 +1,24 @@
+state = {
+	id = 932
+	name = "STATE_932"
+	manpower = 51000
+	state_category = small_island
+	
+	history = {
+		owner = MNN
+		add_core_of = MNN
+		buildings = {
+			infrastructure = 4
+			dockyard = 1
+			air_base = 3
+			3311 = {	naval_base = 1	}
+		}
+		victory_points = {	3311	1	}
+		add_to_array = {	MNN.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		3311
+	}
+	local_supplies = 0.0
+}

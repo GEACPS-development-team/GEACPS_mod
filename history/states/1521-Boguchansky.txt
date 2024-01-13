@@ -1,0 +1,23 @@
+state = {
+	id = 1521
+	name = "STATE_1521"
+	manpower = 1200
+	state_category = wasteland
+	
+	history = {
+		owner = SIB
+		add_core_of = SIB
+		add_core_of = RUS
+		KRS = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		add_to_array = {	KRS.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		1837	4782	12523
+	}
+	local_supplies = 0.0
+}

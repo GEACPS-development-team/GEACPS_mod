@@ -1,0 +1,28 @@
+state = {
+	id = 909
+	name = "STATE_909"
+	manpower = 32500
+	state_category = large_city
+	
+	history = {
+		owner = SHL
+		add_core_of = SHL
+		add_core_of = GER
+		NGR = {	add_debug_core_PREV = yes	}
+		WGR = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {	317	1	}
+		add_to_array = {	DEN.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SHL.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		317	11366
+	}
+	local_supplies = 0.0
+}
