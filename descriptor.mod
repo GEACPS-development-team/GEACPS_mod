@@ -1,4 +1,4 @@
-version="1.12.0"
+version="1.13.0"
 tags={
 	"Alternative History"
 	"Events"
@@ -72,5 +72,5 @@ replace_path="history/units"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"
 replace_path="music"
-supported_version="1.12.7"
+supported_version="1.13.*"
 remote_file_id="2080137628"
