@@ -24,6 +24,17 @@ shared_focus = {
 	cost = 5.00
 	x = 4
 	y = 0
+	offset = {
+		x = -4
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_joint_with_exiles
+		}
+	}
 	completion_reward = {
 	}
 }
@@ -34,6 +45,28 @@ shared_focus = {
 	relative_position_id = CZE_resurrection
 	x = -1
 	y = 1
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_joint_with_exiles
+		}
+	}
+	allow_branch = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+			NOT = {	has_completed_focus = CZE_fate_of_masaryk	}
+		}
+	}
 	prerequisite = {
 		focus = CZE_resurrection
 	}
@@ -41,6 +74,7 @@ shared_focus = {
 		focus = CZE_fate_of_masaryk
 	}
 	completion_reward = {
+		hide_obsolete_branches = yes
 	}
 }
 shared_focus = {
@@ -50,6 +84,28 @@ shared_focus = {
 	relative_position_id = CZE_resurrection
 	x = 1
 	y = 1
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+		}
+	}
+	allow_branch = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+			NOT = {	has_completed_focus = CZE_joint_with_exiles	}
+		}
+	}
 	prerequisite = {
 		focus = CZE_resurrection
 	}
@@ -57,6 +113,7 @@ shared_focus = {
 		focus = CZE_joint_with_exiles
 	}
 	completion_reward = {
+		hide_obsolete_branches = yes
 	}
 }
 shared_focus = {
@@ -79,6 +136,17 @@ shared_focus = {
 	relative_position_id = CZE_establish_constitution
 	x = -1
 	y = 1
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_joint_with_exiles
+		}
+	}
 	prerequisite = {
 		focus = CZE_establish_constitution
 	}
@@ -92,6 +160,17 @@ shared_focus = {
 	relative_position_id = CZE_purge_tisso_faction
 	x = -1
 	y = 1
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_joint_with_exiles
+		}
+	}
 	prerequisite = {
 		focus = CZE_purge_tisso_faction
 	}
@@ -118,6 +197,17 @@ shared_focus = {
 	relative_position_id = CZE_purge_tisso_faction
 	x = 0
 	y = 2
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_joint_with_exiles
+		}
+	}
 	prerequisite = {
 		focus = CZE_purge_tisso_faction
 	}
@@ -128,15 +218,27 @@ shared_focus = {
 	id = CZE_democratic_election
 	icon = GFX_CZE_democratic_election
 	cost = 5.00
-	relative_position_id = CZE_cheer_up_slovak
-	x = 0
-	y = 2
-	prerequisite = {
-		focus = CZE_republic_procalm
+	relative_position_id = CZE_republic_procalm
+	x = -1
+	y = 1
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
 	}
-	prerequisite = {
-		focus = CZE_benes_relaxtion
-	}
+	prerequisite = {	focus = CZE_republic_procalm	}
+	prerequisite = {	focus = CZE_benes_relaxtion	}
 	completion_reward = {
 	}
 }
@@ -189,6 +291,54 @@ shared_focus = {
 	relative_position_id = CZE_fate_of_masaryk
 	x = 1
 	y = 1
+	offset = {
+		x = -4
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			has_completed_focus = CZE_select_dobchek
+			NOT = {
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
+	allow_branch = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+			NOT = {
+				has_completed_focus = CZE_joint_with_exiles
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
+	
 	prerequisite = {
 		focus = CZE_fate_of_masaryk
 	}
@@ -197,6 +347,7 @@ shared_focus = {
 		focus = CZE_select_gottwald
 	}
 	completion_reward = {
+		hide_obsolete_branches = yes
 	}
 }
 shared_focus = {
@@ -206,6 +357,53 @@ shared_focus = {
 	relative_position_id = CZE_fate_of_masaryk
 	x = 3
 	y = 1
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			has_completed_focus = CZE_select_gottwald
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
+	allow_branch = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+			NOT = {
+				has_completed_focus = CZE_joint_with_exiles
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
 	prerequisite = {
 		focus = CZE_fate_of_masaryk
 	}
@@ -214,6 +412,7 @@ shared_focus = {
 		focus = CZE_select_zapotokki
 	}
 	completion_reward = {
+		hide_obsolete_branches = yes
 	}
 }
 shared_focus = {
@@ -296,6 +495,9 @@ shared_focus = {
 		focus = CZE_peoples_democracy
 		focus = CZE_support_slovak_democracy
 	}
+	mutually_exclusive = {
+		focus = CZE_following_comintern
+	}
 	completion_reward = {
 	}
 }
@@ -332,6 +534,53 @@ shared_focus = {
 	relative_position_id = CZE_fate_of_masaryk
 	x = 5
 	y = 1
+	offset = {
+		x = -2
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			has_completed_focus = CZE_select_zapotokki
+			NOT = {
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_dobchek
+			}
+		}
+	}
+	allow_branch = {
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+			}
+			NOT = {
+				has_completed_focus = CZE_joint_with_exiles
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_gottwald
+			}
+		}
+	}
 	prerequisite = {
 		focus = CZE_fate_of_masaryk
 	}
@@ -349,6 +598,22 @@ shared_focus = {
 	relative_position_id = CZE_select_zapotokki
 	x = 1
 	y = 1
+	offset = {
+		x = -1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
 	prerequisite = {
 		focus = CZE_select_zapotokki
 	}
@@ -456,9 +721,28 @@ shared_focus = {
 	relative_position_id = CZE_friendship_with_powers
 	x = -2
 	y = 1
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			has_completed_focus = CZE_select_gottwald
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
 	prerequisite = {
 		focus = CZE_peoples_democracy
 		focus = CZE_friendship_with_powers
+	}
+	mutually_exclusive = {
+		focus = CZE_independent_diplo
 	}
 	completion_reward = {
 	}
@@ -538,12 +822,20 @@ shared_focus = {
 	relative_position_id = CZE_start_liberalization
 	x = -1
 	y = 1
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_joint_with_exiles
+		}
+	}
 	prerequisite = {
 		focus = CZE_start_liberalization
 		focus = CZE_cheer_up_slovak
-	}
-	mutually_exclusive = {
-		focus = CZE_with_other_partys
 	}
 	completion_reward = {
 	}
@@ -558,9 +850,6 @@ shared_focus = {
 	prerequisite = {
 		focus = CZE_peoples_socialism
 	}
-	mutually_exclusive = {
-		focus = CZE_republic_procalm
-	}
 	completion_reward = {
 	}
 }
@@ -569,7 +858,7 @@ shared_focus = {
 	icon = GFX_CZE_support_slovak_democracy
 	cost = 5.00
 	relative_position_id = CZE_with_other_partys
-	x = -1
+	x = 0
 	y = 1
 	prerequisite = {
 		focus = CZE_with_other_partys
@@ -581,9 +870,25 @@ shared_focus = {
 	id = CZE_befriend_west
 	icon = GFX_CZE_befriend_west
 	cost = 5.00
-	relative_position_id = CZE_republic_procalm
-	x = 0
-	y = 2
+	relative_position_id = CZE_democratic_election
+	x = 1
+	y = 1
+	offset = {
+		x = 1
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			has_completed_focus = CZE_select_dobchek
+			NOT = {
+				has_completed_focus = CZE_select_gottwald
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
 	prerequisite = {
 		focus = CZE_support_slovak_democracy
 		focus = CZE_democratic_election
@@ -614,6 +919,22 @@ shared_focus = {
 	relative_position_id = CZE_befriend_west
 	x = 1
 	y = 1
+	offset = {
+		x = -3
+		y = 0
+		trigger = {
+			has_game_rule = {
+				rule = obsolete_focus_branches_visibility
+				option = HIDE
+			}
+			has_completed_focus = CZE_fate_of_masaryk
+			has_completed_focus = CZE_select_gottwald
+			NOT = {
+				has_completed_focus = CZE_select_dobchek
+				has_completed_focus = CZE_select_zapotokki
+			}
+		}
+	}
 	prerequisite = {
 		focus = CZE_befriend_west
 		focus = CZE_independent_diplo

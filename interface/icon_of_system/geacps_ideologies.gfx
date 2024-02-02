@@ -1,8 +1,4 @@
-spriteTypes = {
-	spriteType = {	#不明
-		name = "GFX_ideology_unknown"
-		texturefile = "gfx/interface/ideologies/unknown.png"
-	}
+spriteTypes = {	#メインイデオロギー
 	spriteType = {	#全体社会主義
 		name = "GFX_ideology_total_socialism_group"
 		texturefile = "gfx/interface/ideologies/total_socialism.png"
@@ -34,5 +30,69 @@ spriteTypes = {
 	spriteType = {	#国家大衆主義
 		name = "GFX_ideology_national_populism_group"
 		texturefile = "gfx/interface/ideologies/national_populism.png"
+	}
+}
+spriteTypes = {	#全体社会主義
+	spriteType = {	#ブハーリン主義
+		name = "GFX_ideology_bukharinism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/total_socialism/bukharinism_ideology.png"
+	}
+	spriteType = {	#毛沢東主義
+		name = "GFX_ideology_maoism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/total_socialism/maoism_ideology.png"
+	}
+	spriteType = {	#マルクス＝レーニン主義
+		name = "GFX_ideology_marxism-leninism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/total_socialism/marxism-leninism_ideology.png"
+	}
+	spriteType = {	#スターリン主義
+		name = "GFX_ideology_stalinism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/total_socialism/stalinism_ideology.png"
+	}
+	spriteType = {	#トロツキー主義
+		name = "GFX_ideology_trotskyism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/total_socialism/trotskyism_ideology.png"
+	}
+}
+spriteTypes = {	#急進社会主義
+}
+spriteTypes = {	#社会民主主義
+}
+spriteTypes = {	#自由民主主義
+	spriteType = {	#保守自由主義
+		name = "GFX_ideology_conservative_liberalism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/liberal_democracy/conservative_liberalism_ideology.png"
+	}
+}
+spriteTypes = {	#保守民主主義
+	spriteType = {	#キリスト教民主主義
+		name = "GFX_ideology_christian_democracy_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/conservative_democracy/christian_democracy_ideology.png"
+	}
+}
+spriteTypes = {	#権威民主主義
+	spriteType = {	#権威保守主義
+		name = "GFX_ideology_authoritarian_conservatism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/authoritative_democracy/authoritarian_conservatism_ideology.png"
+	}
+	spriteType = {	#臨時政府
+		name = "GFX_ideology_provisional_government_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/authoritative_democracy/provisional_government_ideology.png"
+	}
+}
+spriteTypes = {	#国家権威主義
+	spriteType = {	#植民地政府
+		name = "GFX_ideology_colonial_government_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/national_authoritarianism/colonial_government_ideology.png"
+	}
+}
+spriteTypes = {	#国家大衆主義
+	spriteType = {	#フランコ主義
+		name = "GFX_ideology_francoism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/national_populism/francoism_ideology.png"
+	}
+	spriteType = {	#国民社会主義
+		name = "GFX_ideology_national_socialism_ideology"
+		texturefile = "gfx/interface/ideologies/sub_ideology/national_populism/national_socialism_ideology.png"
 	}
 }

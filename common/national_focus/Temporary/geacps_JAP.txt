@@ -30,12 +30,12 @@
 # 			has_country_flag = JAP_1-22_Incident_occurred
 # 		}
 # 		completion_reward = {
-# 			custom_effect_tooltip = JAP_omen_of_1-22_Incident
+# 			custom_effect_tooltip = JAP_january_22_incident_tt
 # 		}
 # 	}
 # 	focus = {	#重臣会議を開催する
-# 		id = JAP_senior_statesmen's_conference
-# 		icon = GFX_focus_JAP_senior_statesmen's_conference
+# 		id = JAP_senior_statesmens_conference
+# 		icon = GFX_focus_JAP_senior_statesmens_conference
 # 		cost = 1
 # 		x = -1
 # 		y = 1
@@ -76,7 +76,7 @@
 # 			has_country_flag = JAP_decision_of_declaration
 # 		}
 # 		prerequisite = {
-# 			focus = JAP_senior_statesmen's_conference
+# 			focus = JAP_senior_statesmens_conference
 # 		}
 # 		prerequisite = {
 # 			focus = JAP_cabinet_meeting
@@ -1498,7 +1498,7 @@
 # 		}
 # 	}
 # 	focus = {	#武漢作戦
-# 		id = JAP_Capture_of_Wuhan
+# 		id = JAP_capture_of_wuhan
 # 		icon = GFX_focus_JAP_operation_Ichi-Go
 # 		cost = 0
 # 		x = 0
@@ -1514,7 +1514,7 @@
 # 		}
 # 	}
 # 	focus = {	#重慶作戦
-# 		id = JAP_Capture_of_Chongqing
+# 		id = JAP_capture_of_chongqing
 # 		icon = GFX_focus_JAP_operation_Ichi-Go
 # 		cost = 0
 # 		x = 0
@@ -1522,9 +1522,9 @@
 # 		available = {
 # 			hidden_trigger = { always = no }
 # 		}
-# 		relative_position_id = JAP_Capture_of_Wuhan
+# 		relative_position_id = JAP_capture_of_wuhan
 # 		prerequisite = {
-# 			focus = JAP_Capture_of_Wuhan
+# 			focus = JAP_capture_of_wuhan
 # 		}
 # 		completion_reward = {
 # 		}
@@ -1538,9 +1538,9 @@
 # 		available = {
 # 			hidden_trigger = { always = no }
 # 		}
-# 		relative_position_id = JAP_Capture_of_Chongqing
+# 		relative_position_id = JAP_capture_of_chongqing
 # 		prerequisite = {
-# 			focus = JAP_Capture_of_Chongqing
+# 			focus = JAP_capture_of_chongqing
 # 		}
 # 		completion_reward = {
 # 		}

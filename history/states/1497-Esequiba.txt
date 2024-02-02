@@ -1,0 +1,23 @@
+state = {
+	id = 1497
+	name = "STATE_1497"
+	manpower = 50000
+	state_category = pastoral
+	
+	history = {
+		owner = GYA
+		add_core_of = GYA
+		add_claim_by = VEN
+		SAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	GYA_state_variable = 1	}
+		set_variable = {	VEN_state_variable = 2	}
+	}
+	
+	provinces = {
+		12716
+	}
+	local_supplies = 0.0
+}

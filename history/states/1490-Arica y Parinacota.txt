@@ -1,0 +1,27 @@
+state = {
+	id = 1490
+	name = "STATE_1490"
+	manpower = 29100
+	buildings_max_level_factor = 1
+	state_category = town
+	
+	resources = {	tungsten = 6	}
+	
+	history = {
+		owner = CHL
+		add_core_of = CHL
+		SAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		set_variable = {	CHL_state_variable = 1	}
+		set_variable = {	BOL_state_variable = 2	}
+	}
+	
+	provinces = {
+		5131
+	}
+	local_supplies = 0.0
+}

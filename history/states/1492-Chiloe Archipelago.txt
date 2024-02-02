@@ -1,0 +1,22 @@
+state = {
+	id = 1492
+	name = "STATE_1492"
+	manpower = 102000
+	state_category = pastoral
+	
+	history = {
+		owner = CHL
+		add_core_of = CHL
+		SAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+			13472 = {	naval_base = 1	}
+		}
+		set_variable = {	CHL_state_variable = 1	}
+	}
+	
+	provinces = {
+		13472
+	}
+	local_supplies = 0.0
+}

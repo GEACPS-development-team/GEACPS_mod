@@ -1,7 +1,58 @@
 ﻿capital = 992
 
 set_cosmetic_tag = BRL_free_city
-set_dictatorship = yes
+
+set_independent_politicians_in_all = yes
+set_politics = {
+	ruling_party = national_authoritarianism
+	last_election = "1938.4.10"
+	election_frequency = 48
+	elections_allowed = yes
+}
+set_popularities = {
+	total_socialism = 0
+	radical_socialism = 20
+	social_democracy = 49
+	liberal_democracy = 9
+	conservative_democracy = 22
+	authoritative_democracy = 0
+	national_authoritarianism = 0
+	national_populism = 0
+}
+
+set_party_name = {	#ドイツ共産党
+	ideology = total_socialism
+	name = PARTY_communist_party_of_german
+	long_name = PARTY_communist_party_of_german_long
+}
+set_party_name = {	#ドイツ社会主義統一党
+	ideology = radical_socialism
+	name = PARTY_socialist_unity_party_of_germany
+	long_name = PARTY_socialist_unity_party_of_germany_long
+}
+set_party_name = {	#ドイツ社会民主党
+	ideology = social_democracy
+	name = PARTY_social_democratic_party_of_germany
+	long_name = PARTY_social_democratic_party_of_germany_long
+}
+set_party_name = {	#自由民主党
+	ideology = conservative_democracy
+	name = PARTY_free_democratic_party
+	long_name = PARTY_free_democratic_party_long
+}
+set_party_name = {	#ドイツ・キリスト教民主同盟
+	ideology = conservative_democracy
+	name = PARTY_christian_democratic_union_of_germany
+	long_name = PARTY_christian_democratic_union_of_germany_long
+}
+set_party_name = {	#ドイツ党
+	ideology = authoritative_democracy
+	name = PARTY_german_party
+	long_name = PARTY_german_party_long
+}
+illegalization_of_national_populism = yes
+
+recruit_character = CHARACTER_arthur_victor_hugo_werner
 
 add_ideas = {	#政治タブ
 	republic_city_state

@@ -1,6 +1,6 @@
 ﻿capital = 826
 
-SOV = {	set_soviet_member_republic = yes	}
+SOV = {	set_SOV_constituent_republic = yes	}
 
 set_cosmetic_tag = ABK_SOV
 
@@ -9,6 +9,8 @@ set_politics = {
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
+	name = PARTY_communist_party_of_abkhazia
+	long_name = PARTY_communist_party_of_abkhazia_long
 }
 set_popularities = {
 	total_socialism = 100
@@ -20,6 +22,17 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 0
 }
+set_party_name = {	#アブハジア共産党
+	ideology = radical_socialism
+	name = PARTY_communist_party_of_abkhazia
+	long_name = PARTY_communist_party_of_abkhazia_long
+}
+illegalization_of_social_democracy = yes
+illegalization_of_liberal_democracy = yes
+illegalization_of_conservative_democracy = yes
+illegalization_of_authoritative_democracy = yes
+illegalization_of_national_authoritarianism = yes
+illegalization_of_national_populism = yes
 
 recruit_character = CHARACTER_mikhail_konstantinovich_delba
 

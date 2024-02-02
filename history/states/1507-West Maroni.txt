@@ -1,0 +1,24 @@
+state = {
+	id = 1507
+	name = "STATE_1507"
+	manpower = 5000
+	state_category = city
+	impassable = yes
+	
+	history = {
+		owner = CAY
+		add_core_of = CAY
+		add_core_of = SUR
+		SAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	CAY_state_variable = 1	}
+		set_variable = {	SUR_state_variable = 1	}
+	}
+	
+	provinces = {
+		13532
+	}
+	local_supplies = 0.0
+}

@@ -1,0 +1,23 @@
+state = {
+	id = 1488
+	name = "STATE_1488"
+	manpower = 137000
+	state_category = pastoral
+	
+	history = {
+		owner = PAR
+		add_core_of = PAR
+		add_core_of = BOL
+		SAC = {	debug_core = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		set_variable = {	PAR_state_variable = 1	}
+		set_variable = {	BOL_state_variable = 2	}
+	}
+	
+	provinces = {
+		2195	8203
+	}
+	local_supplies = 0.0
+}

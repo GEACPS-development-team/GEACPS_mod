@@ -25,7 +25,7 @@ country_event = {	#一・二二事件の発生
 	
 	option = {	#叛乱軍を捕らえよ！
 		name = JAP.2.0
-		complete_national_focus = JAP_1-22_Incident
+		complete_national_focus = JAP_january_22_incident
 		#kill_head_of_government = yes
 		add_stability = -0.1
 		add_manpower = -100
@@ -33,7 +33,7 @@ country_event = {	#一・二二事件の発生
 			id = JAP.3
 		}
 		hidden_effect = {
-			set_country_flag = JAP_1-22_Incident_occurred
+			set_country_flag = JAP_january_22_incident_occurred
 			deactivate_advisor = JAP_hideki_tojo_hg
 			deactivate_advisor = JAP_hideki_tojo_cm
 			deactivate_advisor = JAP_hideki_tojo_mm
@@ -247,8 +247,8 @@ country_event = {	#武漢作戦
 	trigger = {
 		JAP = {	has_war_with = CHI	}
 		JAP = {	controls_province = 4619	}
-		CH1 = {	controls_province = 4619	}
 		CH2 = {	controls_province = 4619	}
+		CH3 = {	controls_province = 4619	}
 	}
 	
 	is_triggered_only = yes
