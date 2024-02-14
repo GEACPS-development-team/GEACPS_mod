@@ -13,7 +13,7 @@ defined_text = { #リストに表示される名称
 	# }
 	text = {
 		trigger = {	check_variable = { ROOT.pfk_setting_progress = 2 }	}
-		localization_key = "[?pfk_setting_list^0.GetNonIdeologyNameDef][?target.GetTokenLocalizedKey]"
+		localization_key = "[?target.GetTokenLocalizedKey]"
 	}
 	text = {
 		trigger = {	always = yes }
@@ -105,7 +105,7 @@ defined_text = {
 	name = pfk_puppet_name
 	text = {
 		trigger = {	ROOT = { tag = JAP } }
-		localization_key = "imperial_protected_state"
+		localization_key = imperial_protected_state
 	}
 	text = {
 		trigger = {	ROOT = { tag = GER } }

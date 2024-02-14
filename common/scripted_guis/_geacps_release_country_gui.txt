@@ -272,14 +272,7 @@ scripted_gui = {
 								}
 								range_array_name = "[?ROOT.pfk_setting_list^3.GetTokenKey]"
 							}
-							#傀儡レベル 仮置きで今は植民地
-							meta_effect = {
-								text = {
-									set_colony = yes
-									#set_[autonomy_level] = yes
-								}
-								autonomy_level = "[?ROOT.pfk_setting_list^2.GetTokenKey]"
-							}
+							pfk_set_autonomy_level = yes
 						}
 						
 						

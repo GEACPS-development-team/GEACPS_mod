@@ -43,10 +43,7 @@ autonomy_state = {	#衛星国
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	
 	allowed = {
-		OVERLORD = {
-			original_tag = SOV
-			is_national_system_republic = yes
-		}
+		is_in_SOV_republics = yes
 	}
 	allowed_levels_filter = {
 		SOV_satellite_state
