@@ -2,7 +2,8 @@ scripted_gui = {
 	project_F_kikan_btn = {#表示ボタン
 		window_name = "project_F_kikan_btn" 
 		context_type = player_context 
-		visible = { 
+		visible = {	#このGUIが見える条件
+			is_debug = yes	#デバッグモードか否か
 		}
 		effects = {
 			pfk_open_btn_click = {
