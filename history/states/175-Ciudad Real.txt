@@ -8,15 +8,15 @@ state = {
 	history = {
 		owner = SPR
 		add_core_of = SPR
-		IBE = {	debug_core = yes	}
-		LMN = {	debug_core = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
+		LMN = {	add_debug_core_PREV = yes	}
 		buildings = {
-			industrial_complex = 1
 			infrastructure = 3
+			industrial_complex = 1
 		}
 		victory_points = {	6832	1	}
-		set_variable = {	LMN_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	LMN.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

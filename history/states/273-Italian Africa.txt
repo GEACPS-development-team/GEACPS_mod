@@ -2,18 +2,18 @@ state = {
 	id = 273
 	name = "STATE_273"
 	manpower = 42633
-	impassable = yes
 	state_category = wasteland
+	impassable = yes
 	
 	history = {
 		owner = FEZ
 		add_core_of = FEZ
-		LBA = {	debug_core = yes	}
+		LBA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
-		set_variable = {	FEZ_state_variable = 1	}
-		set_variable = {	LBA_state_variable = 1	}
+		add_to_array = {	FEZ.pfk_state_array_1 = THIS	}
+		add_to_array = {	LBA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

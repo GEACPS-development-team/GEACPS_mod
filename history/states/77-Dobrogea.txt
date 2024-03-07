@@ -8,14 +8,14 @@ state = {
 		owner = BUL
 		add_core_of = BUL
 		add_core_of = ROM
-		BLK = {	debug_core = yes	}
-		victory_points = {	11597	1	}
+		BLK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 		}
-		set_variable = {	BUL_state_variable = 1	}
-		set_variable = {	ROM_state_variable = 1	}
+		victory_points = {	11597	1	}
+		add_to_array = {	BUL.pfk_state_array_1 = THIS	}
+		add_to_array = {	ROM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

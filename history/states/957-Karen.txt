@@ -7,16 +7,16 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
-		KRE = {	debug_core = yes	}
+		KRE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	BRM_state_variable = 1	}
-		set_variable = {	KRE_state_variable = 1	}
+		add_to_array = {	BRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	KRE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		4408	4293	7441	12238
+		4293	4408	7441	12238
 	}
 	local_supplies = 0.0
 }

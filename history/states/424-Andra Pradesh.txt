@@ -8,8 +8,8 @@ state = {
 	history = {
 		owner = IND
 		add_core_of = IND
-		BNG = {	debug_core = yes	}
-		DVN = {	debug_core = yes	}
+		BNG = {	add_debug_core_PREV = yes	}
+		DVN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -17,9 +17,9 @@ state = {
 		victory_points = {	1228	1	}
 		victory_points = {	4414	10	}
 		victory_points = {	10255	10	}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	BNG_state_variable = 1	}
-		set_variable = {	DVN_state_variable = 1	}
+		add_to_array = {	BNG.pfk_state_array_1 = THIS	}
+		add_to_array = {	DVN.pfk_state_array_1 = THIS	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

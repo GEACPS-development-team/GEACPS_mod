@@ -7,16 +7,16 @@ state = {
 	history = {
 		owner = GRE
 		add_core_of = GRE
-		BLK = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			11965 = {	naval_base = 1	}
 		}
 		victory_points = {	7096	1	}
 		victory_points = {	11965	1	}
-		set_variable = {	GRE_state_variable = 1	}
+		add_to_array = {	GRE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

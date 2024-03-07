@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = GBR
 		add_core_of = AUS
-		CRT = {	debug_core = yes	}
+		CRT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {	3673	3	}
-		set_variable = {	AUS_state_variable = 1	}
-		set_variable = {	CRT_state_variable = 1	}
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	CRT.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

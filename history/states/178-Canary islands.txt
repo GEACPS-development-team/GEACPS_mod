@@ -7,15 +7,15 @@ state = {
 	history = {
 		owner = SPR
 		add_core_of = SPR
-		CNA = {	debug_core = yes	}
-		IBE = {	debug_core = yes	}
+		CNA = {	add_debug_core_PREV = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			13071 = {	naval_base = 1	}
 		}
 		victory_points = {	13071	1	}
-		set_variable = {	CNA_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	CNA.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

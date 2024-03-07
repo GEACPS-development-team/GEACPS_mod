@@ -8,16 +8,16 @@ state = {
 	history = {
 		owner = PHI
 		add_core_of = PHI
-		EIN = {	debug_core = yes	}
+		EIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 3
+			arms_factory = 1
 			air_base = 6
 		}
 		victory_points = {	1221	1	}
-		set_variable = {	PHI_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
+		add_to_array = {	PHI.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -7,11 +7,11 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		FUJ = {	debug_core = yes	}
+		FUJ = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	FUJ_state_variable = 1	}
+		add_to_array = {	FUJ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -10,14 +10,14 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		CCS = {	debug_core = yes	}
-		KBK = {	debug_core = yes	}
-		NCC = {	debug_core = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
+		KBK = {	add_debug_core_PREV = yes	}
+		NCC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	11614	1	}
-		set_variable = {	KBK_state_variable = 1	}
+		add_to_array = {	KBK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

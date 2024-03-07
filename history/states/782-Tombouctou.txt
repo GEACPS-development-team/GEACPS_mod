@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = WAF
 		add_core_of = WAF
-		AZA = {	debug_core = yes	}
-		MLI = {	debug_core = yes	}
+		AZA = {	add_debug_core_PREV = yes	}
+		MLI = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
-		set_variable = {	AZA_state_variable = 1	}
-		set_variable = {	MLI_state_variable = 1	}
+		add_to_array = {	AZA.pfk_state_array_1 = THIS	}
+		add_to_array = {	MLI.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

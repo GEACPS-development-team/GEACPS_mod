@@ -10,15 +10,15 @@ state = {
 		owner = FRA
 		add_core_of = AUS
 		add_core_of = ITA
-		PAD = {	debug_core = yes	}
-		TRL = {	debug_core = yes	}
+		PAD = {	add_debug_core_PREV = yes	}
+		TRL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 		}
-		set_variable = {	ITA_state_variable = 1	}
-		set_variable = {	AUS_state_variable = 2	}
-		set_variable = {	TRL_state_variable = 2	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
+		add_to_array = {	AUS.pfk_state_array_2 = THIS	}
+		add_to_array = {	TRL.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

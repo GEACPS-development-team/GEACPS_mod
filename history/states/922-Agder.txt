@@ -1,0 +1,31 @@
+state = {
+	id = 922
+	name = "STATE_922"
+	manpower = 396000
+	state_category = town
+	
+	resources = {	aluminium = 5	}
+	
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		SCA = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 1
+			9296 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
+		}
+		victory_points = {	9296	3	}
+		add_to_array = {	NOR.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		3049	3129	6072	9096	9196	9296	11176	11367	11101
+	}
+	local_supplies = 0.0
+}

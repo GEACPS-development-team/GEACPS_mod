@@ -1,19 +1,19 @@
 state = {
 	id = 1120
 	name = "STATE_1120"
-	state_category = city
-	buildings_max_level_factor = 1
 	manpower = 1000
+	buildings_max_level_factor = 1
+	state_category = city
 	
 	history = {
 		owner = LEW
 		add_core_of = LEW
-		AGU = {	debug_core = yes	}
-		WIN = {	debug_core = yes	}
+		AGU = {	add_debug_core_PREV = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	AGU_state_variable = 1	}
+		add_to_array = {	AGU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

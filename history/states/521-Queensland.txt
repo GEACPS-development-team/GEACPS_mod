@@ -14,13 +14,15 @@ state = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
-			7564 = {	naval_base = 2	}
+			7564 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
 			7566 = {	naval_base = 1	}
-			7564 = {	coastal_bunker = 1	}
 		}
 		victory_points = {	7564	5	}
 		victory_points = {	7566	1	}
-		set_variable = {	AST_state_variable = 1	}
+		add_to_array = {	AST.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -8,17 +8,17 @@ state = {
 	history = {
 		owner = ETH
 		add_core_of = ETH
-		EAF = {	debug_core = yes	}
-		TIG = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
+		TIG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
 		victory_points = {	2072	2	}
 		victory_points = {	13237	1	}
 		victory_points = {	13238	1	}
-		set_variable = {	ETH_state_variable = 1	}
-		set_variable = {	TIG_state_variable = 1	}
-		set_variable = {	ERI_state_variable = 2	}
+		add_to_array = {	ETH.pfk_state_array_1 = THIS	}
+		add_to_array = {	TIG.pfk_state_array_1 = THIS	}
+		add_to_array = {	ERI.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

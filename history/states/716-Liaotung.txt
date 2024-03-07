@@ -14,18 +14,18 @@ state = {
 		owner = MAN
 		add_core_of = MAN
 		add_core_of = CHI
-		FNG = {	debug_core = yes	}
+		FNG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
 			industrial_complex = 1
+			arms_factory = 2
 			air_base = 1
 			892 = {	naval_base = 1	}
 		}
 		victory_points = {	892	10	}
 		victory_points = {	11771	10	}
-		set_variable = {	MAN_state_variable = 1	}
-		set_variable = {	FNG_state_variable = 1	}
+		add_to_array = {	FNG.pfk_state_array_1 = THIS	}
+		add_to_array = {	MAN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

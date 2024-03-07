@@ -7,10 +7,9 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		AEC = {	debug_core = yes	}
-		MRL = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		victory_points = {	6984	5	}
+		AEC = {	add_debug_core_PREV = yes	}
+		MRL = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 5
@@ -18,7 +17,8 @@ state = {
 			air_base = 6
 			6984 = {	naval_base = 2	}
 		}
-		set_variable = {	MRL_state_variable = 1	}
+		victory_points = {	6984	5	}
+		add_to_array = {	MRL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

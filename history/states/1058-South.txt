@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = LAO
 		add_core_of = LAO
-		CHM = {	debug_core = yes	}
-		INC = {	debug_core = yes	}
+		CHM = {	add_debug_core_PREV = yes	}
+		INC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	1374	1	}
-		set_variable = {	LAO_state_variable = 1	}
-		set_variable = {	CHM_state_variable = 1	}
+		add_to_array = {	CHM.pfk_state_array_1 = THIS	}
+		add_to_array = {	LAO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

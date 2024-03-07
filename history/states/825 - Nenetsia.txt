@@ -9,12 +9,12 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		NEN = {	debug_core = yes	}
+		NEN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	105	1	}
-		set_variable = {	NEN_state_variable = 1	}
+		add_to_array = {	NEN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

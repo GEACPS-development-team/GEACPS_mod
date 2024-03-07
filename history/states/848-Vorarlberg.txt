@@ -8,15 +8,15 @@ state = {
 	history = {
 		owner = FRA
 		add_core_of = AUS
-		VOR = {	debug_core = yes	}
+		VOR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	6680	1	}
-		set_variable = {	AUS_state_variable = 1	}
-		set_variable = {	VOR_state_variable = 1	}
-		set_variable = {	SWI_state_variable = 3	}
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	VOR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SWI.pfk_state_array_3 = THIS	}
 	}
 	
 	provinces = {

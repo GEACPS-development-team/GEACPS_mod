@@ -5,24 +5,24 @@ state = {
 	state_category = rural
 	
 	resources = {
-		steel = 20
 		oil = 5
 		aluminium = 8
+		steel = 20
 	}
 	
 	history = {
 		owner = USA
 		add_core_of = USA
-		ARZ = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		RMT = {	debug_core = yes	}
+		ARZ = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		RMT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 2
 		}
 		victory_points = {	853	3	}
-		set_variable = {	ARZ_state_variable = 1	}
+		add_to_array = {	ARZ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

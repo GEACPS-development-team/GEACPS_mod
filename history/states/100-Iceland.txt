@@ -9,14 +9,14 @@ state = {
 		add_core_of = ICE
 		buildings = {
 			infrastructure = 1
-			12674 ={	naval_base = 1	}
+			12674 = {	naval_base = 1	}
 		}
 		victory_points = {	12674	1	}
-		set_variable = {	ICE_state_variable = 1	}
+		add_to_array = {	ICE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		4861	12674	12689
+		4861	12674	12689	13266	13267	13268	13271
 	}
 	local_supplies = 0.0
 }

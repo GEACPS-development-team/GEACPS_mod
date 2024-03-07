@@ -10,16 +10,16 @@ state = {
 	history = {
 		owner = NIC
 		add_core_of = NIC
-		CAC = {	debug_core = yes	}
+		CAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 1
 			12738 = {	naval_base = 1	}
 		}
 		victory_points = {	12738	3	}
-		set_variable = {	NIC_state_variable = 1	}
+		add_to_array = {	NIC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

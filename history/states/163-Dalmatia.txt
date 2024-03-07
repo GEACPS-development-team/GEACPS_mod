@@ -8,15 +8,15 @@ state = {
 		owner = DAL
 		add_core_of = DAL
 		add_core_of = CRO
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			3943 = {	naval_base = 1	}
 		}
 		victory_points = {	3943	5	}
-		set_variable = {	CRO_state_variable = 1	}
-		set_variable = {	DAL_state_variable = 1	}
+		add_to_array = {	CRO.pfk_state_array_1 = THIS	}
+		add_to_array = {	DAL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

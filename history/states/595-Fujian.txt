@@ -8,17 +8,17 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		FUJ = {	debug_core = yes	}
+		FUJ = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	4196	10	}
-		set_variable = {	FUJ_state_variable = 1	}
+		add_to_array = {	FUJ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1006	1094	1138	1166	1193	4053	4070	4113	4169	4196	7027	7099	7131	10010	10012	10042	10054	10069	10084	10093	11986	12057	12084	13272
+		1006	1094	1138	1166	1193	4053	4070	4113	4169	4196	7027	7099	7131	10010	10012	10042	10054	10069	10084	10093	11986	12057	12084	13553
 	}
 	local_supplies = 0.0
 }

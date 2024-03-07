@@ -2,10 +2,9 @@ state = {
 	id = 339
 	name = "STATE_339"
 	manpower = 1111755
-	resources = {
-		chromium = 50
-	}
 	state_category = town
+	
+	resources = {	chromium = 50	}
 	
 	history = {
 		owner = TUR
@@ -17,11 +16,11 @@ state = {
 			4112 = {	naval_base = 5	}
 		}
 		victory_points = {	4112	5	}
-		set_variable = {	TUR_state_variable = 1	}
+		add_to_array = {	TUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		928	3927	4112	6992	7130	9921	9929	10038	11848	11898	10122	12096	9941	11917
+		928	3927	4112	6992	7130	9921	9929	9941	10038	10122	11848	11898	11917	12096
 	}
 	local_supplies = 0.0
 }

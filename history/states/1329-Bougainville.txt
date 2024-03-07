@@ -8,15 +8,15 @@ state = {
 	history = {
 		owner = NGU
 		add_core_of = NGU
-		PNG = {	debug_core = yes	}
+		PNG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			4226 = {	naval_base = 1	}
 			10234 = {	naval_base = 1	}
 		}
 		victory_points = {	4226	1	}
-		set_variable = {	PNG_state_variable = 1	}
-		set_variable = {	SOL_state_variable = 2	}
+		add_to_array = {	NGU.pfk_state_array_1 = THIS	}
+		add_to_array = {	SOL.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

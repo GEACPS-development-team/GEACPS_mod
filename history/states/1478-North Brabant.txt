@@ -13,8 +13,8 @@ state = {
 			industrial_complex = 5
 		}
 		victory_points = {	3262	5	}
-		set_variable = {	NTL_state_variable = 1	}
-		set_variable = {	BEL_state_variable = 2	}
+		add_to_array = {	NTL.pfk_state_array_1 = THIS	}
+		add_to_array = {	BEL.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

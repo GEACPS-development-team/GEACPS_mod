@@ -8,16 +8,16 @@ state = {
 	history = {
 		owner = SER
 		add_core_of = SER
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 3
 			industrial_complex = 4
+			arms_factory = 3
 			air_base = 5
 		}
 		victory_points = {	11586	15	}
-		set_variable = {	SER_state_variable = 1	}
+		add_to_array = {	SER.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

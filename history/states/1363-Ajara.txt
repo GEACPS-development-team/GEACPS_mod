@@ -9,16 +9,18 @@ state = {
 		owner = SCC
 		add_core_of = SCC
 		add_core_of = GEO
-		AJA = {	debug_core = yes	}
-		CCS = {	debug_core = yes	}
+		AJA = {	add_debug_core_PREV = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			3653 = {	naval_base = 2	}
-			3653 = {	coastal_bunker = 1	}
+			3653 = {
+				naval_base = 2
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	3653	3	}
-		set_variable = {	AJA_state_variable = 1	}
-		set_variable = {	GEO_state_variable = 1	}
+		add_to_array = {	AJA.pfk_state_array_1 = THIS	}
+		add_to_array = {	GEO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

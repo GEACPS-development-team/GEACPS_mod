@@ -8,17 +8,17 @@ state = {
 		owner = RHI
 		add_core_of = RHI
 		add_core_of = GER
-		NGR = {	debug_core = yes	}
-		WGR = {	debug_core = yes	}
+		NGR = {	add_debug_core_PREV = yes	}
+		WGR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {	11435	1	}
-		set_variable = {	RHI_state_variable = 1	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	NGR_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
-		set_variable = {	LUX_state_variable = 2	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	RHI.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	LUX.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

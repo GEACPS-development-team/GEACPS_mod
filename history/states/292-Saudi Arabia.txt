@@ -10,15 +10,15 @@ state = {
 	history = {
 		owner = SAU
 		add_core_of = SAU
-		NEJ = {	debug_core = yes	}
+		NEJ = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {	12727	5	}
-		set_variable = {	SAU_state_variable = 1	}
-		set_variable = {	NEJ_state_variable = 1	}
+		add_to_array = {	NEJ.pfk_state_array_1 = THIS	}
+		add_to_array = {	SAU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

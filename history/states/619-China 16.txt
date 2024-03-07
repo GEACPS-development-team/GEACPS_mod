@@ -13,14 +13,14 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = ETR
-		SIK = {	debug_core = yes	}
-		TNG = {	debug_core = yes	}
+		SIK = {	add_debug_core_PREV = yes	}
+		TNG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		set_variable = {	ETR_state_variable = 1	}
-		set_variable = {	SIK_state_variable = 1	}
+		add_to_array = {	ETR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

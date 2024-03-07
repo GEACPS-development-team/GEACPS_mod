@@ -9,13 +9,13 @@ state = {
 		owner = MEN
 		add_core_of = MEN
 		add_core_of = CHI
-		QAH = {	debug_core = yes	}
-		SMO = {	debug_core = yes	}
-		ZHI = {	debug_core = yes	}
+		QAH = {	add_debug_core_PREV = yes	}
+		SMO = {	add_debug_core_PREV = yes	}
+		ZHI = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	QAH_state_variable = 1	}
+		add_to_array = {	QAH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

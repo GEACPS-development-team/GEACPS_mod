@@ -7,11 +7,11 @@ state = {
 	history = {
 		owner = GRL
 		add_core_of = GRL
-		NAC = {	debug_core = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	GRL_state_variable = 1	}
+		add_to_array = {	GRL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

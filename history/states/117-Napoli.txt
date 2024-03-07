@@ -15,14 +15,14 @@ state = {
 		add_core_of = ITA
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 			dockyard = 1
 			air_base = 3
 			819 = {	naval_base = 6	}
 		}
 		victory_points = {	819	50	}
-		set_variable = {	ITA_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

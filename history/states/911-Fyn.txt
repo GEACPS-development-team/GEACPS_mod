@@ -1,0 +1,24 @@
+state = {
+	id = 911
+	name = "STATE_911"
+	manpower = 497000
+	state_category = town
+	
+	history = {
+		owner = DEN
+		add_core_of = DEN
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			3325 = {	naval_base = 3	}
+		}
+		victory_points = {	3325	5	}
+		add_to_array = {	DEN.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		3325	3374	13260
+	}
+	local_supplies = 0.0
+}

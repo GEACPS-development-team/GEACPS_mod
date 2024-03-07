@@ -8,13 +8,13 @@ state = {
 		owner = AOS
 		add_core_of = AOS
 		add_core_of = ITA
-		PAD = {	debug_core = yes	}
-		victory_points = {	611	10	}
+		PAD = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 		}
-		set_variable = {	AOS_state_variable = 1	}
-		set_variable = {	ITA_state_variable = 1	}
+		victory_points = {	611	10	}
+		add_to_array = {	AOS.pfk_state_array_1 = THIS	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

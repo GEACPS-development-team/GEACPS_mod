@@ -11,18 +11,20 @@ state = {
 		owner = SGR
 		add_core_of = SGR
 		add_core_of = GER
-		WGR = {	debug_core = yes	}
+		WGR = {	add_debug_core_PREV = yes	}
+		WUR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 5
 			industrial_complex = 1
+			arms_factory = 5
 			air_base = 3
 		}
 		victory_points = {	9517	10	}
 		victory_points = {	11499	3	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	SGR_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	SGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	WUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

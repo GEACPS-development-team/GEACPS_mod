@@ -3,17 +3,18 @@ state = {
 	name = "STATE_824"
 	manpower = 21974
 	state_category = pastoral
+	impassable = yes
 	
 	history = {
 		owner = RUS
 		add_core_of = RUS
 		add_core_of = SIB
-		YAM = {	debug_core = yes	}
+		YAM = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	YAM_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 1	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	YAM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

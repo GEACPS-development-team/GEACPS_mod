@@ -1,0 +1,27 @@
+state = {
+	id = 931
+	name = "STATE_931"
+	manpower = 745000
+	state_category = town
+	
+	resources = {
+		steel = 20 
+		aluminium = 5
+	}
+	
+	history = {
+		owner = GBR
+		add_core_of = GBR
+		ENG = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 3
+		}
+		victory_points = {	11332	3	}
+		add_to_array = {	ENG.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		219	6399	9285	11332
+	}
+	local_supplies = 0.0
+}

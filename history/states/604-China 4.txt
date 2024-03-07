@@ -8,12 +8,12 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		QIG = {	debug_core = yes	}
+		QIG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 2
 		}
-		set_variable = {	QIG_state_variable = 1	}
+		add_to_array = {	QIG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

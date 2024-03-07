@@ -7,16 +7,16 @@ state = {
 	history = {
 		owner = URG
 		add_core_of = URG
-		SAC = {	debug_core = yes	}
+		SAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 		}
-		set_variable = {	URG_state_variable = 1	}
+		add_to_array = {	URG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1641	12336	10347	13468	13469
+		1641	10347	12336	13468	13469
 	}
 	local_supplies = 0.0
 }

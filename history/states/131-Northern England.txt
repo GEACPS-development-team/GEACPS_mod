@@ -5,14 +5,14 @@ state = {
 	state_category = city
 	
 	resources = {
-		steel = 38
 		aluminium = 5
+		steel = 38
 	}
 	
 	history = {
 		owner = GBR
 		add_core_of = GBR
-		ENG = {	debug_core = yes	}
+		ENG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -21,7 +21,7 @@ state = {
 			351 = {	naval_base = 6	}
 		}
 		victory_points = {	351	3	}
-		set_variable = {	ENG_state_variable = 1	}
+		add_to_array = {	ENG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

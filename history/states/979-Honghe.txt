@@ -8,15 +8,15 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		YUN = {	debug_core = yes	}
+		YUN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	YUN_state_variable = 1	}
+		add_to_array = {	YUN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1522	4501	1114	12282
+		1114	1522	4501	12282
 	}
 	local_supplies = 0.0
 }

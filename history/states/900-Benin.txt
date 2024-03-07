@@ -3,17 +3,17 @@ state = {
 	name = "STATE_900"
 	manpower = 1163674
 	buildings_max_level_factor = 1
-	state_category = pastoral 
+	state_category = pastoral
 	
 	history = {
 		owner = NGA
 		add_core_of = NGA
-		BEN = {	debug_core = yes	}
+		BEN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	BEN_state_variable = 1	}
-		set_variable = {	NGA_state_variable = 1	}
+		add_to_array = {	BEN.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

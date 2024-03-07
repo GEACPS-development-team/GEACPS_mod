@@ -7,18 +7,18 @@ state = {
 	history = {
 		owner = BEL
 		add_core_of = BEL
-		WLL = {	debug_core = yes	}
+		WLL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 4
+			arms_factory = 1
 			air_base = 1
 		}
 		victory_points = {	3516	5	}
 		victory_points = {	9536	3	}
 		victory_points = {	11519	10	}
-		set_variable = {	BEL_state_variable = 1	}
-		set_variable = {	WLL_state_variable = 1	}
+		add_to_array = {	BEL.pfk_state_array_1 = THIS	}
+		add_to_array = {	WLL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

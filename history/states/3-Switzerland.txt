@@ -15,9 +15,9 @@ state = {
 			arms_factory = 2
 		}
 		victory_points = {	9620	10	}
-		set_variable = {	SWI_state_variable = 1	}
-		set_variable = {	FRA_state_variable = 3	}
-		set_variable = {	GER_state_variable = 3	}
+		add_to_array = {	SWI.pfk_state_array_1 = THIS	}
+		add_to_array = {	FRA.pfk_state_array_3 = THIS	}
+		add_to_array = {	GER.pfk_state_array_3 = THIS	}
 	}
 	
 	provinces = {

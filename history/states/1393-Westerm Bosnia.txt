@@ -8,13 +8,13 @@ state = {
 		owner = BOS
 		add_core_of = BOS
 		add_claim_by = SER
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	BOS_state_variable = 1	}
-		set_variable = {	SER_state_variable = 2	}
+		add_to_array = {	BOS.pfk_state_array_1 = THIS	}
+		add_to_array = {	SER.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

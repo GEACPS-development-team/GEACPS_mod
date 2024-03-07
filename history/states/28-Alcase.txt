@@ -12,15 +12,15 @@ state = {
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
-			anti_air_building = 5
 			air_base = 5
+			anti_air_building = 5
 			678 = {	bunker = 10	}
 			6529 = {	bunker = 10	}
 			9503 = {	bunker = 10	}
 		}
 		victory_points = {	678	1	}
 		victory_points = {	9503	30	}
-		set_variable = {	FRA_state_variable = 1	}
+		add_to_array = {	FRA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

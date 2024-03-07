@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = IND
 		add_core_of = IND
-		BAN = {	debug_core = yes	}
-		PAK = {	debug_core = yes	}
+		BAN = {	add_debug_core_PREV = yes	}
+		PAK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			11968 = {	naval_base = 3	}
 		}
-		set_variable = {	BAN_state_variable = 1	}
+		add_to_array = {	BAN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -2,22 +2,22 @@ state = {
 	id = 1356
 	name = "STATE_1356"
 	manpower = 5
-	state_category = small_island
 	buildings_max_level_factor = 1
+	state_category = small_island
 	
 	history = {
 		owner = HAW
 		add_core_of = HAW
-		PLY = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			13384 = {	naval_base = 1	}
 		}
-		set_variable = {	HAW_state_variable = 1	}
+		add_to_array = {	HAW.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		13384
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

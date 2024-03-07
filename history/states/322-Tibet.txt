@@ -11,17 +11,17 @@ state = {
 		owner = TIB
 		add_core_of = TIB
 		add_core_of = CHI
-		XIZ = {	debug_core = yes	}
+		XIZ = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
 		victory_points = {	5033	5	}
-		set_variable = {	TIB_state_variable = 1	}
+		add_to_array = {	TIB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		2093	4994	5011	7926	10755	10918	5033
+		2093	4994	5011	5033	7926	10755	10918
 	}
 	local_supplies = 0.0
 }

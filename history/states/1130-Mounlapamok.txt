@@ -8,16 +8,16 @@ state = {
 		owner = SIA
 		add_core_of = SIA
 		add_core_of = LAO
-		INC = {	debug_core = yes	}
+		INC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	LAO_state_variable = 1	}
-		set_variable = {	SIA_state_variable = 2	}
+		add_to_array = {	LAO.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIA.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {
-		1592	13269
+		1592	13550
 	}
 	local_supplies = 0.0
 }

@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = KEN
 		add_core_of = KEN
-		EAF = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	1939	2	}
-		set_variable = {	KEN_state_variable = 1	}
+		add_to_array = {	KEN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -12,11 +12,13 @@ state = {
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 2
-			1150 = {	naval_base = 1	}
-			1150 = {	coastal_bunker = 1	}
+			1150 = {
+				naval_base = 1
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	1150	1	}
-		set_variable = {	DLI_state_variable = 1	}
+		add_to_array = {	DLI.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

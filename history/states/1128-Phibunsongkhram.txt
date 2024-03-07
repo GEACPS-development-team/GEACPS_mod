@@ -9,17 +9,17 @@ state = {
 		owner = SIA
 		add_core_of = SIA
 		add_core_of = CAM
-		INC = {	debug_core = yes	}
+		INC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	4251	1	}
-		set_variable = {	CAM_state_variable = 1	}
-		set_variable = {	SIA_state_variable = 2	}
+		add_to_array = {	CAM.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIA.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {
-		4251	10467	13266
+		4251	10467	13547
 	}
 	local_supplies = 0.0
 }

@@ -2,16 +2,14 @@ state = {
 	id = 161
 	name = "STATE_161"
 	manpower = 3202401
-	
-	resources = {
-		aluminium = 9
-	}
 	state_category = large_city
+	
+	resources = {	aluminium = 9	}
 	
 	history = {
 		owner = ITA
 		add_core_of = ITA
-		PAD = {	debug_core = yes	}
+		PAD = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -21,7 +19,7 @@ state = {
 		victory_points = {	6606	5	}
 		victory_points = {	6793	3	}
 		victory_points = {	9752	1	}
-		set_variable = {	ITA_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

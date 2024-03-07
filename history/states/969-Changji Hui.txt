@@ -8,18 +8,18 @@ state = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = ETR
-		SIK = {	debug_core = yes	}
+		SIK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	4709	3	}
-		set_variable = {	ETR_state_variable = 1	}
-		set_variable = {	SIK_state_variable = 1	}
+		add_to_array = {	ETR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		10674	4709	4788	10839	12671
+		4709	4788	10674	10839	12671
 	}
 	local_supplies = 0.0
 }

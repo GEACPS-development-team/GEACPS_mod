@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = BRN
 		add_core_of = BRN
-		EIN = {	debug_core = yes	}
+		EIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			7371 = {	naval_base = 2	}
 		}
 		victory_points = {	7371	1	}
-		set_variable = {	BRN_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		add_to_array = {	BRN.pfk_state_array_1 = THIS	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

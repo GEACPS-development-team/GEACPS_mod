@@ -9,15 +9,15 @@ state = {
 	history = {
 		owner = ROM
 		add_core_of = ROM
-		TRA = {	debug_core = yes	}
+		TRA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			arms_factory = 1
 		}
 		victory_points = {	690	1	}
-		set_variable = {	ROM_state_variable = 1	}
-		set_variable = {	TRA_state_variable = 1	}
+		add_to_array = {	ROM.pfk_state_array_1 = THIS	}
+		add_to_array = {	TRA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

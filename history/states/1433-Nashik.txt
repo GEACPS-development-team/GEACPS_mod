@@ -10,11 +10,11 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	IND_state_variable = 1	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		2002	10772	12005	12822	10729
+		2002	10729	10772	12005	12822
 	}
 	local_supplies = 0.0
 }

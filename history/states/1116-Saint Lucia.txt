@@ -1,19 +1,19 @@
 state = {
 	id = 1116
 	name = "STATE_1116"
-	state_category = city
-	buildings_max_level_factor = 1
 	manpower = 1000
+	buildings_max_level_factor = 1
+	state_category = city
 	
 	history = {
 		owner = WIW
 		add_core_of = WIW
-		SLC = {	debug_core = yes	}
-		WIN = {	debug_core = yes	}
+		SLC = {	add_debug_core_PREV = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	SLC_state_variable = 1	}
+		add_to_array = {	SLC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

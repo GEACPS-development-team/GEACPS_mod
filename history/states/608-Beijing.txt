@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		GAN = {	debug_core = yes	}
+		GAN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 3
 		}
-		set_variable = {	GAN_state_variable = 1	}
+		add_to_array = {	GAN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

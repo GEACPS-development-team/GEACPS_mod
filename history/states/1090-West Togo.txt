@@ -8,12 +8,12 @@ state = {
 	history = {
 		owner = WTG
 		add_core_of = WTG
-		TOG = {	debug_core = yes	}
-		GHA = {	debug_core = yes	}
+		TOG = {	add_debug_core_PREV = yes	}
+		GHA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	WTG_state_variable = 2	}
+		add_to_array = {	WTG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

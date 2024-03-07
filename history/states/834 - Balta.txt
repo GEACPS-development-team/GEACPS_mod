@@ -7,17 +7,18 @@ state = {
 	history = {
 		owner = UKR
 		add_core_of = UKR
-		MOL = {	debug_core = yes	}
-		ZPR = {	debug_core = yes	}
+		MOL = {	add_debug_core_PREV = yes	}
+		ZPR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 2
 		}
 		victory_points = {	741	1	}
 		victory_points = {	3757	2	}
-		set_variable = {	UKR_state_variable = 1	}
-		set_variable = {	MOL_state_variable = 1	}
-		set_variable = {	ZPR_state_variable = 2	}
+		add_to_array = {	MOL.pfk_state_array_1 = THIS	}
+		add_to_array = {	UKR.pfk_state_array_1 = THIS	}
+		add_to_array = {	TRN.pfk_state_array_2 = THIS	}
+		add_to_array = {	ZPR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

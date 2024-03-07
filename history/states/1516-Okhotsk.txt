@@ -1,0 +1,25 @@
+state = {
+	id = 1516
+	name = "STATE_1516"
+	manpower = 1300
+	state_category = wasteland
+	
+	history = {
+		owner = FEA
+		add_core_of = FEA
+		add_core_of = RUS
+		KHB = {	add_debug_core_PREV = yes	}
+		SIB = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 1
+		}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	KHB.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_2 = THIS	}
+	}
+	
+	provinces = {
+		1714	10572	12518	12551
+	}
+	local_supplies = 0.0
+}

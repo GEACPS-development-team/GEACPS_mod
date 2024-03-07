@@ -8,12 +8,12 @@ state = {
 	history = {
 		owner = IND
 		add_core_of = IND
-		NAG = {	debug_core = yes	}
+		NAG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	NAG_state_variable = 1	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
+		add_to_array = {	NAG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

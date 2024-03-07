@@ -7,12 +7,12 @@ state = {
 	history = {
 		owner = MAD
 		add_core_of = MAD
-		REU = {	debug_core = yes	}
+		REU = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			13017 = {	naval_base = 1	}
 		}
-		set_variable = {	REU_state_variable = 1	}
+		add_to_array = {	REU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

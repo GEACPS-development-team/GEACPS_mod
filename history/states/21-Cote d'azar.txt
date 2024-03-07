@@ -9,20 +9,22 @@ state = {
 	history = {
 		owner = FRA
 		add_core_of = FRA
-		OCC = {	debug_core = yes	}
+		OCC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			dockyard = 3
 			arms_factory = 1
+			dockyard = 3
 			fuel_silo = 1
 			air_base = 10
-			11834 = {	naval_base = 3	}
-			11834 = {	coastal_bunker = 1	}
+			11834 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	11834	50	}
-		set_variable = {	FRA_state_variable = 1	}
-		set_variable = {	OCC_state_variable = 1	}
+		add_to_array = {	FRA.pfk_state_array_1 = THIS	}
+		add_to_array = {	OCC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

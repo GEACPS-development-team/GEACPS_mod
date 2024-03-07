@@ -2,22 +2,22 @@ state = {
 	id = 1352
 	name = "STATE_1352"
 	manpower = 10000
-	state_category = small_island
 	buildings_max_level_factor = 1
+	state_category = small_island
 	
 	history = {
 		owner = NIU
 		add_core_of = NIU
-		PLY = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			13380 = {	naval_base = 1	}
 		}
-		set_variable = {	NIU_state_variable = 1	}
+		add_to_array = {	NIU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		13380
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

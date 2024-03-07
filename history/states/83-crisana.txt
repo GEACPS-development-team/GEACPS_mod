@@ -9,11 +9,11 @@ state = {
 		add_core_of = ROM
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 		}
 		victory_points = {	6682	1	}
-		set_variable = {	ROM_state_variable = 1	}
+		add_to_array = {	ROM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

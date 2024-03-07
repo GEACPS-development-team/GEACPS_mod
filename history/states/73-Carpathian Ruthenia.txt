@@ -11,8 +11,8 @@ state = {
 			infrastructure = 3
 		}
 		victory_points = {	3548	1	}
-		set_variable = {	UKR_state_variable = 1	}
-		set_variable = {	SLO_state_variable = 2	}
+		add_to_array = {	UKR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SLO.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		NAC = {	debug_core = yes	}
-		RMT = {	debug_core = yes	}
-		WYO = {	debug_core = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		RMT = {	add_debug_core_PREV = yes	}
+		WYO = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	WYO_state_variable = 1	}
+		add_to_array = {	WYO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

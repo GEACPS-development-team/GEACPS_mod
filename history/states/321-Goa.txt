@@ -8,15 +8,15 @@ state = {
 		owner = GOA
 		add_core_of = GOA
 		add_core_of = IND
-		DVN = {	debug_core = yes	}
+		DVN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			1273 ={	naval_base = 1	}
+			1273 = {	naval_base = 1	}
 		}
 		victory_points = {	1273	1	}
-		set_variable = {	GOA_state_variable = 1	}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	DVN_state_variable = 1	}
+		add_to_array = {	DVN.pfk_state_array_1 = THIS	}
+		add_to_array = {	GOA.pfk_state_array_1 = THIS	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

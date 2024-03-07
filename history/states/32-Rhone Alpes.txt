@@ -5,20 +5,20 @@ state = {
 	state_category = city
 	
 	resources = {
-		steel = 30
 		aluminium = 30
+		steel = 30
 	}
 	
 	history = {
 		owner = FRA
 		add_core_of = FRA
-		OCC = {	debug_core = yes	}
+		OCC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	3768	1	}
-		set_variable = {	FRA_state_variable = 1	}
-		set_variable = {	OCC_state_variable = 1	}
+		add_to_array = {	FRA.pfk_state_array_1 = THIS	}
+		add_to_array = {	OCC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

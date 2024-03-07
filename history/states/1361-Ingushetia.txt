@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		CCS = {	debug_core = yes	}
-		ING = {	debug_core = yes	}
-		NCC = {	debug_core = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
+		ING = {	add_debug_core_PREV = yes	}
+		NCC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	ING_state_variable = 1	}
+		add_to_array = {	ING.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

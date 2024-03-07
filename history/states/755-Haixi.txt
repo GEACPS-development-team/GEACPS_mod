@@ -8,16 +8,16 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		QIG = {	debug_core = yes	}
+		QIG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	7940	10	}
-		set_variable = {	QIG_state_variable = 1	}
+		add_to_array = {	QIG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		2099	7997	10750	10796	10834	10865	12846	12890	7940
+		2099	7940	7997	10750	10796	10834	10865	12846	12890
 	}
 	local_supplies = 0.0
 }

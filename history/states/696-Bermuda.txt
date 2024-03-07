@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = BMU
 		add_core_of = BMU
-		NAC = {	debug_core = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			13010 = {	naval_base = 1	}
 		}
 		victory_points = {	13010	1	}
-		set_variable = {	BMU_state_variable = 1	}
+		add_to_array = {	BMU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

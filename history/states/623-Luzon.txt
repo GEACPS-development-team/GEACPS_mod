@@ -5,12 +5,12 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = city
 	
-	resources = {	rubber=1	}
+	resources = {	rubber = 1	}
 	
 	history = {
 		owner = PHI
 		add_core_of = PHI
-		EIN = {	debug_core = yes	}
+		EIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -19,8 +19,8 @@ state = {
 		}
 		victory_points = {	1415	1	}
 		victory_points = {	12213	1	}
-		set_variable = {	PHI_state_variable = 1	}	
-		set_variable = {	EIN_state_variable = 1	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
+		add_to_array = {	PHI.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

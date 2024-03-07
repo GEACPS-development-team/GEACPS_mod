@@ -2,23 +2,23 @@ state = {
 	id = 1351
 	name = "STATE_1351"
 	manpower = 1000
-	state_category = small_island
 	buildings_max_level_factor = 1
+	state_category = small_island
 	
 	history = {
 		owner = TON
 		add_core_of = TON
-		PLY = {	debug_core = yes	}
-		UVF = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
+		UVF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			13379 = {	naval_base = 1	}
 		}
-		set_variable = {	UVF_state_variable = 1	}
+		add_to_array = {	UVF.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		13379
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

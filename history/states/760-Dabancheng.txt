@@ -3,24 +3,24 @@ state = {
 	name = "STATE_760"
 	manpower = 700000
 	buildings_max_level_factor = 1
-	state_category = "wasteland"
+	state_category = wasteland
 	
 	history = {
 		owner = CHI
 		add_core_of = CHI
 		add_core_of = ETR
-		KUM = {	debug_core = yes	}
-		SIK = {	debug_core = yes	}
+		KUM = {	add_debug_core_PREV = yes	}
+		SIK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	KUM_state_variable = 1	}
-		set_variable = {	ETR_state_variable = 1	}
-		set_variable = {	SIK_state_variable = 1	}
+		add_to_array = {	ETR.pfk_state_array_1 = THIS	}
+		add_to_array = {	KUM.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1838	4704	4843	7732	12524	12598	10614	12656
+		1838	4704	4843	7732	10614	12524	12598	12656
 	}
 	local_supplies = 0.0
 }

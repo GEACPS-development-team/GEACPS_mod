@@ -1,7 +1,7 @@
 state = {
 	id = 104
 	name = "STATE_104"
-	manpower =2457400
+	manpower = 2457400
 	state_category = town
 	
 	resources = {	aluminium = 7	}
@@ -9,15 +9,15 @@ state = {
 	history = {
 		owner = BOS
 		add_core_of = BOS
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 			air_base = 2
 		}
 		victory_points = {	11899	5	}
-		set_variable = {	BOS_state_variable = 1	}
+		add_to_array = {	BOS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

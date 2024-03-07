@@ -1,0 +1,28 @@
+state = {
+	id = 934
+	name = "STATE_934"
+	manpower = 246000
+	state_category = rural
+	
+	resources = {
+		aluminium = 1
+		chromium = 1
+	}
+	
+	history = {
+		owner = ALB
+		add_core_of = ALB
+		BLK = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {	9780	3	}
+		add_to_array = {	ALB.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		3896	9780	11762
+	}
+	local_supplies = 5.0
+}

@@ -9,20 +9,20 @@ state = {
 	history = {
 		owner = VEN
 		add_core_of = VEN
-		SAC = {	debug_core = yes	}
+		SAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 2
 			8113 = {	naval_base = 3	}
 		}
 		victory_points = {	8113	5	}
-		set_variable = {	VEN_state_variable = 1	}
+		add_to_array = {	VEN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		8113	7968
+		7968	8113
 	}
 	local_supplies = 0.0
 }

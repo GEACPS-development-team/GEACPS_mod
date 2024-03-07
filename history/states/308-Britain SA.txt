@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = LEW
 		add_core_of = LEW
-		SKN = {	debug_core = yes	}
-		WIN = {	debug_core = yes	}
+		SKN = {	add_debug_core_PREV = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			4450 = {	naval_base = 1	}
 		}
-		set_variable = {	SKN_state_variable = 1	}
+		add_to_array = {	SKN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

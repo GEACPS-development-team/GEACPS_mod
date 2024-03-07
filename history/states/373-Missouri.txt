@@ -9,16 +9,16 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		GPA = {	debug_core = yes	}
-		MSS = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
+		GPA = {	add_debug_core_PREV = yes	}
+		MSS = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 5
 		}
 		victory_points = {	4569	10	}
 		victory_points = {	10370	1	}
-		set_variable = {	MSS_state_variable = 1	}
+		add_to_array = {	MSS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

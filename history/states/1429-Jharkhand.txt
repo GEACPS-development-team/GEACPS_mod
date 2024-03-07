@@ -12,11 +12,11 @@ state = {
 			infrastructure = 3
 		}
 		victory_points = {	12452	1	}
-		set_variable = {	IND_state_variable = 1	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1637	7593	12452	10471	12035	12307	10358	1059
+		1059	1637	7593	10358	10471	12035	12307	12452
 	}
 	local_supplies = 0.0
 }

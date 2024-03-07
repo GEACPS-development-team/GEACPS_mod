@@ -8,12 +8,12 @@ state = {
 		owner = FKL
 		add_core_of = FKL
 		add_claim_by = ARG
-		SAC = {	debug_core = yes	}
+		SAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			12960 = {	naval_base = 1	}
 		}
-		set_variable = {	FKL_state_variable = 1	}
+		add_to_array = {	FKL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

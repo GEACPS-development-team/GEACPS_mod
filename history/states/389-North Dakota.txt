@@ -5,22 +5,22 @@ state = {
 	state_category = rural
 	
 	resources = {
-		steel = 17
 		oil = 7
+		steel = 17
 	}
 	
 	history = {
 		owner = USA
 		add_core_of = USA
-		GPA = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		NDA = {	debug_core = yes	}
+		GPA = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		NDA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	1836	1	}
-		set_variable = {	NDA_state_variable = 1	}
+		add_to_array = {	NDA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

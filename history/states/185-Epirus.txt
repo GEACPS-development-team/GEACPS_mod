@@ -5,21 +5,21 @@ state = {
 	state_category = city
 	
 	resources = {
-		chromium = 14
 		steel = 14
+		chromium = 14
 	}
 	
 	history = {
 		owner = GRE
 		add_core_of = GRE
-		BLK = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			air_base = 3
 			9805 = {	naval_base = 1	}
 		}
 		victory_points = {	3914	3	}
-		set_variable = {	GRE_state_variable = 1	}
+		add_to_array = {	GRE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

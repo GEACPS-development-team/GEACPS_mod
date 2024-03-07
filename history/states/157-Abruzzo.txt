@@ -12,11 +12,11 @@ state = {
 			infrastructure = 3
 			6831 = {	naval_base = 1	}
 		}
-		set_variable = {	ITA_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		963	6831	3910	9838	11882
+		963	3910	6831	9838	11882
 	}
 	local_supplies = 0.0
 }

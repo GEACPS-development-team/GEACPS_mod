@@ -9,14 +9,14 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		MTA = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		RMT = {	debug_core = yes	}
+		MTA = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		RMT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	4860	1	}
-		set_variable = {	MTA_state_variable = 1	}
+		add_to_array = {	MTA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

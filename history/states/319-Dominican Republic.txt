@@ -9,18 +9,19 @@ state = {
 	history = {
 		owner = DOM
 		add_core_of = DOM
-		WIN = {	debug_core = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 3
+			arms_factory = 1
 			air_base = 1
 			7660 = {	naval_base = 2	}
 		}
 		victory_points = {	4598	1	}
 		victory_points = {	7660	5	}
-		set_variable = {	DOM_state_variable = 1	}
+		add_to_array = {	DOM.pfk_state_array_1 = THIS	}
 	}
+	
 	provinces = {
 		4598	7632	7660	10484
 	}

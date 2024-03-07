@@ -7,18 +7,20 @@ state = {
 	history = {
 		owner = NOR
 		add_core_of = NOR
-		SCA = {	debug_core = yes	}
-		SME = {	debug_core = yes	}
+		SCA = {	add_debug_core_PREV = yes	}
+		SME = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 0
 			industrial_complex = 1
-			3022 = {	naval_base = 3	}
-			3022 = {	coastal_bunker = 2	}
+			arms_factory = 0
+			3022 = {
+				naval_base = 3
+				coastal_bunker = 2
+			}
 		}
 		victory_points = {	3022	3	}
-		set_variable = {	NOR_state_variable = 1	}
-		set_variable = {	SME_state_variable = 1	}
+		add_to_array = {	NOR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SME.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

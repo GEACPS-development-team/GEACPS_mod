@@ -6,20 +6,20 @@ state = {
 	state_category = rural
 	
 	resources = {
-		chromium = 35
 		tungsten = 8
+		chromium = 35
 	}
 	
 	history = {
 		owner = ZAM
 		add_core_of = ZAM
-		EAF = {	debug_core = yes	}
-		RHO = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
+		RHO = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	5199	1	}
-		set_variable = {	ZAM_state_variable = 1	}
+		add_to_array = {	ZAM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

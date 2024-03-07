@@ -10,15 +10,15 @@ state = {
 		add_core_of = GER
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 			9524 = {	bunker = 1	}
 			11445 = {	bunker = 1	}
 		}
 		victory_points = {	564	3	}
 		victory_points = {	6488	50	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

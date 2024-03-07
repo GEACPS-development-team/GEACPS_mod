@@ -5,21 +5,21 @@ state = {
 	state_category = city
 	
 	resources = {
-		steel = 11
 		aluminium = 3
+		steel = 11
 	}
 	
 	history = {
 		owner = GBR
 		add_core_of = GBR
-		WLS = {	debug_core = yes	}
+		WLS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			377 = {	naval_base = 3	}
 		}
 		victory_points = {	377	5	}
-		set_variable = {	WLS_state_variable = 1	}
+		add_to_array = {	WLS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

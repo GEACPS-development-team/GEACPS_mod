@@ -9,11 +9,11 @@ state = {
 		owner = SCC
 		add_core_of = SCC
 		add_core_of = AZR
-		CCS = {	debug_core = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	AZR_state_variable = 1	}
+		add_to_array = {	AZR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

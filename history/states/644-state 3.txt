@@ -3,25 +3,26 @@ state = {
 	name = "STATE_644"
 	manpower = 68364
 	buildings_max_level_factor = 1
-	state_category = "wasteland"
+	state_category = wasteland
+	impassable = yes
 	
 	history = {
 		owner = SIB
 		add_core_of = SIB
 		add_core_of = RUS
-		SKH = {	debug_core = yes	}
+		SKH = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
-			1819 ={	naval_base = 1	}
+			1819 = {	naval_base = 1	}
 		}
 		victory_points = {	1819	1	}
 		victory_points = {	10641	1	}
-		set_variable = {	SIB_state_variable = 1	}
-		set_variable = {	SKH_state_variable = 1	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	SKH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1745	1819	2877	3184	4006	4878	6211	12549	13061	1722	10701	1878	7817	10589	10641
+		1722	1745	1819	1878	2877	3184	4006	4878	6211	7817	10589	10641	10701	12549	13061
 	}
 	local_supplies = 0.0
 }

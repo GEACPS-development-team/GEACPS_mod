@@ -11,9 +11,9 @@ state = {
 			infrastructure = 1
 		}
 		victory_points = {	13325	1	}
-		set_variable = {	BHR_state_variable = 1	}
-		set_variable = {	TRC_state_variable = 2	}
-		set_variable = {	OMA_state_variable = 2	}
+		add_to_array = {	BHR.pfk_state_array_1 = THIS	}
+		add_to_array = {	OMA.pfk_state_array_2 = THIS	}
+		add_to_array = {	TRC.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

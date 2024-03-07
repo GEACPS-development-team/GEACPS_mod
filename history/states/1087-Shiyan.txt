@@ -10,10 +10,10 @@ state = {
 		add_core_of = ALS
 		buildings = {
 			infrastructure = 2
-			arms_factory = 3
 			industrial_complex = 2
+			arms_factory = 3
 		}
-		set_variable = {	ALS_state_variable = 1	}
+		add_to_array = {	ALS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

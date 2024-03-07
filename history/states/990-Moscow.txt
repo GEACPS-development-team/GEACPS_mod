@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		MOS = {	debug_core = yes	}
+		MOS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			arms_factory = 4
 		}
 		victory_points = {	6380	100	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	MOS_state_variable = 1	}
+		add_to_array = {	MOS.pfk_state_array_1 = THIS	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

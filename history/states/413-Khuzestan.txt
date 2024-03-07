@@ -2,11 +2,9 @@ state = {
 	id = 413
 	name = "STATE_413"
 	manpower = 797356
-	resources = {
-		oil = 28
-	}
 	state_category = rural
 	
+	resources = {	oil = 28	}
 	
 	history = {
 		owner = PER
@@ -16,7 +14,7 @@ state = {
 			5005 = {	naval_base = 1	}
 		}
 		victory_points = {	7953	1	}
-		set_variable = {	PER_state_variable = 1	}
+		add_to_array = {	PER.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

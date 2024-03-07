@@ -9,11 +9,11 @@ state = {
 	history = {
 		owner = NGU
 		add_core_of = NGU
-		PNG = {	debug_core = yes	}
+		PNG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	PNG_state_variable = 1	}
+		add_to_array = {	NGU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -10,13 +10,13 @@ state = {
 		owner = HRZ
 		add_core_of = HRZ
 		add_core_of = BOS
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	9894	3	}
-		set_variable = {	HRZ_state_variable = 1	}
+		add_to_array = {	HRZ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

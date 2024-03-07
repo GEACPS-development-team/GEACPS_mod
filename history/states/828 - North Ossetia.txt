@@ -10,14 +10,14 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		CCS = {	debug_core = yes	}
-		NCC = {	debug_core = yes	}
-		NOA = {	debug_core = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
+		NCC = {	add_debug_core_PREV = yes	}
+		NOA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	9628	3	}
-		set_variable = {	NOA_state_variable = 1	}
+		add_to_array = {	NOA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

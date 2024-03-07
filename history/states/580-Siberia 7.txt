@@ -8,16 +8,16 @@ state = {
 		owner = RUS
 		add_core_of = RUS
 		add_core_of = SIB
-		YGR = {	debug_core = yes	}
+		YGR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	SIB_state_variable = 1	}
-		set_variable = {	YGR_state_variable = 1	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	YGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1659	1744	4710	4715	4746	4774	4846	7733	7768	7796	7867	7895	10592	10604	10620	12602	12630	12700	10677	1784	1856	4817	7837	7882	10663	12574	12672
+		1659	1744	1784	1856	4710	4715	4746	4774	4817	4846	7733	7768	7796	7837	7867	7882	7895	10592	10604	10620	10663	10677	12574	12602	12630	12672	12700
 	}
 	local_supplies = 0.0
 }

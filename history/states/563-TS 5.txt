@@ -2,29 +2,29 @@ state = {
 	id = 563
 	name = "STATE_563"
 	manpower = 1044310
+	state_category = rural
 	
 	resources = {
 		steel = 9
 		chromium = 8
 	}
-	state_category = rural
 	
 	history = {
 		owner = FEA
 		add_core_of = FEA
 		add_core_of = RUS
-		SIB = {	debug_core = yes	}
+		SIB = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			air_base = 2
 		}
 		victory_points = {	12641	1	}
-		set_variable = {	FEA_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 1	}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1696	1666	1672	1826	4677	4705	4719	4762	7725	7786	10559	10565	10574	10643	10681	10683	12556	12622	12641	12507	7860
+		1666	1672	1696	1826	4677	4705	4719	4762	7725	7786	7860	10559	10565	10574	10643	10681	10683	12507	12556	12622	12641
 	}
 	local_supplies = 0.0
 }

@@ -9,7 +9,7 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = AUS
-		LAS = {	debug_core = yes	}
+		LAS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -18,8 +18,8 @@ state = {
 		}
 		victory_points = {	704	3	}
 		victory_points = {	9661	1	}
-		set_variable = {	AUS_state_variable = 1	}
-		set_variable = {	LAS_state_variable = 1	}
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	LAS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

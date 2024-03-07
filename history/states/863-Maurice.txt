@@ -9,16 +9,17 @@ state = {
 		owner = CAN
 		add_core_of = CAN
 		add_core_of = QEB
-		NAC = {	debug_core = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			12149 = {	naval_base = 6	}
 		}
 		victory_points = {	4345	20	}
 		victory_points = {	12149	3	}
-		set_variable = {	CAN_state_variable = 1	}
-		set_variable = {	QEB_state_variable = 1	}
+		add_to_array = {	CAN.pfk_state_array_1 = THIS	}
+		add_to_array = {	QEB.pfk_state_array_1 = THIS	}
 	}
+	
 	provinces = {
 		1356	4345	4419	7291	9601	12149
 	}

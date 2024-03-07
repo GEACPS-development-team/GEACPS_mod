@@ -8,13 +8,13 @@ state = {
 		owner = SIB
 		add_core_of = SIB
 		add_core_of = RUS
-		IRK = {	debug_core = yes	}
+		IRK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	4797	3	}
-		set_variable = {	SIB_state_variable = 1	}
-		set_variable = {	IRK_state_variable = 1	}
+		add_to_array = {	IRK.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

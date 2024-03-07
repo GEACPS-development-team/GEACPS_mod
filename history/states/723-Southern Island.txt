@@ -9,7 +9,7 @@ state = {
 	history = {
 		owner = NZL
 		add_core_of = NZL
-		PLY = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			air_base = 1
@@ -17,8 +17,9 @@ state = {
 		}
 		victory_points = {	2197	1	}
 		victory_points = {	2211	1	}
-		set_variable = {	NZL_state_variable = 1	}
+		add_to_array = {	NZL.pfk_state_array_1 = THIS	}
 	}
+	
 	provinces = {
 		2197	2203	2211	4819	5195	7839	8204	8212	8232	8241	10650	12632	12966	12974	12980	12988
 	}

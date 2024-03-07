@@ -9,13 +9,13 @@ state = {
 		owner = WTR
 		add_core_of = WTR
 		add_core_of = UZB
-		KKP = {	debug_core = yes	}
+		KKP = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	1614	1	}
-		set_variable = {	KKP_state_variable = 1	}
-		set_variable = {	UZB_state_variable = 1	}
+		add_to_array = {	KKP.pfk_state_array_1 = THIS	}
+		add_to_array = {	UZB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

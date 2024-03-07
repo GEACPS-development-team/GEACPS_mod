@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = BLZ
 		add_core_of = BLZ
-		CAC = {	debug_core = yes	}
+		CAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			2077 = {	naval_base = 1	}
 		}
 		victory_points = {	2077	1	}
-		set_variable = {	BLZ_state_variable = 1	}
+		add_to_array = {	BLZ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

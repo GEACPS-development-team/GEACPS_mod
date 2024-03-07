@@ -8,14 +8,14 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		AEC = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		NEL = {	debug_core = yes	}
-		VRM = {	debug_core = yes	}
+		AEC = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		NEL = {	add_debug_core_PREV = yes	}
+		VRM = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 		}
-		set_variable = {	VRM_state_variable = 1	}
+		add_to_array = {	VRM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -9,19 +9,19 @@ state = {
 	history = {
 		owner = AFG
 		add_core_of = AFG
-		STR = {	debug_core = yes	}
+		STR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			air_base = 1
 		}
 		victory_points = {	10852	1	}
 		victory_points = {	12314	1	}
-		set_variable = {	AFG_state_variable = 1	}
-		set_variable = {	STR_state_variable = 1	}
+		add_to_array = {	AFG.pfk_state_array_1 = THIS	}
+		add_to_array = {	STR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		7519	10852	12314	12653	
+		7519	10852	12314	12653
 	}
 	local_supplies = 0.0
 }

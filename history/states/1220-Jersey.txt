@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = JER
 		add_core_of = JER
-		NRM = {	debug_core = yes	}
+		NRM = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			13310 = {	naval_base = 1	}
 		}
 		victory_points = {	13310	1	}
-		set_variable = {	JER_state_variable = 1	}
-		set_variable = {	NRM_state_variable = 1	}
+		add_to_array = {	JER.pfk_state_array_1 = THIS	}
+		add_to_array = {	NRM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
