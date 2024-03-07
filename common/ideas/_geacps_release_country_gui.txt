@@ -1,0 +1,351 @@
+ideas = {
+	hidden_ideas = {
+	##########自治度を選択した時の効果#########
+		pfk_method_puppet = { 
+			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = {	ROOT.pfk_array = token:nominal_puppet_state	}
+				add_to_array = {	ROOT.pfk_array = token:autonomous_puppet_state	}
+				add_to_array = {	ROOT.pfk_array = token:occupied_puppet_government	}
+				add_to_array = {	ROOT.pfk_array = token:integrated_puppet_government	}
+			}
+		}
+		pfk_method_protected_state = { 
+			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = {	ROOT.pfk_array = token:protected_territory	}
+				add_to_array = {	ROOT.pfk_array = token:protected_state	}
+			} 
+		}
+		#固有
+		pfk_method_colony = { 
+			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = {	ROOT.pfk_array = token:colony	}
+				add_to_array = {	ROOT.pfk_array = token:colonies_federation	}
+				add_to_array = {	ROOT.pfk_array = token:colony_and_protectorate	}
+			} 
+		}
+		pfk_method_colony_JAP = {
+			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = {	ROOT.pfk_array = token:imperial_overseas_territory	}
+				add_to_array = {	ROOT.pfk_array = token:imperial_member	}
+			}
+		}
+		pfk_method_colony_GER = {
+			on_add = {
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = { ROOT.pfk_array = token:reichssatellitestate }
+				add_to_array = { ROOT.pfk_array = token:reichsprotectorate }
+				add_to_array = { ROOT.pfk_array = token:reichsgeneralgovernorate }
+				add_to_array = { ROOT.pfk_array = token:reichskommissariat }
+				add_to_array = { ROOT.pfk_array = token:reichskolonie }
+				add_to_array = { ROOT.pfk_array = token:reichsland }
+			}
+		}
+		pfk_method_colony_SOV = {
+			on_add = {#ここにソ連構成国　を選択した後に表示される自治度を表示
+				add_to_array = {
+					array = ROOT.pfk_current_country_list
+					value = v
+					index = 0
+				}
+				clear_array = ROOT.pfk_array
+				add_to_array = { ROOT.pfk_array = token:soviet_satellite }
+				add_to_array = { ROOT.pfk_array = token:soviet_member_federal_republic }
+				add_to_array = { ROOT.pfk_array = token:soviet_member_republic }
+				add_to_array = { ROOT.pfk_array = token:soviet_autonomous_republic }
+			}
+		}
+		pfk_method_return = {
+			on_add = {
+			}
+		}
+		pfk_method_incorporation = {
+			on_add = {
+			}
+		}
+	##########政体名を選択した時の効果#########
+	
+
+	##########解放範囲(返還範囲)#########
+	pfk_state_array_1 = {  } #最も基本的な範囲のステートリスト
+	pfk_state_array_2 = {  } #狭義的な範囲のステートリスト
+	pfk_state_array_3 = {  } #広義的な範囲のステートリスト
+	pfk_state_array_4 = {  } #最も狭義的な範囲のステートリスト
+	pfk_return_all = { } #全て返す
+	pfk_return_other_than_marked = { } #指定したステート以外を返す
+	
+	#########自治度#########
+		#傀儡国
+		nominal_puppet_state = { #名目的傀儡国
+			on_add = {}
+		}
+		autonomous_puppet_state = { #自治的傀儡国
+			on_add = {}
+		}
+		occupied_puppet_government = { #占領傀儡政府
+			on_add = {}
+		}
+		integrated_puppet_government = { #統合傀儡政府
+			on_add = {}
+		}
+		#保護国
+		protected_state = { #保護国
+			on_add = {}
+		}
+		protected_territory = {	#保護領
+			on_add = {}
+		}
+		#植民地
+		colony = {	#植民地
+			on_add = {}
+		}
+		colonies_federation = {	#植民地連邦
+			on_add = {}
+		}
+		colony_and_protectorate = {	#植民地及び保護領
+			on_add = {}
+		}
+		#日本固有
+		imperial_overseas_territory = {	#外地
+			on_add = {}
+		}
+		imperial_member = {	#帝国構成国
+			on_add = {}
+		}
+		#ソ連固有
+		soviet_satellite = {
+			on_add = {}
+		}
+		soviet_member_federal_republic = {	#構成連邦共和国
+			on_add = {}
+		}
+		soviet_member_republic = {	#構成共和国
+			on_add = {}
+		}
+		soviet_autonomous_republic = {	#自治共和国
+			on_add = {}
+		}
+		#ドイツ固有
+		reichssatellitestate = {	#衛星国
+			on_add = {}
+		}
+		reichsprotectorate = {	#国家保護領
+			on_add = {}
+		}
+		reichsgeneralgovernorate = {	#国家総督領
+			on_add = {}
+		}
+		reichskommissariat = {	#国家弁務官区
+			on_add = {}
+		}
+		reichskolonie = {	#国家植民地
+			on_add = {}
+		}
+		reichsland = {	#国家直轄地
+			on_add = {}
+		}
+	##########政体名#########
+		republic = {#共和国
+			on_add = {}
+		}
+		peoples_republic = {#人民共和国
+			on_add = {}
+		}
+		democratic_republic = {#民主共和国
+			on_add = {}
+		}
+		peoples_democratic_republic = {#人民民主共和国
+			on_add = {}
+		}
+		radical_socialism_soviet_member_republic = {#社会主義共和国
+			on_add = {}
+		}
+		socialist_workers_republic = {#社会主義労働者共和国
+			on_add = {}
+		}
+		independent_state = {#独立国
+			on_add = {}
+		}
+		state = {#国
+			on_add = {}
+		}
+		empire = {#帝国
+			on_add = {}
+		}
+		kingdom = {#王国
+			on_add = {}
+		}
+		archduchy = {#大公国
+			on_add = {}
+		}
+		duchy = {#公国
+			on_add = {}
+		}
+		principality = {#公国
+			on_add = {}
+		}
+		tsardom = {#ツァール国
+			on_add = {}
+		}
+		sultanate = {#スルタン国
+			on_add = {}
+		}
+		emirat = {#首長国
+			on_add = {}
+		}
+		khanate = {#ハン国
+			on_add = {}
+		}
+		hashemite_kingdom = {#ハシミテ王国
+			on_add = {}
+		}
+		arab_republic = {#アラブ共和国
+			on_add = {}
+		}
+		islamic_republic = {#イスラム共和国
+			on_add = {}
+		}
+		commonwealth = {#共和国
+			on_add = {}
+		}
+		confederation = {#連邦
+			on_add = {}
+		}
+		union = {#連合
+			on_add = {}
+		}
+		united_republic = {#連合共和国
+			on_add = {}
+		}
+		united_states = {#合衆国
+			on_add = {}
+		}
+		united_kingdom = {#連合王国
+			on_add = {}
+		}
+		federation = {#連邦
+			on_add = {}
+		}
+		federal_republic = {#連邦共和国
+			on_add = {}
+		}
+		federal_democratic_republic = {#連邦民主共和国
+			on_add = {}
+		}
+		federated_states = {#連邦
+			on_add = {}
+		}
+		federal_state = {#連邦国
+			on_add = {}
+		}
+		democratic_federal = {#民主連邦
+			on_add = {}
+		}
+		free_state = {#自由国
+			on_add = {}
+		}
+		free_city = {#自由都市
+			on_add = {}
+		}
+		city_state = {#市国
+			on_add = {}
+		}
+		minguo = {#民国
+			on_add = {}
+		}
+		military_clique = {#軍閥
+			on_add = {}
+		}
+		ma_military_clique = {#馬軍閥
+			on_add = {}
+		}
+		soviet_government = {#ソビエト
+			on_add = {}
+		}
+		cossack_republic = {#コサック共和国
+			on_add = {}
+		}
+		most_serene_commonwealth = {#晴朗極まる共和国
+			on_add = {}
+		}
+		anarchist_federation = {#アナーキスト連盟
+			on_add = {}
+		}
+		imamate = {#イマーム国
+			on_add = {}
+		}
+		grand_duchy = {#大公国
+			on_add = {}
+		}
+		county = {#伯国
+			on_add = {}
+		}
+		princely_county = {#諸侯伯国
+			on_add = {}
+		}
+		margraviate = {#辺境伯国
+			on_add = {}
+		}
+		regency = {#摂政国
+			on_add = {}
+		}
+		democratic_peoples_republic = {#民主人民共和国
+			on_add = {}
+		}
+		socialist_republic = {#社会主義共和国
+			on_add = {}
+		}
+		most_serene_republic = {#晴朗極まる共和国
+			on_add = {}
+		}
+		united_provinces = {#諸州連合
+			on_add = {}
+		}
+		republics_union = {#共和国連邦
+			on_add = {}
+		}
+		socialist_republics_union = {#社会主義共和国連邦
+			on_add = {}
+		}
+		united_tribes = {#部族連合
+			on_add = {}
+		}
+		confederacy = {#連邦
+			on_add = {}
+		}
+		democratic_federative_republic = {#民主連邦共和国
+			on_add = {}
+		}
+		international_settlement = {#共同租界
+			on_add = {}
+		}
+	}
+}
