@@ -45,7 +45,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "mainmenu_single_player"
 		position = { x=0 y =375}
-		size = { width = 1710 height = 100}
+		size = { width = 1710 height = 100 }
 		Orientation = CENTER
 		Origo = center	
 				
@@ -156,7 +156,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "single_player_button"
-			position = { x = 710 y = 20 }
+			position = { x = 16 y = 18 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_SINGLE_PLAYER"				
@@ -166,7 +166,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "multi_player_button"
-			position = { x = 375 y = 20}
+			position = { x = 16 y = 58}
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_MULTI_PLAYER"			
@@ -200,7 +200,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "settings_button"
-			position = { x = 40 y = 20 }
+			position = { x = 16 y = 98 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "OPTIONS"
 			buttonFont = "hoi_24header"
@@ -211,7 +211,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "credits_button"
-			position = {  x = 1045 y = 20 }
+			position = { x = 16 y = 138 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "FE_CREDITS"
 			buttonFont = "hoi_24header"
@@ -221,7 +221,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "nudge_button"
-			position = { x = 375 y = 20 }
+			position = { x = 16 y = 178 }
 			quadTextureSprite ="GFX_main_lobby_button"	
 			buttonText = "Nudge!"
 			buttonFont = "hoi_24header"
@@ -230,7 +230,7 @@ guiTypes = {
 
 		ButtonType = {
 			name = "exit_button"
-			position = { x = 1380 y = 20 }
+			position = {  x = 16 y = 218 }
 			quadTextureSprite ="GFX_main_lobby_button"
 			font = "hoi_24header"			
 			text = "FE_EXIT"			
@@ -242,22 +242,31 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "mainmenu_social_buttons"
-		position = { x=0 y=0 }	
-		size = { width = 360 height = 80 }
+		position = { x=-50 y=250 }
+		size = { width = 240 height = 90 }
 		Orientation = center	
 		origo = center
+
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_tiled_window"
 		}
-		positionType = {
-			name = "position_without_social_gui"
-			position = { x = -675 y = 290 }
-		}
-		positionType = {
-			name = "subscription_position_without_social_gui"
-			position = { x = 0 y = 239 }
-		}
+
+		# positionType = {
+		# 	name = "position_without_social_gui"
+		# 	position = { x = 0 y = 175 }
+		# }
+
+		# positionType = {
+		# 	name = "subscription_position"
+		# 	position = { x = -50 y = 109 }
+		# }
+
+		# positionType = {
+		# 	name = "subscription_position_without_social_gui"
+		# 	position = { x = 0 y = 239 }
+		# }
+
 		containerWindowType = {
 			name = "social_view_interface_window"
 			position = { x = 250 y = 0  }
@@ -305,7 +314,7 @@ guiTypes = {
 		
 		ButtonType = {
 			name = "homepage_button"
-			position = { x=30 y=20 }
+			position = { x=-24 y=0 }
 			quadTextureSprite ="homepage"
 			clicksound = click_default
 			pdx_tooltip = "MENU_HOMEPAGE"
@@ -313,7 +322,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "forum_button"
-			position = { x=100 y=20 }
+			position = { x=12 y=0 }
 			quadTextureSprite ="forum"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FORUM"
@@ -321,7 +330,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "facebook_button"
-			position = { x=160 y=20 }
+			position = { x=48 y=0 }
 			quadTextureSprite ="facebook"
 			clicksound = click_default
 			pdx_tooltip = "MENU_FACEBOOK"
@@ -329,7 +338,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "twitter_button"
-			position = { x=220 y=20 }
+			position = { x=84 y=0 }
 			quadTextureSprite ="twitter"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_TWITTER"
@@ -337,7 +346,7 @@ guiTypes = {
 		}
 		ButtonType = {
 			name = "privacy_policy_button"
-			position = { x=280 y=20 }
+			position = { x=120 y=0 }
 			quadTextureSprite ="privacy"
 			#clicksound = click_default
 			pdx_tooltip = "MENU_PRIVACY_POLICY"
