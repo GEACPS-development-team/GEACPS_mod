@@ -434,7 +434,7 @@ enable_placerenaming ={
 		}
 	}
 	else_if = {	#
-		limit = {	controller = {	has_cosmetic_tag = GREATJAPAN_empire	}	placerenaming_ja_empire = yes	}
+		limit = {	controller = {	has_cosmetic_tag = GREATERJAPAN_empire	}	placerenaming_ja_empire = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ja_empire	}	}
 			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ja_empire	}

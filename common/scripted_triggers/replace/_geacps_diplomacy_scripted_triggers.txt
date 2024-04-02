@@ -113,7 +113,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 			OR = {
 				NOT = { has_dlc = "La Resistance" }
-				NOT = { original_tag = SPR }
+				NOT = { original_tag = SPA }
 		}
 		}
 		always = yes
@@ -228,7 +228,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				option = FREE
 			}
 			has_dlc = "La Resistance"
-			original_tag = SPR
+			original_tag = SPA
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_SPAIN_TOOLTIP
@@ -242,12 +242,12 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				option = FREE
 			}
 			has_dlc = "La Resistance"
-			original_tag = SPR
+			original_tag = SPA
 			has_completed_focus = SPR_masters_of_our_own_fate
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_ANARCHIST_SPAIN_TOOLTIP
-			NOT = { original_tag = SPR }
+			NOT = { original_tag = SPA }
 		}
 	}
 	if = {
@@ -262,7 +262,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			}
 			OR = {
 				NOT = { has_dlc = "La Resistance" }
-				NOT = { original_tag = SPR }
+				NOT = { original_tag = SPA }
 		}
 		}
 		custom_trigger_tooltip = {
@@ -326,7 +326,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 				option = PEACE_ONLY
 			}
 			has_dlc = "La Resistance"
-			original_tag = SPR
+			original_tag = SPA
 		}
 		custom_trigger_tooltip = {
 			tooltip = RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_TOOLTIP
@@ -347,7 +347,7 @@ DIPLOMACY_RELEASE_NATION_ENABLE_TRIGGER = {
 			OR = { 
 				original_tag = TUR
 				original_tag = SYR
-				original_tag = PER
+				original_tag = IRN
 				original_tag = IRQ
 			}
 		}
@@ -813,7 +813,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 			limit = {
 				has_dlc = "La Resistance"
 				tag = POR
-				FROM = { original_tag = SPR }
+				FROM = { original_tag = SPA }
 				NOT = { has_global_flag = scw_over }
 			}
 			custom_trigger_tooltip = {
@@ -842,7 +842,7 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 			limit = {
 				has_dlc = "Battle for the Bosporus"
 				tag = BUL
-				FROM = { original_tag = SPR }
+				FROM = { original_tag = SPA }
 				has_dlc = "La Resistance"
 				NOT = { has_global_flag = scw_over }
 				
@@ -868,9 +868,9 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 				has_dlc = "Battle for the Bosporus"
 				NOT = { has_dlc = "La Resistance" }
 				tag = BUL
-				FROM = { original_tag = SPR }	
+				FROM = { original_tag = SPA }	
 				any_country = {
-					original_tag = SPR
+					original_tag = SPA
 					has_civil_war = yes
 				}
 			}

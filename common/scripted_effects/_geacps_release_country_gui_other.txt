@@ -332,9 +332,9 @@ pfk_set_political_form_list = { #利用可能な政体のリストを表示す�
 			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_ma_military_clique = yes	}	}
 			add_to_array = {	ROOT.pfk_array_2 = token:ma_military_clique	}
 		}
-		if = {	#soviet_government
-			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_soviet_government = yes	}	}
-			add_to_array = {	ROOT.pfk_array_2 = token:soviet_government	}
+		if = {	#suweiai_government
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_suweiai_government = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:suweiai_government	}
 		}
 	}
 }
