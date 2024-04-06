@@ -240,118 +240,120 @@ guiTypes = {
 		}
 	}
 	
-	containerWindowType = {
-		name = "mainmenu_social_buttons"
-		position = { x=-50 y=250 }
-		size = { width = 240 height = 90 }
-		Orientation = center	
-		origo = center
+	# containerWindowType = {
+	# 	name = "mainmenu_social_buttons"
+	# 	position = { x = 1155 y = 100 }
+	# 	size = { width = 240 height = 90 }
+	# 	# Orientation = center	
+	# 	origo = center
 
-		background = {
-			name = "Background"		
-			quadTextureSprite ="GFX_tiled_window"
-		}
+	# 	moveable = yes # 検証用
 
-		# positionType = {
-		# 	name = "position_without_social_gui"
-		# 	position = { x = 0 y = 175 }
-		# }
+	# 	background = {
+	# 		name = "Background"		
+	# 		quadTextureSprite ="GFX_tiled_window"
+	# 	}
 
-		# positionType = {
-		# 	name = "subscription_position"
-		# 	position = { x = -50 y = 109 }
-		# }
+	# 	# positionType = {
+	# 	# 	name = "position_without_social_gui"
+	# 	# 	position = { x = 0 y = 175 }
+	# 	# }
 
-		# positionType = {
-		# 	name = "subscription_position_without_social_gui"
-		# 	position = { x = 0 y = 239 }
-		# }
+	# 	# positionType = {
+	# 	# 	name = "subscription_position"
+	# 	# 	position = { x = -50 y = 109 }
+	# 	# }
 
-		containerWindowType = {
-			name = "social_view_interface_window"
-			position = { x = 250 y = 0  }
-			size = { width = 60 height = 40 }
+	# 	# positionType = {
+	# 	# 	name = "subscription_position_without_social_gui"
+	# 	# 	position = { x = 0 y = 239 }
+	# 	# }
+
+	# 	containerWindowType = {
+	# 		name = "social_view_interface_window"
+	# 		position = { x = 250 y = 0  }
+	# 		size = { width = 60 height = 40 }
 			
-			buttonType = {
-				name = "toggle_button"
-				quadTextureSprite = "GFX_sort_button_83x29" ## Orig: 60x29
-				position = { x=0 y=0  }
-				buttonFont = "hoi_16mbs"
-			}
+	# 		buttonType = {
+	# 			name = "toggle_button"
+	# 			quadTextureSprite = "GFX_sort_button_83x29" ## Orig: 60x29
+	# 			position = { x=0 y=0  }
+	# 			buttonFont = "hoi_16mbs"
+	# 		}
 				
-			iconType = {
-				name = "button_toggle_socialview_icon"
-				spriteType = "GFX_socialview_icon"
-				position = { x=0 y=0 }
-				alwaystransparent = yes
-			}
+	# 		iconType = {
+	# 			name = "button_toggle_socialview_icon"
+	# 			spriteType = "GFX_socialview_icon"
+	# 			position = { x=0 y=0 }
+	# 			alwaystransparent = yes
+	# 		}
 				
-			instantTextBoxType={
-				name = "friends_online"
-				font = "cg_16b"
-				position = { x=20 y=15 }
-				text = "0"
-				maxWidth = 30
-				maxHeight = 16
-				alwaysTransparent = yes
-				format = center
-			}
+	# 		instantTextBoxType={
+	# 			name = "friends_online"
+	# 			font = "cg_16b"
+	# 			position = { x=20 y=15 }
+	# 			text = "0"
+	# 			maxWidth = 30
+	# 			maxHeight = 16
+	# 			alwaysTransparent = yes
+	# 			format = center
+	# 		}
 				
-			iconType = {
-				name = "new_message"
-				position = { x=42 y =5 }
-				spriteType = "GFX_new_message_icon"
-				pdx_tooltip = "SOCIAL_NEW_MESSAGE"
-			}
+	# 		iconType = {
+	# 			name = "new_message"
+	# 			position = { x=42 y =5 }
+	# 			spriteType = "GFX_new_message_icon"
+	# 			pdx_tooltip = "SOCIAL_NEW_MESSAGE"
+	# 		}
 				
-			iconType = {
-				name = "new_friend"
-				position = { x=42 y=17 }
-				spriteType = "GFX_new_friend_icon"
-				pdx_tooltip = "SOCIAL_NEW_FRIEND"
-			}
-		}
+	# 		iconType = {
+	# 			name = "new_friend"
+	# 			position = { x=42 y=17 }
+	# 			spriteType = "GFX_new_friend_icon"
+	# 			pdx_tooltip = "SOCIAL_NEW_FRIEND"
+	# 		}
+	# 	}
 		
-		ButtonType = {
-			name = "homepage_button"
-			position = { x=-24 y=0 }
-			quadTextureSprite ="homepage"
-			clicksound = click_default
-			pdx_tooltip = "MENU_HOMEPAGE"
-			web_link = "https://geacps.fandom.com/ja/wiki/GEACPS_Wiki"
-		}
-		ButtonType = {
-			name = "forum_button"
-			position = { x=12 y=0 }
-			quadTextureSprite ="forum"
-			clicksound = click_default
-			pdx_tooltip = "MENU_FORUM"
-			web_link = "https://discord.gg/nN9jzBtdEF"
-		}
-		ButtonType = {
-			name = "facebook_button"
-			position = { x=48 y=0 }
-			quadTextureSprite ="facebook"
-			clicksound = click_default
-			pdx_tooltip = "MENU_FACEBOOK"
-			web_link = "https://www.facebook.com/Heartsofiron"
-		}
-		ButtonType = {
-			name = "twitter_button"
-			position = { x=84 y=0 }
-			quadTextureSprite ="twitter"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://twitter.com/GEACPS_MOD"
-		}
-		ButtonType = {
-			name = "privacy_policy_button"
-			position = { x=120 y=0 }
-			quadTextureSprite ="privacy"
-			#clicksound = click_default
-			pdx_tooltip = "MENU_PRIVACY_POLICY"
-		}
-	}
+	# 	ButtonType = {
+	# 		name = "homepage_button"
+	# 		position = { x=-24 y=0 }
+	# 		quadTextureSprite ="homepage"
+	# 		clicksound = click_default
+	# 		pdx_tooltip = "MENU_HOMEPAGE"
+	# 		web_link = "https://geacps.fandom.com/ja/wiki/GEACPS_Wiki"
+	# 	}
+	# 	ButtonType = {
+	# 		name = "forum_button"
+	# 		position = { x=12 y=0 }
+	# 		quadTextureSprite ="forum"
+	# 		clicksound = click_default
+	# 		pdx_tooltip = "MENU_FORUM"
+	# 		web_link = "https://discord.gg/nN9jzBtdEF"
+	# 	}
+	# 	ButtonType = {
+	# 		name = "facebook_button"
+	# 		position = { x=48 y=0 }
+	# 		quadTextureSprite ="facebook"
+	# 		clicksound = click_default
+	# 		pdx_tooltip = "MENU_FACEBOOK"
+	# 		web_link = "https://www.facebook.com/Heartsofiron"
+	# 	}
+	# 	ButtonType = {
+	# 		name = "twitter_button"
+	# 		position = { x=84 y=0 }
+	# 		quadTextureSprite ="twitter"
+	# 		#clicksound = click_default
+	# 		pdx_tooltip = "MENU_TWITTER"
+	# 		web_link = "https://twitter.com/GEACPS_MOD"
+	# 	}
+	# 	ButtonType = {
+	# 		name = "privacy_policy_button"
+	# 		position = { x=120 y=0 }
+	# 		quadTextureSprite ="privacy"
+	# 		#clicksound = click_default
+	# 		pdx_tooltip = "MENU_PRIVACY_POLICY"
+	# 	}
+	# }
 	### MAIN MENU PANEL (upperleft)
 	containerWindowType = {
 		name  ="mainmenu_panel_upperleft"
