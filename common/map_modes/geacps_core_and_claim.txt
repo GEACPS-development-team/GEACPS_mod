@@ -1,0 +1,44 @@
+scripted_map_modes = {
+	core_and_claim = {
+		top = {
+			type = state
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 0.5 }
+					if = {
+						limit = {	is_owned_by = ROOT	}
+						if = {
+							limit = {	is_core_of = ROOT	}
+							set_temp_variable = {	green = 0.5	}
+							set_temp_variable = {	blue = 1.0	}
+						}
+						else_if = {
+							limit = {	is_claimed_by = ROOT	}
+							set_temp_variable = {	red = 1.0	}
+							set_temp_variable = {	green = 0.85	}
+						}
+						else = {
+							set_temp_variable = {	red = 0.5	}
+						}
+					}
+					else = {
+						if = {
+							limit = {	is_core_of = ROOT	}
+							set_temp_variable = {	green = 0.5	}
+						}
+						else_if = {
+							limit = {	is_claimed_by = ROOT	}
+							set_temp_variable = {	red = 1.0	}
+							set_temp_variable = {	green = 0.5	}
+						}
+						else = {
+							set_temp_variable = { red = 0.35 }
+							set_temp_variable = { green = 0.35 }
+							set_temp_variable = { blue = 0.35 }
+						}
+					}
+				}
+			}
+		}
+	}
+}
