@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = IFN
 		add_core_of = IFN
-		MOR = {	debug_core = yes	}
+		MOR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			12857 = {	naval_base = 1	}
 		}
 		victory_points = {	12857	1	}
-		set_variable = {	IFN_state_variable = 1	}
-		set_variable = {	MOR_state_variable = 1	}
+		add_to_array = {	IFN.pfk_state_array_1 = THIS	}
+		add_to_array = {	MOR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

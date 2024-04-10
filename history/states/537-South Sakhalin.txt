@@ -8,22 +8,22 @@ state = {
 		owner = JAP
 		add_core_of = JAP
 		add_claim_by = RUS
-		EZO = {	debug_core = yes	}
-		FEA = {	debug_core = yes	}
-		KFT = {	debug_core = yes	}
-		SIB = {	debug_core = yes	}
+		EZO = {	add_debug_core_PREV = yes	}
+		FEA = {	add_debug_core_PREV = yes	}
+		KFT = {	add_debug_core_PREV = yes	}
+		SIB = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			12446 = {	naval_base = 1	}
 		}
 		victory_points = {	12446	1	}
-		set_variable = {	EZO_state_variable = 1	}
-		set_variable = {	FEA_state_variable = 1	}
-		set_variable = {	JAP_state_variable = 1	}
-		set_variable = {	KFT_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 2	}
+		add_to_array = {	EZO.pfk_state_array_1 = THIS	}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
+		add_to_array = {	KFT.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

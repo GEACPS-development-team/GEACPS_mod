@@ -5,9 +5,9 @@ state = {
 	state_category = megalopolis
 	
 	resources = {
-		steel = 9
 		aluminium = 3
 		rubber = 1
+		steel = 9
 	}
 	
 	history = {
@@ -27,7 +27,7 @@ state = {
 		victory_points = {	7157	1	}
 		victory_points = {	10125	50	}
 		victory_points = {	12072	1	}
-		set_variable = {	JAP_state_variable = 1	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

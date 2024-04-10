@@ -7,12 +7,12 @@ state = {
 	history = {
 		owner = WAF
 		add_core_of = WAF
-		VOL = {	debug_core = yes	}
-		victory_points = {	10836	1	}
+		VOL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	VOL_state_variable = 1	}
+		victory_points = {	10836	1	}
+		add_to_array = {	VOL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

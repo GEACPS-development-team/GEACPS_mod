@@ -20,11 +20,11 @@ state = {
 		victory_points = {	1492	3	}
 		victory_points = {	4626	1	}
 		victory_points = {	12449	1	}
-		set_variable = {	BRM_state_variable = 1	}
+		add_to_array = {	BRM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1492	4202	4626	7469	12449	12404
+		1492	4202	4626	7469	12404	12449
 	}
 	local_supplies = 0.0
 }

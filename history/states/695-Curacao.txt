@@ -9,15 +9,17 @@ state = {
 	history = {
 		owner = CRC
 		add_core_of = CRC
-		WIN = {	debug_core = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
-			fuel_silo = 1
 			infrastructure = 2
-			153 = {	naval_base = 1	}
-			153 = {	coastal_bunker = 2	}
+			fuel_silo = 1
+			153 = {
+				naval_base = 1
+				coastal_bunker = 2
+			}
 		}
 		victory_points = {	153	1	}
-		set_variable = {	CRC_state_variable = 1	}
+		add_to_array = {	CRC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

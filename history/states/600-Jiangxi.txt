@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		JIA = {	debug_core = yes	}
+		JIA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 		}
 		victory_points = {	3992	3	}
-		set_variable = {	JIA_state_variable = 1	}
+		add_to_array = {	JIA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

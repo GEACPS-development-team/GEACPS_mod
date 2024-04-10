@@ -10,13 +10,11 @@ state = {
 		add_core_of = IND
 		buildings = {
 			infrastructure = 2
-			13274 = {
-				naval_base = 1
-			}
+			13274 = {	naval_base = 1	}
 		}
 		victory_points = {	13274	1	}
-		set_variable = {	IND_state_variable = 1	}
-		set_variable = {	GOA_state_variable = 2	}
+		add_to_array = {	IND.pfk_state_array_1 = THIS	}
+		add_to_array = {	GOA.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -7,12 +7,12 @@ state = {
 	history = {
 		owner = CRC
 		add_core_of = CRC
-		STM = {	debug_core = yes	}
-		WIN = {	debug_core = yes	}
+		STM = {	add_debug_core_PREV = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	STM_state_variable = 1	}
+		add_to_array = {	STM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

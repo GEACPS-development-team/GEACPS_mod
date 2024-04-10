@@ -5,22 +5,22 @@ state = {
 	state_category = city
 	
 	resources = {
-		steel = 5
 		aluminium = 1
+		steel = 5
 	}
 	
 	history = {
 		owner = USA
 		add_core_of = AUS
-		UAS = {	debug_core = yes	}
+		UAS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
 		}
 		victory_points = {	732	10	}
 		victory_points = {	9665	3	}
-		set_variable = {	AUS_state_variable = 1	}
-		set_variable = {	UAS_state_variable = 1	}
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	UAS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

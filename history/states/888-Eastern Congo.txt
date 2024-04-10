@@ -3,7 +3,7 @@ state = {
 	name = "STATE_888"
 	manpower = 885237
 	buildings_max_level_factor = 1
-	state_category = pastoral 
+	state_category = pastoral
 	
 	history = {
 		owner = COG
@@ -11,7 +11,7 @@ state = {
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	COG_state_variable = 1	}
+		add_to_array = {	COG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -9,11 +9,11 @@ state = {
 	history = {
 		owner = EQA
 		add_core_of = EQA
-		CHA = {	debug_core = yes	}
+		CHA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
-		set_variable = {	CHA_state_variable = 1	}
+		add_to_array = {	CHA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

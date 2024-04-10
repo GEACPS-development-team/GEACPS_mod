@@ -5,8 +5,8 @@ state = {
 	state_category = city
 	
 	resources = {
-		steel = 20
 		aluminium = 4
+		steel = 20
 	}
 	
 	history = {
@@ -17,7 +17,7 @@ state = {
 			industrial_complex = 1
 		}
 		victory_points = {	11420	5	}
-		set_variable = {	FRA_state_variable = 1	}
+		add_to_array = {	FRA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

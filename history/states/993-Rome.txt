@@ -8,14 +8,15 @@ state = {
 		owner = VAT
 		add_core_of = VAT
 		add_core_of = ITA
-		RME = {	debug_core = yes	}
+		RME = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			11751 = {	naval_base = 5	}
 		}
 		victory_points = {	9904	40	}
 		victory_points = {	11751	3	}
-		set_variable = {	ITA_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
+		add_to_array = {	RME.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

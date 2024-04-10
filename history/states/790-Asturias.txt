@@ -8,8 +8,8 @@ state = {
 	history = {
 		owner = SPR
 		add_core_of = SPR
-		ATR = {	debug_core = yes	}
-		IBE = {	debug_core = yes	}
+		ATR = {	add_debug_core_PREV = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -17,8 +17,8 @@ state = {
 			11707 = {	naval_base = 2	}
 		}
 		victory_points = {	11707	3	}
-		set_variable = {	ATR_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	ATR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -9,14 +9,14 @@ state = {
 		owner = VNC
 		add_core_of = VNC
 		add_core_of = ITA
-		PAD = {	debug_core = yes	}
+		PAD = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			11584 = {	naval_base = 6	}
 		}
 		victory_points = {	11584	10	}
-		set_variable = {	VNC_state_variable = 1	}
-		set_variable = {	ITA_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
+		add_to_array = {	VNC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

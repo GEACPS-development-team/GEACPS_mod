@@ -7,7 +7,7 @@ state = {
 	history = {
 		owner = GBR
 		add_core_of = GBR
-		SCO = {	debug_core = yes	}
+		SCO = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -17,11 +17,11 @@ state = {
 		}
 		victory_points = {	6300	1	}
 		victory_points = {	9392	10	}
-		set_variable = {	SCO_state_variable = 1	}
+		add_to_array = {	SCO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		159	6300	9314	9383	9392	11378	3150	11306	6385
+		159	3150	6300	6385	9314	9383	9392	11306	11378
 	}
 	local_supplies = 0.0
 }

@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = ARG
 		add_core_of = ARG
-		SAC = {	debug_core = yes	}
+		SAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 		}
-		set_variable = {	ARG_state_variable = 1	}
+		add_to_array = {	ARG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

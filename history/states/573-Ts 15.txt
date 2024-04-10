@@ -9,12 +9,12 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		URA = {	debug_core = yes	}
+		URA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	URA_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	URA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

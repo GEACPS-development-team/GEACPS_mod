@@ -1,0 +1,24 @@
+state = {
+	id = 1421
+	name = "STATE_1421"
+	manpower = 100
+	buildings_max_level_factor = 1
+	state_category = town
+	impassable = yes
+	
+	history = {
+		owner = RUS
+		add_core_of = RUS
+		add_core_of = SIB
+		YAM = {	add_debug_core_PREV = yes	}
+		buildings = {
+		}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	YAM.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		96	1729	7781	10561	10564
+	}
+	local_supplies = 0.0
+}

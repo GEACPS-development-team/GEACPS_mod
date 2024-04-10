@@ -8,11 +8,11 @@ state = {
 		owner = SIA
 		add_core_of = SIA
 		add_core_of = MAL
-		TER = {	debug_core = yes	}
+		TER = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	TER_state_variable = 1	}
+		add_to_array = {	TER.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

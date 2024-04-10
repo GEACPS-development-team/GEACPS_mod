@@ -9,13 +9,13 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		CCS = {	debug_core = yes	}
-		DAG = {	debug_core = yes	}
-		NCC = {	debug_core = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
+		DAG = {	add_debug_core_PREV = yes	}
+		NCC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	DAG_state_variable = 1	}
+		add_to_array = {	DAG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

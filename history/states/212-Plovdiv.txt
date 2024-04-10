@@ -7,15 +7,15 @@ state = {
 	history = {
 		owner = BUL
 		add_core_of = BUL
-		BLK = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
+			industrial_complex = 2
 			arms_factory = 3
-			industrial_complex =2
 			air_base = 2
 		}
 		victory_points = {	6923	5	}
-		set_variable = {	BUL_state_variable = 1	}
+		add_to_array = {	BUL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -11,11 +11,11 @@ state = {
 			infrastructure = 3
 		}
 		victory_points = {	11504	3	}
-		set_variable = {	UKR_state_variable = 1	}
+		add_to_array = {	UKR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		511	559	3557	6495	6507	6578	6605	9413	9519	11504	3584
+		511	559	3557	3584	6495	6507	6578	6605	9413	9519	11504
 	}
 	local_supplies = 0.0
 }

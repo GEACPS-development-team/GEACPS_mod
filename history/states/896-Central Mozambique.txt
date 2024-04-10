@@ -1,6 +1,6 @@
 state = {
 	id = 896
-	name=  "STATE_896"
+	name = "STATE_896"
 	manpower = 92400
 	buildings_max_level_factor = 1
 	state_category = pastoral
@@ -8,11 +8,11 @@ state = {
 	history = {
 		owner = MZB
 		add_core_of = MZB
-		EAF = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	MZB_state_variable = 1	}
+		add_to_array = {	MZB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

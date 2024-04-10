@@ -8,14 +8,6 @@ create_dynamic_country = {	#中華民国広州政府
 	set_cosmetic_tag = CHI_minguo_guangzhou_government
 	set_dictatorship = yes
 	
-	create_country_leader = {
-		name = CHARACTER_chen_gongbo
-		desc = "CHARACTER_chen_gongbo_desc"
-		picture = GFX_chen_gongbo_large
-		#expire = "1976.9.9"
-		ideology = national_authoritarianism_ideology
-	}
-	
 	add_ideas = {	#政治タブ
 		republic_unitary_state
 		provisional_government
@@ -57,4 +49,8 @@ create_dynamic_country = {	#中華民国広州政府
 	
 	JAP = { add_to_faction = PREV   }
 	declare_war_on = {	target = CHI	type = civil_war	}
+}
+CHARACTER_chen_gongbo = {
+	set_nationality = CH5
+	promote_character = yes
 }

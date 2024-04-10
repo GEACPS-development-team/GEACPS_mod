@@ -8,20 +8,20 @@ state = {
 		owner = EGR
 		add_core_of = EGR
 		add_core_of = GER
-		NGR = {	debug_core = yes	}
+		NGR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			fuel_silo = 1
 			air_base = 8
 		}
 		victory_points = {	9388	1	}
-		set_variable = {	EGR_state_variable = 1	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	NGR_state_variable = 1	}
+		add_to_array = {	EGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		349	3207	3312	3340	9388
+		349	3207	3312	3340	9388	13257
 	}
 	local_supplies = 0.0
 }

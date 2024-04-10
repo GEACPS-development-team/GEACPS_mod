@@ -9,17 +9,17 @@ state = {
 	history = {
 		owner = HON
 		add_core_of = HON
-		CAC = {	debug_core = yes	}
+		CAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 1
 			8017 = {	naval_base = 1	}
 			12865 = {	naval_base = 1	}
 		}
 		victory_points = {	12865	3	}
-		set_variable = {	HON_state_variable = 1	}
+		add_to_array = {	HON.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

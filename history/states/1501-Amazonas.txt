@@ -8,11 +8,11 @@ state = {
 	history = {
 		owner = VEN
 		add_core_of = VEN
-		SAC = {	debug_core = yes	}
+		SAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	VEN_state_variable = 1	}
+		add_to_array = {	VEN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

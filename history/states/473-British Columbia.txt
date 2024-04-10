@@ -10,18 +10,18 @@ state = {
 	history = {
 		owner = CAN
 		add_core_of = CAN
-		CSC = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
+		CSC = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			dockyard = 1
 			air_base = 3
 			1408 = {	naval_base = 5	}
 		}
 		victory_points = {	1408	15	}
-		set_variable = {	CAN_state_variable = 1	}
+		add_to_array = {	CAN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

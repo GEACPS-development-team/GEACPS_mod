@@ -1,0 +1,122 @@
+defined_text = { #リストに表示される名称
+	name = pfk_list_name
+	text = {
+		trigger = {	check_variable = { ROOT.pfk_setting_progress = 0 }	}
+		localization_key = "[?target.GetNonIdeologyNameDef]"
+	}
+	# text = {
+	# 	trigger = {
+	# 		check_variable = { ROOT.pfk_setting_progress = 1 }
+	# 		check_variable = { target = token:pfk_method_puppet }
+	# 	}
+	# 	localization_key = "[pfk_puppet_name]"
+	# }
+	text = {
+		trigger = {	check_variable = { ROOT.pfk_setting_progress = 2 }	}
+		localization_key = "[?target.GetTokenLocalizedKey]"
+	}
+	text = {
+		trigger = {	always = yes }
+		localization_key = "[?target.GetTokenLocalizedKey]"
+	}
+}
+
+defined_text = { #今選択中の内容
+	name = pfk_current_name
+	text = {
+		trigger = {	check_variable = { ROOT.pfk_setting_progress = 0 }	}
+		localization_key = "[?ROOT.pfk_current_target.GetNonIdeologyNameDef]"
+	}
+	# text = {
+	# 	trigger = {
+	# 		check_variable = { ROOT.pfk_setting_progress = 1 }
+	# 		check_variable = { ROOT.pfk_current_target = token:pfk_method_puppet }
+	# 	}
+	# 	localization_key = "[pfk_puppet_name]"
+	# }
+	text = {
+		trigger = {	always = yes }
+		localization_key = "[?ROOT.pfk_current_target.GetTokenLocalizedKey]"
+	}
+}
+defined_text = { #選んだことリスト
+	name = pfk_choice_name
+	text = {
+		trigger = {
+			check_variable = { choice = 0 }
+			check_variable = { i = 0 }
+		}
+		localization_key = AUTONOMY_COUNTRY_EFFECT
+	}
+	text = {
+		trigger = {
+			check_variable = { choice = 0 }
+			check_variable = { i = 1 }
+		}
+		localization_key = FOCUS_FILTER_TFV_AUTONOMY
+	}
+	text = {
+		trigger = {
+			check_variable = { choice = 0 }
+			check_variable = { i = 2 }
+		}
+		localization_key = pfk_political_form
+	}
+	text = {
+		trigger = {
+			check_variable = { choice = 0 }
+			check_variable = { i = 3 }
+		}
+		localization_key = pfk_release_range
+	}
+	text = {
+		trigger = { check_variable = { i = 0 } }
+		localization_key = "[?choice.GetNonIdeologyNameDef]"
+	}
+	text = {
+		trigger = {	always = yes }
+		localization_key = "[?choice.GetTokenLocalizedKey]"
+	}
+}
+defined_text = { #リストに表示される名称
+	name = pfk_set_btn
+	text = {
+		trigger = {
+			check_variable = { pfk_setting_list^1 = token:pfk_method_return }
+		}
+		localization_key = "pfk_method_return"
+	}
+	text = {
+		trigger = {
+			check_variable = { ROOT.pfk_setting_progress > 2 }
+		}
+		localization_key = "pfk_popup"
+	}
+
+	text = {
+		trigger = {	always = yes }
+		localization_key = "pfk_next"
+	}
+}
+
+
+#傀儡国の名前-国別用
+defined_text = {
+	name = pfk_puppet_name
+	text = {
+		trigger = {	ROOT = { tag = JAP } }
+		localization_key = imperial_protected_state
+	}
+	text = {
+		trigger = {	ROOT = { tag = GER } }
+		localization_key = "tributary_state"
+	}
+	text = {
+		trigger = {	ROOT = { tag = RUS } }
+		localization_key = "soviet_satellite"
+	}
+	text = {
+		trigger = {	always = yes }
+		localization_key = "puppet"
+	}
+}

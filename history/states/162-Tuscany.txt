@@ -7,11 +7,11 @@ state = {
 	history = {
 		owner = ITA
 		add_core_of = ITA
-		TUS = {	debug_core = yes	}
+		TUS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			dockyard = 3
 			air_base = 2
 			6973 = {	naval_base = 10	}
@@ -21,8 +21,8 @@ state = {
 		victory_points = {	6973	1	}
 		victory_points = {	9907	3	}
 		victory_points = {	11833	1	}
-		set_variable = {	ITA_state_variable = 1	}
-		set_variable = {	TUS_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
+		add_to_array = {	TUS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

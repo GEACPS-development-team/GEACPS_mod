@@ -2,21 +2,22 @@ state = {
 	id = 1338
 	name = "STATE_1338"
 	manpower = 100
-	state_category = rural
 	buildings_max_level_factor = 1
+	state_category = rural
 	
 	history = {
 		owner = MOL
 		add_core_of = MOL
-		TRN = {	debug_core = yes	}
+		TRN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	MOL_state_variable = 1	}
+		add_to_array = {	MOL.pfk_state_array_1 = THIS	}
+		add_to_array = {	TRN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		13366
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

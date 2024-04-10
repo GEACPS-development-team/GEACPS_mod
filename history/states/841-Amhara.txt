@@ -7,20 +7,20 @@ state = {
 	history = {
 		owner = ETH
 		add_core_of = ETH
-		AMH = {	debug_core = yes	}
-		EAF = {	debug_core = yes	}
+		AMH = {	add_debug_core_PREV = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	1984	2	}
 		victory_points = {	5097	1	}
 		victory_points = {	13242	2	}
-		set_variable = {	AMH_state_variable = 1	}
-		set_variable = {	ETH_state_variable = 1	}
+		add_to_array = {	AMH.pfk_state_array_1 = THIS	}
+		add_to_array = {	ETH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		1984	2040	4954	5097	7944	13137	13241	13242
 	}
-	local_supplies = 0.0 
+	local_supplies = 0.0
 }

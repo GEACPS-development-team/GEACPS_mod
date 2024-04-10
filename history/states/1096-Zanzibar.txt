@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = ZAN
 		add_core_of = ZAN
-		TZN = {	debug_core = yes	}
-		EAF = {	debug_core = yes	}
+		TZN = {	add_debug_core_PREV = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			13449 = {	naval_base = 1	}
 		}
 		victory_points = {	13449	1	}
-		set_variable = {	ZAN_state_variable = 1	}
+		add_to_array = {	ZAN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

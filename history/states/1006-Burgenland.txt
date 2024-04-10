@@ -7,13 +7,14 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = AUS
-		BGL = {	debug_core = yes	}
+		BGL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {	3700	3	}
-		set_variable = {	AUS_state_variable = 1	}
-		set_variable = {	HUN_state_variable = 2	}
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	BGL.pfk_state_array_1 = THIS	}
+		add_to_array = {	HUN.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

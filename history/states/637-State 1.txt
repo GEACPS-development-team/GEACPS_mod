@@ -3,20 +3,20 @@ state = {
 	name = "STATE_637"
 	manpower = 48831
 	buildings_max_level_factor = 1
-	state_category = "wasteland"
+	state_category = wasteland
 	
 	history = {
 		owner = FEA
 		add_core_of = FEA
 		add_core_of = RUS
-		KAM = {	debug_core = yes	}
-		SIB = {	debug_core = yes	}
+		KAM = {	add_debug_core_PREV = yes	}
+		SIB = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	FEA_state_variable = 1	}
-		set_variable = {	KAM_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 2	}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	KAM.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_2 = THIS	}
 		set_demilitarized_zone = yes
 	}
 	

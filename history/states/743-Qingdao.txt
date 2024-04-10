@@ -7,18 +7,20 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		QIN = {	debug_core = yes	}
-		SHD = {	debug_core = yes	}
+		QIN = {	add_debug_core_PREV = yes	}
+		SHD = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 1
-			10000 = {	bunker = 1	}
-			10000 = {	naval_base = 5	}
-			10000 = {	coastal_bunker = 1	}
+			10000 = {
+				naval_base = 5
+				bunker = 1
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	10000	5	}
-		set_variable = {	QIN_state_variable = 1	}
+		add_to_array = {	QIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -14,17 +14,19 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		GND = {	debug_core = yes	}
+		GND = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 2
 			air_base = 3
-			9938 = {	bunker = 1	}
-			9938 = {	naval_base = 1	}
-			9938 = {	coastal_bunker = 1	}
+			9938 = {
+				naval_base = 1
+				bunker = 1
+				coastal_bunker = 1
+			}
 		}
-		set_variable = {	GND_state_variable = 1	}
+		add_to_array = {	GND.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

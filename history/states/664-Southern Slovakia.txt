@@ -18,8 +18,8 @@ state = {
 			industrial_complex = 3
 		}
 		victory_points = {	6573	1	}
-		set_variable = {	SLO_state_variable = 1	}
-		set_variable = {	HUN_state_variable = 2	}
+		add_to_array = {	SLO.pfk_state_array_1 = THIS	}
+		add_to_array = {	HUN.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

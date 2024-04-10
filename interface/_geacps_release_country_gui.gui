@@ -1,0 +1,322 @@
+guiTypes = {
+	containerWindowType = {#
+		name = "project_F_kikan_btn"
+		position = { x = 0 y = 0 }
+		size = { width = 10 height = 10 }
+		orientation = upper_left
+		buttonType = { #ボタンを作る
+			name = "pfk_open_btn" #ボタンの名前 scripted_guiで使う
+			position = { x = 1160 y = 0 } #ボタンの位置 ゲーム画面見て微調整だ
+			quadTextureSprite ="GFX_button_148x34" #ボタンの画像 これはバニラで既にあるやつ
+			buttonFont = "hoi_16mbs" #ボタンにテキストを入れる場合のフォント これはバニラのフォントを使っている
+			buttonText = "pFk" #ボタンに入れるテキスト Localisationが効かなかった
+			shortcut = "p" #ショートカットキー
+		}
+	}
+	containerWindowType = {#本体
+		name = "project_F_kikan_GUI_rework"
+		size = { width = 700 height = 550 }
+		position = { x = -200 y = -200 }
+		Orientation = center
+		moveable = yes
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_bg"
+		}
+		instantTextBoxType = {
+			name = "pfk_selected_name"
+			position = { x = 50 y = 25 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0}
+			text = "pfk_title"
+			maxWidth = 600
+			maxHeight = 24
+			format = centre
+		}
+		containerWindowType = { #リスト
+			name = "pfk_list_window"
+			position = { x = 10 y = 60 }
+			size = { width = 345 height = 480 }
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+				alwaystransparent = yes
+			}
+
+			containerWindowType = { #リストとして表示する部分
+				name = "pfk_list"
+				position = { x = 10 y = 14 }
+				size = { width = 330 height = 452 }
+				background = {
+					name = "Background"
+					# quadTextureSprite = "GFX_tiled_decisions_bg_small"
+					quadTextureSprite = "GFX_empty_tile_bg"
+				}
+				verticalScrollbar = "right_vertical_slider"
+				margin = {top=0 left=0 bottom=0 right=0}
+				buttonType = {
+					name = "pfk_return_btn"
+					position = { x = 155 y = 5 }
+					quadTextureSprite ="GFX_button_148x34"
+					buttonText = "BROWSER_BACK" 
+					buttonFont = "hoi_16mbs"
+				}
+				gridboxtype = {
+					name = "pfk_list_gridbox"
+					position = { x = 5 y = 45 }
+					size = { width = 100%% height = 407 }
+					slotsize = { width = 300 height = 41 }
+					add_horizontal = no
+					max_slots_horizontal = 1
+					max_slots_vertical = 100
+					format = "UPPER_LEFT"
+				}
+			}
+		}
+		containerWindowType = { #情報
+			name = "pfk_info_window"
+			position = { x = 347 y = 60 }
+			size = { width = 343 height = 480 }
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+				alwaystransparent = yes
+			}
+			containerWindowType = { #進度を表示する
+				name = "pfk_progress_window"
+				position = { x = 10 y = 10 }
+				size = { width = 323 height = 80 }
+				# background = {
+				# 	name = "Background"
+				# 	quadTextureSprite ="GFX_tiled_bg"
+				# 	alwaystransparent = yes
+				# }
+				gridboxtype = {
+					name = "pfk_progress_gridbox"
+					position = { x = 20 y = 10 }
+					size = { width = 100%% height = 100%% }
+					slotsize = { width = 80 height = 56 }
+					add_horizontal = yes
+					max_slots_horizontal = 5
+					format = "UPPER_LEFT"
+				}
+
+			}
+			
+			instantTextBoxType = {
+				name = "pfk_selected_name"
+				position = { x = 2 y = 120 }
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = "現在選択中:[pfk_current_name]"
+				maxWidth = 340
+				maxHeight = 24
+				format = centre
+			}
+			instantTextBoxType = {
+				name = "pfk_setting_progress"
+				position = { x = 2 y = 140 }
+				font = "hoi_24header"
+				borderSize = {x = 0 y = 0}
+				text = "進行度:[?pfk_setting_progress]"
+				maxWidth = 340
+				maxHeight = 24
+				format = centre
+			}
+			buttonType = { #提出button
+				name = "pfk_set_btn"
+				position = { x = 53 y = 410 }
+				spriteType = "GFX_big_button_232"
+				clicksound = click_send
+				buttonFont = "hoi_18mbs"
+				text = "pfk_set_btn"
+			}
+
+			#デバック
+			gridboxtype = {
+				name = "pfk_selected_country_list_gridbox"
+				position = { x = 30 y = 170 }
+				size = { width = 300 height = 300 }
+				slotsize = { width = 300 height = 20 }
+				add_horizontal = no
+				max_slots_horizontal = 1
+				format = "UPPER_LEFT"
+			}
+			buttonType = {
+				name = "pfk_open_btn_0"
+				position = { x = 100 y = 320 }
+				quadTextureSprite ="GFX_button_148x34"
+				buttonText = "初期化" 
+				buttonFont = "hoi_16mbs"
+			}
+		}
+	}
+
+	containerWindowType = {#アラートポップアップ
+		name = "pfk_popup"
+		size = { width = 480 height=322 }
+		orientation= center
+		origo = center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+		show_sound = click_battleplan
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window_pol_goal"
+		}
+
+		instantTextBoxType = {
+			name = "title"
+			position = { x = 10 y = 16 }
+			textureFile = ""
+			font = "hoi_24header"
+			borderSize = {x = 0 y = 10}
+			text = "pfk_popup"
+			maxWidth = 450
+			maxHeight = 40
+			fixedsize = yes
+			vertical_alignment = center
+			format = centre
+		}
+
+		instantTextBoxType = {
+			name = "description"
+			position = { x = 24 y = 90 }
+			textureFile = ""
+			font = "hoi_18mbs"
+			borderSize = {x = 0 y = 0}
+			text = "pfk_popup_desc"
+			maxWidth = 430
+			maxHeight = 155
+			format = centre
+			scrollbartype = "standardtext_slider"
+		}
+
+		buttonType = {
+			name = "decline_button"
+			position = { x=90 y=250}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "PDXO_CANCEL"
+			buttonFont = "hoi_16mbs"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+		}
+
+		buttonType = {
+			name = "accept_button"
+			position = { x=260 y=250}
+			quadTextureSprite ="GFX_button_148x34"
+			buttonText = "OK"
+			buttonFont = "hoi_16mbs"
+			shortcut = "RETURN"
+			clicksound = click_default
+		}
+	}
+
+
+	#####gridboxtype
+	containerWindowType = {#デバック用ネスト表示
+		name = "pfk_current_country_list_container"
+		position = { x= 0 y= 0 }
+		size = { width = 300 height = 30 }
+		instantTextboxType = {#
+			name = "pfk_country_name"
+			position = { x = 0 y = 0 }
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0 }
+			text = "[?selected_country.GetNonIdeologyNameDef]"
+			maxWidth = 300
+			maxHeight = 25
+			fixedsize = yes
+			format = centre
+			alwaystransparent = yes
+		}
+	}
+	containerWindowType = {#リスト
+		name = "pfk_list_container"
+		position = { x= 0 y= 0 }
+		size = { width = 283 height = 40 }
+		buttonType = {
+			name = "pfk_selected_btn"
+			quadTextureSprite = "GFX_pfk_list_bg"
+			position = { x = 2 y = 0 }
+			clicksound = click_send
+		}
+		instantTextboxType = {#
+			name = "pfk_name"
+			position = { x = 45 y = 9 }
+			font = "hoi_18b"
+			borderSize = {x = 0 y = 0 }
+			text = "[pfk_list_name]"
+			maxWidth = 205
+			maxHeight = 25
+			fixedsize = yes
+			format = left
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="pfk_check_box_empty"
+			spriteType = "GFX_cont_focus_check_icon"
+			position = { x= 6 y = 3 }
+			scale = 1
+			frame = 1
+			pdx_tooltip = jes_largest_faction
+		}
+		iconType = {
+			name ="pfk_check_box_checked"
+			spriteType = "GFX_cont_focus_check_icon"
+			position = { x= 6 y = 3 }
+			scale = 1
+			frame = 2
+			pdx_tooltip = jes_largest_faction
+		}
+
+		#デバック用
+		iconType = {
+			name ="pfk_can_release"
+			spriteType = "GFX_accept_decline_icon"
+			position = { x= 276 y = 18 }
+			scale = 0.8
+			frame = 2
+			pdx_tooltip = jes_largest_faction
+		}
+	}
+	containerWindowType = {#決まったことリストを表示
+		name = "pfk_setting_list_container"
+		position = { x= 0 y= 0 }
+		size = { width = 80 height = 56 }
+		iconType = {
+			name ="pfk_progress_icon"
+			spriteType = "GFX_bop_bulb_L"
+			position = { x= 0 y = 0 }
+			frame = 1
+			scale = 1
+		}
+		iconType = {
+			name ="pfk_progress_selected_icon"
+			spriteType = "GFX_bop_bulb_L"
+			position = { x= 0 y = 0 }
+			frame = 3
+			scale = 1
+		}
+		iconType = {
+			name ="pfk_progress_arrow_icon"
+			spriteType = "GFX_floating_arrows"
+			position = { x= 50 y = 20 }
+			frame = 2
+			scale = 0.7
+		}
+		instantTextBoxType = {
+			name = "pfk_selected_name"
+			position = { x = -50 y = 55 }
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[pfk_choice_name]"
+			maxWidth = 148
+			maxHeight = 24
+			format = centre
+		}
+	}
+}

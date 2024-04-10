@@ -9,18 +9,18 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		ULY = {	debug_core = yes	}
+		ULY = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	392	1	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	ULY_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	ULY.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		286	392	3196	3276	3372	3382	6294	6302	6337	6394	9338	11319	11373	3246
+		286	392	3196	3246	3276	3372	3382	6294	6302	6337	6394	9338	11319	11373
 	}
 	local_supplies = 0.0
 }

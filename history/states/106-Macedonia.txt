@@ -6,22 +6,22 @@ state = {
 	state_category = rural
 	
 	resources = {
-		chromium = 70
 		aluminium = 16
+		chromium = 70
 	}
 	
 	history = {
 		owner = MAC
 		add_core_of = MAC
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 2
 		}
 		victory_points = {	3882	5	}
-		set_variable = {	MAC_state_variable = 1	}
+		add_to_array = {	MAC.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

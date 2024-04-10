@@ -10,14 +10,14 @@ state = {
 	history = {
 		owner = POR
 		add_core_of = POR
-		IBE = {	debug_core = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
 		}
 		victory_points = {	924	1	}
 		victory_points = {	9869	1	}
-		set_variable = {	POR_state_variable = 1	}
+		add_to_array = {	POR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

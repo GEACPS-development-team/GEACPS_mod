@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = SPR
 		add_core_of = SPR
-		CTB = {	debug_core = yes	}
-		IBE = {	debug_core = yes	}
+		CTB = {	add_debug_core_PREV = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	CTB_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	CTB.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

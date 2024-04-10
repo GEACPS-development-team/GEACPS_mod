@@ -9,16 +9,16 @@ state = {
 	history = {
 		owner = LAT
 		add_core_of = LAT
-		BLT = {	debug_core = yes	}
-		LIV = {	debug_core = yes	}
+		BLT = {	add_debug_core_PREV = yes	}
+		LIV = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 3
 		}
 		victory_points = {	10493	1	}
-		set_variable = {	LAT_state_variable = 1	}
-		set_variable = {	LIV_state_variable = 1	}
+		add_to_array = {	LAT.pfk_state_array_1 = THIS	}
+		add_to_array = {	LIV.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

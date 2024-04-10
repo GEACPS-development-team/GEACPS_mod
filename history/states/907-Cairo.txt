@@ -14,11 +14,11 @@ state = {
 			air_base = 5
 		}
 		victory_points = {	7011	20	}
-		set_variable = {	EGY_state_variable = 1	}
+		add_to_array = {	EGY.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		4143	7011	10005	10073	10126	11964	12004 
+		4143	7011	10005	10073	10126	11964	12004
 	}
 	local_supplies = 0.0
 }

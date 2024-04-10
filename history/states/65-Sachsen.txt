@@ -10,18 +10,18 @@ state = {
 		owner = EGR
 		add_core_of = EGR
 		add_core_of = GER
-		NGR = {	debug_core = yes	}
-		SAX = {	debug_core = yes	}
+		NGR = {	add_debug_core_PREV = yes	}
+		SAX = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 6
 			arms_factory = 2
 		}
 		victory_points = {	3535	10	}
-		set_variable = {	EGR_state_variable = 1	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	NGR_state_variable = 1	}
-		set_variable = {	SAX_state_variable = 1	}
+		add_to_array = {	EGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	SAX.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

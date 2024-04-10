@@ -1,0 +1,22 @@
+state = {
+	id = 1341
+	name = "STATE_1341"
+	manpower = 2000
+	state_category = enclave
+	
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		SCA = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 1
+			13370 = {	naval_base = 1	}
+		}
+		add_to_array = {	NOR.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		13370
+	}
+	local_supplies = 0.0
+}

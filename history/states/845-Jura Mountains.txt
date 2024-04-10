@@ -11,12 +11,12 @@ state = {
 		add_core_of = SWI
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 		}
 		victory_points = {	6666	5	}
-		set_variable = {	SWI_state_variable = 1	}
-		set_variable = {	FRA_state_variable = 3	}
+		add_to_array = {	SWI.pfk_state_array_1 = THIS	}
+		add_to_array = {	FRA.pfk_state_array_3 = THIS	}
 	}
 	
 	provinces = {

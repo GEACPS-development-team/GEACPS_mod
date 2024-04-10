@@ -2,7 +2,7 @@ state = {
 	id = 1068
 	name = "STATE_1068"
 	manpower = 282245
-	buildings_max_level_factor = 1	
+	buildings_max_level_factor = 1
 	state_category = rural
 	
 	history = {
@@ -11,7 +11,7 @@ state = {
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	KAZ_state_variable = 1	}
+		add_to_array = {	KAZ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

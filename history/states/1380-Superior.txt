@@ -6,20 +6,20 @@ state = {
 	state_category = metropolis
 	
 	resources = {
-		steel = 60
 		oil = 6
+		steel = 60
 	}
 	
 	history = {
 		owner = USA
 		add_core_of = USA
-		GLA = {	debug_core = yes	}
-		MCH = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
+		GLA = {	add_debug_core_PREV = yes	}
+		MCH = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	MCH_state_variable = 1	}
+		add_to_array = {	MCH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

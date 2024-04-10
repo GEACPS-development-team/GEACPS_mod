@@ -8,15 +8,15 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		AEC = {	debug_core = yes	}
-		IQO = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		NYR = {	debug_core = yes	}
+		AEC = {	add_debug_core_PREV = yes	}
+		IQO = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		NYR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 		}
 		victory_points = {	11654	3	}
-		set_variable = {	NYR_state_variable = 1	}
+		add_to_array = {	NYR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

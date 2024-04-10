@@ -7,8 +7,8 @@ state = {
 	history = {
 		owner = SPR
 		add_core_of = SPR
-		BLE = {	debug_core = yes	}
-		IBE = {	debug_core = yes	}
+		BLE = {	add_debug_core_PREV = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			air_base = 1
@@ -16,8 +16,8 @@ state = {
 			9793 = {	naval_base = 2	}
 		}
 		victory_points = {	9793	1	}
-		set_variable = {	BLE_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	BLE.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

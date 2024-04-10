@@ -1,0 +1,1048 @@
+set_pfk_country_arraies = {
+	#リセット
+	for_each_scope_loop = {#全ての存在する国家
+		array = global.countries
+		clear_array = pfk_country_array
+	}
+	clear_array = global.pfk_country_array
+	#グローバル
+	add_to_array = {	global.pfk_country_array = AFR	}
+	add_to_array = {	global.pfk_country_array = ARB	}
+	add_to_array = {	global.pfk_country_array = AST	}
+	add_to_array = {	global.pfk_country_array = CAC	}
+	add_to_array = {	global.pfk_country_array = CCS	}
+	add_to_array = {	global.pfk_country_array = CHI	}
+	add_to_array = {	global.pfk_country_array = EIN	}
+	add_to_array = {	global.pfk_country_array = EUR	}
+	add_to_array = {	global.pfk_country_array = FSM	}
+	add_to_array = {	global.pfk_country_array = INC	}
+	add_to_array = {	global.pfk_country_array = IND	}
+	add_to_array = {	global.pfk_country_array = INO	}
+	add_to_array = {	global.pfk_country_array = JAP	}
+	add_to_array = {	global.pfk_country_array = KOR	}
+	add_to_array = {	global.pfk_country_array = KUR	}
+	add_to_array = {	global.pfk_country_array = MAL	}
+	add_to_array = {	global.pfk_country_array = NAC	}
+	add_to_array = {	global.pfk_country_array = PER	}
+	add_to_array = {	global.pfk_country_array = PLY	}
+	add_to_array = {	global.pfk_country_array = SAC	}
+	add_to_array = {	global.pfk_country_array = SIA	}
+	add_to_array = {	global.pfk_country_array = STH	}
+	add_to_array = {	global.pfk_country_array = TRK	}
+	add_to_array = {	global.pfk_country_array = TUR	}
+	add_to_array = {	global.pfk_country_array = WIN	}
+	
+	##アフリカ
+	add_to_array = {	AFR.pfk_country_array = AFR	}
+	add_to_array = {	AFR.pfk_country_array = NAF	}
+	add_to_array = {	AFR.pfk_country_array = EAF	}
+	add_to_array = {	AFR.pfk_country_array = EQA	}
+	add_to_array = {	AFR.pfk_country_array = SAF	}
+	add_to_array = {	AFR.pfk_country_array = WAF	}
+	
+	###北アフリカ
+	add_to_array = {	NAF.pfk_country_array = NAF	}
+	add_to_array = {	NAF.pfk_country_array = ALG	}
+	add_to_array = {	NAF.pfk_country_array = EGY	}
+	add_to_array = {	NAF.pfk_country_array = LBA	}
+	add_to_array = {	NAF.pfk_country_array = MOR	}
+	add_to_array = {	NAF.pfk_country_array = SUD	}
+	add_to_array = {	NAF.pfk_country_array = TUN	}
+	
+	####エジプト
+	add_to_array = {	EGY.pfk_country_array = EGY	}
+	add_to_array = {	EGY.pfk_country_array = SCZ	}
+	####リビア
+	add_to_array = {	LBA.pfk_country_array = LBA	}
+	add_to_array = {	LBA.pfk_country_array = CYR	}
+	add_to_array = {	LBA.pfk_country_array = FEZ	}
+	add_to_array = {	LBA.pfk_country_array = TRP	}
+	####モロッコ
+	add_to_array = {	MOR.pfk_country_array = MOR	}
+	add_to_array = {	MOR.pfk_country_array = IFN	}
+	add_to_array = {	MOR.pfk_country_array = RIF	}
+	add_to_array = {	MOR.pfk_country_array = WES	}
+	#####リーフ
+	add_to_array = {	RIF.pfk_country_array = RIF	}
+	add_to_array = {	RIF.pfk_country_array = CEU	}
+	add_to_array = {	RIF.pfk_country_array = MLL	}
+	add_to_array = {	RIF.pfk_country_array = TGE	}
+	####スーダン
+	add_to_array = {	SUD.pfk_country_array = SUD	}
+	add_to_array = {	SUD.pfk_country_array = SSD	}
+	
+	###東アフリカ
+	add_to_array = {	EAF.pfk_country_array = EAF	}
+	add_to_array = {	EAF.pfk_country_array = ERI	}
+	add_to_array = {	EAF.pfk_country_array = ETH	}
+	add_to_array = {	EAF.pfk_country_array = KEN	}
+	add_to_array = {	EAF.pfk_country_array = MLW	}
+	add_to_array = {	EAF.pfk_country_array = MZB	}
+	add_to_array = {	EAF.pfk_country_array = R-U	}
+	add_to_array = {	EAF.pfk_country_array = RHO	}
+	add_to_array = {	EAF.pfk_country_array = SOM	}
+	add_to_array = {	EAF.pfk_country_array = TZN	}
+	add_to_array = {	EAF.pfk_country_array = UGA	}
+	
+	####エチオピア
+	add_to_array = {	ETH.pfk_country_array = ETH	}
+	add_to_array = {	ETH.pfk_country_array = AFA	}
+	add_to_array = {	ETH.pfk_country_array = AMH	}
+	add_to_array = {	ETH.pfk_country_array = BEG	}
+	add_to_array = {	ETH.pfk_country_array = GBA	}
+	add_to_array = {	ETH.pfk_country_array = HAR	}
+	add_to_array = {	ETH.pfk_country_array = ORO	}
+	add_to_array = {	ETH.pfk_country_array = SID	}
+	add_to_array = {	ETH.pfk_country_array = TIG	}
+	####ルアンダ＝ウルンディ
+	add_to_array = {	R-U.pfk_country_array = R-U	}
+	add_to_array = {	R-U.pfk_country_array = BRD	}
+	add_to_array = {	R-U.pfk_country_array = RWA	}
+	####ローデシア
+	add_to_array = {	RHO.pfk_country_array = RHO	}
+	add_to_array = {	RHO.pfk_country_array = ZAM	}
+	add_to_array = {	RHO.pfk_country_array = ZIM	}
+	####ソマリア
+	add_to_array = {	SOM.pfk_country_array = SOM	}
+	add_to_array = {	SOM.pfk_country_array = DJI	}
+	add_to_array = {	SOM.pfk_country_array = SML	}
+	####タンザニア
+	add_to_array = {	TZN.pfk_country_array = TZN	}
+	add_to_array = {	TZN.pfk_country_array = TAN	}
+	add_to_array = {	TZN.pfk_country_array = ZAN	}
+	
+	###赤道アフリカ
+	add_to_array = {	EQA.pfk_country_array = EQA	}
+	add_to_array = {	EQA.pfk_country_array = ANG	}
+	add_to_array = {	EQA.pfk_country_array = CAR	}
+	add_to_array = {	EQA.pfk_country_array = CHA	}
+	add_to_array = {	EQA.pfk_country_array = CMR	}
+	add_to_array = {	EQA.pfk_country_array = COG	}
+	add_to_array = {	EQA.pfk_country_array = EQG	}
+	add_to_array = {	EQA.pfk_country_array = GAB	}
+	add_to_array = {	EQA.pfk_country_array = STP	}
+	
+	####カメルーン
+	add_to_array = {	CMR.pfk_country_array = CMR	}
+	add_to_array = {	CMR.pfk_country_array = AMB	}
+	####コンゴ
+	add_to_array = {	COG.pfk_country_array = COG	}
+	add_to_array = {	COG.pfk_country_array = MCG	}
+	
+	###南アフリカ
+	add_to_array = {	SAF.pfk_country_array = SAF	}
+	add_to_array = {	SAF.pfk_country_array = BOT	}
+	add_to_array = {	SAF.pfk_country_array = LSO	}
+	add_to_array = {	SAF.pfk_country_array = NMB	}
+	add_to_array = {	SAF.pfk_country_array = SWL	}
+	
+	###西アフリカ
+	add_to_array = {	WAF.pfk_country_array = WAF	}
+	add_to_array = {	WAF.pfk_country_array = CPV	}
+	add_to_array = {	WAF.pfk_country_array = DAH	}
+	add_to_array = {	WAF.pfk_country_array = GAM	}
+	add_to_array = {	WAF.pfk_country_array = GHA	}
+	add_to_array = {	WAF.pfk_country_array = GNA	}
+	add_to_array = {	WAF.pfk_country_array = GNB	}
+	add_to_array = {	WAF.pfk_country_array = IVO	}
+	add_to_array = {	WAF.pfk_country_array = LIB	}
+	add_to_array = {	WAF.pfk_country_array = MLI	}
+	add_to_array = {	WAF.pfk_country_array = MRT	}
+	add_to_array = {	WAF.pfk_country_array = NGA	}
+	add_to_array = {	WAF.pfk_country_array = NGE	}
+	add_to_array = {	WAF.pfk_country_array = SEN	}
+	add_to_array = {	WAF.pfk_country_array = SIE	}
+	add_to_array = {	WAF.pfk_country_array = TOG	}
+	add_to_array = {	WAF.pfk_country_array = VOL	}
+	
+	####ガーナ
+	add_to_array = {	GHA.pfk_country_array = GHA	}
+	add_to_array = {	GHA.pfk_country_array = ASH	}
+	add_to_array = {	GHA.pfk_country_array = DGB	}
+	add_to_array = {	GHA.pfk_country_array = WTG	}
+	####マリ
+	add_to_array = {	MLI.pfk_country_array = MLI	}
+	add_to_array = {	MLI.pfk_country_array = AZA	}
+	####ナイジェリア
+	add_to_array = {	NGA.pfk_country_array = NGA	}
+	add_to_array = {	NGA.pfk_country_array = BEN	}
+	add_to_array = {	NGA.pfk_country_array = BIA	}
+	
+	##アラブ
+	add_to_array = {	ARB.pfk_country_array = ARB	}
+	add_to_array = {	ARB.pfk_country_array = BHR	}
+	add_to_array = {	ARB.pfk_country_array = HEZ	}
+	add_to_array = {	ARB.pfk_country_array = HIL	}
+	add_to_array = {	ARB.pfk_country_array = IRQ	}
+	add_to_array = {	ARB.pfk_country_array = JOR	}
+	add_to_array = {	ARB.pfk_country_array = KUW	}
+	add_to_array = {	ARB.pfk_country_array = LEB	}
+	add_to_array = {	ARB.pfk_country_array = NEJ	}
+	add_to_array = {	ARB.pfk_country_array = OMA	}
+	add_to_array = {	ARB.pfk_country_array = PAL	}
+	add_to_array = {	ARB.pfk_country_array = QAT	}
+	add_to_array = {	ARB.pfk_country_array = SYR	}
+	add_to_array = {	ARB.pfk_country_array = TRC	}
+	add_to_array = {	ARB.pfk_country_array = YEM	}
+	
+	###オマーン
+	add_to_array = {	OMA.pfk_country_array = OMA	}
+	add_to_array = {	OMA.pfk_country_array = MSC	}
+	###シリア
+	add_to_array = {	SYR.pfk_country_array = SYR	}
+	add_to_array = {	SYR.pfk_country_array = ALP	}
+	add_to_array = {	SYR.pfk_country_array = ALW	}
+	add_to_array = {	SYR.pfk_country_array = DAM	}
+	add_to_array = {	SYR.pfk_country_array = HAT	}
+	add_to_array = {	SYR.pfk_country_array = JAD	}
+	###イエメン
+	add_to_array = {	YEM.pfk_country_array = YEM	}
+	add_to_array = {	YEM.pfk_country_array = SYE	}
+	add_to_array = {	SYE.pfk_country_array = ADN	}
+	
+	##オーストラリア
+	add_to_array = {	AST.pfk_country_array = AST	}
+	add_to_array = {	AST.pfk_country_array = COK	}
+	add_to_array = {	AST.pfk_country_array = FIJ	}
+	add_to_array = {	AST.pfk_country_array = NCL	}
+	add_to_array = {	AST.pfk_country_array = NFK	}
+	add_to_array = {	AST.pfk_country_array = NZL	}
+	add_to_array = {	AST.pfk_country_array = PNG	}
+	add_to_array = {	AST.pfk_country_array = SOL	}
+	add_to_array = {	AST.pfk_country_array = VUT	}
+	
+	###ニュージーランド
+	add_to_array = {	NZL.pfk_country_array = NZL	}
+	add_to_array = {	NZL.pfk_country_array = COK	}
+	add_to_array = {	NZL.pfk_country_array = NIU	}
+	add_to_array = {	NZL.pfk_country_array = TKL	}
+	###パプアニューギニア
+	add_to_array = {	PNG.pfk_country_array = PNG	}
+	add_to_array = {	PNG.pfk_country_array = NGU	}
+	add_to_array = {	PNG.pfk_country_array = PAP	}
+	
+	##中央アメリカ
+	add_to_array = {	CAC.pfk_country_array = CAC	}
+	add_to_array = {	CAC.pfk_country_array = BLZ	}
+	add_to_array = {	CAC.pfk_country_array = COS	}
+	add_to_array = {	CAC.pfk_country_array = ELS	}
+	add_to_array = {	CAC.pfk_country_array = GUA	}
+	add_to_array = {	CAC.pfk_country_array = HON	}
+	add_to_array = {	CAC.pfk_country_array = NIC	}
+	add_to_array = {	CAC.pfk_country_array = PAN	}
+	
+	###パナマ
+	add_to_array = {	PAN.pfk_country_array = PAN	}
+	add_to_array = {	PAN.pfk_country_array = PCZ	}
+	
+	##コーカサス
+	add_to_array = {	CCS.pfk_country_array = CCS	}
+	add_to_array = {	CCS.pfk_country_array = NCC	}
+	add_to_array = {	CCS.pfk_country_array = SCC	}
+	
+	###北コーカサス
+	add_to_array = {	NCC.pfk_country_array = NCC	}
+	add_to_array = {	NCC.pfk_country_array = CHS	}
+	add_to_array = {	NCC.pfk_country_array = CHE	}
+	add_to_array = {	NCC.pfk_country_array = DAG	}
+	add_to_array = {	NCC.pfk_country_array = ING	}
+	add_to_array = {	NCC.pfk_country_array = KBK	}
+	add_to_array = {	NCC.pfk_country_array = KRC	}
+	add_to_array = {	NCC.pfk_country_array = KUB	}
+	add_to_array = {	NCC.pfk_country_array = NOA	}
+	
+	###南コーカサス
+	add_to_array = {	SCC.pfk_country_array = SCC	}
+	add_to_array = {	SCC.pfk_country_array = ARM	}
+	add_to_array = {	SCC.pfk_country_array = AZR	}
+	add_to_array = {	SCC.pfk_country_array = GEO	}
+	
+	####アゼルバイジャン
+	add_to_array = {	AZR.pfk_country_array = AZR	}
+	add_to_array = {	AZR.pfk_country_array = ARS	}
+	####グルジア
+	add_to_array = {	GEO.pfk_country_array = GEO	}
+	add_to_array = {	GEO.pfk_country_array = ABK	}
+	add_to_array = {	GEO.pfk_country_array = AJA	}
+	add_to_array = {	GEO.pfk_country_array = SOA	}
+	
+	##中華
+	add_to_array = {	CHI.pfk_country_array = CHI	}
+	add_to_array = {	CHI.pfk_country_array = ANH	}
+	add_to_array = {	CHI.pfk_country_array = FUJ	}
+	add_to_array = {	CHI.pfk_country_array = GND	}
+	add_to_array = {	CHI.pfk_country_array = GXC	}
+	add_to_array = {	CHI.pfk_country_array = GZH	}
+	add_to_array = {	CHI.pfk_country_array = HEB	}
+	add_to_array = {	CHI.pfk_country_array = HEN	}
+	add_to_array = {	CHI.pfk_country_array = HIN	}
+	add_to_array = {	CHI.pfk_country_array = HUB	}
+	add_to_array = {	CHI.pfk_country_array = JGS	}
+	add_to_array = {	CHI.pfk_country_array = JIA	}
+	add_to_array = {	CHI.pfk_country_array = MAN	}
+	add_to_array = {	CHI.pfk_country_array = MON	}
+	add_to_array = {	CHI.pfk_country_array = SCH	}
+	add_to_array = {	CHI.pfk_country_array = SHA	}
+	add_to_array = {	CHI.pfk_country_array = SHD	}
+	add_to_array = {	CHI.pfk_country_array = SHX	}
+	add_to_array = {	CHI.pfk_country_array = TIB	}
+	add_to_array = {	CHI.pfk_country_array = TWN	}
+	add_to_array = {	CHI.pfk_country_array = XIB	}
+	add_to_array = {	CHI.pfk_country_array = YUN	}
+	add_to_array = {	CHI.pfk_country_array = ZHE	}
+	
+	###広東
+	add_to_array = {	GND.pfk_country_array = GND	}
+	add_to_array = {	GND.pfk_country_array = HKG	}
+	add_to_array = {	GND.pfk_country_array = MCA	}
+	###河北
+	add_to_array = {	HEB.pfk_country_array = HEB	}
+	add_to_array = {	HEB.pfk_country_array = TIE	}
+	add_to_array = {	HEB.pfk_country_array = ZHI	}
+	####江蘇
+	add_to_array = {	JGS.pfk_country_array = JGS	}
+	add_to_array = {	JGS.pfk_country_array = NAN	}
+	add_to_array = {	JGS.pfk_country_array = SGH	}
+	####満州
+	add_to_array = {	MAN.pfk_country_array = MAN	}
+	add_to_array = {	MAN.pfk_country_array = DLI	}
+	add_to_array = {	MAN.pfk_country_array = FNG	}
+	####モンゴル
+	add_to_array = {	MON.pfk_country_array = MON	}
+	add_to_array = {	MON.pfk_country_array = SMO	}
+	add_to_array = {	MON.pfk_country_array = TUV	}
+	#####南モンゴル
+	add_to_array = {	SMO.pfk_country_array = SMO	}
+	add_to_array = {	SMO.pfk_country_array = SUY	}
+	add_to_array = {	SMO.pfk_country_array = QAH	}
+	####山東
+	add_to_array = {	SHD.pfk_country_array = SHD	}
+	add_to_array = {	SHD.pfk_country_array = QIN	}
+	####チベット
+	add_to_array = {	TIB.pfk_country_array = TIB	}
+	add_to_array = {	TIB.pfk_country_array = XIK	}
+	####西北
+	add_to_array = {	XIB.pfk_country_array = XIB	}
+	add_to_array = {	XIB.pfk_country_array = GAN	}
+	add_to_array = {	XIB.pfk_country_array = NIG	}
+	add_to_array = {	XIB.pfk_country_array = QIG	}
+	
+	##東インド諸島
+	add_to_array = {	EIN.pfk_country_array = EIN	}
+	add_to_array = {	EIN.pfk_country_array = BRN	}
+	add_to_array = {	EIN.pfk_country_array = INS	}
+	add_to_array = {	EIN.pfk_country_array = PHI	}
+	add_to_array = {	EIN.pfk_country_array = SAB	}
+	add_to_array = {	EIN.pfk_country_array = SIN	}
+	add_to_array = {	EIN.pfk_country_array = SRW	}
+	add_to_array = {	EIN.pfk_country_array = TLS	}
+	
+	##ヨーロッパ
+	add_to_array = {	EUR.pfk_country_array = EUR	}
+	add_to_array = {	EUR.pfk_country_array = APN	}
+	add_to_array = {	EUR.pfk_country_array = BLK	}
+	add_to_array = {	EUR.pfk_country_array = BLT	}
+	add_to_array = {	EUR.pfk_country_array = CLT	}
+	add_to_array = {	EUR.pfk_country_array = CYP	}
+	add_to_array = {	EUR.pfk_country_array = FRA	}
+	add_to_array = {	EUR.pfk_country_array = GBR	}
+	add_to_array = {	EUR.pfk_country_array = GER	}
+	add_to_array = {	EUR.pfk_country_array = HUN	}
+	add_to_array = {	EUR.pfk_country_array = IBE	}
+	add_to_array = {	EUR.pfk_country_array = ITA	}
+	add_to_array = {	EUR.pfk_country_array = MLT	}
+	add_to_array = {	EUR.pfk_country_array = NRD	}
+	add_to_array = {	EUR.pfk_country_array = NTL	}
+	add_to_array = {	EUR.pfk_country_array = ROM	}
+	add_to_array = {	EUR.pfk_country_array = SLA	}
+	
+	###アルプス
+	add_to_array = {	APN.pfk_country_array = APN	}
+	add_to_array = {	APN.pfk_country_array = AUS	}
+	add_to_array = {	APN.pfk_country_array = LIE	}
+	add_to_array = {	APN.pfk_country_array = SWI	}
+	
+	####オーストリア
+	add_to_array = {	AUS.pfk_country_array = AUS	}
+	add_to_array = {	AUS.pfk_country_array = BGL	}
+	add_to_array = {	AUS.pfk_country_array = CRT	}
+	add_to_array = {	AUS.pfk_country_array = LAS	}
+	add_to_array = {	AUS.pfk_country_array = SLZ	}
+	add_to_array = {	AUS.pfk_country_array = STY	}
+	add_to_array = {	AUS.pfk_country_array = TRL	}
+	add_to_array = {	AUS.pfk_country_array = UAS	}
+	add_to_array = {	AUS.pfk_country_array = VIE	}
+	add_to_array = {	AUS.pfk_country_array = VOR	}
+	
+	###バルカン
+	add_to_array = {	BLK.pfk_country_array = BLK	}
+	add_to_array = {	BLK.pfk_country_array = ALB	}
+	add_to_array = {	BLK.pfk_country_array = BUL	}
+	add_to_array = {	BLK.pfk_country_array = GRE	}
+	add_to_array = {	BLK.pfk_country_array = YUG	}
+	####ギリシャ
+	add_to_array = {	GRE.pfk_country_array = GRE	}
+	add_to_array = {	GRE.pfk_country_array = AEG	}
+	add_to_array = {	GRE.pfk_country_array = ATS	}
+	add_to_array = {	GRE.pfk_country_array = BYZ	}
+	add_to_array = {	GRE.pfk_country_array = CRE	}
+	add_to_array = {	GRE.pfk_country_array = ION	}
+	
+	#####ユーゴスラビア
+	add_to_array = {	YUG.pfk_country_array = BOS	}
+	add_to_array = {	YUG.pfk_country_array = CRO	}
+	add_to_array = {	YUG.pfk_country_array = MAC	}
+	add_to_array = {	YUG.pfk_country_array = MNT	}
+	add_to_array = {	YUG.pfk_country_array = SER	}
+	add_to_array = {	YUG.pfk_country_array = SLV	}
+	#####ボスニア
+	add_to_array = {	BOS.pfk_country_array = BOS	}
+	add_to_array = {	BOS.pfk_country_array = HRZ	}
+	#####クロアチア
+	add_to_array = {	CRO.pfk_country_array = CRO	}
+	add_to_array = {	CRO.pfk_country_array = DAL	}
+	add_to_array = {	CRO.pfk_country_array = IST	}
+	add_to_array = {	CRO.pfk_country_array = SLN	}
+	######スラボニア
+	add_to_array = {	SLN.pfk_country_array = SLN	}
+	add_to_array = {	SLN.pfk_country_array = FIU	}
+	#####セルビア
+	add_to_array = {	SER.pfk_country_array = SER	}
+	add_to_array = {	SER.pfk_country_array = KOS	}
+	add_to_array = {	SER.pfk_country_array = VOJ	}
+	#####スロベニア
+	add_to_array = {	SLV.pfk_country_array = SLV	}
+	add_to_array = {	SLV.pfk_country_array = CRT	}
+	add_to_array = {	SLV.pfk_country_array = IST	}
+	add_to_array = {	SLV.pfk_country_array = STY	}
+	
+	###バルト
+	add_to_array = {	BLT.pfk_country_array = BLT	}
+	add_to_array = {	BLT.pfk_country_array = EST	}
+	add_to_array = {	BLT.pfk_country_array = LAT	}
+	add_to_array = {	BLT.pfk_country_array = LIT	}
+	####エストニア
+	add_to_array = {	EST.pfk_country_array = EST	}
+	add_to_array = {	EST.pfk_country_array = LIV	}
+	####ラトビア
+	add_to_array = {	LAT.pfk_country_array = LAT	}
+	add_to_array = {	LAT.pfk_country_array = CRL	}
+	add_to_array = {	LAT.pfk_country_array = LIV	}
+	
+	###ケルト
+	add_to_array = {	CLT.pfk_country_array = CLT	}
+	add_to_array = {	CLT.pfk_country_array = BRI	}
+	add_to_array = {	CLT.pfk_country_array = COW	}
+	add_to_array = {	CLT.pfk_country_array = IRE	}
+	add_to_array = {	CLT.pfk_country_array = MNN	}
+	add_to_array = {	CLT.pfk_country_array = SCO	}
+	####アイルランド
+	add_to_array = {	IRE.pfk_country_array = IRE	}
+	add_to_array = {	IRE.pfk_country_array = NIR	}
+	
+	###フランス
+	add_to_array = {	FRA.pfk_country_array = FRA	}
+	add_to_array = {	FRA.pfk_country_array = BRG	}
+	add_to_array = {	FRA.pfk_country_array = BRI	}
+	add_to_array = {	FRA.pfk_country_array = COR	}
+	add_to_array = {	FRA.pfk_country_array = MCO	}
+	add_to_array = {	FRA.pfk_country_array = NRM	}
+	add_to_array = {	FRA.pfk_country_array = OCC	}
+	####ノルマンディー
+	add_to_array = {	NRM.pfk_country_array = NRM	}
+	add_to_array = {	NRM.pfk_country_array = GUE	}
+	add_to_array = {	NRM.pfk_country_array = JER	}
+	
+	###グレートブリテン
+	add_to_array = {	GBR.pfk_country_array = GBR	}
+	add_to_array = {	GBR.pfk_country_array = ENG	}
+	add_to_array = {	GBR.pfk_country_array = SCO	}
+	add_to_array = {	GBR.pfk_country_array = WLS	}
+	####イングランド
+	add_to_array = {	ENG.pfk_country_array = ENG	}
+	add_to_array = {	ENG.pfk_country_array = COW	}
+	
+	###ドイツ
+	add_to_array = {	GER.pfk_country_array = GER	}
+	add_to_array = {	GER.pfk_country_array = NGR	}
+	add_to_array = {	GER.pfk_country_array = SGR	}
+	add_to_array = {	GER.pfk_country_array = EGR	}
+	add_to_array = {	GER.pfk_country_array = WGR	}
+	####北ドイツ
+	add_to_array = {	NGR.pfk_country_array = NGR	}
+	add_to_array = {	NGR.pfk_country_array = BRL	}
+	add_to_array = {	NGR.pfk_country_array = HAN	}
+	add_to_array = {	NGR.pfk_country_array = MEK	}
+	add_to_array = {	NGR.pfk_country_array = PRE	}
+	add_to_array = {	NGR.pfk_country_array = RHI	}
+	add_to_array = {	NGR.pfk_country_array = SAX	}
+	add_to_array = {	NGR.pfk_country_array = SHL	}
+	####南ドイツ
+	add_to_array = {	SGR.pfk_country_array = SGR	}
+	add_to_array = {	SGR.pfk_country_array = AUS	}
+	add_to_array = {	SGR.pfk_country_array = BAY	}
+	add_to_array = {	SGR.pfk_country_array = RHI	}
+	add_to_array = {	SGR.pfk_country_array = WUR	}
+	####西ドイツ
+	add_to_array = {	WGR.pfk_country_array = WGR	}
+	add_to_array = {	WGR.pfk_country_array = BAY	}
+	add_to_array = {	WGR.pfk_country_array = HAN	}
+	add_to_array = {	WGR.pfk_country_array = RHI	}
+	add_to_array = {	WGR.pfk_country_array = SHL	}
+	add_to_array = {	WGR.pfk_country_array = WUR	}
+	####東ドイツ
+	add_to_array = {	EGR.pfk_country_array = EGR	}
+	add_to_array = {	EGR.pfk_country_array = BRL	}
+	add_to_array = {	EGR.pfk_country_array = MEK	}
+	add_to_array = {	EGR.pfk_country_array = PRE	}
+	add_to_array = {	EGR.pfk_country_array = SAX	}
+	####ラインラント
+	add_to_array = {	RHI.pfk_country_array = RHI	}
+	add_to_array = {	RHI.pfk_country_array = SAR	}
+	####シュレースヴィヒ
+	add_to_array = {	SHL.pfk_country_array = SHL	}
+	add_to_array = {	SHL.pfk_country_array = HLS	}
+	
+	###イベリア
+	add_to_array = {	IBE.pfk_country_array = IBE	}
+	add_to_array = {	IBE.pfk_country_array = ADR	}
+	add_to_array = {	IBE.pfk_country_array = POR	}
+	add_to_array = {	IBE.pfk_country_array = SPR	}
+	####スペイン
+	add_to_array = {	SPR.pfk_country_array = SPR	}
+	add_to_array = {	SPR.pfk_country_array = ADU	}
+	add_to_array = {	SPR.pfk_country_array = ARA	}
+	add_to_array = {	SPR.pfk_country_array = ATR	}
+	add_to_array = {	SPR.pfk_country_array = BLE	}
+	add_to_array = {	SPR.pfk_country_array = BSQ	}
+	add_to_array = {	SPR.pfk_country_array = CAT	}
+	add_to_array = {	SPR.pfk_country_array = CNA	}
+	add_to_array = {	SPR.pfk_country_array = CST	}
+	add_to_array = {	SPR.pfk_country_array = CTB	}
+	add_to_array = {	SPR.pfk_country_array = EXT	}
+	add_to_array = {	SPR.pfk_country_array = GLC	}
+	add_to_array = {	SPR.pfk_country_array = LMN	}
+	add_to_array = {	SPR.pfk_country_array = LON	}
+	add_to_array = {	SPR.pfk_country_array = LRJ	}
+	add_to_array = {	SPR.pfk_country_array = MDR	}
+	add_to_array = {	SPR.pfk_country_array = MUR	}
+	add_to_array = {	SPR.pfk_country_array = NAV	}
+	add_to_array = {	SPR.pfk_country_array = VAL	}
+	#####アンダルシア
+	add_to_array = {	ADU.pfk_country_array = ADU	}
+	add_to_array = {	ADU.pfk_country_array = GIB	}
+	
+	###イタリア
+	add_to_array = {	ITA.pfk_country_array = MEZ	}
+	add_to_array = {	ITA.pfk_country_array = PAD	}
+	add_to_array = {	ITA.pfk_country_array = RME	}
+	add_to_array = {	ITA.pfk_country_array = SMR	}
+	add_to_array = {	ITA.pfk_country_array = SRD	}
+	add_to_array = {	ITA.pfk_country_array = TUS	}
+	####メッツォジョールノ
+	add_to_array = {	MEZ.pfk_country_array = MEZ	}
+	add_to_array = {	MEZ.pfk_country_array = SIC	}
+	####パダニア
+	add_to_array = {	PAD.pfk_country_array = PAD	}
+	add_to_array = {	PAD.pfk_country_array = AOS	}
+	add_to_array = {	PAD.pfk_country_array = PIE	}
+	add_to_array = {	PAD.pfk_country_array = VNC	}
+	####ローマ
+	add_to_array = {	RME.pfk_country_array = RME	}
+	add_to_array = {	RME.pfk_country_array = VAT	}
+	
+	###ノルディック
+	add_to_array = {	NRD.pfk_country_array = NRD	}
+	add_to_array = {	NRD.pfk_country_array = FRO	}
+	add_to_array = {	NRD.pfk_country_array = GRL	}
+	add_to_array = {	NRD.pfk_country_array = ICE	}
+	add_to_array = {	NRD.pfk_country_array = SCA	}
+	####スカンディナヴィア
+	add_to_array = {	SCA.pfk_country_array = SCA	}
+	add_to_array = {	SCA.pfk_country_array = DEN	}
+	add_to_array = {	SCA.pfk_country_array = FIN	}
+	add_to_array = {	SCA.pfk_country_array = NOR	}
+	add_to_array = {	SCA.pfk_country_array = SWE	}
+	#####フィンランド
+	add_to_array = {	FIN.pfk_country_array = FIN	}
+	add_to_array = {	FIN.pfk_country_array = ALA	}
+	add_to_array = {	FIN.pfk_country_array = SME	}
+	#####ノルウェー
+	add_to_array = {	NOR.pfk_country_array = NOR	}
+	add_to_array = {	NOR.pfk_country_array = SME	}
+	#####スウェーデン
+	add_to_array = {	SWE.pfk_country_array = SWE	}
+	add_to_array = {	SWE.pfk_country_array = ALA	}
+	add_to_array = {	SWE.pfk_country_array = SME	}
+	
+	##ネーデルラント
+	add_to_array = {	NTL.pfk_country_array = NTL	}
+	add_to_array = {	NTL.pfk_country_array = BEL	}
+	add_to_array = {	NTL.pfk_country_array = HOL	}
+	add_to_array = {	NTL.pfk_country_array = LUX	}
+	###ベルギー
+	add_to_array = {	BEL.pfk_country_array = FLN	}
+	add_to_array = {	BEL.pfk_country_array = WLL	}
+	
+	##ルーマニア
+	add_to_array = {	ROM.pfk_country_array = ROM	}
+	add_to_array = {	ROM.pfk_country_array = MOL	}
+	add_to_array = {	ROM.pfk_country_array = TRA	}
+	add_to_array = {	ROM.pfk_country_array = WLC	}
+	###モルダヴィア
+	add_to_array = {	MOL.pfk_country_array = MOL	}
+	add_to_array = {	MOL.pfk_country_array = TRN	}
+	
+	##スラブ
+	add_to_array = {	SLA.pfk_country_array = SLA	}
+	add_to_array = {	SLA.pfk_country_array = VOS	}
+	add_to_array = {	SLA.pfk_country_array = YUG	}
+	add_to_array = {	SLA.pfk_country_array = ZAP	}
+	###ヴォストスラビア
+	add_to_array = {	VOS.pfk_country_array = VOS	}
+	add_to_array = {	VOS.pfk_country_array = RTN	}
+	add_to_array = {	VOS.pfk_country_array = RUS	}
+	####ルテニア
+	add_to_array = {	RTN.pfk_country_array = RTN	}
+	add_to_array = {	RTN.pfk_country_array = BLR	}
+	add_to_array = {	RTN.pfk_country_array = UKR	}
+	#####ウクライナ
+	add_to_array = {	UKR.pfk_country_array = UKR	}
+	add_to_array = {	UKR.pfk_country_array = CRI	}
+	add_to_array = {	UKR.pfk_country_array = GAL	}
+	add_to_array = {	UKR.pfk_country_array = LOD	}
+	add_to_array = {	UKR.pfk_country_array = ZPR	}
+	
+	####ロシア
+	add_to_array = {	RUS.pfk_country_array = RUS	}
+	add_to_array = {	RUS.pfk_country_array = CRI	}
+	add_to_array = {	RUS.pfk_country_array = DON	}
+	add_to_array = {	RUS.pfk_country_array = FEA	}
+	add_to_array = {	RUS.pfk_country_array = IGR	}
+	add_to_array = {	RUS.pfk_country_array = KAL	}
+	add_to_array = {	RUS.pfk_country_array = KAR	}
+	add_to_array = {	RUS.pfk_country_array = KOM	}
+	add_to_array = {	RUS.pfk_country_array = MOS	}
+	add_to_array = {	RUS.pfk_country_array = NCC	}
+	add_to_array = {	RUS.pfk_country_array = NEN	}
+	add_to_array = {	RUS.pfk_country_array = SIB	}
+	add_to_array = {	RUS.pfk_country_array = TAT	}
+	add_to_array = {	RUS.pfk_country_array = URA	}
+	add_to_array = {	RUS.pfk_country_array = VLG	}
+	
+	####極東
+	add_to_array = {	FEA.pfk_country_array = FEA	}
+	add_to_array = {	FEA.pfk_country_array = AMR	}
+	add_to_array = {	FEA.pfk_country_array = CKK	}
+	add_to_array = {	FEA.pfk_country_array = KAM	}
+	add_to_array = {	FEA.pfk_country_array = KHB	}
+	add_to_array = {	FEA.pfk_country_array = VLA	}
+	
+	####シベリア
+	add_to_array = {	SIB.pfk_country_array = SIB	}
+	add_to_array = {	SIB.pfk_country_array = ALT	}
+	add_to_array = {	SIB.pfk_country_array = BYA	}
+	add_to_array = {	SIB.pfk_country_array = EVN	}
+	add_to_array = {	SIB.pfk_country_array = IRK	}
+	add_to_array = {	SIB.pfk_country_array = KHA	}
+	add_to_array = {	SIB.pfk_country_array = KMV	}
+	add_to_array = {	SIB.pfk_country_array = KRS	}
+	add_to_array = {	SIB.pfk_country_array = NSB	}
+	add_to_array = {	SIB.pfk_country_array = OMS	}
+	add_to_array = {	SIB.pfk_country_array = SKH	}
+	add_to_array = {	SIB.pfk_country_array = TAY	}
+	add_to_array = {	SIB.pfk_country_array = TSK	}
+	add_to_array = {	SIB.pfk_country_array = TYU	}
+	add_to_array = {	SIB.pfk_country_array = ULY	}
+	add_to_array = {	SIB.pfk_country_array = YAM	}
+	add_to_array = {	SIB.pfk_country_array = YGR	}
+	
+	####タタールスタン
+	add_to_array = {	TAT.pfk_country_array = TAT	}
+	add_to_array = {	TAT.pfk_country_array = BSK	}
+	add_to_array = {	TAT.pfk_country_array = CHU	}
+	add_to_array = {	TAT.pfk_country_array = MEL	}
+	add_to_array = {	TAT.pfk_country_array = MRD	}
+	add_to_array = {	TAT.pfk_country_array = UDM	}
+	
+	####ウラル
+	add_to_array = {	URA.pfk_country_array = URA	}
+	add_to_array = {	URA.pfk_country_array = ORB	}
+	add_to_array = {	URA.pfk_country_array = PRM	}
+	
+	####ザパードスラビア
+	add_to_array = {	ZAP.pfk_country_array = CZE	}
+	add_to_array = {	ZAP.pfk_country_array = POL	}
+	add_to_array = {	ZAP.pfk_country_array = SLO	}
+	
+	#####チェコ
+	add_to_array = {	CZE.pfk_country_array = CZE	}
+	add_to_array = {	CZE.pfk_country_array = MRV	}
+	add_to_array = {	CZE.pfk_country_array = SDT	}
+	add_to_array = {	CZE.pfk_country_array = SIL	}
+	#####ポーランド
+	add_to_array = {	POL.pfk_country_array = POL	}
+	add_to_array = {	POL.pfk_country_array = KSH	}
+	add_to_array = {	POL.pfk_country_array = LMK	}
+	add_to_array = {	POL.pfk_country_array = PRE	}
+	add_to_array = {	POL.pfk_country_array = SIL	}
+	######プロイセン
+	add_to_array = {	PRE.pfk_country_array = PRE	}
+	add_to_array = {	PRE.pfk_country_array = DNZ	}
+	
+	##ミクロネシア
+	add_to_array = {	FSM.pfk_country_array = FSM	}
+	add_to_array = {	FSM.pfk_country_array = GUM	}
+	add_to_array = {	FSM.pfk_country_array = KIR	}
+	add_to_array = {	FSM.pfk_country_array = MHL	}
+	add_to_array = {	FSM.pfk_country_array = NMR	}
+	add_to_array = {	FSM.pfk_country_array = PLW	}
+	
+	##インドシナ
+	add_to_array = {	INC.pfk_country_array = INC	}
+	add_to_array = {	INC.pfk_country_array = CAM	}
+	add_to_array = {	INC.pfk_country_array = LAO	}
+	add_to_array = {	INC.pfk_country_array = VIN	}
+	###ラオス
+	add_to_array = {	LAO.pfk_country_array = LAO	}
+	add_to_array = {	LAO.pfk_country_array = CHM	}
+	###ベトナム
+	add_to_array = {	VIN.pfk_country_array = VIN	}
+	add_to_array = {	VIN.pfk_country_array = ANN	}
+	add_to_array = {	VIN.pfk_country_array = CCH	}
+	add_to_array = {	VIN.pfk_country_array = TOK	}
+	####トンキン
+	add_to_array = {	TOK.pfk_country_array = TOK	}
+	add_to_array = {	TOK.pfk_country_array = TAI	}
+	
+	##インド
+	add_to_array = {	IND.pfk_country_array = IND	}
+	add_to_array = {	IND.pfk_country_array = AFG	}
+	add_to_array = {	IND.pfk_country_array = BAN	}
+	add_to_array = {	IND.pfk_country_array = BHU	}
+	add_to_array = {	IND.pfk_country_array = BRM	}
+	add_to_array = {	IND.pfk_country_array = DVN	}
+	add_to_array = {	IND.pfk_country_array = KAS	}
+	add_to_array = {	IND.pfk_country_array = PAK	}
+	add_to_array = {	IND.pfk_country_array = NEP	}
+	add_to_array = {	IND.pfk_country_array = SKM	}
+	add_to_array = {	IND.pfk_country_array = TIB	}
+	
+	###アフガニスタン
+	add_to_array = {	AFG.pfk_country_array = AFG	}
+	add_to_array = {	AFG.pfk_country_array = STR	}
+	###ビルマ
+	add_to_array = {	BRM.pfk_country_array = BRM	}
+	add_to_array = {	BRM.pfk_country_array = CHN	}
+	add_to_array = {	BRM.pfk_country_array = DNU	}
+	add_to_array = {	BRM.pfk_country_array = KAC	}
+	add_to_array = {	BRM.pfk_country_array = KAY	}
+	add_to_array = {	BRM.pfk_country_array = KOK	}
+	add_to_array = {	BRM.pfk_country_array = KRE	}
+	add_to_array = {	BRM.pfk_country_array = MWN	}
+	add_to_array = {	BRM.pfk_country_array = NAG	}
+	add_to_array = {	BRM.pfk_country_array = PAO	}
+	add_to_array = {	BRM.pfk_country_array = PLA	}
+	add_to_array = {	BRM.pfk_country_array = RKH	}
+	add_to_array = {	BRM.pfk_country_array = SHN	}
+	add_to_array = {	BRM.pfk_country_array = VAX	}
+	
+	###ドラヴィダ・ナードゥ
+	add_to_array = {	DVN.pfk_country_array = DVN	}
+	add_to_array = {	DVN.pfk_country_array = BNG	}
+	add_to_array = {	DVN.pfk_country_array = GOA	}
+	add_to_array = {	DVN.pfk_country_array = HYD	}
+	add_to_array = {	DVN.pfk_country_array = MYS	}
+	add_to_array = {	DVN.pfk_country_array = POD	}
+	add_to_array = {	DVN.pfk_country_array = PUD	}
+	add_to_array = {	DVN.pfk_country_array = TRV	}
+	###パキスタン
+	add_to_array = {	PAK.pfk_country_array = PAK	}
+	add_to_array = {	PAK.pfk_country_array = BAL	}
+	
+	##インド洋
+	add_to_array = {	INO.pfk_country_array = INO	}
+	add_to_array = {	INO.pfk_country_array = CHR	}
+	add_to_array = {	INO.pfk_country_array = COC	}
+	add_to_array = {	INO.pfk_country_array = COM	}
+	add_to_array = {	INO.pfk_country_array = MAD	}
+	add_to_array = {	INO.pfk_country_array = MLD	}
+	add_to_array = {	INO.pfk_country_array = MUS	}
+	add_to_array = {	INO.pfk_country_array = MYT	}
+	add_to_array = {	INO.pfk_country_array = REU	}
+	add_to_array = {	INO.pfk_country_array = SRL	}
+	add_to_array = {	INO.pfk_country_array = SYC	}
+	
+	##日本
+	add_to_array = {	JAP.pfk_country_array = JAP	}
+	add_to_array = {	JAP.pfk_country_array = EZO	}
+	add_to_array = {	JAP.pfk_country_array = RYU	}
+	###蝦夷
+	add_to_array = {	EZO.pfk_country_array = EZO	}
+	add_to_array = {	EZO.pfk_country_array = KFT	}
+	
+	##マラヤ
+	add_to_array = {	MAL.pfk_country_array = MAL	}
+	add_to_array = {	MAL.pfk_country_array = JOH	}
+	add_to_array = {	MAL.pfk_country_array = KED	}
+	add_to_array = {	MAL.pfk_country_array = KEL	}
+	add_to_array = {	MAL.pfk_country_array = PRL	}
+	add_to_array = {	MAL.pfk_country_array = SIN	}
+	add_to_array = {	MAL.pfk_country_array = TER	}
+	
+	##北アメリカ
+	add_to_array = {	NAC.pfk_country_array = NAC	}
+	add_to_array = {	NAC.pfk_country_array = ALS	}
+	add_to_array = {	NAC.pfk_country_array = BMU	}
+	add_to_array = {	NAC.pfk_country_array = CAN	}
+	add_to_array = {	NAC.pfk_country_array = GRL	}
+	add_to_array = {	NAC.pfk_country_array = MEX	}
+	add_to_array = {	NAC.pfk_country_array = SPM	}
+	add_to_array = {	NAC.pfk_country_array = USA	}
+	###カナダ
+	add_to_array = {	CAN.pfk_country_array = CAN	}
+	add_to_array = {	CAN.pfk_country_array = CSC	}
+	add_to_array = {	CAN.pfk_country_array = NFL	}
+	add_to_array = {	CAN.pfk_country_array = QEB	}
+	###アメリカ
+	add_to_array = {	USA.pfk_country_array = USA	}
+	add_to_array = {	USA.pfk_country_array = AEC	}
+	add_to_array = {	USA.pfk_country_array = AWC	}
+	add_to_array = {	USA.pfk_country_array = DXL	}
+	add_to_array = {	USA.pfk_country_array = GLA	}
+	add_to_array = {	USA.pfk_country_array = GPA	}
+	add_to_array = {	USA.pfk_country_array = RMT	}
+	####アメリカ東海岸
+	add_to_array = {	AEC.pfk_country_array = AEC	}
+	add_to_array = {	AEC.pfk_country_array = CLU	}
+	add_to_array = {	AEC.pfk_country_array = DEL	}
+	add_to_array = {	AEC.pfk_country_array = MRL	}
+	add_to_array = {	AEC.pfk_country_array = NEL	}
+	add_to_array = {	AEC.pfk_country_array = NJE	}
+	add_to_array = {	AEC.pfk_country_array = NYR	}
+	add_to_array = {	AEC.pfk_country_array = PEN	}
+	#####ニューイングランド
+	add_to_array = {	NEL.pfk_country_array = NEL	}
+	add_to_array = {	NEL.pfk_country_array = CNT	}
+	add_to_array = {	NEL.pfk_country_array = MAS	}
+	add_to_array = {	NEL.pfk_country_array = MNE	}
+	add_to_array = {	NEL.pfk_country_array = NHN	}
+	add_to_array = {	NEL.pfk_country_array = RIL	}
+	add_to_array = {	NEL.pfk_country_array = VRM	}
+	####アメリカ西海岸
+	add_to_array = {	AWC.pfk_country_array = AWC	}
+	add_to_array = {	AWC.pfk_country_array = CAL	}
+	add_to_array = {	AWC.pfk_country_array = CSC	}
+	add_to_array = {	AWC.pfk_country_array = NEV	}
+	#####カスカディア
+	add_to_array = {	CSC.pfk_country_array = CSC	}
+	add_to_array = {	CSC.pfk_country_array = ORE	}
+	add_to_array = {	CSC.pfk_country_array = WAS	}
+	####ディキシーランド
+	add_to_array = {	DXL.pfk_country_array = DXL	}
+	add_to_array = {	DXL.pfk_country_array = ABA	}
+	add_to_array = {	DXL.pfk_country_array = ARK	}
+	add_to_array = {	DXL.pfk_country_array = FLO	}
+	add_to_array = {	DXL.pfk_country_array = GEG	}
+	add_to_array = {	DXL.pfk_country_array = KTY	}
+	add_to_array = {	DXL.pfk_country_array = LUI	}
+	add_to_array = {	DXL.pfk_country_array = MIS	}
+	add_to_array = {	DXL.pfk_country_array = NCR	}
+	add_to_array = {	DXL.pfk_country_array = OKL	}
+	add_to_array = {	DXL.pfk_country_array = SCR	}
+	add_to_array = {	DXL.pfk_country_array = TEN	}
+	add_to_array = {	DXL.pfk_country_array = TEX	}
+	add_to_array = {	DXL.pfk_country_array = VRG	}
+	add_to_array = {	DXL.pfk_country_array = WVI	}
+	####グレートレイクス
+	add_to_array = {	GLA.pfk_country_array = GLA	}
+	add_to_array = {	GLA.pfk_country_array = IDI	}
+	add_to_array = {	GLA.pfk_country_array = ILI	}
+	add_to_array = {	GLA.pfk_country_array = IQO	}
+	add_to_array = {	GLA.pfk_country_array = MCH	}
+	add_to_array = {	GLA.pfk_country_array = MNS	}
+	add_to_array = {	GLA.pfk_country_array = OHO	}
+	add_to_array = {	GLA.pfk_country_array = WSC	}
+	####グレートプレーンズ
+	add_to_array = {	GLA.pfk_country_array = GPA	}
+	add_to_array = {	GPA.pfk_country_array = IOW	}
+	add_to_array = {	GPA.pfk_country_array = KAN	}
+	add_to_array = {	GPA.pfk_country_array = MSS	}
+	add_to_array = {	GPA.pfk_country_array = NDA	}
+	add_to_array = {	GPA.pfk_country_array = NEB	}
+	add_to_array = {	GPA.pfk_country_array = SDA	}
+	####ロッキー山脈
+	add_to_array = {	RMT.pfk_country_array = RMT	}
+	add_to_array = {	RMT.pfk_country_array = ARZ	}
+	add_to_array = {	RMT.pfk_country_array = CLD	}
+	add_to_array = {	RMT.pfk_country_array = IDA	}
+	add_to_array = {	RMT.pfk_country_array = MTA	}
+	add_to_array = {	RMT.pfk_country_array = NMX	}
+	add_to_array = {	RMT.pfk_country_array = UTA	}
+	add_to_array = {	RMT.pfk_country_array = WYO	}
+	
+	##ペルシャ
+	add_to_array = {	PER.pfk_country_array = PER	}
+	add_to_array = {	PER.pfk_country_array = SAZ	}
+	
+	##ポリネシア
+	add_to_array = {	PLY.pfk_country_array = PLY	}
+	add_to_array = {	PLY.pfk_country_array = HAW	}
+	add_to_array = {	PLY.pfk_country_array = PCN	}
+	add_to_array = {	PLY.pfk_country_array = SAM	}
+	add_to_array = {	PLY.pfk_country_array = TAH	}
+	add_to_array = {	PLY.pfk_country_array = TON	}
+	add_to_array = {	PLY.pfk_country_array = TVL	}
+	add_to_array = {	PLY.pfk_country_array = UVF	}
+	
+	##南アメリカ
+	add_to_array = {	SAC.pfk_country_array = SAC	}
+	add_to_array = {	SAC.pfk_country_array = ARG	}
+	add_to_array = {	SAC.pfk_country_array = BOL	}
+	add_to_array = {	SAC.pfk_country_array = CAY	}
+	add_to_array = {	SAC.pfk_country_array = CHL	}
+	add_to_array = {	SAC.pfk_country_array = COL	}
+	add_to_array = {	SAC.pfk_country_array = ECU	}
+	add_to_array = {	SAC.pfk_country_array = GYA	}
+	add_to_array = {	SAC.pfk_country_array = PAR	}
+	add_to_array = {	SAC.pfk_country_array = PRU	}
+	add_to_array = {	SAC.pfk_country_array = SUR	}
+	add_to_array = {	SAC.pfk_country_array = URG	}
+	add_to_array = {	SAC.pfk_country_array = VEN	}
+	###アルゼンチン
+	add_to_array = {	ARG.pfk_country_array = ARG	}
+	add_to_array = {	ARG.pfk_country_array = FKL	}
+	
+	##トルキスタン
+	add_to_array = {	TRK.pfk_country_array = TRK	}
+	add_to_array = {	TRK.pfk_country_array = ETR	}
+	add_to_array = {	TRK.pfk_country_array = STR	}
+	add_to_array = {	TRK.pfk_country_array = WTR	}
+	###東トルキスタン
+	add_to_array = {	ETR.pfk_country_array = ETR	}
+	add_to_array = {	ETR.pfk_country_array = KUM	}
+	add_to_array = {	ETR.pfk_country_array = TNG	}
+	###西トルキスタン
+	add_to_array = {	WTR.pfk_country_array = WTR	}
+	add_to_array = {	WTR.pfk_country_array = KAZ	}
+	add_to_array = {	WTR.pfk_country_array = KYR	}
+	add_to_array = {	WTR.pfk_country_array = TAJ	}
+	add_to_array = {	WTR.pfk_country_array = TMS	}
+	add_to_array = {	WTR.pfk_country_array = UZB	}
+	####ウズベキスタン
+	add_to_array = {	UZB.pfk_country_array = UZB	}
+	add_to_array = {	UZB.pfk_country_array = BUK	}
+	add_to_array = {	UZB.pfk_country_array = KHI	}
+	add_to_array = {	UZB.pfk_country_array = KKP	}
+	
+	##西インド諸島
+	add_to_array = {	WIN.pfk_country_array = ARU	}
+	add_to_array = {	WIN.pfk_country_array = BAH	}
+	add_to_array = {	WIN.pfk_country_array = CRC	}
+	add_to_array = {	WIN.pfk_country_array = CUB	}
+	add_to_array = {	WIN.pfk_country_array = CYM	}
+	add_to_array = {	WIN.pfk_country_array = DOM	}
+	add_to_array = {	WIN.pfk_country_array = HAI	}
+	add_to_array = {	WIN.pfk_country_array = JAM	}
+	add_to_array = {	WIN.pfk_country_array = LEW	}
+	add_to_array = {	WIN.pfk_country_array = PUE	}
+	add_to_array = {	WIN.pfk_country_array = TCA	}
+	add_to_array = {	WIN.pfk_country_array = WIW	}
+	###リーワード諸島
+	add_to_array = {	LEW.pfk_country_array = AGU	}
+	add_to_array = {	LEW.pfk_country_array = ATG	}
+	add_to_array = {	LEW.pfk_country_array = GDL	}
+	add_to_array = {	LEW.pfk_country_array = MSR	}
+	add_to_array = {	LEW.pfk_country_array = SBL	}
+	add_to_array = {	LEW.pfk_country_array = SKN	}
+	add_to_array = {	LEW.pfk_country_array = STM	}
+	add_to_array = {	LEW.pfk_country_array = TRI	}
+	add_to_array = {	LEW.pfk_country_array = VIR	}
+	###アンティグア
+	add_to_array = {	ATG.pfk_country_array = ATG	}
+	add_to_array = {	ATG.pfk_country_array = BAR	}
+	###セントクリストファー
+	add_to_array = {	SKN.pfk_country_array = SKN	}
+	add_to_array = {	SKN.pfk_country_array = NVS	}
+	###トリニダード
+	add_to_array = {	TRI.pfk_country_array = TRI	}
+	add_to_array = {	TRI.pfk_country_array = TOB	}
+	###ウィンドワード諸島
+	add_to_array = {	WIW.pfk_country_array = BRB	}
+	add_to_array = {	WIW.pfk_country_array = DMA	}
+	add_to_array = {	WIW.pfk_country_array = GRD	}
+	add_to_array = {	WIW.pfk_country_array = MTQ	}
+	add_to_array = {	WIW.pfk_country_array = SLC	}
+	add_to_array = {	WIW.pfk_country_array = SVG	}
+}
+set_pfk_united_countries_trigger_arraies = {
+	add_to_array = {	global.pfk_united_countries_trigger_array = AFR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = ARB	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = CAC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = CCS	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = CHI	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = EIN	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = EUR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = FSM	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = INC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = INO	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = MAL	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = NAC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = PLY	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SAC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = TRK	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = WIN	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = NAF	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = EAF	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = EQA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SAF	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = WAF	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = LBA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = ETH	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = R-U	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = RHO	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = TZN	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = EQA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = WAF	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = GHA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SYR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = PNG	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = NCC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SCC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = APN	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = BLK	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = BLT	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = CLT	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = GBR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = GER	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = IBE	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = ITA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = NRD	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = ROM	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SLA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = YUG	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = LAT	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = GBR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = GER	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = NGR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SGR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = WGR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = EGR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SPR	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = SCA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = BEL	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = VOS	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = RTN	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = RTN	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = ZAP	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = VIN	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = AEC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = AWC	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = DXL	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = GLA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = GPA	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = RMT	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = NEL	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = LEW	}
+	add_to_array = {	global.pfk_united_countries_trigger_array = WIW	}
+}

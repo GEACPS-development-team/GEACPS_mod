@@ -7,7 +7,7 @@ state = {
 	history = {
 		owner = FSM
 		add_core_of = FSM
-		MHL = {	debug_core = yes	}
+		MHL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			air_base = 2
@@ -21,7 +21,7 @@ state = {
 		}
 		victory_points = {	13041	3	}
 		victory_points = {	13046	1	}
-		set_variable = {	MHL_state_variable = 1	}
+		add_to_array = {	MHL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

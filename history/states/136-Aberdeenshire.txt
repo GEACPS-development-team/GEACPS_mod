@@ -5,20 +5,20 @@ state = {
 	state_category = town
 	
 	resources = {
-		tungsten = 4
 		aluminium = 3
+		tungsten = 4
 	}
 	
 	history = {
 		owner = GBR
 		add_core_of = GBR
-		SCO = {	debug_core = yes	}
+		SCO = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			dockyard = 2
 		}
 		victory_points = {	11136	1	}
-		set_variable = {	SCO_state_variable = 1	}
+		add_to_array = {	SCO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

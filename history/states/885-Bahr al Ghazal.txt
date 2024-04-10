@@ -8,12 +8,12 @@ state = {
 	history = {
 		owner = SUD
 		add_core_of = SUD
-		SSD = {	debug_core = yes	}
+		SSD = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	2096	1	}
-		set_variable = {	SSD_state_variable = 1	}
+		add_to_array = {	SSD.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

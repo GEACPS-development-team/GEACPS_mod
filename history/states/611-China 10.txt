@@ -9,12 +9,12 @@ state = {
 		owner = MEN
 		add_core_of = MEN
 		add_core_of = CHI
-		SMO = {	debug_core = yes	}
-		SUY = {	debug_core = yes	}
+		SMO = {	add_debug_core_PREV = yes	}
+		SUY = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	SUY_state_variable = 1	}
+		add_to_array = {	SUY.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

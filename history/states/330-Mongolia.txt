@@ -16,13 +16,13 @@ state = {
 		add_core_of = CHI
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
 			industrial_complex = 3
+			arms_factory = 1
 			air_base = 1
 		}
 		victory_points = {	4801	10	}
 		victory_points = {	7799	1	}
-		set_variable = {	MON_state_variable = 1	}
+		add_to_array = {	MON.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

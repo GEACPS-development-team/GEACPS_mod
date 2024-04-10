@@ -8,7 +8,7 @@ state = {
 		owner = EGR
 		add_core_of = EGR
 		add_core_of = GER
-		NGR = {	debug_core = yes	}
+		NGR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			3522 = {	bunker = 1	}
@@ -17,9 +17,9 @@ state = {
 		}
 		victory_points = {	514	5	}
 		victory_points = {	3522	5	}
-		set_variable = {	EGR_state_variable = 1	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	NGR_state_variable = 1	}
+		add_to_array = {	EGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

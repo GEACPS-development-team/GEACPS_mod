@@ -7,11 +7,11 @@ state = {
 	history = {
 		owner = CRC
 		add_core_of = CRC
-		WIN = {	debug_core = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	CRC_state_variable = 2	}
+		add_to_array = {	CRC.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -6,32 +6,23 @@ create_dynamic_country = {	#中華ソビエト民主共和国
 	set_capital = {	state = 622	}
 	set_country_flag = CHI_soviet_countryflag
 	set_cosmetic_tag = CHI_soviet_democratic_republic
-	set_politics = {	ruling_party = total_socialism	}
-	set_popularities = {	total_socialism = 100	}
-	set_party_name = {	#中国共産党
-		ideology = total_socialism
+	set_politics = {
+		ruling_party = total_socialism
 		name = PARTY_chines_communist_party
 		long_name = PARTY_chines_communist_party_long
 	}
+	set_popularities = {	total_socialism = 100	}
 	set_party_name = {	#中国共産党
 		ideology = radical_socialism
 		name = PARTY_chines_communist_party
 		long_name = PARTY_chines_communist_party_long
 	}
-	illegalization_of_social_democracy_party = yes
-	illegalization_of_liberal_democracy_party = yes
-	illegalization_of_conservative_democracy_party = yes
-	illegalization_of_authoritative_democracy_party = yes
-	illegalization_of_national_authoritarianism_party = yes
-	illegalization_of_national_populism_party = yes
-	
-	create_country_leader = {
-		name = CHARACTER_mao_zedong
-		desc = "CHARACTER_mao_zedong_desc"
-		picture = GFX_mao_zedong_large
-		expire = "1976.9.9"
-		ideology = maoism_ideology
-	}
+	illegalization_of_social_democracy = yes
+	illegalization_of_liberal_democracy = yes
+	illegalization_of_conservative_democracy = yes
+	illegalization_of_authoritative_democracy = yes
+	illegalization_of_national_authoritarianism = yes
+	illegalization_of_national_populism = yes
 	
 	add_ideas = {	#政治タブ
 		republic_unitary_state
@@ -44,4 +35,8 @@ create_dynamic_country = {	#中華ソビエト民主共和国
 	add_to_faction = THIS
 	
 	declare_war_on = {	target = CHI	type = civil_war	}
+}
+CHARACTER_mao_zedong = {
+	set_nationality = CH1
+	promote_character = yes
 }

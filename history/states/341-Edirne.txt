@@ -5,8 +5,8 @@ state = {
 	state_category = city
 	
 	resources = {
-		chromium = 45
 		steel = 10
+		chromium = 45
 	}
 	
 	history = {
@@ -15,11 +15,11 @@ state = {
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
-			dockyard = 1
 			arms_factory = 2
+			dockyard = 1
 			air_base = 4
 		}
-		set_variable = {	TUR_state_variable = 1	}
+		add_to_array = {	TUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

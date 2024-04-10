@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = SAM
 		add_core_of = SAM
-		PLY = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			7290 = {	naval_base = 1	}
 		}
 		victory_points = {	7290	1	}
-		set_variable = {	SAM_state_variable = 1	}
+		add_to_array = {	SAM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

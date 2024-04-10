@@ -8,20 +8,20 @@ state = {
 		owner = POL
 		add_core_of = GER
 		add_claim_by = POL
-		EGR = {	debug_core = yes	}
-		NGR = {	debug_core = yes	}
-		PRE = {	debug_core = yes	}
+		EGR = {	add_debug_core_PREV = yes	}
+		NGR = {	add_debug_core_PREV = yes	}
+		PRE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	POL_state_variable = 1	}
-		set_variable = {	PRE_state_variable = 1	}
-		set_variable = {	EGR_state_variable = 4	}
-		set_variable = {	GER_state_variable = 4	}
+		add_to_array = {	POL.pfk_state_array_1 = THIS	}
+		add_to_array = {	PRE.pfk_state_array_1 = THIS	}
+		add_to_array = {	EGR.pfk_state_array_4 = THIS	}
+		add_to_array = {	GER.pfk_state_array_4 = THIS	}
 	}
 	
 	provinces = {
-		9252	11288	11260
+		9252	11260	11288
 	}
 	local_supplies = 0.0
 }

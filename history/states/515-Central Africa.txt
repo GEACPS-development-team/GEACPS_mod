@@ -9,11 +9,11 @@ state = {
 	history = {
 		owner = WAF
 		add_core_of = WAF
-		NGE = {	debug_core = yes	}
+		NGE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	NGE_state_variable = 1	}
+		add_to_array = {	NGE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

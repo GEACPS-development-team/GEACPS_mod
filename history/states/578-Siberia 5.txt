@@ -8,17 +8,17 @@ state = {
 		owner = RUS
 		add_core_of = RUS
 		add_core_of = SIB
-		TSK = {	debug_core = yes	}
+		TSK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	7789	1	}
-		set_variable = {	SIB_state_variable = 1	}
-		set_variable = {	TSK_state_variable = 1	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	TSK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1674	1718	1765	1824	4681	4767	4827	7655	7789	7793	7849	7861	10529	10613	10617	10673	10686	12174	12510	12536	12599	12514	4730	10533	4771	1726
+		1674	1718	1726	1765	1824	4681	4730	4767	4771	4827	7655	7789	7793	7849	7861	10529	10533	10613	10617	10673	10686	12174	12510	12514	12536	12599
 	}
 	local_supplies = 0.0
 }

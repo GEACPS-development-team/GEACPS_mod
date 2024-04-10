@@ -5,21 +5,21 @@ state = {
 	state_category = rural
 	
 	resources = {
-		rubber = 65
 		oil = 9
+		rubber = 65
 	}
 	
 	history = {
 		owner = INS
 		add_core_of = INS
-		EIN = {	debug_core = yes	}
+		EIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 		}
 		victory_points = {	10209	1	}
-		set_variable = {	INS_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
+		add_to_array = {	INS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

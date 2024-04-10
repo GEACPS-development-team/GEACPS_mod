@@ -4,12 +4,11 @@ state = {
 	manpower = 22785750
 	state_category = town
 	
-	
 	history = {
 		owner = VIN
 		add_core_of = VIN
-		INC = {	debug_core = yes	}
-		TOK = {	debug_core = yes	}
+		INC = {	add_debug_core_PREV = yes	}
+		TOK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			1185 = {	naval_base = 2	}
@@ -17,8 +16,8 @@ state = {
 		victory_points = {	1185	1	}
 		victory_points = {	4075	3	}
 		victory_points = {	4119	1	}
-		set_variable = {	TOK_state_variable = 1	}
-		set_variable = {	VIN_state_variable = 1	}
+		add_to_array = {	TOK.pfk_state_array_1 = THIS	}
+		add_to_array = {	VIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

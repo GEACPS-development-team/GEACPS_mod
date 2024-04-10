@@ -1,0 +1,98 @@
+name: map
+on:
+	push:
+		paths:
+		- "common/countries/**"
+		- "common/country_tags/**"
+		- "common/country_tag_alianses/**"
+		- "common/ideologies/**"
+		- "gfx/flags/**"
+		- "history/countries/**"
+		- "history/states/**"
+		- "map/**"
+		- "localisation/japanese/map/**"
+jobs:
+	changes:
+		runs-on: ubuntu-latest
+		outputs:
+			map: ${{ steps.filter.outputs.map }}
+			historyCountries: ${{ steps.filter.outputs.historyCountries }}
+			ideologies: ${{ steps.filter.outputs.ideologies }}
+			parties: ${{ steps.filter.outputs.parties }}
+		steps:
+		- uses: actions/checkout@v2
+		- uses: dorny/paths-filter@v2
+			id: filter
+			with:
+				filters: |
+					map:
+					- "common/countries/**"
+					- "common/country_tags/**"
+					- "common/country_tag_alianses/**"
+					- "gfx/flags/**"
+					- "history/states/**"
+					- "map/**"
+					- "localisation/japanese/map/**"
+					historyCountries:
+					- "history/countries/**"
+					ideologies:
+					- "common/ideologies/**"
+					- "localisation/japanese/generic/ssw_ideologies_l_japanese.yml"
+					parties:
+					- "localisation/japanese/generic/ssw_parties_l_japanese.yml"
+	map:
+		needs: changes
+		if: ${{ needs.changes.outputs.map == 'true' }}
+		steps:
+		-	name: 
+			uses: appleboy/discord-action@0.0.3
+			with:
+				webhook_id: ${{ secrets.WEBHOOK_ID }}
+				webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+				title: "マップ・国家関連の変更"
+				color: "#48f442"
+				url: "${{ github.event.repository.url }}"
+				username: "陛下とPMFCに最も忠実な"
+				args: @${{ github.actor }}\n${{ github.event.repository.url }}
+	historyCountries:
+		needs: changes
+		if: ${{ needs.changes.outputs.historyCountries == 'true' }}
+		steps:
+		-	name: 
+			uses: appleboy/discord-action@0.0.3
+			with:
+				webhook_id: ${{ secrets.WEBHOOK_ID }}
+				webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+				title: "history/countries内ファイルの変更"
+				color: "#48f442"
+				url: "${{ github.event.repository.url }}"
+				username: "陛下とPMFCに最も忠実な"
+				args: @${{ github.actor }}\n${{ github.event.repository.url }}
+	ideologies:
+		needs: changes
+		if: ${{ needs.changes.outputs.historyCountries == 'true' }}
+		steps:
+		-	name: 
+			uses: appleboy/discord-action@0.0.3
+			with:
+				webhook_id: ${{ secrets.WEBHOOK_ID }}
+				webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+				title: "イデオロギー関連の変更"
+				color: "#48f442"
+				url: "${{ github.event.repository.url }}"
+				username: "陛下とPMFCに最も忠実な"
+				args: @${{ github.actor }}\n${{ github.event.repository.url }}
+	parties:
+		needs: changes
+		if: ${{ needs.changes.outputs.parties == 'true' }}
+		steps:
+		-	name: 
+			uses: appleboy/discord-action@0.0.3
+			with:
+				webhook_id: ${{ secrets.WEBHOOK_ID }}
+				webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+				title: "政党名関連の変更"
+				color: "#48f442"
+				url: "${{ github.event.repository.url }}"
+				username: "陛下とPMFCに最も忠実な"
+				args: @${{ github.actor }}\n${{ github.event.repository.url }}

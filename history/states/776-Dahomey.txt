@@ -7,17 +7,17 @@ state = {
 	history = {
 		owner = WAF
 		add_core_of = WAF
-		DAH = {	debug_core = yes	}
+		DAH = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			10919 = {	naval_base = 1	}
 		}
 		victory_points = {	10919	1	}
-		set_variable = {	DAH_state_variable = 1	}
+		add_to_array = {	DAH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		10919	12874	12762
+		10919	12762	12874
 	}
 	local_supplies = 0.0
 }

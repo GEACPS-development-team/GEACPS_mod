@@ -9,13 +9,13 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		TAT = {	debug_core = yes	}
+		TAT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 		}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	TAT_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	TAT.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

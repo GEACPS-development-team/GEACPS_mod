@@ -1,4 +1,3 @@
-
 state = {
 	id = 843
 	name = "STATE_843"
@@ -9,12 +8,12 @@ state = {
 	history = {
 		owner = ETH
 		add_core_of = ETH
-		EAF = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
 		victory_points = {	8019	1	}
-		set_variable = {	ETH_state_variable = 1	}
+		add_to_array = {	ETH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

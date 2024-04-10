@@ -8,25 +8,25 @@ state = {
 		owner = SHL
 		add_core_of = SHL
 		add_core_of = GER
-		HLS = {	debug_core = yes	}
-		NGR = {	debug_core = yes	}
-		WGR = {	debug_core = yes	}
+		HLS = {	add_debug_core_PREV = yes	}
+		NGR = {	add_debug_core_PREV = yes	}
+		WGR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 2
 			dockyard = 6
 			air_base = 5
-			6389 ={	naval_base = 8	}
+			6389 = {	naval_base = 8	}
 		}
 		victory_points = {	6389	10	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	HLS_state_variable = 1	}
-		set_variable = {	NGR_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	HLS.pfk_state_array_1 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		3368	3231	6389	6257	9320	11331
+		3231	3368	6257	6389	9320	11331
 	}
 	local_supplies = 0.0
 }

@@ -1,0 +1,29 @@
+state = {
+	id = 1524
+	name = "STATE_1524"
+	manpower = 5036000
+	state_category = megalopolis
+	
+	resources = {	tungsten = 7	}
+	
+	history = {
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 4
+			arms_factory = 5
+			dockyard = 3
+			air_base = 6
+		}
+		victory_points = {	993	1	}
+		victory_points = {	4000	5	}
+		victory_points = {	7016	1	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		993	1113	4000	7016	11908
+	}
+	local_supplies = 0.0
+}

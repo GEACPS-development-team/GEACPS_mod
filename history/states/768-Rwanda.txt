@@ -10,13 +10,13 @@ state = {
 	history = {
 		owner = R-U
 		add_core_of = R-U
-		EAF = {	debug_core = yes	}
-		RWA = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
+		RWA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	9962	1	}
-		set_variable = {	RWA_state_variable = 1	}
+		add_to_array = {	RWA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

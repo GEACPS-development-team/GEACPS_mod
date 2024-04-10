@@ -12,25 +12,24 @@ state = {
 	history = {
 		owner = ALB
 		add_core_of = ALB
-		BLK = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 			air_base = 3
 			11767 = {	naval_base = 4	}
 			13255 = {	naval_base = 2	}
 		}
 		victory_points = {	6900	2	}
-		victory_points = {	9780	3	}
 		victory_points = {	9914	5	}
 		victory_points = {	11767	1	}
 		victory_points = {	13255	2	}
-		set_variable = {	ALB_state_variable = 1	}
+		add_to_array = {	ALB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		3448	3884	3896	6900	9780	9875	9914	11762	11767	13255
+		3448	3884	6900	9875	9914	11767	13255
 	}
 	local_supplies = 5.0
 }

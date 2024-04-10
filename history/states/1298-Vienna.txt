@@ -14,8 +14,8 @@ state = {
 			arms_factory = 1
 		}
 		victory_points = {	11666	10	}
-		set_variable = {	AUS_state_variable = 1	}
-	
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	VIE.pfk_state_array_1 = THIS	}
 		set_demilitarized_zone = yes
 	}
 	

@@ -7,20 +7,20 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		PRM = {	debug_core = yes	}
-		URA = {	debug_core = yes	}
+		PRM = {	add_debug_core_PREV = yes	}
+		URA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 		}
 		victory_points = {	7375	1	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	PRM_state_variable = 1	}
-		set_variable = {	URA_state_variable = 1	}
+		add_to_array = {	PRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	URA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		206	12626	4372	7375	11228	237	1380	10286	10314	12216
+		206	237	1380	4372	7375	10286	10314	11228	12216	12626
 	}
 	local_supplies = 0.0
 }

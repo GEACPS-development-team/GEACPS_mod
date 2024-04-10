@@ -9,7 +9,7 @@ state = {
 	history = {
 		owner = DEN
 		add_core_of = DEN
-		SCA = {	debug_core = yes	}
+		SCA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 3
@@ -18,11 +18,11 @@ state = {
 			6364 = {	naval_base = 1	}
 		}
 		victory_points = {	6364	3	}
-		set_variable = {	DEN_state_variable = 1	}
+		add_to_array = {	DEN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		316	394	399	3206	3277	3341	6235	6364
+		316	394	399	3206	3277	3341	6235	6364	13259	13262	13263
 	}
 	local_supplies = 0.0
 }

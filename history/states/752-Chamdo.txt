@@ -8,18 +8,18 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		SCH = {	debug_core = yes	}
-		XIK = {	debug_core = yes	}
+		SCH = {	add_debug_core_PREV = yes	}
+		XIK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	4999	1	}
-		set_variable = {	SCH_state_variable = 1	}
-		set_variable = {	XIK_state_variable = 1	}
+		add_to_array = {	SCH.pfk_state_array_1 = THIS	}
+		add_to_array = {	XIK.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		8104	12724	12837	1999	1918	7988	4999
+		1918	1999	4999	7988	8104	12724	12837
 	}
 	local_supplies = 0.0
 }

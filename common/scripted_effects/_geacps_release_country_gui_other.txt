@@ -1,0 +1,382 @@
+pfk_first_setting = {#基本情報の入力
+	clear_array = pfk_autonomy_list
+	clear_array = pfk_setting_list #決まったことリスト(TAG,method,name,range,)
+	set_variable = { pfk_setting_progress = 0 } 
+	add_to_array = { pfk_autonomy_list = token:pfk_method_puppet }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_protected_state }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony_JAP }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony_GER }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_colony_SOV }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_return }
+	add_to_array = { pfk_autonomy_list = token:pfk_method_incorporation }
+
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+}
+pfk_set_autonomy = { #自治度の表示
+	clear_array = ROOT.pfk_array #リセット
+	add_to_array = { ROOT.pfk_array = token:pfk_method_puppet }
+	add_to_array = { ROOT.pfk_array = token:pfk_method_protected_state }
+	add_to_array = { ROOT.pfk_array = token:pfk_method_colony }
+	add_to_array = { ROOT.pfk_array = token:pfk_method_incorporation }
+	#固有の自治度
+	if = {
+		limit = { tag = JAP }
+		add_to_array = { ROOT.pfk_array = token:pfk_method_colony_JAP }
+	}
+	else_if = {
+		limit = { tag = GER }
+		add_to_array = { ROOT.pfk_array = token:pfk_method_colony_GER }
+	}
+	else_if = {
+		limit = { tag = SOV }
+		add_to_array = { ROOT.pfk_array = token:pfk_method_colony_SOV }
+	}
+	if = {
+		limit = { country_exists = var:ROOT.pfk_setting_list^0 }
+		add_to_array = { ROOT.pfk_array = token:pfk_method_return }
+	}
+}
+
+
+#####rework#####
+pfk_initialize_setting = {
+	set_variable = { pfk_setting_progress = 0 }
+	clear_array = pfk_setting_list #決まったことリスト(TAG,method,name,range,)
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	add_to_array = { pfk_setting_list = 0 }
+	clear_variable = ROOT.pfk_current_target
+
+	for_each_loop = {#陣営ごとに
+		array = global.pfk_country_array
+		value = country_tag
+		index = index_num
+		add_to_array = { ROOT.pfk_array_0 = country_tag }
+	}
+}
+
+pfk_set_country_list = { #解放できる国家のリストを表示する(最もネストの浅いとき)
+	clear_array = ROOT.pfk_selected_country_list #国家ネストのリスト
+	clear_array = ROOT.pfk_array_0 #国家のリストをクリア
+	for_each_loop = {#最もネストの大きな選択国家のリストを表示する
+		array = global.pfk_country_array
+		value = country_tag
+		index = index_num
+		add_to_array = { ROOT.pfk_array_0 = country_tag }
+	}
+}
+pfk_set_autonomy_list = { #利用可能な自治度のリストを表示する(最もネストの浅いとき)
+
+	clear_array = ROOT.pfk_array_1 #自治度のリストをクリア
+	add_to_array = { ROOT.pfk_array_1 = token:pfk_method_puppet }
+	if = {
+		limit = {	NOT = {	tag = JAP	}	}
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony }
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_incorporation }
+	}
+	#固有の自治度
+	if = {
+		limit = { tag = JAP }
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony_JAP }
+	}
+	else_if = {
+		limit = { tag = GER }
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony_GER }
+	}
+	else_if = {
+		limit = { tag = SOV }
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_colony_SOV }
+	}
+	if = {
+		limit = {
+			var:ROOT.pfk_setting_list^0 = {
+				exists = yes
+				# OR = {
+				# 	is_in_faction_with = ROOT
+				# 	is_subject_of = ROOT
+				# }
+			}
+		}
+		add_to_array = { ROOT.pfk_array_1 = token:pfk_method_return }
+	}
+}
+pfk_set_political_form_list = { #利用可能な政体のリストを表示する
+	clear_array = ROOT.pfk_array_2 #政体のリストをクリア
+	if = {#領土返還の時
+		limit = { check_variable = { ROOT.pfk_setting_list^1 = token:pfk_method_return } }
+		add_to_variable = { pfk_setting_progress = 1 } #進度をスキップ
+		set_variable = { ROOT.pfk_setting_list^2 = token:pfk_method_return }
+		add_to_array = { ROOT.pfk_array_3 = token:pfk_return_all }
+		add_to_array = { ROOT.pfk_array_3 = token:pfk_return_other_than_marked }
+
+	}
+	else = {	#テストとして全部入れた(^▽^)/
+		if = {	#empire
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_empire = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:empire	}
+		}
+		if = {	#tsardom
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_tsardom = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:tsardom	}
+		}
+		if = {	#kingdom
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_kingdom = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:kingdom	}
+		}
+		if = {	#united_kingdom
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_united_kingdom = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:united_kingdom	}
+		}
+		if = {	#hashemite_kingdom
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_hashemite_kingdom = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:hashemite_kingdom	}
+		}
+		if = {	#sultanate
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_sultanate = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:sultanate	}
+		}
+		if = {	#imamate
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_imamate = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:imamate	}
+		}
+		if = {	#khanate
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_khanate = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:khanate	}
+		}
+		if = {	#grand_duchy
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_grand_duchy = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:grand_duchy	}
+		}
+		if = {	#archduchy
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_archduchy = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:archduchy	}
+		}
+		if = {	#duchy
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_duchy = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:duchy	}
+		}
+		if = {	#principality
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_principality = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:principality	}
+		}
+		if = {	#county
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_county = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:county	}
+		}
+		if = {	#princely_county
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_princely_county = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:princely_county	}
+		}
+		if = {	#margraviate
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_margraviate = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:margraviate	}
+		}
+		if = {	#regency
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_regency = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:regency	}
+		}
+		if = {	#state
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_state = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:state	}
+		}
+		if = {	#independent_state
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_independent_state = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:independent_state	}
+		}
+		if = {	#free_state
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_free_state = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:free_state	}
+		}
+		if = {	#commonwealth
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_commonwealth = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:commonwealth	}
+		}
+		add_to_array = {	ROOT.pfk_array_2 = token:republic	}
+		if = {	#minguo
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_minguo = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:minguo	}
+		}
+		if = {	#peoples_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_peoples_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:peoples_republic	}
+		}
+		if = {	#democratic_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_democratic_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:democratic_republic	}
+		}
+		if = {	#peoples_democratic_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_peoples_democratic_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:peoples_democratic_republic	}
+		}
+		if = {	#democratic_peoples_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_democratic_peoples_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:democratic_peoples_republic	}
+		}
+		if = {	#socialist_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_socialist_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:socialist_republic	}
+		}
+		if = {	#socialist_workers_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_socialist_workers_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:socialist_workers_republic	}
+		}
+		if = {	#most_serene_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_most_serene_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:most_serene_republic	}
+		}
+		if = {	#cossack_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_cossack_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:cossack_republic	}
+		}
+		if = {	#arab_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_arab_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:arab_republic	}
+		}
+		if = {	#islamic_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_islamic_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:islamic_republic	}
+		}
+		
+		if = {	#union
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_union = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:union	}
+		}
+		if = {	#united_states
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_united_states = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:united_states	}
+		}
+		if = {	#united_provinces
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_united_provinces = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:united_provinces	}
+		}
+		if = {	#republics_union
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_republics_union = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:republics_union	}
+		}
+		if = {	#socialist_republics_union
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_socialist_republics_union = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:socialist_republics_union	}
+		}
+		if = {	#united_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_united_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:united_republic	}
+		}
+		if = {	#united_tribes
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_united_tribes = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:united_tribes	}
+		}
+		if = {	#confederation
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_confederation = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:confederation	}
+		}
+		if = {	#confederacy
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_confederacy = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:confederacy	}
+		}
+		if = {	#federation
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_federation = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:federation	}
+		}
+		if = {	#federal_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_federal_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:federal_republic	}
+		}
+		if = {	#federal_democratic_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_federal_democratic_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:federal_democratic_republic	}
+		}
+		if = {	#democratic_federative_republic
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_democratic_federative_republic = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:democratic_federative_republic	}
+		}
+		if = {	#federal_state
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_federal_state = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:federal_state	}
+		}
+		if = {	#federated_states
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_federated_states = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:federated_states	}
+		}
+		if = {	#democratic_federal
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_democratic_federal = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:democratic_federal	}
+		}
+		if = {	#anarchist_federation
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_anarchist_federation = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:anarchist_federation	}
+		}
+		
+		if = {	#free_city
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_free_city = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:free_city	}
+		}
+		if = {	#city_state
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_city_state = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:city_state	}
+		}
+		if = {	#international_settlement
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_international_settlement = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:international_settlement	}
+		}
+		
+		if = {	#military_clique
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_military_clique = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:military_clique	}
+		}
+		if = {	#ma_military_clique
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_ma_military_clique = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:ma_military_clique	}
+		}
+		if = {	#soviet_government
+			limit = {	var:ROOT.pfk_setting_list^0 = {	can_release_tag_soviet_government = yes	}	}
+			add_to_array = {	ROOT.pfk_array_2 = token:soviet_government	}
+		}
+	}
+}
+pfk_set_release_range_list = { #利用可能な解放範囲のリストを表示する
+	clear_array = ROOT.pfk_array_3 #解放範囲のリストをクリア
+	add_to_array = { ROOT.pfk_array_3 = token:pfk_state_array_1 } 
+	if = {
+		limit = { var:pfk_setting_list^0 = { exists = yes } }
+		add_to_array = { ROOT.pfk_array_3 = token:pfk_state_array_2 } 
+	}
+}
+
+pfk_set_autonomy_level = {
+	if = {
+		limit = {	check_variable = {	pfk_setting_list^1 = token:pfk_method_puppet	}	}
+		if = {
+			limit = {	tag = JAP	}
+			set_imperial_protected_state = yes
+		}
+		else_if = {
+			limit = {	is_in_SOV_republics = yes	}
+			set_SOV_satellite_state = yes
+		}
+		else_if = {
+			limit = {
+				OVERLORD = {
+					original_tag = GER
+					has_government = national_populism
+				}
+			}
+			set_reichssatellitestate = yes
+		}
+		else = {
+			set_autonomous_puppet_state = yes
+		}
+	}
+	else = {
+		meta_effect = {
+			text = {
+				set_[autonomy_level] = yes
+			}
+			autonomy_level = "[?ROOT.pfk_setting_list^2.GetTokenKey]"
+		}
+	}
+}

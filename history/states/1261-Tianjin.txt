@@ -7,19 +7,20 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		HEB = {	debug_core = yes	}
-		TIE = {	debug_core = yes	}
-		ZHI = {	debug_core = yes	}
+		HEB = {	add_debug_core_PREV = yes	}
+		TIE = {	add_debug_core_PREV = yes	}
+		ZHI = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			10068 = {	naval_base = 2	}
 		}
 		victory_points = {	10068	30	}
-		set_variable = {	HEB_state_variable = 1	}
+		add_to_array = {	HEB.pfk_state_array_1 = THIS	}
+		add_to_array = {	TIE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		10068	9969	4137
+		4137	9969	10068
 	}
 	local_supplies = 0.0
 }

@@ -9,17 +9,17 @@ state = {
 	history = {
 		owner = GBR
 		add_core_of = GBR
-		ENG = {	debug_core = yes	}
+		ENG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 3
 			industrial_complex = 4
+			arms_factory = 3
 			air_base = 6
 		}
 		victory_points = {	6270	5	}
 		victory_points = {	9297	50	}
 		victory_points = {	11345	1	}
-		set_variable = {	ENG_state_variable = 1	}
+		add_to_array = {	ENG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

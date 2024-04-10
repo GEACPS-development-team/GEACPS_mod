@@ -10,17 +10,17 @@ state = {
 		add_core_of = SIA
 		add_core_of = BRM
 		add_core_of = CHI
-		SHN = {	debug_core = yes	}
-		VAX = {	debug_core = yes	}
-		YUN = {	debug_core = yes	}
+		SHN = {	add_debug_core_PREV = yes	}
+		VAX = {	add_debug_core_PREV = yes	}
+		YUN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	BRM_state_variable = 1	}
-		set_variable = {	SHN_state_variable = 1	}
-		set_variable = {	VAX_state_variable = 1	}
-		set_variable = {	SIA_state_variable = 2	}
-		set_variable = {	YUN_state_variable = 2	}
+		add_to_array = {	BRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	SHN.pfk_state_array_1 = THIS	}
+		add_to_array = {	VAX.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIA.pfk_state_array_2 = THIS	}
+		add_to_array = {	YUN.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

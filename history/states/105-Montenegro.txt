@@ -6,15 +6,15 @@ state = {
 	state_category = rural
 	
 	resources = {
-		chromium = 20
 		aluminium = 70
+		chromium = 20
 	}
 	
 	history = {
 		owner = MNT
 		add_core_of = MNT
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -23,7 +23,7 @@ state = {
 		}
 		victory_points = {	9809	3	}
 		victory_points = {	9821	1	}
-		set_variable = {	MNT_state_variable = 1	}
+		add_to_array = {	MNT.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

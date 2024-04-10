@@ -2,24 +2,24 @@ state = {
 	id = 1339
 	name = "STATE_1339"
 	manpower = 100
-	state_category = rural
 	buildings_max_level_factor = 1
+	state_category = rural
 	
 	history = {
 		owner = SCC
 		add_core_of = SCC
 		add_core_of = GEO
-		CCS = {	debug_core = yes	}
-		SOA = {	debug_core = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
+		SOA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	GEO_state_variable = 1	}
-		set_variable = {	SOA_state_variable = 1	}
+		add_to_array = {	GEO.pfk_state_array_1 = THIS	}
+		add_to_array = {	SOA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		1530	13367	13368	13369
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = AUS
-		SLZ = {	debug_core = yes	}
+		SLZ = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 		}
 		victory_points = {	688	10	}
-		set_variable = {	AUS_state_variable = 1	}
-		set_variable = {	SLZ_state_variable = 1	}
+		add_to_array = {	AUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	SLZ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

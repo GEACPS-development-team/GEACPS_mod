@@ -8,14 +8,16 @@ state = {
 		owner = WGR
 		add_core_of = WGR
 		add_core_of = GER
+		HAN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			9375 = {	bunker = 1	}
 			11402 = {	bunker = 1	}
 		}
 		victory_points = {	6377	10	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	HAN.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -1,22 +1,24 @@
 state = {
-	id = 1400
-	name = "STATE_1400"
+	id = 1270
+	name = "STATE_1270"
 	manpower = 164110
 	state_category = wasteland
 	
 	history = {
 		owner = SYR
 		add_core_of = SYR
-		JAD = {	debug_core = yes	}
+		HIL = {	add_debug_core_PREV = yes	}
+		JAD = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	SYR_state_variable = 1	}
-		set_variable = {	JAD_state_variable = 1	}
+		add_to_array = {	HIL.pfk_state_array_1 = THIS	}
+		add_to_array = {	JAD.pfk_state_array_1 = THIS	}
+		add_to_array = {	SYR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		4486
+		13424
 	}
 	local_supplies = 0.0
 }

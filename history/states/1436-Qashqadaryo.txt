@@ -13,12 +13,12 @@ state = {
 			infrastructure = 3
 		}
 		victory_points = {	10671	1	}
-		set_variable = {	BUK_state_variable = 1	}
-		set_variable = {	UZB_state_variable = 1	}
+		add_to_array = {	BUK.pfk_state_array_1 = THIS	}
+		add_to_array = {	UZB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		7639	12722	10671
+		7639	10671	12722
 	}
 	local_supplies = 0.0
 }

@@ -5,26 +5,26 @@ state = {
 	state_category = pastoral
 	
 	resources = {
-		chromium = 9
 		tungsten = 6
+		chromium = 9
 	}
 	
 	history = {
 		owner = VIN
 		add_core_of = VIN
-		INC = {	debug_core = yes	}
-		TOK = {	debug_core = yes	}
+		INC = {	add_debug_core_PREV = yes	}
+		TOK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	9948	1	}
 		victory_points = {	12008	3	}
-		set_variable = {	TOK_state_variable = 1	}
-		set_variable = {	VIN_state_variable = 1	}
+		add_to_array = {	TOK.pfk_state_array_1 = THIS	}
+		add_to_array = {	VIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1073	1157	7015	7093	7518	9948	12008	12048	12065	10075	12075
+		1073	1157	7015	7093	7518	9948	10075	12008	12048	12065	12075
 	}
 	local_supplies = 0.0
 }

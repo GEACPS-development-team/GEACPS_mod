@@ -10,8 +10,8 @@ state = {
 	history = {
 		owner = VIN
 		add_core_of = VIN
-		CCH = {	debug_core = yes	}
-		INC = {	debug_core = yes	}
+		CCH = {	add_debug_core_PREV = yes	}
+		INC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
@@ -19,8 +19,8 @@ state = {
 		}
 		victory_points = {	4401	3	}
 		victory_points = {	10261	1	}
-		set_variable = {	VIN_state_variable = 1	}
-		set_variable = {	CCH_state_variable = 1	}
+		add_to_array = {	CCH.pfk_state_array_1 = THIS	}
+		add_to_array = {	VIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -7,12 +7,12 @@ state = {
 	history = {
 		owner = SYR
 		add_core_of = SYR
-		ALW = {	debug_core = yes	}
+		ALW = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	SYR_state_variable = 1	}
-		set_variable = {	ALW_state_variable = 1	}
+		add_to_array = {	ALW.pfk_state_array_1 = THIS	}
+		add_to_array = {	SYR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

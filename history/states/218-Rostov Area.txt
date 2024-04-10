@@ -8,22 +8,22 @@ state = {
 		owner = RUS
 		add_core_of = RUS
 		add_claim_by = UKR
-		DON = {	debug_core = yes	}
+		DON = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 3
-			9417 ={	naval_base = 5	}
+			9417 = {	naval_base = 5	}
 		}
 		victory_points = {	9417	15	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	DON_state_variable = 1	}
-		set_variable = {	UKR_state_variable = 2	}
+		add_to_array = {	DON.pfk_state_array_1 = THIS	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	UKR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {
-		6445	9417	9430	11434	11450	11418
+		6445	9417	9430	11418	11434	11450
 	}
 	local_supplies = 0.0
 }

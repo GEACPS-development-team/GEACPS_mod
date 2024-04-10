@@ -11,15 +11,15 @@ state = {
 		owner = RUS
 		add_core_of = RUS
 		add_claim_by = KAZ
-		ORB = {	debug_core = yes	}
-		URA = {	debug_core = yes	}
+		ORB = {	add_debug_core_PREV = yes	}
+		URA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	ORB_state_variable = 1	}
-		set_variable = {	URA_state_variable = 1	}
-		set_variable = {	KAZ_state_variable = 2	}
+		add_to_array = {	ORB.pfk_state_array_1 = THIS	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	URA.pfk_state_array_1 = THIS	}
+		add_to_array = {	KAZ.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = EST
 		add_core_of = EST
-		BLT = {	debug_core = yes	}
+		BLT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1
 			air_base = 2
 		}
-		set_variable = {	EST_state_variable = 1	}
+		add_to_array = {	EST.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

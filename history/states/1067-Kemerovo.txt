@@ -8,15 +8,15 @@ state = {
 		owner = RUS
 		add_core_of = RUS
 		add_core_of = SIB
-		KMV = {	debug_core = yes	}
+		KMV = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	7757	1	}
 		victory_points = {	7822	1	}
-		set_variable = {	SIB_state_variable = 1	}
-		set_variable = {	KMV_state_variable = 1	}
+		add_to_array = {	KMV.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

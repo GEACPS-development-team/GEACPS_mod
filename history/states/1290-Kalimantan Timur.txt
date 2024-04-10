@@ -4,21 +4,19 @@ state = {
 	manpower = 3026060
 	state_category = pastoral
 	
-	resources = {
-		rubber = 55
-	}
+	resources = {	rubber = 55	}
 	
 	history = {
 		owner = INS
 		add_core_of = INS
-		EIN = {	debug_core = yes	}
+		EIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			10237 = {	naval_base = 3	}
 		}
 		victory_points = {	10237	1	}
-		set_variable = {	INS_state_variable = 1	}
-		set_variable = {	EIN_state_variable = 1	}
+		add_to_array = {	EIN.pfk_state_array_1 = THIS	}
+		add_to_array = {	INS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

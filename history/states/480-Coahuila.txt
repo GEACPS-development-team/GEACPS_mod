@@ -9,15 +9,15 @@ state = {
 	history = {
 		owner = MEX
 		add_core_of = MEX
-		NAC = {	debug_core = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 		}
-		victory_points = {	12835	10	}
 		victory_points = {	10769	5	}
-		set_variable = {	MEX_state_variable = 1	}
+		victory_points = {	12835	10	}
+		add_to_array = {	MEX.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

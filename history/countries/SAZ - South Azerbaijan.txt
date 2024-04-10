@@ -2,11 +2,14 @@ capital = 419
 
 set_cosmetic_tag = AZR_autonomous_republic
 
+illegalization_all_party = yes
 set_politics = {
 	ruling_party = radical_socialism
 	last_election = "1946.1.1"
 	election_frequency = 48
 	elections_allowed = no
+	name = PARTY_azerbaijani_democratic_party
+	long_name = PARTY_azerbaijani_democratic_party_long
 }
 set_popularities = {
 	total_socialism = 0
@@ -18,6 +21,8 @@ set_popularities = {
 	national_authoritarianism = 0
 	national_populism = 0
 }
+
+recruit_character = CHARACTER_sayyed_jafar_pishevari
 
 add_ideas = {	#政治タブ
 	republic_unitary_state

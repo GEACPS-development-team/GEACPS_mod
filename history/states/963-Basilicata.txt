@@ -14,11 +14,11 @@ state = {
 			fuel_silo = 1
 			air_base = 5
 		}
-		set_variable = {	ITA_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		9856	3968	6972
+		3968	6972	9856
 	}
 	local_supplies = 0.0
 }

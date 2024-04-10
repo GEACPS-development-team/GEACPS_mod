@@ -9,13 +9,13 @@ state = {
 		owner = KOS
 		add_core_of = KOS
 		add_core_of = SER
-		BLK = {	debug_core = yes	}
-		YUG = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		YUG = {	add_debug_core_PREV = yes	}
 		buildings = {
-			infrastructure = 1	
+			infrastructure = 1
 		}
 		victory_points = {	6940	3	}
-		set_variable = {	KOS_state_variable = 1	}
+		add_to_array = {	KOS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

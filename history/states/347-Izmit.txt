@@ -9,12 +9,12 @@ state = {
 	history = {
 		owner = TUR
 		add_core_of = TUR
-		victory_points = {	904	1	}
 		buildings = {
 			infrastructure = 2
 			904 = {	naval_base = 2	}
 		}
-		set_variable = {	TUR_state_variable = 1	}
+		victory_points = {	904	1	}
+		add_to_array = {	TUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

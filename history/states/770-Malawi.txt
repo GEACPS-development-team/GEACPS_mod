@@ -8,12 +8,12 @@ state = {
 	history = {
 		owner = MLW
 		add_core_of = MLW
-		EAF = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	12986	1	}
-		set_variable = {	MLW_state_variable = 1	}
+		add_to_array = {	MLW.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

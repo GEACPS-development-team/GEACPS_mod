@@ -2,31 +2,31 @@ state = {
 	id = 564
 	name = "STATE_564"
 	manpower = 370893
+	state_category = rural
 	
 	resources = {
+		aluminium = 4
+		tungsten = 10
 		steel = 10
 		chromium = 12
-		tungsten = 10
-		aluminium = 4
 	}
-	state_category = rural
 	
 	history = {
 		owner = FEA
 		add_core_of = FEA
 		add_core_of = RUS
-		BYA = {	debug_core = yes	}
-		SIB = {	debug_core = yes	}
+		BYA = {	add_debug_core_PREV = yes	}
+		SIB = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	BYA_state_variable = 1	}
-		set_variable = {	FEA_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 1	}
+		add_to_array = {	BYA.pfk_state_array_1 = THIS	}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		4766	4837	7751	7816	7835	10528	10658	12644	1762	1810	10543	12575	12506	1761	4716	4835	7736	7854
+		1761	1762	1810	4716	4766	4835	4837	7736	7751	7816	7835	7854	10528	10543	10658	12506	12575	12644
 	}
 	local_supplies = 0.0
 }

@@ -8,15 +8,15 @@ state = {
 	history = {
 		owner = ETH
 		add_core_of = ETH
-		AFA = {	debug_core = yes	}
-		EAF = {	debug_core = yes	}
+		AFA = {	add_debug_core_PREV = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			arms_factory = 1
 		}
 		victory_points = {	13240	2	}
-		set_variable = {	AFA_state_variable = 1	}
-		set_variable = {	ETH_state_variable = 1	}
+		add_to_array = {	AFA.pfk_state_array_1 = THIS	}
+		add_to_array = {	ETH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

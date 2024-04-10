@@ -10,7 +10,7 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		HNN = {	debug_core = yes	}
+		HNN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -19,7 +19,7 @@ state = {
 		victory_points = {	7097	5	}
 		victory_points = {	7101	10	}
 		victory_points = {	7502	3	}
-		set_variable = {	HNN_state_variable = 1	}
+		add_to_array = {	HNN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

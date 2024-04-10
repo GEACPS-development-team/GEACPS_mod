@@ -7,15 +7,13 @@ state = {
 	history = {
 		owner = RIF
 		add_core_of = RIF
-		MOR = {	debug_core = yes	}
-		WES = {	debug_core = yes	}
+		MOR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			8038 = {	naval_base = 1	}
 		}
 		victory_points = {	8038	1	}
-		set_variable = {	MOR_state_variable = 1	}
-		set_variable = {	WES_state_variable = 1	}
+		add_to_array = {	MOR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

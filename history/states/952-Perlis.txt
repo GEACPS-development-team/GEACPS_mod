@@ -8,11 +8,11 @@ state = {
 		owner = SIA
 		add_core_of = SIA
 		add_core_of = MAL
-		PRL = {	debug_core = yes	}
+		PRL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	PRL_state_variable = 1	}
+		add_to_array = {	PRL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

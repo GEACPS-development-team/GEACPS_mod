@@ -13,8 +13,8 @@ state = {
 			687 = {	naval_base = 1	}
 		}
 		victory_points = {	657	3	}
-		set_variable = {	ROM_state_variable = 1	}
-		set_variable = {	BUL_state_variable = 2	}
+		add_to_array = {	ROM.pfk_state_array_1 = THIS	}
+		add_to_array = {	BUL.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

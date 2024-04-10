@@ -16,7 +16,7 @@ on_actions = {
 	on_subject_autonomy_level_change = {
 		effect = {
 			if = {
-				limit = {	ROOT = {	has_autonomy_state = imperial_member	}	}
+				limit = {	ROOT = {	has_autonomy_state = imperial_constituent_state	}	}
 				ROOT = {
 					drop_cosmetic_tag = yes
 					meta_effect = {	

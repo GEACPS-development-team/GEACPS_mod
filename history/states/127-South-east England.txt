@@ -7,30 +7,32 @@ state = {
 	history = {
 		owner = GBR
 		add_core_of = GBR
-		ENG = {	debug_core = yes	}
+		ENG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			dockyard = 2
 			fuel_silo = 1
+			air_base = 10
 			anti_air_building = 2
 			radar_station = 7
-			air_base = 10
-			3501 = {	naval_base = 6	}
+			3501 = {
+				naval_base = 6
+				coastal_bunker = 3
+			}
 			9458 = {	naval_base = 10	}
-			3501 = {	coastal_bunker = 3	}
 		}
 		victory_points = {	3501	10	}
 		victory_points = {	6489	1	}
 		victory_points = {	9239	3	}
 		victory_points = {	9458	10	}
 		victory_points = {	11446	1	}
-		set_variable = {	ENG_state_variable = 1	}
+		add_to_array = {	ENG.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		507	3501	6489	9458	11446	13070	9239	11333
+		507	3501	6489	9239	9458	11333	11446	13070
 	}
 	local_supplies = 0.0
 }

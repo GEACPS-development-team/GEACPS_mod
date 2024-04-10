@@ -2,22 +2,22 @@ state = {
 	id = 1345
 	name = "STATE_1345"
 	manpower = 10000
-	state_category = small_island
 	buildings_max_level_factor = 1
+	state_category = small_island
 	
 	history = {
 		owner = NZL
 		add_core_of = NZL
-		PLY = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			13374 = {	naval_base = 1	}
 		}
-		set_variable = {	NZL_state_variable = 1	}
+		add_to_array = {	NZL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		13374
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

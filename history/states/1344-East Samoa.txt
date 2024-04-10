@@ -2,23 +2,23 @@ state = {
 	id = 1344
 	name = "STATE_1344"
 	manpower = 10000
-	state_category = small_island
 	buildings_max_level_factor = 1
+	state_category = small_island
 	
 	history = {
 		owner = HAW
 		add_core_of = HAW
-		PLY = {	debug_core = yes	}
-		SAM = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
+		SAM = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			13080 = {	naval_base = 1	}
 		}
-		set_variable = {	SAM_state_variable = 1	}
+		add_to_array = {	SAM.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		13080
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

@@ -15,14 +15,16 @@ state = {
 		add_core_of = AST
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
 			industrial_complex = 5
+			arms_factory = 2
 			air_base = 3
-			7798 = {	naval_base = 4	}
-			7798 = {	coastal_bunker = 1	}
+			7798 = {
+				naval_base = 4
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	7798	20	}
-		set_variable = {	AST_state_variable = 1	}
+		add_to_array = {	AST.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

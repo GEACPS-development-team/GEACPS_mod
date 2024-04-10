@@ -1,24 +1,24 @@
 state = {
 	id = 1358
 	name = "STATE_1358"
-	manpower = 	5900
-	state_category = tiny_island
+	manpower = 5900
 	buildings_max_level_factor = 1
+	state_category = tiny_island
 	
 	history = {
 		owner = JAM
 		add_core_of = JAM
-		TCA = {	debug_core = yes	}
-		WIN = {	debug_core = yes	}
+		TCA = {	add_debug_core_PREV = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			10440 = {	naval_base = 1	}
 		}
-		set_variable = {	TCA_state_variable = 1	}
+		add_to_array = {	TCA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		10440
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

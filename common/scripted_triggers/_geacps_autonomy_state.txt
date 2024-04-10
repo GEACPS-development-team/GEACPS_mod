@@ -1,30 +1,63 @@
-soviet_member_trigger = {
+SOV_constituent_republics_trigger = {
 	OR = {
-		has_autonomy_state = soviet_member_federal_republic
-		has_autonomy_state = soviet_member_republic
-		has_autonomy_state = soviet_autonomous_republic
+		has_autonomy_state = SOV_constituent_federative_republic
+		has_autonomy_state = SOV_constituent_republic
+		has_autonomy_state = SOV_constituent_autonomous_republic
 	}
 }
 is_dependent_territory = {
 	OR = {
-		has_autonomy_state = overseas_territory
-		has_autonomy_state = colony
-		has_autonomy_state = colony_and_protectorate
-		has_autonomy_state = colonies_federation
-		has_autonomy_state = protected_territory
-		has_autonomy_state = condominium
-		has_autonomy_state = junior_partner_colony
 		has_autonomy_state = leased_territory
+		has_autonomy_state = colony
+		has_autonomy_state = colony_and_protected_territory
+		has_autonomy_state = colonies_federation
+		has_autonomy_state = condominium
+		has_autonomy_state = overseas_territory
+		has_autonomy_state = viceroyalty
+		has_autonomy_state = captaincy_general
+		has_autonomy_state = protected_territory
+		has_autonomy_state = constituent_state
+		has_autonomy_state = constituent_autonomous_province
+		has_autonomy_state = real_union
+		has_autonomy_state = personal_union_colony
+		has_autonomy_state = personal_union_protected_territory
+		has_autonomy_state = crown_dependency
 		has_autonomy_state = mandated_territory_B
 		has_autonomy_state = mandated_territory_C
+		has_autonomy_state = CHI_autonomous_military_clique
+		has_autonomy_state = CHI_autonomous_province
 		has_autonomy_state = occupied_territory
+		has_autonomy_state = reichsprotectorate
+		has_autonomy_state = reichsgeneralgovernorate
+		has_autonomy_state = reichskommissariat
+		has_autonomy_state = reichskolonie
+		has_autonomy_state = reichsland
+		has_autonomy_state = imperial_constituent_state
 		has_autonomy_state = imperial_overseas_territory
+		has_autonomy_state = USA_commonwealth
+		has_autonomy_state = USA_territory
+		SOV_constituent_republics_trigger = yes
 	}
 }
 is_national_system_monarchy = {
 	OR = {
 		has_idea = monarchy_federal_state
 		has_idea = monarchy_unitary_state
+		has_idea = monarchy_city_state
+	}
+}
+is_national_system_republic = {
+	OR = {
+		has_idea = republic_federal_state
+		has_idea = republic_unitary_state
+		has_idea = republic_city_state
+	}
+}
+is_unitary_state = {
+	OR = {
+		has_idea = monarchy_unitary_state
+		has_idea = republic_unitary_state
+		has_idea = unitary_dependent_territory
 	}
 }
 is_federal_state = {
@@ -32,5 +65,17 @@ is_federal_state = {
 		has_idea = monarchy_federal_state
 		has_idea = republic_federal_state
 		has_idea = federal_dependent_territory
+	}
+}
+is_city_state = {
+	OR = {
+		has_idea = monarchy_city_state
+		has_idea = republic_city_state
+	}
+}
+is_in_SOV_republics = {
+	OVERLORD = {
+		original_tag = SOV
+		is_national_system_republic = yes
 	}
 }

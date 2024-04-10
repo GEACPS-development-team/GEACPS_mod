@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = ITA
 		add_core_of = ITA
-		victory_points = {	925	1	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			925 = {	naval_base = 4	}
 		}
-		set_variable = {	ITA_state_variable = 1	}
+		victory_points = {	925	1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

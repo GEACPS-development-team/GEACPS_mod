@@ -4,21 +4,19 @@ state = {
 	manpower = 964700
 	state_category = town
 	
-	resources = {
-		tungsten = 150
-	}
+	resources = {	tungsten = 150	}
 	
 	history = {
 		owner = POR
 		add_core_of = POR
-		IBE = {	debug_core = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 		}
 		victory_points = {	6996	1	}
 		victory_points = {	9787	1	}
-		set_variable = {	POR_state_variable = 1	}
+		add_to_array = {	POR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

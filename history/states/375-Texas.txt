@@ -12,9 +12,9 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		DXL = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		TEX = {	debug_core = yes	}
+		DXL = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		TEX = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 9
@@ -25,7 +25,7 @@ state = {
 		victory_points = {	3960	10	}
 		victory_points = {	10337	10	}
 		victory_points = {	12782	1	}
-		set_variable = {	TEX_state_variable = 1	}
+		add_to_array = {	TEX.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

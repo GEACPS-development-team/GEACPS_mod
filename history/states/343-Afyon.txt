@@ -2,21 +2,20 @@ state = {
 	id = 343
 	name = "STATE_343"
 	manpower = 955763
-	resources = {
-		chromium = 25
-	}
 	state_category = rural
+	
+	resources = {	chromium = 25	}
 	
 	history = {
 		owner = TUR
 		add_core_of = TUR
-		victory_points = {	10041	1	}
-		victory_points = {	9878	1	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
-		set_variable = {	TUR_state_variable = 1	}
+		victory_points = {	9878	1	}
+		victory_points = {	10041	1	}
+		add_to_array = {	TUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -7,7 +7,7 @@ state = {
 	history = {
 		owner = ROM
 		add_core_of = ROM
-		MOL = {	debug_core = yes	}
+		MOL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -15,11 +15,12 @@ state = {
 		}
 		victory_points = {	6706	1	}
 		victory_points = {	9716	1	}
-		set_variable = {	ROM_state_variable = 1	}
-		set_variable = {	MOL_state_variable = 1	}
+		add_to_array = {	MOL.pfk_state_array_1 = THIS	}
+		add_to_array = {	ROM.pfk_state_array_1 = THIS	}
 	}
+	
 	provinces = {
-		723	744	3728	3741	6584	6706	6729	6747	9701	9716	11534	11652	11655	11672	
+		723	744	3728	3741	6584	6706	6729	6747	9701	9716	11534	11652	11655	11672
 	}
 	local_supplies = 0.0
 }

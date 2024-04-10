@@ -6,22 +6,22 @@ state = {
 	state_category = rural
 	
 	resources = {
+		tungsten = 18
 		steel = 18
 		chromium = 1
-		tungsten = 18
 	}
 	
 	history = {
 		owner = USA
 		add_core_of = USA
-		IDA = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		RMT = {	debug_core = yes	}
+		IDA = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		RMT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
 		victory_points = {	9616	1	}
-		set_variable = {	IDA_state_variable = 1	}
+		add_to_array = {	IDA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

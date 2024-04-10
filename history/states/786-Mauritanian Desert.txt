@@ -8,11 +8,11 @@ state = {
 	history = {
 		owner = WAF
 		add_core_of = WAF
-		MRT = {	debug_core = yes	}
+		MRT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
-		set_variable = {	MRT_state_variable = 1	}
+		add_to_array = {	MRT.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

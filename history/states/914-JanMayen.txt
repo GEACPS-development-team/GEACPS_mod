@@ -1,0 +1,21 @@
+state = {
+	id = 914
+	name = "STATE_914"
+	manpower = 10
+	state_category = tiny_island
+	
+	history = {
+		owner = NOR
+		add_core_of = NOR
+		SCA = {	add_debug_core_PREV = yes	}
+		buildings = {
+			13272 = {	naval_base = 1	}
+		}
+		add_to_array = {	NOR.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		13272
+	}
+	local_supplies=0.0
+}

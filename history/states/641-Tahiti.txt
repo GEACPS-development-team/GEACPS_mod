@@ -7,15 +7,15 @@ state = {
 	history = {
 		owner = HAW
 		add_core_of = HAW
-		PLY = {	debug_core = yes	}
-		TAH = {	debug_core = yes	}
+		PLY = {	add_debug_core_PREV = yes	}
+		TAH = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			air_base = 1
 			12148 = {	naval_base = 1	}
 		}
 		victory_points = {	12148	1	}
-		set_variable = {	TAH_state_variable = 1	}
+		add_to_array = {	TAH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

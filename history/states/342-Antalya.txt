@@ -15,11 +15,11 @@ state = {
 			1005 = {	naval_base = 4	}
 		}
 		victory_points = {	1005	1	}
-		set_variable = {	TUR_state_variable = 1	}
+		add_to_array = {	TUR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		784	1005	1122	1119	4008	4127	12013	12016	3876
+		784	1005	1119	1122	3876	4008	4127	12013	12016
 	}
 	local_supplies = 0.0
 }

@@ -10,18 +10,18 @@ state = {
 	history = {
 		owner = POR
 		add_core_of = POR
-		IBE = {	debug_core = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 2
 			industrial_complex = 2
-			air_base = 5
+			arms_factory = 2
 			dockyard = 2
+			air_base = 5
 			11805 = {	naval_base = 8	}
 		}
 		victory_points = {	3798	1	}
 		victory_points = {	11805	20	}
-		set_variable = {	POR_state_variable = 1	}
+		add_to_array = {	POR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

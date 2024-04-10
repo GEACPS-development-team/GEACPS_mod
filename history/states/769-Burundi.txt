@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = R-U
 		add_core_of = R-U
-		BRD = {	debug_core = yes	}
-		EAF = {	debug_core = yes	}
-		victory_points = {	2220	1	}
+		BRD = {	add_debug_core_PREV = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	BRD_state_variable = 1	}
+		victory_points = {	2220	1	}
+		add_to_array = {	BRD.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

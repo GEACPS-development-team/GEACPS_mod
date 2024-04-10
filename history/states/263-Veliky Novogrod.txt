@@ -2,7 +2,7 @@ state = {
 	id = 263
 	name = "STATE_263"
 	manpower = 1092577
-	state_category = "wasteland"
+	state_category = wasteland
 	
 	history = {
 		owner = RUS
@@ -12,11 +12,11 @@ state = {
 			air_base = 2
 		}
 		victory_points = {	117	5	}
-		set_variable = {	RUS_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		8	39	71	110	117	320	3089	6086	6154	6225	9212	9234	11072	11109	11191	6035	3110	9060	194	9153	9111	9177	11048
+		8	39	71	110	117	194	320	3089	3110	6035	6086	6154	6225	9060	9111	9153	9177	9212	9234	11048	11072	11109	11191
 	}
 	local_supplies = 0.0
 }

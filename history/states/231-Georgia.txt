@@ -9,14 +9,14 @@ state = {
 		owner = SCC
 		add_core_of = SCC
 		add_core_of = GEO
-		CCS = {	debug_core = yes	}
+		CCS = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			air_base = 3
 		}
 		victory_points = {	1599	5	}
-		set_variable = {	GEO_state_variable = 1	}
+		add_to_array = {	GEO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

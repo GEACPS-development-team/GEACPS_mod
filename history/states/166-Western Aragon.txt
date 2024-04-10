@@ -10,8 +10,8 @@ state = {
 	history = {
 		owner = SPR
 		add_core_of = SPR
-		ARA = {	debug_core = yes	}
-		IBE = {	debug_core = yes	}
+		ARA = {	add_debug_core_PREV = yes	}
+		IBE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -20,8 +20,8 @@ state = {
 		victory_points = {	3816	3	}
 		victory_points = {	7213	1	}
 		victory_points = {	9840	1	}
-		set_variable = {	ARA_state_variable = 1	}
-		set_variable = {	SPR_state_variable = 1	}
+		add_to_array = {	ARA.pfk_state_array_1 = THIS	}
+		add_to_array = {	SPR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

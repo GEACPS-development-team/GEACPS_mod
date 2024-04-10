@@ -12,8 +12,8 @@ state = {
 			infrastructure = 2
 		}
 		victory_points = {	1896	3	}
-		set_variable = {	PER_state_variable = 1	}
-		set_variable = {	SAZ_state_variable = 1	}
+		add_to_array = {	PER.pfk_state_array_1 = THIS	}
+		add_to_array = {	SAZ.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

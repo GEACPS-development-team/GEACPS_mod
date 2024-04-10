@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = BRM
 		add_core_of = BRM
-		CHN = {	debug_core = yes	}
+		CHN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 		}
-		set_variable = {	BRM_state_variable = 1	}
-		set_variable = {	CHN_state_variable = 1	}
+		add_to_array = {	BRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	CHN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

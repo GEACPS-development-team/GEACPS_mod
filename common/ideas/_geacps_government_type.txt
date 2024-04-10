@@ -5,36 +5,85 @@ ideas = {
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				political_power_factor = 0.03
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
 		}
 		monarchy_federal_state = {	#君主制連邦国家
 			picture = monarchy_federal_state
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				political_power_factor = 0.10
+				stability_factor = 0.03
+				war_support_factor = -0.03
+				global_building_slots_factor = 0.05
+				resistance_target = -0.05
+				resistance_decay = 0.10
+			}
 		}
-		monarchy_city_state = {	#君主制単一国家
+		monarchy_city_state = {	#君主制都市国家
 			picture = republic_city_state
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				political_power_factor = 0.03
+				stability_factor = 0.03
+				war_support_factor = 0.03
+				global_building_slots_factor = 0.25
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.25
+				conscription_factor = 0.10
+				production_speed_buildings_factor = 0.15
+			}
 		}
 		republic_unitary_state = {	#共和制単一国家
 			picture = republic_unitary_state
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+			}
 		}
 		republic_federal_state = {	#共和制連邦国家
 			picture = republic_federal_state
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_factor = 0.05
+				global_building_slots_factor = 0.05
+				resistance_target = -0.05
+				resistance_decay = 0.10
+			}
 		}
-		republic_city_state = {	#共和制単一国家
+		republic_city_state = {	#共和制都市国家
 			picture = republic_city_state
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = 0.10
+				global_building_slots_factor = 0.25
+				industrial_capacity_factory = 0.10
+				industrial_capacity_dockyard = 0.25
+				conscription_factor = 0.10
+				production_speed_buildings_factor = 0.15
+			}
 		}
 		unitary_dependent_territory = {	#単一属領
 			picture = unitary_dependent_territory
@@ -57,6 +106,10 @@ ideas = {
 				OR = {	is_dependent_territory = no	}
 			}
 			cancel_if_invalid = no
+			
+			modifier = {
+				political_power_factor = 0.07
+			}
 		}
 		presidential_system = {	#大統領制
 			picture = presidential_system
@@ -65,6 +118,11 @@ ideas = {
 				OR = {	is_dependent_territory = no	}
 			}
 			cancel_if_invalid = no
+			
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
 		}
 		semi_presidential_system = {	#半大統領制
 			picture = semi_presidential_system
@@ -73,6 +131,11 @@ ideas = {
 				OR = {	is_dependent_territory = no	}
 			}
 			cancel_if_invalid = no
+			modifier = {
+				political_power_factor = 0.03
+				stability_factor = 0.02
+				war_support_factor = 0.02
+			}
 		}
 		monarch_dictatorial_system = {	#君主独裁体制
 			picture = monarch_dictatorial_system
@@ -84,21 +147,64 @@ ideas = {
 				}
 			}
 			cancel_if_invalid = no
+			
+			modifier = {
+				offensive_war_stability_factor = 0.05
+				defensive_war_stability_factor = 0.05
+				war_support_factor = 0.15
+				max_command_power_mult = 0.05
+				max_command_power = 2
+				command_power_gain_mult = 0.02
+				command_power_gain = 0.02
+				stability_factor = -0.02
+			}
 		}
 		civilian_dictatorial_system = {	#文民独裁体制
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				offensive_war_stability_factor = 0.05
+				defensive_war_stability_factor = 0.05
+				war_support_factor = 0.15
+				max_command_power_mult = 0.05
+				max_command_power = 2
+				command_power_gain_mult = 0.02
+				command_power_gain = 0.02
+				political_power_factor = -0.03
+			}
 		}
 		military_dictatorial_system = {	#軍部独裁体制
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				offensive_war_stability_factor = 0.10
+				defensive_war_stability_factor = 0.10
+				war_support_factor = 0.10
+				max_command_power_mult = 0.10
+				max_command_power = 5
+				command_power_gain_mult = 0.05
+				command_power_gain = 0.05
+				stability_factor = -0.05
+				political_power_factor = -0.03
+			}
 		}
 		committee_system = {	#委員会体制
 			available = {	always = no	}
 			visible = {	is_dependent_territory = no	}
 			cancel_if_invalid = no
+			
+			modifier = {
+				political_power_factor = -0.07
+				stability_factor = 0.02
+				war_support_factor = 0.05
+				defensive_war_stability_factor = 0.35
+				justify_war_goal_time = 0.15
+				stability_weekly = 0.001
+			}
 		}
 		imperial_rule_assistance_system = {	#翼賛体制
 			picture = imperial_rule_assistance_system
@@ -107,7 +213,7 @@ ideas = {
 				is_dependent_territory = no
 				OR = {
 					original_tag = JAP
-					has_autonomy_state = imperial_member
+					has_autonomy_state = imperial_constituent_state
 				}
 			}
 			cancel_if_invalid = no

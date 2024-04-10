@@ -20,15 +20,15 @@ country_event = {
 			capital = 1441
 			states = {	185	731	1441	}
 			
-			illegalization_of_liberal_democracy_party = yes
-			illegalization_of_conservative_democracy_party = yes
+			illegalization_of_liberal_democracy = yes
+			illegalization_of_conservative_democracy = yes
 			set_country_flag = GRE_civil_war_enemy_faction_flag
 			set_cosmetic_tag = GRE_provisional_democratic_government
 			complete_national_focus = GRE_provisional_democratic_government_of_greece
 			add_ideas = republic_unitary_state
 		}
-		illegalization_of_total_socialism_party = yes
-		illegalization_of_radical_socialism_party = yes
+		illegalization_of_total_socialism = yes
+		illegalization_of_radical_socialism = yes
 		set_cosmetic_tag = GRE_kingdom_government
 		complete_national_focus = GRE_government_kingdom_of_greece
 		set_global_flag = GRE_civil_war_start_flag
@@ -43,17 +43,17 @@ country_event = {
 			ideology = ROOT
 			size = 0.5
 			capital = 998
-			states = {	47	164	182	184	186	187	914	996	997	998	1109	}
+			states = {	47	164	182	184	186	187	1515	996	997	998	1109	}
 			
-			illegalization_of_total_socialism_party = yes
-			illegalization_of_radical_socialism_party = yes
+			illegalization_of_total_socialism = yes
+			illegalization_of_radical_socialism = yes
 			set_country_flag = GRE_civil_war_enemy_faction_flag
 			set_cosmetic_tag = GRE_kingdom_government
 			complete_national_focus = GRE_government_kingdom_of_greece
 			country_event = {	id = GRE_civil_war.1	hours = 10	}
 		}
-		illegalization_of_liberal_democracy_party = yes
-		illegalization_of_conservative_democracy_party = yes
+		illegalization_of_liberal_democracy = yes
+		illegalization_of_conservative_democracy = yes
 		set_cosmetic_tag = GRE_provisional_democratic_government
 		complete_national_focus = GRE_provisional_democratic_government_of_greece
 		add_ideas = republic_unitary_state
@@ -169,7 +169,7 @@ country_event = {
 				164 = {	set_owner_and_core_of = yes	}
 				182 = {	set_owner_and_core_of = yes	}
 				187 = {	set_owner_and_core_of = yes	}
-				914 = {	set_owner_and_core_of = yes	}
+				1515 = {	set_owner_and_core_of = yes	}
 				1480 = {	set_owner_and_core_of = yes	}
 				1481 = {	set_owner_and_core_of = yes	}
 				set_cosmetic_tag = AEGandION_GBRbyENG
@@ -577,7 +577,7 @@ country_event = {
 		name = GRE_civil_war.20.0
 		ai_chance = {	base  = 40	}
 		hidden_effect = {
-			914 = {	set_owner_and_claim_by = yes	}
+			1515 = {	set_owner_and_claim_by = yes	}
 			1480 = {	set_owner_and_claim_by = yes	}
 			1481 = {	set_owner_and_claim_by = yes	}
 			country_event = {	id = GRE_civil_war.21	hours = 6	}
@@ -606,10 +606,10 @@ country_event = {
 		ai_chance = {	base  = 50	}
 		ION = {
 			hidden_effect = {
-				914 = {	set_owner_and_core_of = yes	}
+				1515 = {	set_owner_and_core_of = yes	}
 				1480 = {	set_owner_and_core_of = yes	}
 				1481 = {	set_owner_and_core_of = yes	}
-				remove_state_claim = 914
+				remove_state_claim = 1515
 				remove_state_claim = 1480
 				remove_state_claim = 1481
 				set_cosmetic_tag = ION_republic
@@ -622,10 +622,10 @@ country_event = {
 		ai_chance = {	base  = 50	}
 		ION = {
 			hidden_effect = {
-				914 = {	set_owner_and_core_of = yes	}
+				1515 = {	set_owner_and_core_of = yes	}
 				1480 = {	set_owner_and_core_of = yes	}
 				1481 = {	set_owner_and_core_of = yes	}
-				remove_state_claim = 914
+				remove_state_claim = 1515
 				remove_state_claim = 1480
 				remove_state_claim = 1481
 				set_cosmetic_tag = ION_GBRbyENG
@@ -653,7 +653,7 @@ country_event = {
 		create_dynamic_country = {
 			original_tag = GRE
 			
-			GBR = {	set_junior_partner_protected_territory = yes	}
+			GBR = {	set_personal_union_protected_territory = yes	}
 			
 			set_cosmetic_tag = GRE_GBRbyENG
 			set_country_flag = GRE_civil_war_GBR_faction_flag

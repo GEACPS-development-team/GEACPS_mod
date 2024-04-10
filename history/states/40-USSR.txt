@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		ALT = {	debug_core = yes	}
+		ALT = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
 		}
 		victory_points = {	1794	1	}
-		set_variable = {	ALT_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 1	}
+		add_to_array = {	ALT.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

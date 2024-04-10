@@ -11,12 +11,13 @@ state = {
 		add_core_of = OMA
 		buildings = {
 			infrastructure = 1
-			industrial_complex = 1	}
-		set_variable = {	OMA_state_variable = 1	}
+			industrial_complex = 1
+		}
+		add_to_array = {	OMA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		2018	2059	5049	13257	13258	13259	13260
+		2018	2059	5049	13539	13540	13541	13542
 	}
 	local_supplies = 0.0
 }

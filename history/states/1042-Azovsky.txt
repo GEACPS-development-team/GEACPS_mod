@@ -8,14 +8,14 @@ state = {
 		owner = RUS
 		add_core_of = RUS
 		add_claim_by = UKR
-		DON = {	debug_core = yes	}
-		KUB = {	debug_core = yes	}
+		DON = {	add_debug_core_PREV = yes	}
+		KUB = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	KUB_state_variable = 1	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	UKR_state_variable = 2	}
+		add_to_array = {	KUB.pfk_state_array_1 = THIS	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	UKR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

@@ -5,21 +5,19 @@ state = {
 	buildings_max_level_factor = 1
 	state_category = city
 	
-	resources = {
-		steel = 14
-	}
+	resources = {	steel = 14	}
 	
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		SCH = {	debug_core = yes	}
+		SCH = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 3
 			air_base = 2
 		}
-		set_variable = {	SCH_state_variable = 1	}
+		add_to_array = {	SCH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

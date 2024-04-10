@@ -7,19 +7,21 @@ state = {
 	history = {
 		owner = RUS
 		add_core_of = RUS
-		IGR = {	debug_core = yes	}
+		IGR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 6
 			industrial_complex = 1
+			arms_factory = 6
 			dockyard = 3
 			air_base = 10
-			3151 ={	naval_base = 10	}
-			3151 ={	coastal_bunker = 5	}
+			3151 = {
+				naval_base = 10
+				coastal_bunker = 5
+			}
 		}
 		victory_points = {	3151	30	}
-		set_variable = {	IGR_state_variable = 1	}
-		set_variable = {	RUS_state_variable = 1	}
+		add_to_array = {	IGR.pfk_state_array_1 = THIS	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

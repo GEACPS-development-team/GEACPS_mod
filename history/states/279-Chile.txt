@@ -10,17 +10,17 @@ state = {
 	history = {
 		owner = CHL
 		add_core_of = CHL
-		SAC = {	debug_core = yes	}
+		SAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
-			arms_factory = 1
 			industrial_complex = 7
+			arms_factory = 1
 			air_base = 3
-			8222 = {	naval_base = 5	}
 			650 = {	bunker = 1	}
+			8222 = {	naval_base = 5	}
 		}
 		victory_points = {	650	10	}
-		set_variable = {	CHL_state_variable = 1	}
+		add_to_array = {	CHL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

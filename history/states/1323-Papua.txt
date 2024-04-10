@@ -8,13 +8,13 @@ state = {
 	history = {
 		owner = PAP
 		add_core_of = PAP
-		PNG = {	debug_core = yes	}
+		PNG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			4329 = {	naval_base = 3	}
 		}
 		victory_points = {	4329	3	}
-		set_variable = {	PNG_state_variable = 1	}
+		add_to_array = {	PAP.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

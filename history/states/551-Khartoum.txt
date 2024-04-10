@@ -13,11 +13,11 @@ state = {
 			air_base = 2
 		}
 		victory_points = {	12806	3	}
-		set_variable = {	SUD_state_variable = 1	}
+		add_to_array = {	SUD.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		2046	4963	7925	7989	8105	10745	12796	12806	12826	12881	4138	12836	4961
+		2046	4138	4961	4963	7925	7989	8105	10745	12796	12806	12826	12836	12881
 	}
 	local_supplies = 0.0
 }

@@ -7,18 +7,18 @@ state = {
 	history = {
 		owner = ETH
 		add_core_of = ETH
-		EAF = {	debug_core = yes	}
-		ORO = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
+		ORO = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	7912	1	}
-		set_variable = {	ETH_state_variable = 1	}
-		set_variable = {	ORO_state_variable = 1	}
+		add_to_array = {	ETH.pfk_state_array_1 = THIS	}
+		add_to_array = {	ORO.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		7912	12856
 	}
-	local_supplies = 0.0 
+	local_supplies = 0.0
 }

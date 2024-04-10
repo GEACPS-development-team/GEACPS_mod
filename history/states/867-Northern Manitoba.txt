@@ -8,11 +8,11 @@ state = {
 	history = {
 		owner = CAN
 		add_core_of = CAN
-		NAC = {	debug_core = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
-		set_variable = {	CAN_state_variable = 1	}
+		add_to_array = {	CAN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -7,19 +7,21 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		ZHE = {	debug_core = yes	}
+		ZHE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
-			7191 = {	bunker = 1	}
-			7191 = {	naval_base = 1	}
-			7191 = {	coastal_bunker = 1	}
+			7191 = {
+				naval_base = 1
+				bunker = 1
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	7191	1	}
-		set_variable = {	ZHE_state_variable = 1	}
+		add_to_array = {	ZHE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		7191	10014	11991	10086
+		7191	10014	10086	11991
 	}
 	local_supplies = 0.0
 }

@@ -2,22 +2,22 @@ state = {
 	id = 1349
 	name = "STATE_1349"
 	manpower = 10000
-	state_category = small_island
 	buildings_max_level_factor = 1
+	state_category = small_island
 	
 	history = {
 		owner = KIR
 		add_core_of = KIR
-		TKL = {	debug_core = yes	}
+		TKL = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			13377 = {	naval_base = 1	}
 		}
-		set_variable = {	TKL_state_variable = 1	}
+		add_to_array = {	TKL.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
 		13377
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

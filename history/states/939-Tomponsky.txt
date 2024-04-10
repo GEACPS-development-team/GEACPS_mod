@@ -3,18 +3,20 @@ state = {
 	name = "STATE_939"
 	manpower = 68364
 	buildings_max_level_factor = 1
-	state_category = "wasteland"
+	state_category = wasteland
 	
 	history = {
 		owner = FEA
 		add_core_of = FEA
 		add_core_of = RUS
-		SIB = {	debug_core = yes	}
+		SIB = {	add_debug_core_PREV = yes	}
+		SKH = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	FEA_state_variable = 1	}
-		set_variable = {	SIB_state_variable = 1	}
+		add_to_array = {	FEA.pfk_state_array_1 = THIS	}
+		add_to_array = {	SIB.pfk_state_array_1 = THIS	}
+		add_to_array = {	SKH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

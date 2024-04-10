@@ -7,19 +7,19 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		GPA = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		NEB = {	debug_core = yes	}
+		GPA = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		NEB = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	12586	1	}
-		set_variable = {	NEB_state_variable = 1	}
+		add_to_array = {	NEB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1683	3613	3855	4749	7840	7852	12516	12586	3708	4760	4830	10606	10676
+		1683	3613	3708	3855	4749	4760	4830	7840	7852	10606	10676	12516	12586
 	}
 	local_supplies = 0.0
 }

@@ -5,16 +5,16 @@ state = {
 	state_category = city
 	
 	resources = {
-		steel = 23
 		aluminium = 8
+		steel = 23
 	}
 	
 	history = {
 		owner = POL
 		add_core_of = GER
 		add_claim_by = POL
-		EGR = {	debug_core = yes	}
-		NGR = {	debug_core = yes	}
+		EGR = {	add_debug_core_PREV = yes	}
+		NGR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -24,14 +24,14 @@ state = {
 		}
 		victory_points = {	6282	5	}
 		victory_points = {	11372	3	}
-		set_variable = {	POL_state_variable = 1	}
-		set_variable = {	EGR_state_variable = 2	}
-		set_variable = {	GER_state_variable = 2	}
-		set_variable = {	NGR_state_variable = 2	}
+		add_to_array = {	POL.pfk_state_array_1 = THIS	}
+		add_to_array = {	EGR.pfk_state_array_2 = THIS	}
+		add_to_array = {	GER.pfk_state_array_2 = THIS	}
+		add_to_array = {	NGR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {
-		6282	6309	6334	6390	9277	9306	9334	9361	11372	537	11343	11316
+		537	6282	6309	6334	6390	9277	9306	9334	9361	11316	11343	11372
 	}
 	local_supplies = 0.0
 }

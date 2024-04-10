@@ -13,8 +13,8 @@ state = {
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	BLR_state_variable = 2	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	BLR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

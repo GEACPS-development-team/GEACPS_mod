@@ -7,13 +7,13 @@ state = {
 	history = {
 		owner = CMR
 		add_core_of = CMR
-		victory_points = {	2080	1	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 			air_base = 1
 		}
-		set_variable = {	CMR_state_variable = 1	}
+		victory_points = {	2080	1	}
+		add_to_array = {	CMR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

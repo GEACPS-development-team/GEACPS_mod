@@ -10,14 +10,14 @@ state = {
 	history = {
 		owner = CHI
 		add_core_of = CHI
-		ANH = {	debug_core = yes	}
+		ANH = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
 		}
 		victory_points = {	7222	1	}
 		victory_points = {	12019	1	}
-		set_variable = {	ANH_state_variable = 1	}
+		add_to_array = {	ANH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

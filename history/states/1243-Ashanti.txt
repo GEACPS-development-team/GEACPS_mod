@@ -8,11 +8,11 @@ state = {
 	history = {
 		owner = ASH
 		add_core_of = ASH
-		GHA = {	debug_core = yes	}
+		GHA = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	ASH_state_variable = 1	}
+		add_to_array = {	ASH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

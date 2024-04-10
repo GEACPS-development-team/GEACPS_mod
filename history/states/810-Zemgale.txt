@@ -9,19 +9,19 @@ state = {
 		owner = LAT
 		add_core_of = LAT
 		add_claim_by = BLR
-		BLT = {	debug_core = yes	}
-		LIV = {	debug_core = yes	}
+		BLT = {	add_debug_core_PREV = yes	}
+		LIV = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
-			arms_factory = 1
 			industrial_complex = 1
+			arms_factory = 1
 			air_base = 3
 			310 = {	bunker = 2	}
 		}
 		victory_points = {	310	1	}
-		set_variable = {	LAT_state_variable = 1	}
-		set_variable = {	LIV_state_variable = 1	}
-		set_variable = {	BLR_state_variable = 2	}
+		add_to_array = {	LAT.pfk_state_array_1 = THIS	}
+		add_to_array = {	LIV.pfk_state_array_1 = THIS	}
+		add_to_array = {	BLR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

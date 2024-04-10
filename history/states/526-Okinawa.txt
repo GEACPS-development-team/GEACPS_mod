@@ -7,7 +7,7 @@ state = {
 	history = {
 		owner = JAP
 		add_core_of = JAP
-		RYU = {	debug_core = yes	}
+		RYU = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1
@@ -15,8 +15,8 @@ state = {
 			11932 = {	naval_base = 4	}
 		}
 		victory_points = {	11932	3	}
-		set_variable = {	JAP_state_variable = 1	}
-		set_variable = {	RYU_state_variable = 1	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
+		add_to_array = {	RYU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

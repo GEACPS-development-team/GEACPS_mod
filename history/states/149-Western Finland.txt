@@ -1,7 +1,7 @@
 state = {
 	id = 149
 	name = "STATE_149"
-	manpower = 811029
+	manpower = 595000
 	state_category = town
 	
 	history = {
@@ -12,12 +12,15 @@ state = {
 			industrial_complex = 2
 			3122 = {	naval_base = 1	}
 		}
+		victory_points = {	66	1	}
 		victory_points = {	3122	3	}
-		set_variable = {	FIN_state_variable = 1	}
+		victory_points = {	6013	1	}
+		victory_points = {	6141	1	}
+		add_to_array = {	FIN.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		63	66	82	120	132	158	195	3119	3122	3172	6013	6081	6138	6141	6198	6212	9038	9156	9166	9219	11033	11041	11065	11081	11121	11126	11132	11144
+		63	66	3119	3122	3172	6013	6138	6141	6198	9038	9156	9166	9219	11033	11065	11126	11144
 	}
 	local_supplies = 0.0
 }

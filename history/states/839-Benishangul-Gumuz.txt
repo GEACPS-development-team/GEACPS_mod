@@ -7,15 +7,15 @@ state = {
 	history = {
 		owner = ETH
 		add_core_of = ETH
-		BEG = {	debug_core = yes	}
-		EAF = {	debug_core = yes	}
+		BEG = {	add_debug_core_PREV = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 0
 		}
 		victory_points = {	2009	2	}
 		victory_points = {	13243	1	}
-		set_variable = {	BEG_state_variable = 1	}
-		set_variable = {	ETH_state_variable = 1	}
+		add_to_array = {	BEG.pfk_state_array_1 = THIS	}
+		add_to_array = {	ETH.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

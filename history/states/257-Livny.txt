@@ -4,9 +4,7 @@ state = {
 	manpower = 1779583
 	state_category = pastoral
 	
-	resources = {
-		chromium = 7
-	}
+	resources = {	chromium = 7	}
 	
 	history = {
 		owner = RUS
@@ -15,7 +13,7 @@ state = {
 			infrastructure = 2
 		}
 		victory_points = {	11351	1	}
-		set_variable = {	RUS_state_variable = 1	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

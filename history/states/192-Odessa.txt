@@ -7,17 +7,19 @@ state = {
 	history = {
 		owner = UKR
 		add_core_of = UKR
-		ZPR = {	debug_core = yes	}
+		ZPR = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
 			air_base = 6
-			11670 ={	naval_base = 3	}
-			11670 = {	coastal_bunker = 1	}
+			11670 = {
+				naval_base = 3
+				coastal_bunker = 1
+			}
 		}
 		victory_points = {	11670	10	}
-		set_variable = {	UKR_state_variable = 1	}
-		set_variable = {	ZPR_state_variable = 2	}
+		add_to_array = {	UKR.pfk_state_array_1 = THIS	}
+		add_to_array = {	ZPR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

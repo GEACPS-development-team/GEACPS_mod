@@ -6,12 +6,12 @@ state = {
 	
 	history = {
 		owner = SIC
-		add_core_of = ITA
 		add_core_of = SIC
+		add_core_of = ITA
 		buildings = {
 			infrastructure = 3
 		}
-		set_variable = {	ITA_state_variable = 1	}
+		add_to_array = {	ITA.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

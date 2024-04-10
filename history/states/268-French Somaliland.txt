@@ -7,14 +7,14 @@ state = {
 	history = {
 		owner = DJI
 		add_core_of = DJI
-		EAF = {	debug_core = yes	}
+		EAF = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 			air_base = 2
 			8124 = {	naval_base = 2	}
 		}
 		victory_points = {	8124	1	}
-		set_variable = {	DJI_state_variable = 1	}
+		add_to_array = {	DJI.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -10,19 +10,19 @@ state = {
 		owner = WGR
 		add_core_of = WGR
 		add_core_of = GER
-		HAN = {	debug_core = yes	}
+		HAN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
-			arms_factory = 2
 			industrial_complex = 1
+			arms_factory = 2
 			dockyard = 2
-			6349 = {	naval_base = 1	}
 			6298 = {	bunker = 1	}
+			6349 = {	naval_base = 1	}
 		}
 		victory_points = {	3326	5	}
-		set_variable = {	GER_state_variable = 1	}
-		set_variable = {	HAN_state_variable = 1	}
-		set_variable = {	WGR_state_variable = 1	}
+		add_to_array = {	GER.pfk_state_array_1 = THIS	}
+		add_to_array = {	HAN.pfk_state_array_1 = THIS	}
+		add_to_array = {	WGR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -2,8 +2,8 @@ state = {
 	id = 1335
 	name = "STATE_1335"
 	manpower = 13100
-	state_category = rural
 	buildings_max_level_factor = 1
+	state_category = rural
 	
 	history = {
 		owner = RUS
@@ -13,12 +13,12 @@ state = {
 			infrastructure = 3
 		}
 		victory_points = {	415	1	}
-		set_variable = {	RUS_state_variable = 1	}
-		set_variable = {	BLR_state_variable = 2	}
+		add_to_array = {	RUS.pfk_state_array_1 = THIS	}
+		add_to_array = {	BLR.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {
 		415	3310
 	}
-	local_supplies=0.0
+	local_supplies = 0.0
 }

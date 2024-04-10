@@ -7,12 +7,12 @@ state = {
 	history = {
 		owner = LEW
 		add_core_of = LEW
-		VIR = {	debug_core = yes	}
-		WIN = {	debug_core = yes	}
+		VIR = {	add_debug_core_PREV = yes	}
+		WIN = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	VIR_state_variable = 1	}
+		add_to_array = {	VIR.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

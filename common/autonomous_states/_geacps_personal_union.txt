@@ -1,139 +1,277 @@
-autonomy_state = {
-	id = junior_partner_state
+autonomy_state = {	#人的同君連合国
+	id = personal_union
 	
-	min_freedom_level = 0.5
-	manpower_influence = 0.2
-	use_overlord_color = yes
+	use_overlord_color = no
+	min_freedom_level = 0.6
+	manpower_influence = 0.0
 	
 	rule = {
 		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
 		can_decline_call_to_war = yes
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = no
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = yes
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0
-		extra_trade_to_overlord_factor = 0.25
-		overlord_trade_cost_factor = -0.25
-		license_subject_master_purchase_cost = -0.25
-		cic_to_overlord_factor = 0.25
-		mic_to_overlord_factor = 0.25
+		autonomy_manpower_share = 0.2
+		extra_trade_to_overlord_factor = 0.2
+		overlord_trade_cost_factor = -0.2
+		cic_to_overlord_factor = 0.2
+		mic_to_overlord_factor = 0.2
+		license_subject_master_purchase_cost = -0.2
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = no	}
 	
-	allowed_levels_filter = {
-		junior_partner_state
-		junior_partner_protected_territory
-		junior_partner_colony
-		crown_land
-	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		OVERLORD = {	is_national_system_monarchy = yes	}
+	}
+	allowed_levels_filter = {
+		personal_union
+		#上位
+		commonwealth_realm
+		#下位
+		real_union
+		personal_union_colony
+		personal_union_protected_territory
+	}
 }
-autonomy_state = {
-	id = junior_partner_protected_territory
+autonomy_state = {	#物的同君連合国
+	id = real_union
 	
-	min_freedom_level = 0.25
-	manpower_influence = 0.2
 	use_overlord_color = yes
+	min_freedom_level = 0.3
+	manpower_influence = 1.0
 	
 	rule = {
 		can_boost_other_ideologies = no
-		can_decline_call_to_war = yes
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0.75
-		extra_trade_to_overlord_factor = 0.75
-		overlord_trade_cost_factor = -0.75
-		license_subject_master_purchase_cost = -0.75
-		cic_to_overlord_factor = 0.75
-		mic_to_overlord_factor = 0.75
+		autonomy_manpower_share = 0.7
+		extra_trade_to_overlord_factor = 0.7
+		overlord_trade_cost_factor = -0.7
+		cic_to_overlord_factor = 0.7
+		mic_to_overlord_factor = 0.7
+		license_subject_master_purchase_cost = -0.7
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
 	
-	allowed_levels_filter = {
-		junior_partner_state
-		junior_partner_protected_territory
-		crown_land
-	}
-	allowed = {	has_idea = dependent_territory_indirect_rule_system	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
-}autonomy_state = {
-	id = junior_partner_colony
 	
-	min_freedom_level = 0.25
-	manpower_influence = 0.2
-	use_overlord_color = yes
-	
-	rule = {
-		can_boost_other_ideologies = no
-		can_decline_call_to_war = yes
-		can_force_government = no
-		can_not_declare_war = yes
+	allowed = {
+		is_national_system_monarchy = yes
+		NOT = {	has_idea = dependent_territory_direct_rule_system	}
+		NOT = {	has_idea = dependent_territory_indirect_rule_system	}
+		OVERLORD = {	is_national_system_monarchy = yes	}
 	}
-	
-	modifier = {
-		autonomy_manpower_share = 0.75
-		extra_trade_to_overlord_factor = 0.75
-		overlord_trade_cost_factor = -0.75
-		license_subject_master_purchase_cost = -0.75
-		cic_to_overlord_factor = 0.75
-		mic_to_overlord_factor = 0.75
-	}
-	
-	ai_subject_wants_higher = {	factor = 0.0	}
-	ai_overlord_wants_lower = {	factor = 0.0	}
-	
 	allowed_levels_filter = {
-		junior_partner_state
-		junior_partner_colony
-		crown_land
+		real_union
+		#上位
+		personal_union
+		#下位
+		crown_dependency
 	}
-	allowed = {	has_idea = dependent_territory_direct_rule_system	}
-	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
-	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 }
-autonomy_state = {
-	id = crown_land
+autonomy_state = {	#同君連合植民地
+	id = personal_union_colony
 	
-	min_freedom_level = 0.125
-	manpower_influence = 0.2
 	use_overlord_color = yes
+	min_freedom_level = 0.3
+	manpower_influence = 1.0
 	
 	rule = {
 		can_boost_other_ideologies = no
-		can_decline_call_to_war = yes
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
 		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
 		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
 	}
-	
 	modifier = {
-		autonomy_manpower_share = 0.875
-		extra_trade_to_overlord_factor = 0.875
-		overlord_trade_cost_factor = -0.875
-		license_subject_master_purchase_cost = -0.875
-		cic_to_overlord_factor = 0.875
-		mic_to_overlord_factor = 0.875
+		autonomy_manpower_share = 0.7
+		extra_trade_to_overlord_factor = 0.7
+		overlord_trade_cost_factor = -0.7
+		cic_to_overlord_factor = 0.7
+		mic_to_overlord_factor = 0.7
+		license_subject_master_purchase_cost = -0.7
 	}
 	
 	ai_subject_wants_higher = {	factor = 0.0	}
 	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
 	
-	allowed_levels_filter = {
-		junior_partner_state
-		junior_partner_protected_territory
-		junior_partner_colony
-		crown_land
-	}
 	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
 	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		has_idea = dependent_territory_direct_rule_system
+		OVERLORD = {	is_national_system_monarchy = yes	}
+	}
+	allowed_levels_filter = {
+		personal_union_colony
+		#上位
+		personal_union
+		#下位
+		crown_dependency
+	}
+}
+autonomy_state = {	#同君連合保護領
+	id = personal_union_protected_territory
+	
+	use_overlord_color = yes
+	min_freedom_level = 0.3
+	manpower_influence = 1.0
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
+		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
+		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
+	}
+	modifier = {
+		autonomy_manpower_share = 0.7
+		extra_trade_to_overlord_factor = 0.7
+		overlord_trade_cost_factor = -0.7
+		cic_to_overlord_factor = 0.7
+		mic_to_overlord_factor = 0.7
+		license_subject_master_purchase_cost = -0.7
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		has_idea = dependent_territory_indirect_rule_system
+		OVERLORD = {	is_national_system_monarchy = yes	}
+	}
+	allowed_levels_filter = {
+		personal_union_protected_territory
+		#上位
+		personal_union
+		#下位
+		crown_dependency
+	}
+}
+autonomy_state = {	#王冠属領
+	id = crown_dependency
+	
+	use_overlord_color = yes
+	min_freedom_level = 0.0
+	manpower_influence = 1.0
+	
+	rule = {
+		can_boost_other_ideologies = no
+		can_create_factions = no
+		can_declare_war_on_same_ideology = no
+		can_declare_war_without_wargoal_when_in_war = no
+		can_decline_call_to_war = no
+		can_force_government = no
+		can_generate_female_aces = no
+		can_guarantee_other_ideologies = no
+		can_join_factions = no
+		can_join_opposite_factions = no
+		can_lower_tension = no
+		can_not_declare_war = yes
+		can_occupy_non_war = no
+		can_only_justify_war_on_threat_country = no
+		can_puppet = yes
+		can_send_volunteers = no
+		can_use_kamikaze_pilots = no
+		units_deployed_to_overlord = no
+	}
+	modifier = {
+		autonomy_manpower_share = 0.8
+		extra_trade_to_overlord_factor = 0.8
+		overlord_trade_cost_factor = -0.8
+		cic_to_overlord_factor = 0.8
+		mic_to_overlord_factor = 0.8
+		license_subject_master_purchase_cost = -0.8
+	}
+	
+	ai_subject_wants_higher = {	factor = 0.0	}
+	ai_overlord_wants_lower = {	factor = 0.0	}
+	ai_overlord_wants_garrison = {	always = yes	}
+	
+	can_take_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	can_lose_level = {	custom_trigger_tooltip = {	tooltip = RULE_CANNOT_USE_THIS_TT	always = no	}	}
+	
+	allowed = {
+		OVERLORD = {	is_national_system_monarchy = yes	}
+	}
+	allowed_levels_filter = {
+		crown_dependency
+		#上位
+		real_union
+		personal_union_colony
+		personal_union_protected_territory
+	}
 }

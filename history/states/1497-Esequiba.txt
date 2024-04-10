@@ -8,12 +8,12 @@ state = {
 		owner = GYA
 		add_core_of = GYA
 		add_claim_by = VEN
-		SAC = {	debug_core = yes	}
+		SAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
-		set_variable = {	GYA_state_variable = 1	}
-		set_variable = {	VEN_state_variable = 2	}
+		add_to_array = {	GYA.pfk_state_array_1 = THIS	}
+		add_to_array = {	VEN.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {

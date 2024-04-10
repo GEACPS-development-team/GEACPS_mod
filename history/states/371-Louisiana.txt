@@ -9,9 +9,9 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		DXL = {	debug_core = yes	}
-		LUI = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
+		DXL = {	add_debug_core_PREV = yes	}
+		LUI = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2
@@ -19,7 +19,7 @@ state = {
 			7552 = {	naval_base = 5	}
 		}
 		victory_points = {	7552	10	}
-		set_variable = {	LUI_state_variable = 1	}
+		add_to_array = {	LUI.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

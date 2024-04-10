@@ -1,0 +1,23 @@
+state = {
+	id = 1513
+	name = "STATE_1513"
+	manpower = 39500
+	state_category = town
+	
+	history = {
+		owner = BRM
+		add_core_of = BRM
+		KAC = {	add_debug_core_PREV = yes	}
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {	4425	1	}
+		add_to_array = {	BRM.pfk_state_array_1 = THIS	}
+		add_to_array = {	KAC.pfk_state_array_1 = THIS	}
+	}
+	
+	provinces = {
+		1082	4425	10920
+	}
+	local_supplies = 0.0
+}

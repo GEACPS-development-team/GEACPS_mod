@@ -7,16 +7,16 @@ state = {
 	history = {
 		owner = USA
 		add_core_of = USA
-		AEC = {	debug_core = yes	}
-		NAC = {	debug_core = yes	}
-		NJE = {	debug_core = yes	}
+		AEC = {	add_debug_core_PREV = yes	}
+		NAC = {	add_debug_core_PREV = yes	}
+		NJE = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 7
 			air_base = 4
 		}
 		victory_points = {	6882	5	}
-		set_variable = {	NJE_state_variable = 1	}
+		add_to_array = {	NJE.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

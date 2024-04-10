@@ -390,7 +390,7 @@ enable_placerenaming ={
 		}
 	}
 	else_if = {	#ソビエト(汎用)
-		limit = {	controller = {	soviet_member_trigger = yes	}	placerenaming_ru_soviet = yes	}
+		limit = {	controller = {	SOV_constituent_republics_trigger = yes	}	placerenaming_ru_soviet = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_soviet	}	}
 			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru	}
@@ -401,7 +401,7 @@ enable_placerenaming ={
 		}
 	}
 	else_if = {	#ソビエト(スターリン主義)
-		limit = {	controller = {	soviet_member_trigger = yes	has_country_leader_ideology = stalinism_ideology	}	placerenaming_ru_stalinism = yes	}
+		limit = {	controller = {	SOV_constituent_republics_trigger = yes	has_country_leader_ideology = stalinism_ideology	}	placerenaming_ru_stalinism = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_stalinism	}	}
 			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru_stalinism	}
@@ -412,7 +412,7 @@ enable_placerenaming ={
 		}
 	}
 	else_if = {	#ソビエト(トロツキー主義)
-		limit = {	controller = {	soviet_member_trigger = yes	has_country_leader_ideology = trotskyism_ideology	}	placerenaming_ru_trotskyism = yes	}
+		limit = {	controller = {	SOV_constituent_republics_trigger = yes	has_country_leader_ideology = trotskyism_ideology	}	placerenaming_ru_trotskyism = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_trotskyism	}	}
 			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru_trotskyism	}
@@ -423,7 +423,7 @@ enable_placerenaming ={
 		}
 	}
 	else_if = {	#ソビエト(ブハーリン主義)
-		limit = {	controller = {	soviet_member_trigger = yes	has_country_leader_ideology = bukharinism_ideology	}	placerenaming_ru_bukharinism = yes	}
+		limit = {	controller = {	SOV_constituent_republics_trigger = yes	has_country_leader_ideology = bukharinism_ideology	}	placerenaming_ru_bukharinism = yes	}
 		if = {
 			limit = {	NOT = {	has_state_flag = placerenamed_state_ru_bukharinism	}	}
 			THIS = {	disable_placerenaming = yes	set_state_flag = placerenamed_state_ru_bukharinism	}

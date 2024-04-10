@@ -3,25 +3,25 @@ state = {
 	name = "STATE_523"
 	manpower = 1077000
 	buildings_max_level_factor = 1
-	state_category = "rural"
+	state_category = rural
 	
 	history = {
 		owner = NGU
 		add_core_of = NGU
-		PNG = {	debug_core = yes	}
+		PNG = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 			air_base = 3
-			12237 = {	naval_base = 2	}
 			12154 = {	naval_base = 1	}
+			12237 = {	naval_base = 2	}
 			12240 = {	naval_base = 1	}
 		}
 		victory_points = {	12237	1	}
-		set_variable = {	PNG_state_variable = 1	}
+		add_to_array = {	NGU.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {
-		1389	4393	4418	7365	7614	10251	10974	12154	12193	12237	12240	12400	10423
+		1389	4393	4418	7365	7614	10251	10423	10974	12154	12193	12237	12240	12400
 	}
 	local_supplies = 0.0
 }

@@ -9,9 +9,11 @@ state = {
 		owner = CAN
 		add_core_of = CAN
 		add_core_of = QEB
-		NAC = {	debug_core = yes	}
-		set_variable = {	CAN_state_variable = 1	}
-		set_variable = {	QEB_state_variable = 1	}
+		NAC = {	add_debug_core_PREV = yes	}
+		buildings = {
+		}
+		add_to_array = {	CAN.pfk_state_array_1 = THIS	}
+		add_to_array = {	QEB.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

@@ -8,12 +8,12 @@ state = {
 	history = {
 		owner = GRE
 		add_core_of = GRE
-		BLK = {	debug_core = yes	}
-		ION = {	debug_core = yes	}
+		BLK = {	add_debug_core_PREV = yes	}
+		ION = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 2
 		}
-		set_variable = {	ION_state_variable = 1	}
+		add_to_array = {	ION.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

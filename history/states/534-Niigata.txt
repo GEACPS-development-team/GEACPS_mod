@@ -14,8 +14,8 @@ state = {
 		add_core_of = JAP
 		buildings = {
 			infrastructure = 2
-			arms_factory = 1
 			industrial_complex = 2
+			arms_factory = 1
 			synthetic_refinery = 1
 		}
 		victory_points = {	1117	3	}
@@ -23,7 +23,7 @@ state = {
 		victory_points = {	10032	3	}
 		victory_points = {	11930	1	}
 		victory_points = {	12007	1	}
-		set_variable = {	JAP_state_variable = 1	}
+		add_to_array = {	JAP.pfk_state_array_1 = THIS	}
 	}
 	
 	provinces = {

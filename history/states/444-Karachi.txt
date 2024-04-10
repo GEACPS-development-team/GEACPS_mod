@@ -7,16 +7,16 @@ state = {
 	history = {
 		owner = IND
 		add_core_of = IND
-		BAL = {	debug_core = yes	}
-		PAK = {	debug_core = yes	}
+		BAL = {	add_debug_core_PREV = yes	}
+		PAK = {	add_debug_core_PREV = yes	}
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = {	5105	1	}
 		victory_points = {	8066	1	}
-		set_variable = {	BAL_state_variable = 1	}
-		set_variable = {	PAK_state_variable = 1	}
-		set_variable = {	AFG_state_variable = 2	}
+		add_to_array = {	BAL.pfk_state_array_1 = THIS	}
+		add_to_array = {	PAK.pfk_state_array_1 = THIS	}
+		add_to_array = {	AFG.pfk_state_array_2 = THIS	}
 	}
 	
 	provinces = {
