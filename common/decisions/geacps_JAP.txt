@@ -47,11 +47,11 @@ JAP_gunbatsu = {	#軍閥
 	JAP_a_royal_visit  = {	#天皇陛下の行幸
 		icon = jap_pacific_guardian
 		
-		priority = 100
+		priority = 50
 		
 		visible = {
 			has_country_leader = {
-				name = "昭和天皇"
+				name = "今上天皇"
 			}
 		}
 	
@@ -59,7 +59,21 @@ JAP_gunbatsu = {	#軍閥
 		
 		allowed = {	original_tag = JAP	}
 		
-		ai_will_do = {	factor = 100	}
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 1
+				has_stability < 0.5
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.3
+			}
+			modifier = {
+				factor = 10
+				has_stability < 0.2
+			}
+		}
 		
 		fire_only_once = no
 		
@@ -74,6 +88,20 @@ JAP_gunbatsu = {	#軍閥
 		}
 		
 		remove_effect = {
+			# hidden_effect = {
+			# 	random_list =  {
+			# 		70 = {
+			# 		}
+			# 		20 = {
+			# 			set_country_flag = BUL_a_royal_visit_extra_success_flag
+			# 		}
+			# 		10 = {
+			# 			set_country_flag = BUL_a_royal_visit_failure_flag
+			# 		}
+			# 	}
+			# }
+			# country_event = { id = bftb_bulgaria_tsar_boris.1 }
+			# clr_country_flag = BUL_internal_affairs_ongoing_flag
 		}
 	}
 }
