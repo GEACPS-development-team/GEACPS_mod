@@ -1,5 +1,5 @@
-#軍閥
-#統制派
+# 軍閥
+# 統制派
 JAP_toseiha_low_loyalty_increase_effect = {
 	custom_effect_tooltip = JAP_toseiha_tt
 	custom_effect_tooltip = JAP_low_loyalty_increase_tt
@@ -126,7 +126,7 @@ JAP_toseiha_high_popularity_decrease_effect = {
 	}
 }
 
-#皇道派
+# 皇道派
 JAP_kodoha_low_loyalty_increase_effect = {
 	custom_effect_tooltip = JAP_kodoha_tt
 	custom_effect_tooltip = JAP_low_loyalty_increase_tt
@@ -253,7 +253,7 @@ JAP_kodoha_high_popularity_decrease_effect = {
 	}
 }
 
-#艦隊派
+# 艦隊派
 JAP_fleet_faction_low_loyalty_increase_effect = {
 	custom_effect_tooltip = JAP_fleet_faction_tt
 	custom_effect_tooltip = JAP_low_loyalty_increase_tt
@@ -380,7 +380,7 @@ JAP_fleet_faction_high_popularity_decrease_effect = {
 	}
 }
 
-#条約派
+# 条約派
 JAP_treaty_faction_low_loyalty_increase_effect = {
 	custom_effect_tooltip = JAP_treaty_faction_tt
 	custom_effect_tooltip = JAP_low_loyalty_increase_tt
@@ -523,17 +523,17 @@ JAP_ff_preventive_action_taken = {
 	clamp_variable = {
 		var = JAP_ff_preventive_actions_against_coup
 		min = 0
-		max = JAP_ff_preventive_actions_cap_value #This caps the player's ability to prevent the coup
+		max = JAP_ff_preventive_actions_cap_value # This caps the player's ability to prevent the coup
 	}
 	custom_effect_tooltip = JAP_ff_preventive_action_taken_tt
 }
 
-JAP_get_random_JAPgarian_destination_royal_visit = { #This works together with scripted loc
+JAP_get_random_JAPgarian_destination_royal_visit = { # This works together with scripted loc
 	random_list = {
 		10 = {
 			modifier = {
 				factor = 0
-				48 = { is_capital = yes } #No point on visiting your own city...
+				48 = { is_capital = yes } # No point on visiting your own city...
 			}
 			set_variable = { JAP_tsars_destination = 1 } # Sofia
 		}
@@ -624,12 +624,12 @@ JAP_get_random_JAPgarian_destination_royal_visit = { #This works together with s
 	}
 }
 
-JAP_get_random_JAPgarian_destination_march = { #This works together with scripted loc
+JAP_get_random_JAPgarian_destination_march = { # This works together with scripted loc
 	random_list = {
 		10 = {
 			modifier = {
 				factor = 0
-				48 = { is_capital = yes } #No point on marching from Sofia to Sofia...
+				48 = { is_capital = yes } # No point on marching from Sofia to Sofia...
 			}
 			set_variable = { JAP_march_destination = 1 } # Sofia
 		}
@@ -732,44 +732,44 @@ JAP_set_buz_faction_values = {
 	set_variable = { JAP_treaty_faction_popularity = 40 }
 	set_variable = { JAP_faction_interaction_cost_standard = 20 }
 	set_variable = { JAP_broad_socialist_opression_cost_standard = 20 }
-	set_variable = { JAP_faction_days_remove_very_low = 7 } #Allow Speech, Discredit, Repress
-	set_variable = { JAP_faction_days_remove_low = 14 } #Joint Act, Ban Media, Anti-faction Speech
-	set_variable = { JAP_faction_days_remove_medium = 21 } #Bolster toseiha, Imprison leaders
-	set_variable = { JAP_faction_days_remove_high = 30 } #Legalize, Fund, Appoint, Raid, Destroy
-	set_variable = { JAP_faction_days_remove_very_high = 60 } #Integrate
-	set_variable = { JAP_faction_days_reenable_low = 7 } #Allow Speech, Discredit
-	set_variable = { JAP_faction_days_reenable_medium = 14 } #Joint Act, Anti-faction Speech
-	set_variable = { JAP_faction_days_reenable_high = 60 } #Fund
-	set_variable = { JAP_faction_days_reenable_very_high = 120 } #Raid
+	set_variable = { JAP_faction_days_remove_very_low = 7 } # Allow Speech, Discredit, Repress
+	set_variable = { JAP_faction_days_remove_low = 14 } # Joint Act, Ban Media, Anti-faction Speech
+	set_variable = { JAP_faction_days_remove_medium = 21 } # Bolster toseiha, Imprison leaders
+	set_variable = { JAP_faction_days_remove_high = 30 } # Legalize, Fund, Appoint, Raid, Destroy
+	set_variable = { JAP_faction_days_remove_very_high = 60 } # Integrate
+	set_variable = { JAP_faction_days_reenable_low = 7 } # Allow Speech, Discredit
+	set_variable = { JAP_faction_days_reenable_medium = 14 } # Joint Act, Anti-faction Speech
+	set_variable = { JAP_faction_days_reenable_high = 60 } # Fund
+	set_variable = { JAP_faction_days_reenable_very_high = 120 } # Raid
 	set_variable = { JAP_faction_low_increase = 5 }
 	set_variable = { JAP_faction_medium_increase = 10 }
 	set_variable = { JAP_faction_high_increase = 15 }
 	set_variable = { JAP_faction_low_decrease = -5 }
 	set_variable = { JAP_faction_medium_decrease = -10 }
 	set_variable = { JAP_faction_high_decrease = -15 }
-	set_variable = { JAP_ff_missions_base_days_to_add = 60 } #Base amount of days to be added to Impending FF Coup mission
-	set_variable = { JAP_ff_missions_popularity_factor = 1 } #More popularity means more days to add
-	set_variable = { JAP_ff_missions_loyalty_factor = 1 } #More loyalty means less days to add
-	set_variable = { JAP_ff_preventive_actions_against_coup = 0 } #This will be used to reduce the chances of the FF staging the coup after they have planned it
-	set_variable = { JAP_ff_preventive_actions_base_value = 5 } #The value added to the variable above every time a decision to prevent the coup is taken
-	set_variable = { JAP_ff_preventive_actions_cap_value = 50 } #This is a cap to the player's ability to prevent the coup
+	set_variable = { JAP_ff_missions_base_days_to_add = 60 } # Base amount of days to be added to Impending FF Coup mission
+	set_variable = { JAP_ff_missions_popularity_factor = 1 } # More popularity means more days to add
+	set_variable = { JAP_ff_missions_loyalty_factor = 1 } # More loyalty means less days to add
+	set_variable = { JAP_ff_preventive_actions_against_coup = 0 } # This will be used to reduce the chances of the FF staging the coup after they have planned it
+	set_variable = { JAP_ff_preventive_actions_base_value = 5 } # The value added to the variable above every time a decision to prevent the coup is taken
+	set_variable = { JAP_ff_preventive_actions_cap_value = 50 } # This is a cap to the player's ability to prevent the coup
 	set_variable = { JAP_purchase_equipment_cost = 25 }
 	set_variable = { JAP_foreign_military_agreements_cost = 50 }
 	set_variable = { JAP_german_civ_industries_cost = 75 }
 	set_variable = { JAP_british_civ_industries_cost = 75 }
 	set_variable = { JAP_soviet_civ_industries_cost = 75 }
-	set_variable = { JAP_foreign_industry_consumer_goods_modifier = 0 } #Used by Foreign Industry Dynamic Modifier
-	set_variable = { JAP_foreign_industry_production_efficiency_modifier = -0.05 } #Used by Foreign Industry Dynamic Modifier
-	set_variable = { JAP_foreign_industry_construction_speed_modifier = -0.1 } #Used by Foreign Industry Dynamic Modifier
+	set_variable = { JAP_foreign_industry_consumer_goods_modifier = 0 } # Used by Foreign Industry Dynamic Modifier
+	set_variable = { JAP_foreign_industry_production_efficiency_modifier = -0.05 } # Used by Foreign Industry Dynamic Modifier
+	set_variable = { JAP_foreign_industry_construction_speed_modifier = -0.1 } # Used by Foreign Industry Dynamic Modifier
 	set_variable = { JAP_german_industrial_investments = 0 }
 	set_variable = { JAP_british_industrial_investments = 0 }
 	set_variable = { JAP_soviet_industrial_investments = 0 }
 	set_variable = { JAP_industrial_investments_basic_cap = 3 }
 	set_variable = { JAP_industrial_investments_medium_cap = 5 }
 	set_variable = { JAP_industrial_investments_max_cap = 10 }
-	#IMRO
+	# IMRO
 	set_variable = { JAP_imro_garrisons_mp_value = 5000 }
-	#Purchase foreign equipment
+	# Purchase foreign equipment
 	set_variable = { JAP_quantity_purchased_infantry_equipment = 1000 }
 	set_variable = { JAP_quantity_purchased_artillery = 100 }
 	set_variable = { JAP_quantity_purchased_motorized = 100 }
@@ -781,12 +781,12 @@ JAP_set_buz_faction_values = {
 	set_variable = { JAP_quantity_purchased_fighter = 40 }
 	set_variable = { JAP_quantity_purchased_naval_bomber = 30 }
 	set_variable = { JAP_quantity_purchased_tactical_bomber = 20 }
-	#Plot Against Boris
+	# Plot Against Boris
 	set_variable = { JAP_regicide_execution_time = 90 }
-	#Free Balkan States dynamic modifier (NS)
+	# Free Balkan States dynamic modifier (NS)
 	set_variable = { JAP_our_duty_in_the_balkans_consumer_goods_modifier = -0.01 }
 	set_variable = { JAP_our_duty_in_the_balkans_stability_modifier = 0.05 }
-	#Monthly extra chance of Boris dieing of "natural causes" (increased by 5 each month from 1943.1.1)
+	# Monthly extra chance of Boris dieing of "natural causes" (increased by 5 each month from 1943.1.1)
 	set_variable = { JAP_tsar_boris_death_monthly_probability_factor = 0 }
 
 	randomize_variable = {
@@ -805,7 +805,7 @@ JAP_set_buz_faction_values = {
 	round_variable = JAP_march_destination
 }
 
-#Adds hidden NS granting attack & defense bonuses against the appropriate country (FROM - scope comes from "The Anti-Capitalist Fight" or "Toppling Giants" Focus)
+# Adds hidden NS granting attack & defense bonuses against the appropriate country (FROM - scope comes from "The Anti-Capitalist Fight" or "Toppling Giants" Focus)
 JAP_add_hidden_targeted_ns = {
 	if = {
 		limit = {
@@ -1072,7 +1072,7 @@ JAP_join_wars_of_from = {
 	}
 }
 
-JAP_remove_balkan_opinion_modifiers = { #Requires scoping to the other country joining JAPgaria's faction or being puppeted by JAPgaria
+JAP_remove_balkan_opinion_modifiers = { # Requires scoping to the other country joining JAPgaria's faction or being puppeted by JAPgaria
 	hidden_effect = {
 		remove_opinion_modifier = {
 			target = JAP

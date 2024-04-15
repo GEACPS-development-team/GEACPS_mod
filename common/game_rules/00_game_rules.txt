@@ -305,11 +305,11 @@ allow_party_boosting = {
 	}
 }
 
-###  ### #   # ###  ## ###  ##  #  #     ### ### #   # ###  #    ##  ### ###  ## 
-#  #  #  #   #  #  #    #  #  # ## #      #  #   ## ## #  # #   #  #  #  #   #   
-#  #  #   # #   #   #   #  #  # # ##      #  ##  # # # ###  #   ####  #  ##   #  
-#  #  #   # #   #    #  #  #  # #  #      #  #   #   # #    #   #  #  #  #     # 
-###  ###   #   ### ##  ###  ##  #  #      #  ### #   # #    ### #  #  #  ### ##  
+### ### #  # ### ## ### ## # #    ### ### #  # ### #   ## ### ### ## 
+# # # #  # # #   # # # ## #     # #  ## ## # # #  # # # #  #  
+# # #  # #  #  #  # # # # ##     # ## # # # ### #  #### # ##  # 
+# # #  # #  #   # # # # # #     # #  #  # #   #  # # # #    # 
+### ###  #  ### ## ### ## # #     # ### #  # #   ### # # # ### ## 
 
 
 allow_paratroopers = {
@@ -329,55 +329,55 @@ allow_paratroopers = {
 }
 
 #minimum_division_width = {
-#	name = "RULE_MINIMUM_WIDTH"
-#	group = "RULE_GROUP_DIVISION_TEMPLATES"
-#	option = {
-#		name = none
-#		text = "RULE_OPTION_NONE"
-#		desc = "RULE_MINIMUM_WIDTH_NONE_DESC"
-#	}
-#	option = {
-#		name = WIDTH_10
-#		text = "RULE_OPTION_10"
-#		desc = "RULE_MINIMUM_WIDTH_10_DESC"
-#	}
-#	option = {
-#		name = WIDTH_20
-#		text = "RULE_OPTION_20"
-#		desc = "RULE_MINIMUM_WIDTH_20_DESC"
-#	}
+# name = "RULE_MINIMUM_WIDTH"
+# group = "RULE_GROUP_DIVISION_TEMPLATES"
+# option = {
+# 	name = none
+# 	text = "RULE_OPTION_NONE"
+# 	desc = "RULE_MINIMUM_WIDTH_NONE_DESC"
+# }
+# option = {
+# 	name = WIDTH_10
+# 	text = "RULE_OPTION_10"
+# 	desc = "RULE_MINIMUM_WIDTH_10_DESC"
+# }
+# option = {
+# 	name = WIDTH_20
+# 	text = "RULE_OPTION_20"
+# 	desc = "RULE_MINIMUM_WIDTH_20_DESC"
+# }
 #}
 #
 #maximum_division_width = {
-#	name = "RULE_MAXIMUM_WIDTH"
-#	group = "RULE_GROUP_DIVISION_TEMPLATES"
-#	option = {
-#		name = none
-#		text = "RULE_OPTION_NONE"
-#		desc = "RULE_MAXIMUM_WIDTH_NONE_DESC"
-#	}
-#	option = {
-#		name = WIDTH_20
-#		text = "RULE_OPTION_20"
-#		desc = "RULE_MAXIMUM_WIDTH_20_DESC"
-#	}
-#	option = {
-#		name = WIDTH_30
-#		text = "RULE_OPTION_30"
-#		desc = "RULE_MAXIMUM_WIDTH_30_DESC"
-#	}
-#	option = {
-#		name = WIDTH_40
-#		text = "RULE_OPTION_40"
-#		desc = "RULE_MAXIMUM_WIDTH_40_DESC"
-#	}
+# name = "RULE_MAXIMUM_WIDTH"
+# group = "RULE_GROUP_DIVISION_TEMPLATES"
+# option = {
+# 	name = none
+# 	text = "RULE_OPTION_NONE"
+# 	desc = "RULE_MAXIMUM_WIDTH_NONE_DESC"
+# }
+# option = {
+# 	name = WIDTH_20
+# 	text = "RULE_OPTION_20"
+# 	desc = "RULE_MAXIMUM_WIDTH_20_DESC"
+# }
+# option = {
+# 	name = WIDTH_30
+# 	text = "RULE_OPTION_30"
+# 	desc = "RULE_MAXIMUM_WIDTH_30_DESC"
+# }
+# option = {
+# 	name = WIDTH_40
+# 	text = "RULE_OPTION_40"
+# 	desc = "RULE_MAXIMUM_WIDTH_40_DESC"
+# }
 #}
 
- ##   ##  #  #  ## ### ###  #  #  ##  ### ###  ##  #  # 
-#  # #  # ## # #    #  #  # #  # #  #  #   #  #  # ## # 
-#    #  # # ##  #   #  ###  #  # #     #   #  #  # # ## 
-#  # #  # #  #   #  #  #  # #  # #  #  #   #  #  # #  # 
- ##   ##  #  # ##   #  #  #  ##   ##   #  ###  ##  #  # 
+ ##  ## # # ## ### ### # # ## ### ### ## # # 
+# # # # ## # #   # # # # # # # #  # # # ## # 
+#   # # # ## #  # ### # # #    #  # # # # ## 
+# # # # # #  # # # # # # # # #  # # # # # 
+ ##  ## # # ##  # # # ##  ##  # ### ## # # 
 
 maximum_fort_level = {
 	name = "RULE_MAXIMUM_FORT_LEVEL"
@@ -435,98 +435,98 @@ maximum_fort_level = {
 	}
 }
 
-###  ###  ## ###  ##  ###   ##  #  # 
-#  # #   #   #   #  # #  # #  # #  # 
-###  ##   #  ##  #### ###  #    #### 
-#  # #     # #   #  # #  # #  # #  # 
-#  # ### ##  ### #  # #  #  ##  #  # 
+### ### ## ### ## ###  ## # # 
+# # #  #  #  # # # # # # # # 
+### ##  # ## #### ### #   #### 
+# # #    # #  # # # # # # # # 
+# # ### ## ### # # # # ## # # 
 
 #research_ahead_of_time = {
-#	name = "RULE_RESEARCH_AOT"
-#	group = "RULE_GROUP_RESEARCH"
-#	default = {
-#		name = FREE
-#		text = "RULE_OPTION_FREE"
-#		desc = "RULE_RESEARCH_AOT_FREE_DESC"
-#	}
-#	option = {
-#		name = THREE_YEARS
-#		text = "RULE_OPTION_THREE_YEARS"
-#		desc = "RULE_RESEARCH_AOT_THREE_YEARS_DESC"
-#	}
-#	option = {
-#		name = TWO_YEARS
-#		text = "RULE_OPTION_TWO_YEARS"
-#		desc = "RULE_RESEARCH_AOT_TWO_YEARS_DESC"
-#	}
-#	option = {
-#		name = ONE_YEARS
-#		text = "RULE_OPTION_ONE_YEARS"
-#		desc = "RULE_RESEARCH_AOT_ONE_YEARS_DESC"
-#	}
-#	option = {
-#		name = BLOCKED
-#		text = "RULE_OPTION_BLOCKED"
-#		desc = "RULE_RESEARCH_AOT_BLOCKED_DESC"
-#	}
+# name = "RULE_RESEARCH_AOT"
+# group = "RULE_GROUP_RESEARCH"
+# default = {
+# 	name = FREE
+# 	text = "RULE_OPTION_FREE"
+# 	desc = "RULE_RESEARCH_AOT_FREE_DESC"
+# }
+# option = {
+# 	name = THREE_YEARS
+# 	text = "RULE_OPTION_THREE_YEARS"
+# 	desc = "RULE_RESEARCH_AOT_THREE_YEARS_DESC"
+# }
+# option = {
+# 	name = TWO_YEARS
+# 	text = "RULE_OPTION_TWO_YEARS"
+# 	desc = "RULE_RESEARCH_AOT_TWO_YEARS_DESC"
+# }
+# option = {
+# 	name = ONE_YEARS
+# 	text = "RULE_OPTION_ONE_YEARS"
+# 	desc = "RULE_RESEARCH_AOT_ONE_YEARS_DESC"
+# }
+# option = {
+# 	name = BLOCKED
+# 	text = "RULE_OPTION_BLOCKED"
+# 	desc = "RULE_RESEARCH_AOT_BLOCKED_DESC"
+# }
 #}
 
- ##   ##  #  # #  # ### ###  #   #      ## ###  ###  ##  ### ### ###  ##      ###  #  # #   ###  ## 
-#  # #  # #  # ## #  #  #  #  # #      #   #  # #   #  #  #  #    #  #  #     #  # #  # #   #   #   
-#    #  # #  # # ##  #  ###    #        #  ###  ##  #     #  ##   #  #        ###  #  # #   ##   #  
-#  # #  # #  # #  #  #  #  #   #         # #    #   #  #  #  #    #  #  #     #  # #  # #   #     # 
- ##   ##   ##  #  #  #  #  #   #       ##  #    ###  ##  ### #   ###  ##      #  #  ##  ### ### ##  
+ ##  ## # # # # ### ### #  #     ## ### ### ## ### ### ### ##     ### # # #  ### ## 
+# # # # # # ## # # # # # #     #  # # #  # # # #   # # #    # # # # #  #  #  
+#   # # # # # ## # ###   #       # ### ## #    # ##  # #       ### # # #  ##  # 
+# # # # # # # # # # #  #        # #   #  # # # #   # # #    # # # # #  #    # 
+ ##  ##  ## # # # # #  #      ## #   ### ## ### #  ### ##     # # ## ### ### ## 
 
 
 
 #GER_faction_soviets = {
-#	name = "RULE_GER_FACTION_SOVIETS"
-#	group = "RULE_GROUP_COUNTRY_SPECIFIC"
-#	default = {
-#		name = yes
-#		text = "RULE_OPTION_ALLOWED"
-#		desc = "RULE_GER_FACTION_SOVIETS_YES_DESC"
-#	}
-#	option = {
-#		name = no
-#		text = "RULE_OPTION_BLOCKED"
-#		desc = "RULE_GER_FACTION_SOVIETS_NO_DESC"
-#	}
+# name = "RULE_GER_FACTION_SOVIETS"
+# group = "RULE_GROUP_COUNTRY_SPECIFIC"
+# default = {
+# 	name = yes
+# 	text = "RULE_OPTION_ALLOWED"
+# 	desc = "RULE_GER_FACTION_SOVIETS_YES_DESC"
+# }
+# option = {
+# 	name = no
+# 	text = "RULE_OPTION_BLOCKED"
+# 	desc = "RULE_GER_FACTION_SOVIETS_NO_DESC"
+# }
 #}
 #
 #allow_ideology_change_USA = {
-#	name = "RULE_ALLOW_IDEOLOGY_CHANGE_USA"
-#	required_dlc = "Man the Guns"
-#	group = "RULE_GROUP_COUNTRY_SPECIFIC"
-#	default = {
-#		name = FREE
-#		text = "RULE_OPTION_FREE"
-#		desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_FREE_DESC"
-#	}
-#	option = {
-#		name = COMMUNIST_ONLY
-#		text = "RULE_OPTION_COMMUNIST_ONLY"
-#		desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_COMMUNIST_ONLY_DESC"
-#	}
-#	option = {
-#		name = FASCIST_ONLY
-#		text = "RULE_OPTION_FASCIST_ONLY"
-#		desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_FASCIST_ONLY_DESC"
-#	}
-#	option = {
-#		name = BLOCKED
-#		text = "RULE_OPTION_BLOCKED"
-#		desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_BLOCKED_DESC"
-#	}
+# name = "RULE_ALLOW_IDEOLOGY_CHANGE_USA"
+# required_dlc = "Man the Guns"
+# group = "RULE_GROUP_COUNTRY_SPECIFIC"
+# default = {
+# 	name = FREE
+# 	text = "RULE_OPTION_FREE"
+# 	desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_FREE_DESC"
+# }
+# option = {
+# 	name = COMMUNIST_ONLY
+# 	text = "RULE_OPTION_COMMUNIST_ONLY"
+# 	desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_COMMUNIST_ONLY_DESC"
+# }
+# option = {
+# 	name = FASCIST_ONLY
+# 	text = "RULE_OPTION_FASCIST_ONLY"
+# 	desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_FASCIST_ONLY_DESC"
+# }
+# option = {
+# 	name = BLOCKED
+# 	text = "RULE_OPTION_BLOCKED"
+# 	desc = "RULE_ALLOW_IDEOLOGY_CHANGE_USA_BLOCKED_DESC"
+# }
 #}
 
 
 
- ##  ###     ###  ### #  #  ##  #   # ###  ##  ###  
-#  #  #      #  # #   #  # #  # #   #  #  #  # #  # 
-####  #      ###  ##  #### ####  # #   #  #  # ###  
-#  #  #      #  # #   #  # #  #  # #   #  #  # #  # 
-#  # ###     ###  ### #  # #  #   #   ###  ##  #  # 
+ ## ###    ### ### # # ## #  # ### ## ### 
+# # #     # # #  # # # # #  # # # # # # 
+#### #     ### ## #### #### # #  # # # ### 
+# # #     # # #  # # # # # #  # # # # # 
+# # ###    ### ### # # # #  #  ### ## # # 
 
 JAP_ai_behavior = {
 	name = "JAP_AI_BEHAVIOR"

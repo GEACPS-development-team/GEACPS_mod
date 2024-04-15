@@ -1,4 +1,4 @@
-#   Definition: SCOPE_OPERATION
+#  Definition: SCOPE_OPERATION
 # ------------------------------------------
 # FROM = the target country of the operation
 # ROOT = the origin country of the operation
@@ -189,8 +189,8 @@ operation_test = {
 	#
 	# For description purposes only. This is the effect that generates that text shown as a potential reward for completing the operation
 	# SCOPE_OPERATION [
-	#	ROOT, FROM
-	#	FROM.FROM : SCOPE_STATE ( will only be set if the operation has a specific selection_target )
+	# ROOT, FROM
+	# FROM.FROM : SCOPE_STATE ( will only be set if the operation has a specific selection_target )
 	# ]
 	#
 	
@@ -224,8 +224,8 @@ operation_test = {
 	#
 	# Executed when the operation has completed [ once per operation ]
 	# SCOPE_OPERATION [
-	#	ROOT, FROM
-	#	FROM.FROM : SCOPE_STATE ( will only be set if the operation has a specific selection_target )
+	# ROOT, FROM
+	# FROM.FROM : SCOPE_STATE ( will only be set if the operation has a specific selection_target )
 	# ]
 	#
 	
@@ -265,8 +265,8 @@ operation_test = {
 	# ON_ACTION :: TODO move to onactions
 	# Executed when the operation has completed [ once per assigned operative ]
 	# SCOPE_UNIT_LEADER [
-	#	ROOT, FROM
-	#	FROM.FROM : SCOPE_STATE ( will only be set if the operation has a specific selection_target )
+	# ROOT, FROM
+	# FROM.FROM : SCOPE_STATE ( will only be set if the operation has a specific selection_target )
 	# ]
 	#
 

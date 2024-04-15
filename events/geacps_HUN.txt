@@ -1,6 +1,6 @@
 add_namespace = HUN
 
-country_event = {	#ドナウ連邦構想
+country_event = {	# ドナウ連邦構想
 	id = HUN.0
 	title = HUN.0.t
 	desc = HUN.0.d
@@ -8,12 +8,12 @@ country_event = {	#ドナウ連邦構想
 	
 	is_triggered_only = yes
 	
-	option = {#一度こわしたら二度ともとに戻ることはない...
+	option = {# 一度こわしたら二度ともとに戻ることはない...
 		name = HUN.0.0
 		ai_chance = {	factor = 100	}
 	}
 	
-	option = {	#中欧諸国の経済力は脆弱なため、社会民主的経済共同体を作るべきである。
+	option = {	# 中欧諸国の経済力は脆弱なため、社会民主的経済共同体を作るべきである。
 		name = HUN.0.1
 		ai_chance = {
 			factor = 0
@@ -47,7 +47,7 @@ country_event = {	#ドナウ連邦構想
 		set_state_owner = 1002
 	}
 	
-	option = {#中欧諸国の経済力は脆弱なため、権威民主的経済共同体を作るべきである。
+	option = {# 中欧諸国の経済力は脆弱なため、権威民主的経済共同体を作るべきである。
 		name = HUN.0.2
 		ai_chance = {
 			factor = 0

@@ -1,5 +1,5 @@
 add_namespace = JAP
-country_event = {	#大日本帝國
+country_event = {	# 大日本帝國
 	id = JAP.0
 	title = JAP.0.t
 	desc = JAP.0.d
@@ -9,11 +9,11 @@ country_event = {	#大日本帝國
 	hidden = no
 	fire_only_once = yes
 	
-	option = {	#天皇陛下万歳！大日本帝国万歳！
+	option = {	# 天皇陛下万歳！大日本帝国万歳！
 		name = JAP.0.0
 	}
 }
-country_event = {	#一・二二事件の発生
+country_event = {	# 一・二二事件の発生
 	id = JAP.2
 	title = JAP.2.t
 	desc = JAP.2.d
@@ -23,10 +23,10 @@ country_event = {	#一・二二事件の発生
 	hidden = no
 	fire_only_once = yes
 	
-	option = {	#叛乱軍を捕らえよ！
+	option = {	# 叛乱軍を捕らえよ！
 		name = JAP.2.0
 		complete_national_focus = JAP_january_22_incident
-		#kill_head_of_government = yes
+		# kill_head_of_government = yes
 		add_stability = -0.1
 		add_manpower = -100
 		country_event = {
@@ -41,7 +41,7 @@ country_event = {	#一・二二事件の発生
 		}
 	}
 }
-country_event = {	#臨時代理
+country_event = {	# 臨時代理
 	id = JAP.3
 	title = JAP.3.t
 	desc = JAP.3.d
@@ -54,7 +54,7 @@ country_event = {	#臨時代理
 	immediate = {
 	}
 	
-	option = {	#東條の腹心の安藤紀三郎に
+	option = {	# 東條の腹心の安藤紀三郎に
 		name = JAP.3.0
 		ai_chance = {
 			factor = 90
@@ -63,7 +63,7 @@ country_event = {	#臨時代理
 		add_war_support = 0.1
 	}
 	
-	option = {	#"欠点がない"重光葵に
+	option = {	# "欠点がない"重光葵に
 		name = JAP.3.1
 		ai_chance = {
 			factor = 10
@@ -72,7 +72,7 @@ country_event = {	#臨時代理
 		add_stability = 0.1
 	}
 }
-country_event = {	#重臣会議
+country_event = {	# 重臣会議
 	id = JAP.4
 	title = JAP.4.t
 	desc = JAP.4.d
@@ -89,7 +89,7 @@ country_event = {	#重臣会議
 		}
 	}
 	
-	option = {	#奏薦されたのは陸軍の出した候補だ！
+	option = {	# 奏薦されたのは陸軍の出した候補だ！
 		name = JAP.4.0
 		ai_chance = {
 			factor = 75
@@ -100,7 +100,7 @@ country_event = {	#重臣会議
 		}
 	}
 	
-	option = {	#いいや、海軍の出した候補が奏薦された！
+	option = {	# いいや、海軍の出した候補が奏薦された！
 		name = JAP.4.1
 		ai_chance = {
 			factor = 15
@@ -111,7 +111,7 @@ country_event = {	#重臣会議
 		}
 	}
 	
-	option = {	#軍部の意見なんぞ無視してしまえばよい...
+	option = {	# 軍部の意見なんぞ無視してしまえばよい...
 		name = JAP.4.2
 		ai_chance = {
 			factor = 10
@@ -122,7 +122,7 @@ country_event = {	#重臣会議
 		}
 	}
 }
-country_event = {	#閣議
+country_event = {	# 閣議
 	id = JAP.5
 	title = JAP.5.t
 	desc = JAP.5.d
@@ -132,14 +132,14 @@ country_event = {	#閣議
 	hidden = no
 	fire_only_once = yes
 	
-	option = {	#決まりだな！
+	option = {	# 決まりだな！
 		name = JAP.5.0
 		hidden_effect = {
 			set_country_flag = JAP_decision_of_declaration
 		}
 	}
 }
-country_event = {	#海軍士官の裁判
+country_event = {	# 海軍士官の裁判
 	id = JAP.6
 	title = JAP.6.t
 	desc = JAP.6.d
@@ -152,7 +152,7 @@ country_event = {	#海軍士官の裁判
 	immediate = {
 	}
 	
-	option = {	#公正な判決を下す
+	option = {	# 公正な判決を下す
 		name = JAP.6.0
 		ai_chance = {
 			factor = 75
@@ -164,7 +164,7 @@ country_event = {	#海軍士官の裁判
 		}
 	}
 	
-	option = {	#臣民が助命嘆願運動を行っている...
+	option = {	# 臣民が助命嘆願運動を行っている...
 		name = JAP.6.1
 		ai_chance = {
 			factor = 25
@@ -174,7 +174,7 @@ country_event = {	#海軍士官の裁判
 		}
 	}
 }
-country_event = {	#農本主義者を逮捕
+country_event = {	# 農本主義者を逮捕
 	id = JAP.7
 	title = JAP.7.t
 	desc = JAP.7.d
@@ -187,21 +187,21 @@ country_event = {	#農本主義者を逮捕
 	immediate = {
 	}
 	
-	option = {	#全国の農本主義者達の思想を"保護観察"しよう
+	option = {	# 全国の農本主義者達の思想を"保護観察"しよう
 		name = JAP.7.0
 		ai_chance = {
 			factor = 50
 		}
 	}
 	
-	option = {	#投獄でもしておけ
+	option = {	# 投獄でもしておけ
 		name = JAP.7.1
 		ai_chance = {
 			factor = 50
 		}
 	}
 }
-country_event = {	#皇道派将校の裁判
+country_event = {	# 皇道派将校の裁判
 	id = JAP.8
 	title = JAP.8.t
 	desc = JAP.8.d
@@ -214,7 +214,7 @@ country_event = {	#皇道派将校の裁判
 	immediate = {
 	}
 	
-	option = {	#どのくらい獄中に送れば気が済むのだろうか...
+	option = {	# どのくらい獄中に送れば気が済むのだろうか...
 		name = JAP.8.0
 		ai_chance = {
 			factor = 95
@@ -225,7 +225,7 @@ country_event = {	#皇道派将校の裁判
 		}
 	}
 	
-	option = {	#妥協点を探る
+	option = {	# 妥協点を探る
 		name = JAP.8.1
 		ai_chance = {
 			factor = 5
@@ -236,7 +236,7 @@ country_event = {	#皇道派将校の裁判
 	}
 }
 
-country_event = {	#武漢作戦
+country_event = {	# 武漢作戦
 	id = JAP.100
 	title = JAP.100.t
 	desc = JAP.100.d
@@ -258,7 +258,7 @@ country_event = {	#武漢作戦
 	immediate = {
 	}
 	
-	option = {	#祝武漢入城
+	option = {	# 祝武漢入城
 		name = JAP.100.0
 	}
 }

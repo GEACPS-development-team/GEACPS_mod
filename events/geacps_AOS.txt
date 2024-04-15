@@ -1,5 +1,5 @@
 add_namespace = AOS
-country_event = {	#1955年アオスタ独立住民投票
+country_event = {	# 1955年アオスタ独立住民投票
 	id = AOS.0
 	title = AOS.0.t
 	desc = AOS.0.d
@@ -28,7 +28,7 @@ country_event = {	#1955年アオスタ独立住民投票
 }
 
 add_namespace = AOS_news
-news_event = {	#1955年アオスタ独立住民投票
+news_event = {	# 1955年アオスタ独立住民投票
 	id = AOS_news.0
 	title = AOS_news.0.t
 	desc = AOS_news.0.d
@@ -37,12 +37,12 @@ news_event = {	#1955年アオスタ独立住民投票
 	is_triggered_only = yes
 	major = yes
 	
-	option = {	#フランスの影響力はどの位だ...？
+	option = {	# フランスの影響力はどの位だ...？
 		name = AOS_news.0.0
 	}
 	immediate = {	log = "[GetDateText]: [Root.GetName]: event AOS_news.0"	}
 }
-news_event = {	#アオスタはフランスの庇護下に留まる
+news_event = {	# アオスタはフランスの庇護下に留まる
 	id = AOS_news.1
 	title = AOS_news.1.t
 	desc = AOS_news.1.d
@@ -56,7 +56,7 @@ news_event = {	#アオスタはフランスの庇護下に留まる
 	}
 	immediate = {	log = "[GetDateText]: [Root.GetName]: event AOS_news.1"	}
 }
-news_event = {	#1955年アオスタ独立
+news_event = {	# 1955年アオスタ独立
 	id = AOS_news.2
 	title = AOS_news.2.t
 	desc = AOS_news.2.d

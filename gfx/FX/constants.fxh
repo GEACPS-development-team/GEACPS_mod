@@ -94,13 +94,13 @@ static const float COLORMAP_OVERLAY_STRENGTH 	= 0.75f;
 static const float COLORMAP_MUD_OVERLAY_STRENGTH = 0.5f;
 static const float3 FAKE_CUBEMAP_COLOR 			= float3(0.0f, 0.0f, 0.0f);
 
-// MILD_WINTER_VALUE = ###,						defines.lua   (reload defines)
-// NORMAL_WINTER_VALUE = ##,					defines.lua   (reload defines)
-// SEVERE_WINTER_VALUE = ###,					defines.lua   (reload defines)
+// MILD_WINTER_VALUE = # # # ,						defines.lua   (reload defines)
+// NORMAL_WINTER_VALUE = # # ,					defines.lua   (reload defines)
+// SEVERE_WINTER_VALUE = # # # ,					defines.lua   (reload defines)
 
 
 static const float 	BORDER_TILE					= 0.4f;
-// BORDER_WIDTH		= ###						defines.lua   (reload defines)
+// BORDER_WIDTH		= # # # 						defines.lua   (reload defines)
 
 
 

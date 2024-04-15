@@ -1415,11 +1415,11 @@ guiTypes = {
 			position = { x = 15 y = 15 }
 			size = { width = 636 height = 40 }
 
-#			background = {
-#				name = "group_header_bg"
-#				quadTextureSprite = "GFX_tiled_header_1"
-#				clicksound = click_default
-#			}
+# 		background = {
+# 			name = "group_header_bg"
+# 			quadTextureSprite = "GFX_tiled_header_1"
+# 			clicksound = click_default
+# 		}
 
 			instantTextboxType = {
 				name = "window_title"
@@ -1551,11 +1551,11 @@ guiTypes = {
 			quadTextureSprite ="GFX_tiled_generic_bg_1"
 		}
 		
-#		background = {
-#			name = "on_indicator"
-#			quadTextureSprite ="GFX_changed_slider_indicator"
-#			position = { x = 602 y = 10 }
-#		}
+# 	background = {
+# 		name = "on_indicator"
+# 		quadTextureSprite ="GFX_changed_slider_indicator"
+# 		position = { x = 602 y = 10 }
+# 	}
 		
 		iconType = {
 			name = "custom_difficulty_icon"
@@ -2261,7 +2261,7 @@ guiTypes = {
 				Orientation = "LOWER_RIGHT"
 				#clicksound = start_game_01 # Don't add this here. I intentionally removed it because otherwise the sound is played when the client clicks on Ready/Unready button. The sound should only play when the host starts the game (or when it's SP) which is done in the code.  
 				shortcut = "RETURN"
-#				frame = 1
+# 			frame = 1
 			}
 			
 			ButtonType = {

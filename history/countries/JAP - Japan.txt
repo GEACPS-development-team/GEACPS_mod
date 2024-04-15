@@ -141,44 +141,44 @@ set_variable = { JAP_faction_interaction_cost_standard = 20 }
 set_variable = { JAP_broad_socialist_opression_cost_standard = 20 }
 
 #if = {
-#	limit = { has_dlc = "La Resistance" }
-#	create_intelligence_agency = yes
-#	create_operative_leader = {
-#		name = "中村天風"
-#		GFX = GFX_
-#		traits = {
-#		}
-#		bypass_recruitment = no
-#		available_to_spy_master = yes
-#		nationalities = { JAP }
-#	}
-#	create_operative_leader = {
-#		name = "藤原岩市"
-#		GFX = GFX_
-#		traits = {
-#		}#F機関
-#		bypass_recruitment = 
-#		available_to_spy_master = 
-#		nationalities = { JAP }
-#	}
-#	create_operative_leader = {
-#		name = "神本利男"
-#		GFX = GFX_
-#		traits = {
-#		}
-#		bypass_recruitment = 
-#		available_to_spy_master = 
-#		nationalities = { JAP MAN }
-#	}
-#	create_operative_leader = {
-#		name = "堀栄三"
-#		GFX = GFX_
-#		traits = {
-#		}#マッカーサー参謀
-#		bypass_recruitment = 
-#		available_to_spy_master = 
-#		nationalities = { JAP }
-#	}
+# limit = { has_dlc = "La Resistance" }
+# create_intelligence_agency = yes
+# create_operative_leader = {
+# 	name = "中村天風"
+# 	GFX = GFX_
+# 	traits = {
+# 	}
+# 	bypass_recruitment = no
+# 	available_to_spy_master = yes
+# 	nationalities = { JAP }
+# }
+# create_operative_leader = {
+# 	name = "藤原岩市"
+# 	GFX = GFX_
+# 	traits = {
+# 	}#F機関
+# 	bypass_recruitment = 
+# 	available_to_spy_master = 
+# 	nationalities = { JAP }
+# }
+# create_operative_leader = {
+# 	name = "神本利男"
+# 	GFX = GFX_
+# 	traits = {
+# 	}
+# 	bypass_recruitment = 
+# 	available_to_spy_master = 
+# 	nationalities = { JAP MAN }
+# }
+# create_operative_leader = {
+# 	name = "堀栄三"
+# 	GFX = GFX_
+# 	traits = {
+# 	}#マッカーサー参謀
+# 	bypass_recruitment = 
+# 	available_to_spy_master = 
+# 	nationalities = { JAP }
+# }
 #}
 set_technology = {
 	infantry_weapons = 1
@@ -330,12 +330,12 @@ if = {
 # 		fixed_ship_engine_slot = heavy_ship_engine_3
 # 		fixed_ship_armor_slot = ship_armor_bb_1
 # 		front_1_custom_slot = ship_heavy_battery_1
-# #		front_2_custom_slot = ship_heavy_battery_1
+# # 	front_2_custom_slot = ship_heavy_battery_1
 # 		mid_1_custom_slot = ship_anti_air_cannon_3
 # 		mid_2_custom_slot = ship_heavy_battery_1
-# #		mid_3_custom_slot = ship_heavy_battery_1
+# # 	mid_3_custom_slot = ship_heavy_battery_1
 # 		rear_1_custom_slot = ship_heavy_battery_1
-# #		rear_2_custom_slot = ship_airplane_launcher_1
+# # 	rear_2_custom_slot = ship_airplane_launcher_1
 # 	}
 # }
 # create_equipment_variant = {
@@ -352,10 +352,10 @@ if = {
 # 		fixed_ship_secondaries_slot = ship_secondaries_1
 # 		fixed_ship_armor_slot = ship_armor_bb_1
 # 		front_1_custom_slot = ship_heavy_battery_1
-# #		front_2_custom_slot = ship_heavy_battery_1
+# # 	front_2_custom_slot = ship_heavy_battery_1
 # 		mid_1_custom_slot = ship_heavy_battery_1
 # 		mid_2_custom_slot = ship_anti_air_cannon_3
-# #		mid_3_custom_slot = ship_heavy_battery_1
+# # 	mid_3_custom_slot = ship_heavy_battery_1
 # 		rear_1_custom_slot = ship_heavy_battery_1
 # 		rear_2_custom_slot = ship_airplane_launcher_1
 # 	}
@@ -374,10 +374,10 @@ if = {
 # 		fixed_ship_secondaries_slot = ship_secondaries_1
 # 		fixed_ship_armor_slot = ship_armor_bb_1
 # 		front_1_custom_slot = ship_heavy_battery_1
-# #		front_2_custom_slot = ship_heavy_battery_1
+# # 	front_2_custom_slot = ship_heavy_battery_1
 # 		mid_1_custom_slot = ship_heavy_battery_1
 # 		mid_2_custom_slot = ship_anti_air_cannon_3
-# #		mid_3_custom_slot = ship_heavy_battery_1
+# # 	mid_3_custom_slot = ship_heavy_battery_1
 # 		rear_1_custom_slot = ship_heavy_battery_1
 # 		rear_2_custom_slot = ship_airplane_launcher_1
 # 	}
@@ -396,10 +396,10 @@ if = {
 # 		fixed_ship_secondaries_slot = ship_secondaries_1
 # 		fixed_ship_armor_slot = ship_armor_bb_1
 # 		front_1_custom_slot = ship_heavy_battery_2
-# #		front_2_custom_slot = ship_heavy_battery_2
+# # 	front_2_custom_slot = ship_heavy_battery_2
 # 		mid_1_custom_slot = ship_anti_air_cannon_3
 # 		mid_2_custom_slot = ship_heavy_battery_2
-# #		mid_3_custom_slot = ship_heavy_battery_2
+# # 	mid_3_custom_slot = ship_heavy_battery_2
 # 		rear_1_custom_slot = ship_heavy_battery_2
 # 		rear_2_custom_slot = ship_airplane_launcher_1
 # 	}
@@ -586,12 +586,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_3
 # 		fixed_ship_armor_slot = ship_armor_cruiser_1
 # 		front_1_custom_slot = ship_medium_battery_2
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_torpedo_3
 # 		mid_2_custom_slot = empty
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = ship_medium_battery_2
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {
@@ -608,12 +608,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_3
 # 		fixed_ship_armor_slot = ship_armor_cruiser_1
 # 		front_1_custom_slot = ship_medium_battery_2
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_torpedo_3
 # 		mid_2_custom_slot = ship_anti_air_1
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = ship_medium_battery_2
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {
@@ -630,12 +630,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_3
 # 		fixed_ship_armor_slot = ship_armor_cruiser_1
 # 		front_1_custom_slot = ship_medium_battery_2
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_anti_air_2
 # 		mid_2_custom_slot = ship_anti_air_cannon_3
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = ship_medium_battery_2
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {
@@ -652,12 +652,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_3
 # 		fixed_ship_armor_slot = ship_armor_cruiser_2
 # 		front_1_custom_slot = ship_anti_air_cannon_3
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_anti_air_cannon_3
 # 		mid_2_custom_slot = ship_torpedo_3
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = ship_medium_battery_2
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {
@@ -674,12 +674,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_4
 # 		fixed_ship_armor_slot = ship_armor_cruiser_2
 # 		front_1_custom_slot = ship_medium_battery_2
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_anti_air_cannon_3
 # 		mid_2_custom_slot = ship_torpedo_3
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = empty
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {
@@ -696,12 +696,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_4
 # 		fixed_ship_armor_slot = ship_armor_cruiser_2
 # 		front_1_custom_slot = ship_medium_battery_2
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_torpedo_3
 # 		mid_2_custom_slot = ship_torpedo_3
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = ship_medium_battery_2
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {
@@ -718,12 +718,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_4
 # 		fixed_ship_armor_slot = ship_armor_cruiser_2
 # 		front_1_custom_slot = ship_medium_battery_2
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_medium_battery_2
 # 		mid_2_custom_slot = ship_torpedo_3
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = empty
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {
@@ -740,12 +740,12 @@ if = {
 # 		fixed_ship_engine_slot = cruiser_ship_engine_4
 # 		fixed_ship_armor_slot = ship_armor_cruiser_2
 # 		front_1_custom_slot = ship_medium_battery_2
-# #		front_2_custom_slot = ship_medium_battery_2
+# # 	front_2_custom_slot = ship_medium_battery_2
 # 		mid_1_custom_slot = ship_anti_air_cannon_3
 # 		mid_2_custom_slot = ship_torpedo_3
-# #		mid_3_custom_slot = ship_torpedo_3
+# # 	mid_3_custom_slot = ship_torpedo_3
 # 		rear_1_custom_slot = ship_medium_battery_2
-# #		rear_2_custom_slot = ship_medium_battery_2
+# # 	rear_2_custom_slot = ship_medium_battery_2
 # 	}
 # }
 # create_equipment_variant = {

@@ -10,18 +10,18 @@
 # Temp variables
 # Old actions will be stored as temp variables
 # For Winners:
-#	taken_states@TAG: an array where each element contains the state that is taken by country TAG
-#	taken_by@STATE_ID: is set to country that took the state
+# taken_states@TAG: an array where each element contains the state that is taken by country TAG
+# taken_by@STATE_ID: is set to country that took the state
 # For Losers:
 # 	current_states@TAG: Remaining states of loser
 # For each subject action:
-#   subject_states@TAG : an array where each element contains the state that is subjected by country TAG
-#   subject_countries@TAG : an array where each element contains the country that is subjected by country TAG
-#   subjected_by@STATE_ID : a variable for each state that is subjected by a country, value is overlord
-#   subjected_by@TAG : an array for each loser that is subjected, array contains overlord
+#  subject_states@TAG : an array where each element contains the state that is subjected by country TAG
+#  subject_countries@TAG : an array where each element contains the country that is subjected by country TAG
+#  subjected_by@STATE_ID : a variable for each state that is subjected by a country, value is overlord
+#  subjected_by@TAG : an array for each loser that is subjected, array contains overlord
 # For each liberated:
-#   liberate_states@TAG : an array where each element contains the state that is liberated by country TAG
-#   liberate_countries@TAG : an array where each element contains the country that is liberated by country TAG
+#  liberate_states@TAG : an array where each element contains the state that is liberated by country TAG
+#  liberate_countries@TAG : an array where each element contains the country that is liberated by country TAG
 # A trigger named "build_temp_vars" will be called before any evaluation so further temp variables can be calculated
 
 default_peace = {
@@ -69,8 +69,8 @@ default_peace = {
 		}
 
 		#modifier = {
-		#	factor = 0
-		#	is_puppet = yes
+		# factor = 0
+		# is_puppet = yes
 		#}
 	}
 
@@ -100,8 +100,8 @@ default_peace = {
 			NOT = { tag = SOV }
 		}
 		#modifier = {
-		#	factor = 0
-		#	NOT = { is_owner_neighbor_of = FROM }
+		# factor = 0
+		# NOT = { is_owner_neighbor_of = FROM }
 		#}
 	}
 

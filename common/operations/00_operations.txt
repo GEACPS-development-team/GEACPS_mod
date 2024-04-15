@@ -148,8 +148,8 @@ operation_infiltrate_civilian = { ### 1 1/35
 	available = {
 		#NOT = {
 			#has_operation_token = {
-			#	tag = FROM
-			#	token = token_civilian
+			# tag = FROM
+			# token = token_civilian
 			#}
 		#}
 	}
@@ -578,10 +578,10 @@ operation_infiltrate_armed_forces_army = { ### 4 1/55
 
 	available = {
 		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_army
-		#	}
+		# has_operation_token = {
+		# 	tag = FROM
+		# 	token = token_army
+		# }
 		#}
 	}
 	
@@ -732,15 +732,15 @@ operation_infiltrate_armed_forces_navy = { ### 5 1/55
 
 	available = {
 		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_navy
-		#	}
+		# has_operation_token = {
+		# 	tag = FROM
+		# 	token = token_navy
+		# }
 		#}
 		#FROM = {
-		#	any_owned_state = {
-		#		is_coastal = yes
-		#	}
+		# any_owned_state = {
+		# 	is_coastal = yes
+		# }
 		#}
 	}
 
@@ -885,10 +885,10 @@ operation_infiltrate_armed_forces_airforce = { ### 6 1/55
 
 	available = {
 		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_airforce
-		#	}
+		# has_operation_token = {
+		# 	tag = FROM
+		# 	token = token_airforce
+		# }
 		#}
 	}
 
@@ -1444,16 +1444,16 @@ operation_make_resistance_contacts = { ### 9 2/40
 
 	available = {
 		#NOT = {
-		#	has_operation_token = {
-		#		tag = FROM
-		#		token = token_resistance_contacts
-		#	}
+		# has_operation_token = {
+		# 	tag = FROM
+		# 	token = token_resistance_contacts
+		# }
 		#}
 		#
 		#FROM = {
-		#	any_controlled_state = {
-		#		has_resistance = yes
-		#	}
+		# any_controlled_state = {
+		# 	has_resistance = yes
+		# }
 		#}
 	}
 	
