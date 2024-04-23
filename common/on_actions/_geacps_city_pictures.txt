@@ -1,16 +1,11 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			log = "[GetDate]: _ssw_terrains on_startup"
 			282 = {
-				add_province_modifier = {
-					static_modifiers = {	city_tokyo	}
+				add_province_modifier = {	#東京
+					static_modifiers = {\CITY_tokyo	}
 					province = {	id = 1182	}
-				}
-			}
-			629 = {
-				add_province_modifier = {
-					static_modifiers = {	city_honolulu	}
-					province = {	id = 4180	}
 				}
 			}
 		}
