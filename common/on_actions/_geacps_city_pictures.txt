@@ -1,10 +1,10 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			log = "[GetDate]: _ssw_terrains on_startup"
+			log = "[GetDate]: _geacps_city_pictures on_startup"
 			282 = {
 				add_province_modifier = {	#東京
-					static_modifiers = {\CITY_tokyo	}
+					static_modifiers = {	CITY_tokyo	}
 					province = {	id = 1182	}
 				}
 			}
