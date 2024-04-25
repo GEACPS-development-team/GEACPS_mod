@@ -47,8 +47,6 @@ guiTypes = {
 		size = {	width = 813	height = 734	}
 		Orientation = lower_left
 		origo = lower_left
-		fade_time = 25000
-		fade_type = linear
 		
 		background = {
 			name = "Background"
@@ -92,12 +90,13 @@ guiTypes = {
 	### MAIN MENU PANEL (bottom)
 	containerWindowType = {
 		name ="mainmenu_panel_bottom"
-		position = {	x = 0	y = 0	}
+		position = {	x = 0	y = 1000	}
 		size = {	width = 813	height = 734	}
 		Orientation = lower_left
 		origo = lower_left
-		fade_time = 15000
-		fade_type = linear
+		show_position = {	x = 0	y = 0	}
+		show_animation_type = linear
+		animation_time = 1000
 		
 		background = {
 			name = "Background"
@@ -170,7 +169,7 @@ guiTypes = {
 		# 	clicksound = click_default
 		# 	oversound = ui_menu_over
 		# }
-
+		
 		# ButtonType = {
 		# 	name = "credits_button"
 		# 	position = {  x = 16 y = 218 }
