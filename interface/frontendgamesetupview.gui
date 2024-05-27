@@ -86,6 +86,9 @@ guiTypes = {
 			orientation = "CENTER"
 			clicksound = click_checkbox
 		}
+		
+		iconType = {	name = "country_flag"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+		instantTextBoxType = {	name = "country_name"	position = {	x = -2500	y = -2500	}	}
 	}
 	
 	### country entry
@@ -496,7 +499,7 @@ guiTypes = {
 		instantTextBoxType = {	#ポーランド
 			name = "POL"
 			position = {	x = 12	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "POL"
 			maxWidth = 124
 			maxHeight = 20
@@ -505,7 +508,7 @@ guiTypes = {
 		instantTextBoxType = {	#イタリア
 			name = "ITA"
 			position = {	x = 148	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "ITA"
 			maxWidth = 124
 			maxHeight = 20
@@ -514,7 +517,7 @@ guiTypes = {
 		instantTextBoxType = {	#ソビエト
 			name = "SOV"
 			position = {	x = 284	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "SOV"
 			maxWidth = 124
 			maxHeight = 20
@@ -523,7 +526,7 @@ guiTypes = {
 		instantTextBoxType = {	#フランス
 			name = "FRA"
 			position = {	x = 420	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "FRA"
 			maxWidth = 124
 			maxHeight = 20
@@ -532,7 +535,7 @@ guiTypes = {
 		instantTextBoxType = {	#日本
 			name = "JAP"
 			position = {	x = 555	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "JAP"
 			maxWidth = 124
 			maxHeight = 20
@@ -541,7 +544,7 @@ guiTypes = {
 		instantTextBoxType = {	#グレートブリテン
 			name = "GBR"
 			position = {	x = 691	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "GBR"
 			maxWidth = 124
 			maxHeight = 20
@@ -550,7 +553,7 @@ guiTypes = {
 		instantTextBoxType = {	#アメリカ
 			name = "USA"
 			position = {	x = 826	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "USA"
 			maxWidth = 124
 			maxHeight = 20
@@ -559,7 +562,7 @@ guiTypes = {
 		instantTextBoxType = {	#西ドイツ
 			name = "WGR"
 			position = {	x = 962	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "WGR"
 			maxWidth = 124
 			maxHeight = 20
@@ -568,7 +571,7 @@ guiTypes = {
 		instantTextBoxType = {	#その他
 			name = "Other"
 			position = {	x = 1098	y = 260	}
-			font = "hoi_16header"
+			font = "hoi_18"
 			text = "Other Countries"
 			maxWidth = 124
 			maxHeight = 20
@@ -2136,5 +2139,13 @@ guiTypes = {
 			}			
 			
 		}
+	}
+	
+	containerWindowType = {
+		name = "bookmark_entry"
+		position = {	x = -2500	y = -2500	}
+		background = {	name = "background"	}
+		iconType = {	name = "icon"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+		instantTextBoxType = {	name = "date"	position = {	x = -2500	y = -2500	}	}
 	}
 }

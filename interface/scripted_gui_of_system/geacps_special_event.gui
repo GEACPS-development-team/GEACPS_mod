@@ -2,7 +2,7 @@ guiTypes = {#根幹
 	containerWindowType = { 
 		name = "geacps_special_event_window"
 		position = { x = 0 y = 0 }
-		size = { width=840 height=540}
+		size = { width=1012 height=820}
 		Orientation = center
 		Origo = center
 		moveable = yes
@@ -23,7 +23,7 @@ guiTypes = {#根幹
 			iconType = {
 				name ="special_event_picture"#(画像)
 				spriteType = ""
-				position = { x = 328 y = 119 }
+				position = { x = 391 y = 197 }
 				Orientation = UPPER_LEFT
 				alwaystransparent = yes
 			}
@@ -34,44 +34,36 @@ guiTypes = {#根幹
 				Orientation = UPPER_LEFT
 				alwaystransparent = yes
 			}
-			iconType = {
-				name ="special_event_world_map"
-				spriteType = ""
-				position = { x = 18 y = 246 }
-				Orientation = UPPER_LEFT
-				alwaystransparent = yes
-			}
 			instantTextBoxType = {#タイトル(背景と一緒でも良かったけど自由度のために分離)
 				name = "se_title_text" 
-				position = { x = 270 y = -35 }
+				position = { x = 482 y = 134 }
 				font = "hoi_30header" 
-				borderSize = {x = 100 y = 100} 
 				text = "[special_event_title_text]"
 				maxWidth = 400 
-				maxHeight = 50 
+				maxHeight = 60 
 				format = center
 			}
 		}
 		containerWindowType = {#写真内の説明と影
 			name = "se_text_window" 
-			size = { width = 474 height = 329 }
-			position = { x = 328 y = 119 }
+			size = { width = 600 height = 150 }
+			position = { x = 392 y = 455 }
 			Orientation = UPPER_LEFT
 
 			iconType = {
 				name ="se_desc_background"#(背景)
 				spriteType = "GFX_special_event_shadow_1"
-				position = { x = -4 y = 182 }
+				position = { x = 0 y = 0 }
 				Orientation = UPPER_LEFT
 				alwaystransparent = yes
 			}
 			instantTextBoxType = {#説明文(背景と一緒でも良かったけど自由度のために分離)
 				name = "se_desc_text" 
-				position = { x = 0 y = 200 }
+				position = { x = 0 y = 0 }
 				font = "hoi_30header" 
 				borderSize = {x = 0 y = 0} 
 				text = "[special_event_desc_text]"
-				maxWidth = 474 
+				maxWidth = 600 
 				maxHeight = 140 
 				format = center
 			}
@@ -79,7 +71,7 @@ guiTypes = {#根幹
 		containerWindowType = {#時計
 			name = "se_clock_window" 
 			size = { width = 200 height = 200 }
-			position = { x = 70 y = 80 }
+			position = { x = 152 y = 121 }
 			Orientation = UPPER_LEFT
 			iconType = {
 				name ="se_clock_background"#(背景)
@@ -91,32 +83,32 @@ guiTypes = {#根幹
 			iconType = {
 				name ="special_event_clock_hour"#(時針)
 				spriteType = ""
-				position = { x = 0 y = 0 }
+				position = { x = -2 y = -2 }
 				Orientation = UPPER_LEFT
 				alwaystransparent = yes
 			}
 			iconType = {
 				name ="special_event_clock_minutes"#(分針)
 				spriteType = ""
-				position = { x = 0 y = 0 }
+				position = { x = -2 y = -2 }
 				Orientation = UPPER_LEFT
 				alwaystransparent = yes
 			}
 			iconType = {
 				name ="special_event_clock_second"#(秒針)
 				spriteType = "GFX_clock_second"
-				position = { x = 0 y = 0 }
+				position = { x = -2 y = -2 }
 				Orientation = UPPER_LEFT
 				alwaystransparent = yes
 			}
-
 		}
 		buttonType = { #選択ボタン
 			name = "se_exit_button"
-			position = { x = 420 y = 455 }
+			position = { x = 700 y = 607 }
 			quadTextureSprite = "GFX_special_event_button_1"
 			buttonFont = "hoi_30header"
 			text = "[se_exit_button_text]"
+			shortcut = "RETURN"
 		}
 
 	}

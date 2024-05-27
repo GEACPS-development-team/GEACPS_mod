@@ -1,7 +1,6 @@
 #!gfx:interface\frontendmainviewbg.gfx
 #!gfx:interface\generic_guis\geacps_frontedmainview.gfx
 guiTypes = {
-
 	containerWindowType = {
 		name ="frontend_background"
 		position = {	x=0	y = 0	}
@@ -85,6 +84,36 @@ guiTypes = {
 			oversound = ui_menu_over
 			shortcut = "ESCAPE"
 		}
+		
+		ButtonType = {	name = "sp_tutorial_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		iconType = {
+			name = "sp_continue_flag_left"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = {	x = -2500	y = -2500	}
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "sp_continue_flag_left_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = {	x = -2500	y = -2500	}
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "sp_continue_flag_right"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = {	x = -2500	y = -2500	}
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "sp_continue_flag_right_overlay"
+			quadTextureSprite ="GFX_flag_small2_not_masked"
+			position = {	x = -2500	y = -2500	}
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
 	}
 	
 	### MAIN MENU PANEL (bottom)
@@ -120,18 +149,6 @@ guiTypes = {
 			oversound = ui_menu_over
 		}
 		
-		# instantTextBoxType = {
-		# 	name ="version_label"
-		# 	position = { x = 35 y = 396 }
-		# 	textureFile = ""
-		# 	font = "hoi_18b"
-		# 	borderSize = {x = 0 y = 0}
-		# 	text = "ALPHA"	
-		# 	format = centre
-		# 	maxWidth = 250
-		# 	maxHeight = 20	
-		# }
-		
 		ButtonType = {
 			name = "settings_button"
 			position = {	x = 136	y = 359	}
@@ -141,16 +158,6 @@ guiTypes = {
 			shortcut = "ESCAPE"
 		}
 		
-		# buttonType = {
-		# 	name = "career_profile_button"
-		# 	position = { x = 16 y = 138 }
-		# 	quadTextureSprite ="GFX_main_lobby_button"
-		# 	buttonText = "MENU_BAR_CAREER_PROFILE"
-		# 	buttonFont = "hoi_24header"
-		# 	clicksound = click_default
-		# 	oversound = ui_menu_over
-		# }
-		
 		iconType = {
 			name = "career_profile_button_star"
 			position = { x = -37 y = 155 }
@@ -159,26 +166,6 @@ guiTypes = {
 			orientation = upper_right
 			alwaysTransparent = yes
 		}
-		
-		# buttonType = {
-		# 	name = "friends_button"
-		# 	position = { x = 16 y = 178 }
-		# 	quadTextureSprite ="GFX_main_lobby_button"
-		# 	buttonText = "MENU_BAR_FRIENDS"
-		# 	buttonFont = "hoi_24header"
-		# 	clicksound = click_default
-		# 	oversound = ui_menu_over
-		# }
-		
-		# ButtonType = {
-		# 	name = "credits_button"
-		# 	position = {  x = 16 y = 218 }
-		# 	quadTextureSprite ="GFX_main_lobby_button"	
-		# 	buttonText = "FE_CREDITS"
-		# 	buttonFont = "hoi_24header"
-		# 	clicksound = click_default
-		# 	oversound = ui_menu_over
-		# }
 		
 		ButtonType = {
 			name = "nudge_button"
@@ -193,7 +180,87 @@ guiTypes = {
 			quadTextureSprite ="GFX_quit"
 			clicksound = click_default
 			oversound = ui_menu_over
-			
 		}
+		
+		ButtonType = {	name = "career_profile_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "friends_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "credits_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		positionType = {	name = "subscription_size"	position = {	x = -2500	y = -2500	}	}
+		positionType = {	name = "version_label_subscription_position"	position = {	x = -2500	y = -2500	}	}
+		iconType = {	name = "single_player_button_warn"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+		iconType = {	name = "subscription_divider"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+		instantTextBoxType = {	name ="version_label"	position = { x = -2500	y = -2500	}	font = "hoi_18"	}
+		
+		containerWindowType = {
+			name = "subscription_widget"
+			position = {	x = -2500	y = 2500	}
+			ButtonType = {	name = "show_subscription"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		}
+		containerWindowType = {
+			name = "subscription_widget_subscribed"
+			position = {	x = -2500	y = 2500	}
+			ButtonType = {	name = "show_subscription"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		}
+	}
+	
+	containerWindowType = {
+		name ="mainmenu_panel_upperright"
+		position = {	x = -2500	y = 2500	}
+		ButtonType = {	name = "achievements_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		iconType = {	name = "frontend_dev_logo"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+		iconType = {	name = "pdx_int_logo"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+	}
+	containerWindowType = {
+		name = "mainmenu_social_buttons"
+		position = {	x = -2500	y = 2500	}
+		
+		positionType = {	name = "position_without_social_gui"	position = {	x = -2500	y = -2500	}	}
+		positionType = {	name = "subscription_position"	position = {	x = -2500	y = -2500	}	}
+		positionType = {	name = "subscription_position_without_social_gui"	position = {	x = -2500	y = -2500	}	}
+		containerWindowType = {
+			name = "social_view_interface_window"
+			position = {	x = -2500	y = 2500	}
+			ButtonType = {	name = "toggle_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+			iconType = {	name = "button_toggle_socialview_icon"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+			iconType = {	name = "new_message"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+			iconType = {	name = "new_friend"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+			instantTextBoxType = {	name = "friends_online"	position = {	x = -2500	y = -2500	}	font = "hoi_18"	}
+		}
+		ButtonType = {	name = "homepage_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "forum_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "facebook_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "twitter_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "instagram_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "discord_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "youtube_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "privacy_policy_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+	}
+	containerWindowType = {
+		name = "mainmenu_achievement_button"
+		position = {	x = -2500	y = 2500	}
+		ButtonType = {	name = "achievements_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+	}
+	containerWindowType = {
+		name  ="mainmenu_dlc_ownership"
+		position = {	x = -2500	y = 2500	}
+		gridBoxType = {	name = "potential_dlc_list"	position = {	x = -2500	y = -2500	}	}
+		
+	}
+	containerWindowType = {
+		name = "owned_dlc_item"
+		size = {	width = 50	height = 50	}
+		
+		ButtonType = {	name = "dlc_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "owned_tick"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "enabled_tick"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		iconType = {	name = "glowup"	position = {	x = -2500	y = -2500	}	spriteType = "GFX_main_lobby_button"	}
+	}
+	containerWindowType = {
+		name = "unowned_dlc_item"
+		size = {	width = 50	height = 50	}
+		
+		ButtonType = {	name = "dlc_button"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "owned_tick"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
+		ButtonType = {	name = "enabled_tick"	position = {	x = -2500	y = -2500	}	quadTextureSprite ="GFX_main_lobby_button"	}
 	}
 }
