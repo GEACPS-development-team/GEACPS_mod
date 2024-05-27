@@ -1,10 +1,10 @@
 defined_text = {	#メインイデオロギー
 	name = GetIdeologyType
-	text = {	#全体社会主義
+	text = {	#正統社会主義
 		trigger = {	has_government = orthodox_socialism	}
 		localization_key = [GetIdeologyType_orthodox_socialism]
 	}
-	text = {	#急進社会主義
+	text = {	#革新社会主義
 		trigger = {	has_government = progressive_socialism	}
 		localization_key = [GetIdeologyType_progressive_socialism]
 	}
@@ -33,7 +33,7 @@ defined_text = {	#メインイデオロギー
 		localization_key = [GetIdeologyType_national_populism]
 	}
 }
-defined_text = {	#全体社会主義
+defined_text = {	#正統社会主義
 	name = GetIdeologyType_orthodox_socialism
 	text = {	#ブハーリン主義
 		trigger = {	has_country_leader_ideology = bukharinism_ideology	}
@@ -60,7 +60,7 @@ defined_text = {	#全体社会主義
 		localization_key = orthodox_socialism_ideology
 	}
 }
-defined_text = {	#急進社会主義
+defined_text = {	#革新社会主義
 	name = GetIdeologyType_progressive_socialism
 	text = {
 		trigger = {	always = yes	}
