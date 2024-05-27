@@ -19,7 +19,7 @@ focus_tree = {
 
 shared_focus = {
 	id = COL_may_election
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 0
 	x = 3
 	y = 0
@@ -39,7 +39,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_the_leopards
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 3
 	y = 1
@@ -57,7 +57,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_monopoly_exploitation_of_oil
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -88,7 +88,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_promotion_of_heavy_chemical_plants
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -2
 	y = 1
@@ -109,7 +109,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_construction_of_chemical_plants
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -137,7 +137,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_largescale_steel_processing_plant
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -165,7 +165,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_development_of_petroleum_refining_plants
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -193,7 +193,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_establishment_of_the_new_nueva_andaluca
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -210,7 +210,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_recovery_of_old_territories
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -237,8 +237,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus COL_VEN_recovery"
 		country_event = COL.6
-		every_state = {
-			limit = {	check_variable = {	VEN_state_variable = 1	}	}
+		for_each_scope_loop = {
+			array = VEN.pfk_state_array_1
 			add_claim_by = COL
 		}
 	}
@@ -258,8 +258,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus COL_ECU_recovery"
 		country_event = COL.4
-		every_state = {
-			limit = {	check_variable = {	ECU_state_variable = 1	}	}
+		for_each_scope_loop = {
+			array = ECU.pfk_state_array_1
 			add_claim_by = COL
 		}
 	}
@@ -279,8 +279,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus COL_PAN_recovery"
 		country_event = COL.5
-		every_state = {
-			limit = {	check_variable = {	PAN_state_variable = 1	}	}
+		for_each_scope_loop = {
+			array = PAN.pfk_state_array_1
 			add_claim_by = COL
 		}
 	}
@@ -290,7 +290,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_transition_to_a_federal_system
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -312,7 +312,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_revival_of_the_gran_colombia
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -329,7 +329,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_avenge_oneself
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -345,7 +345,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_conservative_party
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -3
 	y = 1
@@ -363,7 +363,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_promotion_of_oil_exploration
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -394,7 +394,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_agricultural_importance
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 2
 	y = 1
@@ -412,7 +412,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_mechanisation_of_agriculture
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -440,7 +440,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_fertilisers_and_farm_shortening
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -463,7 +463,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_silk_processing_plant_construction
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -491,7 +491,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_promotion_of_resource_development
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 0
 	x = -1
 	y = 1
@@ -510,7 +510,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_oil_well_development
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 1
 	y = 1
@@ -531,7 +531,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_opening_of_iron_mines
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -1
 	y = 1
@@ -552,7 +552,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_resource_extraction_experience
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = -1
 	y = 1
@@ -570,7 +570,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_establishment_of_international_trading_companies
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -587,7 +587,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_the_question_of_national_defence
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1
@@ -604,7 +604,7 @@ shared_focus = {
 
 shared_focus = {
 	id = COL_increased_defence_spending
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 6
 	x = 0
 	y = 1

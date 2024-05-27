@@ -1,12 +1,12 @@
 defined_text = {	#メインイデオロギー
 	name = GetIdeologyType
 	text = {	#全体社会主義
-		trigger = {	has_government = total_socialism	}
-		localization_key = [GetIdeologyType_total_socialism]
+		trigger = {	has_government = orthodox_socialism	}
+		localization_key = [GetIdeologyType_orthodox_socialism]
 	}
 	text = {	#急進社会主義
-		trigger = {	has_government = radical_socialism	}
-		localization_key = [GetIdeologyType_radical_socialism]
+		trigger = {	has_government = progressive_socialism	}
+		localization_key = [GetIdeologyType_progressive_socialism]
 	}
 	text = {	#社会民主主義
 		trigger = {	has_government = social_democracy	}
@@ -34,7 +34,7 @@ defined_text = {	#メインイデオロギー
 	}
 }
 defined_text = {	#全体社会主義
-	name = GetIdeologyType_total_socialism
+	name = GetIdeologyType_orthodox_socialism
 	text = {	#ブハーリン主義
 		trigger = {	has_country_leader_ideology = bukharinism_ideology	}
 		localization_key = bukharinism_ideology
@@ -55,11 +55,17 @@ defined_text = {	#全体社会主義
 		trigger = {	has_country_leader_ideology = trotskyism_ideology	}
 		localization_key = trotskyism_ideology
 	}
-	text = {	localization_key = total_socialism_ideology	}
+	text = {
+		trigger = {	always = yes	}
+		localization_key = orthodox_socialism_ideology
+	}
 }
 defined_text = {	#急進社会主義
-	name = GetIdeologyType_radical_socialism
-	text = {	localization_key = radical_socialism_ideology	}
+	name = GetIdeologyType_progressive_socialism
+	text = {
+		trigger = {	always = yes	}
+		localization_key = progressive_socialism_ideology
+	}
 }
 defined_text = {	#社会民主主義
 	name = GetIdeologyType_social_democracy

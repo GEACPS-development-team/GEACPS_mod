@@ -1,70 +1,21 @@
 scripted_gui = {
-
 	geacps_se_window = {
 		window_name = "geacps_special_event_window" 
 		context_type = player_context 
-		visible = { 
-			has_variable = special_event_ID
-		}
-		effects = {
-			se_exit_button_click = {
-				clear_variable = special_event_ID
-			}
-		}
-		   	properties = {
-				special_event_picture = {#写真
-					image = "[se_picture]"
-				}
-				special_event_world_map = {#地図
-					image = "[se_back_map]"
-				}
-				special_event_clock_hour = {#時針
-					image = GFX_clock_hour
-					frame = "[clock_time_hour]"
-				}
-				special_event_clock_minutes = {#分針
-					image = GFX_clock_minutes
-					frame = "[clock_time_minutes]"
-				}
-			}
-		triggers = {	#ボタンを実行できる条件?
-		}
-	}
-	geacps_se_debug_window = {
-		window_name = "geacps_se_debug_window" 
-		context_type = player_context 
-		visible = { 
-			is_ai = no
-		}
-		effects = {
-			event_ID_plus_button_click = {
-				add_to_variable = { special_event_ID = 1 }
-			}
-			event_ID_minus_button_click = {
-				if = {
-					limit = {
-						check_variable = { special_event_ID > 0 }
-					}
-					add_to_variable = { special_event_ID = -1 }
-				}
-			}
-			event_map_plus_button_click = {
-				add_to_variable = { special_event_back_map = 1 }
-			}
-			event_map_plus_button_click = {
-				if = {
-					limit = {
-						check_variable = { special_event_back_map > 0 }
-					}
-					add_to_variable = { special_event_back_map = -1 }
-				}
-			}
-			event_buttom__click = {
-				set_variable = { special_event_ID = 1 }
-			}
-		}
+		visible = { 	has_variable = special_event_ID	}
+		effects = {	se_exit_button_click = {	clear_variable = special_event_ID	}	}
 		properties = {
+			special_event_picture = {#写真
+				image = "[se_picture]"
+			}
+			special_event_clock_hour = {#時針
+				image = GFX_clock_hour
+				frame = "[clock_time_hour]"
+			}
+			special_event_clock_minutes = {#分針
+				image = GFX_clock_minutes
+				frame = "[clock_time_minutes]"
+			}
 		}
 	}
-
 }

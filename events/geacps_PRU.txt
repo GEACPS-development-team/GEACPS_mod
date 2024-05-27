@@ -107,8 +107,8 @@ country_event = {
 		trigger = {	tag = PRU	}
 		ai_chance = {	factor = 100	}
 		annex_country = {	target = BOL	transfer_troops = yes	}
-		every_owned_state = {
-			limit = {	check_variable = {	BOL_state_variable = 1	}	}
+		for_each_scope_loop = {
+			array = BOL.pfk_state_array_1
 			add_core_of = PRU
 		}
 		hidden_effect = {

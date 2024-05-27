@@ -139,40 +139,6 @@ defined_text = {	#画像
 		localization_key = GFX_se_AUS_establishment_of_greater_germany
 	}
 }
-defined_text = {	#地図
-	name = se_back_map
-	text = {
-		trigger = {
-			check_variable = { special_event_back_map = 0 }
-		}
-		localization_key = "GFX_special_event_back_map_generic"
-	}
-	text = {
-		trigger = {
-			check_variable = { special_event_back_map = 1 }
-		}
-		localization_key = "GFX_special_event_back_map_asia"
-	}
-	text = {
-		trigger = {
-			check_variable = { special_event_back_map = 2 }
-		}
-		localization_key = "GFX_special_event_back_map_europe"
-	}
-	text = {
-		trigger = {
-			check_variable = { special_event_back_map = 3 }
-		}
-		localization_key = "GFX_special_event_back_map_north_america"
-	}
-	text = {
-		trigger = {
-			check_variable = { special_event_back_map = 4 }
-		}
-		localization_key = "GFX_special_event_back_map_south_america"
-	}
-
-}
 defined_text = {	#時針
 	name = clock_time_hour
 	text = {

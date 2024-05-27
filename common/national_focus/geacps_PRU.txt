@@ -21,7 +21,7 @@ focus_tree = {
 
 shared_focus = {
 	id = PRU_restoring_the_revolution
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 2
 	y = 0
@@ -37,7 +37,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_referendum_in_BOL
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -54,7 +54,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_enactment_of_the_mining_act
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -71,7 +71,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_promotion_of_electrification
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -88,7 +88,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_enactment_of_the_basic_army_law
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -105,7 +105,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_recovery_of_former_bolivian_territories
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -122,7 +122,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_revenge_of_the_pacific_war
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -139,7 +139,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_construction_of_the_central_military_hospital
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = -2
 	y = 1
@@ -156,7 +156,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_construction_of_the_central_hospital_for_employees_social_security
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -176,7 +176,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_military_purges
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 4
 	y = 0
@@ -192,7 +192,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_establishment_of_the_national_housing_corporation
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -209,7 +209,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_removal_of_export_restrictions
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -226,7 +226,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_construction_of_the_pacocha_dam
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -243,7 +243,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_outlawing_the_peoples_party
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -253,15 +253,15 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus PRU_outlawing_the_peoples_party"
 		add_popularity = {
-			ideology = total_socialism
+			ideology = orthodox_socialism
 			popularity = -1.0
 		}
 		add_popularity = {
-			ideology = radical_socialism
+			ideology = progressive_socialism
 			popularity = -1.0
 		}
-		illegalization_of_total_socialism = yes
-		illegalization_of_radical_socialism = yes
+		illegalization_of_orthodox_socialism = yes
+		illegalization_of_progressive_socialism = yes
 	}
 	relative_position_id = PRU_construction_of_the_pacocha_dam
 	prerequisite = { focus = PRU_construction_of_the_pacocha_dam }
@@ -269,7 +269,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_establishment_of_the_andean_community
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
@@ -287,7 +287,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_improving_local_education
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 2
 	y = 1
@@ -304,7 +304,7 @@ shared_focus = {
 
 shared_focus = {
 	id = PRU_establishment_of_workers_support_centres
-	icon = GFX_generic_suspend_constitution
+	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
