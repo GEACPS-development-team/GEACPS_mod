@@ -8,16 +8,16 @@ set_dictatorship = {	#独裁体制
 	set_popularities = {	national_authoritarianism = 100	}
 }
 
-illegalization_of_total_socialism = {	#全体社会主義政党の非合法化
+illegalization_of_orthodox_socialism = {	#全体社会主義政党の非合法化
 	set_party_name = {
-		ideology = total_socialism
+		ideology = orthodox_socialism
 		name = PARTY_illegal_party
 		long_name = PARTY_illegal_party_long
 	}
 }
-illegalization_of_radical_socialism = {	#急進社会主義政党の非合法化
+illegalization_of_progressive_socialism = {	#急進社会主義政党の非合法化
 	set_party_name = {
-		ideology = radical_socialism
+		ideology = progressive_socialism
 		name = PARTY_illegal_party
 		long_name = PARTY_illegal_party_long
 	}
@@ -65,8 +65,8 @@ illegalization_of_national_populism = {	#国家大衆主義政党の非合法化
 	}
 }
 illegalization_all_party = {
-	illegalization_of_total_socialism = yes
-	illegalization_of_radical_socialism = yes
+	illegalization_of_orthodox_socialism = yes
+	illegalization_of_progressive_socialism = yes
 	illegalization_of_social_democracy = yes
 	illegalization_of_liberal_democracy = yes
 	illegalization_of_conservative_democracy = yes
@@ -76,12 +76,12 @@ illegalization_all_party = {
 }
 set_independent_politicians_in_all = {
 	set_party_name = {
-		ideology = total_socialism
+		ideology = orthodox_socialism
 		name = PARTY_independent_politician
 		long_name = PARTY_independent_politician_long
 	}
 	set_party_name = {
-		ideology = radical_socialism
+		ideology = progressive_socialism
 		name = PARTY_independent_politician
 		long_name = PARTY_independent_politician_long
 	}
@@ -118,12 +118,12 @@ set_independent_politicians_in_all = {
 }
 set_imperial_rule_assistance_political_society = {	#大政翼賛会
 	set_party_name = {
-		ideology = total_socialism
+		ideology = orthodox_socialism
 		name = PARTY_imperial_rule_assistance_political_society
 		long_name = PARTY_imperial_rule_assistance_political_society_long
 	}
 	set_party_name = {
-		ideology = radical_socialism
+		ideology = progressive_socialism
 		name = PARTY_imperial_rule_assistance_political_society
 		long_name = PARTY_imperial_rule_assistance_political_society_long
 	}
@@ -161,12 +161,12 @@ set_imperial_rule_assistance_political_society = {	#大政翼賛会
 
 set_chines_nationalist_party = {	#中国国民党(党国体制)
 	set_party_name = {
-		ideology = total_socialism
+		ideology = orthodox_socialism
 		name = PARTY_chines_nationalist_party
 		long_name = PARTY_chines_nationalist_party_long
 	}
 	set_party_name = {
-		ideology = radical_socialism
+		ideology = progressive_socialism
 		name = PARTY_chines_nationalist_party
 		long_name = PARTY_chines_nationalist_party_long
 	}
