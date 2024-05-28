@@ -28,7 +28,7 @@ ideologies = {
 			"FACTION_NAME_TOTAL_SOCIALISM_5"
 		}
 		
-		color = { 127 0 0 }
+		color = { 191 30 51 }
 		
 		war_impact_on_world_tension = 0.25		#Commie less threatening
 		faction_impact_on_world_tension = 0.25
@@ -87,7 +87,7 @@ ideologies = {
 			"FACTION_NAME_RADICAL_SOCIALISM_5"
 		}
 		
-		color = { 255 0 0 }
+		color = { 222 66 76 }
 		
 		war_impact_on_world_tension = 0.25		#Commie less threatening
 		faction_impact_on_world_tension = 0.25
@@ -152,7 +152,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_DEMOCRACY_6"
 		}
 		
-		color = { 255 0 127 }
+		color = { 211 71 120 }
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -214,7 +214,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_LIBERALISM_6"
 		}
 		
-		color = { 255 255 0 }
+		color = { 255 190 0 }
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -253,6 +253,59 @@ ideologies = {
 		can_collaborate = yes
 		can_be_boosted = yes
 	}
+	neutral_centrism = {	#中道中立主義
+		types = {
+			neutral_centrism_ideology = {	#中道中立主義
+			}
+		}
+		
+		dynamic_faction_names = {
+			"FACTION_NAME_SOCIAL_CONSERVATISM_1"
+			"FACTION_NAME_SOCIAL_CONSERVATISM_2"
+			"FACTION_NAME_SOCIAL_CONSERVATISM_3"
+			"FACTION_NAME_SOCIAL_CONSERVATISM_4"
+			"FACTION_NAME_SOCIAL_CONSERVATISM_5"
+			"FACTION_NAME_SOCIAL_CONSERVATISM_6"
+		}
+		
+		color = { 241 241 241 }
+		
+		rules = {
+			can_create_collaboration_government = yes
+			can_declare_war_on_same_ideology = yes
+			can_force_government = yes
+			can_send_volunteers = yes
+			can_puppet = yes
+			can_lower_tension = yes
+			can_only_justify_war_on_threat_country = no
+			can_guarantee_other_ideologies = yes
+			can_join_factions = no
+		}
+		
+		war_impact_on_world_tension = 0.25		# no major danger, remember this this the 40s!
+		faction_impact_on_world_tension = 0.25
+		
+		modifiers = {
+			mobilization_speed = -0.03
+			generate_wargoal_tension = 0.50
+			join_faction_tension = 0.50
+			lend_lease_tension = 0.10
+			send_volunteers_tension = 0.10
+			guarantee_tension = 0.30
+			civilian_intel_to_others = 20.0
+			army_intel_to_others = 10.0
+			navy_intel_to_others = 10.0
+			airforce_intel_to_others = 5.0
+			compliance_gain = 0.05
+		}
+		
+		faction_modifiers = {
+			faction_trade_opinion_factor = 0.10
+		}
+		can_host_government_in_exile = yes
+		can_collaborate = yes
+		can_be_boosted = yes
+	}
 	conservative_democracy = {	#保守民主主義
 		types = {
 			conservative_democracy_ideology = {	#保守民主主義
@@ -277,7 +330,7 @@ ideologies = {
 			"FACTION_NAME_SOCIAL_CONSERVATISM_6"
 		}
 		
-		color = { 0 0 255 }
+		color = { 0 103 192 }
 		
 		rules = {
 			can_create_collaboration_government = yes
@@ -338,7 +391,7 @@ ideologies = {
 			"FACTION_NAME_AUTHORITATIVE_DEMOCRACY_5"
 		}
 		
-		color = { 127 127 127 }
+		color = { 121 121 121 }
 		
 		
 		war_impact_on_world_tension = 0.25		#no major danger
@@ -403,7 +456,7 @@ ideologies = {
 			"FACTION_NAME_NATIONAL_AUTHORITARIANISM_5"
 		}
 		
-		color = { 63 63 63 }
+		color = { 38 38 38 }
 		
 		war_impact_on_world_tension = 0.25		#no major danger
 		faction_impact_on_world_tension = 0.25
@@ -466,7 +519,7 @@ ideologies = {
 			"FACTION_NAME_NATIONAL_POPULISM_5"
 		}
 		
-		color = { 127 63 0 }
+		color = { 118 57 0 }
 		
 		war_impact_on_world_tension = 0.25			#evil!
 		faction_impact_on_world_tension = 0.25
