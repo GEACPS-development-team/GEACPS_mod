@@ -16,6 +16,10 @@ defined_text = {	#メインイデオロギー
 		trigger = {	has_government = liberal_democracy	}
 		localization_key = [GetIdeologyType_liberal_democracy]
 	}
+	text = {	#中立中道主義
+		trigger = {	has_government = neutral_centrism	}
+		localization_key = [GetIdeologyType_neutral_centrism]
+	}
 	text = {	#保守民主主義
 		trigger = {	has_government = conservative_democracy	}
 		localization_key = [GetIdeologyType_conservative_democracy]
@@ -104,6 +108,22 @@ defined_text = {	#自由民主主義
 		localization_key = social_liberalism_ideology
 	}
 	text = {	localization_key = liberal_democracy_ideology	}
+}
+defined_text = {	#中立中道主義
+	name = GetIdeologyType_neutral_centrism
+	text = {	#無政府状態
+		trigger = {	has_country_leader_ideology = anarchy_ideology	}
+		localization_key = anarchy_ideology
+	}
+	text = {	#挙国一致政府
+		trigger = {	has_country_leader_ideology = national_unity_government_ideology	}
+		localization_key = national_unity_government_ideology
+	}
+	text = {	#無党派主義
+		trigger = {	has_country_leader_ideology = nonpartisanism_ideology	}
+		localization_key = nonpartisanism_ideology
+	}
+	text = {	localization_key = neutral_centrism_ideology	}
 }
 defined_text = {	#保守民主主義
 	name = GetIdeologyType_conservative_democracy
