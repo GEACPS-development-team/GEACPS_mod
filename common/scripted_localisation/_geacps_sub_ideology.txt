@@ -55,39 +55,69 @@ defined_text = {	#正統社会主義
 		trigger = {	has_country_leader_ideology = trotskyism_ideology	}
 		localization_key = trotskyism_ideology
 	}
-	text = {
-		trigger = {	always = yes	}
-		localization_key = orthodox_socialism_ideology
-	}
+	text = {	localization_key = orthodox_socialism_ideology	}
 }
 defined_text = {	#革新社会主義
 	name = GetIdeologyType_progressive_socialism
-	text = {
-		trigger = {	always = yes	}
-		localization_key = progressive_socialism_ideology
+	text = {	#キリスト教社会主義
+		trigger = {	has_country_leader_ideology = christian_socialism_ideology	}
+		localization_key = christian_socialism_ideology
 	}
+	text = {	#ナセル主義
+		trigger = {	has_country_leader_ideology = nasserism_ideology	}
+		localization_key = nasserism_ideology
+	}
+	text = {	#労働組合主義
+		trigger = {	has_country_leader_ideology = syndicalism_ideology	}
+		localization_key = syndicalism_ideology
+	}
+	text = {	localization_key = progressive_socialism_ideology	}
 }
 defined_text = {	#社会民主主義
 	name = GetIdeologyType_social_democracy
+	text = {	#民主社会主義
+		trigger = {	has_country_leader_ideology = democratic_socialism_ideology	}
+		localization_key = democratic_socialism_ideology
+	}
+	text = {	#左派キリスト教民主主義
+		trigger = {	has_country_leader_ideology = left_christian_democracy_ideology	}
+		localization_key = left_christian_democracy_ideology
+	}
+	text = {	#自由社会主義
+		trigger = {	has_country_leader_ideology = liberal_socialism_ideology	}
+		localization_key = liberal_socialism_ideology
+	}
 	text = {	localization_key = social_democracy_ideology	}
 }
 defined_text = {	#自由民主主義
 	name = GetIdeologyType_liberal_democracy
+	text = {	#古典的自由主義
+		trigger = {	has_country_leader_ideology = classical_liberalism_ideology	}
+		localization_key = classical_liberalism_ideology
+	}
 	text = {	#保守自由主義
 		trigger = {	has_country_leader_ideology = conservative_liberalism_ideology	}
 		localization_key = conservative_liberalism_ideology
+	}
+	text = {	#社会自由主義
+		trigger = {	has_country_leader_ideology = social_liberalism_ideology	}
+		localization_key = social_liberalism_ideology
 	}
 	text = {	localization_key = liberal_democracy_ideology	}
 }
 defined_text = {	#保守民主主義
 	name = GetIdeologyType_conservative_democracy
-	text = {	#キリスト教民主主義
-		trigger = {	has_country_leader_ideology = christian_democracy_ideology	}
-		localization_key = christian_democracy_ideology
+	text = {	#農耕主義
+		trigger = {	has_country_leader_ideology = agrarianism_ideology	}
+		localization_key = agrarianism_ideology
 	}
 	text = {	#自由保守主義
 		trigger = {	has_country_leader_ideology = liberal_conservatism_ideology	}
 		localization_key = liberal_conservatism_ideology
+	}
+	text = {	#右派キリスト教民主主義
+		trigger = {	has_country_leader_ideology = right_christian_democracy_ideology	}
+		localization_key = right_christian_democracy_ideology
 	}
 	text = {	localization_key = conservative_democracy_ideology	}
 }
@@ -101,22 +131,38 @@ defined_text = {	#権威民主主義
 		trigger = {	has_country_leader_ideology = kemalism_ideology	}
 		localization_key = kemalism_ideology
 	}
-	text = {	#臨時政府
-		trigger = {	has_country_leader_ideology = provisional_government_ideology	}
-		localization_key = provisional_government_ideology
+	text = {	#臨時的寡頭主義
+		trigger = {	has_country_leader_ideology = provisional_oligarchy_ideology	}
+		localization_key = provisional_oligarchy_ideology
 	}
 	text = {	localization_key = authoritative_democracy_ideology	}
 }
 defined_text = {	#国家権威主義
 	name = GetIdeologyType_national_authoritarianism
-	text = {	#植民地政府
-		trigger = {	has_country_leader_ideology = colonial_government_ideology	}
-		localization_key = colonial_government_ideology
+	text = {	#絶対主義
+		trigger = {	has_country_leader_ideology = absolutism_ideology	}
+		localization_key = absolutism_ideology
+	}
+	text = {	#植民地主義
+		trigger = {	has_country_leader_ideology = colonialism_ideology	}
+		localization_key = colonialism_ideology
+	}
+	text = {	#軍国主義
+		trigger = {	has_country_leader_ideology = militarism_ideology	}
+		localization_key = militarism_ideology
+	}
+	text = {	#軍閥主義
+		trigger = {	has_country_leader_ideology = warlordism_ideology	}
+		localization_key = warlordism_ideology
 	}
 	text = {	localization_key = national_authoritarianism_ideology	}
 }
 defined_text = {	#国家大衆主義
 	name = GetIdeologyType_national_populism
+	text = {	#結束主義
+		trigger = {	has_country_leader_ideology = fascism_ideology	}
+		localization_key = fascism_ideology
+	}
 	text = {	#フランコ主義
 		trigger = {	has_country_leader_ideology = francoism_ideology	}
 		localization_key = francoism_ideology
