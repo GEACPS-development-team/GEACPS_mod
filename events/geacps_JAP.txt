@@ -263,6 +263,72 @@ country_event = {	# 武漢作戦
 	}
 }
 
+country_event = {	# 中華民国臨時政府と中華民国維新政府の統合を要請
+	id = JAPCHI.101
+	title = JAP.101.t
+	desc = JAP.101.d
+	picture = GFX_JAP_january_22_incident_country_event
+	
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	
+	option = {	# 現状維持
+		name = JAP.101.0
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {	# 統一
+		name = JAP.101.1
+		ai_chance = {
+			factor = 99
+		}
+		CH2	 = {
+			country_event = {
+				id = germany.102
+				days = 1
+			}
+		}
+		CH3	 = {
+			country_event = {
+				id = germany.102
+				days = 1
+			}
+		}
+	}
+}
+country_event = {	# 日本からの統合要請
+	id = JAPCHI.102
+	title = JAP.102.t
+	desc = JAP.102.d
+	picture = GFX_JAP_january_22_incident_country_event
+	
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = no
+	
+	option = {	# 拒否
+		name = JAP.102.0
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {	# 受諾
+		name = JAP.102.1
+		ai_chance = {
+			factor = 99
+		}
+		JAP = {
+			country_event = {
+				id = germany.28
+				days = 1
+			}
+		}
+		# annex_country = { target = AUS transfer_troops = yes }
+	}
+}
+
 
 
 add_namespace = JAP_military
