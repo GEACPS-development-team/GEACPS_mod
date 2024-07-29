@@ -1,0 +1,448 @@
+
+guiTypes = {
+
+	containerWindowType = {
+		name = "aqc_ui_window"
+		position = { x = 540 y = 5 }
+		size = { width = 348 height = 362 }
+#		show_position = { x = 550 y = 5 }
+#		hide_position = { x = -545 y = 5 }
+#		show_animation_type = decelerated
+#		hide_animation_type = accelerated
+		animation_time = 300
+		#hide_sound = menu_close_window
+		#show_sound = menu_open_window
+
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_plain_bg"
+		}
+
+		instantTextBoxType = {
+			name ="build_queue"
+			position = { x = 26 y = 10 }
+			maxWidth = 300
+			maxHeight = 62
+			font = "hoi_24header"
+			text = "自動キュー構築"
+			format = centre
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="type_building_text"
+			position = { x = 26 y = 45 }
+			maxWidth = 300
+			maxHeight = 62
+			font = "hoi_18b"
+			text = "aqc_building_type"
+			format = centre
+			maxHeight = 24
+		}
+
+		buttonType = {
+			name = "select_factory"
+			spriteType = "GFX_button_148x34"
+			position = { x = 20 y = 70 } #23
+			buttonText = "select_factory_text"
+			buttonFont = "hoi_18mbs"
+			orientation = left
+			pdx_tooltip = aqc_select_factory_tooltip
+
+		}
+		buttonType = {
+			name = "select_refineries"
+			spriteType = "GFX_button_148x34"
+			position = { x = 180 y = 70 } #173
+			buttonText = "select_refineries_text"
+			buttonFont = "hoi_18mbs"
+			orientation = left
+			pdx_tooltip = aqc_select_refineries_tooltip
+
+		}
+		buttonType = {
+			name = "select_special"
+			spriteType = "GFX_button_148x34"
+			position = { x = 20 y = 112 } #173
+			buttonText = "select_special_text"
+			buttonFont = "hoi_18mbs"
+			orientation = left
+			pdx_tooltip = aqc_select_special_tooltip
+
+		}
+		buttonType = {
+			name = "select_infrastructure"
+			spriteType = "GFX_button_148x34"
+			position = { x = 180 y = 112 } #23
+			buttonText = "select_infrastructure_text"
+			buttonFont = "hoi_18mbs"
+			orientation = left
+			pdx_tooltip = aqc_select_infrastructure_tooltip
+		}
+
+#			position = { x = 103 y = 112 } #    MIDLE 
+
+		buttonType = {
+			name = "close_aqc_ui_button"
+			spriteType = "GFX_closebutton" #221x34
+			position = { x = 310 y = 4 } #173
+			orientation = centre
+			pdx_tooltip = aqc_hide_tooltip
+		}
+
+
+		containerWindowType = {
+			name = "aqc_tiled_1_bg"
+			position = { x= 1 y= 150 }
+			size = {
+				width = 100%% height = 13%
+				min = { width = 100%% height = 13% }
+			}
+
+			clipping = no
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_plain_bg_small"
+			}
+
+			instantTextBoxType = {
+				name ="quantity_text"
+				position = { x = 20 y = 13 }
+				font = "hoi_18mbs"
+				text = "aqc_quantity_construction"
+				format = left
+				maxHeight = 24
+			}
+	
+			iconType = {
+				name = "current_quantity_box"
+				position = { x = 165 y = 10 }
+				spriteType = "GFX_generic_box"
+			}
+
+			instantTextBoxType = {
+				name ="current_quantity_text"
+				position = { x = 117 y = 12 }
+				font = "hoi_18mbs"
+				text = "aqr_current_quantity"
+				format = centre
+				maxHeight = 24
+				pdx_tooltip = aqc_current_quantity_tooltip
+			}
+
+			buttonType = {
+				name = "increase_quantity"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 278 y = 10 }
+				pdx_tooltip = increase_quantity_button
+				orientation = left
+				
+			}
+	
+			buttonType = {
+				name = "decrease_quantity"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 302 y = 10 }
+				pdx_tooltip = decrease_quantity_button
+				orientation = left
+				
+			}
+		}
+
+		containerWindowType = {
+			name = "aqc_tiled_option_bg"
+			position = { x= 0 y= 190 }
+			size = {
+				width = 100%% height = 100%%
+				min = { width = 100%% height = 100%% }
+			}
+
+			clipping = no
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_bg"
+			}
+		}
+
+	}
+
+	containerWindowType = {
+		name = "aqc_queue_factory_option_ui_window"
+		position = { x= 540 y= 190 }
+		size = {
+			width = 100% height = 30%
+			min = { width = 100% height = 30% }
+		}
+
+		containerWindowType = {
+			name = "aqc_queue_factory_option_transparant"
+			position = { x= 0 y= 0 }
+			size = {
+				width = 100% height = 30%
+				min = { width = 100% height = 30% }
+			}
+			buttonType = {
+				name = "queue_industrial_complex"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 19 } #23
+				
+				buttonText = "build_queue_industrial_complex"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_industrial_complex
+			}
+			buttonType = {
+				name = "queue_arms_factory"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 55 } #23
+				buttonText = "build_queue_arms_factory"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_arms_factory
+			}
+			buttonType = {
+				name = "queue_dockyard"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 91 } #23
+				buttonText = "build_queue_dockyard"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_dockyard
+			}
+#			buttonType = {
+#				name = "button4"
+#				spriteType = "GFX_main_lobby_button"
+#				position = { x = 47 y = 127 }
+#				buttonText = "build_4"
+#				buttonFont = "hoi_18mbs"
+#				orientation = left
+#				pdx_tooltip = aqc_button4
+#			}
+
+			iconType = {
+				name = "building_industrial_complex"
+				position = { x = 13 y = 19 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 1
+			}
+			iconType = {
+				name = "building_arms_factory"
+				position = { x = 13 y = 55 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 2
+			}
+			iconType = {
+				name = "building_dockyard"
+				position = { x = 13 y = 91 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 4
+			}
+#			iconType = {
+#				name = "icon4"
+#				position = { x = 13 y = 127 }
+#				spriteType = "GFX_buildings_strip"
+#				scale = 0.79
+#				frame = 0
+#			}
+		}
+	}
+
+	containerWindowType = {
+		name = "aqc_queue_refineries_option_ui_window"
+		position = { x= 540 y= 190 }
+		size = {
+			width = 100% height = 30%
+			min = { width = 100% height = 30% }
+		}
+
+		containerWindowType = {
+			name = "aqc_queue_refineries_option_transparant"
+			position = { x= 0 y= 0 }
+			size = {
+				width = 100% height = 30%
+				min = { width = 100% height = 30% }
+			}
+			buttonType = {
+				name = "queue_fuel_silo"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 19 } #23
+				buttonText = "build_queue_fuel_silo"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_fuel_silo
+			}
+			buttonType = {
+				name = "queue_synthetic_refinery"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 55 } #23
+				buttonText = "build_queue_synthetic_refinery"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_synthetic_refinery
+			}
+
+			iconType = {
+				name = "building_fuel_silo"
+				position = { x = 13 y = 19 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 14
+			}
+			iconType = {
+				name = "building_synthetic_refinery"
+				position = { x = 13 y = 55 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 10
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "aqc_queue_special_option_ui_window"
+		position = { x= 540 y= 190 }
+		size = {
+			width = 100% height = 30%
+			min = { width = 100% height = 30% }
+		}
+
+		containerWindowType = {
+			name = "aqc_queue_special_option_transparant"
+			position = { x= 0 y= 0 }
+			size = {
+				width = 100% height = 30%
+				min = { width = 100% height = 30% }
+			}
+			buttonType = {
+				name = "queue_nuclear_reactor"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 19 } #23
+				buttonText = "build_queue_nuclear_reactor"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_nuclear_reactor 
+			}
+#			buttonType = {
+#				name = "queue_rocket_site"
+#				spriteType = "GFX_main_lobby_button"
+#				position = { x = 47 y = 55 } #23
+#				buttonText = "build_queue_rocket_site"
+#				buttonFont = "hoi_18mbs"
+#				orientation = left
+#				pdx_tooltip = aqc_tt_queue_rocket_site
+#			}
+
+			iconType = {
+				name = "building_nuclear_reactor"
+				position = { x = 13 y = 19 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 13
+			}
+#			iconType = {
+#				name = "building_rocket_site"
+#				position = { x = 13 y = 55 }
+#				spriteType = "GFX_buildings_strip"
+#				scale = 0.79
+#				frame = 12
+#			}
+		}
+	}
+
+	containerWindowType = {
+		name = "aqc_queue_infrastructure_option_ui_window"
+		position = { x= 540 y= 190 }
+		size = {
+			width = 100% height = 30%
+			min = { width = 100% height = 30% }
+		}
+
+		containerWindowType = {
+			name = "aqc_queue_infrastructure_option_transparant"
+			position = { x= 0 y= 0 }
+			size = {
+				width = 100% height = 30%
+				min = { width = 100% height = 30% }
+			}
+			buttonType = {
+				name = "queue_infrastructure"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 55 } #23
+				buttonText = "build_queue_infrastructure"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_infrastructure
+			}
+			buttonType = {
+				name = "queue_infrastructure_resource"
+				spriteType = "GFX_main_lobby_button"
+				position = { x = 47 y = 127 }
+				buttonText = "build_queue_infrastructure_resource"
+				buttonFont = "hoi_18mbs"
+				orientation = left
+				pdx_tooltip = aqc_tt_queue_infrastructure_resource
+			}
+
+			iconType = {
+				name = "building_infrastructure"
+				position = { x = 13 y = 55 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 3
+			}
+			iconType = {
+				name = "building_infrastructure_resource"
+				position = { x = 13 y = 127 }
+				spriteType = "GFX_buildings_strip"
+				scale = 0.79
+				frame = 3
+			}
+
+			instantTextBoxType = {
+				name ="infrastructure_random"
+				position = { x = 26 y = 26 }
+				maxWidth = 300
+				maxHeight = 62
+				font = "hoi_16"
+				text = "infrastructure_random"
+				format = left
+				maxHeight = 24
+			}
+			instantTextBoxType = {
+				name ="prior_infrastructure_resource"
+				position = { x = 26 y = 98 }
+				maxWidth = 300
+				maxHeight = 62
+				font = "hoi_16"
+				text = "prior_infrastructure_resource"
+				format = left
+				maxHeight = 24
+				pdx_tooltip = aqc_tt_prior_infrastructure_resource
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "open_aqc_ui_window"
+		position = { x = 170 y = 7 }
+		size = { width = 300 height = 300 }
+
+		buttonType = {
+			name = "open_aqc_ui_button"
+			spriteType = "GFX_button_148x34" #221x34
+			position = { x = 0 y = 0 } #173
+			size = { width = 140 height = 30 }
+			buttonText = "自動キュー構築"
+			buttonFont = "hoi_16"
+			orientation = centre
+			pdx_tooltip = aqc_show_tooltip
+		}
+	}
+}

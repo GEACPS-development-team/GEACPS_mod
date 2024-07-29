@@ -1,0 +1,367 @@
+# INFRASTRUCTURE
+
+AQC_infrastructure_selected = {
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}	
+		AQC_infrastructure_3x = yes
+	}
+	IF = {
+		limit = {
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 3
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}	
+		AQC_infrastructure_3x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 6
+			}
+		}	
+		AQC_infrastructure_6x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 10
+			}
+		}	
+		AQC_infrastructure_10x = yes
+	}
+}
+
+AQC_infrastructure_3x = {
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+}
+
+AQC_infrastructure_6x = {
+	AQC_infrastructure_3x = yes
+	AQC_infrastructure_3x = yes
+} 
+
+AQC_infrastructure_10x = {
+	AQC_infrastructure_3x = yes
+	AQC_infrastructure_3x = yes
+	AQC_infrastructure_3x = yes
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+} 
+
+# PRORITIZE RESOURCES
+
+AQC_infrastructure_resource_selected = {
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}	
+		AQC_infrastructure_resource_3x = yes
+	}
+	IF = {
+		limit = {
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 3
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}	
+		AQC_infrastructure_resource_3x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 6
+			}
+		}	
+		AQC_infrastructure_resource_6x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 10
+			}
+		}	
+		AQC_infrastructure_resource_10x = yes
+	}
+}
+
+AQC_infrastructure_resource_3x = {
+
+	random_owned_controlled_state = {
+		limit = {
+			OR = {
+				oil > 1
+				aluminium > 1
+				rubber > 1
+				tungsten > 1
+				steel > 1
+				chromium > 1
+			}
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}	
+	random_owned_controlled_state = {
+		limit = {
+			OR = {
+				oil > 1
+				aluminium > 1
+				rubber > 1
+				tungsten > 1
+				steel > 1
+				chromium > 1
+			}
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}	
+	random_owned_controlled_state = {
+		limit = {
+			OR = {
+				oil > 1
+				aluminium > 1
+				rubber > 1
+				tungsten > 1
+				steel > 1
+				chromium > 1
+			}
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}	
+}
+
+AQC_infrastructure_resource_6x = {
+	AQC_infrastructure_resource_3x = yes
+	AQC_infrastructure_resource_3x = yes
+} 
+
+AQC_infrastructure_resource_10x = {
+	AQC_infrastructure_resource_3x = yes
+	AQC_infrastructure_resource_3x = yes
+	AQC_infrastructure_resource_3x = yes
+	random_owned_controlled_state = {
+		limit = {
+			OR = {
+				oil > 1
+				aluminium > 1
+				rubber > 1
+				tungsten > 1
+				steel > 1
+				chromium > 1
+			}
+			free_building_slots = {
+				building = infrastructure
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = infrastructure
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}	
+} 

@@ -1,0 +1,922 @@
+
+
+AQC_increase_quantity = {
+
+# FACTORY
+
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = {
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+				has_country_flag = { 
+					flag = selected_infrastructure_construction
+				}
+
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+				has_country_flag = { 
+					flag = selected_infrastructure_construction
+				}
+
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 5
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+				has_country_flag = { 
+					flag = selected_infrastructure_construction
+				}
+
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 10
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 25
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+				has_country_flag = { 
+					flag = selected_infrastructure_construction
+				}
+
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 25
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 5
+		}
+	}
+
+# REFINERIES
+
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}
+		set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 6
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 3
+			}
+		}
+		set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 6
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 6
+			}
+		}
+		set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 10
+				}
+			}
+			set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 3
+		}
+	}
+
+# SPECIAL
+
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+		}
+		set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 4
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag =  current_special_quantity_construction
+				value = 2
+			}
+		}
+		set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 4
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag =  current_special_quantity_construction
+				value = 4
+			}
+		}
+		set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 6
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag =  current_special_quantity_construction
+				value = 6
+				}
+			}
+			set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 2
+		}
+	}
+
+# INFRASTRUCTURE
+
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}
+		set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 6
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 3
+			}
+		}
+		set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 6
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 6
+			}
+		}
+		set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 10
+				}
+			}
+			set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 3
+		}
+	}
+}
+
+AQC_decrease_quantity = {
+
+# FACTORY
+
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = {
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+				has_country_flag = { 
+					flag = selected_infrastructure_construction
+				}
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 25
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+				has_country_flag = { 
+					flag = selected_infrastructure_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 5
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 25
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+				has_country_flag = { 
+					flag = selected_infrastructure_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 10
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 5
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+				has_country_flag = { 
+					flag = selected_special_construction
+				}
+
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 25
+			}
+		}
+		set_country_flag = { 
+			flag =  current_factory_quantity_construction
+			value = 10
+		}
+	}
+
+# REFINERIES
+
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}
+		set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 3
+			}
+		}
+		set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 6
+			}
+		}
+		set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 3
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 10
+				}
+			}
+			set_country_flag = { 
+			flag =  current_refineries_quantity_construction
+			value = 6
+		}
+	}
+
+# SPECIAL
+
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+		}
+		set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 6
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag =  current_special_quantity_construction
+				value = 6
+			}
+		}
+		set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 4
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag =  current_special_quantity_construction
+				value = 4
+			}
+		}
+		set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 2
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag =  current_special_quantity_construction
+				value = 2
+				}
+			}
+			set_country_flag = { 
+			flag =  current_special_quantity_construction
+			value = 6
+		}
+	}
+
+# INFRASTRUCTURE
+
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}
+		set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 3
+			}
+		}
+		set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 10
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 6
+			}
+		}
+		set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 3
+		}
+	}
+	ELSE_IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 10
+				}
+			}
+			set_country_flag = { 
+			flag =  current_infrastructure_quantity_construction
+			value = 6
+		}
+	}
+}
+

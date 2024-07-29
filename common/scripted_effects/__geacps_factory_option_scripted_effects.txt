@@ -1,0 +1,551 @@
+
+# INDUSTRIAL COMPLEX
+
+AQC_industrial_complex_selected = {
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		AQC_industrial_complex_5x = yes
+	}
+	IF = {
+		limit = {
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 5
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		AQC_industrial_complex_5x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 10
+			}
+		}	
+		AQC_industrial_complex_10x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 25
+			}
+		}	
+		AQC_industrial_complex_25x = yes
+	}
+
+}
+
+AQC_industrial_complex_5x = {
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = industrial_complex
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = industrial_complex
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+}
+
+AQC_industrial_complex_10x = {
+	AQC_industrial_complex_5x = yes
+	AQC_industrial_complex_5x = yes
+} 
+
+AQC_industrial_complex_25x = {
+	AQC_industrial_complex_5x = yes
+	AQC_industrial_complex_5x = yes
+	AQC_industrial_complex_5x = yes
+	AQC_industrial_complex_5x = yes
+	AQC_industrial_complex_5x = yes
+} 
+
+
+# ARMS FACTORY
+
+AQC_arms_factory_selected = {
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		AQC_arms_factory_5x = yes
+	}
+	IF = {
+		limit = {
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 5
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		AQC_arms_factory_5x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 10
+			}
+		}	
+		AQC_arms_factory_10x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 25
+			}
+		}	
+		AQC_arms_factory_25x = yes
+	}
+}
+
+AQC_arms_factory_5x = {
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = arms_factory
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = arms_factory
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+}
+
+AQC_arms_factory_10x = {
+	AQC_arms_factory_5x = yes
+	AQC_arms_factory_5x = yes
+} 
+
+AQC_arms_factory_25x = {
+	AQC_arms_factory_5x = yes
+	AQC_arms_factory_5x = yes
+	AQC_arms_factory_5x = yes
+	AQC_arms_factory_5x = yes
+	AQC_arms_factory_5x = yes
+} 
+
+# DOCKYARD
+
+AQC_dockyard_selected = {
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		AQC_dockyard_5x = yes
+	}
+	IF = {
+		limit = {
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 5
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		AQC_dockyard_5x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 10
+			}
+		}	
+		AQC_dockyard_10x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 25
+			}
+		}	
+		AQC_dockyard_25x = yes
+	}
+
+}
+
+AQC_dockyard_5x = {
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = dockyard
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = dockyard
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = dockyard
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = dockyard
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = dockyard
+				size > 0
+					include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = dockyard
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+}
+
+AQC_dockyard_10x = {
+	AQC_dockyard_5x = yes
+	AQC_dockyard_5x = yes
+} 
+
+AQC_dockyard_25x = {
+	AQC_dockyard_5x = yes
+	AQC_dockyard_5x = yes
+	AQC_dockyard_5x = yes
+	AQC_dockyard_5x = yes
+	AQC_dockyard_5x = yes
+} 
+

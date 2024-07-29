@@ -1,0 +1,396 @@
+define_text = {
+	name = GetCurrentNumberFactory
+
+############################# FACTORY ####################################
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		localization_key = current_number_factory_5
+	}
+	text = {
+		trigger = {
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 5
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+		}	
+		localization_key = current_number_factory_5
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 25
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 10
+			}
+		}	
+		localization_key = current_number_factory_10
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 5
+				}
+				has_country_flag = { 
+					flag =  current_factory_quantity_construction
+					value = 10
+				}
+				has_country_flag = { 
+					flag = selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag =  current_factory_quantity_construction
+				value = 25
+			}
+		}	
+		localization_key = current_number_factory_25
+	}
+}
+
+############################# REFINERIES ####################################
+
+define_text = {
+	name = GetCurrentNumberRefineries
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}	
+		localization_key = current_number_refineries_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 3
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}	
+		localization_key = current_number_refineries_3
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 6
+			}
+		}	
+		localization_key = current_number_refineries_6
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 10
+			}
+		}	
+		localization_key = current_number_refineries_10
+	}
+}
+
+############################# SPECIAL ####################################
+
+define_text = {
+	name = GetCurrentNumberSpecial
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+		}	
+		localization_key = current_number_special_2
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag = current_special_quantity_construction
+				value = 2
+			}
+		}	
+		localization_key = current_number_special_2
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag = current_special_quantity_construction
+				value = 4
+			}
+		}	
+		localization_key = current_number_special_4
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 2
+				}
+				has_country_flag = { 
+					flag =  current_special_quantity_construction
+					value = 4
+				}
+				has_country_flag = { 
+					flag =  selected_refineries_construction
+				}
+			}
+			has_country_flag = { 
+				flag = selected_special_construction
+			}
+			has_country_flag = { 
+				flag = current_special_quantity_construction
+				value = 6
+			}
+		}	
+		localization_key = current_number_special_6
+	}
+}
+
+############################# INFRASTRUCTURE ####################################
+
+define_text = {
+	name = GetCurrentNumberInfrastructure
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}	
+		localization_key = current_number_infrastructure_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 3
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+		}	
+		localization_key = current_number_infrastructure_3
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 10
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 6
+			}
+		}	
+		localization_key = current_number_infrastructure_6
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_infrastructure_quantity_construction
+					value = 6
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_infrastructure_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_infrastructure_quantity_construction
+				value = 10
+			}
+		}	
+		localization_key = current_number_infrastructure_10
+	}
+}
+

@@ -1,0 +1,113 @@
+﻿l_english:
+ show_build_queue:0 "Show Auto-Queue Construction"
+ show_build_queue_desc:0 "This decision allows you to automaticlly queue construction of multiple selected buildings in various provinces. §YClick the button bellow to§! §Gshow§! §Ythe decision.§!"
+
+ aqc_show_tooltip:0 "§GOpen§! Auto-Queue Construction window"
+ aqc_hide_tooltip:0 "§RClose§! Auto-Queue Construction window"
+
+ build_queue:0 "Auto-Queue"
+ build_queue_desc:0 "This decision allows you to automaticlly queue construction of multiple selected buildings or infrastructures in various provinces."
+
+ auto_queue_5:0 "§G5x§! | §R10x§! | §R25x§! Toggle auto-queue amount to §Y10x§! states"
+ auto_queue_10:0 "§R5x§! | §G10x§! | §R25x§! Toggle auto-queue amount to §Y25x§! states"
+ auto_queue_25:0 "§R5x§! | §R10x§! | §G25x§! Toggle auto-queue amount to §Y5x§! states"
+
+ aqc_building_type:0 "Select §YBuilding Categories§!"
+ aqc_quantity_construction:0 "Auto-queue amount:"
+
+ aqr_current_quantity:0 "[GetCurrentQuantity]"
+
+ aqc_factory_current_quantity_5:0 "§G5x§! | §R10x§! | §R25x§!"
+ aqc_factory_current_quantity_10:0 "§R5x§! | §G10x§! | §R25x§!"
+ aqc_factory_current_quantity_25:0 "§R5x§! | §R10x§! | §G25x§!"
+
+ aqc_refineries_current_quantity_3:0 "§G3x§! | §R6x§! | §R10x§!"
+ aqc_refineries_current_quantity_6:0 "§R3x§! | §G6x§! | §R10x§!"
+ aqc_refineries_current_quantity_10:0 "§R3x§! | §R6x§! | §G10x§!"
+
+ aqc_special_current_quantity_2:0 "§G2x§! | §R4x§! | §R6x§!"
+ aqc_special_current_quantity_4:0 "§R2x§! | §G4x§! | §R6x§!"
+ aqc_special_current_quantity_6:0 "§R2x§! | §R4x§! | §G6x§!"
+
+ aqc_infrastructure_current_quantity_3:0 "§G3x§! | §R6x§! | §R10x§!"
+ aqc_infrastructure_current_quantity_6:0 "§R3x§! | §G6x§! | §R10x§!"
+ aqc_infrastructure_current_quantity_10:0 "§R3x§! | §R6x§! | §G10x§!"
+
+ aqc_current_quantity_tooltip:0 "§GGreen§! are current amount of how many building to construct"
+
+ increase_quantity_button:0 "§GIncrease§! current quantity"
+ decrease_quantity_button:0 "§RDecrease§! current quantity"
+ 
+ hide_aqc_decision_text:0 "§RHide§! Decisions"
+ unhide_aqc_decision_text:0 "§GOpen§! Auto-Queue"
+
+ select_factory_text:0 "[GetSelectFactory]"
+ selected_factory_text:0 "§YFactory & Dockyard§!"
+ deselect_factory_text:0 "Factory & Dockyard"
+
+ select_refineries_text:0 "[GetSelectRefineries]"
+ selected_refineries_text:0 "§YSilo & Refineries§!"
+ deselect_refineries_text:0 "Silo & Refineries"
+
+ select_special_text:0 "[GetSelectSpecial]"
+ selected_special_text:0 "§YSpecial Building§!"
+ deselect_special_text:0 "Special Building"
+
+ select_infrastructure_text:0 "[GetSelectInfrastructure]"
+ selected_infrastructure_text:0 "§YInfrastructure§!"
+ deselect_infrastructure_text:0 "Infrastructure"
+
+ aqc_select_factory_tooltip:0 "§YAuto-Queue§! option for §OCivilian Factory§!, §GMilitary Factory§!, and §3Naval Dockyard§!"
+ aqc_select_refineries_tooltip:0 "§YAuto-Queue§! option for §8Fuel Silo§!, and §gSynthetic Refinery§!"
+ aqc_select_special_tooltip:0 "§YAuto-Queue§! option for §9Nuclear Reactor§!"
+ aqc_select_infrastructure_tooltip:0 "§YAuto-Queue§! option for §OInfrastructure§!"
+
+
+ aqc_tt_queue_industrial_complex:0 "Start §YCivilian Factory§! constuction"
+ aqc_tt_queue_arms_factory:0 "Start §YMilitary Factory§! constuction"
+ aqc_tt_queue_dockyard:0 "Start §YNaval Dockyard§! constuction"
+
+ build_queue_industrial_complex:0 "Auto-Queue [GetCurrentNumberFactory] §OCivilian Factory§!"
+ build_queue_arms_factory:0 "Auto-Queue [GetCurrentNumberFactory] §GMilitary Factory§!"
+ build_queue_dockyard:0 "Auto-Queue [GetCurrentNumberFactory] §3Naval Dockyard§!"
+
+ aqc_tt_queue_fuel_silo:0 "Start §YFuel Silo§! constuction"
+ aqc_tt_queue_synthetic_refinery:0 "Start §YSynthetic Refinery§! constuction"
+
+ build_queue_fuel_silo:0 "Auto-Queue [GetCurrentNumberRefineries] §8Fuel Silo§!"
+ build_queue_synthetic_refinery:0 "Auto-Queue [GetCurrentNumberRefineries] §gSynthetic Refinery§!"
+
+ aqc_tt_queue_nuclear_reactor:0 "Start §YNuclear Reactor§! constuction"
+
+ build_queue_nuclear_reactor:0 "Auto-Queue [GetCurrentNumberSpecial] §9Nuclear Reactor§!"
+
+ aqc_tt_queue_infrastructure:0 "Start §YInfrastructure§! constuction"
+ aqc_tt_queue_infrastructure_resource:0 "Start §YInfrastructure§! constuction. But, prioritizing state with a resources in it."
+
+ build_queue_infrastructure:0 "Auto-Queue [GetCurrentNumberInfrastructure] §OInfrastructure§!"
+ build_queue_infrastructure_resource:0 "Auto-Queue [GetCurrentNumberInfrastructure] §OInfrastructure§!"
+
+ current_number_factory:0 "[GetCurrentNumberFactory]"
+ current_number_factory_5:0 "§Y5x§!"
+ current_number_factory_10:0 "§Y10x§!"
+ current_number_factory_25:0 "§Y25x§!"
+
+ current_number_refineries:0 "[GetCurrentNumberRefineries]"
+ current_number_refineries_3:0 "§Y3x§!"
+ current_number_refineries_6:0 "§Y6x§!"
+ current_number_refineries_10:0 "§Y10x§!"
+
+ current_number_special:0 "[GetCurrentNumberSpecial]"
+ current_number_special_2:0 "§Y2x§!"
+ current_number_special_4:0 "§Y4x§!"
+ current_number_special_6:0 "§Y6x§!"
+
+ current_number_infrastructure:0 "[GetCurrentNumberInfrastructure]"
+ current_number_infrastructure_3:0 "§Y3x§!"
+ current_number_infrastructure_6:0 "§Y6x§!"
+ current_number_infrastructure_10:0 "§Y10x§!"
+
+ infrastructure_random:0 "Random State"
+ prior_infrastructure_resource:0 "Prioritize State with Resources"
+
+

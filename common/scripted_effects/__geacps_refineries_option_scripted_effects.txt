@@ -1,0 +1,336 @@
+
+# FUEL SILO
+
+AQC_fuel_silo_selected = {
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}	
+		AQC_fuel_silo_3x = yes
+	}
+	IF = {
+		limit = {
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 3
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}	
+		AQC_fuel_silo_3x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 6
+			}
+		}	
+		AQC_fuel_silo_6x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 10
+			}
+		}	
+		AQC_fuel_silo_10x = yes
+	}
+}
+
+AQC_fuel_silo_3x = {
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = fuel_silo
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = fuel_silo
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = fuel_silo
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = fuel_silo
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = fuel_silo
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = fuel_silo
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+}
+
+AQC_fuel_silo_6x = {
+	AQC_fuel_silo_3x = yes
+	AQC_fuel_silo_3x = yes
+} 
+
+AQC_fuel_silo_10x = {
+	AQC_fuel_silo_3x = yes
+	AQC_fuel_silo_3x = yes
+	AQC_fuel_silo_3x = yes
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = fuel_silo
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = fuel_silo
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+} 
+
+# SYNTHETIC REFINERY
+
+AQC_synthetic_refinery_selected = {
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}	
+		AQC_synthetic_refinery_3x = yes
+	}
+	IF = {
+		limit = {
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 3
+			}
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+		}	
+		AQC_synthetic_refinery_3x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 10
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 6
+			}
+		}	
+		AQC_synthetic_refinery_6x = yes
+	}
+	IF = {
+		limit = {
+			NOT = {
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 3
+				}
+				has_country_flag = { 
+					flag =  current_refineries_quantity_construction
+					value = 6
+				}
+			}
+
+			has_country_flag = { 
+				flag = selected_refineries_construction
+			}
+
+			has_country_flag = { 
+				flag =  current_refineries_quantity_construction
+				value = 10
+			}
+		}	
+		AQC_synthetic_refinery_10x = yes
+	}
+}
+
+AQC_synthetic_refinery_3x = {
+
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = synthetic_refinery
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = synthetic_refinery
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = synthetic_refinery
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = synthetic_refinery
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = synthetic_refinery
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = synthetic_refinery
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+}
+
+AQC_synthetic_refinery_6x = {
+	AQC_synthetic_refinery_3x = yes
+	AQC_synthetic_refinery_3x = yes
+} 
+
+AQC_synthetic_refinery_10x = {
+	AQC_synthetic_refinery_3x = yes
+	AQC_synthetic_refinery_3x = yes
+	AQC_synthetic_refinery_3x = yes
+	random_owned_controlled_state = {
+		limit = {
+			free_building_slots = {
+				building = synthetic_refinery
+				size > 0
+				include_locked = no
+			}
+		}
+		add_building_construction = {
+			type = synthetic_refinery
+			level = 1
+			instant_build = no #ADDS TO QUEUE
+		}
+	}
+} 

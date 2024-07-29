@@ -1,0 +1,527 @@
+scripted_gui = {
+	aqc_ui = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "aqc_ui_window"
+		visible = {
+			IF = {
+				limit = {
+				check_variable = { show_aqc = 1 }
+				}
+			always = yes
+			}
+			ELSE = {
+				always = no
+			}
+		}
+		properties = {
+		}
+		effects = {
+
+			close_aqc_ui_button_click = {
+				ROOT = {
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_aqc }
+					set_variable = { show_aqc = show }
+				}
+			}
+
+			increase_quantity_click = {
+
+				AQC_increase_quantity = yes
+
+			}
+
+			decrease_quantity_click = {
+
+				AQC_decrease_quantity = yes
+			}
+
+			hide_aqc_decision_click = {
+				IF = {
+					limit = {
+						NOT = { 
+							has_country_flag = hide_build_queue_decisions 
+						} 
+					}
+					set_country_flag = hide_build_queue_decisions
+				}
+			
+			}
+
+			select_factory_click = {
+				IF = {
+					limit = {
+						has_country_flag = selected_refineries_construction
+					}
+					clr_country_flag = selected_refineries_construction
+				}
+			
+				IF = {
+					limit = {
+						has_country_flag = selected_special_construction
+					}
+					clr_country_flag = selected_special_construction
+				}
+
+				IF = {
+					limit = {
+						has_country_flag = selected_infrastructure_construction
+					}
+					clr_country_flag = selected_infrastructure_construction
+				}
+			}
+			select_refineries_click = {
+				IF = {
+					limit = {
+						NOT = {
+							has_country_flag = selected_refineries_construction
+						}
+					}
+					set_country_flag = selected_refineries_construction
+				}
+
+				IF = {
+					limit = {
+						has_country_flag = selected_special_construction
+					}
+					clr_country_flag = selected_special_construction
+				}
+
+				IF = {
+					limit = {
+						has_country_flag = selected_infrastructure_construction
+					}
+					clr_country_flag = selected_infrastructure_construction
+				}
+			}
+			select_special_click = {
+				IF = {
+					limit = {
+						NOT = {
+							has_country_flag = selected_special_construction
+						}
+					}
+					set_country_flag = selected_special_construction
+				}
+
+				IF = {
+					limit = {
+						has_country_flag = selected_refineries_construction
+					}
+					clr_country_flag = selected_refineries_construction
+				}
+
+				IF = {
+					limit = {
+						has_country_flag = selected_infrastructure_construction
+					}
+					clr_country_flag = selected_infrastructure_construction
+				}
+			}
+			select_infrastructure_click = {
+				IF = {
+					limit = {
+						NOT = {
+							has_country_flag = selected_infrastructure_construction
+						}
+					}
+					set_country_flag = selected_infrastructure_construction
+				}
+
+				IF = {
+					limit = {
+						has_country_flag = selected_refineries_construction
+					}
+					clr_country_flag = selected_refineries_construction
+				}
+
+				IF = {
+					limit = {
+						has_country_flag = selected_special_construction
+					}
+					clr_country_flag = selected_special_construction
+				}
+			}
+		}
+	}
+
+	open_aqc_ui = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "open_aqc_ui_window"
+		properties = {
+		}
+		effects = {
+			open_aqc_ui_button_click = {
+				ROOT = {
+					set_temp_variable = { show = 1 }
+					subtract_from_temp_variable = { show = show_aqc }
+					set_variable = { show_aqc = show }
+				}
+			}
+		}
+	}
+
+	aqc_queue_factory_option_ui = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "aqc_queue_factory_option_ui_window"
+		visible = {
+			IF = {
+				limit = { 
+					
+					OR = {
+						has_country_flag = selected_refineries_construction
+						has_country_flag = selected_special_construction
+						has_country_flag = selected_infrastructure_construction
+						check_variable = { show_aqc = 0 }
+					}
+				}
+			always = no
+			}
+			ELSE = {
+				always = yes
+			}
+		}
+		effects = {
+			queue_industrial_complex_click = {
+				AQC_industrial_complex_selected = yes
+			}
+			queue_arms_factory_click = {
+				AQC_arms_factory_selected = yes
+			}
+			queue_dockyard_click = {
+				AQC_dockyard_selected = yes
+			}
+		}
+		triggers = {
+			queue_industrial_complex_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+			queue_arms_factory_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+			queue_dockyard_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+			building_industrial_complex_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+			building_arms_factory_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+			building_dockyard_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+		}
+	}
+
+	aqc_queue_refineries_option_ui = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "aqc_queue_refineries_option_ui_window"
+		visible = {
+			IF = {
+				limit = { 
+					
+					OR = {
+						has_country_flag = selected_special_construction
+						has_country_flag = selected_infrastructure_construction
+						NOT = {has_country_flag = selected_refineries_construction }
+						check_variable = { show_aqc = 0 }
+					}
+				}
+			always = no
+			}
+			ELSE = {
+				always = yes
+			}
+		}
+		effects = {
+			queue_fuel_silo_click = {
+				AQC_fuel_silo_selected = yes
+			}
+			queue_synthetic_refinery_click = {
+				AQC_synthetic_refinery_selected = yes
+			}
+		}
+		triggers = {
+			queue_fuel_silo_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = fuel_silo
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				has_tech = fuel_silos
+			}
+			queue_synthetic_refinery_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				has_tech = synth_oil_experiments 
+			}
+
+			building_fuel_silo_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = fuel_silo
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				has_tech = fuel_silos
+			}
+			building_synthetic_refinery_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = synthetic_refinery
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				has_tech = synth_oil_experiments 
+			}
+		}
+	}
+
+	aqc_queue_special_option_ui = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "aqc_queue_special_option_ui_window"
+		visible = {
+			IF = {
+				limit = { 
+					
+					OR = {
+						NOT = { has_country_flag = selected_special_construction }
+						has_country_flag = selected_refineries_construction
+						has_country_flag = selected_infrastructure_construction
+						check_variable = { show_aqc = 0 }
+					}
+				}
+			always = no
+			}
+			ELSE = {
+				always = yes
+			}
+		}
+		effects = {
+			queue_nuclear_reactor_click = {
+				AQC_nuclear_reactor_selected = yes
+			}
+#			queue_rocket_site_click = {
+#				AQC_rocket_site_selected = yes
+#			}
+		}
+		triggers = {
+			queue_nuclear_reactor_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = fuel_silo
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				has_tech = nuclear_reactor
+			}
+#			queue_rocket_site_click_enabled = {
+#				any_owned_state = {
+#					AND = {
+#						free_building_slots = {
+#							building = fuel_silo
+#							size > 0
+#							include_locked = no
+#						}
+#					}
+#				}
+#				has_tech = experimental_rockets
+#			}
+
+			building_nuclear_reactor_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = nuclear_reactor
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				has_tech = nuclear_reactor
+			}
+#			building_rocket_site_click_enabled = {
+#				any_owned_state = {
+#					AND = {
+#						free_building_slots = {
+#							building = rocket_site
+#							size > 0
+#							include_locked = no
+#						}
+#					}
+#				}
+#				has_tech = experimental_rockets
+#			}
+		}
+	}
+
+	aqc_queue_infrastructure_option_ui = {
+		context_type = player_context
+		parent_window_token = construction_tab
+		window_name = "aqc_queue_infrastructure_option_ui_window"
+		visible = {
+			IF = {
+				limit = { 
+					
+					OR = {
+						NOT = {	has_country_flag = selected_infrastructure_construction }
+						has_country_flag = selected_refineries_construction
+						has_country_flag = selected_special_construction 
+						check_variable = { show_aqc = 0 }
+					}
+				}
+			always = no
+			}
+			ELSE = {
+				always = yes
+			}
+		}
+		effects = {
+			queue_infrastructure_click = {
+				AQC_infrastructure_selected = yes
+			}
+			queue_infrastructure_resource_click = {
+				AQC_infrastructure_resource_selected = yes
+			}
+		}
+		triggers = {
+			queue_infrastructure_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+			queue_infrastructure_resource_click_enabled = {
+				any_owned_state = {
+					AND = {
+						OR = {
+							oil > 1
+							aluminium > 1
+							rubber > 1
+							tungsten > 1
+							steel > 1
+							chromium > 1
+						}
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+
+			building_infrastructure_click_enabled = {
+				any_owned_state = {
+					AND = {
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+			building_infrastructure_resource_click_enabled = {
+				any_owned_state = {
+					AND = {
+						OR = {
+							oil > 1
+							aluminium > 1
+							rubber > 1
+							tungsten > 1
+							steel > 1
+							chromium > 1
+						}
+						free_building_slots = {
+							building = infrastructure
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+			}
+		}
+
+	}
+
+}
