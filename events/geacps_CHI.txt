@@ -1,0 +1,125 @@
+add_namespace = CHI
+add_namespace = CHIandJAP
+country_event = {
+	# 何柱国工作
+	id = CHIandJAP.0
+	title = CHIandJAP.0.t
+	desc = CHIandJAP.0.d
+	# picture =
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 直ちに和平交渉に応じ、全民族が一致団結し、この危急の時を乗り越えん。
+		name = CHIandJAP.0.0
+		ai_chance = {
+			factor = 99
+		}
+		country_event = {
+			id = JAPandCHI.1
+			hours = 24
+		}
+	}
+	option = {
+		# 和平交渉を固く拒否し、国家の存続を賭けて最後の一滴まで守り抜かん。
+		name = CHIandJAP.0.1
+		ai_chance = {
+			factor = 1
+		}
+		country_event = {
+			id = JAPandCHI.2
+			hours = 24
+		}
+	}
+}
+
+country_event = {
+	# 汪・蔣政権の合作提案
+	id = CHIandJAP.1
+	title = CHIandJAP.1.t
+	desc = CHIandJAP.1.d
+	# picture =
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 汪・蔣政権との合作を受け入れ、帝国との新たな関係を築く
+		name = CHIandJAP.1.0
+		ai_chance = {
+			factor = 50
+		}
+	}
+	option = {
+		# 合作を断固として拒否し、我が民族の誇りを守る
+		name = CHIandJAP.1.1
+		ai_chance = {
+			factor = 50
+		}
+	}
+	country_event = {
+		id = JAPandCHI.4
+		hours = 24
+	}
+}
+
+country_event = {
+	# 併合と賠償の要求
+	id = CHIandJAP.2
+	title = CHIandJAP.2.t
+	desc = CHIandJAP.2.d
+	# picture =
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 併合と賠償を受け入れ、帝国の要求に従う
+		name = CHIandJAP.2.0
+		ai_chance = {
+			factor = 75
+		}
+	}
+	option = {
+		# 要求を拒絶し、誇りをかけて抵抗する
+		name = CHIandJAP.2.1
+		ai_chance = {
+			factor = 25
+		}
+	}
+	country_event = {
+		id = JAPandCHI.5
+		hours = 24
+	}
+}
+
+country_event = {
+	# 日本の権益拡大要求
+	id = CHIandJAP.3
+	title = CHIandJAP.3.t
+	desc = CHIandJAP.3.d
+	# picture =
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 権益の拡大を受け入れ、帝国との協力を強化する
+		name = CHIandJAP.3.0
+		ai_chance = {
+			factor = 99
+		}
+		country_event = {
+			id = JAPandCHI.6
+			hours = 24
+		}
+	}
+	option = {
+		# 権益の拡大を断固として拒否し、主権を守り抜く
+		name = CHIandJAP.3.1
+		ai_chance = {
+			factor = 1
+		}
+		country_event = {
+			id = JAPandCHI.7
+			hours = 24
+		}
+	}
+}

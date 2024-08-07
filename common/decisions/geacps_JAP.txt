@@ -1,27 +1,28 @@
-JAP_Coup_detat_in_the_offing = {	#クーデターの予感
-	Outbreak_of_the_1-22_Incident = {	#一・二二事件の発生
+JAP_Coup_detat_in_the_offing = {
+	#クーデターの予感
+	Outbreak_of_the_1-22_Incident = {
+		#一・二二事件の発生
 		icon = jap_pacific_guardian
-		
-		allowed = {	original_tag = JAP	}
-		
-		visible = {}
-	
-		available = {	has_war = no	}
-		
-		activation = {	has_war = yes	}
-		
-		is_good = yes
-		
-		fire_only_once = yes
-		
-		selectable_mission = yes
-		
-		days_mission_timeout = 22
-		
-		timeout_effect = {
-			country_event = {	id = JAP.2	}
+		allowed = {
+			original_tag = JAP
 		}
-		
+		visible = {
+		}
+		available = {
+			has_war = no
+		}
+		activation = {
+			has_war = yes
+		}
+		is_good = yes
+		fire_only_once = yes
+		selectable_mission = yes
+		days_mission_timeout = 22
+		timeout_effect = {
+			country_event = {
+				id = JAP.2
+			}
+		}
 		complete_effect = {
 		}
 	}
@@ -32,7 +33,11 @@ JAP_national_policy_research_outline = {
 		days_remove = 365
 		days_re_enable = 1095
 		cost = 50
-		complete_effect  = {	country_event = {	id = JAP_military.002	}	}
+		complete_effect = {
+			country_event = {
+				id = JAP_military.002
+			}
+		}
 		ai_will_do = {
 			factor = 10
 			modifier = {
@@ -43,22 +48,23 @@ JAP_national_policy_research_outline = {
 	}
 }
 
-JAP_gunbatsu = {	#軍閥
-	JAP_a_royal_visit  = {	#天皇陛下の行幸
+JAP_gunbatsu = {
+	#軍閥
+	JAP_a_royal_visit = {
+		#天皇陛下の行幸
 		icon = jap_pacific_guardian
-		
 		priority = 50
-		
 		visible = {
 			has_country_leader = {
 				name = "今上天皇"
 			}
 		}
-	
-		available = {	original_tag = JAP	}
-		
-		allowed = {	original_tag = JAP	}
-		
+		available = {
+			original_tag = JAP
+		}
+		allowed = {
+			original_tag = JAP
+		}
 		ai_will_do = {
 			base = 0
 			modifier = {
@@ -74,19 +80,13 @@ JAP_gunbatsu = {	#軍閥
 				has_stability < 0.2
 			}
 		}
-		
 		fire_only_once = no
-		
 		cost = 10
-		
 		days_remove = 7
-		
 		days_re_enable = 365
-		
 		modifier = {
 			political_power_gain = 1
 		}
-		
 		remove_effect = {
 			# hidden_effect = {
 			# 	random_list =  {

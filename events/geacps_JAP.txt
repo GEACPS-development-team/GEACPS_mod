@@ -1,29 +1,31 @@
 add_namespace = JAP
-country_event = {	# 大日本帝國
+add_namespace = JAPandCHI
+country_event = {
+	# 大日本帝國
 	id = JAP.0
 	title = JAP.0.t
 	desc = JAP.0.d
 	picture = GFX_JAP_start_up_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
-	option = {	# 天皇陛下万歳！大日本帝国万歳！
+	option = {
+		# 天皇陛下万歳！大日本帝国万歳！
 		name = JAP.0.0
 	}
 }
-country_event = {	# 一・二二事件の発生
+
+country_event = {
+	# 一・二二事件の発生
 	id = JAP.2
 	title = JAP.2.t
 	desc = JAP.2.d
 	picture = GFX_JAP_january_22_incident_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
-	option = {	# 叛乱軍を捕らえよ！
+	option = {
+		# 叛乱軍を捕らえよ！
 		name = JAP.2.0
 		complete_national_focus = JAP_january_22_incident
 		# kill_head_of_government = yes
@@ -41,20 +43,20 @@ country_event = {	# 一・二二事件の発生
 		}
 	}
 }
-country_event = {	# 臨時代理
+
+country_event = {
+	# 臨時代理
 	id = JAP.3
 	title = JAP.3.t
 	desc = JAP.3.d
 	picture = GFX_JAP_prime_minister_agent_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
 	immediate = {
 	}
-	
-	option = {	# 東條の腹心の安藤紀三郎に
+	option = {
+		# 東條の腹心の安藤紀三郎に
 		name = JAP.3.0
 		ai_chance = {
 			factor = 90
@@ -62,8 +64,8 @@ country_event = {	# 臨時代理
 		activate_advisor = JAP_kisaburo_ando_hg
 		add_war_support = 0.1
 	}
-	
-	option = {	# "欠点がない"重光葵に
+	option = {
+		# "欠点がない"重光葵に
 		name = JAP.3.1
 		ai_chance = {
 			factor = 10
@@ -72,24 +74,24 @@ country_event = {	# 臨時代理
 		add_stability = 0.1
 	}
 }
-country_event = {	# 重臣会議
+
+country_event = {
+	# 重臣会議
 	id = JAP.4
 	title = JAP.4.t
 	desc = JAP.4.d
 	picture = GFX_JAP_senior_statesmens_conference_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
 	immediate = {
 		complete_national_focus = JAP_taimeikoka
 		hidden_effect = {
 			set_country_flag = JAP_senior_statesmens_conference_held
 		}
 	}
-	
-	option = {	# 奏薦されたのは陸軍の出した候補だ！
+	option = {
+		# 奏薦されたのは陸軍の出した候補だ！
 		name = JAP.4.0
 		ai_chance = {
 			factor = 75
@@ -99,8 +101,8 @@ country_event = {	# 重臣会議
 			set_country_flag = JAP_army_candidates_selected
 		}
 	}
-	
-	option = {	# いいや、海軍の出した候補が奏薦された！
+	option = {
+		# いいや、海軍の出した候補が奏薦された！
 		name = JAP.4.1
 		ai_chance = {
 			factor = 15
@@ -110,8 +112,8 @@ country_event = {	# 重臣会議
 			set_country_flag = JAP_navy_candidates_selected
 		}
 	}
-	
-	option = {	# 軍部の意見なんぞ無視してしまえばよい...
+	option = {
+		# 軍部の意見なんぞ無視してしまえばよい...
 		name = JAP.4.2
 		ai_chance = {
 			factor = 10
@@ -122,37 +124,38 @@ country_event = {	# 重臣会議
 		}
 	}
 }
-country_event = {	# 閣議
+
+country_event = {
+	# 閣議
 	id = JAP.5
 	title = JAP.5.t
 	desc = JAP.5.d
 	picture = GFX_JAP_cabinet_meeting_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
-	option = {	# 決まりだな！
+	option = {
+		# 決まりだな！
 		name = JAP.5.0
 		hidden_effect = {
 			set_country_flag = JAP_decision_of_declaration
 		}
 	}
 }
-country_event = {	# 海軍士官の裁判
+
+country_event = {
+	# 海軍士官の裁判
 	id = JAP.6
 	title = JAP.6.t
 	desc = JAP.6.d
 	picture = GFX_JAP_judgement_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
 	immediate = {
 	}
-	
-	option = {	# 公正な判決を下す
+	option = {
+		# 公正な判決を下す
 		name = JAP.6.0
 		ai_chance = {
 			factor = 75
@@ -163,8 +166,8 @@ country_event = {	# 海軍士官の裁判
 			set_country_flag = JAP_heavy_judgment_against_navy
 		}
 	}
-	
-	option = {	# 臣民が助命嘆願運動を行っている...
+	option = {
+		# 臣民が助命嘆願運動を行っている...
 		name = JAP.6.1
 		ai_chance = {
 			factor = 25
@@ -174,47 +177,47 @@ country_event = {	# 海軍士官の裁判
 		}
 	}
 }
-country_event = {	# 農本主義者を逮捕
+
+country_event = {
+	# 農本主義者を逮捕
 	id = JAP.7
 	title = JAP.7.t
 	desc = JAP.7.d
 	picture = GFX_JAP_judgement_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
 	immediate = {
 	}
-	
-	option = {	# 全国の農本主義者達の思想を"保護観察"しよう
+	option = {
+		# 全国の農本主義者達の思想を"保護観察"しよう
 		name = JAP.7.0
 		ai_chance = {
 			factor = 50
 		}
 	}
-	
-	option = {	# 投獄でもしておけ
+	option = {
+		# 投獄でもしておけ
 		name = JAP.7.1
 		ai_chance = {
 			factor = 50
 		}
 	}
 }
-country_event = {	# 皇道派将校の裁判
+
+country_event = {
+	# 皇道派将校の裁判
 	id = JAP.8
 	title = JAP.8.t
 	desc = JAP.8.d
 	picture = GFX_JAP_judgement_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
 	immediate = {
 	}
-	
-	option = {	# どのくらい獄中に送れば気が済むのだろうか...
+	option = {
+		# どのくらい獄中に送れば気が済むのだろうか...
 		name = JAP.8.0
 		ai_chance = {
 			factor = 95
@@ -224,8 +227,8 @@ country_event = {	# 皇道派将校の裁判
 			set_country_flag = JAP_heavy_judgment_against_kodoha
 		}
 	}
-	
-	option = {	# 妥協点を探る
+	option = {
+		# 妥協点を探る
 		name = JAP.8.1
 		ai_chance = {
 			factor = 5
@@ -236,61 +239,217 @@ country_event = {	# 皇道派将校の裁判
 	}
 }
 
-country_event = {	# 武漢作戦
+country_event = {
+	# 武漢作戦
 	id = JAP.100
 	title = JAP.100.t
 	desc = JAP.100.d
 	picture = GFX_JAP_capture_of_wuhan_country_event
-	
 	major = yes
-	
 	trigger = {
-		JAP = {	has_war_with = CHI	}
-		JAP = {	controls_province = 4619	}
-		CH2 = {	controls_province = 4619	}
-		CH3 = {	controls_province = 4619	}
+		JAP = {
+			has_war_with = CHI
+		}
+		JAP = {
+			controls_province = 4619
+		}
+		CH2 = {
+			controls_province = 4619
+		}
+		CH3 = {
+			controls_province = 4619
+		}
 	}
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
 	immediate = {
 	}
-	
-	option = {	# 祝武漢入城
+	option = {
+		# 祝武漢入城
 		name = JAP.100.0
 	}
 }
 
-country_event = {	# 中華民国臨時政府と中華民国維新政府の統合を要請
+country_event = {
+	# 何柱国工作
+	id = JAPandCHI.0
+	title = JAPandCHI.0.t
+	desc = JAPandCHI.0.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 直ちに使者を派遣し、和平の実現を目指すべし
+		name = JAPandCHI.0.0
+		country_event = {
+			id = CHIandJAP.0
+			hours = 24
+		}
+	}
+}
+
+country_event = {
+	# 和平工作受諾、次なる交渉へ進むべし！
+	id = JAPandCHI.1
+	title = JAPandCHI.1.t
+	desc = JAPandCHI.1.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 和平交渉を速やかに開始し、最終的な合意を目指せ
+		name = JAPandCHI.0.0
+		country_event = {
+			id = JAPandCHI.3
+			hours = 24
+		}
+	}
+}
+
+country_event = {
+	# 中華民国、和平工作の意に反し戦争継続を決定！
+	id = JAPandCHI.2
+	title = JAPandCHI.2.t
+	desc = JAPandCHI.2.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 愚かな決断...
+		name = JAPandCHI.0.0
+		add_war_support = 0.01
+	}
+}
+
+country_event = {
+	# 汪・蔣政権の合作
+	id = JAPandCHI.3
+	title = JAPandCHI.3.t
+	desc = JAPandCHI.3.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 合作を推進せよ
+		name = JAPandCHI.3.0
+		country_event = {
+			id = CHIandJAP.1
+			hours = 24
+		}
+	}
+}
+
+country_event = {
+	# 併合・賠償
+	id = JAPandCHI.4
+	title = JAPandCHI.4.t
+	desc = JAPandCHI.4.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 併合と賠償を求めよ
+		name = JAPandCHI.4.0
+		country_event = {
+			id = CHIandJAP.1
+			hours = 24
+		}
+	}
+}
+
+country_event = {
+	# 中国大陸での権益拡大
+	id = JAPandCHI.5
+	title = JAPandCHI.5.t
+	desc = JAPandCHI.5.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 権益拡大を推進せよ
+		name = JAPandCHI.5.0
+		country_event = {
+			id = CHIandJAP.1
+			hours = 24
+		}
+	}
+}
+
+country_event = {
+	# 中華民国、我が大東亜の提案を完全承認
+	id = JAPandCHI.6
+	title = JAPandCHI.6.t
+	desc = JAPandCHI.6.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 中華民国との協力を更に深化させ、大東亜共栄圏を強固なものとする
+		name = JAPandCHI.6.0
+		# complete_national_focus = 
+		add_political_power = 100
+		add_stability = 0.1
+		add_war_support = 0.1
+		white_peace = CHI
+	}
+}
+
+country_event = {
+	# 中華民国の主権護持、我が外交工作の頓挫
+	id = JAPandCHI.7
+	title = JAPandCHI.7.t
+	desc = JAPandCHI.7.d
+	picture = GFX_JAP_start_up_country_event
+	is_triggered_only = yes
+	hidden = no
+	fire_only_once = yes
+	option = {
+		# 戦略を再編成し、さらなる圧力をかける方策を講じる
+		name = JAPandCHI.7.0
+		# complete_national_focus = 
+		add_political_power = -100
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}
+
+country_event = {
+	# 中華民国臨時政府と中華民国維新政府の統合を要請
 	id = JAPCHI.101
 	title = JAP.101.t
 	desc = JAP.101.d
 	picture = GFX_JAP_january_22_incident_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
-	
-	option = {	# 現状維持
+	option = {
+		# 現状維持
 		name = JAP.101.0
 		ai_chance = {
 			factor = 1
 		}
 	}
-	option = {	# 統一
+	option = {
+		# 統一
 		name = JAP.101.1
 		ai_chance = {
 			factor = 99
 		}
-		CH2	 = {
+		CH2 = {
 			country_event = {
 				id = germany.102
 				days = 1
 			}
 		}
-		CH3	 = {
+		CH3 = {
 			country_event = {
 				id = germany.102
 				days = 1
@@ -298,23 +457,25 @@ country_event = {	# 中華民国臨時政府と中華民国維新政府の統合
 		}
 	}
 }
-country_event = {	# 日本からの統合要請
+
+country_event = {
+	# 日本からの統合要請
 	id = JAPCHI.102
 	title = JAP.102.t
 	desc = JAP.102.d
 	picture = GFX_JAP_january_22_incident_country_event
-	
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = no
-	
-	option = {	# 拒否
+	option = {
+		# 拒否
 		name = JAP.102.0
 		ai_chance = {
 			factor = 1
 		}
 	}
-	option = {	# 受諾
+	option = {
+		# 受諾
 		name = JAP.102.1
 		ai_chance = {
 			factor = 99
@@ -329,55 +490,56 @@ country_event = {	# 日本からの統合要請
 	}
 }
 
-
-
 add_namespace = JAP_military
 country_event = {
 	id = JAP_military.001
 	title = JAP_military.001.t
 	desc = JAP_military.001.d
 	picture = GFX_JAP_navy_country_event
-	
 	is_triggered_only = yes
-
 	option = {
 		name = JAP_military.001.0
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		add_ideas = JAP_air_people
 	}
 	option = {
 		name = JAP_military.001.1
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		add_ideas = JAP_big_battery_people
-
 	}
 	option = {
 		name = JAP_military.001.2
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		add_ideas = JAP_torpedo_people
-
 	}
-
 }
+
 country_event = {
 	id = JAP_military.002
 	title = JAP_military.002.t
 	desc = JAP_military.002.d
 	picture = GFX_JAP_research_institute_country_event
-	
 	is_triggered_only = yes
-
 	option = {
 		name = JAP_military.002.0
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		country_event = {
 			id = JAP_military.003
 		}
-
 	}
 	option = {
 		name = JAP_military.002.1
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		add_tech_bonus = {
 			name = JAP_military.002.1
 			bonus = 0.2
@@ -387,17 +549,18 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	id = JAP_military.003
 	title = JAP_military.003.t
 	desc = JAP_military.003.d
 	picture = GFX_JAP_research_institute_country_event
-	
 	is_triggered_only = yes
-
 	option = {
 		name = JAP_military.003.0
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		add_tech_bonus = {
 			name = JAP_military.003.0
 			bonus = 0.15
@@ -410,7 +573,9 @@ country_event = {
 	}
 	option = {
 		name = JAP_military.003.1
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		add_tech_bonus = {
 			name = JAP_military.003.1
 			bonus = 0.15
@@ -424,7 +589,9 @@ country_event = {
 	}
 	option = {
 		name = JAP_military.003.2
-		ai_chance = { factor = 10 }
+		ai_chance = {
+			factor = 10
+		}
 		add_tech_bonus = {
 			name = JAP_military.003.2
 			bonus = 0.2
