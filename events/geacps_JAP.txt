@@ -303,7 +303,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		# 和平交渉を速やかに開始し、最終的な合意を目指せ
-		name = JAPandCHI.0.0
+		name = JAPandCHI.1.0
 		country_event = {
 			id = JAPandCHI.3
 			hours = 24
@@ -322,7 +322,7 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		# 愚かな決断...
-		name = JAPandCHI.0.0
+		name = JAPandCHI.2.0
 		add_war_support = 0.01
 	}
 }
@@ -402,6 +402,7 @@ country_event = {
 	option = {
 		# 中華民国との協力を更に深化させ、大東亜共栄圏を強固なものとする
 		name = JAPandCHI.6.0
+		complete_national_focus = JAP_capture_of_wuhan
 		complete_national_focus = JAP_negotiations_between_JAP_and_CHI
 		add_political_power = 100
 		add_stability = 0.1
@@ -413,9 +414,19 @@ country_event = {
 		}
 		CH3 = {
 			transfer_state = 602
+			transfer_state = 603
 			transfer_state = 620
+			transfer_state = 748
+			transfer_state = 981
+			transfer_state = 982
+			transfer_state = 983
+			transfer_state = 984
+			transfer_state = 985
 			transfer_state = 1084
+			transfer_state = 1097
 			transfer_state = 1157
+			transfer_state = 1162
+			transfer_state = 1446
 			transfer_state = 1458
 		}
 		CH5 = {
