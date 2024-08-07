@@ -283,9 +283,11 @@ country_event = {
 	option = {
 		# 直ちに使者を派遣し、和平の実現を目指すべし
 		name = JAPandCHI.0.0
-		country_event = {
-			id = CHIandJAP.0
-			hours = 24
+		CHI = {
+			country_event = {
+				id = CHIandJAP.0
+				hours = 24
+			}
 		}
 	}
 }
@@ -337,9 +339,11 @@ country_event = {
 	option = {
 		# 合作を推進せよ
 		name = JAPandCHI.3.0
-		country_event = {
-			id = CHIandJAP.1
-			hours = 24
+		CHI = {
+			country_event = {
+				id = CHIandJAP.1
+				hours = 24
+			}
 		}
 	}
 }
@@ -356,9 +360,11 @@ country_event = {
 	option = {
 		# 併合と賠償を求めよ
 		name = JAPandCHI.4.0
-		country_event = {
-			id = CHIandJAP.1
-			hours = 24
+		CHI = {
+			country_event = {
+				id = CHIandJAP.2
+				hours = 24
+			}
 		}
 	}
 }
@@ -375,9 +381,11 @@ country_event = {
 	option = {
 		# 権益拡大を推進せよ
 		name = JAPandCHI.5.0
-		country_event = {
-			id = CHIandJAP.1
-			hours = 24
+		CHI = {
+			country_event = {
+				id = CHIandJAP.3
+				hours = 24
+			}
 		}
 	}
 }
@@ -394,11 +402,25 @@ country_event = {
 	option = {
 		# 中華民国との協力を更に深化させ、大東亜共栄圏を強固なものとする
 		name = JAPandCHI.6.0
-		# complete_national_focus = 
+		complete_national_focus = JAP_negotiations_between_JAP_and_CHI
 		add_political_power = 100
 		add_stability = 0.1
 		add_war_support = 0.1
 		white_peace = CHI
+		diplomatic_relation = {
+			country = CHI
+			relation = non_aggression_pact
+		}
+		CH3 = {
+			transfer_state = 602
+			transfer_state = 620
+			transfer_state = 1084
+			transfer_state = 1157
+			transfer_state = 1458
+		}
+		CH5 = {
+			transfer_state = 599
+		}
 	}
 }
 
@@ -414,7 +436,7 @@ country_event = {
 	option = {
 		# 戦略を再編成し、さらなる圧力をかける方策を講じる
 		name = JAPandCHI.7.0
-		# complete_national_focus = 
+		complete_national_focus = JAP_capture_of_wuhan
 		add_political_power = -100
 		add_stability = -0.1
 		add_war_support = -0.1
