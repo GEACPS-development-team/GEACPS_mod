@@ -1,0 +1,15 @@
+CHI_nationalism_and_separatism_movement = {
+	# 民族主義・分離主義運動
+	icon = GFX_decision_unknown
+	allowed = {
+		original_tag = CHI
+	}
+	visible = {
+		has_country_flag = CHI_surrender_flag
+	}
+	available = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+}

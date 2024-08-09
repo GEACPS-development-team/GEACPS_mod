@@ -1,0 +1,92 @@
+# !gfx:interface\icon_of_focus\_geacps_generic.gfx
+# !gfx:interface\icon_of_focus\geacps_CHI.gfx
+focus_tree = {
+	id = CHI_focus_tree
+	country = {
+		base = 0
+		modifier = {
+			tag = CHI
+			add = 0
+			factor = 0
+		}
+	}
+	continuous_focus_position = {
+		x = 0
+		y = 0
+	}
+	default = no
+	shared_focus = CHI_victory
+	shared_focus = CHI_surrender
+}
+
+shared_focus = {
+	# 勝利!
+	id = CHI_victory
+	x = 0
+	y = 0
+	icon = GFX_goal_unknown
+	cost = 1
+	available = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	enable = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	ai_will_do = {
+	}
+	prerequisite = {
+	}
+	mutually_exclusive = {
+		focus = CHI_surrender
+	}
+	completion_reward = {
+	}
+	select_effect = {
+		TAG = {
+			country_event = my_event.0
+		}
+	}
+	cancel_effect = {
+		TAG = {
+			country_event = my_event.1
+		}
+	}
+	cancelable = yes
+}
+
+shared_focus = {
+	# 降伏...
+	id = CHI_surrender
+	x = 2
+	y = 0
+	icon = GFX_goal_unknown
+	cost = 1
+	available = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	enable = {
+		hidden_trigger = {
+			always = no
+		}
+	}
+	ai_will_do = {
+	}
+	prerequisite = {
+	}
+	mutually_exclusive = {
+		focus = CHI_victory
+	}
+	completion_reward = {
+	}
+	select_effect = {
+	}
+	cancel_effect = {
+	}
+	cancelable = yes
+}

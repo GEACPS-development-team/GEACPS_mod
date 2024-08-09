@@ -1,0 +1,24 @@
+CHI_nationalism_and_separatism_movement = {
+	# 民族主義・分離主義運動
+	independence_movement_in_yunnan = {
+		# 雲南省の独立運動
+		icon = GFX_decision_unknown
+		is_good = no
+		selectable_mission = yes
+		war_with_on_timeout = YUN
+		days_mission_timeout = 7
+		activation = {
+			has_country_flag = CHI_surrender_flag
+		}
+		available = {
+			always = no
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			country_event = {
+				id = CHIandYUN.0
+			}
+		}
+	}
+}

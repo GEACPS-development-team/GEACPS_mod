@@ -1,29 +1,35 @@
-JAP_Coup_detat_in_the_offing = {	#クーデターの予感
-	icon = jap_pacific_guardian
-	
-	allowed = {	original_tag = JAP	}
-	
-	visible = {	original_tag = JAP	}
+JAP_coup_detat_in_the_offing = {
+	#クーデターの予感
+	icon = GFX_decision_unknown
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		has_cosmetic_tag = GREATJAPAN_empire
+	}
+	available = {
+		has_cosmetic_tag = GREATJAPAN_empire
+	}
+}
+
+JAP_gunbatsu = {
+	#軍閥
+	icon = GFX_decision_unknown
+	picture = GFX_decision_cat_picture_gunbatsu
+	allowed = {
+		original_tag = JAP
+	}
+	visible = {
+		has_cosmetic_tag = GREATJAPAN_empire
+	}
+	available = {
+		has_cosmetic_tag = GREATJAPAN_empire
+	}
+	scripted_gui = jap_gunbatsu_decision_ui
 }
 
 JAP_national_policy_research_outline = {
-
-	allowed = {	original_tag = JAP	}
-	
-}
-
-JAP_gunbatsu = {	#軍閥
-	priority = 100
-
-	icon = jap_pacific_guardian
-
-	picture = GFX_decision_cat_picture_gunbatsu
-	
-	allowed = {	original_tag = JAP	}
-	
-	visible = {	has_cosmetic_tag = GREATJAPAN_empire	}
-	
-	visible_when_empty = yes
-
-	scripted_gui = jap_gunbatsu_decision_ui
+	allowed = {
+		original_tag = JAP
+	}
 }

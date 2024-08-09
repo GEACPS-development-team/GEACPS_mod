@@ -1,5 +1,4 @@
 add_namespace = JAP
-add_namespace = JAPandCHI
 country_event = {
 	# 大日本帝國
 	id = JAP.0
@@ -271,6 +270,7 @@ country_event = {
 	}
 }
 
+add_namespace = JAPandCHI
 country_event = {
 	# 何柱国工作
 	id = JAPandCHI.0
@@ -278,15 +278,13 @@ country_event = {
 	desc = JAPandCHI.0.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 直ちに使者を派遣し、和平の実現を目指すべし
 		name = JAPandCHI.0.0
 		CHI = {
 			country_event = {
 				id = CHIandJAP.0
-				hours = 24
+				days = 1
 			}
 		}
 	}
@@ -299,14 +297,12 @@ country_event = {
 	desc = JAPandCHI.1.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 和平交渉を速やかに開始し、最終的な合意を目指せ
 		name = JAPandCHI.1.0
 		country_event = {
 			id = JAPandCHI.3
-			hours = 24
+			days = 1
 		}
 	}
 }
@@ -318,8 +314,6 @@ country_event = {
 	desc = JAPandCHI.2.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 愚かな決断...
 		name = JAPandCHI.2.0
@@ -334,15 +328,13 @@ country_event = {
 	desc = JAPandCHI.3.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 合作を推進せよ
 		name = JAPandCHI.3.0
 		CHI = {
 			country_event = {
 				id = CHIandJAP.1
-				hours = 24
+				days = 1
 			}
 		}
 	}
@@ -355,15 +347,13 @@ country_event = {
 	desc = JAPandCHI.4.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 併合と賠償を求めよ
 		name = JAPandCHI.4.0
 		CHI = {
 			country_event = {
 				id = CHIandJAP.2
-				hours = 24
+				days = 1
 			}
 		}
 	}
@@ -376,15 +366,13 @@ country_event = {
 	desc = JAPandCHI.5.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 権益拡大を推進せよ
 		name = JAPandCHI.5.0
 		CHI = {
 			country_event = {
 				id = CHIandJAP.3
-				hours = 24
+				days = 1
 			}
 		}
 	}
@@ -397,8 +385,6 @@ country_event = {
 	desc = JAPandCHI.6.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 中華民国との協力を更に深化させ、大東亜共栄圏を強固なものとする
 		name = JAPandCHI.6.0
@@ -412,25 +398,49 @@ country_event = {
 			country = CHI
 			relation = non_aggression_pact
 		}
+		CHI = {
+			set_country_flag = CHI_surrender_flag
+			set_cosmetic_tag = CHI_minguo_chongqing_goverment
+			complete_national_focus = CHI_surrender
+			country_event = {
+				id = CHIandJAP.1
+				days = 1
+			}
+		}
 		CH3 = {
-			transfer_state = 602
-			transfer_state = 603
-			transfer_state = 620
-			transfer_state = 748
-			transfer_state = 981
-			transfer_state = 982
-			transfer_state = 983
-			transfer_state = 984
-			transfer_state = 985
-			transfer_state = 1084
-			transfer_state = 1097
-			transfer_state = 1157
-			transfer_state = 1162
-			transfer_state = 1446
 			transfer_state = 1458
+			every_state = {
+				limit = {
+					is_core_of = GZH
+				}
+				transfer_state_to = PREV
+			}
+			every_state = {
+				limit = {
+					is_core_of = HNN
+				}
+				transfer_state_to = PREV
+			}
+			every_state = {
+				limit = {
+					is_core_of = HUB
+				}
+				transfer_state_to = PREV
+			}
+			every_state = {
+				limit = {
+					is_core_of = ZHE
+				}
+				transfer_state_to = PREV
+			}
 		}
 		CH5 = {
-			transfer_state = 599
+			every_state = {
+				limit = {
+					is_core_of = GXC
+				}
+				transfer_state_to = PREV
+			}
 		}
 	}
 }
@@ -442,8 +452,6 @@ country_event = {
 	desc = JAPandCHI.7.d
 	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
 		# 戦略を再編成し、さらなる圧力をかける方策を講じる
 		name = JAPandCHI.7.0
@@ -454,72 +462,29 @@ country_event = {
 	}
 }
 
+add_namespace = JAPandCHI_form
 country_event = {
-	# 中華民国臨時政府と中華民国維新政府の統合を要請
-	id = JAPCHI.101
-	title = JAP.101.t
-	desc = JAP.101.d
-	picture = GFX_JAP_january_22_incident_country_event
+	# 中華民国臨時政府及び維新政府の統合に関する我が国の提案
+	id = JAPandCHI_form.0
+	title = JAPandCHI_form.101.t
+	desc = JAPandCHI_form.101.d
+	picture = GFX_JAP_start_up_country_event
 	is_triggered_only = yes
-	hidden = no
-	fire_only_once = yes
 	option = {
-		# 現状維持
-		name = JAP.101.0
-		ai_chance = {
-			factor = 1
-		}
-	}
-	option = {
-		# 統一
-		name = JAP.101.1
-		ai_chance = {
-			factor = 99
-		}
+		# 中華民国臨時政府と維新政府の統合を推進せよ
+		name = JAPandCHI_form.101.0
 		CH2 = {
 			country_event = {
-				id = germany.102
+				# id = 
 				days = 1
 			}
 		}
 		CH3 = {
 			country_event = {
-				id = germany.102
+				# id = 
 				days = 1
 			}
 		}
-	}
-}
-
-country_event = {
-	# 日本からの統合要請
-	id = JAPCHI.102
-	title = JAP.102.t
-	desc = JAP.102.d
-	picture = GFX_JAP_january_22_incident_country_event
-	is_triggered_only = yes
-	hidden = no
-	fire_only_once = no
-	option = {
-		# 拒否
-		name = JAP.102.0
-		ai_chance = {
-			factor = 1
-		}
-	}
-	option = {
-		# 受諾
-		name = JAP.102.1
-		ai_chance = {
-			factor = 99
-		}
-		JAP = {
-			country_event = {
-				id = germany.28
-				days = 1
-			}
-		}
-		# annex_country = { target = AUS transfer_troops = yes }
 	}
 }
 
