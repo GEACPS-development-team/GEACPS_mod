@@ -1,0 +1,66 @@
+scripted_gui = {
+	parliament_button_gui = {
+		window_name = "parliament_container"
+		context_type = player_context
+		parent_window_token = politics_tab
+		effects = {
+			parliament_button_click = {
+				if = {
+					limit = {
+						has_country_flag = parliament_button_clicked
+					}
+					clr_country_flag = parliament_button_clicked
+				}
+				else = {
+					set_country_flag = parliament_button_clicked
+				}
+			}
+		}
+	}
+	parliament_window_gui = {
+		window_name = "parliament_window"
+		context_type = player_context
+		parent_window_token = top_bar
+		dynamic_lists = {
+			parliament_main_grid = {
+				array = parliament_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = parliament_main_entry
+			}
+			parliament_semicircle_main_grid = {
+				array = parliament_main_array
+				index = parliament_main_index
+				change_scope = no
+				entry_container = parliament_semicircle_main_entry
+			}
+			parliament_member_grid = {
+				array = parliament_member_array
+				index = parliament_member_index
+				change_scope = no
+				entry_container = parliament_member_entry
+			}
+		}
+		properties = {
+			parliament_main_icon = {
+				frame = v
+			}
+			parliament_semicircle_main_icon = {
+				frame = v
+				x = parliament_x_array^parliament_main_index
+				y = parliament_y_array^parliament_main_index
+			}
+			parliament_member_icon = {
+				frame = v
+			}
+		}
+		visible = {
+			has_country_flag = parliament_button_clicked
+		}
+		effects = {
+			close_button_click = {
+				clr_country_flag = parliament_button_clicked
+			}
+		}
+	}
+}
