@@ -1,35 +1,35 @@
 # 以下のスクリプト化されたエフェクトは、ゲーム開始時に議会をセットアップします。
 parliament_gui_initial = {
-    # 簡単に言えば、配列はリストを格納するために使用されます。ここでは、政党のリストと議席数のリストを格納するために使用されています。
+	# 簡単に言えば、配列はリストを格納するために使用されます。ここでは、政党のリストと議席数のリストを格納するために使用されています。
 
-    # parliament_seat_array は各政党の議席数のリストを格納します。
-	add_to_array = { parliament_seat_array = 20 } # 正統社会主義
-	add_to_array = { parliament_seat_array = 10 } # 革新社会主義
-	add_to_array = { parliament_seat_array = 10 } # 社会民主主義
+	# parliament_seat_array は各政党の議席数のリストを格納します。
+	add_to_array = { parliament_seat_array = 90 } # 正統社会主義
+	add_to_array = { parliament_seat_array = 35 } # 革新社会主義
+	add_to_array = { parliament_seat_array = 65 } # 社会民主主義
 	add_to_array = { parliament_seat_array = 10 } # 自由民主主義
-	add_to_array = { parliament_seat_array = 10 } # 中立中道主義
-	add_to_array = { parliament_seat_array = 10 } # 保守民主主義
-	add_to_array = { parliament_seat_array = 10 } # 権威民主主義
-	add_to_array = { parliament_seat_array = 10 } # 国家権威主義
-	add_to_array = { parliament_seat_array = 10 } # 国家大衆主義
+	# add_to_array = { parliament_seat_array = 10 } # 中立中道主義
+	# add_to_array = { parliament_seat_array = 10 } # 保守民主主義
+	# add_to_array = { parliament_seat_array = 10 } # 権威民主主義
+	# add_to_array = { parliament_seat_array = 10 } # 国家権威主義
+	# add_to_array = { parliament_seat_array = 10 } # 国家大衆主義
 
-    # parliament_member_array は政党のリストを格納します。
-    # これは基本的に各政党にIDを割り当てます。つまり、政党A = 1、政党B = 2、など（1から始まり、順番に続く必要があります）。
+	# parliament_member_array は政党のリストを格納します。
+	# これは基本的に各政党にIDを割り当てます。つまり、政党A = 1、政党B = 2、など（1から始まり、順番に続く必要があります）。
 	add_to_array = { parliament_member_array = 1 } # 正統社会主義
-    add_to_array = { parliament_member_array = 2 } # 革新社会主義
-    add_to_array = { parliament_member_array = 3 } # 社会民主主義
-    add_to_array = { parliament_member_array = 4 } # 自由民主主義
-    add_to_array = { parliament_member_array = 5 } # 中立中道主義
-    add_to_array = { parliament_member_array = 6 } # 保守民主主義
-    add_to_array = { parliament_member_array = 7 } # 権威民主主義
-    add_to_array = { parliament_member_array = 8 } # 国家権威主義
-    add_to_array = { parliament_member_array = 9 } # 国家大衆主義
+	add_to_array = { parliament_member_array = 2 } # 革新社会主義
+	add_to_array = { parliament_member_array = 3 } # 社会民主主義
+	add_to_array = { parliament_member_array = 4 } # 自由民主主義
+	# add_to_array = { parliament_member_array = 5 } # 中立中道主義
+	# add_to_array = { parliament_member_array = 6 } # 保守民主主義
+	# add_to_array = { parliament_member_array = 7 } # 権威民主主義
+	# add_to_array = { parliament_member_array = 8 } # 国家権威主義
+	# add_to_array = { parliament_member_array = 9 } # 国家大衆主義
 
-    # 半円形の議会のドットの位置を設定します。
-    parliament_gui_positions = yes
+	# 半円形の議会のドットの位置を設定します。
+	parliament_gui_positions = yes
 
-    # GUIに表示される内容を修正します。
-    reload_parliament_gui = yes
+	# GUIに表示される内容を修正します。
+	reload_parliament_gui = yes
 }
 
 # parliament_x_array と parliament_y_array は、議会のドットのグリッド内の x および y 位置のリストを保存しています。これらは Flaxbeard の素敵なツールによって生成されます：
@@ -442,47 +442,144 @@ parliament_gui_positions = {
 # たとえば、議席を追加/削除したときにGUIを更新する必要があるたびに、このエフェクトを呼び出す必要があります。
 # このスクリプトがどのように動作するかに興味がある場合は、コメントを参照してください。
 reload_parliament_gui = {
-    # 現在GUIにあるものを消去します。何かがあれば。
-    clear_array = parliament_main_array
+	# 現在GUIにあるものを消去します。何かがあれば。
+	clear_array = parliament_main_array
 
-    # 配列 temp_seat は、配列 parliament_seat_array から複製されます。
-    for_each_loop = {
-        array = parliament_seat_array
+	# 配列 temp_seat は、配列 parliament_seat_array から複製されます。
+	for_each_loop = {
+		array = parliament_seat_array
 
-        add_to_array = { temp_seat = parliament_seat_array^i }
-    }
+		add_to_array = { temp_seat = parliament_seat_array^i }
+	}
 
-    # これは後で使用する驚きのツールです。
-    set_temp_variable = { temp_index_1 = 0 }
-    set_temp_variable = { temp_index_2 = 1 }
+	# これは後で使用する驚きのツールです。
+	set_temp_variable = { temp_index_1 = 0 }
+	set_temp_variable = { temp_index_2 = 1 }
 
-    # temp_size を配列の最大インデックスとして設定します。最大インデックスは temp_array^x の最大値です。
-    set_temp_variable = { temp_size = temp_seat^num }
-    subtract_from_temp_variable = { temp_size = 1 }
+	# temp_size を配列の最大インデックスとして設定します。最大インデックスは temp_array^x の最大値です。
+	set_temp_variable = { temp_size = temp_seat^num }
+	subtract_from_temp_variable = { temp_size = 1 }
 
-    # この処理は、temp_seat 配列をループし、現在の値をリスト上の次の値に追加します。
-    # temp_seat^0 はリストの最初の値で、temp_seat^1 が次の値です。
-    # ループは、temp_index_1 が配列のサイズ - 1 に等しくなると終了します（基本的には最大インデックス）。
-    while_loop_effect = {
-        limit = {
-            check_variable = { temp_index_1 < temp_size }
-        }
-        # 驚きのツールは、temp_seat^0 と temp_seat^1 として開始し、ループごとに増加し、リストの現在の値を次の値に追加します。
-        add_to_variable = { temp_seat^temp_index_2 = temp_seat^temp_index_1 }
-        add_to_temp_variable = { temp_index_1 = 1 }
-        add_to_temp_variable = { temp_index_2 = 1 }
-    }
+	# この処理は、temp_seat 配列をループし、現在の値をリスト上の次の値に追加します。
+	# temp_seat^0 はリストの最初の値で、temp_seat^1 が次の値です。
+	# ループは、temp_index_1 が配列のサイズ - 1 に等しくなると終了します（基本的には最大インデックス）。
+	while_loop_effect = {
+		limit = {
+			check_variable = { temp_index_1 < temp_size }
+		}
+		# 驚きのツールは、temp_seat^0 と temp_seat^1 として開始し、ループごとに増加し、リストの現在の値を次の値に追加します。
+		add_to_variable = { temp_seat^temp_index_2 = temp_seat^temp_index_1 }
+		add_to_temp_variable = { temp_index_1 = 1 }
+		add_to_temp_variable = { temp_index_2 = 1 }
+	}
 
-    # resize_array は、parliament_member_array を、そのメンバーが持つ議席数 x 回分だけ id で埋めます。
-    # つまり、配列は以下のようになります：
-    # 1,1,1,1,1,1,1,...（90回繰り返される）、2,2,2,2,2,2,2（35回繰り返される）、3,3,3,...など。
-    for_loop_effect = {
-        start = 0
-        end = temp_seat^num
+	# resize_array は、parliament_member_array を、そのメンバーが持つ議席数 x 回分だけ id で埋めます。
+	# つまり、配列は以下のようになります：
+	# 1,1,1,1,1,1,1,...（90回繰り返される）、2,2,2,2,2,2,2（35回繰り返される）、3,3,3,...など。
+	for_loop_effect = {
+		start = 0
+		end = temp_seat^num
 
-        resize_array = { array = parliament_main_array value = parliament_member_array^v size = temp_seat^v }
-    }
+		resize_array = { array = parliament_main_array value = parliament_member_array^v size = temp_seat^v }
+	}
 
-    # 前に使用した temp_seat 配列を消去します。これはもう必要ありません。
-    clear_array = temp_seat
+	# 前に使用した temp_seat 配列を消去します。これはもう必要ありません。
+	clear_array = temp_seat
+}
+
+# 議会の座席数を変更する処理
+modify_parliament_seat = {
+	subtract_from_temp_variable = { temp_member = 1 }
+
+	# 結果がオーバーフローするかどうかを確認
+	set_temp_variable = { temp = parliament_seat_array^temp_member }
+	add_to_temp_variable = { temp = temp_seats }
+
+	if = {
+		limit = {
+			check_variable = { temp > parliament_main_array^num }
+		}
+		subtract_from_temp_variable = { temp = parliament_main_array^num }
+		subtract_from_temp_variable = { temp_seats = temp }
+	}
+	else_if = {
+		limit = {
+			check_variable = { temp < 0 }
+		}
+		multiply_temp_variable = { temp = -1 }
+		subtract_from_temp_variable = { temp_seats = temp }
+	}
+
+	# 全ての政党を temp_array に追加
+	for_loop_effect = {
+		start = 0
+		end = parliament_seat_array^num
+
+		add_to_temp_array = { temp_array = v }
+	}
+
+	# 追加または削除する政党を temp_array から削除
+	remove_from_temp_array = { array = temp_array value = temp_member }
+
+	# 政党に新しい座席数を割り当てる
+	add_to_variable = { parliament_seat_array^temp_member = temp_seats }
+
+	# 座席を追加する場合
+	if = {
+		limit = {
+			check_variable = { temp_seats > 0 }
+		}
+		# 座席が 0 になるまでループ
+		while_loop_effect = {
+			limit = {
+				check_variable = { temp_seats > 0 }
+			}
+
+			# 残りの政党をループして、1 座席ずつ削除
+			for_loop_effect = {
+				start = 0
+				end = temp_array^num
+
+				if = {
+					limit = {
+						check_variable = { parliament_seat_array^temp_array^v > 0 } # 政党が座席を削除できるほど座席を持っている
+						check_variable = { temp_seats > 0 } # 現在追加する座席数が 0 より大きい
+					}
+					subtract_from_variable = { parliament_seat_array^temp_array^v = 1 } # 政党から 1 座席を削除
+					subtract_from_temp_variable = { temp_seats = 1 } # 追加する座席数から 1 を減算
+				}
+			}
+		}
+	}
+	# 座席を削除する場合
+	else_if = {
+		limit = {
+			check_variable = { temp_seats < 0 }
+		}
+		# 座席が 0 になるまでループ
+		while_loop_effect = {
+			limit = {
+				check_variable = { temp_seats < 0 }
+			}
+
+			# 残りの政党をループして、1 座席ずつ追加
+			for_loop_effect = {
+				start = 0
+				end = temp_array^num
+
+				if = {
+					limit = {
+						check_variable = { parliament_seat_array^temp_array^v < parliament_main_array^num } # 政党が最大座席数未満である必要がある
+						check_variable = { temp_seats < 0 } # 現在削除する座席数が 0 より小さい
+					}
+					add_to_variable = { parliament_seat_array^temp_array^v = 1 } # 政党に 1 座席を追加
+					add_to_temp_variable = { temp_seats = 1 } # 削除する座席数に 1 を加算
+				}
+			}
+		}
+	}
+	# 0 の場合は何もしない
+
+	# GUI に表示される内容を変更
+	reload_parliament_gui = yes
 }
