@@ -1,8 +1,11 @@
 on_actions = {
-    on_startup = {
+    on_startup = { effect = { every_country = { parliament_startup_effect = yes } } }
+
+    on_daily = {
         effect = {
             every_country = {
-                parliament_init_effect = yes
+                clear_arrays_effect = yes
+                parliament_daily_effect = yes
             }
         }
     }

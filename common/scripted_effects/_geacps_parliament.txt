@@ -1,4 +1,4 @@
-parliament_init_effect = {
+parliament_startup_effect = {
     add_to_array = { parliament_seat_array = 60 } # 正統社会主義
     add_to_array = { parliament_seat_array = 40 } # 革新社会主義
     add_to_array = { parliament_seat_array = 30 } # 社会民主主義
@@ -8,16 +8,6 @@ parliament_init_effect = {
     add_to_array = { parliament_seat_array = 10 } # 権威民主主義
     add_to_array = { parliament_seat_array = 10 } # 国家権威主義
     add_to_array = { parliament_seat_array = 10 } # 国家大衆主義
-
-    # add_to_array = { parliament_seat_array = party_popularity@orthodox_socialism } # 正統社会主義
-    # add_to_array = { parliament_seat_array = party_popularity@progressive_socialism } # 革新社会主義
-    # add_to_array = { parliament_seat_array = party_popularity@social_democracy } # 社会民主主義
-    # add_to_array = { parliament_seat_array = party_popularity@liberal_democracy } # 自由民主主義
-    # add_to_array = { parliament_seat_array = party_popularity@neutral_centrism } # 中立中道主義
-    # add_to_array = { parliament_seat_array = party_popularity@conservative_democracy } # 保守民主主義
-    # add_to_array = { parliament_seat_array = party_popularity@authoritative_democracy } # 権威民主主義
-    # add_to_array = { parliament_seat_array = party_popularity@national_authoritarianism } # 国家権威主義
-    # add_to_array = { parliament_seat_array = party_popularity@national_populism } # 国家大衆主義
 
     add_to_array = { parliament_group_array = 1 } # 正統社会主義
     add_to_array = { parliament_group_array = 2 } # 革新社会主義
@@ -469,4 +459,82 @@ parliament_set_effect = {
     add_to_array = { parliament_y_array = 164 }
     add_to_array = { parliament_x_array = 338 }
     add_to_array = { parliament_y_array = 164 }
+}
+
+clear_arrays_effect = {
+    clear_array = parliament_seat_array
+    clear_array = parliament_group_array
+    clear_array = parliament_array
+    clear_array = parliament_x_array
+    clear_array = parliament_y_array
+}
+
+parliament_daily_effect = {
+    # 正統社会主義
+    set_temp_variable = { popularity_orthodox_socialism = party_popularity@orthodox_socialism }
+    multiply_temp_variable = { popularity_orthodox_socialism = 200 }
+    round_temp_variable = popularity_orthodox_socialism
+
+    # 革新社会主義
+    set_temp_variable = { popularity_progressive_socialism = party_popularity@progressive_socialism }
+    multiply_temp_variable = { popularity_progressive_socialism = 200 }
+    round_temp_variable = popularity_progressive_socialism
+
+    # 社会民主主義
+    set_temp_variable = { popularity_social_democracy = party_popularity@social_democracy }
+    multiply_temp_variable = { popularity_social_democracy = 200 }
+    round_temp_variable = popularity_social_democracy
+
+    # 自由民主主義
+    set_temp_variable = { popularity_liberal_democracy = party_popularity@liberal_democracy }
+    multiply_temp_variable = { popularity_liberal_democracy = 200 }
+    round_temp_variable = popularity_liberal_democracy
+
+    # 中立中道主義
+    set_temp_variable = { popularity_neutral_centrism = party_popularity@neutral_centrism }
+    multiply_temp_variable = { popularity_neutral_centrism = 200 }
+    round_temp_variable = popularity_neutral_centrism
+
+    # 保守民主主義
+    set_temp_variable = { popularity_conservative_democracy = party_popularity@conservative_democracy }
+    multiply_temp_variable = { popularity_conservative_democracy = 200 }
+    round_temp_variable = popularity_conservative_democracy
+
+    # 権威民主主義
+    set_temp_variable = { popularity_authoritative_democracy = party_popularity@authoritative_democracy }
+    multiply_temp_variable = { popularity_authoritative_democracy = 200 }
+    round_temp_variable = popularity_authoritative_democracy
+
+    # 国家権威主義
+    set_temp_variable = { popularity_national_authoritarianism = party_popularity@national_authoritarianism }
+    multiply_temp_variable = { popularity_national_authoritarianism = 200 }
+    round_temp_variable = popularity_national_authoritarianism
+
+    # 国家大衆主義
+    set_temp_variable = { popularity_national_populism = party_popularity@national_populism }
+    multiply_temp_variable = { popularity_national_populism = 200 }
+    round_temp_variable = popularity_national_populism
+
+    add_to_array = { parliament_seat_array = popularity_orthodox_socialism } # 正統社会主義
+    add_to_array = { parliament_seat_array = popularity_progressive_socialism } # 革新社会主義
+    add_to_array = { parliament_seat_array = popularity_social_democracy } # 社会民主主義
+    add_to_array = { parliament_seat_array = popularity_liberal_democracy } # 自由民主主義
+    add_to_array = { parliament_seat_array = popularity_neutral_centrism } # 中立中道主義
+    add_to_array = { parliament_seat_array = popularity_conservative_democracy } # 保守民主主義
+    add_to_array = { parliament_seat_array = popularity_authoritative_democracy } # 権威民主主義
+    add_to_array = { parliament_seat_array = popularity_national_authoritarianism } # 国家権威主義
+    add_to_array = { parliament_seat_array = popularity_national_populism } # 国家大衆主義
+
+    add_to_array = { parliament_group_array = 1 } # 正統社会主義
+    add_to_array = { parliament_group_array = 2 } # 革新社会主義
+    add_to_array = { parliament_group_array = 3 } # 社会民主主義
+    add_to_array = { parliament_group_array = 4 } # 自由民主主義
+    add_to_array = { parliament_group_array = 5 } # 中立中道主義
+    add_to_array = { parliament_group_array = 6 } # 保守民主主義
+    add_to_array = { parliament_group_array = 7 } # 権威民主主義
+    add_to_array = { parliament_group_array = 8 } # 国家権威主義
+    add_to_array = { parliament_group_array = 9 } # 国家大衆主義
+
+    parliament_reload_effect = yes
+    parliament_set_effect = yes
 }
