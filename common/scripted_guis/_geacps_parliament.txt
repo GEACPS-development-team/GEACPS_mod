@@ -3,7 +3,12 @@ scripted_gui = {
         window_name = "parliament_container"
         context_type = player_context
 
-        visible = { has_country_flag = parliament_button_clicked }
+        visible = {
+            OR = {
+                is_debug = yes
+                has_country_flag = parliament_button_clicked
+            }
+        }
 
         effects = { close_button_click = { clr_country_flag = parliament_button_clicked } }
 

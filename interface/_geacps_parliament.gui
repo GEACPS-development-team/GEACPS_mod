@@ -20,7 +20,15 @@ guiTypes = {
             quadTextureSprite = "GFX_tiled_plain_bg"
         }
 
-        # 議会
+        # ヘッダ
+        iconType = {
+            name = "parliament_container_header"
+            spriteType = "GFX_header_bg"
+            position = { x = 7 y = 5 }
+            orientation = upper_left
+        }
+
+        # テキスト
         instantTextboxType = {
             name = "parliament_container_text"
             text = "議会"
@@ -51,9 +59,9 @@ guiTypes = {
         # 第一院
         instantTextBoxType = {
             name = "first_chamber_name"
-            text = "第一院"
+            text = "[ROOT.GetName]上院"
             font = "hoi_24header"
-            position = { x = 0 y = 41 } # 36 + 5
+            position = { x = 0 y = 47 } # 71 - 24
             borderSize = { x = 0 y = 0 }
             maxWidth = @WIDTH_PARLIAMENT
             maxHeight = 24
@@ -67,7 +75,7 @@ guiTypes = {
         containerWindowType = {
             name = "first_chamber_container"
             size = { width = @WIDTH_CHAMBER height = @HEIGHT_FIRST_CHAMBER }
-            position = { x = @CHAMBER_X y = 65 } # 41 + 24
+            position = { x = @CHAMBER_X y = 71 } # 42 + 29
             orientation = upper_left
 
             background = {
@@ -90,9 +98,9 @@ guiTypes = {
         # 第二院
         instantTextBoxType = {
             name = "second_chamber_name"
-            text = "第二院"
+            text = "[ROOT.GetName]下院"
             font = "hoi_24header"
-            position = { x = 0 y = 289 } # 65 + 200 + 24
+            position = { x = 0 y = 342 } # 366 - 24
             borderSize = { x = 0 y = 0 }
             maxWidth = @WIDTH_PARLIAMENT
             maxHeight = 24
@@ -106,7 +114,7 @@ guiTypes = {
         containerWindowType = {
             name = "second_chamber_container"
             size = { width = @WIDTH_CHAMBER height = @HEIGHT_SECOND_CHAMBER }
-            position = { x = @CHAMBER_X y = 313 } # 289 + 24
+            position = { x = @CHAMBER_X y = 366 } # 620 - 29 - 225
             orientation = upper_left
 
             background = {

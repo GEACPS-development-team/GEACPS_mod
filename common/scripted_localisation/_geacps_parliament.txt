@@ -1,74 +1,299 @@
-# 現在の変数 v の値に基づいて表示されるローカライズされたテキストを取得します (値はスクリプト効果で設定された政党IDに対応しています)。
+# 第一院
 defined_text = {
-	name = GetParliamentPartyName
-	text = {
-		trigger = {
-			check_variable = { v = 1 }
-		}
-		localization_key = party_1_text
-	}
-	text = {
-		trigger = {
-			check_variable = { v = 2 }
-		}
-		localization_key = party_2_text
-	}
-	text = {
-		trigger = {
-			check_variable = { v = 3 }
-		}
-		localization_key = party_3_text
-	}
-	text = {
-		trigger = {
-			check_variable = { v = 4 }
-		}
-		localization_key = party_4_text
-	}
-	# text = {
-	# 	trigger = {
-	# 		check_variable = { v = 5 }
-	# 	}
-	# 	localization_key = party_5_text
-	# }
-	# text = {
-	# 	trigger = {
-	# 		check_variable = { v = 6 }
-	# 	}
-	# 	localization_key = party_6_text
-	# }
-	# text = {
-	# 	trigger = {
-	# 		check_variable = { v = 7 }
-	# 	}
-	# 	localization_key = party_7_text
-	# }
-	# text = {
-	# 	trigger = {
-	# 		check_variable = { v = 8 }
-	# 	}
-	# 	localization_key = party_8_text
-	# }
-	# text = {
-	# 	trigger = {
-	# 		check_variable = { v = 9 }
-	# 	}
-	# 	localization_key = party_9_text
-	# }
-	text = {
-		localization_key = "Error"
-	}
+    name = "GetFirstChamberName"
+
+    text = {
+        trigger = { tag = AFG }
+
+        localization_key = AFG_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = ALG }
+
+        localization_key = ALG_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = AUS }
+
+        localization_key = AUS_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = BHR }
+
+        localization_key = BHR_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = BHU }
+
+        localization_key = BHU_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = BLR }
+
+        localization_key = BLR_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = BOS }
+
+        localization_key = BOS_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = BRA }
+
+        localization_key = BRA_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = BRM }
+
+        localization_key = BRM_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = ETH }
+
+        localization_key = ETH_first_chamber_name
+    }
+
+    text = {
+        trigger = {
+            AND = {
+                tag = FRA
+                has_cosmetic_tag = FRA_republic_provisional_government
+            }
+        }
+
+        localization_key = FRA_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = GBR }
+
+        localization_key = GBR_first_chamber_name
+    }
+
+    # text = {
+    #     trigger = { tag = HOL }
+
+    #     localization_key = HOL_first_chamber_name
+    # }
+
+    text = {
+        trigger = { tag = IND }
+
+        localization_key = IND_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = INS }
+
+        localization_key = INS_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = IRE }
+
+        localization_key = IRE_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = ITA }
+
+        localization_key = ITA_first_chamber_name
+    }
+
+    text = {
+        trigger = {
+            AND = {
+                tag = JAP
+                has_cosmetic_tag = GREATJAPAN_empire
+            }
+        }
+
+        localization_key = JAP_house_of_peers_name
+    }
+
+    text = {
+        trigger = {
+            AND = {
+                tag = JAP
+                # has_cosmetic_tag = GREATJAPAN_empire
+            }
+        }
+
+        localization_key = JAP_house_of_councillors_name
+    }
+
+    text = {
+        trigger = { tag = MOR }
+
+        localization_key = MOR_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = NMB }
+
+        localization_key = NMB_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = OMA }
+
+        localization_key = OMA_first_chamber_name
+    }
+
+    text = {
+        trigger = {
+            AND = {
+                tag = RUS
+                has_cosmetic_tag = RUS_SOV
+            }
+        }
+
+        localization_key = RUS_supreme_soviet_name
+    }
+
+    text = {
+        trigger = {
+            AND = {
+                tag = RUS
+                # has_cosmetic_tag = RUS_SOV
+            }
+        }
+
+        localization_key = RUS_federation_council_name
+    }
+
+    text = {
+        trigger = { tag = SAF }
+
+        localization_key = SAF_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = SLV }
+
+        localization_key = SLV_first_chamber_name
+    }
+
+    # text = {
+    #     trigger = { tag = SPR }
+
+    #     localization_key = SPR_first_chamber_name
+    # }
+
+    text = {
+        trigger = { tag = SSD }
+
+        localization_key = SSD_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = SUD }
+
+        localization_key = SUD_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = SWI }
+
+        localization_key = SWI_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = TAJ }
+
+        localization_key = TAJ_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = USA }
+
+        localization_key = USA_first_chamber_name
+    }
+
+    text = {
+        trigger = { tag = WGR }
+
+        localization_key = WGR_first_chamber_name
+    }
+
+    text = {
+        trigger = {
+            OR = {
+                tag = ARG
+                tag = AST
+                tag = ATG
+                tag = BAH
+                tag = BEL
+                tag = BLZ
+                tag = BOL
+                tag = BRB
+                tag = BRD
+                tag = CAM
+                tag = CAN
+                tag = CHL
+                tag = CMR
+                tag = COG
+                tag = COL
+                tag = CZE
+                tag = DOM
+                tag = EQG
+                tag = FRA
+                tag = GAB
+                tag = GRD
+                tag = HAI
+                tag = JAM
+                tag = JOR
+                tag = KAZ
+                tag = KEN
+                tag = LIB
+                tag = LSO
+                tag = MAD
+                tag = MAL
+                tag = MCG
+                tag = MEX
+                tag = MRT
+                tag = NEP
+                tag = NGA
+                tag = PAK
+                tag = PAR
+                tag = PHI
+                tag = PLW
+                tag = POL
+                tag = ROM
+                tag = RWA
+                tag = SLC
+                tag = SOM
+                tag = SWL
+                tag = TAI
+                tag = TOB
+                tag = URG
+                tag = UZB
+                tag = ZIM
+            }
+        }
+
+        localization_key = SENATE
+    }
+    
+    text = { localization_key = FIRST_CHAMBER }
 }
 
-# インデックスは 0 から始まるため、現在の座席番号を取得するには 1 を加えてから表示します。
+# 第二院
 defined_text = {
-	name = GetParliamentSeatName
-	text = {
-		trigger = {
-			set_temp_variable = { temp_seat = parliament_main_index }
-			add_to_temp_variable = { temp_seat = 1 }
-			check_variable = { temp_seat > 0 }
-		}
-		localization_key = parliament_seat_text
-	}
+    name = "GetSecondChamberName"
+
+    # text = {
+    #     trigger = { tag = IRE }
+
+    #     localization_key = IRE_first_chamber_name
+    # }
 }
