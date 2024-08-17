@@ -1,40 +1,48 @@
-#!gfx:interface\icon_of_focus\_geacps_generic.gfx
-#!gfx:interface\icon_of_focus\geacps_JAP.gfx
+# !gfx:interface\icon_of_focus\_geacps_generic.gfx
+# !gfx:interface\icon_of_focus\geacps_JAP.gfx
 
 focus_tree = {
 	id = JAP_focus_tree
-	country = {
-		factor = 0
-		modifier = {
-			add = 10
-			tag = JAP
-		}
-	}
 	default = no
 	reset_on_civilwar = yes
-	continuous_focus_position = {
-		x = 700 y = 100
+
+	country = {
+		factor = 0
+
+		modifier = {
+			tag = JAP
+			add = 10
+		}
 	}
-	initial_show_position = {
-		focus = JAP_january_22_incident
-	}
+
+	continuous_focus_position = { x = 700 y = 100 }
+
+	initial_show_position = { focus = JAP_january_22_incident }
+
 	shared_focus = JAP_january_22_incident
 	shared_focus = JAP_marco_polo_bridge_incident
 	shared_focus = JAP_taimeikoka
 }
-shared_focus = {	#一・二二事件
+
+# # 一・二二事件
+# 一・二二事件
+shared_focus = {
 	id = JAP_january_22_incident
-	icon = GFX_focus_JAP_losange
+	icon = GFX_goal_unknown
 	cost = 1
 	x = 2
 	y = 0
-	available = {	has_country_flag = JAP_january_22_incident_occurred	}
+
+	available = { has_country_flag = JAP_january_22_incident_attempted }
+	
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus JAP_january_22_incident"
 		custom_effect_tooltip = JAP_january_22_incident_tt
 	}
 }
-shared_focus = {	#重臣会議を開催する
+
+# 重臣会議を開催する
+shared_focus = {
 	id = JAP_senior_statesmens_conference
 	icon = GFX_focus_JAP_senior_statesmens_conference
 	cost = 1
@@ -47,7 +55,9 @@ shared_focus = {	#重臣会議を開催する
 	relative_position_id = JAP_january_22_incident
 	prerequisite = {	focus = JAP_january_22_incident	}
 }
-shared_focus = {	#閣議を開く
+
+# 閣議を開く
+shared_focus = {
 	id = JAP_cabinet_meeting
 	icon = GFX_focus_JAP_cabinet_meeting
 	cost = 1
@@ -60,7 +70,9 @@ shared_focus = {	#閣議を開く
 	relative_position_id = JAP_january_22_incident
 	prerequisite = {	focus = JAP_january_22_incident	}
 }
-shared_focus = {	#戒厳の宣告
+
+# 戒厳の宣告
+shared_focus = {
 	id = JAP_declaration_of_martial_law
 	icon = GFX_focus_JAP_constitution
 	cost = 1
@@ -76,7 +88,9 @@ shared_focus = {	#戒厳の宣告
 	prerequisite = {	focus = JAP_senior_statesmens_conference	}
 	prerequisite = {	focus = JAP_cabinet_meeting	}
 }
-shared_focus = {	#海軍士官の裁判
+
+# 海軍士官の裁判
+shared_focus = {
 	id = JAP_judgment_of_naval_officers
 	icon = GFX_focus_JAP_purge_of_the_navy
 	cost = 4.28
@@ -90,7 +104,9 @@ shared_focus = {	#海軍士官の裁判
 	relative_position_id = JAP_declaration_of_martial_law
 	prerequisite = {	focus = JAP_declaration_of_martial_law	}
 }
-shared_focus = {	#農本主義者を逮捕
+
+# 農本主義者を逮捕
+shared_focus = {
 	id = JAP_arrest_of_agrarianists
 	icon = GFX_focus_JAP_green_scare
 	cost = 4.28
@@ -104,7 +120,9 @@ shared_focus = {	#農本主義者を逮捕
 	relative_position_id = JAP_declaration_of_martial_law
 	prerequisite = {	focus = JAP_declaration_of_martial_law	}
 }
-shared_focus = {	#皇道派将校の裁判
+
+# 皇道派将校の裁判
+shared_focus = {
 	id = JAP_judgment_of_kodoha_officers
 	icon = GFX_focus_JAP_purge_of_the_kodoha
 	cost = 4.28
@@ -118,7 +136,9 @@ shared_focus = {	#皇道派将校の裁判
 	relative_position_id = JAP_declaration_of_martial_law
 	prerequisite = {	focus = JAP_declaration_of_martial_law	}
 }
-shared_focus = {	#事態の安定
+
+# 事態の安定
+shared_focus = {
 	id = JAP_stability_of_the_situation
 	icon = GFX_focus_JAP_declaration
 	cost = 1

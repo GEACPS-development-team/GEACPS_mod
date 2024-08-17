@@ -1,0 +1,19 @@
+default_peace_strategy = {
+    allowed = { always = yes }
+
+    enable = { has_war = no }
+
+    abort = { has_war = yes }
+
+    ai_strategy = {
+        type = garrison
+        value = 100
+    }
+
+    abort_when_not_enabled = yes
+}
+
+# default_war_strategy = {
+#     allowed = { always = yes }
+#     ...
+# }

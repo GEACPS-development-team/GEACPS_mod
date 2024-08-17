@@ -1,6 +1,6 @@
 add_namespace = JAP
+# 大日本帝國
 country_event = {
-	# 大日本帝國
 	id = JAP.0
 	title = JAP.0.t
 	desc = JAP.0.d
@@ -8,14 +8,16 @@ country_event = {
 	is_triggered_only = yes
 	hidden = no
 	fire_only_once = yes
+
+	# 天皇陛下万歳！大日本帝国万歳！
 	option = {
-		# 天皇陛下万歳！大日本帝国万歳！
 		name = JAP.0.0
 	}
 }
 
+
+# 一・二二事件の発生
 country_event = {
-	# 一・二二事件の発生
 	id = JAP.2
 	title = JAP.2.t
 	desc = JAP.2.d
@@ -34,7 +36,7 @@ country_event = {
 			id = JAP.3
 		}
 		hidden_effect = {
-			set_country_flag = JAP_january_22_incident_occurred
+			set_country_flag = JAP_january_22_incident_attempted
 			deactivate_advisor = JAP_hideki_tojo_hg
 			deactivate_advisor = JAP_hideki_tojo_cm
 			deactivate_advisor = JAP_hideki_tojo_mm
