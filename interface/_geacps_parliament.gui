@@ -89,7 +89,7 @@ guiTypes = {
                 slotsize = { width = 15 height = 15 }
                 position = { x = -285 y = 25 }
                 orientation = upper_left
-                max_slots_horizontal = 20
+                # max_slots_horizontal = 20
                 max_slots_vertical = 10
                 add_horizontal = no
             }
@@ -98,7 +98,7 @@ guiTypes = {
         # 第二院
         instantTextBoxType = {
             name = "second_chamber_name"
-            text = "[ROOT.GetName]下院"
+            text = "[GetSecondChamberName]"
             font = "hoi_24header"
             position = { x = 0 y = 342 } # 366 - 24
             borderSize = { x = 0 y = 0 }
@@ -129,7 +129,7 @@ guiTypes = {
                 position = { x = 45 y = 20 }
                 orientation = upper_left
                 max_slots_horizontal = 1
-                max_slots_vertical = 200
+                # max_slots_vertical = 200
                 add_horizontal = no
             }
         }
