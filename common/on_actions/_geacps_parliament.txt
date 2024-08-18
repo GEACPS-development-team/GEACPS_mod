@@ -1,22 +1,28 @@
 on_actions = {
-    on_startup = {
-        effect = {
-            every_country = {
-                limit = { is_ai = no }
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { is_ai = no }
 
-                parliament_startup_effect = yes
-            }
-        }
-    }
+				parliament_startup_effect = yes
+			}
 
-    on_daily = {
-        effect = {
-            every_country = {
-                limit = { is_ai = no }
+			JAP = {
+				limit = { is_ai = no }
 
-                clear_arrays_effect = yes
-                parliament_daily_effect = yes
-            }
-        }
-    }
+				JAP_parliament_startup_effect = yes
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			every_country = {
+				limit = { is_ai = no }
+
+				clear_arrays_effect = yes
+				parliament_daily_effect = yes
+			}
+		}
+	}
 }

@@ -1,540 +1,540 @@
 parliament_startup_effect = {
-    add_to_array = { parliament_seat_array = 60 } # 正統社会主義
-    add_to_array = { parliament_seat_array = 40 } # 革新社会主義
-    add_to_array = { parliament_seat_array = 30 } # 社会民主主義
-    add_to_array = { parliament_seat_array = 20 } # 自由民主主義
-    add_to_array = { parliament_seat_array = 10 } # 中立中道主義
-    add_to_array = { parliament_seat_array = 10 } # 保守民主主義
-    add_to_array = { parliament_seat_array = 10 } # 権威民主主義
-    add_to_array = { parliament_seat_array = 10 } # 国家権威主義
-    add_to_array = { parliament_seat_array = 10 } # 国家大衆主義
+	add_to_array = { parliament_seat_array = 60 } # 正統社会主義
+	add_to_array = { parliament_seat_array = 40 } # 革新社会主義
+	add_to_array = { parliament_seat_array = 30 } # 社会民主主義
+	add_to_array = { parliament_seat_array = 20 } # 自由民主主義
+	add_to_array = { parliament_seat_array = 10 } # 中立中道主義
+	add_to_array = { parliament_seat_array = 10 } # 保守民主主義
+	add_to_array = { parliament_seat_array = 10 } # 権威民主主義
+	add_to_array = { parliament_seat_array = 10 } # 国家権威主義
+	add_to_array = { parliament_seat_array = 10 } # 国家大衆主義
 
-    add_to_array = { parliament_group_array = 1 } # 正統社会主義
-    add_to_array = { parliament_group_array = 2 } # 革新社会主義
-    add_to_array = { parliament_group_array = 3 } # 社会民主主義
-    add_to_array = { parliament_group_array = 4 } # 自由民主主義
-    add_to_array = { parliament_group_array = 5 } # 中立中道主義
-    add_to_array = { parliament_group_array = 6 } # 保守民主主義
-    add_to_array = { parliament_group_array = 7 } # 権威民主主義
-    add_to_array = { parliament_group_array = 8 } # 国家権威主義
-    add_to_array = { parliament_group_array = 9 } # 国家大衆主義
+	add_to_array = { parliament_group_array = 1 } # 正統社会主義
+	add_to_array = { parliament_group_array = 2 } # 革新社会主義
+	add_to_array = { parliament_group_array = 3 } # 社会民主主義
+	add_to_array = { parliament_group_array = 4 } # 自由民主主義
+	add_to_array = { parliament_group_array = 5 } # 中立中道主義
+	add_to_array = { parliament_group_array = 6 } # 保守民主主義
+	add_to_array = { parliament_group_array = 7 } # 権威民主主義
+	add_to_array = { parliament_group_array = 8 } # 国家権威主義
+	add_to_array = { parliament_group_array = 9 } # 国家大衆主義
 
-    parliament_reload_effect = yes
-    parliament_set_effect = yes
+	parliament_reload_effect = yes
+	parliament_set_effect = yes
 }
 
 parliament_reload_effect = {
-    clear_array = parliament_array
+	clear_array = parliament_array
 
-    for_each_loop = {
-        array = parliament_seat_array
-        add_to_array = { seat = parliament_seat_array^i }
-    }
+	for_each_loop = {
+		array = parliament_seat_array
+		add_to_array = { seat = parliament_seat_array^i }
+	}
 
-    set_temp_variable = { temp_first_index = 0 }
-    set_temp_variable = { temp_second_index = 1 }
+	set_temp_variable = { temp_first_index = 0 }
+	set_temp_variable = { temp_second_index = 1 }
 
-    set_temp_variable = { temp_size = seat^num }
-    subtract_from_temp_variable = { temp_size = 1 }
+	set_temp_variable = { temp_size = seat^num }
+	subtract_from_temp_variable = { temp_size = 1 }
 
-    while_loop_effect = {
-        limit = { check_variable = { temp_first_index < temp_size } }
-        add_to_variable = { seat^temp_second_index = seat^temp_first_index }
-        add_to_temp_variable = { temp_first_index = 1 }
-        add_to_temp_variable = { temp_second_index = 1 }
-    }
+	while_loop_effect = {
+		limit = { check_variable = { temp_first_index < temp_size } }
+		add_to_variable = { seat^temp_second_index = seat^temp_first_index }
+		add_to_temp_variable = { temp_first_index = 1 }
+		add_to_temp_variable = { temp_second_index = 1 }
+	}
 
-    for_loop_effect = {
-        start = 0
-        end = seat^num
+	for_loop_effect = {
+		start = 0
+		end = seat^num
 
-        resize_array = {
-            array = parliament_array
-            size = seat^v
-            value = parliament_group_array^v
-        }
-    }
+		resize_array = {
+			array = parliament_array
+			size = seat^v
+			value = parliament_group_array^v
+		}
+	}
 
-    clear_array = seat
+	clear_array = seat
 }
 
 parliament_set_effect = {
-    add_to_array = { parliament_x_array = 0 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 14 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 28 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 42 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 56 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 71 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 85 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 99 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 2 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 16 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 30 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 44 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 59 }
-    add_to_array = { parliament_y_array = 150 }
-    add_to_array = { parliament_x_array = 5 }
-    add_to_array = { parliament_y_array = 134 }
-    add_to_array = { parliament_x_array = 73 }
-    add_to_array = { parliament_y_array = 150 }
-    add_to_array = { parliament_x_array = 19 }
-    add_to_array = { parliament_y_array = 134 }
-    add_to_array = { parliament_x_array = 87 }
-    add_to_array = { parliament_y_array = 151 }
-    add_to_array = { parliament_x_array = 34 }
-    add_to_array = { parliament_y_array = 135 }
-    add_to_array = { parliament_x_array = 48 }
-    add_to_array = { parliament_y_array = 135 }
-    add_to_array = { parliament_x_array = 102 }
-    add_to_array = { parliament_y_array = 151 }
-    add_to_array = { parliament_x_array = 9 }
-    add_to_array = { parliament_y_array = 119 }
-    add_to_array = { parliament_x_array = 63 }
-    add_to_array = { parliament_y_array = 136 }
-    add_to_array = { parliament_x_array = 24 }
-    add_to_array = { parliament_y_array = 119 }
-    add_to_array = { parliament_x_array = 39 }
-    add_to_array = { parliament_y_array = 120 }
-    add_to_array = { parliament_x_array = 78 }
-    add_to_array = { parliament_y_array = 136 }
-    add_to_array = { parliament_x_array = 15 }
-    add_to_array = { parliament_y_array = 104 }
-    add_to_array = { parliament_x_array = 54 }
-    add_to_array = { parliament_y_array = 120 }
-    add_to_array = { parliament_x_array = 92 }
-    add_to_array = { parliament_y_array = 138 }
-    add_to_array = { parliament_x_array = 30 }
-    add_to_array = { parliament_y_array = 104 }
-    add_to_array = { parliament_x_array = 68 }
-    add_to_array = { parliament_y_array = 123 }
-    add_to_array = { parliament_x_array = 45 }
-    add_to_array = { parliament_y_array = 107 }
-    add_to_array = { parliament_x_array = 22 }
-    add_to_array = { parliament_y_array = 91 }
-    add_to_array = { parliament_x_array = 108 }
-    add_to_array = { parliament_y_array = 139 }
-    add_to_array = { parliament_x_array = 84 }
-    add_to_array = { parliament_y_array = 123 }
-    add_to_array = { parliament_x_array = 61 }
-    add_to_array = { parliament_y_array = 107 }
-    add_to_array = { parliament_x_array = 38 }
-    add_to_array = { parliament_y_array = 91 }
-    add_to_array = { parliament_x_array = 99 }
-    add_to_array = { parliament_y_array = 126 }
-    add_to_array = { parliament_x_array = 76 }
-    add_to_array = { parliament_y_array = 110 }
-    add_to_array = { parliament_x_array = 53 }
-    add_to_array = { parliament_y_array = 94 }
-    add_to_array = { parliament_x_array = 30 }
-    add_to_array = { parliament_y_array = 77 }
-    add_to_array = { parliament_x_array = 47 }
-    add_to_array = { parliament_y_array = 78 }
-    add_to_array = { parliament_x_array = 70 }
-    add_to_array = { parliament_y_array = 95 }
-    add_to_array = { parliament_x_array = 93 }
-    add_to_array = { parliament_y_array = 111 }
-    add_to_array = { parliament_x_array = 40 }
-    add_to_array = { parliament_y_array = 65 }
-    add_to_array = { parliament_x_array = 115 }
-    add_to_array = { parliament_y_array = 128 }
-    add_to_array = { parliament_x_array = 62 }
-    add_to_array = { parliament_y_array = 82 }
-    add_to_array = { parliament_x_array = 85 }
-    add_to_array = { parliament_y_array = 99 }
-    add_to_array = { parliament_x_array = 108 }
-    add_to_array = { parliament_y_array = 115 }
-    add_to_array = { parliament_x_array = 57 }
-    add_to_array = { parliament_y_array = 66 }
-    add_to_array = { parliament_x_array = 50 }
-    add_to_array = { parliament_y_array = 54 }
-    add_to_array = { parliament_x_array = 80 }
-    add_to_array = { parliament_y_array = 83 }
-    add_to_array = { parliament_x_array = 73 }
-    add_to_array = { parliament_y_array = 71 }
-    add_to_array = { parliament_x_array = 103 }
-    add_to_array = { parliament_y_array = 101 }
-    add_to_array = { parliament_x_array = 95 }
-    add_to_array = { parliament_y_array = 88 }
-    add_to_array = { parliament_x_array = 69 }
-    add_to_array = { parliament_y_array = 56 }
-    add_to_array = { parliament_x_array = 62 }
-    add_to_array = { parliament_y_array = 43 }
-    add_to_array = { parliament_x_array = 125 }
-    add_to_array = { parliament_y_array = 119 }
-    add_to_array = { parliament_x_array = 91 }
-    add_to_array = { parliament_y_array = 74 }
-    add_to_array = { parliament_x_array = 118 }
-    add_to_array = { parliament_y_array = 106 }
-    add_to_array = { parliament_x_array = 84 }
-    add_to_array = { parliament_y_array = 61 }
-    add_to_array = { parliament_x_array = 81 }
-    add_to_array = { parliament_y_array = 46 }
-    add_to_array = { parliament_x_array = 74 }
-    add_to_array = { parliament_y_array = 34 }
-    add_to_array = { parliament_x_array = 114 }
-    add_to_array = { parliament_y_array = 92 }
-    add_to_array = { parliament_x_array = 107 }
-    add_to_array = { parliament_y_array = 80 }
-    add_to_array = { parliament_x_array = 104 }
-    add_to_array = { parliament_y_array = 65 }
-    add_to_array = { parliament_x_array = 97 }
-    add_to_array = { parliament_y_array = 53 }
-    add_to_array = { parliament_x_array = 87 }
-    add_to_array = { parliament_y_array = 26 }
-    add_to_array = { parliament_x_array = 94 }
-    add_to_array = { parliament_y_array = 38 }
-    add_to_array = { parliament_x_array = 129 }
-    add_to_array = { parliament_y_array = 99 }
-    add_to_array = { parliament_x_array = 137 }
-    add_to_array = { parliament_y_array = 111 }
-    add_to_array = { parliament_x_array = 120 }
-    add_to_array = { parliament_y_array = 72 }
-    add_to_array = { parliament_x_array = 127 }
-    add_to_array = { parliament_y_array = 85 }
-    add_to_array = { parliament_x_array = 110 }
-    add_to_array = { parliament_y_array = 46 }
-    add_to_array = { parliament_x_array = 117 }
-    add_to_array = { parliament_y_array = 58 }
-    add_to_array = { parliament_x_array = 101 }
-    add_to_array = { parliament_y_array = 19 }
-    add_to_array = { parliament_x_array = 108 }
-    add_to_array = { parliament_y_array = 31 }
-    add_to_array = { parliament_x_array = 142 }
-    add_to_array = { parliament_y_array = 94 }
-    add_to_array = { parliament_x_array = 133 }
-    add_to_array = { parliament_y_array = 67 }
-    add_to_array = { parliament_x_array = 124 }
-    add_to_array = { parliament_y_array = 40 }
-    add_to_array = { parliament_x_array = 116 }
-    add_to_array = { parliament_y_array = 14 }
-    add_to_array = { parliament_x_array = 123 }
-    add_to_array = { parliament_y_array = 26 }
-    add_to_array = { parliament_x_array = 132 }
-    add_to_array = { parliament_y_array = 53 }
-    add_to_array = { parliament_x_array = 140 }
-    add_to_array = { parliament_y_array = 79 }
-    add_to_array = { parliament_x_array = 149 }
-    add_to_array = { parliament_y_array = 106 }
-    add_to_array = { parliament_x_array = 131 }
-    add_to_array = { parliament_y_array = 9 }
-    add_to_array = { parliament_x_array = 139 }
-    add_to_array = { parliament_y_array = 36 }
-    add_to_array = { parliament_x_array = 138 }
-    add_to_array = { parliament_y_array = 22 }
-    add_to_array = { parliament_x_array = 147 }
-    add_to_array = { parliament_y_array = 63 }
-    add_to_array = { parliament_x_array = 146 }
-    add_to_array = { parliament_y_array = 49 }
-    add_to_array = { parliament_x_array = 155 }
-    add_to_array = { parliament_y_array = 90 }
-    add_to_array = { parliament_x_array = 155 }
-    add_to_array = { parliament_y_array = 76 }
-    add_to_array = { parliament_x_array = 146 }
-    add_to_array = { parliament_y_array = 6 }
-    add_to_array = { parliament_x_array = 154 }
-    add_to_array = { parliament_y_array = 34 }
-    add_to_array = { parliament_x_array = 154 }
-    add_to_array = { parliament_y_array = 20 }
-    add_to_array = { parliament_x_array = 162 }
-    add_to_array = { parliament_y_array = 104 }
-    add_to_array = { parliament_x_array = 162 }
-    add_to_array = { parliament_y_array = 61 }
-    add_to_array = { parliament_x_array = 161 }
-    add_to_array = { parliament_y_array = 47 }
-    add_to_array = { parliament_x_array = 161 }
-    add_to_array = { parliament_y_array = 5 }
-    add_to_array = { parliament_x_array = 169 }
-    add_to_array = { parliament_y_array = 89 }
-    add_to_array = { parliament_x_array = 169 }
-    add_to_array = { parliament_y_array = 75 }
-    add_to_array = { parliament_x_array = 169 }
-    add_to_array = { parliament_y_array = 33 }
-    add_to_array = { parliament_x_array = 169 }
-    add_to_array = { parliament_y_array = 19 }
-    add_to_array = { parliament_x_array = 177 }
-    add_to_array = { parliament_y_array = 5 }
-    add_to_array = { parliament_x_array = 177 }
-    add_to_array = { parliament_y_array = 47 }
-    add_to_array = { parliament_x_array = 176 }
-    add_to_array = { parliament_y_array = 61 }
-    add_to_array = { parliament_x_array = 176 }
-    add_to_array = { parliament_y_array = 104 }
-    add_to_array = { parliament_x_array = 185 }
-    add_to_array = { parliament_y_array = 20 }
-    add_to_array = { parliament_x_array = 184 }
-    add_to_array = { parliament_y_array = 34 }
-    add_to_array = { parliament_x_array = 192 }
-    add_to_array = { parliament_y_array = 6 }
-    add_to_array = { parliament_x_array = 184 }
-    add_to_array = { parliament_y_array = 76 }
-    add_to_array = { parliament_x_array = 183 }
-    add_to_array = { parliament_y_array = 90 }
-    add_to_array = { parliament_x_array = 192 }
-    add_to_array = { parliament_y_array = 49 }
-    add_to_array = { parliament_x_array = 191 }
-    add_to_array = { parliament_y_array = 63 }
-    add_to_array = { parliament_x_array = 200 }
-    add_to_array = { parliament_y_array = 22 }
-    add_to_array = { parliament_x_array = 199 }
-    add_to_array = { parliament_y_array = 36 }
-    add_to_array = { parliament_x_array = 208 }
-    add_to_array = { parliament_y_array = 9 }
-    add_to_array = { parliament_x_array = 189 }
-    add_to_array = { parliament_y_array = 106 }
-    add_to_array = { parliament_x_array = 198 }
-    add_to_array = { parliament_y_array = 79 }
-    add_to_array = { parliament_x_array = 206 }
-    add_to_array = { parliament_y_array = 53 }
-    add_to_array = { parliament_x_array = 215 }
-    add_to_array = { parliament_y_array = 26 }
-    add_to_array = { parliament_x_array = 222 }
-    add_to_array = { parliament_y_array = 14 }
-    add_to_array = { parliament_x_array = 214 }
-    add_to_array = { parliament_y_array = 40 }
-    add_to_array = { parliament_x_array = 205 }
-    add_to_array = { parliament_y_array = 67 }
-    add_to_array = { parliament_x_array = 196 }
-    add_to_array = { parliament_y_array = 94 }
-    add_to_array = { parliament_x_array = 230 }
-    add_to_array = { parliament_y_array = 31 }
-    add_to_array = { parliament_x_array = 237 }
-    add_to_array = { parliament_y_array = 19 }
-    add_to_array = { parliament_x_array = 221 }
-    add_to_array = { parliament_y_array = 58 }
-    add_to_array = { parliament_x_array = 228 }
-    add_to_array = { parliament_y_array = 46 }
-    add_to_array = { parliament_x_array = 211 }
-    add_to_array = { parliament_y_array = 85 }
-    add_to_array = { parliament_x_array = 218 }
-    add_to_array = { parliament_y_array = 72 }
-    add_to_array = { parliament_x_array = 202 }
-    add_to_array = { parliament_y_array = 111 }
-    add_to_array = { parliament_x_array = 209 }
-    add_to_array = { parliament_y_array = 99 }
-    add_to_array = { parliament_x_array = 244 }
-    add_to_array = { parliament_y_array = 38 }
-    add_to_array = { parliament_x_array = 251 }
-    add_to_array = { parliament_y_array = 26 }
-    add_to_array = { parliament_x_array = 241 }
-    add_to_array = { parliament_y_array = 53 }
-    add_to_array = { parliament_x_array = 234 }
-    add_to_array = { parliament_y_array = 65 }
-    add_to_array = { parliament_x_array = 231 }
-    add_to_array = { parliament_y_array = 80 }
-    add_to_array = { parliament_x_array = 224 }
-    add_to_array = { parliament_y_array = 92 }
-    add_to_array = { parliament_x_array = 264 }
-    add_to_array = { parliament_y_array = 34 }
-    add_to_array = { parliament_x_array = 257 }
-    add_to_array = { parliament_y_array = 46 }
-    add_to_array = { parliament_x_array = 254 }
-    add_to_array = { parliament_y_array = 61 }
-    add_to_array = { parliament_x_array = 220 }
-    add_to_array = { parliament_y_array = 106 }
-    add_to_array = { parliament_x_array = 247 }
-    add_to_array = { parliament_y_array = 74 }
-    add_to_array = { parliament_x_array = 213 }
-    add_to_array = { parliament_y_array = 119 }
-    add_to_array = { parliament_x_array = 277 }
-    add_to_array = { parliament_y_array = 43 }
-    add_to_array = { parliament_x_array = 269 }
-    add_to_array = { parliament_y_array = 56 }
-    add_to_array = { parliament_x_array = 243 }
-    add_to_array = { parliament_y_array = 88 }
-    add_to_array = { parliament_x_array = 236 }
-    add_to_array = { parliament_y_array = 101 }
-    add_to_array = { parliament_x_array = 265 }
-    add_to_array = { parliament_y_array = 71 }
-    add_to_array = { parliament_x_array = 258 }
-    add_to_array = { parliament_y_array = 83 }
-    add_to_array = { parliament_x_array = 288 }
-    add_to_array = { parliament_y_array = 54 }
-    add_to_array = { parliament_x_array = 281 }
-    add_to_array = { parliament_y_array = 66 }
-    add_to_array = { parliament_x_array = 230 }
-    add_to_array = { parliament_y_array = 115 }
-    add_to_array = { parliament_x_array = 253 }
-    add_to_array = { parliament_y_array = 99 }
-    add_to_array = { parliament_x_array = 276 }
-    add_to_array = { parliament_y_array = 82 }
-    add_to_array = { parliament_x_array = 223 }
-    add_to_array = { parliament_y_array = 128 }
-    add_to_array = { parliament_x_array = 299 }
-    add_to_array = { parliament_y_array = 65 }
-    add_to_array = { parliament_x_array = 246 }
-    add_to_array = { parliament_y_array = 111 }
-    add_to_array = { parliament_x_array = 268 }
-    add_to_array = { parliament_y_array = 95 }
-    add_to_array = { parliament_x_array = 291 }
-    add_to_array = { parliament_y_array = 78 }
-    add_to_array = { parliament_x_array = 308 }
-    add_to_array = { parliament_y_array = 77 }
-    add_to_array = { parliament_x_array = 285 }
-    add_to_array = { parliament_y_array = 94 }
-    add_to_array = { parliament_x_array = 262 }
-    add_to_array = { parliament_y_array = 110 }
-    add_to_array = { parliament_x_array = 239 }
-    add_to_array = { parliament_y_array = 126 }
-    add_to_array = { parliament_x_array = 300 }
-    add_to_array = { parliament_y_array = 91 }
-    add_to_array = { parliament_x_array = 277 }
-    add_to_array = { parliament_y_array = 107 }
-    add_to_array = { parliament_x_array = 254 }
-    add_to_array = { parliament_y_array = 123 }
-    add_to_array = { parliament_x_array = 231 }
-    add_to_array = { parliament_y_array = 139 }
-    add_to_array = { parliament_x_array = 316 }
-    add_to_array = { parliament_y_array = 91 }
-    add_to_array = { parliament_x_array = 293 }
-    add_to_array = { parliament_y_array = 107 }
-    add_to_array = { parliament_x_array = 270 }
-    add_to_array = { parliament_y_array = 123 }
-    add_to_array = { parliament_x_array = 308 }
-    add_to_array = { parliament_y_array = 104 }
-    add_to_array = { parliament_x_array = 246 }
-    add_to_array = { parliament_y_array = 138 }
-    add_to_array = { parliament_x_array = 284 }
-    add_to_array = { parliament_y_array = 120 }
-    add_to_array = { parliament_x_array = 323 }
-    add_to_array = { parliament_y_array = 104 }
-    add_to_array = { parliament_x_array = 261 }
-    add_to_array = { parliament_y_array = 136 }
-    add_to_array = { parliament_x_array = 300 }
-    add_to_array = { parliament_y_array = 120 }
-    add_to_array = { parliament_x_array = 314 }
-    add_to_array = { parliament_y_array = 119 }
-    add_to_array = { parliament_x_array = 275 }
-    add_to_array = { parliament_y_array = 136 }
-    add_to_array = { parliament_x_array = 329 }
-    add_to_array = { parliament_y_array = 119 }
-    add_to_array = { parliament_x_array = 236 }
-    add_to_array = { parliament_y_array = 151 }
-    add_to_array = { parliament_x_array = 290 }
-    add_to_array = { parliament_y_array = 135 }
-    add_to_array = { parliament_x_array = 305 }
-    add_to_array = { parliament_y_array = 135 }
-    add_to_array = { parliament_x_array = 251 }
-    add_to_array = { parliament_y_array = 151 }
-    add_to_array = { parliament_x_array = 319 }
-    add_to_array = { parliament_y_array = 134 }
-    add_to_array = { parliament_x_array = 265 }
-    add_to_array = { parliament_y_array = 150 }
-    add_to_array = { parliament_x_array = 334 }
-    add_to_array = { parliament_y_array = 134 }
-    add_to_array = { parliament_x_array = 280 }
-    add_to_array = { parliament_y_array = 150 }
-    add_to_array = { parliament_x_array = 294 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 308 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 322 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 337 }
-    add_to_array = { parliament_y_array = 149 }
-    add_to_array = { parliament_x_array = 239 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 253 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 268 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 282 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 296 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 310 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 324 }
-    add_to_array = { parliament_y_array = 164 }
-    add_to_array = { parliament_x_array = 338 }
-    add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 0 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 14 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 28 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 42 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 56 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 71 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 85 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 99 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 2 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 16 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 30 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 44 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 59 }
+	add_to_array = { parliament_y_array = 150 }
+	add_to_array = { parliament_x_array = 5 }
+	add_to_array = { parliament_y_array = 134 }
+	add_to_array = { parliament_x_array = 73 }
+	add_to_array = { parliament_y_array = 150 }
+	add_to_array = { parliament_x_array = 19 }
+	add_to_array = { parliament_y_array = 134 }
+	add_to_array = { parliament_x_array = 87 }
+	add_to_array = { parliament_y_array = 151 }
+	add_to_array = { parliament_x_array = 34 }
+	add_to_array = { parliament_y_array = 135 }
+	add_to_array = { parliament_x_array = 48 }
+	add_to_array = { parliament_y_array = 135 }
+	add_to_array = { parliament_x_array = 102 }
+	add_to_array = { parliament_y_array = 151 }
+	add_to_array = { parliament_x_array = 9 }
+	add_to_array = { parliament_y_array = 119 }
+	add_to_array = { parliament_x_array = 63 }
+	add_to_array = { parliament_y_array = 136 }
+	add_to_array = { parliament_x_array = 24 }
+	add_to_array = { parliament_y_array = 119 }
+	add_to_array = { parliament_x_array = 39 }
+	add_to_array = { parliament_y_array = 120 }
+	add_to_array = { parliament_x_array = 78 }
+	add_to_array = { parliament_y_array = 136 }
+	add_to_array = { parliament_x_array = 15 }
+	add_to_array = { parliament_y_array = 104 }
+	add_to_array = { parliament_x_array = 54 }
+	add_to_array = { parliament_y_array = 120 }
+	add_to_array = { parliament_x_array = 92 }
+	add_to_array = { parliament_y_array = 138 }
+	add_to_array = { parliament_x_array = 30 }
+	add_to_array = { parliament_y_array = 104 }
+	add_to_array = { parliament_x_array = 68 }
+	add_to_array = { parliament_y_array = 123 }
+	add_to_array = { parliament_x_array = 45 }
+	add_to_array = { parliament_y_array = 107 }
+	add_to_array = { parliament_x_array = 22 }
+	add_to_array = { parliament_y_array = 91 }
+	add_to_array = { parliament_x_array = 108 }
+	add_to_array = { parliament_y_array = 139 }
+	add_to_array = { parliament_x_array = 84 }
+	add_to_array = { parliament_y_array = 123 }
+	add_to_array = { parliament_x_array = 61 }
+	add_to_array = { parliament_y_array = 107 }
+	add_to_array = { parliament_x_array = 38 }
+	add_to_array = { parliament_y_array = 91 }
+	add_to_array = { parliament_x_array = 99 }
+	add_to_array = { parliament_y_array = 126 }
+	add_to_array = { parliament_x_array = 76 }
+	add_to_array = { parliament_y_array = 110 }
+	add_to_array = { parliament_x_array = 53 }
+	add_to_array = { parliament_y_array = 94 }
+	add_to_array = { parliament_x_array = 30 }
+	add_to_array = { parliament_y_array = 77 }
+	add_to_array = { parliament_x_array = 47 }
+	add_to_array = { parliament_y_array = 78 }
+	add_to_array = { parliament_x_array = 70 }
+	add_to_array = { parliament_y_array = 95 }
+	add_to_array = { parliament_x_array = 93 }
+	add_to_array = { parliament_y_array = 111 }
+	add_to_array = { parliament_x_array = 40 }
+	add_to_array = { parliament_y_array = 65 }
+	add_to_array = { parliament_x_array = 115 }
+	add_to_array = { parliament_y_array = 128 }
+	add_to_array = { parliament_x_array = 62 }
+	add_to_array = { parliament_y_array = 82 }
+	add_to_array = { parliament_x_array = 85 }
+	add_to_array = { parliament_y_array = 99 }
+	add_to_array = { parliament_x_array = 108 }
+	add_to_array = { parliament_y_array = 115 }
+	add_to_array = { parliament_x_array = 57 }
+	add_to_array = { parliament_y_array = 66 }
+	add_to_array = { parliament_x_array = 50 }
+	add_to_array = { parliament_y_array = 54 }
+	add_to_array = { parliament_x_array = 80 }
+	add_to_array = { parliament_y_array = 83 }
+	add_to_array = { parliament_x_array = 73 }
+	add_to_array = { parliament_y_array = 71 }
+	add_to_array = { parliament_x_array = 103 }
+	add_to_array = { parliament_y_array = 101 }
+	add_to_array = { parliament_x_array = 95 }
+	add_to_array = { parliament_y_array = 88 }
+	add_to_array = { parliament_x_array = 69 }
+	add_to_array = { parliament_y_array = 56 }
+	add_to_array = { parliament_x_array = 62 }
+	add_to_array = { parliament_y_array = 43 }
+	add_to_array = { parliament_x_array = 125 }
+	add_to_array = { parliament_y_array = 119 }
+	add_to_array = { parliament_x_array = 91 }
+	add_to_array = { parliament_y_array = 74 }
+	add_to_array = { parliament_x_array = 118 }
+	add_to_array = { parliament_y_array = 106 }
+	add_to_array = { parliament_x_array = 84 }
+	add_to_array = { parliament_y_array = 61 }
+	add_to_array = { parliament_x_array = 81 }
+	add_to_array = { parliament_y_array = 46 }
+	add_to_array = { parliament_x_array = 74 }
+	add_to_array = { parliament_y_array = 34 }
+	add_to_array = { parliament_x_array = 114 }
+	add_to_array = { parliament_y_array = 92 }
+	add_to_array = { parliament_x_array = 107 }
+	add_to_array = { parliament_y_array = 80 }
+	add_to_array = { parliament_x_array = 104 }
+	add_to_array = { parliament_y_array = 65 }
+	add_to_array = { parliament_x_array = 97 }
+	add_to_array = { parliament_y_array = 53 }
+	add_to_array = { parliament_x_array = 87 }
+	add_to_array = { parliament_y_array = 26 }
+	add_to_array = { parliament_x_array = 94 }
+	add_to_array = { parliament_y_array = 38 }
+	add_to_array = { parliament_x_array = 129 }
+	add_to_array = { parliament_y_array = 99 }
+	add_to_array = { parliament_x_array = 137 }
+	add_to_array = { parliament_y_array = 111 }
+	add_to_array = { parliament_x_array = 120 }
+	add_to_array = { parliament_y_array = 72 }
+	add_to_array = { parliament_x_array = 127 }
+	add_to_array = { parliament_y_array = 85 }
+	add_to_array = { parliament_x_array = 110 }
+	add_to_array = { parliament_y_array = 46 }
+	add_to_array = { parliament_x_array = 117 }
+	add_to_array = { parliament_y_array = 58 }
+	add_to_array = { parliament_x_array = 101 }
+	add_to_array = { parliament_y_array = 19 }
+	add_to_array = { parliament_x_array = 108 }
+	add_to_array = { parliament_y_array = 31 }
+	add_to_array = { parliament_x_array = 142 }
+	add_to_array = { parliament_y_array = 94 }
+	add_to_array = { parliament_x_array = 133 }
+	add_to_array = { parliament_y_array = 67 }
+	add_to_array = { parliament_x_array = 124 }
+	add_to_array = { parliament_y_array = 40 }
+	add_to_array = { parliament_x_array = 116 }
+	add_to_array = { parliament_y_array = 14 }
+	add_to_array = { parliament_x_array = 123 }
+	add_to_array = { parliament_y_array = 26 }
+	add_to_array = { parliament_x_array = 132 }
+	add_to_array = { parliament_y_array = 53 }
+	add_to_array = { parliament_x_array = 140 }
+	add_to_array = { parliament_y_array = 79 }
+	add_to_array = { parliament_x_array = 149 }
+	add_to_array = { parliament_y_array = 106 }
+	add_to_array = { parliament_x_array = 131 }
+	add_to_array = { parliament_y_array = 9 }
+	add_to_array = { parliament_x_array = 139 }
+	add_to_array = { parliament_y_array = 36 }
+	add_to_array = { parliament_x_array = 138 }
+	add_to_array = { parliament_y_array = 22 }
+	add_to_array = { parliament_x_array = 147 }
+	add_to_array = { parliament_y_array = 63 }
+	add_to_array = { parliament_x_array = 146 }
+	add_to_array = { parliament_y_array = 49 }
+	add_to_array = { parliament_x_array = 155 }
+	add_to_array = { parliament_y_array = 90 }
+	add_to_array = { parliament_x_array = 155 }
+	add_to_array = { parliament_y_array = 76 }
+	add_to_array = { parliament_x_array = 146 }
+	add_to_array = { parliament_y_array = 6 }
+	add_to_array = { parliament_x_array = 154 }
+	add_to_array = { parliament_y_array = 34 }
+	add_to_array = { parliament_x_array = 154 }
+	add_to_array = { parliament_y_array = 20 }
+	add_to_array = { parliament_x_array = 162 }
+	add_to_array = { parliament_y_array = 104 }
+	add_to_array = { parliament_x_array = 162 }
+	add_to_array = { parliament_y_array = 61 }
+	add_to_array = { parliament_x_array = 161 }
+	add_to_array = { parliament_y_array = 47 }
+	add_to_array = { parliament_x_array = 161 }
+	add_to_array = { parliament_y_array = 5 }
+	add_to_array = { parliament_x_array = 169 }
+	add_to_array = { parliament_y_array = 89 }
+	add_to_array = { parliament_x_array = 169 }
+	add_to_array = { parliament_y_array = 75 }
+	add_to_array = { parliament_x_array = 169 }
+	add_to_array = { parliament_y_array = 33 }
+	add_to_array = { parliament_x_array = 169 }
+	add_to_array = { parliament_y_array = 19 }
+	add_to_array = { parliament_x_array = 177 }
+	add_to_array = { parliament_y_array = 5 }
+	add_to_array = { parliament_x_array = 177 }
+	add_to_array = { parliament_y_array = 47 }
+	add_to_array = { parliament_x_array = 176 }
+	add_to_array = { parliament_y_array = 61 }
+	add_to_array = { parliament_x_array = 176 }
+	add_to_array = { parliament_y_array = 104 }
+	add_to_array = { parliament_x_array = 185 }
+	add_to_array = { parliament_y_array = 20 }
+	add_to_array = { parliament_x_array = 184 }
+	add_to_array = { parliament_y_array = 34 }
+	add_to_array = { parliament_x_array = 192 }
+	add_to_array = { parliament_y_array = 6 }
+	add_to_array = { parliament_x_array = 184 }
+	add_to_array = { parliament_y_array = 76 }
+	add_to_array = { parliament_x_array = 183 }
+	add_to_array = { parliament_y_array = 90 }
+	add_to_array = { parliament_x_array = 192 }
+	add_to_array = { parliament_y_array = 49 }
+	add_to_array = { parliament_x_array = 191 }
+	add_to_array = { parliament_y_array = 63 }
+	add_to_array = { parliament_x_array = 200 }
+	add_to_array = { parliament_y_array = 22 }
+	add_to_array = { parliament_x_array = 199 }
+	add_to_array = { parliament_y_array = 36 }
+	add_to_array = { parliament_x_array = 208 }
+	add_to_array = { parliament_y_array = 9 }
+	add_to_array = { parliament_x_array = 189 }
+	add_to_array = { parliament_y_array = 106 }
+	add_to_array = { parliament_x_array = 198 }
+	add_to_array = { parliament_y_array = 79 }
+	add_to_array = { parliament_x_array = 206 }
+	add_to_array = { parliament_y_array = 53 }
+	add_to_array = { parliament_x_array = 215 }
+	add_to_array = { parliament_y_array = 26 }
+	add_to_array = { parliament_x_array = 222 }
+	add_to_array = { parliament_y_array = 14 }
+	add_to_array = { parliament_x_array = 214 }
+	add_to_array = { parliament_y_array = 40 }
+	add_to_array = { parliament_x_array = 205 }
+	add_to_array = { parliament_y_array = 67 }
+	add_to_array = { parliament_x_array = 196 }
+	add_to_array = { parliament_y_array = 94 }
+	add_to_array = { parliament_x_array = 230 }
+	add_to_array = { parliament_y_array = 31 }
+	add_to_array = { parliament_x_array = 237 }
+	add_to_array = { parliament_y_array = 19 }
+	add_to_array = { parliament_x_array = 221 }
+	add_to_array = { parliament_y_array = 58 }
+	add_to_array = { parliament_x_array = 228 }
+	add_to_array = { parliament_y_array = 46 }
+	add_to_array = { parliament_x_array = 211 }
+	add_to_array = { parliament_y_array = 85 }
+	add_to_array = { parliament_x_array = 218 }
+	add_to_array = { parliament_y_array = 72 }
+	add_to_array = { parliament_x_array = 202 }
+	add_to_array = { parliament_y_array = 111 }
+	add_to_array = { parliament_x_array = 209 }
+	add_to_array = { parliament_y_array = 99 }
+	add_to_array = { parliament_x_array = 244 }
+	add_to_array = { parliament_y_array = 38 }
+	add_to_array = { parliament_x_array = 251 }
+	add_to_array = { parliament_y_array = 26 }
+	add_to_array = { parliament_x_array = 241 }
+	add_to_array = { parliament_y_array = 53 }
+	add_to_array = { parliament_x_array = 234 }
+	add_to_array = { parliament_y_array = 65 }
+	add_to_array = { parliament_x_array = 231 }
+	add_to_array = { parliament_y_array = 80 }
+	add_to_array = { parliament_x_array = 224 }
+	add_to_array = { parliament_y_array = 92 }
+	add_to_array = { parliament_x_array = 264 }
+	add_to_array = { parliament_y_array = 34 }
+	add_to_array = { parliament_x_array = 257 }
+	add_to_array = { parliament_y_array = 46 }
+	add_to_array = { parliament_x_array = 254 }
+	add_to_array = { parliament_y_array = 61 }
+	add_to_array = { parliament_x_array = 220 }
+	add_to_array = { parliament_y_array = 106 }
+	add_to_array = { parliament_x_array = 247 }
+	add_to_array = { parliament_y_array = 74 }
+	add_to_array = { parliament_x_array = 213 }
+	add_to_array = { parliament_y_array = 119 }
+	add_to_array = { parliament_x_array = 277 }
+	add_to_array = { parliament_y_array = 43 }
+	add_to_array = { parliament_x_array = 269 }
+	add_to_array = { parliament_y_array = 56 }
+	add_to_array = { parliament_x_array = 243 }
+	add_to_array = { parliament_y_array = 88 }
+	add_to_array = { parliament_x_array = 236 }
+	add_to_array = { parliament_y_array = 101 }
+	add_to_array = { parliament_x_array = 265 }
+	add_to_array = { parliament_y_array = 71 }
+	add_to_array = { parliament_x_array = 258 }
+	add_to_array = { parliament_y_array = 83 }
+	add_to_array = { parliament_x_array = 288 }
+	add_to_array = { parliament_y_array = 54 }
+	add_to_array = { parliament_x_array = 281 }
+	add_to_array = { parliament_y_array = 66 }
+	add_to_array = { parliament_x_array = 230 }
+	add_to_array = { parliament_y_array = 115 }
+	add_to_array = { parliament_x_array = 253 }
+	add_to_array = { parliament_y_array = 99 }
+	add_to_array = { parliament_x_array = 276 }
+	add_to_array = { parliament_y_array = 82 }
+	add_to_array = { parliament_x_array = 223 }
+	add_to_array = { parliament_y_array = 128 }
+	add_to_array = { parliament_x_array = 299 }
+	add_to_array = { parliament_y_array = 65 }
+	add_to_array = { parliament_x_array = 246 }
+	add_to_array = { parliament_y_array = 111 }
+	add_to_array = { parliament_x_array = 268 }
+	add_to_array = { parliament_y_array = 95 }
+	add_to_array = { parliament_x_array = 291 }
+	add_to_array = { parliament_y_array = 78 }
+	add_to_array = { parliament_x_array = 308 }
+	add_to_array = { parliament_y_array = 77 }
+	add_to_array = { parliament_x_array = 285 }
+	add_to_array = { parliament_y_array = 94 }
+	add_to_array = { parliament_x_array = 262 }
+	add_to_array = { parliament_y_array = 110 }
+	add_to_array = { parliament_x_array = 239 }
+	add_to_array = { parliament_y_array = 126 }
+	add_to_array = { parliament_x_array = 300 }
+	add_to_array = { parliament_y_array = 91 }
+	add_to_array = { parliament_x_array = 277 }
+	add_to_array = { parliament_y_array = 107 }
+	add_to_array = { parliament_x_array = 254 }
+	add_to_array = { parliament_y_array = 123 }
+	add_to_array = { parliament_x_array = 231 }
+	add_to_array = { parliament_y_array = 139 }
+	add_to_array = { parliament_x_array = 316 }
+	add_to_array = { parliament_y_array = 91 }
+	add_to_array = { parliament_x_array = 293 }
+	add_to_array = { parliament_y_array = 107 }
+	add_to_array = { parliament_x_array = 270 }
+	add_to_array = { parliament_y_array = 123 }
+	add_to_array = { parliament_x_array = 308 }
+	add_to_array = { parliament_y_array = 104 }
+	add_to_array = { parliament_x_array = 246 }
+	add_to_array = { parliament_y_array = 138 }
+	add_to_array = { parliament_x_array = 284 }
+	add_to_array = { parliament_y_array = 120 }
+	add_to_array = { parliament_x_array = 323 }
+	add_to_array = { parliament_y_array = 104 }
+	add_to_array = { parliament_x_array = 261 }
+	add_to_array = { parliament_y_array = 136 }
+	add_to_array = { parliament_x_array = 300 }
+	add_to_array = { parliament_y_array = 120 }
+	add_to_array = { parliament_x_array = 314 }
+	add_to_array = { parliament_y_array = 119 }
+	add_to_array = { parliament_x_array = 275 }
+	add_to_array = { parliament_y_array = 136 }
+	add_to_array = { parliament_x_array = 329 }
+	add_to_array = { parliament_y_array = 119 }
+	add_to_array = { parliament_x_array = 236 }
+	add_to_array = { parliament_y_array = 151 }
+	add_to_array = { parliament_x_array = 290 }
+	add_to_array = { parliament_y_array = 135 }
+	add_to_array = { parliament_x_array = 305 }
+	add_to_array = { parliament_y_array = 135 }
+	add_to_array = { parliament_x_array = 251 }
+	add_to_array = { parliament_y_array = 151 }
+	add_to_array = { parliament_x_array = 319 }
+	add_to_array = { parliament_y_array = 134 }
+	add_to_array = { parliament_x_array = 265 }
+	add_to_array = { parliament_y_array = 150 }
+	add_to_array = { parliament_x_array = 334 }
+	add_to_array = { parliament_y_array = 134 }
+	add_to_array = { parliament_x_array = 280 }
+	add_to_array = { parliament_y_array = 150 }
+	add_to_array = { parliament_x_array = 294 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 308 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 322 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 337 }
+	add_to_array = { parliament_y_array = 149 }
+	add_to_array = { parliament_x_array = 239 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 253 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 268 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 282 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 296 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 310 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 324 }
+	add_to_array = { parliament_y_array = 164 }
+	add_to_array = { parliament_x_array = 338 }
+	add_to_array = { parliament_y_array = 164 }
 }
 
 clear_arrays_effect = {
-    clear_array = parliament_seat_array
-    clear_array = parliament_group_array
-    clear_array = parliament_array
-    clear_array = parliament_x_array
-    clear_array = parliament_y_array
+	clear_array = parliament_seat_array
+	clear_array = parliament_group_array
+	clear_array = parliament_array
+	clear_array = parliament_x_array
+	clear_array = parliament_y_array
 }
 
 parliament_daily_effect = {
-    # 正統社会主義
-    set_temp_variable = { popularity_orthodox_socialism = party_popularity@orthodox_socialism }
-    multiply_temp_variable = { popularity_orthodox_socialism = 200 }
-    round_temp_variable = popularity_orthodox_socialism
+	# 正統社会主義
+	set_temp_variable = { popularity_orthodox_socialism = party_popularity@orthodox_socialism }
+	multiply_temp_variable = { popularity_orthodox_socialism = 200 }
+	round_temp_variable = popularity_orthodox_socialism
 
-    # 革新社会主義
-    set_temp_variable = { popularity_progressive_socialism = party_popularity@progressive_socialism }
-    multiply_temp_variable = { popularity_progressive_socialism = 200 }
-    round_temp_variable = popularity_progressive_socialism
+	# 革新社会主義
+	set_temp_variable = { popularity_progressive_socialism = party_popularity@progressive_socialism }
+	multiply_temp_variable = { popularity_progressive_socialism = 200 }
+	round_temp_variable = popularity_progressive_socialism
 
-    # 社会民主主義
-    set_temp_variable = { popularity_social_democracy = party_popularity@social_democracy }
-    multiply_temp_variable = { popularity_social_democracy = 200 }
-    round_temp_variable = popularity_social_democracy
+	# 社会民主主義
+	set_temp_variable = { popularity_social_democracy = party_popularity@social_democracy }
+	multiply_temp_variable = { popularity_social_democracy = 200 }
+	round_temp_variable = popularity_social_democracy
 
-    # 自由民主主義
-    set_temp_variable = { popularity_liberal_democracy = party_popularity@liberal_democracy }
-    multiply_temp_variable = { popularity_liberal_democracy = 200 }
-    round_temp_variable = popularity_liberal_democracy
+	# 自由民主主義
+	set_temp_variable = { popularity_liberal_democracy = party_popularity@liberal_democracy }
+	multiply_temp_variable = { popularity_liberal_democracy = 200 }
+	round_temp_variable = popularity_liberal_democracy
 
-    # 中立中道主義
-    set_temp_variable = { popularity_neutral_centrism = party_popularity@neutral_centrism }
-    multiply_temp_variable = { popularity_neutral_centrism = 200 }
-    round_temp_variable = popularity_neutral_centrism
+	# 中立中道主義
+	set_temp_variable = { popularity_neutral_centrism = party_popularity@neutral_centrism }
+	multiply_temp_variable = { popularity_neutral_centrism = 200 }
+	round_temp_variable = popularity_neutral_centrism
 
-    # 保守民主主義
-    set_temp_variable = { popularity_conservative_democracy = party_popularity@conservative_democracy }
-    multiply_temp_variable = { popularity_conservative_democracy = 200 }
-    round_temp_variable = popularity_conservative_democracy
+	# 保守民主主義
+	set_temp_variable = { popularity_conservative_democracy = party_popularity@conservative_democracy }
+	multiply_temp_variable = { popularity_conservative_democracy = 200 }
+	round_temp_variable = popularity_conservative_democracy
 
-    # 権威民主主義
-    set_temp_variable = { popularity_authoritative_democracy = party_popularity@authoritative_democracy }
-    multiply_temp_variable = { popularity_authoritative_democracy = 200 }
-    round_temp_variable = popularity_authoritative_democracy
+	# 権威民主主義
+	set_temp_variable = { popularity_authoritative_democracy = party_popularity@authoritative_democracy }
+	multiply_temp_variable = { popularity_authoritative_democracy = 200 }
+	round_temp_variable = popularity_authoritative_democracy
 
-    # 国家権威主義
-    set_temp_variable = { popularity_national_authoritarianism = party_popularity@national_authoritarianism }
-    multiply_temp_variable = { popularity_national_authoritarianism = 200 }
-    round_temp_variable = popularity_national_authoritarianism
+	# 国家権威主義
+	set_temp_variable = { popularity_national_authoritarianism = party_popularity@national_authoritarianism }
+	multiply_temp_variable = { popularity_national_authoritarianism = 200 }
+	round_temp_variable = popularity_national_authoritarianism
 
-    # 国家大衆主義
-    set_temp_variable = { popularity_national_populism = party_popularity@national_populism }
-    multiply_temp_variable = { popularity_national_populism = 200 }
-    round_temp_variable = popularity_national_populism
+	# 国家大衆主義
+	set_temp_variable = { popularity_national_populism = party_popularity@national_populism }
+	multiply_temp_variable = { popularity_national_populism = 200 }
+	round_temp_variable = popularity_national_populism
 
-    add_to_array = { parliament_seat_array = popularity_orthodox_socialism } # 正統社会主義
-    add_to_array = { parliament_seat_array = popularity_progressive_socialism } # 革新社会主義
-    add_to_array = { parliament_seat_array = popularity_social_democracy } # 社会民主主義
-    add_to_array = { parliament_seat_array = popularity_liberal_democracy } # 自由民主主義
-    add_to_array = { parliament_seat_array = popularity_neutral_centrism } # 中立中道主義
-    add_to_array = { parliament_seat_array = popularity_conservative_democracy } # 保守民主主義
-    add_to_array = { parliament_seat_array = popularity_authoritative_democracy } # 権威民主主義
-    add_to_array = { parliament_seat_array = popularity_national_authoritarianism } # 国家権威主義
-    add_to_array = { parliament_seat_array = popularity_national_populism } # 国家大衆主義
+	add_to_array = { parliament_seat_array = popularity_orthodox_socialism } # 正統社会主義
+	add_to_array = { parliament_seat_array = popularity_progressive_socialism } # 革新社会主義
+	add_to_array = { parliament_seat_array = popularity_social_democracy } # 社会民主主義
+	add_to_array = { parliament_seat_array = popularity_liberal_democracy } # 自由民主主義
+	add_to_array = { parliament_seat_array = popularity_neutral_centrism } # 中立中道主義
+	add_to_array = { parliament_seat_array = popularity_conservative_democracy } # 保守民主主義
+	add_to_array = { parliament_seat_array = popularity_authoritative_democracy } # 権威民主主義
+	add_to_array = { parliament_seat_array = popularity_national_authoritarianism } # 国家権威主義
+	add_to_array = { parliament_seat_array = popularity_national_populism } # 国家大衆主義
 
-    add_to_array = { parliament_group_array = 1 } # 正統社会主義
-    add_to_array = { parliament_group_array = 2 } # 革新社会主義
-    add_to_array = { parliament_group_array = 3 } # 社会民主主義
-    add_to_array = { parliament_group_array = 4 } # 自由民主主義
-    add_to_array = { parliament_group_array = 5 } # 中立中道主義
-    add_to_array = { parliament_group_array = 6 } # 保守民主主義
-    add_to_array = { parliament_group_array = 7 } # 権威民主主義
-    add_to_array = { parliament_group_array = 8 } # 国家権威主義
-    add_to_array = { parliament_group_array = 9 } # 国家大衆主義
+	add_to_array = { parliament_group_array = 1 } # 正統社会主義
+	add_to_array = { parliament_group_array = 2 } # 革新社会主義
+	add_to_array = { parliament_group_array = 3 } # 社会民主主義
+	add_to_array = { parliament_group_array = 4 } # 自由民主主義
+	add_to_array = { parliament_group_array = 5 } # 中立中道主義
+	add_to_array = { parliament_group_array = 6 } # 保守民主主義
+	add_to_array = { parliament_group_array = 7 } # 権威民主主義
+	add_to_array = { parliament_group_array = 8 } # 国家権威主義
+	add_to_array = { parliament_group_array = 9 } # 国家大衆主義
 
-    parliament_reload_effect = yes
-    parliament_set_effect = yes
+	parliament_reload_effect = yes
+	parliament_set_effect = yes
 }
