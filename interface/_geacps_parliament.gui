@@ -1,4 +1,4 @@
-@WIDTH_PARLIAMENT = 549
+@WIDTH_PARLIAMENT = 549 # 543 + 6
 @WIDTH_CHAMBER = 490
 @HEIGHT_PARLIAMENT = 620
 @HEIGHT_FIRST_CHAMBER = 200
@@ -8,200 +8,200 @@
 @CHAMBER_X = 29 # (549 - 490) / 2
 
 guiTypes = {
-    # 議会画面
-    containerWindowType = {
-        name = "parliament_container"
-        size = { width = @WIDTH_PARLIAMENT height = @HEIGHT_PARLIAMENT }
-        position = { x = 537 y = 80 }
-        orientation = upper_left
+	# 議会画面
+	containerWindowType = {
+		name = "parliament_container"
+		size = { width = @WIDTH_PARLIAMENT height = @HEIGHT_PARLIAMENT }
+		position = { x = 537 y = 80 }
+		orientation = upper_left
 
-        background = {
-            name = "background"
-            quadTextureSprite = "GFX_tiled_plain_bg"
-        }
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
 
-        # ヘッダ
-        iconType = {
-            name = "parliament_container_header"
-            spriteType = "GFX_header_bg"
-            position = { x = 7 y = 5 }
-            orientation = upper_left
-        }
+		# ヘッダ
+		iconType = {
+			name = "parliament_container_header"
+			spriteType = "GFX_header_bg"
+			position = { x = 7 y = 5 }
+			orientation = upper_left
+		}
 
-        # テキスト
-        instantTextboxType = {
-            name = "parliament_container_text"
-            text = "議会"
-            font = "hoi_36header"
-            position = { x = 37 y = 5 }
-            borderSize = { x = 0 y = 0 }
-            maxWidth = @WIDTH_PARLIAMENT
-            maxHeight = 36
-            format = left
-            orientation = upper_left
-            fixedsize = yes
-            alwaystransparent = yes
-            pdx_tooltip = "parliament_container_tt"
-        }
+		# テキスト
+		instantTextboxType = {
+			name = "parliament_container_text"
+			text = "議会"
+			font = "hoi_36header"
+			position = { x = 37 y = 5 }
+			borderSize = { x = 0 y = 0 }
+			maxWidth = @WIDTH_PARLIAMENT
+			maxHeight = 36
+			format = left
+			orientation = upper_left
+			fixedsize = yes
+			alwaystransparent = yes
+			pdx_tooltip = "parliament_container_tt"
+		}
 
-        # 閉じる
-        buttonType = {
-            name = "close_button"
-            position = { x = -40 y = 7 }
-            orientation = upper_right
-            quadTextureSprite = "GFX_closebutton"
-            buttonFont = "hoi_16mbs"
-            clicksound = click_close
-            pdx_tooltip = "CLOSE"
-            shortcut = ESCAPE
-        }
+		# 閉じる
+		buttonType = {
+			name = "close_button"
+			position = { x = -40 y = 7 }
+			orientation = upper_right
+			quadTextureSprite = "GFX_closebutton"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			shortcut = ESCAPE
+		}
 
-        # 第一院
-        instantTextBoxType = {
-            name = "first_chamber_name"
-            text = "[GetFirstChamberName]"
-            font = "hoi_24header"
-            position = { x = 0 y = 47 } # 71 - 24
-            borderSize = { x = 0 y = 0 }
-            maxWidth = @WIDTH_PARLIAMENT
-            maxHeight = 24
-            format = center
-            orientation = upper_left
-            fixedsize = yes
-            alwaystransparent = yes
-            pdx_tooltip = "first_chamber_tt"
-        }
+		# 第一院
+		instantTextBoxType = {
+			name = "first_chamber_name"
+			text = "[GetFirstChamberName]"
+			font = "hoi_24header"
+			position = { x = 0 y = 47 } # 71 - 24
+			borderSize = { x = 0 y = 0 }
+			maxWidth = @WIDTH_PARLIAMENT
+			maxHeight = 24
+			format = center
+			orientation = upper_left
+			fixedsize = yes
+			alwaystransparent = yes
+			pdx_tooltip = "first_chamber_tt"
+		}
 
-        containerWindowType = {
-            name = "first_chamber_container"
-            size = { width = @WIDTH_CHAMBER height = @HEIGHT_FIRST_CHAMBER }
-            position = { x = @CHAMBER_X y = 71 } # 42 + 29
-            orientation = upper_left
+		containerWindowType = {
+			name = "first_chamber_container"
+			size = { width = @WIDTH_CHAMBER height = @HEIGHT_FIRST_CHAMBER }
+			position = { x = @CHAMBER_X y = 71 } # 42 + 29
+			orientation = upper_left
 
-            background = {
-                name = "background"
-                quadTextureSprite = "GFX_tiled_window_thin_border2"
-            }
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
 
-            gridBoxType = {
-                name = "first_chamber_grid"
-                size = { width = 100%% height = 100%% }
-                slotsize = { width = 15 height = 15 }
-                position = { x = -285 y = 25 }
-                orientation = upper_left
-                # max_slots_horizontal = 20
-                max_slots_vertical = 10
-                add_horizontal = no
-            }
-        }
+			gridBoxType = {
+				name = "first_chamber_grid"
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 15 height = 15 }
+				position = { x = -285 y = 25 }
+				orientation = upper_left
+				# max_slots_horizontal = 20
+				max_slots_vertical = 10
+				add_horizontal = no
+			}
+		}
 
-        # 第二院
-        instantTextBoxType = {
-            name = "second_chamber_name"
-            text = "[GetSecondChamberName]"
-            font = "hoi_24header"
-            position = { x = 0 y = 342 } # 366 - 24
-            borderSize = { x = 0 y = 0 }
-            maxWidth = @WIDTH_PARLIAMENT
-            maxHeight = 24
-            format = center
-            orientation = upper_left
-            fixedsize = yes
-            alwaystransparent = yes
-            pdx_tooltip = "second_chamber_tt"
-        }
+		# 第二院
+		instantTextBoxType = {
+			name = "second_chamber_name"
+			text = "[GetSecondChamberName]"
+			font = "hoi_24header"
+			position = { x = 0 y = 342 } # 366 - 24
+			borderSize = { x = 0 y = 0 }
+			maxWidth = @WIDTH_PARLIAMENT
+			maxHeight = 24
+			format = center
+			orientation = upper_left
+			fixedsize = yes
+			alwaystransparent = yes
+			pdx_tooltip = "second_chamber_tt"
+		}
 
-        containerWindowType = {
-            name = "second_chamber_container"
-            size = { width = @WIDTH_CHAMBER height = @HEIGHT_SECOND_CHAMBER }
-            position = { x = @CHAMBER_X y = 366 } # 620 - 29 - 225
-            orientation = upper_left
+		containerWindowType = {
+			name = "second_chamber_container"
+			size = { width = @WIDTH_CHAMBER height = @HEIGHT_SECOND_CHAMBER }
+			position = { x = @CHAMBER_X y = 366 } # 620 - 29 - 225
+			orientation = upper_left
 
-            background = {
-                name = "background"
-                quadTextureSprite = "GFX_tiled_window_thin_border2"
-            }
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
 
-            gridBoxType = {
-                name = "second_chamber_grid"
-                size = { width = 100%% height = 100%% }
-                slotsize = { width = 100%% height = 0 }
-                position = { x = 45 y = 20 }
-                orientation = upper_left
-                max_slots_horizontal = 1
-                # max_slots_vertical = 200
-                add_horizontal = no
-            }
-        }
+			gridBoxType = {
+				name = "second_chamber_grid"
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				position = { x = 45 y = 20 }
+				orientation = upper_left
+				max_slots_horizontal = 1
+				# max_slots_vertical = 200
+				add_horizontal = no
+			}
+		}
 
-        # # 第三院
-        # instantTextBoxType = {
-        #     name = "third_chamber_name"
-        #     text = "第三院"
-        #     ...
-        #     pdx_tooltip = "third_chamber_tt"
-        # }
+		# # 第三院
+		# instantTextBoxType = {
+		#	 name = "third_chamber_name"
+		#	 text = "第三院"
+		#	 ...
+		#	 pdx_tooltip = "third_chamber_tt"
+		# }
 
-        # containerWindowType = {
-        #     name = "third_chamber_container"
-        #     ...
+		# containerWindowType = {
+		#	 name = "third_chamber_container"
+		#	 ...
 
-        #     background = {
-        #         name = "background"
-        #         quadTextureSprite = "GFX_tiled_window_thin_border2"
-        #     }
+		#	 background = {
+		#		 name = "background"
+		#		 quadTextureSprite = "GFX_tiled_window_thin_border2"
+		#	 }
 
-        #     gridBoxType = {
-        #         name = "third_chamber_grid"
-        #         ...
-        #     }
-        # }
-    }
+		#	 gridBoxType = {
+		#		 name = "third_chamber_grid"
+		#		 ...
+		#	 }
+		# }
+	}
 
-    # 第一院
-    containerWindowType = {
-        name = "first_chamber_entry"
-        size = { width = 0 height = 0 }
-        position = { x = 0 y = 0 }
-        orientation = upper_left
+	# 第一院
+	containerWindowType = {
+		name = "first_chamber_entry"
+		size = { width = 0 height = 0 }
+		position = { x = 0 y = 0 }
+		orientation = upper_left
 
-        iconType = {
-            name = "first_chamber_icon"
-            spriteType = "GFX_parliament_group"
-            position = { x = 0 y = 0 }
-            orientation = center
-            pdx_tooltip = "parliament_group_tt"
-            pdx_tooltip_delayed = "parliament_group_tt"
-        }
-    }
+		iconType = {
+			name = "first_chamber_icon"
+			spriteType = "GFX_parliament_group"
+			position = { x = 0 y = 0 }
+			orientation = center
+			pdx_tooltip = "parliament_group_tt"
+			pdx_tooltip_delayed = "parliament_group_tt"
+		}
+	}
 
-    # 第二院
-    containerWindowType = {
-        name = "second_chamber_entry"
-        size = { width = 0 height = 0 }
-        position = { x = 0 y = 0 }
-        orientation = upper_left
+	# 第二院
+	containerWindowType = {
+		name = "second_chamber_entry"
+		size = { width = 0 height = 0 }
+		position = { x = 0 y = 0 }
+		orientation = upper_left
 
-        iconType = {
-            name = "second_chamber_icon"
-            spriteType = "GFX_parliament_group"
-            position = { x = 0 y = 0 }
-            orientation = center
-            pdx_tooltip = "parliament_group_tt"
-            pdx_tooltip_delayed = "parliament_group_tt"
-        }
-    }
-    
-    # # 第三院
-    # containerWindowType = {
-    #     name = "third_chamber_entry"
-    #     ...
+		iconType = {
+			name = "second_chamber_icon"
+			spriteType = "GFX_parliament_group"
+			position = { x = 0 y = 0 }
+			orientation = center
+			pdx_tooltip = "parliament_group_tt"
+			pdx_tooltip_delayed = "parliament_group_tt"
+		}
+	}
+	
+	# # 第三院
+	# containerWindowType = {
+	#	 name = "third_chamber_entry"
+	#	 ...
 
-    #     iconType = {
-    #         name = "third_chamber_icon"
-    #         ...
-    #         pdx_tooltip = "parliament_group_tt"
-    #         pdx_tooltip_delayed = "parliament_group_tt"
-    #     }
-    # }
+	#	 iconType = {
+	#		 name = "third_chamber_icon"
+	#		 ...
+	#		 pdx_tooltip = "parliament_group_tt"
+	#		 pdx_tooltip_delayed = "parliament_group_tt"
+	#	 }
+	# }
 }

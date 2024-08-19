@@ -1,53 +1,57 @@
 scripted_gui = {
-    parliament_container_gui = {
-        window_name = "parliament_container"
-        context_type = player_context
+	parliament_container_gui = {
+		window_name = "parliament_container"
+		context_type = player_context
 
-        visible = {
-            OR = {
-                is_debug = yes
-                has_country_flag = parliament_button_clicked
+		visible = {
+            AND = {
+                NOT = { tag = JAP }
+                
+                OR = {
+                    is_debug = yes
+                    has_country_flag = parliament_button_clicked
+                }
             }
-        }
+		}
 
-        effects = { close_button_click = { clr_country_flag = parliament_button_clicked } }
+		effects = { close_button_click = { clr_country_flag = parliament_button_clicked } }
 
-        dynamic_lists = {
-            # 第一院
-            first_chamber_grid = {
-                entry_container = "first_chamber_entry"
-                array = parliament_array
-                index = parliament_index
-                change_scope = no
-            }
-            # 第二院
-            second_chamber_grid = {
-                entry_container = "second_chamber_entry"
-                array = parliament_array
-                index = parliament_index
-                change_scope = no
-            }
-            # # 第三院
-            # third_chamber_grid = {
-            #     entry_container = "third_chamber_entry"
-            #     ...
-            # }
-        }
+		dynamic_lists = {
+			# 第一院
+			first_chamber_grid = {
+				entry_container = "first_chamber_entry"
+				array = parliament_array
+				index = parliament_index
+				change_scope = no
+			}
+			# 第二院
+			second_chamber_grid = {
+				entry_container = "second_chamber_entry"
+				array = parliament_array
+				index = parliament_index
+				change_scope = no
+			}
+			# # 第三院
+			# third_chamber_grid = {
+			#	 entry_container = "third_chamber_entry"
+			#	 ...
+			# }
+		}
 
-        properties = {
-            # 第一院
-            first_chamber_icon = { frame = v }
-            # 第二院
-            second_chamber_icon = {
-                frame = v
-                x = parliament_x_array^parliament_index
-                y = parliament_y_array^parliament_index
-            }
-            # # 第三院
-            # third_chamber_icon = {
-            #     frame = v
-            #     ...
-            # }
-        }
-    }
+		properties = {
+			# 第一院
+			first_chamber_icon = { frame = v }
+			# 第二院
+			second_chamber_icon = {
+				frame = v
+				x = parliament_x_array^parliament_index
+				y = parliament_y_array^parliament_index
+			}
+			# # 第三院
+			# third_chamber_icon = {
+			#	 frame = v
+			#	 ...
+			# }
+		}
+	}
 }

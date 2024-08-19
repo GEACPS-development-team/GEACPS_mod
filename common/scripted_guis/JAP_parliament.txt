@@ -1,0 +1,38 @@
+scripted_gui = {
+	parliament_container_gui = {
+		window_name = "JAP_parliament_container"
+		context_type = player_context
+
+		visible = {
+			AND = {
+				tag = JAP
+
+				OR = {
+					is_debug = yes
+					has_country_flag = parliament_button_clicked
+				}
+			}
+		}
+
+		effects = { close_button_click = { clr_country_flag = parliament_button_clicked } }
+
+		dynamic_lists = {
+			# 衆議院
+			JAP_house_of_representatives_grid = {
+				entry_container = "JAP_house_of_representatives_entry"
+				array = JAP_parliament_array
+				index = JAP_parliament_index
+				change_scope = no
+			}
+		}
+
+		properties = {
+			# 衆議院
+			JAP_house_of_representatives_icon = {
+				frame = v
+				x = JAP_parliament_x_array^JAP_parliament_index
+				y = JAP_parliament_y_array^JAP_parliament_index
+			}
+		}
+	}
+}

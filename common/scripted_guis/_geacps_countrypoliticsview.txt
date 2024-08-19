@@ -3,31 +3,15 @@ scripted_gui = {
 		window_name = "parliament_button_container"
 		context_type = player_context
 		parent_window_token = politics_tab
+
 		effects = {
 			parliament_button_click = {
 				if = {
-					limit = {
-						has_country_flag = parliament_button_clicked
-					}
+					limit = { has_country_flag = parliament_button_clicked }
+
 					clr_country_flag = parliament_button_clicked
 				}
-				else = {
-					set_country_flag = parliament_button_clicked
-				}
-			}
-		}
-	}
-	
-	parliament_window_gui = {
-		window_name = "parliament_container"
-		context_type = player_context
-		parent_window_token = top_bar
-		visible = {
-			has_country_flag = parliament_button_clicked
-		}
-		effects = {
-			close_button_click = {
-				clr_country_flag = parliament_button_clicked
+				else = { set_country_flag = parliament_button_clicked }
 			}
 		}
 	}

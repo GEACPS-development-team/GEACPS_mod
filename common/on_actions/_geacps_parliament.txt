@@ -1,16 +1,22 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			JAP = {
-				limit = { is_ai = no }
+			every_country = {
+				if = {
+					limit = { 
+						AND = {
+							is_ai = no
+							tag = JAP
+						}
+					}
+					
+					JAP_parliament_startup_effect = yes
+				}
+				else_if = {
+					limit = { is_ai = no }
 
-				JAP_parliament_startup_effect = yes
-			}
-
-			all_other_country = {
-				limit = { is_ai = no }
-
-				parliament_startup_effect = yes
+					parliament_startup_effect = yes
+				}
 			}
 		}
 	}

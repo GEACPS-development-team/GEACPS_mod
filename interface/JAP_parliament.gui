@@ -1,0 +1,113 @@
+@WIDTH_PARLIAMENT = 638 # 632 + 6
+@WIDTH_HOUSE_OF_REPRESENTATIVES = 580 # 638 - (29 * 2)
+@HEIGHT_PARLIAMENT = 620
+@HEIGHT_HOUSE_OF_REPRESENTATIVES = 330
+
+@CHAMBER_X = 29 # (638 - 580) / 2
+
+guiTypes = {
+	# 議会画面
+	containerWindowType = {
+		name = "JAP_parliament_container"
+		size = { width = @WIDTH_PARLIAMENT height = @HEIGHT_PARLIAMENT }
+		position = { x = 537 y = 80 }
+		orientation = upper_left
+
+		background = {
+			name = "background"
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+
+		# ヘッダ
+		iconType = {
+			name = "JAP_parliament_container_header"
+			spriteType = "GFX_header_wide_bg"
+			position = { x = 7 y = 5 }
+			orientation = upper_left
+		}
+
+		# テキスト
+		instantTextboxType = {
+			name = "JAP_parliament_container_text"
+			text = "議会"
+			font = "hoi_36header"
+			position = { x = 37 y = 5 }
+			borderSize = { x = 0 y = 0 }
+			maxWidth = @WIDTH_PARLIAMENT
+			maxHeight = 36
+			format = left
+			orientation = upper_left
+			fixedsize = yes
+			alwaystransparent = yes
+			pdx_tooltip = "parliament_container_tt"
+		}
+
+		# 閉じる
+		buttonType = {
+			name = "close_button"
+			position = { x = -40 y = 7 }
+			orientation = upper_right
+			quadTextureSprite = "GFX_closebutton"
+			buttonFont = "hoi_16mbs"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			shortcut = ESCAPE
+		}
+
+		# 衆議院
+		instantTextBoxType = {
+			name = "JAP_house_of_representatives"
+			text = "衆議院"
+			font = "hoi_24header"
+			position = { x = 0 y = 47 } # 71 - 24
+			borderSize = { x = 0 y = 0 }
+			maxWidth = @WIDTH_PARLIAMENT
+			maxHeight = 24
+			format = center
+			orientation = upper_left
+			fixedsize = yes
+			alwaystransparent = yes
+			pdx_tooltip = "house_of_representatives_tt"
+		}
+
+		containerWindowType = {
+			name = "JAP_house_of_representatives_container"
+			size = { width = @WIDTH_HOUSE_OF_REPRESENTATIVES height = @HEIGHT_HOUSE_OF_REPRESENTATIVES }
+			position = { x = @CHAMBER_X y = 71 } # 42 + 29
+			orientation = upper_left
+
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_window_thin_border2"
+			}
+
+			gridBoxType = {
+				name = "JAP_house_of_representatives_grid"
+				size = { width = 100%% height = 100%% }
+				slotsize = { width = 100%% height = 0 }
+				position = { x = 10 y = 20 }
+				orientation = upper_left
+				max_slots_horizontal = 1
+				# max_slots_vertical = 10
+				add_horizontal = no
+			}
+		}
+	}
+
+	# 衆議院
+	containerWindowType = {
+		name = "JAP_house_of_representatives_entry"
+		size = { width = 0 height = 0 }
+		position = { x = 0 y = 0 }
+		orientation = upper_left
+
+		iconType = {
+			name = "JAP_house_of_representatives_icon"
+			spriteType = "GFX_parliament_group"
+			position = { x = 0 y = 0 }
+			orientation = center
+			pdx_tooltip = "JAP_parliament_group_tt"
+			pdx_tooltip_delayed = "JAP_parliament_group_tt"
+		}
+	}
+}
