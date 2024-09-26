@@ -1,2 +1,19 @@
-﻿capital = 1120
+﻿capital = 1223
+
+USA = {	set_protected_territory = yes	}
+
+set_cosmetic_tag = VIR_AMERICA
 set_dictatorship = yes
+
+create_country_leader = {
+	name = CHARACTER_charles_a_harwood
+	desc = "CHARACTER_charles_a_harwood_desc"
+	picture = GFX_charles_a_harwood_large
+	expire = "1950.10.23"
+	ideology = national_authoritarianism_ideology
+}
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_indirect_rule_system
+}

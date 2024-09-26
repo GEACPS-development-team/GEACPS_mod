@@ -1,2 +1,19 @@
 capital = 152
+
+USA = {	set_occupied_territory = yes	}
+
+set_cosmetic_tag = COUNTRY_AMERICA_united_states_48
 set_dictatorship = yes
+
+create_country_leader = {
+	name = CHARACTER_mark_wayne_clark
+	desc = "CHARACTER_mark_wayne_clark_desc"
+	picture = GFX_mark_wayne_clark_large
+	expire = "1984.4.17"
+	ideology = national_authoritarianism_ideology
+}
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}

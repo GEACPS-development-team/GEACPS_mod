@@ -1,2 +1,21 @@
 capital = 153
+
+FRA = {	set_occupied_territory = yes	}
+
+set_cosmetic_tag = COUNTRY_FRA
 set_dictatorship = yes
+
+create_country_leader = {
+	name = CHARACTER_marie_emile_antoine_bethouart
+	desc = "CHARACTER_marie_emile_antoine_bethouart_desc"
+	picture = GFX_marie_emile_antoine_bethouart_large
+	expire = "1982.10.17"
+	ideology = national_authoritarianism_ideology
+}
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}
+
+give_military_access = USA

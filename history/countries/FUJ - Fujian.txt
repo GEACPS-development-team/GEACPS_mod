@@ -1,2 +1,14 @@
 ﻿capital = 595
+
+set_cosmetic_tag = CHI_minguo_fuzhou_government
+set_country_flag = CHI_republic_fuzhou_government_countryflag
 set_dictatorship = yes
+
+recruit_character = CHARACTER_miao_bin
+
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	provisional_government
+}
+
+declare_war_on = {	target = CHI	type = civil_war	}

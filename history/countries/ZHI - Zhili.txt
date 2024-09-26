@@ -1,2 +1,34 @@
-﻿capital = 614
-set_dictatorship = yes
+﻿capital = 1150
+
+JAP = {	set_imperial_protected_state = yes	}
+
+set_country_flag = CHI_provisional_countryflag
+set_cosmetic_tag = CHI_minguo_provisional_government
+
+set_politics = {
+	ruling_party = national_populism
+	elections_allowed = no
+	name = PARTY_provisional_government_administrative_commission
+	long_name = PARTY_provisional_government_administrative_commission_long
+}
+set_popularities = {	national_populism = 100	}
+illegalization_of_orthodox_socialism = yes
+illegalization_of_progressive_socialism = yes
+illegalization_of_social_democracy = yes
+illegalization_of_liberal_democracy = yes
+illegalization_of_conservative_democracy = yes
+illegalization_of_authoritative_democracy = yes
+set_party_name = {	#
+	ideology = national_authoritarianism
+	name = PARTY_provisional_government_administrative_commission
+	long_name = PARTY_provisional_government_administrative_commission_long
+}
+
+recruit_character = CHARACTER_wang_yintai
+
+add_ideas = {	#政治タブ
+	republic_unitary_state
+	provisional_government
+}
+
+declare_war_on = {	target = CHI	type = civil_war	}

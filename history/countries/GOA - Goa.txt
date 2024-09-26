@@ -1,2 +1,20 @@
 capital = 321
+
+POR = {	set_colony = yes	}
+
+set_cosmetic_tag = COUNTRY_POR
+set_country_flag = IND_POR_countryflag
 set_dictatorship = yes
+
+create_country_leader = {
+	name = CHARACTER_paulo_benard_guedes
+	desc = "CHARACTER_paulo_benard_guedes_desc"
+	picture = GFX_paulo_benard_guedes_large
+	expire = "1960.9.11"
+	ideology = national_authoritarianism_ideology
+}
+
+add_ideas = {	#政治タブ
+	unitary_dependent_territory
+	dependent_territory_direct_rule_system
+}
