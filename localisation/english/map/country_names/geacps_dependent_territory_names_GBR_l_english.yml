@@ -1,27 +1,3388 @@
-﻿l_japanese:
-# # 汎用
- COUNTRY_dominion:0 "$NONIDEOLOGY$自治領"
- COUNTRY_dominion_DEF:0 "$NONIDEOLOGY$自治領"
+﻿l_english:
+##バニラ:
+#アジア:
+ ABK_dominion: "Dominion of Abkhazia"
+ ABK_dominion_DEF: "the The Dominion of Abkhazia"
+ ABK_dominion_ADJ: "$OVERLORD$ Abkhaz"
  
-# # バニラ国家
-# アジア
-# アフリカ
-# # コズメティックタグ
-# アジア
- STRAITS_GBRbyENG_colony:0 "$OVERLORDADJ$領海峡植民地"
- STRAITS_GBRbyENG_colony_DEF:0 "$OVERLORDADJ$領海峡植民地"
- STRAITS_GBRbyENG_colony_ADJ:0 "海峡植民地"
+ AFG_dominion: "Dominion of Afghanistan"
+ AFG_dominion_DEF: "the The Dominion of Afghanistan"
+ AFG_dominion_ADJ: "$OVERLORD$ Afghan"
  
-# アフリカ
- CMR_GBRbyENG_mandated_territory_B:0 "$OVERLORDADJ$委任統治領カメルーン地域"
- CMR_GBRbyENG_mandated_territory_B_DEF:0 "$OVERLORDADJ$委任統治領カメルーン地域"
- CMR_GBRbyENG_mandated_territory_B_ADJ:0 "カメルーン"
+ ALT_dominion: "Dominion of Altai"
+ ALT_dominion_DEF: "the The Dominion of Altai"
+ ALT_dominion_ADJ: "$OVERLORD$ Altai"
  
- SAF_union_dominion:0 "南アフリカ連合"
- SAF_union_dominion_DEF:0 "南アフリカ連合"
- SAF_union_dominion_ADJ:0 "南アフリカ"
+ ARM_dominion: "Dominion of Armenia"
+ ARM_dominion_DEF: "the The Dominion of Armenia"
+ ARM_dominion_ADJ: "$OVERLORD$ Armenian"
  
-# 大洋州
- AST_commonwealth_GBRbyENG_dominion:0 "オーストラリア連邦"
- AST_commonwealth_GBRbyENG_dominion_DEF:0 "オーストラリア連邦"
- AST_commonwealth_GBRbyENG_dominion_ADJ:0 "オーストラリア"
+ AZR_dominion: "Dominion of Azerbaijan"
+ AZR_dominion_DEF: "the The Dominion of Azerbaijan"
+ AZR_dominion_ADJ: "$OVERLORD$ Azerbaijani"
+ 
+ BAN_dominion: "Dominion of Bengal"
+ BAN_dominion_DEF: "the The Dominion of Bengal"
+ BAN_dominion_ADJ: "$OVERLORD$ Bengali"
+ 
+ BHU_dominion: "Dominion of Bhutan"
+ BHU_dominion_DEF: "the The Dominion of Bhutan"
+ BHU_dominion_ADJ: "$OVERLORD$ Bhutanese"
+ 
+ BUK_dominion: "Dominion of Bukhara"
+ BUK_dominion_DEF: "the The Dominion of Bukhara"
+ BUK_dominion_ADJ: "$OVERLORD$ Bukharan"
+ 
+ BRM_dominion: "Dominion of Burma"
+ BRM_dominion_DEF: "the The Dominion of Burma"
+ BRM_dominion_ADJ: "$OVERLORD$ Burmese"
+ 
+ BYA_dominion: "Dominion of Buryatia"
+ BYA_dominion_DEF: "the The Dominion of Buryatia"
+ BYA_dominion_ADJ: "$OVERLORD$ Buryat"
+ 
+ CAM_dominion: "Dominion of Cambodia"
+ CAM_dominion_DEF: "the The Dominion of Cambodia"
+ CAM_dominion_ADJ: "$OVERLORD$ Cambodian"
+ 
+ CHI_dominion: "Dominion of China"
+ CHI_dominion_DEF: "the The Dominion of China"
+ CHI_dominion_ADJ: "$OVERLORD$ Chinese"
+ 
+ CKK_dominion: "Dominion of Chukotka"
+ CKK_dominion_DEF: "the The Dominion of Chukotka"
+ CKK_dominion_ADJ: "$OVERLORD$ Chukchi"
+ 
+ FEA_dominion: "Dominion of Far East"
+ FEA_dominion_DEF: "the The Dominion of Far East"
+ FEA_dominion_ADJ: "$OVERLORD$ Far Eastern"
+ 
+ GEO_dominion: "Dominion of Georgia"
+ GEO_dominion_DEF: "the The Dominion of Georgia"
+ GEO_dominion_ADJ: "$OVERLORD$ Georgian"
+ 
+ GXC_dominion: "Dominion of Guangxi"
+ GXC_dominion_DEF: "the The Dominion of Guangxi"
+ GXC_dominion_ADJ: "$OVERLORD$ Guangxi"
+ 
+ IND_dominion: "Dominion of India"
+ IND_dominion_DEF: "the The Dominion of India"
+ IND_dominion_ADJ: "$OVERLORD$ Indian"
+ 
+ INS_dominion: "Dominion of Indonesia"
+ INS_dominion_DEF: "the The Dominion of Indonesia"
+ INS_dominion_ADJ: "$OVERLORD$ Indonesian"
+ 
+ IRN_dominion: "Dominion of Iran"
+ IRN_dominion_DEF: "the The Dominion of Iran"
+ IRN_dominion_ADJ: "$OVERLORD$ Iranian"
+ 
+ IRQ_dominion: "Dominion of Iraq"
+ IRQ_dominion_DEF: "the The Dominion of Iraq"
+ IRQ_dominion_ADJ: "$OVERLORD$ Iraqi"
+ 
+ ISR_dominion: "Dominion of Israel"
+ ISR_dominion_DEF: "the The Dominion of Israel"
+ ISR_dominion_ADJ: "$OVERLORD$ Israeli"
+ 
+ JAP_dominion: "Dominion of Japan"
+ JAP_dominion_DEF: "the The Dominion of Japan"
+ JAP_dominion_ADJ: "$OVERLORD$ Japanese"
+ 
+ JOR_dominion: "Dominion of Jordan"
+ JOR_dominion_DEF: "the The Dominion of Jordan"
+ JOR_dominion_ADJ: "$OVERLORD$ Jordanian"
+ 
+ KKP_dominion: "Dominion of Karakalpakstan"
+ KKP_dominion_DEF: "the The Dominion of Karakalpakstan"
+ KKP_dominion_ADJ: "$OVERLORD$ Karakalpak"
+ 
+ KAZ_dominion: "Dominion of Kazakhstan"
+ KAZ_dominion_DEF: "the The Dominion of Kazakhstan"
+ KAZ_dominion_ADJ: "$OVERLORD$ Kazak"
+ 
+ KHI_dominion: "Dominion of Khiva"
+ KHI_dominion_DEF: "the The Dominion of Khiva"
+ KHI_dominion_ADJ: "$OVERLORD$ Khiva"
+ 
+ KOR_dominion: "Dominion of Korea"
+ KOR_dominion_DEF: "the The Dominion of Korea"
+ KOR_dominion_ADJ: "$OVERLORD$ Korean"
+ 
+ KUR_dominion: "Dominion of Kurdistan"
+ KUR_dominion_DEF: "the The Dominion of Kurdistan"
+ KUR_dominion_ADJ: "$OVERLORD$ Kurd"
+ 
+ KUW_dominion: "Dominion of Kuwait"
+ KUW_dominion_DEF: "the The Dominion of Kuwait"
+ KUW_dominion_ADJ: "$OVERLORD$ Kuwaiti"
+ 
+ KYR_dominion: "Dominion of Kyrgyzstan"
+ KYR_dominion_DEF: "the The Dominion of Kyrgyzstan"
+ KYR_dominion_ADJ: "$OVERLORD$ Kirghiz"
+ 
+ LAO_dominion: "Dominion of Laos"
+ LAO_dominion_DEF: "the The Dominion of Laos"
+ LAO_dominion_ADJ: "$OVERLORD$ Lao"
+ 
+ LEB_dominion: "Dominion of Lebanon"
+ LEB_dominion_DEF: "the The Dominion of Lebanon"
+ LEB_dominion_ADJ: "$OVERLORD$ Lebanese"
+ 
+ MAL_dominion: "Dominion of Malaya"
+ MAL_dominion_DEF: "the The Dominion of Malaya"
+ MAL_dominion_ADJ: "$OVERLORD$ Malayan"
+ 
+ MLD_dominion: "Dominion of Maldives"
+ MLD_dominion_DEF: "the The Dominion of Maldives"
+ MLD_dominion_ADJ: "$OVERLORD$ Maldivian"
+ 
+ MAN_dominion: "Dominion of Manchuria"
+ MAN_dominion_DEF: "the The Dominion of Manchuria"
+ MAN_dominion_ADJ: "$OVERLORD$ Manchurian"
+ 
+ MEN_dominion: "Dominion of Mengjiang"
+ MEN_dominion_DEF: "the The Dominion of Mengjiang"
+ MEN_dominion_ADJ: "$OVERLORD$ Mengjiang"
+ 
+ MON_dominion: "Dominion of Mongolia"
+ MON_dominion_DEF: "the The Dominion of Mongolia"
+ MON_dominion_ADJ: "$OVERLORD$ Mongol"
+ 
+ NEP_dominion: "Dominion of Nepal"
+ NEP_dominion_DEF: "the The Dominion of Nepal"
+ NEP_dominion_ADJ: "$OVERLORD$ Nepali"
+ 
+ OMA_dominion: "Dominion of Oman"
+ OMA_dominion_DEF: "the The Dominion of Oman"
+ OMA_dominion_ADJ: "$OVERLORD$ Omani"
+ 
+ PAK_dominion: "Dominion of Pakistan"
+ PAK_dominion_DEF: "the The Dominion of Pakistan"
+ PAK_dominion_ADJ: "$OVERLORD$ Pakistani"
+ 
+ PAL_dominion: "Dominion of Palestine"
+ PAL_dominion_DEF: "the The Dominion of Palestine"
+ PAL_dominion_ADJ: "$OVERLORD$ Palestinian"
+ 
+ PHI_dominion: "Dominion of Philippines"
+ PHI_dominion_DEF: "the The Dominion of Philippines"
+ PHI_dominion_ADJ: "$OVERLORD$ Philippine"
+ 
+ QAT_dominion: "Dominion of Qatar"
+ QAT_dominion_DEF: "the The Dominion of Qatar"
+ QAT_dominion_ADJ: "$OVERLORD$ Qatari"
+ 
+ SKH_dominion: "Dominion of Sakha"
+ SKH_dominion_DEF: "the The Dominion of Sakha"
+ SKH_dominion_ADJ: "$OVERLORD$ Sakha"
+ 
+ SAU_dominion: "Dominion of Saud"
+ SAU_dominion_DEF: "the The Dominion of Saud"
+ SAU_dominion_ADJ: "$OVERLORD$ Saudi"
+ 
+ SHA_dominion: "Dominion of Shaanxi"
+ SHA_dominion_DEF: "the The Dominion of Shaanxi"
+ SHA_dominion_ADJ: "$OVERLORD$ Shaanxi"
+ 
+ SHX_dominion: "Dominion of Shanxi"
+ SHX_dominion_DEF: "the The Dominion of Shanxi"
+ SHX_dominion_ADJ: "$OVERLORD$ Shanxi"
+ 
+ SIA_dominion: "Dominion of Siam"
+ SIA_dominion_DEF: "the The Dominion of Siam"
+ SIA_dominion_ADJ: "$OVERLORD$ Siamese"
+ 
+ SIK_dominion: "Dominion of Sinkiang"
+ SIK_dominion_DEF: "the The Dominion of Sinkiang"
+ SIK_dominion_ADJ: "$OVERLORD$ Sinkiang"
+ 
+ SRL_dominion: "Dominion of Ceylon"
+ SRL_dominion_DEF: "the The Dominion of Ceylon"
+ SRL_dominion_ADJ: "$OVERLORD$ Ceylonese"
+ 
+ SYR_dominion: "Dominion of Syria"
+ SYR_dominion_DEF: "the The Dominion of Syria"
+ SYR_dominion_ADJ: "$OVERLORD$ Syrian"
+ 
+ TAJ_dominion: "Dominion of Tadzhikistan"
+ TAJ_dominion_DEF: "the The Dominion of Tadzhikistan"
+ TAJ_dominion_ADJ: "$OVERLORD$ Tajik"
+ 
+ TAY_dominion: "Dominion of Taymyria"
+ TAY_dominion_DEF: "the The Dominion of Taymyria"
+ TAY_dominion_ADJ: "$OVERLORD$ Taymyr"
+ 
+ TIB_dominion: "Dominion of Tibet"
+ TIB_dominion_DEF: "the The Dominion of Tibet"
+ TIB_dominion_ADJ: "$OVERLORD$ Tibetan"
+ 
+ TRC_dominion: "Dominion of Trucial Coast"
+ TRC_dominion_DEF: "the The Dominion of Trucial Coast"
+ TRC_dominion_ADJ: "$OVERLORD$ Trucial Coast"
+ 
+ TUR_dominion: "Dominion of Turkey"
+ TUR_dominion_DEF: "the The Dominion of Turkey"
+ TUR_dominion_ADJ: "$OVERLORD$ Turkish"
+ 
+ TMS_dominion: "Dominion of Turkmenistan"
+ TMS_dominion_DEF: "the The Dominion of Turkmenistan"
+ TMS_dominion_ADJ: "$OVERLORD$ Turkmen"
+ 
+ TUV_dominion: "Dominion of Tuva"
+ TUV_dominion_DEF: "the The Dominion of Tuva"
+ TUV_dominion_ADJ: "$OVERLORD$ Tuvan"
+ 
+ UZB_dominion: "Dominion of Uzbekistan"
+ UZB_dominion_DEF: "the The Dominion of Uzbekistan"
+ UZB_dominion_ADJ: "$OVERLORD$ Uzbek"
+ 
+ VIN_dominion: "Dominion of Vietnam"
+ VIN_dominion_DEF: "the The Dominion of Vietnam"
+ VIN_dominion_ADJ: "$OVERLORD$ Vietnamese"
+ 
+ VLA_dominion: "Dominion of Vladivostok"
+ VLA_dominion_DEF: "the The Dominion of Vladivostok"
+ VLA_dominion_ADJ: "$OVERLORD$ Vladivostok"
+ 
+ XIB_dominion: "Dominion of Xibei"
+ XIB_dominion_DEF: "the The Dominion of Xibei"
+ XIB_dominion_ADJ: "$OVERLORD$ Xibei"
+ 
+ YAM_dominion: "Dominion of Yamalia"
+ YAM_dominion_DEF: "the The Dominion of Yamalia"
+ YAM_dominion_ADJ: "$OVERLORD$ Yamal"
+ 
+ YEM_dominion: "Dominion of Yemen"
+ YEM_dominion_DEF: "the The Dominion of Yemen"
+ YEM_dominion_ADJ: "$OVERLORD$ Yemeni"
+ 
+ YGR_dominion: "Dominion of Yugra"
+ YGR_dominion_DEF: "the The Dominion of Yugra"
+ YGR_dominion_ADJ: "$OVERLORD$ Yugra"
+ 
+ YUN_dominion: "Dominion of Yunnan"
+ YUN_dominion_DEF: "the The Dominion of Yunnan"
+ YUN_dominion_ADJ: "$OVERLORD$ Yunnan"
+ 
+#ヨーロッパ:
+ ALB_dominion: "Dominion of Albania"
+ ALB_dominion_DEF: "the The Dominion of Albania"
+ ALB_dominion_ADJ: "$OVERLORD$ Albanian"
+ 
+ ADU_dominion: "Dominion of Andalusia"
+ ADU_dominion_DEF: "the The Dominion of Andalusia"
+ ADU_dominion_ADJ: "$OVERLORD$ Andalusian"
+ 
+ AUS_dominion: "Dominion of Austria"
+ AUS_dominion_DEF: "the The Dominion of Austria"
+ AUS_dominion_ADJ: "$OVERLORD$ Austrian"
+ 
+ BSK_dominion: "Dominion of Bashkortostan"
+ BSK_dominion_DEF: "the The Dominion of Bashkortostan"
+ BSK_dominion_ADJ: "$OVERLORD$ Bashkir"
+ 
+ BAY_dominion: "Dominion of Bavaria"
+ BAY_dominion_DEF: "the The Dominion of Bavaria"
+ BAY_dominion_ADJ: "$OVERLORD$ Bavarian"
+ 
+ BLR_dominion: "Dominion of Belarus"
+ BLR_dominion_DEF: "the The Dominion of Belarus"
+ BLR_dominion_ADJ: "$OVERLORD$ Belarusian"
+ 
+ BEL_dominion: "Dominion of Belgium"
+ BEL_dominion_DEF: "the The Dominion of Belgium"
+ BEL_dominion_ADJ: "$OVERLORD$ Belgian"
+ 
+ BOS_dominion: "Dominion of Bosnia"
+ BOS_dominion_DEF: "the The Dominion of Bosnia"
+ BOS_dominion_ADJ: "$OVERLORD$ Bosnian"
+ 
+ BRI_dominion: "Dominion of Little Britain"
+ BRI_dominion_DEF: "the The Dominion of Little Britain"
+ BRI_dominion_ADJ: "$OVERLORD$ Little British"
+ 
+ BUL_dominion: "Dominion of Bulgaria"
+ BUL_dominion_DEF: "the The Dominion of Bulgaria"
+ BUL_dominion_ADJ: "$OVERLORD$ Bulgarian"
+ 
+ CAT_dominion: "Dominion of Catalonia"
+ CAT_dominion_DEF: "the The Dominion of Catalonia"
+ CAT_dominion_ADJ: "$OVERLORD$ Catalan"
+ 
+ CHU_dominion: "Dominion of Chuvashia"
+ CHU_dominion_DEF: "the The Dominion of Chuvashia"
+ CHU_dominion_ADJ: "$OVERLORD$ Chuvash"
+ 
+ COR_dominion: "Dominion of Corsica"
+ COR_dominion_DEF: "the The Dominion of Corsica"
+ COR_dominion_ADJ: "$OVERLORD$ Corsican"
+ 
+ CRI_dominion: "Dominion of Crimea"
+ CRI_dominion_DEF: "the The Dominion of Crimea"
+ CRI_dominion_ADJ: "$OVERLORD$ Crimean"
+ 
+ CRO_dominion: "Dominion of Croatia"
+ CRO_dominion_DEF: "the The Dominion of Croatia"
+ CRO_dominion_ADJ: "$OVERLORD$ Croatian"
+ 
+ CYP_dominion: "Dominion of Cyprus"
+ CYP_dominion_DEF: "the The Dominion of Cyprus"
+ CYP_dominion_ADJ: "$OVERLORD$ Cypriot"
+ 
+ CZE_dominion: "Dominion of Czechia"
+ CZE_dominion_DEF: "the The Dominion of Czechia"
+ CZE_dominion_ADJ: "$OVERLORD$ Czech"
+ 
+ DAG_dominion: "Dominion of Dagestan"
+ DAG_dominion_DEF: "the The Dominion of Dagestan"
+ DAG_dominion_ADJ: "$OVERLORD$ Dagestan"
+ 
+ DNZ_dominion: "Dominion of Danzig"
+ DNZ_dominion_DEF: "the The Dominion of Danzig"
+ DNZ_dominion_ADJ: "$OVERLORD$ Danziger"
+ 
+ DEN_dominion: "Dominion of Denmark"
+ DEN_dominion_DEF: "the The Dominion of Denmark"
+ DEN_dominion_ADJ: "$OVERLORD$ Danish"
+ 
+ DON_dominion: "Dominion of Don"
+ DON_dominion_DEF: "the The Dominion of Don"
+ DON_dominion_ADJ: "$OVERLORD$ Don"
+ 
+ EGR_dominion: "Dominion of East Germany"
+ EGR_dominion_DEF: "the The Dominion of East Germany"
+ EGR_dominion_ADJ: "$OVERLORD$ East German"
+ 
+ ENG_dominion: "Dominion of England"
+ ENG_dominion_DEF: "the The Dominion of England"
+ ENG_dominion_ADJ: "$OVERLORD$ English"
+ 
+ EST_dominion: "Dominion of Estonia"
+ EST_dominion_DEF: "the The Dominion of Estonia"
+ EST_dominion_ADJ: "$OVERLORD$ Estonian"
+ 
+ FIN_dominion: "Dominion of Finland"
+ FIN_dominion_DEF: "the The Dominion of Finland"
+ FIN_dominion_ADJ: "$OVERLORD$ Finn"
+ 
+ FRA_dominion: "Dominion of France"
+ FRA_dominion_DEF: "the The Dominion of France"
+ FRA_dominion_ADJ: "$OVERLORD$ French"
+ 
+ GLC_dominion: "Dominion of Galicia"
+ GLC_dominion_DEF: "the The Dominion of Galicia"
+ GLC_dominion_ADJ: "$OVERLORD$ Galician"
+ 
+ GER_dominion: "Dominion of Germany"
+ GER_dominion_DEF: "the The Dominion of Germany"
+ GER_dominion_ADJ: "$OVERLORD$ German"
+ 
+ GRE_dominion: "Dominion of Greece"
+ GRE_dominion_DEF: "the The Dominion of Greece"
+ GRE_dominion_ADJ: "$OVERLORD$ Greek"
+ 
+ HAN_dominion: "Dominion of Hanover"
+ HAN_dominion_DEF: "the The Dominion of Hanover"
+ HAN_dominion_ADJ: "$OVERLORD$ Hanoverian"
+ 
+ HRZ_dominion: "Dominion of Herzegovina"
+ HRZ_dominion_DEF: "the The Dominion of Herzegovina"
+ HRZ_dominion_ADJ: "$OVERLORD$ Herzegovinian"
+ 
+ HOL_dominion: "Dominion of Holland"
+ HOL_dominion_DEF: "the The Dominion of Holland"
+ HOL_dominion_ADJ: "$OVERLORD$ Hollander"
+ 
+ HUN_dominion: "Dominion of Hungary"
+ HUN_dominion_DEF: "the The Dominion of Hungary"
+ HUN_dominion_ADJ: "$OVERLORD$ Hungarian"
+ 
+ ICE_dominion: "Dominion of Iceland"
+ ICE_dominion_DEF: "the The Dominion of Iceland"
+ ICE_dominion_ADJ: "$OVERLORD$ Icelandic"
+ 
+ IRE_dominion: "Dominion of Ireland"
+ IRE_dominion_DEF: "the The Dominion of Ireland"
+ IRE_dominion_ADJ: "$OVERLORD$ Irish"
+ 
+ ITA_dominion: "Dominion of Italy"
+ ITA_dominion_DEF: "the The Dominion of Italy"
+ ITA_dominion_ADJ: "$OVERLORD$ Italian"
+ 
+ KBK_dominion: "Dominion of Kabardino-balkaria"
+ KBK_dominion_DEF: "the The Dominion of Kabardino-balkaria"
+ KBK_dominion_ADJ: "$OVERLORD$ Kabardino-balkarian"
+ 
+ KAL_dominion: "Dominion of Kalmykia"
+ KAL_dominion_DEF: "the The Dominion of Kalmykia"
+ KAL_dominion_ADJ: "$OVERLORD$ Kalmyk"
+ 
+ KAR_dominion: "Dominion of Karelia"
+ KAR_dominion_DEF: "the The Dominion of Karelia"
+ KAR_dominion_ADJ: "$OVERLORD$ Karelian"
+ 
+ KSH_dominion: "Dominion of Kashubia"
+ KSH_dominion_DEF: "the The Dominion of Kashubia"
+ KSH_dominion_ADJ: "$OVERLORD$ Kashubs"
+ 
+ KHA_dominion: "Dominion of Khakassia"
+ KHA_dominion_DEF: "the The Dominion of Khakassia"
+ KHA_dominion_ADJ: "$OVERLORD$ Khakas"
+ 
+ KOM_dominion: "Dominion of Komi"
+ KOM_dominion_DEF: "the The Dominion of Komi"
+ KOM_dominion_ADJ: "$OVERLORD$ Komi"
+ 
+ KOS_dominion: "Dominion of Kosovo"
+ KOS_dominion_DEF: "the The Dominion of Kosovo"
+ KOS_dominion_ADJ: "$OVERLORD$ Kosovan"
+ 
+ KUB_dominion: "Dominion of Kuban"
+ KUB_dominion_DEF: "the The Dominion of Kuban"
+ KUB_dominion_ADJ: "$OVERLORD$ Kuban"
+ 
+ LAT_dominion: "Dominion of Latvia"
+ LAT_dominion_DEF: "the The Dominion of Latvia"
+ LAT_dominion_ADJ: "$OVERLORD$ Latvian"
+ 
+ LIT_dominion: "Dominion of Lithuania"
+ LIT_dominion_DEF: "the The Dominion of Lithuania"
+ LIT_dominion_ADJ: "$OVERLORD$ Lithuanian"
+ 
+ LUX_dominion: "Dominion of Luxembourg"
+ LUX_dominion_DEF: "the The Dominion of Luxembourg"
+ LUX_dominion_ADJ: "$OVERLORD$ Luxembourger"
+ 
+ MAC_dominion: "Dominion of Macedonia"
+ MAC_dominion_DEF: "the The Dominion of Macedonia"
+ MAC_dominion_ADJ: "$OVERLORD$ Macedonian"
+ 
+ MLT_dominion: "Dominion of Malta"
+ MLT_dominion_DEF: "the The Dominion of Malta"
+ MLT_dominion_ADJ: "$OVERLORD$ Maltese"
+ 
+ MEL_dominion: "Dominion of Mari El"
+ MEL_dominion_DEF: "the The Dominion of Mari El"
+ MEL_dominion_ADJ: "$OVERLORD$ Mari El"
+ 
+ MEK_dominion: "Dominion of Mecklenburg"
+ MEK_dominion_DEF: "the The Dominion of Mecklenburg"
+ MEK_dominion_ADJ: "$OVERLORD$ Mecklenburger"
+ 
+ MOL_dominion: "Dominion of Moldavia"
+ MOL_dominion_DEF: "the The Dominion of Moldavia"
+ MOL_dominion_ADJ: "$OVERLORD$ Moldavian"
+ 
+ MNT_dominion: "Dominion of Montenegro"
+ MNT_dominion_DEF: "the The Dominion of Montenegro"
+ MNT_dominion_ADJ: "$OVERLORD$ Montenegrin"
+ 
+ NAV_dominion: "Dominion of Navarre"
+ NAV_dominion_DEF: "the The Dominion of Navarre"
+ NAV_dominion_ADJ: "$OVERLORD$ Navarrese"
+ 
+ NEN_dominion: "Dominion of Nenetsia"
+ NEN_dominion_DEF: "the The Dominion of Nenetsia"
+ NEN_dominion_ADJ: "$OVERLORD$ Nenets"
+ 
+ NCC_dominion: "Dominion of North Caucasus"
+ NCC_dominion_DEF: "the The Dominion of North Caucasus"
+ NCC_dominion_ADJ: "$OVERLORD$ North Caucasian"
+ 
+ NOA_dominion: "Dominion of North Ossetia"
+ NOA_dominion_DEF: "the The Dominion of North Ossetia"
+ NOA_dominion_ADJ: "$OVERLORD$ North Ossetian"
+ 
+ NIR_dominion: "Dominion of Northern Ireland"
+ NIR_dominion_DEF: "the The Dominion of Northe Thern Ireland"
+ NIR_dominion_ADJ: "$OVERLORD$ Northern Irish"
+ 
+ NOR_dominion: "Dominion of Norway"
+ NOR_dominion_DEF: "the The Dominion of Norway"
+ NOR_dominion_ADJ: "$OVERLORD$ Norwegian"
+ 
+ OCC_dominion: "Dominion of Occitania"
+ OCC_dominion_DEF: "the The Dominion of Occitania"
+ OCC_dominion_ADJ: "$OVERLORD$ Occitanian"
+ 
+ POL_dominion: "Dominion of Poland"
+ POL_dominion_DEF: "the The Dominion of Poland"
+ POL_dominion_ADJ: "$OVERLORD$ Polish"
+ 
+ POR_dominion: "Dominion of Portugal"
+ POR_dominion_DEF: "the The Dominion of Portugal"
+ POR_dominion_ADJ: "$OVERLORD$ Portuguese"
+ 
+ PRE_dominion: "Dominion of Prussia"
+ PRE_dominion_DEF: "the The Dominion of Prussia"
+ PRE_dominion_ADJ: "$OVERLORD$ Prussian"
+ 
+ ROM_dominion: "Dominion of Romania"
+ ROM_dominion_DEF: "the The Dominion of Romania"
+ ROM_dominion_ADJ: "$OVERLORD$ Romanian"
+ 
+ SRD_dominion: "Dominion of Sardinia"
+ SRD_dominion_DEF: "the The Dominion of Sardinia"
+ SRD_dominion_ADJ: "$OVERLORD$ Sardinian"
+ 
+ SAX_dominion: "Dominion of Saxony"
+ SAX_dominion_DEF: "the The Dominion of Saxony"
+ SAX_dominion_ADJ: "$OVERLORD$ Saxon"
+ 
+ SHL_dominion: "Dominion of Schleswig"
+ SHL_dominion_DEF: "the The Dominion of Schleswig"
+ SHL_dominion_ADJ: "$OVERLORD$ Schleswig"
+ 
+ SCO_dominion: "Dominion of Scotland"
+ SCO_dominion_DEF: "the The Dominion of Scotland"
+ SCO_dominion_ADJ: "$OVERLORD$ Scottish"
+ 
+ SER_dominion: "Dominion of Serbia"
+ SER_dominion_DEF: "the The Dominion of Serbia"
+ SER_dominion_ADJ: "$OVERLORD$ Serbian"
+ 
+ SIC_dominion: "Dominion of Sicily"
+ SIC_dominion_DEF: "the The Dominion of Sicily"
+ SIC_dominion_ADJ: "$OVERLORD$ Sicilian"
+ 
+ SIL_dominion: "Dominion of Silesia"
+ SIL_dominion_DEF: "the The Dominion of Silesia"
+ SIL_dominion_ADJ: "$OVERLORD$ Silesian"
+ 
+ SLO_dominion: "Dominion of Slovakia"
+ SLO_dominion_DEF: "the The Dominion of Slovakia"
+ SLO_dominion_ADJ: "$OVERLORD$ Slovakian"
+ 
+ SLV_dominion: "Dominion of Slovenia"
+ SLV_dominion_DEF: "the The Dominion of Slovenia"
+ SLV_dominion_ADJ: "$OVERLORD$ Slovenian"
+ 
+ SOV_dominion: "Dominion of Soviet"
+ SOV_dominion_DEF: "the The Dominion of Soviet"
+ SOV_dominion_ADJ: "$OVERLORD$ Soviet"
+ 
+ SPA_dominion: "Dominion of Spain"
+ SPA_dominion_DEF: "the The Dominion of Spain"
+ SPA_dominion_ADJ: "$OVERLORD$ Spanish"
+ 
+ SWE_dominion: "Dominion of Sweden"
+ SWE_dominion_DEF: "the The Dominion of Sweden"
+ SWE_dominion_ADJ: "$OVERLORD$ Swedish"
+ 
+ SWI_dominion: "Dominion of Switzerland"
+ SWI_dominion_DEF: "the The Dominion of Switzerland"
+ SWI_dominion_ADJ: "$OVERLORD$ Swiss"
+ 
+ TAT_dominion: "Dominion of Tatarstan"
+ TAT_dominion_DEF: "the The Dominion of Tatarstan"
+ TAT_dominion_ADJ: "$OVERLORD$ Tatar"
+ 
+ TRA_dominion: "Dominion of Transylvania"
+ TRA_dominion_DEF: "the The Dominion of Transylvania"
+ TRA_dominion_ADJ: "$OVERLORD$ Transylvanian"
+ 
+ TUS_dominion: "Dominion of Tuscany"
+ TUS_dominion_DEF: "the The Dominion of Tuscany"
+ TUS_dominion_ADJ: "$OVERLORD$ Tuscan"
+ 
+ UDM_dominion: "Dominion of Udmurtia"
+ UDM_dominion_DEF: "the The Dominion of Udmurtia"
+ UDM_dominion_ADJ: "$OVERLORD$ Udmurt"
+ 
+ UKR_dominion: "Dominion of Ukraine"
+ UKR_dominion_DEF: "the The Dominion of Ukraine"
+ UKR_dominion_ADJ: "$OVERLORD$ Ukrainian"
+ 
+ VAT_dominion: "Dominion of Vatican"
+ VAT_dominion_DEF: "the The Dominion of Vatican"
+ VAT_dominion_ADJ: "$OVERLORD$ Vatican"
+ 
+ VNC_dominion: "Dominion of Venice"
+ VNC_dominion_DEF: "the The Dominion of Venice"
+ VNC_dominion_ADJ: "$OVERLORD$ Venetian"
+ 
+ VLG_dominion: "Dominion of Volga"
+ VLG_dominion_DEF: "the The Dominion of Volga"
+ VLG_dominion_ADJ: "$OVERLORD$ Volga"
+ 
+ WLS_dominion: "Dominion of Wales"
+ WLS_dominion_DEF: "the The Dominion of Wales"
+ WLS_dominion_ADJ: "$OVERLORD$ Welsh"
+ 
+ WGR_dominion: "Dominion of West Germany"
+ WGR_dominion_DEF: "the The Dominion of West Germany"
+ WGR_dominion_ADJ: "$OVERLORD$ West German"
+ 
+ WUR_dominion: "Dominion of Württemberg"
+ WUR_dominion_DEF: "the The Dominion of Württemberg"
+ WUR_dominion_ADJ: "$OVERLORD$ Württemberger"
+ 
+ YUG_dominion: "Dominion of Yugoslavia"
+ YUG_dominion_DEF: "the The Dominion of Yugoslavia"
+ YUG_dominion_ADJ: "$OVERLORD$ Yugoslav"
+ 
+#アフリカ:
+ AFA_dominion: "Dominion of Afar"
+ AFA_dominion_DEF: "the The Dominion of Afar"
+ AFA_dominion_ADJ: "$OVERLORD$ Afar"
+ 
+ ALG_dominion: "Dominion of Algeria"
+ ALG_dominion_DEF: "the The Dominion of Algeria"
+ ALG_dominion_ADJ: "$OVERLORD$ Algerian"
+ 
+ AMH_dominion: "Dominion of Amhara"
+ AMH_dominion_DEF: "the The Dominion of Amhara"
+ AMH_dominion_ADJ: "$OVERLORD$ Amharic"
+ 
+ ANG_dominion: "Dominion of Angola"
+ ANG_dominion_DEF: "the The Dominion of Angola"
+ ANG_dominion_ADJ: "$OVERLORD$ Angolan"
+ 
+ BEG_dominion: "Dominion of Benishangul-gumuz"
+ BEG_dominion_DEF: "the The Dominion of Benishangul-gumuz"
+ BEG_dominion_ADJ: "$OVERLORD$ Benishangul-gumuz"
+ 
+ BOT_dominion: "Dominion of Bechuanaland"
+ BOT_dominion_DEF: "the The Dominion of Bechuanaland"
+ BOT_dominion_ADJ: "$OVERLORD$ Bechuana"
+ 
+ BRD_dominion: "Dominion of Urundi"
+ BRD_dominion_DEF: "the The Dominion of Urundi"
+ BRD_dominion_ADJ: "$OVERLORD$ Urundian"
+ 
+ CMR_ENG_colony: "$OVERLORDADJ$ Colony of Cameroon"
+ CMR_ENG_colony_DEF: "the the The $OVERLORDADJ$ Colony of Cameroon"
+ CMR_ENG_colony_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_colonies_federation: "$OVERLORDADJ$ Federal Colony of Cameroon"
+ CMR_ENG_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Cameroon"
+ CMR_ENG_colonies_federation_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Cameroon"
+ CMR_ENG_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Cameroon"
+ CMR_ENG_colony_and_protected_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_condominium: "Condominium of Cameroon"
+ CMR_ENG_condominium_DEF: "the the The Condominium of Cameroon"
+ CMR_ENG_condominium_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_overseas_territory: "$OVERLORDADJ$ Cameroon"
+ CMR_ENG_overseas_territory_DEF: "the the The $OVERLORDADJ$ Cameroon"
+ CMR_ENG_overseas_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_viceroyalty: "Viceroyalty of Cameroon"
+ CMR_ENG_viceroyalty_DEF: "the the The Viceroyalty of Cameroon"
+ CMR_ENG_viceroyalty_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_captaincy_general: "Captaincy General of Cameroon"
+ CMR_ENG_captaincy_general_DEF: "the the The Captaincy General of Cameroon"
+ CMR_ENG_captaincy_general_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_protected_territory: "$OVERLORDADJ$ Protectorate of Cameroon"
+ CMR_ENG_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Cameroon"
+ CMR_ENG_protected_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_constituent_autonomous_province: "$OVERLORDADJ$ Province of Cameroon"
+ CMR_ENG_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Cameroon"
+ CMR_ENG_constituent_autonomous_province_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_trust_territory: "$OVERLORDADJ$ Trust Territory of Cameroon"
+ CMR_ENG_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Cameroon"
+ CMR_ENG_trust_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_ENG_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_ENG_mandated_territory_A_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_ENG_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_ENG_mandated_territory_B_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_ENG_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_ENG_mandated_territory_C_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_leased_territory: "$OVERLORDADJ$ Cameroon"
+ CMR_ENG_leased_territory_DEF: "the the The $OVERLORDADJ$ Cameroon"
+ CMR_ENG_leased_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_colony: "$OVERLORDADJ$ Colony of Cameroon"
+ CMR_GBR_colony_DEF: "the the The $OVERLORDADJ$ Colony of Cameroon"
+ CMR_GBR_colony_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_colonies_federation: "$OVERLORDADJ$ Federal Colony of Cameroon"
+ CMR_GBR_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Cameroon"
+ CMR_GBR_colonies_federation_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Cameroon"
+ CMR_GBR_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Cameroon"
+ CMR_GBR_colony_and_protected_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_condominium: "Condominium of Cameroon"
+ CMR_GBR_condominium_DEF: "the the The Condominium of Cameroon"
+ CMR_GBR_condominium_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_overseas_territory: "$OVERLORDADJ$ Cameroon"
+ CMR_GBR_overseas_territory_DEF: "the the The $OVERLORDADJ$ Cameroon"
+ CMR_GBR_overseas_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_viceroyalty: "Viceroyalty of Cameroon"
+ CMR_GBR_viceroyalty_DEF: "the the The Viceroyalty of Cameroon"
+ CMR_GBR_viceroyalty_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_captaincy_general: "Captaincy General of Cameroon"
+ CMR_GBR_captaincy_general_DEF: "the the The Captaincy General of Cameroon"
+ CMR_GBR_captaincy_general_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_protected_territory: "$OVERLORDADJ$ Protectorate of Cameroon"
+ CMR_GBR_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Cameroon"
+ CMR_GBR_protected_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_constituent_autonomous_province: "$OVERLORDADJ$ Province of Cameroon"
+ CMR_GBR_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Cameroon"
+ CMR_GBR_constituent_autonomous_province_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_trust_territory: "$OVERLORDADJ$ Trust Territory of Cameroon"
+ CMR_GBR_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Cameroon"
+ CMR_GBR_trust_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBR_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBR_mandated_territory_A_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBR_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBR_mandated_territory_B_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBR_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBR_mandated_territory_C_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_leased_territory: "$OVERLORDADJ$ Cameroon"
+ CMR_GBR_leased_territory_DEF: "the the The $OVERLORDADJ$ Cameroon"
+ CMR_GBR_leased_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_colony: "$OVERLORDADJ$ Colony of Cameroon"
+ CMR_GBRandIRE_colony_DEF: "the the The $OVERLORDADJ$ Colony of Cameroon"
+ CMR_GBRandIRE_colony_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_colonies_federation: "$OVERLORDADJ$ Federal Colony of Cameroon"
+ CMR_GBRandIRE_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Cameroon"
+ CMR_GBRandIRE_colonies_federation_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Cameroon"
+ CMR_GBRandIRE_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Cameroon"
+ CMR_GBRandIRE_colony_and_protected_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_condominium: "Condominium of Cameroon"
+ CMR_GBRandIRE_condominium_DEF: "the the The Condominium of Cameroon"
+ CMR_GBRandIRE_condominium_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_overseas_territory: "$OVERLORDADJ$ Cameroon"
+ CMR_GBRandIRE_overseas_territory_DEF: "the the The $OVERLORDADJ$ Cameroon"
+ CMR_GBRandIRE_overseas_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_viceroyalty: "Viceroyalty of Cameroon"
+ CMR_GBRandIRE_viceroyalty_DEF: "the the The Viceroyalty of Cameroon"
+ CMR_GBRandIRE_viceroyalty_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_captaincy_general: "Captaincy General of Cameroon"
+ CMR_GBRandIRE_captaincy_general_DEF: "the the The Captaincy General of Cameroon"
+ CMR_GBRandIRE_captaincy_general_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_protected_territory: "$OVERLORDADJ$ Protectorate of Cameroon"
+ CMR_GBRandIRE_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Cameroon"
+ CMR_GBRandIRE_protected_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_constituent_autonomous_province: "$OVERLORDADJ$ Province of Cameroon"
+ CMR_GBRandIRE_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Cameroon"
+ CMR_GBRandIRE_constituent_autonomous_province_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_trust_territory: "$OVERLORDADJ$ Trust Territory of Cameroon"
+ CMR_GBRandIRE_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Cameroon"
+ CMR_GBRandIRE_trust_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBRandIRE_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBRandIRE_mandated_territory_A_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBRandIRE_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBRandIRE_mandated_territory_B_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBRandIRE_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cameroon"
+ CMR_GBRandIRE_mandated_territory_C_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_leased_territory: "$OVERLORDADJ$ Cameroon"
+ CMR_GBRandIRE_leased_territory_DEF: "the the The $OVERLORDADJ$ Cameroon"
+ CMR_GBRandIRE_leased_territory_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_dominion: "Dominion of Cameroon"
+ CMR_dominion_DEF: "the The Dominion of Cameroon"
+ CMR_dominion_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_ENG_dominion: "Dominion of Cameroon"
+ CMR_ENG_dominion_DEF: "the Dominion of Cameroon"
+ CMR_ENG_dominion_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBR_dominion: "Dominion of Cameroon"
+ CMR_GBR_dominion_DEF: "the Dominion of Cameroon"
+ CMR_GBR_dominion_ADJ: "$OVERLORD$ Cameroonian"
+ CMR_GBRandIRE_dominion: "Dominion of Cameroon"
+ CMR_GBRandIRE_dominion_DEF: "the Dominion of Cameroon"
+ CMR_GBRandIRE_dominion_ADJ: "$OVERLORD$ Cameroonian"
+ 
+ CAF_dominion: "Dominion of Ubangi-Shari"
+ CAF_dominion_DEF: "the The Dominion of Ubangi-Shari"
+ CAF_dominion_ADJ: "$OVERLORD$ Ubangi-Shari"
+ 
+ CHA_dominion: "Dominion of Chad"
+ CHA_dominion_DEF: "the The Dominion of Chad"
+ CHA_dominion_ADJ: "$OVERLORD$ Chadian"
+ 
+ COG_dominion: "Dominion of Congo"
+ COG_dominion_DEF: "the The Dominion of Congo"
+ COG_dominion_ADJ: "$OVERLORD$ Congolese"
+ 
+ IVO_dominion: "Dominion of Ivory Coast"
+ IVO_dominion_DEF: "the The Dominion of Ivory Coast"
+ IVO_dominion_ADJ: "$OVERLORD$ Ivory Coast"
+ 
+ DAH_dominion: "Dominion of Dahomey"
+ DAH_dominion_DEF: "the The Dominion of Dahomey"
+ DAH_dominion_ADJ: "$OVERLORD$ Dahomean"
+ 
+ DJI_dominion: "Dominion of Coast of the Somalis'"
+ DJI_dominion_DEF: "the The Dominion of Coast of the The Somalis'"
+ DJI_dominion_ADJ: "$OVERLORD$ Somali"
+ 
+ EAF_dominion: "Dominion of East Africa"
+ EAF_dominion_DEF: "the The Dominion of East Africa"
+ EAF_dominion_ADJ: "$OVERLORD$ East African"
+ 
+ EGY_dominion: "Dominion of Egypt"
+ EGY_dominion_DEF: "the The Dominion of Egypt"
+ EGY_dominion_ADJ: "$OVERLORD$ Egyptian"
+ 
+ EQG_dominion: "Dominion of Gulf of Guinea"
+ EQG_dominion_DEF: "the The Dominion of Gulf of Guinea"
+ EQG_dominion_ADJ: "$OVERLORD$ Guinean"
+ 
+ ERI_dominion: "Dominion of Eritrea"
+ ERI_dominion_DEF: "the The Dominion of Eritrea"
+ ERI_dominion_ADJ: "$OVERLORD$ Eritrean"
+ 
+ ETH_dominion: "Dominion of Ethiopia"
+ ETH_dominion_DEF: "the The Dominion of Ethiopia"
+ ETH_dominion_ADJ: "$OVERLORD$ Ethiopian"
+ 
+ GAB_dominion: "Dominion of Gabon"
+ GAB_dominion_DEF: "the The Dominion of Gabon"
+ GAB_dominion_ADJ: "$OVERLORD$ Gabonese"
+ 
+ GBA_dominion: "Dominion of Gambela"
+ GBA_dominion_DEF: "the The Dominion of Gambela"
+ GBA_dominion_ADJ: "$OVERLORD$ Gambela"
+ 
+ GHA_dominion: "Dominion of Gold Coast"
+ GHA_dominion_DEF: "the The Dominion of Gold Coast"
+ GHA_dominion_ADJ: "$OVERLORD$ Gold Coast"
+ 
+ GNA_dominion: "Dominion of Guinea"
+ GNA_dominion_DEF: "the The Dominion of Guinea"
+ GNA_dominion_ADJ: "$OVERLORD$ Guinean"
+ 
+ GNB_dominion: "Dominion of Guinea"
+ GNB_dominion_DEF: "the The Dominion of Guinea"
+ GNB_dominion_ADJ: "$OVERLORD$ Guinean"
+ 
+ HAR_dominion: "Dominion of Harar"
+ HAR_dominion_DEF: "the The Dominion of Harar"
+ HAR_dominion_ADJ: "$OVERLORD$ Harar"
+ 
+ KEN_dominion: "Dominion of Kenya"
+ KEN_dominion_DEF: "the The Dominion of Kenya"
+ KEN_dominion_ADJ: "$OVERLORD$ Kenyan"
+ 
+ LIB_dominion: "Dominion of Pepper Coast"
+ LIB_dominion_DEF: "the The Dominion of Pepper Coast"
+ LIB_dominion_ADJ: "$OVERLORD$ Pepper Coast"
+ 
+ LBA_dominion: "Dominion of Libya"
+ LBA_dominion_DEF: "the The Dominion of Libya"
+ LBA_dominion_ADJ: "$OVERLORD$ Libyan"
+ 
+ MAD_dominion: "Dominion of Madagascar"
+ MAD_dominion_DEF: "the The Dominion of Madagascar"
+ MAD_dominion_ADJ: "$OVERLORD$ Malagasy"
+ 
+ MLW_dominion: "Dominion of Nyasaland"
+ MLW_dominion_DEF: "the The Dominion of Nyasaland"
+ MLW_dominion_ADJ: "$OVERLORD$ Nyasa"
+ 
+ MLI_dominion: "Dominion of Sudan"
+ MLI_dominion_DEF: "the The Dominion of Sudan"
+ MLI_dominion_ADJ: "$OVERLORD$ Sudanese"
+ 
+ MRT_dominion: "Dominion of Mauritania"
+ MRT_dominion_DEF: "the The Dominion of Mauritania"
+ MRT_dominion_ADJ: "$OVERLORD$ Mauritanian"
+ 
+ MCG_dominion: "Dominion of Middle Congo"
+ MCG_dominion_DEF: "the The Dominion of Middle Congo"
+ MCG_dominion_ADJ: "$OVERLORD$ Middle Congolese"
+ 
+ MOR_dominion: "Dominion of Morocco"
+ MOR_dominion_DEF: "the The Dominion of Morocco"
+ MOR_dominion_ADJ: "$OVERLORD$ Moroccan"
+ 
+ MZB_dominion: "Dominion of Mozambique"
+ MZB_dominion_DEF: "the The Dominion of Mozambique"
+ MZB_dominion_ADJ: "$OVERLORD$ Mozambican"
+ 
+ NMB_dominion: "Dominion of South West Africa"
+ NMB_dominion_DEF: "the The Dominion of South West Africa"
+ NMB_dominion_ADJ: "$OVERLORD$ South West African"
+ 
+ NGE_dominion: "Dominion of Niger"
+ NGE_dominion_DEF: "the The Dominion of Niger"
+ NGE_dominion_ADJ: "$OVERLORD$ Nigerien"
+ 
+ NGA_dominion: "Dominion of Nigeria"
+ NGA_dominion_DEF: "the The Dominion of Nigeria"
+ NGA_dominion_ADJ: "$OVERLORD$ Nigerian"
+ 
+ ORO_dominion: "Dominion of Oromia"
+ ORO_dominion_DEF: "the The Dominion of Oromia"
+ ORO_dominion_ADJ: "$OVERLORD$ Oromian"
+ 
+ RIF_dominion: "Dominion of Rif"
+ RIF_dominion_DEF: "the The Dominion of Rif"
+ RIF_dominion_ADJ: "$OVERLORD$ Riffan"
+ 
+ RWA_dominion: "Dominion of Ruanda"
+ RWA_dominion_DEF: "the The Dominion of Ruanda"
+ RWA_dominion_ADJ: "$OVERLORD$ Ruandan"
+ 
+ SEN_dominion: "Dominion of Senegal"
+ SEN_dominion_DEF: "the The Dominion of Senegal"
+ SEN_dominion_ADJ: "$OVERLORD$ Senegalese"
+ 
+ SID_dominion: "Dominion of Sidama"
+ SID_dominion_DEF: "the The Dominion of Sidama"
+ SID_dominion_ADJ: "$OVERLORD$ Sidama"
+ 
+ SIE_dominion: "Dominion of Sierra Leone"
+ SIE_dominion_DEF: "the The Dominion of Sierra Leone"
+ SIE_dominion_ADJ: "$OVERLORD$ Sierra Leonean"
+ 
+ SOM_dominion: "Dominion of Somaliland"
+ SOM_dominion_DEF: "the The Dominion of Somaliland"
+ SOM_dominion_ADJ: "$OVERLORD$ Somali"
+ 
+ SAF_dominion: "Dominion of South Africa"
+ SAF_dominion_DEF: "the The Dominion of South Africa"
+ SAF_dominion_ADJ: "$OVERLORD$ South African"
+ 
+ SUD_dominion: "Dominion of Sudan"
+ SUD_dominion_DEF: "the The Dominion of Sudan"
+ SUD_dominion_ADJ: "$OVERLORD$ Sudanese"
+ 
+ TZN_dominion: "Dominion of Tanzania"
+ TZN_dominion_DEF: "the The Dominion of Tanzania"
+ TZN_dominion_ADJ: "$OVERLORD$ Tanzanian"
+ 
+ GAM_dominion: "Dominion of The Gambia"
+ GAM_dominion_DEF: "the The Dominion of The Gambia"
+ GAM_dominion_ADJ: "$OVERLORD$ Gambian"
+ 
+ TIG_dominion: "Dominion of Tigray"
+ TIG_dominion_DEF: "the The Dominion of Tigray"
+ TIG_dominion_ADJ: "$OVERLORD$ Tigray"
+ 
+ TOG_dominion: "Dominion of Togoland"
+ TOG_dominion_DEF: "the The Dominion of Togoland"
+ TOG_dominion_ADJ: "$OVERLORD$ Togolese"
+ 
+ TUN_dominion: "Dominion of Tunisia"
+ TUN_dominion_DEF: "the The Dominion of Tunisia"
+ TUN_dominion_ADJ: "$OVERLORD$ Tunisian"
+ 
+ UGA_dominion: "Dominion of Uganda"
+ UGA_dominion_DEF: "the The Dominion of Uganda"
+ UGA_dominion_ADJ: "$OVERLORD$ Ugandan"
+ 
+ VOL_dominion: "Dominion of Upper Volta"
+ VOL_dominion_DEF: "the The Dominion of Upper Volta"
+ VOL_dominion_ADJ: "$OVERLORD$ Upper Voltese"
+ 
+ WES_dominion: "Dominion of Sahara"
+ WES_dominion_DEF: "the The Dominion of Sahara"
+ WES_dominion_ADJ: "$OVERLORD$ Saharan"
+ 
+ ZAM_dominion: "Dominion of Northern Rhodesia"
+ ZAM_dominion_DEF: "the The Dominion of Northe Thern Rhodesia"
+ ZAM_dominion_ADJ: "$OVERLORD$ Northern Rhodesian"
+ 
+ ZIM_dominion: "Dominion of Southern Rhodesia"
+ ZIM_dominion_DEF: "the The Dominion of Southe Thern Rhodesia"
+ ZIM_dominion_ADJ: "$OVERLORD$ Southern Rhodesian"
+ 
+#新大陸:
+ USA_dominion: "Dominion of America"
+ USA_dominion_DEF: "the The Dominion of America"
+ USA_dominion_ADJ: "$OVERLORD$ American"
+ 
+ ARG_dominion: "Dominion of Argentina"
+ ARG_dominion_DEF: "the The Dominion of Argentina"
+ ARG_dominion_ADJ: "$OVERLORD$ Argentine"
+ 
+ BLZ_dominion: "Dominion of Honduras"
+ BLZ_dominion_DEF: "the The Dominion of Honduras"
+ BLZ_dominion_ADJ: "$OVERLORD$ Honduran"
+ 
+ BOL_dominion: "Dominion of Bolivia"
+ BOL_dominion_DEF: "the The Dominion of Bolivia"
+ BOL_dominion_ADJ: "$OVERLORD$ Bolivian"
+ 
+ BRA_dominion: "Dominion of Brazil"
+ BRA_dominion_DEF: "the The Dominion of Brazil"
+ BRA_dominion_ADJ: "$OVERLORD$ Brazilian"
+ 
+ CAN_dominion: "Dominion of Canada"
+ CAN_dominion_DEF: "the The Dominion of Canada"
+ CAN_dominion_ADJ: "$OVERLORD$ Canadian"
+ 
+ CAY_dominion: "Dominion of Guiana"
+ CAY_dominion_DEF: "the The Dominion of Guiana"
+ CAY_dominion_ADJ: "$OVERLORD$ Guianan"
+ 
+ CHL_dominion: "Dominion of Chile"
+ CHL_dominion_DEF: "the The Dominion of Chile"
+ CHL_dominion_ADJ: "$OVERLORD$ Chilean"
+ 
+ COL_dominion: "Dominion of Colombia"
+ COL_dominion_DEF: "the The Dominion of Colombia"
+ COL_dominion_ADJ: "$OVERLORD$ Colombian"
+ 
+ COS_dominion: "Dominion of Costa Rica"
+ COS_dominion_DEF: "the The Dominion of Costa Rica"
+ COS_dominion_ADJ: "$OVERLORD$ Costa Rican"
+ 
+ CUB_dominion: "Dominion of Cuba"
+ CUB_dominion_DEF: "the The Dominion of Cuba"
+ CUB_dominion_ADJ: "$OVERLORD$ Cuban"
+ 
+ CRC_dominion: "Dominion of Curaçao"
+ CRC_dominion_DEF: "the The Dominion of Curaçao"
+ CRC_dominion_ADJ: "$OVERLORD$ Curaçaoan"
+ 
+ DXL_dominion: "Dominion of Dixieland"
+ DXL_dominion_DEF: "the The Dominion of Dixieland"
+ DXL_dominion_ADJ: "$OVERLORD$ Dixie"
+ 
+ DOM_dominion: "Dominion of Dominica"
+ DOM_dominion_DEF: "the The Dominion of Dominica"
+ DOM_dominion_ADJ: "$OVERLORD$ Dominican"
+ 
+ ECU_dominion: "Dominion of Ecuador"
+ ECU_dominion_DEF: "the The Dominion of Ecuador"
+ ECU_dominion_ADJ: "$OVERLORD$ Ecuadorian"
+ 
+ ELS_dominion: "Dominion of El Salvador"
+ ELS_dominion_DEF: "the The Dominion of El Salvador"
+ ELS_dominion_ADJ: "$OVERLORD$ Salvadoran"
+ 
+ GDL_dominion: "Dominion of Guadeloupe"
+ GDL_dominion_DEF: "the The Dominion of Guadeloupe"
+ GDL_dominion_ADJ: "$OVERLORD$ Guadeloupean"
+ 
+ GUA_dominion: "Dominion of Guatemala"
+ GUA_dominion_DEF: "the The Dominion of Guatemala"
+ GUA_dominion_ADJ: "$OVERLORD$ Guatemalan"
+ 
+ GYA_dominion: "Dominion of Guiana"
+ GYA_dominion_DEF: "the The Dominion of Guiana"
+ GYA_dominion_ADJ: "$OVERLORD$ Guianan"
+ 
+ HAI_dominion: "Dominion of Haiti"
+ HAI_dominion_DEF: "the The Dominion of Haiti"
+ HAI_dominion_ADJ: "$OVERLORD$ Haitian"
+ 
+ HON_dominion: "Dominion of Honduras"
+ HON_dominion_DEF: "the The Dominion of Honduras"
+ HON_dominion_ADJ: "$OVERLORD$ Honduran"
+ 
+ JAM_dominion: "Dominion of Jamaica"
+ JAM_dominion_DEF: "the The Dominion of Jamaica"
+ JAM_dominion_ADJ: "$OVERLORD$ Jamaican"
+ 
+ MEX_dominion: "Dominion of Mexico"
+ MEX_dominion_DEF: "the The Dominion of Mexico"
+ MEX_dominion_ADJ: "$OVERLORD$ Mexican"
+ 
+ NIC_dominion: "Dominion of Nicaragua"
+ NIC_dominion_DEF: "the The Dominion of Nicaragua"
+ NIC_dominion_ADJ: "$OVERLORD$ Nicaraguan"
+ 
+ PAN_dominion: "Dominion of Panama"
+ PAN_dominion_DEF: "the The Dominion of Panama"
+ PAN_dominion_ADJ: "$OVERLORD$ Panamanian"
+ 
+ PAR_dominion: "Dominion of Paraguay"
+ PAR_dominion_DEF: "the The Dominion of Paraguay"
+ PAR_dominion_ADJ: "$OVERLORD$ Paraguayan"
+ 
+ PRU_dominion: "Dominion of Peru"
+ PRU_dominion_DEF: "the The Dominion of Peru"
+ PRU_dominion_ADJ: "$OVERLORD$ Peruvian"
+ 
+ PUE_dominion: "Dominion of Puerto Rico"
+ PUE_dominion_DEF: "the The Dominion of Puerto Rico"
+ PUE_dominion_ADJ: "$OVERLORD$ Puerto Rican"
+ 
+ SUR_dominion: "Dominion of Guiana"
+ SUR_dominion_DEF: "the The Dominion of Guiana"
+ SUR_dominion_ADJ: "$OVERLORD$ Guianan"
+ 
+ BAH_dominion: "Dominion of The Bahamas"
+ BAH_dominion_DEF: "the The Dominion of The Bahamas"
+ BAH_dominion_ADJ: "$OVERLORD$ Bahamian"
+ 
+ TRI_dominion: "Dominion of Trinidad"
+ TRI_dominion_DEF: "the The Dominion of Trinidad"
+ TRI_dominion_ADJ: "$OVERLORD$ Trinidadian"
+ 
+ URG_dominion: "Dominion of Uruguay"
+ URG_dominion_DEF: "the The Dominion of Uruguay"
+ URG_dominion_ADJ: "$OVERLORD$ Uruguayan"
+ 
+ VEN_dominion: "Dominion of Venezuela"
+ VEN_dominion_DEF: "the The Dominion of Venezuela"
+ VEN_dominion_ADJ: "$OVERLORD$ Venezuelan"
+ 
+ WIN_dominion: "Dominion of West Indies"
+ WIN_dominion_DEF: "the The Dominion of West Indies"
+ WIN_dominion_ADJ: "$OVERLORD$ West Indian"
+ 
+#大洋州:
+ AST_dominion: "Dominion of Australia"
+ AST_dominion_DEF: "the The Dominion of Australia"
+ AST_dominion_ADJ: "$OVERLORD$ Australian"
+ 
+ FIJ_dominion: "Dominion of Fiji"
+ FIJ_dominion_DEF: "the The Dominion of Fiji"
+ FIJ_dominion_ADJ: "$OVERLORD$ Fijian"
+ 
+ GUM_dominion: "Dominion of Guam"
+ GUM_dominion_DEF: "the The Dominion of Guam"
+ GUM_dominion_ADJ: "$OVERLORD$ Guamanian"
+ 
+ HAW_dominion: "Dominion of Hawaii"
+ HAW_dominion_DEF: "the The Dominion of Hawaii"
+ HAW_dominion_ADJ: "$OVERLORD$ Hawaiian"
+ 
+ FSM_dominion: "Dominion of Micronesia"
+ FSM_dominion_DEF: "the The Dominion of Micronesia"
+ FSM_dominion_ADJ: "$OVERLORD$ Micronesian"
+ 
+ NZL_dominion: "Dominion of New Zealand"
+ NZL_dominion_DEF: "the The Dominion of New Zealand"
+ NZL_dominion_ADJ: "$OVERLORD$ New Zealander"
+ 
+ PNG_dominion: "Dominion of Papua New Guinea"
+ PNG_dominion_DEF: "the The Dominion of Papua New Guinea"
+ PNG_dominion_ADJ: "$OVERLORD$ Papua New Guinean"
+ 
+ SAM_dominion: "Dominion of Samoa"
+ SAM_dominion_DEF: "the The Dominion of Samoa"
+ SAM_dominion_ADJ: "$OVERLORD$ Samoan"
+ 
+ SOL_dominion: "Dominion of Solomon Islands"
+ SOL_dominion_DEF: "the The Dominion of Solomon Islands"
+ SOL_dominion_ADJ: "$OVERLORD$ Solomonese"
+ 
+ TAH_dominion: "Dominion of Tahiti"
+ TAH_dominion_DEF: "the The Dominion of Tahiti"
+ TAH_dominion_ADJ: "$OVERLORD$ Tahitian"
+ 
+#アメリカ諸州:
+##追加国家:
+#アジア:
+ ADN_dominion: "Dominion of Aden"
+ ADN_dominion_DEF: "the The Dominion of Aden"
+ ADN_dominion_ADJ: "$OVERLORD$ Adeni"
+ 
+ AJA_dominion: "Dominion of Adjara"
+ AJA_dominion_DEF: "the The Dominion of Adjara"
+ AJA_dominion_ADJ: "$OVERLORD$ Adjarian"
+ 
+ ALW_dominion: "Dominion of Alawites"
+ ALW_dominion_DEF: "the The Dominion of Alawites"
+ ALW_dominion_ADJ: "$OVERLORD$ Alawite"
+ 
+ ALP_dominion: "Dominion of Aleppo"
+ ALP_dominion_DEF: "the The Dominion of Aleppo"
+ ALP_dominion_ADJ: "$OVERLORD$ Aleppine"
+ 
+ AMR_dominion: "Dominion of Amur"
+ AMR_dominion_DEF: "the The Dominion of Amur"
+ AMR_dominion_ADJ: "$OVERLORD$ Amur"
+ 
+ ANH_dominion: "Dominion of Anhui"
+ ANH_dominion_DEF: "the The Dominion of Anhui"
+ ANH_dominion_ADJ: "$OVERLORD$ Anhui"
+ 
+ ANN_dominion: "Dominion of Annam"
+ ANN_dominion_DEF: "the The Dominion of Annam"
+ ANN_dominion_ADJ: "$OVERLORD$ Annamite"
+ 
+ ARB_dominion: "Dominion of Arab"
+ ARB_dominion_DEF: "the The Dominion of Arab"
+ ARB_dominion_ADJ: "$OVERLORD$ Arab"
+ 
+ ARS_dominion: "Dominion of Aras"
+ ARS_dominion_DEF: "the The Dominion of Aras"
+ ARS_dominion_ADJ: "$OVERLORD$ Aras"
+ 
+ BHR_dominion: "Dominion of Bahrain"
+ BHR_dominion_DEF: "the The Dominion of Bahrain"
+ BHR_dominion_ADJ: "$OVERLORD$ Bahraini"
+ 
+ BAL_dominion: "Dominion of Balochistan"
+ BAL_dominion_DEF: "the The Dominion of Balochistan"
+ BAL_dominion_ADJ: "$OVERLORD$ Baloch"
+ 
+ BNG_dominion: "Dominion of Banganapalle"
+ BNG_dominion_DEF: "the The Dominion of Banganapalle"
+ BNG_dominion_ADJ: "$OVERLORD$ Banganapalle"
+ 
+ BRN_dominion: "Dominion of Brunei"
+ BRN_dominion_DEF: "the The Dominion of Brunei"
+ BRN_dominion_ADJ: "$OVERLORD$ Bruneian"
+ 
+ CCS_dominion: "Dominion of Caucasus"
+ CCS_dominion_DEF: "the The Dominion of Caucasus"
+ CCS_dominion_ADJ: "$OVERLORD$ Caucasian"
+ 
+ CHM_dominion: "Dominion of Champasak"
+ CHM_dominion_DEF: "the The Dominion of Champasak"
+ CHM_dominion_ADJ: "$OVERLORD$ Champasak"
+ 
+ CHN_dominion: "Dominion of Chinland"
+ CHN_dominion_DEF: "the The Dominion of Chinland"
+ CHN_dominion_ADJ: "$OVERLORD$ Chin"
+ 
+ CCH_dominion: "Dominion of Cochinchina"
+ CCH_dominion_DEF: "the The Dominion of Cochinchina"
+ CCH_dominion_ADJ: "$OVERLORD$ Cochinchinese"
+ 
+ DLI_dominion: "Dominion of Dalian"
+ DLI_dominion_DEF: "the The Dominion of Dalian"
+ DLI_dominion_ADJ: "$OVERLORD$ Dali"
+ 
+ DAM_dominion: "Dominion of Damascus"
+ DAM_dominion_DEF: "the The Dominion of Damascus"
+ DAM_dominion_ADJ: "$OVERLORD$ Damascene"
+ 
+ DNU_dominion: "Dominion of Danu"
+ DNU_dominion_DEF: "the The Dominion of Danu"
+ DNU_dominion_ADJ: "$OVERLORD$ Danu"
+ 
+ DVN_dominion: "Dominion of Dravida Nad"
+ DVN_dominion_DEF: "the The Dominion of Dravida Nad"
+ DVN_dominion_ADJ: "$OVERLORD$ Dravidian"
+ 
+ EIN_dominion: "Dominion of East Indies"
+ EIN_dominion_DEF: "the The Dominion of East Indies"
+ EIN_dominion_ADJ: "$OVERLORD$ Eastindian"
+ 
+ EMO_dominion: "Dominion of East Mongolia"
+ EMO_dominion_DEF: "the The Dominion of East Mongolia"
+ EMO_dominion_ADJ: "$OVERLORD$ East Mongolian"
+ 
+ ETR_dominion: "Dominion of East Turkestan"
+ ETR_dominion_DEF: "the The Dominion of East Turkestan"
+ ETR_dominion_ADJ: "$OVERLORD$ East Turkes"
+ 
+ EVN_dominion: "Dominion of Evenkia"
+ EVN_dominion_DEF: "the The Dominion of Evenkia"
+ EVN_dominion_ADJ: "$OVERLORD$ Evenki"
+ 
+ EZO_dominion: "Dominion of Ezo"
+ EZO_dominion_DEF: "the The Dominion of Ezo"
+ EZO_dominion_ADJ: "$OVERLORD$ Ezo"
+ 
+ FNG_dominion: "Dominion of Fengtian"
+ FNG_dominion_DEF: "the The Dominion of Fengtian"
+ FNG_dominion_ADJ: "$OVERLORD$ Fengtian"
+ 
+ FUJ_dominion: "Dominion of Fujian"
+ FUJ_dominion_DEF: "the The Dominion of Fujian"
+ FUJ_dominion_ADJ: "$OVERLORD$ Fujian"
+ 
+ GAN_dominion: "Dominion of Gansu"
+ GAN_dominion_DEF: "the The Dominion of Gansu"
+ GAN_dominion_ADJ: "$OVERLORD$ Gansu"
+ 
+ GOA_dominion: "Dominion of Goa"
+ GOA_dominion_DEF: "the The Dominion of Goa"
+ GOA_dominion_ADJ: "$OVERLORD$ Goan"
+ 
+ GND_dominion: "Dominion of Guangdong"
+ GND_dominion_DEF: "the The Dominion of Guangdong"
+ GND_dominion_ADJ: "$OVERLORD$ Guangdong"
+ 
+ GZH_dominion: "Dominion of Guizhou"
+ GZH_dominion_DEF: "the The Dominion of Guizhou"
+ GZH_dominion_ADJ: "$OVERLORD$ Guizhou"
+ 
+ HIN_dominion: "Dominion of Hainan"
+ HIN_dominion_DEF: "the The Dominion of Hainan"
+ HIN_dominion_ADJ: "$OVERLORD$ Hainanese"
+ 
+ HAS_dominion: "Dominion of Hashim"
+ HAS_dominion_DEF: "the The Dominion of Hashim"
+ HAS_dominion_ADJ: "$OVERLORD$ Hashemite"
+ 
+ HAT_dominion: "Dominion of Hatay"
+ HAT_dominion_DEF: "the The Dominion of Hatay"
+ HAT_dominion_ADJ: "$OVERLORD$ Hatay"
+ 
+ HIL_dominion: "Dominion of Ḥaʼil"
+ HIL_dominion_DEF: "the The Dominion of Ḥaʼil"
+ HIL_dominion_ADJ: "$OVERLORD$ Ḥaʼil"
+ 
+ HEB_dominion: "Dominion of Hebei"
+ HEB_dominion_DEF: "the The Dominion of Hebei"
+ HEB_dominion_ADJ: "$OVERLORD$ Hebei"
+ 
+ HEZ_dominion: "Dominion of Hejaz"
+ HEZ_dominion_DEF: "the The Dominion of Hejaz"
+ HEZ_dominion_ADJ: "$OVERLORD$ Hejazi"
+ 
+ HEN_dominion: "Dominion of Henan"
+ HEN_dominion_DEF: "the The Dominion of Henan"
+ HEN_dominion_ADJ: "$OVERLORD$ Henan"
+ 
+ HND_dominion: "Dominion of Hindustan"
+ HND_dominion_DEF: "the The Dominion of Hindustan"
+ HND_dominion_ADJ: "$OVERLORD$ Hindu"
+ 
+ HKG_dominion: "Dominion of Hong Kong"
+ HKG_dominion_DEF: "the The Dominion of Hong Kong"
+ HKG_dominion_ADJ: "$OVERLORD$ Hong Konger"
+ 
+ HUB_dominion: "Dominion of Hubei"
+ HUB_dominion_DEF: "the The Dominion of Hubei"
+ HUB_dominion_ADJ: "$OVERLORD$ Hubei"
+ 
+ HNN_dominion: "Dominion of Hunan"
+ HNN_dominion_DEF: "the The Dominion of Hunan"
+ HNN_dominion_ADJ: "$OVERLORD$ Hunan"
+ 
+ HYD_dominion: "Dominion of Hyderabad"
+ HYD_dominion_DEF: "the The Dominion of Hyderabad"
+ HYD_dominion_ADJ: "$OVERLORD$ Hyderabadian"
+ 
+ INO_dominion: "Dominion of Indian Ocean"
+ INO_dominion_DEF: "the The Dominion of Indian Ocean"
+ INO_dominion_ADJ: "$OVERLORD$ Indian Ocean"
+ 
+ INC_dominion: "Dominion of Indochine"
+ INC_dominion_DEF: "the The Dominion of Indochine"
+ INC_dominion_ADJ: "$OVERLORD$ Indochinese"
+ 
+ IRK_dominion: "Dominion of Irkutsk"
+ IRK_dominion_DEF: "the The Dominion of Irkutsk"
+ IRK_dominion_ADJ: "$OVERLORD$ Irkutsk"
+ 
+ JAD_dominion: "Dominion of Jabalal-druze"
+ JAD_dominion_DEF: "the The Dominion of Jabalal-druze"
+ JAD_dominion_ADJ: "$OVERLORD$ Jabalal-druzi"
+ 
+ JRS_dominion: "Dominion of Jerusalem"
+ JRS_dominion_DEF: "the The Dominion of Jerusalem"
+ JRS_dominion_ADJ: "$OVERLORD$ Jerusalem"
+ 
+ JGS_dominion: "Dominion of Jiangsu"
+ JGS_dominion_DEF: "the The Dominion of Jiangsu"
+ JGS_dominion_ADJ: "$OVERLORD$ Jiangsu"
+ 
+ JIA_dominion: "Dominion of Jiangxi"
+ JIA_dominion_DEF: "the The Dominion of Jiangxi"
+ JIA_dominion_ADJ: "$OVERLORD$ Jiangxi"
+ 
+ JOH_dominion: "Dominion of Johor"
+ JOH_dominion_DEF: "the The Dominion of Johor"
+ JOH_dominion_ADJ: "$OVERLORD$ Johorean"
+ 
+ JNA_dominion: "Dominion of Junagadh"
+ JNA_dominion_DEF: "the The Dominion of Junagadh"
+ JNA_dominion_ADJ: "$OVERLORD$ Junagadh"
+ 
+ KAC_dominion: "Dominion of Kachin"
+ KAC_dominion_DEF: "the The Dominion of Kachin"
+ KAC_dominion_ADJ: "$OVERLORD$ Kachin"
+ 
+ KAM_dominion: "Dominion of Kamchatka"
+ KAM_dominion_DEF: "the The Dominion of Kamchatka"
+ KAM_dominion_ADJ: "$OVERLORD$ Kamchatka"
+ 
+ KRE_dominion: "Dominion of Karen"
+ KRE_dominion_DEF: "the The Dominion of Karen"
+ KRE_dominion_ADJ: "$OVERLORD$ Karen"
+ 
+ KAS_dominion: "Dominion of Kashmir"
+ KAS_dominion_DEF: "the The Dominion of Kashmir"
+ KAS_dominion_ADJ: "$OVERLORD$ Kashmiri"
+ 
+ KAY_dominion: "Dominion of Kayah"
+ KAY_dominion_DEF: "the The Dominion of Kayah"
+ KAY_dominion_ADJ: "$OVERLORD$ Karenni"
+ 
+ KED_dominion: "Dominion of Kedah"
+ KED_dominion_DEF: "the The Dominion of Kedah"
+ KED_dominion_ADJ: "$OVERLORD$ Kedahan"
+ 
+ KEL_dominion: "Dominion of Kelantan"
+ KEL_dominion_DEF: "the The Dominion of Kelantan"
+ KEL_dominion_ADJ: "$OVERLORD$ Kelantanese"
+ 
+ KMV_dominion: "Dominion of Kemerovo"
+ KMV_dominion_DEF: "the The Dominion of Kemerovo"
+ KMV_dominion_ADJ: "$OVERLORD$ Kemerovo"
+ 
+ KHB_dominion: "Dominion of Khabarovsk"
+ KHB_dominion_DEF: "the The Dominion of Khabarovsk"
+ KHB_dominion_ADJ: "$OVERLORD$ Khabarovsk"
+ 
+ KOK_dominion: "Dominion of Kokang"
+ KOK_dominion_DEF: "the The Dominion of Kokang"
+ KOK_dominion_ADJ: "$OVERLORD$ Kokang"
+ 
+ KFT_dominion: "Dominion of Krafuto"
+ KFT_dominion_DEF: "the The Dominion of Krafuto"
+ KFT_dominion_ADJ: "$OVERLORD$ Krafuto"
+ 
+ KRS_dominion: "Dominion of Krasnoyarsk"
+ KRS_dominion_DEF: "the The Dominion of Krasnoyarsk"
+ KRS_dominion_ADJ: "$OVERLORD$ Krasnoyarskian"
+ 
+ KUM_dominion: "Dominion of Kumul"
+ KUM_dominion_DEF: "the The Dominion of Kumul"
+ KUM_dominion_ADJ: "$OVERLORD$ Kumul"
+ 
+ MCA_dominion: "Dominion of Macau"
+ MCA_dominion_DEF: "the The Dominion of Macau"
+ MCA_dominion_ADJ: "$OVERLORD$ Macanese"
+ 
+ MWN_dominion: "Dominion of Mon"
+ MWN_dominion_DEF: "the The Dominion of Mon"
+ MWN_dominion_ADJ: "$OVERLORD$ Mon"
+ 
+ MSC_dominion: "Dominion of Muscat"
+ MSC_dominion_DEF: "the The Dominion of Muscat"
+ MSC_dominion_ADJ: "$OVERLORD$ Muscatian"
+ 
+ MYS_dominion: "Dominion of Mysore"
+ MYS_dominion_DEF: "the The Dominion of Mysore"
+ MYS_dominion_ADJ: "$OVERLORD$ Mysorean"
+ 
+ NAG_dominion: "Dominion of Naga"
+ NAG_dominion_DEF: "the The Dominion of Naga"
+ NAG_dominion_ADJ: "$OVERLORD$ Naga"
+ 
+ NAN_dominion: "Dominion of Nanjing"
+ NAN_dominion_DEF: "the The Dominion of Nanjing"
+ NAN_dominion_ADJ: "$OVERLORD$ Nanjingese"
+ 
+ NEJ_dominion: "Dominion of Nejd"
+ NEJ_dominion_DEF: "the The Dominion of Nejd"
+ NEJ_dominion_ADJ: "$OVERLORD$ Nejdi"
+ 
+ NIG_dominion: "Dominion of Ningxia"
+ NIG_dominion_DEF: "the The Dominion of Ningxia"
+ NIG_dominion_ADJ: "$OVERLORD$ Ningxian"
+ 
+ NSB_dominion: "Dominion of Novosibirsk"
+ NSB_dominion_DEF: "the The Dominion of Novosibirsk"
+ NSB_dominion_ADJ: "$OVERLORD$ Novosibirskian"
+ 
+ OMS_dominion: "Dominion of Omsk"
+ OMS_dominion_DEF: "the The Dominion of Omsk"
+ OMS_dominion_ADJ: "$OVERLORD$ Omskian"
+ 
+ OTT_dominion: "Dominion of Ottoman"
+ OTT_dominion_DEF: "the The Dominion of Ottoman"
+ OTT_dominion_ADJ: "$OVERLORD$ Ottoman"
+ 
+ PLA_dominion: "Dominion of Pa Laung"
+ PLA_dominion_DEF: "the The Dominion of Pa Laung"
+ PLA_dominion_ADJ: "$OVERLORD$ Pa Laung"
+ 
+ PAO_dominion: "Dominion of Pa'o"
+ PAO_dominion_DEF: "the The Dominion of Pa'o"
+ PAO_dominion_ADJ: "$OVERLORD$ Paonese"
+ 
+ PRL_dominion: "Dominion of Perlis"
+ PRL_dominion_DEF: "the The Dominion of Perlis"
+ PRL_dominion_ADJ: "$OVERLORD$ Perlisian"
+ 
+ POD_dominion: "Dominion of Pondicherry"
+ POD_dominion_DEF: "the The Dominion of Pondicherry"
+ POD_dominion_ADJ: "$OVERLORD$ Pondicherrian"
+ 
+ PUD_dominion: "Dominion of Puducherry"
+ PUD_dominion_DEF: "the The Dominion of Puducherry"
+ PUD_dominion_ADJ: "$OVERLORD$ Puducherrian"
+ 
+ QAH_dominion: "Dominion of Qahar"
+ QAH_dominion_DEF: "the The Dominion of Qahar"
+ QAH_dominion_ADJ: "$OVERLORD$ Qahar"
+ 
+ QIN_dominion: "Dominion of Qingdao"
+ QIN_dominion_DEF: "the The Dominion of Qingdao"
+ QIN_dominion_ADJ: "$OVERLORD$ Qingdao"
+ 
+ QIG_dominion: "Dominion of Qinghai"
+ QIG_dominion_DEF: "the The Dominion of Qinghai"
+ QIG_dominion_ADJ: "$OVERLORD$ Qinghai"
+ 
+ RKH_dominion: "Dominion of Rakhine"
+ RKH_dominion_DEF: "the The Dominion of Rakhine"
+ RKH_dominion_ADJ: "$OVERLORD$ Rakhine"
+ 
+ RYU_dominion: "Dominion of Ryukyu"
+ RYU_dominion_DEF: "the The Dominion of Ryukyu"
+ RYU_dominion_ADJ: "$OVERLORD$ Ryukyu"
+ 
+ SAB_dominion: "Dominion of North Borneo"
+ SAB_dominion_DEF: "the The Dominion of North Borneo"
+ SAB_dominion_ADJ: "$OVERLORD$ North Bornean"
+ 
+ SRW_dominion: "Dominion of Sarawak"
+ SRW_dominion_DEF: "the The Dominion of Sarawak"
+ SRW_dominion_ADJ: "$OVERLORD$ Sarawakian"
+ 
+ SHN_dominion: "Dominion of Shan"
+ SHN_dominion_DEF: "the The Dominion of Shan"
+ SHN_dominion_ADJ: "$OVERLORD$ Shan"
+ 
+ SHD_dominion: "Dominion of Shandong"
+ SHD_dominion_DEF: "the The Dominion of Shandong"
+ SHD_dominion_ADJ: "$OVERLORD$ Shandong"
+ 
+ SGH_dominion: "Dominion of Shanghai"
+ SGH_dominion_DEF: "the The Dominion of Shanghai"
+ SGH_dominion_ADJ: "$OVERLORD$ Shanghainese"
+ 
+ SCH_dominion: "Dominion of Sichuan"
+ SCH_dominion_DEF: "the The Dominion of Sichuan"
+ SCH_dominion_ADJ: "$OVERLORD$ Sichuanese"
+ 
+ SKM_dominion: "Dominion of Sikkim"
+ SKM_dominion_DEF: "the The Dominion of Sikkim"
+ SKM_dominion_ADJ: "$OVERLORD$ Sikkimese"
+ 
+ SIN_dominion: "Dominion of Singapore"
+ SIN_dominion_DEF: "the The Dominion of Singapore"
+ SIN_dominion_ADJ: "$OVERLORD$ Singaporean"
+ 
+ SAZ_dominion: "Dominion of South Azerbaijan"
+ SAZ_dominion_DEF: "the The Dominion of South Azerbaijan"
+ SAZ_dominion_ADJ: "$OVERLORD$ South Azerbaijani"
+ 
+ SCC_dominion: "Dominion of South Caucasus"
+ SCC_dominion_DEF: "the The Dominion of South Caucasus"
+ SCC_dominion_ADJ: "$OVERLORD$ South Caucasian"
+ 
+ SMO_dominion: "Dominion of South Mongolia"
+ SMO_dominion_DEF: "the The Dominion of South Mongolia"
+ SMO_dominion_ADJ: "$OVERLORD$ South Mongolian"
+ 
+ SOA_dominion: "Dominion of South Ossetia"
+ SOA_dominion_DEF: "the The Dominion of South Ossetia"
+ SOA_dominion_ADJ: "$OVERLORD$ South Ossetian"
+ 
+ STR_dominion: "Dominion of South Turkestan"
+ STR_dominion_DEF: "the The Dominion of South Turkestan"
+ STR_dominion_ADJ: "$OVERLORD$ South Turkes"
+ 
+ SYE_dominion: "Dominion of South Yemen"
+ SYE_dominion_DEF: "the The Dominion of South Yemen"
+ SYE_dominion_ADJ: "$OVERLORD$ South Yemeni"
+ 
+ SUY_dominion: "Dominion of Suiyuan"
+ SUY_dominion_DEF: "the The Dominion of Suiyuan"
+ SUY_dominion_ADJ: "$OVERLORD$ Suiyuanese"
+ 
+ TAI_dominion: "Dominion of Tai"
+ TAI_dominion_DEF: "the The Dominion of Tai"
+ TAI_dominion_ADJ: "$OVERLORD$ Tai"
+ 
+ TWN_dominion: "Dominion of Taiwan"
+ TWN_dominion_DEF: "the The Dominion of Taiwan"
+ TWN_dominion_ADJ: "$OVERLORD$ Taiwanese"
+ 
+ TML_dominion: "Dominion of Tamil"
+ TML_dominion_DEF: "the The Dominion of Tamil"
+ TML_dominion_ADJ: "$OVERLORD$ Tamil"
+ 
+ TER_dominion: "Dominion of Terengganu"
+ TER_dominion_DEF: "the The Dominion of Terengganu"
+ TER_dominion_ADJ: "$OVERLORD$ Terengganuan"
+ 
+ TIE_dominion: "Dominion of Tianjin"
+ TIE_dominion_DEF: "the The Dominion of Tianjin"
+ TIE_dominion_ADJ: "$OVERLORD$ Tianjin"
+ 
+ TLS_dominion: "Dominion of Timor"
+ TLS_dominion_DEF: "the The Dominion of Timor"
+ TLS_dominion_ADJ: "$OVERLORD$ Timorese"
+ 
+ TSK_dominion: "Dominion of Tomsk"
+ TSK_dominion_DEF: "the The Dominion of Tomsk"
+ TSK_dominion_ADJ: "$OVERLORD$ Tomskian"
+ 
+ TOK_dominion: "Dominion of Tonkin"
+ TOK_dominion_DEF: "the The Dominion of Tonkin"
+ TOK_dominion_ADJ: "$OVERLORD$ Tonkin"
+ 
+ TRV_dominion: "Dominion of Travancore"
+ TRV_dominion_DEF: "the The Dominion of Travancore"
+ TRV_dominion_ADJ: "$OVERLORD$ Travancorean"
+ 
+ TNG_dominion: "Dominion of Tunganistan"
+ TNG_dominion_DEF: "the The Dominion of Tunganistan"
+ TNG_dominion_ADJ: "$OVERLORD$ Tunganistani"
+ 
+ TRK_dominion: "Dominion of Turkestan"
+ TRK_dominion_DEF: "the The Dominion of Turkestan"
+ TRK_dominion_ADJ: "$OVERLORD$ Turkes"
+ 
+ TYU_dominion: "Dominion of Tyumen"
+ TYU_dominion_DEF: "the The Dominion of Tyumen"
+ TYU_dominion_ADJ: "$OVERLORD$ Tyumenian"
+ 
+ VAX_dominion: "Dominion of Wa"
+ VAX_dominion_DEF: "the The Dominion of Wa"
+ VAX_dominion_ADJ: "$OVERLORD$ Wa"
+ 
+ WTR_dominion: "Dominion of West Turkestan"
+ WTR_dominion_DEF: "the The Dominion of West Turkestan"
+ WTR_dominion_ADJ: "$OVERLORD$ West Turkes"
+ 
+ XIK_dominion: "Dominion of Xikang"
+ XIK_dominion_DEF: "the The Dominion of Xikang"
+ XIK_dominion_ADJ: "$OVERLORD$ Xikang"
+ 
+ XIZ_dominion: "Dominion of Xizang"
+ XIZ_dominion_DEF: "the The Dominion of Xizang"
+ XIZ_dominion_ADJ: "$OVERLORD$ Xizang"
+ 
+ ZHE_dominion: "Dominion of Zhejiang"
+ ZHE_dominion_DEF: "the The Dominion of Zhejiang"
+ ZHE_dominion_ADJ: "$OVERLORD$ Zhejiang"
+ 
+ ZHI_dominion: "Dominion of Zhili"
+ ZHI_dominion_DEF: "the The Dominion of Zhili"
+ ZHI_dominion_ADJ: "$OVERLORD$ Zhili"
+ 
+#ヨーロッパ:
+ AEG_dominion: "Dominion of Aegean Islands"
+ AEG_dominion_DEF: "the The Dominion of Aegean Islands"
+ AEG_dominion_ADJ: "$OVERLORD$ Aegean Islander"
+ 
+ ALA_dominion: "Dominion of Åland Islands"
+ ALA_dominion_DEF: "the The Dominion of Åland Islands"
+ ALA_dominion_ADJ: "$OVERLORD$ Åland Islander"
+ 
+ APN_dominion: "Dominion of Alps"
+ APN_dominion_DEF: "the The Dominion of Alps"
+ APN_dominion_ADJ: "$OVERLORD$ Alpine"
+ 
+ ADR_dominion: "Dominion of Andorra"
+ ADR_dominion_DEF: "the The Dominion of Andorra"
+ ADR_dominion_ADJ: "$OVERLORD$ Andorran"
+ 
+ AOS_dominion: "Dominion of Aosta"
+ AOS_dominion_DEF: "the The Dominion of Aosta"
+ AOS_dominion_ADJ: "$OVERLORD$ Aostan"
+ 
+ ARA_dominion: "Dominion of Aragon"
+ ARA_dominion_DEF: "the The Dominion of Aragon"
+ ARA_dominion_ADJ: "$OVERLORD$ Aragonese"
+ 
+ ATR_dominion: "Dominion of Asturias"
+ ATR_dominion_DEF: "the The Dominion of Asturias"
+ ATR_dominion_ADJ: "$OVERLORD$ Asturian"
+ 
+ ATS_dominion: "Dominion of Athos"
+ ATS_dominion_DEF: "the The Dominion of Athos"
+ ATS_dominion_ADJ: "$OVERLORD$ Athonite"
+ 
+ BDN_dominion: "Dominion of Baden"
+ BDN_dominion_DEF: "the The Dominion of Baden"
+ BDN_dominion_ADJ: "$OVERLORD$ Badenese"
+ 
+ BLE_dominion: "Dominion of Baleares"
+ BLE_dominion_DEF: "the The Dominion of Baleares"
+ BLE_dominion_ADJ: "$OVERLORD$ Balearic"
+ 
+ BLK_dominion: "Dominion of Balkan"
+ BLK_dominion_DEF: "the The Dominion of Balkan"
+ BLK_dominion_ADJ: "$OVERLORD$ Balkan"
+ 
+ BLT_dominion: "Dominion of Baltic"
+ BLT_dominion_DEF: "the The Dominion of Baltic"
+ BLT_dominion_ADJ: "$OVERLORD$ Baltic"
+ 
+ BSQ_dominion: "Dominion of Basque"
+ BSQ_dominion_DEF: "the The Dominion of Basque"
+ BSQ_dominion_ADJ: "$OVERLORD$ Basque"
+ 
+ BRL_dominion: "Dominion of Berlin"
+ BRL_dominion_DEF: "the The Dominion of Berlin"
+ BRL_dominion_ADJ: "$OVERLORD$ Berliner"
+ 
+ BOH_dominion: "Dominion of Bohemia"
+ BOH_dominion_DEF: "the The Dominion of Bohemia"
+ BOH_dominion_ADJ: "$OVERLORD$ Bohemian"
+ 
+ BRG_dominion: "Dominion of Borgogne"
+ BRG_dominion_DEF: "the The Dominion of Borgogne"
+ BRG_dominion_ADJ: "$OVERLORD$ Bourgognon"
+ 
+ BDB_dominion: "Dominion of Brandenburg"
+ BDB_dominion_DEF: "the The Dominion of Brandenburg"
+ BDB_dominion_ADJ: "$OVERLORD$ Brandenburg"
+ 
+ BGL_dominion: "Dominion of Burgenland"
+ BGL_dominion_DEF: "the The Dominion of Burgenland"
+ BGL_dominion_ADJ: "$OVERLORD$ Burgenland"
+ 
+ BYZ_dominion: "Dominion of Byzantium"
+ BYZ_dominion_DEF: "the The Dominion of Byzantium"
+ BYZ_dominion_ADJ: "$OVERLORD$ Byzantine"
+ 
+ CTB_dominion: "Dominion of Cantabria"
+ CTB_dominion_DEF: "the The Dominion of Cantabria"
+ CTB_dominion_ADJ: "$OVERLORD$ Cantabrian"
+ 
+ CRT_dominion: "Dominion of Carinthia"
+ CRT_dominion_DEF: "the The Dominion of Carinthia"
+ CRT_dominion_ADJ: "$OVERLORD$ Carinthian"
+ 
+ CRN_dominion: "Dominion of Carniola"
+ CRN_dominion_DEF: "the The Dominion of Carniola"
+ CRN_dominion_ADJ: "$OVERLORD$ Carniolan"
+ 
+ CST_dominion: "Dominion of Castille"
+ CST_dominion_DEF: "the The Dominion of Castille"
+ CST_dominion_ADJ: "$OVERLORD$ Castillian"
+ 
+ CLT_dominion: "Dominion of Celts"
+ CLT_dominion_DEF: "the The Dominion of Celts"
+ CLT_dominion_ADJ: "$OVERLORD$ Celtic"
+ 
+ CHE_dominion: "Dominion of Chechnya"
+ CHE_dominion_DEF: "the The Dominion of Chechnya"
+ CHE_dominion_ADJ: "$OVERLORD$ Chechen"
+ 
+ CHS_dominion: "Dominion of Cherkessia"
+ CHS_dominion_DEF: "the The Dominion of Cherkessia"
+ CHS_dominion_ADJ: "$OVERLORD$ Cherkess"
+ 
+ COW_dominion: "Dominion of Cornwall"
+ COW_dominion_DEF: "the The Dominion of Cornwall"
+ COW_dominion_ADJ: "$OVERLORD$ Cornish"
+ 
+ CRL_dominion: "Dominion of Courland"
+ CRL_dominion_DEF: "the The Dominion of Courland"
+ CRL_dominion_ADJ: "$OVERLORD$ Courlander"
+ 
+ CRW_dominion: "Dominion of Cracow"
+ CRW_dominion_DEF: "the The Dominion of Cracow"
+ CRW_dominion_ADJ: "$OVERLORD$ Cracovian"
+ 
+ CRE_dominion: "Dominion of Creta"
+ CRE_dominion_DEF: "the The Dominion of Creta"
+ CRE_dominion_ADJ: "$OVERLORD$ Cretan"
+ 
+ DAL_dominion: "Dominion of Dalmatia"
+ DAL_dominion_DEF: "the The Dominion of Dalmatia"
+ DAL_dominion_ADJ: "$OVERLORD$ Dalmatian"
+ 
+ EXT_dominion: "Dominion of Estremadura"
+ EXT_dominion_DEF: "the The Dominion of Estremadura"
+ EXT_dominion_ADJ: "$OVERLORD$ Estremaduran"
+ 
+ EUR_dominion: "Dominion of Europe"
+ EUR_dominion_DEF: "the The Dominion of Europe"
+ EUR_dominion_ADJ: "$OVERLORD$ European"
+ 
+ FRO_dominion: "Dominion of Faroe"
+ FRO_dominion_DEF: "the The Dominion of Faroe"
+ FRO_dominion_ADJ: "$OVERLORD$ Faroese"
+ 
+ FIU_dominion: "Dominion of Fiume"
+ FIU_dominion_DEF: "the The Dominion of Fiume"
+ FIU_dominion_ADJ: "$OVERLORD$ Fiumean"
+ 
+ FLN_dominion: "Dominion of Flanders"
+ FLN_dominion_DEF: "the The Dominion of Flanders"
+ FLN_dominion_ADJ: "$OVERLORD$ Flemish"
+ 
+ GAL_dominion: "Dominion of Galicia"
+ GAL_dominion_DEF: "the The Dominion of Galicia"
+ GAL_dominion_ADJ: "$OVERLORD$ Galician"
+ 
+ GIB_dominion: "Dominion of Gibraltar"
+ GIB_dominion_DEF: "the The Dominion of Gibraltar"
+ GIB_dominion_ADJ: "$OVERLORD$ Gibraltarian"
+ 
+ GBR_dominion: "Dominion of Great Britain"
+ GBR_dominion_DEF: "the The Dominion of Great Britain"
+ GBR_dominion_ADJ: "$OVERLORD$ British"
+ 
+ GUE_dominion: "Dominion of Guernsey"
+ GUE_dominion_DEF: "the The Dominion of Guernsey"
+ GUE_dominion_ADJ: "$OVERLORD$ Guernseymen"
+ 
+ HES_dominion: "Dominion of Hesse"
+ HES_dominion_DEF: "the The Dominion of Hesse"
+ HES_dominion_ADJ: "$OVERLORD$ Hessian"
+ 
+ HLS_dominion: "Dominion of Holstein"
+ HLS_dominion_DEF: "the The Dominion of Holstein"
+ HLS_dominion_ADJ: "$OVERLORD$ Holsteinian"
+ 
+ IBE_dominion: "Dominion of Iberia"
+ IBE_dominion_DEF: "the The Dominion of Iberia"
+ IBE_dominion_ADJ: "$OVERLORD$ Iberian"
+ 
+ IGR_dominion: "Dominion of Ingria"
+ IGR_dominion_DEF: "the The Dominion of Ingria"
+ IGR_dominion_ADJ: "$OVERLORD$ Ingrian"
+ 
+ ING_dominion: "Dominion of Ingushetia"
+ ING_dominion_DEF: "the The Dominion of Ingushetia"
+ ING_dominion_ADJ: "$OVERLORD$ Ingush"
+ 
+ ION_dominion: "Dominion of Ionian Islands"
+ ION_dominion_DEF: "the The Dominion of Ionian Islands"
+ ION_dominion_ADJ: "$OVERLORD$ Ionian"
+ 
+ IST_dominion: "Dominion of Istria"
+ IST_dominion_DEF: "the The Dominion of Istria"
+ IST_dominion_ADJ: "$OVERLORD$ Istrian"
+ 
+ JER_dominion: "Dominion of Jersey"
+ JER_dominion_DEF: "the The Dominion of Jersey"
+ JER_dominion_ADJ: "$OVERLORD$ Jerseymen"
+ 
+ KRC_dominion: "Dominion of Karachay"
+ KRC_dominion_DEF: "the The Dominion of Karachay"
+ KRC_dominion_ADJ: "$OVERLORD$ Karachay"
+ 
+ KRV_dominion: "Dominion of Kirov"
+ KRV_dominion_DEF: "the The Dominion of Kirov"
+ KRV_dominion_ADJ: "$OVERLORD$ Kirov"
+ 
+ LMN_dominion: "Dominion of La Mancha"
+ LMN_dominion_DEF: "the The Dominion of La Mancha"
+ LMN_dominion_ADJ: "$OVERLORD$ Manchegan"
+ 
+ LRJ_dominion: "Dominion of La Rioja"
+ LRJ_dominion_DEF: "the The Dominion of La Rioja"
+ LRJ_dominion_ADJ: "$OVERLORD$ Riojan"
+ 
+ LMK_dominion: "Dominion of Lemko"
+ LMK_dominion_DEF: "the The Dominion of Lemko"
+ LMK_dominion_ADJ: "$OVERLORD$ Lemko"
+ 
+ LON_dominion: "Dominion of Leon"
+ LON_dominion_DEF: "the The Dominion of Leon"
+ LON_dominion_ADJ: "$OVERLORD$ Leonese"
+ 
+ LIE_dominion: "Dominion of Liechtenstein"
+ LIE_dominion_DEF: "the The Dominion of Liechtenstein"
+ LIE_dominion_ADJ: "$OVERLORD$ Liechtensteiner"
+ 
+ LIV_dominion: "Dominion of Livonia"
+ LIV_dominion_DEF: "the The Dominion of Livonia"
+ LIV_dominion_ADJ: "$OVERLORD$ Livonian"
+ 
+ LOD_dominion: "Dominion of Lodomeria"
+ LOD_dominion_DEF: "the The Dominion of Lodomeria"
+ LOD_dominion_ADJ: "$OVERLORD$ Lodomerian"
+ 
+ LOM_dominion: "Dominion of Lombardy"
+ LOM_dominion_DEF: "the The Dominion of Lombardy"
+ LOM_dominion_ADJ: "$OVERLORD$ Lombard"
+ 
+ LAS_dominion: "Dominion of Lower Austria"
+ LAS_dominion_DEF: "the The Dominion of Lower Austria"
+ LAS_dominion_ADJ: "$OVERLORD$ Lower Austrian"
+ 
+ MDR_dominion: "Dominion of Madrid"
+ MDR_dominion_DEF: "the The Dominion of Madrid"
+ MDR_dominion_ADJ: "$OVERLORD$ Madrilenian"
+ 
+ MNN_dominion: "Dominion of Isle of Man"
+ MNN_dominion_DEF: "the The Dominion of Isle of Man"
+ MNN_dominion_ADJ: "$OVERLORD$ Manx"
+ 
+ MEZ_dominion: "Dominion of Mezzogiorno"
+ MEZ_dominion_DEF: "the The Dominion of Mezzogiorno"
+ MEZ_dominion_ADJ: "$OVERLORD$ Mezzogiornese"
+ 
+ MCO_dominion: "Dominion of Monaco"
+ MCO_dominion_DEF: "the The Dominion of Monaco"
+ MCO_dominion_ADJ: "$OVERLORD$ Monegasque"
+ 
+ MRV_dominion: "Dominion of Moravia"
+ MRV_dominion_DEF: "the The Dominion of Moravia"
+ MRV_dominion_ADJ: "$OVERLORD$ Moravian"
+ 
+ MRD_dominion: "Dominion of Mordovia"
+ MRD_dominion_DEF: "the The Dominion of Mordovia"
+ MRD_dominion_ADJ: "$OVERLORD$ Mordovian"
+ 
+ MOS_dominion: "Dominion of Moscow"
+ MOS_dominion_DEF: "the The Dominion of Moscow"
+ MOS_dominion_ADJ: "$OVERLORD$ Muscovite"
+ 
+ MUR_dominion: "Dominion of Murcia"
+ MUR_dominion_DEF: "the The Dominion of Murcia"
+ MUR_dominion_ADJ: "$OVERLORD$ Murcian"
+ 
+ NTL_dominion: "Dominion of Netherlands"
+ NTL_dominion_DEF: "the The Dominion of Nethe Therlands"
+ NTL_dominion_ADJ: "$OVERLORD$ Dutch"
+ 
+ NRD_dominion: "Dominion of Nordic"
+ NRD_dominion_DEF: "the The Dominion of Nordic"
+ NRD_dominion_ADJ: "$OVERLORD$ Nordic"
+ 
+ NRM_dominion: "Dominion of Normandy"
+ NRM_dominion_DEF: "the The Dominion of Normandy"
+ NRM_dominion_ADJ: "$OVERLORD$ Norman"
+ 
+ NGR_dominion: "Dominion of North Germany"
+ NGR_dominion_DEF: "the The Dominion of North Germany"
+ NGR_dominion_ADJ: "$OVERLORD$ North German"
+ 
+ ORB_dominion: "Dominion of Orenburg"
+ ORB_dominion_DEF: "the The Dominion of Orenburg"
+ ORB_dominion_ADJ: "$OVERLORD$ Orenburgian"
+ 
+ PAD_dominion: "Dominion of Padania"
+ PAD_dominion_DEF: "the The Dominion of Padania"
+ PAD_dominion_ADJ: "$OVERLORD$ Padanian"
+ 
+ PRM_dominion: "Dominion of Perm"
+ PRM_dominion_DEF: "the The Dominion of Perm"
+ PRM_dominion_ADJ: "$OVERLORD$ Permian"
+ 
+ PIE_dominion: "Dominion of Piedmont"
+ PIE_dominion_DEF: "the The Dominion of Piedmont"
+ PIE_dominion_ADJ: "$OVERLORD$ Piedmontese"
+ 
+ POM_dominion: "Dominion of Pomerania"
+ POM_dominion_DEF: "the The Dominion of Pomerania"
+ POM_dominion_ADJ: "$OVERLORD$ Pomeranian"
+ 
+ POS_dominion: "Dominion of Poznań"
+ POS_dominion_DEF: "the The Dominion of Poznań"
+ POS_dominion_ADJ: "$OVERLORD$ Poznańian"
+ 
+ RHI_dominion: "Dominion of Rhine"
+ RHI_dominion_DEF: "the The Dominion of Rhine"
+ RHI_dominion_ADJ: "$OVERLORD$ Rhenish"
+ 
+ RDS_dominion: "Dominion of Rhodes"
+ RDS_dominion_DEF: "the The Dominion of Rhodes"
+ RDS_dominion_ADJ: "$OVERLORD$ Rhodian"
+ 
+ RME_dominion: "Dominion of Rome"
+ RME_dominion_DEF: "the The Dominion of Rome"
+ RME_dominion_ADJ: "$OVERLORD$ Roman"
+ 
+ RUS_dominion: "Dominion of Russia"
+ RUS_dominion_DEF: "the The Dominion of Russia"
+ RUS_dominion_ADJ: "$OVERLORD$ Russian"
+ 
+ RTN_dominion: "Dominion of Ruthenia"
+ RTN_dominion_DEF: "the The Dominion of Ruthe Thenia"
+ RTN_dominion_ADJ: "$OVERLORD$ Ruthenian"
+ 
+ SAR_dominion: "Dominion of Saarland"
+ SAR_dominion_DEF: "the The Dominion of Saarland"
+ SAR_dominion_ADJ: "$OVERLORD$ Saar"
+ 
+ SLZ_dominion: "Dominion of Salzburg"
+ SLZ_dominion_DEF: "the The Dominion of Salzburg"
+ SLZ_dominion_ADJ: "$OVERLORD$ Salzburgian"
+ 
+ SMA_dominion: "Dominion of Samara"
+ SMA_dominion_DEF: "the The Dominion of Samara"
+ SMA_dominion_ADJ: "$OVERLORD$ Samaran"
+ 
+ SMR_dominion: "Dominion of San Marino"
+ SMR_dominion_DEF: "the The Dominion of San Marino"
+ SMR_dominion_ADJ: "$OVERLORD$ Sammarinese"
+ 
+ SME_dominion: "Dominion of Sápmi"
+ SME_dominion_DEF: "the The Dominion of Sápmi"
+ SME_dominion_ADJ: "$OVERLORD$ Sámi"
+ 
+ SCA_dominion: "Dominion of Scandinavia"
+ SCA_dominion_DEF: "the The Dominion of Scandinavia"
+ SCA_dominion_ADJ: "$OVERLORD$ Scandinavian"
+ 
+ SEM_dominion: "Dominion of Semigallia"
+ SEM_dominion_DEF: "the The Dominion of Semigallia"
+ SEM_dominion_ADJ: "$OVERLORD$ Semigallian"
+ 
+ SIB_dominion: "Dominion of Siberia"
+ SIB_dominion_DEF: "the The Dominion of Siberia"
+ SIB_dominion_ADJ: "$OVERLORD$ Siberian"
+ 
+ SLA_dominion: "Dominion of Slav"
+ SLA_dominion_DEF: "the The Dominion of Slav"
+ SLA_dominion_ADJ: "$OVERLORD$ Slavic"
+ 
+ SLN_dominion: "Dominion of Slavonia"
+ SLN_dominion_DEF: "the The Dominion of Slavonia"
+ SLN_dominion_ADJ: "$OVERLORD$ Slavonian"
+ 
+ SGR_dominion: "Dominion of South Germany"
+ SGR_dominion_DEF: "the The Dominion of South Germany"
+ SGR_dominion_ADJ: "$OVERLORD$ South German"
+ 
+ STY_dominion: "Dominion of Styria"
+ STY_dominion_DEF: "the The Dominion of Styria"
+ STY_dominion_ADJ: "$OVERLORD$ Styrian"
+ 
+ SDT_dominion: "Dominion of Sudetenland"
+ SDT_dominion_DEF: "the The Dominion of Sudetenland"
+ SDT_dominion_ADJ: "$OVERLORD$ Sudeten"
+ 
+ THU_dominion: "Dominion of Thuringia"
+ THU_dominion_DEF: "the The Dominion of Thuringia"
+ THU_dominion_ADJ: "$OVERLORD$ Thuringian"
+ 
+ TRN_dominion: "Dominion of Transnistria"
+ TRN_dominion_DEF: "the The Dominion of Transnistria"
+ TRN_dominion_ADJ: "$OVERLORD$ Transnistrian"
+ 
+ TRL_dominion: "Dominion of Tyrol"
+ TRL_dominion_DEF: "the The Dominion of Tyrol"
+ TRL_dominion_ADJ: "$OVERLORD$ Tyrolean"
+ 
+ ULY_dominion: "Dominion of Ulyanovsk"
+ ULY_dominion_DEF: "the The Dominion of Ulyanovsk"
+ ULY_dominion_ADJ: "$OVERLORD$ Ulyanovskian"
+ 
+ UAS_dominion: "Dominion of Upper Austria"
+ UAS_dominion_DEF: "the The Dominion of Upper Austria"
+ UAS_dominion_ADJ: "$OVERLORD$ Upper Austrian"
+ 
+ URA_dominion: "Dominion of Ural"
+ URA_dominion_DEF: "the The Dominion of Ural"
+ URA_dominion_ADJ: "$OVERLORD$ Uralian"
+ 
+ VAL_dominion: "Dominion of Valencia"
+ VAL_dominion_DEF: "the The Dominion of Valencia"
+ VAL_dominion_ADJ: "$OVERLORD$ Valencian"
+ 
+ VIE_dominion: "Dominion of Vienna"
+ VIE_dominion_DEF: "the The Dominion of Vienna"
+ VIE_dominion_ADJ: "$OVERLORD$ Viennese"
+ 
+ VOJ_dominion: "Dominion of Vojvodina"
+ VOJ_dominion_DEF: "the The Dominion of Vojvodina"
+ VOJ_dominion_ADJ: "$OVERLORD$ Vojvodinan"
+ 
+ VOR_dominion: "Dominion of Vorarlberg"
+ VOR_dominion_DEF: "the The Dominion of Vorarlberg"
+ VOR_dominion_ADJ: "$OVERLORD$ Vorarlbergian"
+ 
+ VOS_dominion: "Dominion of Vostoslavia"
+ VOS_dominion_DEF: "the The Dominion of Vostoslavia"
+ VOS_dominion_ADJ: "$OVERLORD$ Vostoslav"
+ 
+ WLC_dominion: "Dominion of Wallachia"
+ WLC_dominion_DEF: "the The Dominion of Wallachia"
+ WLC_dominion_ADJ: "$OVERLORD$ Wallachian"
+ 
+ WLL_dominion: "Dominion of Wallonia"
+ WLL_dominion_DEF: "the The Dominion of Wallonia"
+ WLL_dominion_ADJ: "$OVERLORD$ Walloon"
+ 
+ WPH_dominion: "Dominion of Westphalia"
+ WPH_dominion_DEF: "the The Dominion of Westphalia"
+ WPH_dominion_ADJ: "$OVERLORD$ Westphalian"
+ 
+ ZAP_dominion: "Dominion of Zapadoslavia"
+ ZAP_dominion_DEF: "the The Dominion of Zapadoslavia"
+ ZAP_dominion_ADJ: "$OVERLORD$ Zapadoslav"
+ 
+ ZPR_dominion: "Dominion of Zaporizhzhia"
+ ZPR_dominion_DEF: "the The Dominion of Zaporizhzhia"
+ ZPR_dominion_ADJ: "$OVERLORD$ Zaporizhzhian"
+ 
+#アフリカ:
+ AFR_dominion: "Dominion of Africa"
+ AFR_dominion_DEF: "the The Dominion of Africa"
+ AFR_dominion_ADJ: "$OVERLORD$ African"
+ 
+ AMB_dominion: "Dominion of Cameroon"
+ AMB_dominion_DEF: "the The Dominion of Cameroon"
+ AMB_dominion_ADJ: "$OVERLORD$ Cameroonian"
+ 
+ ASH_dominion: "Dominion of Ashanti"
+ ASH_dominion_DEF: "the The Dominion of Ashanti"
+ ASH_dominion_ADJ: "$OVERLORD$ Ashanti"
+ 
+ AZA_dominion: "Dominion of Azawad"
+ AZA_dominion_DEF: "the The Dominion of Azawad"
+ AZA_dominion_ADJ: "$OVERLORD$ Azawad"
+ 
+ BEN_dominion: "Dominion of Benin"
+ BEN_dominion_DEF: "the The Dominion of Benin"
+ BEN_dominion_ADJ: "$OVERLORD$ Beninese"
+ 
+ BIA_dominion: "Dominion of Biafra"
+ BIA_dominion_DEF: "the The Dominion of Biafra"
+ BIA_dominion_ADJ: "$OVERLORD$ Biafran"
+ 
+ CNA_dominion: "Dominion of Canarias"
+ CNA_dominion_DEF: "the The Dominion of Canarias"
+ CNA_dominion_ADJ: "$OVERLORD$ Canarian"
+ 
+ CPV_dominion: "Dominion of Cape Verde"
+ CPV_dominion_DEF: "the The Dominion of Cape Verde"
+ CPV_dominion_ADJ: "$OVERLORD$ Cape Verdean"
+ 
+ CEU_dominion: "Dominion of Ceuta"
+ CEU_dominion_DEF: "the The Dominion of Ceuta"
+ CEU_dominion_ADJ: "$OVERLORD$ Ceutan"
+ 
+ COM_dominion: "Dominion of Comoros"
+ COM_dominion_DEF: "the The Dominion of Comoros"
+ COM_dominion_ADJ: "$OVERLORD$ Comoran"
+ 
+ CYR_dominion: "Dominion of Cyrenaica"
+ CYR_dominion_DEF: "the The Dominion of Cyrenaica"
+ CYR_dominion_ADJ: "$OVERLORD$ Cyrenaican"
+ 
+ DGB_dominion: "Dominion of Dagbon"
+ DGB_dominion_DEF: "the The Dominion of Dagbon"
+ DGB_dominion_ADJ: "$OVERLORD$ Dagbani"
+ 
+ EQA_dominion: "Dominion of Equatorial Africa"
+ EQA_dominion_DEF: "the The Dominion of Equatorial Africa"
+ EQA_dominion_ADJ: "$OVERLORD$ Equatorial African"
+ 
+ FEZ_dominion: "Dominion of Fezzan"
+ FEZ_dominion_DEF: "the The Dominion of Fezzan"
+ FEZ_dominion_ADJ: "$OVERLORD$ Fezzani"
+ 
+ IFN_dominion: "Dominion of Ifni"
+ IFN_dominion_DEF: "the The Dominion of Ifni"
+ IFN_dominion_ADJ: "$OVERLORD$ Ifni"
+ 
+ KAT_dominion: "Dominion of Katanga"
+ KAT_dominion_DEF: "the The Dominion of Katanga"
+ KAT_dominion_ADJ: "$OVERLORD$ Katangan"
+ 
+ LSO_dominion: "Dominion of Basutoland"
+ LSO_dominion_DEF: "the The Dominion of Basutoland"
+ LSO_dominion_ADJ: "$OVERLORD$ Basuto"
+ 
+ MUS_dominion: "Dominion of Mauritius"
+ MUS_dominion_DEF: "the The Dominion of Mauritius"
+ MUS_dominion_ADJ: "$OVERLORD$ Mauritian"
+ 
+ MYT_dominion: "Dominion of Mayotte"
+ MYT_dominion_DEF: "the The Dominion of Mayotte"
+ MYT_dominion_ADJ: "$OVERLORD$ Mahoran"
+ 
+ MLL_dominion: "Dominion of Melilla"
+ MLL_dominion_DEF: "the The Dominion of Melilla"
+ MLL_dominion_ADJ: "$OVERLORD$ Melillan"
+ 
+ NAF_dominion: "Dominion of North Africa"
+ NAF_dominion_DEF: "the The Dominion of North Africa"
+ NAF_dominion_ADJ: "$OVERLORD$ North African"
+ 
+ REU_dominion: "Dominion of Reunion"
+ REU_dominion_DEF: "the The Dominion of Reunion"
+ REU_dominion_ADJ: "$OVERLORD$ Reunionese"
+ 
+ RHO_dominion: "Dominion of Rhodesia"
+ RHO_dominion_DEF: "the The Dominion of Rhodesia"
+ RHO_dominion_ADJ: "$OVERLORD$ Rhodesian"
+ 
+ R-U_dominion: "Dominion of Ruanda-urundi"
+ R-U_dominion_DEF: "the The Dominion of Ruanda-urundi"
+ R-U_dominion_ADJ: "$OVERLORD$ Ruanda-urundian"
+ 
+ STP_dominion: "Dominion of São Tomé And Príncipe"
+ STP_dominion_DEF: "the The Dominion of São Tomé And Príncipe"
+ STP_dominion_ADJ: "$OVERLORD$ Sao Tomean And Principean"
+ 
+ SYC_dominion: "Dominion of Seychelles"
+ SYC_dominion_DEF: "the The Dominion of Seychelles"
+ SYC_dominion_ADJ: "$OVERLORD$ Seychellois"
+ 
+ SML_dominion: "Dominion of Somaliland"
+ SML_dominion_DEF: "the The Dominion of Somaliland"
+ SML_dominion_ADJ: "$OVERLORD$ Somalilander"
+ 
+ SKS_dominion: "Dominion of South Kasai"
+ SKS_dominion_DEF: "the The Dominion of South Kasai"
+ SKS_dominion_ADJ: "$OVERLORD$ South Kasaian"
+ 
+ SSD_dominion: "Dominion of South Sudan"
+ SSD_dominion_DEF: "the The Dominion of South Sudan"
+ SSD_dominion_ADJ: "$OVERLORD$ South Sudanese"
+ 
+ SCZ_dominion: "Dominion of Suez Canal Zone"
+ SCZ_dominion_DEF: "the The Dominion of Suez Canal Zone"
+ SCZ_dominion_ADJ: "$OVERLORD$ Suez Canal Zone"
+ 
+ SWL_dominion: "Dominion of Swaziland"
+ SWL_dominion_DEF: "the The Dominion of Swaziland"
+ SWL_dominion_ADJ: "$OVERLORD$ Swazi"
+ 
+ TAN_dominion: "Dominion of Tanganyika"
+ TAN_dominion_DEF: "the The Dominion of Tanganyika"
+ TAN_dominion_ADJ: "$OVERLORD$ Tanganyikan"
+ 
+ TGE_dominion: "Dominion of Tangier"
+ TGE_dominion_DEF: "the The Dominion of Tangier"
+ TGE_dominion_ADJ: "$OVERLORD$ Tangierian"
+ 
+ TRP_dominion: "Dominion of Tripolitania"
+ TRP_dominion_DEF: "the The Dominion of Tripolitania"
+ TRP_dominion_ADJ: "$OVERLORD$ Tripolitanian"
+ 
+ WAF_dominion: "Dominion of West Africa"
+ WAF_dominion_DEF: "the The Dominion of West Africa"
+ WAF_dominion_ADJ: "$OVERLORD$ West African"
+ 
+ WTG_dominion: "Dominion of Togoland"
+ WTG_dominion_DEF: "the The Dominion of Togoland"
+ WTG_dominion_ADJ: "$OVERLORD$ Togolese"
+ 
+ ZAN_dominion: "Dominion of Zanzibar"
+ ZAN_dominion_DEF: "the The Dominion of Zanzibar"
+ ZAN_dominion_ADJ: "$OVERLORD$ Zanzibari"
+ 
+#新大陸:
+ AEC_dominion: "Dominion of American East Coast"
+ AEC_dominion_DEF: "the The Dominion of American East Coast"
+ AEC_dominion_ADJ: "$OVERLORD$ American East Coastal"
+ 
+ AWC_dominion: "Dominion of American West Coast"
+ AWC_dominion_DEF: "the The Dominion of American West Coast"
+ AWC_dominion_ADJ: "$OVERLORD$ American West Coastal"
+ 
+ AGU_dominion: "Dominion of Anguilla"
+ AGU_dominion_DEF: "the The Dominion of Anguilla"
+ AGU_dominion_ADJ: "$OVERLORD$ Anguillan"
+ 
+ ATG_dominion: "Dominion of Antigua"
+ ATG_dominion_DEF: "the The Dominion of Antigua"
+ ATG_dominion_ADJ: "$OVERLORD$ Antiguan"
+ 
+ ARU_dominion: "Dominion of Aruba"
+ ARU_dominion_DEF: "the The Dominion of Aruba"
+ ARU_dominion_ADJ: "$OVERLORD$ Aruban"
+ 
+ BRB_dominion: "Dominion of Barbados"
+ BRB_dominion_DEF: "the The Dominion of Barbados"
+ BRB_dominion_ADJ: "$OVERLORD$ Barbadan"
+ 
+ BAR_dominion: "Dominion of Barbuda"
+ BAR_dominion_DEF: "the The Dominion of Barbuda"
+ BAR_dominion_ADJ: "$OVERLORD$ Barbudan"
+ 
+ BMU_dominion: "Dominion of Bermuda"
+ BMU_dominion_DEF: "the The Dominion of Bermuda"
+ BMU_dominion_ADJ: "$OVERLORD$ Bermudan"
+ 
+ CSC_dominion: "Dominion of Cascadia"
+ CSC_dominion_DEF: "the The Dominion of Cascadia"
+ CSC_dominion_ADJ: "$OVERLORD$ Cascadian"
+ 
+ CYM_dominion: "Dominion of Cayman"
+ CYM_dominion_DEF: "the The Dominion of Cayman"
+ CYM_dominion_ADJ: "$OVERLORD$ Caymanian"
+ 
+ CAC_dominion: "Dominion of Centralamerica"
+ CAC_dominion_DEF: "the The Dominion of Centralamerica"
+ CAC_dominion_ADJ: "$OVERLORD$ Centralamerican"
+ 
+ DMA_dominion: "Dominion of Dominica"
+ DMA_dominion_DEF: "the The Dominion of Dominica"
+ DMA_dominion_ADJ: "$OVERLORD$ Dominican"
+ 
+ FKL_dominion: "Dominion of Falkland Islands"
+ FKL_dominion_DEF: "the The Dominion of Falkland Islands"
+ FKL_dominion_ADJ: "$OVERLORD$ Falkland Islander"
+ 
+ GLA_dominion: "Dominion of Great Lakes"
+ GLA_dominion_DEF: "the The Dominion of Great Lakes"
+ GLA_dominion_ADJ: "$OVERLORD$ Great Laker"
+ 
+ GPA_dominion: "Dominion of Great Plains"
+ GPA_dominion_DEF: "the The Dominion of Great Plains"
+ GPA_dominion_ADJ: "$OVERLORD$ Great Plains"
+ 
+ GRL_dominion: "Dominion of Greenland"
+ GRL_dominion_DEF: "the The Dominion of Greenland"
+ GRL_dominion_ADJ: "$OVERLORD$ Greenlandic"
+ 
+ GRD_dominion: "Dominion of Grenada"
+ GRD_dominion_DEF: "the The Dominion of Grenada"
+ GRD_dominion_ADJ: "$OVERLORD$ Grenadian"
+ 
+ LEW_dominion: "Dominion of Leeward Islands"
+ LEW_dominion_DEF: "the The Dominion of Leeward Islands"
+ LEW_dominion_ADJ: "$OVERLORD$ Leeward Islander"
+ 
+ MTQ_dominion: "Dominion of Martinique"
+ MTQ_dominion_DEF: "the The Dominion of Martinique"
+ MTQ_dominion_ADJ: "$OVERLORD$ Martinican"
+ 
+ MSR_dominion: "Dominion of Montserrat"
+ MSR_dominion_DEF: "the The Dominion of Montserrat"
+ MSR_dominion_ADJ: "$OVERLORD$ Montserratian"
+ 
+ NVS_dominion: "Dominion of Nevis"
+ NVS_dominion_DEF: "the The Dominion of Nevis"
+ NVS_dominion_ADJ: "$OVERLORD$ Nevisian"
+ 
+ NFL_dominion: "Dominion of Newfoundland"
+ NFL_dominion_DEF: "the The Dominion of Newfoundland"
+ NFL_dominion_ADJ: "$OVERLORD$ Newfoundlandish"
+ 
+ NAC_dominion: "Dominion of North America"
+ NAC_dominion_DEF: "the The Dominion of North America"
+ NAC_dominion_ADJ: "$OVERLORD$ North American"
+ 
+ NGL_dominion: "Dominion of North Greenland"
+ NGL_dominion_DEF: "the The Dominion of North Greenland"
+ NGL_dominion_ADJ: "$OVERLORD$ "
+ 
+ PCZ_dominion: "Dominion of Panama Canal Zone"
+ PCZ_dominion_DEF: "the The Dominion of Panama Canal Zone"
+ PCZ_dominion_ADJ: "$OVERLORD$ Panama Canal Zone"
+ 
+ QEB_dominion: "Dominion of Quebec"
+ QEB_dominion_DEF: "the The Dominion of Quebec"
+ QEB_dominion_ADJ: "$OVERLORD$ Quebecois"
+ 
+ RMT_dominion: "Dominion of Rocky Mountains"
+ RMT_dominion_DEF: "the The Dominion of Rocky Mountains"
+ RMT_dominion_ADJ: "$OVERLORD$ Rocky Mountainian"
+ 
+ SBL_dominion: "Dominion of Saint Barthélemy"
+ SBL_dominion_DEF: "the The Dominion of Saint Barthélemy"
+ SBL_dominion_ADJ: "$OVERLORD$ Barthélemois"
+ 
+ SKN_dominion: "Dominion of Saint Christopher"
+ SKN_dominion_DEF: "the The Dominion of Saint Christopher"
+ SKN_dominion_ADJ: "$OVERLORD$ Kittitian"
+ 
+ STH_dominion: "Dominion of Saint Helena"
+ STH_dominion_DEF: "the The Dominion of Saint Helena"
+ STH_dominion_ADJ: "$OVERLORD$ Saint Helenian"
+ 
+ SLC_dominion: "Dominion of Saint Lucia"
+ SLC_dominion_DEF: "the The Dominion of Saint Lucia"
+ SLC_dominion_ADJ: "$OVERLORD$ Saint Lucian"
+ 
+ STM_dominion: "Dominion of Saint Martin"
+ STM_dominion_DEF: "the The Dominion of Saint Martin"
+ STM_dominion_ADJ: "$OVERLORD$ Saint-martinois"
+ 
+ SVG_dominion: "Dominion of Saint Vincent And The Grenadines"
+ SVG_dominion_DEF: "the The Dominion of Saint Vincent And The Grenadines"
+ SVG_dominion_ADJ: "$OVERLORD$ Vincentian And Grenadinian"
+ 
+ SPM_dominion: "Dominion of Saint-pierre And Miquelon"
+ SPM_dominion_DEF: "the The Dominion of Saint-pierre And Miquelon"
+ SPM_dominion_ADJ: "$OVERLORD$ Saint-pierrais And Miquelonnais"
+ 
+ SAC_dominion: "Dominion of South America"
+ SAC_dominion_DEF: "the The Dominion of South America"
+ SAC_dominion_ADJ: "$OVERLORD$ South American"
+ 
+ SGL_dominion: "Dominion of South Greenland"
+ SGL_dominion_DEF: "the The Dominion of South Greenland"
+ SGL_dominion_ADJ: "$OVERLORD$ "
+ 
+ TOB_dominion: "Dominion of Tobago"
+ TOB_dominion_DEF: "the The Dominion of Tobago"
+ TOB_dominion_ADJ: "$OVERLORD$ Tobagonian"
+ 
+ TCA_dominion: "Dominion of Turks And Caicos"
+ TCA_dominion_DEF: "the The Dominion of Turks And Caicos"
+ TCA_dominion_ADJ: "$OVERLORD$ Turks And Caicos"
+ 
+ VIR_dominion: "Dominion of Virgin Islands"
+ VIR_dominion_DEF: "the The Dominion of Virgin Islands"
+ VIR_dominion_ADJ: "$OVERLORD$ Virgin Islander"
+ 
+ WIW_dominion: "Dominion of Windward Islands"
+ WIW_dominion_DEF: "the The Dominion of Windward Islands"
+ WIW_dominion_ADJ: "$OVERLORD$ Windward Islander"
+ 
+#大洋州:
+ ATC_dominion: "Dominion of Antarctica"
+ ATC_dominion_DEF: "the The Dominion of Antarctica"
+ ATC_dominion_ADJ: "$OVERLORD$ Antarctic"
+ 
+ CHR_dominion: "Dominion of Christmas Island"
+ CHR_dominion_DEF: "the The Dominion of Christmas Island"
+ CHR_dominion_ADJ: "$OVERLORD$ Christmas Island"
+ 
+ COC_dominion: "Dominion of Cocos Islands"
+ COC_dominion_DEF: "the The Dominion of Cocos Islands"
+ COC_dominion_ADJ: "$OVERLORD$ Cocos Islander"
+ 
+ UVF_dominion: "Dominion of ʻuvea And Futuna"
+ UVF_dominion_DEF: "the The Dominion of ʻuvea And Futuna"
+ UVF_dominion_ADJ: "$OVERLORD$ ʻuvean And Futunan"
+ 
+ KIR_dominion: "Dominion of Gilbert Islands"
+ KIR_dominion_DEF: "the The Dominion of Gilbert Islands"
+ KIR_dominion_ADJ: "$OVERLORD$ Gilbert Islander"
+ 
+ MHL_dominion: "Dominion of Marshall Islands"
+ MHL_dominion_DEF: "the The Dominion of Marshall Islands"
+ MHL_dominion_ADJ: "$OVERLORD$ Marshallese"
+ 
+ NMR_dominion: "Dominion of Nauru"
+ NMR_dominion_DEF: "the The Dominion of Nauru"
+ NMR_dominion_ADJ: "$OVERLORD$ Nauruan"
+ 
+ NCL_dominion: "Dominion of New Caledonia"
+ NCL_dominion_DEF: "the The Dominion of New Caledonia"
+ NCL_dominion_ADJ: "$OVERLORD$ New Caledonian"
+ 
+ NGU_dominion: "Dominion of New Guinea"
+ NGU_dominion_DEF: "the The Dominion of New Guinea"
+ NGU_dominion_ADJ: "$OVERLORD$ New Guinean"
+ 
+ NIU_dominion: "Dominion of Niue"
+ NIU_dominion_DEF: "the The Dominion of Niue"
+ NIU_dominion_ADJ: "$OVERLORD$ Niuean"
+ 
+ NFK_dominion: "Dominion of Norfolk"
+ NFK_dominion_DEF: "the The Dominion of Norfolk"
+ NFK_dominion_ADJ: "$OVERLORD$ Norfolkian"
+ 
+ PLW_dominion: "Dominion of Palau"
+ PLW_dominion_DEF: "the The Dominion of Palau"
+ PLW_dominion_ADJ: "$OVERLORD$ Palauan"
+ 
+ PAP_dominion: "Dominion of Papua"
+ PAP_dominion_DEF: "the The Dominion of Papua"
+ PAP_dominion_ADJ: "$OVERLORD$ Papuan"
+ 
+ PCN_dominion: "Dominion of Pitcairn"
+ PCN_dominion_DEF: "the The Dominion of Pitcairn"
+ PCN_dominion_ADJ: "$OVERLORD$ Pitcairnese"
+ 
+ PLY_dominion: "Dominion of Polynesia"
+ PLY_dominion_DEF: "the The Dominion of Polynesia"
+ PLY_dominion_ADJ: "$OVERLORD$ Polynesian"
+ 
+ COK_dominion: "Dominion of Cook Islands"
+ COK_dominion_DEF: "the The Dominion of Cook Islands"
+ COK_dominion_ADJ: "$OVERLORD$ Cook Islander"
+ 
+ TKL_dominion: "Dominion of Tokelau"
+ TKL_dominion_DEF: "the The Dominion of Tokelau"
+ TKL_dominion_ADJ: "$OVERLORD$ Tokelauan"
+ 
+ TON_dominion: "Dominion of Tonga"
+ TON_dominion_DEF: "the The Dominion of Tonga"
+ TON_dominion_ADJ: "$OVERLORD$ Tongan"
+ 
+ TVL_dominion: "Dominion of Ellice Islands"
+ TVL_dominion_DEF: "the The Dominion of Ellice Islands"
+ TVL_dominion_ADJ: "$OVERLORD$ Ellice Islander"
+ 
+ VUT_dominion: "Dominion of New Hebrides"
+ VUT_dominion_DEF: "the The Dominion of New Hebrides"
+ VUT_dominion_ADJ: "$OVERLORD$ New Hebrides"
+ 
+ WPA_dominion: "Dominion of New Guinea"
+ WPA_dominion_DEF: "the The Dominion of New Guinea"
+ WPA_dominion_ADJ: "$OVERLORD$ New Guinean"
+ 
+#アメリカ諸州:
+ ABA_dominion: "Dominion of Alabama"
+ ABA_dominion_DEF: "the The Dominion of Alabama"
+ ABA_dominion_ADJ: "$OVERLORD$ Alabamian"
+ 
+ ALS_dominion: "Dominion of Alaska"
+ ALS_dominion_DEF: "the The Dominion of Alaska"
+ ALS_dominion_ADJ: "$OVERLORD$ Alaskan"
+ 
+ ARZ_dominion: "Dominion of Arizona"
+ ARZ_dominion_DEF: "the The Dominion of Arizona"
+ ARZ_dominion_ADJ: "$OVERLORD$ Arizonan"
+ 
+ ARK_dominion: "Dominion of Arkansas"
+ ARK_dominion_DEF: "the The Dominion of Arkansas"
+ ARK_dominion_ADJ: "$OVERLORD$ Arkansan"
+ 
+ CAL_dominion: "Dominion of California"
+ CAL_dominion_DEF: "the The Dominion of California"
+ CAL_dominion_ADJ: "$OVERLORD$ Californian"
+ 
+ CLD_dominion: "Dominion of Colorado"
+ CLD_dominion_DEF: "the The Dominion of Colorado"
+ CLD_dominion_ADJ: "$OVERLORD$ Coloradan"
+ 
+ CLU_dominion: "Dominion of Columbia"
+ CLU_dominion_DEF: "the The Dominion of Columbia"
+ CLU_dominion_ADJ: "$OVERLORD$ Columbian"
+ 
+ CNT_dominion: "Dominion of Connecticut"
+ CNT_dominion_DEF: "the The Dominion of Connecticut"
+ CNT_dominion_ADJ: "$OVERLORD$ Connecticuter"
+ 
+ DEL_dominion: "Dominion of Delaware"
+ DEL_dominion_DEF: "the The Dominion of Delaware"
+ DEL_dominion_ADJ: "$OVERLORD$ Delawarean"
+ 
+ FLO_dominion: "Dominion of Florida"
+ FLO_dominion_DEF: "the The Dominion of Florida"
+ FLO_dominion_ADJ: "$OVERLORD$ Floridian"
+ 
+ GEG_dominion: "Dominion of Georgia"
+ GEG_dominion_DEF: "the The Dominion of Georgia"
+ GEG_dominion_ADJ: "$OVERLORD$ Georgian"
+ 
+ IDA_dominion: "Dominion of Idaho"
+ IDA_dominion_DEF: "the The Dominion of Idaho"
+ IDA_dominion_ADJ: "$OVERLORD$ Idahoan"
+ 
+ ILI_dominion: "Dominion of Illinois"
+ ILI_dominion_DEF: "the The Dominion of Illinois"
+ ILI_dominion_ADJ: "$OVERLORD$ Illinoisan"
+ 
+ IDI_dominion: "Dominion of Indiana"
+ IDI_dominion_DEF: "the The Dominion of Indiana"
+ IDI_dominion_ADJ: "$OVERLORD$ Hoosier"
+ 
+ IOW_dominion: "Dominion of Iowa"
+ IOW_dominion_DEF: "the The Dominion of Iowa"
+ IOW_dominion_ADJ: "$OVERLORD$ Iowan"
+ 
+ IQO_dominion: "Dominion of Iroquois"
+ IQO_dominion_DEF: "the The Dominion of Iroquois"
+ IQO_dominion_ADJ: "$OVERLORD$ Iroquois"
+ 
+ KAN_dominion: "Dominion of Kansas"
+ KAN_dominion_DEF: "the The Dominion of Kansas"
+ KAN_dominion_ADJ: "$OVERLORD$ Kansan"
+ 
+ KTY_dominion: "Dominion of Kentucky"
+ KTY_dominion_DEF: "the The Dominion of Kentucky"
+ KTY_dominion_ADJ: "$OVERLORD$ Kentucky"
+ 
+ LUI_dominion: "Dominion of Louisiana"
+ LUI_dominion_DEF: "the The Dominion of Louisiana"
+ LUI_dominion_ADJ: "$OVERLORD$ Louisianian"
+ 
+ MNE_dominion: "Dominion of Maine"
+ MNE_dominion_DEF: "the The Dominion of Maine"
+ MNE_dominion_ADJ: "$OVERLORD$ Mainean"
+ 
+ MRL_dominion: "Dominion of Maryland"
+ MRL_dominion_DEF: "the The Dominion of Maryland"
+ MRL_dominion_ADJ: "$OVERLORD$ Marylander"
+ 
+ MAS_dominion: "Dominion of Massachusetts"
+ MAS_dominion_DEF: "the The Dominion of Massachusetts"
+ MAS_dominion_ADJ: "$OVERLORD$ Massachusettsan"
+ 
+ MCH_dominion: "Dominion of Michigan"
+ MCH_dominion_DEF: "the The Dominion of Michigan"
+ MCH_dominion_ADJ: "$OVERLORD$ Michiganian"
+ 
+ MNS_dominion: "Dominion of Minnesota"
+ MNS_dominion_DEF: "the The Dominion of Minnesota"
+ MNS_dominion_ADJ: "$OVERLORD$ Minnesotan"
+ 
+ MIS_dominion: "Dominion of Mississippi"
+ MIS_dominion_DEF: "the The Dominion of Mississippi"
+ MIS_dominion_ADJ: "$OVERLORD$ Mississippian"
+ 
+ MSS_dominion: "Dominion of Missouri"
+ MSS_dominion_DEF: "the The Dominion of Missouri"
+ MSS_dominion_ADJ: "$OVERLORD$ Missourian"
+ 
+ MTA_dominion: "Dominion of Montana"
+ MTA_dominion_DEF: "the The Dominion of Montana"
+ MTA_dominion_ADJ: "$OVERLORD$ Montanan"
+ 
+ NEB_dominion: "Dominion of Nebraska"
+ NEB_dominion_DEF: "the The Dominion of Nebraska"
+ NEB_dominion_ADJ: "$OVERLORD$ Nebraskan"
+ 
+ NEV_dominion: "Dominion of Nevada"
+ NEV_dominion_DEF: "the The Dominion of Nevada"
+ NEV_dominion_ADJ: "$OVERLORD$ Nevadan"
+ 
+ NEL_dominion: "Dominion of New England"
+ NEL_dominion_DEF: "the The Dominion of New England"
+ NEL_dominion_ADJ: "$OVERLORD$ New Englander"
+ 
+ NHN_dominion: "Dominion of New Hampshire"
+ NHN_dominion_DEF: "the The Dominion of New Hampshire"
+ NHN_dominion_ADJ: "$OVERLORD$ New Hampshirite"
+ 
+ NJE_dominion: "Dominion of New Jersey"
+ NJE_dominion_DEF: "the The Dominion of New Jersey"
+ NJE_dominion_ADJ: "$OVERLORD$ New Jerseyan"
+ 
+ NMX_dominion: "Dominion of New Mexico"
+ NMX_dominion_DEF: "the The Dominion of New Mexico"
+ NMX_dominion_ADJ: "$OVERLORD$ New Mexican"
+ 
+ NYR_dominion: "Dominion of New York"
+ NYR_dominion_DEF: "the The Dominion of New York"
+ NYR_dominion_ADJ: "$OVERLORD$ New Yorker"
+ 
+ NCR_dominion: "Dominion of North Carolina"
+ NCR_dominion_DEF: "the The Dominion of North Carolina"
+ NCR_dominion_ADJ: "$OVERLORD$ North Carolinian"
+ 
+ NDA_dominion: "Dominion of North Dakota"
+ NDA_dominion_DEF: "the The Dominion of North Dakota"
+ NDA_dominion_ADJ: "$OVERLORD$ North Dakotan"
+ 
+ OHO_dominion: "Dominion of Ohio"
+ OHO_dominion_DEF: "the The Dominion of Ohio"
+ OHO_dominion_ADJ: "$OVERLORD$ Ohioan"
+ 
+ OKL_dominion: "Dominion of Oklahoma"
+ OKL_dominion_DEF: "the The Dominion of Oklahoma"
+ OKL_dominion_ADJ: "$OVERLORD$ Oklahoman"
+ 
+ ORE_dominion: "Dominion of Oregon"
+ ORE_dominion_DEF: "the The Dominion of Oregon"
+ ORE_dominion_ADJ: "$OVERLORD$ Oregonian"
+ 
+ PEN_dominion: "Dominion of Pennsylvania"
+ PEN_dominion_DEF: "the The Dominion of Pennsylvania"
+ PEN_dominion_ADJ: "$OVERLORD$ Pennsylvanian"
+ 
+ RIL_dominion: "Dominion of Rhode Island"
+ RIL_dominion_DEF: "the The Dominion of Rhode Island"
+ RIL_dominion_ADJ: "$OVERLORD$ Rhode Islander"
+ 
+ SCR_dominion: "Dominion of South Carolina"
+ SCR_dominion_DEF: "the The Dominion of South Carolina"
+ SCR_dominion_ADJ: "$OVERLORD$ South Carolinian"
+ 
+ SDA_dominion: "Dominion of South Dakota"
+ SDA_dominion_DEF: "the The Dominion of South Dakota"
+ SDA_dominion_ADJ: "$OVERLORD$ South Dakotan"
+ 
+ TEN_dominion: "Dominion of Tennessee"
+ TEN_dominion_DEF: "the The Dominion of Tennessee"
+ TEN_dominion_ADJ: "$OVERLORD$ Tennessean"
+ 
+ TEX_dominion: "Dominion of Texas"
+ TEX_dominion_DEF: "the The Dominion of Texas"
+ TEX_dominion_ADJ: "$OVERLORD$ Texan"
+ 
+ UTA_dominion: "Dominion of Utah"
+ UTA_dominion_DEF: "the The Dominion of Utah"
+ UTA_dominion_ADJ: "$OVERLORD$ Utahan"
+ 
+ VRM_dominion: "Dominion of Vermont"
+ VRM_dominion_DEF: "the The Dominion of Vermont"
+ VRM_dominion_ADJ: "$OVERLORD$ Vermonter"
+ 
+ VRG_dominion: "Dominion of Virginia"
+ VRG_dominion_DEF: "the The Dominion of Virginia"
+ VRG_dominion_ADJ: "$OVERLORD$ Virginian"
+ 
+ WAS_dominion: "Dominion of Washington"
+ WAS_dominion_DEF: "the The Dominion of Washington"
+ WAS_dominion_ADJ: "$OVERLORD$ Washingtonian"
+ 
+ WVI_dominion: "Dominion of West Virginia"
+ WVI_dominion_DEF: "the The Dominion of West Virginia"
+ WVI_dominion_ADJ: "$OVERLORD$ West Virginian"
+ 
+ WSC_dominion: "Dominion of Wisconsin"
+ WSC_dominion_DEF: "the The Dominion of Wisconsin"
+ WSC_dominion_ADJ: "$OVERLORD$ Wisconsinite"
+ 
+ WYO_dominion: "Dominion of Wyoming"
+ WYO_dominion_DEF: "the The Dominion of Wyoming"
+ WYO_dominion_ADJ: "$OVERLORD$ Wyomingite"
+ 
+##コズメティックタグ
+#アジア
+ AYNUMOSIR_dominion: "Dominion of Aynu Mosir"
+ AYNUMOSIR_dominion_DEF: "the The Dominion of Aynu Mosir"
+ AYNUMOSIR_dominion_ADJ: "$OVERLORD$ Aynu"
+ 
+ TRANSCAUCS_dominion: "Dominion of Transcaucasus"
+ TRANSCAUCS_dominion_DEF: "the The Dominion of Transcaucasus"
+ TRANSCAUCS_dominion_ADJ: "$OVERLORD$ TransCaucasian"
+ 
+ 
+ 
+ UYGHURSTAN_dominion: "Dominion of Uyghurstan"
+ UYGHURSTAN_dominion_DEF: "the The Dominion of Uyghurstan"
+ UYGHURSTAN_dominion_ADJ: "$OVERLORD$ Uyghur"
+ 
+ ZELENYIUKRAINA_dominion: "Dominion of Zelenyiukraina"
+ ZELENYIUKRAINA_dominion_DEF: "the The Dominion of Zelenyiukraina"
+ ZELENYIUKRAINA_dominion_ADJ: "$OVERLORD$ Zelenyiukraina"
+ 
+ ZELYONROSSIYA_dominion: "Dominion of Zelyonrossiya"
+ ZELYONROSSIYA_dominion_DEF: "the The Dominion of Zelyonrossiya"
+ ZELYONROSSIYA_dominion_ADJ: "$OVERLORD$ Zelyonrossiya"
+ 
+ ZHELTOROSSIYA_dominion: "Dominion of Zheltorossiya"
+ ZHELTOROSSIYA_dominion_DEF: "the The Dominion of Zheltorossiya"
+ ZHELTOROSSIYA_dominion_ADJ: "$OVERLORD$ Zheltorossiya"
+ 
+ ZHELTUGA_dominion: "Dominion of Zheltuga "
+ ZHELTUGA_dominion_DEF: "the The Dominion of Zheltuga "
+ ZHELTUGA_dominion_ADJ: "$OVERLORD$ Zheltuga "
+ 
+#ヨーロッパ
+ AEGandION_ENG_colony: "$OVERLORDADJ$ Colony of Aegean and Ionian Islands"
+ AEGandION_ENG_colony_DEF: "the the The $OVERLORDADJ$ Colony of Aegean and Ionian Islands"
+ AEGandION_ENG_colony_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_colonies_federation: "$OVERLORDADJ$ Federal Colony of Aegean and Ionian Islands"
+ AEGandION_ENG_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Aegean and Ionian Islands"
+ AEGandION_ENG_colonies_federation_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Aegean and Ionian Islands"
+ AEGandION_ENG_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Aegean and Ionian Islands"
+ AEGandION_ENG_colony_and_protected_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_condominium: "Condominium of Aegean and Ionian Islands"
+ AEGandION_ENG_condominium_DEF: "the the The Condominium of Aegean and Ionian Islands"
+ AEGandION_ENG_condominium_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_overseas_territory: "$OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_ENG_overseas_territory_DEF: "the the The $OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_ENG_overseas_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_viceroyalty: "Viceroyalty of Aegean and Ionian Islands"
+ AEGandION_ENG_viceroyalty_DEF: "the the The Viceroyalty of Aegean and Ionian Islands"
+ AEGandION_ENG_viceroyalty_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_captaincy_general: "Captaincy General of Aegean and Ionian Islands"
+ AEGandION_ENG_captaincy_general_DEF: "the the The Captaincy General of Aegean and Ionian Islands"
+ AEGandION_ENG_captaincy_general_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_protected_territory: "$OVERLORDADJ$ Protectorate of Aegean and Ionian Islands"
+ AEGandION_ENG_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Aegean and Ionian Islands"
+ AEGandION_ENG_protected_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_constituent_autonomous_province: "$OVERLORDADJ$ Province of Aegean and Ionian Islands"
+ AEGandION_ENG_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Aegean and Ionian Islands"
+ AEGandION_ENG_constituent_autonomous_province_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_trust_territory: "$OVERLORDADJ$ Trust Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_trust_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_mandated_territory_A_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_mandated_territory_B_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_ENG_mandated_territory_C_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_leased_territory: "$OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_ENG_leased_territory_DEF: "the the The $OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_ENG_leased_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_colony: "$OVERLORDADJ$ Colony of Aegean and Ionian Islands"
+ AEGandION_GBR_colony_DEF: "the the The $OVERLORDADJ$ Colony of Aegean and Ionian Islands"
+ AEGandION_GBR_colony_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_colonies_federation: "$OVERLORDADJ$ Federal Colony of Aegean and Ionian Islands"
+ AEGandION_GBR_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Aegean and Ionian Islands"
+ AEGandION_GBR_colonies_federation_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBR_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBR_colony_and_protected_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_condominium: "Condominium of Aegean and Ionian Islands"
+ AEGandION_GBR_condominium_DEF: "the the The Condominium of Aegean and Ionian Islands"
+ AEGandION_GBR_condominium_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_overseas_territory: "$OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBR_overseas_territory_DEF: "the the The $OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBR_overseas_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_viceroyalty: "Viceroyalty of Aegean and Ionian Islands"
+ AEGandION_GBR_viceroyalty_DEF: "the the The Viceroyalty of Aegean and Ionian Islands"
+ AEGandION_GBR_viceroyalty_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_captaincy_general: "Captaincy General of Aegean and Ionian Islands"
+ AEGandION_GBR_captaincy_general_DEF: "the the The Captaincy General of Aegean and Ionian Islands"
+ AEGandION_GBR_captaincy_general_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_protected_territory: "$OVERLORDADJ$ Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBR_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBR_protected_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_constituent_autonomous_province: "$OVERLORDADJ$ Province of Aegean and Ionian Islands"
+ AEGandION_GBR_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Aegean and Ionian Islands"
+ AEGandION_GBR_constituent_autonomous_province_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_trust_territory: "$OVERLORDADJ$ Trust Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_trust_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_mandated_territory_A_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_mandated_territory_B_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBR_mandated_territory_C_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_leased_territory: "$OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBR_leased_territory_DEF: "the the The $OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBR_leased_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_colony: "$OVERLORDADJ$ Colony of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_colony_DEF: "the the The $OVERLORDADJ$ Colony of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_colony_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_colonies_federation: "$OVERLORDADJ$ Federal Colony of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_colonies_federation_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_colony_and_protected_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_condominium: "Condominium of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_condominium_DEF: "the the The Condominium of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_condominium_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_overseas_territory: "$OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_overseas_territory_DEF: "the the The $OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_overseas_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_viceroyalty: "Viceroyalty of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_viceroyalty_DEF: "the the The Viceroyalty of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_viceroyalty_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_captaincy_general: "Captaincy General of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_captaincy_general_DEF: "the the The Captaincy General of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_captaincy_general_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_protected_territory: "$OVERLORDADJ$ Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_protected_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_constituent_autonomous_province: "$OVERLORDADJ$ Province of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_constituent_autonomous_province_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_trust_territory: "$OVERLORDADJ$ Trust Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_trust_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_mandated_territory_A_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_mandated_territory_B_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_mandated_territory_C_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_leased_territory: "$OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_leased_territory_DEF: "the the The $OVERLORDADJ$ Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_leased_territory_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_dominion: "Dominion of Aegean and Ionian Islands"
+ AEGandION_dominion_DEF: "the The Dominion of Aegean and Ionian Islands"
+ AEGandION_dominion_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_ENG_dominion: "Dominion of Aegean and Ionian Islands"
+ AEGandION_ENG_dominion_DEF: "the Dominion of Aegean and Ionian Islands"
+ AEGandION_ENG_dominion_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBR_dominion: "Dominion of Aegean and Ionian Islands"
+ AEGandION_GBR_dominion_DEF: "the Dominion of Aegean and Ionian Islands"
+ AEGandION_GBR_dominion_ADJ: "$OVERLORD$ Aegean and Ionian"
+ AEGandION_GBRandIRE_dominion: "Dominion of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_dominion_DEF: "the Dominion of Aegean and Ionian Islands"
+ AEGandION_GBRandIRE_dominion_ADJ: "$OVERLORD$ Aegean and Ionian"
+ 
+ BYELORUSSIA_dominion: "Dominion of Byelorussia"
+ BYELORUSSIA_dominion_DEF: "the The Dominion of Byelorussia"
+ BYELORUSSIA_dominion_ADJ: "$OVERLORD$ Byelorussian"
+ 
+ KAR-FIN_dominion: "Dominion of Karelo-Finnish"
+ KAR-FIN_dominion_DEF: "the The Dominion of Karelo-Finnish"
+ KAR-FIN_dominion_ADJ: "$OVERLORD$ Karelo-Finnish"
+ 
+ SHLandHLS_ENG_colony: "$OVERLORDADJ$ Colony of Schleswig and Holstein"
+ SHLandHLS_ENG_colony_DEF: "the the The $OVERLORDADJ$ Colony of Schleswig and Holstein"
+ SHLandHLS_ENG_colony_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_colonies_federation: "$OVERLORDADJ$ Federal Colony of Schleswig and Holstein"
+ SHLandHLS_ENG_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Schleswig and Holstein"
+ SHLandHLS_ENG_colonies_federation_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Schleswig and Holstein"
+ SHLandHLS_ENG_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Schleswig and Holstein"
+ SHLandHLS_ENG_colony_and_protected_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_condominium: "Condominium of Schleswig and Holstein"
+ SHLandHLS_ENG_condominium_DEF: "the the The Condominium of Schleswig and Holstein"
+ SHLandHLS_ENG_condominium_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_overseas_territory: "$OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_ENG_overseas_territory_DEF: "the the The $OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_ENG_overseas_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_viceroyalty: "Viceroyalty of Schleswig and Holstein"
+ SHLandHLS_ENG_viceroyalty_DEF: "the the The Viceroyalty of Schleswig and Holstein"
+ SHLandHLS_ENG_viceroyalty_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_captaincy_general: "Captaincy General of Schleswig and Holstein"
+ SHLandHLS_ENG_captaincy_general_DEF: "the the The Captaincy General of Schleswig and Holstein"
+ SHLandHLS_ENG_captaincy_general_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_protected_territory: "$OVERLORDADJ$ Protectorate of Schleswig and Holstein"
+ SHLandHLS_ENG_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Schleswig and Holstein"
+ SHLandHLS_ENG_protected_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_constituent_autonomous_province: "$OVERLORDADJ$ Province of Schleswig and Holstein"
+ SHLandHLS_ENG_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Schleswig and Holstein"
+ SHLandHLS_ENG_constituent_autonomous_province_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_trust_territory: "$OVERLORDADJ$ Trust Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_trust_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_mandated_territory_A_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_mandated_territory_B_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_ENG_mandated_territory_C_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_leased_territory: "$OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_ENG_leased_territory_DEF: "the the The $OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_ENG_leased_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_colony: "$OVERLORDADJ$ Colony of Schleswig and Holstein"
+ SHLandHLS_GBR_colony_DEF: "the the The $OVERLORDADJ$ Colony of Schleswig and Holstein"
+ SHLandHLS_GBR_colony_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_colonies_federation: "$OVERLORDADJ$ Federal Colony of Schleswig and Holstein"
+ SHLandHLS_GBR_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Schleswig and Holstein"
+ SHLandHLS_GBR_colonies_federation_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBR_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBR_colony_and_protected_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_condominium: "Condominium of Schleswig and Holstein"
+ SHLandHLS_GBR_condominium_DEF: "the the The Condominium of Schleswig and Holstein"
+ SHLandHLS_GBR_condominium_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_overseas_territory: "$OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBR_overseas_territory_DEF: "the the The $OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBR_overseas_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_viceroyalty: "Viceroyalty of Schleswig and Holstein"
+ SHLandHLS_GBR_viceroyalty_DEF: "the the The Viceroyalty of Schleswig and Holstein"
+ SHLandHLS_GBR_viceroyalty_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_captaincy_general: "Captaincy General of Schleswig and Holstein"
+ SHLandHLS_GBR_captaincy_general_DEF: "the the The Captaincy General of Schleswig and Holstein"
+ SHLandHLS_GBR_captaincy_general_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_protected_territory: "$OVERLORDADJ$ Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBR_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBR_protected_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_constituent_autonomous_province: "$OVERLORDADJ$ Province of Schleswig and Holstein"
+ SHLandHLS_GBR_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Schleswig and Holstein"
+ SHLandHLS_GBR_constituent_autonomous_province_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_trust_territory: "$OVERLORDADJ$ Trust Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_trust_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_mandated_territory_A_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_mandated_territory_B_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBR_mandated_territory_C_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_leased_territory: "$OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBR_leased_territory_DEF: "the the The $OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBR_leased_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_colony: "$OVERLORDADJ$ Colony of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_colony_DEF: "the the The $OVERLORDADJ$ Colony of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_colony_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_colonies_federation: "$OVERLORDADJ$ Federal Colony of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_colonies_federation_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_colony_and_protected_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_condominium: "Condominium of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_condominium_DEF: "the the The Condominium of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_condominium_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_overseas_territory: "$OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_overseas_territory_DEF: "the the The $OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_overseas_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_viceroyalty: "Viceroyalty of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_viceroyalty_DEF: "the the The Viceroyalty of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_viceroyalty_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_captaincy_general: "Captaincy General of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_captaincy_general_DEF: "the the The Captaincy General of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_captaincy_general_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_protected_territory: "$OVERLORDADJ$ Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_protected_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_constituent_autonomous_province: "$OVERLORDADJ$ Province of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_constituent_autonomous_province_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_trust_territory: "$OVERLORDADJ$ Trust Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_trust_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_mandated_territory_A_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_mandated_territory_B_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_mandated_territory_C_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_leased_territory: "$OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_leased_territory_DEF: "the the The $OVERLORDADJ$ Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_leased_territory_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_dominion: "Dominion of Schleswig and Holstein"
+ SHLandHLS_dominion_DEF: "the The Dominion of Schleswig and Holstein"
+ SHLandHLS_dominion_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_ENG_dominion: "Dominion of Schleswig and Holstein"
+ SHLandHLS_ENG_dominion_DEF: "the Dominion of Schleswig and Holstein"
+ SHLandHLS_ENG_dominion_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBR_dominion: "Dominion of Schleswig and Holstein"
+ SHLandHLS_GBR_dominion_DEF: "the Dominion of Schleswig and Holstein"
+ SHLandHLS_GBR_dominion_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ SHLandHLS_GBRandIRE_dominion: "Dominion of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_dominion_DEF: "the Dominion of Schleswig and Holstein"
+ SHLandHLS_GBRandIRE_dominion_ADJ: "$OVERLORD$ Schleswig and Holsteinian"
+ 
+#アフリカ
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colony: "$OVERLORDADJ$ Colony of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colony_DEF: "the the The $OVERLORDADJ$ Colony of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colony_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colonies_federation: "$OVERLORDADJ$ Federal Colony of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colonies_federation_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_colony_and_protected_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_condominium: "Condominium of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_condominium_DEF: "the the The Condominium of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_condominium_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_overseas_territory: "$OVERLORDADJ$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_overseas_territory_DEF: "the the The $OVERLORDADJ$ Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_overseas_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_viceroyalty: "Viceroyalty of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_viceroyalty_DEF: "the the The Viceroyalty of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_viceroyalty_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_captaincy_general: "Captaincy General of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_captaincy_general_DEF: "the the The Captaincy General of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_captaincy_general_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_protected_territory: "$OVERLORDADJ$ Protectorate of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_protected_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_constituent_autonomous_province: "$OVERLORDADJ$ Province of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_constituent_autonomous_province_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_trust_territory: "$OVERLORDADJ$ Trust Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_trust_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_A_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_B_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_mandated_territory_C_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_leased_territory: "$OVERLORDADJ$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_leased_territory_DEF: "the the The $OVERLORDADJ$ Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_leased_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colony: "$OVERLORDADJ$ Colony of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colony_DEF: "the the The $OVERLORDADJ$ Colony of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colony_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colonies_federation: "$OVERLORDADJ$ Federal Colony of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colonies_federation_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_colony_and_protected_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_condominium: "Condominium of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_condominium_DEF: "the the The Condominium of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_condominium_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_overseas_territory: "$OVERLORDADJ$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_overseas_territory_DEF: "the the The $OVERLORDADJ$ Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_overseas_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_viceroyalty: "Viceroyalty of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_viceroyalty_DEF: "the the The Viceroyalty of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_viceroyalty_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_captaincy_general: "Captaincy General of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_captaincy_general_DEF: "the the The Captaincy General of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_captaincy_general_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_protected_territory: "$OVERLORDADJ$ Protectorate of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_protected_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_constituent_autonomous_province: "$OVERLORDADJ$ Province of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_constituent_autonomous_province_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_trust_territory: "$OVERLORDADJ$ Trust Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_trust_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_A_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_B_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_mandated_territory_C_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_leased_territory: "$OVERLORDADJ$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_leased_territory_DEF: "the the The $OVERLORDADJ$ Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_leased_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colony: "$OVERLORDADJ$ Colony of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colony_DEF: "the the The $OVERLORDADJ$ Colony of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colony_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colonies_federation: "$OVERLORDADJ$ Federal Colony of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colonies_federation_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_colony_and_protected_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_condominium: "Condominium of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_condominium_DEF: "the the The Condominium of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_condominium_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_overseas_territory: "$OVERLORDADJ$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_overseas_territory_DEF: "the the The $OVERLORDADJ$ Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_overseas_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_viceroyalty: "Viceroyalty of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_viceroyalty_DEF: "the the The Viceroyalty of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_viceroyalty_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_captaincy_general: "Captaincy General of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_captaincy_general_DEF: "the the The Captaincy General of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_captaincy_general_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_protected_territory: "$OVERLORDADJ$ Protectorate of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_protected_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_constituent_autonomous_province: "$OVERLORDADJ$ Province of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_constituent_autonomous_province_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_trust_territory: "$OVERLORDADJ$ Trust Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_trust_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_A_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_B_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_mandated_territory_C_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_leased_territory: "$OVERLORDADJ$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_leased_territory_DEF: "the the The $OVERLORDADJ$ Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_leased_territory_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_dominion: "Dominion of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_dominion_DEF: "the The Dominion of Gold Coast Northe Thern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_dominion_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_dominion: "Dominion of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_dominion_DEF: "the Dominion of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_ENG_dominion_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_dominion: "Dominion of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_dominion_DEF: "the Dominion of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBR_dominion_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_dominion: "Dominion of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_dominion_DEF: "the Dominion of Gold Coast Northern Territories"
+ GOLDCOASTNORTHERNTERRITORIES_GBRandIRE_dominion_ADJ: "$OVERLORD$ Gold Coast Northern Territories"
+ 
+#新大陸
+ NORTHGREENLAND_dominion: "Dominion of North Greenland"
+ NORTHGREENLAND_dominion_DEF: "the The Dominion of North Greenland"
+ NORTHGREENLAND_dominion_ADJ: "$OVERLORD$ North Greenlander"
+ 
+ SOUTHGREENLAND_dominion: "Dominion of South Greenland"
+ SOUTHGREENLAND_dominion_DEF: "the The Dominion of South Greenland"
+ SOUTHGREENLAND_dominion_ADJ: "$OVERLORD$ South Greenlander"
+ 
+#大洋州
+ COOKISLANDS_federation_ENG_colony: "$OVERLORDADJ$ Cook Islands Federation"
+ COOKISLANDS_federation_ENG_colony_DEF: "the the The $OVERLORDADJ$ Cook Islands Federation"
+ COOKISLANDS_federation_ENG_colony_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_ENG_protected_territory: "$OVERLORDADJ$ Protectorate of Cook Islands Federation"
+ COOKISLANDS_federation_ENG_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Cook Islands Federation"
+ COOKISLANDS_federation_ENG_protected_territory_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_ENG_trust_territory: "$OVERLORDADJ$ Trust Territory of Cook Islands Federation"
+ COOKISLANDS_federation_ENG_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Cook Islands Federation"
+ COOKISLANDS_federation_ENG_trust_territory_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_ENG_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Cook Islands Federation"
+ COOKISLANDS_federation_ENG_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cook Islands Federation"
+ COOKISLANDS_federation_ENG_mandated_territory_A_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBR_colony: "$OVERLORDADJ$ Cook Islands Federation"
+ COOKISLANDS_federation_GBR_colony_DEF: "the the The $OVERLORDADJ$ Cook Islands Federation"
+ COOKISLANDS_federation_GBR_colony_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBR_protected_territory: "$OVERLORDADJ$ Protectorate of Cook Islands Federation"
+ COOKISLANDS_federation_GBR_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Cook Islands Federation"
+ COOKISLANDS_federation_GBR_protected_territory_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBR_trust_territory: "$OVERLORDADJ$ Trust Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBR_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBR_trust_territory_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBR_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBR_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBR_mandated_territory_A_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBRandIRE_colony: "$OVERLORDADJ$ Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_colony_DEF: "the the The $OVERLORDADJ$ Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_colony_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBRandIRE_protected_territory: "$OVERLORDADJ$ Protectorate of Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_protected_territory_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBRandIRE_trust_territory: "$OVERLORDADJ$ Trust Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_trust_territory_ADJ: "$OVERLORD$ Cook Islands"
+ COOKISLANDS_federation_GBRandIRE_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Cook Islands Federation"
+ COOKISLANDS_federation_GBRandIRE_mandated_territory_A_ADJ: "$OVERLORD$ Cook Islands"
+ 
+ KIRandTVL_ENG_colony: "$OVERLORDADJ$ Colony of Kiribati and Tuvalu"
+ KIRandTVL_ENG_colony_DEF: "the the The $OVERLORDADJ$ Colony of Kiribati and Tuvalu"
+ KIRandTVL_ENG_colony_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_colonies_federation: "$OVERLORDADJ$ Federal Colony of Kiribati and Tuvalu"
+ KIRandTVL_ENG_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Kiribati and Tuvalu"
+ KIRandTVL_ENG_colonies_federation_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_ENG_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_ENG_colony_and_protected_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_condominium: "Condominium of Kiribati and Tuvalu"
+ KIRandTVL_ENG_condominium_DEF: "the the The Condominium of Kiribati and Tuvalu"
+ KIRandTVL_ENG_condominium_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_overseas_territory: "$OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_ENG_overseas_territory_DEF: "the the The $OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_ENG_overseas_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_viceroyalty: "Viceroyalty of Kiribati and Tuvalu"
+ KIRandTVL_ENG_viceroyalty_DEF: "the the The Viceroyalty of Kiribati and Tuvalu"
+ KIRandTVL_ENG_viceroyalty_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_captaincy_general: "Captaincy General of Kiribati and Tuvalu"
+ KIRandTVL_ENG_captaincy_general_DEF: "the the The Captaincy General of Kiribati and Tuvalu"
+ KIRandTVL_ENG_captaincy_general_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_protected_territory: "$OVERLORDADJ$ Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_ENG_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_ENG_protected_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_constituent_autonomous_province: "$OVERLORDADJ$ Province of Kiribati and Tuvalu"
+ KIRandTVL_ENG_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Kiribati and Tuvalu"
+ KIRandTVL_ENG_constituent_autonomous_province_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_trust_territory: "$OVERLORDADJ$ Trust Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_trust_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_mandated_territory_A_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_mandated_territory_B_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_ENG_mandated_territory_C_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_leased_territory: "$OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_ENG_leased_territory_DEF: "the the The $OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_ENG_leased_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_colony: "$OVERLORDADJ$ Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBR_colony_DEF: "the the The $OVERLORDADJ$ Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBR_colony_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_colonies_federation: "$OVERLORDADJ$ Federal Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBR_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBR_colonies_federation_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBR_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBR_colony_and_protected_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_condominium: "Condominium of Kiribati and Tuvalu"
+ KIRandTVL_GBR_condominium_DEF: "the the The Condominium of Kiribati and Tuvalu"
+ KIRandTVL_GBR_condominium_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_overseas_territory: "$OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBR_overseas_territory_DEF: "the the The $OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBR_overseas_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_viceroyalty: "Viceroyalty of Kiribati and Tuvalu"
+ KIRandTVL_GBR_viceroyalty_DEF: "the the The Viceroyalty of Kiribati and Tuvalu"
+ KIRandTVL_GBR_viceroyalty_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_captaincy_general: "Captaincy General of Kiribati and Tuvalu"
+ KIRandTVL_GBR_captaincy_general_DEF: "the the The Captaincy General of Kiribati and Tuvalu"
+ KIRandTVL_GBR_captaincy_general_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_protected_territory: "$OVERLORDADJ$ Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBR_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBR_protected_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_constituent_autonomous_province: "$OVERLORDADJ$ Province of Kiribati and Tuvalu"
+ KIRandTVL_GBR_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Kiribati and Tuvalu"
+ KIRandTVL_GBR_constituent_autonomous_province_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_trust_territory: "$OVERLORDADJ$ Trust Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_trust_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_mandated_territory_A_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_mandated_territory_B_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBR_mandated_territory_C_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_leased_territory: "$OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBR_leased_territory_DEF: "the the The $OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBR_leased_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_colony: "$OVERLORDADJ$ Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_colony_DEF: "the the The $OVERLORDADJ$ Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_colony_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_colonies_federation: "$OVERLORDADJ$ Federal Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_colonies_federation_DEF: "the the The $OVERLORDADJ$ Federal Colony of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_colonies_federation_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_colony_and_protected_territory: "$OVERLORDADJ$ Colony and Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_colony_and_protected_territory_DEF: "the the The $OVERLORDADJ$ Colony and Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_colony_and_protected_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_condominium: "Condominium of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_condominium_DEF: "the the The Condominium of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_condominium_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_overseas_territory: "$OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_overseas_territory_DEF: "the the The $OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_overseas_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_viceroyalty: "Viceroyalty of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_viceroyalty_DEF: "the the The Viceroyalty of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_viceroyalty_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_captaincy_general: "Captaincy General of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_captaincy_general_DEF: "the the The Captaincy General of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_captaincy_general_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_protected_territory: "$OVERLORDADJ$ Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_protected_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_constituent_autonomous_province: "$OVERLORDADJ$ Province of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_constituent_autonomous_province_DEF: "the the The $OVERLORDADJ$ Province of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_constituent_autonomous_province_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_trust_territory: "$OVERLORDADJ$ Trust Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_trust_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_mandated_territory_A_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_mandated_territory_B: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_mandated_territory_B_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_mandated_territory_B_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_mandated_territory_C: "$OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_mandated_territory_C_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_mandated_territory_C_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_leased_territory: "$OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_leased_territory_DEF: "the the The $OVERLORDADJ$ Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_leased_territory_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_dominion: "Dominion of Kiribati and Tuvalu"
+ KIRandTVL_dominion_DEF: "the The Dominion of Kiribati and Tuvalu"
+ KIRandTVL_dominion_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_ENG_dominion: "Dominion of Kiribati and Tuvalu"
+ KIRandTVL_ENG_dominion_DEF: "the Dominion of Kiribati and Tuvalu"
+ KIRandTVL_ENG_dominion_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBR_dominion: "Dominion of Kiribati and Tuvalu"
+ KIRandTVL_GBR_dominion_DEF: "the Dominion of Kiribati and Tuvalu"
+ KIRandTVL_GBR_dominion_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ KIRandTVL_GBRandIRE_dominion: "Dominion of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_dominion_DEF: "the Dominion of Kiribati and Tuvalu"
+ KIRandTVL_GBRandIRE_dominion_ADJ: "$OVERLORD$ I-Kiribati and Tuvaluan"
+ 
+ RAROTONGA_kingdom_ENG_colony: "$OVERLORDADJ$ Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_colony_DEF: "the the The $OVERLORDADJ$ Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_colony_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_ENG_protected_territory: "$OVERLORDADJ$ Protectorate of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_protected_territory_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_ENG_trust_territory: "$OVERLORDADJ$ Trust Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_trust_territory_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_ENG_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_ENG_mandated_territory_A_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBR_colony: "$OVERLORDADJ$ Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_colony_DEF: "the the The $OVERLORDADJ$ Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_colony_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBR_protected_territory: "$OVERLORDADJ$ Protectorate of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_protected_territory_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBR_trust_territory: "$OVERLORDADJ$ Trust Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_trust_territory_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBR_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBR_mandated_territory_A_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBRandIRE_colony: "$OVERLORDADJ$ Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_colony_DEF: "the the The $OVERLORDADJ$ Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_colony_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBRandIRE_protected_territory: "$OVERLORDADJ$ Protectorate of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_protected_territory_DEF: "the the The $OVERLORDADJ$ Protectorate of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_protected_territory_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBRandIRE_trust_territory: "$OVERLORDADJ$ Trust Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_trust_territory_DEF: "the the The $OVERLORDADJ$ Trust Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_trust_territory_ADJ: "$OVERLORD$ Rarotongan"
+ RAROTONGA_kingdom_GBRandIRE_mandated_territory_A: "$OVERLORDADJ$ Mandate Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_mandated_territory_A_DEF: "the the The $OVERLORDADJ$ Mandate Territory of Kingdom of Rarotonga"
+ RAROTONGA_kingdom_GBRandIRE_mandated_territory_A_ADJ: "$OVERLORD$ Rarotongan"
+ 
+#アメリカ諸州
+##国家連合
+#アジア
+#ヨーロッパ
+#アフリカ
+#新大陸
+#大洋州
+#アメリカ諸州
