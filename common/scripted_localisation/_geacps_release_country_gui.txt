@@ -2,22 +2,22 @@ defined_text = { #リストに表示される名称
 	name = pfk_list_name
 	text = {
 		trigger = {	check_variable = { ROOT.pfk_setting_progress = 0 }	}
-		localization_key = "[?target.GetNonIdeologyNameDef]"
+		localization_key = pfk_list_name_0
 	}
 	# text = {
 	# 	trigger = {
 	# 		check_variable = { ROOT.pfk_setting_progress = 1 }
 	# 		check_variable = { target = token:pfk_method_puppet }
 	# 	}
-	# 	localization_key = "[pfk_puppet_name]"
+	# 	localization_key = pfk_list_name_1
 	# }
 	text = {
 		trigger = {	check_variable = { ROOT.pfk_setting_progress = 2 }	}
-		localization_key = "[?target.GetTokenLocalizedKey]"
+		localization_key = pfk_list_name_2
 	}
 	text = {
 		trigger = {	always = yes }
-		localization_key = "[?target.GetTokenLocalizedKey]"
+		localization_key = pfk_list_name_z
 	}
 }
 
@@ -25,18 +25,18 @@ defined_text = { #今選択中の内容
 	name = pfk_current_name
 	text = {
 		trigger = {	check_variable = { ROOT.pfk_setting_progress = 0 }	}
-		localization_key = "[?ROOT.pfk_current_target.GetNonIdeologyNameDef]"
+		localization_key = pfk_current_name_0
 	}
 	# text = {
 	# 	trigger = {
 	# 		check_variable = { ROOT.pfk_setting_progress = 1 }
 	# 		check_variable = { ROOT.pfk_current_target = token:pfk_method_puppet }
 	# 	}
-	# 	localization_key = "[pfk_puppet_name]"
+	# 	localization_key = pfk_current_name_1
 	# }
 	text = {
 		trigger = {	always = yes }
-		localization_key = "[?ROOT.pfk_current_target.GetTokenLocalizedKey]"
+		localization_key = pfk_current_name_z
 	}
 }
 defined_text = { #選んだことリスト
@@ -71,11 +71,11 @@ defined_text = { #選んだことリスト
 	}
 	text = {
 		trigger = { check_variable = { i = 0 } }
-		localization_key = "[?choice.GetNonIdeologyNameDef]"
+		localization_key = pfk_choice_name_ideology
 	}
 	text = {
 		trigger = {	always = yes }
-		localization_key = "[?choice.GetTokenLocalizedKey]"
+		localization_key = pfk_choice_name_localisation
 	}
 }
 defined_text = { #リストに表示される名称
@@ -84,18 +84,18 @@ defined_text = { #リストに表示される名称
 		trigger = {
 			check_variable = { pfk_setting_list^1 = token:pfk_method_return }
 		}
-		localization_key = "pfk_method_return"
+		localization_key = pfk_method_return
 	}
 	text = {
 		trigger = {
 			check_variable = { ROOT.pfk_setting_progress > 2 }
 		}
-		localization_key = "pfk_popup"
+		localization_key = pfk_popup
 	}
 
 	text = {
 		trigger = {	always = yes }
-		localization_key = "pfk_next"
+		localization_key = pfk_next
 	}
 }
 
@@ -109,14 +109,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {	ROOT = { tag = GER } }
-		localization_key = "tributary_state"
+		localization_key = tributary_state
 	}
 	text = {
 		trigger = {	ROOT = { tag = RUS } }
-		localization_key = "soviet_satellite"
+		localization_key = soviet_satellite
 	}
 	text = {
 		trigger = {	always = yes }
-		localization_key = "puppet"
+		localization_key = puppet
 	}
 }
