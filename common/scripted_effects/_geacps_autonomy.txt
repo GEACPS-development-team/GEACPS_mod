@@ -33,14 +33,9 @@ set_mandated_territory_C = {	set_autonomy = {	target = PREV	autonomous_state = m
 
 #personal union
 set_personal_union = {	set_autonomy = {	target = PREV	autonomous_state = personal_union	}	}
-set_real_union = {	set_autonomy = {	target = PREV	autonomous_state = real_union	}	}
 set_personal_union_protected_territory = {
 	PREV = {	add_ideas = dependent_territory_indirect_rule_system	}
 	set_autonomy = {	target = PREV	autonomous_state = personal_union_protected_territory	}
-}
-set_personal_union_colony = {	#
-	PREV = {	add_ideas = dependent_territory_direct_rule_system	}
-	set_autonomy = {	target = PREV	autonomous_state = personal_union_colony	}
 }
 set_crown_dependency = {	set_autonomy = {	target = PREV	autonomous_state = crown_dependency	}	}
 

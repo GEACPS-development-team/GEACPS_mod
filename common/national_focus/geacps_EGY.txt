@@ -1412,13 +1412,13 @@ shared_focus = {
 }
 
 shared_focus = {
-	id = EGY_request_to_PER
+	id = EGY_request_to_IRN
 	icon = GFX_goal_unknown
 	cost = 2
 	x = 0
 	y = 1
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus EGY_request_to_PER"
+		log = "[GetDateText]: [Root.GetName]: Focus EGY_request_to_IRN"
 	}
 	relative_position_id = EGY_joining_baath_party
 	prerequisite = { focus = EGY_joining_baath_party }
@@ -1433,8 +1433,8 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EGY_arab_recovery"
 	}
-	relative_position_id = EGY_request_to_PER
-	prerequisite = { focus = EGY_request_to_PER }
+	relative_position_id = EGY_request_to_IRN
+	prerequisite = { focus = EGY_request_to_IRN }
 }
 
 shared_focus = {
