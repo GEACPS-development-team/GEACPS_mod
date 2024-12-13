@@ -28,13 +28,13 @@ BHU = {	#ブータン
 	color = rgb { 172 122 88 }
 	color_ui = rgb { 172 122 88 }
 }
-BRM = {	#ビルマ
-	color = rgb { 76 153 0 }
-	color_ui = rgb { 76 153 0 }
-}
 BUK = {	#ブハラ
 	color = rgb { 0 154 48 }
 	color_ui = rgb { 0 154 48 }
+}
+BRM = {	#ビルマ
+	color = rgb { 76 153 0 }
+	color_ui = rgb { 76 153 0 }
 }
 BYA = {	#ブリヤート
 	color = rgb { 3 44 157 }
@@ -65,12 +65,16 @@ GXC = {	#広西
 	color_ui = rgb { 129 142 158 }
 }
 IND = {	#インド
-	color = rgb { 239 201 2 }
-	color_ui = rgb { 239 201 2 }
+	color = rgb { 255 102 0 }
+	color_ui = rgb { 255 102 0 }
 }
 INS = {	#インドネシア
 	color = rgb { 40 50 120 }
 	color_ui = rgb { 40 50 120 }
+}
+IRN = {	#イラン
+	color = rgb { 71 113 97 }
+	color_ui = rgb { 71 113 97 }
 }
 IRQ = {	#イラク
 	color = rgb { 178 114 99 }
@@ -88,6 +92,10 @@ JOR = {	#ヨルダン
 	color = rgb { 111 55 78 }
 	color_ui = rgb { 111 55 78 }
 }
+KKP = {	#カラカルパクスタン
+	color = rgb { 255 195 29 }
+	color_ui = rgb { 255 195 29 }
+}
 KAZ = {	#カザフスタン
 	color = rgb { 0 175 202 }
 	color_ui = rgb { 0 175 202 }
@@ -95,10 +103,6 @@ KAZ = {	#カザフスタン
 KHI = {	#ヒヴァ
 	color = rgb { 16 46 42 }
 	color_ui = rgb { 16 46 42 }
-}
-KKP = {	#カラカルパクスタン
-	color = rgb { 255 195 29 }
-	color_ui = rgb { 255 195 29 }
 }
 KOR = {	#韓
 	color = rgb { 41 23 110 }
@@ -112,7 +116,7 @@ KUW = {	#クウェート
 	color = rgb { 153 76 0 }
 	color_ui = rgb { 153 76 0 }
 }
-KYR = {	#キルギス
+KYR = {	#キルギスタン
 	color = rgb { 255 116 0 }
 	color_ui = rgb { 255 116 0 }
 }
@@ -128,17 +132,17 @@ MAL = {	#マラヤ
 	color = rgb { 213 169 121 }
 	color_ui = rgb { 213 169 121 }
 }
+MLD = {	#モルディブ
+	color = rgb { 204 0 102 }
+	color_ui = rgb { 204 0 102 }
+}
 MAN = {	#満州
 	color = rgb { 255 120 71 }
 	color_ui = rgb { 255 120 71 }
 }
-MEN = {	#蒙古
+MEN = {	#蒙疆
 	color = rgb { 185 255 152 }
 	color_ui = rgb { 185 255 152 }
-}
-MLD = {	#モルディブ
-	color = rgb { 204 0 102 }
-	color_ui = rgb { 204 0 102 }
 }
 MON = {	#モンゴル
 	color = rgb { 92 92 92 }
@@ -160,10 +164,6 @@ PAL = {	#パレスチナ
 	color = rgb { 170 125 80 }
 	color_ui = rgb { 170 125 80 }
 }
-PER = {	#ペルシャ
-	color = rgb { 71 113 97 }
-	color_ui = rgb { 71 113 97 }
-}
 PHI = {	#フィリピン
 	color = rgb { 102 43 89 }
 	color_ui = rgb { 102 43 89 }
@@ -171,6 +171,10 @@ PHI = {	#フィリピン
 QAT = {	#カタール
 	color = rgb { 128 0 0 }
 	color_ui = rgb { 128 0 0 }
+}
+SKH = {	#サハ
+	color = rgb { 158 213 255 }
+	color_ui = rgb { 158 213 255 }
 }
 SAU = {	#サウード
 	color = rgb { 0 108 53 }
@@ -192,10 +196,6 @@ SIK = {	#新疆
 	color = rgb { 214 190 74 }
 	color_ui = rgb { 214 190 74 }
 }
-SKH = {	#サハ
-	color = rgb { 158 213 255 }
-	color_ui = rgb { 158 213 255 }
-}
 SRL = {	#スリランカ
 	color = rgb { 141 21 58 }
 	color_ui = rgb { 141 21 58 }
@@ -216,10 +216,6 @@ TIB = {	#チベット
 	color = rgb { 168 166 167 }
 	color_ui = rgb { 168 166 167 }
 }
-TMS = {	#トルクメニスタン
-	color = rgb { 0 132 61 }
-	color_ui = rgb { 0 132 61 }
-}
 TRC = {	#トルーシャル・オマーン
 	color = rgb { 102 102 0 }
 	color_ui = rgb { 102 102 0 }
@@ -227,6 +223,10 @@ TRC = {	#トルーシャル・オマーン
 TUR = {	#トルコ
 	color = rgb { 227 10 23 }
 	color_ui = rgb { 227 10 23 }
+}
+TMS = {	#トルクメニスタン
+	color = rgb { 0 132 61 }
+	color_ui = rgb { 0 132 61 }
 }
 TUV = {	#トゥヴァ
 	color = rgb { 99 177 229 }
@@ -266,29 +266,33 @@ YUN = {	#雲南
 }
 
 #ヨーロッパ
-ADU = {	#アンダルシア
-	color = rgb { 240 230 155 }
-	color_ui = rgb { 240 230 155 }
-}
 ALB = {	#アルバニア
 	color = rgb { 149 45 102 }
 	color_ui = rgb { 149 45 102 }
+}
+ADU = {	#アンダルシア
+	color = rgb { 240 230 155 }
+	color_ui = rgb { 240 230 155 }
 }
 AUS = {	#オーストリア
 	color = rgb { 194 198 215 }
 	color_ui = rgb { 194 198 215 }
 }
+BSK = {	#バシコルトスタン
+	color = rgb { 85 157 166 }
+	color_ui = rgb { 85 157 166 }
+}
 BAY = {	#バイエルン
 	color = rgb { 0 152 212 }
 	color_ui = rgb { 0 152 212 }
 }
-BEL = {	#ベルギー
-	color = rgb { 250 224 66 }
-	color_ui = rgb { 250 224 66 }
-}
 BLR = {	#ベラルーシ
 	color = rgb { 180 220 190 }
 	color_ui = rgb { 180 220 190 }
+}
+BEL = {	#ベルギー
+	color = rgb { 250 224 66 }
+	color_ui = rgb { 250 224 66 }
 }
 BOS = {	#ボスニア
 	color = rgb { 255 240 40 }
@@ -297,10 +301,6 @@ BOS = {	#ボスニア
 BRI = {	#ブルターニュ
 	color = rgb { 170 170 170 }
 	color_ui = rgb { 170 170 170 }
-}
-BSK = {	#バシコルトスタン
-	color = rgb { 85 157 166 }
-	color_ui = rgb { 85 157 166 }
 }
 BUL = {	#ブルガリア
 	color = rgb { 0 150 110 }
@@ -331,20 +331,20 @@ CYP = {	#キプロス
 	color_ui = rgb { 237 128 0 }
 }
 CZE = {	#チェコ
-	color = rgb { 17 69 126 }
-	color_ui = rgb { 17 69 126 }
+	color = rgb { 54 167 156 }
+	color_ui = rgb { 54 167 156 }
 }
 DAG = {	#ダゲスタン
 	color = rgb { 0 145 64 }
 	color_ui = rgb { 0 145 64 }
 }
-DEN = {	#デンマーク
-	color = rgb { 198 12 48 }
-	color_ui = rgb { 198 12 48 }
-}
 DNZ = {	#ダンツィヒ
 	color = rgb { 191 0 0 }
 	color_ui = rgb { 191 0 0 }
+}
+DEN = {	#デンマーク
+	color = rgb { 198 12 48 }
+	color_ui = rgb { 198 12 48 }
 }
 DON = {	#ドン
 	color = rgb { 247 197 0 }
@@ -370,13 +370,13 @@ FRA = {	#フランス
 	color = rgb { 0 35 149 }
 	color_ui = rgb { 0 35 149 }
 }
-GER = {	#ドイツ
-	color = rgb { 102 89 86 }
-	color_ui = rgb { 102 89 86 }
-}
 GLC = {	#ガリシア
 	color = rgb { 0 153 204 }
 	color_ui = rgb { 0 153 204 }
+}
+GER = {	#ドイツ
+	color = rgb { 102 89 86 }
+	color_ui = rgb { 102 89 86 }
 }
 GRE = {	#ギリシャ
 	color = rgb { 10 80 161 }
@@ -386,13 +386,13 @@ HAN = {	#ハノーファー
 	color = rgb { 255 206 8 }
 	color_ui = rgb { 255 206 8 }
 }
-HOL = {	#ホラント
-	color = rgb { 230 165 80 }
-	color_ui = rgb { 230 165 80 }
-}
 HRZ = {	#ヘルツェゴビナ
 	color = rgb { 3 102 56 }
 	color_ui = rgb { 3 102 56 }
+}
+HOL = {	#ホラント
+	color = rgb { 230 165 80 }
+	color_ui = rgb { 230 165 80 }
 }
 HUN = {	#ハンガリー
 	color = rgb { 205 42 62 }
@@ -410,6 +410,10 @@ ITA = {	#イタリア
 	color = rgb { 0 146 70 }
 	color_ui = rgb { 0 146 70 }
 }
+KBK = {	#カバルダ＝バルカル
+	color = rgb { 115 193 164 }
+	color_ui = rgb { 115 193 164 }
+}
 KAL = {	#カルムイク
 	color = rgb { 255 199 44 }
 	color_ui = rgb { 255 199 44 }
@@ -418,9 +422,9 @@ KAR = {	#カレリア
 	color = rgb { 0 156 170 }
 	color_ui = rgb { 0 156 170 }
 }
-KBK = {	#カバルダ＝バルカル
-	color = rgb { 115 193 164 }
-	color_ui = rgb { 115 193 164 }
+KSH = {	#カシュビア
+	color = rgb { 124 112 0 }
+	color_ui = rgb { 124 112 0 }
 }
 KHA = {	#ハカス
 	color = rgb { 51 204 51 }
@@ -433,10 +437,6 @@ KOM = {	#コミ
 KOS = {	#コソボ
 	color = rgb { 208 166 80 }
 	color_ui = rgb { 208 166 80 }
-}
-KSH = {	#カシュビア
-	color = rgb { 124 112 0 }
-	color_ui = rgb { 124 112 0 }
 }
 KUB = {	#クバン
 	color = rgb { 217 21 123 }
@@ -458,45 +458,45 @@ MAC = {	#マケドニア
 	color = rgb { 210 0 0 }
 	color_ui = rgb { 210 0 0 }
 }
-MEK = {	#メクレンブルク
-	color = rgb { 252 195 0 }
-	color_ui = rgb { 252 195 0 }
+MLT = {	#マルタ
+	color = rgb { 211 207 173 }
+	color_ui = rgb { 211 207 173 }
 }
 MEL = {	#マリ・エル
 	color = rgb { 233 200 196 }
 	color_ui = rgb { 233 200 196 }
 }
-MLT = {	#マルタ
-	color = rgb { 211 207 173 }
-	color_ui = rgb { 211 207 173 }
-}
-MNT = {	#モンテネグロ
-	color = rgb { 104 182 182 }
-	color_ui = rgb { 104 182 182 }
+MEK = {	#メクレンブルク
+	color = rgb { 252 195 0 }
+	color_ui = rgb { 252 195 0 }
 }
 MOL = {	#モルダヴィア
 	color = rgb { 199 0 103 }
 	color_ui = rgb { 199 0 103 }
 }
+MNT = {	#モンテネグロ
+	color = rgb { 104 182 182 }
+	color_ui = rgb { 104 182 182 }
+}
 NAV = {	#ナバラ
 	color = rgb { 218 18 26 }
 	color_ui = rgb { 218 18 26 }
-}
-NCC = {	#北コーカサス
-	color = rgb { 54 159 48 }
-	color_ui = rgb { 54 159 48 }
 }
 NEN = {	#ネネツ
 	color = rgb { 112 142 206 }
 	color_ui = rgb { 112 142 206 }
 }
-NIR = {	#北アイルランド
-	color = rgb { 255 153 51 }
-	color_ui = rgb { 255 153 51 }
+NCC = {	#北コーカサス
+	color = rgb { 54 159 48 }
+	color_ui = rgb { 54 159 48 }
 }
 NOA = {	#北オセチア
 	color = rgb { 243 104 27 }
 	color_ui = rgb { 243 104 27 }
+}
+NIR = {	#北アイルランド
+	color = rgb { 255 153 51 }
+	color_ui = rgb { 255 153 51 }
 }
 NOR = {	#ノルウェー
 	color = rgb { 119 41 74 }
@@ -522,9 +522,17 @@ ROM = {	#ルーマニア
 	color = rgb { 252 209 22 }
 	color_ui = rgb { 252 209 22 }
 }
+SRD = {	#サルディーニャ
+	color = rgb { 0 49 165 }
+	color_ui = rgb { 0 49 165 }
+}
 SAX = {	#ザクセン
 	color = rgb { 22 108 35 }
 	color_ui = rgb { 22 108 35 }
+}
+SHL = {	#シュレースヴィヒ
+	color = rgb { 51 51 255 }
+	color_ui = rgb { 51 51 255 }
 }
 SCO = {	#スコットランド
 	color = rgb { 0 101 189 }
@@ -533,10 +541,6 @@ SCO = {	#スコットランド
 SER = {	#セルビア
 	color = rgb { 12 64 118 }
 	color_ui = rgb { 12 64 118 }
-}
-SHL = {	#シュレースヴィヒ
-	color = rgb { 51 51 255 }
-	color_ui = rgb { 51 51 255 }
 }
 SIC = {	#シチリア
 	color = rgb { 248 228 133 }
@@ -558,13 +562,9 @@ SOV = {	#ソビエト
 	color = rgb { 125 13 24 }
 	color_ui = rgb { 125 13 24 }
 }
-SPR = {	#スペイン
+SPA = {	#スペイン
 	color = rgb { 242 154 6 }
 	color_ui = rgb { 242 154 6 }
-}
-SRD = {	#サルディーニャ
-	color = rgb { 0 49 165 }
-	color_ui = rgb { 0 49 165 }
 }
 SWE = {	#スウェーデン
 	color = rgb { 0 106 167 }
@@ -598,21 +598,21 @@ VAT = {	#バチカン
 	color = rgb { 236 175 3 }
 	color_ui = rgb { 236 175 3 }
 }
-VLG = {	#ヴォルガ
-	color = rgb { 147 143 4 }
-	color_ui = rgb { 147 143 4 }
-}
 VNC = {	#ヴェネツィア
 	color = rgb { 194 45 4 }
 	color_ui = rgb { 194 45 4 }
 }
-WGR = {	#西ドイツ
-	color = rgb { 128 128 128 }
-	color_ui = rgb { 128 128 128 }
+VLG = {	#ヴォルガ
+	color = rgb { 147 143 4 }
+	color_ui = rgb { 147 143 4 }
 }
 WLS = {	#ウェールズ
 	color = rgb { 0 171 57 }
 	color_ui = rgb { 0 171 57 }
+}
+WGR = {	#西ドイツ
+	color = rgb { 128 128 128 }
+	color_ui = rgb { 128 128 128 }
 }
 WUR = {	#ヴュルテンベルク
 	color = rgb { 189 18 32 }
@@ -652,7 +652,11 @@ BRD = {	#ブルンジ
 	color = rgb { 45 186 71 }
 	color_ui = rgb { 45 186 71 }
 }
-CAR = {	#中央アフリカ
+CMR = {	#カメルーン
+	color = rgb { 0 122 94 }
+	color_ui = rgb { 0 122 94 }
+}
+CAF = {	#中央アフリカ
 	color = rgb { 210 16 52 }
 	color_ui = rgb { 210 16 52 }
 }
@@ -660,13 +664,13 @@ CHA = {	#チャド
 	color = rgb { 254 203 0 }
 	color_ui = rgb { 254 203 0 }
 }
-CMR = {	#カメルーン
-	color = rgb { 0 122 94 }
-	color_ui = rgb { 0 122 94 }
-}
 COG = {	#コンゴ
 	color = rgb { 216 212 73 }
 	color_ui = rgb { 216 212 73 }
+}
+IVO = {	#コートジボワール
+	color = rgb { 247 127 0 }
+	color_ui = rgb { 247 127 0 }
 }
 DAH = {	#ダホメ
 	color = rgb { 139 122 53 }
@@ -700,10 +704,6 @@ GAB = {	#ガボン
 	color = rgb { 58 117 196 }
 	color_ui = rgb { 58 117 196 }
 }
-GAM = {	#ガンビア
-	color = rgb { 58 119 40 }
-	color_ui = rgb { 58 119 40 }
-}
 GBA = {	#ガンベラ
 	color = rgb { 0 153 51 }
 	color_ui = rgb { 0 153 51 }
@@ -716,7 +716,7 @@ GNA = {	#ギニア
 	color = rgb { 0 148 96 }
 	color_ui = rgb { 0 148 96 }
 }
-GNB = {	#ギニアビサウ
+GNB = {	#ギニア＝ビサウ
 	color = rgb { 126 183 47 }
 	color_ui = rgb { 126 183 47 }
 }
@@ -724,61 +724,57 @@ HAR = {	#ハラール
 	color = rgb { 242 242 242 }
 	color_ui = rgb { 242 242 242 }
 }
-IVO = {	#コートジボワール
-	color = rgb { 247 127 0 }
-	color_ui = rgb { 247 127 0 }
-}
 KEN = {	#ケニア
 	color = rgb { 145 103 14 }
 	color_ui = rgb { 145 103 14 }
-}
-LBA = {	#リビア
-	color = rgb { 35 158 70 }
-	color_ui = rgb { 35 158 70 }
 }
 LIB = {	#リベリア
 	color = rgb { 76 53 104 }
 	color_ui = rgb { 76 53 104 }
 }
+LBA = {	#リビア
+	color = rgb { 35 158 70 }
+	color_ui = rgb { 35 158 70 }
+}
 MAD = {	#マダガスカル
 	color = rgb { 189 113 112 }
 	color_ui = rgb { 189 113 112 }
 }
-MCG = {	#中部コンゴ
-	color = rgb { 73 103 124 }
-	color_ui = rgb { 73 103 124 }
-}
-MLI = {	#マリ
-	color = rgb { 20 181 58 }
-	color_ui = rgb { 20 181 58 }
-}
-MLW = {	#マラウィ
+MLW = {	#マラウイ
 	color = rgb { 153 204 0 }
 	color_ui = rgb { 153 204 0 }
 }
-MOR = {	#モロッコ
-	color = rgb { 193 39 45 }
-	color_ui = rgb { 193 39 45 }
+MLI = {	#マリ
+	color = rgb { 204 204 255 }
+	color_ui = rgb { 204 204 255 }
 }
 MRT = {	#モーリタニア
 	color = rgb { 198 174 11 }
 	color_ui = rgb { 198 174 11 }
 }
+MCG = {	#中部コンゴ
+	color = rgb { 73 103 124 }
+	color_ui = rgb { 73 103 124 }
+}
+MOR = {	#モロッコ
+	color = rgb { 193 39 45 }
+	color_ui = rgb { 193 39 45 }
+}
 MZB = {	#モザンビーク
 	color = rgb { 255 186 5 }
 	color_ui = rgb { 255 186 5 }
 }
-NGA = {	#ナイジェリア
-	color = rgb { 0 135 81 }
-	color_ui = rgb { 0 135 81 }
+NMB = {	#ナミビア
+	color = rgb { 0 53 128 }
+	color_ui = rgb { 0 53 128 }
 }
 NGE = {	#ニジェール
 	color = rgb { 224 82 6 }
 	color_ui = rgb { 224 82 6 }
 }
-NMB = {	#ナミビア
-	color = rgb { 0 53 128 }
-	color_ui = rgb { 0 53 128 }
+NGA = {	#ナイジェリア
+	color = rgb { 0 135 81 }
+	color_ui = rgb { 0 135 81 }
 }
 ORO = {	#オロミア
 	color = rgb { 255 77 77 }
@@ -791,10 +787,6 @@ RIF = {	#リーフ
 RWA = {	#ルワンダ
 	color = rgb { 185 187 2 }
 	color_ui = rgb { 185 187 2 }
-}
-SAF = {	#南アフリカ
-	color = rgb { 195 107 160 }
-	color_ui = rgb { 195 107 160 }
 }
 SEN = {	#セネガル
 	color = rgb { 76 165 64 }
@@ -812,9 +804,21 @@ SOM = {	#ソマリア
 	color = rgb { 0 128 131 }
 	color_ui = rgb { 0 128 131 }
 }
+SAF = {	#南アフリカ
+	color = rgb { 195 107 160 }
+	color_ui = rgb { 195 107 160 }
+}
 SUD = {	#スーダン
 	color = rgb { 135 144 180 }
 	color_ui = rgb { 135 144 180 }
+}
+TZN = {	#タンザニア
+	color = rgb { 215 204 28 }
+	color_ui = rgb { 215 204 28 }
+}
+GAM = {	#ガンビア
+	color = rgb { 58 119 40 }
+	color_ui = rgb { 58 119 40 }
 }
 TIG = {	#ティグレ
 	color = rgb { 230 71 21 }
@@ -827,10 +831,6 @@ TOG = {	#トーゴ
 TUN = {	#チュニジア
 	color = rgb { 146 134 57 }
 	color_ui = rgb { 146 134 57 }
-}
-TZN = {	#タンザニア
-	color = rgb { 215 204 28 }
-	color_ui = rgb { 215 204 28 }
 }
 UGA = {	#ウガンダ
 	color = rgb { 174 73 1 }
@@ -854,13 +854,13 @@ ZIM = {	#ジンバブエ
 }
 
 #新大陸
+USA = {	#アメリカ
+	color = rgb { 56 86 134 }
+	color_ui = rgb { 56 86 134 }
+}
 ARG = {	#アルゼンチン
 	color = rgb { 116 172 223 }
 	color_ui = rgb { 116 172 223 }
-}
-BAH = {	#バハマ
-	color = rgb { 0 204 204 }
-	color_ui = rgb { 0 204 204 }
 }
 BLZ = {	#ベリーズ
 	color = rgb { 0 60 135 }
@@ -894,21 +894,21 @@ COS = {	#コスタリカ
 	color = rgb { 152 128 43 }
 	color_ui = rgb { 152 128 43 }
 }
-CRC = {	#キュラソー
-	color = rgb { 124 138 73 }
-	color_ui = rgb { 124 138 73 }
-}
 CUB = {	#キューバ
 	color = rgb { 140 65 166 }
 	color_ui = rgb { 140 65 166 }
 }
-DOM = {	#ドミニカーナ
-	color = rgb { 0 45 98 }
-	color_ui = rgb { 0 45 98 }
+CRC = {	#キュラソー
+	color = rgb { 124 138 73 }
+	color_ui = rgb { 124 138 73 }
 }
 DXL = {	#ディキシーランド
 	color = rgb { 145 163 176 }
 	color_ui = rgb { 145 163 176 }
+}
+DOM = {	#ドミニカ
+	color = rgb { 0 45 98 }
+	color_ui = rgb { 0 45 98 }
 }
 ECU = {	#エクアドル
 	color = rgb { 249 146 98 }
@@ -970,6 +970,10 @@ SUR = {	#スリナム
 	color = rgb { 55 126 63 }
 	color_ui = rgb { 55 126 63 }
 }
+BAH = {	#バハマ
+	color = rgb { 0 204 204 }
+	color_ui = rgb { 0 204 204 }
+}
 TRI = {	#トリニダード
 	color = rgb { 96 96 96 }
 	color_ui = rgb { 96 96 96 }
@@ -978,15 +982,11 @@ URG = {	#ウルグアイ
 	color = rgb { 113 144 207 }
 	color_ui = rgb { 113 144 207 }
 }
-USA = {	#アメリカ
-	color = rgb { 56 86 134 }
-	color_ui = rgb { 56 86 134 }
-}
 VEN = {	#ベネズエラ
 	color = rgb { 82 104 122 }
 	color_ui = rgb { 82 104 122 }
 }
-WIN = {	#西インド
+WIN = {	#西インド諸島
 	color = rgb { 255 161 0 }
 	color_ui = rgb { 255 161 0 }
 }
@@ -1000,10 +1000,6 @@ FIJ = {	#フィジー
 	color = rgb { 105 179 231 }
 	color_ui = rgb { 105 179 231 }
 }
-FSM = {	#ミクロネシア
-	color = rgb { 118 179 222 }
-	color_ui = rgb { 118 179 222 }
-}
 GUM = {	#グアム
 	color = rgb { 60 240 100 }
 	color_ui = rgb { 60 240 100 }
@@ -1011,6 +1007,10 @@ GUM = {	#グアム
 HAW = {	#ハワイ
 	color = rgb { 239 239 0 }
 	color_ui = rgb { 239 239 0 }
+}
+FSM = {	#ミクロネシア
+	color = rgb { 118 179 222 }
+	color_ui = rgb { 118 179 222 }
 }
 NZL = {	#ニュージーランド
 	color = rgb { 69 86 193 }
@@ -1024,7 +1024,7 @@ SAM = {	#サモア
 	color = rgb { 205 20 95 }
 	color_ui = rgb { 205 20 95 }
 }
-SOL = {	#ソロモン
+SOL = {	#ソロモン諸島
 	color = rgb { 20 20 90 }
 	color_ui = rgb { 20 20 90 }
 }
@@ -1045,13 +1045,13 @@ AJA = {	#アジャリア
 	color = rgb { 44 90 160 }
 	color_ui = rgb { 44 90 160 }
 }
-ALP = {	#アレッポ
-	color = rgb { 252 236 171 }
-	color_ui = rgb { 252 236 171 }
-}
 ALW = {	#アラウイ
 	color = rgb { 255 187 0 }
 	color_ui = rgb { 255 187 0 }
+}
+ALP = {	#アレッポ
+	color = rgb { 252 236 171 }
+	color_ui = rgb { 252 236 171 }
 }
 AMR = {	#アムール
 	color = rgb { 130 195 150 }
@@ -1073,13 +1073,13 @@ ARS = {	#アラス
 	color = rgb { 223 101 115 }
 	color_ui = rgb { 223 101 115 }
 }
-BAL = {	#バルーチスタン
-	color = rgb { 0 66 38 }
-	color_ui = rgb { 0 66 38 }
-}
 BHR = {	#バーレーン
 	color = rgb { 240 183 190 }
 	color_ui = rgb { 240 183 190 }
+}
+BAL = {	#バルーチスタン
+	color = rgb { 0 66 38 }
+	color_ui = rgb { 0 66 38 }
 }
 BNG = {	#バンガナパッレ
 	color = rgb { 3 109 51 }
@@ -1089,10 +1089,6 @@ BRN = {	#ブルネイ
 	color = rgb { 247 224 23 }
 	color_ui = rgb { 247 224 23 }
 }
-CCH = {	#コーチシナ
-	color = rgb { 0 35 149 }
-	color_ui = rgb { 0 35 149 }
-}
 CCS = {	#コーカサス
 	color = rgb { 255 127 80 }
 	color_ui = rgb { 255 127 80 }
@@ -1101,17 +1097,21 @@ CHM = {	#チャンパーサック
 	color = rgb { 0 40 104 }
 	color_ui = rgb { 0 40 104 }
 }
-CHN = {	#チン
+CHN = {	#チンランド
 	color = rgb { 44 41 148 }
 	color_ui = rgb { 44 41 148 }
 }
-DAM = {	#ダマスカス
-	color = rgb { 88 113 143 }
-	color_ui = rgb { 88 113 143 }
+CCH = {	#コーチシナ
+	color = rgb { 0 35 149 }
+	color_ui = rgb { 0 35 149 }
 }
 DLI = {	#大連
 	color = rgb { 0 33 99 }
 	color_ui = rgb { 0 33 99 }
+}
+DAM = {	#ダマスカス
+	color = rgb { 88 113 143 }
+	color_ui = rgb { 88 113 143 }
 }
 DNU = {	#ダヌ
 	color = rgb { 25 162 0 }
@@ -1124,6 +1124,10 @@ DVN = {	#ドラヴィダ・ナードゥ
 EIN = {	#東インド
 	color = rgb { 0 94 255 }
 	color_ui = rgb { 0 94 255 }
+}
+EMO = {	#東モンゴル
+	color = rgb { 0 0 151 }
+	color_ui = rgb { 0 0 151 }
 }
 ETR = {	#東トルキスタン
 	color = rgb { 85 158 226 }
@@ -1149,17 +1153,21 @@ GAN = {	#甘粛
 	color = rgb { 153 116 53 }
 	color_ui = rgb { 153 116 53 }
 }
-GND = {	#広東
-	color = rgb { 153 108 51 }
-	color_ui = rgb { 153 108 51 }
-}
 GOA = {	#ゴア
 	color = rgb { 30 90 180 }
 	color_ui = rgb { 30 90 180 }
 }
+GND = {	#広東
+	color = rgb { 153 108 51 }
+	color_ui = rgb { 153 108 51 }
+}
 GZH = {	#貴州
 	color = rgb { 68 68 68 }
 	color_ui = rgb { 68 68 68 }
+}
+HIN = {	#海南
+	color = rgb { 90 125 104 }
+	color_ui = rgb { 90 125 104 }
 }
 HAS = {	#ハシーム
 	color = rgb { 163 30 35 }
@@ -1169,49 +1177,49 @@ HAT = {	#ハタイ
 	color = rgb { 243 150 156 }
 	color_ui = rgb { 243 150 156 }
 }
+HIL = {	#ハーイル
+	color = rgb { 248 196 32 }
+	color_ui = rgb { 248 196 32 }
+}
 HEB = {	#河北
 	color = rgb { 93 181 227 }
 	color_ui = rgb { 93 181 227 }
-}
-HEN = {	#河南
-	color = rgb { 122 112 173 }
-	color_ui = rgb { 122 112 173 }
 }
 HEZ = {	#ヒジャーズ
 	color = rgb { 210 190 155 }
 	color_ui = rgb { 210 190 155 }
 }
-HIL = {	#ハーイル
-	color = rgb { 248 196 32 }
-	color_ui = rgb { 248 196 32 }
+HEN = {	#河南
+	color = rgb { 122 112 173 }
+	color_ui = rgb { 122 112 173 }
 }
-HIN = {	#海南
-	color = rgb { 90 125 104 }
-	color_ui = rgb { 90 125 104 }
+HND = {	#ヒンドゥスタン
+	color = rgb { 239 201 2 }
+	color_ui = rgb { 239 201 2 }
 }
 HKG = {	#香港
 	color = rgb { 15 117 98 }
 	color_ui = rgb { 15 117 98 }
 }
-HNN = {	#湖南
-	color = rgb { 80 135 224 }
-	color_ui = rgb { 80 135 224 }
-}
 HUB = {	#湖北
 	color = rgb { 136 93 99 }
 	color_ui = rgb { 136 93 99 }
+}
+HNN = {	#湖南
+	color = rgb { 80 135 224 }
+	color_ui = rgb { 80 135 224 }
 }
 HYD = {	#ハイデラバード
 	color = rgb { 222 34 25 }
 	color_ui = rgb { 222 34 25 }
 }
-INC = {	#インドシナ
-	color = rgb { 255 255 0 }
-	color_ui = rgb { 255 255 0 }
-}
 INO = {	#インド洋
 	color = rgb { 70 0 150 }
 	color_ui = rgb { 70 0 150 }
+}
+INC = {	#インドシナ
+	color = rgb { 255 255 0 }
+	color_ui = rgb { 255 255 0 }
 }
 IRK = {	#イルクーツク
 	color = rgb { 128 204 255 }
@@ -1221,6 +1229,10 @@ JAD = {	#ジャバル・ドゥルーズ
 	color = rgb { 167 158 109 }
 	color_ui = rgb { 167 158 109 }
 }
+JRS = {	#エルサレム
+	color = rgb { 151 127 22 }
+	color_ui = rgb { 151 127 22 }
+}
 JGS = {	#江蘇
 	color = rgb { 190 165 140 }
 	color_ui = rgb { 190 165 140 }
@@ -1229,17 +1241,13 @@ JIA = {	#江西
 	color = rgb { 121 72 77 }
 	color_ui = rgb { 121 72 77 }
 }
-JNA = {	#ジュナーガド
-	color = rgb { 2 196 90 }
-	color_ui = rgb { 2 196 90 }
-}
 JOH = {	#ジョホール
 	color = rgb { 137 26 68 }
 	color_ui = rgb { 137 26 68 }
 }
-JRS = {	#エルサレム
-	color = rgb { 151 127 22 }
-	color_ui = rgb { 151 127 22 }
+JNA = {	#ジュナーガド
+	color = rgb { 2 196 90 }
+	color_ui = rgb { 2 196 90 }
 }
 KAC = {	#カチン
 	color = rgb { 55 115 107 }
@@ -1248,6 +1256,10 @@ KAC = {	#カチン
 KAM = {	#カムチャッカ
 	color = rgb { 200 255 255 }
 	color_ui = rgb { 200 255 255 }
+}
+KRE = {	#カレン
+	color = rgb { 88 102 207 }
+	color_ui = rgb { 88 102 207 }
 }
 KAS = {	#カシミール
 	color = rgb { 255 147 147 }
@@ -1265,25 +1277,21 @@ KEL = {	#クランタン
 	color = rgb { 204 0 0 }
 	color_ui = rgb { 204 0 0 }
 }
-KFT = {	#樺太
-	color = rgb { 71 165 174 }
-	color_ui = rgb { 71 165 174 }
+KMV = {	#ケメロヴォ
+	color = rgb { 114 84 100 }
+	color_ui = rgb { 114 84 100 }
 }
 KHB = {	#ハバロフスク
 	color = rgb { 59 148 65 }
 	color_ui = rgb { 59 148 65 }
 }
-KMV = {	#ケメロヴォ
-	color = rgb { 114 84 100 }
-	color_ui = rgb { 114 84 100 }
-}
 KOK = {	#コーカン
 	color = rgb { 45 49 148 }
 	color_ui = rgb { 45 49 148 }
 }
-KRE = {	#カレン
-	color = rgb { 88 102 207 }
-	color_ui = rgb { 88 102 207 }
+KFT = {	#樺太
+	color = rgb { 71 165 174 }
+	color_ui = rgb { 71 165 174 }
 }
 KRS = {	#クラスノヤルスク
 	color = rgb { 149 46 107 }
@@ -1297,13 +1305,13 @@ MCA = {	#澳門
 	color = rgb { 15 117 98 }
 	color_ui = rgb { 15 117 98 }
 }
-MSC = {	#マスカット
-	color = rgb { 98 134 153 }
-	color_ui = rgb { 98 134 153 }
-}
 MWN = {	#モン
 	color = rgb { 59 74 101 }
 	color_ui = rgb { 59 74 101 }
+}
+MSC = {	#マスカット
+	color = rgb { 98 134 153 }
+	color_ui = rgb { 98 134 153 }
 }
 MYS = {	#マイソール
 	color = rgb { 153 51 51 }
@@ -1337,21 +1345,21 @@ OTT = {	#オスマン
 	color = rgb { 203 32 39 }
 	color_ui = rgb { 203 32 39 }
 }
-PAO = {	#パオ
-	color = rgb { 25 64 81 }
-	color_ui = rgb { 25 64 81 }
-}
 PLA = {	#パラウン
 	color = rgb { 220 42 38 }
 	color_ui = rgb { 220 42 38 }
 }
-POD = {	#ポンディシェリ
-	color = rgb { 32 91 155 }
-	color_ui = rgb { 32 91 155 }
+PAO = {	#パオ
+	color = rgb { 25 64 81 }
+	color_ui = rgb { 25 64 81 }
 }
 PRL = {	#プルリス
 	color = rgb { 126 124 71 }
 	color_ui = rgb { 126 124 71 }
+}
+POD = {	#ポンディシェリ
+	color = rgb { 32 91 155 }
+	color_ui = rgb { 32 91 155 }
 }
 PUD = {	#プドゥコーッタイ
 	color = rgb { 0 109 85 }
@@ -1361,13 +1369,13 @@ QAH = {	#察哈爾
 	color = rgb { 208 218 138 }
 	color_ui = rgb { 208 218 138 }
 }
-QIG = {	#青海
-	color = rgb { 114 71 24 }
-	color_ui = rgb { 114 71 24 }
-}
 QIN = {	#青島
 	color = rgb { 122 162 39 }
 	color_ui = rgb { 122 162 39 }
+}
+QIG = {	#青海
+	color = rgb { 114 71 24 }
+	color_ui = rgb { 114 71 24 }
 }
 RKH = {	#ラカイン
 	color = rgb { 255 200 197 }
@@ -1381,6 +1389,34 @@ SAB = {	#サバ
 	color = rgb { 119 204 255 }
 	color_ui = rgb { 119 204 255 }
 }
+SRW = {	#サラワク
+	color = rgb { 255 152 26 }
+	color_ui = rgb { 255 152 26 }
+}
+SHN = {	#シャン
+	color = rgb { 255 150 50 }
+	color_ui = rgb { 255 150 50 }
+}
+SHD = {	#山東
+	color = rgb { 255 150 50 }
+	color_ui = rgb { 255 150 50 }
+}
+SGH = {	#上海
+	color = rgb { 255 213 9 }
+	color_ui = rgb { 255 213 9 }
+}
+SCH = {	#四川
+	color = rgb { 188 155 71 }
+	color_ui = rgb { 188 155 71 }
+}
+SKM = {	#シッキム
+	color = rgb { 253 36 30 }
+	color_ui = rgb { 253 36 30 }
+}
+SIN = {	#シンガポール
+	color = rgb { 241 86 98 }
+	color_ui = rgb { 241 86 98 }
+}
 SAZ = {	#南アゼルバイジャン
 	color = rgb { 0 185 228 }
 	color_ui = rgb { 0 185 228 }
@@ -1388,30 +1424,6 @@ SAZ = {	#南アゼルバイジャン
 SCC = {	#南コーカサス
 	color = rgb { 255 204 0 }
 	color_ui = rgb { 255 204 0 }
-}
-SCH = {	#四川
-	color = rgb { 188 155 71 }
-	color_ui = rgb { 188 155 71 }
-}
-SGH = {	#上海
-	color = rgb { 255 213 9 }
-	color_ui = rgb { 255 213 9 }
-}
-SHD = {	#山東
-	color = rgb { 255 150 50 }
-	color_ui = rgb { 255 150 50 }
-}
-SHN = {	#シャン
-	color = rgb { 255 150 50 }
-	color_ui = rgb { 255 150 50 }
-}
-SIN = {	#シンガポール
-	color = rgb { 241 86 98 }
-	color_ui = rgb { 241 86 98 }
-}
-SKM = {	#シッキム
-	color = rgb { 253 36 30 }
-	color_ui = rgb { 253 36 30 }
 }
 SMO = {	#南モンゴル
 	color = rgb { 18 63 198 }
@@ -1421,25 +1433,29 @@ SOA = {	#南オセチア
 	color = rgb { 255 88 85 }
 	color_ui = rgb { 255 88 85 }
 }
-SRW = {	#サラワク
-	color = rgb { 255 152 26 }
-	color_ui = rgb { 255 152 26 }
-}
 STR = {	#南トルキスタン
 	color = rgb { 80 158 47 }
 	color_ui = rgb { 80 158 47 }
-}
-SUY = {	#綏遠
-	color = rgb { 197 121 103 }
-	color_ui = rgb { 197 121 103 }
 }
 SYE = {	#南イエメン
 	color = rgb { 128 195 230 }
 	color_ui = rgb { 128 195 230 }
 }
+SUY = {	#綏遠
+	color = rgb { 197 121 103 }
+	color_ui = rgb { 197 121 103 }
+}
 TAI = {	#タイ
 	color = rgb { 147 186 255 }
 	color_ui = rgb { 147 186 255 }
+}
+TWN = {	#台湾
+	color = rgb { 0 0 128 }
+	color_ui = rgb { 0 0 128 }
+}
+TML = {	#タミル
+	color = rgb { 142 74 8 }
+	color_ui = rgb { 142 74 8 }
 }
 TER = {	#トレンガヌ
 	color = rgb { 129 129 129 }
@@ -1453,33 +1469,33 @@ TLS = {	#東ティモール
 	color = rgb { 255 199 38 }
 	color_ui = rgb { 255 199 38 }
 }
-TNG = {	#タンガニスタン
-	color = rgb { 188 100 67 }
-	color_ui = rgb { 188 100 67 }
+TSK = {	#トムスク
+	color = rgb { 0 152 10 }
+	color_ui = rgb { 0 152 10 }
 }
 TOK = {	#トンキン
 	color = rgb { 244 143 12 }
 	color_ui = rgb { 244 143 12 }
 }
-TRK = {	#トルキスタン
-	color = rgb { 74 155 120 }
-	color_ui = rgb { 74 155 120 }
-}
 TRV = {	#トラヴァンコール
 	color = rgb { 237 28 36 }
 	color_ui = rgb { 237 28 36 }
 }
-TSK = {	#トムスク
-	color = rgb { 0 152 10 }
-	color_ui = rgb { 0 152 10 }
+TNG = {	#タンガニスタン
+	color = rgb { 188 100 67 }
+	color_ui = rgb { 188 100 67 }
 }
-TWN = {	#台湾
-	color = rgb { 0 0 128 }
-	color_ui = rgb { 0 0 128 }
+TRK = {	#トルキスタン
+	color = rgb { 74 155 120 }
+	color_ui = rgb { 74 155 120 }
 }
 TYU = {	#チュメニ
 	color = rgb { 40 93 111 }
 	color_ui = rgb { 40 93 111 }
+}
+VNT = {	#ヴィエンチャン
+	color = rgb { 234 106 3 }
+	color_ui = rgb { 234 106 3 }
 }
 VAX = {	#ワ
 	color = rgb { 128 192 255 }
@@ -1507,10 +1523,6 @@ ZHI = {	#直隷
 }
 
 #ヨーロッパ
-ADR = {	#アンドラ
-	color = rgb { 245 208 102 }
-	color_ui = rgb { 245 208 102 }
-}
 AEG = {	#エーゲ
 	color = rgb { 196 178 196 }
 	color_ui = rgb { 196 178 196 }
@@ -1519,13 +1531,17 @@ ALA = {	#オーランド
 	color = rgb { 0 100 174 }
 	color_ui = rgb { 0 100 174 }
 }
-AOS = {	#アオスタ
-	color = rgb { 196 0 0 }
-	color_ui = rgb { 196 0 0 }
-}
 APN = {	#アルプス
 	color = rgb { 220 220 255 }
 	color_ui = rgb { 220 220 255 }
+}
+ADR = {	#アンドラ
+	color = rgb { 245 208 102 }
+	color_ui = rgb { 245 208 102 }
+}
+AOS = {	#アオスタ
+	color = rgb { 196 0 0 }
+	color_ui = rgb { 196 0 0 }
 }
 ARA = {	#アラゴン
 	color = rgb { 200 177 19 }
@@ -1539,9 +1555,9 @@ ATS = {	#アトス
 	color = rgb { 193 154 0 }
 	color_ui = rgb { 193 154 0 }
 }
-BGL = {	#ブルゲンラント
-	color = rgb { 249 205 10 }
-	color_ui = rgb { 249 205 10 }
+BDN = {	#バーデン
+	color = rgb { 255 21 0 }
+	color_ui = rgb { 255 21 0 }
 }
 BLE = {	#バレアレス
 	color = rgb { 64 16 76 }
@@ -1555,21 +1571,53 @@ BLT = {	#バルト
 	color = rgb { 142 142 128 }
 	color_ui = rgb { 142 142 128 }
 }
-BRG = {	#ブルゴーニュ
-	color = rgb { 68 40 73 }
-	color_ui = rgb { 68 40 73 }
+BSQ = {	#バスク
+	color = rgb { 172 184 157 }
+	color_ui = rgb { 172 184 157 }
 }
 BRL = {	#ベルリン
 	color = rgb { 161 91 85 }
 	color_ui = rgb { 161 91 85 }
 }
-BSQ = {	#バスク
-	color = rgb { 172 184 157 }
-	color_ui = rgb { 172 184 157 }
+BOH = {	#ボヘミア
+	color = rgb { 17 69 126 }
+	color_ui = rgb { 17 69 126 }
+}
+BRG = {	#ブルゴーニュ
+	color = rgb { 68 40 73 }
+	color_ui = rgb { 68 40 73 }
+}
+BDB = {	#ブランデンブルク
+	color = rgb { 236 59 59 }
+	color_ui = rgb { 236 59 59 }
+}
+BGL = {	#ブルゲンラント
+	color = rgb { 249 205 10 }
+	color_ui = rgb { 249 205 10 }
 }
 BYZ = {	#ビザンツ
 	color = rgb { 143 12 125 }
 	color_ui = rgb { 143 12 125 }
+}
+CTB = {	#カンタブリア
+	color = rgb { 185 0 88 }
+	color_ui = rgb { 185 0 88 }
+}
+CRT = {	#ケルンテン
+	color = rgb { 229 85 20 }
+	color_ui = rgb { 229 85 20 }
+}
+CRN = {	#カルニオラ
+	color = rgb { 0 93 165 }
+	color_ui = rgb { 0 93 165 }
+}
+CST = {	#カスティーリャ
+	color = rgb { 207 131 17 }
+	color_ui = rgb { 207 131 17 }
+}
+CLT = {	#ケルト
+	color = rgb { 98 177 39 }
+	color_ui = rgb { 98 177 39 }
 }
 CHE = {	#チェチェン
 	color = rgb { 144 155 125 }
@@ -1579,45 +1627,37 @@ CHS = {	#チェルケシア
 	color = rgb { 123 173 130 }
 	color_ui = rgb { 123 173 130 }
 }
-CLT = {	#ケルト
-	color = rgb { 98 177 39 }
-	color_ui = rgb { 98 177 39 }
-}
 COW = {	#コーンウォール
 	color = rgb { 51 51 51 }
 	color_ui = rgb { 51 51 51 }
-}
-CRE = {	#クレタ
-	color = rgb { 110 169 215 }
-	color_ui = rgb { 110 169 215 }
 }
 CRL = {	#クールラント
 	color = rgb { 181 0 0 }
 	color_ui = rgb { 181 0 0 }
 }
-CRT = {	#ケルンテン
-	color = rgb { 229 85 20 }
-	color_ui = rgb { 229 85 20 }
+CRW = {	#クラクフ
+	color = rgb { 4 111 181 }
+	color_ui = rgb { 4 111 181 }
 }
-CST = {	#カスティーリャ
-	color = rgb { 207 131 17 }
-	color_ui = rgb { 207 131 17 }
-}
-CTB = {	#カンタブリア
-	color = rgb { 185 0 88 }
-	color_ui = rgb { 185 0 88 }
+CRE = {	#クレタ
+	color = rgb { 110 169 215 }
+	color_ui = rgb { 110 169 215 }
 }
 DAL = {	#ダルマチア
 	color = rgb { 46 128 188 }
 	color_ui = rgb { 46 128 188 }
 }
+EXT = {	#エストレマドゥーラ
+	color = rgb { 173 228 191 }
+	color_ui = rgb { 173 228 191 }
+}
 EUR = {	#ヨーロッパ
 	color = rgb { 0 51 153 }
 	color_ui = rgb { 0 51 153 }
 }
-EXT = {	#エストレマドゥーラ
-	color = rgb { 173 228 191 }
-	color_ui = rgb { 173 228 191 }
+FRO = {	#フェロー
+	color = rgb { 157 190 224 }
+	color_ui = rgb { 157 190 224 }
 }
 FIU = {	#フィウメ
 	color = rgb { 255 242 0 }
@@ -1627,25 +1667,25 @@ FLN = {	#フランドル
 	color = rgb { 0 107 173 }
 	color_ui = rgb { 0 107 173 }
 }
-FRO = {	#フェロー
-	color = rgb { 157 190 224 }
-	color_ui = rgb { 157 190 224 }
-}
 GAL = {	#ガリツィア
 	color = rgb { 224 71 140 }
 	color_ui = rgb { 224 71 140 }
-}
-GBR = {	#グレートブリテン
-	color = rgb { 201 56 93 }
-	color_ui = rgb { 201 56 93 }
 }
 GIB = {	#ジブラルタル
 	color = rgb { 218 0 12 }
 	color_ui = rgb { 218 0 12 }
 }
+GBR = {	#グレートブリテン
+	color = rgb { 201 56 93 }
+	color_ui = rgb { 201 56 93 }
+}
 GUE = {	#ガーンジー
 	color = rgb { 244 162 29 }
 	color_ui = rgb { 244 162 29 }
+}
+HES = {	#ヘッセン
+	color = rgb { 240 128 128 }
+	color_ui = rgb { 240 128 128 }
 }
 HLS = {	#ホルシュタイン
 	color = rgb { 235 148 69 }
@@ -1683,9 +1723,21 @@ KRV = {	#キーロフ
 	color = rgb { 239 155 64 }
 	color_ui = rgb { 239 155 64 }
 }
-LAS = {	#ニーダーエスターライヒ
-	color = rgb { 0 45 114 }
-	color_ui = rgb { 0 45 114 }
+LMN = {	#ラ・マンチャ
+	color = rgb { 220 139 147 }
+	color_ui = rgb { 220 139 147 }
+}
+LRJ = {	#ラ・リオハ
+	color = rgb { 102 188 41 }
+	color_ui = rgb { 102 188 41 }
+}
+LMK = {	#レムコ
+	color = rgb { 175 175 85 }
+	color_ui = rgb { 175 175 85 }
+}
+LON = {	#レオン
+	color = rgb { 152 25 50 }
+	color_ui = rgb { 152 25 50 }
 }
 LIE = {	#リヒテンシュタイン
 	color = rgb { 0 43 127 }
@@ -1695,61 +1747,53 @@ LIV = {	#リヴォニア
 	color = rgb { 22 113 30 }
 	color_ui = rgb { 22 113 30 }
 }
-LMK = {	#レムコ
-	color = rgb { 175 175 85 }
-	color_ui = rgb { 175 175 85 }
-}
-LMN = {	#ラ・マンチャ
-	color = rgb { 220 139 147 }
-	color_ui = rgb { 220 139 147 }
-}
 LOD = {	#ロドメリア
 	color = rgb { 87 108 155 }
 	color_ui = rgb { 87 108 155 }
 }
-LON = {	#レオン
-	color = rgb { 152 25 50 }
-	color_ui = rgb { 152 25 50 }
+LOM = {	#ロンバルディア
+	color = rgb { 0 160 64 }
+	color_ui = rgb { 0 160 64 }
 }
-LRJ = {	#ラ・リオハ
-	color = rgb { 102 188 41 }
-	color_ui = rgb { 102 188 41 }
-}
-MCO = {	#モナコ
-	color = rgb { 231 136 147 }
-	color_ui = rgb { 231 136 147 }
+LAS = {	#ニーダーエスターライヒ
+	color = rgb { 0 45 114 }
+	color_ui = rgb { 0 45 114 }
 }
 MDR = {	#マドリード
 	color = rgb { 198 11 30 }
 	color_ui = rgb { 198 11 30 }
 }
-MEZ = {	#メッツォジョールノ
-	color = rgb { 230 230 0 }
-	color_ui = rgb { 230 230 0 }
-}
 MNN = {	#マン
 	color = rgb { 207 20 43 }
 	color_ui = rgb { 207 20 43 }
 }
-MOS = {	#モスクワ
-	color = rgb { 172 0 12 }
-	color_ui = rgb { 172 0 12 }
+MEZ = {	#メッツォジョールノ
+	color = rgb { 230 230 0 }
+	color_ui = rgb { 230 230 0 }
 }
-MRD = {	#モルドヴィア
-	color = rgb { 56 56 255 }
-	color_ui = rgb { 56 56 255 }
+MCO = {	#モナコ
+	color = rgb { 231 136 147 }
+	color_ui = rgb { 231 136 147 }
 }
 MRV = {	#モラヴィア
 	color = rgb { 224 103 1 }
 	color_ui = rgb { 224 103 1 }
 }
+MRD = {	#モルドヴィア
+	color = rgb { 56 56 255 }
+	color_ui = rgb { 56 56 255 }
+}
+MOS = {	#モスクワ
+	color = rgb { 172 0 12 }
+	color_ui = rgb { 172 0 12 }
+}
 MUR = {	#ムルシア
 	color = rgb { 156 31 45 }
 	color_ui = rgb { 156 31 45 }
 }
-NGR = {	#北ドイツ
-	color = rgb { 244 170 170 }
-	color_ui = rgb { 244 170 170 }
+NTL = {	#ネーデルラント
+	color = rgb { 255 154 0 }
+	color_ui = rgb { 255 154 0 }
 }
 NRD = {	#ノルディック
 	color = rgb { 0 76 153 }
@@ -1759,9 +1803,9 @@ NRM = {	#ノルマンディー
 	color = rgb { 131 138 116 }
 	color_ui = rgb { 131 138 116 }
 }
-NTL = {	#ネーデルラント
-	color = rgb { 255 154 0 }
-	color_ui = rgb { 255 154 0 }
+NGR = {	#北ドイツ
+	color = rgb { 244 170 170 }
+	color_ui = rgb { 244 170 170 }
 }
 ORB = {	#オレンブルグ
 	color = rgb { 122 46 89 }
@@ -1771,45 +1815,69 @@ PAD = {	#パダニア
 	color = rgb { 110 192 146 }
 	color_ui = rgb { 110 192 146 }
 }
+PRM = {	#ペルミ
+	color = rgb { 108 75 104 }
+	color_ui = rgb { 108 75 104 }
+}
 PIE = {	#ピエモンテ
 	color = rgb { 249 148 3 }
 	color_ui = rgb { 249 148 3 }
 }
-PRM = {	#ペルミ
-	color = rgb { 108 75 104 }
-	color_ui = rgb { 108 75 104 }
+POM = {	#ポメラニア
+	color = rgb { 0 179 255 }
+	color_ui = rgb { 0 179 255 }
+}
+POS = {	#ポズナニ
+	color = rgb { 182 127 127 }
+	color_ui = rgb { 182 127 127 }
 }
 RHI = {	#ライン
 	color = rgb { 84 194 110 }
 	color_ui = rgb { 84 194 110 }
 }
+RDS = {	#ロードス
+	color = rgb { 119 154 194 }
+	color_ui = rgb { 119 154 194 }
+}
 RME = {	#ローマ
 	color = rgb { 142 0 28 }
 	color_ui = rgb { 142 0 28 }
-}
-RTN = {	#ルテニア
-	color = rgb { 0 91 187 }
-	color_ui = rgb { 0 91 187 }
 }
 RUS = {	#ロシア
 	color = rgb { 72 143 68 }
 	color_ui = rgb { 72 143 68 }
 }
-SAR = {	#ザール
+RTN = {	#ルテニア
+	color = rgb { 0 91 187 }
+	color_ui = rgb { 0 91 187 }
+}
+SAR = {	#ザールラント
 	color = rgb { 81 97 161 }
 	color_ui = rgb { 81 97 161 }
+}
+SLZ = {	#ザルツブルク
+	color = rgb { 246 197 199 }
+	color_ui = rgb { 246 197 199 }
+}
+SMA = {	#サマラ
+	color = rgb { 0 147 221 }
+	color_ui = rgb { 0 147 221 }
+}
+SMR = {	#サンマリノ
+	color = rgb { 94 182 228 }
+	color_ui = rgb { 94 182 228 }
+}
+SME = {	#サーミランド
+	color = rgb { 0 64 128 }
+	color_ui = rgb { 0 64 128 }
 }
 SCA = {	#スカンディナヴィア
 	color = rgb { 45 190 235 }
 	color_ui = rgb { 45 190 235 }
 }
-SDT = {	#ズデーテンラント
-	color = rgb { 36 34 62 }
-	color_ui = rgb { 36 34 62 }
-}
-SGR = {	#南ドイツ
-	color = rgb { 213 171 2 }
-	color_ui = rgb { 213 171 2 }
+SEM = {	#ゼムガレン
+	color = rgb { 11 70 144 }
+	color_ui = rgb { 11 70 144 }
 }
 SIB = {	#シベリア
 	color = rgb { 0 94 0 }
@@ -1823,41 +1891,37 @@ SLN = {	#スラボニア
 	color = rgb { 144 165 204 }
 	color_ui = rgb { 144 165 204 }
 }
-SLZ = {	#ザルツブルク
-	color = rgb { 246 197 199 }
-	color_ui = rgb { 246 197 199 }
-}
-SMA = {	#サマラ
-	color = rgb { 0 147 221 }
-	color_ui = rgb { 0 147 221 }
-}
-SME = {	#サーミランド
-	color = rgb { 0 64 128 }
-	color_ui = rgb { 0 64 128 }
-}
-SMR = {	#サンマリノ
-	color = rgb { 94 182 228 }
-	color_ui = rgb { 94 182 228 }
+SGR = {	#南ドイツ
+	color = rgb { 213 171 2 }
+	color_ui = rgb { 213 171 2 }
 }
 STY = {	#シュタイアーマルク
 	color = rgb { 130 196 151 }
 	color_ui = rgb { 130 196 151 }
 }
-TRL = {	#チロル
-	color = rgb { 244 188 190 }
-	color_ui = rgb { 244 188 190 }
+SDT = {	#ズデーテンラント
+	color = rgb { 36 34 62 }
+	color_ui = rgb { 36 34 62 }
+}
+THU = {	#テューリンゲン
+	color = rgb { 27 131 183 }
+	color_ui = rgb { 27 131 183 }
 }
 TRN = {	#トランスニストリア
 	color = rgb { 6 142 107 }
 	color_ui = rgb { 6 142 107 }
 }
-UAS = {	#オーバーエスターライヒ
-	color = rgb { 236 135 139 }
-	color_ui = rgb { 236 135 139 }
+TRL = {	#チロル
+	color = rgb { 244 188 190 }
+	color_ui = rgb { 244 188 190 }
 }
 ULY = {	#ウリヤノフスク
 	color = rgb { 152 195 213 }
 	color_ui = rgb { 152 195 213 }
+}
+UAS = {	#オーバーエスターライヒ
+	color = rgb { 236 135 139 }
+	color_ui = rgb { 236 135 139 }
 }
 URA = {	#ウラル
 	color = rgb { 85 187 85 }
@@ -1890,6 +1954,10 @@ WLC = {	#ワラキア
 WLL = {	#ワロン
 	color = rgb { 240 144 56 }
 	color_ui = rgb { 240 144 56 }
+}
+WPH = {	#ウェストファリア
+	color = rgb { 0 69 173 }
+	color_ui = rgb { 0 69 173 }
 }
 ZAP = {	#ザパードスラビア
 	color = rgb { 176 81 111 }
@@ -1925,21 +1993,21 @@ BIA = {	#ビアフラ
 	color = rgb { 0 51 21 }
 	color_ui = rgb { 0 51 21 }
 }
-CEU = {	#セウタ
-	color = rgb { 163 114 111 }
-	color_ui = rgb { 163 114 111 }
-}
 CNA = {	#カナリア
 	color = rgb { 90 154 198 }
 	color_ui = rgb { 90 154 198 }
 }
-COM = {	#コモロ
-	color = rgb { 61 142 51 }
-	color_ui = rgb { 61 142 51 }
-}
 CPV = {	#カーボベルデ
 	color = rgb { 0 56 147 }
 	color_ui = rgb { 0 56 147 }
+}
+CEU = {	#セウタ
+	color = rgb { 163 114 111 }
+	color_ui = rgb { 163 114 111 }
+}
+COM = {	#コモロ
+	color = rgb { 61 142 51 }
+	color_ui = rgb { 61 142 51 }
 }
 CYR = {	#キレナイカ
 	color = rgb { 143 143 143 }
@@ -1961,13 +2029,13 @@ IFN = {	#イフニ
 	color = rgb { 221 102 0 }
 	color_ui = rgb { 221 102 0 }
 }
+KAT = {	#カタンガ
+	color = rgb { 20 181 58 }
+	color_ui = rgb { 20 181 58 }
+}
 LSO = {	#レソト
 	color = rgb { 193 209 235 }
 	color_ui = rgb { 193 209 235 }
-}
-MLL = {	#メリリャ
-	color = rgb { 0 113 188 }
-	color_ui = rgb { 0 113 188 }
 }
 MUS = {	#モーリシャス
 	color = rgb { 105 150 216 }
@@ -1977,13 +2045,13 @@ MYT = {	#マヨット
 	color = rgb { 75 75 163 }
 	color_ui = rgb { 75 75 163 }
 }
+MLL = {	#メリリャ
+	color = rgb { 0 113 188 }
+	color_ui = rgb { 0 113 188 }
+}
 NAF = {	#北アフリカ
 	color = rgb { 211 201 129 }
 	color_ui = rgb { 211 201 129 }
-}
-R-U = {	#ルアンダ＝ウルンディ
-	color = rgb { 188 100 52 }
-	color_ui = rgb { 188 100 52 }
 }
 REU = {	#レユニオン
 	color = rgb { 47 102 255 }
@@ -1993,29 +2061,37 @@ RHO = {	#ローデシア
 	color = rgb { 15 75 50 }
 	color_ui = rgb { 15 75 50 }
 }
-SCZ = {	#スエズ運河地帯
-	color = rgb { 5 113 203 }
-	color_ui = rgb { 5 113 203 }
-}
-SML = {	#ソマリランド
-	color = rgb { 0 109 33 }
-	color_ui = rgb { 0 109 33 }
-}
-SSD = {	#南スーダン
-	color = rgb { 49 103 170 }
-	color_ui = rgb { 49 103 170 }
+R-U = {	#ルアンダ＝ウルンディ
+	color = rgb { 188 100 52 }
+	color_ui = rgb { 188 100 52 }
 }
 STP = {	#サントメ・プリンシペ
 	color = rgb { 231 104 28 }
 	color_ui = rgb { 231 104 28 }
 }
-SWL = {	#スワジランド
-	color = rgb { 89 135 194 }
-	color_ui = rgb { 89 135 194 }
-}
 SYC = {	#セーシェル
 	color = rgb { 209 182 198 }
 	color_ui = rgb { 209 182 198 }
+}
+SML = {	#ソマリランド
+	color = rgb { 0 109 33 }
+	color_ui = rgb { 0 109 33 }
+}
+SKS = {	#南カサイ
+	color = rgb { 115 99 48 }
+	color_ui = rgb { 115 99 48 }
+}
+SSD = {	#南スーダン
+	color = rgb { 49 103 170 }
+	color_ui = rgb { 49 103 170 }
+}
+SCZ = {	#スエズ運河地帯
+	color = rgb { 5 113 203 }
+	color_ui = rgb { 5 113 203 }
+}
+SWL = {	#スワジランド
+	color = rgb { 89 135 194 }
+	color_ui = rgb { 89 135 194 }
 }
 TAN = {	#タンガニーカ
 	color = rgb { 215 204 28 }
@@ -2047,21 +2123,25 @@ AEC = {	#アメリカ東海岸
 	color = rgb { 51 82 134 }
 	color_ui = rgb { 51 82 134 }
 }
+AWC = {	#アメリカ西海岸
+	color = rgb { 250 250 210 }
+	color_ui = rgb { 250 250 210 }
+}
 AGU = {	#アンギラ
 	color = rgb { 166 203 223 }
 	color_ui = rgb { 166 203 223 }
-}
-ARU = {	#アルバ
-	color = rgb { 65 143 222 }
-	color_ui = rgb { 65 143 222 }
 }
 ATG = {	#アンティグア
 	color = rgb { 0 74 129 }
 	color_ui = rgb { 0 74 129 }
 }
-AWC = {	#アメリカ西海岸
-	color = rgb { 250 250 210 }
-	color_ui = rgb { 250 250 210 }
+ARU = {	#アルバ
+	color = rgb { 65 143 222 }
+	color_ui = rgb { 65 143 222 }
+}
+BRB = {	#バルバドス
+	color = rgb { 170 145 68 }
+	color_ui = rgb { 170 145 68 }
 }
 BAR = {	#バーブーダ
 	color = rgb { 248 195 0 }
@@ -2071,14 +2151,6 @@ BMU = {	#バミューダ
 	color = rgb { 47 143 34 }
 	color_ui = rgb { 47 143 34 }
 }
-BRB = {	#バルバドス
-	color = rgb { 170 145 68 }
-	color_ui = rgb { 170 145 68 }
-}
-CAC = {	#中央アメリカ
-	color = rgb { 103 204 255 }
-	color_ui = rgb { 103 204 255 }
-}
 CSC = {	#カスカディア
 	color = rgb { 93 115 93 }
 	color_ui = rgb { 93 115 93 }
@@ -2086,6 +2158,10 @@ CSC = {	#カスカディア
 CYM = {	#ケイマン
 	color = rgb { 2 73 25 }
 	color_ui = rgb { 2 73 25 }
+}
+CAC = {	#中央アメリカ
+	color = rgb { 103 204 255 }
+	color_ui = rgb { 103 204 255 }
 }
 DMA = {	#ドミニカ
 	color = rgb { 0 107 63 }
@@ -2103,37 +2179,41 @@ GPA = {	#グレートプレーンズ
 	color = rgb { 60 76 36 }
 	color_ui = rgb { 60 76 36 }
 }
-GRD = {	#グレナダ
-	color = rgb { 172 107 46 }
-	color_ui = rgb { 172 107 46 }
-}
 GRL = {	#グリーンランド
 	color = rgb { 240 180 192 }
 	color_ui = rgb { 240 180 192 }
 }
-LEW = {	#リーワード
+GRD = {	#グレナダ
+	color = rgb { 172 107 46 }
+	color_ui = rgb { 172 107 46 }
+}
+LEW = {	#リーワード諸島
 	color = rgb { 118 190 193 }
 	color_ui = rgb { 118 190 193 }
-}
-MSR = {	#モントセラト
-	color = rgb { 81 112 99 }
-	color_ui = rgb { 81 112 99 }
 }
 MTQ = {	#マルティニーク
 	color = rgb { 77 104 165 }
 	color_ui = rgb { 77 104 165 }
 }
-NAC = {	#北アメリカ
-	color = rgb { 135 198 108 }
-	color_ui = rgb { 135 198 108 }
+MSR = {	#モントセラト
+	color = rgb { 81 112 99 }
+	color_ui = rgb { 81 112 99 }
+}
+NVS = {	#ネイビス
+	color = rgb { 125 203 125 }
+	color_ui = rgb { 125 203 125 }
 }
 NFL = {	#ニューファンドランド
 	color = rgb { 255 153 204 }
 	color_ui = rgb { 255 153 204 }
 }
-NVS = {	#ネイビス
-	color = rgb { 125 203 125 }
-	color_ui = rgb { 125 203 125 }
+NAC = {	#北アメリカ
+	color = rgb { 135 198 108 }
+	color_ui = rgb { 135 198 108 }
+}
+NGL = {	#北グリーンランド
+	color = rgb {  }
+	color_ui = rgb {  }
 }
 PCZ = {	#パナマ運河地帯
 	color = rgb { 33 49 127 }
@@ -2147,10 +2227,6 @@ RMT = {	#ロッキー山脈
 	color = rgb { 26 58 11 }
 	color_ui = rgb { 26 58 11 }
 }
-SAC = {	#南アメリカ
-	color = rgb { 117 137 195 }
-	color_ui = rgb { 117 137 195 }
-}
 SBL = {	#サン・バルテルミー
 	color = rgb { 65 105 138 }
 	color_ui = rgb { 65 105 138 }
@@ -2159,17 +2235,13 @@ SKN = {	#セントクリストファー
 	color = rgb { 0 158 73 }
 	color_ui = rgb { 0 158 73 }
 }
-SLC = {	#セントルシア
-	color = rgb { 11 81 161 }
-	color_ui = rgb { 11 81 161 }
-}
-SPM = {	#サンピエール及びミクロン
-	color = rgb { 0 146 200 }
-	color_ui = rgb { 0 146 200 }
-}
 STH = {	#セントヘレナ
 	color = rgb { 188 167 107 }
 	color_ui = rgb { 188 167 107 }
+}
+SLC = {	#セントルシア
+	color = rgb { 11 81 161 }
+	color_ui = rgb { 11 81 161 }
 }
 STM = {	#セント・マーチン
 	color = rgb { 241 90 36 }
@@ -2179,19 +2251,31 @@ SVG = {	#セントビンセント及びグレナディーン
 	color = rgb { 0 33 105 }
 	color_ui = rgb { 0 33 105 }
 }
-TCA = {	#タークス・カイコス
-	color = rgb { 227 196 23 }
-	color_ui = rgb { 227 196 23 }
+SPM = {	#サンピエール島及びミクロン島
+	color = rgb { 0 146 200 }
+	color_ui = rgb { 0 146 200 }
+}
+SAC = {	#南アメリカ
+	color = rgb { 117 137 195 }
+	color_ui = rgb { 117 137 195 }
+}
+SGL = {	#南グリーンランド
+	color = rgb {  }
+	color_ui = rgb {  }
 }
 TOB = {	#トバゴ
 	color = rgb { 102 151 204 }
 	color_ui = rgb { 102 151 204 }
 }
-VIR = {	#ヴァージン
+TCA = {	#タークス・カイコス
+	color = rgb { 227 196 23 }
+	color_ui = rgb { 227 196 23 }
+}
+VIR = {	#ヴァージン諸島
 	color = rgb { 100 61 151 }
 	color_ui = rgb { 100 61 151 }
 }
-WIW = {	#ウィンドワード
+WIW = {	#ウィンドワード諸島
 	color = rgb { 118 102 37 }
 	color_ui = rgb { 118 102 37 }
 }
@@ -2201,33 +2285,33 @@ ATC = {	#南極
 	color = rgb { 255 255 255 }
 	color_ui = rgb { 255 255 255 }
 }
-CHR = {	#クリスマス
+CHR = {	#クリスマス島
 	color = rgb { 18 102 103 }
 	color_ui = rgb { 18 102 103 }
 }
-COC = {	#ココス
+COC = {	#ココス諸島
 	color = rgb { 170 188 0 }
 	color_ui = rgb { 170 188 0 }
 }
-COK = {	#クック
-	color = rgb { 115 171 0 }
-	color_ui = rgb { 115 171 0 }
+UVF = {	#ウベア・フツナ
+	color = rgb { 244 42 65 }
+	color_ui = rgb { 244 42 65 }
 }
 KIR = {	#キリバス
 	color = rgb { 211 63 63 }
 	color_ui = rgb { 211 63 63 }
 }
-MHL = {	#マーシャル
+MHL = {	#マーシャル諸島
 	color = rgb { 221 117 0 }
 	color_ui = rgb { 221 117 0 }
+}
+NMR = {	#ナウル
+	color = rgb { 43 69 111 }
+	color_ui = rgb { 43 69 111 }
 }
 NCL = {	#ニューカレドニア
 	color = rgb { 250 230 0 }
 	color_ui = rgb { 250 230 0 }
-}
-NFK = {	#ノーフォーク
-	color = rgb { 0 121 52 }
-	color_ui = rgb { 0 121 52 }
 }
 NGU = {	#ニューギニア
 	color = rgb { 57 173 0 }
@@ -2237,9 +2321,13 @@ NIU = {	#ニウエ
 	color = rgb { 254 221 0 }
 	color_ui = rgb { 254 221 0 }
 }
-NMR = {	#ナウル
-	color = rgb { 43 69 111 }
-	color_ui = rgb { 43 69 111 }
+NFK = {	#ノーフォーク
+	color = rgb { 0 121 52 }
+	color_ui = rgb { 0 121 52 }
+}
+PLW = {	#パラオ
+	color = rgb { 0 153 255 }
+	color_ui = rgb { 0 153 255 }
 }
 PAP = {	#パプア
 	color = rgb { 191 121 38 }
@@ -2249,13 +2337,13 @@ PCN = {	#ピトケアン
 	color = rgb { 0 110 199 }
 	color_ui = rgb { 0 110 199 }
 }
-PLW = {	#パラオ
-	color = rgb { 0 153 255 }
-	color_ui = rgb { 0 153 255 }
-}
 PLY = {	#ポリネシア
 	color = rgb { 117 197 240 }
 	color_ui = rgb { 117 197 240 }
+}
+COK = {	#ラロトンガ
+	color = rgb { 115 171 0 }
+	color_ui = rgb { 115 171 0 }
 }
 TKL = {	#トケラウ
 	color = rgb { 50 67 85 }
@@ -2269,13 +2357,13 @@ TVL = {	#ツバル
 	color = rgb { 122 203 238 }
 	color_ui = rgb { 122 203 238 }
 }
-UVF = {	#ウベア・フツナ
-	color = rgb { 244 42 65 }
-	color_ui = rgb { 244 42 65 }
-}
 VUT = {	#バヌアツ
 	color = rgb { 93 76 7 }
 	color_ui = rgb { 93 76 7 }
+}
+WPA = {	#西パプア
+	color = rgb { 20 115 162 }
+	color_ui = rgb { 20 115 162 }
 }
 
 #アメリカ諸州
@@ -2287,13 +2375,13 @@ ALS = {	#アラスカ
 	color = rgb { 43 50 68 }
 	color_ui = rgb { 43 50 68 }
 }
-ARK = {	#アーカンソー
-	color = rgb { 129 19 66 }
-	color_ui = rgb { 129 19 66 }
-}
 ARZ = {	#アリゾナ
 	color = rgb { 200 90 26 }
 	color_ui = rgb { 200 90 26 }
+}
+ARK = {	#アーカンソー
+	color = rgb { 129 19 66 }
+	color_ui = rgb { 129 19 66 }
 }
 CAL = {	#カリフォルニア
 	color = rgb { 229 255 204 }
@@ -2327,13 +2415,13 @@ IDA = {	#アイダホ
 	color = rgb { 118 79 91 }
 	color_ui = rgb { 118 79 91 }
 }
-IDI = {	#インディアナ
-	color = rgb { 0 15 93 }
-	color_ui = rgb { 0 15 93 }
-}
 ILI = {	#イリノイ
 	color = rgb { 183 167 118 }
 	color_ui = rgb { 183 167 118 }
+}
+IDI = {	#インディアナ
+	color = rgb { 0 15 93 }
+	color_ui = rgb { 0 15 93 }
 }
 IOW = {	#アイオワ
 	color = rgb { 137 145 181 }
@@ -2355,6 +2443,14 @@ LUI = {	#ルイジアナ
 	color = rgb { 131 160 188 }
 	color_ui = rgb { 131 160 188 }
 }
+MNE = {	#メイン
+	color = rgb { 131 157 138 }
+	color_ui = rgb { 131 157 138 }
+}
+MRL = {	#メリーランド
+	color = rgb { 155 115 1 }
+	color_ui = rgb { 155 115 1 }
+}
 MAS = {	#マサチューセッツ
 	color = rgb { 78 81 99 }
 	color_ui = rgb { 78 81 99 }
@@ -2363,21 +2459,13 @@ MCH = {	#ミシガン
 	color = rgb { 82 131 137 }
 	color_ui = rgb { 82 131 137 }
 }
-MIS = {	#ミシシッピ
-	color = rgb { 159 63 100 }
-	color_ui = rgb { 159 63 100 }
-}
-MNE = {	#メイン
-	color = rgb { 131 157 138 }
-	color_ui = rgb { 131 157 138 }
-}
 MNS = {	#ミネソタ
 	color = rgb { 72 105 176 }
 	color_ui = rgb { 72 105 176 }
 }
-MRL = {	#メリーランド
-	color = rgb { 155 115 1 }
-	color_ui = rgb { 155 115 1 }
+MIS = {	#ミシシッピ
+	color = rgb { 159 63 100 }
+	color_ui = rgb { 159 63 100 }
 }
 MSS = {	#ミズーリ
 	color = rgb { 131 59 111 }
@@ -2387,25 +2475,17 @@ MTA = {	#モンタナ
 	color = rgb { 103 151 122 }
 	color_ui = rgb { 103 151 122 }
 }
-NCR = {	#ノースカロライナ
-	color = rgb { 52 75 93 }
-	color_ui = rgb { 52 75 93 }
-}
-NDA = {	#ノースダコタ
-	color = rgb { 107 63 124 }
-	color_ui = rgb { 107 63 124 }
-}
 NEB = {	#ネブラスカ
 	color = rgb { 133 133 101 }
 	color_ui = rgb { 133 133 101 }
 }
-NEL = {	#ニューイングランド
-	color = rgb { 0 64 0 }
-	color_ui = rgb { 0 64 0 }
-}
 NEV = {	#ネバダ
 	color = rgb { 118 121 92 }
 	color_ui = rgb { 118 121 92 }
+}
+NEL = {	#ニューイングランド
+	color = rgb { 0 64 0 }
+	color_ui = rgb { 0 64 0 }
 }
 NHN = {	#ニューハンプシャー
 	color = rgb { 0 42 134 }
@@ -2422,6 +2502,14 @@ NMX = {	#ニューメキシコ
 NYR = {	#ニューヨーク
 	color = rgb { 31 82 84 }
 	color_ui = rgb { 31 82 84 }
+}
+NCR = {	#ノースカロライナ
+	color = rgb { 52 75 93 }
+	color_ui = rgb { 52 75 93 }
+}
+NDA = {	#ノースダコタ
+	color = rgb { 107 63 124 }
+	color_ui = rgb { 107 63 124 }
 }
 OHO = {	#オハイオ
 	color = rgb { 45 71 121 }
@@ -2463,89 +2551,28 @@ UTA = {	#ユタ
 	color = rgb { 73 85 119 }
 	color_ui = rgb { 73 85 119 }
 }
-VRG = {	#バージニア
-	color = rgb { 240 221 207 }
-	color_ui = rgb { 240 221 207 }
-}
 VRM = {	#バーモント
 	color = rgb { 126 147 82 }
 	color_ui = rgb { 126 147 82 }
+}
+VRG = {	#バージニア
+	color = rgb { 240 221 207 }
+	color_ui = rgb { 240 221 207 }
 }
 WAS = {	#ワシントン
 	color = rgb { 0 132 87 }
 	color_ui = rgb { 0 132 87 }
 }
-WSC = {	#ウィスコンシン
-	color = rgb { 133 94 37 }
-	color_ui = rgb { 133 94 37 }
-}
 WVI = {	#ウェストバージニア
 	color = rgb { 156 190 152 }
 	color_ui = rgb { 156 190 152 }
+}
+WSC = {	#ウィスコンシン
+	color = rgb { 133 94 37 }
+	color_ui = rgb { 133 94 37 }
 }
 WYO = {	#ワイオミング
 	color = rgb { 141 85 122 }
 	color_ui = rgb { 141 85 122 }
 }
 
-##動的国家
-D01 = {	#
-	color = rgb { 200 100 31 }
-	color_ui = rgb { 200 100 31 }
-}
-D02 = {	#
-	color = rgb { 80 150 179 }
-	color_ui = rgb { 80 150 179 }
-}
-D03 = {	#
-	color = rgb { 92 92 197 }
-	color_ui = rgb { 92 92 197 }
-}
-D04 = {	#
-	color = rgb { 154 69 116 }
-	color_ui = rgb { 154 69 116 }
-}
-D05 = {	#
-	color = rgb { 194 140 86 }
-	color_ui = rgb { 194 140 86 }
-}
-D06 = {	#
-	color = rgb { 195 149 155 }
-	color_ui = rgb { 195 149 155 }
-}
-D07 = {	#
-	color = rgb { 210 106 47 }
-	color_ui = rgb { 210 106 47 }
-}
-D08 = {	#
-	color = rgb { 105 147 86 }
-	color_ui = rgb { 105 147 86 }
-}
-D09 = {	#
-	color = rgb { 175 162 108 }
-	color_ui = rgb { 175 162 108 }
-}
-D10 = {	#
-	color = rgb { 124 140 162 }
-	color_ui = rgb { 124 140 162 }
-}
-D11 = {	#
-	color = rgb { 187 79 86 }
-	color_ui = rgb { 187 79 86 }
-}
-D12 = {	#
-	color = rgb { 69 157 208 }
-	color_ui = rgb { 69 157 208 }
-}
-D13 = {	#
-	color = rgb { 142 79 200 }
-	color_ui = rgb { 142 79 200 }
-}
-D14 = {	#
-	color = rgb { 122 179 97 }
-	color_ui = rgb { 122 179 97 }
-}
-D15 = {	#
-	color = rgb { 194 140 86 }
-	color_ui = rgb { 194 140 86 }
-}
