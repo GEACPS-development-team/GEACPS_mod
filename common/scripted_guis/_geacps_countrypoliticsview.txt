@@ -8,7 +8,6 @@ scripted_gui = {
 			parliament_button_click = {
 				if = {
 					limit = { has_country_flag = parliament_button_clicked }
-
 					clr_country_flag = parliament_button_clicked
 				}
 				else = { set_country_flag = parliament_button_clicked }

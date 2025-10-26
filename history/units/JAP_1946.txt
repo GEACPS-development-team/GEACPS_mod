@@ -1,22 +1,303 @@
 ﻿division_template = {
-	name = "步兵師団"
+	name = "近衛師団"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
 		artillery_brigade = { x = 1 y = 0 }
+		armor = { x = 1 y = 1 }
 	}
-	# support = {}
 	priority = 1
 }
 
+division_template = {
+	name = "満州師団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		armor = { x = 1 y = 1 }
+		anti_tank = { x = 1 y = 2 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "支那派遣師団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "南方軍師団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		amphibious_mechanized = { x = 1 y = 1 }
+	}
+	priority = 2
+}
+
+division_template = {
+	name = "太平洋師団"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		artillery_brigade = { x = 1 y = 0 }
+		amphibious_mechanized = { x = 1 y = 1 }
+		anti_air = { x = 1 y = 2 }
+	}
+	priority = 3
+}
+
 units = {
+	# 本土防衛 - 画像に表示されていた師団の配置場所に修正
 	division = {
-		name = "第1師団"
-		location = 4572
-		division_template = "步兵師団"
-		start_experience_factor = 1
-		start_equipment_factor = 1
+		name = "近衛第1師団"
+		location = 4572  # 満州国ステートに含まれる（実際の配置場所）
+		division_template = "近衛師団"
+		start_experience_factor = 1.2
+		start_equipment_factor = 1.2
+	}
+
+	division = {
+		name = "近衛第2師団"
+		location = 4573  # アルゼンチンステートに含まれる（実際の配置場所）
+		division_template = "近衛師団"
+		start_experience_factor = 1.1
+		start_equipment_factor = 1.1
+	}
+
+	division = {
+		name = "近衛第3師団"
+		location = 4574  # 実際の配置場所
+		division_template = "近衛師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "近衛第4師団"
+		location = 4575  # 実際の配置場所
+		division_template = "近衛師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "近衛第5師団"
+		location = 4576  # 実際の配置場所
+		division_template = "近衛師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "近衛第6師団"
+		location = 4577  # 実際の配置場所
+		division_template = "近衛師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	# 満州駐留 - 画像に表示されていた師団の配置場所に修正
+	division = {
+		name = "満州第1師団"
+		location = 4619  # 景徳鎮ステートに含まれる（実際の配置場所）
+		division_template = "満州師団"
+		start_experience_factor = 1.3
+		start_equipment_factor = 1.3
+	}
+
+	division = {
+		name = "満州第2師団"
+		location = 4623  # 実際の配置場所
+		division_template = "満州師団"
+		start_experience_factor = 1.2
+		start_equipment_factor = 1.2
+	}
+
+	division = {
+		name = "満州第3師団"
+		location = 4624  # 実際の配置場所
+		division_template = "満州師団"
+		start_experience_factor = 1.2
+		start_equipment_factor = 1.2
+	}
+
+	division = {
+		name = "満州第4師団"
+		location = 4625  # 実際の配置場所
+		division_template = "満州師団"
+		start_experience_factor = 1.1
+		start_equipment_factor = 1.1
+	}
+
+	# 中国駐留 - 画像に表示されていた師団の配置場所に修正
+	division = {
+		name = "支那派遣第1師団"
+		location = 4620  # 西カザフスタンステートに含まれる（実際の配置場所）
+		division_template = "支那派遣師団"
+		start_experience_factor = 1.2
+		start_equipment_factor = 1.2
+	}
+
+	division = {
+		name = "支那派遣第2師団"
+		location = 4626  # 実際の配置場所
+		division_template = "支那派遣師団"
+		start_experience_factor = 1.1
+		start_equipment_factor = 1.1
+	}
+
+	division = {
+		name = "支那派遣第3師団"
+		location = 4627  # 実際の配置場所
+		division_template = "支那派遣師団"
+		start_experience_factor = 1.1
+		start_equipment_factor = 1.1
+	}
+
+	division = {
+		name = "支那派遣第4師団"
+		location = 4628  # 実際の配置場所
+		division_template = "支那派遣師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "支那派遣第5師団"
+		location = 4629  # 実際の配置場所
+		division_template = "支那派遣師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	# 東南アジア駐留 - 画像に表示されていた師団の配置場所に修正
+	division = {
+		name = "南方軍第1師団"
+		location = 4621  # ジャワ・バラットステートに含まれる（実際の配置場所）
+		division_template = "南方軍師団"
+		start_experience_factor = 1.1
+		start_equipment_factor = 1.1
+	}
+
+	division = {
+		name = "南方軍第2師団"
+		location = 4630  # 実際の配置場所
+		division_template = "南方軍師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "南方軍第3師団"
+		location = 4631  # 実際の配置場所
+		division_template = "南方軍師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "南方軍第4師団"
+		location = 4632  # 実際の配置場所
+		division_template = "南方軍師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "南方軍第5師団"
+		location = 4633  # 実際の配置場所
+		division_template = "南方軍師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "南方軍第6師団"
+		location = 4634  # 実際の配置場所
+		division_template = "南方軍師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	# 太平洋駐留 - 画像に表示されていた師団の配置場所に修正
+	division = {
+		name = "太平洋第1師団"
+		location = 4622  # アラバマステートに含まれる（実際の配置場所）
+		division_template = "太平洋師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "太平洋第2師団"
+		location = 4635  # 実際の配置場所
+		division_template = "太平洋師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "太平洋第3師団"
+		location = 4636  # 実際の配置場所
+		division_template = "太平洋師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "太平洋第4師団"
+		location = 4637  # 実際の配置場所
+		division_template = "太平洋師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	# 朝鮮駐留 - 画像に表示されていた師団の配置場所に修正
+	division = {
+		name = "朝鮮第1師団"
+		location = 4638  # 実際の配置場所
+		division_template = "満州師団"
+		start_experience_factor = 1.1
+		start_equipment_factor = 1.1
+	}
+
+	division = {
+		name = "朝鮮第2師団"
+		location = 4639  # 実際の配置場所
+		division_template = "満州師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	# 台湾駐留 - 画像に表示されていた師団の配置場所に修正
+	division = {
+		name = "台湾第1師団"
+		location = 4640  # 実際の配置場所
+		division_template = "南方軍師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+
+	division = {
+		name = "台湾第2師団"
+		location = 4641  # 実際の配置場所
+		division_template = "南方軍師団"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
 	}
 }
 
@@ -30,11 +311,11 @@ instant_effect = {
 		progress = 0
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = support_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 10
 		progress = 0
@@ -44,7 +325,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = artillery_equipment_4
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 5
 		progress = 0
@@ -54,7 +335,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = motorized_equipment_1
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 3
 		progress = 0
@@ -64,7 +345,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = mechanized_equipment_3
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 3
 		progress = 0
@@ -74,23 +355,23 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = amphibious_mechanized_equipment_2
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 3
 		progress = 0
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = armored_car_equipment_2
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 3
 		progress = 0
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = fighter_equipment_3
@@ -100,11 +381,11 @@ instant_effect = {
 		progress = 0
 		efficiency = 50
 	}
-	
+
 	add_equipment_production = {
 		equipment = {
 			type = CAS_equipment_3
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0
@@ -114,7 +395,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = cv_fighter_equipment_3
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0
@@ -124,7 +405,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = cv_CAS_equipment_3
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0
@@ -134,7 +415,7 @@ instant_effect = {
 	add_equipment_production = {
 		equipment = {
 			type = cv_nav_bomber_equipment_3
-			creator = "JAP" 
+			creator = "JAP"
 		}
 		requested_factories = 1
 		progress = 0
